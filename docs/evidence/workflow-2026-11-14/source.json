@@ -1,0 +1,15 @@
+{
+  "type": "documentation screenshot",
+  "source": "AGENTS.md",
+  "sha256": "45f7647587ae6f93bc1267b77b9a3c9b1dcd26f93c6059ddb5ad991d72ab90cf",
+  "appearance": "dark",
+  "app_ui_changed": false,
+  "capture": "Installed Google Chrome headless local-document screenshot; T3 html_preview installer unavailable after two attempts; shown via html_render",
+  "owner_source": "C33",
+  "width_css_pixels": 728,
+  "height_css_pixels": 1304,
+  "browser_profile_cleanup": "Task-owned temporary browser profile removed after capture",
+  "host_os": "macOS 27.2.1",
+  "browser": "Google Chrome 157.0.8103.51",
+  "source_identity": "Saved AGENTS.md SHA-256; documentation-only capture, no app UI changes"
+}

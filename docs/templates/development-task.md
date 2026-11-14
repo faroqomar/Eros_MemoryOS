@@ -12,6 +12,8 @@ Outcome: <what the user can do after this task>
 
 Dependencies or blockers: <prerequisites, pending design/owner choices, or none>
 
+Subagent plan/handoffs: <useful scopes, owners, independent reviewer, dependency order, or main agent only; available in all three steps>
+
 ## Step 1: Understand, plan, and implement
 
 Acceptance criteria:
@@ -28,6 +30,8 @@ Benchmark scope: <workload, numeric thresholds, baseline, dataset, physical devi
 
 Implementation state: <source revision/diff or file hashes, changed behavior, test locations, and local results>
 
+Step 1 screenshots: <changed/new screens or code/document/results capture; dark mode, source identity, device/OS and simulator/physical label; links and owner-visible presentation, or blocked reason>
+
 ## Step 2: Verification
 
 Verifier: <independent verifier; document-check exception only when applicable>
@@ -39,7 +43,7 @@ Source under verification: <exact commit or file hashes and configuration>
 | <acceptance criterion or required check> | <result> | <command, result, and evidence link> |
 | Architecture and dependency review | <result> | <findings/evidence> |
 | Relevant regression suite | <result> | <evidence> |
-| Dead code and junk cleanup | <result> | <unused consumers checked, removed files/caches, retained exceptions, storage before/after, preservation hashes/links, and affected rechecks> |
+| Dead code and junk cleanup | <result> | <unused consumers checked, removed dead code, useless/temporary files and caches, task-owned scratch cleanup, retained exceptions, storage before/after, preservation hashes/links, and affected rechecks> |
 | Benchmarks | <result> | <baseline/candidate values, conditions, variability, and thresholds> |
 
 Mandatory [architecture/upstream checks](../how-to/development-workflow.md#mandatory-step-2-architecture-and-upstream-checks):
@@ -59,6 +63,8 @@ An unavailable required check is blocked. Use N/A only with an unaffected-scope 
 
 Findings, fixes, and affected re-checks: <concise list or none>
 
+Step 2 screenshots: <changed/fixed/new states and affected language/large-text/keyboard cases, or labeled code/document/results capture; source/device provenance or blocked reason>
+
 Verification outcome: <pass/fail/blocked and any remaining limitation>
 
 ## Step 3: Review and delivery
@@ -73,8 +79,10 @@ Memory delivery: <latest check result; no pending/failed operations before claim
 
 Git delivery: <repository, base branch, PR, final head, required checks/reviews; or N/A with reason>
 
-Merge authorization: <owner approval and approved PR/head, or pending>
+Merge authorization: <C33 standing authorization from the Step 3 request; verified final PR/head and passing gates, or explicit task-specific hold; no second routine confirmation>
 
 Merge result: <verified merge commit, or actual unmerged state>
 
-Remaining work and next outcome: <short note>
+Step 3 screenshots: <final reviewed changes/new screens or labeled code/document/results capture; source/device provenance and owner-visible presentation, or blocked reason>
+
+Remaining work and next outcome: <short note; Step 3 continues through merge when gates pass>

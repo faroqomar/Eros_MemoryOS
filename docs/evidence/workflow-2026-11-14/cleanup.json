@@ -1,0 +1,66 @@
+{
+  "scope": "Only completed scratch files created by this thread; durable project records/evidence and active/shared tool state retained.",
+  "removed": [
+    {
+      "path": "/tmp/memoryos-step2-fixes.py",
+      "bytes": 3332
+    },
+    {
+      "path": "/tmp/memoryos-step2-tests.py",
+      "bytes": 2218
+    },
+    {
+      "path": "/tmp/memoryos-step2-record.py",
+      "bytes": 8689
+    },
+    {
+      "path": "/tmp/memoryos-step2-final-record.py",
+      "bytes": 8581
+    },
+    {
+      "path": "/tmp/memoryos-step3-recall.json",
+      "bytes": 40746
+    },
+    {
+      "path": "/tmp/memoryos-repository-recall.json",
+      "bytes": 43342
+    },
+    {
+      "path": "/tmp/memoryos-cleanup-recall.json",
+      "bytes": 44794
+    },
+    {
+      "path": "/tmp/memoryos-clean-reproducible.py",
+      "bytes": 2109
+    },
+    {
+      "path": "/tmp/memoryos-clean-derived.py",
+      "bytes": 3381
+    },
+    {
+      "path": "/tmp/memoryos-delivery-docs.py",
+      "bytes": 9236
+    },
+    {
+      "path": "/tmp/memoryos-interface-pr.md",
+      "bytes": 2277
+    },
+    {
+      "path": "/tmp/memoryos-step3-memory-sync.log",
+      "bytes": 377
+    },
+    {
+      "path": "/tmp/memoryos-step3-memory-check.log",
+      "bytes": 271
+    },
+    {
+      "path": "/tmp/memoryos-workflow-recall.json",
+      "bytes": 46573
+    },
+    {
+      "path": "/tmp/memoryos-workflow-update.py",
+      "bytes": 15619
+    }
+  ],
+  "removed_bytes": 231545
+}
