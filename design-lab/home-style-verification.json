@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-11-12T14:59:32.896520+00:00",
+  "url": "http://localhost:5488/?home-style=3#simple/capture",
+  "direction": "Home-screen style; C15. Other-screen layouts remain proposals.",
+  "reference_sha256": "2e289d834aa721e65c58b7ac96be83f63ee072f5c0ce160fd90c8e9acf004c71",
+  "source_files": {
+    "index.html": "ee9e18e0b376ea7be8a6123c633ff4ae3844a378e7dabc08bba43dbbfc64529d",
+    "data.js": "ebdd3e62f1b16ad0f3337c183734653ac5032e138df26b7289a49f1efc51a6f2",
+    "app.js": "1faf7716e74a1a72ab7f12d14c7d85f3d2e3e45f2df1a10e78bb81085464c39b",
+    "home-style.js": "910e5cb6bc43e2d2a4054e16f03aaf1c2b6eb280ec96ac873984ee10183b84e1",
+    "home-style.css": "de66422afcc7d8a3300a89c443bbb7de926e0361f8bb68e46cfd5d136eb7e551",
+    "server.py": "aba9af6e2cf39949b3a8bc1739a55bac6ff76ec848d2fe59ab821b704df4411d"
+  },
+  "verification": {
+    "syntax": "passed for JavaScript and Python",
+    "document_links": "passed",
+    "original_reference": "unchanged; served copy matches byte hash",
+    "navigation_checks": 15,
+    "navigation_results": "passed: sidebar, close on selection, profile/source/back, tentative plan, hidden birthday controls and preview, hidden map inspector/select/close/list, composer draft retention, no-match state",
+    "phone_layout_checks": 20,
+    "phone_widths": [
+      390,
+      320
+    ],
+    "languages": [
+      "English",
+      "Arabic layout preview"
+    ],
+    "overflow_failures": 0,
+    "annotation": "new simple variant saved with semantic anchor; confirmed in disk store",
+    "cleanup": "removed only one HOME STYLE TEST annotation; preserved owner feedback",
+    "owner_feedback_count": 0,
+    "hindsight_check": "zero pending and zero failed sources"
+  },
+  "limits": [
+    "Browser design proposal only",
+    "No native build, phone install, recording, AI, or scheduling",
+    "Old variants remain rejected history; their feedback is preserved"
+  ]
+}

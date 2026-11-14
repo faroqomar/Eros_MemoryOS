@@ -1,0 +1,3 @@
+reviews/feedback.json
+reviews/*.tmp
+__pycache__/

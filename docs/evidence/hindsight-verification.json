@@ -1,0 +1,580 @@
+{
+  "checked_at_utc": "2026-11-06T10:31:27.294676+00:00",
+  "working_date": "2026-11-06",
+  "project": "memoryos",
+  "bank": "project-memoryos",
+  "status": "complete",
+  "check_exit_code": 0,
+  "check": {
+    "project": "memoryos",
+    "api": {
+      "status": "healthy",
+      "database": "connected",
+      "db_acquire_ms": 1.4,
+      "db_pool_waiting": 0,
+      "db_pool_in_use": 0,
+      "db_pool_max": 100,
+      "db_pool_idle": 7
+    },
+    "sources": 10,
+    "pending": [],
+    "failed": {}
+  },
+  "application_built": false,
+  "delivery_note": "Scoped worker logs showed serialized/shared AI extraction work. No retry or service restart was required. Historical-source extraction completed after queue delay.",
+  "source_hashes_match": true,
+  "source_hashes": {
+    "AGENTS.md": "6420c65972d346db0c495a0b851f5ac7cbd6735e2e5afabbf5264f204119219c",
+    "README.md": "09a5b63ff7defae417aeb6a6f204d22a082b0824fb4e596af02e4b1726e24136",
+    "docs/decisions/decision-register.md": "f2f54cb77371c65f25d71a876adbf40576e65b8913c3d8e931a376c7f1df477e",
+    "docs/feature-register.md": "4ebebcc5376870d76a605234e5bbcfd6e63bc6bda696842848340e03e70b41bf",
+    "docs/how-to/hindsight.md": "15299fab14204f4a00af5d3a45103bd17bb42f4fc14e8ae18ab43d42cf8d6f08",
+    "docs/log/2026-11-06-documentation.md": "adfe41cd3a6d88dbfc2b05dbecfc278cd2202a683818aa8c639a3fa4093906c4",
+    "docs/plans/build-outline.md": "10804fdcae6fa0d6d6c2a66125b92959d22873dec57823fde6fbd5a831b1e753",
+    "docs/product-overview.md": "7b99483f4f115be784c16698a54802bf6e5f9811ba60d091001445fcd563c133",
+    "docs/reference/historical-research.md": "ac5ebe98643886404003bb36427c454096896c208622361a718edac64248601c",
+    "docs/reference/source-register.md": "4090cc467017f0531bc4a711904aa032ec0b628dcfcdaa87080abaf0b055943e"
+  },
+  "recalls": [
+    {
+      "label": "current",
+      "query": "What are the confirmed MemoryOS target device and local-processing requirements, and are Flutter, SQLite, and the AI models selected or only proposed?",
+      "exit_code": 0,
+      "result_count": 23,
+      "facts": [
+        {
+          "id": "09bccb23-9333-48d4-8e9a-6fc691333493",
+          "text": "Historical formulas, thresholds, budgets, recency calculations, rollout durations, and processing defaults are illustrative or conflicting and must not be treated as validated algorithms, acceptance criteria, current estimates, or current defaults; current local-first owner instructions take precedence. | When: November 6, 2026 | Involving: memoryos project | The report contains conflicting cloud-processing and local-speech-recognition defaults and requires mathematical review before reuse.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "d6fb23e2-7c77-4bc2-9da1-09efd0a79c20",
+          "text": "Project memoryos aims to extend a working local app with owner-selected integrations, but the first connector and exact implementation order remain undecided. Candidate integrations include chat-export formats, PDF/DOCX and scanned-document reading, Obsidian, email/calendar providers, optional external AI, and later device sync. | When: November 6, 2026 | Involving: Project owner | Authoritative project plan; selection is still open.",
+          "document_id": "repo:docs/plans/build-outline.md",
+          "source_path": "docs/plans/build-outline.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "99dc2c54-e858-4a0e-91c7-60b6e7386bf3",
+          "text": "Arabic and English are required languages for memoryos; support for other languages is part of the requested vision, but the exact language list remains open. Iraqi Arabic, mixed Arabic/English, names, nicknames, sarcasm, dates, and Arabic right-to-left text are proposed evaluation cases, with no model performance established as acceptable. | When: November 6, 2026 | Involving: memoryos | Language requirements and evaluation status are explicitly documented, while performance is unverified.",
+          "document_id": "repo:docs/product-overview.md",
+          "source_path": "docs/product-overview.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "05b8c3e3-46d4-4851-bee2-bea405a3e3b0",
+          "text": "The current target device is the owner's iPhone 15 Pro Max; everyday capture, memory, and AI processing should work on the phone, and a Mac must not be required. Optional external services require a separate choice. | When: November 6, 2026 | Involving: user | This is a confirmed product constraint for everyday use.",
+          "document_id": "repo:README.md",
+          "source_path": "README.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "d3483763-7fd1-4e27-ba5e-6fb7d4412814",
+          "text": "The project plans to evaluate llama.cpp for text, WhisperKit or whisper.cpp for speech, and small multilingual models such as Qwen3-1.7B (P18). No component has been selected and no benchmark exists yet; this entry is an evaluation plan, not a verified result. | When: November 6, 2026 | To assess candidate native AI components for text and speech processing.",
+          "document_id": "repo:docs/feature-register.md",
+          "source_path": "docs/feature-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "a0b586fb-83d9-4270-ae18-9d9cc0c1b0d0",
+          "text": "The planned first demonstration is an end-to-end phone acceptance path: download model files, enable airplane mode, record a short Arabic/English note, save audio and editable text, link it to a fictional person and project, answer a known question with supporting-source access, correct a mistaken detail and verify the correction, export the record or transcript, then interrupt and resume an import without duplicates or lost captures. | When: Proposed on November 6, 2026; no step has passed in the app | Involving: Project owner and implementation agent | This is a proposed acceptance path, not proof of implementation or testing; numeric quality and performance targets still require review after measurement.",
+          "document_id": "repo:docs/plans/build-outline.md",
+          "source_path": "docs/plans/build-outline.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "fc583225-3d4b-460f-8f8a-5356353cd9cb",
+          "text": "Local AI is central to the current request, superseding the previous sequencing in which local models were a later optional edition. | When: November 6, 2026 | Involving: memoryos project | The current request prioritizes local, phone-first processing.",
+          "document_id": "repo:docs/decisions/decision-register.md",
+          "source_path": "docs/decisions/decision-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "kind:decision",
+            "project:memoryos"
+          ]
+        },
+        {
+          "id": "e9702b50-ca09-4cd6-b027-1c413e502606",
+          "text": "The proposed record-protection design should preserve sources, passages, people, projects, ideas, dated claims, owner corrections, interpretations, rules, and reminder proposals, with source IDs, links, edits, deletion, attachments, backup/restore, and protected keys designed together. SQLite is only a candidate; the final database, encryption, schema, and search index remain open. | When: Planned; no implementation date committed | Information and its history must be protected before automation is added.",
+          "document_id": "repo:docs/plans/build-outline.md",
+          "source_path": "docs/plans/build-outline.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "a690cc19-8b5e-4a44-963c-42880d30e408",
+          "text": "The project must use `./scripts/memory` or an explicit `--project memoryos` argument for `recall`, `sync`, `check`, and `status`; the wrapper pins `--project memoryos` and rejects project overrides because the shared CLI otherwise defaults to another project. A new session may be needed before new MCP tools become available, while the project CLI works without an MCP refresh. | When: November 6, 2026 | Involving: MemoryOS coding agents | Prevents commands from operating on the wrong project bank and records the known MCP refresh limitation.",
+          "document_id": "repo:docs/how-to/hindsight.md",
+          "source_path": "docs/how-to/hindsight.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "2289a465-5097-4dcd-b900-b0e395091edb",
+          "text": "The owner confirmed an iPhone-first processing preference: difficult processing should run on the iPhone where feasible, a Mac must not be a daily-use dependency, and the owner wants as much local control and self-hosting as possible. | When: November 6, 2026 | Involving: Owner of memoryos | Development may use a Mac, but normal use of the finished app should not require one; performance, supported iOS versions, storage use, and battery cost remain unverified.",
+          "document_id": "repo:docs/product-overview.md",
+          "source_path": "docs/product-overview.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "0d15a83a-65c4-4bba-9565-04189a75c5b2",
+          "text": "The development-memory setup uses project ID `memoryos` and Hindsight bank `project-memoryos`; this connection does not select Hindsight as the app's runtime memory system. | When: November 6, 2026 | Separates development documentation memory from the product's future runtime memory architecture.",
+          "document_id": "repo:README.md",
+          "source_path": "README.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "cef556a9-df83-4882-9b5b-35209740e44a",
+          "text": "A proposed supporting behavior allows one capture to link to several people and projects and lets the owner correct mistaken connections; this is not a selected data model. | When: November 6, 2026 | Involving: Owner of memoryos | The document explicitly labels multi-link and correction behavior as a proposal rather than a confirmed design decision.",
+          "document_id": "repo:docs/product-overview.md",
+          "source_path": "docs/product-overview.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "bd39d4fa-cf2c-4f27-9100-ef6a54791087",
+          "text": "A12 proposes optional official APIs or manual handoff for external AI, but reuse of an iPhone subscription has not been verified. | When: November 6, 2026 | Involving: MemoryOS project | The external-AI connection path and subscription compatibility remain unresolved.",
+          "document_id": "repo:docs/decisions/decision-register.md",
+          "source_path": "docs/decisions/decision-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "kind:decision",
+            "project:memoryos"
+          ]
+        },
+        {
+          "id": "5e1c0faa-0c28-46d7-b5b6-b35dc887e181",
+          "text": "Email retrieval, cloud AI, and synchronization require network access; offline capture and local memory are expected to continue operating without those connections. | When: November 6, 2026 | Involving: memoryos | This is an explicit offline/network constraint for the product.",
+          "document_id": "repo:docs/product-overview.md",
+          "source_path": "docs/product-overview.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "7b20182a-32ca-46c7-ae1a-2bb74de95959",
+          "text": "\u0645\u0634\u0631\u0648\u0639 memoryos \u0644\u062f\u064a\u0647 20 \u0633\u0624\u0627\u0644\u064b\u0627 \u0645\u0641\u062a\u0648\u062d\u064b\u0627 \u0644\u0644\u062a\u0635\u0645\u064a\u0645 \u0648\u0627\u0644\u062a\u062d\u0642\u0642\u060c \u062a\u0634\u0645\u0644 \u062f\u0639\u0645 iOS \u0648\u0627\u0644\u0645\u0648\u0627\u0631\u062f\u060c \u0623\u062f\u0627\u0621 \u0627\u0644\u0646\u0645\u0627\u0630\u062c \u0627\u0644\u0645\u062d\u0644\u064a\u0629 \u0628\u0627\u0644\u0639\u0631\u0628\u064a\u0629 \u0648\u0627\u0644\u0625\u0646\u062c\u0644\u064a\u0632\u064a\u0629\u060c \u0625\u0637\u0627\u0631 \u0627\u0644\u0648\u0627\u062c\u0647\u0629 \u0648\u0642\u0627\u0639\u062f\u0629 \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a\u060c \u0625\u0639\u0627\u062f\u0629 \u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0645\u0643\u0648\u0651\u0646 \u0627\u0644\u0630\u0627\u0643\u0631\u0629 \u0645\u0642\u0627\u0628\u0644 \u0627\u0644\u0643\u0648\u062f \u0627\u0644\u0645\u062e\u0635\u0635\u060c \u0623\u0648\u0644\u0648\u064a\u0629 \u0645\u0635\u0627\u062f\u0631 \u0627\u0644\u062f\u0631\u062f\u0634\u0629 \u0648\u0627\u0644\u0635\u0648\u062a \u0648\u0627\u0644\u0628\u0631\u064a\u062f \u0648\u0627\u0644\u062a\u0642\u0648\u064a\u0645\u060c \u0627\u0644\u062a\u0643\u0627\u0645\u0644 \u0645\u0639 Obsidian\u060c \u062a\u0646\u0633\u064a\u0642\u0627\u062a \u0627\u0644\u0645\u0633\u062a\u0646\u062f\u0627\u062a\u060c \u0627\u0644\u0644\u063a\u0627\u062a \u0627\u0644\u0625\u0636\u0627\u0641\u064a\u0629\u060c \u062d\u062f\u0648\u062f \u0627\u0644\u0628\u064a\u0627\u0646\u0627\u062a \u0627\u0644\u0645\u062d\u0644\u064a\u0629/\u0627\u0644\u062e\u0627\u0631\u062c\u064a\u0629\u060c \u0627\u0644\u0645\u0632\u0627\u0645\u0646\u0629 \u0648\u0627\u0644\u062a\u0634\u0641\u064a\u0631\u060c \u0627\u0644\u0645\u064a\u0632\u0627\u062a \u0627\u0644\u062a\u0627\u0631\u064a\u062e\u064a\u0629\u060c \u062d\u062f\u0648\u062f \u0627\u0644\u062f\u0642\u0629 \u0648\u0627\u0644\u0623\u062f\u0627\u0621\u060c \u0648\u0627\u0644\u0646\u0633\u062e \u0627\u0644\u0627\u062d\u062a\u064a\u0627\u0637\u064a \u0648\u0627\u0644\u0627\u0633\u062a\u0639\u0627\u062f\u0629 \u0648\u0627\u0644\u062d\u0630\u0641 \u0648\u0627\u0644\u0627\u062d\u062a\u0641\u0627\u0638 \u0628\u0627\u0644\u0645\u0635\u0627\u062f\u0631 \u0648\u0627\u0633\u062a\u0631\u062f\u0627\u062f \u0627\u0644\u0645\u0641\u0627\u062a\u064a\u062d. \u0645\u0627 \u062a\u0632\u0627\u0644 \u0647\u0630\u0647 \u0627\u0644\u0628\u0646\u0648\u062f \u0623\u0633\u0626\u0644\u0629 \u063a\u064a\u0631 \u0645\u062d\u0633\u0648\u0645\u0629 \u0648\u0644\u064a\u0633\u062a \u0642\u0631\u0627\u0631\u0627\u062a \u062a\u0646\u0641\u064a\u0630\u064a\u0629. | When: November 6, 2026 | \u0644\u062a\u0648\u062c\u064a\u0647 \u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0645\u0633\u062a\u0642\u0628\u0644\u064a \u0648\u0627\u0644\u062a\u062d\u0642\u0642 \u0645\u0646 \u0645\u0644\u0627\u0621\u0645\u0629 \u0627\u0644\u0645\u0646\u062a\u062c\u061b \u0644\u0627 \u064a\u0644\u0632\u0645 \u062d\u0633\u0645\u0647\u0627 \u0643\u0644\u0647\u0627 \u0642\u0628\u0644 \u0645\u0631\u0627\u062c\u0639\u0629 \u0641\u0643\u0631\u0629 \u0627\u0644\u0645\u0646\u062a\u062c.",
+          "document_id": "repo:docs/decisions/decision-register.md",
+          "source_path": "docs/decisions/decision-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "kind:decision",
+            "project:memoryos"
+          ]
+        },
+        {
+          "id": "d38802bc-b5bb-4dc2-b43d-fb9796e91bd4",
+          "text": "A02 proposes SQLite for local records, but no database package, encryption option, or schema has been selected. | When: November 6, 2026 | Involving: MemoryOS project | This remains a proposed baseline rather than an implemented or tested decision.",
+          "document_id": "repo:docs/decisions/decision-register.md",
+          "source_path": "docs/decisions/decision-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "kind:decision",
+            "project:memoryos"
+          ]
+        },
+        {
+          "id": "07955c85-8210-41f6-8a83-82b45c811c1d",
+          "text": "The proposed first step is to test candidate local AI components on an iPhone 15 Pro Max using a reviewed or synthetic Arabic/English set with known answers, measuring accuracy, time, storage, memory, heat, battery impact, iOS version, and model/runtime versions. No model is selected in advance; local failures must be recorded and must not silently trigger cloud processing. | When: Planned; no implementation date committed | The output must be a measurement-supported comparison of local capabilities and limits.",
+          "document_id": "repo:docs/plans/build-outline.md",
+          "source_path": "docs/plans/build-outline.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "e6bb9cd2-1ccc-4f34-9595-86ecbe03b9f7",
+          "text": "The owner confirmed iPhone 15 Pro Max as the target device, requested simple conversation using ASD-STE100 as a reference, and authorized project documentation plus a separate Hindsight bank. These are decisions and workflow instructions, not app features. | When: Confirmed by November 6, 2026 | Involving: Project owner | To guide project workflow and documentation; the feature register is a snapshot, not proof of implementation.",
+          "document_id": "repo:docs/feature-register.md",
+          "source_path": "docs/feature-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "a351a54d-a3e6-4b18-8fe7-092524e00514",
+          "text": "The local app must remain usable without synchronization. Before selecting Supabase, Convex, or another backend, the project must define stable IDs, edit versions, attachment transfer, conflict resolution, deletion propagation, encryption and key recovery, and offline behavior; a real-time server connection alone is insufficient. | When: November 6, 2026 | Involving: Project owner | Explicit future-sync boundary and prerequisites for backend selection.",
+          "document_id": "repo:docs/plans/build-outline.md",
+          "source_path": "docs/plans/build-outline.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "21d45b4f-5611-4471-9d60-07304bf24660",
+          "text": "The proposed actions-and-rules phase requires owner-controlled rule creation and editing, visible action proposals for uncertain calendar information, explicit owner selection of trusted automatic cases, and tests preventing imported text from changing permissions or instructing tools. Saved filters are proposed for custom tabs, and reminder schedules must survive app closure without continuous AI execution. | When: Planned; no implementation date committed | Involving: Project owner | Automation must remain permission-safe, reviewable, and durable when the app is closed.",
+          "document_id": "repo:docs/plans/build-outline.md",
+          "source_path": "docs/plans/build-outline.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "854b4715-065a-4061-860f-e2ffce7c7779",
+          "text": "Hindsight development-memory setup was configured for MemoryOS at the owner's request; CLI project ID is `memoryos`, memory bank is `project-memoryos`, scope tag is `project:memoryos`, and the exact project path maps exclusively to this bank. The app's runtime memory system remains unselected. Source: `docs/how-to/hindsight.md`. | When: November 6, 2026 | Involving: MemoryOS project; owner | This document is an authoritative setup snapshot, not proof that the configuration has been implemented or verified.",
+          "document_id": "repo:docs/how-to/hindsight.md",
+          "source_path": "docs/how-to/hindsight.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "53419f93-8e31-4721-8f10-52b39c817d56",
+          "text": "No app framework has been selected for memoryos; Flutter was the latest suggestion for future platform support, while native iOS/SwiftUI remains an alternative under discussion. Source: docs/feature-register.md. | When: As of November 6, 2026 | Involving: memoryos project | Framework selection remains unresolved.",
+          "document_id": "repo:docs/feature-register.md",
+          "source_path": "docs/feature-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "9c801aa1-90a6-4c06-8618-89185e051bd8",
+          "text": "As of the README.md snapshot, the project contains product documentation and development-memory setup only: no application has been built or tested, and the owner has not approved the application framework, database, AI model, design, release, or implementation stage. | When: November 6, 2026 | Involving: user | Prevents proposed plans or documentation from being treated as implemented or verified.",
+          "document_id": "repo:README.md",
+          "source_path": "README.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "historical",
+      "query": "Which MemoryOS features are historical and not approved for current implementation, including digital legacy personas, clinician and enterprise use, and cloud launch plans?",
+      "exit_code": 0,
+      "result_count": 24,
+      "facts": [
+        {
+          "id": "9f27b8a4-3450-4d04-9493-186cd8a8430e",
+          "text": "The current owner request defines a personal app for daily capture, people, projects, selected reminders, and conversation understanding, replacing the earlier 2025 research focus on digital legacy and self-insight. | When: 2026-11-06 | Involving: Owner | This is the current project direction recorded in docs/reference/source-register.md.",
+          "document_id": "repo:docs/reference/source-register.md",
+          "source_path": "docs/reference/source-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "64c06366-2d14-4a8f-912e-0ab586128515",
+          "text": "The project rule is that wording such as \u201cdecision\u201d and \u201cwill implement\u201d in older research does not establish owner approval; current direction comes from new owner requests, and no feature currently has a committed delivery date. | When: 2026-11-06 | Prevents treating historical proposals or language as approved plans or implementation commitments.",
+          "document_id": "repo:docs/feature-register.md",
+          "source_path": "docs/feature-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "f8098ddd-042d-4612-b443-abd38a8d5d69",
+          "text": "Email and calendar integration is planned in principle: memoryos may read authorized email and create calendar items under owner-defined rules, but providers and permissions remain undecided. | When: November 6, 2026 | Involving: memoryos; owner | The integration is described as a requirement direction, not as a selected or implemented provider configuration.",
+          "document_id": "repo:docs/product-overview.md",
+          "source_path": "docs/product-overview.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "e566b013-9919-404c-bfd3-52b9feddd2a8",
+          "text": "No implementation framework has been selected: native Swift, Kotlin, web dashboard, and the assistant-suggested Flutter option are all unselected. | When: November 6, 2026 | Involving: memoryos project | The owner has not approved a framework.",
+          "document_id": "repo:docs/decisions/decision-register.md",
+          "source_path": "docs/decisions/decision-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "kind:decision",
+            "project:memoryos"
+          ]
+        },
+        {
+          "id": "5944a6e9-b9de-47a6-bd36-d66923238219",
+          "text": "As of November 6, 2026, A01 remains unresolved: Flutter with native integrations is only the latest assistant suggestion, while SwiftUI/native iOS remains an alternative; no framework has been selected. | When: November 6, 2026 | Involving: MemoryOS project | The decision register is authoritative for current status, but this snapshot is not proof of implementation.",
+          "document_id": "repo:docs/decisions/decision-register.md",
+          "source_path": "docs/decisions/decision-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "kind:decision",
+            "project:memoryos"
+          ]
+        },
+        {
+          "id": "a690cc19-8b5e-4a44-963c-42880d30e408",
+          "text": "The project must use `./scripts/memory` or an explicit `--project memoryos` argument for `recall`, `sync`, `check`, and `status`; the wrapper pins `--project memoryos` and rejects project overrides because the shared CLI otherwise defaults to another project. A new session may be needed before new MCP tools become available, while the project CLI works without an MCP refresh. | When: November 6, 2026 | Involving: MemoryOS coding agents | Prevents commands from operating on the wrong project bank and records the known MCP refresh limitation.",
+          "document_id": "repo:docs/how-to/hindsight.md",
+          "source_path": "docs/how-to/hindsight.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "1b39a566-a6af-46ab-9650-8a066ebb2023",
+          "text": "The planned input sources are typed thoughts, ideas, plans and free-form chat; new or imported audio; exported conversations; connected-account email; PDF and Word documents; and Obsidian notes, with the Obsidian integration mode still to be selected. | When: November 6, 2026 | Involving: Owner of memoryos | These are documented intended capture sources, not verified implementation.",
+          "document_id": "repo:docs/product-overview.md",
+          "source_path": "docs/product-overview.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "2b8e2e44-4c42-404e-a8e5-9daa9f9677a0",
+          "text": "A digital legacy persona is described as an explicitly labeled AI memory/style simulation, with research into consent or estate authority, an exportable read-only archive, identity disclosure, and usage limits. The current owner has not reconfirmed this product scope. | When: As of November 6, 2026 | Involving: Current owner | Product scope and authorization remain unconfirmed.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "bb1599de-ef15-4c75-8b95-f7aec8421fbd",
+          "text": "An attachment button, compact capture receipt, undo/correction actions, a small reminder list, and custom tabs implemented as saved filters were proposed by the assistant but remain pending owner review and are not approved decisions. | When: November 6, 2026 | Involving: assistant; owner of memoryos | The document explicitly distinguishes assistant proposals from owner-approved requirements.",
+          "document_id": "repo:docs/product-overview.md",
+          "source_path": "docs/product-overview.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "9c801aa1-90a6-4c06-8618-89185e051bd8",
+          "text": "As of the README.md snapshot, the project contains product documentation and development-memory setup only: no application has been built or tested, and the owner has not approved the application framework, database, AI model, design, release, or implementation stage. | When: November 6, 2026 | Involving: user | Prevents proposed plans or documentation from being treated as implemented or verified.",
+          "document_id": "repo:README.md",
+          "source_path": "README.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "09bccb23-9333-48d4-8e9a-6fc691333493",
+          "text": "Historical formulas, thresholds, budgets, recency calculations, rollout durations, and processing defaults are illustrative or conflicting and must not be treated as validated algorithms, acceptance criteria, current estimates, or current defaults; current local-first owner instructions take precedence. | When: November 6, 2026 | Involving: memoryos project | The report contains conflicting cloud-processing and local-speech-recognition defaults and requires mathematical review before reuse.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "9026bab6-2217-481a-99bf-e79f3a472556",
+          "text": "The feature register records current requests and assistant proposals, but explicitly states that no feature in the register is implemented or verified in an app; requested scope does not select a technical solution or delivery date. | When: November 6, 2026 | This is an authoritative project-status snapshot, not proof of implementation.",
+          "document_id": "repo:docs/feature-register.md",
+          "source_path": "docs/feature-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "617dd08f-e94d-4402-bc5d-a8888cad545b",
+          "text": "The historical research report is preserved as historical material only; its technical, legal, competitor, performance, commercial, pricing, provider-term, accuracy, and scale claims are not verified current facts. | When: November 6, 2026 | Involving: memoryos project | The document is a snapshot and does not establish current validity.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "a5e92a61-c6e4-444b-b6b4-bd269e6a993d",
+          "text": "README.md directs users to run `./scripts/memory recall --query 'What is confirmed for MemoryOS and what remains proposed?'` and `./scripts/memory check` for the documentation task; its verification record is in `docs/log/2026-11-06-documentation.md`. This is documentation guidance, not proof that the commands were executed or passed. | When: Friday, November 06, 2026 | The source explicitly distinguishes the README snapshot from verified implementation evidence.",
+          "document_id": "repo:README.md",
+          "source_path": "README.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "e9601b29-4121-4897-b8c5-c2f764c2c5e4",
+          "text": "The current product emphasis is daily capture, people, projects, reminders, and explicitly requested calendar actions; the broader digital-legacy and self-insight vision, as well as the delivery order for calendar integration, requires reconfirmation and remains open. | When: November 6, 2026 | Involving: memoryos project | The current request supersedes the earlier launch scope and blanket exclusion of calendar integration.",
+          "document_id": "repo:docs/decisions/decision-register.md",
+          "source_path": "docs/decisions/decision-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "kind:decision",
+            "project:memoryos"
+          ]
+        },
+        {
+          "id": "eb5fa0fb-3ca7-48d5-b88a-88295e3d160c",
+          "text": "Only sanitized project documentation is approved for retention. The source allowlist contains `README.md`, `AGENTS.md`, `docs/**/*.md`, and a future authorized `FULLSTACK.md`; original `Project_Idea*.md` files, scripts, configuration, evidence JSON, raw chats, audio, credentials, and app data are excluded. Do not widen the allowlist or enable raw retention to make a failed import appear complete. | When: November 6, 2026 | Involving: MemoryOS project | This is an explicit retention and source-allowlist rule protecting private or non-authorized data.",
+          "document_id": "repo:docs/how-to/hindsight.md",
+          "source_path": "docs/how-to/hindsight.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "39324907-1fd8-49cc-ba7e-9d0142c1a6ab",
+          "text": "\u0418\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0439 cloud-first \u0441\u0442\u0435\u043a (Python/FastAPI, LangChain \u0438\u043b\u0438 Haystack, Postgres/pgvector, Neo4j \u0438\u043b\u0438 relational graph, Qdrant/Pinecone, Elastic/OpenSearch, object storage, Docker/CI) \u0438 \u043f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u0435\u043d\u043d\u044b\u0435 \u043c\u043e\u0434\u0435\u043b\u0438/\u0438\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u044b (GPT-4/GPT-3.5, Claude, Llama 2/GPT-J, OpenAI embeddings, multilingual MPNet/LaBSE, spaCy/NER \u0438 \u0434\u0440\u0443\u0433\u0438\u0435) \u043e\u0442\u0440\u0430\u0436\u0430\u044e\u0442 \u043f\u0440\u043e\u0448\u043b\u044b\u0435 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u044b; cloud-first launch superseded \u0434\u043b\u044f \u0442\u0435\u043a\u0443\u0449\u0435\u0433\u043e \u043f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f, \u0430 \u044d\u0442\u0438 \u043c\u043e\u0434\u0435\u043b\u0438 \u043d\u0435 \u044f\u0432\u043b\u044f\u044e\u0442\u0441\u044f \u0442\u0435\u043a\u0443\u0449\u0438\u043c\u0438 \u0440\u0435\u043a\u043e\u043c\u0435\u043d\u0434\u0430\u0446\u0438\u044f\u043c\u0438. | When: 2026-11-06 | Involving: \u041f\u0440\u043e\u0435\u043a\u0442 memoryos | \u041f\u0440\u0435\u0434\u043e\u0442\u0432\u0440\u0430\u0449\u0430\u0435\u0442 \u043e\u0448\u0438\u0431\u043e\u0447\u043d\u043e\u0435 \u043f\u0440\u0438\u043d\u044f\u0442\u0438\u0435 \u0438\u0441\u0442\u043e\u0440\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0432\u0430\u0440\u0438\u0430\u043d\u0442\u043e\u0432 \u0437\u0430 \u0432\u044b\u0431\u0440\u0430\u043d\u043d\u044b\u0439 \u0438\u043b\u0438 \u0440\u0435\u0430\u043b\u0438\u0437\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441\u0442\u0435\u043a.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "92482022-502e-446f-827f-a8d8b6ad3609",
+          "text": "For every task and user turn in T3 Code, the assistant must read and follow `/Users/eros/.codex/skills/t3-hindsight-required/SKILL.md` and use only the MemoryOS bank. Recall must use `./scripts/memory recall --query 'A focused English question for this task'`, because the shared CLI defaults to another project without an explicit project argument. | Involving: Assistant | MemoryOS work must not query or write another project's bank.",
+          "document_id": "repo:AGENTS.md",
+          "source_path": "AGENTS.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "e6d23042-032c-43d8-8ab2-1a0e8ba87351",
+          "text": "The historical research snapshot records broader import ideas for MemoryOS, including Gmail/IMAP, chat exports, SMS backups, diaries, screenshots, photos, email archives, and possible connectors such as WhatsApp, Messenger, Outlook, Slack, Teams, Notion, and note apps. These are historical feature considerations, not evidence of implementation. | When: 2026-11-06 | The document is explicitly a snapshot of historical research rather than proof of implemented functionality.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "d3a6dc72-fffc-4861-89be-523ed7c36257",
+          "text": "docs/reference/historical-research.md is a historical feature register, not an approved implementation plan: all H-items remain preserved research ideas unless the current feature register separately marks a matching owner request. The document is a snapshot and does not prove implementation. | When: November 06, 2026 | Involving: Project memoryos | Prevents historical proposals from being treated as selected, implemented, or verified features.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "40b4c9e4-80e2-4851-9825-c09bb1ca4701",
+          "text": "For image and audio processing, the historical research favors permissioned image selection or capture, OCR and speech recognition preferably performed locally, review and correction of uncertain text, and an optional names dictionary. Continuous access, background monitoring, and cloud recognition fallback were not approved as current permissions. | When: 2026-11-06 | The document distinguishes preferred or considered behavior from permissions that have not been approved.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "21550ef2-da27-4d9b-adbb-8f6ba2a6f3c2",
+          "text": "In /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/feature-register.md, the historical register contains features H01\u2013H40 covering timelines, sentiment/topic analytics, relationship graphs, persona style, digital legacy, broader capture tools, privacy controls, professional editions, sharing, and advanced search research. The document is a snapshot and does not prove implementation. | When: 2026-11-06 | Preserves the scope and status limitation of the authoritative project source.",
+          "document_id": "repo:docs/feature-register.md",
+          "source_path": "docs/feature-register.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "a9c3cb1d-3e99-4b25-a2d3-0caad256e0a8",
+          "text": "Historical research preserves potential people-and-memory capabilities: natural-language recall with supporting records; timelines and event extraction; topic discovery; communication statistics; sentiment and emotion trends with disable/error-correction controls; change detection backed by counts and time ranges; commitment/conflict tracking without inferring completion from silence; relationship graphs; evidence browsing and feedback; and proactive reflections such as daily/weekly summaries. | When: November 2025 research, recorded in the register on November 06, 2026 | Involving: Project memoryos | These are candidate capabilities preserved from research, not verified or approved features.",
+          "document_id": "repo:docs/reference/historical-research.md",
+          "source_path": "docs/reference/historical-research.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        },
+        {
+          "id": "87b45df2-0a75-42f0-816f-6db5be6d6f9c",
+          "text": "Product-memory design is separate from Hindsight memory for coding agents. | The two memory domains must not be conflated.",
+          "document_id": "repo:AGENTS.md",
+          "source_path": "AGENTS.md",
+          "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS",
+          "tags": [
+            "project:memoryos",
+            "kind:reference"
+          ]
+        }
+      ]
+    }
+  ],
+  "recall_checks": {
+    "both_queries_succeeded": true,
+    "device_returned": true,
+    "proposal_status_returned": true,
+    "historical_scope_returned": true,
+    "project_paths_scoped": true
+  }
+}

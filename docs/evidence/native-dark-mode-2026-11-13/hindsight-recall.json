@@ -1,0 +1,1036 @@
+{
+  "results": [
+    {
+      "id": "3b6f0526-24a4-4341-948a-9a5af0dafe7e",
+      "text": "On 2026-11-12, the owner authorized creating a layout and interaction specification and a reviewable design study for People, Projects, Birthdays, and BrainMap. The resulting proposal at docs/design/screen-layouts.md was not approved and did not constitute native-app delivery. | When: 2026-11-12 | Involving: owner | C13 authorized exploration and specification, not implementation or approval of the proposed design.",
+      "type": "world",
+      "entities": [
+        "BrainMap",
+        "birthdays",
+        "docs/design/screen-layouts.md",
+        "owner",
+        "projects",
+        "people"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-12T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-12T00:00:00.020000+00:00",
+      "mentioned_at": "2026-11-12T14:19:46.166993+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "66b6d2a89e1e7469085296df3ba7d1eea202c716504c080c8cc040e174e912af",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0990291360886797,
+        "reranker": null,
+        "semantic": 0.8223393208485643,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "598b28a6-8853-4cf1-b733-4426dbfdc3dc",
+      "text": "The Wild redesign in `docs/design/wild-redesign.md` is a new design proposal that was rejected under C18; the owner selected the Apple-inspired proposal in `apple-inspired.md` as the current direction under C19. The Wild source and inspected screenshots are archived under `astryx-prototype/archives/02-wild-rejected/`. | When: November 13, 2026 | Involving: Project owner | This document is not the active design direction and did not complete final flow verification.",
+      "type": "world",
+      "entities": [
+        "astryx-prototype/archives/02-wild-rejected/",
+        "wild redesign",
+        "memoryos",
+        "C19",
+        "docs/design/wild-redesign.md",
+        "C18",
+        "Apple-inspired proposal"
+      ],
+      "context": "Authoritative project source docs/design/wild-redesign.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T23:59:59+00:00",
+      "mentioned_at": "2026-11-13T15:43:40.445447+00:00",
+      "document_id": "repo:docs/design/wild-redesign.md",
+      "metadata": {
+        "sha256": "519119c34679205d9c76c2e9482abe93c9a22579b604fbe6b8488cd34c17f52d",
+        "source_path": "docs/design/wild-redesign.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/wild-redesign.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0962673173778532,
+        "reranker": null,
+        "semantic": 0.8216733581326416,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "533c2392-7992-4de2-8642-bf9ab418c604",
+      "text": "The prior requirement for a white-and-charcoal Astryx MemoryOS interface based on the retained Capture image was explicitly released and superseded; the restrained Astryx result and old prototype are rejected history, with their source and evidence archived. | When: November 13, 2026 | Involving: Project owner | The owner rejected the restrained result and authorized a complete wild redesign.",
+      "type": "world",
+      "entities": [
+        "Astryx MemoryOS",
+        "Capture image",
+        "old prototype",
+        "project owner"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T23:59:59+00:00",
+      "mentioned_at": "2026-11-13T15:25:25.079268+00:00",
+      "document_id": "correction-memoryos-current-visual-direction-after-c17",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-current-visual-direction-after-c17_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0929575535883864,
+        "reranker": null,
+        "semantic": 0.7972915172576904,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "00851ccc-0cc5-4598-baf4-b71460c83c6f",
+      "text": "On November 13, 2026, D25 established dark mode as the standing owner preference for completed work, final previews, screenshots, and visual checks; the native app uses dark mode by default. C20's composition and navigation remain, while its light palette is superseded for current delivery. | When: November 13, 2026 | Involving: MemoryOS project | C21 set the current visual-delivery preference.",
+      "type": "world",
+      "entities": [
+        "C20",
+        "memoryos",
+        "dark mode",
+        "C21",
+        "D25"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.070000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.070000+00:00",
+      "mentioned_at": "2026-11-13T18:29:17.931478+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "97822e940cfc72819ce7b8d8c62750eca63abab50af23ef5375715761ed9dea7",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_2",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0896477902388475,
+        "reranker": null,
+        "semantic": 0.9094599485397339,
+        "keyword": 1.899999976158142
+      },
+      "attachments": null
+    },
+    {
+      "id": "2f17aa1f-d787-47dc-8c37-984c2e5a3b43",
+      "text": "On 2026-11-13, the owner supplied Capture and sidebar screenshots as the active visual reference and authorized creating the SwiftUI project with navigation, fonts, shared controls, and an iPhone connection check. This authorizes the native foundation and local build/device verification only; other layouts, live recording, AI, imports, production storage, publication, and release remain separate. | When: 2026-11-13 | Involving: Project owner | This is the selected native foundation step, documented in docs/how-to/native-swiftui.md.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "sidebar",
+        "native foundation",
+        "iPhone"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.050000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.050000+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.582326+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "66b6d2a89e1e7469085296df3ba7d1eea202c716504c080c8cc040e174e912af",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_3",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0863380263227327,
+        "reranker": null,
+        "semantic": 0.8082615733146667,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "a5e4bb2a-3f4a-4c32-9e9a-ffffea81ba89",
+      "text": "C20 is the current visual reference: preserve the supplied Capture and sidebar screenshots' central microphone, bottom composer, spacing, and hidden sidebar. C21 supersedes the light palette with dark mode for current delivery and final checks; other screen layouts remain open. | When: 2026-11-13 | Involving: owner | These are the current design constraints, while native verification and owner acceptance remain separate from the reference selection.",
+      "type": "world",
+      "entities": [
+        "capture",
+        "C20",
+        "sidebar",
+        "dark mode",
+        "C21"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.110000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.110000+00:00",
+      "mentioned_at": "2026-11-13T18:29:17.971478+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "97822e940cfc72819ce7b8d8c62750eca63abab50af23ef5375715761ed9dea7",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_3",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0830282629071017,
+        "reranker": null,
+        "semantic": 0.8724840803434912,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "c41ba074-35ce-4b0d-a1c3-35c78915328f",
+      "text": "The selected native direction uses the supplied Capture and sidebar screens as layout references, with the SwiftUI project foundation and an iPhone connection check requested. Completed work, previews, and final checks should use dark mode as the standing preference; other screen layouts still require review. Source: README.md. | When: Friday, November 13, 2026 | Involving: owner | This records the current selected direction and unresolved review scope.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "sidebar",
+        "dark mode",
+        "iPhone",
+        "Eros MemoryOS"
+      ],
+      "context": "Authoritative project source README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.020000+00:00",
+      "mentioned_at": "2026-11-13T18:29:17.882044+00:00",
+      "document_id": "repo:README.md",
+      "metadata": {
+        "sha256": "40b0b29887ecad7925268d10843082dc2eaf0191a9ca5a8e7c50d261f6f56db6",
+        "source_path": "README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:README.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0797184985550672,
+        "reranker": null,
+        "semantic": 0.8454557657241821,
+        "keyword": 1.100000023841858
+      },
+      "attachments": null
+    },
+    {
+      "id": "6b803144-f3a6-4752-b271-a0887ce7ff92",
+      "text": "Project direction selects a clickable sample-data interface demo first, followed by incremental feature work. The selected demo sections are Capture, People/person details, Projects, Birthdays, and BrainMap; screen layouts, interactions, and review criteria remain open, and this documentation does not start implementation. Source: docs/decisions/demo-and-feature-direction.md. | When: November 7, 2026 | Involving: memoryos project owners | Real recording/transcription, AI inference, imports, provider login, notifications, and production storage are deferred to later feature work.",
+      "type": "world",
+      "entities": [
+        "capture",
+        "BrainMap",
+        "birthdays",
+        "memoryos",
+        "People/person details",
+        "projects"
+      ],
+      "context": "Authoritative project source docs/decisions/demo-and-feature-direction.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-07T00:00:00+00:00",
+      "occurred_end": "2026-11-07T23:59:59+00:00",
+      "mentioned_at": "2026-11-07T16:04:28.995480+00:00",
+      "document_id": "repo:docs/decisions/demo-and-feature-direction.md",
+      "metadata": {
+        "sha256": "86b515e190b04bfb8c958a07ccaf3268bd4adbf2978f839aabb9b6b75e0639f3",
+        "source_path": "docs/decisions/demo-and-feature-direction.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/demo-and-feature-direction.md_1",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0731903354107408,
+        "reranker": null,
+        "semantic": 0.8136353492736816,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "32e72757-b412-49a1-8ace-6c55ce4f004c",
+      "text": "The People, Projects, Birthdays, and BrainMap screen-layout proposal was rejected by the owner on 2026-11-12; its proposal and interactive study must be preserved as design history. A new reference-led localhost lab replaces it as the current exploration. | When: November 12, 2026 | Involving: Project owner; owner source C13 in ../reference/source-register.md | This document records a rejected design direction, not the current exploration.",
+      "type": "world",
+      "entities": [
+        "BrainMap",
+        "birthdays",
+        "C13",
+        "new reference-led localhost lab",
+        "memoryos",
+        "projects",
+        "people"
+      ],
+      "context": "Authoritative project source docs/design/screen-layouts.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-12T00:00:00+00:00",
+      "occurred_end": "2026-11-12T00:00:00+00:00",
+      "mentioned_at": "2026-11-12T14:15:30.851354+00:00",
+      "document_id": "repo:docs/design/screen-layouts.md",
+      "metadata": {
+        "sha256": "53f0b618491891e969e4bbbe0271ace59357390dec6020d59b82001b49b1a6b7",
+        "source_path": "docs/design/screen-layouts.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/screen-layouts.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.072564220313261,
+        "reranker": null,
+        "semantic": 0.8165907969122664,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "7c0f8d7f-8481-4c80-bbe3-199ceddf2d0d",
+      "text": "Project memoryos selected a clickable interface demo with sample data and the feature direction includes BrainMap, Capture, People/person details, Projects, and Birthdays, based on owner sources C11-C12. These choices supersede the earlier undecided demo-type and BrainMap-inclusion questions; implementation is unverified. | When: November 7, 2026 | Involving: Project memoryos; owner sources C11-C12 | Explicit project decisions recorded in the authoritative decision document.",
+      "type": "world",
+      "entities": [
+        "capture",
+        "BrainMap",
+        "birthdays",
+        "C12",
+        "C11",
+        "memoryos",
+        "projects",
+        "people"
+      ],
+      "context": "Authoritative project source docs/decisions/demo-and-feature-direction.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-07T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-07T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-07T16:04:29.005480+00:00",
+      "document_id": "repo:docs/decisions/demo-and-feature-direction.md",
+      "metadata": {
+        "sha256": "86b515e190b04bfb8c958a07ccaf3268bd4adbf2978f839aabb9b6b75e0639f3",
+        "source_path": "docs/decisions/demo-and-feature-direction.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/demo-and-feature-direction.md_0",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0665905998942418,
+        "reranker": null,
+        "semantic": 0.8177568912506104,
+        "keyword": 0.20000000298023224
+      },
+      "attachments": null
+    },
+    {
+      "id": "e8a58f35-6857-48fc-97ef-b45c1130f745",
+      "text": "On November 13, 2026, C20 authorized the native SwiftUI foundation and a device readiness check. The authorized scope is limited to the supplied Capture/sidebar references, navigation, typography, shared controls, and temporary demo interactions; publication, deployment, purchase, and release require separate authorization. | When: November 13, 2026 | Involving: Project owner | This is an explicit current project decision, not proof that implementation has occurred.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "C20",
+        "sidebar",
+        "Eros MemoryOS"
+      ],
+      "context": "Authoritative project source AGENTS.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T00:00:00+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.529913+00:00",
+      "document_id": "repo:AGENTS.md",
+      "metadata": {
+        "sha256": "c78f3318c3a8559fa3d6c0690e246b0ef43cf968b3332324bbed87d3763d9628",
+        "source_path": "AGENTS.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:AGENTS.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0664794432726514,
+        "reranker": null,
+        "semantic": 0.8178056478500366,
+        "keyword": 0.10000000149011612
+      },
+      "attachments": null
+    },
+    {
+      "id": "fc2fa1ac-b8cb-4249-ab42-1c69d441918c",
+      "text": "Current authority for the rejection and replacement direction is the rejection notice at the top of docs/design/screen-layouts.md, source C14 in docs/reference/source-register.md, and docs/design/reference-lab.md. The new Atlas, Almanac, Circles, Cabinet, and Focus directions are design explorations only; none has owner approval. | When: As of November 12, 2026 | Involving: Project owner | Deep external reference research and distinct variants in a localhost annotation app were requested, but the resulting directions remain unapproved exploration.",
+      "type": "world",
+      "entities": [
+        "Almanac",
+        "Cabinet",
+        "Circles",
+        "memoryos",
+        "localhost annotation app",
+        "Atlas",
+        "Focus"
+      ],
+      "context": "ingested document",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-12T14:37:22.907049+00:00",
+      "document_id": "correction-november-12-four-screen-layouts-rejected",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-november-12-four-screen-layouts-rejected_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0629626818729334,
+        "reranker": null,
+        "semantic": 0.8150348773577897,
+        "keyword": 0.20000000298023224
+      },
+      "attachments": null
+    },
+    {
+      "id": "ccb0b601-c8ea-4893-884c-e6b999fe6270",
+      "text": "MemoryOS selected the native SwiftUI foundation and iPhone readiness initiative. The owner authorized creating the native SwiftUI project, navigation, fonts, and shared controls, using the supplied Capture and sidebar screenshots as the active visual reference. | When: November 13, 2026 | Involving: MemoryOS project owner | This establishes the implementation direction and visual reference for the initiative.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "sidebar",
+        "memoryos",
+        "iPhone"
+      ],
+      "context": "initiative marker for [[page:kp-8de3c978e4094ef5bba6944d5c3f8646]]",
+      "occurred_start": "2026-11-13T17:59:05.825807+00:00",
+      "occurred_end": "2026-11-13T17:59:05.825807+00:00",
+      "mentioned_at": "2026-11-13T17:59:05.825807+00:00",
+      "document_id": "initiative-marker-memoryos-swiftui-foundation-and-iphone-readiness-1794592745628",
+      "metadata": {
+        "relatedPageId": "kp-8de3c978e4094ef5bba6944d5c3f8646"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-memoryos-swiftui-foundation-and-iphone-readiness-1794592745628_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0569446996813487,
+        "reranker": null,
+        "semantic": 0.7979773283004761,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "cf9edcff-df14-4084-be7b-1a37742da30b",
+      "text": "Project memoryos: In owner turn C11, the owner selected a clickable first demo using sample data, superseding earlier claims that the demo type was undecided. Sources: README.md, AGENTS.md, docs/decisions/decision-register.md D22, docs/decisions/demo-and-feature-direction.md, and docs/reference/source-register.md C11. | When: 2026-11-07 | Involving: Project owner | This is a selected demo direction, not evidence that implementation has started or that the demo has been tested.",
+      "type": "world",
+      "entities": [
+        "C11",
+        "memoryos",
+        "sample data",
+        "clickable first demo"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-07T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-07T00:00:00.010000+00:00",
+      "mentioned_at": "2026-11-07T15:44:43.379756+00:00",
+      "document_id": "correction-swift-with-swiftui-is-now-owner-selected-under-c10",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-swift-with-swiftui-is-now-owner-selected-under-c10_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0566909965263682,
+        "reranker": null,
+        "semantic": 0.8218430280685425,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "061a770a-707c-4eaf-8c8e-a8896918ded0",
+      "text": "On 2026-11-07, the owner chose a clickable interface with sample data as the first demo and included BrainMap alongside Capture, People/person details, Projects, and Birthdays. Exact screens, interactions, review criteria, production graph behavior, relationship extraction, and implementation remain unresolved. | When: 2026-11-07 | Involving: owner | This defines the first-demo scope without authorizing live AI, imports, connections, storage, or implementation.",
+      "type": "world",
+      "entities": [
+        "capture",
+        "BrainMap",
+        "birthdays",
+        "owner",
+        "clickable interface",
+        "sample data",
+        "projects",
+        "people"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-07T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-07T00:00:00.010000+00:00",
+      "mentioned_at": "2026-11-12T14:19:46.156993+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "66b6d2a89e1e7469085296df3ba7d1eea202c716504c080c8cc040e174e912af",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0500912609477857,
+        "reranker": null,
+        "semantic": 0.8056900501251221,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "d9e34b14-2593-4d82-958b-96a5dbd4c918",
+      "text": "For the Astryx MemoryOS design prototype (relatedPageId: kp-45d072e221ad45948dfe1735704153d8), the owner rejected the restrained prototype and released the prior visual rules. The selected direction is a complete, adventurous redesign of the whole app using an expressive editorial system, bold color, distinctive screen compositions, visible navigation, and purposeful motion. | When: Friday, November 13, 2026 | Involving: Project owner | This replaces the previous home-reference aesthetic and hidden-only navigation.",
+      "type": "world",
+      "entities": [
+        "expressive editorial system",
+        "Astryx MemoryOS",
+        "visible navigation",
+        "purposeful motion",
+        "design prototype"
+      ],
+      "context": "initiative marker for [[page:kp-45d072e221ad45948dfe1735704153d8]]",
+      "occurred_start": "2026-11-13T15:08:49.848712+00:00",
+      "occurred_end": "2026-11-13T15:08:49.848712+00:00",
+      "mentioned_at": "2026-11-13T15:08:49.848712+00:00",
+      "document_id": "initiative-marker-astryx-memoryos-design-prototype-1794582529240",
+      "metadata": {
+        "relatedPageId": "kp-45d072e221ad45948dfe1735704153d8"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-astryx-memoryos-design-prototype-1794582529240_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0469500314010087,
+        "reranker": null,
+        "semantic": 0.8201514130875893,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "8ee57ffa-aba9-44f8-a62d-2316e89c73a6",
+      "text": "For project-memoryos, the four-layer architecture separating original sources, extracted information, owner-confirmed facts/corrections, and AI interpretations is not owner-approved or selected; current Markdown labels it as an assistant proposal. Preserve its source traceability and uncertainty as proposed design guidance, but do not promote A07/P02 into a selected architecture or owner approval. | When: November 7, 2026 | Involving: Project owner; assistant | A correction established that current owner instructions and current Markdown are authoritative, while A07 and P02 remain unapproved proposals.",
+      "type": "world",
+      "entities": [
+        "docs/feature-register.md",
+        "A07",
+        "project-memoryos",
+        "docs/product-overview.md",
+        "decisions/decision-register.md",
+        "P02"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-07T00:00:00+00:00",
+      "occurred_end": "2026-11-07T23:59:59+00:00",
+      "mentioned_at": "2026-11-07T14:37:44.050345+00:00",
+      "document_id": "correction-four-memory-layers-remain-a-proposal",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-four-memory-layers-remain-a-proposal_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0467913930979382,
+        "reranker": null,
+        "semantic": 0.8125342130661011,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "d708db6e-9635-4d4e-98ba-8ab33521bfbb",
+      "text": "Later on 2026-11-13, the owner rejected the restrained Astryx result, released the prior visual constraints for this design task, and authorized a complete wild redesign with new compositions, color, typography, illustrations, navigation, and motion. The redesign remained a design prototype requiring owner review and did not authorize service connections or native release. | When: 2026-11-13 | Involving: Project owner | This superseded the prior visual constraints for the design task while preserving the prototype-only scope.",
+      "type": "world",
+      "entities": [
+        "wild redesign",
+        "Astryx"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.020000+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.552326+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "66b6d2a89e1e7469085296df3ba7d1eea202c716504c080c8cc040e174e912af",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_3",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0433110968667323,
+        "reranker": null,
+        "semantic": 0.8185583353042603,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "f8453c75-df50-41e3-8ec3-326b21d0dcf2",
+      "text": "On 2026-11-12, the owner rejected the initial screen-layout proposal and requested deep online design-reference research, distinct design variants using design skills, and one localhost app with annotations for recording likes and dislikes. The reference-led lab at docs/design/reference-lab.md is the current exploration and has no approved variant or authorized native delivery. | When: 2026-11-12 | Involving: owner | C14 replaces the rejected first proposal with a reference-led design-review tool; the source document records exploration, not publication or implementation completion.",
+      "type": "world",
+      "entities": [
+        "design-reference research",
+        "owner",
+        "docs/design/reference-lab.md",
+        "localhost"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-12T00:00:00.030000+00:00",
+      "occurred_end": "2026-11-12T00:00:00.030000+00:00",
+      "mentioned_at": "2026-11-12T14:19:46.176993+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "66b6d2a89e1e7469085296df3ba7d1eea202c716504c080c8cc040e174e912af",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0394830759324871,
+        "reranker": null,
+        "semantic": 0.8338510493128881,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "5c72e846-4c0c-4cf2-a898-c9e2d0c10333",
+      "text": "В документации `docs/plans/implementation-checklist.md` зафиксировано, что эталоном визуального направления остаётся owner reference capture/sidebar от 2026-11-07: белые поверхности, угольные элементы управления, минимальный composer и скрытый sidebar; сохранение reference не означает утверждение каждой детали. | When: 2026-11-13 | Involving: owner проекта memoryos | Это записанный визуальный reference, но не финальное согласование.",
+      "type": "world",
+      "entities": [
+        "owner reference",
+        "capture",
+        "sidebar",
+        "memoryos",
+        "docs/plans/implementation-checklist.md"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-13T18:16:04.924846+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "2d0a7b46a6b26525bb9c0cb11199074d985848c11742b0ae5534a3faa96d2b8f",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_5",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0337737753956158,
+        "reranker": null,
+        "semantic": 0.8126981966079371,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "2dcb4aca-0b12-47a7-ba3a-ef090df2287c",
+      "text": "R31 is planned: ask questions about a person and learn from the owner's answers. Question selection, timing, storage, and effects on the person's profile remain unresolved. | When: As documented on November 12, 2026 | Involving: The owner | The guided-learning feature is proposed, but its behavior and data model are not selected.",
+      "type": "world",
+      "entities": [
+        "owner",
+        "memoryos",
+        "person profiles",
+        "docs/plans/implementation-checklist.md"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-12T14:02:26.714452+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "2d0a7b46a6b26525bb9c0cb11199074d985848c11742b0ae5534a3faa96d2b8f",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_8",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.023240875659696,
+        "reranker": null,
+        "semantic": 0.8079615476119983,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    }
+  ],
+  "trace": null,
+  "entities": {
+    "BrainMap": {
+      "entity_id": "1a44775f-0343-420a-b4e8-18c536e1d7fa",
+      "canonical_name": "BrainMap",
+      "observations": []
+    },
+    "birthdays": {
+      "entity_id": "1f4a151f-ef78-4ef6-902e-8d7459c2eca6",
+      "canonical_name": "birthdays",
+      "observations": []
+    },
+    "docs/design/screen-layouts.md": {
+      "entity_id": "59ff27b3-e654-4dec-87bc-b5b5a2726127",
+      "canonical_name": "docs/design/screen-layouts.md",
+      "observations": []
+    },
+    "owner": {
+      "entity_id": "5fd1310f-58fa-48f8-9511-038368468473",
+      "canonical_name": "owner",
+      "observations": []
+    },
+    "projects": {
+      "entity_id": "af7b6d6a-84d8-4de6-b908-7be7d8452e93",
+      "canonical_name": "projects",
+      "observations": []
+    },
+    "people": {
+      "entity_id": "c383c298-6268-47e7-9898-3c6daefc00d9",
+      "canonical_name": "people",
+      "observations": []
+    },
+    "astryx-prototype/archives/02-wild-rejected/": {
+      "entity_id": "2011fdde-cd63-47ad-b5a6-c3f530275986",
+      "canonical_name": "astryx-prototype/archives/02-wild-rejected/",
+      "observations": []
+    },
+    "wild redesign": {
+      "entity_id": "3f178248-d3c6-4ffd-a35f-6d3dcb3d62dc",
+      "canonical_name": "wild redesign",
+      "observations": []
+    },
+    "memoryos": {
+      "entity_id": "6f1f3ee3-9405-473e-9b40-924988e4cebb",
+      "canonical_name": "memoryos",
+      "observations": []
+    },
+    "C19": {
+      "entity_id": "86255125-f613-4d63-ba04-efc9a32b32c9",
+      "canonical_name": "C19",
+      "observations": []
+    },
+    "docs/design/wild-redesign.md": {
+      "entity_id": "945e5bc8-0311-4599-a42d-3851b5b7befd",
+      "canonical_name": "docs/design/wild-redesign.md",
+      "observations": []
+    },
+    "C18": {
+      "entity_id": "a4f647a4-a4b4-4175-bdf1-341f320ec06c",
+      "canonical_name": "C18",
+      "observations": []
+    },
+    "Apple-inspired proposal": {
+      "entity_id": "fa7e7214-9f13-4919-9d8b-767f4ff3de95",
+      "canonical_name": "Apple-inspired proposal",
+      "observations": []
+    },
+    "Astryx MemoryOS": {
+      "entity_id": "5d4023dc-cf3a-4cc7-a5e1-9a735d168afc",
+      "canonical_name": "Astryx MemoryOS",
+      "observations": []
+    },
+    "Capture image": {
+      "entity_id": "83fa10f2-2c74-464a-a692-111aa1826256",
+      "canonical_name": "Capture image",
+      "observations": []
+    },
+    "old prototype": {
+      "entity_id": "ba3b2398-16f9-42dc-8c34-4d32811d1efe",
+      "canonical_name": "old prototype",
+      "observations": []
+    },
+    "project owner": {
+      "entity_id": "fcd7f4c0-133c-4f21-8e2c-a11c780e0729",
+      "canonical_name": "project owner",
+      "observations": []
+    },
+    "C20": {
+      "entity_id": "27491c69-15f3-4fa9-a27b-d8fe43e2acf0",
+      "canonical_name": "C20",
+      "observations": []
+    },
+    "dark mode": {
+      "entity_id": "7c7e0d4b-f2c3-4d4c-a65f-bb19d7821bcc",
+      "canonical_name": "dark mode",
+      "observations": []
+    },
+    "C21": {
+      "entity_id": "a1de7f43-4aa0-4782-952e-eedfbb1b0b5e",
+      "canonical_name": "C21",
+      "observations": []
+    },
+    "D25": {
+      "entity_id": "b00a80a5-8e19-4248-84a1-938da51976c9",
+      "canonical_name": "D25",
+      "observations": []
+    },
+    "SwiftUI": {
+      "entity_id": "00138a1f-a0e0-41bd-a564-3124295f9f55",
+      "canonical_name": "SwiftUI",
+      "observations": []
+    },
+    "capture": {
+      "entity_id": "0f124364-654e-4664-8adc-1ecd80edacbb",
+      "canonical_name": "capture",
+      "observations": []
+    },
+    "sidebar": {
+      "entity_id": "5a920b86-6a15-4bb4-bc6f-bfa7a3389f05",
+      "canonical_name": "sidebar",
+      "observations": []
+    },
+    "native foundation": {
+      "entity_id": "6ca649ad-00c9-4834-91b6-47813b14b820",
+      "canonical_name": "native foundation",
+      "observations": []
+    },
+    "iPhone": {
+      "entity_id": "8f13d56c-b107-4393-9125-f2222b81cd82",
+      "canonical_name": "iPhone",
+      "observations": []
+    },
+    "Eros MemoryOS": {
+      "entity_id": "ad223ee8-dfd6-49a3-b62b-1c19b3aa754c",
+      "canonical_name": "Eros MemoryOS",
+      "observations": []
+    },
+    "People/person details": {
+      "entity_id": "a8c04f86-ff2a-4fc1-83c0-ea2dccbf8aca",
+      "canonical_name": "People/person details",
+      "observations": []
+    },
+    "C13": {
+      "entity_id": "3425d729-17be-4d95-b21f-a629bdfc9b6b",
+      "canonical_name": "C13",
+      "observations": []
+    },
+    "new reference-led localhost lab": {
+      "entity_id": "65d10870-0dea-42b8-b5e0-5065329ebfa3",
+      "canonical_name": "new reference-led localhost lab",
+      "observations": []
+    },
+    "C12": {
+      "entity_id": "4b7e4777-7b9c-476c-b195-228c01c44b20",
+      "canonical_name": "C12",
+      "observations": []
+    },
+    "C11": {
+      "entity_id": "4b8a3fc7-6040-4e7d-a3c5-8ee6ca976669",
+      "canonical_name": "C11",
+      "observations": []
+    },
+    "Almanac": {
+      "entity_id": "29dfb0ce-9f0f-44b4-92ad-7f7b7c77da20",
+      "canonical_name": "Almanac",
+      "observations": []
+    },
+    "Cabinet": {
+      "entity_id": "3bee5a92-66c2-4126-8383-eba8d18b6c87",
+      "canonical_name": "Cabinet",
+      "observations": []
+    },
+    "Circles": {
+      "entity_id": "40defe00-fc85-4a31-92ec-e82b953872ac",
+      "canonical_name": "Circles",
+      "observations": []
+    },
+    "localhost annotation app": {
+      "entity_id": "842c5d6e-85ab-49ee-ad15-8520e777fa4f",
+      "canonical_name": "localhost annotation app",
+      "observations": []
+    },
+    "Atlas": {
+      "entity_id": "c01d7591-7bd0-4854-9ca1-b3a695dbcb99",
+      "canonical_name": "Atlas",
+      "observations": []
+    },
+    "Focus": {
+      "entity_id": "cbffaeea-ab30-429b-97a3-d21d8c13ddf1",
+      "canonical_name": "Focus",
+      "observations": []
+    },
+    "sample data": {
+      "entity_id": "8ee506c7-b1bc-4f85-be03-ed374ebb042b",
+      "canonical_name": "sample data",
+      "observations": []
+    },
+    "clickable first demo": {
+      "entity_id": "fdfa6e8e-db98-4285-86d3-6da4521c84e6",
+      "canonical_name": "clickable first demo",
+      "observations": []
+    },
+    "clickable interface": {
+      "entity_id": "62471337-41c2-4ccc-92a5-660ac4046fc3",
+      "canonical_name": "clickable interface",
+      "observations": []
+    },
+    "expressive editorial system": {
+      "entity_id": "3cfc1517-e85c-4631-85a7-31867ca40bd3",
+      "canonical_name": "expressive editorial system",
+      "observations": []
+    },
+    "visible navigation": {
+      "entity_id": "97dec114-40ca-4e79-b1d4-fcd518240975",
+      "canonical_name": "visible navigation",
+      "observations": []
+    },
+    "purposeful motion": {
+      "entity_id": "9da569a7-d16e-4721-811e-c374900c3c34",
+      "canonical_name": "purposeful motion",
+      "observations": []
+    },
+    "design prototype": {
+      "entity_id": "bf247a3b-8352-4b09-9776-66020c61741d",
+      "canonical_name": "design prototype",
+      "observations": []
+    },
+    "docs/feature-register.md": {
+      "entity_id": "33b95cbc-c03b-4315-80d9-0cc8e49d80d4",
+      "canonical_name": "docs/feature-register.md",
+      "observations": []
+    },
+    "A07": {
+      "entity_id": "6a2baedf-4540-4254-a91f-3f76e51fb449",
+      "canonical_name": "A07",
+      "observations": []
+    },
+    "project-memoryos": {
+      "entity_id": "98b95631-fc4c-4069-b3cc-068740be4c53",
+      "canonical_name": "project-memoryos",
+      "observations": []
+    },
+    "docs/product-overview.md": {
+      "entity_id": "c7596f9d-3c6c-47e1-9d73-99c65d03cebd",
+      "canonical_name": "docs/product-overview.md",
+      "observations": []
+    },
+    "decisions/decision-register.md": {
+      "entity_id": "ee4fb348-9e6d-4f38-a19a-0af0ee1af393",
+      "canonical_name": "decisions/decision-register.md",
+      "observations": []
+    },
+    "P02": {
+      "entity_id": "f6303d71-3787-4a2b-9c51-f4dbca87e349",
+      "canonical_name": "P02",
+      "observations": []
+    },
+    "Astryx": {
+      "entity_id": "a345ebbc-e592-4e74-995e-c4cb6011baea",
+      "canonical_name": "Astryx",
+      "observations": []
+    },
+    "design-reference research": {
+      "entity_id": "3a0394b7-f2bc-4fad-a7e1-2f3f1c537e76",
+      "canonical_name": "design-reference research",
+      "observations": []
+    },
+    "docs/design/reference-lab.md": {
+      "entity_id": "8a1e6e59-cdc8-4021-98d5-6ba9df2cf379",
+      "canonical_name": "docs/design/reference-lab.md",
+      "observations": []
+    },
+    "localhost": {
+      "entity_id": "bfd1517f-981e-492b-b789-bab4d504a371",
+      "canonical_name": "localhost",
+      "observations": []
+    },
+    "owner reference": {
+      "entity_id": "041cc2c8-5a29-4969-a345-ac18d5d51834",
+      "canonical_name": "owner reference",
+      "observations": []
+    },
+    "docs/plans/implementation-checklist.md": {
+      "entity_id": "e441a9b8-73f4-458a-a6c4-96f54241c585",
+      "canonical_name": "docs/plans/implementation-checklist.md",
+      "observations": []
+    },
+    "person profiles": {
+      "entity_id": "bbe589e1-7ee9-4c00-a79d-6e511d851157",
+      "canonical_name": "person profiles",
+      "observations": []
+    }
+  },
+  "chunks": null,
+  "source_facts": null,
+  "source_facts_truncated": null
+}

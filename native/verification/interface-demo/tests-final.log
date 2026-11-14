@@ -1,0 +1,1144 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project native/MemoryOS.xcodeproj -scheme MemoryOS -destination "platform=iOS Simulator,id=8843F67E-B2AF-4605-A3AE-25D168BD1B28" -derivedDataPath native/.build CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO -resultBundlePath native/verification/interface-demo/tests-final.xcresult test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/interface-demo/tests-final.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'MemoryOSTests' in project 'MemoryOS'
+        ➜ Explicit dependency on target 'MemoryOS' in project 'MemoryOS'
+    Target 'MemoryOSUITests' in project 'MemoryOS'
+        ➜ Explicit dependency on target 'MemoryOS' in project 'MemoryOS'
+    Target 'MemoryOS' in project 'MemoryOS' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: 65a405682446a7bd865f64a14942f23d
+Build description path: /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/XCBuildData/65a405682446a7bd865f64a14942f23d.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+
+SwiftDriver MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MemoryOS (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MemoryOS (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriver\ Compilation\ Requirements MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftsourceinfo (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.abi.json (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+SwiftDriver MemoryOSTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSTests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation MemoryOSTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSTests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ CatalogListView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/CatalogListView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/CatalogListView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile CatalogListView.swift
+
+SwiftCompile normal arm64 Compiling\ SectionView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile SectionView.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling CatalogListView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriver\ Compilation MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist -producttype com.apple.product-type.application -genpkginfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/__preview.dylib normal (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -install_name @rpath/MemoryOS.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_dependency_info.dat -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/__preview.dylib
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib normal (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -filelist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.LinkFileList -install_name @rpath/MemoryOS.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    construct-stub-executor-link-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'MemoryOS' from project 'MemoryOS')
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS normal (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS
+
+CopySwiftLibs /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/SystemExtensions --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MemoryOS --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 18.0 --bundle-identifier com.eros.memoryos.demo --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app --target-triple arm64-apple-ios18.0-simulator --binary-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS --dependency-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_dependency_info.dat --stringsdata-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList --metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyMetadataFileList --static-metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyStaticMetadataFileList --swift-const-vals-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-14 16:58:19.209 appintentsmetadataprocessor[7598:373170] Starting App Intents metadata extraction
+2026-11-14 16:58:19.220 appintentsmetadataprocessor[7598:373170] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MemoryOSTests (in target 'MemoryOSTests' from project 'MemoryOS')
+
+SwiftCompile normal arm64 (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MemoryOSTests (in target 'MemoryOSTests' from project 'MemoryOS')
+
+SwiftDriver\ Compilation\ Requirements MemoryOSTests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSTests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.SwiftFileList -DDEBUG -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -parse-as-library -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests normal (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -filelist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -bundle_loader /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS -Xlinker -object_path_lto -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSTests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.abi.json (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSTests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+ExtractAppIntentsMetadata (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MemoryOSTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 18.0 --bundle-identifier com.eros.memoryos.demo.tests --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest --target-triple arm64-apple-ios18.0-simulator --binary-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests --dependency-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_dependency_info.dat --stringsdata-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.SwiftFileList --metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests.DependencyMetadataFileList --static-metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-14 16:58:19.683 appintentsmetadataprocessor[7606:373200] Starting App Intents metadata extraction
+2026-11-14 16:58:19.685 appintentsmetadataprocessor[7606:373200] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+SwiftDriver MemoryOSUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSUITests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Info.plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/empty-MemoryOSTests.plist (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/empty-MemoryOSTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -format binary -platform iphonesimulator -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Info.plist
+
+CopySwiftLibs /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Frameworks --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/PlugIns --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/SystemExtensions --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+Validate /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-validationUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app -shallow-bundle -infoplist-subpath Info.plist
+
+ProcessInfoPlistFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Info.plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/empty-MemoryOSUITests.plist (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/empty-MemoryOSUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/ProductTypeInfoPlistAdditions.plist -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Info.plist
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MemoryOSUITests (in target 'MemoryOSUITests' from project 'MemoryOS')
+
+SwiftCompile normal arm64 (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    
+
+SwiftCompile normal arm64 Compiling\ DemoFlowTests.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift (in target 'MemoryOSUITests' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile DemoFlowTests.swift
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MemoryOSUITests (in target 'MemoryOSUITests' from project 'MemoryOS')
+
+SwiftDriver\ Compilation\ Requirements MemoryOSUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSUITests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftsourceinfo (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.abi.json (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+SwiftDriverJobDiscovery normal arm64 Compiling DemoFlowTests.swift (in target 'MemoryOSUITests' from project 'MemoryOS')
+
+SwiftDriver\ Compilation MemoryOSUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSUITests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests normal (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -filelist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests
+
+CopySwiftLibs /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Frameworks --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/PlugIns --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/SystemExtensions --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MemoryOSUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 18.0 --bundle-identifier com.eros.memoryos.demo.uitests --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest --target-triple arm64-apple-ios18.0-simulator --binary-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests --dependency-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_dependency_info.dat --stringsdata-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftFileList --metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests.DependencyMetadataFileList --static-metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-14 16:58:20.261 appintentsmetadataprocessor[7613:373232] Starting App Intents metadata extraction
+2026-11-14 16:58:20.262 appintentsmetadataprocessor[7613:373232] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+2026-11-14 16:58:24.893985+0300 MemoryOSUITests-Runner[7651:373525] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'All tests' started at 2026-11-14 16:58:32.901.
+Test Suite 'MemoryOSUITests.xctest' started at 2026-11-14 16:58:32.905.
+Test Suite 'DemoFlowTests' started at 2026-11-14 16:58:32.905.
+Test Case '-[MemoryOSUITests.DemoFlowTests testArabicPeopleBirthdayAndMixedSource]' started.
+    t =     0.01s Start Test at 2026-11-14 16:58:32.910
+    t =     0.09s Set Up
+    t =     0.10s Open com.eros.memoryos.demo
+    t =     0.10s     Launch com.eros.memoryos.demo
+    t =     0.10s         Terminate com.eros.memoryos.demo:3588
+objc[7651]: Class UIAccessibilityLoaderWebShared is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.2.8117.0.DPGacc/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x104f54310) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.2.8117.0.DPGacc/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x104fa8398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+2026-11-14 16:58:34.865 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 16:58:34.866 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.80s         Setting up automation session
+    t =     6.51s         Wait for com.eros.memoryos.demo to idle
+    t =     9.73s Tap "open-menu" Button
+    t =     9.73s     Wait for com.eros.memoryos.demo to idle
+    t =     9.73s     Find the "open-menu" Button
+    t =    10.09s     Check for interrupting elements affecting "open-menu" Button
+    t =    10.14s     Synthesize event
+    t =    10.46s     Wait for com.eros.memoryos.demo to idle
+    t =    10.47s Find the "section-settings" Button
+    t =    10.52s Tap "section-settings" Button
+    t =    10.52s     Wait for com.eros.memoryos.demo to idle
+    t =    10.53s     Find the "section-settings" Button
+    t =    10.57s     Check for interrupting elements affecting "section-settings" Button
+    t =    10.61s     Synthesize event
+    t =    10.91s     Wait for com.eros.memoryos.demo to idle
+    t =    11.08s Tap "language-picker" Button
+    t =    11.08s     Wait for com.eros.memoryos.demo to idle
+    t =    11.29s     Find the "language-picker" Button
+    t =    11.37s     Check for interrupting elements affecting "language-picker" Button
+    t =    11.39s     Synthesize event
+    t =    11.69s     Wait for com.eros.memoryos.demo to idle
+    t =    11.77s Tap "العربية" Button
+    t =    11.77s     Wait for com.eros.memoryos.demo to idle
+    t =    13.03s     Find the "العربية" Button
+    t =    13.10s     Check for interrupting elements affecting "العربية" Button
+    t =    13.13s     Synthesize event
+    t =    13.42s     Wait for com.eros.memoryos.demo to idle
+    t =    14.95s Tap "open-menu" Button
+    t =    14.95s     Wait for com.eros.memoryos.demo to idle
+    t =    14.96s     Find the "open-menu" Button
+    t =    15.00s     Check for interrupting elements affecting "open-menu" Button
+    t =    15.02s     Synthesize event
+    t =    15.32s     Wait for com.eros.memoryos.demo to idle
+    t =    15.32s Find the "section-profiles" Button
+    t =    15.38s Tap "section-profiles" Button
+    t =    15.38s     Wait for com.eros.memoryos.demo to idle
+    t =    15.38s     Find the "section-profiles" Button
+    t =    15.42s     Check for interrupting elements affecting "section-profiles" Button
+    t =    15.45s     Synthesize event
+    t =    15.75s     Wait for com.eros.memoryos.demo to idle
+    t =    15.76s Tap "record-ali" Button
+    t =    15.76s     Wait for com.eros.memoryos.demo to idle
+    t =    15.96s     Find the "record-ali" Button
+    t =    16.05s     Check for interrupting elements affecting "record-ali" Button
+    t =    16.08s     Synthesize event
+    t =    16.38s     Wait for com.eros.memoryos.demo to idle
+    t =    16.44s Find the "original-source" StaticText
+    t =    16.55s Checking existence of `"النص التجريبي الأصلي" StaticText`
+    t =    16.63s Tap "birthday-birthday-ali" Button
+    t =    16.63s     Wait for com.eros.memoryos.demo to idle
+    t =    16.93s     Find the "birthday-birthday-ali" Button
+    t =    17.00s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    17.04s     Synthesize event
+    t =    17.34s     Wait for com.eros.memoryos.demo to idle
+    t =    17.72s Tap "reminder-dayBefore" Button
+    t =    17.72s     Wait for com.eros.memoryos.demo to idle
+    t =    17.73s     Find the "reminder-dayBefore" Button
+    t =    17.79s     Check for interrupting elements affecting "reminder-dayBefore" Button
+    t =    17.85s     Synthesize event
+    t =    18.14s     Wait for com.eros.memoryos.demo to idle
+    t =    18.15s Find the "reminder-current" StaticText
+    t =    18.20s Tap "open-menu" Button
+    t =    18.21s     Wait for com.eros.memoryos.demo to idle
+    t =    18.21s     Find the "open-menu" Button
+    t =    18.26s     Check for interrupting elements affecting "open-menu" Button
+    t =    18.31s     Synthesize event
+    t =    18.60s     Wait for com.eros.memoryos.demo to idle
+    t =    18.61s Find the "section-brainMap" Button
+    t =    18.70s Tap "section-brainMap" Button
+    t =    18.70s     Wait for com.eros.memoryos.demo to idle
+    t =    18.70s     Find the "section-brainMap" Button
+    t =    18.77s     Check for interrupting elements affecting "section-brainMap" Button
+    t =    18.84s     Synthesize event
+    t =    19.14s     Wait for com.eros.memoryos.demo to idle
+    t =    19.16s Tap "map-open-website" Button
+    t =    19.16s     Wait for com.eros.memoryos.demo to idle
+    t =    19.34s     Find the "map-open-website" Button
+    t =    19.41s     Check for interrupting elements affecting "map-open-website" Button
+    t =    19.45s     Synthesize event
+    t =    19.74s     Wait for com.eros.memoryos.demo to idle
+    t =    20.13s Checking existence of `"الخطط الحالية" StaticText`
+    t =    20.24s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testArabicPeopleBirthdayAndMixedSource]' passed (20.509 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testBirthdayChoicesSurviveNavigationAndReset]' started.
+    t =     0.00s Start Test at 2026-11-14 16:58:53.422
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:7819
+2026-11-14 16:58:54.563 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 16:58:54.565 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     2.58s         Setting up automation session
+    t =     5.04s         Wait for com.eros.memoryos.demo to idle
+    t =     6.55s Tap "open-menu" Button
+    t =     6.55s     Wait for com.eros.memoryos.demo to idle
+    t =     6.55s     Find the "open-menu" Button
+    t =     6.71s     Check for interrupting elements affecting "open-menu" Button
+    t =     6.74s     Synthesize event
+    t =     7.03s     Wait for com.eros.memoryos.demo to idle
+    t =     7.03s Find the "section-birthdays" Button
+    t =     7.09s Tap "section-birthdays" Button
+    t =     7.09s     Wait for com.eros.memoryos.demo to idle
+    t =     7.09s     Find the "section-birthdays" Button
+    t =     7.14s     Check for interrupting elements affecting "section-birthdays" Button
+    t =     7.18s     Synthesize event
+    t =     7.47s     Wait for com.eros.memoryos.demo to idle
+    t =     7.63s Tap "birthday-birthday-ali" Button
+    t =     7.63s     Wait for com.eros.memoryos.demo to idle
+    t =     7.63s     Find the "birthday-birthday-ali" Button
+    t =     7.70s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =     7.73s     Synthesize event
+    t =     8.02s     Wait for com.eros.memoryos.demo to idle
+    t =     8.45s Tap "reminder-onDay" Button
+    t =     8.45s     Wait for com.eros.memoryos.demo to idle
+    t =     8.45s     Find the "reminder-onDay" Button
+    t =     8.51s     Check for interrupting elements affecting "reminder-onDay" Button
+    t =     8.56s     Synthesize event
+    t =     8.86s     Wait for com.eros.memoryos.demo to idle
+    t =     8.86s Find the "reminder-current" StaticText
+    t =     8.92s Tap "reminder-dayBefore" Button
+    t =     8.92s     Wait for com.eros.memoryos.demo to idle
+    t =     8.92s     Find the "reminder-dayBefore" Button
+    t =     8.98s     Check for interrupting elements affecting "reminder-dayBefore" Button
+    t =     9.03s     Synthesize event
+    t =     9.32s     Wait for com.eros.memoryos.demo to idle
+    t =     9.33s Find the "reminder-current" StaticText
+    t =     9.39s Tap "reminder-weekBefore" Button
+    t =     9.39s     Wait for com.eros.memoryos.demo to idle
+    t =     9.39s     Find the "reminder-weekBefore" Button
+    t =     9.45s     Check for interrupting elements affecting "reminder-weekBefore" Button
+    t =     9.49s     Synthesize event
+    t =     9.80s     Wait for com.eros.memoryos.demo to idle
+    t =     9.80s Find the "reminder-current" StaticText
+    t =     9.87s Tap "reminder-off" Button
+    t =     9.87s     Wait for com.eros.memoryos.demo to idle
+    t =     9.87s     Find the "reminder-off" Button
+    t =     9.92s     Check for interrupting elements affecting "reminder-off" Button
+    t =     9.97s     Synthesize event
+    t =    10.27s     Wait for com.eros.memoryos.demo to idle
+    t =    10.28s Find the "reminder-current" StaticText
+    t =    10.34s Tap "reminder-weekBefore" Button
+    t =    10.34s     Wait for com.eros.memoryos.demo to idle
+    t =    10.34s     Find the "reminder-weekBefore" Button
+    t =    10.39s     Check for interrupting elements affecting "reminder-weekBefore" Button
+    t =    10.44s     Synthesize event
+    t =    10.74s     Wait for com.eros.memoryos.demo to idle
+    t =    10.74s Find the "reminder-current" StaticText
+    t =    10.80s Tap "open-menu" Button
+    t =    10.80s     Wait for com.eros.memoryos.demo to idle
+    t =    10.81s     Find the "open-menu" Button
+    t =    10.86s     Check for interrupting elements affecting "open-menu" Button
+    t =    10.91s     Synthesize event
+    t =    11.20s     Wait for com.eros.memoryos.demo to idle
+    t =    11.21s Find the "section-projects" Button
+    t =    11.29s Tap "section-projects" Button
+    t =    11.29s     Wait for com.eros.memoryos.demo to idle
+    t =    11.29s     Find the "section-projects" Button
+    t =    11.37s     Check for interrupting elements affecting "section-projects" Button
+    t =    11.46s     Synthesize event
+    t =    11.76s     Wait for com.eros.memoryos.demo to idle
+    t =    11.86s Tap "open-menu" Button
+    t =    11.86s     Wait for com.eros.memoryos.demo to idle
+    t =    11.86s     Find the "open-menu" Button
+    t =    11.90s     Check for interrupting elements affecting "open-menu" Button
+    t =    11.93s     Synthesize event
+    t =    12.22s     Wait for com.eros.memoryos.demo to idle
+    t =    12.22s Find the "section-birthdays" Button
+    t =    12.30s Tap "section-birthdays" Button
+    t =    12.30s     Wait for com.eros.memoryos.demo to idle
+    t =    12.30s     Find the "section-birthdays" Button
+    t =    12.37s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    12.41s     Synthesize event
+    t =    12.70s     Wait for com.eros.memoryos.demo to idle
+    t =    12.70s Find the "reminder-current" StaticText
+    t =    12.76s Terminate com.eros.memoryos.demo:8104
+    t =    14.79s Open com.eros.memoryos.demo
+    t =    14.79s     Launch com.eros.memoryos.demo
+2026-11-14 16:59:08.217 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 16:59:08.217 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    15.01s         Setting up automation session
+    t =    17.43s         Wait for com.eros.memoryos.demo to idle
+    t =    18.97s Tap "open-menu" Button
+    t =    18.97s     Wait for com.eros.memoryos.demo to idle
+    t =    18.97s     Find the "open-menu" Button
+    t =    19.10s     Check for interrupting elements affecting "open-menu" Button
+    t =    19.12s     Synthesize event
+    t =    19.42s     Wait for com.eros.memoryos.demo to idle
+    t =    19.42s Find the "section-birthdays" Button
+    t =    19.48s Tap "section-birthdays" Button
+    t =    19.48s     Wait for com.eros.memoryos.demo to idle
+    t =    19.48s     Find the "section-birthdays" Button
+    t =    19.52s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    19.56s     Synthesize event
+    t =    19.85s     Wait for com.eros.memoryos.demo to idle
+    t =    20.00s Tap "birthday-birthday-ali" Button
+    t =    20.00s     Wait for com.eros.memoryos.demo to idle
+    t =    20.00s     Find the "birthday-birthday-ali" Button
+    t =    20.07s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    20.11s     Synthesize event
+    t =    20.41s     Wait for com.eros.memoryos.demo to idle
+    t =    20.83s Find the "reminder-current" StaticText
+    t =    20.91s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testBirthdayChoicesSurviveNavigationAndReset]' passed (21.448 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testLargeTextKeepsMapAndBirthdayActionsReachable]' started.
+    t =     0.00s Start Test at 2026-11-14 16:59:14.870
+    t =     0.02s Set Up
+    t =     0.02s Open com.eros.memoryos.demo
+    t =     0.02s     Launch com.eros.memoryos.demo
+    t =     0.02s         Terminate com.eros.memoryos.demo:8277
+2026-11-14 16:59:15.896 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 16:59:15.896 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.24s         Setting up automation session
+    t =     3.64s         Wait for com.eros.memoryos.demo to idle
+    t =     5.21s Tap "open-menu" Button
+    t =     5.21s     Wait for com.eros.memoryos.demo to idle
+    t =     5.22s     Find the "open-menu" Button
+    t =     5.35s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.38s     Synthesize event
+    t =     5.67s     Wait for com.eros.memoryos.demo to idle
+    t =     5.67s Find the "section-brainMap" Button
+    t =     5.73s Tap "section-brainMap" Button
+    t =     5.73s     Wait for com.eros.memoryos.demo to idle
+    t =     5.74s     Find the "section-brainMap" Button
+    t =     5.78s     Check for interrupting elements affecting "section-brainMap" Button
+    t =     5.81s     Synthesize event
+    t =     6.11s     Wait for com.eros.memoryos.demo to idle
+    t =     6.30s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =     6.30s     Wait for com.eros.memoryos.demo to idle
+    t =     6.30s     Find the Target Application 'com.eros.memoryos.demo'
+    t =     6.35s     Check for interrupting elements affecting "MemoryOS" Application
+    t =     6.38s     Synthesize event
+    t =     6.80s     Wait for com.eros.memoryos.demo to idle
+    t =     8.91s Checking existence of `"map-focus-website" Button`
+    t =     8.97s Tap "open-menu" Button
+    t =     8.97s     Wait for com.eros.memoryos.demo to idle
+    t =     8.97s     Find the "open-menu" Button
+    t =     9.01s     Check for interrupting elements affecting "open-menu" Button
+    t =     9.04s     Synthesize event
+    t =     9.34s     Wait for com.eros.memoryos.demo to idle
+    t =     9.34s Find the "section-birthdays" Button
+    t =     9.43s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =     9.43s     Wait for com.eros.memoryos.demo to idle
+    t =     9.44s     Find the Target Application 'com.eros.memoryos.demo'
+    t =     9.48s     Check for interrupting elements affecting "MemoryOS" Application
+    t =     9.52s     Synthesize event
+    t =     9.95s     Wait for com.eros.memoryos.demo to idle
+    t =    10.46s Tap "section-birthdays" Button
+    t =    10.46s     Wait for com.eros.memoryos.demo to idle
+    t =    10.46s     Find the "section-birthdays" Button
+    t =    10.52s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    10.57s     Synthesize event
+    t =    10.86s     Wait for com.eros.memoryos.demo to idle
+    t =    10.95s Tap "birthday-birthday-ali" Button
+    t =    10.95s     Wait for com.eros.memoryos.demo to idle
+    t =    10.95s     Find the "birthday-birthday-ali" Button
+    t =    11.02s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    11.06s     Synthesize event
+    t =    11.36s     Wait for com.eros.memoryos.demo to idle
+    t =    11.77s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    11.77s     Wait for com.eros.memoryos.demo to idle
+    t =    11.77s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    11.82s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    11.85s     Synthesize event
+    t =    12.28s     Wait for com.eros.memoryos.demo to idle
+    t =    14.38s Tap "reminder-onDay" Button
+    t =    14.38s     Wait for com.eros.memoryos.demo to idle
+    t =    14.38s     Find the "reminder-onDay" Button
+    t =    14.43s     Check for interrupting elements affecting "reminder-onDay" Button
+    t =    14.47s     Synthesize event
+    t =    14.77s     Wait for com.eros.memoryos.demo to idle
+    t =    14.78s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    14.78s     Wait for com.eros.memoryos.demo to idle
+    t =    14.78s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    14.82s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    14.85s     Synthesize event
+    t =    15.27s     Wait for com.eros.memoryos.demo to idle
+    t =    16.16s Find the "reminder-current" StaticText
+    t =    16.20s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testLargeTextKeepsMapAndBirthdayActionsReachable]' passed (16.480 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testMapExplorationOpensLinkedProject]' started.
+    t =     0.00s Start Test at 2026-11-14 16:59:31.354
+    t =     0.02s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:8393
+2026-11-14 16:59:32.429 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 16:59:32.429 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.28s         Setting up automation session
+    t =     3.78s         Wait for com.eros.memoryos.demo to idle
+    t =     5.34s Tap "open-menu" Button
+    t =     5.34s     Wait for com.eros.memoryos.demo to idle
+    t =     5.34s     Find the "open-menu" Button
+    t =     5.48s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.50s     Synthesize event
+    t =     5.80s     Wait for com.eros.memoryos.demo to idle
+    t =     5.80s Find the "section-brainMap" Button
+    t =     5.87s Tap "section-brainMap" Button
+    t =     5.87s     Wait for com.eros.memoryos.demo to idle
+    t =     5.87s     Find the "section-brainMap" Button
+    t =     5.92s     Check for interrupting elements affecting "section-brainMap" Button
+    t =     5.95s     Synthesize event
+    t =     6.25s     Wait for com.eros.memoryos.demo to idle
+    t =     6.43s Tap "map-focus-website" Button
+    t =     6.43s     Wait for com.eros.memoryos.demo to idle
+    t =     6.44s     Find the "map-focus-website" Button
+    t =     6.51s     Check for interrupting elements affecting "map-focus-website" Button
+    t =     6.55s     Synthesize event
+    t =     6.85s     Wait for com.eros.memoryos.demo to idle
+    t =     6.85s Checking existence of `"map-open-website" Button`
+    t =     6.90s Tap "map-open-website" Button
+    t =     6.90s     Wait for com.eros.memoryos.demo to idle
+    t =     6.90s     Find the "map-open-website" Button
+    t =     6.95s     Check for interrupting elements affecting "map-open-website" Button
+    t =     6.98s     Synthesize event
+    t =     7.28s     Wait for com.eros.memoryos.demo to idle
+    t =     7.75s Checking existence of `"Current plans" StaticText`
+    t =     7.84s Tap Button (First Match)
+    t =     7.84s     Wait for com.eros.memoryos.demo to idle
+    t =     7.84s     Find the Button (First Match)
+    t =     7.86s     Check for interrupting elements affecting "BackButton" Button
+    t =     7.91s     Synthesize event
+    t =     8.21s     Wait for com.eros.memoryos.demo to idle
+    t =     8.56s Tap "List" Button
+    t =     8.56s     Wait for com.eros.memoryos.demo to idle
+    t =     8.57s     Find the "List" Button
+    t =     8.62s     Check for interrupting elements affecting "List" Button
+    t =     8.66s     Synthesize event
+    t =     8.95s     Wait for com.eros.memoryos.demo to idle
+    t =    10.57s Checking existence of `"record-ali" Button`
+    t =    10.61s Tap "record-ali" Button
+    t =    10.61s     Wait for com.eros.memoryos.demo to idle
+    t =    10.62s     Find the "record-ali" Button
+    t =    10.66s     Check for interrupting elements affecting "record-ali" Button
+    t =    10.69s     Synthesize event
+    t =    10.99s     Wait for com.eros.memoryos.demo to idle
+    t =    11.48s Find the "original-source" StaticText
+    t =    11.55s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testMapExplorationOpensLinkedProject]' passed (11.841 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testPeopleToProjectAndSourceWithBackNavigation]' started.
+    t =     0.00s Start Test at 2026-11-14 16:59:43.196
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:8602
+2026-11-14 16:59:47.318 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 16:59:47.318 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     4.34s         Setting up automation session
+    t =     6.76s         Wait for com.eros.memoryos.demo to idle
+    t =     8.29s Tap "open-menu" Button
+    t =     8.29s     Wait for com.eros.memoryos.demo to idle
+    t =     8.29s     Find the "open-menu" Button
+    t =     8.43s     Check for interrupting elements affecting "open-menu" Button
+    t =     8.46s     Synthesize event
+    t =     8.75s     Wait for com.eros.memoryos.demo to idle
+    t =     8.75s Find the "section-profiles" Button
+    t =     8.81s Tap "section-profiles" Button
+    t =     8.81s     Wait for com.eros.memoryos.demo to idle
+    t =     8.82s     Find the "section-profiles" Button
+    t =     8.86s     Check for interrupting elements affecting "section-profiles" Button
+    t =     8.89s     Synthesize event
+    t =     9.19s     Wait for com.eros.memoryos.demo to idle
+    t =     9.32s Tap "record-ali" Button
+    t =     9.32s     Wait for com.eros.memoryos.demo to idle
+    t =     9.32s     Find the "record-ali" Button
+    t =     9.38s     Check for interrupting elements affecting "record-ali" Button
+    t =     9.41s     Synthesize event
+    t =     9.70s     Wait for com.eros.memoryos.demo to idle
+    t =    10.16s Checking existence of `"Original sample" StaticText`
+    t =    10.26s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    10.26s     Wait for com.eros.memoryos.demo to idle
+    t =    10.27s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    10.31s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    10.35s     Synthesize event
+    t =    10.78s     Wait for com.eros.memoryos.demo to idle
+    t =    11.24s Tap "record-website" Button
+    t =    11.24s     Wait for com.eros.memoryos.demo to idle
+    t =    11.24s     Find the "record-website" Button
+    t =    11.31s     Check for interrupting elements affecting "record-website" Button
+    t =    11.36s     Synthesize event
+    t =    11.66s     Wait for com.eros.memoryos.demo to idle
+    t =    12.02s Checking existence of `"Current plans" StaticText`
+    t =    12.11s Checking existence of `"Tentative ideas" StaticText`
+    t =    12.17s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    12.17s     Wait for com.eros.memoryos.demo to idle
+    t =    12.17s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    12.22s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    12.27s     Synthesize event
+    t =    12.69s     Wait for com.eros.memoryos.demo to idle
+    t =    13.21s Tap "record-chat-ali" Button
+    t =    13.21s     Wait for com.eros.memoryos.demo to idle
+    t =    13.21s     Find the "record-chat-ali" Button
+    t =    13.29s     Check for interrupting elements affecting "record-chat-ali" Button
+    t =    13.34s     Synthesize event
+    t =    13.64s     Wait for com.eros.memoryos.demo to idle
+    t =    13.98s Find the "original-source" StaticText
+    t =    14.06s Tap Button (First Match)
+    t =    14.06s     Wait for com.eros.memoryos.demo to idle
+    t =    14.07s     Find the Button (First Match)
+    t =    14.10s     Check for interrupting elements affecting "BackButton" Button
+    t =    14.15s     Synthesize event
+    t =    14.45s     Wait for com.eros.memoryos.demo to idle
+    t =    14.77s Checking existence of `"Tentative ideas" StaticText`
+    t =    14.85s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testPeopleToProjectAndSourceWithBackNavigation]' passed (15.199 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testSearchRecoveryAndSectionState]' started.
+    t =     0.00s Start Test at 2026-11-14 16:59:58.397
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:8784
+2026-11-14 16:59:59.500 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 16:59:59.500 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.31s         Setting up automation session
+    t =     3.95s         Wait for com.eros.memoryos.demo to idle
+    t =     5.50s Tap "open-menu" Button
+    t =     5.50s     Wait for com.eros.memoryos.demo to idle
+    t =     5.50s     Find the "open-menu" Button
+    t =     5.65s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.68s     Synthesize event
+    t =     5.97s     Wait for com.eros.memoryos.demo to idle
+    t =     5.98s Find the "section-profiles" Button
+    t =     6.03s Tap "section-profiles" Button
+    t =     6.03s     Wait for com.eros.memoryos.demo to idle
+    t =     6.04s     Find the "section-profiles" Button
+    t =     6.08s     Check for interrupting elements affecting "section-profiles" Button
+    t =     6.11s     Synthesize event
+    t =     6.41s     Wait for com.eros.memoryos.demo to idle
+    t =     6.54s Tap "catalog-search" TextField
+    t =     6.54s     Wait for com.eros.memoryos.demo to idle
+    t =     6.54s     Find the "catalog-search" TextField
+    t =     6.60s     Check for interrupting elements affecting "catalog-search" TextField
+    t =     6.62s     Synthesize event
+    t =     6.92s     Wait for com.eros.memoryos.demo to idle
+    t =     7.71s Type 'missing sample
+' into "catalog-search" TextField
+    t =     7.71s     Wait for com.eros.memoryos.demo to idle
+    t =     8.06s     Find the "catalog-search" TextField
+    t =     8.13s     Check for interrupting elements affecting "catalog-search" TextField
+    t =     8.16s     Synthesize event
+    t =     8.63s     Wait for com.eros.memoryos.demo to idle
+    t =     8.69s Checking existence of `"No matches" StaticText`
+    t =     8.72s Tap "clear-empty-search" Button
+    t =     8.72s     Wait for com.eros.memoryos.demo to idle
+    t =     8.72s     Find the "clear-empty-search" Button
+    t =     8.75s     Check for interrupting elements affecting "clear-empty-search" Button
+    t =     8.77s     Synthesize event
+    t =     9.08s     Wait for com.eros.memoryos.demo to idle
+    t =     9.08s Checking existence of `"record-sara" Button`
+    t =     9.13s Tap "catalog-search" TextField
+    t =     9.13s     Wait for com.eros.memoryos.demo to idle
+    t =     9.13s     Find the "catalog-search" TextField
+    t =     9.16s     Check for interrupting elements affecting "catalog-search" TextField
+    t =     9.19s     Synthesize event
+    t =     9.49s     Wait for com.eros.memoryos.demo to idle
+    t =     9.83s Type 'Ali' into "catalog-search" TextField
+    t =     9.84s     Wait for com.eros.memoryos.demo to idle
+    t =     9.85s     Find the "catalog-search" TextField
+    t =     9.91s     Check for interrupting elements affecting "catalog-search" TextField
+    t =     9.96s     Synthesize event
+    t =    10.21s     Wait for com.eros.memoryos.demo to idle
+    t =    10.42s Checking existence of `"record-ali" Button`
+    t =    10.47s Checking existence of `"record-sara" Button`
+    t =    10.50s Tap "open-menu" Button
+    t =    10.50s     Wait for com.eros.memoryos.demo to idle
+    t =    10.51s     Find the "open-menu" Button
+    t =    10.55s     Check for interrupting elements affecting "open-menu" Button
+    t =    10.58s     Synthesize event
+    t =    10.87s     Wait for com.eros.memoryos.demo to idle
+    t =    10.88s Checking existence of `Keyboard (First Match)`
+    t =    10.93s Tap "section-projects" Button
+    t =    10.93s     Wait for com.eros.memoryos.demo to idle
+    t =    10.93s     Find the "section-projects" Button
+    t =    10.98s     Check for interrupting elements affecting "section-projects" Button
+    t =    11.01s     Synthesize event
+    t =    11.31s     Wait for com.eros.memoryos.demo to idle
+    t =    11.37s Tap "open-menu" Button
+    t =    11.37s     Wait for com.eros.memoryos.demo to idle
+    t =    11.38s     Find the "open-menu" Button
+    t =    11.42s     Check for interrupting elements affecting "open-menu" Button
+    t =    11.44s     Synthesize event
+    t =    11.74s     Wait for com.eros.memoryos.demo to idle
+    t =    11.74s Find the "section-profiles" Button
+    t =    11.81s Tap "section-profiles" Button
+    t =    11.81s     Wait for com.eros.memoryos.demo to idle
+    t =    11.81s     Find the "section-profiles" Button
+    t =    11.85s     Check for interrupting elements affecting "section-profiles" Button
+    t =    11.89s     Synthesize event
+    t =    12.18s     Wait for com.eros.memoryos.demo to idle
+    t =    12.22s Find the "catalog-search" TextField
+    t =    12.26s Tap "record-ali" Button
+    t =    12.26s     Wait for com.eros.memoryos.demo to idle
+    t =    12.26s     Find the "record-ali" Button
+    t =    12.30s     Check for interrupting elements affecting "record-ali" Button
+    t =    12.32s     Synthesize event
+    t =    12.62s     Wait for com.eros.memoryos.demo to idle
+    t =    13.09s Tap "open-menu" Button
+    t =    13.09s     Wait for com.eros.memoryos.demo to idle
+    t =    13.09s     Find the "open-menu" Button
+    t =    13.19s     Check for interrupting elements affecting "open-menu" Button
+    t =    13.24s     Synthesize event
+    t =    13.54s     Wait for com.eros.memoryos.demo to idle
+    t =    13.54s Find the "section-capture" Button
+    t =    13.64s Tap "section-capture" Button
+    t =    13.64s     Wait for com.eros.memoryos.demo to idle
+    t =    13.65s     Find the "section-capture" Button
+    t =    13.71s     Check for interrupting elements affecting "section-capture" Button
+    t =    13.77s     Synthesize event
+    t =    14.07s     Wait for com.eros.memoryos.demo to idle
+    t =    14.12s Tap "open-menu" Button
+    t =    14.12s     Wait for com.eros.memoryos.demo to idle
+    t =    14.13s     Find the "open-menu" Button
+    t =    14.16s     Check for interrupting elements affecting "open-menu" Button
+    t =    14.19s     Synthesize event
+    t =    14.48s     Wait for com.eros.memoryos.demo to idle
+    t =    14.48s Find the "section-profiles" Button
+    t =    14.54s Tap "section-profiles" Button
+    t =    14.54s     Wait for com.eros.memoryos.demo to idle
+    t =    14.54s     Find the "section-profiles" Button
+    t =    14.58s     Check for interrupting elements affecting "section-profiles" Button
+    t =    14.61s     Synthesize event
+    t =    14.91s     Wait for com.eros.memoryos.demo to idle
+    t =    14.92s Checking existence of `"Original sample" StaticText`
+    t =    14.98s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testSearchRecoveryAndSectionState]' passed (15.279 seconds).
+Test Suite 'DemoFlowTests' passed at 2026-11-14 17:00:13.676.
+	 Executed 6 tests, with 0 failures (0 unexpected) in 100.756 (100.771) seconds
+Test Suite 'FoundationTests' started at 2026-11-14 17:00:13.687.
+Test Case '-[MemoryOSUITests.FoundationTests testArabicDrawerClosesFullyOutsideTheScreen]' started.
+    t =     0.00s Start Test at 2026-11-14 17:00:13.688
+    t =     0.02s Set Up
+    t =     0.02s Open com.eros.memoryos.demo
+    t =     0.02s     Launch com.eros.memoryos.demo
+    t =     0.02s         Terminate com.eros.memoryos.demo:8925
+2026-11-14 17:00:14.762 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 17:00:14.762 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.29s         Setting up automation session
+    t =     3.53s         Wait for com.eros.memoryos.demo to idle
+    t =     5.06s Tap "open-menu" Button
+    t =     5.06s     Wait for com.eros.memoryos.demo to idle
+    t =     5.07s     Find the "open-menu" Button
+    t =     5.20s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.22s     Synthesize event
+    t =     5.52s     Wait for com.eros.memoryos.demo to idle
+    t =     5.52s Tap "section-settings" Button
+    t =     5.52s     Wait for com.eros.memoryos.demo to idle
+    t =     5.52s     Find the "section-settings" Button
+    t =     5.57s     Check for interrupting elements affecting "section-settings" Button
+    t =     5.60s     Synthesize event
+    t =     5.90s     Wait for com.eros.memoryos.demo to idle
+    t =     5.96s Tap "language-picker" Button
+    t =     5.96s     Wait for com.eros.memoryos.demo to idle
+    t =     6.16s     Find the "language-picker" Button
+    t =     6.22s     Check for interrupting elements affecting "language-picker" Button
+    t =     6.24s     Synthesize event
+    t =     6.54s     Wait for com.eros.memoryos.demo to idle
+    t =     7.82s Tap "العربية" Button
+    t =     7.82s     Wait for com.eros.memoryos.demo to idle
+    t =     7.82s     Find the "العربية" Button
+    t =     7.87s     Check for interrupting elements affecting "العربية" Button
+    t =     7.90s     Synthesize event
+    t =     8.19s     Wait for com.eros.memoryos.demo to idle
+    t =     9.72s Tap "open-menu" Button
+    t =     9.72s     Wait for com.eros.memoryos.demo to idle
+    t =     9.72s     Find the "open-menu" Button
+    t =     9.77s     Check for interrupting elements affecting "open-menu" Button
+    t =     9.79s     Synthesize event
+    t =    10.08s     Wait for com.eros.memoryos.demo to idle
+    t =    10.08s Tap "section-capture" Button
+    t =    10.08s     Wait for com.eros.memoryos.demo to idle
+    t =    10.09s     Find the "section-capture" Button
+    t =    10.14s     Check for interrupting elements affecting "section-capture" Button
+    t =    10.17s     Synthesize event
+    t =    10.47s     Wait for com.eros.memoryos.demo to idle
+    t =    11.54s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    11.54s     Find the "close-menu" Button
+    t =    11.57s Find the "open-menu" Button
+    t =    11.61s Checking existence of `"اضغط للتسجيل" StaticText`
+    t =    12.65s Find the "section-settings" Button
+    t =    12.69s Find the Target Application 'com.eros.memoryos.demo'
+    t =    12.71s Tear Down
+Test Case '-[MemoryOSUITests.FoundationTests testArabicDrawerClosesFullyOutsideTheScreen]' passed (12.926 seconds).
+Test Case '-[MemoryOSUITests.FoundationTests testDemoCaptureAndSessionReset]' started.
+    t =     0.00s Start Test at 2026-11-14 17:00:26.615
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:9139
+2026-11-14 17:00:27.684 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 17:00:27.684 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.28s         Setting up automation session
+    t =     3.65s         Wait for com.eros.memoryos.demo to idle
+    t =     5.19s Find the "send-memory" Button
+    t =     5.35s Checking existence of `"capture-composer" TextField`
+    t =     5.37s Tap "capture-composer" TextField
+    t =     5.37s     Wait for com.eros.memoryos.demo to idle
+    t =     5.37s     Find the "capture-composer" TextField
+    t =     5.39s     Check for interrupting elements affecting "capture-composer" TextField
+    t =     5.41s     Synthesize event
+    t =     5.71s     Wait for com.eros.memoryos.demo to idle
+    t =     6.01s Type 'A fictional projec...' into "capture-composer" TextField
+    t =     6.01s     Wait for com.eros.memoryos.demo to idle
+    t =     6.36s     Find the "capture-composer" TextField
+    t =     6.43s     Check for interrupting elements affecting "capture-composer" TextField
+    t =     6.47s     Synthesize event
+    t =     7.13s     Wait for com.eros.memoryos.demo to idle
+    t =     7.13s Tap "send-memory" Button
+    t =     7.13s     Wait for com.eros.memoryos.demo to idle
+    t =     7.13s     Find the "send-memory" Button
+    t =     7.18s     Check for interrupting elements affecting "send-memory" Button
+    t =     7.22s     Synthesize event
+    t =     7.51s     Wait for com.eros.memoryos.demo to idle
+    t =     7.87s Waiting 3.0s for Alert (First Match) to exist
+    t =     8.88s     Checking `Expect predicate `existsNoRetry == 1` for object Alert (First Match)`
+    t =     8.88s         Checking existence of `Alert (First Match)`
+    t =     8.89s Tap "OK" Button
+    t =     8.89s     Wait for com.eros.memoryos.demo to idle
+    t =     8.89s     Find the "OK" Button
+    t =     8.94s     Check for interrupting elements affecting "OK" Button
+    t =     8.97s     Synthesize event
+    t =     9.27s     Wait for com.eros.memoryos.demo to idle
+    t =     9.55s Tap "your-memories" Button
+    t =     9.55s     Wait for com.eros.memoryos.demo to idle
+    t =     9.55s     Find the "your-memories" Button
+    t =     9.60s     Check for interrupting elements affecting "your-memories" Button
+    t =     9.63s     Synthesize event
+    t =     9.93s     Wait for com.eros.memoryos.demo to idle
+    t =     9.93s Waiting 3.0s for "A fictional project thought" StaticText to exist
+    t =    10.94s     Checking `Expect predicate `existsNoRetry == 1` for object "A fictional project thought" StaticText`
+    t =    10.96s         Checking existence of `"A fictional project thought" StaticText`
+    t =    11.12s Terminate com.eros.memoryos.demo:9338
+    t =    12.15s Open com.eros.memoryos.demo
+    t =    12.15s     Launch com.eros.memoryos.demo
+2026-11-14 17:00:38.765 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 17:00:38.765 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    12.36s         Setting up automation session
+    t =    14.89s         Wait for com.eros.memoryos.demo to idle
+    t =    16.46s Tap "your-memories" Button
+    t =    16.46s     Wait for com.eros.memoryos.demo to idle
+    t =    16.46s     Find the "your-memories" Button
+    t =    16.59s     Check for interrupting elements affecting "your-memories" Button
+    t =    16.62s     Synthesize event
+    t =    16.91s     Wait for com.eros.memoryos.demo to idle
+    t =    16.91s Checking existence of `"A fictional project thought" StaticText`
+    t =    16.93s Tear Down
+Test Case '-[MemoryOSUITests.FoundationTests testDemoCaptureAndSessionReset]' passed (17.157 seconds).
+Test Case '-[MemoryOSUITests.FoundationTests testRecordingExplainsDemoBoundary]' started.
+    t =     0.00s Start Test at 2026-11-14 17:00:43.772
+    t =     0.02s Set Up
+    t =     0.02s Open com.eros.memoryos.demo
+    t =     0.02s     Launch com.eros.memoryos.demo
+    t =     0.02s         Terminate com.eros.memoryos.demo:9469
+2026-11-14 17:00:44.844 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 17:00:44.844 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.28s         Setting up automation session
+    t =     3.61s         Wait for com.eros.memoryos.demo to idle
+    t =     5.19s Tap "record-preview" Button
+    t =     5.19s     Wait for com.eros.memoryos.demo to idle
+    t =     5.19s     Find the "record-preview" Button
+    t =     5.32s     Check for interrupting elements affecting "record-preview" Button
+    t =     5.35s     Synthesize event
+    t =     5.65s     Wait for com.eros.memoryos.demo to idle
+    t =     5.94s Checking existence of `"Voice capture comes in a later step. This preview does not use your microphone." StaticText`
+    t =     5.99s Tap "OK" Button
+    t =     5.99s     Wait for com.eros.memoryos.demo to idle
+    t =     5.99s     Find the "OK" Button
+    t =     6.02s     Check for interrupting elements affecting "OK" Button
+    t =     6.06s     Synthesize event
+    t =     6.36s     Wait for com.eros.memoryos.demo to idle
+    t =     6.60s Checking existence of `"record-preview" Button`
+    t =     6.63s Tear Down
+Test Case '-[MemoryOSUITests.FoundationTests testRecordingExplainsDemoBoundary]' passed (7.045 seconds).
+Test Case '-[MemoryOSUITests.FoundationTests testSidebarRoutesAndCloses]' started.
+    t =     0.00s Start Test at 2026-11-14 17:00:50.818
+    t =     0.02s Set Up
+    t =     0.02s Open com.eros.memoryos.demo
+    t =     0.02s     Launch com.eros.memoryos.demo
+    t =     0.02s         Terminate com.eros.memoryos.demo:9540
+2026-11-14 17:00:51.894 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 17:00:51.894 xcodebuild[7457:372742] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.28s         Setting up automation session
+    t =     3.80s         Wait for com.eros.memoryos.demo to idle
+    t =     5.41s Tap "open-menu" Button
+    t =     5.41s     Wait for com.eros.memoryos.demo to idle
+    t =     5.42s     Find the "open-menu" Button
+    t =     5.55s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.57s     Synthesize event
+    t =     5.87s     Wait for com.eros.memoryos.demo to idle
+    t =     5.88s Waiting 3.0s for "close-menu" Button to exist
+    t =     6.89s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =     6.89s         Checking existence of `"close-menu" Button`
+    t =     6.93s Tap "section-brainMap" Button
+    t =     6.93s     Wait for com.eros.memoryos.demo to idle
+    t =     6.93s     Find the "section-brainMap" Button
+    t =     6.98s     Check for interrupting elements affecting "section-brainMap" Button
+    t =     7.02s     Synthesize event
+    t =     7.32s     Wait for com.eros.memoryos.demo to idle
+    t =     8.53s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =     8.53s     Find the "close-menu" Button
+    t =     8.61s Find the "open-menu" Button
+    t =     8.65s Checking existence of `"BrainMap" StaticText`
+    t =     8.66s Tap "open-menu" Button
+    t =     8.66s     Wait for com.eros.memoryos.demo to idle
+    t =     8.67s     Find the "open-menu" Button
+    t =     8.71s     Check for interrupting elements affecting "open-menu" Button
+    t =     8.75s     Synthesize event
+    t =     9.05s     Wait for com.eros.memoryos.demo to idle
+    t =     9.05s Waiting 3.0s for "close-menu" Button to exist
+    t =    10.08s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    10.08s         Checking existence of `"close-menu" Button`
+    t =    10.15s Tap "section-profiles" Button
+    t =    10.15s     Wait for com.eros.memoryos.demo to idle
+    t =    10.15s     Find the "section-profiles" Button
+    t =    10.21s     Check for interrupting elements affecting "section-profiles" Button
+    t =    10.26s     Synthesize event
+    t =    10.56s     Wait for com.eros.memoryos.demo to idle
+    t =    11.63s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    11.63s     Find the "close-menu" Button
+    t =    11.67s Find the "open-menu" Button
+    t =    11.71s Checking existence of `"People" StaticText`
+    t =    11.72s Tap "open-menu" Button
+    t =    11.73s     Wait for com.eros.memoryos.demo to idle
+    t =    11.73s     Find the "open-menu" Button
+    t =    11.76s     Check for interrupting elements affecting "open-menu" Button
+    t =    11.80s     Synthesize event
+    t =    12.09s     Wait for com.eros.memoryos.demo to idle
+    t =    12.10s Waiting 3.0s for "close-menu" Button to exist
+    t =    13.13s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    13.13s         Checking existence of `"close-menu" Button`
+    t =    13.19s Tap "section-projects" Button
+    t =    13.19s     Wait for com.eros.memoryos.demo to idle
+    t =    13.20s     Find the "section-projects" Button
+    t =    13.24s     Check for interrupting elements affecting "section-projects" Button
+    t =    13.28s     Synthesize event
+    t =    13.57s     Wait for com.eros.memoryos.demo to idle
+    t =    14.65s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    14.65s     Find the "close-menu" Button
+    t =    14.69s Find the "open-menu" Button
+    t =    14.73s Checking existence of `"Projects" StaticText`
+    t =    14.74s Tap "open-menu" Button
+    t =    14.74s     Wait for com.eros.memoryos.demo to idle
+    t =    14.74s     Find the "open-menu" Button
+    t =    14.77s     Check for interrupting elements affecting "open-menu" Button
+    t =    14.79s     Synthesize event
+    t =    15.09s     Wait for com.eros.memoryos.demo to idle
+    t =    15.09s Waiting 3.0s for "close-menu" Button to exist
+    t =    16.12s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    16.12s         Checking existence of `"close-menu" Button`
+    t =    16.17s Tap "section-memories" Button
+    t =    16.17s     Wait for com.eros.memoryos.demo to idle
+    t =    16.17s     Find the "section-memories" Button
+    t =    16.21s     Check for interrupting elements affecting "section-memories" Button
+    t =    16.25s     Synthesize event
+    t =    16.54s     Wait for com.eros.memoryos.demo to idle
+    t =    17.63s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    17.64s     Find the "close-menu" Button
+    t =    17.67s Find the "open-menu" Button
+    t =    17.70s Checking existence of `"Memories" StaticText`
+    t =    17.71s Tap "open-menu" Button
+    t =    17.71s     Wait for com.eros.memoryos.demo to idle
+    t =    17.72s     Find the "open-menu" Button
+    t =    17.73s     Check for interrupting elements affecting "open-menu" Button
+    t =    17.76s     Synthesize event
+    t =    18.06s     Wait for com.eros.memoryos.demo to idle
+    t =    18.06s Waiting 3.0s for "close-menu" Button to exist
+    t =    19.08s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    19.08s         Checking existence of `"close-menu" Button`
+    t =    19.13s Tap "section-birthdays" Button
+    t =    19.13s     Wait for com.eros.memoryos.demo to idle
+    t =    19.13s     Find the "section-birthdays" Button
+    t =    19.17s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    19.20s     Synthesize event
+    t =    19.49s     Wait for com.eros.memoryos.demo to idle
+    t =    20.59s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    20.59s     Find the "close-menu" Button
+    t =    20.67s Find the "open-menu" Button
+    t =    20.71s Checking existence of `"Birthdays" StaticText`
+    t =    20.72s Tap "open-menu" Button
+    t =    20.72s     Wait for com.eros.memoryos.demo to idle
+    t =    20.73s     Find the "open-menu" Button
+    t =    20.76s     Check for interrupting elements affecting "open-menu" Button
+    t =    20.80s     Synthesize event
+    t =    21.09s     Wait for com.eros.memoryos.demo to idle
+    t =    21.09s Waiting 3.0s for "close-menu" Button to exist
+    t =    22.11s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    22.12s         Checking existence of `"close-menu" Button`
+    t =    22.18s Tap "section-settings" Button
+    t =    22.18s     Wait for com.eros.memoryos.demo to idle
+    t =    22.19s     Find the "section-settings" Button
+    t =    22.24s     Check for interrupting elements affecting "section-settings" Button
+    t =    22.28s     Synthesize event
+    t =    22.58s     Wait for com.eros.memoryos.demo to idle
+    t =    23.69s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    23.69s     Find the "close-menu" Button
+    t =    23.73s Find the "open-menu" Button
+    t =    23.76s Checking existence of `"Settings" StaticText`
+    t =    23.77s Tap "open-menu" Button
+    t =    23.77s     Wait for com.eros.memoryos.demo to idle
+    t =    23.78s     Find the "open-menu" Button
+    t =    23.80s     Check for interrupting elements affecting "open-menu" Button
+    t =    23.82s     Synthesize event
+    t =    24.12s     Wait for com.eros.memoryos.demo to idle
+    t =    24.12s Waiting 3.0s for "close-menu" Button to exist
+    t =    25.14s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    25.15s         Checking existence of `"close-menu" Button`
+    t =    25.19s Tap "section-capture" Button
+    t =    25.19s     Wait for com.eros.memoryos.demo to idle
+    t =    25.19s     Find the "section-capture" Button
+    t =    25.23s     Check for interrupting elements affecting "section-capture" Button
+    t =    25.26s     Synthesize event
+    t =    25.56s     Wait for com.eros.memoryos.demo to idle
+    t =    26.61s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    26.61s     Find the "close-menu" Button
+    t =    26.65s Find the "open-menu" Button
+    t =    26.68s Checking existence of `"MemoryOS" StaticText`
+    t =    26.69s Tap "open-menu" Button
+    t =    26.69s     Wait for com.eros.memoryos.demo to idle
+    t =    26.69s     Find the "open-menu" Button
+    t =    26.72s     Check for interrupting elements affecting "open-menu" Button
+    t =    26.74s     Synthesize event
+    t =    27.03s     Wait for com.eros.memoryos.demo to idle
+    t =    27.04s Waiting 3.0s for "close-menu" Button to exist
+    t =    28.07s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    28.07s         Checking existence of `"close-menu" Button`
+    t =    28.12s Tap "close-menu" Button
+    t =    28.12s     Wait for com.eros.memoryos.demo to idle
+    t =    28.12s     Find the "close-menu" Button
+    t =    28.16s     Check for interrupting elements affecting "close-menu" Button
+    t =    28.19s     Synthesize event
+    t =    28.50s     Wait for com.eros.memoryos.demo to idle
+    t =    29.52s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    29.52s     Find the "close-menu" Button
+    t =    29.55s Checking existence of `"record-preview" Button`
+    t =    29.57s Tear Down
+Test Case '-[MemoryOSUITests.FoundationTests testSidebarRoutesAndCloses]' passed (29.822 seconds).
+Test Suite 'FoundationTests' passed at 2026-11-14 17:01:20.640.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 66.950 (66.954) seconds
+Test Suite 'MemoryOSUITests.xctest' passed at 2026-11-14 17:01:20.642.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 167.706 (167.737) seconds
+Test Suite 'All tests' passed at 2026-11-14 17:01:20.645.
+	 Executed 10 tests, with 0 failures (0 unexpected) in 167.706 (167.744) seconds
+2026-11-14 17:01:22.509481+0300 MemoryOS[9997:381373] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-11-14 17:01:22.511028+0300 MemoryOS[9997:381373] [API] cannot add handler to 0 from 0 - dropping
+2026-11-14 17:01:22.511584+0300 MemoryOS[9997:381373] [API] cannot add handler to 0 from 0 - dropping
+Test Suite 'All tests' started at 2026-11-14 17:01:23.506.
+Test Suite 'All tests' passed at 2026-11-14 17:01:23.507.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64-apple-ios17.0-simulator
+◇ Suite CatalogTests started.
+◇ Test allLinksAndBirthdaysResolveToOriginalRecords() started.
+✔ Test allLinksAndBirthdaysResolveToOriginalRecords() passed after 0.001 seconds.
+◇ Test bilingualSearchFindsTheSamePerson(query:) started.
+◇ Test case passing 1 argument query → "Ali" to bilingualSearchFindsTheSamePerson(query:) started.
+✘ Test bilingualSearchFindsTheSamePerson(query:) recorded an issue with 1 argument query → "Ali" at DemoTests.swift:25:5: Expectation failed: DemoCatalog.sample.records(of: .person, matching: query).map(\.id) == ["ali"]
+↳ DemoCatalog.sample.records(of: .person, matching: query).map(\.id) == ["ali"] → false
+↳   DemoCatalog.sample.records(of: .person, matching: query).map(\.id) → ["ali", "omar"]
+​◇ Test case passing 1 argument query → "علي" to bilingualSearchFindsTheSamePerson(query:) started.
+​◇ Test case passing 1 argument query → "  Ali  " to bilingualSearchFindsTheSamePerson(query:) started.
+✘ Test bilingualSearchFindsTheSamePerson(query:) recorded an issue with 1 argument query → "  Ali  " at DemoTests.swift:25:5: Expectation failed: DemoCatalog.sample.records(of: .person, matching: query).map(\.id) == ["ali"]
+↳ DemoCatalog.sample.records(of: .person, matching: query).map(\.id) == ["ali"] → false
+↳   DemoCatalog.sample.records(of: .person, matching: query).map(\.id) → ["ali", "omar"]
+​✘ Test bilingualSearchFindsTheSamePerson(query:) with 3 test cases failed after 0.010 seconds with 2 issues.
+◇ Test whitespaceAndNoResults() started.
+✔ Test whitespaceAndNoResults() passed after 0.001 seconds.
+◇ Test connectedFlowPreservesSourceAndTentativeWording() started.
+✔ Test connectedFlowPreservesSourceAndTentativeWording() passed after 0.001 seconds.
+✘ Suite CatalogTests failed after 0.014 seconds with 2 issues.
+◇ Suite SessionTests started.
+◇ Test blankCaptureCannotSubmitAndAcceptedCaptureClearsDraft() started.
+✔ Test blankCaptureCannotSubmitAndAcceptedCaptureClearsDraft() passed after 0.001 seconds.
+◇ Test remindersRemainIndependentAndResetWithSession() started.
+✔ Test remindersRemainIndependentAndResetWithSession() passed after 0.001 seconds.
+◇ Test reminderSelectionHasBilingualLabels(choice:) started.
+◇ Test case passing 1 argument choice → .off to reminderSelectionHasBilingualLabels(choice:) started.
+​◇ Test case passing 1 argument choice → .onDay to reminderSelectionHasBilingualLabels(choice:) started.
+​◇ Test case passing 1 argument choice → .dayBefore to reminderSelectionHasBilingualLabels(choice:) started.
+​◇ Test case passing 1 argument choice → .weekBefore to reminderSelectionHasBilingualLabels(choice:) started.
+​✔ Test reminderSelectionHasBilingualLabels(choice:) with 4 test cases passed after 0.001 seconds.
+✔ Suite SessionTests passed after 0.001 seconds.
+✘ Test run with 7 tests in 2 suites failed after 0.018 seconds with 2 issues.
+2026-11-14 17:01:42.144 xcodebuild[7457:372742] [MT] IDETestOperationsObserverDebug: 201.873 elapsed -- Testing started completed.
+2026-11-14 17:01:42.145 xcodebuild[7457:372742] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-14 17:01:42.145 xcodebuild[7457:372742] [MT] IDETestOperationsObserverDebug: 201.873 sec, +201.873 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/interface-demo/tests-final.xcresult
+
+Failing tests:
+	-[CatalogTests bilingualSearchFindsTheSamePerson(query:)]
+
+** TEST FAILED **
+
+Testing started

@@ -1,0 +1,36 @@
+{
+  "recorded_at": "2026-11-12T14:05:37.057253+00:00",
+  "status": "Layout proposal; owner approval and native delivery pending",
+  "artifacts": {
+    "designs/2026-11-12-screen-layouts/screen-layouts.html": "d716db49c452dc50e1932b314dfc1e23a76f5442f673d4572142b3481d0b2441",
+    "docs/design/screen-layouts.md": "067cfadfc7862e8b3c683ee264296d8c58888f7630cf6eef017be5777aa160f3"
+  },
+  "verification": {
+    "javascript_syntax": "passed",
+    "local_document_links": "passed for seven changed Markdown files",
+    "browser_rendering": "inspected People, Projects, Birthdays at 390 CSS pixels; BrainMap at 320; Person detail at 390; Birthday detail at 320",
+    "console_errors": "none in inspected states",
+    "interaction_checks_passed": 11,
+    "interaction_checks": [
+      "project status filtering",
+      "tentative project wording",
+      "original capture source",
+      "birthday reminder starts off",
+      "birthday preview next-occurrence date and offset",
+      "no-scheduling label",
+      "sample preview preference",
+      "BrainMap selection restored after record return",
+      "list view source access",
+      "birthday source excerpt",
+      "People no-match state"
+    ],
+    "native_build": "not run",
+    "physical_iphone": "not run",
+    "owner_approval": "not recorded"
+  },
+  "limits": [
+    "Partial interaction study; complete edit flows remain specified work",
+    "No production storage, AI, imports, scheduling, or provider connections",
+    "Native Arabic, VoiceOver, Dynamic Type, safe areas and reduced motion remain unverified"
+  ]
+}

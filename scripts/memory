@@ -1,0 +1,11 @@
+#!/bin/sh
+# Pin all calls to the MemoryOS development-memory project.
+for argument do
+  case "$argument" in
+    --project|--project=*)
+      printf '%s\n' 'Use this wrapper without --project; it is pinned to memoryos.' >&2
+      exit 2
+      ;;
+  esac
+done
+exec python3 /Users/eros/Dev/Eros_Projects/Hindsight/bin/memory.py "$@" --project memoryos

@@ -1,0 +1,10 @@
+{
+  "status": "proposed-unapproved",
+  "generation_mode": "built-in-image-tool",
+  "file": "brainmap-concept.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "906df23c892b49022a90b83ff5e9a037f1613731f71262795a01bac95f6515d2",
+  "reference": "../references/capture-sidebar-owner-reference-2026-11-07.png",
+  "application_code_changed": false
+}

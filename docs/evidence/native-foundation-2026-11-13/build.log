@@ -1,0 +1,756 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project native/MemoryOS.xcodeproj -scheme MemoryOS -destination "generic/platform=iOS Simulator" -derivedDataPath native/.build CODE_SIGNING_ALLOWED=NO build
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+2026-11-13 21:03:54.475 xcodebuild[14573:32942502] [MT] IDESchemeActionsInvocationRecord: Device <DVTiOSDeviceSimulatorPlaceholder: 0x7759b71cc0 (Any iOS Simulator Device | undefined_arch)> is missing operatingSystemVersion, operatingSystemVersionWithBuildNumber.
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (1 target)
+    Target 'MemoryOS' in project 'MemoryOS' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 6fb5668e7266b3e066079617fde9a229
+Build description path: /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/XCBuildData/6fb5668e7266b3e066079617fde9a229.xcbuilddata
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/CompilationCache.noindex
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/CompilationCache.noindex
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products
+
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/PrecompiledHeaders
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/PrecompiledHeaders
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator
+
+CreateBuildDirectory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    builtin-create-build-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS-420d0610ab7cb1ae1345fc05ace93dd0-VFS-iphonesimulator/all-product-headers.yaml
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS-420d0610ab7cb1ae1345fc05ace93dd0-VFS-iphonesimulator/all-product-headers.yaml
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.LinkFileList (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.LinkFileList
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftFileList (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftFileList
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftConstValuesFileList (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-OutputFileMap.json (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_const_extract_protocols.json (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftConstValuesFileList (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftConstValuesFileList
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.LinkFileList (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.LinkFileList
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.hmap (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.hmap
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyStaticMetadataFileList (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyStaticMetadataFileList
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyMetadataFileList (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyMetadataFileList
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-non-framework-target-headers.hmap (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-non-framework-target-headers.hmap
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibPath-normal-x86_64.txt (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibPath-normal-x86_64.txt
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibPath-normal-arm64.txt (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibPath-normal-arm64.txt
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibInstallName-normal-x86_64.txt (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibInstallName-normal-x86_64.txt
+
+WriteAuxiliaryFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibInstallName-normal-arm64.txt (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    write-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibInstallName-normal-arm64.txt
+
+MkDir /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /bin/mkdir -p /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/__preview.dylib normal x86_64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -install_name @rpath/MemoryOS.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_dependency_info.dat -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/__preview.dylib
+
+MkDir /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_output/unthinned (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /bin/mkdir -p /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_output/unthinned
+
+MkDir /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_output/thinned (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /bin/mkdir -p /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_output/thinned
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/__preview.dylib normal arm64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -install_name @rpath/MemoryOS.debug.dylib -Xlinker -dead_strip -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_dependency_info.dat -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/__preview.dylib
+
+GenerateAssetSymbols /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets --compile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app --output-format human-readable-text --notices --warnings --export-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_dependencies --output-partial-info-plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 18.0 --platform iphonesimulator --bundle-identifier com.eros.memoryos.demo --generate-swift-asset-symbol-extensions NO --generate-swift-asset-symbols /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols.swift --generate-objc-asset-symbols /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols.h --generate-asset-symbol-index /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/* com.apple.actool.compilation-results */
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols-Index.plist
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols.h
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols.swift
+
+
+CompileAssetCatalogVariant thinned /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/usr/bin/actool /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets --compile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_output/thinned --output-format human-readable-text --notices --warnings --export-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_dependencies_thinned --output-partial-info-plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist_thinned --accent-color AccentColor --compress-pngs --enable-on-demand-resources YES --development-region en --target-device iphone --minimum-deployment-target 18.0 --platform iphonesimulator
+/* com.apple.actool.compilation-results */
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist_thinned
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_output/thinned/Assets.car
+
+
+CreateUniversalBinary /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/__preview.dylib normal arm64\ x86_64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/__preview.dylib /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/__preview.dylib -output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/__preview.dylib
+
+SwiftDriver MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver MemoryOS normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target x86_64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/x86_64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/x86_64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/DeveloperToolsSupport-DN5HU4MGIZAJJYUYU8HK3ZENL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_float-92P1S4TKO82QSGMVBLPV68P00.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stdbool-3TOS2SL1CJB9LM9DKZ63OOEJL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/SwiftShims-AJBTGA676TNO8AP4PI1YYIPRJ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stddef-EN8883FS0ZHQ1WCVSY4QQP7QQ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_AvailabilityInternal-CT9U5VJCK8UVMVDH1NL8VKDWP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/ptrcheck-4XGGSV0N6RKTNTMECHWQI4A14.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/SwiftShims-206J1AUGHRCJDSW6U3O7V6HN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_float-CS0XY32JDDPGMLCY5SLAT5WN6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/ptrcheck-C7CH1Z7VFQK5D6UQ2ILUWN002.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stddef-1Z2ODWGXKQ5TNI0Q9KYOOP0H5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_AvailabilityInternal-8KYU46MS1E74YOOJS4UPNSVQ3.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/ptrauth-MUZKG8463E6ATFQ94RG70409.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/DeveloperToolsSupport-EBVU74DZ54PNMB9HMSEJCSYPN.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-7W4A9PUURML8KSVBAJAPQWDQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stdbool-92ZBB2SYTQ88J0PCG9TH25LSD.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/ptrauth-52MBZ3YNMWVBEBS1Q11YTASEA.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_DarwinFoundation1-DIHBUJIJNBS01RGKSMHWJF222.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stdarg-DDYZMSIUKUXKXNYED0R3A6WAI.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_SwiftConcurrencyShims-7227TBV5BXC8TFH0VOW9X0QO4.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stdarg-8VM4THEM82C64HB3Y8XFHL42.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_DarwinFoundation1-263A9JRS9BCPSL6JQ2AC93F2F.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_limits-4AAJK5ST53STVGQSIIYA24FLA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_limits-8DW0VYB14K9FDKS1K8I46PNAA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_DarwinFoundation2-777RBTQ3792Q68QC1T1TUY35Y.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_DarwinFoundation2-E1DRB0O5WT71MIW8KWXMB0X4Z.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_tgmath-1C8HQTL27VKL5ER96446CTM87.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/sys_types-3TRLMUJIHBE5OLT2X77PJGKWV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/string_h-D1B3XD1HG94ZP1A8SUD7CVVBW.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stdint-64WJMH5ESOSG6VPHUYI1WHQ7F.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/sys_types-96DUPL9QIS9UYSIS5K3KVOLY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/string_h-8R9Z8T4BP7YI9ZDFPOFLQP2G2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_tgmath-CTHEFTQ0VJQ8AZSL8LAXO5XDE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stdint-3FESOVFU1VIK145ROE8FKBDDX.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stdatomic-2BM1223GQL9ZUQCRYO9O5BCLQ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_DarwinFoundation3-8S5VBWM51XYK9UBPQUKYZVQM4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_DarwinFoundation3-EXSPL7ZZRCNSFN8ZCWE1P5IZJ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_stdatomic-3B07FUJRCNO130XYTEIF5AVVE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_intrinsics-E80696TMQLEV7W0U04CNJRIR5.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_inttypes-4PEA7Z0PJ1ZIVO6JOGH4BFKZV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_intrinsics-99D6VTFIF56WLHTCBB319J5Q4.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_Builtin_inttypes-ENWJ1M1NJ1QQRZK2FBMN75V77.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Darwin-2LQIIA1AFXLDLQBWST148M6RO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Darwin-68LSGTDI1SAHJZGAE2VN6R6JT.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/simd-7EM6G4TK48KKDN301H0IN7IV1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/ObjectiveC-D2N9N8V2YOKW5UMY6GCP08LF1.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/MachO-UJ8JWYK8KT84MEGU2OCAHCWP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/simd-85X5JPNLZTPH2X1ODY5TTJHV8.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/os_object-2FEW872GKE427I3I6WC8BQHMS.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/MachO-A5ZVVYFINPR4410AXMAH1NM8B.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/ObjectiveC-8JPID9BHV1Q9D2727JFL8L1VV.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/os_workgroup-1FEKB09OV3WOMB3W8VQIQQBAW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/os_object-7A1B7VB8CARCG60UQQWYR1B26.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Dispatch-8DGK42QFJ9LZQQXBENSZ5Y1GX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Spatial-8X1M0XA8DFAQZHE6RSM3AJQDZ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/os_workgroup-9UGO1KRN45YAOB686UVX79WKU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreFoundation-CUUAUVYQ5WN94Q5GQS6VBD7LC.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/XPC-6GZHQTH4K7JRY9UE5YWEGB5J6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Dispatch-E054GJO5I511J0DXK54T9J696.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/os-89MFNCANGKFGAF8QE49PD5JIO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/XPC-EVHQV9FRY9YCZ8SKXHWHUXTC.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreFoundation-2CJICFUT4HBUYGMW0AFT630BF.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Security-CDCV2RHVTNHJHKDXTJAZ8VTZ2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreGraphics-611HF0AI7YQ98U0OJ6JHXIC0H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CFNetwork-1R6271OW8TJESZGUNMP0QYDEH.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreAudioTypes-EVRTXQSJY14TWMAO8PIJ1SK7P.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/os-60CVPN3X5P5LSQX5VV2SR2LKM.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreAudio-DZIJLKLGJTX3MN8R9GORLPQC2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Foundation-AXHYBT9E2MVF9AKHYN2HLQ40.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/ImageIO-4KZZJOD0PNNWHJJ28DTVOH96H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreText-8BA77AJ0FLC2JN6NHC0WA679H.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Spatial-AW0V8ZR7MMVXUFB0P6H7OT9IY.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CFNetwork-61S7PH3RVDNPKDFNB306MNTT9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Security-4R2OVTE0Z1QQBXJ3Q8TN5MD9C.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreAudioTypes-ALSK41UXVBZ4O1LQ7SSGHIZUE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreGraphics-4STUAYWD83DKHQG391TFA1FSQ.pcm
+
+LinkAssetCatalog /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-linkAssetCatalog --thinned /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_output/thinned --thinned-dependencies /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_dependencies_thinned --thinned-info-plist-content /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist_thinned --unthinned /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_output/unthinned --unthinned-dependencies /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_dependencies_unthinned --unthinned-info-plist-content /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist_unthinned --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app --plist-output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist
+note: Emplaced /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Assets.car (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreAudio-BL6M7S6JR34ZTB0VP6H91V5A.pcm
+
+ProcessInfoPlistFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist -producttype com.apple.product-type.application -genpkginfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Foundation-4I1IGT7TRU8DLM2ORESH3KDN2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreText-4QXY7Y3HEQQQHH1S9W3O1URWA.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/ImageIO-47F69IYHEE8NTWET8Z4HHMKQL.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/UserNotifications-X4233H1KMLMESZLNT79JHNWD.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_LocationEssentials-3MQO3RC4C1NJC4EBW3C47KA6Z.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Symbols-DDRZ1O9VU00SQFHGS7Z5X9UJJ.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/OSLog-2J8Z6NJLLFZ14FW5CXVH5QF8D.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/IOSurface-F0TKHB5UA8X1H6EX4T62M2MWE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/UIUtilities-7IZ2O0KX8F4GUEZKF31HXY7TD.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreData-9YDO8NWDO7BK71AT9IRPY43HY.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Accessibility-7WLYW434S1T043U4OXYMMMD7V.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Metal-2XWLJQM1DHHXCDS2JA8ZQVMV2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreTransferable-5L5OE82O9QE32W76WZG2QIQHR.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreLocation-C87GP0S76SSTKOSIH4Q1SQUP7.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/DataDetection-CYXVV1MQ5N0COI0KL60NIXVEM.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/FileProvider-F3SSIF81G7N5OUNUFB1JUM0X0.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-BGBD0HJPLYGYUPKOSGZSPH66V.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/OpenGLES-7DN7HR9N9WM56UYL9SA9QFQ9A.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/DataDetection-5J9C0AS5TQEZVFG1W6ARHHW0D.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/UserNotifications-AHK1P3FTKDA5816CMUNIWNQZX.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/IOSurface-D9DP1UBFHB6GL5Z8206UBEJPP.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/OpenGLES-9Z5UT8EYLZQ4I08CWZCIOVXG2.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Symbols-14BG8HVZHRPBSEACPKML5QW3E.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/OSLog-3YQPJIODH1GUB0EDXR8WKRW91.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreMotion-5W67VHB5YJHWU0GSFA6VWZA6G.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/_LocationEssentials-F1IFCMAWDZTCBWX4NF1RYLAY2.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreVideo-2USPIX0RAWZ2UPH9SOPB54BE9.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/UniformTypeIdentifiers-5Y1I93Q20K0OKFW0X0HR8QKSE.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Metal-4N923XSGHN903GVH13VPPQEDV.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreData-YN5K06Z9ISVM49JGJFB17AO0.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/UIUtilities-CCUM0OL3TJ2IIKFEILKVN8PMO.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/Accessibility-9YC1PV96Q2QCNNL0FKI446IO6.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreTransferable-E0P7KS57KB7FHKDJ7KQKF5KH7.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/FileProvider-ALQO8QD72FFHK555MRTOAV44S.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreLocation-24PXN7ZZ6R5RMAUMWIFDA7YAP.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreMedia-EGRZBZY311D3WBT449TWO3ECN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/QuartzCore-1ZI5HEY3D2BOYFFZ6HP2QXLTU.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreImage-88A304WJWO89KB7BX886T34HW.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreVideo-84GCVC3RD0DDP9NTVU0GJ7N2L.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreMotion-CMIGYLS0YDJ17IKBZIEQWI7KE.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/SwiftUICore-3FMD9UDA45S55DKP9YDVG2AJL.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/QuartzCore-EC79UP8ZXSWE35MM0Z781DPYQ.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreMedia-9IN7FQ7DC9M6DD1X7ZHR88GIK.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/CoreImage-9K7LXH85VZXBYLQ5Z92TB0TFN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/UIKit-88LR9SHKTUWF7CLBNLWR0O6AU.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/SwiftUICore-7Y1WNEYMM8HX6SSY0ALOGV8N5.pcm
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/UIKit-2GOD916BK1SGJUUXSZ9EMK6SN.pcm
+
+SwiftExplicitDependencyGeneratePcm x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/SwiftUI-ET53B1AUJJX93XCV08YBQG0OK.pcm
+
+SwiftCompile normal x86_64 Compiling\ GeneratedAssetSymbols.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile GeneratedAssetSymbols.swift
+
+SwiftCompile normal x86_64 Compiling\ SectionView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile SectionView.swift
+
+SwiftCompile normal x86_64 Compiling\ DemoSession.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/App/DemoSession.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/App/DemoSession.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile DemoSession.swift
+
+SwiftCompile normal x86_64 Compiling\ RootView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/RootView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/RootView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile RootView.swift
+
+SwiftEmitModule normal x86_64 Emitting\ module\ for\ MemoryOS (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    
+
+SwiftCompile normal x86_64 Compiling\ SidebarView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SidebarView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SidebarView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile SidebarView.swift
+
+SwiftCompile normal x86_64 Compiling\ CaptureView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/CaptureView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/CaptureView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile CaptureView.swift
+
+SwiftCompile normal x86_64 Compiling\ Theme.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/DesignSystem/Theme.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/DesignSystem/Theme.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile Theme.swift
+
+SwiftExplicitDependencyGeneratePcm arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules/SwiftUI-7YY9TTOMJ92FB3331H5HJ49R4.pcm
+
+SwiftDriverJobDiscovery normal x86_64 Emitting module for MemoryOS (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriver\ Compilation\ Requirements MemoryOS normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target x86_64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/x86_64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/x86_64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MemoryOS (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftmodule (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftmodule /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MemoryOS (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriver\ Compilation\ Requirements MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftdoc (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftdoc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/x86_64-apple-ios-simulator.swiftdoc
+
+SwiftMergeGeneratedHeaders /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/MemoryOS-Swift.h /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-Swift.h (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftHeaderTool -arch arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -arch x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-Swift.h -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/MemoryOS-Swift.h
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/x86_64-apple-ios-simulator.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.abi.json (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/x86_64-apple-ios-simulator.abi.json
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftdoc (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftdoc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.swiftdoc
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.abi.json (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftsourceinfo (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftsourceinfo (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+SwiftCompile normal arm64 Compiling\ GeneratedAssetSymbols.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/GeneratedAssetSymbols.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile GeneratedAssetSymbols.swift
+
+SwiftDriverJobDiscovery normal x86_64 Compiling GeneratedAssetSymbols.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 Compiling\ CaptureView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/CaptureView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/CaptureView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile CaptureView.swift
+
+SwiftCompile normal arm64 Compiling\ SidebarView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SidebarView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SidebarView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile SidebarView.swift
+
+SwiftDriverJobDiscovery normal arm64 Compiling GeneratedAssetSymbols.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 Compiling\ SectionView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile SectionView.swift
+
+SwiftDriverJobDiscovery normal x86_64 Compiling Theme.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 Compiling\ DemoSession.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/App/DemoSession.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/App/DemoSession.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile DemoSession.swift
+
+SwiftDriverJobDiscovery normal x86_64 Compiling SidebarView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 Compiling\ Theme.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/DesignSystem/Theme.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/DesignSystem/Theme.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile Theme.swift
+
+SwiftDriverJobDiscovery normal x86_64 Compiling SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 Compiling\ MemoryOSApp.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/App/MemoryOSApp.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal x86_64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/App/MemoryOSApp.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile MemoryOSApp.swift
+
+SwiftDriverJobDiscovery normal x86_64 Compiling CaptureView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 Compiling\ RootView.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/RootView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/RootView.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile RootView.swift
+
+SwiftDriverJobDiscovery normal x86_64 Compiling DemoSession.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 Compiling\ MemoryOSApp.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/App/MemoryOSApp.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/App/MemoryOSApp.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile MemoryOSApp.swift
+
+SwiftDriverJobDiscovery normal x86_64 Compiling RootView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal x86_64 Compiling MemoryOSApp.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriver\ Compilation MemoryOS normal x86_64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target x86_64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/x86_64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/x86_64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/MemoryOS.debug.dylib normal x86_64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -filelist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.LinkFileList -install_name @rpath/MemoryOS.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/MemoryOS.debug.dylib
+
+SwiftDriverJobDiscovery normal arm64 Compiling Theme.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SectionView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal arm64 Compiling SidebarView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DemoSession.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+ConstructStubExecutorLinkFileList /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-x86_64.txt (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    construct-stub-executor-link-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/MemoryOS.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-x86_64.txt
+note: Using stub executor library with Swift entry point. (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal arm64 Compiling CaptureView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal arm64 Compiling RootView.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal arm64 Compiling MemoryOSApp.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriver\ Compilation MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/MemoryOS.debug.dylib normal arm64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -filelist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.LinkFileList -install_name @rpath/MemoryOS.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/MemoryOS.debug.dylib
+
+CreateUniversalBinary /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib normal arm64\ x86_64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/MemoryOS.debug.dylib /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/MemoryOS.debug.dylib -output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib
+
+ConstructStubExecutorLinkFileList /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    construct-stub-executor-link-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/MemoryOS.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'MemoryOS' from project 'MemoryOS')
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/MemoryOS normal arm64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/MemoryOS.debug.dylib -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/MemoryOS
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/MemoryOS normal x86_64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target x86_64-apple-ios18.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibPath-normal-x86_64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibInstallName-normal-x86_64.txt -Xlinker -filelist -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-x86_64.txt /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/MemoryOS.debug.dylib -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/MemoryOS
+
+CreateUniversalBinary /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS normal arm64\ x86_64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo -create /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/Binary/MemoryOS /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/Binary/MemoryOS -output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS
+
+CopySwiftLibs /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/SystemExtensions --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os --back-deploy-swift-span
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MemoryOS --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 18.0 --bundle-identifier com.eros.memoryos.demo --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app --target-triple arm64-apple-ios18.0-simulator --target-triple x86_64-apple-ios18.0-simulator --binary-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS --dependency-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_dependency_info.dat --dependency-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS_dependency_info.dat --stringsdata-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --stringsdata-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList --source-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftFileList --metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyMetadataFileList --static-metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyStaticMetadataFileList --swift-const-vals-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftConstValuesFileList --swift-const-vals-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/x86_64/MemoryOS.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-13 21:04:35.604 appintentsmetadataprocessor[16021:32948602] Starting App Intents metadata extraction
+2026-11-13 21:04:35.615 appintentsmetadataprocessor[16021:32948602] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+AppIntentsSSUTraining (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsnltrainingprocessor --infoplist-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist --temp-dir-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/ssu --bundle-id com.eros.memoryos.demo --product-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app --extracted-metadata-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Metadata.appintents --metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyMetadataFileList --source-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist --archive-ssu-assets
+2026-11-13 21:04:35.653 appintentsnltrainingprocessor[16022:32948607] Parsing options for appintentsnltrainingprocessor
+2026-11-13 21:04:35.653 appintentsnltrainingprocessor[16022:32948607] Starting AppIntents SSU YAML Generation
+2026-11-13 21:04:35.656 appintentsnltrainingprocessor[16022:32948607] No AppShortcuts found - Skipping.
+
+RegisterExecutionPolicyException /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-RegisterExecutionPolicyException /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app
+
+Validate /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-validationUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app -shallow-bundle -infoplist-subpath Info.plist
+
+Touch /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /usr/bin/touch -c /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+** BUILD SUCCEEDED **
+

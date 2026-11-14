@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "checked_at_utc": "2026-11-06T10:17:46.221681+00:00",
+  "working_date": "2026-11-06",
+  "project": "memoryos",
+  "bank": "project-memoryos",
+  "markdown_files": 10,
+  "local_links_checked": 29,
+  "register_counts": {
+    "requested_features": 29,
+    "supporting_proposals": 25,
+    "historical_feature_groups": 40,
+    "confirmed_decisions_instructions": 12,
+    "unapproved_technical_choices": 12
+  },
+  "original_hashes_unchanged": {
+    "Project_Idea.md": "bd7c1f7e284691892c21b1e576acca89056b07bb9e2fadadd7f76cde0d4718c2",
+    "Project_Idea_Expanded_Summary.md": "feff72608e17f143095d49bb93c65d1cc69dcab30972a6ee3fcdd20e64266635",
+    "Project_Idea_Summary.md": "6aeddb93e8174532f7ad494eb18cc4f5eb4365ca2cf4b87e299e37835711b579"
+  },
+  "unrelated_project_configuration": "unchanged",
+  "raw_session_retention": false,
+  "automatic_seeding": false,
+  "codebase_survey": false,
+  "allowlisted_sources": [
+    "AGENTS.md",
+    "README.md",
+    "docs/decisions/decision-register.md",
+    "docs/feature-register.md",
+    "docs/how-to/hindsight.md",
+    "docs/log/2026-11-06-documentation.md",
+    "docs/plans/build-outline.md",
+    "docs/product-overview.md",
+    "docs/reference/historical-research.md",
+    "docs/reference/source-register.md"
+  ],
+  "document_hashes": {
+    "README.md": "09a5b63ff7defae417aeb6a6f204d22a082b0824fb4e596af02e4b1726e24136",
+    "AGENTS.md": "6420c65972d346db0c495a0b851f5ac7cbd6735e2e5afabbf5264f204119219c",
+    "docs/decisions/decision-register.md": "f2f54cb77371c65f25d71a876adbf40576e65b8913c3d8e931a376c7f1df477e",
+    "docs/feature-register.md": "4ebebcc5376870d76a605234e5bbcfd6e63bc6bda696842848340e03e70b41bf",
+    "docs/how-to/hindsight.md": "15299fab14204f4a00af5d3a45103bd17bb42f4fc14e8ae18ab43d42cf8d6f08",
+    "docs/log/2026-11-06-documentation.md": "adfe41cd3a6d88dbfc2b05dbecfc278cd2202a683818aa8c639a3fa4093906c4",
+    "docs/plans/build-outline.md": "10804fdcae6fa0d6d6c2a66125b92959d22873dec57823fde6fbd5a831b1e753",
+    "docs/product-overview.md": "7b99483f4f115be784c16698a54802bf6e5f9811ba60d091001445fcd563c133",
+    "docs/reference/historical-research.md": "ac5ebe98643886404003bb36427c454096896c208622361a718edac64248601c",
+    "docs/reference/source-register.md": "4090cc467017f0531bc4a711904aa032ec0b628dcfcdaa87080abaf0b055943e"
+  },
+  "mcp_endpoint": "http://127.0.0.1:8888/mcp/project-memoryos/",
+  "wrapper_syntax": "passed",
+  "wrapper_project_guard": "passed",
+  "application_built": false,
+  "verification_tooling_notes": [
+    "Default python3 is Python 3.9 and lacks tomllib; validation used the existing shared Python 3.13 environment.",
+    "GET on the individual bank API returned HTTP 405; MCP initialization and tools/list verified the bank endpoint instead."
+  ],
+  "errors": []
+}

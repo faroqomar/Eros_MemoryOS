@@ -3,7 +3,6 @@
 ._*
 .codex/
 .playwright-mcp/
-.taste/
 node_modules/
 .next/
 dist/

@@ -1,0 +1,2120 @@
+--- baseline/native/MemoryOS/App/DemoSession.swift
++++ native/MemoryOS/App/DemoSession.swift
+@@ -1,63 +1,83 @@
+ import SwiftUI
+ 
+-enum AppLanguage: String, CaseIterable, Identifiable {
+-    case english = "en"
+-    case arabic = "ar"
+-    var id: String { rawValue }
+-    var name: String { self == .english ? "English" : "العربية" }
++enum AppSection: String, CaseIterable, Identifiable {
++  case capture, brainMap, profiles, projects, memories, birthdays, settings
++  var id: String { rawValue }
+ 
+-    func text(_ english: String, _ arabic: String) -> String {
+-        self == .english ? english : arabic
++  func title(in language: AppLanguage) -> String {
++    switch self {
++    case .capture: language.text("Capture", "التقاط")
++    case .brainMap: language.text("BrainMap", "خريطة الذاكرة")
++    case .profiles: language.text("People", "الأشخاص")
++    case .projects: language.text("Projects", "المشاريع")
++    case .memories: language.text("Memories", "الذكريات")
++    case .birthdays: language.text("Birthdays", "أعياد الميلاد")
++    case .settings: language.text("Settings", "الإعدادات")
+     }
+-}
++  }
+ 
+-enum AppSection: String, CaseIterable, Identifiable {
+-    case capture, brainMap, profiles, projects, memories, birthdays, settings
+-    var id: String { rawValue }
+-
+-    func title(in language: AppLanguage) -> String {
+-        switch self {
+-        case .capture: language.text("Capture", "التقاط")
+-        case .brainMap: language.text("BrainMap", "خريطة الذاكرة")
+-        case .profiles: language.text("Profiles", "الأشخاص")
+-        case .projects: language.text("Projects", "المشاريع")
+-        case .memories: language.text("Memories", "الذكريات")
+-        case .birthdays: language.text("Birthdays", "أعياد الميلاد")
+-        case .settings: language.text("Settings", "الإعدادات")
+-        }
++  var symbol: String {
++    switch self {
++    case .capture: "mic"
++    case .brainMap: "brain"
++    case .profiles: "person"
++    case .projects: "folder"
++    case .memories: "doc.text"
++    case .birthdays: "gift"
++    case .settings: "gearshape"
+     }
+-
+-    var symbol: String {
+-        switch self {
+-        case .capture: "mic"
+-        case .brainMap: "brain"
+-        case .profiles: "person"
+-        case .projects: "folder"
+-        case .memories: "doc.text"
+-        case .birthdays: "gift"
+-        case .settings: "gearshape"
+-        }
+-    }
++  }
+ }
+ 
+ struct DemoMemory: Identifiable {
+-    let id = UUID()
+-    let text: String
++  let id = UUID()
++  let text: String
+ }
+ 
++@MainActor
+ @Observable
+ final class DemoSession {
+-    var language: AppLanguage = .english
+-    var section: AppSection = .capture
+-    var draft = ""
+-    var memories: [DemoMemory] = []
++  let catalog: DemoCatalog
++  var reminderChoices: [String: ReminderChoice] = [:]
+ 
+-    var canSubmit: Bool { !draft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
++  init(catalog: DemoCatalog = .sample) { self.catalog = catalog }
+ 
+-    func submit() {
+-        let text = draft.trimmingCharacters(in: .whitespacesAndNewlines)
+-        guard !text.isEmpty else { return }
+-        memories.insert(DemoMemory(text: text), at: 0)
+-        draft = ""
+-    }
++  func reminder(for birthdayID: String) -> ReminderChoice {
++    reminderChoices[birthdayID] ?? .off
++  }
++
++  func chooseReminder(_ choice: ReminderChoice, for birthdayID: String) {
++    guard catalog.birthday(birthdayID) != nil else { return }
++    reminderChoices[birthdayID] = choice
++  }
++
++  private let sectionStates = Dictionary(
++    uniqueKeysWithValues: AppSection.allCases.map { ($0, DemoSectionState()) })
++
++  func state(for section: AppSection) -> DemoSectionState { sectionStates[section]! }
++
++  var language: AppLanguage = .english
++  var section: AppSection = .capture
++  var draft = ""
++  var memories: [DemoMemory] = []
++
++  var canSubmit: Bool { !draft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
++
++  func submit() {
++    let text = draft.trimmingCharacters(in: .whitespacesAndNewlines)
++    guard !text.isEmpty else { return }
++    memories.insert(DemoMemory(text: text), at: 0)
++    draft = ""
++  }
+ }
++
++/// View state survives a section switch without keeping inactive controls mounted.
++@MainActor
++@Observable
++final class DemoSectionState {
++  var path: [DemoDestination] = []
++  var query = ""
++  var topRecordID: String?
++  var focusedRecordID = "ali"
++  var mapListMode = false
++}
+--- baseline/native/MemoryOS/DesignSystem/Theme.swift
++++ native/MemoryOS/DesignSystem/Theme.swift
+@@ -1,58 +1,62 @@
+ import SwiftUI
+ 
+ enum MemoryTheme {
+-    static let canvas = Color(white: 0.04)
+-    static let panel = Color(white: 0.07)
+-    static let ink = Color(white: 0.95)
+-    static let secondary = Color(white: 0.68)
+-    static let line = Color(white: 0.38)
+-    static let selection = Color(white: 0.15)
+-    static let recordingSurface = Color(white: 0.16)
+-    static let onFilledControl = Color(white: 0.06)
++  static let canvas = Color(white: 0.04)
++  static let panel = Color(white: 0.07)
++  static let ink = Color(white: 0.95)
++  static let secondary = Color(white: 0.68)
++  static let line = Color(white: 0.38)
++  static let selection = Color(white: 0.15)
++  static let recordingSurface = Color(white: 0.16)
++  static let onFilledControl = Color(white: 0.06)
+ 
+-    // System fonts scale with Dynamic Type and use native Arabic glyphs.
+-    static let title = Font.system(.title2, design: .default, weight: .bold)
+-    static let body = Font.system(.title3, design: .default)
+-    static let caption = Font.system(.subheadline, design: .default)
++  // System fonts scale with Dynamic Type and use native Arabic glyphs.
++  static let title = Font.system(.title2, design: .default, weight: .bold)
++  static let body = Font.system(.title3, design: .default)
++  static let caption = Font.system(.subheadline, design: .default)
+ }
+ 
+ struct IconControl: View {
+-    let symbol: String
+-    let label: String
+-    var filled = false
+-    var identifier = ""
+-    let action: () -> Void
++  let symbol: String
++  let label: String
++  var filled = false
++  var identifier = ""
++  let action: () -> Void
+ 
+-    var body: some View {
+-        Button(action: action) {
+-            Image(systemName: symbol)
+-                .font(.system(size: 21, weight: .regular))
+-                .frame(width: 48, height: 48)
+-                .foregroundStyle(filled ? MemoryTheme.onFilledControl : MemoryTheme.ink)
+-                .background(filled ? MemoryTheme.ink : .clear, in: Circle())
+-                .contentShape(Circle())
+-        }
+-        .buttonStyle(.plain)
+-        .accessibilityLabel(label)
+-        .accessibilityIdentifier(identifier)
++  var body: some View {
++    Button(action: action) {
++      Image(systemName: symbol)
++        .font(.system(size: 21, weight: .regular))
++        .frame(width: 48, height: 48)
++        .foregroundStyle(filled ? MemoryTheme.onFilledControl : MemoryTheme.ink)
++        .background(filled ? MemoryTheme.ink : .clear, in: Circle())
++        .contentShape(Circle())
+     }
++    .buttonStyle(.plain)
++    .accessibilityLabel(label)
++    .accessibilityIdentifier(identifier)
++  }
+ }
+ 
+ struct ScreenHeader: View {
+-    let title: String
+-    let menuLabel: String
+-    let openMenu: () -> Void
++  let title: String
++  let menuLabel: String
++  let openMenu: () -> Void
++  let menuFocus: AccessibilityFocusState<MenuFocusTarget?>.Binding
+ 
+-    var body: some View {
+-        HStack(spacing: 12) {
+-            IconControl(symbol: "line.3.horizontal", label: menuLabel, identifier: "open-menu", action: openMenu)
+-            Text(title)
+-                .font(MemoryTheme.title)
+-                .accessibilityAddTraits(.isHeader)
+-            Spacer(minLength: 0)
+-        }
+-        .padding(.horizontal, 22)
+-        .padding(.top, 14)
+-        .padding(.bottom, 8)
++  var body: some View {
++    HStack(spacing: 12) {
++      IconControl(
++        symbol: "line.3.horizontal", label: menuLabel, identifier: "open-menu", action: openMenu
++      )
++      .accessibilityFocused(menuFocus, equals: .rootMenu)
++      Text(title)
++        .font(MemoryTheme.title)
++        .accessibilityAddTraits(.isHeader)
++      Spacer(minLength: 0)
+     }
++    .padding(.horizontal, 22)
++    .padding(.top, 14)
++    .padding(.bottom, 8)
++  }
+ }
+--- baseline/native/MemoryOS/Domain/DemoCatalog.swift
++++ native/MemoryOS/Domain/DemoCatalog.swift
+@@ -0,0 +1,217 @@
++import Foundation
++
++enum AppLanguage: String, CaseIterable, Identifiable, Sendable {
++  case english = "en"
++  case arabic = "ar"
++  var id: String { rawValue }
++  var name: String { self == .english ? "English" : "العربية" }
++
++  func text(_ english: String, _ arabic: String) -> String {
++    self == .english ? english : arabic
++  }
++}
++
++struct DemoText: Sendable {
++  let english: String
++  let arabic: String
++
++  init(_ english: String, _ arabic: String) {
++    self.english = english
++    self.arabic = arabic
++  }
++
++  func value(in language: AppLanguage) -> String {
++    language.text(english, arabic)
++  }
++
++  func matches(_ query: String) -> Bool {
++    let trimmed = query.trimmingCharacters(in: .whitespacesAndNewlines)
++    return trimmed.isEmpty || english.localizedStandardContains(trimmed)
++      || arabic.localizedStandardContains(trimmed)
++  }
++}
++
++enum DemoRecordKind: Sendable {
++  case person, project, capture
++
++  var symbol: String {
++    switch self {
++    case .person: "person"
++    case .project: "folder"
++    case .capture: "text.alignleading"
++    }
++  }
++
++  func title(in language: AppLanguage) -> String {
++    switch self {
++    case .person: language.text("Person", "شخص")
++    case .project: language.text("Project", "مشروع")
++    case .capture: language.text("Capture", "ملاحظة")
++    }
++  }
++}
++
++struct DemoRecord: Identifiable, Sendable {
++  let id: String
++  let kind: DemoRecordKind
++  let title: DemoText
++  let summary: DemoText
++  // Original sample text stays in its original language in either interface.
++  let source: String
++  var plans: [DemoText] = []
++  var ideas: [DemoText] = []
++}
++
++struct DemoConnection: Sendable {
++  let from: String
++  let to: String
++  let context: DemoText
++
++  func other(than id: String) -> String? {
++    if from == id { return to }
++    if to == id { return from }
++    return nil
++  }
++}
++
++struct DemoBirthday: Identifiable, Sendable {
++  let id: String
++  let personID: String
++  let date: DemoText
++}
++
++enum ReminderChoice: String, CaseIterable, Identifiable, Sendable {
++  case off, onDay, dayBefore, weekBefore
++  var id: String { rawValue }
++
++  func title(in language: AppLanguage) -> String {
++    switch self {
++    case .off: language.text("Off", "إيقاف")
++    case .onDay: language.text("On the day", "في نفس اليوم")
++    case .dayBefore: language.text("One day before", "قبل يوم واحد")
++    case .weekBefore: language.text("One week before", "قبل أسبوع واحد")
++    }
++  }
++}
++
++enum DemoDestination: Hashable {
++  case record(String)
++  case birthday(String)
++}
++
++struct DemoCatalog: Sendable {
++  let records: [DemoRecord]
++  let connections: [DemoConnection]
++  let birthdays: [DemoBirthday]
++
++  func record(_ id: String) -> DemoRecord? { records.first { $0.id == id } }
++  func birthday(_ id: String) -> DemoBirthday? { birthdays.first { $0.id == id } }
++  func birthday(for personID: String) -> DemoBirthday? {
++    birthdays.first { $0.personID == personID }
++  }
++
++  func records(of kind: DemoRecordKind, matching query: String = "") -> [DemoRecord] {
++    records.filter { $0.kind == kind && ($0.title.matches(query) || $0.summary.matches(query)) }
++  }
++
++  func connections(for id: String) -> [(record: DemoRecord, context: DemoText)] {
++    connections.compactMap { connection in
++      guard let otherID = connection.other(than: id), let record = record(otherID) else {
++        return nil
++      }
++      return (record, connection.context)
++    }
++  }
++
++  static let sample = DemoCatalog(
++    records: [
++      DemoRecord(
++        id: "ali", kind: .person, title: DemoText("Ali Hassan", "علي حسن"),
++        summary: DemoText(
++          "A friend. We talked about a small website.", "صديق. تحدثنا عن موقع صغير."),
++        source: "علي: خلينا نخلي الموقع بسيط. We can review the first draft together."),
++      DemoRecord(
++        id: "sara", kind: .person, title: DemoText("Sara Noor", "سارة نور"),
++        summary: DemoText(
++          "A designer with ideas for the reading room.", "مصممة لديها أفكار لغرفة القراءة."),
++        source: "Sara: A quiet reading corner, with space for Arabic books. ركن بسيط ومريح."),
++      DemoRecord(
++        id: "omar", kind: .person, title: DemoText("Omar Salim", "عمر سالم"),
++        summary: DemoText(
++          "A friend helping plan the reading room.", "صديق يساعد في تخطيط غرفة القراءة."),
++        source: "عمر: أشوف القياسات يوم الجمعة. The shelves can wait until we agree."),
++      DemoRecord(
++        id: "website", kind: .project, title: DemoText("Small website", "موقع صغير"),
++        summary: DemoText(
++          "A simple site for a fictional neighbourhood studio.", "موقع بسيط لاستوديو خيالي في الحي."
++        ),
++        source: "Sample project brief: one page, clear contact details, Arabic and English.",
++        plans: [
++          DemoText("Review the first page with Ali.", "مراجعة الصفحة الأولى مع علي."),
++          DemoText("Prepare Arabic and English copy.", "إعداد النص بالعربية والإنجليزية."),
++        ],
++        ideas: [
++          DemoText("We might add a small photo gallery later.", "قد نضيف معرض صور صغيراً لاحقاً.")
++        ]),
++      DemoRecord(
++        id: "reading", kind: .project, title: DemoText("Reading room", "غرفة القراءة"),
++        summary: DemoText("A calm place to read with friends.", "مكان هادئ للقراءة مع الأصدقاء."),
++        source: "فكرة تجريبية: ركن للقراءة. Sara suggested warm light; Omar will check the space.",
++        plans: [
++          DemoText("Check the room dimensions with Omar.", "التأكد من قياسات الغرفة مع عمر.")
++        ],
++        ideas: [
++          DemoText(
++            "Maybe use movable shelves; no decision yet.", "ربما نستخدم رفوفاً متحركة؛ لم نقرر بعد.")
++        ]),
++      DemoRecord(
++        id: "chat-ali", kind: .capture, title: DemoText("Website conversation", "حديث الموقع"),
++        summary: DemoText(
++          "Ali suggested keeping the first version small.", "اقترح علي أن تكون النسخة الأولى بسيطة."
++        ),
++        source: "Ali: Keep version 1 simple. نراجع الصفحة الأولى سوا، ويمكن نضيف الصور بعدين."),
++      DemoRecord(
++        id: "chat-sara", kind: .capture, title: DemoText("A reading corner", "ركن للقراءة"),
++        summary: DemoText(
++          "Sara suggested warm light and Arabic books.", "اقترحت سارة إضاءة دافئة وكتباً عربية."),
++        source: "Sara: Warm light and a shelf for Arabic books. نريد مكان هادئ للقراءة."),
++      DemoRecord(
++        id: "chat-omar", kind: .capture, title: DemoText("Room measurements", "قياسات الغرفة"),
++        summary: DemoText(
++          "Omar offered to check the space on Friday.", "عرض عمر التأكد من المكان يوم الجمعة."),
++        source: "عمر: أقيس الغرفة الجمعة. No shelves ordered; let's agree on the layout first."),
++    ],
++    connections: [
++      DemoConnection(
++        from: "ali", to: "website",
++        context: DemoText("Discussed the first version", "ناقش النسخة الأولى")),
++      DemoConnection(
++        from: "ali", to: "chat-ali",
++        context: DemoText("Said in the sample conversation", "قال في الحديث التجريبي")),
++      DemoConnection(
++        from: "website", to: "chat-ali", context: DemoText("Source discussion", "الحديث المصدر")),
++      DemoConnection(
++        from: "sara", to: "reading",
++        context: DemoText("Suggested the reading corner", "اقترحت ركن القراءة")),
++      DemoConnection(
++        from: "sara", to: "chat-sara", context: DemoText("Shared a design idea", "شاركت فكرة تصميم")
++      ),
++      DemoConnection(
++        from: "reading", to: "chat-sara", context: DemoText("Source idea", "الفكرة المصدر")),
++      DemoConnection(
++        from: "omar", to: "reading",
++        context: DemoText("Helping with measurements", "يساعد في القياسات")),
++      DemoConnection(
++        from: "omar", to: "chat-omar",
++        context: DemoText("Offered to measure the room", "عرض قياس الغرفة")),
++      DemoConnection(
++        from: "reading", to: "chat-omar", context: DemoText("Source plan", "الخطة المصدر")),
++    ],
++    birthdays: [
++      DemoBirthday(id: "birthday-ali", personID: "ali", date: DemoText("12 May", "١٢ أيار")),
++      DemoBirthday(id: "birthday-sara", personID: "sara", date: DemoText("24 August", "٢٤ آب")),
++      DemoBirthday(
++        id: "birthday-omar", personID: "omar", date: DemoText("3 December", "٣ كانون الأول")),
++    ]
++  )
++}
+--- baseline/native/MemoryOS/Features/BirthdaysView.swift
++++ native/MemoryOS/Features/BirthdaysView.swift
+@@ -0,0 +1,99 @@
++import SwiftUI
++
++struct BirthdaysView: View {
++  let session: DemoSession
++  private var language: AppLanguage { session.language }
++
++  var body: some View {
++    List {
++      Section {
++        ForEach(session.catalog.birthdays) { birthday in
++          if let person = session.catalog.record(birthday.personID) {
++            NavigationLink(value: DemoDestination.birthday(birthday.id)) {
++              DemoRow(
++                title: person.title.value(in: language),
++                subtitle: birthday.date.value(in: language), symbol: "gift")
++            }
++            .accessibilityIdentifier("birthday-\(birthday.id)")
++          }
++        }
++      } header: {
++        Text(language.text("Sample birthdays", "أعياد ميلاد تجريبية"))
++      } footer: {
++        Text(
++          language.text(
++            "Dates repeat each year. Choose a birthday to preview reminders. Nothing is scheduled.",
++            "تتكرر التواريخ كل سنة. اختر عيد ميلاد لمعاينة التذكير. لن يجدول التطبيق أي شيء."))
++      }
++    }
++    .listStyle(.plain)
++    .scrollContentBackground(.hidden)
++  }
++}
++
++struct BirthdayDetailView: View {
++  let session: DemoSession
++  let birthdayID: String
++  private var language: AppLanguage { session.language }
++
++  var body: some View {
++    Group {
++      if let birthday = session.catalog.birthday(birthdayID),
++        let person = session.catalog.record(birthday.personID)
++      {
++        List {
++          Section {
++            Text(birthday.date.value(in: language)).font(.title2).padding(.vertical, 10)
++            RecordLink(record: person, language: language)
++          } header: {
++            Text(language.text("Every year", "كل سنة"))
++          }
++
++          Section {
++            ForEach(ReminderChoice.allCases) { choice in
++              Button {
++                session.chooseReminder(choice, for: birthday.id)
++              } label: {
++                HStack(alignment: .firstTextBaseline) {
++                  Text(choice.title(in: language))
++                  Spacer()
++                  if session.reminder(for: birthday.id) == choice {
++                    Image(systemName: "checkmark").accessibilityHidden(true)
++                  }
++                }
++                .frame(minHeight: 44)
++                .contentShape(Rectangle())
++              }
++              .buttonStyle(.plain)
++              .accessibilityIdentifier("reminder-\(choice.rawValue)")
++              .accessibilityAddTraits(
++                session.reminder(for: birthday.id) == choice ? [.isSelected] : [])
++            }
++          } header: {
++            Text(language.text("Reminder preview", "معاينة التذكير"))
++          } footer: {
++            Text(
++              language.text(
++                "Preview only. No notification or calendar event will be created. Choices reset when the app closes.",
++                "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق.")
++            )
++          }
++
++          Section(language.text("Current choice", "الخيار الحالي")) {
++            Text(session.reminder(for: birthday.id).title(in: language))
++              .accessibilityIdentifier("reminder-current")
++          }
++        }
++        .listStyle(.insetGrouped)
++        .scrollContentBackground(.hidden)
++        .navigationTitle(person.title.value(in: language))
++        .navigationBarTitleDisplayMode(.inline)
++      } else {
++        ContentUnavailableView(
++          language.text("Birthday unavailable", "عيد الميلاد غير متاح"), systemImage: "gift")
++      }
++    }
++    .background(MemoryTheme.canvas)
++    .toolbar(.visible, for: .navigationBar)
++  }
++}
+--- baseline/native/MemoryOS/Features/BrainMapView.swift
++++ native/MemoryOS/Features/BrainMapView.swift
+@@ -0,0 +1,125 @@
++import SwiftUI
++
++struct BrainMapView: View {
++  let session: DemoSession
++  @Bindable var state: DemoSectionState
++  @Environment(\.dynamicTypeSize) private var typeSize
++  private var language: AppLanguage { session.language }
++
++  var body: some View {
++    ScrollView {
++      VStack(alignment: .leading, spacing: 24) {
++        if typeSize.isAccessibilitySize {
++          VStack(alignment: .leading, spacing: 12) {
++            Text(language.text("Explore connections", "استكشف الروابط")).font(.headline)
++            focusPicker
++          }
++        } else {
++          HStack {
++            Text(language.text("Explore connections", "استكشف الروابط")).font(.headline)
++            Spacer(minLength: 12)
++            focusPicker
++          }
++        }
++        if typeSize.isAccessibilitySize {
++          Text(language.text("List view for larger text", "عرض القائمة للنص الكبير"))
++            .font(.subheadline)
++            .foregroundStyle(MemoryTheme.secondary)
++            .accessibilityIdentifier("map-large-text-presentation")
++        } else {
++          Picker(language.text("Presentation", "طريقة العرض"), selection: $state.mapListMode) {
++            Text(language.text("Map", "الخريطة")).tag(false)
++            Text(language.text("List", "القائمة")).tag(true)
++          }
++          .pickerStyle(.segmented)
++          .accessibilityIdentifier("map-presentation")
++        }
++
++        if let focused = session.catalog.record(state.focusedRecordID) {
++          VStack(alignment: .leading, spacing: 10) {
++            Text(language.text("Focus", "التركيز")).font(.caption).foregroundStyle(
++              MemoryTheme.secondary)
++            RecordLink(record: focused, language: language)
++              .accessibilityIdentifier("map-open-\(focused.id)")
++          }
++          .padding(18)
++          .background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 20))
++
++          Text(language.text("Direct connections", "الروابط المباشرة"))
++            .font(.headline)
++            .accessibilityAddTraits(.isHeader)
++          ForEach(session.catalog.connections(for: focused.id), id: \.record.id) { item in
++            if state.mapListMode || typeSize.isAccessibilitySize {
++              VStack(alignment: .leading, spacing: 4) {
++                RecordLink(
++                  record: item.record, language: language, context: item.context.value(in: language)
++                )
++                focusButton(item.record)
++              }
++            } else {
++              HStack(alignment: .top, spacing: 14) {
++                // A branch joins the focused record to each direct connection.
++                HStack(spacing: 0) {
++                  Rectangle().frame(width: 1)
++                  Rectangle().frame(width: 14, height: 1)
++                  Circle().stroke(lineWidth: 1).frame(width: 8, height: 8)
++                }
++                .frame(width: 24, height: 66)
++                .foregroundStyle(MemoryTheme.line)
++                .accessibilityHidden(true)
++                VStack(alignment: .leading, spacing: 6) {
++                  RecordLink(
++                    record: item.record, language: language,
++                    context: item.context.value(in: language)
++                  )
++                  .accessibilityIdentifier("map-open-\(item.record.id)")
++                  focusButton(item.record)
++                }
++              }
++            }
++          }
++          Text(
++            language.text(
++              "Open a card for its details. Explore from a connection to follow another branch.",
++              "افتح بطاقة لعرض تفاصيلها. استكشف من أحد الروابط لتتبع فرع آخر.")
++          )
++          .font(.footnote).foregroundStyle(MemoryTheme.secondary)
++        }
++        DemoFootnote(language: language)
++      }
++      .padding(22)
++    }
++    .accessibilityIdentifier("brain-map")
++  }
++
++  private var focusPicker: some View {
++    Menu {
++      Picker(language.text("Focus", "التركيز"), selection: $state.focusedRecordID) {
++        ForEach(session.catalog.records) { record in
++          Text(record.title.value(in: language)).tag(record.id)
++        }
++      }
++    } label: {
++      Label(language.text("Choose", "اختر"), systemImage: "arrow.triangle.branch")
++        .frame(minHeight: 44)
++    }
++    .accessibilityIdentifier("map-choose")
++  }
++
++  private func focusButton(_ record: DemoRecord) -> some View {
++    Button {
++      state.focusedRecordID = record.id
++    } label: {
++      Label(
++        language.text("Explore from here", "استكشف من هنا"), systemImage: "arrow.triangle.branch"
++      )
++      .font(.subheadline)
++      .frame(minHeight: 44)
++    }
++    .accessibilityLabel(
++      language.text(
++        "Explore connections for \(record.title.english)", "استكشف روابط \(record.title.arabic)")
++    )
++    .accessibilityIdentifier("map-focus-\(record.id)")
++  }
++}
+--- baseline/native/MemoryOS/Features/CaptureView.swift
++++ native/MemoryOS/Features/CaptureView.swift
+@@ -1,107 +1,129 @@
+ import SwiftUI
+ 
+ struct CaptureView: View {
+-    @Bindable var session: DemoSession
+-    let menuIsOpen: Bool
+-    @State private var notice: Notice?
+-    @FocusState private var composerFocused: Bool
+-    private var language: AppLanguage { session.language }
++  @Bindable var session: DemoSession
++  let menuIsOpen: Bool
++  @State private var notice: Notice?
++  @FocusState private var composerFocused: Bool
++  private var language: AppLanguage { session.language }
+ 
+-    private enum Notice: String, Identifiable {
+-        case recording, attachment, saved
+-        var id: String { rawValue }
++  private enum Notice {
++    case recording, attachment, saved
++  }
++
++  var body: some View {
++    GeometryReader { geometry in
++      ScrollView {
++        VStack(spacing: 24) {
++          Spacer(minLength: 0)
++          Button {
++            notice = .recording
++          } label: {
++            Image(systemName: "mic")
++              .font(.system(size: 62, weight: .light))
++              .foregroundStyle(.white)
++              .frame(width: 166, height: 166)
++              .background(MemoryTheme.recordingSurface, in: Circle())
++          }
++          .buttonStyle(.plain)
++          .accessibilityLabel(language.text("Preview voice capture", "معاينة التسجيل الصوتي"))
++          .accessibilityHint(
++            language.text("Demo only. The microphone stays off.", "عرض تجريبي. الميكروفون لا يعمل.")
++          )
++          .accessibilityIdentifier("record-preview")
++
++          Text(language.text("Tap to record", "اضغط للتسجيل"))
++            .font(MemoryTheme.body)
++          Spacer(minLength: 0)
++        }
++        .frame(maxWidth: .infinity)
++        .frame(minHeight: max(280, geometry.size.height))
++      }
++      .scrollIndicators(.hidden)
++      .scrollDismissesKeyboard(.interactively)
+     }
++    .safeAreaInset(edge: .bottom, spacing: 0) {
++      VStack(spacing: 18) {
++        Button {
++          composerFocused = false
++          session.section = .memories
++        } label: {
++          HStack(spacing: 10) {
++            Text(language.text("Your memories", "ذكرياتك"))
++            Image(systemName: "chevron.forward")
++          }
++          .font(MemoryTheme.caption)
++          .foregroundStyle(MemoryTheme.secondary)
++          .frame(minHeight: 44)
++        }
++        .buttonStyle(.plain)
++        .accessibilityIdentifier("your-memories")
+ 
+-    var body: some View {
+-        GeometryReader { geometry in
+-            ScrollView {
+-                VStack(spacing: 24) {
+-                    Spacer(minLength: 0)
+-                    Button { notice = .recording } label: {
+-                        Image(systemName: "mic")
+-                            .font(.system(size: 62, weight: .light))
+-                            .foregroundStyle(.white)
+-                            .frame(width: 166, height: 166)
+-                            .background(MemoryTheme.recordingSurface, in: Circle())
+-                    }
+-                    .buttonStyle(.plain)
+-                    .accessibilityLabel(language.text("Preview voice capture", "معاينة التسجيل الصوتي"))
+-                    .accessibilityHint(language.text("Demo only. The microphone stays off.", "عرض تجريبي. الميكروفون لا يعمل."))
+-                    .accessibilityIdentifier("record-preview")
++        HStack(alignment: .bottom, spacing: 6) {
++          IconControl(symbol: "plus", label: language.text("Add attachment", "إضافة مرفق")) {
++            notice = .attachment
++          }
+ 
+-                    Text(language.text("Tap to record", "اضغط للتسجيل"))
+-                        .font(MemoryTheme.body)
+-                    Spacer(minLength: 0)
+-                }
+-                .frame(maxWidth: .infinity)
+-                .frame(minHeight: max(280, geometry.size.height))
+-            }
+-            .scrollIndicators(.hidden)
+-            .scrollDismissesKeyboard(.interactively)
++          TextField(
++            "", text: $session.draft,
++            prompt: Text(language.text("Write anything...", "اكتب أي شيء...")).foregroundStyle(
++              MemoryTheme.secondary), axis: .vertical
++          )
++          .font(.body)
++          .lineLimit(1...5)
++          .padding(.vertical, 14)
++          .focused($composerFocused)
++          .accessibilityLabel(language.text("Write a thought", "اكتب فكرة"))
++          .accessibilityIdentifier("capture-composer")
++
++          IconControl(
++            symbol: "arrow.up", label: language.text("Add demo memory", "إضافة ذكرى تجريبية"),
++            filled: true, identifier: "send-memory"
++          ) {
++            session.submit()
++            composerFocused = false
++            notice = .saved
++          }
++          .disabled(!session.canSubmit)
+         }
+-        .safeAreaInset(edge: .bottom, spacing: 0) {
+-            VStack(spacing: 18) {
+-                Button {
+-                    composerFocused = false
+-                    session.section = .memories
+-                } label: {
+-                    HStack(spacing: 10) {
+-                        Text(language.text("Your memories", "ذكرياتك"))
+-                        Image(systemName: "chevron.forward")
+-                    }
+-                    .font(MemoryTheme.caption)
+-                    .foregroundStyle(MemoryTheme.secondary)
+-                    .frame(minHeight: 44)
+-                }
+-                .buttonStyle(.plain)
+-                .accessibilityIdentifier("your-memories")
++        .padding(8)
++        .overlay(RoundedRectangle(cornerRadius: 34).stroke(MemoryTheme.line, lineWidth: 0.75))
++      }
++      .padding(.horizontal, 18)
++      .padding(.bottom, 18)
++      .background(MemoryTheme.canvas)
++    }
++    .onChange(of: menuIsOpen) { _, open in
++      if open { composerFocused = false }
++    }
++    .alert(
++      noticeTitle, isPresented: Binding(get: { notice != nil }, set: { if !$0 { notice = nil } })
++    ) {
++      Button(language.text("OK", "حسناً"), role: .cancel) { notice = nil }
++    } message: {
++      Text(noticeMessage)
++    }
++  }
+ 
+-                HStack(alignment: .bottom, spacing: 6) {
+-                    IconControl(symbol: "plus", label: language.text("Add attachment", "إضافة مرفق")) { notice = .attachment }
++  private var noticeTitle: String {
++    language.text("MemoryOS demo", "عرض MemoryOS التجريبي")
++  }
+ 
+-                    TextField("", text: $session.draft, prompt: Text(language.text("Write anything...", "اكتب أي شيء...")).foregroundStyle(MemoryTheme.secondary), axis: .vertical)
+-                        .font(.body)
+-                        .lineLimit(1...5)
+-                        .padding(.vertical, 14)
+-                        .focused($composerFocused)
+-                        .accessibilityLabel(language.text("Write a thought", "اكتب فكرة"))
+-                        .accessibilityIdentifier("capture-composer")
+-
+-                    IconControl(symbol: "arrow.up", label: language.text("Add demo memory", "إضافة ذكرى تجريبية"), filled: true, identifier: "send-memory") {
+-                        session.submit()
+-                        composerFocused = false
+-                        notice = .saved
+-                    }
+-                    .disabled(!session.canSubmit)
+-                }
+-                .padding(8)
+-                .overlay(RoundedRectangle(cornerRadius: 34).stroke(MemoryTheme.line, lineWidth: 0.75))
+-            }
+-            .padding(.horizontal, 18)
+-            .padding(.bottom, 18)
+-            .background(MemoryTheme.canvas)
+-        }
+-        .onChange(of: menuIsOpen) { _, open in
+-            if open { composerFocused = false }
+-        }
+-        .alert(noticeTitle, isPresented: Binding(get: { notice != nil }, set: { if !$0 { notice = nil } })) {
+-            Button(language.text("OK", "حسناً"), role: .cancel) { notice = nil }
+-        } message: { Text(noticeMessage) }
++  private var noticeMessage: String {
++    switch notice {
++    case .recording:
++      language.text(
++        "Voice capture comes in a later step. This preview does not use your microphone.",
++        "التسجيل الصوتي يأتي في خطوة لاحقة. هذه المعاينة لا تستخدم الميكروفون.")
++    case .attachment:
++      language.text(
++        "Attachments come in a later step. This demo does not open your files.",
++        "المرفقات تأتي في خطوة لاحقة. هذا العرض لا يفتح ملفاتك.")
++    case .saved:
++      language.text(
++        "Added to Your memories for this session. Closing the app clears demo memories.",
++        "أُضيفت إلى ذكرياتك لهذه الجلسة. إغلاق التطبيق يمسح الذكريات التجريبية.")
++    case nil: ""
+     }
+-
+-    private var noticeTitle: String {
+-        language.text("MemoryOS demo", "عرض MemoryOS التجريبي")
+-    }
+-
+-    private var noticeMessage: String {
+-        switch notice {
+-        case .recording:
+-            language.text("Voice capture comes in a later step. This preview does not use your microphone.", "التسجيل الصوتي يأتي في خطوة لاحقة. هذه المعاينة لا تستخدم الميكروفون.")
+-        case .attachment:
+-            language.text("Attachments come in a later step. This demo does not open your files.", "المرفقات تأتي في خطوة لاحقة. هذا العرض لا يفتح ملفاتك.")
+-        case .saved:
+-            language.text("Added to Your memories for this session. Closing the app clears demo memories.", "أُضيفت إلى ذكرياتك لهذه الجلسة. إغلاق التطبيق يمسح الذكريات التجريبية.")
+-        case nil: ""
+-        }
+-    }
++  }
+ }
+--- baseline/native/MemoryOS/Features/CatalogListView.swift
++++ native/MemoryOS/Features/CatalogListView.swift
+@@ -0,0 +1,95 @@
++import SwiftUI
++
++struct CatalogListView: View {
++  let session: DemoSession
++  @Bindable var state: DemoSectionState
++  let kind: DemoRecordKind
++  let menuIsOpen: Bool
++  @FocusState private var searchFocused: Bool
++  @Environment(\.dynamicTypeSize) private var typeSize
++  private var language: AppLanguage { session.language }
++  private var records: [DemoRecord] { session.catalog.records(of: kind, matching: state.query) }
++
++  var body: some View {
++    VStack(spacing: 0) {
++      HStack(spacing: 8) {
++        Image(systemName: "magnifyingglass")
++          .font(.system(size: 20))
++          .accessibilityHidden(true)
++        TextField(
++          "", text: $state.query,
++          prompt: Text(
++            typeSize.isAccessibilitySize
++              ? language.text("Search", "بحث")
++              : kind == .person
++                ? language.text("Search people", "ابحث عن شخص")
++                : language.text("Search projects", "ابحث عن مشروع")
++          ).foregroundStyle(MemoryTheme.secondary), axis: .vertical
++        )
++        .lineLimit(1...3)
++        .padding(.vertical, 12)
++        .focused($searchFocused)
++        .submitLabel(.search)
++        .onSubmit { searchFocused = false }
++        .accessibilityLabel(
++          language.text("Search sample names or topics", "ابحث في الأسماء أو المواضيع التجريبية")
++        )
++        .accessibilityIdentifier("catalog-search")
++        if !state.query.isEmpty {
++          IconControl(
++            symbol: "xmark", label: language.text("Clear search", "مسح البحث"),
++            identifier: "clear-search"
++          ) { state.query = "" }
++        }
++      }
++      .padding(.leading, 14)
++      .frame(minHeight: 52)
++      .background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 14))
++      .padding(.horizontal, 22)
++      .padding(.vertical, 12)
++
++      if records.isEmpty {
++        ContentUnavailableView {
++          Label(language.text("No matches", "لا توجد نتائج"), systemImage: "magnifyingglass")
++        } description: {
++          Text(
++            language.text(
++              "Try a different name or clear the search.", "جرّب اسماً آخر أو امسح البحث."))
++        } actions: {
++          Button(language.text("Clear search", "مسح البحث")) {
++            state.query = ""
++            searchFocused = false
++          }
++          .frame(minHeight: 44)
++          .accessibilityIdentifier("clear-empty-search")
++        }
++      } else {
++        ScrollView {
++          LazyVStack(spacing: 0) {
++            ForEach(records) { record in
++              VStack(spacing: 0) {
++                HStack {
++                  RecordLink(record: record, language: language)
++                  Image(systemName: "chevron.forward")
++                    .font(.caption).foregroundStyle(MemoryTheme.secondary)
++                    .accessibilityHidden(true)
++                }
++                .padding(.horizontal, 22)
++                Divider().padding(.leading, 22)
++              }
++              .id(record.id)
++            }
++          }
++          .scrollTargetLayout()
++          DemoFootnote(language: language).padding(22)
++        }
++        .scrollPosition(id: $state.topRecordID)
++        .scrollDismissesKeyboard(.interactively)
++      }
++    }
++    .onChange(of: menuIsOpen) { _, open in
++      if open { searchFocused = false }
++    }
++    .onChange(of: session.section) { _, _ in searchFocused = false }
++  }
++}
+--- baseline/native/MemoryOS/Features/DemoComponents.swift
++++ native/MemoryOS/Features/DemoComponents.swift
+@@ -0,0 +1,54 @@
++import SwiftUI
++
++struct DemoRow: View {
++  let title: String
++  let subtitle: String
++  let symbol: String
++
++  var body: some View {
++    HStack(alignment: .top, spacing: 14) {
++      Image(systemName: symbol)
++        .font(.system(size: 23))
++        .foregroundStyle(MemoryTheme.secondary)
++        .frame(width: 28, height: 28)
++        .accessibilityHidden(true)
++      VStack(alignment: .leading, spacing: 6) {
++        Text(title).font(.headline)
++        Text(subtitle).font(.subheadline).foregroundStyle(MemoryTheme.secondary)
++      }
++      .frame(maxWidth: .infinity, alignment: .leading)
++    }
++    .padding(.vertical, 10)
++    .frame(minHeight: 44)
++    .accessibilityElement(children: .combine)
++  }
++}
++
++struct DemoFootnote: View {
++  let language: AppLanguage
++  var body: some View {
++    Text(
++      language.text(
++        "Fictional sample data. Changes last for this session.",
++        "بيانات خيالية للتجربة. تبقى التغييرات لهذه الجلسة.")
++    )
++    .font(.footnote)
++    .foregroundStyle(MemoryTheme.secondary)
++    .frame(maxWidth: .infinity, alignment: .leading)
++  }
++}
++
++struct RecordLink: View {
++  let record: DemoRecord
++  let language: AppLanguage
++  var context: String? = nil
++
++  var body: some View {
++    NavigationLink(value: DemoDestination.record(record.id)) {
++      DemoRow(
++        title: record.title.value(in: language),
++        subtitle: context ?? record.summary.value(in: language), symbol: record.kind.symbol)
++    }
++    .accessibilityIdentifier("record-\(record.id)")
++  }
++}
+--- baseline/native/MemoryOS/Features/RecordDetailView.swift
++++ native/MemoryOS/Features/RecordDetailView.swift
+@@ -0,0 +1,80 @@
++import SwiftUI
++
++struct RecordDetailView: View {
++  let session: DemoSession
++  let recordID: String
++  private var language: AppLanguage { session.language }
++
++  var body: some View {
++    Group {
++      if let record = session.catalog.record(recordID) {
++        List {
++          Section {
++            Text(record.summary.value(in: language)).font(.body).padding(.vertical, 6)
++          } header: {
++            Text(record.kind.title(in: language))
++          }
++
++          Section(language.text("Original sample", "النص التجريبي الأصلي")) {
++            Text(record.source)
++              .textSelection(.enabled)
++              .frame(maxWidth: .infinity, alignment: .leading)
++              .padding(.vertical, 8)
++              .accessibilityIdentifier("original-source")
++          }
++          if !record.plans.isEmpty {
++            Section(language.text("Current plans", "الخطط الحالية")) {
++              ForEach(record.plans, id: \.english) { plan in
++                Label(plan.value(in: language), systemImage: "checklist").padding(.vertical, 6)
++              }
++            }
++          }
++          if !record.ideas.isEmpty {
++            Section {
++              ForEach(record.ideas, id: \.english) { idea in
++                Label(idea.value(in: language), systemImage: "lightbulb").padding(.vertical, 6)
++              }
++            } header: {
++              Text(language.text("Tentative ideas", "أفكار مبدئية"))
++            } footer: {
++              Text(
++                language.text(
++                  "Ideas are possibilities, not agreed plans.", "هذه احتمالات ولم نتفق عليها كخطط.")
++              )
++            }
++          }
++          if let birthday = session.catalog.birthday(for: record.id) {
++            Section(language.text("Birthday", "عيد الميلاد")) {
++              NavigationLink(value: DemoDestination.birthday(birthday.id)) {
++                DemoRow(
++                  title: birthday.date.value(in: language),
++                  subtitle: language.text("View reminder choices", "عرض خيارات التذكير"),
++                  symbol: "gift")
++              }
++              .accessibilityIdentifier("birthday-\(birthday.id)")
++            }
++          }
++          Section(language.text("Connections", "الروابط")) {
++            ForEach(session.catalog.connections(for: record.id), id: \.record.id) { item in
++              RecordLink(
++                record: item.record, language: language, context: item.context.value(in: language))
++            }
++          }
++          Section { DemoFootnote(language: language) }
++        }
++        .listStyle(.insetGrouped)
++        .scrollContentBackground(.hidden)
++        .navigationTitle(record.title.value(in: language))
++        .navigationBarTitleDisplayMode(.inline)
++        .accessibilityIdentifier("record-detail-\(record.id)")
++      } else {
++        ContentUnavailableView(
++          language.text("Sample unavailable", "العينة غير متاحة"), systemImage: "doc.questionmark",
++          description: Text(
++            language.text("Go back and choose another sample.", "ارجع واختر عينة أخرى.")))
++      }
++    }
++    .background(MemoryTheme.canvas)
++    .toolbar(.visible, for: .navigationBar)
++  }
++}
+--- baseline/native/MemoryOS/Features/RootView.swift
++++ native/MemoryOS/Features/RootView.swift
+@@ -1,61 +1,54 @@
+ import SwiftUI
+ 
++enum MenuFocusTarget: Hashable {
++  case sidebar, rootMenu, detailMenu
++}
++
+ struct RootView: View {
+-    @Bindable var session: DemoSession
+-    @State private var menuIsOpen = false
+-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+-    @AccessibilityFocusState private var menuFocus: Bool
+-    @AccessibilityFocusState private var headerFocus: Bool
++  @Bindable var session: DemoSession
++  @State private var menuIsOpen = false
++  @Environment(\.accessibilityReduceMotion) private var reduceMotion
++  @AccessibilityFocusState private var menuFocus: MenuFocusTarget?
+ 
+-    var body: some View {
+-        GeometryReader { geometry in
+-            ZStack(alignment: .leading) {
+-                VStack(spacing: 0) {
+-                    ScreenHeader(
+-                        title: session.section == .capture ? "MemoryOS" : session.section.title(in: session.language),
+-                        menuLabel: session.language.text("Open menu", "فتح القائمة"),
+-                        openMenu: { setMenu(true) }
+-                    )
+-                    .accessibilityFocused($headerFocus)
++  var body: some View {
++    GeometryReader { geometry in
++      ZStack(alignment: .leading) {
++        SectionHostView(
++          session: session, section: session.section, menuIsOpen: menuIsOpen,
++          openMenu: { setMenu(true) }, menuFocus: $menuFocus
++        )
++        .id(session.section)
++        .accessibilityHidden(menuIsOpen)
++        .allowsHitTesting(!menuIsOpen)
+ 
+-                    if session.section == .capture {
+-                        CaptureView(session: session, menuIsOpen: menuIsOpen)
+-                    } else {
+-                        SectionView(session: session)
+-                    }
+-                }
+-                .accessibilityHidden(menuIsOpen)
+-                .allowsHitTesting(!menuIsOpen)
++        Color.black.opacity(menuIsOpen ? 0.6 : 0)
++          .ignoresSafeArea(edges: .bottom)
++          .contentShape(Rectangle())
++          .onTapGesture { setMenu(false) }
++          .allowsHitTesting(menuIsOpen)
++          .accessibilityHidden(true)
+ 
+-                Color.black.opacity(menuIsOpen ? 0.6 : 0)
+-                    .ignoresSafeArea(edges: .bottom)
+-                    .contentShape(Rectangle())
+-                    .onTapGesture { setMenu(false) }
+-                    .allowsHitTesting(menuIsOpen)
+-                    .accessibilityHidden(true)
++        SidebarView(session: session, close: { setMenu(false) }, menuFocus: $menuFocus)
++          .frame(width: geometry.size.width * 0.84)
++          .frame(maxHeight: .infinity)
++          .background(MemoryTheme.panel)
++          // SwiftUI mirrors the horizontal offset in RTL.
++          .offset(x: menuIsOpen ? 0 : -geometry.size.width * 0.84)
++          .allowsHitTesting(menuIsOpen)
++          .accessibilityHidden(!menuIsOpen)
++          .accessibilityAddTraits(.isModal)
++          .accessibilityAction(.escape) { setMenu(false) }
++      }
++      .background(MemoryTheme.canvas)
++      .foregroundStyle(MemoryTheme.ink)
++    }
++  }
+ 
+-                SidebarView(session: session, close: { setMenu(false) })
+-                    .frame(width: geometry.size.width * 0.84)
+-                    .frame(maxHeight: .infinity)
+-                    .background(MemoryTheme.panel)
+-                    // SwiftUI mirrors the horizontal offset in RTL.
+-                    .offset(x: menuIsOpen ? 0 : -geometry.size.width * 0.84)
+-                    .allowsHitTesting(menuIsOpen)
+-                    .accessibilityHidden(!menuIsOpen)
+-                    .accessibilityFocused($menuFocus)
+-                    .accessibilityAddTraits(.isModal)
+-                    .accessibilityAction(.escape) { setMenu(false) }
+-            }
+-            .background(MemoryTheme.canvas)
+-            .foregroundStyle(MemoryTheme.ink)
+-        }
++  private func setMenu(_ open: Bool) {
++    withAnimation(reduceMotion ? nil : .easeOut(duration: 0.2)) {
++      menuIsOpen = open
+     }
+-
+-    private func setMenu(_ open: Bool) {
+-        withAnimation(reduceMotion ? nil : .easeOut(duration: 0.2)) {
+-            menuIsOpen = open
+-        }
+-        menuFocus = open
+-        headerFocus = !open
+-    }
++    menuFocus =
++      open ? .sidebar : (session.state(for: session.section).path.isEmpty ? .rootMenu : .detailMenu)
++  }
+ }
+--- baseline/native/MemoryOS/Features/SectionView.swift
++++ native/MemoryOS/Features/SectionView.swift
+@@ -1,43 +1,114 @@
+ import SwiftUI
+ 
++/// The session retains paths; only the current section renders controls.
++struct SectionHostView: View {
++  let session: DemoSession
++  let section: AppSection
++  let menuIsOpen: Bool
++  let openMenu: () -> Void
++  let menuFocus: AccessibilityFocusState<MenuFocusTarget?>.Binding
++
++  var body: some View {
++    @Bindable var state = session.state(for: section)
++    NavigationStack(path: $state.path) {
++      VStack(spacing: 0) {
++        ScreenHeader(
++          title: section == .capture ? "MemoryOS" : section.title(in: session.language),
++          menuLabel: session.language.text("Open menu", "فتح القائمة"), openMenu: openMenu,
++          menuFocus: menuFocus
++        )
++        SectionView(session: session, section: section, menuIsOpen: menuIsOpen)
++      }
++      .toolbar(.hidden, for: .navigationBar)
++      .navigationDestination(for: DemoDestination.self) { destination in
++        Group {
++          switch destination {
++          case .record(let id): RecordDetailView(session: session, recordID: id)
++          case .birthday(let id): BirthdayDetailView(session: session, birthdayID: id)
++          }
++        }
++        .toolbar {
++          ToolbarItem(placement: .topBarTrailing) {
++            IconControl(
++              symbol: "line.3.horizontal", label: session.language.text("Open menu", "فتح القائمة"),
++              identifier: "open-menu", action: openMenu
++            )
++            .accessibilityFocused(menuFocus, equals: .detailMenu)
++          }
++        }
++      }
++    }
++  }
++}
++
+ struct SectionView: View {
+-    @Bindable var session: DemoSession
+-    private var language: AppLanguage { session.language }
++  @Bindable var session: DemoSession
++  let section: AppSection
++  let menuIsOpen: Bool
++  private var language: AppLanguage { session.language }
+ 
+-    var body: some View {
+-        Group {
+-            switch session.section {
+-            case .settings:
+-                Form {
+-                    Picker(language.text("Language", "اللغة"), selection: $session.language) {
+-                        ForEach(AppLanguage.allCases) { item in
+-                            Text(item.name).tag(item)
+-                        }
+-                    }
+-                    .accessibilityIdentifier("language-picker")
+-                    Text(language.text("Interface demo. Memories last for this session only.", "عرض للواجهة. تبقى الذكريات لهذه الجلسة فقط."))
+-                        .foregroundStyle(MemoryTheme.secondary)
+-                }
+-                .scrollContentBackground(.hidden)
+-            case .memories:
+-                if session.memories.isEmpty {
+-                    ContentUnavailableView(language.text("Your memories", "ذكرياتك"), systemImage: "doc.text", description: Text(language.text("Thoughts you add in this demo appear here until the app closes.", "تظهر هنا الأفكار التي تضيفها في هذا العرض حتى إغلاق التطبيق.")))
+-                } else {
+-                    List {
+-                        Section {
+-                            ForEach(session.memories) { memory in
+-                                Text(memory.text).textSelection(.enabled)
+-                            }
+-                        } footer: {
+-                            Text(language.text("Demo memories. Cleared when the app closes.", "ذكريات تجريبية. تُمسح عند إغلاق التطبيق."))
+-                        }
+-                    }
+-                    .listStyle(.plain)
+-                }
+-            default:
+-                ContentUnavailableView(session.section.title(in: language), systemImage: session.section.symbol, description: Text(language.text("This section is ready for the next design step.", "هذا القسم جاهز لخطوة التصميم التالية.")))
++  var body: some View {
++    Group {
++      switch section {
++      case .capture:
++        CaptureView(session: session, menuIsOpen: menuIsOpen)
++      case .profiles:
++        CatalogListView(
++          session: session, state: session.state(for: section), kind: .person,
++          menuIsOpen: menuIsOpen)
++      case .projects:
++        CatalogListView(
++          session: session, state: session.state(for: section), kind: .project,
++          menuIsOpen: menuIsOpen)
++      case .birthdays:
++        BirthdaysView(session: session)
++      case .brainMap:
++        BrainMapView(session: session, state: session.state(for: section))
++      case .settings:
++        Form {
++          Picker(language.text("Language", "اللغة"), selection: $session.language) {
++            ForEach(AppLanguage.allCases) { item in
++              Text(item.name).tag(item)
+             }
++          }
++          .accessibilityIdentifier("language-picker")
++          Text(
++            language.text(
++              "Interface demo. Memories and reminder choices last for this session only.",
++              "عرض للواجهة. تبقى الذكريات وخيارات التذكير لهذه الجلسة فقط.")
++          )
++          .foregroundStyle(MemoryTheme.secondary)
+         }
+-        .frame(maxWidth: .infinity, maxHeight: .infinity)
++        .scrollContentBackground(.hidden)
++      case .memories:
++        if session.memories.isEmpty {
++          ContentUnavailableView {
++            Label(language.text("Your memories", "ذكرياتك"), systemImage: "doc.text")
++          } description: {
++            Text(
++              language.text(
++                "Thoughts you add in this demo appear here until the app closes.",
++                "تظهر هنا الأفكار التي تضيفها في هذا العرض حتى إغلاق التطبيق."))
++          } actions: {
++            Button(language.text("Write a thought", "اكتب فكرة")) { session.section = .capture }
++              .frame(minHeight: 44)
++          }
++        } else {
++          List {
++            Section {
++              ForEach(session.memories) { memory in
++                Text(memory.text).textSelection(.enabled)
++              }
++            } footer: {
++              DemoFootnote(language: language)
++            }
++          }
++          .listStyle(.plain)
++          .scrollContentBackground(.hidden)
++        }
++      }
+     }
++    .frame(maxWidth: .infinity, maxHeight: .infinity)
++    .background(MemoryTheme.canvas)
++  }
+ }
+--- baseline/native/MemoryOS/Features/SidebarView.swift
++++ native/MemoryOS/Features/SidebarView.swift
+@@ -1,67 +1,75 @@
+ import SwiftUI
+ 
+ struct SidebarView: View {
+-    let session: DemoSession
+-    let close: () -> Void
+-    private var language: AppLanguage { session.language }
++  let session: DemoSession
++  let close: () -> Void
++  let menuFocus: AccessibilityFocusState<MenuFocusTarget?>.Binding
++  private var language: AppLanguage { session.language }
+ 
+-    var body: some View {
+-        VStack(alignment: .leading, spacing: 0) {
+-            HStack {
+-                Text("MemoryOS")
+-                    .font(MemoryTheme.title)
+-                    .accessibilityAddTraits(.isHeader)
+-                Spacer(minLength: 0)
+-                IconControl(symbol: "xmark", label: language.text("Close menu", "إغلاق القائمة"), identifier: "close-menu", action: close)
+-            }
+-            .padding(.top, 14)
+-            .padding(.bottom, 42)
++  var body: some View {
++    VStack(alignment: .leading, spacing: 0) {
++      HStack {
++        Text("MemoryOS")
++          .font(MemoryTheme.title)
++          .accessibilityAddTraits(.isHeader)
++        Spacer(minLength: 0)
++        IconControl(
++          symbol: "xmark", label: language.text("Close menu", "إغلاق القائمة"),
++          identifier: "close-menu", action: close
++        )
++        .accessibilityFocused(menuFocus, equals: .sidebar)
++      }
++      .padding(.top, 14)
++      .padding(.bottom, 42)
+ 
+-            ScrollView {
+-                VStack(spacing: 8) {
+-                    ForEach(AppSection.allCases.filter { $0 != .settings }) { section in
+-                        row(section)
+-                    }
+-                }
+-            }
+-            .scrollIndicators(.hidden)
++      ScrollView {
++        VStack(spacing: 8) {
++          ForEach(AppSection.allCases.filter { $0 != .settings }) { section in
++            row(section)
++          }
++        }
++      }
++      .scrollIndicators(.hidden)
+ 
+-            row(.settings)
+-                .padding(.top, 12)
+-            Text(language.text("A place for your thoughts.", "مساحة لأفكارك."))
+-                .font(MemoryTheme.caption)
+-                .foregroundStyle(MemoryTheme.secondary)
+-                .padding(.horizontal, 8)
+-                .padding(.top, 18)
+-                .padding(.bottom, 22)
+-        }
+-        .padding(.horizontal, 22)
++      row(.settings)
++        .padding(.top, 12)
++      Text(language.text("A place for your thoughts.", "مساحة لأفكارك."))
++        .font(MemoryTheme.caption)
++        .foregroundStyle(MemoryTheme.secondary)
++        .padding(.horizontal, 8)
++        .padding(.top, 18)
++        .padding(.bottom, 22)
+     }
++    .padding(.horizontal, 22)
++  }
+ 
+-    private func row(_ section: AppSection) -> some View {
+-        Button {
+-            session.section = section
+-            close()
+-        } label: {
+-            HStack(spacing: 20) {
+-                Image(systemName: section.symbol)
+-                    .font(.system(size: 23, weight: .regular))
+-                    .frame(width: 26)
+-                    .accessibilityHidden(true)
+-                Text(section.title(in: language))
+-                    .font(MemoryTheme.body)
+-                    .multilineTextAlignment(.leading)
+-                Spacer(minLength: 0)
+-            }
+-            .padding(.horizontal, 12)
+-            .padding(.vertical, 12)
+-            .frame(minHeight: 52)
+-            .frame(maxWidth: .infinity, alignment: .leading)
+-            .background(session.section == section ? MemoryTheme.selection : .clear, in: RoundedRectangle(cornerRadius: 14))
+-            .contentShape(Rectangle())
+-        }
+-        .buttonStyle(.plain)
+-        .accessibilityIdentifier("section-\(section.rawValue)")
+-        .accessibilityAddTraits(session.section == section ? [.isSelected] : [])
++  private func row(_ section: AppSection) -> some View {
++    Button {
++      session.section = section
++      close()
++    } label: {
++      HStack(spacing: 20) {
++        Image(systemName: section.symbol)
++          .font(.system(size: 23, weight: .regular))
++          .frame(width: 26)
++          .accessibilityHidden(true)
++        Text(section.title(in: language))
++          .font(MemoryTheme.body)
++          .multilineTextAlignment(.leading)
++        Spacer(minLength: 0)
++      }
++      .padding(.horizontal, 12)
++      .padding(.vertical, 12)
++      .frame(minHeight: 52)
++      .frame(maxWidth: .infinity, alignment: .leading)
++      .background(
++        session.section == section ? MemoryTheme.selection : .clear,
++        in: RoundedRectangle(cornerRadius: 14)
++      )
++      .contentShape(Rectangle())
+     }
++    .buttonStyle(.plain)
++    .accessibilityIdentifier("section-\(section.rawValue)")
++    .accessibilityAddTraits(session.section == section ? [.isSelected] : [])
++  }
+ }
+--- baseline/native/MemoryOS.xcodeproj/project.pbxproj
++++ native/MemoryOS.xcodeproj/project.pbxproj
+@@ -4,9 +4,9 @@
+  classes = {};
+  objectVersion = 77;
+  objects = {
+-  A00000000000000000000001 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = YES; LastSwiftUpdateCheck = 2700; LastUpgradeCheck = 2700; TargetAttributes = {A00000000000000000000010 = {CreatedOnToolsVersion = 27.2;}; A00000000000000000000020 = {CreatedOnToolsVersion = 27.2; TestTargetID = A00000000000000000000010;};};}; buildConfigurationList = A00000000000000000000030; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, ar, Base); mainGroup = A00000000000000000000002; preferredProjectObjectVersion = 77; productRefGroup = A00000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (A00000000000000000000010, A00000000000000000000020);};
+-  A00000000000000000000002 = {isa = PBXGroup; children = (A00000000000000000000004, A00000000000000000000005, A00000000000000000000003); sourceTree = "<group>";};
+-  A00000000000000000000003 = {isa = PBXGroup; children = (A00000000000000000000011, A00000000000000000000021); name = Products; sourceTree = "<group>";};
++  A00000000000000000000001 = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = YES; LastSwiftUpdateCheck = 2700; LastUpgradeCheck = 2700; TargetAttributes = {A00000000000000000000010 = {CreatedOnToolsVersion = 27.2;}; A00000000000000000000020 = {CreatedOnToolsVersion = 27.2; TestTargetID = A00000000000000000000010;};};}; buildConfigurationList = A00000000000000000000030; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, ar, Base); mainGroup = A00000000000000000000002; preferredProjectObjectVersion = 77; productRefGroup = A00000000000000000000003; projectDirPath = ""; projectRoot = ""; targets = (A00000000000000000000010, A00000000000000000000020, B00000000000000000000010);};
++  A00000000000000000000002 = {isa = PBXGroup; children = (A00000000000000000000004, A00000000000000000000005, B00000000000000000000004, A00000000000000000000003); sourceTree = "<group>";};
++  A00000000000000000000003 = {isa = PBXGroup; children = (A00000000000000000000011, A00000000000000000000021, B00000000000000000000011); name = Products; sourceTree = "<group>";};
+   A00000000000000000000004 = {isa = PBXFileSystemSynchronizedRootGroup; path = MemoryOS; sourceTree = "<group>";};
+   A00000000000000000000005 = {isa = PBXFileSystemSynchronizedRootGroup; path = MemoryOSUITests; sourceTree = "<group>";};
+   A00000000000000000000010 = {isa = PBXNativeTarget; buildConfigurationList = A00000000000000000000031; buildPhases = (A00000000000000000000012, A00000000000000000000013, A00000000000000000000014); buildRules = (); dependencies = (); fileSystemSynchronizedGroups = (A00000000000000000000004); name = MemoryOS; packageProductDependencies = (); productName = MemoryOS; productReference = A00000000000000000000011; productType = "com.apple.product-type.application";};
+@@ -30,6 +30,18 @@
+   A00000000000000000000043 = {isa = XCBuildConfiguration; buildSettings = {ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = MemoryOS; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait; MARKETING_VERSION = 0.1.0; PRODUCT_BUNDLE_IDENTIFIER = com.eros.memoryos.demo; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1;}; name = Release;};
+   A00000000000000000000044 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.eros.memoryos.demo.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = MemoryOS;}; name = Debug;};
+   A00000000000000000000045 = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.eros.memoryos.demo.uitests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = MemoryOS;}; name = Release;};
++
++  B00000000000000000000004 = {isa = PBXFileSystemSynchronizedRootGroup; path = MemoryOSTests; sourceTree = "<group>";};
++  B00000000000000000000010 = {isa = PBXNativeTarget; buildConfigurationList = B00000000000000000000031; buildPhases = (B00000000000000000000012, B00000000000000000000013, B00000000000000000000014); buildRules = (); dependencies = (B00000000000000000000025); fileSystemSynchronizedGroups = (B00000000000000000000004); name = MemoryOSTests; packageProductDependencies = (); productName = MemoryOSTests; productReference = B00000000000000000000011; productType = "com.apple.product-type.bundle.unit-test";};
++  B00000000000000000000011 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR;};
++  B00000000000000000000012 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
++  B00000000000000000000013 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
++  B00000000000000000000014 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0;};
++  B00000000000000000000025 = {isa = PBXTargetDependency; target = A00000000000000000000010; targetProxy = B00000000000000000000026;};
++  B00000000000000000000026 = {isa = PBXContainerItemProxy; containerPortal = A00000000000000000000001; proxyType = 1; remoteGlobalIDString = A00000000000000000000010; remoteInfo = MemoryOS;};
++  B00000000000000000000031 = {isa = XCConfigurationList; buildConfigurations = (B00000000000000000000042, B00000000000000000000043); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release;};
++  B00000000000000000000042 = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.eros.memoryos.demo.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemoryOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MemoryOS";}; name = Debug;};
++  B00000000000000000000043 = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; PRODUCT_BUNDLE_IDENTIFIER = com.eros.memoryos.demo.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_STRICT_CONCURRENCY = complete; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MemoryOS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MemoryOS";}; name = Release;};
+  };
+  rootObject = A00000000000000000000001;
+ }
+--- baseline/native/MemoryOS.xcodeproj/xcshareddata/xcschemes/MemoryOS.xcscheme
++++ native/MemoryOS.xcodeproj/xcshareddata/xcschemes/MemoryOS.xcscheme
+@@ -3,7 +3,7 @@
+  <BuildAction parallelizeBuildables="YES" buildImplicitDependencies="YES">
+   <BuildActionEntries><BuildActionEntry buildForTesting="YES" buildForRunning="YES" buildForProfiling="YES" buildForArchiving="YES" buildForAnalyzing="YES"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="A00000000000000000000010" BuildableName="MemoryOS.app" BlueprintName="MemoryOS" ReferencedContainer="container:MemoryOS.xcodeproj"/></BuildActionEntry></BuildActionEntries>
+  </BuildAction>
+- <TestAction buildConfiguration="Debug" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.IDEFoundation.Launcher.LLDB" shouldUseLaunchSchemeArgsEnv="YES"><Testables><TestableReference skipped="NO"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="A00000000000000000000020" BuildableName="MemoryOSUITests.xctest" BlueprintName="MemoryOSUITests" ReferencedContainer="container:MemoryOS.xcodeproj"/></TestableReference></Testables></TestAction>
++ <TestAction buildConfiguration="Debug" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.IDEFoundation.Launcher.LLDB" shouldUseLaunchSchemeArgsEnv="YES"><Testables><TestableReference skipped="NO"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="A00000000000000000000020" BuildableName="MemoryOSUITests.xctest" BlueprintName="MemoryOSUITests" ReferencedContainer="container:MemoryOS.xcodeproj"/></TestableReference><TestableReference skipped="NO"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="B00000000000000000000010" BuildableName="MemoryOSTests.xctest" BlueprintName="MemoryOSTests" ReferencedContainer="container:MemoryOS.xcodeproj"/></TestableReference></Testables></TestAction>
+  <LaunchAction buildConfiguration="Debug" selectedDebuggerIdentifier="Xcode.DebuggerFoundation.Debugger.LLDB" selectedLauncherIdentifier="Xcode.IDEFoundation.Launcher.LLDB" launchStyle="0" useCustomWorkingDirectory="NO" ignoresPersistentStateOnLaunch="NO" debugDocumentVersioning="YES" allowLocationSimulation="YES"><BuildableProductRunnable runnableDebuggingMode="0"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="A00000000000000000000010" BuildableName="MemoryOS.app" BlueprintName="MemoryOS" ReferencedContainer="container:MemoryOS.xcodeproj"/></BuildableProductRunnable></LaunchAction>
+  <ProfileAction buildConfiguration="Release" shouldUseLaunchSchemeArgsEnv="YES" savedToolIdentifier="" useCustomWorkingDirectory="NO" debugDocumentVersioning="YES"><BuildableProductRunnable runnableDebuggingMode="0"><BuildableReference BuildableIdentifier="primary" BlueprintIdentifier="A00000000000000000000010" BuildableName="MemoryOS.app" BlueprintName="MemoryOS" ReferencedContainer="container:MemoryOS.xcodeproj"/></BuildableProductRunnable></ProfileAction>
+  <AnalyzeAction buildConfiguration="Debug"/>
+--- baseline/native/MemoryOSTests/DemoTests.swift
++++ native/MemoryOSTests/DemoTests.swift
+@@ -0,0 +1,91 @@
++import Testing
++
++@testable import MemoryOS
++
++struct CatalogTests {
++  @Test func allLinksAndBirthdaysResolveToOriginalRecords() throws {
++    let catalog = DemoCatalog.sample
++    #expect(Set(catalog.records.map(\.id)).count == catalog.records.count)
++    #expect(Set(catalog.birthdays.map(\.id)).count == catalog.birthdays.count)
++    for connection in catalog.connections {
++      let from = try #require(catalog.record(connection.from))
++      let to = try #require(catalog.record(connection.to))
++      #expect(from.id != to.id)
++      #expect(catalog.connections(for: to.id).contains { $0.record.id == from.id })
++    }
++    for birthday in catalog.birthdays {
++      #expect(catalog.record(birthday.personID)?.kind == .person)
++    }
++    #expect(catalog.record("missing") == nil)
++    #expect(catalog.connections(for: "missing").isEmpty)
++  }
++
++  @Test(arguments: ["Ali Hassan", "علي", "  Ali Hassan  "])
++  func bilingualSearchFindsTheSamePerson(query: String) {
++    #expect(DemoCatalog.sample.records(of: .person, matching: query).map(\.id) == ["ali"])
++  }
++
++  @Test func whitespaceAndNoResults() {
++    let catalog = DemoCatalog.sample
++    #expect(catalog.records(of: .person, matching: " \n ").count == 3)
++    #expect(catalog.records(of: .project, matching: "no such project").isEmpty)
++    #expect(catalog.records(of: .person, matching: "website").map(\.id) == ["ali"])
++  }
++
++  @Test func connectedFlowPreservesSourceAndTentativeWording() throws {
++    let catalog = DemoCatalog.sample
++    let person = try #require(catalog.record("ali"))
++    #expect(catalog.connections(for: person.id).map(\.record.id) == ["website", "chat-ali"])
++    let project = try #require(catalog.record("website"))
++    #expect(!project.plans.isEmpty)
++    #expect(project.ideas.first?.english.contains("might") == true)
++    let source = try #require(catalog.record("chat-ali"))
++    #expect(source.source.contains("Keep version 1 simple"))
++    #expect(source.source.contains("نراجع"))
++  }
++}
++
++@MainActor
++struct SessionTests {
++  @Test func blankCaptureCannotSubmitAndAcceptedCaptureClearsDraft() {
++    let session = DemoSession()
++    session.draft = "  \n "
++    #expect(!session.canSubmit)
++    session.submit()
++    #expect(session.memories.isEmpty)
++    session.draft = "  فكرة عن Reading room  "
++    session.submit()
++    #expect(session.draft.isEmpty)
++    #expect(session.memories.first?.text == "فكرة عن Reading room")
++    let id = session.memories.first?.id
++    session.draft = "Second thought"
++    session.submit()
++    #expect(session.memories.count == 2)
++    #expect(session.memories.last?.id == id)
++    #expect(DemoSession().memories.isEmpty)
++  }
++
++  @Test func remindersRemainIndependentAndResetWithSession() {
++    let session = DemoSession()
++    #expect(session.reminder(for: "birthday-ali") == .off)
++    session.chooseReminder(.weekBefore, for: "birthday-ali")
++    session.section = .projects
++    session.language = .arabic
++    #expect(session.reminder(for: "birthday-ali") == .weekBefore)
++    #expect(session.reminder(for: "birthday-sara") == .off)
++    session.chooseReminder(.dayBefore, for: "missing")
++    #expect(session.reminderChoices["missing"] == nil)
++    session.chooseReminder(.off, for: "birthday-ali")
++    #expect(session.reminder(for: "birthday-ali") == .off)
++    #expect(DemoSession().reminderChoices.isEmpty)
++  }
++
++  @Test(arguments: ReminderChoice.allCases)
++  func reminderSelectionHasBilingualLabels(choice: ReminderChoice) {
++    let session = DemoSession()
++    session.chooseReminder(choice, for: "birthday-ali")
++    #expect(session.reminder(for: "birthday-ali") == choice)
++    #expect(!choice.title(in: .english).isEmpty)
++    #expect(!choice.title(in: .arabic).isEmpty)
++  }
++}
+--- baseline/native/MemoryOSUITests/DemoFlowTests.swift
++++ native/MemoryOSUITests/DemoFlowTests.swift
+@@ -0,0 +1,265 @@
++import XCTest
++
++@MainActor
++final class DemoFlowTests: XCTestCase {
++  override func setUpWithError() throws { continueAfterFailure = false }
++
++  func testPeopleToProjectAndSourceWithBackNavigation() {
++    let app = XCUIApplication()
++    app.launch()
++    route("profiles", in: app)
++    app.buttons["record-ali"].tap()
++    XCTAssertTrue(app.staticTexts["Original sample"].exists)
++    app.swipeUp()
++    app.buttons["record-website"].tap()
++    XCTAssertTrue(app.staticTexts["Current plans"].exists)
++    XCTAssertTrue(app.staticTexts["Tentative ideas"].exists)
++    app.swipeUp()
++    app.buttons["record-chat-ali"].tap()
++    XCTAssertTrue(app.staticTexts["original-source"].label.contains("Keep version 1 simple"))
++    app.navigationBars.buttons.firstMatch.tap()
++    XCTAssertTrue(app.staticTexts["Tentative ideas"].exists)
++  }
++
++  func testSearchRecoveryAndSectionState() {
++    let app = XCUIApplication()
++    app.launch()
++    route("profiles", in: app)
++    let search = app.descendants(matching: .any)["catalog-search"]
++    search.tap()
++    search.typeText("missing sample\n")
++    XCTAssertTrue(app.staticTexts["No matches"].exists)
++    app.buttons["clear-empty-search"].tap()
++    XCTAssertTrue(app.buttons["record-sara"].exists)
++    search.tap()
++    search.typeText("Ali")
++    XCTAssertTrue(app.buttons["record-ali"].exists)
++    XCTAssertFalse(app.buttons["record-sara"].exists)
++    app.buttons["open-menu"].tap()
++    XCTAssertFalse(app.keyboards.firstMatch.exists)
++    app.buttons["section-projects"].tap()
++    route("profiles", in: app)
++    XCTAssertEqual(search.value as? String, "Ali")
++    app.buttons["record-ali"].tap()
++    route("capture", in: app)
++    route("profiles", in: app)
++    XCTAssertTrue(app.staticTexts["Original sample"].exists)
++  }
++
++  func testBirthdayChoicesSurviveNavigationAndReset() {
++    let app = XCUIApplication()
++    app.launch()
++    route("birthdays", in: app)
++    app.buttons["birthday-birthday-ali"].tap()
++    for (choice, title) in [
++      ("onDay", "On the day"), ("dayBefore", "One day before"), ("weekBefore", "One week before"),
++      ("off", "Off"), ("weekBefore", "One week before"),
++    ] {
++      app.buttons["reminder-\(choice)"].tap()
++      XCTAssertEqual(app.staticTexts["reminder-current"].label, title)
++    }
++    route("projects", in: app)
++    route("birthdays", in: app)
++    XCTAssertEqual(app.staticTexts["reminder-current"].label, "One week before")
++    app.terminate()
++    app.launch()
++    route("birthdays", in: app)
++    app.buttons["birthday-birthday-ali"].tap()
++    XCTAssertEqual(app.staticTexts["reminder-current"].label, "Off")
++  }
++
++  func testMapExplorationOpensLinkedProject() {
++    let app = XCUIApplication()
++    app.launch()
++    route("brainMap", in: app)
++    app.buttons["map-focus-website"].tap()
++    XCTAssertTrue(app.buttons["map-open-website"].exists)
++    app.buttons["map-open-website"].tap()
++    XCTAssertTrue(app.staticTexts["Current plans"].exists)
++    app.navigationBars.buttons.firstMatch.tap()
++    app.segmentedControls.buttons["List"].tap()
++    XCTAssertTrue(app.buttons["record-ali"].exists)
++    app.buttons["record-ali"].tap()
++    XCTAssertTrue(app.staticTexts["original-source"].label.contains("علي"))
++  }
++
++  func testArabicPeopleBirthdayAndMixedSource() {
++    let app = XCUIApplication()
++    app.launch()
++    route("settings", in: app)
++    app.buttons["language-picker"].tap()
++    app.buttons["العربية"].tap()
++    route("profiles", in: app)
++    app.buttons["record-ali"].tap()
++    XCTAssertTrue(app.staticTexts["original-source"].label.contains("We can review"))
++    XCTAssertTrue(app.staticTexts["النص التجريبي الأصلي"].exists)
++    app.buttons["birthday-birthday-ali"].tap()
++    app.buttons["reminder-dayBefore"].tap()
++    XCTAssertEqual(app.staticTexts["reminder-current"].label, "قبل يوم واحد")
++    route("brainMap", in: app)
++    app.buttons["map-open-website"].tap()
++    XCTAssertTrue(app.staticTexts["الخطط الحالية"].exists)
++  }
++
++  func testLargeTextKeepsMapAndBirthdayActionsReachable() {
++    let app = XCUIApplication()
++    app.launchArguments = [
++      "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL",
++    ]
++    app.launch()
++    route("brainMap", in: app)
++    XCTAssertTrue(app.descendants(matching: .any)["map-choose"].isHittable)
++    XCTAssertTrue(app.staticTexts["map-large-text-presentation"].exists)
++    XCTAssertFalse(app.segmentedControls["map-presentation"].exists)
++    app.swipeUp()
++    XCTAssertTrue(app.buttons["map-focus-website"].exists)
++    route("birthdays", in: app)
++    app.buttons["birthday-birthday-ali"].tap()
++    app.swipeUp()
++    app.buttons["reminder-onDay"].tap()
++    app.swipeUp()
++    XCTAssertEqual(app.staticTexts["reminder-current"].label, "On the day")
++  }
++
++  func testMenuDismissalPreservesRootAndDetailControls() {
++    let app = XCUIApplication()
++    app.launch()
++    app.buttons["open-menu"].tap()
++    app.buttons["close-menu"].tap()
++    XCTAssertEqual(app.buttons.matching(identifier: "open-menu").count, 1)
++    assertNotHittable(app.buttons["close-menu"])
++    route("profiles", in: app)
++    app.buttons["record-ali"].tap()
++    app.buttons["open-menu"].tap()
++    app.buttons["close-menu"].tap()
++    XCTAssertTrue(app.staticTexts["Original sample"].exists)
++    XCTAssertTrue(app.buttons["open-menu"].isHittable)
++    assertNotHittable(app.buttons["close-menu"])
++  }
++
++  func testEnglishAccessibilityAudits() throws { try auditConnectedScreens(arabic: false) }
++
++  func testArabicAccessibilityAudits() throws { try auditConnectedScreens(arabic: true) }
++
++  func testLinkedTextScalesInBothLanguages() {
++    for arabic in [false, true] {
++      let regular = linkedTextHeights(arabic: arabic, category: "UICTContentSizeCategoryL")
++      let large = linkedTextHeights(
++        arabic: arabic, category: "UICTContentSizeCategoryAccessibilityXXXL")
++      for (text, height) in regular {
++        XCTAssertGreaterThan(large[text] ?? 0, height * 1.8, text)
++      }
++    }
++  }
++
++  private func linkedTextHeights(arabic: Bool, category: String) -> [String: CGFloat] {
++    let app = XCUIApplication()
++    app.launchArguments = ["-UIPreferredContentSizeCategoryName", category]
++    app.launch()
++    if arabic {
++      route("settings", in: app)
++      app.buttons["language-picker"].tap()
++      app.buttons["العربية"].tap()
++    }
++    route("profiles", in: app)
++    app.buttons["record-ali"].tap()
++    var heights: [String: CGFloat] = [:]
++    measure(
++      arabic ? ["١٢ أيار", "عرض خيارات التذكير"] : ["12 May", "View reminder choices"])
++    route("projects", in: app)
++    app.buttons["record-website"].tap()
++    measure(
++      arabic
++        ? ["قد نضيف معرض صور صغيراً لاحقاً.", "هذه احتمالات ولم نتفق عليها كخطط."]
++        : [
++          "We might add a small photo gallery later.", "Ideas are possibilities, not agreed plans.",
++        ])
++    route("birthdays", in: app)
++    app.buttons["birthday-birthday-ali"].tap()
++    measure(
++      arabic
++        ? [
++          "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق.",
++          "الخيار الحالي",
++        ]
++        : [
++          "Preview only. No notification or calendar event will be created. Choices reset when the app closes.",
++          "Current choice",
++        ])
++
++    func measure(_ texts: [String]) {
++      for text in texts {
++        let element = app.staticTexts[text]
++        for _ in 0..<8 {
++          if element.isHittable { break }
++          app.swipeUp()
++        }
++        XCTAssertTrue(element.isHittable, text)
++        heights[text] = element.frame.height
++        print("TEXT-SIZE \(category) \(text): \(element.frame)")
++      }
++    }
++    app.terminate()
++    return heights
++  }
++
++  private func auditConnectedScreens(arabic: Bool) throws {
++    continueAfterFailure = true
++    let app = XCUIApplication()
++    app.launch()
++    if arabic {
++      route("settings", in: app)
++      app.buttons["language-picker"].tap()
++      app.buttons["العربية"].tap()
++      route("capture", in: app)
++    }
++    try auditCategories(in: app)
++    app.buttons["open-menu"].tap()
++    try auditCategories(in: app)
++    app.buttons["section-profiles"].tap()
++    try auditCategories(in: app)
++    app.buttons["record-ali"].tap()
++    try auditCategories(in: app)
++    route("projects", in: app)
++    app.buttons["record-website"].tap()
++    try auditCategories(in: app)
++    route("birthdays", in: app)
++    app.buttons["birthday-birthday-ali"].tap()
++    try auditCategories(in: app)
++    route("brainMap", in: app)
++    try auditCategories(in: app)
++  }
++
++  private func auditCategories(in app: XCUIApplication) throws {
++    for (name, category): (String, XCUIAccessibilityAuditType) in [
++      ("Contrast", .contrast), ("Dynamic Type", .dynamicType), ("Clipped text", .textClipped),
++      ("Hit regions", .hitRegion), ("Descriptions", .sufficientElementDescription),
++      ("Traits", .trait), ("Element detection", .elementDetection),
++    ] {
++      try XCTContext.runActivity(named: name) { _ in
++        try app.performAccessibilityAudit(for: category) { issue in
++          let element = issue.element
++          let target =
++            element?.exists == true
++            ? "\(element!.identifier) | \(element!.label) | \(element!.frame)"
++            : "unresolved element"
++          print("AUDIT \(name): \(issue.detailedDescription) | \(target)")
++          return false
++        }
++      }
++    }
++  }
++
++  private func assertNotHittable(_ element: XCUIElement) {
++    let expectation = XCTNSPredicateExpectation(
++      predicate: NSPredicate(format: "hittable == false"), object: element)
++    XCTAssertEqual(XCTWaiter.wait(for: [expectation], timeout: 3), .completed)
++  }
++
++  private func route(_ section: String, in app: XCUIApplication) {
++    app.buttons["open-menu"].tap()
++    let destination = app.buttons["section-\(section)"]
++    if !destination.isHittable { app.swipeUp() }
++    destination.tap()
++  }
++}
+--- baseline/native/MemoryOSUITests/FoundationTests.swift
++++ native/MemoryOSUITests/FoundationTests.swift
+@@ -2,78 +2,89 @@
+ 
+ @MainActor
+ final class FoundationTests: XCTestCase {
+-    override func setUpWithError() throws {
+-        continueAfterFailure = false
++  override func setUpWithError() throws {
++    continueAfterFailure = false
++  }
++
++  func testSidebarRoutesAndCloses() {
++    let app = XCUIApplication()
++    app.launch()
++    for (section, title) in [
++      ("brainMap", "BrainMap"), ("profiles", "People"), ("projects", "Projects"),
++      ("memories", "Memories"), ("birthdays", "Birthdays"), ("settings", "Settings"),
++      ("capture", "MemoryOS"),
++    ] {
++      app.buttons["open-menu"].tap()
++      XCTAssertTrue(app.buttons["close-menu"].waitForExistence(timeout: 3))
++      app.buttons["section-\(section)"].tap()
++      assertNotHittable(app.buttons["close-menu"])
++      XCTAssertTrue(app.buttons["open-menu"].isHittable)
++      XCTAssertTrue(app.staticTexts[title].firstMatch.exists)
+     }
++    app.buttons["open-menu"].tap()
++    XCTAssertTrue(app.buttons["close-menu"].waitForExistence(timeout: 3))
++    app.buttons["close-menu"].tap()
++    assertNotHittable(app.buttons["close-menu"])
++    XCTAssertTrue(app.buttons["record-preview"].exists)
++  }
+ 
+-    func testSidebarRoutesAndCloses() {
+-        let app = XCUIApplication()
+-        app.launch()
+-        for (section, title) in [("brainMap", "BrainMap"), ("profiles", "Profiles"), ("projects", "Projects"), ("memories", "Memories"), ("birthdays", "Birthdays"), ("settings", "Settings"), ("capture", "MemoryOS")] {
+-            app.buttons["open-menu"].tap()
+-            XCTAssertTrue(app.buttons["close-menu"].waitForExistence(timeout: 3))
+-            app.buttons["section-\(section)"].tap()
+-            assertNotHittable(app.buttons["close-menu"])
+-            XCTAssertTrue(app.buttons["open-menu"].isHittable)
+-            XCTAssertTrue(app.staticTexts[title].firstMatch.exists)
+-        }
+-        app.buttons["open-menu"].tap()
+-        XCTAssertTrue(app.buttons["close-menu"].waitForExistence(timeout: 3))
+-        app.buttons["close-menu"].tap()
+-        assertNotHittable(app.buttons["close-menu"])
+-        XCTAssertTrue(app.buttons["record-preview"].exists)
+-    }
++  func testDemoCaptureAndSessionReset() {
++    let app = XCUIApplication()
++    app.launch()
++    XCTAssertFalse(app.buttons["send-memory"].isEnabled)
++    let composer =
++      app.textFields["capture-composer"].exists
++      ? app.textFields["capture-composer"] : app.textViews["capture-composer"]
++    composer.tap()
++    composer.typeText("A fictional project thought")
++    app.buttons["send-memory"].tap()
++    XCTAssertTrue(app.alerts.firstMatch.waitForExistence(timeout: 3))
++    app.alerts.buttons["OK"].tap()
++    app.buttons["your-memories"].tap()
++    XCTAssertTrue(app.staticTexts["A fictional project thought"].waitForExistence(timeout: 3))
++    app.terminate()
++    app.launch()
++    app.buttons["your-memories"].tap()
++    XCTAssertFalse(app.staticTexts["A fictional project thought"].exists)
++  }
+ 
+-    func testDemoCaptureAndSessionReset() {
+-        let app = XCUIApplication()
+-        app.launch()
+-        XCTAssertFalse(app.buttons["send-memory"].isEnabled)
+-        let composer = app.textFields["capture-composer"].exists
+-            ? app.textFields["capture-composer"] : app.textViews["capture-composer"]
+-        composer.tap()
+-        composer.typeText("A fictional project thought")
+-        app.buttons["send-memory"].tap()
+-        XCTAssertTrue(app.alerts.firstMatch.waitForExistence(timeout: 3))
+-        app.alerts.buttons["OK"].tap()
+-        app.buttons["your-memories"].tap()
+-        XCTAssertTrue(app.staticTexts["A fictional project thought"].waitForExistence(timeout: 3))
+-        app.terminate()
+-        app.launch()
+-        app.buttons["your-memories"].tap()
+-        XCTAssertFalse(app.staticTexts["A fictional project thought"].exists)
+-    }
++  func testArabicDrawerClosesFullyOutsideTheScreen() {
++    let app = XCUIApplication()
++    app.launch()
++    app.buttons["open-menu"].tap()
++    app.buttons["section-settings"].tap()
++    app.buttons["language-picker"].tap()
++    app.buttons["العربية"].tap()
++    app.buttons["open-menu"].tap()
++    app.buttons["section-capture"].tap()
++    assertNotHittable(app.buttons["close-menu"])
++    XCTAssertTrue(app.buttons["open-menu"].isHittable)
++    XCTAssertTrue(app.staticTexts["اضغط للتسجيل"].exists)
++    let fullyOutside = XCTNSPredicateExpectation(
++      predicate: NSPredicate { _, _ in
++        !app.buttons["section-settings"].frame.intersects(app.frame)
++      }, object: nil
++    )
++    XCTAssertEqual(XCTWaiter.wait(for: [fullyOutside], timeout: 3), .completed)
++  }
+ 
+-    func testArabicDrawerClosesFullyOutsideTheScreen() {
+-        let app = XCUIApplication()
+-        app.launch()
+-        app.buttons["open-menu"].tap()
+-        app.buttons["section-settings"].tap()
+-        app.buttons["language-picker"].tap()
+-        app.buttons["العربية"].tap()
+-        app.buttons["open-menu"].tap()
+-        app.buttons["section-capture"].tap()
+-        assertNotHittable(app.buttons["close-menu"])
+-        XCTAssertTrue(app.buttons["open-menu"].isHittable)
+-        XCTAssertTrue(app.staticTexts["اضغط للتسجيل"].exists)
+-        let fullyOutside = XCTNSPredicateExpectation(
+-            predicate: NSPredicate { _, _ in
+-                !app.buttons["section-settings"].frame.intersects(app.frame)
+-            }, object: nil
+-        )
+-        XCTAssertEqual(XCTWaiter.wait(for: [fullyOutside], timeout: 3), .completed)
+-    }
++  func testRecordingExplainsDemoBoundary() {
++    let app = XCUIApplication()
++    app.launch()
++    app.buttons["record-preview"].tap()
++    XCTAssertTrue(
++      app.alerts.staticTexts[
++        "Voice capture comes in a later step. This preview does not use your microphone."
++      ].exists)
++    app.alerts.buttons["OK"].tap()
++    XCTAssertTrue(app.buttons["record-preview"].exists)
++  }
+ 
+-    func testRecordingExplainsDemoBoundary() {
+-        let app = XCUIApplication()
+-        app.launch()
+-        app.buttons["record-preview"].tap()
+-        XCTAssertTrue(app.alerts.staticTexts["Voice capture comes in a later step. This preview does not use your microphone."].exists)
+-        app.alerts.buttons["OK"].tap()
+-        XCTAssertTrue(app.buttons["record-preview"].exists)
+-    }
+-
+-    private func assertNotHittable(_ element: XCUIElement, file: StaticString = #filePath, line: UInt = #line) {
+-        let hidden = XCTNSPredicateExpectation(predicate: NSPredicate(format: "hittable == false"), object: element)
+-        XCTAssertEqual(XCTWaiter.wait(for: [hidden], timeout: 3), .completed, file: file, line: line)
+-    }
++  private func assertNotHittable(
++    _ element: XCUIElement, file: StaticString = #filePath, line: UInt = #line
++  ) {
++    let hidden = XCTNSPredicateExpectation(
++      predicate: NSPredicate(format: "hittable == false"), object: element)
++    XCTAssertEqual(XCTWaiter.wait(for: [hidden], timeout: 3), .completed, file: file, line: line)
++  }
+ }
