@@ -1,0 +1,23 @@
+README.md
+  s_07c6de7c923515::t_7eb1d2848cd478 9
+docs/plans/implementation-checklist.md
+  s_07c6de7c923515::t_0d2db475a25d6c 24
+docs/tasks/2026-11-14-complete-interface-demo.md
+  s_07c6de7c923515::t_5cb050a516f070 117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7a10e4a148ed62deb19f1a473a9c64b7a9d1cddf",
+  "prompts": {},
+  "sessions": {
+    "s_07c6de7c923515": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1da4b-a2f2-74a3-91ce-fd7c1a1c3804",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
