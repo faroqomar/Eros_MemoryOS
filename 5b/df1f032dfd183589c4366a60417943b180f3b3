@@ -1,0 +1,23 @@
+native/verification/interface-demo/step3/delivery.json
+  s_07c6de7c923515::t_a91601f5297c03 1-34
+native/verification/interface-demo/step3/memory-check.log
+  s_07c6de7c923515::t_a1eb0617ed38ac 1-15
+native/verification/interface-demo/step3/memory-sync.log
+  s_07c6de7c923515::t_3c415aebd3f010 1-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "5bdf1f032dfd183589c4366a60417943b180f3b3",
+  "prompts": {},
+  "sessions": {
+    "s_07c6de7c923515": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1da4b-a2f2-74a3-91ce-fd7c1a1c3804",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
