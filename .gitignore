@@ -1,0 +1,32 @@
+# Local tools, operating-system metadata, and dependency/build caches.
+.DS_Store
+._*
+.codex/
+.playwright-mcp/
+.taste/
+node_modules/
+.next/
+dist/
+.build/
+build/
+__pycache__/
+*.pyc
+
+# Xcode user state and generated test/build bundles. Keep reviewed logs,
+# source manifests, compact baseline archives, and screenshots as evidence.
+xcuserdata/
+*.xcuserstate
+*.xcresult/
+*.xcarchive/
+*.app/
+*.dSYM/
+
+# Local credentials and signing material.
+.env
+.env.*
+*.p12
+*.p8
+*.key
+*.mobileprovision
+.netrc
+.npmrc
