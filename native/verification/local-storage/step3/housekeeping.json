@@ -1,0 +1,6 @@
+{
+  "removed_path": "/tmp/memoryos-storage-step3-pr-body.txt",
+  "sha256": "0f0217423ab486b38dd558d141bec4fa39a7ab2f16968d1a0f286645f4aaf0c2",
+  "retained": "pr-body.txt",
+  "reason": "Draft PR created; body retained and checked against actual GitHub body"
+}

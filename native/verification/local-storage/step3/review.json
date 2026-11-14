@@ -53,5 +53,10 @@
     "rulesets": []
   },
   "merge_disposition": "BLOCKED; draft only, no auto-merge",
-  "PR": "pending actual creation"
+  "PR": {
+    "url": "https://github.com/faroqomar/Eros_MemoryOS/pull/3",
+    "draft": true,
+    "source_commit": "10f0bbcc9cbcf90b5a45e5690c41f776dffb7610",
+    "merge": "BLOCKED"
+  }
 }

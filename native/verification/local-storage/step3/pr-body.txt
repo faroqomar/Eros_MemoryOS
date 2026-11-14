@@ -1,0 +1,17 @@
+Typed thoughts previously disappeared when the app process closed. This change saves them in private Application Support SQLite and reopens the same records, UUIDs and source text. Users can append corrections, link manual people/projects/ideas, recover Trash, and export or restore a versioned JSON backup through Files.
+
+MemoryCore owns records, rules and injected use cases. MemorySQLite and app composition own platform integration. Byte-sensitive Unicode checks preserve composed/decomposed text; a retryable store provider lets Reload recover initial opening failures while retaining the draft. The bounded prototype excludes automatic cloud backup and offers reversible Trash only; readable manual archives include a warning.
+
+Validation against the retained source hashes:
+
+- 21 storage functions, 17 app unit functions and 13 functional UI scenarios pass. A fresh verifier reproduced and rechecked the Unicode and initial-open repairs.
+- Release simulator and unsigned iOS builds/analysis, formatting, cleanup and fresh dark simulator captures pass. Host interruption and timing receipts are diagnostic evidence.
+- Both affected English/Arabic accessibility audits fail. Physical iPhone 15 Pro Max Data Protection/performance, iOS 18 runtime, post-Files accessibility-tree recovery and owner product/design acceptance remain open or unresolved.
+
+**Draft: merge blocked.** Step 3 authorizes delivery; it does not waive these required gates. No auto-merge, deployment or release.
+
+[Task and evidence](https://github.com/faroqomar/Eros_MemoryOS/blob/10f0bbcc9cbcf90b5a45e5690c41f776dffb7610/docs/tasks/2026-11-14-local-storage-text-capture.md) · [Independent review](https://github.com/faroqomar/Eros_MemoryOS/blob/10f0bbcc9cbcf90b5a45e5690c41f776dffb7610/native/verification/local-storage/step2/verifier-review.md)
+
+Fresh iPhone 18 Pro simulator, iOS 27.2, Release/dark, fictional data:
+
+<img src="https://github.com/faroqomar/Eros_MemoryOS/blob/10f0bbcc9cbcf90b5a45e5690c41f776dffb7610/native/verification/local-storage/step3/screenshots/reopened-records.png?raw=true" width="240" alt="Reopened bilingual records"> <img src="https://github.com/faroqomar/Eros_MemoryOS/blob/10f0bbcc9cbcf90b5a45e5690c41f776dffb7610/native/verification/local-storage/step3/screenshots/source-history-links.png?raw=true" width="240" alt="Original, corrections and linked record">
