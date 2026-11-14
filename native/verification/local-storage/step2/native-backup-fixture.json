@@ -1,0 +1,127 @@
+{
+  "formatVersion" : 1,
+  "snapshot" : {
+    "links" : [
+      {
+        "fromID" : "6E708D10-08C5-4306-9FEF-DF6F6EB9B24D",
+        "id" : "304B3151-32A9-4049-BAF1-2A4AC8AE4DC4",
+        "toID" : "90F52B83-6ED8-4122-BB50-D077D3C14437"
+      },
+      {
+        "fromID" : "280752EB-F273-49EA-A2EE-A725614254ED",
+        "id" : "A2F5601D-3868-40B4-932F-50FBB18C2DB9",
+        "toID" : "3F09A2C9-7CA8-4014-8E9F-98C7C6AAFD4F"
+      }
+    ],
+    "records" : [
+      {
+        "createdAt" : 816377030.551713,
+        "id" : "4EF8B60C-90D6-4881-83C4-10CD5BA0D3E8",
+        "kind" : "capture",
+        "originalText" : "Fictional retry draft \/ فكرة تجريبية محفوظة بعد إعادة المحاولة",
+        "revisions" : [
+
+        ],
+        "text" : "Fictional retry draft \/ فكرة تجريبية محفوظة بعد إعادة المحاولة"
+      },
+      {
+        "createdAt" : 816376752.665668,
+        "id" : "B71AC89F-A7F6-4B13-9BE9-A0510F797306",
+        "kind" : "capture",
+        "originalText" : "Fictional source 38328",
+        "revisions" : [
+
+        ],
+        "text" : "Fictional source 38328"
+      },
+      {
+        "createdAt" : 816376685.932531,
+        "id" : "76B56C27-EB6E-41E4-B138-299596D47A05",
+        "kind" : "capture",
+        "originalText" : "Fictional source 1A5F9",
+        "revisions" : [
+
+        ],
+        "text" : "Fictional source 1A5F9"
+      },
+      {
+        "createdAt" : 816376489.184192,
+        "id" : "90F52B83-6ED8-4122-BB50-D077D3C14437",
+        "kind" : "person",
+        "originalText" : "Fictional person 03299B",
+        "revisions" : [
+
+        ],
+        "text" : "Fictional person 03299B"
+      },
+      {
+        "createdAt" : 816376482.597693,
+        "id" : "6E708D10-08C5-4306-9FEF-DF6F6EB9B24D",
+        "kind" : "capture",
+        "originalText" : "Local source 03299B",
+        "revisions" : [
+          {
+            "createdAt" : 816376500.833897,
+            "id" : "B9A07CD8-616F-4A92-ABEB-F60485BD0549",
+            "text" : "Corrected source 03299B"
+          }
+        ],
+        "text" : "Corrected source 03299B"
+      },
+      {
+        "createdAt" : 816376419.897543,
+        "id" : "1E545BD3-37C6-434B-B02D-FFBCED39FBBA",
+        "kind" : "capture",
+        "originalText" : "A fictional project thought",
+        "revisions" : [
+
+        ],
+        "text" : "A fictional project thought"
+      },
+      {
+        "createdAt" : 816375258.660688,
+        "id" : "DB136504-66AC-4293-8132-4D8A947B8E43",
+        "kind" : "capture",
+        "originalText" : "فكرة تجريبية: أراجع Reading Room يوم الجمعة.",
+        "revisions" : [
+
+        ],
+        "text" : "فكرة تجريبية: أراجع Reading Room يوم الجمعة."
+      },
+      {
+        "createdAt" : 816374957.64644,
+        "id" : "3F09A2C9-7CA8-4014-8E9F-98C7C6AAFD4F",
+        "kind" : "person",
+        "originalText" : "Fictional person 31A092",
+        "revisions" : [
+
+        ],
+        "text" : "Fictional person 31A092"
+      },
+      {
+        "createdAt" : 816374950.493732,
+        "id" : "280752EB-F273-49EA-A2EE-A725614254ED",
+        "kind" : "capture",
+        "originalText" : "Local source 31A092",
+        "revisions" : [
+          {
+            "createdAt" : 816374969.500164,
+            "id" : "E3F918C3-7A51-4015-A4EE-DF95A0E457D8",
+            "text" : "Corrected source 31A092"
+          }
+        ],
+        "text" : "Corrected source 31A092"
+      },
+      {
+        "createdAt" : 816374885.367445,
+        "id" : "600E0C17-A432-4D52-9E79-815C42DEB403",
+        "kind" : "capture",
+        "originalText" : "A fictional project thought",
+        "revisions" : [
+
+        ],
+        "text" : "A fictional project thought"
+      }
+    ]
+  }
+}

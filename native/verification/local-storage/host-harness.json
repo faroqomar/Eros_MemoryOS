@@ -1,0 +1,11 @@
+{
+  "purpose": "Run actual platform-independent feature source and app tests on macOS while simulator control is blocked. This is not a full app or UI test run.",
+  "command": "swift test --package-path /tmp/memoryos-local-feature-tests -c release",
+  "manifest": "host-harness.Package.swift",
+  "source_symlinks": {
+    "Sources/MemoryOS/LocalRecordsViewModel.swift": "native/MemoryOS/Features/LocalRecords/LocalRecordsViewModel.swift",
+    "Sources/MemoryOS/LocalArchiveFileReader.swift": "native/MemoryOS/Composition/LocalArchiveFileReader.swift",
+    "Tests/MemoryOSTests/LocalRecordsViewModelTests.swift": "native/MemoryOSTests/LocalRecordsViewModelTests.swift",
+    "Tests/MemoryOSTests/LocalArchiveFileReaderTests.swift": "native/MemoryOSTests/LocalArchiveFileReaderTests.swift"
+  }
+}

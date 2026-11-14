@@ -1,0 +1,69 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "modelName" : "iPhone 18 Pro",
+        "osBuildNumber" : "24B8117",
+        "osVersion" : "27.2",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 2,
+      "passedTests" : 0,
+      "skippedTests" : 0,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "MemoryOS · Built with macOS 27.2.1",
+  "expectedFailures" : 0,
+  "failedTests" : 2,
+  "finishTime" : 1794684010.764,
+  "passedTests" : 0,
+  "result" : "Failed",
+  "runtimeWarnings" : [
+
+  ],
+  "skippedTests" : 0,
+  "startTime" : 1794683852.955,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+    {
+      "failureText" : "Contrast failed",
+      "targetName" : "MemoryOSUITests",
+      "testIdentifier" : 1,
+      "testIdentifierString" : "LocalStorageAccessibilityTests/testArabicLocalRecordAccessibility()",
+      "testIdentifierURL" : "test://com.apple.xcode/MemoryOS/MemoryOSUITests/LocalStorageAccessibilityTests/testArabicLocalRecordAccessibility",
+      "testName" : "testArabicLocalRecordAccessibility()"
+    },
+    {
+      "failureText" : "Contrast failed",
+      "targetName" : "MemoryOSUITests",
+      "testIdentifier" : 2,
+      "testIdentifierString" : "LocalStorageAccessibilityTests/testEnglishLocalRecordAccessibility()",
+      "testIdentifierURL" : "test://com.apple.xcode/MemoryOS/MemoryOSUITests/LocalStorageAccessibilityTests/testEnglishLocalRecordAccessibility",
+      "testName" : "testEnglishLocalRecordAccessibility()"
+    }
+  ],
+  "title" : "Test - MemoryOS",
+  "topInsights" : [
+    {
+      "category" : "Common Failures",
+      "impact" : "100% of failures",
+      "text" : "15 runs of 2 tests failed with Contrast failed"
+    },
+    {
+      "category" : "Common Failures",
+      "impact" : "100% of failures",
+      "text" : "13 runs of 2 tests failed with Dynamic Type font sizes are partially unsupported"
+    }
+  ],
+  "totalTestCount" : 2
+}

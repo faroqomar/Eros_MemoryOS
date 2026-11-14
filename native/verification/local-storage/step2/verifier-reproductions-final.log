@@ -1,0 +1,17 @@
+Building for production...
+[Pre-planning 1 / 97]
+[Planning deferred tasks]
+[4 / 13]
+[5 / 14] MemoryCore
+[7 / 15] MemoryCore
+[13 / 17] MemorySQLite
+[15 / 18] MemorySQLite
+[20 / 23] Repro-product
+[21 / 24] Repro-product
+[23 / 24] Repro-product
+[24 / 24] Repro-product
+Build complete! (5.64 secs)
+correction requested utf8=[101, 204, 129]; retained utf8=[101, 204, 129]; revisionCount=1
+mismatch rejected: invalidArchive
+source conflict rejected: conflictingRecord
+startup dependency nil after repeated Reload: canSave=false, error=Optional(MemoryCore.LocalMemoryError.storageFailure), draft=Keep unsaved

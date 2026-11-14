@@ -105,3 +105,7 @@ On 2026-11-13, C20 authorizes a native SwiftUI foundation and device readiness c
 
 
 Step 1 update, C28, 2026-11-14: the owner authorizes the complete native sample interface. The source now adds fictional People/details, Projects with separate plans/ideas, Birthdays/reminder previews, and BrainMap connections. People replaces the earlier Profiles display label. Capture retains the large microphone and composer. New layouts remain review proposals. The [active task record](tasks/2026-11-14-complete-interface-demo.md) owns current checks and blockers; the preceding foundation paragraph is a dated checkpoint. Reminder choices and captures reset on process restart. No scheduling, database, model, provider SDK, or service connection follows from this demo.
+
+## Local typed records, C35, 2026-11-14
+
+The owner requested checklist group 3 Step 1. The app now uses local SQLite for typed captures and manually linked people, projects and ideas. It retains original text and correction history. Trash supports recovery; manual JSON export and transactional merge restore provide a portable backup with documented limits. The earlier session-only capture statements describe the demo checkpoint. This new task does not add recording, AI, automatic classification, scheduling, external services or sync. See the [task record](tasks/2026-11-14-local-storage-text-capture.md) for current checks and remaining independent/physical-device verification, and the [storage decision](decisions/local-record-storage.md) for protection and recovery behavior.

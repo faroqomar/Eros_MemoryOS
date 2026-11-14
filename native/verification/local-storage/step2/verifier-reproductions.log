@@ -1,0 +1,28 @@
+Building for production...
+[Planning 1 / 97]
+[Planning deferred tasks]
+[28 / 47]
+[29 / 48] MemoryCore
+[40 / 83]
+[42 / 83]
+[47 / 83]
+[49 / 83]
+[53 / 83]
+[55 / 83]
+[58 / 83]
+[61 / 83]
+[63 / 83]
+[64 / 83]
+[65 / 83] MemoryCore
+[72 / 84] MemorySQLite
+[75 / 87]
+[76 / 87] MemorySQLite
+[83 / 88] Repro-product
+[85 / 89] Repro-product
+[87 / 89] Repro-product
+[89 / 89] Repro-product
+Build complete! (8.11 secs)
+correction requested utf8=[101, 204, 129]; retained utf8=[195, 169]; revisionCount=0
+mismatched archive current/original bytes accepted
+same ID, changed source UTF8 restore accepted
+startup dependency nil after repeated Reload: canSave=false, error=Optional(MemoryCore.LocalMemoryError.storageFailure), draft=Keep unsaved

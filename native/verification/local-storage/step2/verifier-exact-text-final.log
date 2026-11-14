@@ -1,0 +1,22 @@
+Building for production...
+[Using on-disk description]
+[1 / 6] MemorySQLiteTests-product
+[2 / 6] MemorySQLiteTests-product
+[3 / 7] MemorySQLiteTests-product
+[7 / 8] MemorySQLiteTests-product
+[10 / 10] MemorySQLiteTests-product
+Build complete! (5.23 secs)
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite ExactTextTests started.
+◇ Test archiveRejectsEquivalentTextWithDifferentSourceBytes() started.
+◇ Test restoreRejectsSameIDWithEquivalentButDifferentOriginalBytes() started.
+◇ Test canonicallyEquivalentCorrectionKeepsDistinctBytesAndHistory(composed:) started.
+◇ Test case passing 1 argument composed → "أ" to canonicallyEquivalentCorrectionKeepsDistinctBytesAndHistory(composed:) started.
+◇ Test case passing 1 argument composed → "café" to canonicallyEquivalentCorrectionKeepsDistinctBytesAndHistory(composed:) started.
+✔ Test archiveRejectsEquivalentTextWithDifferentSourceBytes() passed after 0.001 seconds.
+✔ Test restoreRejectsSameIDWithEquivalentButDifferentOriginalBytes() passed after 0.008 seconds.
+✔ Test canonicallyEquivalentCorrectionKeepsDistinctBytesAndHistory(composed:) with 2 test cases passed after 0.009 seconds.
+✔ Suite ExactTextTests passed after 0.009 seconds.
+✔ Test run with 3 tests in 1 suite passed after 0.010 seconds.

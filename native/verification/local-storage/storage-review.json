@@ -1,0 +1,36 @@
+{
+  "removed": [
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMemory/.build",
+      "before_KiB": 132536
+    },
+    {
+      "path": "/tmp/memoryos-local-storage-device",
+      "before_KiB": 98148
+    },
+    {
+      "path": "/tmp/memoryos-local-feature-tests/.build",
+      "before_KiB": 64132
+    },
+    {
+      "path": "/tmp/memoryos-local-storage-attachments",
+      "before_KiB": 14436
+    }
+  ],
+  "retained": [
+    "/tmp/memoryos-local-storage-build: final Debug build and test products for blocked UI recheck",
+    "/tmp/memoryos-local-storage-release: final Release simulator app for blocked screenshots",
+    "/tmp/memoryos-local-storage-tests.xcresult: interrupted attempt, retain pending Step 2 evidence review",
+    "/tmp/memoryos-local-storage-functional.xcresult: interrupted attempt, retain pending Step 2 evidence review",
+    "/tmp/memoryos-local-feature-tests: small reproducible host harness and source symlinks",
+    "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-storage/candidate-ui.xcresult: unique raw initial candidate UI/test evidence"
+  ],
+  "reason": "Remove only confirmed task-owned reproducible build caches and extracted attachments duplicated in retained raw test results. Preserve source, original research, active builds and unique test evidence.",
+  "reclaimed_KiB": 309252,
+  "native_after_KiB": 692880,
+  "disk_after": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1   460Gi   354Gi    75Gi    83%    4.0M  783M    1%   /System/Volumes/Data\n",
+  "source_hashes_match": true,
+  "followup_receipt": "resume-storage-review.json",
+  "followup_summary": "After final UI recheck and screenshots, removed the formerly retained reproducible Debug/Release simulator build caches. Installed app and unique evidence remain.",
+  "total_task_reclaimed_KiB": 754240
+}

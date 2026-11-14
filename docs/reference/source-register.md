@@ -131,3 +131,11 @@ C08 records WhisperKit and whisper.cpp as local transcription candidates, and Ap
 ## Memory source boundary
 
 Hindsight indexes the new sanitized Markdown only. The original files are outside the allowlist. No raw session, private chat export, personal profile data, or recording is ingested by this task. Current Markdown remains authoritative over extracted memory.
+
+## Local storage authorization, 2026-11-14
+
+C35: the owner requests Step 1 of checklist group 3, “Add reliable local storage and text capture.” The six requested outcomes cover SQLite evaluation and original-record ownership, saved typed thoughts across app reopen, stable linked people/projects/ideas/captures, source-preserving corrections, deletion/export/backup/restore behavior, and operation without external services. This starts this local-storage implementation; Step 2, Step 3, AI, recording, remote sync and release remain separate. See the [task record](../tasks/2026-11-14-local-storage-text-capture.md) and [storage decision](../decisions/local-record-storage.md).
+
+C36, 2026-11-14: the owner requests Step 2 for the active checklist group 3 local-storage task. This authorizes independent verification, in-scope repairs, required cleanup, affected checks and fresh evidence under the standing workflow. It does not start Step 3 or authorize release.
+
+C37, 2026-11-14: the owner requests Step 3 for checklist group 3 local storage. This authorizes final review, scoped commit/push and private PR delivery, followed by merge only when required gates pass under C33. The request does not waive blocked physical-device/minimum-runtime checks, unresolved accessibility findings or required product/design acceptance.

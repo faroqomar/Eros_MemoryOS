@@ -1,0 +1,53 @@
+Building for debugging...
+[Pre-planning 1 / 154]
+[Planning deferred tasks]
+[11 / 34] MemoryCore
+[13 / 36] MemoryCore
+[18 / 41] MemorySQLite
+[20 / 43] MemorySQLite
+[28 / 44] MemoryCore-product
+[28 / 44] MemorySQLite
+[34 / 45] MemorySQLiteTests-product
+[35 / 50]
+[39 / 50] MemorySQLiteTests-product
+[44 / 50] MemorySQLiteTests-product
+[46 / 50] MemorySQLiteTests-product
+[49 / 50] MemorySQLiteTests-product
+Build complete! (4.33 secs)
+Test Suite 'All tests' started at 2026-11-14 21:21:27.633.
+Test Suite 'All tests' passed at 2026-11-14 21:21:27.644.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.011) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite LocalMemoryTests started.
+◇ Test typedOriginalSurvivesReopeningExactly(text:) started.
+◇ Test unversionedForeignDatabaseAndUnavailableDirectoryRemainUntouched() started.
+◇ Test invalidAndFutureArchivesLeaveExistingDataUnchanged() started.
+◇ Test missingAndSelfLinksLeaveDatabaseUnchanged() started.
+◇ Test schemaUpgradeRefusesNewerVersionWithoutResettingData() started.
+◇ Test allKindsHaveStableUndirectedLinksAndTrashRestoresThem() started.
+◇ Test concurrentCapturesDoNotLoseWrites() started.
+◇ Test correctionPreservesOriginalAndEveryRevision() started.
+◇ Test writeFailureRollsBackEarlierRecordsFromSameRestore() started.
+◇ Test portableBackupRoundTripsOriginalsRevisionsLinksAndTrashIdempotently() started.
+◇ Test textLimitsAndBlankValidationDoNotCreateRecords() started.
+◇ Test differingExistingRecordRejectsEntireRestoreAndDoesNotResurrectTrash() started.
+◇ Test case passing 1 argument text → "  فكرة عن مشروع Reading room
+ " to typedOriginalSurvivesReopeningExactly(text:) started.
+◇ Test case passing 1 argument text → "O'Brien'); DROP TABLE records; -- 🧠◇ Test restoreMergesMissingRecordsWithoutReplacingExistingRecords() started.
+✔ Test invalidAndFutureArchivesLeaveExistingDataUnchanged() passed after 0.012 seconds.
+✔ Test typedOriginalSurvivesReopeningExactly(text:) with 2 test cases passed after 0.012 seconds.
+✔ Test schemaUpgradeRefusesNewerVersionWithoutResettingData() passed after 0.012 seconds.
+✔ Test unversionedForeignDatabaseAndUnavailableDirectoryRemainUntouched() passed after 0.012 seconds.
+✔ Test correctionPreservesOriginalAndEveryRevision() passed after 0.012 seconds.
+✔ Test missingAndSelfLinksLeaveDatabaseUnchanged() passed after 0.012 seconds.
+✔ Test writeFailureRollsBackEarlierRecordsFromSameRestore() passed after 0.014 seconds.
+✔ Test textLimitsAndBlankValidationDoNotCreateRecords() passed after 0.015 seconds.
+✔ Test differingExistingRecordRejectsEntireRestoreAndDoesNotResurrectTrash() passed after 0.016 seconds.
+✔ Test restoreMergesMissingRecordsWithoutReplacingExistingRecords() passed after 0.017 seconds.
+✔ Test allKindsHaveStableUndirectedLinksAndTrashRestoresThem() passed after 0.019 seconds.
+✔ Test portableBackupRoundTripsOriginalsRevisionsLinksAndTrashIdempotently() passed after 0.020 seconds.
+✔ Test concurrentCapturesDoNotLoseWrites() passed after 0.031 seconds.
+✔ Suite LocalMemoryTests passed after 0.032 seconds.
+✔ Test run with 13 tests in 1 suite passed after 0.032 seconds.

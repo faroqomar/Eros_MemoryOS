@@ -1,0 +1,5 @@
+Name                Hostname   Identifier                                    State       Model                            Reality  
+-----------------   --------   -------------------------------------------   ---------   ------------------------------   ---------
+iPhone 18 Pro                  452C5AF6-8A30-4F73-9C34-AADF3D6CF96C (UDID)   connected   iPhone 18 Pro (iPhone19,2)       simulated
+iPhone 18 Pro Max              8843F67E-B2AF-4605-A3AE-25D168BD1B28 (UDID)   connected   iPhone 18 Pro Max (iPhone19,3)   simulated
+iPhone Duo                     DD25D049-9AC9-4B3D-ABD2-A5EA83E11CA5 (UDID)   shutdown    iPhone Duo (iPhone19,4)          simulated

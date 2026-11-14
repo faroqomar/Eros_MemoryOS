@@ -47,24 +47,6 @@ struct CatalogTests {
 
 @MainActor
 struct SessionTests {
-  @Test func blankCaptureCannotSubmitAndAcceptedCaptureClearsDraft() {
-    let session = DemoSession()
-    session.draft = "  \n "
-    #expect(!session.canSubmit)
-    session.submit()
-    #expect(session.memories.isEmpty)
-    session.draft = "  فكرة عن Reading room  "
-    session.submit()
-    #expect(session.draft.isEmpty)
-    #expect(session.memories.first?.text == "فكرة عن Reading room")
-    let id = session.memories.first?.id
-    session.draft = "Second thought"
-    session.submit()
-    #expect(session.memories.count == 2)
-    #expect(session.memories.last?.id == id)
-    #expect(DemoSession().memories.isEmpty)
-  }
-
   @Test func remindersRemainIndependentAndResetWithSession() {
     let session = DemoSession()
     #expect(session.reminder(for: "birthday-ali") == .off)

@@ -1,0 +1,69 @@
+Building for production...
+[Using on-disk description]
+[1 / 4] MemorySQLite
+[2 / 6] MemorySQLiteTests-product
+[3 / 7] MemorySQLiteTests-product
+[7 / 8] MemorySQLiteTests-product
+[10 / 10] MemorySQLiteTests-product
+Build complete! (5.48 secs)
+Test Suite 'All tests' started at 2026-11-14 22:35:59.347.
+Test Suite 'All tests' passed at 2026-11-14 22:35:59.362.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.015) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite CapacityTests started.
+◇ Suite LocalMemoryTests started.
+◇ Suite ExactTextTests started.
+◇ Suite RestoreFileTests started.
+◇ Test allKindsHaveStableUndirectedLinksAndTrashRestoresThem() started.
+◇ Test canonicallyEquivalentCorrectionKeepsDistinctBytesAndHistory(composed:) started.
+◇ Test concurrentCapturesDoNotLoseWrites() started.
+◇ Test archiveRejectsEquivalentTextWithDifferentSourceBytes() started.
+◇ Test correctionPreservesOriginalAndEveryRevision() started.
+◇ Test aggregateCorrectionCountRejectsNewHistoryAndCombinedRestore() started.
+◇ Test oversizedExternalTextFailsSqlPreflightBeforeTextDecoding() started.
+◇ Test oversizedExternalCorrectionCountFailsBeforeRevisionDecoding() started.
+◇ Test aggregateTextLimitRejectsCreateCorrectionAndMergedRestoreWithoutChangingRecords() started.
+◇ Test missingAndSelfLinksLeaveDatabaseUnchanged() started.
+◇ Test restoreRejectsSameIDWithEquivalentButDifferentOriginalBytes() started.
+◇ Test injectedFileReaderRestoresThroughUseCasesAndPropagatesReadFailure() started.
+◇ Test writeFailureRollsBackEarlierRecordsFromSameRestore() started.
+◇ Test schemaUpgradeRefusesNewerVersionWithoutResettingData() started.
+◇ Test portableBackupRoundTripsOriginalsRevisionsLinksAndTrashIdempotently() started.
+◇ Test typedOriginalSurvivesReopeningExactly(text:) started.
+◇ Test invalidAndFutureArchivesLeaveExistingDataUnchanged() started.
+◇ Test unversionedForeignDatabaseAndUnavailableDirectoryRemainUntouched() started.
+◇ Test case passing 1 argument composed → "café" to canonicallyEquivalentCorrectionKeepsDistinctBytesAndHistory(composed:) started.
+◇ Test case passing 1 argument composed → "أ" to canonicallyEquivalentCorrectionKeepsDistinctBytesAndHistory(composed:) started.
+◇ Test textLimitsAndBlankValidationDoNotCreateRecords() started.
+◇ Test differingExistingRecordRejectsEntireRestoreAndDoesNotResurrectTrash() started.
+◇ Test restoreMergesMissingRecordsWithoutReplacingExistingRecords() started.
+◇ Test case passing 1 argument text → "  فكرة عن مشروع Reading room
+ " to typedOriginalSurvivesReopeningExactly(text:) started.
+◇ Test case passing 1 argument text → "O'Brien'); DROP TABLE records; -- 🧠✔ Test archiveRejectsEquivalentTextWithDifferentSourceBytes() passed after 0.037 seconds.
+✔ Test canonicallyEquivalentCorrectionKeepsDistinctBytesAndHistory(composed:) with 2 test cases passed after 0.043 seconds.
+✔ Test correctionPreservesOriginalAndEveryRevision() passed after 0.043 seconds.
+✔ Test injectedFileReaderRestoresThroughUseCasesAndPropagatesReadFailure() passed after 0.044 seconds.
+✔ Test restoreRejectsSameIDWithEquivalentButDifferentOriginalBytes() passed after 0.044 seconds.
+✔ Test missingAndSelfLinksLeaveDatabaseUnchanged() passed after 0.044 seconds.
+✔ Test allKindsHaveStableUndirectedLinksAndTrashRestoresThem() passed after 0.044 seconds.
+✔ Test writeFailureRollsBackEarlierRecordsFromSameRestore() passed after 0.044 seconds.
+✔ Test schemaUpgradeRefusesNewerVersionWithoutResettingData() passed after 0.044 seconds.
+✔ Test typedOriginalSurvivesReopeningExactly(text:) with 2 test cases passed after 0.044 seconds.
+✔ Test invalidAndFutureArchivesLeaveExistingDataUnchanged() passed after 0.044 seconds.
+✔ Test unversionedForeignDatabaseAndUnavailableDirectoryRemainUntouched() passed after 0.044 seconds.
+✔ Test differingExistingRecordRejectsEntireRestoreAndDoesNotResurrectTrash() passed after 0.044 seconds.
+✔ Test portableBackupRoundTripsOriginalsRevisionsLinksAndTrashIdempotently() passed after 0.044 seconds.
+✔ Suite ExactTextTests passed after 0.045 seconds.
+✔ Suite RestoreFileTests passed after 0.045 seconds.
+✔ Test textLimitsAndBlankValidationDoNotCreateRecords() passed after 0.045 seconds.
+✔ Test oversizedExternalTextFailsSqlPreflightBeforeTextDecoding() passed after 0.046 seconds.
+✔ Test restoreMergesMissingRecordsWithoutReplacingExistingRecords() passed after 0.037 seconds.
+✔ Test oversizedExternalCorrectionCountFailsBeforeRevisionDecoding() passed after 0.067 seconds.
+✔ Test concurrentCapturesDoNotLoseWrites() passed after 0.071 seconds.
+✔ Suite LocalMemoryTests passed after 0.071 seconds.
+✔ Test aggregateTextLimitRejectsCreateCorrectionAndMergedRestoreWithoutChangingRecords() passed after 0.226 seconds.
+✔ Test aggregateCorrectionCountRejectsNewHistoryAndCombinedRestore() passed after 0.375 seconds.
+✔ Suite CapacityTests passed after 0.376 seconds.
+✔ Test run with 21 tests in 4 suites passed after 0.376 seconds.

@@ -2,6 +2,7 @@ import SwiftUI
 
 struct CaptureView: View {
   @Bindable var session: DemoSession
+  @Bindable var records: LocalRecordsViewModel
   let menuIsOpen: Bool
   @State private var notice: Notice?
   @FocusState private var composerFocused: Bool
@@ -44,6 +45,14 @@ struct CaptureView: View {
     }
     .safeAreaInset(edge: .bottom, spacing: 0) {
       VStack(spacing: 18) {
+        if records.draftTooLarge {
+          Text(
+            language.text(
+              "This thought is too long. Keep a copy and split it into smaller thoughts.",
+              "هذا النص طويل جداً. احتفظ بنسخة وقسّمه إلى نصوص أصغر.")
+          )
+          .font(.caption)
+        }
         Button {
           composerFocused = false
           session.section = .memories
@@ -65,7 +74,7 @@ struct CaptureView: View {
           }
 
           TextField(
-            "", text: $session.draft,
+            "", text: $records.draft,
             prompt: Text(language.text("Write anything...", "اكتب أي شيء...")).foregroundStyle(
               MemoryTheme.secondary), axis: .vertical
           )
@@ -77,14 +86,17 @@ struct CaptureView: View {
           .accessibilityIdentifier("capture-composer")
 
           IconControl(
-            symbol: "arrow.up", label: language.text("Add demo memory", "إضافة ذكرى تجريبية"),
+            symbol: "arrow.up", label: language.text("Save thought", "حفظ الفكرة"),
             filled: true, identifier: "send-memory"
           ) {
-            session.submit()
-            composerFocused = false
-            notice = .saved
+            Task {
+              if await records.saveCapture() {
+                composerFocused = false
+                notice = .saved
+              }
+            }
           }
-          .disabled(!session.canSubmit)
+          .disabled(!records.canSave)
         }
         .padding(8)
         .overlay(RoundedRectangle(cornerRadius: 34).stroke(MemoryTheme.line, lineWidth: 0.75))
@@ -92,6 +104,9 @@ struct CaptureView: View {
       .padding(.horizontal, 18)
       .padding(.bottom, 18)
       .background(MemoryTheme.canvas)
+    }
+    .overlay(alignment: .top) {
+      LocalStorageStatus(model: records, language: language)
     }
     .onChange(of: menuIsOpen) { _, open in
       if open { composerFocused = false }
@@ -121,8 +136,8 @@ struct CaptureView: View {
         "المرفقات تأتي في خطوة لاحقة. هذا العرض لا يفتح ملفاتك.")
     case .saved:
       language.text(
-        "Added to Your memories for this session. Closing the app clears demo memories.",
-        "أُضيفت إلى ذكرياتك لهذه الجلسة. إغلاق التطبيق يمسح الذكريات التجريبية.")
+        "Saved on this device. Open Your memories to read or correct it.",
+        "حُفظت على هذا الجهاز. افتح ذكرياتك لقراءتها أو تصحيحها.")
     case nil: ""
     }
   }

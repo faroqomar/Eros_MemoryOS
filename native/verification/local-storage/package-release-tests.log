@@ -1,0 +1,63 @@
+Building for production...
+[Pre-planning 1 / 154]
+[Planning deferred tasks]
+[5 / 16] MemoryCore
+[7 / 17] MemoryCore
+[13 / 18] MemorySQLite
+[15 / 19] MemorySQLite
+[21 / 26] MemorySQLiteTests-product
+[23 / 27] MemorySQLiteTests-product
+[27 / 28] MemorySQLiteTests-product
+[30 / 30] MemorySQLiteTests-product
+Build complete! (7.25 secs)
+Test Suite 'All tests' started at 2026-11-14 21:30:46.143.
+Test Suite 'All tests' passed at 2026-11-14 21:30:46.155.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.012) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite LocalMemoryTests started.
+◇ Suite RestoreFileTests started.
+◇ Suite CapacityTests started.
+◇ Test writeFailureRollsBackEarlierRecordsFromSameRestore() started.
+◇ Test injectedFileReaderRestoresThroughUseCasesAndPropagatesReadFailure() started.
+◇ Test correctionPreservesOriginalAndEveryRevision() started.
+◇ Test restoreMergesMissingRecordsWithoutReplacingExistingRecords() started.
+◇ Test allKindsHaveStableUndirectedLinksAndTrashRestoresThem() started.
+◇ Test concurrentCapturesDoNotLoseWrites() started.
+◇ Test textLimitsAndBlankValidationDoNotCreateRecords() started.
+◇ Test differingExistingRecordRejectsEntireRestoreAndDoesNotResurrectTrash() started.
+◇ Test unversionedForeignDatabaseAndUnavailableDirectoryRemainUntouched() started.
+◇ Test schemaUpgradeRefusesNewerVersionWithoutResettingData() started.
+◇ Test typedOriginalSurvivesReopeningExactly(text:) started.
+◇ Test missingAndSelfLinksLeaveDatabaseUnchanged() started.
+◇ Test invalidAndFutureArchivesLeaveExistingDataUnchanged() started.
+◇ Test oversizedExternalCorrectionCountFailsBeforeRevisionDecoding() started.
+◇ Test aggregateTextLimitRejectsCreateCorrectionAndMergedRestoreWithoutChangingRecords() started.
+◇ Test aggregateCorrectionCountRejectsNewHistoryAndCombinedRestore() started.
+◇ Test portableBackupRoundTripsOriginalsRevisionsLinksAndTrashIdempotently() started.
+◇ Test oversizedExternalTextFailsSqlPreflightBeforeTextDecoding() started.
+◇ Test case passing 1 argument text → "  فكرة عن مشروع Reading room
+ " to typedOriginalSurvivesReopeningExactly(text:) started.
+◇ Test case passing 1 argument text → "O'Brien'); DROP TABLE records; -- 🧠✔ Test writeFailureRollsBackEarlierRecordsFromSameRestore() passed after 0.019 seconds.
+✔ Test injectedFileReaderRestoresThroughUseCasesAndPropagatesReadFailure() passed after 0.019 seconds.
+✔ Test correctionPreservesOriginalAndEveryRevision() passed after 0.019 seconds.
+✔ Test differingExistingRecordRejectsEntireRestoreAndDoesNotResurrectTrash() passed after 0.019 seconds.
+✔ Test textLimitsAndBlankValidationDoNotCreateRecords() passed after 0.019 seconds.
+✔ Test unversionedForeignDatabaseAndUnavailableDirectoryRemainUntouched() passed after 0.019 seconds.
+✔ Test restoreMergesMissingRecordsWithoutReplacingExistingRecords() passed after 0.019 seconds.
+✔ Test missingAndSelfLinksLeaveDatabaseUnchanged() passed after 0.019 seconds.
+✔ Test typedOriginalSurvivesReopeningExactly(text:) with 2 test cases passed after 0.019 seconds.
+✔ Test invalidAndFutureArchivesLeaveExistingDataUnchanged() passed after 0.019 seconds.
+✔ Test schemaUpgradeRefusesNewerVersionWithoutResettingData() passed after 0.019 seconds.
+✔ Suite RestoreFileTests passed after 0.020 seconds.
+✔ Test allKindsHaveStableUndirectedLinksAndTrashRestoresThem() passed after 0.022 seconds.
+✔ Test portableBackupRoundTripsOriginalsRevisionsLinksAndTrashIdempotently() passed after 0.030 seconds.
+✔ Test oversizedExternalTextFailsSqlPreflightBeforeTextDecoding() passed after 0.040 seconds.
+✔ Test concurrentCapturesDoNotLoseWrites() passed after 0.048 seconds.
+✔ Suite LocalMemoryTests passed after 0.048 seconds.
+✔ Test oversizedExternalCorrectionCountFailsBeforeRevisionDecoding() passed after 0.058 seconds.
+✔ Test aggregateTextLimitRejectsCreateCorrectionAndMergedRestoreWithoutChangingRecords() passed after 0.083 seconds.
+✔ Test aggregateCorrectionCountRejectsNewHistoryAndCombinedRestore() passed after 0.310 seconds.
+✔ Suite CapacityTests passed after 0.310 seconds.
+✔ Test run with 18 tests in 3 suites passed after 0.311 seconds.

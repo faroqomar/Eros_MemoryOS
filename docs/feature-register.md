@@ -8,7 +8,7 @@ C10 later selects Swift with SwiftUI. C11 selects a clickable first demo with sa
 
 C12 includes BrainMap in the first demo alongside Capture, People/person details, Projects, and Birthdays. Layouts and interactions remain open.
 
-**Production feature completion remains open.** The native foundation and current sample-data task demonstrate selected interfaces, not real recording, imports, AI, durable storage, or scheduling. See the [complete interface demo task](tasks/2026-11-14-complete-interface-demo.md) for exact implementation/check status. Requested scope does not select a technical solution or delivery date.
+**Production feature completion remains open.** The native foundation and current sample-data task demonstrate selected interfaces, not real recording, imports, AI, or scheduling. Checklist group 3 adds durable local typed records. Its [Step 2 review](tasks/2026-11-14-local-storage-text-capture.md) closed two correctness defects and passed local functional checks. Physical iPhone/minimum-runtime and unresolved accessibility checks still block passage; broader product completion remains open. See the [complete interface demo task](tasks/2026-11-14-complete-interface-demo.md) for exact implementation/check status. Requested scope does not select a technical solution or delivery date.
 
 ## Owner-requested features
 

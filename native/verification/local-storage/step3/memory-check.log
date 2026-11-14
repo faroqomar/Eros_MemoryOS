@@ -1,0 +1,21 @@
+{
+  "project": "memoryos",
+  "api": {
+    "status": "healthy",
+    "database": "connected",
+    "db_acquire_ms": 0.7,
+    "db_pool_waiting": 0,
+    "db_pool_in_use": 0,
+    "db_pool_max": 100,
+    "db_pool_idle": 6
+  },
+  "sources": 33,
+  "pending": [
+    "README.md",
+    "docs/reference/source-register.md",
+    "docs/plans/implementation-checklist.md",
+    "docs/how-to/native-swiftui.md",
+    "docs/tasks/2026-11-14-local-storage-text-capture.md"
+  ],
+  "failed": {}
+}

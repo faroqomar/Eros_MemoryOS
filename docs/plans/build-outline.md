@@ -18,7 +18,7 @@ The output should be a comparison supported by measurements. No model is selecte
 
 Proposed records include sources, source passages, people, projects, ideas, dated claims, owner corrections, interpretations, rules, and reminder proposals. Design source IDs, links, edits, deletion, attachments, backup/restore, and protected keys together.
 
-SQLite is a candidate. A linked-record design does not require a separate graph server. The final database, encryption mechanism, schema, and search index remain open.
+Historical proposal: SQLite was a candidate. C35 now authorizes checklist group 3 Step 1, whose [storage decision](../decisions/local-record-storage.md) selects OS SQLite and schema/archive version 1 for typed local records. Search indexes, provider selection and broader protection/recovery design remain separate. This numbered outline is historical planning, not the three-stage development workflow.
 
 ## Step 3: Add simple capture
 

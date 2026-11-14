@@ -1,0 +1,57 @@
+{
+  "date_utc": "2026-11-14T19:54:57.396860+00:00",
+  "scope": "Checklist group 3 Step3 final main-agent review; no source edits",
+  "base_head": "977334f857430313eb8d5145318cf90198e6b62a",
+  "branch": "feat/local-storage-text-capture",
+  "source_manifest": "../step2/source-hashes.json",
+  "source_entries_match": 36,
+  "evidence_hashes": {
+    "native/verification/local-storage/step2/source-hashes.json": "411104601aac0d47756a5f2d8c95734c034dc2be6f5127f424456567afcc214f",
+    "native/verification/local-storage/step2/functional-summary.json": "4a5601ec5d7ac1c86d0dfc256ef6c34b797cab70c55ca88da3090617b45f9e4b",
+    "native/verification/local-storage/step2/local-accessibility-summary.json": "1cbb5e4edc4770f0be5f19bcec6047cf0923371d3125e14f87281d1ad821f887",
+    "native/verification/local-storage/step2/verifier-cleanup-recheck.json": "07c66f2fadc5a147009b6ac4927b7414f87d811b73500c30c1bd10d5b2194301",
+    "native/verification/local-storage/step2/verifier-review.md": "411785f180641361be4439d634092b3d75e29e2a67f4d5f24f414895d196c5d7",
+    "native/verification/local-storage/step2/verifier-final-source-check.json": "9bb64eff3f1e5a4a416bfbe95e0ef732008f727769702b43baeb4370dde0a229",
+    "native/verification/local-storage/step2/verifier-host-benchmark.json": "8510330c72a1e758d41813ebb29629fb0e951a51d34a1f8c0269cd2dbf65d7c1",
+    "native/verification/local-storage/step2/verifier-interruption.json": "ea882c2da26a11c7f25b11aef253173848194d60691554607894d4c7e166f92b"
+  },
+  "unrelated_policy_preserved_hashes": {
+    "AGENTS.md": "59f4210ba13140f9f49509b8adffd3c1f176366da6e351184472f7e61822269f",
+    "docs/decisions/independent-engine-packages.md": "1af6080300da78df3471c70f10ca241eec771cfb4253d6b108b458bda0a773ea",
+    "docs/how-to/commercial-engineering-rules.md": "bbe83e495924f1a67597828a569ac05b3ec30b343295b72ffe1f5dbfd6ffc09a",
+    "docs/how-to/development-workflow.md": "a70a85c90118741a401d9ab9398216ad98bf86c65c7ce6b21507441e6520063f",
+    "docs/templates/development-task.md": "8671d90eb5b4b1a1d3e368a508fba8f441320ab075d53c76f0dd9b204f636d1a",
+    "docs/tasks/2026-11-14-explicit-architecture-rules.md": "0f2fa8bbd409233f32dbda257c2628b9f0c25a13a281cd6a1ebbb0b7e53f7f66"
+  },
+  "source_trace_review": [
+    "Capture Save -> LocalRecordsViewModel -> LocalMemoryUseCases -> RecordRepository -> SQLite actor transaction",
+    "Correction/Trash/links retain domain rules, IDs and history; no provider in UI/domain",
+    "File importer URL -> RestoreArchiveFromFile -> bounded ArchiveDataReader -> repository merge",
+    "Composition injects retryable off-main session provider; failed open retains feature draft"
+  ],
+  "reused_checks": {
+    "storage": 21,
+    "app_units": 17,
+    "functional_UI": 13,
+    "configuration": "Recorded Step2 host Release and iOS27.2 simulator; same 36 source hashes",
+    "format_and_Release_build_analysis": "pass"
+  },
+  "required_gates": {
+    "physical_iPhone_Data_Protection_and_recovery": "BLOCKED",
+    "physical_iPhone_performance_baseline_candidate": "BLOCKED",
+    "iOS18_runtime": "BLOCKED",
+    "affected_accessibility_audits": "FAIL - two methods; unresolved contrast/DynamicType findings",
+    "post_Files_AX_recovery": "UNRESOLVED",
+    "owner_product_design_acceptance": "NOT ESTABLISHED"
+  },
+  "repository": {
+    "private": true,
+    "origin": "https://github.com/faroqomar/Eros_MemoryOS.git",
+    "base_branch": "main",
+    "Actions_workflows": 0,
+    "main_branch_protection": "none reported (404 Branch not protected)",
+    "rulesets": []
+  },
+  "merge_disposition": "BLOCKED; draft only, no auto-merge",
+  "PR": "pending actual creation"
+}

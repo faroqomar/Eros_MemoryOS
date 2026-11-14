@@ -1,0 +1,24 @@
+{
+  "device": "iPhone 18 Pro",
+  "os": "iOS 27.2",
+  "host": "local",
+  "device_id": "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+  "physical": false,
+  "appearance": "dark",
+  "configuration": "Release",
+  "source_manifest": "source-hashes.json",
+  "source_manifest_sha256": "8d2b0c64975fb80be14aa97657019e3f281f72d382b383ebb1fdc5c40dbbe08c",
+  "binary_sha256": "1c07f304fe564b500684f8459a37deb1c703fa289b083719822baadd65030e90",
+  "data": "Fictional test records and a manually typed mixed Arabic/English thought. No real owner data.",
+  "captures": {
+    "backup-warning-en.png": "fdb17b4632005a041cb15fbe679ea27e939e2e5b0857b413f09030f912f8f19a",
+    "capture-en.png": "e9d16b445621691c7b4966840c32bf81cc07208ddcda28f2afd189c373361ecf",
+    "composer-mixed-ar.png": "a402bc5ff137705dce22c3caddb48330f5ddcf05ac621714b94990ff630a851b",
+    "correction-source-en.png": "59f992a80efffdc9e2b0767b9941f76e6c9b8ff326b902e9a509521b4ee46e2f",
+    "editor-en.png": "d7304480991d8f561ddcb93f1cad79fbb386a43291617b024e74da90a7e80b80",
+    "records-en.png": "4b72b3f8e8f588a967802a585b5518f445c369d7a7949a013272158e6abca582",
+    "records-mixed-ar.png": "36b65140226386ea869a95216fae525fc6c903f16770725ce22ee81fc47135b4",
+    "recovery-en.png": "b403dbdbbaf58ccadbc0922e74b0559b17a12627f4f1c428f608e8b42d377222",
+    "trash-en.png": "81d8296e42fbfc4e3045ba06f98abaf29daf0e3fe0d0d16acd04f983d72eff37"
+  }
+}

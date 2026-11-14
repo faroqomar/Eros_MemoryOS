@@ -1,0 +1,10 @@
+{
+  "source_entries_match_index": 36,
+  "staged_files": 250,
+  "staged_evidence_files": 214,
+  "unrelated_policy_preserved": true,
+  "shared_register_C34_hunks_excluded": true,
+  "private_key_common_token_scan": "no pattern matches; bounded review, not a security certification",
+  "diff_whitespace_check": "Source/document check passes with raw verification evidence excluded. Full staged check reports original whitespace in 13 raw tool logs/text outputs; retain exact evidence instead of editing logs.",
+  "scope": "All local-storage source, tests, records and sanitized evidence; unique raw xcresult stays local ignored."
+}

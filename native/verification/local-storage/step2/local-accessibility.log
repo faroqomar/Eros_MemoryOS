@@ -1,0 +1,7 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -xctestrun /tmp/memoryos-step2-app-build/Build/Products/MemoryOS_iphonesimulator27.2-arm64.xctestrun -destination "platform=iOS Simulator,id=452C5AF6-8A30-4F73-9C34-AADF3D6CF96C" -resultBundlePath native/verification/local-storage/step2/local-accessibility.xcresult test-without-building -parallel-testing-enabled NO "-only-testing:MemoryOSUITests/LocalStorageAccessibilityTests"
+
+Writing result bundle at path:
+	/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-storage/step2/local-accessibility.xcresult
+
+xcodebuild: error: Failed to build workspace temporary with scheme Transient Testing.: There are no test bundles available to test.

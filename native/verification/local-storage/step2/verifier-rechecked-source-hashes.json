@@ -1,0 +1,19 @@
+{
+  "at_utc": "2026-11-14T19:08:41.423701+00:00",
+  "purpose": "Focused repaired-source independent package/host-feature review identity. Actual production provider test inspected only; simulator execution owned by main.",
+  "hashes": {
+    "native/LocalMemory/Sources/MemorySQLite/SQLiteRecordRepository.swift": "c4eaa24788f2c6efbed075b5d0660d2088ecaa191b49e373d988f8fc97e3a2dd",
+    "native/LocalMemory/Sources/MemoryCore/LocalMemorySession.swift": "3606a0490023436ef3c74ed64562c0736f3ce3e82b7e9fd8658ca23c3b9ba736",
+    "native/LocalMemory/Sources/MemoryCore/LocalMemory.swift": "d29ade0f90b5309cf45d74f646bfa7fca570ecbf8f15912844b61530b3ad56a4",
+    "native/LocalMemory/Sources/MemoryCore/RestoreArchiveFromFile.swift": "082254c2be2839f0fa6ccd7be57f4a2367cec42cf8a1f65ec85e8b84aca012e5",
+    "native/LocalMemory/Package.swift": "93342ef69299dc7d1d599e7ab62fb982d607b1c5b261e5a1625ec2bba32cc7ba",
+    "native/LocalMemory/Tests/MemorySQLiteTests/LocalMemoryTests.swift": "4f329904b99172cc55bbac679a352a82042a0de5251b90ac7b2925e4d20fccf6",
+    "native/MemoryOS/Features/LocalRecords/LocalRecordsViewModel.swift": "f589debbfc5dcb131ce98426022a0f0969e8f2475c5dd1c197597c1bd6136f46",
+    "native/MemoryOS/Composition/LocalStoreProvider.swift": "8bdb7e91f0f54149453bdeb8dc1155fe86c64ab2a2cb37cf56c1d4ff5a0113d1",
+    "native/MemoryOS/Composition/LocalStoreComposition.swift": "2fee654622bac9aaaf5da19411fd89e04dbc42d4d8f65c0f195e804d33e0d0bf",
+    "native/MemoryOS/Composition/LocalArchiveFileReader.swift": "b953a86851d62f6544dd5235a5f97334441f6144a94e78a1628daf30a6090ca9",
+    "native/MemoryOSTests/LocalRecordsViewModelTests.swift": "086a515b8a4fba8d9b120f11e5734feffacd19620b8c2f1128538d221a96ba78",
+    "native/MemoryOSTests/LocalArchiveFileReaderTests.swift": "c61fe35c9157a1067888d684437f3ed216b8178faf779720b701c7fdac8bfb69",
+    "native/MemoryOSTests/LocalStoreProviderTests.swift": "6497a3fabbdf0565bce88434bbb9e2a3567cc293d5f47835d39f188db168b8eb"
+  }
+}
