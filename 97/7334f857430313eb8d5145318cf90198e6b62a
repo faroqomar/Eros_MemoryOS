@@ -1,0 +1,19 @@
+docs/tasks/2026-11-14-complete-interface-demo.md
+  s_07c6de7c923515::t_3c6681f10e2322 129-130
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "977334f857430313eb8d5145318cf90198e6b62a",
+  "prompts": {},
+  "sessions": {
+    "s_07c6de7c923515": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1da4b-a2f2-74a3-91ce-fd7c1a1c3804",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
