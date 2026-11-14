@@ -1,0 +1,20 @@
+{
+  "native/MemoryOS/App/DemoSession.swift": "15dec627e5ef592c1c57a22736e55eeffe66d870a3294b2e118f393df94b442f",
+  "native/MemoryOS/App/MemoryOSApp.swift": "33feb6c3c232ddc1829c0a469f5d25a471dc60a7441465feb468c2861523d453",
+  "native/MemoryOS/DesignSystem/Theme.swift": "32a7ebde5a3aec06d50ff8a536f20710c2e6d78bca3a02ca70691bd0dfbabce9",
+  "native/MemoryOS/Domain/DemoCatalog.swift": "093072254de35aa2a6e513e57208d26aa00cee4c18b5fe2e0005469b0fa21744",
+  "native/MemoryOS/Features/BirthdaysView.swift": "2b5b0b0e9151c534e301f684292e8ae3ba02bfc08d5a7aa5c8c44520f7e6f361",
+  "native/MemoryOS/Features/BrainMapView.swift": "fbbcc7a57ccf41341b7e62d4c8e229aaee0ec0935ade5af913e04006b6787823",
+  "native/MemoryOS/Features/CaptureView.swift": "5fc72fcc51f76265fdc1474b8c3dc652fbe38ba61e43b61e231be842bfa51a12",
+  "native/MemoryOS/Features/CatalogListView.swift": "a20c651fd1e997e70f60a0454a00c8674a95539a00774e1413b012ac3c130f95",
+  "native/MemoryOS/Features/DemoComponents.swift": "35f26618bf5e615ad874b07a2253c3daa32e1fa7973103110a1ea4b4e6de332c",
+  "native/MemoryOS/Features/RecordDetailView.swift": "f205796a6be8e792cd38fe5fa04d0de12289465ed5d02b28765dff6cfb868c4a",
+  "native/MemoryOS/Features/RootView.swift": "ca4a08acc584123d1b64d31a3f5da9a80116a5eb5e22ad5041cecd3e06a42377",
+  "native/MemoryOS/Features/SectionView.swift": "26c0f4e156e35bd74f474aba12df734588fd4fb6e55b67164ffec06ff8418ae8",
+  "native/MemoryOS/Features/SidebarView.swift": "61f91a1e48f964d60c7b1ab47edace14508fcfe02e1c2c5ccdfb2b21950af4fa",
+  "native/MemoryOS.xcodeproj/project.pbxproj": "de8025b82ca8286706042a345a67d5053faa9c7c26155b95e54dba800f1cc895",
+  "native/MemoryOS.xcodeproj/xcshareddata/xcschemes/MemoryOS.xcscheme": "d7d8902f37c44028d11302916682406b2de03b888720b43aad0e3ac21cfe555f",
+  "native/MemoryOSTests/DemoTests.swift": "a66e5cbe6a96f88c3955b6c4d461350f043866b3141dd9381186ee439e5717a8",
+  "native/MemoryOSUITests/DemoFlowTests.swift": "80beda7ba7ba683de154df0066bf215e882fa35878ce3d269bff07196271e1b3",
+  "native/MemoryOSUITests/FoundationTests.swift": "e61304b700bab398d362cac47d51707707c615d85b7991d6fbdee575ee18a26d"
+}

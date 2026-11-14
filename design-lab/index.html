@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MemoryOS · Design room</title>
+  <meta name="description" content="Five MemoryOS design directions, references, and local annotations.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="home-style.css">
+  <script src="data.js" defer></script><script src="home-style.js" defer></script><script src="app.js" defer></script>
+</head>
+<body class="home-review">
+  <header class="lab-top"><a class="lab-brand" href="#" aria-label="MemoryOS design room"><span class="brand-mark">m.</span><span>MemoryOS <small>SCREEN REVIEW</small></span></a><nav aria-label="Review workspace"><button data-tab="designs" class="active">Preview</button><button data-tab="references">Home reference</button><button data-tab="feedback">Your feedback <span id="total-count">0</span></button></nav><span id="storage-state" class="storage" role="status">Connecting to local storage…</span></header>
+  <main>
+    <section id="designs-tab" class="lab-layout">
+      <aside class="directions"><p class="eyebrow">FIND YOUR DIRECTION</p><h1>One idea.<br>Five perspectives.</h1><p class="intro">Explore a different way to hold your people, projects, and memories.</p><div id="direction-list"></div><div class="small-note">20 screen compositions.<br>Fictional data. Nothing scheduled.</div></aside>
+      <section class="workspace" aria-label="Design preview">
+        <div class="preview-top"><div id="screen-tabs" class="screen-tabs" role="group" aria-label="App screen"></div><div class="review-actions"><button id="toggle-annotation" aria-expanded="false">Annotate</button><button id="toggle-notes">Notes</button></div><label class="language"> <select id="language"><option value="en">English</option><option value="ar">العربية</option></select></label></div>
+        <div class="annotation-toolbar" role="group" aria-label="Annotation tools"><div class="tool-group"><button data-tool="browse" class="active">↖ Browse</button><button data-tool="like">＋ Like</button><button data-tool="dislike">− Dislike</button><button data-tool="note">✎ Note</button></div><label><select id="selection-method" aria-label="Selection method"><option value="element">Select an element</option><option value="region">Draw a rectangle</option></select></label><button id="show-marks" aria-pressed="true" aria-label="Show or hide saved annotation marks">Marks on</button></div>
+        <p id="tool-hint" class="tool-hint">Browse the app, or choose Like / Dislike to mark something.</p>
+        <div class="preview-stage"><div class="device"><div class="device-scroll" id="device-scroll"><div class="canvas-inner" id="design-canvas"><div id="app-preview"></div><div id="annotation-layer" aria-label="Annotation regions"></div></div></div></div></div>
+        <div class="direction-caption"><div><span id="caption-name"></span><p id="caption-description"></p></div><button id="view-inspiration">Compare with home ↗</button></div>
+      </section>
+      <aside class="feedback-panel" aria-label="Feedback for this screen"><div class="panel-title"><h2>Feedback</h2><span id="view-count">0</span></div><p class="panel-description">Mark the details you want to keep.<br>Point out what needs to change.</p><div id="note-editor" hidden></div><div id="view-notes"></div><div class="feedback-footer"><button id="export-json">Export JSON</button><button id="export-md">Export notes</button><button id="import-button">Import feedback</button><input id="import-file" type="file" accept="application/json,.json" hidden><p>Saved to this machine.<br>Annotations stay out of the app’s memory.</p></div></aside>
+    </section>
+    <section id="references-tab" class="reference-page" hidden><div class="section-heading"><p class="eyebrow">THE STYLE ANCHOR</p><h1>The home screen.</h1><p>The reference you chose. The other screens follow its simplicity.</p></div><div id="reference-list" class="reference-grid"></div><section id="reference-review" hidden><div class="reference-review-header"><div><p class="eyebrow">REFERENCE DETAIL</p><h2 id="reference-title"></h2></div><button id="close-reference">Close reference</button></div><p id="reference-instruction">Choose Like, Dislike, or Note above, then mark the image or text.</p><div id="reference-tools" class="reference-tools"><button data-ref-tool="browse">Browse</button><button data-ref-tool="like">＋ Like</button><button data-ref-tool="dislike">− Dislike</button><button data-ref-tool="note">✎ Note</button></div><div class="reference-annotated" id="reference-canvas"><div id="reference-content"></div><div id="reference-layer"></div></div></section></section>
+    <section id="feedback-tab" class="feedback-page" hidden><div class="section-heading"><p class="eyebrow">YOUR TASTE, IN YOUR WORDS</p><h1>The things you noticed.</h1><p>Open any note to return to its exact design and screen. Nothing here counts as whole-design approval.</p></div><div class="feedback-filters"><label>Direction<select id="filter-variant"><option value="all">All directions</option></select></label><label>Reaction<select id="filter-kind"><option value="all">All reactions</option><option value="like">Like</option><option value="dislike">Dislike</option><option value="note">Note</option></select></label></div><div id="all-notes"></div></section>
+  </main>
+  <div id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

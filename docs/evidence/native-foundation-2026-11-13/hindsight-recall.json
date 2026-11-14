@@ -1,0 +1,1088 @@
+{
+  "results": [
+    {
+      "id": "3189a7f2-d2a6-40fa-a878-034d84349bb1",
+      "text": "Decision D21: Use Swift with SwiftUI for the iPhone app. This resolves A01 and supersedes the earlier C09 undecided status; it does not select a database or model, establish efficiency results, or authorize implementation in this documentation task. | When: November 13, 2026 | Involving: Project memoryos | C10 explicitly accepted the app technology stack.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "C10",
+        "Swift",
+        "memoryos",
+        "docs/decisions/decision-register.md",
+        "A01",
+        "C09",
+        "iPhone app"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.060000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.060000+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.592714+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "3a76b667612626a42e20c9ece5f998da370823c84e71794d7c01c7238980320a",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_2",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0995800831737061,
+        "reranker": null,
+        "semantic": 0.8687834221849802,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "94af65e7-a002-4912-b9fd-a7c7cd0b54f6",
+      "text": "В документе `docs/how-to/native-swiftui.md` зафиксирован выбранный объём Native SwiftUI foundation: Capture screen, overlay sidebar, shared header и icon controls, маршруты Capture, BrainMap, Profiles, Projects, Memories, Birthdays и Settings; остальные feature screens остаются placeholders. `Profiles` — label для планируемого раздела People. | When: 13 ноября 2026 года | Involving: Owner source: C20 | Это выбранные reference и scope текущего шага; принятие native implementation остаётся отдельным.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "BrainMap",
+        "birthdays",
+        "C20",
+        "Profiles",
+        "memoryos",
+        "projects",
+        "Settings",
+        "people",
+        "Memories"
+      ],
+      "context": "Authoritative project source docs/how-to/native-swiftui.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T00:00:00+00:00",
+      "mentioned_at": "2026-11-13T18:09:14.667800+00:00",
+      "document_id": "repo:docs/how-to/native-swiftui.md",
+      "metadata": {
+        "sha256": "c25701dbc542e51cdb8beb7a425a9e6287761ee35f6baa19838660c8193d6235",
+        "source_path": "docs/how-to/native-swiftui.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/how-to/native-swiftui.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0962703099687277,
+        "reranker": null,
+        "semantic": 0.8688354570367676,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "02071448-419c-4ff5-ae0f-1a06b298a8cb",
+      "text": "S01 is marked complete: the native Swift + SwiftUI iPhone project and shared scheme were created, and the simulator build passes. Remaining demo screens and physical iPhone launch are not complete. | When: November 13, 2026 | The checklist distinguishes simulator build success from completion of the demo and physical-device launch.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "Swift",
+        "memoryos",
+        "iPhone",
+        "simulator"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T18:16:04.884846+00:00",
+      "occurred_end": "2026-11-13T18:16:04.884846+00:00",
+      "mentioned_at": "2026-11-13T18:16:04.884846+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "2d0a7b46a6b26525bb9c0cb11199074d985848c11742b0ae5534a3faa96d2b8f",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0933751044694837,
+        "reranker": null,
+        "semantic": 0.8557965159416199,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "bff91d05-46bd-44f2-8e2e-af8022853944",
+      "text": "On 2026-11-07, the project memoryos record was corrected: the owner has not selected Swift or Objective-C, nor SwiftUI or UIKit. Swift with SwiftUI is only an assistant recommendation, not an owner decision; therefore no framework choice, implementation approval, or measured efficiency result is established. | When: November 07, 2026 | Involving: memoryos project owner; assistant | This correction supersedes the erroneous claim that Swift and SwiftUI had been selected.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "docs/decisions/demo-and-feature-direction.md",
+        "Objective-C",
+        "memoryos",
+        "UIKit",
+        "decisions/decision-register.md"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-07T00:00:00+00:00",
+      "occurred_end": "2026-11-07T23:59:59+00:00",
+      "mentioned_at": "2026-11-07T15:35:23.385494+00:00",
+      "document_id": "correction-memoryos-app-language-and-interface-remain-undecided",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-app-language-and-interface-remain-undecided_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0863927810880283,
+        "reranker": null,
+        "semantic": 0.8716511130332947,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "096cddd3-eb33-46b0-a1cf-cc4f6c7b48d8",
+      "text": "The two supplied Capture/sidebar screenshots were restored as the active reference for the native step, superseding the intervening C19 browser proposal. | When: November 13, 2026 | Involving: MemoryOS project owner/source C20 | They define the active visual reference for the authorized native implementation.",
+      "type": "world",
+      "entities": [
+        "capture",
+        "C20",
+        "sidebar",
+        "memoryos",
+        "C19"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-13T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-13T18:08:26.709961+00:00",
+      "document_id": "correction-memoryos-native-implementation-status-and-active-reference",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-native-implementation-status-and-active-reference_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0863409915580002,
+        "reranker": null,
+        "semantic": 0.8652982115745544,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "91d58171-6a56-436e-b9ee-fd1b60c0e02c",
+      "text": "C16 (2026-11-13): the owner requested using Astryx to design the app. The isolated browser prototype uses Astryx components and fictional data, while SwiftUI remains the selected native stack; the prototype does not establish visual approval, production behavior, or iPhone verification. Source: docs/decisions/decision-register.md. | When: November 13, 2026 | Involving: Проект owner | Astryx is limited to design prototyping; SwiftUI is the selected native implementation stack.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "C16",
+        "memoryos",
+        "docs/decisions/decision-register.md",
+        "Astryx"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.110000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.110000+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.642714+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "3a76b667612626a42e20c9ece5f998da370823c84e71794d7c01c7238980320a",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_3",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0830312193579994,
+        "reranker": null,
+        "semantic": 0.8638572096824646,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "9e02ebd1-8991-4d02-96c7-d4405ffdebbe",
+      "text": "C20 foundation items are marked complete: the native project, shared scheme, Capture and sidebar routes, system fonts, and shared controls exist, and the simulator build passes. The verification record is `docs/verification/2026-11-13-swiftui-foundation.md`. | When: November 13, 2026 | These are the documented verified outcomes for the current foundation step.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "sidebar",
+        "simulator build",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-13T18:16:04.854846+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "2d0a7b46a6b26525bb9c0cb11199074d985848c11742b0ae5534a3faa96d2b8f",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0797214459086961,
+        "reranker": null,
+        "semantic": 0.8618667125701904,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "53042149-5a79-4e8d-9d06-8dde1d17bb50",
+      "text": "SwiftUI remains the selected native product stack, but this browser design proposal does not prove native behavior or iPhone performance. | When: November 13, 2026 | Browser-prototype evidence must not be treated as validation of the native product.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "memoryos",
+        "iPhone"
+      ],
+      "context": "Authoritative project source docs/design/wild-redesign.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-13T15:43:40.485447+00:00",
+      "document_id": "repo:docs/design/wild-redesign.md",
+      "metadata": {
+        "sha256": "519119c34679205d9c76c2e9482abe93c9a22579b604fbe6b8488cd34c17f52d",
+        "source_path": "docs/design/wild-redesign.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/wild-redesign.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0767631917850444,
+        "reranker": null,
+        "semantic": 0.8650421419764858,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "e0180122-0f30-44ce-b645-bb3781ced4a0",
+      "text": "Swift is the confirmed language for app logic and SwiftUI is the confirmed interface framework, replacing the earlier Swift-versus-Objective-C comparison; Flutter and Objective-C primary-stack options are superseded for current planning. Efficiency measures such as speed, battery use, and RAM use remain evaluation priorities, but no performance measurements are established. Source: docs/decisions/demo-and-feature-direction.md. | When: November 7, 2026 | Involving: memoryos project owner | This is an owner-confirmed technology choice, not a verified performance result.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "Flutter",
+        "Objective-C",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/decisions/demo-and-feature-direction.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-07T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-07T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-07T16:04:29.005480+00:00",
+      "document_id": "repo:docs/decisions/demo-and-feature-direction.md",
+      "metadata": {
+        "sha256": "86b515e190b04bfb8c958a07ccaf3268bd4adbf2978f839aabb9b6b75e0639f3",
+        "source_path": "docs/decisions/demo-and-feature-direction.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/demo-and-feature-direction.md_1",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0698933970294477,
+        "reranker": null,
+        "semantic": 0.8712843137214012,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "66db906b-f602-4120-b21d-65e1c1c020ae",
+      "text": "C20 explicitly authorizes changing MemoryOS scope from the older browser-only prototype to a native SwiftUI step covering the foundation, navigation, fonts, shared controls, and an iPhone readiness check. | When: November 13, 2026 | Involving: MemoryOS project owner/source C20 | This is a current-scope change and does not retroactively approve older browser screens.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "native app delivery",
+        "C20",
+        "memoryos"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T23:59:59+00:00",
+      "mentioned_at": "2026-11-13T18:08:26.699961+00:00",
+      "document_id": "correction-memoryos-native-implementation-status-and-active-reference",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-native-implementation-status-and-active-reference_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0697921273730389,
+        "reranker": null,
+        "semantic": 0.8930195037710978,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "2c40f8d0-384f-4bb4-b85f-72565717efee",
+      "text": "The requested deliverable was a separate clickable browser prototype under `astryx-prototype/`; Swift with SwiftUI remains the selected native stack, but no native build or device result follows from this design. | When: November 13, 2026 | Involving: MemoryOS owner | The browser prototype is separate from the selected native application stack.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "Swift",
+        "memoryos",
+        "Astryx",
+        "astryx-prototype"
+      ],
+      "context": "Authoritative project source docs/design/astryx-prototype.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-13T15:25:24.746104+00:00",
+      "document_id": "repo:docs/design/astryx-prototype.md",
+      "metadata": {
+        "sha256": "83ab167811d0b621fecff2c892c1bea9a02749e416ba0bfa4b30cdf50e42bcb7",
+        "source_path": "docs/design/astryx-prototype.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/astryx-prototype.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.066823890778132,
+        "reranker": null,
+        "semantic": 0.8654512247174264,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "b965b17b-ccb7-4711-a152-b3aef1ba6b97",
+      "text": "В docs/design/visual-reference-index.md активным нативным визуальным референсом является возврат C20 к экранам Capture и Sidebar; он авторизует SwiftUI foundation, но принятие нативной реализации и оставшихся экранов остаётся открытым. Состояние является снимком, а не доказательством реализации. | When: 2026-11-13 | Involving: C20; владелец проекта | Зафиксировать выбранный референс и не выдавать авторизацию за реализованный или принятый результат.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "C20",
+        "sidebar",
+        "docs/design/visual-reference-index.md",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/design/visual-reference-index.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T00:00:00+00:00",
+      "mentioned_at": "2026-11-13T18:09:14.665588+00:00",
+      "document_id": "repo:docs/design/visual-reference-index.md",
+      "metadata": {
+        "sha256": "c02f885722ce66c72048c0ab5ea3194abc1e14a7fcd4ada507cd40532fe460c0",
+        "source_path": "docs/design/visual-reference-index.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/visual-reference-index.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0631725817241167,
+        "reranker": null,
+        "semantic": 0.8541733709470424,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "a2f774b1-64a6-42b7-a3ae-9e4db9042189",
+      "text": "Wax is shortlisted as a local in-app memory storage and retrieval option. Its documentation describes an embedded Swift library with keyword- and meaning-based search; its save operation does not extract facts with an LLM, so MemoryOS would provide extraction, corrections, and product rules. The structured graph's Swift CRUD interface is package-internal, so people, relationships, and fact history may require app-owned records or another integration. No MemoryOS integration or iPhone verification exists. | When: 2026-11-07 | Involving: MemoryOS project; Wax | Wax's package boundaries may affect how MemoryOS represents structured memory data.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "memoryos",
+        "Wax",
+        "iPhone app"
+      ],
+      "context": "Authoritative project source docs/decisions/runtime-memory-options.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-07T15:42:24.044109+00:00",
+      "document_id": "repo:docs/decisions/runtime-memory-options.md",
+      "metadata": {
+        "sha256": "cf5263c77dc46bfac8a62e0e9f0f325dfdda98211d0724386c4ca00c009c1f70",
+        "source_path": "docs/decisions/runtime-memory-options.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/runtime-memory-options.md_0",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.057039536871472,
+        "reranker": null,
+        "semantic": 0.8603612184524536,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "50dce41e-b7f4-403e-a522-ced3631ab8b7",
+      "text": "SwiftUI remains the selected native product choice for MemoryOS; the prototype request does not represent a native release. | When: Friday, November 13, 2026 | Involving: MemoryOS project owner | The prototype is limited to browser-based design exploration.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "memoryos"
+      ],
+      "context": "initiative marker for [[page:kp-45d072e221ad45948dfe1735704153d8]]",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-13T14:07:16.439080+00:00",
+      "document_id": "initiative-marker-astryx-memoryos-design-prototype-1794578835915",
+      "metadata": {
+        "relatedPageId": "kp-45d072e221ad45948dfe1735704153d8"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-astryx-memoryos-design-prototype-1794578835915_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0568628229036825,
+        "reranker": null,
+        "semantic": 0.8741825819015503,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "f6bf5b7f-44e2-46fd-b966-858ae4afcb41",
+      "text": "SwiftUI remains the selected native stack, but browser results are explicitly insufficient to verify native layout, VoiceOver behavior, device performance, or production persistence. | Involving: MemoryOS project | Separates the technology decision from unverified native-platform outcomes.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "memoryos",
+        "VoiceOver"
+      ],
+      "context": "Authoritative project source docs/design/apple-inspired.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-13T15:43:40.476623+00:00",
+      "document_id": "repo:docs/design/apple-inspired.md",
+      "metadata": {
+        "sha256": "b9cf4fda954db353f0412c3eab62500d5894223f3ba5df1e3d84d6d47e12cc50",
+        "source_path": "docs/design/apple-inspired.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/apple-inspired.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.053587215960188,
+        "reranker": null,
+        "semantic": 0.8629950799343052,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "f39f2c6e-1404-4544-b44f-3829290920e2",
+      "text": "On 2026-11-13, C20 authorized a native SwiftUI foundation and device-readiness check. The source exists under `native/` and passes a simulator build; this is verified simulator status, not proof of physical-device readiness. Source: docs/product-overview.md and `how-to/native-swiftui.md`. | When: Friday, November 13, 2026 | Involving: C20 | Established the selected native foundation and verified simulator build outcome.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "native/",
+        "C20",
+        "memoryos",
+        "simulator"
+      ],
+      "context": "Authoritative project source docs/product-overview.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.080000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.080000+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.611423+00:00",
+      "document_id": "repo:docs/product-overview.md",
+      "metadata": {
+        "sha256": "3b3231e4334180917d0b83be12d247e634398f572db0e9389197ad55d492f5a7",
+        "source_path": "docs/product-overview.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/product-overview.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0499334909107214,
+        "reranker": null,
+        "semantic": 0.8964911699295044,
+        "keyword": 1.399999976158142
+      },
+      "attachments": null
+    },
+    {
+      "id": "89993853-bea3-4590-896d-ac342521486b",
+      "text": "Decision D24: Create the SwiftUI foundation and check device readiness using the supplied Capture and sidebar screenshots. C20 authorizes native project setup, navigation, fonts, shared controls, and connection checks, superseding D09's no-build boundary for this step only; it does not authorize live recording, AI, imports, production storage, publication, or release. | When: November 13, 2026 | Involving: Project memoryos | This is an authorization for foundation setup and readiness checks, not proof that implementation occurred.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "C20",
+        "sidebar screenshots",
+        "D09",
+        "memoryos",
+        "docs/decisions/decision-register.md"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.090000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.090000+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.622714+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "3a76b667612626a42e20c9ece5f998da370823c84e71794d7c01c7238980320a",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_2",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0466237181450986,
+        "reranker": null,
+        "semantic": 0.9000914096832275,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "cc39e6b0-4dc2-4ffc-9344-a8644d72f680",
+      "text": "Project memoryos selected Swift with SwiftUI as the technology stack, based on owner source C10; this supersedes the earlier undecided stack question. | When: November 7, 2026 | Involving: Project memoryos; owner source C10 | Explicit project decision recorded in the authoritative decision document; this is a snapshot of direction, not proof of implementation.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "C10",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/decisions/demo-and-feature-direction.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-07T00:00:00+00:00",
+      "occurred_end": "2026-11-07T23:59:59+00:00",
+      "mentioned_at": "2026-11-07T16:04:28.995480+00:00",
+      "document_id": "repo:docs/decisions/demo-and-feature-direction.md",
+      "metadata": {
+        "sha256": "86b515e190b04bfb8c958a07ccaf3268bd4adbf2978f839aabb9b6b75e0639f3",
+        "source_path": "docs/decisions/demo-and-feature-direction.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/demo-and-feature-direction.md_0",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0401945055507043,
+        "reranker": null,
+        "semantic": 0.8607530850396483,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "9564a2b8-e390-4f6c-9772-adc06a5dd1b4",
+      "text": "As of November 13, 2026, the native SwiftUI foundation exists and passes a simulator build. It includes Capture, hidden sidebar navigation, system typography, shared controls, English/Arabic interface text, and temporary demo memories; other sections have navigation placeholders. This README snapshot does not prove physical iPhone launch or completion of the remaining demo screens, database, AI models, or release. | When: November 13, 2026 | Involving: Eros MemoryOS project | Verified project status in the authoritative README, while explicitly preserving implementation uncertainty.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "iPhone",
+        "Eros MemoryOS"
+      ],
+      "context": "Authoritative project source README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.010000+00:00",
+      "mentioned_at": "2026-11-13T18:12:59.643607+00:00",
+      "document_id": "repo:README.md",
+      "metadata": {
+        "sha256": "8840c735e2baf6e423d15095a29fed2e273125097cce148049163621b7ffd9b8",
+        "source_path": "README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:README.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0400041720128723,
+        "reranker": null,
+        "semantic": 0.9010084867477417,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "22cbf7ac-2918-48fa-8ff5-144f17c65692",
+      "text": "D21/C10 selects Swift with SwiftUI as the current iPhone application stack; Flutter, Objective-C, Kotlin, and a web dashboard are not selected for current planning. This is a planning decision, not proof of implementation. Source: docs/decisions/decision-register.md. | When: November 7, 2026 | Defines the currently selected platform stack while leaving future-platform choices open.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "C10",
+        "phone",
+        "memoryos",
+        "D21"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-07T15:42:24.182821+00:00",
+      "occurred_end": "2026-11-07T15:42:24.182821+00:00",
+      "mentioned_at": "2026-11-07T15:42:24.182821+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "3a76b667612626a42e20c9ece5f998da370823c84e71794d7c01c7238980320a",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_5",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0339328441467714,
+        "reranker": null,
+        "semantic": 0.8590853130272232,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "28b99fec-7d2b-4658-b5e7-0467bc898b58",
+      "text": "Selected decision: Swift with SwiftUI is the historical app language and framework choice. The earlier Flutter proposal and Swift-versus-Objective-C comparison remain historical; this decision does not claim implementation or efficiency results. | Explicitly resolved by D21/C10; the document is a snapshot, not proof of implementation.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "Flutter",
+        "C10",
+        "Objective-C",
+        "memoryos",
+        "D21"
+      ],
+      "context": "Authoritative project source docs/feature-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-07T15:42:24.053012+00:00",
+      "document_id": "repo:docs/feature-register.md",
+      "metadata": {
+        "sha256": "f5faeabc4f19b2c14b7ee7e59eab28eb2ffd5c5cd1f918a39474a60d6b8baecb",
+        "source_path": "docs/feature-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/feature-register.md_5",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0306318871484266,
+        "reranker": null,
+        "semantic": 0.8489425778388977,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "fe4431ca-5366-4cd9-a1be-ec706c27bdbb",
+      "text": "The owner selected Swift with SwiftUI as the primary app stack on November 7, 2026 (C10), and selected a clickable interface demo with sample data (C11). Flutter and Objective-C are not selected; database, model, and runtime choices remain proposals or candidates, and no phone benchmark has passed. | When: November 7, 2026 | Involving: Project owner | The stack and demo-scope selections do not authorize implementation in a documentation task.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "Flutter",
+        "C10",
+        "user",
+        "Objective-C",
+        "C11",
+        "Swift"
+      ],
+      "context": "Authoritative project source AGENTS.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-07T00:00:00.030000+00:00",
+      "occurred_end": "2026-11-07T00:00:00.030000+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.559913+00:00",
+      "document_id": "repo:AGENTS.md",
+      "metadata": {
+        "sha256": "c78f3318c3a8559fa3d6c0690e246b0ef43cf968b3332324bbed87d3763d9628",
+        "source_path": "AGENTS.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:AGENTS.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0269949984325581,
+        "reranker": null,
+        "semantic": 0.855922520160675,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "b1bd98a5-dd41-42d2-b27d-cfd5335d6afc",
+      "text": "Existing prototypes and design assets are reference material only: an HTML/static prototype, Taste prototype kit, and local Geist/Geist Mono fonts are available, but no Swift delivery follows from the static files. Native font bundling, Arabic fallback, and rendering checks remain incomplete; charts and analytics are not required merely because the kit is available. | When: As of November 12, 2026 | Involving: Project memoryos | These assets support native development but do not verify native implementation.",
+      "type": "world",
+      "entities": [
+        "Geist",
+        "Swift",
+        "Arabic",
+        "memoryos",
+        "Taste",
+        "HTML"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-12T13:42:37.852599+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "2d0a7b46a6b26525bb9c0cb11199074d985848c11742b0ae5534a3faa96d2b8f",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_3",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0265457174565094,
+        "reranker": null,
+        "semantic": 0.8679427763206597,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "def6b91e-c819-442a-b69a-8d36742a686f",
+      "text": "Wax and Cactus are candidate libraries for MemoryOS embedded memory, retrieval, or AI components. Cactus's exact mobile version and APIs still require verification. | When: 2026-11-12 | These are candidate descriptions only, not verified MemoryOS test results or integrations.",
+      "type": "world",
+      "entities": [
+        "Cactus",
+        "memoryos",
+        "Wax",
+        "cactus-engine"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-12T14:49:52.719812+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "66b6d2a89e1e7469085296df3ba7d1eea202c716504c080c8cc040e174e912af",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_5",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 0.9041313308216733,
+        "reranker": null,
+        "semantic": 0.833585262298584,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    }
+  ],
+  "trace": null,
+  "entities": {
+    "SwiftUI": {
+      "entity_id": "00138a1f-a0e0-41bd-a564-3124295f9f55",
+      "canonical_name": "SwiftUI",
+      "observations": []
+    },
+    "C10": {
+      "entity_id": "1b921af8-f3bf-45b7-a47f-4dba62f15c47",
+      "canonical_name": "C10",
+      "observations": []
+    },
+    "Swift": {
+      "entity_id": "61272ff3-9624-422a-a449-966148c79dde",
+      "canonical_name": "Swift",
+      "observations": []
+    },
+    "memoryos": {
+      "entity_id": "6f1f3ee3-9405-473e-9b40-924988e4cebb",
+      "canonical_name": "memoryos",
+      "observations": []
+    },
+    "docs/decisions/decision-register.md": {
+      "entity_id": "7c65f49b-bbaf-484f-9221-60058080dd15",
+      "canonical_name": "docs/decisions/decision-register.md",
+      "observations": []
+    },
+    "A01": {
+      "entity_id": "93e35c94-8f4f-4057-8dc1-9f8db09ef7ed",
+      "canonical_name": "A01",
+      "observations": []
+    },
+    "C09": {
+      "entity_id": "9e0332b4-487e-4b18-a650-3ef2b13d70ef",
+      "canonical_name": "C09",
+      "observations": []
+    },
+    "iPhone app": {
+      "entity_id": "e196cd39-29c5-4267-8944-93e8cb0135b9",
+      "canonical_name": "iPhone app",
+      "observations": []
+    },
+    "capture": {
+      "entity_id": "0f124364-654e-4664-8adc-1ecd80edacbb",
+      "canonical_name": "capture",
+      "observations": []
+    },
+    "BrainMap": {
+      "entity_id": "1a44775f-0343-420a-b4e8-18c536e1d7fa",
+      "canonical_name": "BrainMap",
+      "observations": []
+    },
+    "birthdays": {
+      "entity_id": "1f4a151f-ef78-4ef6-902e-8d7459c2eca6",
+      "canonical_name": "birthdays",
+      "observations": []
+    },
+    "C20": {
+      "entity_id": "27491c69-15f3-4fa9-a27b-d8fe43e2acf0",
+      "canonical_name": "C20",
+      "observations": []
+    },
+    "Profiles": {
+      "entity_id": "63bab88f-4b09-44f3-99c1-f046bbf0c2e2",
+      "canonical_name": "Profiles",
+      "observations": []
+    },
+    "projects": {
+      "entity_id": "af7b6d6a-84d8-4de6-b908-7be7d8452e93",
+      "canonical_name": "projects",
+      "observations": []
+    },
+    "Settings": {
+      "entity_id": "c1810da4-d473-4866-965d-67176a4ec79a",
+      "canonical_name": "Settings",
+      "observations": []
+    },
+    "people": {
+      "entity_id": "c383c298-6268-47e7-9898-3c6daefc00d9",
+      "canonical_name": "people",
+      "observations": []
+    },
+    "Memories": {
+      "entity_id": "d425bc6f-017f-4827-9f70-181428d11539",
+      "canonical_name": "Memories",
+      "observations": []
+    },
+    "iPhone": {
+      "entity_id": "8f13d56c-b107-4393-9125-f2222b81cd82",
+      "canonical_name": "iPhone",
+      "observations": []
+    },
+    "simulator": {
+      "entity_id": "90fe09c7-5b4c-4c7e-aca9-701ba5146799",
+      "canonical_name": "simulator",
+      "observations": []
+    },
+    "docs/decisions/demo-and-feature-direction.md": {
+      "entity_id": "253be4b8-de20-43e9-aea1-d495151a3fb2",
+      "canonical_name": "docs/decisions/demo-and-feature-direction.md",
+      "observations": []
+    },
+    "Objective-C": {
+      "entity_id": "4678e0de-b1e6-455f-a364-3e9799838d9d",
+      "canonical_name": "Objective-C",
+      "observations": []
+    },
+    "UIKit": {
+      "entity_id": "c6caa0ed-344a-4a8b-bcac-aaba0ccdfe2b",
+      "canonical_name": "UIKit",
+      "observations": []
+    },
+    "decisions/decision-register.md": {
+      "entity_id": "ee4fb348-9e6d-4f38-a19a-0af0ee1af393",
+      "canonical_name": "decisions/decision-register.md",
+      "observations": []
+    },
+    "sidebar": {
+      "entity_id": "5a920b86-6a15-4bb4-bc6f-bfa7a3389f05",
+      "canonical_name": "sidebar",
+      "observations": []
+    },
+    "C19": {
+      "entity_id": "86255125-f613-4d63-ba04-efc9a32b32c9",
+      "canonical_name": "C19",
+      "observations": []
+    },
+    "C16": {
+      "entity_id": "6a801a30-ef4e-4799-90a2-9354e82fc1d1",
+      "canonical_name": "C16",
+      "observations": []
+    },
+    "Astryx": {
+      "entity_id": "a345ebbc-e592-4e74-995e-c4cb6011baea",
+      "canonical_name": "Astryx",
+      "observations": []
+    },
+    "simulator build": {
+      "entity_id": "60dd63c4-159c-4bd2-a51f-a6c8de467a69",
+      "canonical_name": "simulator build",
+      "observations": []
+    },
+    "Flutter": {
+      "entity_id": "0b748c67-837e-4a88-9f28-8899c47e244d",
+      "canonical_name": "Flutter",
+      "observations": []
+    },
+    "native app delivery": {
+      "entity_id": "11f531ac-c214-486e-afeb-a6fdd865eebf",
+      "canonical_name": "native app delivery",
+      "observations": []
+    },
+    "astryx-prototype": {
+      "entity_id": "d513d30a-47c3-4983-beba-5bc899df117c",
+      "canonical_name": "astryx-prototype",
+      "observations": []
+    },
+    "docs/design/visual-reference-index.md": {
+      "entity_id": "604892eb-ef88-4645-adb8-bf4806422895",
+      "canonical_name": "docs/design/visual-reference-index.md",
+      "observations": []
+    },
+    "Wax": {
+      "entity_id": "cdd26aa3-c5f1-4c81-8158-408dd89385eb",
+      "canonical_name": "Wax",
+      "observations": []
+    },
+    "VoiceOver": {
+      "entity_id": "b8087f17-d69f-4429-a99d-bc46ce00c1e6",
+      "canonical_name": "VoiceOver",
+      "observations": []
+    },
+    "native/": {
+      "entity_id": "052cb0d0-9275-4dc9-9bf5-c2f5b1844b68",
+      "canonical_name": "native/",
+      "observations": []
+    },
+    "sidebar screenshots": {
+      "entity_id": "45996fea-1933-4d1f-8de5-cefa7c557bf4",
+      "canonical_name": "sidebar screenshots",
+      "observations": []
+    },
+    "D09": {
+      "entity_id": "4c3d4c1f-c7d4-425a-a81e-db5c8aadb5b3",
+      "canonical_name": "D09",
+      "observations": []
+    },
+    "Eros MemoryOS": {
+      "entity_id": "ad223ee8-dfd6-49a3-b62b-1c19b3aa754c",
+      "canonical_name": "Eros MemoryOS",
+      "observations": []
+    },
+    "phone": {
+      "entity_id": "4a22ea85-3cbd-4107-9770-965f5cf6f1c4",
+      "canonical_name": "phone",
+      "observations": []
+    },
+    "D21": {
+      "entity_id": "e378250b-03bc-4195-9411-93c1f7109c47",
+      "canonical_name": "D21",
+      "observations": []
+    },
+    "user": {
+      "entity_id": "27d90ade-0dd2-4593-882b-eaa7eb7ff7c3",
+      "canonical_name": "user",
+      "observations": []
+    },
+    "C11": {
+      "entity_id": "4b8a3fc7-6040-4e7d-a3c5-8ee6ca976669",
+      "canonical_name": "C11",
+      "observations": []
+    },
+    "Geist": {
+      "entity_id": "297ba945-581a-4ab7-8afa-d58d1fe62d9b",
+      "canonical_name": "Geist",
+      "observations": []
+    },
+    "Arabic": {
+      "entity_id": "689441f3-37d2-4758-80f6-50938a1a0034",
+      "canonical_name": "Arabic",
+      "observations": []
+    },
+    "Taste": {
+      "entity_id": "88cc5ebe-035f-4184-8aad-06baf5fd80d9",
+      "canonical_name": "Taste",
+      "observations": []
+    },
+    "HTML": {
+      "entity_id": "d013b99d-e717-4677-88fd-6cafa06340c9",
+      "canonical_name": "HTML",
+      "observations": []
+    },
+    "Cactus": {
+      "entity_id": "04d7c68b-330c-478b-833f-d210f7799bb0",
+      "canonical_name": "Cactus",
+      "observations": []
+    },
+    "cactus-engine": {
+      "entity_id": "e9ef5d1e-73ef-463a-87fa-38571b284e26",
+      "canonical_name": "cactus-engine",
+      "observations": []
+    }
+  },
+  "chunks": null,
+  "source_facts": null,
+  "source_facts_truncated": null
+}

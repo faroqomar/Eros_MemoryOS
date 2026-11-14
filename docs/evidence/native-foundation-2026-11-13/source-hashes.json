@@ -1,0 +1,12 @@
+{
+  "native/MemoryOS.xcodeproj/project.pbxproj": "fd37cf078f62b4a425cd78a8895b75f670b5c7b09fb0d69a063360cb24a8fe2b",
+  "native/MemoryOS.xcodeproj/xcshareddata/xcschemes/MemoryOS.xcscheme": "47e3b331cd06ee84f93c0eb647f1946333d8c1b9c9c0209875609bb20faf144f",
+  "native/MemoryOS/App/DemoSession.swift": "b5f52d92dbd17aa79008b73005807743bd6b83fc34b64ce7b657e11e0c02ac85",
+  "native/MemoryOS/App/MemoryOSApp.swift": "e55dad4039ac2f54f6a2940fa71330d906cf83b8f9fa56e796927894b80662b1",
+  "native/MemoryOS/DesignSystem/Theme.swift": "f28113b48fb8504b49f6cdf8496656b197be567df50f1dd58c9c52347d4394f0",
+  "native/MemoryOS/Features/CaptureView.swift": "ff4ef04acd3032bc7a873fd3fa7204dbc4749d3c8679f4a51ef61cbc77144e44",
+  "native/MemoryOS/Features/RootView.swift": "75f793d3a576d8e0d254c35775d30e9369341676052814f696bf9a74dd1be7d2",
+  "native/MemoryOS/Features/SectionView.swift": "c677becdf9b9b6709efb9deee434cb86bb72c2e02c72186fe08aea84431ac10b",
+  "native/MemoryOS/Features/SidebarView.swift": "79b806fdc0339e3445d86b3499f713970628ef45a71a81d229189970a47b9312",
+  "native/MemoryOSUITests/FoundationTests.swift": "c94c769e623bb6bd2e3d588bcf50a75a2d604277d85bc2b7a37a73dad379d6ad"
+}

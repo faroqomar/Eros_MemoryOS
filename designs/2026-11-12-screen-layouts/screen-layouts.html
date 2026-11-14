@@ -1,0 +1,134 @@
+<style>
+#memoryos-study { --mo-bg:#fff; --mo-ink:#252525; --mo-sub:#626262; --mo-line:#dededb; --mo-soft:#f4f4f1; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+#memoryos-study * { box-sizing:border-box; }
+#memoryos-study .review-nav { display:flex; flex-wrap:wrap; gap:6px; margin:0 0 14px; }
+#memoryos-study button, #memoryos-study input, #memoryos-study select, #memoryos-study textarea { font:inherit; }
+#memoryos-study .review-nav button { min-height:44px; border:1px solid var(--mo-line); background:var(--mo-bg); color:var(--mo-ink); padding:8px 12px; border-radius:8px; }
+#memoryos-study .review-nav button[aria-pressed=true] { background:var(--mo-ink); color:white; border-color:var(--mo-ink); }
+#memoryos-study .phone { position:relative; margin-inline:auto; width:100%; max-width:414px; min-height:690px; border:1px solid var(--mo-line); border-radius:26px; color:var(--mo-ink); background:var(--mo-bg); padding:18px 20px 20px; display:flex; flex-direction:column; overflow:hidden; }
+#memoryos-study .demo { display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:12px; color:var(--mo-sub); margin-bottom:20px; }
+#memoryos-study .header { display:flex; gap:10px; align-items:center; margin-bottom:22px; }
+#memoryos-study h1 { margin:0; font-size:28px; line-height:1.2; font-weight:650; overflow-wrap:anywhere; }
+#memoryos-study h2 { font-size:18px; line-height:1.3; margin:26px 0 10px; font-weight:600; }
+#memoryos-study h3 { margin:0 0 8px; font-size:17px; font-weight:600; }
+#memoryos-study p { margin:0; line-height:1.5; }
+#memoryos-study .icon { display:inline-flex; align-items:center; justify-content:center; min-width:44px; min-height:44px; padding:8px; border:0; background:transparent; color:inherit; border-radius:10px; }
+#memoryos-study .content { flex:1; }
+#memoryos-study #mo-stage { display:flex; flex-direction:column; flex:1; }
+#memoryos-study label { display:block; font-size:14px; line-height:1.5; color:var(--mo-sub); }
+#memoryos-study input, #memoryos-study select, #memoryos-study textarea { width:100%; min-height:44px; padding:10px 12px; background:var(--mo-soft); border:1px solid var(--mo-line); border-radius:10px; color:var(--mo-ink); font-size:16px; margin:5px 0 0; }
+#memoryos-study textarea { min-height:100px; resize:vertical; }
+#memoryos-study .row { width:100%; display:flex; gap:12px; align-items:center; border:0; border-bottom:1px solid var(--mo-line); padding:16px 0; background:transparent; color:inherit; text-align:start; min-height:72px; }
+#memoryos-study .row-text { flex:1; min-width:0; }
+#memoryos-study strong { display:block; font-size:17px; font-weight:600; line-height:1.4; }
+#memoryos-study small { display:block; font-size:14px; color:var(--mo-sub); line-height:1.5; }
+#memoryos-study .avatar { flex:none; display:flex; width:48px; height:48px; align-items:center; justify-content:center; border-radius:50%; background:var(--mo-soft); border:1px solid var(--mo-line); font-size:17px; }
+#memoryos-study .chevron { color:var(--mo-sub); }
+#memoryos-study .text-button { border:0; background:transparent; color:inherit; min-height:44px; padding:8px 0; text-align:start; text-decoration:underline; text-underline-offset:4px; }
+#memoryos-study .primary, #memoryos-study .secondary { min-height:44px; border:1px solid var(--mo-line); border-radius:12px; padding:10px 14px; background:var(--mo-bg); color:inherit; }
+#memoryos-study .primary { background:var(--mo-ink); color:white; border-color:var(--mo-ink); }
+#memoryos-study .capture { margin-top:auto; width:100%; display:flex; gap:12px; align-items:center; text-align:start; color:var(--mo-sub); }
+#memoryos-study .tag { display:inline-block; font-size:12px; border:1px solid var(--mo-line); border-radius:6px; padding:3px 6px; color:var(--mo-sub); line-height:1.3; }
+#memoryos-study .filters { display:flex; gap:6px; margin:14px 0 0; }
+#memoryos-study .filters button { flex:1; min-height:44px; border:0; border-radius:8px; background:var(--mo-soft); color:inherit; padding:8px; }
+#memoryos-study .filters button[aria-pressed=true] { background:var(--mo-ink); color:white; }
+#memoryos-study .fact { padding:13px 0; border-bottom:1px solid var(--mo-line); }
+#memoryos-study .identity { display:flex; gap:16px; align-items:center; margin-bottom:12px; }
+#memoryos-study .identity .avatar { width:72px; height:72px; font-size:24px; }
+#memoryos-study .quote { margin:12px 0; padding-inline-start:14px; border-inline-start:2px solid var(--mo-line); line-height:1.6; font-size:17px; }
+#memoryos-study .actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:16px; }
+#memoryos-study .date { width:48px; text-align:center; flex:none; font-size:23px; font-weight:600; line-height:1; }
+#memoryos-study .date small { font-size:12px; font-weight:400; margin-top:4px; }
+#memoryos-study .empty { padding:24px 0; color:var(--mo-sub); }
+#memoryos-study .menu { position:absolute; inset:0; z-index:4; background:#0005; }
+#memoryos-study .drawer { width:85%; min-height:100%; background:var(--mo-bg); padding:20px; }
+#memoryos-study .drawer .row { min-height:58px; }
+#memoryos-study .scrim { position:absolute; inset-block:0; inset-inline-end:0; width:15%; border:0; background:transparent; }
+#memoryos-study .canvas { height:310px; position:relative; margin-top:14px; }
+#memoryos-study .edges { position:absolute; width:100%; height:100%; inset:0; pointer-events:none; }
+#memoryos-study .edges line { stroke:var(--mo-line); stroke-width:1.5; vector-effect:non-scaling-stroke; }
+#memoryos-study .node { position:absolute; transform:translate(-50%,-50%); width:100px; min-height:58px; background:var(--mo-bg); color:inherit; border:1px solid var(--mo-line); padding:8px; border-radius:14px; font-size:14px; }
+#memoryos-study .node.person { width:74px; min-height:74px; border-radius:50%; }
+#memoryos-study .node.thought { border-radius:4px; width:96px; }
+#memoryos-study .node[aria-pressed=true] { border:2px solid var(--mo-ink); background:var(--mo-soft); }
+#memoryos-study .node.owner { background:var(--mo-ink); color:white; }
+#memoryos-study .legend { display:flex; gap:16px; font-size:12px; color:var(--mo-sub); margin:6px 0 14px; }
+#memoryos-study .sheet { border-top:1px solid var(--mo-line); padding-top:18px; padding-bottom:20px; margin-top:8px; }
+#memoryos-study .notice { margin-top:16px; padding:12px; background:var(--mo-soft); border-radius:10px; font-size:14px; }
+#memoryos-study .source { white-space:pre-wrap; overflow-wrap:anywhere; }
+#memoryos-study [hidden] { display:none !important; }
+@media(max-width:360px) { #memoryos-study .phone { padding-inline:14px; } #memoryos-study .review-nav button { padding-inline:8px; } #memoryos-study .node { width:86px; } #memoryos-study .node.thought { width:86px; } }
+</style>
+<div id="memoryos-study">
+  <nav class="review-nav" aria-label="Review screen layouts">
+    <button type="button" data-root="people" aria-pressed="true">People</button>
+    <button type="button" data-root="projects" aria-pressed="false">Projects</button>
+    <button type="button" data-root="birthdays" aria-pressed="false">Birthdays</button>
+    <button type="button" data-root="brainmap" aria-pressed="false">BrainMap</button>
+  </nav>
+  <section class="phone" aria-label="MemoryOS layout proposal">
+    <div class="demo"><span>MemoryOS · Layout proposal</span><span>Sample data</span></div>
+    <div id="mo-stage"></div>
+  </section>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('memoryos-study');
+  const stage = root.querySelector('#mo-stage');
+  let state = {screen:'people', root:'people', person:'ali', project:'website', filter:'All', mapMode:'Map', selected:null};
+  let history = [];
+  let savedReminder = {offset:'0',time:'09:00',enabled:false};
+  const people = {ali:{name:'Ali',initial:'A',topic:'Website proposal',date:'7 Nov 2026'},sara:{name:'Sara',initial:'S',topic:'Reading list',date:'6 Nov 2026'}};
+  const projects = {website:{name:'Website proposal',status:'Tentative',plan:'No agreed plan yet',idea:'Might prepare a proposal next week',date:'7 Nov 2026'},reading:{name:'Reading list',status:'Active',plan:'Review the reading list',idea:'Keep notes on why each book matters',date:'6 Nov 2026'}};
+  const sources = {website:{title:'Website proposal',date:'7 November 2026 · Typed capture',text:"Ali's birthday is 12 May. We discussed a website. I might prepare a proposal next week."},birthday:{title:'Birthday note',date:'6 November 2026 · Typed capture',text:"Ali's birthday is 12 May."},reading:{title:'Reading list',date:'6 November 2026 · Typed capture',text:'Sara suggested keeping a short reading list.'},pages:{title:'Page ideas',date:'5 November 2026 · Sample transcript',text:'A short introduction and a contact page might be enough.'}};
+  const esc = v => String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const icon = (name,label,action) => `<button class="icon" type="button" aria-label="${label}" data-action="${action}"><span aria-hidden="true">${name==='menu'?'☰':name==='arrow-left'?'←':'×'}</span></button>`;
+  const button = (label,action,cls='secondary',extra='') => `<button class="${cls}" type="button" data-action="${action}" ${extra}>${label}</button>`;
+  const row = (title,sub,action,id,avatar='') => `<button class="row" type="button" data-action="${action}" data-id="${id}">${avatar}<span class="row-text"><strong>${title}</strong><small>${sub}</small></span><span class="chevron" aria-hidden="true">›</span></button>`;
+  const avatar = name => `<span class="avatar" aria-hidden="true">${name}</span>`;
+  const header = title => `<header class="header">${icon(history.length?'arrow-left':'menu',history.length?'Back':'Open menu',history.length?'back':'menu')}<h1>${title}</h1></header>`;
+  const search = label => `<label>${label}<input type="search" data-search placeholder="Name or topic" autocomplete="off"></label>`;
+  const footer = () => `<button class="secondary capture" type="button" data-action="capture"><span aria-hidden="true">＋</span>Capture a thought</button>`;
+  function navigate(screen, values={}) { history.push({...state}); state={...state,screen,...values}; render(true); }
+  function goBack(){ if(history.length){state=history.pop();render(true);} }
+  function peopleScreen(){return header('People')+search('Search people')+'<h2>Recently discussed</h2>'+Object.entries(people).map(([id,p])=>`<div data-item="${p.name} ${p.topic}">${row(p.name,`${p.topic} · ${p.date}`,'person',id,avatar(p.initial))}</div>`).join('')+'<p class="empty" data-no-results hidden>No matching people.</p>'+footer();}
+  function personScreen(){const p=people[state.person],ali=state.person==='ali';return header(p.name)+`<div class="identity">${avatar(p.initial)}<div><strong>${p.name}</strong><small>No image added</small></div></div><h2>About</h2><p>How you know ${p.name}: not added.</p><h2>Birthday</h2>`+row(ali?'12 May':'Not added','Open birthday details','birthday',state.person)+`<h2>Discussions</h2>`+row(p.topic,p.date+' · View source','source',ali?'website':'reading')+`<h2>Projects</h2>`+row(p.topic,'Open project','project',ali?'website':'reading')+`<h2>Learn about ${p.name}</h2><label>How do you know this person?<textarea id="mo-answer" placeholder="Your answer is optional"></textarea></label><div class="actions">${button('Save answer','answer','primary')}${button('Skip','skip')}</div><p id="mo-answer-status" aria-live="polite"></p>`+footer();}
+  function projectsScreen(){return header('Projects')+search('Search projects')+`<div class="filters" aria-label="Project status">${['All','Active','Tentative'].map(f=>button(f,'filter','secondary',`data-id="${f}" aria-pressed="${state.filter===f}"`)).join('')}</div>`+Object.entries(projects).filter(([,p])=>state.filter==='All'||p.status===state.filter).map(([id,p])=>`<div data-item="${p.name} ${p.plan} ${p.idea}"><button class="row" type="button" data-action="project" data-id="${id}"><span class="row-text"><strong>${p.name}</strong><small>${p.plan}</small><small>${p.date}</small></span><span class="tag">${p.status}</span></button></div>`).join('')+'<p class="empty" data-no-results hidden>No matching projects.</p>'+footer();}
+  function projectScreen(){const p=projects[state.project];return header(p.name)+`<span class="tag">${p.status}</span><h2>Current plan</h2><p>${p.plan}</p><h2>Ideas to consider</h2><span class="tag">Tentative</span><p style="margin-top:8px">${p.idea}</p>`+button('View source','source','text-button',`data-id="${state.project}"`)+`<h2>People</h2>`+row(state.project==='website'?'Ali':'Sara','Open person','person',state.project==='website'?'ali':'sara')+`<h2>Recent captures</h2>`+row(p.name,p.date+' · Typed capture','source',state.project)+(state.project==='website'?row('Page ideas','5 Nov 2026 · Sample transcript','source','pages'):'')+`<div class="actions">${button('Add thought','capture','primary',`data-id="${state.project}"`)}</div>`;}
+  function birthdaysScreen(){return header('Birthdays')+search('Search birthdays')+'<h2>Upcoming</h2><small>Sample clock: 12 Nov 2026 · Asia/Baghdad</small><div data-item="Ali"><h2>May 2027</h2>'+row('Ali',savedReminder.enabled?'Preview set · Nothing scheduled':'Reminder off','birthday','ali','<span class="date">12<small>MAY</small></span>')+'</div><div data-item="Sara"><h2>Dates to check</h2>'+row('Sara','Birthday not added','birthday','sara',avatar('S'))+'</div><p class="empty" data-no-results hidden>No matching birthdays.</p>'+footer();}
+  function birthdayScreen(){const ali=state.person==='ali',p=people[state.person];return header(p.name+'’s birthday')+(ali?`<strong>12 May</strong><small>Birth year not added</small>`+button('View date source','source','text-button','data-id="birthday"')+`<h2>Reminder preview</h2><span class="tag">Preview only</span><label style="margin-top:14px">Reminder<select id="mo-reminder"><option value="off" ${!savedReminder.enabled?'selected':''}>Off</option><option value="on" ${savedReminder.enabled?'selected':''}>Preview a reminder</option></select></label><div id="mo-reminder-fields" ${savedReminder.enabled?'':'hidden'}><label style="margin-top:12px">When<select id="mo-offset"><option value="0">On the day</option><option value="1">1 day before</option><option value="7">1 week before</option></select></label><label style="margin-top:12px">Time<input id="mo-time" type="time" value="${savedReminder.time}" required></label></div><div class="actions">${button('Preview reminder','preview','primary')}${button('Save preview','save-preview')}</div><p class="notice" id="mo-preview" aria-live="polite">No reminder scheduled.</p>`:`<p>Birthday not added.</p><p class="notice">Choose a valid day and month before creating a reminder preview. Date editing belongs to the specified demo flow.</p>`)+`<div class="actions">${button('Open person','person','secondary',`data-id="${state.person}"`)}</div>`;}
+  const nodes=[{id:'you',name:'You',type:'person owner',x:50,y:46},{id:'ali',name:'Ali',type:'person',x:21,y:17},{id:'website',name:'Website',type:'project',x:78,y:32},{id:'birthday',name:'Birthday note',type:'thought',x:22,y:77},{id:'pages',name:'Page ideas',type:'thought',x:76,y:77}];
+  function selected(){const id=state.selected;if(!id)return '<p class="empty">Select a node to inspect its connections.</p>';const n=nodes.find(x=>x.id===id);const type=id==='you'||id==='ali'?'Person':id==='website'?'Project':'Capture';const target=id==='website'?'project':id==='ali'?'person':'source';const targetId=id==='website'?'website':id==='ali'?'ali':id==='you'?'website':id;return `<section class="sheet"><h3>${n.name}</h3><small>${type}</small><p style="margin-top:10px">${id==='ali'?'Mentioned in the website capture and birthday note.':id==='website'?'Suggested link from Ali’s website discussion; linked to Page ideas.':id==='you'?'You own the sample captures. Lines do not measure relationship strength.':'A sample capture linked to '+(id==='pages'?'Website.':'Ali.')}</p><div class="actions">${id==='you'?'':button('Open '+type.toLowerCase(),target,'primary',`data-id="${targetId}"`)}${button('View link source','source','secondary',`data-id="${id==='ali'?'website':id==='website'||id==='you'?'website':id}"`)}</div>${id==='ali'?button('Birthday note source','source','text-button','data-id="birthday"'):''}<small style="margin-top:12px">${id==='website'?'Dashed: suggested website link. Solid: stored Page ideas link.':'Solid: sample stored link.'}</small></section>`;}
+  function brainmapScreen(){return header('BrainMap')+search('Find a person, project, or thought')+`<div class="filters" aria-label="BrainMap view">${['Map','List'].map(mode=>button(mode,'map-mode','secondary',`data-id="${mode}" aria-pressed="${state.mapMode===mode}"`)).join('')}</div>`+(state.mapMode==='Map'?`<div class="canvas" aria-label="Sample connections"><svg class="edges" aria-hidden="true" preserveAspectRatio="none" viewBox="0 0 100 100"><line x1="50" y1="46" x2="21" y2="17"/><line x1="50" y1="46" x2="78" y2="32" stroke-dasharray="2 2"/><line x1="21" y1="17" x2="78" y2="32" stroke-dasharray="2 2"/><line x1="21" y1="17" x2="22" y2="77"/><line x1="78" y1="32" x2="76" y2="77"/></svg>${nodes.map(n=>`<button type="button" data-item="${n.name}" data-action="node" data-id="${n.id}" class="node ${n.type}" style="left:${n.x}%;top:${n.y}%" aria-pressed="${n.id===state.selected}">${n.name}</button>`).join('')}</div><div class="legend"><span>─ Stored link</span><span>┄ Suggested link</span></div>`:nodes.map(n=>`<div data-item="${n.name}">${row(n.name,n.type.includes('person')?'Person':n.type==='project'?'Project':'Capture','node',n.id)}</div>`).join(''))+'<p class="empty" data-no-results hidden>No matching records.</p>'+selected()+footer();}
+  function render(focus=false){const screens={people:peopleScreen,person:personScreen,projects:projectsScreen,project:projectScreen,birthdays:birthdaysScreen,birthday:birthdayScreen,brainmap:brainmapScreen,source:()=>header('Source')+`<h2>${sources[state.source].title}</h2><small>${sources[state.source].date}</small><div class="quote source">${esc(sources[state.source].text)}</div><small>Fictional sample · Original excerpt</small>`,capture:()=>header('Capture')+`<p>Sample capture layout</p>${state.captureProject?`<span class="tag" style="margin-top:12px">${projects[state.captureProject].name}</span>`:''}<label style="margin-top:24px">Write a thought<textarea placeholder="Write anything…"></textarea></label><p class="notice">This layout study does not save captures.</p>`};
+    stage.innerHTML=screens[state.screen]();
+    root.querySelectorAll('[data-root]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.root===state.root));
+    if(state.screen==='birthday'&&state.person==='ali')stage.querySelector('#mo-offset').value=savedReminder.offset;
+    stage.querySelectorAll('button').forEach(b=>b.classList.add('cursor-interaction'));
+    if(globalThis.lucide)lucide.createIcons({attrs:{width:20,height:20}});
+    if(focus){const b=stage.querySelector('.header button');if(b)b.focus({preventScroll:true});}
+  }
+  function reminderPreview(){const enabled=stage.querySelector('#mo-reminder').value==='on';if(!enabled)return {offset:'0',time:savedReminder.time,enabled:false,text:'Reminder off. No reminder scheduled.'};const time=stage.querySelector('#mo-time');if(!time.reportValidity())return null;const offset=stage.querySelector('#mo-offset').value;const date=new Date(Date.UTC(2027,4,12-Number(offset)));const label=date.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'});return {offset,time:time.value,enabled:true,text:label+' · '+time.value+' · Asia/Baghdad. Preview only.'};}
+  root.addEventListener('click',event=>{const b=event.target.closest('button');if(!b)return;if(b.dataset.root){history=[];state={...state,screen:b.dataset.root,root:b.dataset.root,selected:null};render(true);return;}const a=b.dataset.action,id=b.dataset.id;
+    if(a==='back')goBack();
+    else if(a==='person')navigate('person',{person:id});
+    else if(a==='project')navigate('project',{project:id});
+    else if(a==='birthday')navigate('birthday',{person:id});
+    else if(a==='source')navigate('source',{source:id});
+    else if(a==='capture')navigate('capture',{captureProject:id||null});
+    else if(a==='filter'){state.filter=id;render();}
+    else if(a==='map-mode'){state.mapMode=id;render();}
+    else if(a==='node'){state.selected=id;render();}
+    else if(a==='answer'){const input=stage.querySelector('#mo-answer');stage.querySelector('#mo-answer-status').textContent=input.value.trim()?'Sample answer noted for this view.':'Enter an answer or choose Skip.';}
+    else if(a==='skip'){stage.querySelector('#mo-answer').value='';stage.querySelector('#mo-answer-status').textContent='Question skipped.';}
+    else if(a==='preview'||a==='save-preview'){const p=reminderPreview();if(!p)return;if(a==='save-preview'){savedReminder={offset:p.offset,time:p.time,enabled:p.enabled};}stage.querySelector('#mo-preview').textContent=a==='save-preview'?'Preview saved. No reminder scheduled. '+(p.enabled?p.text:''):p.text;}
+    else if(a==='menu'){const overlay=document.createElement('div');overlay.className='menu';overlay.innerHTML=`<div class="drawer"><div class="header"><strong>MemoryOS</strong>${icon('x','Close menu','close-menu')}</div>${['people','projects','birthdays','brainmap'].map(s=>row(s==='brainmap'?'BrainMap':s[0].toUpperCase()+s.slice(1),'','section',s)).join('')}</div><button class="scrim" aria-label="Close menu" data-action="close-menu"></button>`;root.querySelector('.phone').append(overlay);overlay.querySelector('button').focus();}
+    else if(a==='close-menu'){root.querySelector('.menu')?.remove();stage.querySelector('.header button').focus();}
+    else if(a==='section'){root.querySelector('.menu')?.remove();history=[];state={...state,screen:id,root:id};render(true);}
+  });
+  root.addEventListener('input',event=>{if(!event.target.matches('[data-search]'))return;const q=event.target.value.trim().toLowerCase();const items=[...stage.querySelectorAll('[data-item]')];items.forEach(el=>el.hidden=!el.dataset.item.toLowerCase().includes(q));const empty=stage.querySelector('[data-no-results]');if(empty)empty.hidden=items.some(el=>!el.hidden);});
+  root.addEventListener('change',event=>{if(event.target.id==='mo-reminder')stage.querySelector('#mo-reminder-fields').hidden=event.target.value==='off';});
+  root.addEventListener('keydown',event=>{if(event.key==='Escape'&&root.querySelector('.menu')){root.querySelector('.menu').remove();stage.querySelector('.header button').focus();}});
+  render();
+})();
+</script>

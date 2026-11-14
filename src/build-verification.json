@@ -1,0 +1,49 @@
+{
+  "style": "Achromatic ledger, light",
+  "shell": "No persistent sidebar; hidden navigation drawer",
+  "face": "Blue active source marker",
+  "signature": "Source thread connecting dated original words and editable links",
+  "questions": {
+    "shell": "Where am I, and where can I go?",
+    "capture-compose": "What should I capture or review next?",
+    "capture-source": "What did I actually say?",
+    "capture-recent": "Which thought did I save recently?",
+    "capture-upcoming": "What have I chosen to follow up?",
+    "review": "Did this thought connect to the right person and project?",
+    "memory-search": "What do my saved thoughts say about this?",
+    "people": "Who is connected to my thoughts?",
+    "person-detail": "What should I remember about this person?",
+    "projects": "Which project does this thought belong to?",
+    "project-detail": "What is agreed, and what is only an idea?",
+    "source-detail": "Which words support this memory?",
+    "reminders": "What needs my attention next?",
+    "rules": "What happens when this rule matches?",
+    "custom-tabs": "Which thoughts should this tab keep together?",
+    "local-control": "What may leave this workspace?",
+    "design-preferences": "Which way of working feels most natural?"
+  },
+  "sampleData": "Verify before publishing: src/data.js contains all six fictional captures, Ali and Sara, two projects, three reminder dates, birthday rule, saved tab, six disconnected services and initial pattern ordering. Source excerpts, relationships and dates are illustrative. Preserve Sample data notices.",
+  "exceptions": [
+    "Hidden navigation follows the owner requirement rather than desktop text links.",
+    "Brand tokens override example settings radii and tinted panels.",
+    "Capture replaces generic home KPI tiles.",
+    "Controls have 44px hit boxes surrounding the 36px visual buttons.",
+    "Arabic glyphs use generic system fallback where Geist lacks coverage."
+  ],
+  "checks": {
+    "syntax": "node --check src/app.js src/data.js src/charts.js, individually passed",
+    "data": "node src/data.js assertions passed",
+    "routeAudit": "42 route/viewport cases at 1440, 768 and 390; one h1 and no horizontal overflow. Two undersized inline links corrected, desktop and mobile rechecked.",
+    "stateAudit": "56 route/state cases exercised: empty, zero, loading, error; one h1 retained.",
+    "interaction": "Text save, search, type filter, sort, correction, undo, reminder completion, custom tab creation, ranking, pattern preview, Arabic direction, drawer Escape and focus return passed.",
+    "fonts": "Geist and Geist Mono loaded; Geist tabular digits measured equally at 33.6015625px versus proportional 19.828125px and 33.828125px.",
+    "visual": "Desktop and 390px screenshots inspected; home paired panel bottoms aligned at 450.28 and 760.28px before final composer fill refinement.",
+    "console": "No errors in interaction exercise.",
+    "infrastructure": "Static native app; no package manager, build pipeline, lint or typecheck configuration existed. No dependencies installed. Browser tested via intercepted requests, no preview server started.",
+    "limitations": [
+      "Physical iPhone and assistive technology testing remain for acceptance.",
+      "Full Arabic translation of every status and form-validation sentence is not complete; original sample memories stay English.",
+      "No production AI, recording, persistence or external integrations."
+    ]
+  }
+}

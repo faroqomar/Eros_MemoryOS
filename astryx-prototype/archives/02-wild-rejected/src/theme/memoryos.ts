@@ -1,0 +1,42 @@
+import {defineTheme} from '@astryxdesign/core/theme';
+import {neutralTheme} from '@astryxdesign/theme-neutral/built';
+
+export const memoryosTheme = defineTheme({
+  name: 'memoryos',
+  extends: neutralTheme,
+  typography: {
+    scale: {base: 16, ratio: 1.2},
+    body: {family: 'MemoryGeist', fallbacks: 'system-ui, sans-serif'},
+    heading: {family: 'MemoryGeist', fallbacks: 'system-ui, sans-serif'},
+  },
+  tokens: {
+    '--font-family-body': 'MemoryGeist, system-ui, sans-serif',
+    '--font-family-heading': 'MemoryGeist, system-ui, sans-serif',
+    '--color-background-body': 'rgb(245 243 235)',
+    '--color-background-surface': 'rgb(245 243 235)',
+    '--color-background-card': 'rgb(252 251 246)',
+    '--color-background-popover': 'rgb(252 251 246)',
+    '--color-background-inverted': 'rgb(29 30 27)',
+    '--color-text-primary': 'rgb(29 30 27)',
+    '--color-text-secondary': 'rgb(103 103 91)',
+    '--color-border': 'rgb(215 214 201)',
+    '--color-border-emphasized': 'rgb(160 160 145)',
+    '--color-accent': 'rgb(219 248 77)',
+    '--color-on-accent': 'rgb(29 30 27)',
+    '--color-text-accent': 'rgb(45 62 15)',
+    '--color-icon-accent': 'rgb(45 62 15)',
+    '--color-accent-muted': 'rgb(233 244 181)',
+    '--color-on-dark': 'rgb(245 243 235)',
+    '--color-on-light': 'rgb(29 30 27)',
+    '--color-info': 'rgb(62 87 230)',
+    '--color-on-info': 'rgb(252 251 246)',
+    '--color-warning': 'rgb(248 146 119)',
+    '--color-on-warning': 'rgb(29 30 27)',
+    '--color-success': 'rgb(180 199 185)',
+    '--color-on-success': 'rgb(29 30 27)',
+    '--color-background-blue': 'rgb(208 221 242)',
+    '--color-background-orange': 'rgb(249 204 173)',
+    '--color-background-green': 'rgb(220 230 190)',
+    '--color-overlay': 'rgb(29 30 27 / .45)',
+  },
+});

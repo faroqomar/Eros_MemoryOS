@@ -1,0 +1,55 @@
+{
+  "originalRequest": "i want you to understant the project and my goal  and my prifinceses and go and and rebuild a prototype for it not the full app just the important screens and for refrencese suggest to my some design pattrens and i can rank them for you so you understand what i like and what is not",
+  "subject": "Eros MemoryOS, a private, iPhone-first personal memory interface for capturing thoughts and connecting them to people, projects, ideas and reminders.",
+  "pageType": "dashboard",
+  "scope": "Design an interactive concept prototype of the core product screens. Include a reference comparison stage for learning the owner's visual preferences. This phase defines the brief only.",
+  "primaryGoal": "Make recording or writing a thought effortless, then show how the owner can find, understand and correct the resulting personal memory.",
+  "audience": "The owner, using an iPhone 15 Pro Max with Arabic and English content.",
+  "offer": "A personal memory workspace with simple capture, connected information and owner-defined rules. Everyday use is intended to remain on the phone without a daily Mac or server dependency.",
+  "primaryAction": "Record a thought with one prominent button, or enter text without first choosing a folder.",
+  "creativeControl": "Choose a focused screen set and coherent sample journey autonomously. Offer distinct reference-based patterns for the owner to rank in a later preference stage. Keep the visual direction provisional until that feedback is available.",
+  "requiredContent": [
+    "Design direction comparison: present three reference-based interface patterns for later ranking: capture-centered voice notebook, conversational memory workspace, and organized personal library. Compare capture, navigation and information density using the same sample content. These are candidates, not selected styles.",
+    "Capture home: prominent recording button, text input, access to attachments and a hidden navigation drawer. Show idle, recording and saved states with minimal steps.",
+    "Capture review: show an illustrative transcript, suggested person and project links, tentative actions and correction controls. Clearly distinguish saved input from simulated processing.",
+    "Memory search and answer: ask a question about captured information, view an illustrative answer and open its dated source. Include an insufficient-evidence state and separate interpretations from confirmed facts.",
+    "People view and profile: browse people and inspect one fictional person's discussions, linked projects, important dates and chosen reminders.",
+    "Projects view and detail: browse projects and inspect linked captures, ideas, current plans and tentative future work without treating possibilities as commitments.",
+    "Source detail: inspect an original note or conversation alongside extracted information and clearly labeled interpretation; demonstrate correcting a mistaken link.",
+    "Reminders and rules: show owner-selected reminders and a simple editable rule example. Calendar actions remain previews rather than live integrations.",
+    "Hidden navigation and custom tabs: demonstrate opening and closing the sidebar, switching core views and requesting a named custom tab. Saved-filter behavior is a prototype proposal.",
+    "Local control and connections: provide a compact settings view showing local-use intent and optional disconnected services. Explain selected-data sharing without implying that any integration works."
+  ],
+  "constraints": [
+    "Briefing only in this turn. Do not create or edit the prototype, assets or application.",
+    "Prototype scope excludes production storage, real AI, transcription, account connections, calendar writes, sync and deployment.",
+    "Prioritize iPhone 15 Pro Max composition, Arabic RTL, English LTR and mixed-language content.",
+    "Keep capture simple, with no mandatory classification questionnaire and no permanently visible sidebar.",
+    "Use clearly identified fictional sample memories. Do not import private conversations or invent verified performance claims.",
+    "Preserve the distinction between requested capabilities and proposed supporting interactions.",
+    "Use selected reference images for desktop and mobile screen composition in later design phases.",
+    "Include useful transitions for recording states, tabs, navigation, drawers and filtering. Respect reduced-motion preferences.",
+    "Do not select an application framework, model, database or cloud provider through visual design."
+  ],
+  "brandInputs": [
+    "README.md and docs/product-overview.md establish the Eros MemoryOS name and personal, phone-first product direction.",
+    "docs/product-overview.md and docs/decisions/decision-register.md specify minimal capture, a large recording button, text input, a hidden sidebar and requested custom tabs.",
+    "The reviewed project documents establish no approved palette, typography, logo or screen design. Leave those choices open for reference selection."
+  ],
+  "assumptions": [
+    "The current request advances the earlier documentation-only direction toward prototype design, but does not authorize building the full application. This turn remains briefing-only.",
+    "The project documents report no existing application, so rebuild is interpreted as creating a fresh concept prototype grounded in the documented goals.",
+    "A browser-viewable, mobile-first interactive prototype is the intended later artifact; desktop presentation should preserve the phone-first hierarchy.",
+    "The core demonstration follows capture, review, retrieval, source inspection and correction. People, projects and reminders supply connected context.",
+    "Source-backed answers, capture receipts, correction controls and custom tabs as saved views are proposed prototype interactions, not previously approved implementation decisions.",
+    "Use a fictional birthday and tentative website proposal to demonstrate that a possible action is not a confirmed commitment.",
+    "Ranking is deferred to the subsequent reference stage. No preference question is required to complete this brief.",
+    "This is an operating product interface, so marketing sections and an eight-section landing-page minimum do not apply."
+  ],
+  "unresolved": [
+    "Reference images and the owner's ranking remain to be collected in the next design stage.",
+    "Colors, typography and icon style remain open until reference selection.",
+    "Real device performance, integration permissions and production architecture remain outside this prototype brief."
+  ],
+  "explicitAnswers": []
+}

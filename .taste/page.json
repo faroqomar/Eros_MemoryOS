@@ -1,0 +1,1047 @@
+{
+  "version": 1,
+  "page": {
+    "title": "Capture",
+    "route": "/",
+    "description": "Eros MemoryOS personal workspace. Capture a thought, inspect its source and keep tentative plans distinct from commitments."
+  },
+  "architecture": {
+    "contract": "This screen answers: What should I capture or review next? Its finding is: Your website thought still has a suggested link.",
+    "mode": "operate_monitor",
+    "novelty": "medium",
+    "grid": "At 1440px, centre a 1152px canvas with 144px outer margins. Twelve 85px columns plus eleven 12px gutters equal 1152px. Spans: 9+3 = 861+12+279; 8+4 = 764+12+376; 6+6 = 570+12+570. Header, panels and final rows share canvas edges. Tablet uses available width minus 32px, with 12px gutters; phone uses one column with 16px margins.",
+    "signatureRule": "Apply the existing achromatic ledger brand unchanged. Chrome and actions stay ink; the active source-position marker alone uses the data hue. The source thread connects an excerpt to its date, suggested links and interpretation. Keep coloured pixels below 1%, no resting shadows and no decorative charts.",
+    "rhythm": "Sparse: 44px standard rows, 64px two-line memory rows, 24px panel padding, 12px horizontal and vertical gaps, 36px visual controls and at least 44px mobile hit areas. Use the brand type scale and weights. No extra KPI strip."
+  },
+  "navigation": [
+    {
+      "label": "Capture",
+      "target": "#/capture"
+    },
+    {
+      "label": "Memories",
+      "target": "#/memories"
+    },
+    {
+      "label": "People",
+      "target": "#/people"
+    },
+    {
+      "label": "Projects",
+      "target": "#/projects"
+    },
+    {
+      "label": "Reminders",
+      "target": "#/reminders"
+    },
+    {
+      "label": "Rules",
+      "target": "#/rules"
+    },
+    {
+      "label": "My tabs",
+      "target": "#/tabs"
+    },
+    {
+      "label": "Local control",
+      "target": "#/settings"
+    },
+    {
+      "label": "Design preferences",
+      "target": "#/preferences"
+    }
+  ],
+  "navigationDesign": {
+    "layoutCase": "app-shell",
+    "layout": "48px top bar on the page ground, aligned to the canvas. Open-loop M mark, Eros MemoryOS and Personal identify the workspace. Search opens Memories. Menu opens hidden navigation; no persistent sidebar.",
+    "behavior": [
+      "Root defaults to #/capture; direct links and browser back work.",
+      "Detail routes are #/review/:id, #/sources/:id, #/people/:id and #/projects/:id.",
+      "The 256px desktop drawer overlays rather than resizing the canvas.",
+      "Opening the drawer transfers focus; Escape closes it and restores focus.",
+      "Custom tabs create real #/tabs/:id destinations with saved predicates.",
+      "Each active view has one h1 and one quiet Sample data notice."
+    ],
+    "transformation": {
+      "compact": "Full-screen menu sheet; mark, search and menu remain in the top bar.",
+      "medium": "Hidden navigation remains a drawer; content uses 16px margins.",
+      "expanded": "Top bar shares the 1152px canvas; drawer appears only on request."
+    }
+  },
+  "sections": [
+    {
+      "id": "shell",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Identify the product and expose real destinations.",
+      "userQuestion": "Where am I, and where can I go?",
+      "stage": "orient",
+      "dependencies": [],
+      "evidence": [
+        "README.md",
+        "brand-system.foundation.lockedDecisions"
+      ],
+      "copy": {
+        "heading": "Eros MemoryOS",
+        "body": [
+          "Personal"
+        ],
+        "callsToAction": [
+          {
+            "label": "Search",
+            "target": "#/memories"
+          },
+          {
+            "label": "Menu",
+            "target": "action:open-navigation"
+          }
+        ]
+      },
+      "layout": "Shared shell on every route. Product and utilities align to canvas edges. Add a rule only when content scrolls beneath the sticky bar.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "press",
+        "behavior": "Drawer opens from the logical start edge; focus follows the overlay.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate open and close with identical focus handling."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Full-screen navigation.",
+        "medium": "Overlay drawer.",
+        "expanded": "256px overlay drawer."
+      }
+    },
+    {
+      "id": "capture-compose",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "workspace-home-greeting"
+      ],
+      "purpose": "Make the most frequent job immediately available.",
+      "userQuestion": "What should I capture or review next?",
+      "stage": "act",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "docs/product-overview.md",
+        "design-brief.primaryAction"
+      ],
+      "copy": {
+        "heading": "Capture",
+        "body": [
+          "Your website thought still has a suggested link.",
+          "Sample data",
+          "Write a thought",
+          "Sample recording"
+        ],
+        "callsToAction": [
+          {
+            "label": "Record a thought",
+            "target": "action:start-sample-recording"
+          },
+          {
+            "label": "Save thought",
+            "target": "action:save-text"
+          },
+          {
+            "label": "Add attachment",
+            "target": "action:choose-sample-attachment"
+          },
+          {
+            "label": "Review link",
+            "target": "#/review/c01"
+          }
+        ]
+      },
+      "layout": "Default #/capture. Full-width title at approximately 72px from viewport top. Composer spans 9 columns, 861px, paired with source preview in 3 columns. Both are approximately 250px tall. Recording is the only filled primary; text save is secondary. States: idle, recording, stopped, saved, empty text and failed save. No four-tile summary, because capture is the job.",
+      "motion": {
+        "purpose": "feedback",
+        "trigger": "press",
+        "behavior": "Record becomes Stop; elapsed time is real interaction time, not invented audio. Save updates the receipt without an entrance.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate labels and receipt."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Composer first, full width; primary above the fold.",
+        "medium": "Composer and preview stack when preview would be under 340px.",
+        "expanded": "9-column composer beside 3-column source preview."
+      }
+    },
+    {
+      "id": "capture-source",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "workspace-home-greeting"
+      ],
+      "purpose": "Expose the source thread immediately.",
+      "userQuestion": "What did I actually say?",
+      "stage": "prove",
+      "dependencies": [
+        "capture-compose"
+      ],
+      "evidence": [
+        "brand-system.creativeDirection.signatureDevice"
+      ],
+      "copy": {
+        "heading": "Latest source",
+        "body": [
+          "Sample data",
+          "I might prepare a website proposal next week.",
+          "7 Nov 2026, 09:10",
+          "Ali · Website proposal",
+          "Suggested link"
+        ],
+        "callsToAction": [
+          {
+            "label": "Open source",
+            "target": "#/sources/c01"
+          }
+        ]
+      },
+      "layout": "3 columns, 279px, matching composer height. Display c01 excerpt segment 2 with one tiny active source marker, date and suggested links. Never display a waveform. Empty, loading and error preserve the source frame.",
+      "motion": {
+        "purpose": "none",
+        "trigger": "none",
+        "behavior": "Static evidence.",
+        "durationMs": 0,
+        "easing": "linear",
+        "reducedMotion": "Unchanged."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Compact source thread below composer.",
+        "medium": "Full-width source thread.",
+        "expanded": "Aligned beside composer."
+      }
+    },
+    {
+      "id": "capture-recent",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "workspace-home-greeting"
+      ],
+      "purpose": "Resume recent memories.",
+      "userQuestion": "Which thought did I save recently?",
+      "stage": "continue",
+      "dependencies": [
+        "capture-compose"
+      ],
+      "evidence": [
+        "design-brief.requiredContent"
+      ],
+      "copy": {
+        "heading": "Recent thoughts",
+        "body": [
+          "Sample data",
+          "Website proposal · Ali · 7 Nov, 09:10",
+          "Birthday note · Ali · 6 Nov, 18:30",
+          "Reading list · Sara · 6 Nov, 12:15"
+        ],
+        "callsToAction": [
+          {
+            "label": "View all",
+            "target": "#/memories"
+          }
+        ]
+      },
+      "layout": "6 columns, 570px, under composer row; three 64px rows, each opening its source. Cap at three on home. Empty: Your saved thoughts appear here. Loading keeps row pitch; error has Retry.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "state_change",
+        "behavior": "A saved thought replaces the oldest preview row with stable keyed identities.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate row replacement."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Stack after upcoming actions.",
+        "medium": "Pair only above 340px per panel.",
+        "expanded": "6-column panel paired with upcoming actions."
+      }
+    },
+    {
+      "id": "capture-upcoming",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "workspace-home-greeting"
+      ],
+      "purpose": "Surface chosen follow-ups.",
+      "userQuestion": "What have I chosen to follow up?",
+      "stage": "act",
+      "dependencies": [
+        "capture-compose"
+      ],
+      "evidence": [
+        "docs/feature-register.md"
+      ],
+      "copy": {
+        "heading": "Upcoming",
+        "body": [
+          "Sample data",
+          "Ask Ali about proposal scope · 9 Nov, 10:00",
+          "Review reading list · 10 Nov, 18:00",
+          "Ali's birthday · 12 May 2027"
+        ],
+        "callsToAction": [
+          {
+            "label": "View reminders",
+            "target": "#/reminders"
+          }
+        ]
+      },
+      "layout": "6 columns, 570px; three 64px rows aligned with Recent thoughts. Opening a reminder reveals its source and calendar preview. Empty: No reminders planned. No automatic event creation.",
+      "motion": {
+        "purpose": "feedback",
+        "trigger": "press",
+        "behavior": "Selection opens the reminder route with the chosen reminder expanded.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate selection."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Move above Recent thoughts as an actionable summary and expandable list.",
+        "medium": "Pair or stack with Recent thoughts.",
+        "expanded": "Aligned 6-column panel."
+      }
+    },
+    {
+      "id": "review",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Inspect and correct a capture.",
+      "userQuestion": "Did this thought connect to the right person and project?",
+      "stage": "evaluate",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "design-brief.requiredContent"
+      ],
+      "copy": {
+        "heading": "Capture review",
+        "body": [
+          "Sample data",
+          "The proposal is tentative; the project link needs review.",
+          "Original thought",
+          "Ali's birthday is 12 May. We discussed a website. I might prepare a proposal next week.",
+          "Suggested links",
+          "Ali · Website proposal",
+          "Interpretation · Tentative plan"
+        ],
+        "callsToAction": [
+          {
+            "label": "Confirm link",
+            "target": "action:confirm-link"
+          },
+          {
+            "label": "Correct link",
+            "target": "action:edit-link"
+          },
+          {
+            "label": "Undo",
+            "target": "action:undo-correction"
+          },
+          {
+            "label": "Open source",
+            "target": "#/sources/c01"
+          }
+        ]
+      },
+      "layout": "#/review/:id, one h1. Original thought and source thread span 8 columns; suggested links and tentative action span 4. Three evidence segments, two link rows, one action row. States include unknown ID, no suggestions, saving, saved and correction error.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "press",
+        "behavior": "Link editing opens a focused selection sheet; confirmation updates every dependent view.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate state updates."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Source then links and actions.",
+        "medium": "Stack when either panel falls below 340px.",
+        "expanded": "764px source and 376px review panel."
+      }
+    },
+    {
+      "id": "memory-search",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "inbox-triage"
+      ],
+      "purpose": "Find a thought and inspect its evidence.",
+      "userQuestion": "What do my saved thoughts say about this?",
+      "stage": "evaluate",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "design-brief.requiredContent"
+      ],
+      "copy": {
+        "heading": "Memories",
+        "body": [
+          "Sample data",
+          "The website proposal is still a possibility, not a commitment.",
+          "What did I decide about the website?",
+          "Interpretation",
+          "Tentative proposal · Source: Website proposal",
+          "All thoughts · Text · Audio"
+        ],
+        "callsToAction": [
+          {
+            "label": "Search",
+            "target": "action:search-memories"
+          },
+          {
+            "label": "Ask",
+            "target": "action:lookup-supported-answer"
+          },
+          {
+            "label": "Open source",
+            "target": "#/sources/c01"
+          },
+          {
+            "label": "Save as tab",
+            "target": "action:save-filter-tab"
+          }
+        ]
+      },
+      "layout": "#/memories. Inbox pattern adapted to hidden navigation: 376px result list, 12px gutter, 764px evidence pane. Six 64px rows maximum. Search, type filter and newest/oldest sort share one toolbar. Answer and excerpt appear together. Unknown questions return Not enough information with matching sources, never generated claims.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "state_change",
+        "behavior": "Filter, sort and selected source update keyed rows and the evidence pane together.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate results and selection."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "One pane at a time; back restores query and list scroll.",
+        "medium": "List and detail become separate route states when space is insufficient.",
+        "expanded": "Fixed result list beside evidence pane."
+      }
+    },
+    {
+      "id": "people",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Find a person by their connected memories.",
+      "userQuestion": "Who is connected to my thoughts?",
+      "stage": "qualify",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "docs/feature-register.md"
+      ],
+      "copy": {
+        "heading": "People",
+        "body": [
+          "Sample data",
+          "Ali · Website proposal · Birthday note",
+          "Sara · Reading list"
+        ],
+        "callsToAction": [
+          {
+            "label": "Ali",
+            "target": "#/people/p01"
+          },
+          {
+            "label": "Sara",
+            "target": "#/people/p02"
+          }
+        ]
+      },
+      "layout": "#/people. Two equal 6-column person summaries, neutral initials and linked thought titles. Name search precedes summaries. Zero results keep the People frame. Loading and error affect summaries only.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "state_change",
+        "behavior": "Name filtering updates results without dimming identities.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate filtering."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Two stacked summaries.",
+        "medium": "Two columns above 340px each.",
+        "expanded": "Two 570px summaries."
+      }
+    },
+    {
+      "id": "person-detail",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Inspect one person's discussions and chosen reminders.",
+      "userQuestion": "What should I remember about this person?",
+      "stage": "evaluate",
+      "dependencies": [
+        "people"
+      ],
+      "evidence": [
+        "docs/feature-register.md"
+      ],
+      "copy": {
+        "heading": "Ali",
+        "body": [
+          "Sample data",
+          "The proposal remains tentative.",
+          "Discussions",
+          "Website proposal · 7 Nov",
+          "Birthday note · 6 Nov",
+          "Important dates",
+          "Birthday · 12 May",
+          "Chosen reminders",
+          "Ask about proposal scope · 9 Nov, 10:00"
+        ],
+        "callsToAction": [
+          {
+            "label": "Open discussion",
+            "target": "#/sources/c01"
+          },
+          {
+            "label": "Choose reminder",
+            "target": "action:edit-person-reminders"
+          },
+          {
+            "label": "Website proposal",
+            "target": "#/projects/j01"
+          }
+        ]
+      },
+      "layout": "#/people/:id. Dynamic h1 from person. Discussions span 8 columns, important dates and reminders span 4. Ali has two linked captures; Sara has one. No fabricated profile fields. Missing birthday displays a small grey hyphen.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "press",
+        "behavior": "Reminder selection updates the person and reminder list together.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate changes."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Actionable reminder summary before discussions.",
+        "medium": "Stack narrow panels.",
+        "expanded": "8+4 columns."
+      }
+    },
+    {
+      "id": "projects",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Find current project context.",
+      "userQuestion": "Which project does this thought belong to?",
+      "stage": "qualify",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "docs/feature-register.md"
+      ],
+      "copy": {
+        "heading": "Projects",
+        "body": [
+          "Sample data",
+          "Website proposal · Tentative",
+          "Reading list · Active"
+        ],
+        "callsToAction": [
+          {
+            "label": "Website proposal",
+            "target": "#/projects/j01"
+          },
+          {
+            "label": "Reading list",
+            "target": "#/projects/j02"
+          }
+        ]
+      },
+      "layout": "#/projects. Two 6-column summaries with names, plan state and latest linked excerpt. Search by name and filter All, Active, Tentative. No progress percentages.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "state_change",
+        "behavior": "Project filters update visible summaries and result count together.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate filtering."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Stack summaries.",
+        "medium": "Two columns when both fit.",
+        "expanded": "6+6 columns."
+      }
+    },
+    {
+      "id": "project-detail",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Separate project history from possible future work.",
+      "userQuestion": "What is agreed, and what is only an idea?",
+      "stage": "evaluate",
+      "dependencies": [
+        "projects"
+      ],
+      "evidence": [
+        "docs/product-overview.md"
+      ],
+      "copy": {
+        "heading": "Website proposal",
+        "body": [
+          "Sample data",
+          "No proposal date has been agreed.",
+          "Linked thoughts",
+          "Website proposal · Ali · 7 Nov",
+          "Page ideas · 5 Nov",
+          "Current plan",
+          "Ask Ali about scope",
+          "Possibilities",
+          "Prepare a proposal next week"
+        ],
+        "callsToAction": [
+          {
+            "label": "Open thought",
+            "target": "#/sources/c01"
+          },
+          {
+            "label": "Add thought",
+            "target": "#/capture?project=j01"
+          },
+          {
+            "label": "Review reminder",
+            "target": "#/reminders?selected=r01"
+          }
+        ]
+      },
+      "layout": "#/projects/:id. Dynamic h1. Linked thoughts occupy 8 columns with up to four rows; current plan and possibilities occupy 4. Reading list uses its own linked records and plan. Empty sections retain their noun heading.",
+      "motion": {
+        "purpose": "feedback",
+        "trigger": "press",
+        "behavior": "Opening linked evidence preserves project return context.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate navigation."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Plan summary before linked thoughts.",
+        "medium": "Stack below minimum panel widths.",
+        "expanded": "8+4 columns."
+      }
+    },
+    {
+      "id": "source-detail",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Preserve original evidence during correction.",
+      "userQuestion": "Which words support this memory?",
+      "stage": "prove",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "brand-system.creativeDirection.signatureDevice"
+      ],
+      "copy": {
+        "heading": "Website proposal",
+        "body": [
+          "Sample data",
+          "Original thought · 7 Nov 2026, 09:10",
+          "Ali's birthday is 12 May.",
+          "We discussed a website.",
+          "I might prepare a proposal next week.",
+          "Suggested links · Ali · Website proposal",
+          "Interpretation · Tentative plan"
+        ],
+        "callsToAction": [
+          {
+            "label": "Correct link",
+            "target": "action:edit-source-link"
+          },
+          {
+            "label": "Undo",
+            "target": "action:undo-correction"
+          },
+          {
+            "label": "Back",
+            "target": "action:return-to-origin"
+          }
+        ]
+      },
+      "layout": "#/sources/:id. Original source spans 8 columns; links, interpretation and correction history span 4. c01 has three ordered text segments and selected segment 2. Source-position marker indexes segments, not fictional audio time. Audio samples show transcript metadata without playback when no audio exists.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "press",
+        "behavior": "Segment selection moves the source marker and linked evidence together; original text stays unchanged.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate selection."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Source first, details disclosure second.",
+        "medium": "Stack source and details.",
+        "expanded": "8+4 columns."
+      }
+    },
+    {
+      "id": "reminders",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "inbox-triage"
+      ],
+      "purpose": "Inspect and complete chosen reminders.",
+      "userQuestion": "What needs my attention next?",
+      "stage": "act",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "docs/feature-register.md"
+      ],
+      "copy": {
+        "heading": "Reminders",
+        "body": [
+          "Sample data",
+          "Ask Ali about proposal scope next.",
+          "9 Nov 2026, 10:00 · Ask Ali about proposal scope",
+          "10 Nov 2026, 18:00 · Review reading list",
+          "12 May 2027, 09:00 · Ali's birthday",
+          "Calendar preview"
+        ],
+        "callsToAction": [
+          {
+            "label": "Mark done",
+            "target": "action:complete-reminder"
+          },
+          {
+            "label": "Edit date",
+            "target": "action:edit-reminder"
+          },
+          {
+            "label": "Open source",
+            "target": "action:open-reminder-source"
+          }
+        ]
+      },
+      "layout": "#/reminders. 376px list with Open and Done tabs; 764px selected reminder detail with source and calendar preview. Three initial rows. No send-to-calendar action. Empty: No reminders planned. Invalid dates show inline errors.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "press",
+        "behavior": "Completion updates tabs, source-linked summaries and counts without losing row identity.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate completion."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "List then selected detail, with scroll restoration.",
+        "medium": "One pane where needed.",
+        "expanded": "List and preview side by side."
+      }
+    },
+    {
+      "id": "rules",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "settings-two-column"
+      ],
+      "purpose": "Make reminder behavior inspectable.",
+      "userQuestion": "What happens when this rule matches?",
+      "stage": "explain",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "docs/feature-register.md"
+      ],
+      "copy": {
+        "heading": "Rules",
+        "body": [
+          "Sample data",
+          "Birthday reminders stay in preview until chosen.",
+          "Birthday reminder",
+          "Person · Ali",
+          "On the birthday · 09:00",
+          "Result · Reminder preview"
+        ],
+        "callsToAction": [
+          {
+            "label": "Save rule",
+            "target": "action:save-rule"
+          },
+          {
+            "label": "Preview result",
+            "target": "action:preview-rule"
+          }
+        ]
+      },
+      "layout": "#/rules. One 5-column label area, 473px, beside a 7-column form, 667px. Person, time and enabled controls; adjacent preview inside the form. One save model: explicit Save rule. Never perform calendar writes.",
+      "motion": {
+        "purpose": "feedback",
+        "trigger": "press",
+        "behavior": "Saving shows Saved and updates the local preview; field errors remain beside fields.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate feedback."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Label above form; full-width controls.",
+        "medium": "Stack label and form.",
+        "expanded": "5+7 columns using brand surface and radius tokens."
+      }
+    },
+    {
+      "id": "custom-tabs",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Create useful named views without pretending to generate code.",
+      "userQuestion": "Which thoughts should this tab keep together?",
+      "stage": "act",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "design-brief.assumptions"
+      ],
+      "copy": {
+        "heading": "My tabs",
+        "body": [
+          "Sample data",
+          "Website ideas",
+          "Project · Website proposal",
+          "Website proposal",
+          "Page ideas"
+        ],
+        "callsToAction": [
+          {
+            "label": "Create tab",
+            "target": "action:create-tab"
+          },
+          {
+            "label": "Website ideas",
+            "target": "#/tabs/t01"
+          },
+          {
+            "label": "Edit tab",
+            "target": "action:edit-tab"
+          }
+        ]
+      },
+      "layout": "#/tabs and #/tabs/:id. Index has saved tab list in 4 columns and creation form in 8. Selected tab has its name as h1, visible predicate and matching memories. Creation accepts a name and explicit person/project/type filters; a request phrase may prefill only supported predicates.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "press",
+        "behavior": "Saving adds a real destination and recomputes matches from current links.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate route and list update."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Form and list stack; saved view uses two-line rows.",
+        "medium": "Stack if either pane is too narrow.",
+        "expanded": "4+8 columns."
+      }
+    },
+    {
+      "id": "local-control",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "settings-two-column"
+      ],
+      "purpose": "Show language preferences and connection boundaries honestly.",
+      "userQuestion": "What may leave this workspace?",
+      "stage": "de_risk",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "docs/decisions/decision-register.md"
+      ],
+      "copy": {
+        "heading": "Local control",
+        "body": [
+          "Sample data",
+          "No services are connected.",
+          "Language · English / العربية",
+          "External processing · Off",
+          "Connections",
+          "Email · Not connected",
+          "Calendar · Not connected",
+          "Obsidian · Not connected",
+          "ChatGPT · Not connected",
+          "Claude · Not connected",
+          "Sync · Not connected"
+        ],
+        "callsToAction": [
+          {
+            "label": "Save preferences",
+            "target": "action:save-preferences"
+          },
+          {
+            "label": "View sharing details",
+            "target": "action:open-sharing-details"
+          }
+        ]
+      },
+      "layout": "#/settings. Two settings rows with 5-column labels and 7-column panels: Language and Connections. Six compact connection rows. Language saves explicitly; external processing remains unavailable, with readable reason. Sharing details show selected-data principles, not a functioning connection.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "press",
+        "behavior": "Save applies language and direction together; sharing details use the common sheet transition.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate language and overlay states."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Labels stack above panels; connection rows retain all names and states.",
+        "medium": "Stack settings rows.",
+        "expanded": "5+7 columns; both section headers and first rows visible."
+      }
+    },
+    {
+      "id": "design-preferences",
+      "layoutFamily": "dashboard",
+      "layoutCases": [
+        "app-screen"
+      ],
+      "purpose": "Capture comparative preferences without changing the fixed brand.",
+      "userQuestion": "Which way of working feels most natural?",
+      "stage": "evaluate",
+      "dependencies": [
+        "shell"
+      ],
+      "evidence": [
+        "design-brief.originalRequest"
+      ],
+      "copy": {
+        "heading": "Design preferences",
+        "body": [
+          "Sample data",
+          "Voice notebook",
+          "Conversation",
+          "Personal library",
+          "Website proposal · Ali",
+          "Your preference"
+        ],
+        "callsToAction": [
+          {
+            "label": "Try pattern",
+            "target": "action:preview-pattern"
+          },
+          {
+            "label": "Move up",
+            "target": "action:rank-pattern-up"
+          },
+          {
+            "label": "Move down",
+            "target": "action:rank-pattern-down"
+          },
+          {
+            "label": "Save ranking",
+            "target": "action:save-ranking"
+          }
+        ]
+      },
+      "layout": "#/preferences. Three 4-column pattern summaries, 376px each, use identical c01 content and brand tokens. An expandable full-width preview demonstrates capture-first, conversation-first or library-first interaction. Ranking has unique ordered positions and keyboard controls. These are concept patterns; no absent external reference is claimed.",
+      "motion": {
+        "purpose": "state_change",
+        "trigger": "press",
+        "behavior": "Pattern selection and ranking update stable cards with the common transition.",
+        "durationMs": 180,
+        "easing": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "reducedMotion": "Immediate ordered cards and preview."
+      },
+      "componentNeeds": [],
+      "assetNeeds": [],
+      "transformation": {
+        "compact": "Stack summaries; preview opens as a separate pane.",
+        "medium": "Stack rather than create narrow comparison cards.",
+        "expanded": "Three equal cards, preview below."
+      }
+    }
+  ],
+  "responsive": [
+    "Use compact at 640px and below, medium at 641–1100px, expanded above 1100px. Verify 390px, iPhone 15 Pro Max width, 768px, 1100px and 1440px.",
+    "At 1440x900, each route shows every block assigned to that route with its heading and first row. The home shows composer, source thread, recent thoughts and upcoming reminders within the viewport. Separate routes are not squeezed onto home.",
+    "Home preserves the dealt workspace structure through a title and changing aligned spans. The brand's capture priority removes generic count tiles, tinted panels and conflicting example-screen spacing.",
+    "On phones, actionable reminder summaries move before long lists. List routes show their first row within the top 60% of the viewport.",
+    "No page-wide horizontal scrolling. Tabs may scroll within their own strip. Long source text wraps; source language uses automatic text direction.",
+    "RTL mirrors layout and logical drawer edge. Isolate dates, IDs and mixed-language fragments. Keyboard order follows reading order."
+  ],
+  "interactions": [
+    "All actions use local in-memory state only. Text save creates a new thought and updates lists. Reload restores the deterministic sample dataset; no production persistence or backend is implied.",
+    "Recording is explicitly a Sample recording interaction with start, stop, cancel and review states. It requests no microphone access and creates no fabricated transcription. A newly saved sample take records measured interaction duration and has transcript unavailable.",
+    "Attachment opens a sample-source chooser for a chat, audio transcript or document excerpt. Selection adds a local sample source; no private file upload or parsing is implied.",
+    "Memory search performs real text filtering over source content and names. Ask uses a bounded fixture lookup with linked evidence; unsupported questions return Not enough information.",
+    "Links use one shared relationship store. Correction updates source, person, project and saved-tab views; Undo reverses the latest correction without replacing original text.",
+    "Reminder completion and date edits update all summaries. Calendar preview has no external write control. Rule preview and language preferences use explicit Save actions.",
+    "Every collection supports empty, real-zero, loading and error fixtures. Empty keeps its frame; zeros render as 0 with their noun; missing values use a small hyphen. Loading keeps labels and flat placeholder geometry. Errors stay within the failed block with Retry and never claim remote freshness.",
+    "Static shell and headings remain available during data errors. Unknown detail IDs show the route title, Thought not found or the relevant noun, and a working return action.",
+    "All rows and controls have neutral hover, a distinct selected fill with semantic selected state, visible keyboard focus and readable disabled states with reasons. Save is disabled for blank text, unchanged forms or invalid values.",
+    "Use one shared 180ms cubic-bezier(0.23, 1, 0.32, 1) transition. Rapid repeated input interrupts previous transitions. Reduced motion renders final states immediately.",
+    "Dialogs trap focus, support Escape and return focus to their trigger. Route navigation focuses the h1; returning from a source restores the originating list selection and scroll.",
+    "A non-product test fixture mechanism exposes empty, loading, error and zero states for verification without adding diagnostic controls to visible product copy."
+  ],
+  "acceptanceCriteria": [
+    "Inventory: the owner uses short capture and recall sessions on an iPhone. Most frequent job is recording or writing a thought. Other jobs are review, retrieve, correct, link, choose reminders and rank interaction patterns. Product-specific objects are source segments, tentative plans, people, projects and owner-selected reminders.",
+    "Sample dataset has six initial captures, two people, two projects, three reminders, one rule, one saved tab and six disconnected service entries. All are explicitly fictional and share one deterministic reference date of 7 Nov 2026 in Asia/Baghdad.",
+    "Capture fields: id, title, kind, sourceText, language, createdAt with timezone, ordered segments, optional durationSeconds, personIds, projectIds and interpretation status. Duration is seconds; displayed dates and times derive from the same timestamp.",
+    "Initial captures: c01 Website proposal, text, 7 Nov 09:10, p01/j01; c02 Birthday note, text, 6 Nov 18:30, p01; c03 Reading list, text, 6 Nov 12:15, p02/j02; c04 Page ideas, audio transcript sample, 5 Nov 20:00, 42 seconds, j01; c05 Book notes, document excerpt, 5 Nov 11:00, j02; c06 Evening thought, text, 4 Nov 21:00, no links. All dates are 2026 and timezone +03:00.",
+    "Source content: c01 contains the three quoted birthday, website and tentative-proposal sentences. c02 says Ali's birthday is 12 May. c03 says Sara suggested keeping a short reading list. c04 says A short introduction and a contact page might be enough. c05 says Keep a note of why each book matters. c06 says I want to leave room for unplanned ideas. No additional source facts are invented during answers.",
+    "People: p01 Ali, birthday month/day 05-12; p02 Sara, birthday missing. Projects: j01 Website proposal, tentative; j02 Reading list, active. Ali links to two captures, Sara to one; each project links to two; one capture is entirely unlinked.",
+    "Reminders: r01 Ask Ali about proposal scope, 9 Nov 2026 10:00, source c01; r02 Review reading list, 10 Nov 2026 18:00, source c03; r03 Ali's birthday, 12 May 2027 09:00, source c02. All begin open and none is overdue at the reference date. Their chosen status does not turn the underlying proposal into a commitment.",
+    "Rule rule01 previews an Ali birthday reminder at 09:00 without creating a duplicate r03. Saved tab t01 Website ideas filters projectId j01 and initially matches c01 and c04. Pattern rankings start unranked and become a unique ordering of three patterns.",
+    "Computed assertions: captures.length equals 6; text count 4 plus audio count 1 plus document count 1 equals 6; unique linked captures equal 5; unlinked captures equal 1; open reminders 3 plus done reminders 0 equals 3; saved-tab count equals its filtered rows; source segment indexes remain within segment length. After mutations, derive every count again rather than preserving seed totals.",
+    "Build creates the dataset and assertions later. This phase creates no files, sources no assets and changes no dependencies.",
+    "Each numeric block contains Sample data in blueprint copy. Build deduplicates it to one quiet Sample data notice per view. This is required content provenance, not a removable prototype disclaimer. No claims of live sync, AI processing, actual transcription or external account connection appear.",
+    "No supplied reference images exist. Use the dealt patterns and recorded brand as the composition authority; omit referenceDirectionId. Preference previews are internally defined concepts, not falsely attributed reference studies.",
+    "No imagery is needed, so all assetNeeds and componentNeeds remain empty. Draw the specified simple monogram and outline symbols natively; do not invent an existing logo file.",
+    "Verify loaded Geist families and weights after fonts are ready, tabular digit behavior, Arabic glyph fallback, mixed-language wrapping, text contrast, colour budget, exact grid arithmetic and one h1 per route.",
+    "Verify every destination and visible action, search and sorting, corrections with undo, reminder completion, rule preview, custom-tab creation, preference ranking, language changes, drawer focus, browser back, rapid input and reduced motion. Exercise each block's empty, zero, loading and error fixture. Record actual results later; this blueprint claims no tests passed."
+  ]
+}

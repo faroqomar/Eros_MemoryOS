@@ -1,0 +1,53 @@
+{
+  "status": "rejected-by-owner",
+  "generation_mode": "built-in-image-tool",
+  "artifacts": [
+    {
+      "id": 1,
+      "name": "Collector",
+      "source": "/Users/eros/.codex/generated_images/01a1b03a-09a2-7041-9149-a2a1d4a40bae/exec-08b17c57-99f8-4a0d-8292-edf893a45a85.png",
+      "file": "people-card-01-collector.png",
+      "width": 1114,
+      "height": 1412,
+      "sha256": "ebca891b6237603c0e13ccc8142d0db906ca90ec846e52c2cb5db3d081643b58"
+    },
+    {
+      "id": 2,
+      "name": "Portrait",
+      "source": "/Users/eros/.codex/generated_images/01a1b03a-09a2-7041-9149-a2a1d4a40bae/exec-04f23b3e-cf7d-4829-8842-fd536416fadc.png",
+      "file": "people-card-02-portrait.png",
+      "width": 1114,
+      "height": 1412,
+      "sha256": "85c36a41f8cb30df9fe6ccfe7b9bda98baba2ebda3d3ac552c248c66220f3694"
+    },
+    {
+      "id": 3,
+      "name": "Dossier",
+      "source": "/Users/eros/.codex/generated_images/01a1b03a-09a2-7041-9149-a2a1d4a40bae/exec-34dbe81a-31cf-438b-bc05-4798cffbc4de.png",
+      "file": "people-card-03-dossier.png",
+      "width": 1663,
+      "height": 945,
+      "sha256": "168975aea091d1d910bf5dd0afc4df13fa541ec5fe0cb08c37d7d770d23b1b2d"
+    },
+    {
+      "id": 4,
+      "name": "Timeline",
+      "source": "/Users/eros/.codex/generated_images/01a1b03a-09a2-7041-9149-a2a1d4a40bae/exec-95902c5f-daa6-4bf8-aee0-6af2241f1dd6.png",
+      "file": "people-card-04-timeline.png",
+      "width": 1114,
+      "height": 1412,
+      "sha256": "455127271652fd32b4a75cdc5e91da7aff289b9c60e18279f8d69a724e798334"
+    },
+    {
+      "id": 5,
+      "name": "Connections",
+      "source": "/Users/eros/.codex/generated_images/01a1b03a-09a2-7041-9149-a2a1d4a40bae/exec-a8cd2b11-2ddb-48cc-8dde-8f2c9b12c098.png",
+      "file": "people-card-05-connections.png",
+      "width": 1114,
+      "height": 1412,
+      "sha256": "99cf194c882a6487a5e2468489ec2bd7f0141622f32e8a3697d8698172687f6b"
+    }
+  ],
+  "owner_feedback_date": "2026-11-07",
+  "owner_feedback": "The owner did not like any of the five people-card concepts and asked to set them aside. Do not use them as a selected visual direction. Preserve files as historical attempts."
+}

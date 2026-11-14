@@ -1,0 +1,38 @@
+import {defineTheme} from '@astryxdesign/core/theme';
+import {neutralTheme} from '@astryxdesign/theme-neutral/built';
+
+export const memoryosTheme = defineTheme({
+  name:'memoryos', extends:neutralTheme,
+  typography:{scale:{base:16,ratio:1.2},body:{family:'system-ui',fallbacks:'-apple-system,BlinkMacSystemFont,sans-serif'},heading:{family:'system-ui',fallbacks:'-apple-system,BlinkMacSystemFont,sans-serif'}},
+  tokens:{
+    '--font-family-body':'-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif',
+    '--font-family-heading':'-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif',
+    '--color-background-body':['rgb(242 242 247)','rgb(0 0 0)'],
+    '--color-background-surface':['rgb(255 255 255)','rgb(28 28 30)'],
+    '--color-background-card':['rgb(255 255 255)','rgb(28 28 30)'],
+    '--color-background-popover':['rgb(255 255 255)','rgb(44 44 46)'],
+    '--color-background-inverted':['rgb(28 28 30)','rgb(242 242 247)'],
+    '--color-background-muted':['rgb(232 232 237)','rgb(44 44 46)'],
+    '--color-text-primary':['rgb(28 28 30)','rgb(242 242 247)'],
+    '--color-text-secondary':['rgb(99 99 108)','rgb(174 174 183)'],
+    '--color-text-disabled':['rgb(142 142 147)','rgb(111 111 119)'],
+    '--color-border':['rgb(224 224 230)','rgb(56 56 58)'],
+    '--color-border-emphasized':['rgb(199 199 204)','rgb(84 84 88)'],
+    '--color-accent':['rgb(0 102 219)','rgb(77 163 255)'],
+    '--color-on-accent':['rgb(255 255 255)','rgb(0 0 0)'],
+    '--color-text-accent':['rgb(0 102 219)','rgb(77 163 255)'],
+    '--color-icon-accent':['rgb(0 102 219)','rgb(77 163 255)'],
+    '--color-accent-muted':['rgb(228 239 255)','rgb(20 43 72)'],
+    '--color-info':['rgb(0 102 219)','rgb(77 163 255)'],
+    '--color-on-info':['rgb(255 255 255)','rgb(0 0 0)'],
+    '--color-warning':['rgb(234 54 50)','rgb(255 105 98)'],
+    '--color-on-warning':['rgb(255 255 255)','rgb(0 0 0)'],
+    '--color-success':['rgb(38 161 78)','rgb(48 209 88)'],
+    '--color-on-success':['rgb(255 255 255)','rgb(0 0 0)'],
+    '--color-background-blue':['rgb(231 240 255)','rgb(21 46 77)'],
+    '--color-background-orange':['rgb(254 235 232)','rgb(70 31 30)'],
+    '--color-background-green':['rgb(231 244 236)','rgb(24 53 36)'],
+    '--color-shadow':'rgb(0 0 0 / .09)',
+    '--color-overlay':'rgb(0 0 0 / .32)',
+  },
+});

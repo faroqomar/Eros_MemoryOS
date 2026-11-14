@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-13T14:38:26.143Z",
+  "checks": [
+    "Home proportions and hidden menu",
+    "Escape closes menu and restores focus",
+    "Text capture and original text detail",
+    "Voice interaction stays a labeled simulation",
+    "Fictional attachment capture",
+    "People search, empty state and detail",
+    "Cross-linked projects, sources and back stack",
+    "Optional person question",
+    "Birthday preview with no scheduling claim",
+    "Map selection, linked detail and accessible list alternative",
+    "Arabic navigation and RTL",
+    "All five screens fit 320, 390, 430 and 1280 widths",
+    "Demo captures reset on reload",
+    "No browser errors or external requests"
+  ],
+  "errors": [],
+  "externalRequests": [],
+  "overflow": [],
+  "scope": "Headless Chrome browser prototype only. No native/device, real recording, AI, imports or notifications verified."
+}

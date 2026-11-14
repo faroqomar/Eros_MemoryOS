@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-11-12T14:43:37.221077+00:00",
+  "url": "http://localhost:5488",
+  "delivery": "Local design-review app; five proposed directions, 20 root screen compositions, eight attributed references. No native application delivery or owner design approval.",
+  "files": {
+    "app.js": "a66173628546b9073184a40f7bab0bb80e8912cf99753d4efc7904b10d4d8362",
+    "data.js": "da654e0f15d263614d7bdd74acbf4b6cb4ade391b2c84a1c21c680ee3c93e2c2",
+    "index.html": "65911d191f7baa03ba5f61ea62137f0989bb30a65a628a2e3e6f6e5afd83de7f",
+    "style.css": "10cfc0e565b66b4bd017cad785215ae25b2bb810bf2e89d322e2f7dd83ce4d8b",
+    "server.py": "1a9959ad2568df4004d9b3be3f014b4e3c82be232e33de6dd9bd0d8b16bfe7c4"
+  },
+  "checks": {
+    "javascript_syntax": "passed for app.js and data.js",
+    "python_syntax": "passed",
+    "local_document_links": "passed for seven changed Markdown sources",
+    "desktop_roots": "20 compositions rendered with no horizontal app overflow or runtime errors in the traversal",
+    "phone_layouts": {
+      "width_css_pixels": 390,
+      "compositions": 40,
+      "languages": [
+        "English",
+        "Arabic layout preview"
+      ],
+      "horizontal_overflow_failures": 0,
+      "rtl_direction_failures": 0
+    },
+    "visual_review": [
+      "Atlas People",
+      "Almanac People",
+      "Circles People and Arabic BrainMap",
+      "Cabinet Projects",
+      "Focus Birthdays at phone width"
+    ],
+    "annotation_flows": [
+      "Element selection with real pointer click",
+      "Rectangle selection with real pointer drag",
+      "Local save and reload",
+      "Edit existing note",
+      "Delete through local API",
+      "Reference keyboard annotation",
+      "JSON export payload parsed",
+      "Markdown export payload checked",
+      "JSON import through file input",
+      "Imported markup displayed as escaped text",
+      "Unsaved draft preserved across navigation and reload",
+      "Exact selected BrainMap node restored from feedback",
+      "Focused-person context restored",
+      "Semantic element anchor preserved after width change from 1400 to 390; maximum drift 0.0078125 CSS pixels"
+    ],
+    "sample_flows": [
+      "Project tentative wording and source navigation",
+      "Back from source to original detail",
+      "Birthday preview offset: 11 May 2027 at 10:30, no scheduling"
+    ],
+    "assets": "All five displayed official reference images decoded; one additional Capacities screenshot retained with provenance",
+    "http": "Root, scripts, stylesheet, font, image, feedback GET returned 200; private review path and traversal returned 403; unknown API returned 404; invalid import returned 400",
+    "hindsight": "Project Markdown delivery check completed with zero pending and zero failed sources; recall refresh follows",
+    "cleanup": "Six test annotations removed; no owner feedback removed; unsaved test draft cleared",
+    "owner_notes_remaining": 0
+  },
+  "limits": [
+    "Browser design exploration only",
+    "Arabic preview demonstrates mirrored composition and sample content; some supporting copy remains English",
+    "Arbitrary region marks use normalized coordinates; semantic element marks follow their anchors",
+    "No native VoiceOver or physical iPhone verification",
+    "Heptabase and mymind remain attributed written references where visual retrieval failed"
+  ]
+}

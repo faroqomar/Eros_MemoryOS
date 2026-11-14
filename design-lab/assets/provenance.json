@@ -1,0 +1,61 @@
+{
+  "recorded_on": "2026-11-12",
+  "images": [
+    {
+      "file": "assets/capacities-object.png",
+      "owner": "Capacities",
+      "source_page": "https://docs.capacities.io/reference/mobile",
+      "observed_image_url": "https://docs.capacities.io/reference/media/mobile/mobile-editing.PNG",
+      "usage": "Attributed reference only; not app artwork",
+      "sha256": "b2039ff5e9f75ecd90ac4d662c263d97f8afaced8758d4c769fb794a02ca07fb"
+    },
+    {
+      "file": "assets/capacities-mobile.png",
+      "owner": "Capacities",
+      "source_page": "https://docs.capacities.io/reference/mobile",
+      "observed_image_url": "https://docs.capacities.io/reference/media/mobile/mobile-screen.PNG",
+      "usage": "Attributed reference only; not app artwork",
+      "sha256": "3a716f789199a54afae4603c38b1c33354ae517c77017ca828699759f97a0b8e"
+    },
+    {
+      "file": "assets/dex-mobile.webp",
+      "owner": "Dex",
+      "source_page": "https://getdex.com/",
+      "observed_image_url": "https://getdex.com/assets/mobile-app-vwn39Fz2.webp",
+      "usage": "Attributed reference only; not app artwork",
+      "sha256": "89f2d426d5e67a5c80266387bc6324490dae6053e3015a0a151f8de78c30a097"
+    },
+    {
+      "file": "assets/dayone.png",
+      "owner": "Day One",
+      "source_page": "https://dayoneapp.com/guides/day-one-ios/journal-views-in-day-one-for-ios/",
+      "observed_image_url": "https://i0.wp.com/dayoneapp.com/wp-content/uploads/2024/06/Thursday-06-Jun-2024-163259.png?resize=506%2C1024&quality=80&ssl=1",
+      "usage": "Attributed reference only; not app artwork",
+      "sha256": "a77fb04e811eb3492768b0ec662fea4dd942c3854f8567a31bfac1a8d6e6ec57"
+    },
+    {
+      "file": "assets/things.png",
+      "owner": "Things / Cultured Code",
+      "source_page": "https://culturedcode.com/things/",
+      "observed_image_url": "https://culturedcode.com/things/2024-01-20/images/whatsnew-collage-io60.png",
+      "usage": "Attributed reference only; not app artwork",
+      "sha256": "1b38885143170ed9742338a477a70816b029713bc0aa1016807696f7f3ae9f93"
+    },
+    {
+      "file": "assets/mindnode.webp",
+      "owner": "MindNode",
+      "source_page": "https://www.mindnode.com/blog/2026.7",
+      "observed_image_url": "https://cdn.sanity.io/images/rcrh40p3/production/d5202e2f37c339805d368f73a50325260d4a8ac7-2800x1470.png?w=1200&q=80&fm=webp&fit=max",
+      "usage": "Attributed reference only; not app artwork",
+      "sha256": "86755c56749a1a90b755ca24802efbcc0ddacd88687a656e5ce621b063443325"
+    }
+  ],
+  "font": {
+    "file": "assets/geist.ttf",
+    "license": "assets/Geist-OFL.txt"
+  },
+  "unavailable": [
+    "Heptabase image: timeout/HTTP2 download failures after bounded retries",
+    "mymind home-page visual preview: browser timeouts"
+  ]
+}

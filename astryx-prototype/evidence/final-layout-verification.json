@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-13T14:41:47.392Z",
+  "buildId": "rs-WQ4xP4N4devmDaeKSz",
+  "englishWidthChecks": [
+    {
+      "width": 320,
+      "name": "Capture"
+    },
+    {
+      "width": 320,
+      "name": "People"
+    },
+    {
+      "width": 320,
+      "name": "Projects"
+    },
+    {
+      "width": 320,
+      "name": "Birthdays"
+    },
+    {
+      "width": 320,
+      "name": "BrainMap"
+    },
+    {
+      "width": 390,
+      "name": "Capture"
+    },
+    {
+      "width": 390,
+      "name": "People"
+    },
+    {
+      "width": 390,
+      "name": "Projects"
+    },
+    {
+      "width": 390,
+      "name": "Birthdays"
+    },
+    {
+      "width": 390,
+      "name": "BrainMap"
+    },
+    {
+      "width": 430,
+      "name": "Capture"
+    },
+    {
+      "width": 430,
+      "name": "People"
+    },
+    {
+      "width": 430,
+      "name": "Projects"
+    },
+    {
+      "width": 430,
+      "name": "Birthdays"
+    },
+    {
+      "width": 430,
+      "name": "BrainMap"
+    },
+    {
+      "width": 1280,
+      "name": "Capture"
+    },
+    {
+      "width": 1280,
+      "name": "People"
+    },
+    {
+      "width": 1280,
+      "name": "Projects"
+    },
+    {
+      "width": 1280,
+      "name": "Birthdays"
+    },
+    {
+      "width": 1280,
+      "name": "BrainMap"
+    }
+  ],
+  "arabicGraphMirror": true,
+  "drawerBounds": {
+    "phoneTop": 44,
+    "phoneBottom": 932,
+    "drawerTop": 44,
+    "drawerBottom": 932
+  },
+  "errors": [],
+  "externalRequests": []
+}

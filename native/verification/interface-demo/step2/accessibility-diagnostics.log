@@ -1,0 +1,999 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project native/MemoryOS.xcodeproj -scheme MemoryOS -destination "platform=iOS Simulator,id=8843F67E-B2AF-4605-A3AE-25D168BD1B28" -derivedDataPath native/.build CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO "-only-testing:MemoryOSUITests/DemoFlowTests/testLinkedTextScalesInBothLanguages" "-only-testing:MemoryOSUITests/DemoFlowTests/testEnglishAccessibilityAudits" "-only-testing:MemoryOSUITests/DemoFlowTests/testArabicAccessibilityAudits" -resultBundlePath native/verification/interface-demo/step2/accessibility-diagnostics.xcresult test
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Writing result bundle at path:
+	/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/interface-demo/step2/accessibility-diagnostics.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (3 targets)
+    Target 'MemoryOSTests' in project 'MemoryOS'
+        ➜ Explicit dependency on target 'MemoryOS' in project 'MemoryOS'
+    Target 'MemoryOSUITests' in project 'MemoryOS'
+        ➜ Explicit dependency on target 'MemoryOS' in project 'MemoryOS'
+    Target 'MemoryOS' in project 'MemoryOS' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+Build description signature: a4019724cac3b6a7039a7dd19085cc09
+Build description path: /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/XCBuildData/a4019724cac3b6a7039a7dd19085cc09.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+
+SwiftDriver MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+SwiftCompile normal arm64 Compiling\ DemoComponents.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/DemoComponents.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Features/DemoComponents.swift (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile DemoComponents.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MemoryOS (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftCompile normal arm64 (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    
+
+SwiftDriverJobDiscovery normal arm64 Compiling DemoComponents.swift (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MemoryOS (in target 'MemoryOS' from project 'MemoryOS')
+
+SwiftDriver\ Compilation\ Requirements MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+SwiftDriver\ Compilation MemoryOS normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOS -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList -DDEBUG -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.abi.json (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftsourceinfo (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib normal (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -filelist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.LinkFileList -install_name @rpath/MemoryOS.debug.dylib -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.swiftmodule -Xlinker -alias -Xlinker _main -Xlinker ___debug_main_executable_dylib_entry_point -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib
+
+SwiftDriver MemoryOSUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftDriver -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSUITests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+ProcessInfoPlistFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist -producttype com.apple.product-type.application -genpkginfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist
+
+SwiftCompile normal arm64 Compiling\ DemoFlowTests.swift /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift (in target 'MemoryOSUITests' from project 'MemoryOS')
+
+SwiftCompile normal arm64 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-SwiftPerFileCompile DemoFlowTests.swift
+
+SwiftEmitModule normal arm64 Emitting\ module\ for\ MemoryOSUITests (in target 'MemoryOSUITests' from project 'MemoryOS')
+
+SwiftCompile normal arm64 (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    
+
+ConstructStubExecutorLinkFileList /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    construct-stub-executor-link-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor_no_swift_entry_point.a /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libPreviewsJITStubExecutor.a --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt
+note: Using stub executor library with Swift entry point. (in target 'MemoryOS' from project 'MemoryOS')
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS normal (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Xlinker -rpath -Xlinker @executable_path -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -e ___debug_blank_executor_main -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_dylib -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibPath-normal-arm64.txt -Xlinker -sectcreate -Xlinker __TEXT -Xlinker __debug_instlnm -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-DebugDylibInstallName-normal-arm64.txt -Xlinker -filelist -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS-ExecutorLinkFileList-normal-arm64.txt /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS
+
+SwiftDriverJobDiscovery normal arm64 Emitting module for MemoryOSUITests (in target 'MemoryOSUITests' from project 'MemoryOS')
+
+SwiftDriver\ Compilation\ Requirements MemoryOSUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation-Requirements -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSUITests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftsourceinfo (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftsourceinfo /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/arm64-apple-ios-simulator.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.abi.json (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.abi.json /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/arm64-apple-ios-simulator.abi.json
+
+Copy /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-unsigned-binaries -strip-deterministic -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks -rename /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests.swiftmodule/arm64-apple-ios-simulator.swiftmodule
+
+CopySwiftLibs /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/SystemExtensions --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MemoryOS --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 18.0 --bundle-identifier com.eros.memoryos.demo --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app --target-triple arm64-apple-ios18.0-simulator --binary-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS --dependency-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS_dependency_info.dat --stringsdata-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftFileList --metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyMetadataFileList --static-metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/MemoryOS.DependencyStaticMetadataFileList --swift-const-vals-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/Objects-normal/arm64/MemoryOS.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-14 18:50:32.950 appintentsmetadataprocessor[96085:669314] Starting App Intents metadata extraction
+2026-11-14 18:50:32.953 appintentsmetadataprocessor[96085:669314] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests normal (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -filelist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -rpath -Xlinker @executable_path/Frameworks -Xlinker -dead_strip -bundle_loader /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS -Xlinker -object_path_lto -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests
+
+ProcessInfoPlistFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Info.plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/empty-MemoryOSTests.plist (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/empty-MemoryOSTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -format binary -platform iphonesimulator -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Info.plist
+
+SwiftDriverJobDiscovery normal arm64 Compiling DemoFlowTests.swift (in target 'MemoryOSUITests' from project 'MemoryOS')
+
+SwiftDriver\ Compilation MemoryOSUITests normal arm64 com.apple.xcode.tools.swift.compiler (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-Swift-Compilation -- /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc -module-name MemoryOSUITests -Onone @/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftFileList -DDEBUG -module-alias Testing\=_Testing_Unavailable -plugin-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing -enable-experimental-feature DebugDescriptionMacro -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -target arm64-apple-ios18.0-simulator -g -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -Xfrontend -serialize-debugging-options -enable-testing -index-store-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Index.noindex/DataStore -swift-version 6 -I /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -F /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -c -j8 -enable-batch-mode -incremental -Xcc -ivfsstatcache -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache -output-file-map /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-OutputFileMap.json -save-temps -no-color-diagnostics -explicit-module-build -module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules -clang-scanner-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex -sdk-module-cache-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules -emit-dependencies -emit-module -emit-module-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule -serialize-diagnostics -dependency-scan-serialize-diagnostics-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-dependency-scan.dia -validate-clang-modules-once -clang-build-session-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/ModuleCache.noindex/Session.modulevalidation -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -emit-const-values -const-gather-protocols-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_const_extract_protocols.json -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-generated-files.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-own-target-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-all-target-headers.hmap -Xcc -iquote -Xcc /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests-project-headers.hmap -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/include -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources-normal/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources/arm64 -Xcc -I/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/DerivedSources -emit-objc-header -emit-objc-header-path /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests-Swift.h -working-directory /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native -experimental-emit-module-separately -disable-cmo
+
+ExtractAppIntentsMetadata (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MemoryOSTests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 18.0 --bundle-identifier com.eros.memoryos.demo.tests --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest --target-triple arm64-apple-ios18.0-simulator --binary-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests --dependency-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests_dependency_info.dat --stringsdata-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.SwiftFileList --metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests.DependencyMetadataFileList --static-metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/MemoryOSTests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/Objects-normal/arm64/MemoryOSTests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-14 18:50:33.226 appintentsmetadataprocessor[96098:669348] Starting App Intents metadata extraction
+2026-11-14 18:50:33.227 appintentsmetadataprocessor[96098:669348] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+CopySwiftLibs /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Frameworks --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/PlugIns --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/SystemExtensions --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+Validate /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-validationUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOS.app -shallow-bundle -infoplist-subpath Info.plist
+
+ProcessInfoPlistFile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Info.plist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/empty-MemoryOSUITests.plist (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/empty-MemoryOSUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/ProductTypeInfoPlistAdditions.plist -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Info.plist
+
+Ld /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests normal (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-ios18.0-simulator -bundle -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -Os -Xlinker -no_warn_duplicate_libraries -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -L/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -L/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/EagerLinkingTBDs/Debug-iphonesimulator -F/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Frameworks -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk/Developer/Library/Frameworks -filelist /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.LinkFileList -Xlinker -rpath -Xlinker /usr/lib/swift -Xlinker -rpath -Xlinker @loader_path/Frameworks -Xlinker -dead_strip -Xlinker -object_path_lto -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_lto.o -rdynamic -Xlinker -objc_abi_version -Xlinker 2 -Xlinker -dependency_info -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_dependency_info.dat -fobjc-link-runtime -L/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator -L/usr/lib/swift -Xlinker -add_ast_path -Xlinker /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.swiftmodule -Xlinker -needed_framework -Xlinker XCTest -framework XCTest -Xlinker -needed-lXCTestSwiftSupport -lXCTestSwiftSupport -o /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests
+
+CopySwiftLibs /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Frameworks --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/PlugIns --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/SystemExtensions --scan-folder /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ExtractAppIntentsMetadata (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MemoryOSUITests --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk --xcode-version 27B52 --platform-family iOS --deployment-target 18.0 --bundle-identifier com.eros.memoryos.demo.uitests --output /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest --target-triple arm64-apple-ios18.0-simulator --binary-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests --dependency-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests_dependency_info.dat --stringsdata-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftFileList --metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests.DependencyMetadataFileList --static-metadata-file-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/MemoryOSUITests.DependencyStaticMetadataFileList --swift-const-vals-list /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/Objects-normal/arm64/MemoryOSUITests.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --no-app-shortcuts-localization
+2026-11-14 18:50:33.427 appintentsmetadataprocessor[96101:669361] Starting App Intents metadata extraction
+2026-11-14 18:50:33.428 appintentsmetadataprocessor[96101:669361] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/SDKExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/.build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+2026-11-14 18:50:37.330753+0300 MemoryOSUITests-Runner[96102:669517] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+Test Suite 'Selected tests' started at 2026-11-14 18:50:37.604.
+Test Suite 'MemoryOSUITests.xctest' started at 2026-11-14 18:50:37.605.
+Test Suite 'DemoFlowTests' started at 2026-11-14 18:50:37.605.
+Test Case '-[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits]' started.
+    t =     0.00s Start Test at 2026-11-14 18:50:37.609
+    t =     0.03s Set Up
+    t =     0.04s Open com.eros.memoryos.demo
+    t =     0.04s     Launch com.eros.memoryos.demo
+2026-11-14 18:50:37.723 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 18:50:37.723 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: no debugger version
+objc[96102]: Class UIAccessibilityLoaderWebShared is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.2.8117.0.DPGacc/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x102e5c310) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.2.8117.0.DPGacc/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x102e90398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+    t =     0.74s         Setting up automation session
+    t =     3.64s         Wait for com.eros.memoryos.demo to idle
+    t =     5.77s Tap "open-menu" Button
+    t =     5.77s     Wait for com.eros.memoryos.demo to idle
+    t =     5.77s     Find the "open-menu" Button
+    t =     6.07s     Check for interrupting elements affecting "open-menu" Button
+    t =     6.13s     Synthesize event
+    t =     6.44s     Wait for com.eros.memoryos.demo to idle
+    t =     6.44s Find the "section-settings" Button
+    t =     6.51s Tap "section-settings" Button
+    t =     6.51s     Wait for com.eros.memoryos.demo to idle
+    t =     6.51s     Find the "section-settings" Button
+    t =     6.55s     Check for interrupting elements affecting "section-settings" Button
+    t =     6.59s     Synthesize event
+    t =     6.89s     Wait for com.eros.memoryos.demo to idle
+    t =     7.05s Tap "language-picker" Button
+    t =     7.05s     Wait for com.eros.memoryos.demo to idle
+    t =     7.27s     Find the "language-picker" Button
+    t =     7.33s     Check for interrupting elements affecting "language-picker" Button
+    t =     7.36s     Synthesize event
+    t =     7.66s     Wait for com.eros.memoryos.demo to idle
+    t =     7.74s Tap "العربية" Button
+    t =     7.74s     Wait for com.eros.memoryos.demo to idle
+    t =     9.00s     Find the "العربية" Button
+    t =     9.05s     Check for interrupting elements affecting "العربية" Button
+    t =     9.08s     Synthesize event
+    t =     9.37s     Wait for com.eros.memoryos.demo to idle
+    t =    10.90s Tap "open-menu" Button
+    t =    10.90s     Wait for com.eros.memoryos.demo to idle
+    t =    10.91s     Find the "open-menu" Button
+    t =    10.96s     Check for interrupting elements affecting "open-menu" Button
+    t =    10.98s     Synthesize event
+    t =    11.28s     Wait for com.eros.memoryos.demo to idle
+    t =    11.28s Find the "section-capture" Button
+    t =    11.35s Tap "section-capture" Button
+    t =    11.35s     Wait for com.eros.memoryos.demo to idle
+    t =    11.36s     Find the "section-capture" Button
+    t =    11.39s     Check for interrupting elements affecting "section-capture" Button
+    t =    11.42s     Synthesize event
+    t =    11.72s     Wait for com.eros.memoryos.demo to idle
+    t =    11.78s Contrast
+    t =    12.34s Dynamic Type
+    t =    14.29s Clipped text
+    t =    16.23s Hit regions
+    t =    16.51s Descriptions
+    t =    16.95s Traits
+    t =    17.36s Element detection
+    t =    17.86s Tap "open-menu" Button
+    t =    17.86s     Wait for com.eros.memoryos.demo to idle
+    t =    17.86s     Find the "open-menu" Button
+    t =    17.90s     Check for interrupting elements affecting "open-menu" Button
+    t =    17.92s     Synthesize event
+    t =    18.22s     Wait for com.eros.memoryos.demo to idle
+    t =    18.22s Contrast
+    t =    18.71s Dynamic Type
+    t =    21.19s Clipped text
+    t =    23.68s Hit regions
+    t =    23.98s Descriptions
+    t =    24.39s Traits
+    t =    24.79s Element detection
+    t =    25.28s Tap "section-profiles" Button
+    t =    25.28s     Wait for com.eros.memoryos.demo to idle
+    t =    25.28s     Find the "section-profiles" Button
+    t =    25.34s     Check for interrupting elements affecting "section-profiles" Button
+    t =    25.37s     Synthesize event
+    t =    25.67s     Wait for com.eros.memoryos.demo to idle
+    t =    25.85s Contrast
+    t =    26.30s Dynamic Type
+    t =    28.56s Clipped text
+    t =    30.82s Hit regions
+    t =    31.09s Descriptions
+    t =    31.50s Traits
+    t =    31.90s Element detection
+    t =    32.38s Tap "record-ali" Button
+    t =    32.38s     Wait for com.eros.memoryos.demo to idle
+    t =    32.38s     Find the "record-ali" Button
+    t =    32.44s     Check for interrupting elements affecting "record-ali" Button
+    t =    32.47s     Synthesize event
+    t =    32.77s     Wait for com.eros.memoryos.demo to idle
+    t =    32.90s Contrast
+    t =    33.54s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736262592.142)
+    t =    34.59s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736262592.142) (retry 1)
+    t =    35.65s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736262592.142) (retry 2)
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | unresolved element
+    t =    35.74s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736262592.142)
+    t =    36.78s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736262592.142) (retry 1)
+    t =    37.84s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736262592.142) (retry 2)
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Contrast failed
+    t =    37.96s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259232.144)
+    t =    39.01s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259232.144) (retry 1)
+    t =    40.06s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259232.144) (retry 2)
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | unresolved element
+    t =    40.12s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259232.144)
+    t =    41.17s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259232.144) (retry 1)
+    t =    42.23s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259232.144) (retry 2)
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Contrast failed
+    t =    42.30s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259392.146)
+    t =    43.36s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259392.146) (retry 1)
+    t =    44.42s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259392.146) (retry 2)
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | unresolved element
+    t =    44.47s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259392.146)
+    t =    45.51s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259392.146) (retry 1)
+    t =    46.57s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736259392.146) (retry 2)
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Contrast failed
+    t =    46.63s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736261952.148)
+    t =    47.68s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736261952.148) (retry 1)
+    t =    48.74s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736261952.148) (retry 2)
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | unresolved element
+    t =    48.79s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736261952.148)
+    t =    49.85s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736261952.148) (retry 1)
+    t =    50.90s         Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736261952.148) (retry 2)
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Contrast failed
+    t =    50.96s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733210208.177)
+    t =    51.01s     Checking existence of `"صديق. تحدثنا عن موقع صغير." StaticText`
+    t =    51.05s     Find the "صديق. تحدثنا عن موقع صغير." StaticText
+    t =    51.10s     Find the "صديق. تحدثنا عن موقع صغير." StaticText
+    t =    51.15s     Find the "صديق. تحدثنا عن موقع صغير." StaticText
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode |  | صديق. تحدثنا عن موقع صغير. | (20.0, 158.33333333333334, 400.0, 64.33333333333331)
+    t =    51.20s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733210208.177)
+    t =    51.25s     Checking existence of `"صديق. تحدثنا عن موقع صغير." StaticText`
+    t =    51.29s     Find the "صديق. تحدثنا عن موقع صغير." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Contrast failed
+    t =    51.36s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733209888.179)
+    t =    51.41s     Checking existence of `"original-source" StaticText`
+    t =    51.45s     Find the "original-source" StaticText
+    t =    51.50s     Find the "original-source" StaticText
+    t =    51.54s     Find the "original-source" StaticText
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | original-source | علي: خلينا نخلي الموقع بسيط. We can review the first draft together. | (20.0, 282.66666666666663, 400.0, 92.33333333333331)
+    t =    51.59s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733209888.179)
+    t =    51.64s     Checking existence of `"original-source" StaticText`
+    t =    51.69s     Find the "original-source" StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Contrast failed
+    t =    51.76s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4737168672.182)
+    t =    51.80s     Checking existence of `"بيانات خيالية للتجربة. تبقى التغييرات لهذه الجلسة." StaticText`
+    t =    51.85s     Find the "بيانات خيالية للتجربة. تبقى التغييرات لهذه الجلسة." StaticText
+    t =    51.89s     Find the "بيانات خيالية للتجربة. تبقى التغييرات لهذه الجلسة." StaticText
+    t =    51.94s     Find the "بيانات خيالية للتجربة. تبقى التغييرات لهذه الجلسة." StaticText
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode |  | بيانات خيالية للتجربة. تبقى التغييرات لهذه الجلسة. | (20.0, 824.6666666666666, 400.0, 54.0)
+    t =    51.99s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4737168672.182)
+    t =    52.04s     Checking existence of `"بيانات خيالية للتجربة. تبقى التغييرات لهذه الجلسة." StaticText`
+    t =    52.08s     Find the "بيانات خيالية للتجربة. تبقى التغييرات لهذه الجلسة." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Contrast failed
+    t =    52.15s Dynamic Type
+    t =    54.56s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733207328.183)
+    t =    54.61s     Checking existence of `"١٢ أيار" StaticText`
+    t =    54.65s     Find the "١٢ أيار" StaticText
+    t =    54.70s     Find the "١٢ أيار" StaticText
+    t =    54.74s     Find the "١٢ أيار" StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | ١٢ أيار | (318.33333333333337, 459.6666666666667, 39.66666666666663, 22.333333333333314)
+    t =    54.79s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733207328.183)
+    t =    54.84s     Checking existence of `"١٢ أيار" StaticText`
+    t =    54.88s     Find the "١٢ أيار" StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    54.94s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733207168.184)
+    t =    54.99s     Checking existence of `"عرض خيارات التذكير" StaticText`
+    t =    55.03s     Find the "عرض خيارات التذكير" StaticText
+    t =    55.08s     Find the "عرض خيارات التذكير" StaticText
+    t =    55.13s     Find the "عرض خيارات التذكير" StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | عرض خيارات التذكير | (239.33333333333337, 488.0, 118.66666666666663, 20.0)
+    t =    55.18s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733207168.184)
+    t =    55.23s     Checking existence of `"عرض خيارات التذكير" StaticText`
+    t =    55.27s     Find the "عرض خيارات التذكير" StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    55.33s Clipped text
+    t =    57.72s Hit regions
+    t =    58.02s Descriptions
+    t =    58.50s Traits
+    t =    58.94s Element detection
+    t =    59.52s Tap "open-menu" Button
+    t =    59.52s     Wait for com.eros.memoryos.demo to idle
+    t =    59.52s     Find the "open-menu" Button
+    t =    59.60s     Check for interrupting elements affecting "open-menu" Button
+    t =    59.65s     Synthesize event
+    t =    59.95s     Wait for com.eros.memoryos.demo to idle
+    t =    60.65s Find the "section-projects" Button
+    t =    60.79s Tap "section-projects" Button
+    t =    60.79s     Wait for com.eros.memoryos.demo to idle
+    t =    60.80s     Find the "section-projects" Button
+    t =    60.91s     Check for interrupting elements affecting "section-projects" Button
+    t =    60.98s     Synthesize event
+    t =    61.27s     Wait for com.eros.memoryos.demo to idle
+    t =    61.35s Tap "record-website" Button
+    t =    61.35s     Wait for com.eros.memoryos.demo to idle
+    t =    61.35s     Find the "record-website" Button
+    t =    61.41s     Check for interrupting elements affecting "record-website" Button
+    t =    61.44s     Synthesize event
+    t =    61.73s     Wait for com.eros.memoryos.demo to idle
+    t =    62.15s Contrast
+    t =    62.73s Dynamic Type
+    t =    65.24s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736267072.378)
+    t =    65.30s     Checking existence of `"هذه احتمالات ولم نتفق عليها كخطط." StaticText`
+    t =    65.35s     Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+    t =    65.40s     Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+    t =    65.46s     Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | هذه احتمالات ولم نتفق عليها كخطط. | (20.0, 687.6666666666666, 400.0, 33.66666666666674)
+    t =    65.51s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4736267072.378)
+    t =    65.56s     Checking existence of `"هذه احتمالات ولم نتفق عليها كخطط." StaticText`
+    t =    65.61s     Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    65.68s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733210528.377)
+    t =    65.73s     Checking existence of `"قد نضيف معرض صور صغيراً لاحقاً." StaticText`
+    t =    65.78s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    65.83s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    65.89s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | قد نضيف معرض صور صغيراً لاحقاً. | (20.0, 623.3333333333333, 400.0, 64.33333333333337)
+    t =    65.94s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733210528.377)
+    t =    65.99s     Checking existence of `"قد نضيف معرض صور صغيراً لاحقاً." StaticText`
+    t =    66.04s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    66.12s Clipped text
+    t =    68.64s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733210528.377)
+    t =    68.69s     Checking existence of `"قد نضيف معرض صور صغيراً لاحقاً." StaticText`
+    t =    68.75s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    68.81s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    68.86s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+AUDIT Clipped text: Text of this SwiftUI.AccessibilityNode may be clipped at larger Dynamic Type sizes. |  | قد نضيف معرض صور صغيراً لاحقاً. | (20.0, 623.3333333333333, 400.0, 64.33333333333337)
+    t =    68.91s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4733210528.377)
+    t =    68.97s     Checking existence of `"قد نضيف معرض صور صغيراً لاحقاً." StaticText`
+    t =    69.02s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Text clipped
+    t =    69.09s Hit regions
+    t =    69.40s Descriptions
+    t =    69.89s Traits
+    t =    70.33s Element detection
+    t =    70.96s Tap "open-menu" Button
+    t =    70.96s     Wait for com.eros.memoryos.demo to idle
+    t =    70.96s     Find the "open-menu" Button
+    t =    71.05s     Check for interrupting elements affecting "open-menu" Button
+    t =    71.10s     Synthesize event
+    t =    71.40s     Wait for com.eros.memoryos.demo to idle
+    t =    72.11s Find the "section-birthdays" Button
+    t =    72.25s Tap "section-birthdays" Button
+    t =    72.25s     Wait for com.eros.memoryos.demo to idle
+    t =    72.25s     Find the "section-birthdays" Button
+    t =    72.37s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    72.43s     Synthesize event
+    t =    72.72s     Wait for com.eros.memoryos.demo to idle
+    t =    72.80s Tap "birthday-birthday-ali" Button
+    t =    72.80s     Wait for com.eros.memoryos.demo to idle
+    t =    72.80s     Find the "birthday-birthday-ali" Button
+    t =    72.88s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    72.91s     Synthesize event
+    t =    73.21s     Wait for com.eros.memoryos.demo to idle
+    t =    73.60s Contrast
+    t =    74.14s Dynamic Type
+    t =    76.55s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4753413440.621)
+    t =    76.60s     Checking existence of `"الخيار الحالي" StaticText`
+    t =    76.65s     Find the "الخيار الحالي" StaticText
+    t =    76.69s     Find the "الخيار الحالي" StaticText
+    t =    76.74s     Find the "الخيار الحالي" StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | الخيار الحالي | (20.0, 744.6666666666666, 400.0, 42.33333333333337)
+    t =    76.79s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4753413440.621)
+    t =    76.84s     Checking existence of `"الخيار الحالي" StaticText`
+    t =    76.88s     Find the "الخيار الحالي" StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    76.94s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4753419520.620)
+    t =    76.99s     Checking existence of `"معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText`
+    t =    77.04s     Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =    77.09s     Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =    77.14s     Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق. | (20.0, 690.6666666666666, 400.0, 53.66666666666674)
+    t =    77.18s     Find the Any (Descendant with identity binding to AX element pid: 96166, elementOrHash.elementID: 4753419520.620)
+    t =    77.23s     Checking existence of `"معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText`
+    t =    77.27s     Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    77.34s Clipped text
+    t =    79.72s Hit regions
+    t =    80.03s Descriptions
+    t =    80.49s Traits
+    t =    80.94s Element detection
+    t =    81.52s Tap "open-menu" Button
+    t =    81.52s     Wait for com.eros.memoryos.demo to idle
+    t =    81.52s     Find the "open-menu" Button
+    t =    81.59s     Check for interrupting elements affecting "open-menu" Button
+    t =    81.64s     Synthesize event
+    t =    81.94s     Wait for com.eros.memoryos.demo to idle
+    t =    82.66s Find the "section-brainMap" Button
+    t =    82.79s Tap "section-brainMap" Button
+    t =    82.79s     Wait for com.eros.memoryos.demo to idle
+    t =    82.79s     Find the "section-brainMap" Button
+    t =    82.90s     Check for interrupting elements affecting "section-brainMap" Button
+    t =    82.96s     Synthesize event
+    t =    83.25s     Wait for com.eros.memoryos.demo to idle
+    t =    83.45s Contrast
+    t =    83.96s Dynamic Type
+    t =    86.40s Clipped text
+    t =    88.85s Hit regions
+    t =    89.15s Descriptions
+    t =    89.58s Traits
+    t =    90.00s Element detection
+    t =    90.51s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testArabicAccessibilityAudits]' failed (90.816 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits]' started.
+    t =     0.00s Start Test at 2026-11-14 18:52:08.429
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:96166
+2026-11-14 18:52:09.526 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 18:52:09.526 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.31s         Setting up automation session
+    t =     3.73s         Wait for com.eros.memoryos.demo to idle
+    t =     5.25s Contrast
+    t =     5.83s Dynamic Type
+    t =     7.88s Clipped text
+    t =     9.92s Hit regions
+    t =    10.22s Descriptions
+    t =    10.67s Traits
+    t =    11.10s Element detection
+    t =    11.66s Tap "open-menu" Button
+    t =    11.66s     Wait for com.eros.memoryos.demo to idle
+    t =    11.67s     Find the "open-menu" Button
+    t =    11.72s     Check for interrupting elements affecting "open-menu" Button
+    t =    11.75s     Synthesize event
+    t =    12.04s     Wait for com.eros.memoryos.demo to idle
+    t =    12.05s Contrast
+    t =    12.59s Dynamic Type
+    t =    14.89s Clipped text
+    t =    17.19s Hit regions
+    t =    17.47s Descriptions
+    t =    17.89s Traits
+    t =    18.30s Element detection
+    t =    18.79s Tap "section-profiles" Button
+    t =    18.79s     Wait for com.eros.memoryos.demo to idle
+    t =    18.79s     Find the "section-profiles" Button
+    t =    18.86s     Check for interrupting elements affecting "section-profiles" Button
+    t =    18.89s     Synthesize event
+    t =    19.19s     Wait for com.eros.memoryos.demo to idle
+    t =    19.35s Contrast
+    t =    19.84s Dynamic Type
+    t =    22.07s Clipped text
+    t =    24.30s Hit regions
+    t =    24.59s Descriptions
+    t =    25.03s Traits
+    t =    25.45s Element detection
+    t =    25.95s Tap "record-ali" Button
+    t =    25.96s     Wait for com.eros.memoryos.demo to idle
+    t =    25.96s     Find the "record-ali" Button
+    t =    26.01s     Check for interrupting elements affecting "record-ali" Button
+    t =    26.04s     Synthesize event
+    t =    26.34s     Wait for com.eros.memoryos.demo to idle
+    t =    26.41s Contrast
+    t =    27.07s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630847456.59)
+    t =    28.13s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630847456.59) (retry 1)
+    t =    29.19s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630847456.59) (retry 2)
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | unresolved element
+    t =    29.24s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630847456.59)
+    t =    30.29s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630847456.59) (retry 1)
+    t =    31.34s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630847456.59) (retry 2)
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Contrast failed
+    t =    31.41s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630844896.61)
+    t =    32.46s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630844896.61) (retry 1)
+    t =    33.53s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630844896.61) (retry 2)
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | unresolved element
+    t =    33.58s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630844896.61)
+    t =    34.63s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630844896.61) (retry 1)
+    t =    35.70s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630844896.61) (retry 2)
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Contrast failed
+    t =    35.76s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630845696.63)
+    t =    36.82s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630845696.63) (retry 1)
+    t =    37.89s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630845696.63) (retry 2)
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | unresolved element
+    t =    37.97s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630845696.63)
+    t =    39.02s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630845696.63) (retry 1)
+    t =    40.09s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630845696.63) (retry 2)
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Contrast failed
+    t =    40.13s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630846496.65)
+    t =    41.18s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630846496.65) (retry 1)
+    t =    42.23s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630846496.65) (retry 2)
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode | unresolved element
+    t =    42.29s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630846496.65)
+    t =    43.34s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630846496.65) (retry 1)
+    t =    44.39s         Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630846496.65) (retry 2)
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Contrast failed
+    t =    44.44s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4634071264.94)
+    t =    44.48s     Checking existence of `"A friend. We talked about a small website." StaticText`
+    t =    44.53s     Find the "A friend. We talked about a small website." StaticText
+    t =    44.57s     Find the "A friend. We talked about a small website." StaticText
+    t =    44.62s     Find the "A friend. We talked about a small website." StaticText
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode |  | A friend. We talked about a small website. | (20.0, 158.33333333333334, 400.0, 64.33333333333331)
+    t =    44.67s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4634071264.94)
+    t =    44.71s     Checking existence of `"A friend. We talked about a small website." StaticText`
+    t =    44.76s     Find the "A friend. We talked about a small website." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Contrast failed
+    t =    44.82s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4586791520.99)
+    t =    44.87s     Checking existence of `"Fictional sample data. Changes last for this session." StaticText`
+    t =    44.91s     Find the "Fictional sample data. Changes last for this session." StaticText
+    t =    44.96s     Find the "Fictional sample data. Changes last for this session." StaticText
+    t =    45.01s     Find the "Fictional sample data. Changes last for this session." StaticText
+AUDIT Contrast: Contrast failed for SwiftUI.AccessibilityNode |  | Fictional sample data. Changes last for this session. | (20.0, 824.6666666666666, 400.0, 54.0)
+    t =    45.06s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4586791520.99)
+    t =    45.10s     Checking existence of `"Fictional sample data. Changes last for this session." StaticText`
+    t =    45.15s     Find the "Fictional sample data. Changes last for this session." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Contrast failed
+    t =    45.21s Dynamic Type
+    t =    47.60s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4457640928.100)
+    t =    47.65s     Checking existence of `"12 May" StaticText`
+    t =    47.70s     Find the "12 May" StaticText
+    t =    47.74s     Find the "12 May" StaticText
+    t =    47.79s     Find the "12 May" StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | 12 May | (82.0, 459.6666666666667, 55.66666666666666, 22.333333333333314)
+    t =    47.83s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4457640928.100)
+    t =    47.88s     Checking existence of `"12 May" StaticText`
+    t =    47.92s     Find the "12 May" StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    47.98s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4457630208.101)
+    t =    48.03s     Checking existence of `"View reminder choices" StaticText`
+    t =    48.07s     Find the "View reminder choices" StaticText
+    t =    48.12s     Find the "View reminder choices" StaticText
+    t =    48.17s     Find the "View reminder choices" StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | View reminder choices | (82.0, 488.0, 155.33333333333334, 20.0)
+    t =    48.21s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4457630208.101)
+    t =    48.26s     Checking existence of `"View reminder choices" StaticText`
+    t =    48.30s     Find the "View reminder choices" StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    48.36s Clipped text
+    t =    50.73s Hit regions
+    t =    51.04s Descriptions
+    t =    51.50s Traits
+    t =    51.94s Element detection
+    t =    52.48s Tap "open-menu" Button
+    t =    52.48s     Wait for com.eros.memoryos.demo to idle
+    t =    52.49s     Find the "open-menu" Button
+    t =    52.56s     Check for interrupting elements affecting "open-menu" Button
+    t =    52.61s     Synthesize event
+    t =    52.91s     Wait for com.eros.memoryos.demo to idle
+    t =    53.62s Find the "section-projects" Button
+    t =    53.76s Tap "section-projects" Button
+    t =    53.76s     Wait for com.eros.memoryos.demo to idle
+    t =    53.76s     Find the "section-projects" Button
+    t =    53.87s     Check for interrupting elements affecting "section-projects" Button
+    t =    53.93s     Synthesize event
+    t =    54.22s     Wait for com.eros.memoryos.demo to idle
+    t =    54.28s Tap "record-website" Button
+    t =    54.28s     Wait for com.eros.memoryos.demo to idle
+    t =    54.28s     Find the "record-website" Button
+    t =    54.34s     Check for interrupting elements affecting "record-website" Button
+    t =    54.36s     Synthesize event
+    t =    54.66s     Wait for com.eros.memoryos.demo to idle
+    t =    55.05s Contrast
+    t =    55.62s Dynamic Type
+    t =    58.15s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630842816.296)
+    t =    58.21s     Checking existence of `"We might add a small photo gallery later." StaticText`
+    t =    58.26s     Find the "We might add a small photo gallery later." StaticText
+    t =    58.31s     Find the "We might add a small photo gallery later." StaticText
+    t =    58.36s     Find the "We might add a small photo gallery later." StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | We might add a small photo gallery later. | (20.0, 647.3333333333334, 400.0, 64.33333333333326)
+    t =    58.41s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630842816.296)
+    t =    58.46s     Checking existence of `"We might add a small photo gallery later." StaticText`
+    t =    58.52s     Find the "We might add a small photo gallery later." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    58.59s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630851616.297)
+    t =    58.64s     Checking existence of `"Ideas are possibilities, not agreed plans." StaticText`
+    t =    58.69s     Find the "Ideas are possibilities, not agreed plans." StaticText
+    t =    58.74s     Find the "Ideas are possibilities, not agreed plans." StaticText
+    t =    58.79s     Find the "Ideas are possibilities, not agreed plans." StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | Ideas are possibilities, not agreed plans. | (20.0, 711.6666666666666, 400.0, 33.66666666666674)
+    t =    58.85s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630851616.297)
+    t =    58.90s     Checking existence of `"Ideas are possibilities, not agreed plans." StaticText`
+    t =    58.95s     Find the "Ideas are possibilities, not agreed plans." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    59.02s Clipped text
+    t =    61.52s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630842816.296)
+    t =    61.58s     Checking existence of `"We might add a small photo gallery later." StaticText`
+    t =    61.63s     Find the "We might add a small photo gallery later." StaticText
+    t =    61.69s     Find the "We might add a small photo gallery later." StaticText
+    t =    61.74s     Find the "We might add a small photo gallery later." StaticText
+AUDIT Clipped text: Text of this SwiftUI.AccessibilityNode may be clipped at larger Dynamic Type sizes. |  | We might add a small photo gallery later. | (20.0, 647.3333333333334, 400.0, 64.33333333333326)
+    t =    61.79s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4630842816.296)
+    t =    61.84s     Checking existence of `"We might add a small photo gallery later." StaticText`
+    t =    61.89s     Find the "We might add a small photo gallery later." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Text clipped
+    t =    61.96s Hit regions
+    t =    62.27s Descriptions
+    t =    62.74s Traits
+    t =    63.18s Element detection
+    t =    63.74s Tap "open-menu" Button
+    t =    63.74s     Wait for com.eros.memoryos.demo to idle
+    t =    63.74s     Find the "open-menu" Button
+    t =    63.82s     Check for interrupting elements affecting "open-menu" Button
+    t =    63.88s     Synthesize event
+    t =    64.18s     Wait for com.eros.memoryos.demo to idle
+    t =    64.89s Find the "section-birthdays" Button
+    t =    65.03s Tap "section-birthdays" Button
+    t =    65.03s     Wait for com.eros.memoryos.demo to idle
+    t =    65.03s     Find the "section-birthdays" Button
+    t =    65.14s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    65.21s     Synthesize event
+    t =    65.51s     Wait for com.eros.memoryos.demo to idle
+    t =    65.55s Tap "birthday-birthday-ali" Button
+    t =    65.55s     Wait for com.eros.memoryos.demo to idle
+    t =    65.55s     Find the "birthday-birthday-ali" Button
+    t =    65.62s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    65.66s     Synthesize event
+    t =    65.95s     Wait for com.eros.memoryos.demo to idle
+    t =    66.32s Contrast
+    t =    66.85s Dynamic Type
+    t =    69.23s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4620924512.534)
+    t =    69.28s     Checking existence of `"Current choice" StaticText`
+    t =    69.33s     Find the "Current choice" StaticText
+    t =    69.38s     Find the "Current choice" StaticText
+    t =    69.42s     Find the "Current choice" StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | Current choice | (20.0, 744.6666666666666, 400.0, 42.33333333333337)
+    t =    69.47s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4620924512.534)
+    t =    69.52s     Checking existence of `"Current choice" StaticText`
+    t =    69.56s     Find the "Current choice" StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    69.63s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4620919712.533)
+    t =    69.69s     Checking existence of `"Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText`
+    t =    69.74s     Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    69.80s     Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    69.85s     Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+AUDIT Dynamic Type: User will not be able to change the font size of this SwiftUI.AccessibilityNode |  | Preview only. No notification or calendar event will be created. Choices reset when the app closes. | (20.0, 690.6666666666666, 400.0, 53.66666666666674)
+    t =    69.92s     Find the Any (Descendant with identity binding to AX element pid: 97431, elementOrHash.elementID: 4620919712.533)
+    t =    69.98s     Checking existence of `"Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText`
+    t =    70.03s     Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/DemoFlowTests.swift:214: error: -[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits] : Dynamic Type font sizes are partially unsupported
+    t =    70.09s Clipped text
+    t =    72.51s Hit regions
+    t =    72.83s Descriptions
+    t =    73.30s Traits
+    t =    73.75s Element detection
+    t =    74.28s Tap "open-menu" Button
+    t =    74.28s     Wait for com.eros.memoryos.demo to idle
+    t =    74.28s     Find the "open-menu" Button
+    t =    74.35s     Check for interrupting elements affecting "open-menu" Button
+    t =    74.41s     Synthesize event
+    t =    74.70s     Wait for com.eros.memoryos.demo to idle
+    t =    75.41s Find the "section-brainMap" Button
+    t =    75.53s Tap "section-brainMap" Button
+    t =    75.53s     Wait for com.eros.memoryos.demo to idle
+    t =    75.53s     Find the "section-brainMap" Button
+    t =    75.64s     Check for interrupting elements affecting "section-brainMap" Button
+    t =    75.70s     Synthesize event
+    t =    75.99s     Wait for com.eros.memoryos.demo to idle
+    t =    76.11s Contrast
+    t =    76.61s Dynamic Type
+    t =    78.97s Clipped text
+    t =    81.29s Hit regions
+    t =    81.58s Descriptions
+    t =    82.00s Traits
+    t =    82.41s Element detection
+    t =    82.95s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testEnglishAccessibilityAudits]' failed (83.247 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testLinkedTextScalesInBothLanguages]' started.
+    t =     0.00s Start Test at 2026-11-14 18:53:31.676
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:97431
+2026-11-14 18:53:32.765 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 18:53:32.765 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.30s         Setting up automation session
+    t =     3.80s         Wait for com.eros.memoryos.demo to idle
+    t =     5.29s Tap "open-menu" Button
+    t =     5.29s     Wait for com.eros.memoryos.demo to idle
+    t =     5.29s     Find the "open-menu" Button
+    t =     5.50s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.52s     Synthesize event
+    t =     5.83s     Wait for com.eros.memoryos.demo to idle
+    t =     5.84s Find the "section-profiles" Button
+    t =     5.90s Tap "section-profiles" Button
+    t =     5.90s     Wait for com.eros.memoryos.demo to idle
+    t =     5.90s     Find the "section-profiles" Button
+    t =     5.95s     Check for interrupting elements affecting "section-profiles" Button
+    t =     5.98s     Synthesize event
+    t =     6.28s     Wait for com.eros.memoryos.demo to idle
+    t =     6.42s Tap "record-ali" Button
+    t =     6.42s     Wait for com.eros.memoryos.demo to idle
+    t =     6.42s     Find the "record-ali" Button
+    t =     6.47s     Check for interrupting elements affecting "record-ali" Button
+    t =     6.50s     Synthesize event
+    t =     6.79s     Wait for com.eros.memoryos.demo to idle
+    t =     6.83s Find the "12 May" StaticText
+    t =     6.97s Find the "12 May" StaticText
+    t =     7.06s Find the "12 May" StaticText
+    t =     7.14s Find the "12 May" StaticText
+TEXT-SIZE UICTContentSizeCategoryL 12 May: (82.0, 459.6666666666667, 55.66666666666666, 22.333333333333314)
+    t =     7.21s Find the "View reminder choices" StaticText
+    t =     7.30s Find the "View reminder choices" StaticText
+    t =     7.39s Find the "View reminder choices" StaticText
+    t =     7.44s Find the "View reminder choices" StaticText
+TEXT-SIZE UICTContentSizeCategoryL View reminder choices: (82.0, 488.0, 155.33333333333334, 20.0)
+    t =     7.49s Terminate com.eros.memoryos.demo:98908
+    t =     8.54s Open com.eros.memoryos.demo
+    t =     8.54s     Launch com.eros.memoryos.demo
+2026-11-14 18:53:40.226 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 18:53:40.226 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     8.76s         Setting up automation session
+    t =    11.12s         Wait for com.eros.memoryos.demo to idle
+    t =    12.75s Tap "open-menu" Button
+    t =    12.75s     Wait for com.eros.memoryos.demo to idle
+    t =    12.75s     Find the "open-menu" Button
+    t =    12.89s     Check for interrupting elements affecting "open-menu" Button
+    t =    12.91s     Synthesize event
+    t =    13.21s     Wait for com.eros.memoryos.demo to idle
+    t =    13.21s Find the "section-profiles" Button
+    t =    13.28s Tap "section-profiles" Button
+    t =    13.28s     Wait for com.eros.memoryos.demo to idle
+    t =    13.28s     Find the "section-profiles" Button
+    t =    13.32s     Check for interrupting elements affecting "section-profiles" Button
+    t =    13.36s     Synthesize event
+    t =    13.65s     Wait for com.eros.memoryos.demo to idle
+    t =    13.78s Tap "record-ali" Button
+    t =    13.78s     Wait for com.eros.memoryos.demo to idle
+    t =    13.79s     Find the "record-ali" Button
+    t =    13.84s     Check for interrupting elements affecting "record-ali" Button
+    t =    13.87s     Synthesize event
+    t =    14.16s     Wait for com.eros.memoryos.demo to idle
+    t =    14.65s Find the "12 May" StaticText
+    t =    15.71s     Find the "12 May" StaticText (retry 1)
+    t =    16.76s     Find the "12 May" StaticText (retry 2)
+    t =    16.79s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    16.80s     Wait for com.eros.memoryos.demo to idle
+    t =    16.80s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    16.83s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    16.86s     Synthesize event
+    t =    17.28s     Wait for com.eros.memoryos.demo to idle
+    t =    19.39s Find the "12 May" StaticText
+    t =    19.45s Find the "12 May" StaticText
+    t =    19.50s Find the "12 May" StaticText
+    t =    19.54s Find the "12 May" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL 12 May: (82.0, 461.6666666666665, 168.66666666666666, 69.0)
+    t =    19.58s Find the "View reminder choices" StaticText
+    t =    19.63s Find the "View reminder choices" StaticText
+    t =    19.68s Find the "View reminder choices" StaticText
+    t =    19.72s Find the "View reminder choices" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL View reminder choices: (82.0, 536.6666666666665, 194.66666666666663, 192.0)
+    t =    19.76s Terminate com.eros.memoryos.demo:98991
+    t =    20.82s Open com.eros.memoryos.demo
+    t =    20.82s     Launch com.eros.memoryos.demo
+2026-11-14 18:53:52.502 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 18:53:52.502 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    21.04s         Setting up automation session
+    t =    23.38s         Wait for com.eros.memoryos.demo to idle
+    t =    25.01s Tap "open-menu" Button
+    t =    25.01s     Wait for com.eros.memoryos.demo to idle
+    t =    25.01s     Find the "open-menu" Button
+    t =    25.14s     Check for interrupting elements affecting "open-menu" Button
+    t =    25.16s     Synthesize event
+    t =    25.46s     Wait for com.eros.memoryos.demo to idle
+    t =    25.46s Find the "section-settings" Button
+    t =    25.52s Tap "section-settings" Button
+    t =    25.52s     Wait for com.eros.memoryos.demo to idle
+    t =    25.52s     Find the "section-settings" Button
+    t =    25.57s     Check for interrupting elements affecting "section-settings" Button
+    t =    25.60s     Synthesize event
+    t =    25.90s     Wait for com.eros.memoryos.demo to idle
+    t =    26.08s Tap "language-picker" Button
+    t =    26.08s     Wait for com.eros.memoryos.demo to idle
+    t =    26.09s     Find the "language-picker" Button
+    t =    26.14s     Check for interrupting elements affecting "language-picker" Button
+    t =    26.16s     Synthesize event
+    t =    26.46s     Wait for com.eros.memoryos.demo to idle
+    t =    27.65s Tap "العربية" Button
+    t =    27.65s     Wait for com.eros.memoryos.demo to idle
+    t =    27.66s     Find the "العربية" Button
+    t =    27.71s     Check for interrupting elements affecting "العربية" Button
+    t =    27.74s     Synthesize event
+    t =    28.03s     Wait for com.eros.memoryos.demo to idle
+    t =    29.50s Tap "open-menu" Button
+    t =    29.51s     Wait for com.eros.memoryos.demo to idle
+    t =    29.51s     Find the "open-menu" Button
+    t =    29.55s     Check for interrupting elements affecting "open-menu" Button
+    t =    29.58s     Synthesize event
+    t =    29.87s     Wait for com.eros.memoryos.demo to idle
+    t =    29.87s Find the "section-profiles" Button
+    t =    29.94s Tap "section-profiles" Button
+    t =    29.94s     Wait for com.eros.memoryos.demo to idle
+    t =    29.94s     Find the "section-profiles" Button
+    t =    29.98s     Check for interrupting elements affecting "section-profiles" Button
+    t =    30.01s     Synthesize event
+    t =    30.30s     Wait for com.eros.memoryos.demo to idle
+    t =    30.45s Tap "record-ali" Button
+    t =    30.45s     Wait for com.eros.memoryos.demo to idle
+    t =    30.45s     Find the "record-ali" Button
+    t =    30.50s     Check for interrupting elements affecting "record-ali" Button
+    t =    30.53s     Synthesize event
+    t =    30.82s     Wait for com.eros.memoryos.demo to idle
+    t =    31.28s Find the "١٢ أيار" StaticText
+    t =    31.38s Find the "١٢ أيار" StaticText
+    t =    31.45s Find the "١٢ أيار" StaticText
+    t =    31.50s Find the "١٢ أيار" StaticText
+TEXT-SIZE UICTContentSizeCategoryL ١٢ أيار: (318.33333333333337, 459.6666666666667, 39.66666666666663, 22.333333333333314)
+    t =    31.56s Find the "عرض خيارات التذكير" StaticText
+    t =    31.63s Find the "عرض خيارات التذكير" StaticText
+    t =    31.69s Find the "عرض خيارات التذكير" StaticText
+    t =    31.75s Find the "عرض خيارات التذكير" StaticText
+TEXT-SIZE UICTContentSizeCategoryL عرض خيارات التذكير: (239.33333333333337, 488.0, 118.66666666666663, 20.0)
+    t =    31.81s Terminate com.eros.memoryos.demo:99128
+    t =    32.86s Open com.eros.memoryos.demo
+    t =    32.86s     Launch com.eros.memoryos.demo
+2026-11-14 18:54:04.542 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 18:54:04.542 xcodebuild[95990:668987] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    33.07s         Setting up automation session
+    t =    35.42s         Wait for com.eros.memoryos.demo to idle
+    t =    37.06s Tap "open-menu" Button
+    t =    37.06s     Wait for com.eros.memoryos.demo to idle
+    t =    37.07s     Find the "open-menu" Button
+    t =    37.21s     Check for interrupting elements affecting "open-menu" Button
+    t =    37.23s     Synthesize event
+    t =    37.53s     Wait for com.eros.memoryos.demo to idle
+    t =    37.53s Find the "section-settings" Button
+    t =    37.59s Tap "section-settings" Button
+    t =    37.59s     Wait for com.eros.memoryos.demo to idle
+    t =    37.59s     Find the "section-settings" Button
+    t =    37.63s     Check for interrupting elements affecting "section-settings" Button
+    t =    37.67s     Synthesize event
+    t =    37.96s     Wait for com.eros.memoryos.demo to idle
+    t =    38.15s Tap "language-picker" Button
+    t =    38.15s     Wait for com.eros.memoryos.demo to idle
+    t =    38.15s     Find the "language-picker" Button
+    t =    38.21s     Check for interrupting elements affecting "language-picker" Button
+    t =    38.23s     Synthesize event
+    t =    38.53s     Wait for com.eros.memoryos.demo to idle
+    t =    39.72s Tap "العربية" Button
+    t =    39.72s     Wait for com.eros.memoryos.demo to idle
+    t =    39.72s     Find the "العربية" Button
+    t =    39.77s     Check for interrupting elements affecting "العربية" Button
+    t =    39.80s     Synthesize event
+    t =    40.09s     Wait for com.eros.memoryos.demo to idle
+    t =    41.60s Tap "open-menu" Button
+    t =    41.60s     Wait for com.eros.memoryos.demo to idle
+    t =    41.60s     Find the "open-menu" Button
+    t =    41.63s     Check for interrupting elements affecting "open-menu" Button
+    t =    41.65s     Synthesize event
+    t =    41.95s     Wait for com.eros.memoryos.demo to idle
+    t =    41.95s Find the "section-profiles" Button
+    t =    42.02s Tap "section-profiles" Button
+    t =    42.02s     Wait for com.eros.memoryos.demo to idle
+    t =    42.02s     Find the "section-profiles" Button
+    t =    42.06s     Check for interrupting elements affecting "section-profiles" Button
+    t =    42.09s     Synthesize event
+    t =    42.39s     Wait for com.eros.memoryos.demo to idle
+    t =    42.55s Tap "record-ali" Button
+    t =    42.55s     Wait for com.eros.memoryos.demo to idle
+    t =    42.55s     Find the "record-ali" Button
+    t =    42.61s     Check for interrupting elements affecting "record-ali" Button
+    t =    42.64s     Synthesize event
+    t =    42.93s     Wait for com.eros.memoryos.demo to idle
+    t =    43.37s Find the "١٢ أيار" StaticText
+    t =    44.42s     Find the "١٢ أيار" StaticText (retry 1)
+    t =    45.48s     Find the "١٢ أيار" StaticText (retry 2)
+    t =    45.51s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    45.51s     Wait for com.eros.memoryos.demo to idle
+    t =    45.51s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    45.54s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    45.58s     Synthesize event
+    t =    46.00s     Wait for com.eros.memoryos.demo to idle
+    t =    48.10s Find the "١٢ أيار" StaticText
+    t =    48.18s Find the "١٢ أيار" StaticText
+    t =    48.23s Find the "١٢ أيار" StaticText
+    t =    48.27s Find the "١٢ أيار" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL ١٢ أيار: (239.0, 394.00000000000017, 119.0, 69.0)
+    t =    48.31s Find the "عرض خيارات التذكير" StaticText
+    t =    48.36s Find the "عرض خيارات التذكير" StaticText
+    t =    48.42s Find the "عرض خيارات التذكير" StaticText
+    t =    48.46s Find the "عرض خيارات التذكير" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL عرض خيارات التذكير: (108.66666666666669, 469.00000000000017, 249.33333333333331, 128.33333333333331)
+    t =    48.50s Terminate com.eros.memoryos.demo:99290
+    t =    49.55s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testLinkedTextScalesInBothLanguages]' passed (49.638 seconds).
+Test Suite 'DemoFlowTests' failed at 2026-11-14 18:54:21.314.
+	 Executed 3 tests, with 27 failures (0 unexpected) in 223.701 (223.708) seconds
+Test Suite 'MemoryOSUITests.xctest' failed at 2026-11-14 18:54:21.316.
+	 Executed 3 tests, with 27 failures (0 unexpected) in 223.701 (223.711) seconds
+Test Suite 'Selected tests' failed at 2026-11-14 18:54:21.317.
+	 Executed 3 tests, with 27 failures (0 unexpected) in 223.701 (223.713) seconds
+2026-11-14 18:54:39.403 xcodebuild[95990:668987] [MT] IDETestOperationsObserverDebug: 245.967 elapsed -- Testing started completed.
+2026-11-14 18:54:39.403 xcodebuild[95990:668987] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-14 18:54:39.403 xcodebuild[95990:668987] [MT] IDETestOperationsObserverDebug: 245.967 sec, +245.967 sec -- end
+
+Test session results, code coverage, and logs:
+	/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/interface-demo/step2/accessibility-diagnostics.xcresult
+
+Failing tests:
+	DemoFlowTests.testArabicAccessibilityAudits()
+	DemoFlowTests.testArabicAccessibilityAudits()
+	DemoFlowTests.testArabicAccessibilityAudits()
+	DemoFlowTests.testEnglishAccessibilityAudits()
+	DemoFlowTests.testEnglishAccessibilityAudits()
+	DemoFlowTests.testEnglishAccessibilityAudits()
+
+** TEST FAILED **
+
+Testing started

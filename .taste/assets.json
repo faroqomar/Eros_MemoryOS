@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "font-geist",
+      "kind": "font",
+      "status": "ready",
+      "purpose": "Approved interface typography across all views.",
+      "requirements": [
+        "Local variable TrueType file verified: magic bytes 00010000, 169056 bytes, weight axis 100–900.",
+        "Use approved upright weights 400, 500 and 700; no italic is required.",
+        "License acquired at public/fonts/geist/OFL.txt. Preserve it with redistribution.",
+        "SHA-256: 73894e0448cae90a92b6c2f8732b7bb9acb7b94c418bff559dad4a18e1de9659.",
+        "Build must load the local file and verify FontFace availability, tabular figures and Arabic fallback separately. Browser rendering has not yet been verified."
+      ],
+      "role": "font",
+      "sectionIds": [
+        "shell",
+        "capture-compose",
+        "capture-source",
+        "capture-recent",
+        "capture-upcoming",
+        "review",
+        "memory-search",
+        "people",
+        "person-detail",
+        "projects",
+        "project-detail",
+        "source-detail",
+        "reminders",
+        "rules",
+        "custom-tabs",
+        "local-control",
+        "design-preferences"
+      ],
+      "source": {
+        "kind": "external",
+        "reference": "https://github.com/google/fonts/tree/main/ofl/geist",
+        "license": "SIL Open Font License 1.1; downloaded from the official Google Fonts repository alongside the font.",
+        "contentType": "application/octet-stream"
+      },
+      "destination": "public/fonts/geist/Geist[wght].ttf"
+    },
+    {
+      "id": "font-geist-mono",
+      "kind": "font",
+      "status": "ready",
+      "purpose": "Approved monospace typography for source IDs and saved-tab keys only.",
+      "requirements": [
+        "Local variable TrueType file verified: magic bytes 00010000, 171948 bytes, weight axis 100–900.",
+        "Use approved upright weights 400 and 500 only for IDs and keys, not ordinary figures or interface copy.",
+        "License acquired at public/fonts/geistmono/OFL.txt. Preserve it with redistribution.",
+        "SHA-256: d00e590b8eb3a59acc329b2d044fd143ae935090b7da33199ebee27cc7de8196.",
+        "Build must verify the loaded family before using it. No italic variant is required.",
+        "All blueprint assetNeeds and componentNeeds arrays are empty. No imagery, component downloads, dependencies or page implementation were added."
+      ],
+      "role": "font",
+      "sectionIds": [
+        "source-detail",
+        "custom-tabs"
+      ],
+      "source": {
+        "kind": "external",
+        "reference": "https://github.com/google/fonts/tree/main/ofl/geistmono",
+        "license": "SIL Open Font License 1.1; downloaded from the official Google Fonts repository alongside the font.",
+        "contentType": "application/octet-stream"
+      },
+      "destination": "public/fonts/geistmono/GeistMono[wght].ttf"
+    }
+  ]
+}

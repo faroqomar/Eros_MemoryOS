@@ -1,0 +1,11 @@
+{
+  "native/MemoryOS/App/DemoSession.swift": "b5f52d92dbd17aa79008b73005807743bd6b83fc34b64ce7b657e11e0c02ac85",
+  "native/MemoryOS/App/MemoryOSApp.swift": "33feb6c3c232ddc1829c0a469f5d25a471dc60a7441465feb468c2861523d453",
+  "native/MemoryOS/DesignSystem/Theme.swift": "582532b8854ec9e87847b2aae82e21ddeec6e7d6ffda3784310f6691223d5e41",
+  "native/MemoryOS/Features/CaptureView.swift": "5fc72fcc51f76265fdc1474b8c3dc652fbe38ba61e43b61e231be842bfa51a12",
+  "native/MemoryOS/Features/RootView.swift": "97c9dd8d9279ad7d3ccc9c1c4acebcc06d7ade38acfc00ab340404ac0b53edfd",
+  "native/MemoryOS/Features/SectionView.swift": "c677becdf9b9b6709efb9deee434cb86bb72c2e02c72186fe08aea84431ac10b",
+  "native/MemoryOS/Features/SidebarView.swift": "79b806fdc0339e3445d86b3499f713970628ef45a71a81d229189970a47b9312",
+  "native/MemoryOS/Resources/Assets.xcassets/AccentColor.colorset/Contents.json": "479f418f3e9bdf06abe05b19ff01ea387302dc22f42d7b749adcc23eb97014e6",
+  "native/MemoryOS/Resources/Assets.xcassets/Contents.json": "10e3b5dc202f1cd9fad1f688c8fc9fe9e9669bf3f8295e67d216b10fd99b6f49"
+}

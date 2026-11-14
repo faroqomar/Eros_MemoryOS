@@ -1,0 +1,11 @@
+{
+  "app_imports": [
+    "import Foundation",
+    "import SwiftUI"
+  ],
+  "domain_imports": [
+    "import Foundation"
+  ],
+  "swift_files": 13,
+  "external_package_references": false
+}

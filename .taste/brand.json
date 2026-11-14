@@ -1,0 +1,331 @@
+{
+  "version": 1,
+  "foundation": {
+    "strategy": "create",
+    "existingAssets": [
+      "README.md",
+      "docs/product-overview.md",
+      "docs/decisions/decision-register.md",
+      ".taste/app-kit/app.css",
+      ".taste/app-kit/charts.js",
+      ".taste/app-kit/LICENSE"
+    ],
+    "assetActions": [
+      {
+        "asset": "README.md",
+        "action": "preserve",
+        "reason": "Establishes the Eros MemoryOS product name and personal purpose."
+      },
+      {
+        "asset": "docs/product-overview.md",
+        "action": "protect",
+        "reason": "Preserve simple capture, hidden navigation and bilingual use."
+      },
+      {
+        "asset": "docs/decisions/decision-register.md",
+        "action": "protect",
+        "reason": "Keep requested behavior distinct from unverified capabilities."
+      },
+      {
+        "asset": ".taste/app-kit/app.css",
+        "action": "evolve",
+        "reason": "Neutral implementation starter for the supplied sheet, not an established product identity. No edits in this phase."
+      },
+      {
+        "asset": ".taste/app-kit/charts.js",
+        "action": "preserve",
+        "reason": "Available chart utility, not a requirement to introduce analytics."
+      },
+      {
+        "asset": ".taste/app-kit/LICENSE",
+        "action": "preserve",
+        "reason": "Retain attribution with any later reuse."
+      },
+      {
+        "asset": "Eros MemoryOS product mark",
+        "action": "create",
+        "reason": "Specify a simple open-loop M monogram in accent ink for later creation. No logo file exists in the inspected inventory."
+      }
+    ],
+    "lockedDecisions": [
+      "Product name: Eros MemoryOS.",
+      "iPhone-first, Arabic RTL and English LTR, with mixed-language source text preserved.",
+      "Prominent recording action, text capture and navigation hidden until opened.",
+      "Achromatic ledger, light: monochrome chrome, near-black primary action, sparse density and no resting shadows.",
+      "Geist interface typography; Geist Mono only for IDs and keys.",
+      "Prototype content must visibly identify sample memories and simulated processing.",
+      "Brand phase only: no files, assets, screens or dependencies are created."
+    ],
+    "assumptions": [
+      "No user reference images were supplied and no established visual identity was found in the inspected project files.",
+      "The supplied sheet now fixes the visual style; later preference ranking can compare interaction patterns within this style.",
+      "The requested hidden sidebar overrides the sheet's desktop text-link navigation: use an on-demand drawer, never a persistent sidebar.",
+      "Sheet tokens override conflicting example-screen values, including larger settings radii, tinted panels and heavier headings.",
+      "Arabic uses the platform's Arabic sans-serif fallback where Geist lacks glyphs. This is language coverage, not an additional display identity; later typography verification must test Arabic separately."
+    ]
+  },
+  "creativeDirection": {
+    "summary": "The face is the sheet's single blue data hue, applied to the current capture's source-position marker. Eros MemoryOS reads as a quiet memory ledger, with ink controls and an unmistakable path from a thought to its source.",
+    "traits": [
+      {
+        "quality": "Immediate",
+        "boundary": "not a classification form before capture"
+      },
+      {
+        "quality": "Traceable",
+        "boundary": "not an AI interpretation presented as fact"
+      },
+      {
+        "quality": "Personal",
+        "boundary": "not a business analytics template"
+      },
+      {
+        "quality": "Restrained",
+        "boundary": "not faint text or missing controls"
+      }
+    ],
+    "productiveTension": "A nearly blank capture experience opens into precise, inspectable memory context.",
+    "signatureDevice": {
+      "description": "A source thread connects a capture excerpt, its dated source position and its suggested person or project links. A tiny blue position marker identifies the active source segment.",
+      "status": "candidate",
+      "invariants": [
+        "Always begins with the owner's source text or recording position.",
+        "Original content, suggested links and interpretations remain visibly distinct.",
+        "Only the active source-position mark uses chart-3; labels and connectors stay ink or grey.",
+        "The same reading order works in RTL and LTR.",
+        "No fabricated waveform or invented confidence score."
+      ]
+    },
+    "restraint": "Keep coloured pixels below 1%. Use blue only on the principal source-position data; reserve other hues for small, meaningful exceptions. No chart is required merely to show colour.",
+    "avoid": [
+      "Tinted cards or KPI tiles",
+      "Brand-coloured buttons",
+      "Decorative charts",
+      "Bold nonfinancial figures",
+      "Gradients, glass and glows",
+      "Black-square letter logos",
+      "Marketing heroes",
+      "Unrequested metric tiles"
+    ]
+  },
+  "colorPalette": [
+    {
+      "name": "ground",
+      "value": "#f8f8f8",
+      "usage": "Page and top-bar ground."
+    },
+    {
+      "name": "surface",
+      "value": "#ffffff",
+      "usage": "Cards, fields and secondary controls; white labels on the near-black primary."
+    },
+    {
+      "name": "raised",
+      "value": "#eeeeee",
+      "usage": "Neutral selected rows and pressed surfaces with ink text."
+    },
+    {
+      "name": "border",
+      "value": "#e6e6e6",
+      "usage": "One-pixel card edges."
+    },
+    {
+      "name": "rule",
+      "value": "#f0f0f0",
+      "usage": "Quiet row separators and scrolled-header rule."
+    },
+    {
+      "name": "control",
+      "value": "#d4d4d4",
+      "usage": "One-pixel control boundaries."
+    },
+    {
+      "name": "text",
+      "value": "#0a0a0a",
+      "usage": "Primary text, source excerpts and ordinary figures."
+    },
+    {
+      "name": "muted",
+      "value": "#6b6b6b",
+      "usage": "Labels, dates, placeholders and honest zeros on white or ground; use text on darker neutral fills."
+    },
+    {
+      "name": "accent",
+      "value": "#141414",
+      "usage": "Primary action, monogram and focus outline; chrome remains achromatic."
+    },
+    {
+      "name": "positive",
+      "value": "#2e7d32",
+      "usage": "Rare positive change signal on white, accompanied by words or a symbol."
+    },
+    {
+      "name": "negative",
+      "value": "#c4242a",
+      "usage": "Small failed-save or failed-import signal on white, never the sole explanation."
+    },
+    {
+      "name": "warning",
+      "value": "#92400e",
+      "usage": "Small review-needed signal on white."
+    },
+    {
+      "name": "chart-1",
+      "value": "#141414",
+      "usage": "Context data or nonactive source segments in ink."
+    },
+    {
+      "name": "chart-2",
+      "value": "#8a8a8a",
+      "usage": "Comparison strokes only; never text because it does not meet the word contrast floor."
+    },
+    {
+      "name": "chart-3",
+      "value": "#1d5fbf",
+      "usage": "Chosen face: active source-position data marker, kept below the screen's 1% colour budget."
+    },
+    {
+      "name": "pill-positive-bg",
+      "value": "#dcfae5",
+      "usage": "Reserved compact success pill background; routine saved states remain neutral."
+    },
+    {
+      "name": "pill-positive-ink",
+      "value": "#04250e",
+      "usage": "Text only on pill-positive-bg."
+    },
+    {
+      "name": "pill-negative-bg",
+      "value": "#ffedea",
+      "usage": "Compact failed-operation pill background."
+    },
+    {
+      "name": "pill-negative-ink",
+      "value": "#831c1e",
+      "usage": "Failed-operation text on pill-negative-bg."
+    },
+    {
+      "name": "pill-warning-bg",
+      "value": "#fffbeb",
+      "usage": "Compact actionable warning background."
+    },
+    {
+      "name": "pill-warning-ink",
+      "value": "#92400e",
+      "usage": "Review-needed text on pill-warning-bg."
+    },
+    {
+      "name": "pill-neutral-bg",
+      "value": "#eeeeee",
+      "usage": "Default saved, suggested and sample-content pill background."
+    },
+    {
+      "name": "pill-neutral-ink",
+      "value": "#3d3d3d",
+      "usage": "Default pill text on pill-neutral-bg."
+    }
+  ],
+  "typefaces": [
+    {
+      "family": "Geist",
+      "source": "Google Fonts",
+      "roles": [
+        "interface",
+        "headings",
+        "labels",
+        "tabular figures"
+      ],
+      "weights": [
+        400,
+        500,
+        700
+      ]
+    },
+    {
+      "family": "Geist Mono",
+      "source": "Google Fonts",
+      "roles": [
+        "IDs and keys only"
+      ],
+      "weights": [
+        400,
+        500
+      ]
+    }
+  ],
+  "interfaceDirection": "Sparse, monochrome shell with a 48px top bar and centred 1152px desktop column. Name and open-loop M mark identify Eros MemoryOS; scope reads Personal. Use an on-demand 256px navigation drawer to honour the owner's hidden-sidebar requirement. On phones retain the mark, search and menu, with 16px page margins. Standard rows are 44px and controls 36px visually; mobile hit areas extend to at least 44px without changing the visual control height. Use one label style: 12px, 400, sentence case, muted grey. Titles and navigation use 400–500; reserve 700 for money, which this prototype does not require. Apply tabular figures to dates, durations and changing counts. Selected rows use raised fill and explicit selected semantics; hover uses a subtle neutral fill, focus a visible 2px accent outline, pressed controls use raised fill and ink, and disabled controls remain readable with an explicit unavailable state. Neutral pills carry routine states; positive, negative and warning pills use their exact ink/background pairs only for compact exceptions. Never rely on hue alone. Mirror directional relationships for RTL while isolating IDs and timestamps. Fields show errors beside the affected value.",
+  "designTokens": {
+    "typeScale": {
+      "display": "24px",
+      "h1": "24px",
+      "h2": "16px",
+      "h3": "30px",
+      "body": "14px",
+      "small": "12px",
+      "label": "12px"
+    },
+    "radius": {
+      "scale": [
+        "6px",
+        "8px"
+      ],
+      "pill": "999px"
+    },
+    "spacing": {
+      "section": "24px",
+      "gutter": "12px",
+      "stack": "12px"
+    },
+    "buttons": {
+      "primary": "One primary treatment: Record a thought, #141414 fill with white text, 36px visual height and 6px radius. Give capture prominence through placement and width; retain a minimum 44px touch target.",
+      "secondary": "One secondary treatment: white surface fill, ink text, 1px #d4d4d4 border, 36px visual height and 6px radius. This follows the explicit secondary-button requirement rather than introducing a separate grey-pill button style."
+    },
+    "surfaces": "#f8f8f8 ground, white surfaces, 1px #e6e6e6 card edges, lighter #f0f0f0 row rules and darker #d4d4d4 control boundaries. Cards and sheets use 8px radii; controls use 6px. No resting shadows, tinted panels, zebra rows or header bands. Separate floating layers with neutral surfaces and boundaries rather than adding decorative elevation."
+  },
+  "imageDirection": {
+    "summary": "No photography or decorative imagery. Memory content is text, source excerpts and actual audio-position data when available.",
+    "subjects": [
+      "Fictional sample people represented by stable initials",
+      "Source excerpts with dates and speaker names",
+      "Document-type outline symbols"
+    ],
+    "treatment": "Use neutral initial circles with ink letters to preserve the stricter achromatic colour budget. Keep a concise Sample memories label visible. Render audio data only when supplied by an actual recording or explicitly identified simulation.",
+    "avoid": [
+      "Stock portraits",
+      "Generated personal photographs",
+      "Decorative illustrations",
+      "Tinted icon squares",
+      "Invented audio waveforms",
+      "Images implying real private data or verified integrations"
+    ]
+  },
+  "motionDirection": {
+    "summary": "Feedback only, with a shared 180ms ease-out transition. Nothing performs an entrance; reduced motion resolves immediately to the same readable state.",
+    "principles": [
+      "Confirm capture interaction when Record or Stop is activated; button label and recording state change together; 180ms ease-out, with no perpetual pulse.",
+      "Maintain navigation context when a tab changes; selection and associated content update together without replaying entrances; 180ms ease-out.",
+      "Explain overlay relationships when the menu or source drawer opens or closes; the panel moves from its logical edge while focus transfers and returns; 180ms ease-out, interruptible and Escape-dismissible.",
+      "Preserve row identity when filtering or sorting; affected rows change position without hiding essential values; 180ms ease-out, with rapid input replacing the pending transition.",
+      "Connect source selection to evidence when a transcript segment is chosen; its position marker and selected excerpt update together; 180ms ease-out with stable scale and readable timestamps."
+    ],
+    "avoid": [
+      "Scroll reveals",
+      "Page-load entrances",
+      "Counting up metrics",
+      "Perpetual waveform animation",
+      "Delayed essential text",
+      "Motion-only state information"
+    ]
+  },
+  "voice": {
+    "summary": "Short, concrete Arabic and English copy about thoughts, sources and commitments. Use Record a thought, Saved, Suggested link, Open source, Correct this link, Not enough information, Reminder preview and Not connected. An empty capture list says Your saved thoughts appear here. Tentative plans retain words such as might. Mark illustrative content Sample memories and simulated results Demo interpretation. Preserve original source language and label translations separately.",
+    "avoid": [
+      "Generic Items or Records when Thoughts or Sources is clearer",
+      "Welcome back slogans",
+      "Claims that demo data was processed privately on-device",
+      "Presenting interpretation as a person's proven intent",
+      "Calling a tentative plan a commitment",
+      "Technical implementation language in ordinary capture flows"
+    ]
+  }
+}

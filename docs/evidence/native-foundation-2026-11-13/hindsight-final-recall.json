@@ -1,0 +1,1040 @@
+{
+  "results": [
+    {
+      "id": "9e02ebd1-8991-4d02-96c7-d4405ffdebbe",
+      "text": "C20 foundation items are marked complete: the native project, shared scheme, Capture and sidebar routes, system fonts, and shared controls exist, and the simulator build passes. The verification record is `docs/verification/2026-11-13-swiftui-foundation.md`. | When: November 13, 2026 | These are the documented verified outcomes for the current foundation step.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "sidebar",
+        "simulator build",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-13T18:16:04.854846+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "2d0a7b46a6b26525bb9c0cb11199074d985848c11742b0ae5534a3faa96d2b8f",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.099579413950742,
+        "reranker": null,
+        "semantic": 0.8274965985121385,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "c43b5470-deee-4091-96e9-8be8ad00c03c",
+      "text": "Final corrected automated verification passed 4 tests with 0 failures (`TEST SUCCEEDED`), including the Arabic regression that selects Arabic through Settings, returns to Capture, verifies the Arabic label, and checks that the closed Settings row is outside the screen. Evidence is retained in `../evidence/native-foundation-2026-11-13/tests-passed.log` and `native/.build/FoundationRTLFinal.xcresult`. | When: November 13, 2026 | This verifies the corrected source behavior, including RTL drawer positioning.",
+      "type": "world",
+      "entities": [
+        "capture",
+        "RTL",
+        "Arabic",
+        "memoryos",
+        "native/.build/FoundationFinal.xcresult",
+        "Settings"
+      ],
+      "context": "Authoritative project source docs/verification/2026-11-13-swiftui-foundation.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-13T18:23:09.489392+00:00",
+      "document_id": "repo:docs/verification/2026-11-13-swiftui-foundation.md",
+      "metadata": {
+        "sha256": "bce0a15909c993ed56e4d8bd5bae5b717a6aa3ea00c851a73951bb2aa1325632",
+        "source_path": "docs/verification/2026-11-13-swiftui-foundation.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/verification/2026-11-13-swiftui-foundation.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0962696432027477,
+        "reranker": null,
+        "semantic": 0.8799794387829654,
+        "keyword": 1.7000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "41f7c183-1e69-49b8-9f68-7afb0a92b2c5",
+      "text": "On November 13, 2026, the production build and TypeScript check passed; the build compiles the app-owned Astryx theme first. Fourteen browser flow groups also passed, covering capture, recording simulation, attachments, navigation/focus, search and empty states, person questions, linked records, source access, birthdays, map/list views, language switching, and reload reset. | When: November 13, 2026 | Verified prototype build and browser-flow outcome.",
+      "type": "world",
+      "entities": [
+        "TypeScript",
+        "Astryx",
+        "astryx-prototype"
+      ],
+      "context": "Authoritative project source docs/design/astryx-prototype.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.030000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.030000+00:00",
+      "mentioned_at": "2026-11-13T15:25:24.766104+00:00",
+      "document_id": "repo:docs/design/astryx-prototype.md",
+      "metadata": {
+        "sha256": "83ab167811d0b621fecff2c892c1bea9a02749e416ba0bfa4b30cdf50e42bcb7",
+        "source_path": "docs/design/astryx-prototype.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/astryx-prototype.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0929598724543717,
+        "reranker": null,
+        "semantic": 0.8310909271240293,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "4073b2a6-be43-4016-9c18-b1950ee3666f",
+      "text": "Pre-RTL-fix automated verification passed 3 tests with 0 failures (`TEST SUCCEEDED`), but the final menu-reopen check and an assertion that the drawer did not exist failed because XCTest retains off-screen elements. The test bundle is `native/.build/FoundationFinal.xcresult`; source: `docs/verification/2026-11-13-swiftui-foundation.md`. | When: November 13, 2026 | The drawer's intended behavior is off-screen positioning with disabled hit testing, not removal from the view tree.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "XCTest",
+        "docs/verification/2026-11-13-swiftui-foundation.md",
+        "memoryos",
+        "native/.build/FoundationFinal.xcresult"
+      ],
+      "context": "Authoritative project source docs/verification/2026-11-13-swiftui-foundation.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T23:59:59+00:00",
+      "mentioned_at": "2026-11-13T18:23:09.469392+00:00",
+      "document_id": "repo:docs/verification/2026-11-13-swiftui-foundation.md",
+      "metadata": {
+        "sha256": "bce0a15909c993ed56e4d8bd5bae5b717a6aa3ea00c851a73951bb2aa1325632",
+        "source_path": "docs/verification/2026-11-13-swiftui-foundation.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/verification/2026-11-13-swiftui-foundation.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0896501014542264,
+        "reranker": null,
+        "semantic": 0.8653075098991455,
+        "keyword": 1.399999976158142
+      },
+      "attachments": null
+    },
+    {
+      "id": "a970739f-ac10-464f-b224-14883a10d965",
+      "text": "The Arabic visual check found a closed-drawer strip on the opposite edge because an extra RTL sign change was applied to an offset that SwiftUI already mirrors. The correction uses one negative horizontal offset for both directions; the pre-fix failure image is retained at `../evidence/native-foundation-2026-11-13/capture-ar-before-fix.png`. | When: November 13, 2026 | The RTL offset correction removes the visible closed-drawer strip.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "RTL",
+        "drawer",
+        "Arabic",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/verification/2026-11-13-swiftui-foundation.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-13T18:23:09.479392+00:00",
+      "document_id": "repo:docs/verification/2026-11-13-swiftui-foundation.md",
+      "metadata": {
+        "sha256": "bce0a15909c993ed56e4d8bd5bae5b717a6aa3ea00c851a73951bb2aa1325632",
+        "source_path": "docs/verification/2026-11-13-swiftui-foundation.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/verification/2026-11-13-swiftui-foundation.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0863403307058501,
+        "reranker": null,
+        "semantic": 0.8601648890873871,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "75c12960-4040-4101-a926-10edc23d25ff",
+      "text": "On November 13, 2026, the checked browser flows reported no console errors, page errors, or external requests. Astryx's build diagnostic reported 12 passing checks with no warnings or failures; its source diagnostic reported no failures but retained one warning group for custom styles and SVG use. | When: November 13, 2026 | Verified diagnostic results, with the source warning explicitly unresolved/retained.",
+      "type": "world",
+      "entities": [
+        "Astryx",
+        "SVG",
+        "custom styles"
+      ],
+      "context": "Authoritative project source docs/design/astryx-prototype.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.050000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.050000+00:00",
+      "mentioned_at": "2026-11-13T15:25:24.786104+00:00",
+      "document_id": "repo:docs/design/astryx-prototype.md",
+      "metadata": {
+        "sha256": "83ab167811d0b621fecff2c892c1bea9a02749e416ba0bfa4b30cdf50e42bcb7",
+        "source_path": "docs/design/astryx-prototype.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/astryx-prototype.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0830305601444876,
+        "reranker": null,
+        "semantic": 0.8259824618111589,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "53c18a1e-4102-48c6-834e-bd46558129fa",
+      "text": "On November 13, 2026, all five sections fit at 320, 390, 430, and 1280 CSS pixels in English and Arabic—40 screen/width combinations—with no horizontal-overflow failures. The final layout check confirmed Arabic map links mirror with their nodes and the sidebar aligns with the preview's top and bottom edges. | When: November 13, 2026 | Verified responsive layout and bidirectional-layout behavior.",
+      "type": "world",
+      "entities": [
+        "English",
+        "Arabic",
+        "Astryx"
+      ],
+      "context": "Authoritative project source docs/design/astryx-prototype.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.040000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.040000+00:00",
+      "mentioned_at": "2026-11-13T15:25:24.776104+00:00",
+      "document_id": "repo:docs/design/astryx-prototype.md",
+      "metadata": {
+        "sha256": "83ab167811d0b621fecff2c892c1bea9a02749e416ba0bfa4b30cdf50e42bcb7",
+        "source_path": "docs/design/astryx-prototype.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/astryx-prototype.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0797207892702267,
+        "reranker": null,
+        "semantic": 0.8531511767759603,
+        "keyword": 1.2000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "e8a58f35-6857-48fc-97ef-b45c1130f745",
+      "text": "On November 13, 2026, C20 authorized the native SwiftUI foundation and a device readiness check. The authorized scope is limited to the supplied Capture/sidebar references, navigation, typography, shared controls, and temporary demo interactions; publication, deployment, purchase, and release require separate authorization. | When: November 13, 2026 | Involving: Project owner | This is an explicit current project decision, not proof that implementation has occurred.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "C20",
+        "sidebar",
+        "Eros MemoryOS"
+      ],
+      "context": "Authoritative project source AGENTS.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T00:00:00+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.529913+00:00",
+      "document_id": "repo:AGENTS.md",
+      "metadata": {
+        "sha256": "c78f3318c3a8559fa3d6c0690e246b0ef43cf968b3332324bbed87d3763d9628",
+        "source_path": "AGENTS.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:AGENTS.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.076411018210098,
+        "reranker": null,
+        "semantic": 0.8308270078404556,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "9e169e62-b507-4c28-b02b-510727405456",
+      "text": "As of November 13, 2026, the native SwiftUI foundation passes a simulator build and four UI tests. It includes Capture, hidden sidebar navigation, system typography, shared controls, English/Arabic interface text, and temporary demo memories; other sections currently have navigation placeholders. | When: November 13, 2026 | Verified status recorded in the authoritative project README.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "English",
+        "UI tests",
+        "Arabic",
+        "Eros MemoryOS",
+        "README.md"
+      ],
+      "context": "Authoritative project source README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-13T18:23:09.490751+00:00",
+      "document_id": "repo:README.md",
+      "metadata": {
+        "sha256": "dc3fc4d3a2222e545bfd335c70ca6f1fb01554cb1bda3958c044bb8d69f9a343",
+        "source_path": "README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:README.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0731012475228505,
+        "reranker": null,
+        "semantic": 0.8478219509124816,
+        "keyword": 1.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "32e72757-b412-49a1-8ace-6c55ce4f004c",
+      "text": "The People, Projects, Birthdays, and BrainMap screen-layout proposal was rejected by the owner on 2026-11-12; its proposal and interactive study must be preserved as design history. A new reference-led localhost lab replaces it as the current exploration. | When: November 12, 2026 | Involving: Project owner; owner source C13 in ../reference/source-register.md | This document records a rejected design direction, not the current exploration.",
+      "type": "world",
+      "entities": [
+        "BrainMap",
+        "birthdays",
+        "C13",
+        "new reference-led localhost lab",
+        "memoryos",
+        "projects",
+        "people"
+      ],
+      "context": "Authoritative project source docs/design/screen-layouts.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-12T00:00:00+00:00",
+      "occurred_end": "2026-11-12T00:00:00+00:00",
+      "mentioned_at": "2026-11-12T14:15:30.851354+00:00",
+      "document_id": "repo:docs/design/screen-layouts.md",
+      "metadata": {
+        "sha256": "53f0b618491891e969e4bbbe0271ace59357390dec6020d59b82001b49b1a6b7",
+        "source_path": "docs/design/screen-layouts.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/design/screen-layouts.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.069258375383104,
+        "reranker": null,
+        "semantic": 0.826174756744533,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "096cddd3-eb33-46b0-a1cf-cc4f6c7b48d8",
+      "text": "The two supplied Capture/sidebar screenshots were restored as the active reference for the native step, superseding the intervening C19 browser proposal. | When: November 13, 2026 | Involving: MemoryOS project owner/source C20 | They define the active visual reference for the authorized native implementation.",
+      "type": "world",
+      "entities": [
+        "capture",
+        "C20",
+        "sidebar",
+        "memoryos",
+        "C19"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-13T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-13T18:08:26.709961+00:00",
+      "document_id": "correction-memoryos-native-implementation-status-and-active-reference",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-native-implementation-status-and-active-reference_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0664817058385123,
+        "reranker": null,
+        "semantic": 0.8105803244960129,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "0816e6d5-6ae6-414d-8d66-296901e1aab4",
+      "text": "As of the 2026-11-13 update (C20), the owner selected the supplied Capture/sidebar screenshots and authorized implementation of the native SwiftUI foundation plus a device-connection check. Native source now exists under `native/` and the simulator build passes; this snapshot is not proof of full implementation. | When: November 13, 2026 | Involving: Project owner | Records the selected scope and current implementation status.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "native/",
+        "capture",
+        "sidebar",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T23:59:59+00:00",
+      "mentioned_at": "2026-11-13T18:16:04.844846+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "2d0a7b46a6b26525bb9c0cb11199074d985848c11742b0ae5534a3faa96d2b8f",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0631719349659696,
+        "reranker": null,
+        "semantic": 0.8322787532889564,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "c3d30c80-be78-48fd-baf1-43b8a703ab2f",
+      "text": "New initiative: create an isolated, clickable browser design prototype for Astryx MemoryOS using the installed Astryx design system, fictional sample data, and the retained Capture/sidebar image plus current home-style instructions across Capture, People and person details, Projects, Birthdays, and BrainMap. Source: [[page:kp-45d072e221ad45948dfe1735704153d8]]. | When: Friday, November 13, 2026 | Involving: MemoryOS project owner | This authorizes design exploration only; it does not authorize live AI, real recording, imports, provider connections, publication, or a native release.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "BrainMap",
+        "birthdays",
+        "Astryx MemoryOS",
+        "Astryx design system",
+        "projects",
+        "people"
+      ],
+      "context": "initiative marker for [[page:kp-45d072e221ad45948dfe1735704153d8]]",
+      "occurred_start": "2026-11-13T14:07:16.429080+00:00",
+      "occurred_end": "2026-11-13T14:07:16.429080+00:00",
+      "mentioned_at": "2026-11-13T14:07:16.429080+00:00",
+      "document_id": "initiative-marker-astryx-memoryos-design-prototype-1794578835915",
+      "metadata": {
+        "relatedPageId": "kp-45d072e221ad45948dfe1735704153d8"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-astryx-memoryos-design-prototype-1794578835915_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0601729213648503,
+        "reranker": null,
+        "semantic": 0.8053240296051499,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "f093a8f6-21e8-4bdb-a778-4b936d250eca",
+      "text": "Native project sources now exist under native/MemoryOS and native/MemoryOS.xcodeproj, and the initial iOS simulator build succeeded with Xcode 27.2. | When: November 13, 2026 | Involving: MemoryOS engineering project | This is the verified implementation and build outcome for the initial native SwiftUI step.",
+      "type": "world",
+      "entities": [
+        "Xcode 27.2",
+        "memoryos",
+        "native/MemoryOS",
+        "native/MemoryOS.xcodeproj",
+        "iOS Simulator"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-13T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-13T18:08:26.719961+00:00",
+      "document_id": "correction-memoryos-native-implementation-status-and-active-reference",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-native-implementation-status-and-active-reference_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0565523934657812,
+        "reranker": null,
+        "semantic": 0.8049402353203171,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "66db906b-f602-4120-b21d-65e1c1c020ae",
+      "text": "C20 explicitly authorizes changing MemoryOS scope from the older browser-only prototype to a native SwiftUI step covering the foundation, navigation, fonts, shared controls, and an iPhone readiness check. | When: November 13, 2026 | Involving: MemoryOS project owner/source C20 | This is a current-scope change and does not retroactively approve older browser screens.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "native app delivery",
+        "C20",
+        "memoryos"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T23:59:59+00:00",
+      "mentioned_at": "2026-11-13T18:08:26.699961+00:00",
+      "document_id": "correction-memoryos-native-implementation-status-and-active-reference",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-native-implementation-status-and-active-reference_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0532426225328735,
+        "reranker": null,
+        "semantic": 0.8148291927779683,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "8822589c-a0c3-41b0-a9f5-3b3ebd1852bc",
+      "text": "On November 12, the owner rejected the first layout proposal and all five later reference directions, selecting `designs/references/capture-sidebar-owner-reference-2026-11-07.png` as the app's visual authority. | When: November 12, 2026 | Involving: The project owner | This decision is established by the current `README.md`, `.impeccable.md`, `docs/design/home-style.md`, and source C15 in `docs/reference/source-register.md`.",
+      "type": "world",
+      "entities": [
+        "memoryos",
+        "docs/design/home-style.md",
+        "designs/references/capture-sidebar-owner-reference-2026-11-07.png",
+        ".impeccable.md",
+        "docs/reference/source-register.md",
+        "README.md"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-12T00:00:00+00:00",
+      "occurred_end": "2026-11-12T00:00:00+00:00",
+      "mentioned_at": "2026-11-13T14:07:15.904064+00:00",
+      "document_id": "correction-memoryos-design-lab-current-visual-authority",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-design-lab-current-visual-authority_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0494096465172782,
+        "reranker": null,
+        "semantic": 0.8210858809300746,
+        "keyword": 0.20000000298023224
+      },
+      "attachments": null
+    },
+    {
+      "id": "552ac6e8-4e79-4389-aa48-efe646ec4b5b",
+      "text": "On November 13, 2026, the checked Astryx browser flows reported no console errors, page errors, or external requests. The production build and TypeScript check passed, with the app-owned Astryx theme compiled first, and 14 browser flow groups passed across capture, recording simulation, attachments, navigation/focus, search and empty states, person questions, linked records, source access, birthdays, map/list views, language switching, and reload reset. Astryx's build diagnostic reported 12 passing checks with no warnings or failures, while the source diagnostic reported no failures but retained one unresolved warning group for custom styles and SVG use.",
+      "type": "observation",
+      "entities": [
+        "TypeScript",
+        "Astryx",
+        "SVG",
+        "astryx-prototype",
+        "custom styles"
+      ],
+      "context": null,
+      "occurred_start": "2026-11-13T00:00:00.030000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.050000+00:00",
+      "mentioned_at": "2026-11-13T15:25:24.786104+00:00",
+      "document_id": null,
+      "metadata": {},
+      "chunk_id": null,
+      "tags": [
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0472122946802465,
+        "reranker": null,
+        "semantic": 0.8252288803321806,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "6c8219a1-41a5-49f4-bd36-cb4ef0ed3745",
+      "text": "The initiative owner rejected the November 12, 2026 layouts and requested deep online reference research plus distinct design variants for People, Projects, Birthdays, and BrainMap. | When: November 12, 2026 | Involving: MemoryOS initiative owner | The existing layouts were not accepted as the basis for the design exploration.",
+      "type": "world",
+      "entities": [
+        "BrainMap",
+        "birthdays",
+        "memoryos",
+        "projects",
+        "people"
+      ],
+      "context": "initiative marker for [[page:kp-d5edd40300314ab3a44be19dd9970798]]",
+      "occurred_start": "2026-11-12T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-12T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-12T14:15:07.936597+00:00",
+      "document_id": "initiative-marker-memoryos-design-reference-and-annotation-lab-1794492904099",
+      "metadata": {
+        "relatedPageId": "kp-d5edd40300314ab3a44be19dd9970798"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-memoryos-design-reference-and-annotation-lab-1794492904099_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0461015251000056,
+        "reranker": null,
+        "semantic": 0.8118990175784234,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "e5f09fd6-f94f-44cc-a727-f45986a5179b",
+      "text": "As of the verification snapshot in `docs/verification/2026-11-13-swiftui-foundation.md`, VoiceOver focus order, Reduce Motion behavior, physical-iPhone keyboard and safe-area behavior, and older iOS versions still require dedicated checks. The documented accessibility measures (labels, minimum 44-point controls, Dynamic Type, focus requests, escape action, and reduced-motion handling) do not constitute a full accessibility audit. | When: Friday, November 13, 2026 | The source is an authoritative status snapshot, not proof of complete implementation or verification.",
+      "type": "world",
+      "entities": [
+        "Dynamic Type",
+        "iOS",
+        "reduced-motion",
+        "Eros MemoryOS",
+        "VoiceOver"
+      ],
+      "context": "Authoritative project source docs/verification/2026-11-13-swiftui-foundation.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T18:23:09.469392+00:00",
+      "occurred_end": "2026-11-13T18:23:09.469392+00:00",
+      "mentioned_at": "2026-11-13T18:23:09.469392+00:00",
+      "document_id": "repo:docs/verification/2026-11-13-swiftui-foundation.md",
+      "metadata": {
+        "sha256": "bce0a15909c993ed56e4d8bd5bae5b717a6aa3ea00c851a73951bb2aa1325632",
+        "source_path": "docs/verification/2026-11-13-swiftui-foundation.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/verification/2026-11-13-swiftui-foundation.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0437116010473317,
+        "reranker": null,
+        "semantic": 0.8292060698025143,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "89993853-bea3-4590-896d-ac342521486b",
+      "text": "Decision D24: Create the SwiftUI foundation and check device readiness using the supplied Capture and sidebar screenshots. C20 authorizes native project setup, navigation, fonts, shared controls, and connection checks, superseding D09's no-build boundary for this step only; it does not authorize live recording, AI, imports, production storage, publication, or release. | When: November 13, 2026 | Involving: Project memoryos | This is an authorization for foundation setup and readiness checks, not proof that implementation occurred.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "C20",
+        "sidebar screenshots",
+        "D09",
+        "memoryos",
+        "docs/decisions/decision-register.md"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.090000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.090000+00:00",
+      "mentioned_at": "2026-11-13T18:05:56.622714+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "3a76b667612626a42e20c9ece5f998da370823c84e71794d7c01c7238980320a",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_2",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0366937690158462,
+        "reranker": null,
+        "semantic": 0.8257242545053822,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "149131b9-a11d-4907-b541-085572449224",
+      "text": "The transcription requirement includes Arabic and English, including mixed Arabic/English speech; English-only models ending in `.en` do not satisfy it. Accuracy is unverified and must be tested on an iPhone 15 Pro Max using Iraqi Arabic, mixed-language speech, names, dates, quiet speech, and background noise. Transcription should remain in the source language; translation is a separate choice. | When: November 7, 2026 | Involving: memoryos project | Language capability alone does not establish acceptable accuracy.",
+      "type": "world",
+      "entities": [
+        "English",
+        "Arabic",
+        "memoryos",
+        "whisper.cpp",
+        "WhisperKit",
+        "Iraqi Arabic",
+        "iPhone 15 Pro Max"
+      ],
+      "context": "Authoritative project source docs/decisions/audio-recording-and-transcription.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-07T00:00:00.040000+00:00",
+      "occurred_end": "2026-11-07T23:59:59.040000+00:00",
+      "mentioned_at": "2026-11-07T15:02:14.938623+00:00",
+      "document_id": "repo:docs/decisions/audio-recording-and-transcription.md",
+      "metadata": {
+        "sha256": "76970f387205f0b6ecf8a5d3cd25bed3e6c7f21a6af8dfae0fe0ee94f0f948d7",
+        "source_path": "docs/decisions/audio-recording-and-transcription.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/audio-recording-and-transcription.md_0",
+      "tags": [
+        "kind:decision",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0302942466795413,
+        "reranker": null,
+        "semantic": 0.8264552561694078,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "6e7c5db5-fe52-4eb7-b12d-5b3190fd1ce5",
+      "text": "On 2026-11-12, the owner explicitly rejected the previously proposed layouts and interactive layout study in docs/design/screen-layouts.md. | When: November 12, 2026 | Involving: Project owner | The prior proposal must be preserved only as rejected history.",
+      "type": "world",
+      "entities": [
+        "docs/design/screen-layouts.md",
+        "memoryos",
+        "interactive study"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-12T00:00:00+00:00",
+      "occurred_end": "2026-11-12T23:59:59+00:00",
+      "mentioned_at": "2026-11-12T14:37:22.897049+00:00",
+      "document_id": "correction-november-12-four-screen-layouts-rejected",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-november-12-four-screen-layouts-rejected_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0163284317409016,
+        "reranker": null,
+        "semantic": 0.8303149938583433,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    }
+  ],
+  "trace": null,
+  "entities": {
+    "SwiftUI": {
+      "entity_id": "00138a1f-a0e0-41bd-a564-3124295f9f55",
+      "canonical_name": "SwiftUI",
+      "observations": []
+    },
+    "capture": {
+      "entity_id": "0f124364-654e-4664-8adc-1ecd80edacbb",
+      "canonical_name": "capture",
+      "observations": []
+    },
+    "sidebar": {
+      "entity_id": "5a920b86-6a15-4bb4-bc6f-bfa7a3389f05",
+      "canonical_name": "sidebar",
+      "observations": []
+    },
+    "simulator build": {
+      "entity_id": "60dd63c4-159c-4bd2-a51f-a6c8de467a69",
+      "canonical_name": "simulator build",
+      "observations": []
+    },
+    "memoryos": {
+      "entity_id": "6f1f3ee3-9405-473e-9b40-924988e4cebb",
+      "canonical_name": "memoryos",
+      "observations": []
+    },
+    "RTL": {
+      "entity_id": "40e194e9-96d9-4d0d-8873-03a529aea6d9",
+      "canonical_name": "RTL",
+      "observations": []
+    },
+    "Arabic": {
+      "entity_id": "689441f3-37d2-4758-80f6-50938a1a0034",
+      "canonical_name": "Arabic",
+      "observations": []
+    },
+    "native/.build/FoundationFinal.xcresult": {
+      "entity_id": "754c7b64-2fac-4cd1-827c-627595105c35",
+      "canonical_name": "native/.build/FoundationFinal.xcresult",
+      "observations": []
+    },
+    "Settings": {
+      "entity_id": "c1810da4-d473-4866-965d-67176a4ec79a",
+      "canonical_name": "Settings",
+      "observations": []
+    },
+    "TypeScript": {
+      "entity_id": "78ee7d41-4c47-495e-a641-344123236ea5",
+      "canonical_name": "TypeScript",
+      "observations": []
+    },
+    "Astryx": {
+      "entity_id": "a345ebbc-e592-4e74-995e-c4cb6011baea",
+      "canonical_name": "Astryx",
+      "observations": []
+    },
+    "astryx-prototype": {
+      "entity_id": "d513d30a-47c3-4983-beba-5bc899df117c",
+      "canonical_name": "astryx-prototype",
+      "observations": []
+    },
+    "XCTest": {
+      "entity_id": "5bbcf934-e1ca-44c6-83d0-c48ee71e6408",
+      "canonical_name": "XCTest",
+      "observations": []
+    },
+    "docs/verification/2026-11-13-swiftui-foundation.md": {
+      "entity_id": "69950bb0-b5ab-4662-99ba-e65dad2ae4fc",
+      "canonical_name": "docs/verification/2026-11-13-swiftui-foundation.md",
+      "observations": []
+    },
+    "drawer": {
+      "entity_id": "46268e2c-8f98-493f-8fbe-a8c289ebde9b",
+      "canonical_name": "drawer",
+      "observations": []
+    },
+    "SVG": {
+      "entity_id": "c80cead6-3985-46c1-8673-5c8071a65232",
+      "canonical_name": "SVG",
+      "observations": []
+    },
+    "custom styles": {
+      "entity_id": "e4a3aab2-7647-402f-b00b-b16fb6ea08d6",
+      "canonical_name": "custom styles",
+      "observations": []
+    },
+    "English": {
+      "entity_id": "23c57e1e-b10d-4de5-9739-200c0ba0d801",
+      "canonical_name": "English",
+      "observations": []
+    },
+    "C20": {
+      "entity_id": "27491c69-15f3-4fa9-a27b-d8fe43e2acf0",
+      "canonical_name": "C20",
+      "observations": []
+    },
+    "Eros MemoryOS": {
+      "entity_id": "ad223ee8-dfd6-49a3-b62b-1c19b3aa754c",
+      "canonical_name": "Eros MemoryOS",
+      "observations": []
+    },
+    "UI tests": {
+      "entity_id": "3dd1f5a6-09af-4112-8e8a-07ff9a127704",
+      "canonical_name": "UI tests",
+      "observations": []
+    },
+    "README.md": {
+      "entity_id": "f52c8375-ee97-4f13-9091-4aa7bf452706",
+      "canonical_name": "README.md",
+      "observations": []
+    },
+    "BrainMap": {
+      "entity_id": "1a44775f-0343-420a-b4e8-18c536e1d7fa",
+      "canonical_name": "BrainMap",
+      "observations": []
+    },
+    "birthdays": {
+      "entity_id": "1f4a151f-ef78-4ef6-902e-8d7459c2eca6",
+      "canonical_name": "birthdays",
+      "observations": []
+    },
+    "C13": {
+      "entity_id": "3425d729-17be-4d95-b21f-a629bdfc9b6b",
+      "canonical_name": "C13",
+      "observations": []
+    },
+    "new reference-led localhost lab": {
+      "entity_id": "65d10870-0dea-42b8-b5e0-5065329ebfa3",
+      "canonical_name": "new reference-led localhost lab",
+      "observations": []
+    },
+    "projects": {
+      "entity_id": "af7b6d6a-84d8-4de6-b908-7be7d8452e93",
+      "canonical_name": "projects",
+      "observations": []
+    },
+    "people": {
+      "entity_id": "c383c298-6268-47e7-9898-3c6daefc00d9",
+      "canonical_name": "people",
+      "observations": []
+    },
+    "C19": {
+      "entity_id": "86255125-f613-4d63-ba04-efc9a32b32c9",
+      "canonical_name": "C19",
+      "observations": []
+    },
+    "native/": {
+      "entity_id": "052cb0d0-9275-4dc9-9bf5-c2f5b1844b68",
+      "canonical_name": "native/",
+      "observations": []
+    },
+    "Astryx MemoryOS": {
+      "entity_id": "5d4023dc-cf3a-4cc7-a5e1-9a735d168afc",
+      "canonical_name": "Astryx MemoryOS",
+      "observations": []
+    },
+    "Astryx design system": {
+      "entity_id": "a53986e5-4ccf-4be5-96ab-19b20a9df476",
+      "canonical_name": "Astryx design system",
+      "observations": []
+    },
+    "Xcode 27.2": {
+      "entity_id": "42805c72-5f16-41d3-8f1c-28605706c1cb",
+      "canonical_name": "Xcode 27.2",
+      "observations": []
+    },
+    "native/MemoryOS": {
+      "entity_id": "7be479a4-8b8d-4b93-9c54-46019c0a1f10",
+      "canonical_name": "native/MemoryOS",
+      "observations": []
+    },
+    "native/MemoryOS.xcodeproj": {
+      "entity_id": "8bfcb1ec-ab53-4d53-969a-67d1e7349e24",
+      "canonical_name": "native/MemoryOS.xcodeproj",
+      "observations": []
+    },
+    "iOS Simulator": {
+      "entity_id": "f34b83c6-22bf-45be-a16a-bfb9b8b85f48",
+      "canonical_name": "iOS Simulator",
+      "observations": []
+    },
+    "native app delivery": {
+      "entity_id": "11f531ac-c214-486e-afeb-a6fdd865eebf",
+      "canonical_name": "native app delivery",
+      "observations": []
+    },
+    "docs/design/home-style.md": {
+      "entity_id": "707d475d-15a3-4c6b-9fba-bf6a25f05c5a",
+      "canonical_name": "docs/design/home-style.md",
+      "observations": []
+    },
+    "designs/references/capture-sidebar-owner-reference-2026-11-07.png": {
+      "entity_id": "8e89afb4-978a-4475-8608-7d8e99542ec4",
+      "canonical_name": "designs/references/capture-sidebar-owner-reference-2026-11-07.png",
+      "observations": []
+    },
+    ".impeccable.md": {
+      "entity_id": "aa550664-e7c0-4ec3-9966-4088a9742a16",
+      "canonical_name": ".impeccable.md",
+      "observations": []
+    },
+    "docs/reference/source-register.md": {
+      "entity_id": "b37c4b14-dbe6-4ea7-82c5-7f3c16727529",
+      "canonical_name": "docs/reference/source-register.md",
+      "observations": []
+    },
+    "Dynamic Type": {
+      "entity_id": "1f00aa81-02c3-4ddd-8177-a59b5dc4a97e",
+      "canonical_name": "Dynamic Type",
+      "observations": []
+    },
+    "iOS": {
+      "entity_id": "26f2cfba-adce-41e6-b77b-8e13f488e39e",
+      "canonical_name": "iOS",
+      "observations": []
+    },
+    "reduced-motion": {
+      "entity_id": "a4eb9bff-9ff0-491a-8600-3fed4d2ea7f8",
+      "canonical_name": "reduced-motion",
+      "observations": []
+    },
+    "VoiceOver": {
+      "entity_id": "b8087f17-d69f-4429-a99d-bc46ce00c1e6",
+      "canonical_name": "VoiceOver",
+      "observations": []
+    },
+    "sidebar screenshots": {
+      "entity_id": "45996fea-1933-4d1f-8de5-cefa7c557bf4",
+      "canonical_name": "sidebar screenshots",
+      "observations": []
+    },
+    "D09": {
+      "entity_id": "4c3d4c1f-c7d4-425a-a81e-db5c8aadb5b3",
+      "canonical_name": "D09",
+      "observations": []
+    },
+    "docs/decisions/decision-register.md": {
+      "entity_id": "7c65f49b-bbaf-484f-9221-60058080dd15",
+      "canonical_name": "docs/decisions/decision-register.md",
+      "observations": []
+    },
+    "whisper.cpp": {
+      "entity_id": "748c151d-6a19-4638-944a-316f20dba130",
+      "canonical_name": "whisper.cpp",
+      "observations": []
+    },
+    "WhisperKit": {
+      "entity_id": "c91af871-37b1-4211-8034-228dd11033ef",
+      "canonical_name": "WhisperKit",
+      "observations": []
+    },
+    "Iraqi Arabic": {
+      "entity_id": "d28c75a5-1ea8-40eb-9f1d-bc7058f6e3d7",
+      "canonical_name": "Iraqi Arabic",
+      "observations": []
+    },
+    "iPhone 15 Pro Max": {
+      "entity_id": "e768012f-1827-400c-85d0-298925d724e4",
+      "canonical_name": "iPhone 15 Pro Max",
+      "observations": []
+    },
+    "docs/design/screen-layouts.md": {
+      "entity_id": "59ff27b3-e654-4dec-87bc-b5b5a2726127",
+      "canonical_name": "docs/design/screen-layouts.md",
+      "observations": []
+    },
+    "interactive study": {
+      "entity_id": "9fe0f9b6-42ed-4459-8f0c-41628b39b837",
+      "canonical_name": "interactive study",
+      "observations": []
+    }
+  },
+  "chunks": null,
+  "source_facts": null,
+  "source_facts_truncated": null
+}
