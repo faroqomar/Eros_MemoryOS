@@ -1,0 +1,45 @@
+docs/evidence/workflow-2026-11-14/cleanup.json
+  s_07c6de7c923515::t_f3fd8585e51df2 1-66
+docs/templates/development-task.md
+  s_07c6de7c923515::t_1cacc40ebabb51 15-16,33-34,46,66-67,82,86-88
+docs/how-to/agent-skills.md
+  s_07c6de7c923515::t_1cacc40ebabb51 44
+docs/how-to/development-workflow.md
+  s_07c6de7c923515::t_1cacc40ebabb51 7-9,15-20,23,30,36,48,63,88,94-95,97,103
+docs/evidence/workflow-2026-11-14/source.json
+  s_07c6de7c923515::t_6e772288b2209f 1-6,15
+  s_07c6de7c923515::t_d0b0d5d9739251 11-14
+  s_07c6de7c923515::t_42265b71a5cea9 7-10
+AGENTS.md
+  s_07c6de7c923515::t_1cacc40ebabb51 42-44,47,50-52,67,69
+README.md
+  s_07c6de7c923515::t_1cacc40ebabb51 11,36
+  s_07c6de7c923515::t_c080f060ce9a21 7,9
+  s_07c6de7c923515::t_98969bea4865c3 10
+docs/decisions/decision-register.md
+  s_07c6de7c923515::t_1cacc40ebabb51 36,40-41
+docs/reference/source-register.md
+  s_07c6de7c923515::t_1cacc40ebabb51 87-88
+  s_07c6de7c923515::t_09e5b55a9e3c91 81
+docs/tasks/2026-11-14-complete-interface-demo.md
+  s_07c6de7c923515::t_1cacc40ebabb51 124
+  s_07c6de7c923515::t_c080f060ce9a21 3,117,123,125-127
+docs/evidence/workflow-2026-11-14/workflow-rules.html
+  s_07c6de7c923515::t_0dafc9c1a04435 1
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e755808f830b6630d66727720aa5bc5ed578e722",
+  "prompts": {},
+  "sessions": {
+    "s_07c6de7c923515": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1da4b-a2f2-74a3-91ce-fd7c1a1c3804",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
