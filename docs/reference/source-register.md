@@ -78,11 +78,13 @@ Owner instruction C28, 2026-11-14: proceed to Step 1 of checklist group 2, the c
 
 Owner instruction C29, 2026-11-14: “step 2” continues the same complete-interface-demo task under the adopted three-step workflow. This authorizes independent verification, in-scope repairs, and affected rechecks. It does not start Step 3 or approve designs, merge, publication, or release. The [task record](../tasks/2026-11-14-complete-interface-demo.md) records the blocked verdict and evidence.
 
-Owner instruction C30, 2026-11-14: “step 3” requests review and delivery for the current complete-interface-demo task. Existing verification and concrete merge-approval requirements still apply.
+Owner instruction C30, 2026-11-14: “step 3” requests review and delivery for the current complete-interface-demo task. At that checkpoint, verification and separate concrete merge approval remained required. C33 later supersedes the separate routine merge-confirmation rule with standing Step 3 authorization; required verification remains.
 
 Owner instruction C31, 2026-11-14: after learning that no remote exists, the owner asks to create a new private GitHub repository, connect it, and treat it as the original/main repository. The resulting canonical repository is [https://github.com/faroqomar/Eros_MemoryOS](https://github.com/faroqomar/Eros_MemoryOS), connected as `origin`, not an upstream-library fork. This authorizes private repository creation and project delivery; it does not approve a failed verification gate or an app release.
 
 Owner instruction C32, 2026-11-14: the owner adds cleanup of dead code and unnecessary junk files to Step 2. Apply it to the current task before project delivery and to future Step 2 work. The [workflow](../how-to/development-workflow.md), task template, and AGENTS.md require consumer checks, protected evidence/source retention, measured cleanup, affected tests, and the existing verifier's focused recheck.
+
+Owner instruction C33, 2026-11-14: the owner asks to allow subagents in Steps 1, 2, and 3 for better results and dependency work; requires Step 2 to clean dead code, useless files, and temporary outputs; requires Step 3 to merge after review/push; and requests screenshots of changes and additions at every step. D33 and the workflow/AGENTS/task template adopt this as a standing rule. It replaces the earlier fixed two-agent limit and separate routine merge confirmation. Required verification and any required product/design acceptance remain; the instruction does not claim that the current app's blocked checks passed or authorize an app release.
 
 ## What changed
 
