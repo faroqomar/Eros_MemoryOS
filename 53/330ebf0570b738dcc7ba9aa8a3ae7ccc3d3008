@@ -1,0 +1,877 @@
+README.md
+  s_07c6de7c923515::t_6a031a28dcb18e 1-73
+docs/how-to/development-workflow.md
+  s_07c6de7c923515::t_6a031a28dcb18e 103-104
+  s_07c6de7c923515::t_ae17b35bf781c8 1-102
+AGENTS.md
+  s_07c6de7c923515::t_ae17b35bf781c8 1-92
+native/verification/interface-demo/step3/source-review.patch
+  s_07c6de7c923515::t_347216cf7958b4 1-277,279-691,919-2120
+  s_07c6de7c923515::t_6a031a28dcb18e 278,692-918
+native/verification/interface-demo/step3/tracking-review.json
+  s_07c6de7c923515::t_d07368553d6cbd 2-4,6-7
+  s_07c6de7c923515::t_f4f2cf4f1c26d4 1,5,8
+  s_07c6de7c923515::t_04fc70943704e1 9
+native/verification/interface-demo/step2/cleanup/cleanup-manifest.json
+  s_07c6de7c923515::t_6a646287c12754 186-192,233-237,280-839
+  s_07c6de7c923515::t_6a4e5d83a30922 152,158-159,165-166,170-171,175-176,180-181,184,193-232,238-279,840-854
+  s_07c6de7c923515::t_14ad6633052d5c 1-151,153-157,160-164,167-169,172-174,177-179,182-183,185,855
+native/verification/interface-demo/step3/source-review.json
+  s_07c6de7c923515::t_6a031a28dcb18e 6,9,53-58
+  s_07c6de7c923515::t_347216cf7958b4 1-5,7-8,10-52,59-127
+docs/templates/development-task.md
+  s_07c6de7c923515::t_ae17b35bf781c8 1-80
+docs/decisions/decision-register.md
+  s_07c6de7c923515::t_6a031a28dcb18e 1-116
+docs/reference/source-register.md
+  s_07c6de7c923515::t_6a031a28dcb18e 1-131
+native/verification/interface-demo/step2/memory-check.log
+  s_07c6de7c923515::t_5e63cdc8d2f943 1-12,14-15
+  s_07c6de7c923515::t_544731248dca32 13
+docs/plans/implementation-checklist.md
+  s_07c6de7c923515::t_6a031a28dcb18e 1-207
+docs/tasks/2026-11-14-complete-interface-demo.md
+  s_07c6de7c923515::t_6a031a28dcb18e 1-162
+.agents/skills/axiom-accessibility/LICENSE
+  s_72160d2911e124::t_cd868af08117cf 1-21
+.agents/skills/axiom-accessibility/SKILL.md
+  s_72160d2911e124::t_95ee09fb93301f 1-161
+.agents/skills/axiom-accessibility/agents/openai.yaml
+  s_72160d2911e124::t_a05ca313eac0dc 1-3
+.agents/skills/axiom-accessibility/skills/accessibility-diag.md
+  s_72160d2911e124::t_a5152192be945d 1-1233
+.agents/skills/axiom-accessibility/skills/ux-flow-audit.md
+  s_72160d2911e124::t_58d803cb3aa755 1-295
+.agents/skills/axiom-accessibility/skills/watchos-a11y.md
+  s_72160d2911e124::t_929ee1c8d0615f 1-321
+.agents/skills/axiom-security/LICENSE
+  s_72160d2911e124::t_2012a44632060b 1-21
+.agents/skills/axiom-security/SKILL.md
+  s_72160d2911e124::t_840d53a82c8adb 1-253
+.agents/skills/axiom-security/agents/openai.yaml
+  s_72160d2911e124::t_b8c1f15363cd1f 1-3
+.agents/skills/axiom-security/skills/agentic-security.md
+  s_72160d2911e124::t_4bea67089912f8 1-259
+.agents/skills/axiom-security/skills/app-attest.md
+  s_72160d2911e124::t_e86e38da191ebf 1-360
+.agents/skills/axiom-security/skills/code-signing-diag.md
+  s_72160d2911e124::t_cd2af8599d0329 1-345
+.agents/skills/axiom-security/skills/code-signing-ref.md
+  s_72160d2911e124::t_6c5930534326ab 1-695
+.agents/skills/axiom-security/skills/code-signing.md
+  s_72160d2911e124::t_52bcdb9aa21cfb 1-451
+.agents/skills/axiom-security/skills/cryptokit-ref.md
+  s_72160d2911e124::t_1f7387baca8251 1-735
+.agents/skills/axiom-security/skills/cryptokit.md
+  s_72160d2911e124::t_98a0b9548da96c 1-428
+.agents/skills/axiom-security/skills/file-protection-ref.md
+  s_72160d2911e124::t_083ff4c75acdab 1-534
+.agents/skills/axiom-security/skills/keychain-diag.md
+  s_72160d2911e124::t_fe7e898533d48c 1-353
+.agents/skills/axiom-security/skills/keychain-ref.md
+  s_72160d2911e124::t_a464c2f2424ffc 1-593
+.agents/skills/axiom-security/skills/keychain.md
+  s_72160d2911e124::t_bcab86ef8a0574 1-541
+.agents/skills/axiom-security/skills/passkeys.md
+  s_72160d2911e124::t_f6653aab607d49 1-481
+.agents/skills/manifest.json
+  s_72160d2911e124::t_07911acac310a3 1-382
+.agents/skills/mobile-ios-design/LICENSE
+  s_72160d2911e124::t_4d3eee6c7e112b 1-21
+.agents/skills/mobile-ios-design/SKILL.md
+  s_72160d2911e124::t_fd303f6339f5ca 1-259
+.agents/skills/mobile-ios-design/references/hig-patterns.md
+  s_72160d2911e124::t_3e8013f184839e 1-529
+.agents/skills/mobile-ios-design/references/ios-navigation.md
+  s_72160d2911e124::t_1a955757f07ffe 1-556
+.agents/skills/mobile-ios-design/references/swiftui-components.md
+  s_72160d2911e124::t_1cdb6e1c506907 1-575
+.agents/skills/swift-concurrency/LICENSE
+  s_72160d2911e124::t_52be199aaacdcf 1-21
+.agents/skills/swift-concurrency/SKILL.md
+  s_72160d2911e124::t_0327e7ed133cce 1-211
+.agents/skills/swift-concurrency/agents/openai.yaml
+  s_72160d2911e124::t_08a840e499b88f 1-6
+.agents/skills/swift-concurrency/references/_index.md
+  s_72160d2911e124::t_8e6e0a23dcc96d 1-52
+.agents/skills/swift-concurrency/references/actors.md
+  s_72160d2911e124::t_34e4c0f5c15053 1-701
+.agents/skills/swift-concurrency/references/async-algorithms.md
+  s_72160d2911e124::t_4fcbdba9e5d011 1-847
+.agents/skills/swift-concurrency/references/async-await-basics.md
+  s_72160d2911e124::t_e82103dbe89136 1-266
+.agents/skills/swift-concurrency/references/async-sequences.md
+  s_72160d2911e124::t_86618d5d287bbf 1-710
+.agents/skills/swift-concurrency/references/core-data.md
+  s_72160d2911e124::t_e37d407d3c492b 1-560
+.agents/skills/swift-concurrency/references/glossary.md
+  s_72160d2911e124::t_077bcc8928e641 1-136
+.agents/skills/swift-concurrency/references/linting.md
+  s_72160d2911e124::t_b325cbea2e81ed 1-155
+.agents/skills/swift-concurrency/references/memory-management.md
+  s_72160d2911e124::t_2d0e8ea0017854 1-569
+.agents/skills/swift-concurrency/references/migration.md
+  s_72160d2911e124::t_e6211eee79fce2 1-1104
+.agents/skills/swift-concurrency/references/observation.md
+  s_72160d2911e124::t_0cb0082cd026c8 1-410
+.agents/skills/swift-concurrency/references/performance.md
+  s_72160d2911e124::t_384d64ae7445ca 1-660
+.agents/skills/swift-concurrency/references/sendable.md
+  s_72160d2911e124::t_7cffd60f057aa1 1-598
+.agents/skills/swift-concurrency/references/tasks.md
+  s_72160d2911e124::t_a8f48489181ac7 1-662
+.agents/skills/swift-concurrency/references/testing.md
+  s_72160d2911e124::t_70fd71fa914d29 1-592
+.agents/skills/swift-concurrency/references/threading.md
+  s_72160d2911e124::t_1c0912be433a98 1-541
+.agents/skills/swift-package-manager/LICENSE
+  s_72160d2911e124::t_b90c02bd16bcde 1-21
+.agents/skills/swift-package-manager/SKILL.md
+  s_72160d2911e124::t_11022513862096 1-85
+.agents/skills/swift-testing-expert/LICENSE
+  s_72160d2911e124::t_86e09575c5264b 1-21
+.agents/skills/swift-testing-expert/SKILL.md
+  s_72160d2911e124::t_fa73fafba998ec 1-79
+.agents/skills/swift-testing-expert/references/_index.md
+  s_72160d2911e124::t_9ac3b4fd7b4904 1-12
+.agents/skills/swift-testing-expert/references/async-testing-and-waiting.md
+  s_72160d2911e124::t_d63238f160bb76 1-127
+.agents/skills/swift-testing-expert/references/expectations.md
+  s_72160d2911e124::t_236116349e3640 1-145
+.agents/skills/swift-testing-expert/references/fundamentals.md
+  s_72160d2911e124::t_61f11623343ebf 1-141
+.agents/skills/swift-testing-expert/references/migration-from-xctest.md
+  s_72160d2911e124::t_74c5fb9c2c3a87 1-127
+.agents/skills/swift-testing-expert/references/parallelization-and-isolation.md
+  s_72160d2911e124::t_a89d2508e39801 1-95
+.agents/skills/swift-testing-expert/references/parameterized-testing.md
+  s_72160d2911e124::t_baeef2a8540f62 1-284
+.agents/skills/swift-testing-expert/references/performance-and-best-practices.md
+  s_72160d2911e124::t_1a131dfb99b38b 1-187
+.agents/skills/swift-testing-expert/references/traits-and-tags.md
+  s_72160d2911e124::t_49eade42bd4c9c 1-114
+.agents/skills/swift-testing-expert/references/xcode-workflows.md
+  s_72160d2911e124::t_ce18da3e3cbb73 1-70
+.agents/skills/swiftui-expert-skill/LICENSE
+  s_72160d2911e124::t_1e70c6ed7c4f0a 1-21
+.agents/skills/swiftui-expert-skill/SKILL.md
+  s_72160d2911e124::t_ee94ced68944d6 1-158
+.agents/skills/swiftui-expert-skill/agents/openai.yaml
+  s_72160d2911e124::t_4152718d83d781 1-6
+.agents/skills/swiftui-expert-skill/assets/logo.svg
+  s_72160d2911e124::t_a2e4cbba6c72d1 1-23
+.agents/skills/swiftui-expert-skill/references/accessibility-patterns.md
+  s_72160d2911e124::t_f54b7126efd70c 1-215
+.agents/skills/swiftui-expert-skill/references/animation-advanced.md
+  s_72160d2911e124::t_2cc611031d0713 1-429
+.agents/skills/swiftui-expert-skill/references/animation-basics.md
+  s_72160d2911e124::t_5a64b69ff08d87 1-284
+.agents/skills/swiftui-expert-skill/references/animation-transitions.md
+  s_72160d2911e124::t_5851f99092ba4b 1-328
+.agents/skills/swiftui-expert-skill/references/charts-accessibility.md
+  s_72160d2911e124::t_5220ca60691c9a 1-135
+.agents/skills/swiftui-expert-skill/references/charts.md
+  s_72160d2911e124::t_56b0eb57720223 1-602
+.agents/skills/swiftui-expert-skill/references/document-apps.md
+  s_72160d2911e124::t_60c0050054b916 1-209
+.agents/skills/swiftui-expert-skill/references/environment-patterns.md
+  s_72160d2911e124::t_bef463fceb10e3 1-164
+.agents/skills/swiftui-expert-skill/references/focus-patterns.md
+  s_72160d2911e124::t_d6971f968fd3dd 1-299
+.agents/skills/swiftui-expert-skill/references/image-optimization.md
+  s_72160d2911e124::t_ff2673dd05ac48 1-269
+.agents/skills/swiftui-expert-skill/references/iphone-duo.md
+  s_72160d2911e124::t_2c7bf047d87e56 1-78
+.agents/skills/swiftui-expert-skill/references/latest-apis.md
+  s_72160d2911e124::t_2ebadb38371c87 1-649
+.agents/skills/swiftui-expert-skill/references/layout-best-practices.md
+  s_72160d2911e124::t_f33c376884c810 1-432
+.agents/skills/swiftui-expert-skill/references/liquid-glass.md
+  s_72160d2911e124::t_2d22befc669997 1-441
+.agents/skills/swiftui-expert-skill/references/list-patterns.md
+  s_72160d2911e124::t_d56bc73e4582e3 1-537
+.agents/skills/swiftui-expert-skill/references/localization.md
+  s_72160d2911e124::t_5565f236dc7bbe 1-194
+.agents/skills/swiftui-expert-skill/references/macos-scenes.md
+  s_72160d2911e124::t_2c6260f3d938b7 1-320
+.agents/skills/swiftui-expert-skill/references/macos-views.md
+  s_72160d2911e124::t_0a2d296fbd35ae 1-360
+.agents/skills/swiftui-expert-skill/references/macos-window-styling.md
+  s_72160d2911e124::t_044f3bfd730366 1-303
+.agents/skills/swiftui-expert-skill/references/modifier-patterns.md
+  s_72160d2911e124::t_16d9ea3f78a958 1-64
+.agents/skills/swiftui-expert-skill/references/performance-patterns.md
+  s_72160d2911e124::t_b1a157ad41a740 1-403
+.agents/skills/swiftui-expert-skill/references/previews.md
+  s_72160d2911e124::t_4d423971bf4772 1-313
+.agents/skills/swiftui-expert-skill/references/scroll-patterns.md
+  s_72160d2911e124::t_34813e8a5d516a 1-352
+.agents/skills/swiftui-expert-skill/references/sheet-navigation-patterns.md
+  s_72160d2911e124::t_2960680bcd6a96 1-422
+.agents/skills/swiftui-expert-skill/references/soft-deprecation.md
+  s_72160d2911e124::t_2c396b5dd4d4c0 1-39
+.agents/skills/swiftui-expert-skill/references/state-management.md
+  s_72160d2911e124::t_8e48bc154aebfa 1-527
+.agents/skills/swiftui-expert-skill/references/styled-text-editing.md
+  s_72160d2911e124::t_d5bc6aab1c471e 1-198
+.agents/skills/swiftui-expert-skill/references/text-patterns.md
+  s_72160d2911e124::t_70ff76a77ed3c3 1-36
+.agents/skills/swiftui-expert-skill/references/toolbar-patterns.md
+  s_72160d2911e124::t_f723a4ef6f853a 1-215
+.agents/skills/swiftui-expert-skill/references/trace-analysis.md
+  s_72160d2911e124::t_5f055d6118a0e5 1-362
+.agents/skills/swiftui-expert-skill/references/trace-recording.md
+  s_72160d2911e124::t_c8aaff47452a74 1-178
+.agents/skills/swiftui-expert-skill/references/view-structure.md
+  s_72160d2911e124::t_1d075894ae5ce2 1-791
+.agents/skills/swiftui-expert-skill/references/webkit-integration.md
+  s_72160d2911e124::t_9fa3da4ec2a47a 1-242
+.agents/skills/swiftui-expert-skill/scripts/analyze_trace.py
+  s_72160d2911e124::t_9e15e521756d82 1-305
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/__init__.py
+  s_72160d2911e124::t_9c8ad5817b660d 1
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/causes.py
+  s_72160d2911e124::t_4d255ecc2bb943 1-187
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/correlate.py
+  s_72160d2911e124::t_1b3ab395368234 1-179
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/events.py
+  s_72160d2911e124::t_9503a28dbc90ad 1-291
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/hangs.py
+  s_72160d2911e124::t_06f2a500363b59 1-108
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/hitches.py
+  s_72160d2911e124::t_db1865288f57b3 1-145
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/summary.py
+  s_72160d2911e124::t_3ff220d69956ca 1-243
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/swiftui.py
+  s_72160d2911e124::t_6eb40dea76324a 1-195
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/time_profiler.py
+  s_72160d2911e124::t_45c1e73d28dafd 1-135
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/xctrace.py
+  s_72160d2911e124::t_344c1066737342 1-160
+.agents/skills/swiftui-expert-skill/scripts/instruments_parser/xml_utils.py
+  s_72160d2911e124::t_74cdf7d53f700f 1-224
+.agents/skills/swiftui-expert-skill/scripts/record_trace.py
+  s_72160d2911e124::t_a82e2d7e01e43a 1-288
+.agents/skills/swiftui-performance-audit/LICENSE
+  s_72160d2911e124::t_1c146cb14730c0 1-21
+.agents/skills/swiftui-performance-audit/SKILL.md
+  s_72160d2911e124::t_54061412262dca 1-106
+.agents/skills/swiftui-performance-audit/agents/openai.yaml
+  s_72160d2911e124::t_30a157993ff13d 1-4
+.agents/skills/swiftui-performance-audit/references/code-smells.md
+  s_72160d2911e124::t_e1fcea12e1a7e7 1-150
+.agents/skills/swiftui-performance-audit/references/demystify-swiftui-performance-wwdc23.md
+  s_72160d2911e124::t_b8ada739cde02f 1-46
+.agents/skills/swiftui-performance-audit/references/optimizing-swiftui-performance-instruments.md
+  s_72160d2911e124::t_092d8ea9c2fa2e 1-29
+.agents/skills/swiftui-performance-audit/references/profiling-intake.md
+  s_72160d2911e124::t_9d1822eac28021 1-44
+.agents/skills/swiftui-performance-audit/references/report-template.md
+  s_72160d2911e124::t_1607e491b6a9d9 1-47
+.agents/skills/swiftui-performance-audit/references/understanding-hangs-in-your-app.md
+  s_72160d2911e124::t_f66681784691dc 1-33
+.agents/skills/swiftui-performance-audit/references/understanding-improving-swiftui-performance.md
+  s_72160d2911e124::t_17810739af5614 1-52
+.agents/skills/swiftui-ui-patterns/LICENSE
+  s_72160d2911e124::t_31036b2005fe89 1-21
+.agents/skills/swiftui-ui-patterns/SKILL.md
+  s_72160d2911e124::t_dc576cabbbb5ad 1-95
+.agents/skills/swiftui-ui-patterns/agents/openai.yaml
+  s_72160d2911e124::t_fff4b076e47ebc 1-4
+.agents/skills/swiftui-ui-patterns/references/app-wiring.md
+  s_72160d2911e124::t_b4941531c6f84a 1-201
+.agents/skills/swiftui-ui-patterns/references/async-state.md
+  s_72160d2911e124::t_ab7c931a00141e 1-96
+.agents/skills/swiftui-ui-patterns/references/components-index.md
+  s_72160d2911e124::t_cabfdad47a1b7a 1-50
+.agents/skills/swiftui-ui-patterns/references/controls.md
+  s_72160d2911e124::t_a5fa4c5001ef52 1-57
+.agents/skills/swiftui-ui-patterns/references/deeplinks.md
+  s_72160d2911e124::t_b6507d6a1b19e4 1-66
+.agents/skills/swiftui-ui-patterns/references/focus.md
+  s_72160d2911e124::t_c44d04ae7d83ab 1-90
+.agents/skills/swiftui-ui-patterns/references/form.md
+  s_72160d2911e124::t_41dd1152610a98 1-97
+.agents/skills/swiftui-ui-patterns/references/grids.md
+  s_72160d2911e124::t_e329e23d80d8ae 1-71
+.agents/skills/swiftui-ui-patterns/references/haptics.md
+  s_72160d2911e124::t_914edba2a695b2 1-71
+.agents/skills/swiftui-ui-patterns/references/input-toolbar.md
+  s_72160d2911e124::t_5e09e2a7625697 1-51
+.agents/skills/swiftui-ui-patterns/references/lightweight-clients.md
+  s_72160d2911e124::t_c0ea06eeee1e74 1-93
+.agents/skills/swiftui-ui-patterns/references/list.md
+  s_72160d2911e124::t_8ee96f4d012644 1-86
+.agents/skills/swiftui-ui-patterns/references/loading-placeholders.md
+  s_72160d2911e124::t_4df65ece7496ef 1-38
+.agents/skills/swiftui-ui-patterns/references/macos-settings.md
+  s_72160d2911e124::t_8d2f25a5dbe881 1-71
+.agents/skills/swiftui-ui-patterns/references/matched-transitions.md
+  s_72160d2911e124::t_88bd7f2a110ab4 1-59
+.agents/skills/swiftui-ui-patterns/references/media.md
+  s_72160d2911e124::t_f67c07378867d4 1-73
+.agents/skills/swiftui-ui-patterns/references/menu-bar.md
+  s_72160d2911e124::t_d114941cc8ed3e 1-101
+.agents/skills/swiftui-ui-patterns/references/navigationstack.md
+  s_72160d2911e124::t_04f88162a754a5 1-159
+.agents/skills/swiftui-ui-patterns/references/overlay.md
+  s_72160d2911e124::t_aa92b3df6352ad 1-45
+.agents/skills/swiftui-ui-patterns/references/performance.md
+  s_72160d2911e124::t_ec164a37bb57f3 1-62
+.agents/skills/swiftui-ui-patterns/references/previews.md
+  s_72160d2911e124::t_f3e1e023c3ab1b 1-48
+.agents/skills/swiftui-ui-patterns/references/scroll-reveal.md
+  s_72160d2911e124::t_11ee06c8ed2e42 1-133
+.agents/skills/swiftui-ui-patterns/references/scrollview.md
+  s_72160d2911e124::t_343b266fc2bef4 1-87
+.agents/skills/swiftui-ui-patterns/references/searchable.md
+  s_72160d2911e124::t_327aef12f2b309 1-71
+.agents/skills/swiftui-ui-patterns/references/sheets.md
+  s_72160d2911e124::t_0de0f702fd0ae1 1-155
+.agents/skills/swiftui-ui-patterns/references/split-views.md
+  s_72160d2911e124::t_b948356b5b1a7a 1-72
+.agents/skills/swiftui-ui-patterns/references/tabview.md
+  s_72160d2911e124::t_fe9115fe8365e8 1-114
+.agents/skills/swiftui-ui-patterns/references/theming.md
+  s_72160d2911e124::t_f5c60bc22b2bd8 1-71
+.agents/skills/swiftui-ui-patterns/references/title-menus.md
+  s_72160d2911e124::t_912b2757d0b53b 1-93
+.agents/skills/swiftui-ui-patterns/references/top-bar.md
+  s_72160d2911e124::t_00ca52463ac107 1-49
+.agents/skills/ux-empty-states/LICENSE
+  s_72160d2911e124::t_658fcd7c8e65a6 1-21
+.agents/skills/ux-empty-states/SKILL.md
+  s_72160d2911e124::t_574c4cd90c3ae9 1-103
+.agents/skills/ux-error-recovery/LICENSE
+  s_72160d2911e124::t_18631f867e3808 1-21
+.agents/skills/ux-error-recovery/SKILL.md
+  s_72160d2911e124::t_9d4e6ae44a8435 1-132
+.agents/skills/ux-heuristics-audit/LICENSE
+  s_72160d2911e124::t_bffc810614308e 1-21
+.agents/skills/ux-heuristics-audit/SKILL.md
+  s_72160d2911e124::t_01f4e9011acf9d 1-192
+.agents/skills/ux-loaders-and-progress/LICENSE
+  s_72160d2911e124::t_a416d6ea5cb680 1-21
+.agents/skills/ux-loaders-and-progress/SKILL.md
+  s_72160d2911e124::t_c71fb61c2a3af2 1-111
+.agents/skills/ux-navigation/LICENSE
+  s_72160d2911e124::t_e5b22357f3d584 1-21
+.agents/skills/ux-navigation/SKILL.md
+  s_72160d2911e124::t_68a5cd9b08de76 1-143
+.impeccable.md
+  s_1b32fa03e6b18c::t_d8d561ea4d07ff 1-19
+astryx-prototype/.gitignore
+  s_545653e74bca94::t_830ff3db180fca 1-4
+astryx-prototype/AGENTS.md
+  s_1b32fa03e6b18c::t_bdfa7d3d736ea4 1-35
+astryx-prototype/GEMINI.md
+  s_1b32fa03e6b18c::t_5e65990f2c1c09 1-3
+astryx-prototype/archives/01-home-reference/evidence/astryx-build-doctor.json
+  s_1b32fa03e6b18c::t_1c79a2596028b2 1-167
+astryx-prototype/archives/01-home-reference/evidence/astryx-doctor.json
+  s_1b32fa03e6b18c::t_fb0fa52342fb63 1-167
+astryx-prototype/archives/01-home-reference/evidence/design-review.html
+  s_1b32fa03e6b18c::t_92ec6be978ad30 1-3
+astryx-prototype/archives/01-home-reference/evidence/final-layout-verification.json
+  s_1b32fa03e6b18c::t_8c480cd9eed39c 1-95
+astryx-prototype/archives/01-home-reference/evidence/verification.json
+  s_1b32fa03e6b18c::t_72f57f78e46bc0 1-23
+astryx-prototype/archives/01-home-reference/impeccable.md
+  s_1b32fa03e6b18c::t_ee3550787d6c21 1-19
+astryx-prototype/archives/01-home-reference/src/app/data.ts
+  s_1b32fa03e6b18c::t_4e57bd9e57ccb6 1-18
+astryx-prototype/archives/01-home-reference/src/app/icon.svg
+  s_1b32fa03e6b18c::t_24cec0f07f3a9c 1-4
+astryx-prototype/archives/01-home-reference/src/app/layout.tsx
+  s_1b32fa03e6b18c::t_1ce167595df4b0 1-12
+astryx-prototype/archives/01-home-reference/src/app/page.tsx
+  s_1b32fa03e6b18c::t_149388551bdbd0 1-159
+astryx-prototype/archives/01-home-reference/src/app/styles.tsx
+  s_1b32fa03e6b18c::t_630ba8242314fb 1-104
+astryx-prototype/archives/01-home-reference/src/theme/built/memoryos.css
+  s_1b32fa03e6b18c::t_8ae20480f83d3b 1-689
+astryx-prototype/archives/01-home-reference/src/theme/built/memoryos.css.d.ts
+  s_1b32fa03e6b18c::t_e95bc5b7854344 1-9
+astryx-prototype/archives/01-home-reference/src/theme/built/memoryos.d.ts
+  s_1b32fa03e6b18c::t_cbb79c301acbe6 1-13
+astryx-prototype/archives/01-home-reference/src/theme/built/memoryos.js
+  s_1b32fa03e6b18c::t_f6b7d04b5f749c 1-514
+astryx-prototype/archives/01-home-reference/src/theme/built/memoryos.variants.d.ts
+  s_1b32fa03e6b18c::t_214dd0627f9613 1-16
+astryx-prototype/archives/01-home-reference/src/theme/memoryos.ts
+  s_1b32fa03e6b18c::t_347bbf471b8581 1-27
+astryx-prototype/archives/02-wild-rejected/impeccable.md
+  s_1b32fa03e6b18c::t_f97e5f0c6ec03c 1-22
+astryx-prototype/archives/02-wild-rejected/public/fonts/OFL.txt
+  s_1b32fa03e6b18c::t_fe9fc5152a2690 1-93
+astryx-prototype/archives/02-wild-rejected/src/app/art.tsx
+  s_1b32fa03e6b18c::t_c19b0f0ce1a0c4 1-42
+astryx-prototype/archives/02-wild-rejected/src/app/data.ts
+  s_1b32fa03e6b18c::t_c9b6c7bac17aaa 1-18
+astryx-prototype/archives/02-wild-rejected/src/app/icon.svg
+  s_1b32fa03e6b18c::t_92f57284a4a584 1-4
+astryx-prototype/archives/02-wild-rejected/src/app/layout.tsx
+  s_1b32fa03e6b18c::t_c56b98a5d9ec66 1-13
+astryx-prototype/archives/02-wild-rejected/src/app/page.tsx
+  s_1b32fa03e6b18c::t_c4ceebb0b8cd43 1-189
+astryx-prototype/archives/02-wild-rejected/src/app/styles.tsx
+  s_1b32fa03e6b18c::t_492db901144379 1-335
+astryx-prototype/archives/02-wild-rejected/src/theme/built/memoryos.css
+  s_1b32fa03e6b18c::t_57a11f869c3b41 1-689
+astryx-prototype/archives/02-wild-rejected/src/theme/built/memoryos.css.d.ts
+  s_1b32fa03e6b18c::t_83bd84eaf3f1d9 1-9
+astryx-prototype/archives/02-wild-rejected/src/theme/built/memoryos.d.ts
+  s_1b32fa03e6b18c::t_eb250b1b5c0f70 1-13
+astryx-prototype/archives/02-wild-rejected/src/theme/built/memoryos.js
+  s_1b32fa03e6b18c::t_0b0c569d400c71 1-510
+astryx-prototype/archives/02-wild-rejected/src/theme/built/memoryos.variants.d.ts
+  s_1b32fa03e6b18c::t_a152e1b2287eb2 1-16
+astryx-prototype/archives/02-wild-rejected/src/theme/fonts.css
+  s_1b32fa03e6b18c::t_c8911712aa003c 1-7
+astryx-prototype/archives/02-wild-rejected/src/theme/memoryos.ts
+  s_1b32fa03e6b18c::t_b29e68e6748f7b 1-42
+astryx-prototype/astryx-themes.js
+  s_1b32fa03e6b18c::t_85f5f0db59f893 1-14
+astryx-prototype/evidence/apple/build-doctor.json
+  s_1b32fa03e6b18c::t_4837cf815b5dc6 1-167
+astryx-prototype/evidence/apple/source-doctor.json
+  s_1b32fa03e6b18c::t_5abe66d4b67bec 1-167
+astryx-prototype/evidence/astryx-build-doctor.json
+  s_1b32fa03e6b18c::t_c981afce02ddcd 1-167
+astryx-prototype/evidence/astryx-doctor.json
+  s_1b32fa03e6b18c::t_562957358eabf0 1-167
+astryx-prototype/evidence/design-review.html
+  s_1b32fa03e6b18c::t_9ecaa4f1fda93a 1-3
+astryx-prototype/evidence/final-layout-verification.json
+  s_545653e74bca94::t_bb5caabdca464a 1-95
+astryx-prototype/evidence/verification.json
+  s_545653e74bca94::t_c38262bbb2efef 1-23
+astryx-prototype/next-env.d.ts
+  s_1b32fa03e6b18c::t_5734cb4c4276e6 1-7
+astryx-prototype/next.config.mjs
+  s_545653e74bca94::t_d4c13ab9bdb87c 1-4
+astryx-prototype/package-lock.json
+  s_1b32fa03e6b18c::t_5b2ee6d0695fdf 1-2177
+astryx-prototype/package.json
+  s_1b32fa03e6b18c::t_52a2b9177c9247 1-27
+astryx-prototype/src/app/data.ts
+  s_545653e74bca94::t_bffa4c15c0b663 1-18
+astryx-prototype/src/app/icon.svg
+  s_1b32fa03e6b18c::t_2d36050ee36e7b 1-4
+astryx-prototype/src/app/layout.tsx
+  s_1b32fa03e6b18c::t_c34f2241c0ef76 1-12
+astryx-prototype/src/app/page.tsx
+  s_1b32fa03e6b18c::t_9d052961be942f 1-166
+astryx-prototype/src/app/styles.tsx
+  s_1b32fa03e6b18c::t_197de9d65bbcd5 1-69
+astryx-prototype/src/theme/built/memoryos.css
+  s_1b32fa03e6b18c::t_ecd807774babee 1-689
+astryx-prototype/src/theme/built/memoryos.css.d.ts
+  s_1b32fa03e6b18c::t_9642754c901e26 1-9
+astryx-prototype/src/theme/built/memoryos.d.ts
+  s_1b32fa03e6b18c::t_34f1ac18db0bb7 1-13
+astryx-prototype/src/theme/built/memoryos.js
+  s_1b32fa03e6b18c::t_d4b2bb91d91519 1-510
+astryx-prototype/src/theme/built/memoryos.variants.d.ts
+  s_1b32fa03e6b18c::t_5de5e0943ad4e0 1-16
+astryx-prototype/src/theme/memoryos.ts
+  s_1b32fa03e6b18c::t_633ad264cea2f3 1-38
+astryx-prototype/templates/blank.tsx
+  s_1b32fa03e6b18c::t_ef11ded9cded8f 1-18
+astryx-prototype/templates/capture.tsx
+  s_1b32fa03e6b18c::t_131947fb9d7994 1-469
+astryx-prototype/theme.template.ts
+  s_1b32fa03e6b18c::t_44c7c16f3e74bd 1-440
+astryx-prototype/tsconfig.json
+  s_1b32fa03e6b18c::t_9b18e2cc5d2837 1-39
+design-lab/app.js
+  s_f3375cecb2aab4::t_52a94f0bd99f83 1-184
+design-lab/assets/Geist-OFL.txt
+  s_f3375cecb2aab4::t_dd97cec8ba2616 1-93
+design-lab/assets/provenance.json
+  s_f3375cecb2aab4::t_6e815e8400d2b8 1-61
+design-lab/home-style-verification.json
+  s_f3375cecb2aab4::t_218f716c5aadc1 1-40
+design-lab/home-style.js
+  s_f3375cecb2aab4::t_add3005de03066 1-30
+design-lab/index.html
+  s_f3375cecb2aab4::t_56f4dc77d63b20 1-31
+design-lab/style.css
+  s_f3375cecb2aab4::t_ac72617e927c0f 1-28
+design-lab/verification.json
+  s_f3375cecb2aab4::t_06ce71d0b91380 1-68
+designs/2026-11-07-brainmap/manifest.json
+  s_342b390e3ead34::t_88069a46a5d06e 1-10
+designs/2026-11-07-brainmap/prompt.md
+  s_4579398ba09ce8::t_63eb386fe67264 1-34
+designs/2026-11-07-capture-sidebar/prompt.md
+  s_e5939231650470::t_0cba05ab084266 1-38
+designs/2026-11-07-people-cards/manifest.json
+  s_342b390e3ead34::t_4f1744aff57746 1-53
+designs/2026-11-07-people-cards/prompts.md
+  s_e5939231650470::t_48ab4a8221980c 1-40
+designs/2026-11-12-screen-layouts/verification.json
+  s_f3375cecb2aab4::t_c1be65d5ab54f9 1-36
+docs/decisions/audio-recording-and-transcription.md
+  s_e5939231650470::t_48ff06158f3595 1-66
+docs/design/apple-inspired.md
+  s_1b32fa03e6b18c::t_bf72f1e1a60137 1-43
+docs/design/astryx-prototype.md
+  s_1b32fa03e6b18c::t_dfa2433ef486f9 1-61
+docs/design/screen-layouts.md
+  s_f3375cecb2aab4::t_164f46b1357f61 1-157
+docs/design/visual-reference-index.md
+  s_23df050d9a09d9::t_1be1fa1fe469be 1-47
+docs/design/wild-redesign.md
+  s_1b32fa03e6b18c::t_b13cb2d6829c94 1-41
+docs/evidence/documentation-validation.json
+  s_342b390e3ead34::t_66ba4692a43e76 1-58
+docs/evidence/hindsight-verification.json
+  s_342b390e3ead34::t_5a503284230520 1-580
+docs/evidence/mcp-verification.json
+  s_342b390e3ead34::t_b8520f4405cf2a 1-86
+docs/evidence/native-dark-mode-2026-11-13/build.log
+  s_23df050d9a09d9::t_03cb8f68328ddf 1-293
+docs/evidence/native-dark-mode-2026-11-13/hindsight-recall.json
+  s_23df050d9a09d9::t_81cd8d2185496d 1-1036
+docs/evidence/native-dark-mode-2026-11-13/memory-check.log
+  s_23df050d9a09d9::t_7170b3aa2bb8de 1-15
+docs/evidence/native-dark-mode-2026-11-13/memory-sync.log
+  s_23df050d9a09d9::t_9dd55081c817e8 1
+docs/evidence/native-dark-mode-2026-11-13/source-hashes.json
+  s_23df050d9a09d9::t_10a771ef422554 1-11
+docs/evidence/native-foundation-2026-11-13/build.log
+  s_23df050d9a09d9::t_b6247b6ddc75ef 1-756
+docs/evidence/native-foundation-2026-11-13/hindsight-final-recall.json
+  s_23df050d9a09d9::t_3932c1041c7562 1-1040
+docs/evidence/native-foundation-2026-11-13/hindsight-recall.json
+  s_23df050d9a09d9::t_4a87a6824a3d48 1-1088
+docs/evidence/native-foundation-2026-11-13/memory-check.log
+  s_23df050d9a09d9::t_10c0cbd701c1fe 1-15
+docs/evidence/native-foundation-2026-11-13/memory-sync.log
+  s_23df050d9a09d9::t_8daf1f301e1509 1-2
+docs/evidence/native-foundation-2026-11-13/source-hashes.json
+  s_23df050d9a09d9::t_cd2147bed029a1 1-12
+docs/evidence/native-foundation-2026-11-13/tests-initial-failure.log
+  s_ac377e6795d725::t_392333b0c50160 1-551
+docs/evidence/native-foundation-2026-11-13/tests-passed.log
+  s_23df050d9a09d9::t_12e214cccdd6bf 1-516
+docs/evidence/source-coverage.json
+  s_342b390e3ead34::t_1786f028e9db40 1-441
+docs/feature-register.md
+  s_07c6de7c923515::t_ae442b41145d11 1-88
+docs/how-to/native-swiftui.md
+  s_07c6de7c923515::t_1c3423f690465f 1-73
+docs/plans/build-outline.md
+  s_e5939231650470::t_3d3a067967c9b9 1-75
+docs/product-overview.md
+  s_07c6de7c923515::t_27423ad5116df6 1-107
+index.html
+  s_f127e2388c6ef1::t_9c91fb3d377102 1
+native/.gitignore
+  s_23df050d9a09d9::t_85543b63cf6ec9 1-4
+native/MemoryOS.xcodeproj/project.pbxproj
+  s_07c6de7c923515::t_1cd3f75841955e 1-47
+native/MemoryOS.xcodeproj/xcshareddata/xcschemes/MemoryOS.xcscheme
+  s_07c6de7c923515::t_eedf77f2c9685d 1-11
+native/MemoryOS/App/DemoSession.swift
+  s_07c6de7c923515::t_b736dc020ffb86 1-83
+native/MemoryOS/DesignSystem/Theme.swift
+  s_07c6de7c923515::t_71a8d1e06eb5ce 1-62
+native/MemoryOS/Domain/DemoCatalog.swift
+  s_07c6de7c923515::t_060d47e5331384 1-217
+native/MemoryOS/Features/BirthdaysView.swift
+  s_07c6de7c923515::t_8aaa52526da42b 1-99
+native/MemoryOS/Features/BrainMapView.swift
+  s_07c6de7c923515::t_5d6faf419f25d4 1-125
+native/MemoryOS/Features/CaptureView.swift
+  s_07c6de7c923515::t_292495c0558404 1-129
+native/MemoryOS/Features/CatalogListView.swift
+  s_07c6de7c923515::t_885ede3d541897 1-95
+native/MemoryOS/Features/DemoComponents.swift
+  s_07c6de7c923515::t_9f186d2d59b26c 1-54
+native/MemoryOS/Features/RecordDetailView.swift
+  s_07c6de7c923515::t_94d9539c68a997 1-80
+native/MemoryOS/Features/RootView.swift
+  s_07c6de7c923515::t_29b018c90caaf8 1-54
+native/MemoryOS/Features/SectionView.swift
+  s_07c6de7c923515::t_679d8444601617 1-114
+native/MemoryOS/Features/SidebarView.swift
+  s_07c6de7c923515::t_86c8d7ec98dfb4 1-75
+native/MemoryOSTests/DemoTests.swift
+  s_07c6de7c923515::t_21f3ebf691ffad 1-91
+native/MemoryOSUITests/DemoFlowTests.swift
+  s_07c6de7c923515::t_88dee95db3fb1a 1-265
+native/MemoryOSUITests/FoundationTests.swift
+  s_07c6de7c923515::t_c104adcf00063f 1-90
+native/verification/interface-demo/baseline-source.sha256
+  s_07c6de7c923515::t_6a870fc09dee0b 1-7
+native/verification/interface-demo/boundary-scan.json
+  s_07c6de7c923515::t_81aab27e29ce11 1-11
+native/verification/interface-demo/final-source-hashes.json
+  s_07c6de7c923515::t_180f6ed43d4ed6 1-20
+native/verification/interface-demo/memory-check.log
+  s_07c6de7c923515::t_2fb10d70ddc69a 1-15
+native/verification/interface-demo/memory-sync.log
+  s_07c6de7c923515::t_2d1edf9a2b8caf 1-3
+native/verification/interface-demo/original-research.sha256
+  s_07c6de7c923515::t_28a587f73411de 1-3
+native/verification/interface-demo/release-device-unsigned.log
+  s_07c6de7c923515::t_b637ee00f7cd7b 1-361
+native/verification/interface-demo/release-final-device.log
+  s_07c6de7c923515::t_357d7c215ef175 1-127
+native/verification/interface-demo/step2/accessibility-categories.log
+  s_07c6de7c923515::t_c504dd3a824b41 1-196
+native/verification/interface-demo/step2/accessibility-components.log
+  s_07c6de7c923515::t_659749f343bee8 1-586
+native/verification/interface-demo/step2/accessibility-diagnostics.log
+  s_07c6de7c923515::t_5d3a3debe30b83 1-999
+native/verification/interface-demo/step2/accessibility-expanding-search.log
+  s_07c6de7c923515::t_3e9ee04091b083 1-281
+native/verification/interface-demo/step2/accessibility-initial.log
+  s_07c6de7c923515::t_dd649e75109124 1-400
+native/verification/interface-demo/step2/accessibility-search-fix.log
+  s_07c6de7c923515::t_cbfd6034919569 1-269
+native/verification/interface-demo/step2/audit-detail-attachments/36C6FC3B-1A23-4EED-87EE-366503C8BDC5.txt
+  s_07c6de7c923515::t_dd3b68a9568b1f 1
+native/verification/interface-demo/step2/audit-detail-attachments/B1C002CA-095D-4A7A-B5A2-43F34A954EDB.txt
+  s_07c6de7c923515::t_122786ce82296c 1
+native/verification/interface-demo/step2/audit-detail-attachments/manifest.json
+  s_07c6de7c923515::t_7da756185cf7d8 1-57
+native/verification/interface-demo/step2/audit-failure-attachments/184C9AB9-5C37-429D-A40C-07AB29D33D5B.txt
+  s_07c6de7c923515::t_a0bd4112be8d98 1
+native/verification/interface-demo/step2/audit-failure-attachments/E69DC51B-50EA-40D3-B072-69F04C34F31F.txt
+  s_07c6de7c923515::t_1b3c56228ed99f 1
+native/verification/interface-demo/step2/audit-failure-attachments/manifest.json
+  s_07c6de7c923515::t_da89e244112410 1-66
+native/verification/interface-demo/step2/cleanup/release-device.log
+  s_07c6de7c923515::t_4412cc1a1fe4ac 1-127
+native/verification/interface-demo/step2/cleanup/release-simulator.log
+  s_07c6de7c923515::t_50b47b9c3cae7e 1-220
+native/verification/interface-demo/step2/cleanup/source-hashes.json
+  s_07c6de7c923515::t_35542ad8ee916e 1-20
+native/verification/interface-demo/step2/cleanup/tests.log
+  s_07c6de7c923515::t_75961b2486a8bf 1-414
+native/verification/interface-demo/step2/functional-final.log
+  s_07c6de7c923515::t_800339c470ade1 1-1583
+native/verification/interface-demo/step2/initial-fixes-source-hashes.json
+  s_07c6de7c923515::t_9642df76d858e8 1-20
+native/verification/interface-demo/step2/map-header-recheck.log
+  s_07c6de7c923515::t_f60caf013d9a3d 1-483
+native/verification/interface-demo/step2/memory-recall.json
+  s_07c6de7c923515::t_cbad27f91d1058 1-942
+native/verification/interface-demo/step2/menu-recheck.log
+  s_07c6de7c923515::t_60fe3a80ff4c88 1-209
+native/verification/interface-demo/step2/release-device-before-header-fix.log
+  s_07c6de7c923515::t_6e48edf87b9694 1-127
+native/verification/interface-demo/step2/release-device.log
+  s_07c6de7c923515::t_7a2eb6988ab812 1-127
+native/verification/interface-demo/step2/release-simulator-before-header-fix.log
+  s_07c6de7c923515::t_30c2a755952b33 1-220
+native/verification/interface-demo/step2/release-simulator.log
+  s_07c6de7c923515::t_83b4774e25df5f 1-220
+native/verification/interface-demo/step2/source-hashes.json
+  s_07c6de7c923515::t_76802b51c984d2 1-20
+native/verification/interface-demo/step2/verifier-components-attachments/0D39BB0A-58E8-4EAE-9BC7-2CDF4C2E14D3.txt
+  s_07c6de7c923515::t_bafa1d7b4d13dd 1
+native/verification/interface-demo/step2/verifier-components-attachments/121661B7-67F6-4AF3-A2D1-2C93092A6AB4.txt
+  s_07c6de7c923515::t_3d0fc00b7e6622 1
+native/verification/interface-demo/step2/verifier-components-attachments/14086802-7569-4495-88B7-9E41CB441247.txt
+  s_07c6de7c923515::t_6971d5a41503b8 1
+native/verification/interface-demo/step2/verifier-components-attachments/192EA685-BC44-422A-8560-57506EB12D1B.txt
+  s_07c6de7c923515::t_60486aef256b62 1
+native/verification/interface-demo/step2/verifier-components-attachments/20BB2CBE-E928-4666-A05A-595770BCC13F.txt
+  s_07c6de7c923515::t_1246b1621dc19a 1
+native/verification/interface-demo/step2/verifier-components-attachments/25465173-FD46-411D-877D-51A401CD56E5.txt
+  s_07c6de7c923515::t_645c7da46eceb4 1
+native/verification/interface-demo/step2/verifier-components-attachments/26691832-375D-40B3-A259-F66314A98270.txt
+  s_07c6de7c923515::t_f69ec12f6127c0 1
+native/verification/interface-demo/step2/verifier-components-attachments/27D2DDEC-8FB8-40AB-AEEC-555F2D9FA402.txt
+  s_07c6de7c923515::t_908e34bfd7a048 1
+native/verification/interface-demo/step2/verifier-components-attachments/32CBF0A2-551B-4BF7-BB19-10D0704E492D.txt
+  s_07c6de7c923515::t_be46de6a0876d0 1
+native/verification/interface-demo/step2/verifier-components-attachments/3B5CF4E1-3EAA-494B-9DA0-61C477A93185.txt
+  s_07c6de7c923515::t_658e579b77f01b 1
+native/verification/interface-demo/step2/verifier-components-attachments/3DC30B3E-6318-46F9-99AA-D16D6EC010E2.txt
+  s_07c6de7c923515::t_79e81ca9fa13fb 1
+native/verification/interface-demo/step2/verifier-components-attachments/4B796089-6E3D-4952-87B1-A59EA8A36712.txt
+  s_07c6de7c923515::t_951d5d7e7381ab 1
+native/verification/interface-demo/step2/verifier-components-attachments/4D567F25-D0D4-43D2-AFF4-2C2EC7597B05.txt
+  s_07c6de7c923515::t_73d2a652557889 1
+native/verification/interface-demo/step2/verifier-components-attachments/500CCBE4-8245-4ABA-A8CB-537A5FA31AC6.txt
+  s_07c6de7c923515::t_2c17b8e931c3fe 1
+native/verification/interface-demo/step2/verifier-components-attachments/5B438EC4-85A7-493A-8A36-1881AD5009AD.txt
+  s_07c6de7c923515::t_03aeac2032830e 1
+native/verification/interface-demo/step2/verifier-components-attachments/5DC68AE9-BCE1-4665-A64B-95A8D66F6F0E.txt
+  s_07c6de7c923515::t_845ed80ab0c8ee 1
+native/verification/interface-demo/step2/verifier-components-attachments/677A7373-87BE-41A6-8EB0-63838B6A3DBB.txt
+  s_07c6de7c923515::t_2c8019cb4b1889 1
+native/verification/interface-demo/step2/verifier-components-attachments/7C3F5C0C-11C1-412C-A135-4FAAAA3B2FF2.txt
+  s_07c6de7c923515::t_a50c23801aa087 1
+native/verification/interface-demo/step2/verifier-components-attachments/86032AD5-28A0-4A24-AF1E-567D442770CC.txt
+  s_07c6de7c923515::t_26a7ee4c9fac3a 1
+native/verification/interface-demo/step2/verifier-components-attachments/8F97601E-716A-49D0-AC1D-5EA5A3F86EE1.txt
+  s_07c6de7c923515::t_4e618807374411 1
+native/verification/interface-demo/step2/verifier-components-attachments/94DE8272-4CCE-4239-A381-1A61E9252C56.txt
+  s_07c6de7c923515::t_ae7cd8a902483d 1
+native/verification/interface-demo/step2/verifier-components-attachments/970DD693-41F0-4644-A737-6BDFA41B31FA.txt
+  s_07c6de7c923515::t_0f2d741caa32a0 1
+native/verification/interface-demo/step2/verifier-components-attachments/9810A8C5-146B-4E98-A6C9-455915F83AF5.txt
+  s_07c6de7c923515::t_ea14155d5d7d55 1
+native/verification/interface-demo/step2/verifier-components-attachments/9D8481F6-C18B-4CAA-8F3B-088C24D05E64.txt
+  s_07c6de7c923515::t_d9858ffebad8ed 1
+native/verification/interface-demo/step2/verifier-components-attachments/A7ED3379-4DB8-4442-9863-BDF28089CF20.txt
+  s_07c6de7c923515::t_4a8c78d4034796 1
+native/verification/interface-demo/step2/verifier-components-attachments/A9D54CBC-0AB5-482F-9984-E7A06ABFBBEF.txt
+  s_07c6de7c923515::t_7b612e1c805da4 1
+native/verification/interface-demo/step2/verifier-components-attachments/B631924E-D0C2-4CAC-892C-7ABBF3E2E832.txt
+  s_07c6de7c923515::t_e9ce1774853629 1
+native/verification/interface-demo/step2/verifier-components-attachments/BCFCE9BE-CE55-4B6D-A29B-E47C9F0B0663.txt
+  s_07c6de7c923515::t_3fda8383240d76 1
+native/verification/interface-demo/step2/verifier-components-attachments/C3616786-445C-48B0-8190-EA2A3C6BBD86.txt
+  s_07c6de7c923515::t_ee14a4a34b7333 1
+native/verification/interface-demo/step2/verifier-components-attachments/D787EC5F-832D-42E1-A24F-27195637BE96.txt
+  s_07c6de7c923515::t_3873c6cbd47012 1
+native/verification/interface-demo/step2/verifier-components-attachments/E5DFF195-931F-496A-AA2C-7AC0EE3E0243.txt
+  s_07c6de7c923515::t_0376532c80197c 1
+native/verification/interface-demo/step2/verifier-components-attachments/E95D6BFC-9893-4406-ACD9-4211F57A26F1.txt
+  s_07c6de7c923515::t_79e5fcd8986659 1
+native/verification/interface-demo/step2/verifier-components-attachments/EAC7057D-C50F-4649-A0DB-FFEF497C1ECA.txt
+  s_07c6de7c923515::t_2a6947d0e64df5 1
+native/verification/interface-demo/step2/verifier-components-attachments/ED27F768-672F-40B4-AE67-CBC135FDC999.txt
+  s_07c6de7c923515::t_1e839ed0c8a577 1
+native/verification/interface-demo/step2/verifier-components-attachments/EDA5557B-B19D-4EFF-9EAC-DC060E720A5A.txt
+  s_07c6de7c923515::t_5a80ff3f28a4fe 1
+native/verification/interface-demo/step2/verifier-components-attachments/F0E6E8AF-E146-4A52-B949-D5EF84E5245A.txt
+  s_07c6de7c923515::t_34ebc906d49f6c 1
+native/verification/interface-demo/step2/verifier-components-attachments/F10911A8-C822-4E66-A0AF-CB202787763C.txt
+  s_07c6de7c923515::t_c6f486c5b4767f 1
+native/verification/interface-demo/step2/verifier-components-attachments/F7805FEA-4C6C-45F4-86ED-CD3A5A2538B0.txt
+  s_07c6de7c923515::t_a41e3bc34ae0d1 1
+native/verification/interface-demo/step2/verifier-components-attachments/manifest.json
+  s_07c6de7c923515::t_9266ce58950b5d 1-840
+native/verification/interface-demo/tests-final.log
+  s_07c6de7c923515::t_f39a52bfa922af 1-1144
+native/verification/interface-demo/tests-navigation-final.log
+  s_07c6de7c923515::t_da109f7191f011 1-1086
+native/verification/interface-demo/tests.log
+  s_07c6de7c923515::t_f302753fd4bbbb 1-1516
+native/verification/interface-demo/ui-tested-source-hashes.json
+  s_07c6de7c923515::t_23e4cec34bcb26 1-20
+public/fonts/geist/OFL.txt
+  s_f127e2388c6ef1::t_9038b8fba494c0 1-93
+public/fonts/geistmono/OFL.txt
+  s_f127e2388c6ef1::t_98959ecc7e2c71 1-93
+scripts/memory
+  s_342b390e3ead34::t_d831c7298bfd3b 1-11
+src/KIT-LICENSE
+  s_f127e2388c6ef1::t_9f4b764ea424db 1-21
+src/app.js
+  s_f127e2388c6ef1::t_8038ce7e35d585 1-86
+src/build-verification.json
+  s_f127e2388c6ef1::t_9cbb101d212acc 1-49
+src/charts.js
+  s_f127e2388c6ef1::t_4035f8ffb5a8fe 1-620
+src/data.js
+  s_f127e2388c6ef1::t_441425246ab094 1-12
+src/kit.css
+  s_f127e2388c6ef1::t_869a7373c86a5c 1-200
+src/style.css
+  s_f127e2388c6ef1::t_4811e430aa5424 1-38
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "53330ebf0570b738dcc7ba9aa8a3ae7ccc3d3008",
+  "prompts": {},
+  "sessions": {
+    "s_07c6de7c923515": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1da4b-a2f2-74a3-91ce-fd7c1a1c3804",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_1b32fa03e6b18c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d472-1a4d-7d11-88e6-ade980621f54",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_23df050d9a09d9": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d60d-3e57-7473-aaf7-ec9f9c938d28",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_342b390e3ead34": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b03a-09a2-7041-9149-a2a1d4a40bae",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_4579398ba09ce8": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b5eb-1d27-7b10-8d03-37eceb505957",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_545653e74bca94": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d4f1-4f27-7ef0-a59d-a8238556e277",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_72160d2911e124": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d9e6-657c-7730-8bbe-a39d7bbe2341",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_ac377e6795d725": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d61d-c1e7-7710-a8ac-c3e290dc7273",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_e5939231650470": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b641-98e5-7171-a131-1954a6322abf",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_f127e2388c6ef1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1b5fb-d44e-7132-9f5c-741d77da1103",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_f3375cecb2aab4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1d00b-4449-71a0-86c7-92e6ac817863",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
