@@ -1,0 +1,13 @@
+{
+  "platform": "macOS host; actual SQLiteRecordRepository source in isolated executable",
+  "kill_delivered_during_nonempty_journal": true,
+  "journal_bytes_when_killed": 29240,
+  "worker_exit": -9,
+  "recovery_exit": 0,
+  "recovery_output": "recovered-record-count=1",
+  "original_rows_byte_exact_unchanged": true,
+  "revision_count": 0,
+  "integrity_check": "ok",
+  "scratch_data_directory": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-step2-interruption-l6n3thxj",
+  "limit": "One SIGKILL timing case; not hardware power loss, filesystem fault, device lock, or iOS runtime verification."
+}

@@ -1,0 +1,103 @@
+{
+  "api_reopen_path": "Fresh SQLiteRecordRepository initialization + fresh LocalRecordsViewModel + load/full snapshot; same process and OS filesystem caches remain warm; not app cold-launch timing",
+  "api_reopen_samples_ms": [
+    13.4315,
+    13.235875,
+    13.697583,
+    13.330541,
+    13.114792
+  ],
+  "api_reopen_statistics": {
+    "max_ms": 13.697583,
+    "mean_ms": 13.362058199999998,
+    "median_ms": 13.330541,
+    "min_ms": 13.114792,
+    "p95_nearest_rank_ms": 13.697583,
+    "population_standard_deviation_ms": 0.19771452274570023
+  },
+  "checks": "All saves returned success; no VM error; drafts cleared after commit; 1,030 unique UUIDs and 1,024-byte originals survived final snapshot",
+  "configuration": "SwiftPM Release, Swift 6, macOS host; no file-protection emulation, cache purge, process-launch cost or UI rendering",
+  "database_directory": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-step2-host-benchmark-4u7s540d",
+  "database_plus_journal_bytes": 1507328,
+  "file_sizes_bytes": {
+    "records.sqlite": 1507328,
+    "records.sqlite-journal": 0,
+    "records.sqlite-shm": 0,
+    "records.sqlite-wal": 0
+  },
+  "final_records": 1030,
+  "final_retained_text_bytes": 1054720,
+  "kind": "HOST diagnostic baseline only; not a physical-device result",
+  "per_record_original_utf8_bytes": 1024,
+  "physical_benchmark_status": "BLOCKED: iPhone15ProMax Release p95 save <200ms, cold snapshot <1s, DB+journal <10MiB remain unmeasured on required hardware",
+  "reopen_samples_count": 5,
+  "seed_records": 1000,
+  "warm_save_path": "Actual LocalRecordsViewModel.saveCapture -> LocalMemoryUseCases.create -> SQLiteRecordRepository.create plus full snapshot/validation/VM refresh/sort; no UI layout/rendering",
+  "warm_save_samples_count": 30,
+  "warm_save_samples_ms": [
+    139.561709,
+    44.044333,
+    14.376458,
+    33.879792,
+    15.850292,
+    16.704708,
+    13.860375,
+    14.061041,
+    13.589333,
+    14.0995,
+    14.00725,
+    14.210875,
+    13.853041,
+    14.013209,
+    14.224458,
+    13.926958,
+    15.031,
+    14.191792,
+    13.696917,
+    13.524791,
+    13.424375,
+    13.702667,
+    13.682167,
+    13.588458,
+    13.717542,
+    13.978459,
+    14.107083,
+    14.521542,
+    14.038333,
+    14.246625
+  ],
+  "warm_save_statistics": {
+    "max_ms": 139.561709,
+    "mean_ms": 19.990502766666665,
+    "median_ms": 14.049686999999999,
+    "min_ms": 13.424375,
+    "p95_nearest_rank_ms": 44.044333,
+    "population_standard_deviation_ms": 23.094563026047005
+  },
+  "started_at_utc": "2026-11-14T19:15:59.573888+00:00",
+  "finished_at_utc": "2026-11-14T19:16:00.678442+00:00",
+  "load_average_before": [
+    9.796875,
+    10.42431640625,
+    23.9697265625
+  ],
+  "load_average_after": [
+    9.796875,
+    10.42431640625,
+    23.9697265625
+  ],
+  "environment": {
+    "platform": "macOS-27.2.1-arm64-arm-64bit",
+    "hardware_model": "MacBookPro18,3",
+    "memory_bytes": 17179869184,
+    "cpu": "Apple M1 Pro",
+    "swift": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+    "xcode": "Xcode 27.2\nBuild version 27B52",
+    "sqlite_runtime_system_library": "3.54.0",
+    "conditions": "Shared development host; main agent performs simulator/build checks concurrently. No CPU isolation, filesystem cache purge, energy/thermal profiling or repeated independent sessions."
+  },
+  "source_unchanged_during_benchmark": true,
+  "warmup_and_sample_policy": "Loaded the seeded 1,000-record snapshot before timing. No save warmup or discarded samples; first timed save remains in the raw data. Each save opens its own SQLite connection through the actual adapter.",
+  "dataset_definition": "Each original has a unique fictional English/Arabic prefix and ASCII padding to exactly 1,024 UTF-8 bytes; no corrections or links. Save samples grow the store from 1,000 to 1,030 records. All five API reopen samples read the final 1,030-record store.",
+  "percentile_definition": "Nearest-rank p95: sorted sample at ceil(0.95*n), one-based. Median averages the two middle values for an even sample count. Standard deviation is population standard deviation."
+}

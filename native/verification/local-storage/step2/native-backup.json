@@ -1,0 +1,20 @@
+{
+  "location": "On My iPhone / local File Provider Storage",
+  "format_version": 1,
+  "bytes": 3761,
+  "sha256": "927eed1cd97f098f40acce23cdefa2b77c4490f6398d585c3a0733517b91b5f2",
+  "record_count": 10,
+  "revision_count": 2,
+  "link_count": 2,
+  "archive_link_count": 2,
+  "archive_revision_count": 2,
+  "original_bytes_dates_and_ids_match_live_store": true,
+  "export_path": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Shared/AppGroup/373DA5CD-B506-4409-AB96-929BF2889EE4/File Provider Storage/MemoryOS-backup.json",
+  "type": "Actual native Files exporter, Release iOS27.2 simulator; fictional records",
+  "native_import_success_alert_observed": true,
+  "idempotent_import_preserved_all_records_history_links_and_dates": true,
+  "after_import_record_count": 10,
+  "selection_note": "Semantic whole-cell press did not change Files picker; visually grounded icon press selected the same file and produced Backup restored. Post-picker AX tree issue remains separate.",
+  "retained_backup_fixture": "native-backup-fixture.json",
+  "generated_export_removed_after_retention": true
+}

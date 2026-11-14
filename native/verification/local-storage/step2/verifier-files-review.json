@@ -1,0 +1,11 @@
+{
+  "scope": "Source review of post-native-Files two-node accessibility tree symptom",
+  "result": "Unresolved; no confirmed app-code cause",
+  "code_evidence": [
+    "native/MemoryOS/Features/LocalRecords/LocalRecordsView.swift fileExporter completion only reports non-cancel failure and clears archiveData",
+    "native/MemoryOS/Features/RootView.swift accessibilityHidden depends only on menuIsOpen; exporter does not change it"
+  ],
+  "primary_source": "https://developer.apple.com/documentation/swiftui/view/fileexporter(ispresented:document:contenttype:defaultfilename:oncompletion:)",
+  "documented_lifecycle": "SwiftUI sets isPresented false before completion; cancellation does not call this overload completion.",
+  "limitations": "Reviewer did not interact with device; main observed symptom and relaunch recovery. No inference of successful VoiceOver or tool/SDK root cause."
+}

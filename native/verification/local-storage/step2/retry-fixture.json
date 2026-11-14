@@ -1,0 +1,12 @@
+{
+  "directory": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Data/Application/D1604687-7E23-4F77-86FE-5BC370C2AE07/Library/Application Support/LocalRecords",
+  "backup_directory": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Data/Application/D1604687-7E23-4F77-86FE-5BC370C2AE07/Library/Application Support/LocalRecords-step2-preserved",
+  "before_hashes": {
+    "records.sqlite": "24fd91e5f2bc2c4dd00e0dffd8b9073a91e816a88543d0a001defde1c179acc4"
+  },
+  "purpose": "Reversible simulator-only regular-file blocker for startup retry test; preserve existing records byte-for-byte.",
+  "restored_hashes": {
+    "records.sqlite": "24fd91e5f2bc2c4dd00e0dffd8b9073a91e816a88543d0a001defde1c179acc4"
+  },
+  "restoration_byte_exact": true
+}

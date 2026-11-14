@@ -1,0 +1,51 @@
+Building for production...
+[Pre-planning 1 / 96]
+[Planning deferred tasks]
+[32 / 58]
+[33 / 59] MemoryCore
+[43 / 94]
+[46 / 94]
+[51 / 94]
+[53 / 94]
+[57 / 94]
+[59 / 94]
+[62 / 94]
+[65 / 94]
+[67 / 94]
+[68 / 94]
+[69 / 94] MemoryCore
+[76 / 95] MemoryOS
+[78 / 96] MemoryOS
+[87 / 97] MemoryOSTests-product
+[89 / 100]
+[91 / 100] MemoryOSTests-product
+[96 / 100] MemoryOSTests-product
+[99 / 100] MemoryOSTests-product
+Build complete! (10.18 secs)
+Test Suite 'All tests' started at 2026-11-14 21:33:45.101.
+Test Suite 'All tests' passed at 2026-11-14 21:33:45.113.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.012) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite LocalArchiveFileReaderTests started.
+◇ Suite LocalRecordsViewModelTests started.
+◇ Test rejectsOversizedFileBeforeReadingItsContents() started.
+◇ Test readsExactLocalArchiveBytes() started.
+◇ Test unsupportedRestoreKeepsVisibleRecordsAndReportsFailure() started.
+◇ Test unavailableStorageDoesNotAllowEphemeralSave() started.
+◇ Test pendingSaveRejectsDuplicateAndPreservesNewTyping() started.
+◇ Test committedCreateIsNotRetriedAfterRefreshFailure() started.
+◇ Test storageFailureKeepsDraftAndReloadCanRecover() started.
+◇ Test savingPreservesExactTextAndClearsOnlyAfterSuccess() started.
+✔ Test unavailableStorageDoesNotAllowEphemeralSave() passed after 0.001 seconds.
+✔ Test committedCreateIsNotRetriedAfterRefreshFailure() passed after 0.001 seconds.
+✔ Test savingPreservesExactTextAndClearsOnlyAfterSuccess() passed after 0.001 seconds.
+✔ Test pendingSaveRejectsDuplicateAndPreservesNewTyping() passed after 0.001 seconds.
+✔ Test storageFailureKeepsDraftAndReloadCanRecover() passed after 0.001 seconds.
+✔ Test unsupportedRestoreKeepsVisibleRecordsAndReportsFailure() passed after 0.001 seconds.
+✔ Suite LocalRecordsViewModelTests passed after 0.001 seconds.
+✔ Test readsExactLocalArchiveBytes() passed after 0.002 seconds.
+✔ Test rejectsOversizedFileBeforeReadingItsContents() passed after 0.002 seconds.
+✔ Suite LocalArchiveFileReaderTests passed after 0.002 seconds.
+✔ Test run with 8 tests in 2 suites passed after 0.003 seconds.

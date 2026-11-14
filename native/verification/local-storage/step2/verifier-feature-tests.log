@@ -1,0 +1,46 @@
+Building for production...
+[Pre-planning 1 / 96]
+[Planning deferred tasks]
+[32 / 58]
+[33 / 59] MemoryCore
+[43 / 94]
+[46 / 94]
+[51 / 94]
+[53 / 94]
+[57 / 94]
+[59 / 94]
+[62 / 94]
+[65 / 94]
+[67 / 94]
+[68 / 94]
+[69 / 94] MemoryCore
+[76 / 95] MemoryOS
+error: SwiftCompile normal arm64 failed with a nonzero exit code. Command line:     cd /private/tmp
+    
+/private/tmp/memoryos-step2-verifier-feature/Sources/MemoryOS/LocalRecordsViewModel.swift:11:30: error: cannot find type 'LocalMemorySessionProvider' in scope
+  9 |   private var useCases: LocalMemoryUseCases?
+ 10 |   private var archiveRestore: RestoreArchiveFromFile?
+ 11 |   private let provider: (any LocalMemorySessionProvider)?
+    |                              `- error: cannot find type 'LocalMemorySessionProvider' in scope
+ 12 |   var draft = ""
+ 13 |   private(set) var records: [LocalRecord] = []
+
+/private/tmp/memoryos-step2-verifier-feature/Sources/MemoryOS/LocalRecordsViewModel.swift:28:22: error: cannot find type 'LocalMemorySessionProvider' in scope
+ 26 |   }
+ 27 | 
+ 28 |   init(provider: any LocalMemorySessionProvider) {
+    |                      `- error: cannot find type 'LocalMemorySessionProvider' in scope
+ 29 |     self.provider = provider
+ 30 |     useCases = nil
+
+/private/tmp/memoryos-step2-verifier-feature/Sources/MemoryOS/LocalRecordsViewModel.swift:65:7: warning: 'catch' block is unreachable because no errors are thrown in 'do' block
+ 63 |       try await refresh(useCases)
+ 64 |       error = nil
+ 65 |     } catch { self.error = (error as? LocalMemoryError) ?? .storageFailure }
+    |       `- warning: 'catch' block is unreachable because no errors are thrown in 'do' block
+ 66 |   }
+ 67 | 
+Failed frontend command:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-frontend -frontend -c /private/tmp/memoryos-step2-verifier-feature/Sources/MemoryOS/LocalArchiveFileReader.swift /private/tmp/memoryos-step2-verifier-feature/Sources/MemoryOS/LocalRecordsViewModel.swift -emit-module-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS.swiftmodule -emit-module-doc-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS.swiftdoc -emit-module-source-info-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS.swiftsourceinfo -emit-dependencies-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS-primary.d -emit-const-values-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS-primary.swiftconstvalues -serialize-diagnostics-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS-primary.dia -emit-objc-header-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS-Swift.h -emit-abi-descriptor-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS.abi.json -target arm64-apple-macos14.0 -disable-cross-import-overlay-search -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libFoundationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#FoundationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libObservationMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#ObservationMacros -load-resolved-plugin /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib/swift/host/plugins/libSwiftMacros.dylib\#/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/bin/swift-plugin-server\#SwiftMacros -disable-implicit-swift-modules -Xcc -fno-implicit-modules -Xcc -fno-implicit-module-maps -explicit-swift-module-map-file /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS-dependencies-1.json -Xllvm -aarch64-use-tbi -enable-objc-interop -stack-check -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk -I /private/tmp/memoryos-step2-verifier-feature/.build/out/Products/Release -Isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib -F /private/tmp/memoryos-step2-verifier-feature/.build/out/Products/Release/PackageFrameworks -F /private/tmp/memoryos-step2-verifier-feature/.build/out/Products/Release -F /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks -module-cache-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/SwiftExplicitPrecompiledModules -no-color-diagnostics -Xcc -fno-color-diagnostics -enable-testing -g -debug-info-format\=dwarf -dwarf-version\=4 -swift-version 6 -O -D SWIFT_PACKAGE -D SWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE -D Xcode -serialize-debugging-options -enable-experimental-feature DebugDescriptionMacro -empty-abi-descriptor -validate-clang-modules-once -clang-build-session-file /private/tmp/memoryos-step2-verifier-feature/.build/out/ModuleCache.noindex/Session.modulevalidation -Xcc -working-directory -Xcc /private/tmp -file-compilation-dir /private/tmp -Xcc -ivfsstatcache -Xcc /private/tmp/memoryos-step2-verifier-feature/.build/out/SDKStatCaches.noindex/macosx27.2-26B118-a0facfad118c1a7a18f0aad9463f6549a7ff82d74745d5ef33555b35c4238456.sdkstatcache -Xcc -fmodules-prune-interval\=86400 -Xcc -fmodules-prune-after\=345600 -Xcc -I/private/tmp/memoryos-step2-verifier-feature/.build/out/Products/Release/include -Xcc -I/private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/DerivedSources-normal/arm64 -Xcc -I/private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/DerivedSources/arm64 -Xcc -I/private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/DerivedSources -Xcc -DSWIFT_PACKAGE -no-auto-bridging-header-chaining -module-name MemoryOS -package-name memoryos_step2_verifier_feature -const-gather-protocols-file /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS_const_extract_protocols.json -disable-clang-spi -clang-target arm64-apple-macos27.2 -target-sdk-version 27.2 -target-sdk-name macosx27.2 -in-process-plugin-server-path /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/libSwiftInProcPluginServer.dylib -enable-default-cmo -parse-as-library -num-threads 8 -o /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/LocalArchiveFileReader.o -o /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/LocalRecordsViewModel.o -debug-module-path /private/tmp/memoryos-step2-verifier-feature/.build/out/Intermediates.noindex/MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/MemoryOS.swiftmodule -index-unit-output-path /MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/LocalArchiveFileReader.o -index-unit-output-path /MemoryOSFeatureChecks.build/Release/MemoryOS-t.build/Objects-normal/arm64/LocalRecordsViewModel.o
+error: Build failed
+error: fatalError

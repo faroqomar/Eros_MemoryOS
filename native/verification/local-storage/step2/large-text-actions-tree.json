@@ -1,0 +1,303 @@
+{
+  "success": true,
+  "data": {
+    "nodes": [
+      {
+        "index": 0,
+        "type": "Other",
+        "role": "_TtC7SwiftUIP33_ACC2C5639A7D76F611E170E831FCA49118SwiftUIApplication",
+        "subrole": "UIApplication",
+        "label": "MemoryOS",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 402,
+          "height": 874
+        },
+        "enabled": true,
+        "depth": 0,
+        "pid": 82411,
+        "hittable": false,
+        "ref": "e1",
+        "kind": "other"
+      },
+      {
+        "index": 1,
+        "parentIndex": 0,
+        "type": "NavigationBar",
+        "role": "SwiftUI.UIKitNavigationBar",
+        "subrole": "UINavigationBar",
+        "identifier": "Local record",
+        "rect": {
+          "x": 0,
+          "y": 62,
+          "width": 402,
+          "height": 54
+        },
+        "enabled": true,
+        "depth": 1,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e2",
+        "kind": "navigation-bar"
+      },
+      {
+        "index": 2,
+        "parentIndex": 1,
+        "type": "Button",
+        "role": "UIAccessibilityBackButtonElement",
+        "subrole": "UIAccessibilityElement",
+        "label": "Back",
+        "identifier": "BackButton",
+        "rect": {
+          "x": 16,
+          "y": 62,
+          "width": 44,
+          "height": 44
+        },
+        "enabled": true,
+        "depth": 2,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e3",
+        "kind": "button"
+      },
+      {
+        "index": 3,
+        "parentIndex": 1,
+        "type": "StaticText",
+        "role": "UILabel",
+        "label": "Local record",
+        "rect": {
+          "x": 141.66666666666669,
+          "y": 70,
+          "width": 118.33333333333331,
+          "height": 28
+        },
+        "enabled": true,
+        "depth": 2,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e4",
+        "kind": "text"
+      },
+      {
+        "index": 4,
+        "parentIndex": 0,
+        "type": "CollectionView",
+        "role": "SwiftUI.UpdateCoalescingCollectionView",
+        "subrole": "UICollectionView",
+        "rect": {
+          "x": 0,
+          "y": 116,
+          "width": 402,
+          "height": 695.9999999999998
+        },
+        "enabled": true,
+        "depth": 1,
+        "pid": 82411,
+        "hittable": true,
+        "hiddenContentAbove": true,
+        "ref": "e5",
+        "kind": "collection"
+      },
+      {
+        "index": 5,
+        "parentIndex": 4,
+        "type": "Cell",
+        "role": "SwiftUI.ListCollectionViewCell",
+        "subrole": "UICollectionViewListCell",
+        "rect": {
+          "x": 16,
+          "y": 116,
+          "width": 370,
+          "height": 36.66666666666674
+        },
+        "enabled": true,
+        "depth": 2,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e6",
+        "kind": "cell"
+      },
+      {
+        "index": 6,
+        "parentIndex": 5,
+        "type": "Button",
+        "role": "SwiftUI.AccessibilityNode",
+        "subrole": "NSObject",
+        "label": "Link a record",
+        "identifier": "link-local-record",
+        "rect": {
+          "x": 16,
+          "y": 116,
+          "width": 370,
+          "height": 36.66666666666674
+        },
+        "enabled": true,
+        "depth": 3,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e7",
+        "kind": "button"
+      },
+      {
+        "index": 7,
+        "parentIndex": 4,
+        "type": "Cell",
+        "role": "SwiftUI.ListCollectionViewCell",
+        "subrole": "UICollectionViewListCell",
+        "rect": {
+          "x": 16,
+          "y": 187.66666666666674,
+          "width": 370,
+          "height": 99
+        },
+        "enabled": true,
+        "depth": 2,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e8",
+        "kind": "cell"
+      },
+      {
+        "index": 8,
+        "parentIndex": 7,
+        "type": "Button",
+        "role": "SwiftUI.AccessibilityNode",
+        "subrole": "NSObject",
+        "label": "Correct text",
+        "identifier": "correct-local-record",
+        "rect": {
+          "x": 16,
+          "y": 187.66666666666674,
+          "width": 370,
+          "height": 99
+        },
+        "enabled": true,
+        "depth": 3,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e9",
+        "kind": "button"
+      },
+      {
+        "index": 9,
+        "parentIndex": 4,
+        "type": "Cell",
+        "role": "SwiftUI.ListCollectionViewCell",
+        "subrole": "UICollectionViewListCell",
+        "rect": {
+          "x": 16,
+          "y": 286.66666666666674,
+          "width": 370,
+          "height": 99
+        },
+        "enabled": true,
+        "depth": 2,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e10",
+        "kind": "cell"
+      },
+      {
+        "index": 10,
+        "parentIndex": 9,
+        "type": "Button",
+        "role": "SwiftUI.AccessibilityNode",
+        "subrole": "NSObject",
+        "label": "Move to Trash",
+        "identifier": "trash-local-record",
+        "rect": {
+          "x": 16,
+          "y": 286.66666666666674,
+          "width": 370,
+          "height": 99
+        },
+        "enabled": true,
+        "depth": 3,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e11",
+        "kind": "button"
+      },
+      {
+        "index": 11,
+        "parentIndex": 4,
+        "type": "Cell",
+        "role": "SwiftUI.ListCollectionViewHeaderFooter",
+        "subrole": "UICollectionViewListCell",
+        "rect": {
+          "x": 16,
+          "y": 385.66666666666674,
+          "width": 370,
+          "height": 426.33333333333303
+        },
+        "enabled": true,
+        "depth": 2,
+        "pid": 82411,
+        "hittable": true,
+        "label": "Trash retains originals and history. Permanent erasure is not available in this step.",
+        "ref": "e12",
+        "kind": "cell"
+      },
+      {
+        "index": 12,
+        "parentIndex": 0,
+        "type": "Toolbar",
+        "role": "_UIFloatingBarContainerView",
+        "label": "Toolbar",
+        "identifier": "Toolbar",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 402,
+          "height": 874
+        },
+        "enabled": true,
+        "depth": 1,
+        "pid": 82411,
+        "hittable": true,
+        "ref": "e13",
+        "kind": "toolbar"
+      }
+    ],
+    "truncated": false,
+    "appName": "com.eros.memoryos.demo",
+    "appBundleId": "com.eros.memoryos.demo",
+    "visibility": {
+      "partial": true,
+      "visibleNodeCount": 13,
+      "totalNodeCount": 13,
+      "reasons": [
+        "scroll-hidden-above"
+      ]
+    },
+    "viewport": {
+      "width": 402,
+      "height": 874
+    },
+    "presentedSurface": "absent",
+    "snapshotQualityNotes": [
+      {
+        "code": "regular-geometry-clipped",
+        "clippedNodeCount": 10,
+        "droppedNodeCount": 9
+      }
+    ],
+    "snapshotDiagnostics": {
+      "stats": {
+        "count": 103,
+        "p50Ms": 128,
+        "p95Ms": 438,
+        "maxMs": 1198,
+        "slowThresholdMs": 1500,
+        "platform": "ios",
+        "backends": {
+          "xctest": 103
+        }
+      }
+    },
+    "refsGeneration": 115411
+  }
+}

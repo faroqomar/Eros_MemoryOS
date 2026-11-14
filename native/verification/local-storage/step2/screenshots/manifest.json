@@ -1,0 +1,20 @@
+{
+  "device": "iPhone18Pro",
+  "os": "iOS27.2",
+  "physical": false,
+  "configuration": "Release",
+  "appearance": "dark",
+  "source_manifest": "../source-hashes.json",
+  "source_manifest_sha256": "411104601aac0d47756a5f2d8c95734c034dc2be6f5127f424456567afcc214f",
+  "binary_sha256": "1c4c7449738012347c0360e346c11afe4324e8c16075a67261fec3c8b8dcac9b",
+  "source_note": "Product source unchanged across functional run, independent recheck and captures; package regression adds Arabic parameter without product changes.",
+  "captures": {
+    "native-backup-picker.png": "f58d50a161b38a00ae2361a1cecc9d47948e46b6d43c0893e8ebc40c2c264561",
+    "record-largest-actions.png": "1d92cafcca081869f51671e16db201e8b4d110eb5c21a2cce780ae8df65b726e",
+    "record-largest-top.png": "75a924e2af710fcaa51965596ea95c9a26b95388727305cfe9a98f7245af9a50",
+    "startup-error-draft.png": "a4d0e43872294cb9f8c3c41e74c48518cf8103696d66000fbe75b93a8087434d",
+    "native-backup-restored.png": "fef9c08a37c89ceb75cb3560badfc01ebbf46e9dad6e16bd75e5728275abd16d",
+    "record-regular.png": "e688edad89074fcf85643d0e364cbaa06ad629dc86f38ae4766aa9711ba039ec",
+    "startup-recovered-draft.png": "382ffa44dcb72e069e74b7b4831840097d76d0d66683ca46937152eb70fcdf6c"
+  }
+}

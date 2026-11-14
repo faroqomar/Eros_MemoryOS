@@ -1,0 +1,23 @@
+{
+  "at_utc": "2026-11-14T19:45:39.577889+00:00",
+  "cleanup_disposition": "PASS for narrow reviewed removals and preserved artifacts",
+  "overall_step2": "BLOCKED: physical hardware/minimum-OS checks, accessibility findings and post-Files AX recovery remain unverified or unresolved",
+  "checks": {
+    "removed_external_paths_absent": true,
+    "duplicate_paths_absent": true,
+    "canonical_duplicate_hashes_match": true,
+    "source_manifest_matches": true,
+    "screenshot_manifest_source_hash_matches": true,
+    "screenshot_hashes_match": true,
+    "original_research_hashes_match": true,
+    "retained_backup_hash_matches": true,
+    "foundation_result_links_valid": true
+  },
+  "source_count": 36,
+  "screenshots_count": 7,
+  "external_removed_count": 21,
+  "external_reclaimed_allocated_KiB": 718536,
+  "duplicate_removed_bytes": 292904,
+  "cleanup_receipt_sha256": "23aee111d72337d50cc0ee62ca2eada44f7d18be0404c96df53bdcc41f92290d",
+  "limit": "No broad tests repeated; tested source unchanged. Main owns simulator app-data preservation. Reviewer checked the preservation receipt, source/evidence hashes and symlink targets without device interaction."
+}

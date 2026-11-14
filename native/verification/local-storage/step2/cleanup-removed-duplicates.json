@@ -1,0 +1,23 @@
+[
+  {
+    "remove": "native/.test-rtl-final.log",
+    "retain": "docs/evidence/native-foundation-2026-11-13/tests-passed.log",
+    "sha256": "b90acce1aa7bfc97b74ffddfd2958d353971dd3cdd32729ea3d1e5703dd3839e",
+    "bytes": 83710,
+    "reason": "Byte-identical ignored log; canonical historical evidence remains; no Markdown consumer references the duplicate path."
+  },
+  {
+    "remove": "native/.test.log",
+    "retain": "docs/evidence/native-foundation-2026-11-13/tests-initial-failure.log",
+    "sha256": "dda3916bc3c09c1b843beb8c21c2073a1ed7dfa7cbcff074533bb2d4271e4c80",
+    "bytes": 87906,
+    "reason": "Byte-identical ignored log; canonical historical evidence remains; no Markdown consumer references the duplicate path."
+  },
+  {
+    "remove": "native/.build-first.log",
+    "retain": "docs/evidence/native-foundation-2026-11-13/build.log",
+    "sha256": "b732a5c3ec92a84b53451ea475f14d4b1ca9621fc44b57b070228185a8a6476f",
+    "bytes": 121288,
+    "reason": "Byte-identical ignored log; canonical historical evidence remains; no Markdown consumer references the duplicate path."
+  }
+]

@@ -1,0 +1,204 @@
+{
+  "date_utc": "2026-11-14T19:43:46.912343+00:00",
+  "inventory_counts": {
+    "tracked": 603,
+    "untracked": 62,
+    "ignored": 15198
+  },
+  "initial_inventory_du": "1061060\t.\n696364\tnative\n340244\t.git\n",
+  "initial_inventory_disk": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1   460Gi   356Gi    66Gi    85%    4.0M  696M    1%   /System/Volumes/Data\n",
+  "pre_cache_removal_KiB": {
+    "project": 1188544,
+    "native": 818532,
+    ".git": 345560
+  },
+  "after_cache_removal_KiB": {
+    "project": 1188544,
+    "native": 818532,
+    ".git": 345560
+  },
+  "removed": [
+    {
+      "path": "/tmp/memoryos-step2-app-build",
+      "allocated_KiB": 141828,
+      "logical_bytes": 138050843,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-device-build",
+      "allocated_KiB": 96220,
+      "logical_bytes": 97457071,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-release-build",
+      "allocated_KiB": 96144,
+      "logical_bytes": 97317333,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-main-package",
+      "allocated_KiB": 67628,
+      "logical_bytes": 67985841,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-build",
+      "allocated_KiB": 68580,
+      "logical_bytes": 68913405,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-core",
+      "allocated_KiB": 50472,
+      "logical_bytes": 51417996,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-repro",
+      "allocated_KiB": 65864,
+      "logical_bytes": 65956929,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-feature",
+      "allocated_KiB": 65428,
+      "logical_bytes": 66343904,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-benchmark",
+      "allocated_KiB": 64524,
+      "logical_bytes": 64820443,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-step2-interruption-l6n3thxj",
+      "allocated_KiB": 76,
+      "logical_bytes": 74296,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-step2-host-benchmark-4u7s540d",
+      "allocated_KiB": 1472,
+      "logical_bytes": 1507328,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-authority.txt",
+      "allocated_KiB": 40,
+      "logical_bytes": 39157,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-recall.json",
+      "allocated_KiB": 40,
+      "logical_bytes": 38964,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-phone-recall.json",
+      "allocated_KiB": 48,
+      "logical_bytes": 46155,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-memory-preflight.txt",
+      "allocated_KiB": 8,
+      "logical_bytes": 4206,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-app-container.txt",
+      "allocated_KiB": 4,
+      "logical_bytes": 159,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-export-paths.txt",
+      "allocated_KiB": 4,
+      "logical_bytes": 201,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-benchmark-recall.json",
+      "allocated_KiB": 52,
+      "logical_bytes": 49556,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-final-recall.json",
+      "allocated_KiB": 44,
+      "logical_bytes": 44575,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-cleanup-recall.json",
+      "allocated_KiB": 52,
+      "logical_bytes": 51383,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-required-skill.txt",
+      "allocated_KiB": 8,
+      "logical_bytes": 4206,
+      "reason": "Task-owned reproducible build/harness/fictional fixture or recall scratch; unique results retained in Step2 evidence before removal."
+    }
+  ],
+  "removed_duplicate_logs": [
+    {
+      "remove": "native/.test-rtl-final.log",
+      "retain": "docs/evidence/native-foundation-2026-11-13/tests-passed.log",
+      "sha256": "b90acce1aa7bfc97b74ffddfd2958d353971dd3cdd32729ea3d1e5703dd3839e",
+      "bytes": 83710,
+      "reason": "Byte-identical ignored log; canonical historical evidence remains; no Markdown consumer references the duplicate path."
+    },
+    {
+      "remove": "native/.test.log",
+      "retain": "docs/evidence/native-foundation-2026-11-13/tests-initial-failure.log",
+      "sha256": "dda3916bc3c09c1b843beb8c21c2073a1ed7dfa7cbcff074533bb2d4271e4c80",
+      "bytes": 87906,
+      "reason": "Byte-identical ignored log; canonical historical evidence remains; no Markdown consumer references the duplicate path."
+    },
+    {
+      "remove": "native/.build-first.log",
+      "retain": "docs/evidence/native-foundation-2026-11-13/build.log",
+      "sha256": "b732a5c3ec92a84b53451ea475f14d4b1ca9621fc44b57b070228185a8a6476f",
+      "bytes": 121288,
+      "reason": "Byte-identical ignored log; canonical historical evidence remains; no Markdown consumer references the duplicate path."
+    }
+  ],
+  "reclaimed_cache_allocated_KiB": 718536,
+  "dead_source_removed": [
+    "LocalRecordsViewModel.saved (no product reader)",
+    "LocalRecordsViewModel.restore(Data) (no product caller; tests now use actual file-import use case)"
+  ],
+  "retained_exceptions": [
+    "Original Project_Idea documents, research/design/provenance assets; all original hashes match",
+    "Unique historical logs, raw xcresult bundles and native reference captures",
+    "native/.build Foundation result symlinks and canonical result targets",
+    "Unrelated active policy/architecture edits and Git metadata",
+    "Live simulator app SQLite data; preserved startup fixture was restored byte exactly",
+    "/tmp/memoryos-local-storage-tests.xcresult and /tmp/memoryos-local-storage-functional.xcresult: interrupted Step1 unique evidence not yet ruled redundant",
+    "Earlier Step1 small scratch paths retained when duplicate/unique status was uncertain"
+  ],
+  "preservation_checks": {
+    "source_manifest_entries_match": 36,
+    "screenshot_manifest_entries_match": 7,
+    "retained_backup_sha256_matches": true,
+    "original_research_hashes_match": true,
+    "canonical_duplicate_hashes_match": true,
+    "foundation_result_links": {
+      "native/.build/FoundationFinal.xcresult": {
+        "target": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/preserved-foundation-results/FoundationFinal.xcresult",
+        "valid": true
+      },
+      "native/.build/FoundationRTLFinal.xcresult": {
+        "target": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/preserved-foundation-results/FoundationRTLFinal.xcresult",
+        "valid": true
+      }
+    }
+  },
+  "checks_reused": "Final package, feature, actual-provider, functional UI, Release build/analysis and formatting results cover dead-source repairs. Cache removal changes no tested source. Focused final verifier review required.",
+  "disk_after": "Filesystem   1024-blocks      Used Available Capacity iused     ifree %iused  Mounted on\n/dev/disk3s1   482797652 374109612  69428364    85% 4007766 694283640    1%   /System/Volumes/Data\n"
+}

@@ -1,0 +1,27 @@
+{
+  "reason": "Device blocker resolved; checks and captures complete. Remove reproducible task build caches; preserve installed Release app and unique verification evidence.",
+  "removed": [
+    {
+      "path": "/tmp/memoryos-local-storage-build",
+      "before_KiB": 349092
+    },
+    {
+      "path": "/tmp/memoryos-local-storage-release",
+      "before_KiB": 95896
+    }
+  ],
+  "retained": [
+    "native/verification/local-storage/candidate-ui.xcresult: unique earlier failure evidence",
+    "native/verification/local-storage/final-ui-recheck.xcresult: final successful app/UI evidence",
+    "/tmp/memoryos-local-storage-tests.xcresult: interrupted evidence pending Step 2 review",
+    "/tmp/memoryos-local-storage-functional.xcresult: interrupted evidence pending Step 2 review",
+    "native/verification/local-storage/screenshots: 9 current Release PNGs, manifest and gallery",
+    "Original research, source, active policy edits, historical references and Git metadata"
+  ],
+  "native_before_KiB": 696356,
+  "reclaimed_KiB": 444988,
+  "native_after_KiB": 696356,
+  "disk_after": "Filesystem      Size    Used   Avail Capacity iused ifree %iused  Mounted on\n/dev/disk3s1   460Gi   355Gi    67Gi    85%    4.0M  699M    1%   /System/Volumes/Data\n",
+  "source_hashes_match": true,
+  "capture_hashes_match": true
+}

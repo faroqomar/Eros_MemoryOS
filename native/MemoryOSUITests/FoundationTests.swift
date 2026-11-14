@@ -28,7 +28,7 @@ final class FoundationTests: XCTestCase {
     XCTAssertTrue(app.buttons["record-preview"].exists)
   }
 
-  func testDemoCaptureAndSessionReset() {
+  func testLocalCaptureSurvivesRelaunch() {
     let app = XCUIApplication()
     app.launch()
     XCTAssertFalse(app.buttons["send-memory"].isEnabled)
@@ -45,7 +45,7 @@ final class FoundationTests: XCTestCase {
     app.terminate()
     app.launch()
     app.buttons["your-memories"].tap()
-    XCTAssertFalse(app.staticTexts["A fictional project thought"].exists)
+    XCTAssertTrue(app.staticTexts["A fictional project thought"].waitForExistence(timeout: 3))
   }
 
   func testArabicDrawerClosesFullyOutsideTheScreen() {

@@ -1,0 +1,45 @@
+Building for production...
+[Pre-planning 1 / 96]
+[Planning deferred tasks]
+[4 / 30] MemoryCore
+[5 / 31] MemoryCore
+[7 / 32] MemoryCore
+[13 / 32] MemoryOS
+[15 / 33] MemoryOS
+[24 / 34] MemoryOSTests-product
+[26 / 37]
+[28 / 37] MemoryOSTests-product
+[33 / 37] MemoryOSTests-product
+[36 / 37] MemoryOSTests-product
+Build complete! (6.57 secs)
+Test Suite 'All tests' started at 2026-11-14 22:07:50.341.
+Test Suite 'All tests' passed at 2026-11-14 22:07:50.352.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.011) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite LocalArchiveFileReaderTests started.
+◇ Suite LocalRecordsViewModelTests started.
+◇ Test readsExactLocalArchiveBytes() started.
+◇ Test rejectsOversizedFileBeforeReadingItsContents() started.
+◇ Test storageFailureKeepsDraftAndReloadCanRecover() started.
+◇ Test unsupportedRestoreKeepsVisibleRecordsAndReportsFailure() started.
+◇ Test equivalentNewDraftBytesSurvivePendingSave() started.
+◇ Test transientConnectionFailureRetriesWithoutLosingDraft() started.
+◇ Test savingPreservesExactTextAndClearsOnlyAfterSuccess() started.
+◇ Test unavailableStorageDoesNotAllowEphemeralSave() started.
+◇ Test committedCreateIsNotRetriedAfterRefreshFailure() started.
+◇ Test pendingSaveRejectsDuplicateAndPreservesNewTyping() started.
+✔ Test unavailableStorageDoesNotAllowEphemeralSave() passed after 0.001 seconds.
+✔ Test savingPreservesExactTextAndClearsOnlyAfterSuccess() passed after 0.001 seconds.
+✔ Test transientConnectionFailureRetriesWithoutLosingDraft() passed after 0.001 seconds.
+✔ Test unsupportedRestoreKeepsVisibleRecordsAndReportsFailure() passed after 0.001 seconds.
+✔ Test equivalentNewDraftBytesSurvivePendingSave() passed after 0.001 seconds.
+✔ Test storageFailureKeepsDraftAndReloadCanRecover() passed after 0.001 seconds.
+✔ Test committedCreateIsNotRetriedAfterRefreshFailure() passed after 0.001 seconds.
+✔ Test pendingSaveRejectsDuplicateAndPreservesNewTyping() passed after 0.001 seconds.
+✔ Suite LocalRecordsViewModelTests passed after 0.001 seconds.
+✔ Test readsExactLocalArchiveBytes() passed after 0.002 seconds.
+✔ Test rejectsOversizedFileBeforeReadingItsContents() passed after 0.002 seconds.
+✔ Suite LocalArchiveFileReaderTests passed after 0.002 seconds.
+✔ Test run with 10 tests in 2 suites passed after 0.002 seconds.

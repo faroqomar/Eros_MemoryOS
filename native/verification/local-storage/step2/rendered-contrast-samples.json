@@ -1,0 +1,35 @@
+{
+  "method" : "Native AppKit PNG analysis: dominant dark background and brightest repeated neutral foreground tone (at least10 pixels) inside recorded native control rectangles. Ignores antialias edges; sampled controls only, not a full contrast\/VoiceOver certification.",
+  "samples" : [
+    {
+      "background_rgb" : [
+        37,
+        37,
+        40
+      ],
+      "foreground_pixels" : 60,
+      "foreground_rgb" : [
+        245,
+        245,
+        245
+      ],
+      "label" : "Correct text",
+      "ratio" : 14.019614048526458
+    },
+    {
+      "background_rgb" : [
+        37,
+        37,
+        40
+      ],
+      "foreground_pixels" : 86,
+      "foreground_rgb" : [
+        245,
+        245,
+        245
+      ],
+      "label" : "Move to Trash",
+      "ratio" : 14.019614048526458
+    }
+  ]
+}

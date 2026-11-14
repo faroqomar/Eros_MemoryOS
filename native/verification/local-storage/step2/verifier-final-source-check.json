@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-11-14T19:40:06.550009+00:00",
+  "reviewed_manifest_sha256": "411104601aac0d47756a5f2d8c95734c034dc2be6f5127f424456567afcc214f",
+  "current_source_matches_final_manifest": true,
+  "product_source_matches_independent_rechecked_source": true,
+  "expanded_package_test_sha256": "dc0c9a7be8a182f67cc2a9ba743f215cb72098622ed5c7cb0433b38a18ad405b",
+  "focused_tests": "verifier-exact-text-final.log: ExactTextTests 3 functions; canonical decomposition function passes Arabic U+0623 and caf\u00e9 cases",
+  "reuse": "Product source unchanged since independent 21-function/10-function Release suites and host benchmark; only test data expanded.",
+  "limits": "Physical device, iOS18 runtime, affected accessibility acceptance and post-Files AX recovery remain blocked/unresolved."
+}

@@ -1,0 +1,29 @@
+{
+  "purpose": "Independent reusable HOST diagnostic baseline only. Physical iPhone benchmark remains BLOCKED.",
+  "command": "/tmp/memoryos-step2-verifier-benchmark/.build/release/Benchmark /var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-step2-host-benchmark-4u7s540d",
+  "package_source": "verifier-benchmark.Package.swift",
+  "executable_source": "verifier-benchmark.swift",
+  "actual_viewmodel_symlink": "/tmp/memoryos-step2-verifier-benchmark/Sources/Benchmark/LocalRecordsViewModel.swift",
+  "symlink_target": "native/MemoryOS/Features/LocalRecords/LocalRecordsViewModel.swift",
+  "build_configuration": "Release",
+  "actual_core_sqlite_path": "native/LocalMemory",
+  "hashes": {
+    "native/LocalMemory/Sources/MemorySQLite/SQLiteRecordRepository.swift": "c4eaa24788f2c6efbed075b5d0660d2088ecaa191b49e373d988f8fc97e3a2dd",
+    "native/LocalMemory/Sources/MemoryCore/LocalMemorySession.swift": "3606a0490023436ef3c74ed64562c0736f3ce3e82b7e9fd8658ca23c3b9ba736",
+    "native/LocalMemory/Sources/MemoryCore/LocalMemory.swift": "d29ade0f90b5309cf45d74f646bfa7fca570ecbf8f15912844b61530b3ad56a4",
+    "native/LocalMemory/Sources/MemoryCore/RestoreArchiveFromFile.swift": "082254c2be2839f0fa6ccd7be57f4a2367cec42cf8a1f65ec85e8b84aca012e5",
+    "native/LocalMemory/Sources/CSQLite/module.modulemap": "c121281d5395a9bb1c92e3110af7c157d34222dcde8fdd785ff5c427a62af902",
+    "native/LocalMemory/Sources/CSQLite/shim.h": "b052d8e561e942f97b503033ecd2eaa2b35213bdbf374983efe9e68eabdfc024",
+    "native/LocalMemory/Package.swift": "93342ef69299dc7d1d599e7ab62fb982d607b1c5b261e5a1625ec2bba32cc7ba",
+    "native/MemoryOS/Features/LocalRecords/LocalRecordsViewModel.swift": "f589debbfc5dcb131ce98426022a0f0969e8f2475c5dd1c197597c1bd6136f46"
+  },
+  "harness_sha256": {
+    "verifier-benchmark.Package.swift": "07aad8357706f2558d388a2f8e671105dcfad18e9bb8f1123f216294997b610f",
+    "verifier-benchmark.swift": "ceb9dd5bb56c78923959097454524a5f19d8ec3a0b441f9e5e5c736f19d794c3"
+  },
+  "binary_sha256": "00912e7ae95bcb1f73998da1e2c6bc1ecc6e2610c809a14ac4a728aedd441e61",
+  "external_cleanup_paths": [
+    "/tmp/memoryos-step2-verifier-benchmark",
+    "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-step2-host-benchmark-4u7s540d"
+  ]
+}

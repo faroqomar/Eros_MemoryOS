@@ -1,0 +1,1066 @@
+{
+  "results": [
+    {
+      "id": "9a8b9eb9-8985-4ac1-84c6-808f4f5bc6c8",
+      "text": "The planned data model supports manually created people, projects, and ideas linked by stable IDs; corrections retain immutable original text and provenance; records can move to Trash and be restored while preserving identity, hiding trashed records from active links, and not implying permanent erasure. A versioned portable JSON archive must include originals, corrections, links, and Trash, validate before transactional merge, preserve existing data on malformed or future-version input, and make repeated restores idempotent. | Defines durable linked-record, correction, deletion, export, and restore behavior.",
+      "type": "world",
+      "entities": [
+        "ideas",
+        "JSON archive",
+        "stable IDs",
+        "projects",
+        "people",
+        "Trash"
+      ],
+      "context": "Authoritative project source docs/tasks/2026-11-14-local-storage-text-capture.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:17:40.812407+00:00",
+      "document_id": "repo:docs/tasks/2026-11-14-local-storage-text-capture.md",
+      "metadata": {
+        "sha256": "2bb2ac7358fac800e3e00c93a7e4b13083bdfda2601fee47e9fad2e402252aa5",
+        "source_path": "docs/tasks/2026-11-14-local-storage-text-capture.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/tasks/2026-11-14-local-storage-text-capture.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0999925803239345,
+        "reranker": null,
+        "semantic": 0.8236908807570282,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "0aeb04f2-633d-498b-a201-0b2d29020877",
+      "text": "For typed local records, C35 authorizes checklist group 3 Step 1, and the storage decision selects OS SQLite with schema/archive version 1. Search indexes, provider selection, and broader protection/recovery design remain separate; the outline's SQLite mention is historical planning rather than a three-stage development workflow. | Involving: C35 | This records the selected storage decision while preserving unresolved scope.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "C35",
+        "local records",
+        "checklist group 3 Step 1"
+      ],
+      "context": "Authoritative project source docs/plans/build-outline.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:27:46.848655+00:00",
+      "document_id": "repo:docs/plans/build-outline.md",
+      "metadata": {
+        "sha256": "bbc9d0ee6e524609b30a2c0396b56f7e92adb94255c02b7810fed3225e6de035",
+        "source_path": "docs/plans/build-outline.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/build-outline.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0966853977558486,
+        "reranker": null,
+        "semantic": 0.880200829511906,
+        "keyword": 1.8000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "0fcef874-ea99-49d6-a815-e026ff686776",
+      "text": "On 2026-11-14, active work was checklist group 3, Step 1: the owner requested reliable local storage and text capture. README.md states that the implementation uses app-owned SQLite originals, correction history, stable links, reversible Trash, and explicit JSON backup/restore; current implementation checks and storage limits are documented in docs/tasks/2026-11-14-local-storage-text-capture.md and docs/decisions/local-record-storage.md, but this README snapshot is not proof of implementation. | When: 2026-11-14 | Involving: user (project owner) | Introduces the group 3 local-storage work while preserving the distinction between documented status and verified implementation.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "user",
+        "JSON",
+        "text capture",
+        "Eros MemoryOS",
+        "local storage",
+        "Trash"
+      ],
+      "context": "Authoritative project source README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-14T00:00:00.010000+00:00",
+      "mentioned_at": "2026-11-14T18:24:22.741146+00:00",
+      "document_id": "repo:README.md",
+      "metadata": {
+        "sha256": "063c548e2b5fe1868c0db94fef96d2a2917b3ec03513672fe29e1ae440146186",
+        "source_path": "README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:README.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0929553794439248,
+        "reranker": null,
+        "semantic": 0.8471606030214016,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "fdffc12a-c630-4354-8448-a1dfbb728ee0",
+      "text": "On November 14, 2026, the owner explicitly authorized starting Step 1 of checklist group 3: “Add reliable local storage and text capture.” The requested scope covers SQLite evaluation and original-record ownership, persistence of typed thoughts across app reopen, stable links among people/projects/ideas/captures, source-preserving corrections, deletion/export/backup/restore, and operation without external services; Step 2, Step 3, AI, recording, remote sync, and release remain separate. This records authorization to begin implementation, not verified implementation or testing. | When: November 14, 2026 | Involving: The owner | It establishes the selected implementation scope and explicitly separates it from later work.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "Step 1",
+        "memoryos",
+        "text capture",
+        "local storage"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-14T18:24:22.750082+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "9e99845dcf1ee80a23c6b8559476951de885d5bf923233498da4f86d992258b6",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_8",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0896456223011879,
+        "reranker": null,
+        "semantic": 0.8447572085406075,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "f8e9d1dd-eeab-434e-8cdd-348fd789e368",
+      "text": "SQLite is resolved for local records in checklist group 3, Step 1; this does not claim production readiness. | Explicitly resolved in the decision register, but limited to the specified checklist step.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "memoryos",
+        "local records"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:24:22.730731+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "106dec058e1e3d1eb62a7c9174c6b0598a69f10ce46aaa3018e9e63547be5659",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_6",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0867510407602357,
+        "reranker": null,
+        "semantic": 0.8584430813789368,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "60d0f6fb-fa5b-4e9d-b8e3-5a176be41540",
+      "text": "Project memoryos' C35 authorizes Step 1 for reliable local storage and text capture on 2026-11-14; the authoritative checklist records this as planned/under evaluation, not as verified implementation. Source: docs/plans/implementation-checklist.md. | When: 2026-11-14 | Involving: C35; project memoryos | The document is a snapshot and explicitly states that it is not proof of implementation.",
+      "type": "world",
+      "entities": [
+        "Step 1",
+        "C35",
+        "memoryos",
+        "docs/plans/implementation-checklist.md"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00+00:00",
+      "occurred_end": "2026-11-14T23:59:59+00:00",
+      "mentioned_at": "2026-11-14T18:24:22.731436+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "1aee7026aed2f75741e091b365d59f21d169bff950213ed9403171b38e550a0d",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_16",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.079716350559315,
+        "reranker": null,
+        "semantic": 0.8252629741869599,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "a9c3cb1d-3e99-4b25-a2d3-0caad256e0a8",
+      "text": "Historical research preserves potential people-and-memory capabilities: natural-language recall with supporting records; timelines and event extraction; topic discovery; communication statistics; sentiment and emotion trends with disable/error-correction controls; change detection backed by counts and time ranges; commitment/conflict tracking without inferring completion from silence; relationship graphs; evidence browsing and feedback; and proactive reflections such as daily/weekly summaries. | When: November 2025 research, recorded in the register on November 06, 2026 | Involving: Project memoryos | These are candidate capabilities preserved from research, not verified or approved features.",
+      "type": "world",
+      "entities": [
+        "life timelines",
+        "commitments and conflict history",
+        "event extraction",
+        "evidence",
+        "memoryos",
+        "sentiment and emotion trends",
+        "natural-language recall",
+        "relationship graph",
+        "topic discovery",
+        "change detection",
+        "communication statistics",
+        "proactive reflection"
+      ],
+      "context": "Authoritative project source docs/reference/historical-research.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-06T10:15:09.071343+00:00",
+      "document_id": "repo:docs/reference/historical-research.md",
+      "metadata": {
+        "sha256": "ac5ebe98643886404003bb36427c454096896c208622361a718edac64248601c",
+        "source_path": "docs/reference/historical-research.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/historical-research.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0789390723717127,
+        "reranker": null,
+        "semantic": 0.8248572945594788,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "196a7a49-9f55-48e5-9247-9e9d09aa11b4",
+      "text": "Current checks and remaining independent/physical-device verification are tracked in tasks/2026-11-14-local-storage-text-capture.md; protection and recovery behavior are specified in decisions/local-record-storage.md. | When: November 14, 2026 | Involving: memoryos project | The source identifies unresolved verification work and the authoritative decision record for storage protection and recovery.",
+      "type": "world",
+      "entities": [
+        "recovery",
+        "storage protection",
+        "memoryos",
+        "text capture",
+        "local storage"
+      ],
+      "context": "Authoritative project source docs/product-overview.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:27:46.878427+00:00",
+      "document_id": "repo:docs/product-overview.md",
+      "metadata": {
+        "sha256": "230110ea134911ec7cad349bb9d1e2578729dacc4db8333d9c19afe563e06124",
+        "source_path": "docs/product-overview.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/product-overview.md_3",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0768192417921372,
+        "reranker": null,
+        "semantic": 0.8223834739694923,
+        "keyword": 0.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "55e0df8d-4902-42bb-a10d-e3e397854dac",
+      "text": "The local-storage/text-capture work remains open pending independent verification. Planned requirements are to evaluate SQLite and original-record location; persist typed thoughts across app restarts; maintain stable links among people, projects, ideas, and captures; support source-preserving edits; define deletion/export/backup/restore behavior; and keep capture independent of external services. Source: docs/plans/implementation-checklist.md. | When: 2026-11-14 | Involving: Project memoryos | The checklist warns that open boxes and implemented subsets do not complete broader R02/R03/R05/R10/R22/R23/R27 requirements.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "R22",
+        "R23",
+        "R03",
+        "memoryos",
+        "text capture",
+        "R10",
+        "R05",
+        "R27",
+        "R02",
+        "local storage"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:24:22.741436+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "1aee7026aed2f75741e091b365d59f21d169bff950213ed9403171b38e550a0d",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_16",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0735069523135028,
+        "reranker": null,
+        "semantic": 0.8521678613574415,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "ef26c177-a4f3-44d4-a637-2dd19fe579cd",
+      "text": "The decision register records unresolved product and engineering questions for future work, including device constraints, local model quality, Swift/SwiftUI storage design under D21 and app-owned records under D27, reusable versus custom memory components, source export priorities, audio and transcript requirements, integrations, birthday automation, profiles and images, natural-language rules, Obsidian access, document import, languages, data locality, ChatGPT/provider access, sync architecture, historical features, device limits, backup/recovery, and native demo layouts. | When: November 14, 2026 | Involving: Eros MemoryOS project owner and engineering team | These questions are explicitly retained for future product review and do not need to be answered before reviewing the product idea.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "Swift",
+        "ChatGPT",
+        "D27",
+        "Eros MemoryOS",
+        "Convex",
+        "Supabase",
+        "D21",
+        "Obsidian"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:24:22.820731+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "106dec058e1e3d1eb62a7c9174c6b0598a69f10ce46aaa3018e9e63547be5659",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_8",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0701959306743134,
+        "reranker": null,
+        "semantic": 0.8246252045258773,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "eaddda65-6284-4349-a4cf-2831b3968efb",
+      "text": "On 2026-11-14, MemoryOS selected the operating system’s SQLite library behind an app-owned repository interface for the first local-record-storage implementation. SQLite is intended to provide transactions, constraints, and a portable format; independent verification and production readiness remain open, so this document is not proof of implementation. | When: November 14, 2026 | Involving: MemoryOS; project owner | This was the requested checklist group 3 Step 1 decision.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "memoryos",
+        "local storage"
+      ],
+      "context": "Authoritative project source docs/decisions/local-record-storage.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00+00:00",
+      "occurred_end": "2026-11-14T23:59:59+00:00",
+      "mentioned_at": "2026-11-14T18:23:14.534599+00:00",
+      "document_id": "repo:docs/decisions/local-record-storage.md",
+      "metadata": {
+        "sha256": "6ecf487bc9edfdd8d95a0eb85c5d5395f075b8656aa918e1f0dec198822b2842",
+        "source_path": "docs/decisions/local-record-storage.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/local-record-storage.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.066477321737743,
+        "reranker": null,
+        "semantic": 0.8355316021721615,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "b65e9264-3c14-402a-b00f-e9ba9785ed32",
+      "text": "Project memoryos selected Step 1 for reliable local storage and text capture: evaluate and select SQLite for app-owned original records, persist typed captures locally across launches, maintain stable links among people, projects, ideas, and captures, preserve correction history, and define deletion, export, backup, and restore. This is authorized implementation scope, not a verified implementation result. | When: Saturday, November 14, 2026 | Involving: Project memoryos; Step 1 request author | The authorization supersedes the earlier demo-only persistence limit for this task.",
+      "type": "world",
+      "entities": [
+        "ideas",
+        "capture",
+        "SQLite",
+        "export",
+        "memoryos",
+        "text capture",
+        "restore",
+        "backups",
+        "correction history",
+        "deletion",
+        "projects",
+        "people",
+        "local storage"
+      ],
+      "context": "initiative marker for [[page:kp-bfc4dffe17a44f719165f69a040584be]]",
+      "occurred_start": "2026-11-14T18:16:05.516287+00:00",
+      "occurred_end": "2026-11-14T18:16:05.516287+00:00",
+      "mentioned_at": "2026-11-14T18:16:05.516287+00:00",
+      "document_id": "initiative-marker-reliable-local-storage-and-text-capture-step-1-1794680165315",
+      "metadata": {
+        "relatedPageId": "kp-bfc4dffe17a44f719165f69a040584be"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-reliable-local-storage-and-text-capture-step-1-1794680165315_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0635708369565513,
+        "reranker": null,
+        "semantic": 0.8308448296281812,
+        "keyword": 1.2000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "cca257fb-b8ac-466a-8163-e539c0b21700",
+      "text": "MemoryOS will own source text, stable UUIDs, timestamps, corrections, and links; external AI/search indexes are explicitly treated as replaceable derived data. The small C adapter requires careful binding, lifecycle, and migration review, and the runtime SQLite version must be recorded rather than claiming a separately pinned SDK. | When: November 14, 2026 decision | Involving: MemoryOS | Defines storage ownership and engineering constraints for the selected SQLite design.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "memoryos",
+        "AI/search indexes",
+        "adapters"
+      ],
+      "context": "Authoritative project source docs/decisions/local-record-storage.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:23:14.544599+00:00",
+      "document_id": "repo:docs/decisions/local-record-storage.md",
+      "metadata": {
+        "sha256": "6ecf487bc9edfdd8d95a0eb85c5d5395f075b8656aa918e1f0dec198822b2842",
+        "source_path": "docs/decisions/local-record-storage.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/local-record-storage.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0602624469203217,
+        "reranker": null,
+        "semantic": 0.8218723780474779,
+        "keyword": 0.30000001192092896
+      },
+      "attachments": null
+    },
+    {
+      "id": "5f7bb89f-994e-4796-be59-f4a7e0c135ef",
+      "text": "The owner authorized Step 1 to choose local storage, durable typed text capture, stable linked records, corrections with provenance, data-protection behavior, independent local use, and explicit local-file export/restore. AI, recording, service imports, sync, publication, and release remain unauthorized; broader existing scopes and interface-demo verification gaps remain separate. | When: Saturday, November 14, 2026 | Involving: the owner | Defines the permitted scope and constraints for this task.",
+      "type": "world",
+      "entities": [
+        "export",
+        "memoryos",
+        "restore",
+        "local storage"
+      ],
+      "context": "Authoritative project source docs/tasks/2026-11-14-local-storage-text-capture.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:17:40.792407+00:00",
+      "document_id": "repo:docs/tasks/2026-11-14-local-storage-text-capture.md",
+      "metadata": {
+        "sha256": "2bb2ac7358fac800e3e00c93a7e4b13083bdfda2601fee47e9fad2e402252aa5",
+        "source_path": "docs/tasks/2026-11-14-local-storage-text-capture.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/tasks/2026-11-14-local-storage-text-capture.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0569493922763393,
+        "reranker": null,
+        "semantic": 0.8350614309310913,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "ee48ab37-f83e-430e-96fd-a0201481902b",
+      "text": "Selected architecture for local text capture: `CaptureView` and new local-record screens render `LocalRecordsViewModel` state and forward actions; the ViewModel owns load/save/error state and calls injected `LocalMemoryUseCases`. `MemoryCore` owns models, validation, use cases, and `RecordRepository` without importing SwiftUI or SQLite; `MemorySQLite` implements the repository protocol via the OS SQLite C library; `LocalStoreComposition` owns the canonical path, Data Protection, and dependency construction. | When: 2026-11-14 | Involving: memoryos project | Explicit architecture decision in docs/tasks/2026-11-14-local-storage-text-capture.md; the document is a snapshot and does not prove implementation.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "LocalRecordsViewModel",
+        "MemoryCore",
+        "memoryos",
+        "LocalMemoryUseCases",
+        "CaptureView",
+        "MemorySQLite",
+        "Capture composition"
+      ],
+      "context": "Authoritative project source docs/tasks/2026-11-14-local-storage-text-capture.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:17:40.782407+00:00",
+      "document_id": "repo:docs/tasks/2026-11-14-local-storage-text-capture.md",
+      "metadata": {
+        "sha256": "2bb2ac7358fac800e3e00c93a7e4b13083bdfda2601fee47e9fad2e402252aa5",
+        "source_path": "docs/tasks/2026-11-14-local-storage-text-capture.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/tasks/2026-11-14-local-storage-text-capture.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0536383777601497,
+        "reranker": null,
+        "semantic": 0.819495677947998,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "6049fb84-2c15-4a85-99e9-02b27228cabc",
+      "text": "The local package design uses app-owned `MemoryCore` and `MemorySQLite` targets with `CSQLite` linked to the SDK system library; it excludes third-party downloads, copied upstream implementations, custom engine repositories, new runtime providers, and remote package dependencies. `Package.swift` targets Swift 6, iOS 18+, and macOS 14+ host contract tests, so no `Package.resolved` pin is required. | This is the selected local-storage boundary; the document is a snapshot and not proof of implementation.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "MemoryCore",
+        "memoryos",
+        "Swift 6",
+        "MemorySQLite",
+        "macOS 14+",
+        "iOS 18.0"
+      ],
+      "context": "Authoritative project source docs/decisions/local-record-storage.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:32:12.747064+00:00",
+      "document_id": "repo:docs/decisions/local-record-storage.md",
+      "metadata": {
+        "sha256": "6ecf487bc9edfdd8d95a0eb85c5d5395f075b8656aa918e1f0dec198822b2842",
+        "source_path": "docs/decisions/local-record-storage.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/local-record-storage.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0503326435878462,
+        "reranker": null,
+        "semantic": 0.8273773193359375,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "3ec715e6-a6ce-425c-b902-61d65127c4a9",
+      "text": "Recording, transcription, retrieval, model inference, imports, sync, and purchases must be kept behind separate interfaces where responsibilities differ; concrete storage and provider choices are not selected and must later be recorded with tradeoffs, licensing, supported versions, compatibility, and measured device results. | Involving: MemoryOS project | The rules select architectural boundaries but intentionally leave database, AI package, providers, and other implementation choices open.",
+      "type": "world",
+      "entities": [
+        "recording",
+        "model inference",
+        "sync",
+        "retrieval",
+        "memoryos",
+        "transcription",
+        "purchases"
+      ],
+      "context": "Authoritative project source docs/how-to/commercial-engineering-rules.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T17:54:15.340359+00:00",
+      "document_id": "repo:docs/how-to/commercial-engineering-rules.md",
+      "metadata": {
+        "sha256": "bbe83e495924f1a67597828a569ac05b3ec30b343295b72ffe1f5dbfd6ffc09a",
+        "source_path": "docs/how-to/commercial-engineering-rules.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/how-to/commercial-engineering-rules.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0470078648617789,
+        "reranker": null,
+        "semantic": 0.8385257124900818,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "85bf75b4-13d7-40f6-9dd5-141557516f19",
+      "text": "C35 authorizes Step 1 of reliable local storage and text capture. The storage decision selects the OS SQLite library behind an app-owned protocol, schema/archive version 1, app-owned immutable originals with correction history, stable links, reversible Trash, and explicit readable JSON export with transactional merge restore; this resolves A02 for the implementation. The decision does not select an AI/search provider or settle permanent deletion, automatic cloud backup, custom encryption/key recovery, or sync. Source: docs/decisions/decision-register.md; the document is a snapshot, not proof of implementation. | When: Saturday, November 14, 2026 | Involving: Project memoryos | Records the selected storage/text-capture architecture and the remaining unresolved decisions while distinguishing authorization from implemented or verified behavior.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "C35",
+        "JSON",
+        "memoryos",
+        "docs/decisions/decision-register.md",
+        "A02",
+        "Trash"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T18:24:22.840731+00:00",
+      "occurred_end": "2026-11-14T18:24:22.840731+00:00",
+      "mentioned_at": "2026-11-14T18:24:22.840731+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "106dec058e1e3d1eb62a7c9174c6b0598a69f10ce46aaa3018e9e63547be5659",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_9",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0437077537549406,
+        "reranker": null,
+        "semantic": 0.8348160982131958,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "0fb2df84-c54e-43b0-899f-56c9c712db31",
+      "text": "Simple capture should save the original recording, typed thought, or attachment before AI processing; expose queued, running, complete, interrupted, and failed states; allow owner inspection and correction; and keep recording and text entry easily reachable while opening the sidebar only on request. | Involving: Project owner | These are proposed capture and processing rules, not verified implementation.",
+      "type": "world",
+      "entities": [
+        "attachments",
+        "capture",
+        "recording",
+        "AI processing"
+      ],
+      "context": "Authoritative project source docs/plans/build-outline.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:27:46.858655+00:00",
+      "document_id": "repo:docs/plans/build-outline.md",
+      "metadata": {
+        "sha256": "bbc9d0ee6e524609b30a2c0396b56f7e92adb94255c02b7810fed3225e6de035",
+        "source_path": "docs/plans/build-outline.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/build-outline.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0139097471953629,
+        "reranker": null,
+        "semantic": 0.8029240609086774,
+        "keyword": 0.5
+      },
+      "attachments": null
+    }
+  ],
+  "trace": null,
+  "entities": {
+    "ideas": {
+      "entity_id": "03fd4413-cd1e-41df-bc36-5229e981f455",
+      "canonical_name": "ideas",
+      "observations": []
+    },
+    "JSON archive": {
+      "entity_id": "33938229-abc9-4f2a-a10e-5cef41c1d689",
+      "canonical_name": "JSON archive",
+      "observations": []
+    },
+    "stable IDs": {
+      "entity_id": "4b1005a5-0818-47a0-8b2b-ac26534bf4ca",
+      "canonical_name": "stable IDs",
+      "observations": []
+    },
+    "projects": {
+      "entity_id": "af7b6d6a-84d8-4de6-b908-7be7d8452e93",
+      "canonical_name": "projects",
+      "observations": []
+    },
+    "people": {
+      "entity_id": "c383c298-6268-47e7-9898-3c6daefc00d9",
+      "canonical_name": "people",
+      "observations": []
+    },
+    "Trash": {
+      "entity_id": "fb25523a-d7a1-45ce-8659-a96cdb05a7dc",
+      "canonical_name": "Trash",
+      "observations": []
+    },
+    "SQLite": {
+      "entity_id": "10574ba2-395d-456f-9028-2723692876cc",
+      "canonical_name": "SQLite",
+      "observations": []
+    },
+    "C35": {
+      "entity_id": "4a9ad797-58ac-4a7f-8a7e-aaf44623d930",
+      "canonical_name": "C35",
+      "observations": []
+    },
+    "local records": {
+      "entity_id": "f072dd97-7f47-4aa3-a2b0-f7ce2c886560",
+      "canonical_name": "local records",
+      "observations": []
+    },
+    "checklist group 3 Step 1": {
+      "entity_id": "fe996413-4957-44e5-b2d0-21d177ed4a2e",
+      "canonical_name": "checklist group 3 Step 1",
+      "observations": []
+    },
+    "user": {
+      "entity_id": "27d90ade-0dd2-4593-882b-eaa7eb7ff7c3",
+      "canonical_name": "user",
+      "observations": []
+    },
+    "JSON": {
+      "entity_id": "59e49abd-b0b4-41fc-8ab7-65749ee2791d",
+      "canonical_name": "JSON",
+      "observations": []
+    },
+    "text capture": {
+      "entity_id": "75897bed-90b6-440a-84a5-30c2773376e3",
+      "canonical_name": "text capture",
+      "observations": []
+    },
+    "Eros MemoryOS": {
+      "entity_id": "ad223ee8-dfd6-49a3-b62b-1c19b3aa754c",
+      "canonical_name": "Eros MemoryOS",
+      "observations": []
+    },
+    "local storage": {
+      "entity_id": "fa42f6fb-a156-45fc-b6e9-007c392e5c27",
+      "canonical_name": "local storage",
+      "observations": []
+    },
+    "Step 1": {
+      "entity_id": "416f96f9-2630-4578-818c-31390f344a7b",
+      "canonical_name": "Step 1",
+      "observations": []
+    },
+    "memoryos": {
+      "entity_id": "6f1f3ee3-9405-473e-9b40-924988e4cebb",
+      "canonical_name": "memoryos",
+      "observations": []
+    },
+    "docs/plans/implementation-checklist.md": {
+      "entity_id": "e441a9b8-73f4-458a-a6c4-96f54241c585",
+      "canonical_name": "docs/plans/implementation-checklist.md",
+      "observations": []
+    },
+    "life timelines": {
+      "entity_id": "06330e8b-5992-44e2-8e25-a079908ea4e5",
+      "canonical_name": "life timelines",
+      "observations": []
+    },
+    "commitments and conflict history": {
+      "entity_id": "07c89346-36e0-4b2e-8d74-a7a5de20b42f",
+      "canonical_name": "commitments and conflict history",
+      "observations": []
+    },
+    "event extraction": {
+      "entity_id": "483c0400-4934-4bd6-96dd-7848e128ff60",
+      "canonical_name": "event extraction",
+      "observations": []
+    },
+    "evidence": {
+      "entity_id": "59257983-f7c1-4d47-8ab4-5e3d71b4b32b",
+      "canonical_name": "evidence",
+      "observations": []
+    },
+    "sentiment and emotion trends": {
+      "entity_id": "8e54af71-4513-42f7-9e22-f143f7fc115c",
+      "canonical_name": "sentiment and emotion trends",
+      "observations": []
+    },
+    "natural-language recall": {
+      "entity_id": "983e50ee-646e-4f70-af09-36ebaa1a1772",
+      "canonical_name": "natural-language recall",
+      "observations": []
+    },
+    "relationship graph": {
+      "entity_id": "d0a1ee5d-31b2-409e-92fe-ac2418344a6f",
+      "canonical_name": "relationship graph",
+      "observations": []
+    },
+    "topic discovery": {
+      "entity_id": "d3a8a78d-e255-47b3-b96d-86146bf1e088",
+      "canonical_name": "topic discovery",
+      "observations": []
+    },
+    "change detection": {
+      "entity_id": "d4d14d1f-71e2-4d65-8fb0-26e99a6307cf",
+      "canonical_name": "change detection",
+      "observations": []
+    },
+    "communication statistics": {
+      "entity_id": "e1d0a428-6e7d-435b-a0d0-eb9472cb12b9",
+      "canonical_name": "communication statistics",
+      "observations": []
+    },
+    "proactive reflection": {
+      "entity_id": "ffcad0c9-b757-460a-8822-87c49df1dc80",
+      "canonical_name": "proactive reflection",
+      "observations": []
+    },
+    "recovery": {
+      "entity_id": "24771a30-d9b3-4835-9691-9ee34d1053b2",
+      "canonical_name": "recovery",
+      "observations": []
+    },
+    "storage protection": {
+      "entity_id": "4ddc4bd9-067e-44e6-a3a2-5b3ec6f4b039",
+      "canonical_name": "storage protection",
+      "observations": []
+    },
+    "R22": {
+      "entity_id": "250e1549-029d-4433-bf1a-aa8932bed831",
+      "canonical_name": "R22",
+      "observations": []
+    },
+    "R23": {
+      "entity_id": "26cb42ee-1f93-4bf4-a9b4-f7eff002e3be",
+      "canonical_name": "R23",
+      "observations": []
+    },
+    "R03": {
+      "entity_id": "364476d2-a82f-4bc1-8b09-c967c87d296c",
+      "canonical_name": "R03",
+      "observations": []
+    },
+    "R10": {
+      "entity_id": "7958934c-d3d5-41ee-a9f5-c672b98fe473",
+      "canonical_name": "R10",
+      "observations": []
+    },
+    "R05": {
+      "entity_id": "a590898a-db6c-4f3e-908d-0e5290001478",
+      "canonical_name": "R05",
+      "observations": []
+    },
+    "R27": {
+      "entity_id": "bc9aed02-294e-4944-b66b-93647327745e",
+      "canonical_name": "R27",
+      "observations": []
+    },
+    "R02": {
+      "entity_id": "ddec512a-9c6d-4105-81c9-3094b7c0e1f5",
+      "canonical_name": "R02",
+      "observations": []
+    },
+    "SwiftUI": {
+      "entity_id": "00138a1f-a0e0-41bd-a564-3124295f9f55",
+      "canonical_name": "SwiftUI",
+      "observations": []
+    },
+    "Swift": {
+      "entity_id": "61272ff3-9624-422a-a449-966148c79dde",
+      "canonical_name": "Swift",
+      "observations": []
+    },
+    "ChatGPT": {
+      "entity_id": "66c67387-ed7a-4795-895e-4c20914d1795",
+      "canonical_name": "ChatGPT",
+      "observations": []
+    },
+    "D27": {
+      "entity_id": "7c036491-e94e-4930-a9e7-6b3a50cf30b7",
+      "canonical_name": "D27",
+      "observations": []
+    },
+    "Convex": {
+      "entity_id": "c8e306c0-4987-439b-a551-4bdcedb6c5ae",
+      "canonical_name": "Convex",
+      "observations": []
+    },
+    "Supabase": {
+      "entity_id": "cd4bc457-b4ad-419b-9c40-91587ffe5c0e",
+      "canonical_name": "Supabase",
+      "observations": []
+    },
+    "D21": {
+      "entity_id": "e378250b-03bc-4195-9411-93c1f7109c47",
+      "canonical_name": "D21",
+      "observations": []
+    },
+    "Obsidian": {
+      "entity_id": "f6c8d65a-3926-401b-94a2-53119e39f8b4",
+      "canonical_name": "Obsidian",
+      "observations": []
+    },
+    "capture": {
+      "entity_id": "0f124364-654e-4664-8adc-1ecd80edacbb",
+      "canonical_name": "capture",
+      "observations": []
+    },
+    "export": {
+      "entity_id": "1748c3c2-bf82-42b2-b952-4e65fba96399",
+      "canonical_name": "export",
+      "observations": []
+    },
+    "restore": {
+      "entity_id": "7632bf6d-beee-4771-aef0-92c611bd5a10",
+      "canonical_name": "restore",
+      "observations": []
+    },
+    "backups": {
+      "entity_id": "77738280-149e-4db9-b449-0e9cebd6ced3",
+      "canonical_name": "backups",
+      "observations": []
+    },
+    "correction history": {
+      "entity_id": "791b0473-d68e-401f-b6d4-3410b45f71f1",
+      "canonical_name": "correction history",
+      "observations": []
+    },
+    "deletion": {
+      "entity_id": "863d02c5-9728-4d6d-ae1e-b753575b8da4",
+      "canonical_name": "deletion",
+      "observations": []
+    },
+    "AI/search indexes": {
+      "entity_id": "9dffbfb7-b0b6-425e-b766-f9660c8e1578",
+      "canonical_name": "AI/search indexes",
+      "observations": []
+    },
+    "adapters": {
+      "entity_id": "b65d631f-bd07-4419-9ee1-83ff7406aabf",
+      "canonical_name": "adapters",
+      "observations": []
+    },
+    "LocalRecordsViewModel": {
+      "entity_id": "2819c664-413d-461f-bf76-3d1b9d9057bf",
+      "canonical_name": "LocalRecordsViewModel",
+      "observations": []
+    },
+    "MemoryCore": {
+      "entity_id": "599cee5b-cfcc-4958-bf55-ade3502aa3c3",
+      "canonical_name": "MemoryCore",
+      "observations": []
+    },
+    "LocalMemoryUseCases": {
+      "entity_id": "71ceb59a-733c-4675-913c-898e08ed5659",
+      "canonical_name": "LocalMemoryUseCases",
+      "observations": []
+    },
+    "CaptureView": {
+      "entity_id": "76690802-83f7-49a9-a83a-535b36b2d80e",
+      "canonical_name": "CaptureView",
+      "observations": []
+    },
+    "MemorySQLite": {
+      "entity_id": "be2db48f-ed92-4219-ada0-0d2fa7446402",
+      "canonical_name": "MemorySQLite",
+      "observations": []
+    },
+    "Capture composition": {
+      "entity_id": "e4738bbf-45ba-4f57-b734-eb34939f1d3a",
+      "canonical_name": "Capture composition",
+      "observations": []
+    },
+    "Swift 6": {
+      "entity_id": "85bb5615-8a3e-497f-ac6b-cb6e43762d39",
+      "canonical_name": "Swift 6",
+      "observations": []
+    },
+    "macOS 14+": {
+      "entity_id": "eae6c5e7-c1e8-4697-b832-c6ce558e12a9",
+      "canonical_name": "macOS 14+",
+      "observations": []
+    },
+    "iOS 18.0": {
+      "entity_id": "fc9b3814-3b2f-4220-a1ce-a8ae6a5a3fe2",
+      "canonical_name": "iOS 18.0",
+      "observations": []
+    },
+    "recording": {
+      "entity_id": "25c3a5c5-368c-439f-a317-5278855f1b3d",
+      "canonical_name": "recording",
+      "observations": []
+    },
+    "model inference": {
+      "entity_id": "465a8e0e-8e2a-41b5-a1f0-e0a0fd1e268f",
+      "canonical_name": "model inference",
+      "observations": []
+    },
+    "sync": {
+      "entity_id": "58b585ce-aef4-403c-a09d-0d8c9d502173",
+      "canonical_name": "sync",
+      "observations": []
+    },
+    "retrieval": {
+      "entity_id": "5b6dc120-e062-4635-bfbd-47d3aa5749c4",
+      "canonical_name": "retrieval",
+      "observations": []
+    },
+    "transcription": {
+      "entity_id": "7ee726ca-0916-48da-bbd8-be6a664102ef",
+      "canonical_name": "transcription",
+      "observations": []
+    },
+    "purchases": {
+      "entity_id": "c502be05-0078-4f7a-bb03-f763aa514f02",
+      "canonical_name": "purchases",
+      "observations": []
+    },
+    "docs/decisions/decision-register.md": {
+      "entity_id": "7c65f49b-bbaf-484f-9221-60058080dd15",
+      "canonical_name": "docs/decisions/decision-register.md",
+      "observations": []
+    },
+    "A02": {
+      "entity_id": "ba79912a-5eb3-46a6-b517-a2c46b09093e",
+      "canonical_name": "A02",
+      "observations": []
+    },
+    "attachments": {
+      "entity_id": "0a4de3b4-3932-4f57-8a06-2fe741fc468b",
+      "canonical_name": "attachments",
+      "observations": []
+    },
+    "AI processing": {
+      "entity_id": "4997949b-d68c-4a78-af5f-7accd1c9c933",
+      "canonical_name": "AI processing",
+      "observations": []
+    }
+  },
+  "chunks": null,
+  "source_facts": null,
+  "source_facts_truncated": null
+}

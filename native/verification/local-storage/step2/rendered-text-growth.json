@@ -1,0 +1,92 @@
+{
+  "configuration": "Release, iPhone18Pro iOS27.2 simulator, system text size large vs accessibility-extra-extra-extra-large",
+  "labels": [
+    {
+      "label": "Fictional retry draft / فكرة تجريبية محفوظة بعد إعادة المحاولة",
+      "regular_rect": {
+        "x": 16,
+        "y": 158.33333333333334,
+        "width": 370,
+        "height": 76.33333333333334
+      },
+      "largest_rect": {
+        "x": 16,
+        "y": 205.00000000000003,
+        "width": 370,
+        "height": 369.66666666666674
+      },
+      "largest_hittable": true,
+      "height_ratio": 4.842794759825328
+    },
+    {
+      "label": "Link a record",
+      "regular_rect": {
+        "x": 16,
+        "y": 484.6666666666667,
+        "width": 370,
+        "height": 54.00000000000006
+      },
+      "largest_rect": {
+        "x": 16,
+        "y": 116,
+        "width": 370,
+        "height": 36.66666666666674
+      },
+      "largest_hittable": true,
+      "height_ratio": null,
+      "measurement_limitation": "The regular snapshot clips a partly occluded row at the viewport edge. The action was visible/hittable; no font-growth conclusion from this clipped rectangle."
+    },
+    {
+      "label": "Correct text",
+      "regular_rect": {
+        "x": 16,
+        "y": 573.6666666666667,
+        "width": 370,
+        "height": 54
+      },
+      "largest_rect": {
+        "x": 16,
+        "y": 187.66666666666674,
+        "width": 370,
+        "height": 99
+      },
+      "largest_hittable": true,
+      "height_ratio": 1.8333333333333333
+    },
+    {
+      "label": "Move to Trash",
+      "regular_rect": {
+        "x": 16,
+        "y": 627.6666666666667,
+        "width": 370,
+        "height": 54
+      },
+      "largest_rect": {
+        "x": 16,
+        "y": 286.66666666666674,
+        "width": 370,
+        "height": 99
+      },
+      "largest_hittable": true,
+      "height_ratio": 1.8333333333333333
+    },
+    {
+      "label": "Trash retains originals and history. Permanent erasure is not available in this step.",
+      "regular_rect": {
+        "x": 16,
+        "y": 681.6666666666666,
+        "width": 370,
+        "height": 53.66666666666663
+      },
+      "largest_rect": {
+        "x": 16,
+        "y": 385.66666666666674,
+        "width": 370,
+        "height": 426.33333333333303
+      },
+      "largest_hittable": true,
+      "height_ratio": 7.944099378881988
+    }
+  ],
+  "interpretation": "These actual rendered rectangles show growth and reachable actions for sampled labels. They do not resolve unlocated audit warnings or certify VoiceOver/contrast."
+}

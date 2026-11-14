@@ -56,7 +56,7 @@ R01-R32 in the [feature register](../feature-register.md) are owner requests. Th
 
 | ID | Choice | Current status |
 | --- | --- | --- |
-| A02 | SQLite for local records | Proposed baseline. No database package, encryption option, or schema is selected. |
+| A02 | SQLite for local records | Resolved for checklist group 3 Step 1 by the implementation selection below. This is not a production-readiness claim. |
 | A03 | llama.cpp for local text inference | Candidate runtime. No build, model compatibility test, or device result exists. |
 | A04 | WhisperKit or whisper.cpp for transcription | D14 records the shortlist. Evaluate multilingual models for Arabic and English. No final speech model or benchmark exists. See [audio options](audio-recording-and-transcription.md). |
 | A05 | Multiple local model candidates, including earlier multilingual suggestions | D16 requires selection through testing and analysis. Qwen3-1.7B is an earlier example, not a chosen model or fixed shortlist. No quality, speed, memory, or battery result exists. |
@@ -115,3 +115,7 @@ R01-R32 in the [feature register](../feature-register.md) are owner requests. Th
 21. Which layouts should the remaining native demo sections use? C20 restores the supplied Capture/sidebar reference. Preserve earlier browser proposals as history and distinguish reference selection from acceptance of the native implementation.
 
 These questions are a record for future work. They do not require the owner to answer everything before reviewing the product idea.
+
+## Checklist group 3 storage implementation, 2026-11-14
+
+C35 authorizes Step 1 of reliable local storage and text capture. The [storage decision](local-record-storage.md) selects the OS SQLite library behind an app-owned protocol, schema/archive version 1, app-owned immutable originals and correction history, stable links, reversible Trash, and explicit readable JSON export/transactional merge restore. This resolves A02 for this implementation. It does not select an AI/search provider or settle permanent deletion, automatic cloud backup, custom encryption/key recovery or sync. The [task record](../tasks/2026-11-14-local-storage-text-capture.md) distinguishes implementation, local checks, independent verification and physical-device gaps.

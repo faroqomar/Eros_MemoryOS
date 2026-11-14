@@ -29,11 +29,6 @@ enum AppSection: String, CaseIterable, Identifiable {
   }
 }
 
-struct DemoMemory: Identifiable {
-  let id = UUID()
-  let text: String
-}
-
 @MainActor
 @Observable
 final class DemoSession {
@@ -58,17 +53,6 @@ final class DemoSession {
 
   var language: AppLanguage = .english
   var section: AppSection = .capture
-  var draft = ""
-  var memories: [DemoMemory] = []
-
-  var canSubmit: Bool { !draft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty }
-
-  func submit() {
-    let text = draft.trimmingCharacters(in: .whitespacesAndNewlines)
-    guard !text.isEmpty else { return }
-    memories.insert(DemoMemory(text: text), at: 0)
-    draft = ""
-  }
 }
 
 /// View state survives a section switch without keeping inactive controls mounted.

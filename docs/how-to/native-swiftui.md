@@ -2,9 +2,17 @@
 
 Foundation date: 2026-11-13, C20. Current demo work: 2026-11-14, C28. The [complete interface demo task](../tasks/2026-11-14-complete-interface-demo.md) records the new source, checks, and remaining review stages. The foundation descriptions below are historical where the new task supersedes them.
 
-Current additions include People/details, Projects with plans and tentative ideas, Birthdays/reminder choices, and a focused BrainMap with linked details and list presentation. Choose English or Arabic in Settings. People and Projects support name/topic search; clear search to recover from no results. The sidebar returns to each section's path and retained query. BrainMap retains its focus and presentation. The app keeps fictional records, temporary captures, and birthday choices in process memory; restarting resets changes. Reminder choices schedule nothing. The project uses only Apple frameworks. Domain values compile without SwiftUI. `MemoryOSTests` uses Swift Testing; `MemoryOSUITests` retains XCTest UI automation.
+Historical C28 additions include People/details, Projects with plans and tentative ideas, Birthdays/reminder choices, and a focused BrainMap with linked details and list presentation. Choose English or Arabic in Settings. People and Projects support name/topic search; clear search to recover from no results. The sidebar returns to each section's path and retained query. BrainMap retains its focus and presentation. That demo kept fictional records, temporary captures, and birthday choices in process memory; restarting reset changes. The local-storage task below supersedes temporary typed capture. Reminder choices schedule nothing. The project uses only Apple frameworks. Domain values compile without SwiftUI. `MemoryOSTests` uses Swift Testing; `MemoryOSUITests` retains XCTest UI automation.
 
-## Scope and reference
+## Current local storage
+
+Checklist group 3, C35/C36, adds durable typed capture, manual people/projects/ideas, corrections with retained originals, stable links, reversible Trash and explicit Files JSON backup/restore. See the [storage task](../tasks/2026-11-14-local-storage-text-capture.md) and [storage decision](../decisions/local-record-storage.md). Source data lives in private Application Support SQLite. No recording, AI or cloud client enters this increment.
+
+`LocalRecordsViewModel` coordinates injected core use cases. `native/LocalMemory` compiles independent MemoryCore and MemorySQLite targets. Composition owns the SQLite adapter, retryable session provider and bounded Files reader. The provider performs setup off the UI actor; Reload preserves the draft after initial failure. Views forward actions and render state.
+
+Step 2 functional/storage tests, builds/analysis and dark Release simulator captures pass. Physical iPhone protection/performance, iOS 18 runtime and required accessibility findings remain blocked or unresolved. The device table below is historical foundation evidence; the current storage task records fresh discovery and no connected physical iPhone. The canonical app directory stays excluded from automatic OS backup. Manual archives contain readable data and need a trusted Files location.
+
+## Historical foundation scope and reference
 
 Use the supplied [Capture](../../designs/references/2026-11-13-native-foundation/capture.png) and [sidebar](../../designs/references/2026-11-13-native-foundation/sidebar.png) screenshots. The owner selected these references for this step. Acceptance of the native implementation remains separate.
 
@@ -12,7 +20,7 @@ The app includes a Capture screen, overlay sidebar, shared header and icon contr
 
 The composer adds temporary text to Memories. Closing the process clears it. Use fictional text during review. The microphone and attachment buttons explain that their functions come later. The app requests no microphone, file, photo, calendar, or notification permissions. It has no network client or production database.
 
-## Project structure
+## Historical foundation project structure
 
 - `native/MemoryOS.xcodeproj`: native Xcode project and shared MemoryOS scheme. No project generator or third-party package is required.
 - `native/MemoryOS/App`: entry point, selected section, language, draft, and temporary memories.
@@ -66,7 +74,7 @@ To run on the owner's phone:
 
 Apple documents [running on devices and simulators](https://developer.apple.com/documentation/xcode/building-and-running-an-app), [Developer Mode](https://developer.apple.com/documentation/xcode/enabling-developer-mode-on-a-device), and [automatic signing](https://help.apple.com/xcode/mac/current/en.lproj/dev5a825a1ca.html). Do not copy signing secrets into project files or development memory.
 
-## Verification and limits
+## Historical foundation verification and limits
 
 The initial simulator build passed. The build emitted Apple's metadata notice: `Metadata extraction skipped, no AppIntents.framework dependency found`. This project does not use App Intents.
 

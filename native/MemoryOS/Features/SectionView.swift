@@ -3,6 +3,7 @@ import SwiftUI
 /// The session retains paths; only the current section renders controls.
 struct SectionHostView: View {
   let session: DemoSession
+  let records: LocalRecordsViewModel
   let section: AppSection
   let menuIsOpen: Bool
   let openMenu: () -> Void
@@ -17,7 +18,7 @@ struct SectionHostView: View {
           menuLabel: session.language.text("Open menu", "فتح القائمة"), openMenu: openMenu,
           menuFocus: menuFocus
         )
-        SectionView(session: session, section: section, menuIsOpen: menuIsOpen)
+        SectionView(session: session, records: records, section: section, menuIsOpen: menuIsOpen)
       }
       .toolbar(.hidden, for: .navigationBar)
       .navigationDestination(for: DemoDestination.self) { destination in
@@ -43,6 +44,7 @@ struct SectionHostView: View {
 
 struct SectionView: View {
   @Bindable var session: DemoSession
+  let records: LocalRecordsViewModel
   let section: AppSection
   let menuIsOpen: Bool
   private var language: AppLanguage { session.language }
@@ -51,7 +53,7 @@ struct SectionView: View {
     Group {
       switch section {
       case .capture:
-        CaptureView(session: session, menuIsOpen: menuIsOpen)
+        CaptureView(session: session, records: records, menuIsOpen: menuIsOpen)
       case .profiles:
         CatalogListView(
           session: session, state: session.state(for: section), kind: .person,
@@ -74,38 +76,15 @@ struct SectionView: View {
           .accessibilityIdentifier("language-picker")
           Text(
             language.text(
-              "Interface demo. Memories and reminder choices last for this session only.",
-              "عرض للواجهة. تبقى الذكريات وخيارات التذكير لهذه الجلسة فقط.")
+              "Typed memories stay on this device. Sample profiles and reminder choices remain a demo.",
+              "تبقى الذكريات المكتوبة على هذا الجهاز. الملفات التجريبية وخيارات التذكير للعرض فقط.")
           )
           .foregroundStyle(MemoryTheme.secondary)
         }
         .scrollContentBackground(.hidden)
       case .memories:
-        if session.memories.isEmpty {
-          ContentUnavailableView {
-            Label(language.text("Your memories", "ذكرياتك"), systemImage: "doc.text")
-          } description: {
-            Text(
-              language.text(
-                "Thoughts you add in this demo appear here until the app closes.",
-                "تظهر هنا الأفكار التي تضيفها في هذا العرض حتى إغلاق التطبيق."))
-          } actions: {
-            Button(language.text("Write a thought", "اكتب فكرة")) { session.section = .capture }
-              .frame(minHeight: 44)
-          }
-        } else {
-          List {
-            Section {
-              ForEach(session.memories) { memory in
-                Text(memory.text).textSelection(.enabled)
-              }
-            } footer: {
-              DemoFootnote(language: language)
-            }
-          }
-          .listStyle(.plain)
-          .scrollContentBackground(.hidden)
-        }
+        LocalRecordsListView(
+          model: records, language: language, openCapture: { session.section = .capture })
       }
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)

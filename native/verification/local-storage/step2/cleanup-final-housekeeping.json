@@ -1,0 +1,17 @@
+{
+  "removed": [
+    {
+      "path": "/tmp/memoryos-step2-verifier-required-skill-final.txt",
+      "bytes": 4206,
+      "sha256": "b02ccc9040dacaa4f1ac91333b2e4082447de3b55a1eda4ec9026ae667a58513",
+      "reason": "Verifier confirmed redundant preflight/recall scratch created after final cleanup; unique findings retained in review."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-cleanup-final-recall.json",
+      "bytes": 41940,
+      "sha256": "21fbc91feae020a18fe66af8a3a85d25186ec1d19ef319bf78c6b02178d8ca91",
+      "reason": "Verifier confirmed redundant preflight/recall scratch created after final cleanup; unique findings retained in review."
+    }
+  ],
+  "note": "Supplement to immutable verifier-reviewed cleanup-receipt.json. No product/source/evidence changed."
+}

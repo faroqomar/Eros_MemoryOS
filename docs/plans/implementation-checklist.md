@@ -205,3 +205,14 @@ These entries preserve research, including older tools and repositories. They ar
 - [ ] **H38 · Evaluation research:** Known-answer data, citation support, contradiction tests, precision/recall/MRR, RAGAS, OCR/ASR error rates, identity accuracy, injection/privacy testing, feedback, performance/cost measurements, and regression tests. Historical targets were not measured results.
 - [ ] **H39 · Business and deployment options:** Freemium/premium, one-time/lifetime or self-hosted editions, enterprise licenses, private/VPC/on-prem hosting, possible open-core code, pilots, partnerships, regional launches, and professional packs. No pricing, company launch, or deployment is selected.
 - [ ] **H40 · Delivery and growth suggestions:** Prototype/MVP/v1/v2 stages, web dashboard, native mobile clients, TestFlight/beta plans, staffing, legal review, privacy documentation, support/community work, future research, cost monitoring, and optional capture gamification. No schedule, hiring, budget, or publication is approved.
+
+## 3. Add reliable local storage and text capture
+
+C35 authorizes Step 1, C36 starts Step 2 and C37 authorizes Step 3 review/private draft delivery, 2026-11-14. Independent review closed Unicode byte-preservation and initial storage-open retry defects. Local functional/storage tests, builds/analysis, cleanup and dark screenshots pass. Physical iPhone protection/performance, iOS 18 runtime and unresolved accessibility checks block Step 2. See the [connected task record](../tasks/2026-11-14-local-storage-text-capture.md). These boxes remain open until independent verification; implemented subsets do not complete broader R02/R03/R05/R10/R22/R23/R27. Earlier S09 temporary-capture wording describes the historical demo and no longer describes this task's durable typed captures.
+
+- [ ] **Choose storage:** Evaluate SQLite and define where original records live.
+- [ ] **Save typed thoughts:** Keep captures after closing and reopening the app.
+- [ ] **Store linked records:** Give people, projects, ideas, and captures stable connections.
+- [ ] **Edit and correct:** Let the owner fix information without losing its source.
+- [ ] **Protect records:** Define deletion, export, backup, and restore behavior.
+- [ ] **Keep local use independent:** Make capture work without an external service.

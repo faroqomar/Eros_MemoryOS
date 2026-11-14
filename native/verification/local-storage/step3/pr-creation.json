@@ -1,0 +1,21 @@
+{
+  "date_utc": "2026-11-14T20:01:30.165312+00:00",
+  "event": "Private draft PR creation and head verification",
+  "PR": {
+    "autoMergeRequest": null,
+    "baseRefName": "main",
+    "headRefName": "feat/local-storage-text-capture",
+    "headRefOid": "10f0bbcc9cbcf90b5a45e5690c41f776dffb7610",
+    "isDraft": true,
+    "mergeStateStatus": "CLEAN",
+    "reviewDecision": "",
+    "reviews": [],
+    "state": "OPEN",
+    "statusCheckRollup": [],
+    "url": "https://github.com/faroqomar/Eros_MemoryOS/pull/3"
+  },
+  "source_commit": "10f0bbcc9cbcf90b5a45e5690c41f776dffb7610",
+  "source_manifest": "../step2/source-hashes.json",
+  "merge_gate": "BLOCKED by required Step2 physical/minimum-runtime/accessibility checks; GitHub mergeStateStatus does not waive project gates",
+  "next_change": "Documentation-only delivery receipt; production/test source remains unchanged"
+}

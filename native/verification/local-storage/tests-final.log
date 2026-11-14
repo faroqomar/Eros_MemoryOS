@@ -1,0 +1,1801 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project native/MemoryOS.xcodeproj -scheme MemoryOS -destination "platform=iOS Simulator,id=8843F67E-B2AF-4605-A3AE-25D168BD1B28" -derivedDataPath /tmp/memoryos-local-storage-build -resultBundlePath /tmp/memoryos-local-storage-final-tests.xcresult test CODE_SIGNING_ALLOWED=NO -parallel-testing-enabled NO "-skip-testing:MemoryOSUITests/DemoFlowTests/testEnglishAccessibilityAudits" "-skip-testing:MemoryOSUITests/DemoFlowTests/testArabicAccessibilityAudits"
+
+Build settings from command line:
+    CODE_SIGNING_ALLOWED = NO
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  LocalMemory: /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMemory @ local
+
+Writing result bundle at path:
+	/tmp/memoryos-local-storage-final-tests.xcresult
+
+ComputePackagePrebuildTargetDependencyGraph
+
+Prepare packages
+
+CreateBuildRequest
+
+SendProjectDescription
+
+CreateBuildOperation
+
+ComputeTargetDependencyGraph
+note: Building targets in dependency order
+note: Target dependency graph (8 targets)
+    Target 'MemoryOSTests' in project 'MemoryOS'
+        ➜ Explicit dependency on target 'MemoryOS' in project 'MemoryOS'
+        ➜ Explicit dependency on target 'MemoryCore-product' in project 'LocalMemory'
+    Target 'MemoryOSUITests' in project 'MemoryOS'
+        ➜ Explicit dependency on target 'MemoryOS' in project 'MemoryOS'
+    Target 'MemoryOS' in project 'MemoryOS'
+        ➜ Explicit dependency on target 'MemorySQLite-product' in project 'LocalMemory'
+        ➜ Explicit dependency on target 'MemoryCore-product' in project 'LocalMemory'
+    Target 'MemoryCore-product' in project 'LocalMemory'
+        ➜ Explicit dependency on target 'MemoryCore' in project 'LocalMemory'
+    Target 'MemorySQLite-product' in project 'LocalMemory'
+        ➜ Explicit dependency on target 'MemorySQLite' in project 'LocalMemory'
+        ➜ Explicit dependency on target 'MemoryCore' in project 'LocalMemory'
+    Target 'MemorySQLite' in project 'LocalMemory'
+        ➜ Explicit dependency on target 'MemoryCore' in project 'LocalMemory'
+        ➜ Explicit dependency on target 'CSQLite' in project 'LocalMemory'
+    Target 'CSQLite' in project 'LocalMemory' (no dependencies)
+    Target 'MemoryCore' in project 'LocalMemory' (no dependencies)
+
+GatherProvisioningInputs
+
+CreateBuildDescription
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS/Resources/Assets.xcassets
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -x c -c /dev/null
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
+
+ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
+
+Build description signature: 8091524fa7236ef15ac586087410f53b
+Build description path: /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/XCBuildData/8091524fa7236ef15ac586087410f53b.xcbuilddata
+ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk /tmp/memoryos-local-storage-build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk -o /tmp/memoryos-local-storage-build/SDKStatCaches.noindex/iphonesimulator27.2-24B8118-cc78df9d8a9de6526dea716b1c70fd8e.sdkstatcache
+
+ProcessInfoPlistFile /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/PackageFrameworks/MemoryCore_-700170D5F613BEF4_PackageProduct.framework/Info.plist /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/LocalMemory.build/Debug-iphonesimulator/MemoryCore-product-t.build/empty-MemoryCore_-700170D5F613BEF4_PackageProduct.plist (in target 'MemoryCoredynamic-product' from project 'LocalMemory')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMemory
+    builtin-infoPlistUtility /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/LocalMemory.build/Debug-iphonesimulator/MemoryCore-product-t.build/empty-MemoryCore_-700170D5F613BEF4_PackageProduct.plist -producttype com.apple.product-type.framework -expandbuildsettings -format binary -platform iphonesimulator -o /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/PackageFrameworks/MemoryCore_-700170D5F613BEF4_PackageProduct.framework/Info.plist
+
+ProcessInfoPlistFile /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/empty-MemoryOS.plist -producttype com.apple.product-type.application -genpkginfo /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/assetcatalog_generated_info.plist -scanforprivacyfile /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks/MemoryCore_-700170D5F613BEF4_PackageProduct.framework -o /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Info.plist
+
+CopySwiftLibs /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app (in target 'MemoryOS' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/MemoryOS.debug.dylib --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/SystemExtensions --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Extensions --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/PackageFrameworks/MemoryCore_-700170D5F613BEF4_PackageProduct.framework --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOS.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ProcessInfoPlistFile /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Info.plist /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/empty-MemoryOSTests.plist (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/empty-MemoryOSTests.plist -producttype com.apple.product-type.bundle.unit-test -expandbuildsettings -format binary -platform iphonesimulator -o /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Info.plist
+
+CopySwiftLibs /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest (in target 'MemoryOSTests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/MemoryOSTests --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Frameworks --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/PlugIns --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/SystemExtensions --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Extensions --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/PackageFrameworks/MemoryCore_-700170D5F613BEF4_PackageProduct.framework --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOS.app/PlugIns/MemoryOSTests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSTests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+ProcessInfoPlistFile /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Info.plist /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/empty-MemoryOSUITests.plist (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-infoPlistUtility /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/empty-MemoryOSUITests.plist -producttype com.apple.product-type.bundle.ui-testing -expandbuildsettings -format binary -platform iphonesimulator -additionalcontentfile /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/ProductTypeInfoPlistAdditions.plist -o /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Info.plist
+
+CopySwiftLibs /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest (in target 'MemoryOSUITests' from project 'MemoryOS')
+    cd /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native
+    builtin-swiftStdLibTool --copy --verbose --scan-executable /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/MemoryOSUITests --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Frameworks --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/PlugIns --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/SystemExtensions --scan-folder /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /tmp/memoryos-local-storage-build/Build/Products/Debug-iphonesimulator/MemoryOSUITests-Runner.app/PlugIns/MemoryOSUITests.xctest/Frameworks --strip-bitcode --scan-executable /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/lib/libXCTestSwiftSupport.dylib --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/MemoryOS.build/Debug-iphonesimulator/MemoryOSUITests.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+Ignoring --strip-bitcode because --sign was not passed
+
+PruneExplicitPrecompiledModules /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/ExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/memoryos-local-storage-build/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules
+
+PruneExplicitPrecompiledModules /tmp/memoryos-local-storage-build/SDKExplicitPrecompiledModules
+
+2026-11-14 21:24:32.749722+0300 MemoryOSUITests-Runner[81523:1183272] [Default] Running tests...
+    t =      nans Interface orientation changed to Portrait
+objc[81523]: Class UIAccessibilityLoaderWebShared is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.2.8117.0.DPGacc/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x108428310) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.2.8117.0.DPGacc/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x107fd4398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+Test Suite 'Selected tests' started at 2026-11-14 21:24:37.693.
+Test Suite 'MemoryOSUITests.xctest' started at 2026-11-14 21:24:37.696.
+Test Suite 'DemoFlowTests' started at 2026-11-14 21:24:37.696.
+Test Case '-[MemoryOSUITests.DemoFlowTests testArabicPeopleBirthdayAndMixedSource]' started.
+    t =     0.01s Start Test at 2026-11-14 21:24:37.708
+    t =     0.07s Set Up
+    t =     0.08s Open com.eros.memoryos.demo
+    t =     0.08s     Launch com.eros.memoryos.demo
+    t =     0.08s         Terminate com.eros.memoryos.demo:79863
+2026-11-14 21:24:39.285 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:24:39.286 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     3.10s         Setting up automation session
+    t =     7.46s         Wait for com.eros.memoryos.demo to idle
+    t =    11.09s Tap "open-menu" Button
+    t =    11.09s     Wait for com.eros.memoryos.demo to idle
+    t =    11.09s     Find the "open-menu" Button
+    t =    11.52s     Check for interrupting elements affecting "open-menu" Button
+    t =    11.60s     Synthesize event
+    t =    11.92s     Wait for com.eros.memoryos.demo to idle
+    t =    11.93s Find the "section-settings" Button
+    t =    11.99s Tap "section-settings" Button
+    t =    11.99s     Wait for com.eros.memoryos.demo to idle
+    t =    11.99s     Find the "section-settings" Button
+    t =    12.04s     Check for interrupting elements affecting "section-settings" Button
+    t =    12.07s     Synthesize event
+    t =    12.38s     Wait for com.eros.memoryos.demo to idle
+    t =    12.54s Tap "language-picker" Button
+    t =    12.54s     Wait for com.eros.memoryos.demo to idle
+    t =    12.54s     Find the "language-picker" Button
+    t =    12.60s     Check for interrupting elements affecting "language-picker" Button
+    t =    12.62s     Synthesize event
+    t =    12.92s     Wait for com.eros.memoryos.demo to idle
+    t =    12.99s Tap "العربية" Button
+    t =    12.99s     Wait for com.eros.memoryos.demo to idle
+    t =    14.23s     Find the "العربية" Button
+    t =    14.28s     Check for interrupting elements affecting "العربية" Button
+    t =    14.31s     Synthesize event
+    t =    14.62s     Wait for com.eros.memoryos.demo to idle
+    t =    16.12s Tap "open-menu" Button
+    t =    16.12s     Wait for com.eros.memoryos.demo to idle
+    t =    16.13s     Find the "open-menu" Button
+    t =    16.17s     Check for interrupting elements affecting "open-menu" Button
+    t =    16.20s     Synthesize event
+    t =    16.51s     Wait for com.eros.memoryos.demo to idle
+    t =    16.51s Find the "section-profiles" Button
+    t =    16.58s Tap "section-profiles" Button
+    t =    16.58s     Wait for com.eros.memoryos.demo to idle
+    t =    16.58s     Find the "section-profiles" Button
+    t =    16.62s     Check for interrupting elements affecting "section-profiles" Button
+    t =    16.65s     Synthesize event
+    t =    16.95s     Wait for com.eros.memoryos.demo to idle
+    t =    16.99s Tap "record-ali" Button
+    t =    16.99s     Wait for com.eros.memoryos.demo to idle
+    t =    17.18s     Find the "record-ali" Button
+    t =    17.25s     Check for interrupting elements affecting "record-ali" Button
+    t =    17.28s     Synthesize event
+    t =    17.58s     Wait for com.eros.memoryos.demo to idle
+    t =    17.76s Find the "original-source" StaticText
+    t =    17.88s Checking existence of `"النص التجريبي الأصلي" StaticText`
+    t =    17.97s Tap "birthday-birthday-ali" Button
+    t =    17.97s     Wait for com.eros.memoryos.demo to idle
+    t =    18.25s     Find the "birthday-birthday-ali" Button
+    t =    18.31s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    18.37s     Synthesize event
+    t =    18.67s     Wait for com.eros.memoryos.demo to idle
+    t =    19.16s Tap "reminder-dayBefore" Button
+    t =    19.16s     Wait for com.eros.memoryos.demo to idle
+    t =    19.17s     Find the "reminder-dayBefore" Button
+    t =    19.26s     Check for interrupting elements affecting "reminder-dayBefore" Button
+    t =    19.32s     Synthesize event
+    t =    19.63s     Wait for com.eros.memoryos.demo to idle
+    t =    19.63s Find the "reminder-current" StaticText
+    t =    19.68s Tap "open-menu" Button
+    t =    19.68s     Wait for com.eros.memoryos.demo to idle
+    t =    19.69s     Find the "open-menu" Button
+    t =    19.75s     Check for interrupting elements affecting "open-menu" Button
+    t =    19.80s     Synthesize event
+    t =    20.11s     Wait for com.eros.memoryos.demo to idle
+    t =    20.83s Find the "section-brainMap" Button
+    t =    20.96s Tap "section-brainMap" Button
+    t =    20.96s     Wait for com.eros.memoryos.demo to idle
+    t =    20.96s     Find the "section-brainMap" Button
+    t =    21.03s     Check for interrupting elements affecting "section-brainMap" Button
+    t =    21.10s     Synthesize event
+    t =    21.39s     Wait for com.eros.memoryos.demo to idle
+    t =    21.45s Tap "map-open-website" Button
+    t =    21.45s     Wait for com.eros.memoryos.demo to idle
+    t =    21.63s     Find the "map-open-website" Button
+    t =    21.71s     Check for interrupting elements affecting "map-open-website" Button
+    t =    21.75s     Synthesize event
+    t =    22.05s     Wait for com.eros.memoryos.demo to idle
+    t =    22.45s Checking existence of `"الخطط الحالية" StaticText`
+    t =    22.54s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testArabicPeopleBirthdayAndMixedSource]' passed (22.954 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testBirthdayChoicesSurviveNavigationAndReset]' started.
+    t =     0.00s Start Test at 2026-11-14 21:25:00.664
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:81913
+2026-11-14 21:25:01.785 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:25:01.785 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.34s         Setting up automation session
+    t =     4.21s         Wait for com.eros.memoryos.demo to idle
+    t =     5.82s Tap "open-menu" Button
+    t =     5.82s     Wait for com.eros.memoryos.demo to idle
+    t =     5.82s     Find the "open-menu" Button
+    t =     6.02s     Check for interrupting elements affecting "open-menu" Button
+    t =     6.05s     Synthesize event
+    t =     6.35s     Wait for com.eros.memoryos.demo to idle
+    t =     6.36s Find the "section-birthdays" Button
+    t =     6.42s Tap "section-birthdays" Button
+    t =     6.42s     Wait for com.eros.memoryos.demo to idle
+    t =     6.43s     Find the "section-birthdays" Button
+    t =     6.47s     Check for interrupting elements affecting "section-birthdays" Button
+    t =     6.50s     Synthesize event
+    t =     6.80s     Wait for com.eros.memoryos.demo to idle
+    t =     6.97s Tap "birthday-birthday-ali" Button
+    t =     6.97s     Wait for com.eros.memoryos.demo to idle
+    t =     6.97s     Find the "birthday-birthday-ali" Button
+    t =     7.04s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =     7.07s     Synthesize event
+    t =     7.37s     Wait for com.eros.memoryos.demo to idle
+    t =     7.82s Tap "reminder-onDay" Button
+    t =     7.82s     Wait for com.eros.memoryos.demo to idle
+    t =     7.83s     Find the "reminder-onDay" Button
+    t =     7.91s     Check for interrupting elements affecting "reminder-onDay" Button
+    t =     7.96s     Synthesize event
+    t =     8.26s     Wait for com.eros.memoryos.demo to idle
+    t =     8.26s Find the "reminder-current" StaticText
+    t =     8.32s Tap "reminder-dayBefore" Button
+    t =     8.32s     Wait for com.eros.memoryos.demo to idle
+    t =     8.32s     Find the "reminder-dayBefore" Button
+    t =     8.38s     Check for interrupting elements affecting "reminder-dayBefore" Button
+    t =     8.43s     Synthesize event
+    t =     8.74s     Wait for com.eros.memoryos.demo to idle
+    t =     8.74s Find the "reminder-current" StaticText
+    t =     8.79s Tap "reminder-weekBefore" Button
+    t =     8.79s     Wait for com.eros.memoryos.demo to idle
+    t =     8.80s     Find the "reminder-weekBefore" Button
+    t =     8.85s     Check for interrupting elements affecting "reminder-weekBefore" Button
+    t =     8.91s     Synthesize event
+    t =     9.20s     Wait for com.eros.memoryos.demo to idle
+    t =     9.21s Find the "reminder-current" StaticText
+    t =     9.26s Tap "reminder-off" Button
+    t =     9.26s     Wait for com.eros.memoryos.demo to idle
+    t =     9.27s     Find the "reminder-off" Button
+    t =     9.32s     Check for interrupting elements affecting "reminder-off" Button
+    t =     9.37s     Synthesize event
+    t =     9.68s     Wait for com.eros.memoryos.demo to idle
+    t =     9.68s Find the "reminder-current" StaticText
+    t =     9.73s Tap "reminder-weekBefore" Button
+    t =     9.73s     Wait for com.eros.memoryos.demo to idle
+    t =     9.74s     Find the "reminder-weekBefore" Button
+    t =     9.79s     Check for interrupting elements affecting "reminder-weekBefore" Button
+    t =     9.85s     Synthesize event
+    t =    10.15s     Wait for com.eros.memoryos.demo to idle
+    t =    10.16s Find the "reminder-current" StaticText
+    t =    10.21s Tap "open-menu" Button
+    t =    10.21s     Wait for com.eros.memoryos.demo to idle
+    t =    10.21s     Find the "open-menu" Button
+    t =    10.26s     Check for interrupting elements affecting "open-menu" Button
+    t =    10.31s     Synthesize event
+    t =    10.62s     Wait for com.eros.memoryos.demo to idle
+    t =    11.33s Find the "section-projects" Button
+    t =    11.41s Tap "section-projects" Button
+    t =    11.41s     Wait for com.eros.memoryos.demo to idle
+    t =    11.41s     Find the "section-projects" Button
+    t =    11.48s     Check for interrupting elements affecting "section-projects" Button
+    t =    11.54s     Synthesize event
+    t =    11.84s     Wait for com.eros.memoryos.demo to idle
+    t =    11.95s Tap "open-menu" Button
+    t =    11.95s     Wait for com.eros.memoryos.demo to idle
+    t =    11.96s     Find the "open-menu" Button
+    t =    12.00s     Check for interrupting elements affecting "open-menu" Button
+    t =    12.03s     Synthesize event
+    t =    12.34s     Wait for com.eros.memoryos.demo to idle
+    t =    12.34s Find the "section-birthdays" Button
+    t =    12.41s Tap "section-birthdays" Button
+    t =    12.41s     Wait for com.eros.memoryos.demo to idle
+    t =    12.42s     Find the "section-birthdays" Button
+    t =    12.47s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    12.51s     Synthesize event
+    t =    12.81s     Wait for com.eros.memoryos.demo to idle
+    t =    12.93s Find the "reminder-current" StaticText
+    t =    13.00s Terminate com.eros.memoryos.demo:82685
+    t =    14.09s Open com.eros.memoryos.demo
+    t =    14.09s     Launch com.eros.memoryos.demo
+2026-11-14 21:25:14.760 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:25:14.761 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    14.32s         Setting up automation session
+    t =    17.26s         Wait for com.eros.memoryos.demo to idle
+    t =    18.89s Tap "open-menu" Button
+    t =    18.89s     Wait for com.eros.memoryos.demo to idle
+    t =    18.90s     Find the "open-menu" Button
+    t =    19.10s     Check for interrupting elements affecting "open-menu" Button
+    t =    19.12s     Synthesize event
+    t =    19.42s     Wait for com.eros.memoryos.demo to idle
+    t =    19.42s Find the "section-birthdays" Button
+    t =    19.48s Tap "section-birthdays" Button
+    t =    19.48s     Wait for com.eros.memoryos.demo to idle
+    t =    19.49s     Find the "section-birthdays" Button
+    t =    19.53s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    19.56s     Synthesize event
+    t =    19.86s     Wait for com.eros.memoryos.demo to idle
+    t =    20.00s Tap "birthday-birthday-ali" Button
+    t =    20.00s     Wait for com.eros.memoryos.demo to idle
+    t =    20.01s     Find the "birthday-birthday-ali" Button
+    t =    20.08s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    20.11s     Synthesize event
+    t =    20.41s     Wait for com.eros.memoryos.demo to idle
+    t =    20.87s Find the "reminder-current" StaticText
+    t =    20.94s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testBirthdayChoicesSurviveNavigationAndReset]' passed (21.190 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testLargeTextKeepsMapAndBirthdayActionsReachable]' started.
+    t =     0.00s Start Test at 2026-11-14 21:25:21.856
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:83107
+2026-11-14 21:25:22.968 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:25:22.968 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.33s         Setting up automation session
+    t =     4.01s         Wait for com.eros.memoryos.demo to idle
+    t =     5.71s Tap "open-menu" Button
+    t =     5.71s     Wait for com.eros.memoryos.demo to idle
+    t =     5.71s     Find the "open-menu" Button
+    t =     5.90s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.92s     Synthesize event
+    t =     6.22s     Wait for com.eros.memoryos.demo to idle
+    t =     6.23s Find the "section-brainMap" Button
+    t =     6.29s Tap "section-brainMap" Button
+    t =     6.29s     Wait for com.eros.memoryos.demo to idle
+    t =     6.29s     Find the "section-brainMap" Button
+    t =     6.33s     Check for interrupting elements affecting "section-brainMap" Button
+    t =     6.36s     Synthesize event
+    t =     6.68s     Wait for com.eros.memoryos.demo to idle
+    t =     6.84s Find the "map-choose" Any
+    t =     6.92s Checking existence of `"map-large-text-presentation" StaticText`
+    t =     6.96s Checking existence of `"map-presentation" SegmentedControl`
+    t =     7.00s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =     7.00s     Wait for com.eros.memoryos.demo to idle
+    t =     7.00s     Find the Target Application 'com.eros.memoryos.demo'
+    t =     7.03s     Check for interrupting elements affecting "MemoryOS" Application
+    t =     7.06s     Synthesize event
+    t =     7.49s     Wait for com.eros.memoryos.demo to idle
+    t =     9.60s Checking existence of `"map-focus-website" Button`
+    t =     9.65s Tap "open-menu" Button
+    t =     9.65s     Wait for com.eros.memoryos.demo to idle
+    t =     9.65s     Find the "open-menu" Button
+    t =     9.70s     Check for interrupting elements affecting "open-menu" Button
+    t =     9.73s     Synthesize event
+    t =    10.03s     Wait for com.eros.memoryos.demo to idle
+    t =    10.03s Find the "section-birthdays" Button
+    t =    10.13s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    10.13s     Wait for com.eros.memoryos.demo to idle
+    t =    10.13s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    10.17s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    10.22s     Synthesize event
+    t =    10.65s     Wait for com.eros.memoryos.demo to idle
+    t =    11.17s Tap "section-birthdays" Button
+    t =    11.17s     Wait for com.eros.memoryos.demo to idle
+    t =    11.17s     Find the "section-birthdays" Button
+    t =    11.24s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    11.28s     Synthesize event
+    t =    11.58s     Wait for com.eros.memoryos.demo to idle
+    t =    11.68s Tap "birthday-birthday-ali" Button
+    t =    11.68s     Wait for com.eros.memoryos.demo to idle
+    t =    11.68s     Find the "birthday-birthday-ali" Button
+    t =    11.75s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    11.78s     Synthesize event
+    t =    12.09s     Wait for com.eros.memoryos.demo to idle
+    t =    12.53s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    12.53s     Wait for com.eros.memoryos.demo to idle
+    t =    12.53s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    12.57s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    12.60s     Synthesize event
+    t =    13.04s     Wait for com.eros.memoryos.demo to idle
+    t =    15.13s Tap "reminder-onDay" Button
+    t =    15.13s     Wait for com.eros.memoryos.demo to idle
+    t =    15.13s     Find the "reminder-onDay" Button
+    t =    15.20s     Check for interrupting elements affecting "reminder-onDay" Button
+    t =    15.24s     Synthesize event
+    t =    15.54s     Wait for com.eros.memoryos.demo to idle
+    t =    15.54s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    15.54s     Wait for com.eros.memoryos.demo to idle
+    t =    15.55s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    15.58s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    15.63s     Synthesize event
+    t =    16.07s     Wait for com.eros.memoryos.demo to idle
+    t =    16.78s Find the "reminder-current" StaticText
+    t =    16.83s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testLargeTextKeepsMapAndBirthdayActionsReachable]' passed (17.068 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testLinkedTextScalesInBothLanguages]' started.
+    t =     0.00s Start Test at 2026-11-14 21:25:38.923
+    t =     0.02s Set Up
+    t =     0.02s Open com.eros.memoryos.demo
+    t =     0.02s     Launch com.eros.memoryos.demo
+    t =     0.02s         Terminate com.eros.memoryos.demo:83494
+2026-11-14 21:25:39.987 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:25:39.987 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.27s         Setting up automation session
+    t =     3.94s         Wait for com.eros.memoryos.demo to idle
+    t =     5.57s Tap "open-menu" Button
+    t =     5.57s     Wait for com.eros.memoryos.demo to idle
+    t =     5.57s     Find the "open-menu" Button
+    t =     5.78s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.82s     Synthesize event
+    t =     6.12s     Wait for com.eros.memoryos.demo to idle
+    t =     6.12s Find the "section-profiles" Button
+    t =     6.20s Tap "section-profiles" Button
+    t =     6.20s     Wait for com.eros.memoryos.demo to idle
+    t =     6.20s     Find the "section-profiles" Button
+    t =     6.24s     Check for interrupting elements affecting "section-profiles" Button
+    t =     6.28s     Synthesize event
+    t =     6.58s     Wait for com.eros.memoryos.demo to idle
+    t =     6.72s Tap "record-ali" Button
+    t =     6.73s     Wait for com.eros.memoryos.demo to idle
+    t =     6.73s     Find the "record-ali" Button
+    t =     6.78s     Check for interrupting elements affecting "record-ali" Button
+    t =     6.82s     Synthesize event
+    t =     7.12s     Wait for com.eros.memoryos.demo to idle
+    t =     7.15s Find the "12 May" StaticText
+    t =     7.30s Find the "12 May" StaticText
+    t =     7.40s Find the "12 May" StaticText
+    t =     7.48s Find the "12 May" StaticText
+TEXT-SIZE UICTContentSizeCategoryL 12 May: (82.0, 459.6666666666667, 55.66666666666666, 22.333333333333314)
+    t =     7.60s Find the "View reminder choices" StaticText
+    t =     7.70s Find the "View reminder choices" StaticText
+    t =     7.77s Find the "View reminder choices" StaticText
+    t =     7.83s Find the "View reminder choices" StaticText
+TEXT-SIZE UICTContentSizeCategoryL View reminder choices: (82.0, 488.0, 155.33333333333334, 20.0)
+    t =     7.89s Tap "open-menu" Button
+    t =     7.89s     Wait for com.eros.memoryos.demo to idle
+    t =     7.89s     Find the "open-menu" Button
+    t =     7.94s     Check for interrupting elements affecting "open-menu" Button
+    t =     8.00s     Synthesize event
+    t =     8.31s     Wait for com.eros.memoryos.demo to idle
+    t =     9.02s Find the "section-projects" Button
+    t =     9.13s Tap "section-projects" Button
+    t =     9.13s     Wait for com.eros.memoryos.demo to idle
+    t =     9.13s     Find the "section-projects" Button
+    t =     9.20s     Check for interrupting elements affecting "section-projects" Button
+    t =     9.27s     Synthesize event
+    t =     9.57s     Wait for com.eros.memoryos.demo to idle
+    t =     9.64s Tap "record-website" Button
+    t =     9.64s     Wait for com.eros.memoryos.demo to idle
+    t =     9.65s     Find the "record-website" Button
+    t =     9.69s     Check for interrupting elements affecting "record-website" Button
+    t =     9.72s     Synthesize event
+    t =    10.02s     Wait for com.eros.memoryos.demo to idle
+    t =    10.41s Find the "We might add a small photo gallery later." StaticText
+    t =    10.50s Find the "We might add a small photo gallery later." StaticText
+    t =    10.58s Find the "We might add a small photo gallery later." StaticText
+    t =    10.65s Find the "We might add a small photo gallery later." StaticText
+TEXT-SIZE UICTContentSizeCategoryL We might add a small photo gallery later.: (20.0, 647.3333333333334, 400.0, 64.33333333333326)
+    t =    10.72s Find the "Ideas are possibilities, not agreed plans." StaticText
+    t =    10.80s Find the "Ideas are possibilities, not agreed plans." StaticText
+    t =    10.88s Find the "Ideas are possibilities, not agreed plans." StaticText
+    t =    10.94s Find the "Ideas are possibilities, not agreed plans." StaticText
+TEXT-SIZE UICTContentSizeCategoryL Ideas are possibilities, not agreed plans.: (20.0, 711.6666666666666, 400.0, 33.66666666666674)
+    t =    11.01s Tap "open-menu" Button
+    t =    11.01s     Wait for com.eros.memoryos.demo to idle
+    t =    11.01s     Find the "open-menu" Button
+    t =    11.08s     Check for interrupting elements affecting "open-menu" Button
+    t =    11.13s     Synthesize event
+    t =    11.44s     Wait for com.eros.memoryos.demo to idle
+    t =    12.15s Find the "section-birthdays" Button
+    t =    12.26s Tap "section-birthdays" Button
+    t =    12.26s     Wait for com.eros.memoryos.demo to idle
+    t =    12.26s     Find the "section-birthdays" Button
+    t =    12.34s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    12.40s     Synthesize event
+    t =    12.70s     Wait for com.eros.memoryos.demo to idle
+    t =    12.76s Tap "birthday-birthday-ali" Button
+    t =    12.76s     Wait for com.eros.memoryos.demo to idle
+    t =    12.76s     Find the "birthday-birthday-ali" Button
+    t =    12.82s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    12.85s     Synthesize event
+    t =    13.15s     Wait for com.eros.memoryos.demo to idle
+    t =    13.53s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    13.61s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    13.68s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    13.74s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+TEXT-SIZE UICTContentSizeCategoryL Preview only. No notification or calendar event will be created. Choices reset when the app closes.: (20.0, 690.6666666666666, 400.0, 53.66666666666674)
+    t =    13.79s Find the "Current choice" StaticText
+    t =    13.86s Find the "Current choice" StaticText
+    t =    13.93s Find the "Current choice" StaticText
+    t =    14.00s Find the "Current choice" StaticText
+TEXT-SIZE UICTContentSizeCategoryL Current choice: (20.0, 744.6666666666666, 400.0, 42.33333333333337)
+    t =    14.05s Terminate com.eros.memoryos.demo:83972
+    t =    15.06s Open com.eros.memoryos.demo
+    t =    15.06s     Launch com.eros.memoryos.demo
+2026-11-14 21:25:53.990 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:25:53.990 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    15.29s         Setting up automation session
+    t =    18.09s         Wait for com.eros.memoryos.demo to idle
+    t =    19.80s Tap "open-menu" Button
+    t =    19.80s     Wait for com.eros.memoryos.demo to idle
+    t =    19.80s     Find the "open-menu" Button
+    t =    20.08s     Check for interrupting elements affecting "open-menu" Button
+    t =    20.11s     Synthesize event
+    t =    20.41s     Wait for com.eros.memoryos.demo to idle
+    t =    20.41s Find the "section-profiles" Button
+    t =    20.47s Tap "section-profiles" Button
+    t =    20.47s     Wait for com.eros.memoryos.demo to idle
+    t =    20.48s     Find the "section-profiles" Button
+    t =    20.52s     Check for interrupting elements affecting "section-profiles" Button
+    t =    20.55s     Synthesize event
+    t =    20.85s     Wait for com.eros.memoryos.demo to idle
+    t =    21.01s Tap "record-ali" Button
+    t =    21.01s     Wait for com.eros.memoryos.demo to idle
+    t =    21.01s     Find the "record-ali" Button
+    t =    21.07s     Check for interrupting elements affecting "record-ali" Button
+    t =    21.10s     Synthesize event
+    t =    21.40s     Wait for com.eros.memoryos.demo to idle
+    t =    21.91s Find the "12 May" StaticText
+    t =    22.98s     Find the "12 May" StaticText (retry 1)
+    t =    24.04s     Find the "12 May" StaticText (retry 2)
+    t =    24.11s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    24.11s     Wait for com.eros.memoryos.demo to idle
+    t =    24.11s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    24.14s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    24.17s     Synthesize event
+    t =    24.61s     Wait for com.eros.memoryos.demo to idle
+    t =    26.69s Find the "12 May" StaticText
+    t =    26.77s Find the "12 May" StaticText
+    t =    26.82s Find the "12 May" StaticText
+    t =    26.87s Find the "12 May" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL 12 May: (82.0, 461.6666666666665, 168.66666666666666, 69.0)
+    t =    26.91s Find the "View reminder choices" StaticText
+    t =    26.97s Find the "View reminder choices" StaticText
+    t =    27.02s Find the "View reminder choices" StaticText
+    t =    27.06s Find the "View reminder choices" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL View reminder choices: (82.0, 536.6666666666665, 194.66666666666663, 192.0)
+    t =    27.10s Tap "open-menu" Button
+    t =    27.10s     Wait for com.eros.memoryos.demo to idle
+    t =    27.11s     Find the "open-menu" Button
+    t =    27.15s     Check for interrupting elements affecting "open-menu" Button
+    t =    27.19s     Synthesize event
+    t =    27.49s     Wait for com.eros.memoryos.demo to idle
+    t =    28.20s Find the "section-projects" Button
+    t =    28.29s Tap "section-projects" Button
+    t =    28.29s     Wait for com.eros.memoryos.demo to idle
+    t =    28.30s     Find the "section-projects" Button
+    t =    28.35s     Check for interrupting elements affecting "section-projects" Button
+    t =    28.40s     Synthesize event
+    t =    28.70s     Wait for com.eros.memoryos.demo to idle
+    t =    28.74s Tap "record-website" Button
+    t =    28.74s     Wait for com.eros.memoryos.demo to idle
+    t =    28.75s     Find the "record-website" Button
+    t =    28.79s     Check for interrupting elements affecting "record-website" Button
+    t =    28.82s     Synthesize event
+    t =    29.12s     Wait for com.eros.memoryos.demo to idle
+    t =    29.48s Find the "We might add a small photo gallery later." StaticText
+    t =    30.54s     Find the "We might add a small photo gallery later." StaticText (retry 1)
+    t =    31.61s     Find the "We might add a small photo gallery later." StaticText (retry 2)
+    t =    31.65s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    31.65s     Wait for com.eros.memoryos.demo to idle
+    t =    31.65s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    31.69s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    31.72s     Synthesize event
+    t =    32.17s     Wait for com.eros.memoryos.demo to idle
+    t =    34.25s Find the "We might add a small photo gallery later." StaticText
+    t =    35.32s     Find the "We might add a small photo gallery later." StaticText (retry 1)
+    t =    36.37s     Find the "We might add a small photo gallery later." StaticText (retry 2)
+    t =    36.43s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    36.43s     Wait for com.eros.memoryos.demo to idle
+    t =    36.43s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    36.46s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    36.50s     Synthesize event
+    t =    36.93s     Wait for com.eros.memoryos.demo to idle
+    t =    39.05s Find the "We might add a small photo gallery later." StaticText
+    t =    39.12s Find the "We might add a small photo gallery later." StaticText
+    t =    39.17s Find the "We might add a small photo gallery later." StaticText
+    t =    39.21s Find the "We might add a small photo gallery later." StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL We might add a small photo gallery later.: (20.0, 444.66666666666674, 400.0, 313.9999999999999)
+    t =    39.26s Find the "Ideas are possibilities, not agreed plans." StaticText
+    t =    39.31s Find the "Ideas are possibilities, not agreed plans." StaticText
+    t =    39.36s Find the "Ideas are possibilities, not agreed plans." StaticText
+    t =    39.40s Find the "Ideas are possibilities, not agreed plans." StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL Ideas are possibilities, not agreed plans.: (20.0, 758.6666666666666, 400.0, 204.33333333333348)
+    t =    39.45s Tap "open-menu" Button
+    t =    39.45s     Wait for com.eros.memoryos.demo to idle
+    t =    39.45s     Find the "open-menu" Button
+    t =    39.49s     Check for interrupting elements affecting "open-menu" Button
+    t =    39.53s     Synthesize event
+    t =    39.83s     Wait for com.eros.memoryos.demo to idle
+    t =    40.55s Find the "section-birthdays" Button
+    t =    40.64s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    40.64s     Wait for com.eros.memoryos.demo to idle
+    t =    40.65s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    40.69s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    40.73s     Synthesize event
+    t =    41.16s     Wait for com.eros.memoryos.demo to idle
+    t =    41.67s Tap "section-birthdays" Button
+    t =    41.67s     Wait for com.eros.memoryos.demo to idle
+    t =    41.68s     Find the "section-birthdays" Button
+    t =    41.75s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    41.79s     Synthesize event
+    t =    42.09s     Wait for com.eros.memoryos.demo to idle
+    t =    42.16s Tap "birthday-birthday-ali" Button
+    t =    42.16s     Wait for com.eros.memoryos.demo to idle
+    t =    42.16s     Find the "birthday-birthday-ali" Button
+    t =    42.22s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    42.25s     Synthesize event
+    t =    42.55s     Wait for com.eros.memoryos.demo to idle
+    t =    42.92s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    43.98s     Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText (retry 1)
+    t =    45.06s     Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText (retry 2)
+    t =    45.10s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    45.10s     Wait for com.eros.memoryos.demo to idle
+    t =    45.10s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    45.14s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    45.18s     Synthesize event
+    t =    45.60s     Wait for com.eros.memoryos.demo to idle
+    t =    47.71s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    47.78s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    47.84s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+    t =    47.89s Find the "Preview only. No notification or calendar event will be created. Choices reset when the app closes." StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL Preview only. No notification or calendar event will be created. Choices reset when the app closes.: (20.0, 680.6666666666667, 400.0, 454.33333333333326)
+    t =    47.93s Find the "Current choice" StaticText
+    t =    48.99s     Find the "Current choice" StaticText (retry 1)
+    t =    50.05s     Find the "Current choice" StaticText (retry 2)
+    t =    50.10s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    50.10s     Wait for com.eros.memoryos.demo to idle
+    t =    50.11s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    50.14s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    50.18s     Synthesize event
+    t =    50.61s     Wait for com.eros.memoryos.demo to idle
+    t =    51.33s Find the "Current choice" StaticText
+    t =    51.40s Find the "Current choice" StaticText
+    t =    51.45s Find the "Current choice" StaticText
+    t =    51.48s Find the "Current choice" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL Current choice: (20.0, 714.0, 400.0, 89.0)
+    t =    51.52s Terminate com.eros.memoryos.demo:84123
+    t =    52.62s Open com.eros.memoryos.demo
+    t =    52.62s     Launch com.eros.memoryos.demo
+2026-11-14 21:26:31.547 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:26:31.547 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    52.84s         Setting up automation session
+    t =    55.82s         Wait for com.eros.memoryos.demo to idle
+    t =    57.39s Tap "open-menu" Button
+    t =    57.39s     Wait for com.eros.memoryos.demo to idle
+    t =    57.40s     Find the "open-menu" Button
+    t =    57.61s     Check for interrupting elements affecting "open-menu" Button
+    t =    57.64s     Synthesize event
+    t =    57.94s     Wait for com.eros.memoryos.demo to idle
+    t =    57.94s Find the "section-settings" Button
+    t =    58.01s Tap "section-settings" Button
+    t =    58.01s     Wait for com.eros.memoryos.demo to idle
+    t =    58.02s     Find the "section-settings" Button
+    t =    58.07s     Check for interrupting elements affecting "section-settings" Button
+    t =    58.12s     Synthesize event
+    t =    58.42s     Wait for com.eros.memoryos.demo to idle
+    t =    58.61s Tap "language-picker" Button
+    t =    58.61s     Wait for com.eros.memoryos.demo to idle
+    t =    58.61s     Find the "language-picker" Button
+    t =    58.66s     Check for interrupting elements affecting "language-picker" Button
+    t =    58.69s     Synthesize event
+    t =    59.00s     Wait for com.eros.memoryos.demo to idle
+    t =    60.21s Tap "العربية" Button
+    t =    60.21s     Wait for com.eros.memoryos.demo to idle
+    t =    60.21s     Find the "العربية" Button
+    t =    60.27s     Check for interrupting elements affecting "العربية" Button
+    t =    60.30s     Synthesize event
+    t =    60.60s     Wait for com.eros.memoryos.demo to idle
+    t =    62.11s Tap "open-menu" Button
+    t =    62.11s     Wait for com.eros.memoryos.demo to idle
+    t =    62.12s     Find the "open-menu" Button
+    t =    62.15s     Check for interrupting elements affecting "open-menu" Button
+    t =    62.17s     Synthesize event
+    t =    62.48s     Wait for com.eros.memoryos.demo to idle
+    t =    62.48s Find the "section-profiles" Button
+    t =    62.55s Tap "section-profiles" Button
+    t =    62.55s     Wait for com.eros.memoryos.demo to idle
+    t =    62.55s     Find the "section-profiles" Button
+    t =    62.59s     Check for interrupting elements affecting "section-profiles" Button
+    t =    62.62s     Synthesize event
+    t =    62.93s     Wait for com.eros.memoryos.demo to idle
+    t =    63.08s Tap "record-ali" Button
+    t =    63.08s     Wait for com.eros.memoryos.demo to idle
+    t =    63.08s     Find the "record-ali" Button
+    t =    63.12s     Check for interrupting elements affecting "record-ali" Button
+    t =    63.15s     Synthesize event
+    t =    63.45s     Wait for com.eros.memoryos.demo to idle
+    t =    63.91s Find the "١٢ أيار" StaticText
+    t =    64.01s Find the "١٢ أيار" StaticText
+    t =    64.08s Find the "١٢ أيار" StaticText
+    t =    64.14s Find the "١٢ أيار" StaticText
+TEXT-SIZE UICTContentSizeCategoryL ١٢ أيار: (318.33333333333337, 459.6666666666667, 39.66666666666663, 22.333333333333314)
+    t =    64.20s Find the "عرض خيارات التذكير" StaticText
+    t =    64.27s Find the "عرض خيارات التذكير" StaticText
+    t =    64.34s Find the "عرض خيارات التذكير" StaticText
+    t =    64.40s Find the "عرض خيارات التذكير" StaticText
+TEXT-SIZE UICTContentSizeCategoryL عرض خيارات التذكير: (239.33333333333337, 488.0, 118.66666666666663, 20.0)
+    t =    64.46s Tap "open-menu" Button
+    t =    64.46s     Wait for com.eros.memoryos.demo to idle
+    t =    64.47s     Find the "open-menu" Button
+    t =    64.53s     Check for interrupting elements affecting "open-menu" Button
+    t =    64.58s     Synthesize event
+    t =    64.88s     Wait for com.eros.memoryos.demo to idle
+    t =    65.58s Find the "section-projects" Button
+    t =    65.69s Tap "section-projects" Button
+    t =    65.69s     Wait for com.eros.memoryos.demo to idle
+    t =    65.69s     Find the "section-projects" Button
+    t =    65.77s     Check for interrupting elements affecting "section-projects" Button
+    t =    65.83s     Synthesize event
+    t =    66.13s     Wait for com.eros.memoryos.demo to idle
+    t =    66.19s Tap "record-website" Button
+    t =    66.19s     Wait for com.eros.memoryos.demo to idle
+    t =    66.20s     Find the "record-website" Button
+    t =    66.24s     Check for interrupting elements affecting "record-website" Button
+    t =    66.27s     Synthesize event
+    t =    66.57s     Wait for com.eros.memoryos.demo to idle
+    t =    66.94s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    67.05s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    67.13s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    67.21s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+TEXT-SIZE UICTContentSizeCategoryL قد نضيف معرض صور صغيراً لاحقاً.: (20.0, 623.3333333333333, 400.0, 64.33333333333337)
+    t =    67.28s Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+    t =    67.36s Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+    t =    67.44s Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+    t =    67.51s Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+TEXT-SIZE UICTContentSizeCategoryL هذه احتمالات ولم نتفق عليها كخطط.: (20.0, 687.6666666666666, 400.0, 33.66666666666674)
+    t =    67.58s Tap "open-menu" Button
+    t =    67.58s     Wait for com.eros.memoryos.demo to idle
+    t =    67.58s     Find the "open-menu" Button
+    t =    67.64s     Check for interrupting elements affecting "open-menu" Button
+    t =    67.70s     Synthesize event
+    t =    68.01s     Wait for com.eros.memoryos.demo to idle
+    t =    68.71s Find the "section-birthdays" Button
+    t =    68.82s Tap "section-birthdays" Button
+    t =    68.82s     Wait for com.eros.memoryos.demo to idle
+    t =    68.83s     Find the "section-birthdays" Button
+    t =    68.91s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    68.98s     Synthesize event
+    t =    69.28s     Wait for com.eros.memoryos.demo to idle
+    t =    69.34s Tap "birthday-birthday-ali" Button
+    t =    69.34s     Wait for com.eros.memoryos.demo to idle
+    t =    69.35s     Find the "birthday-birthday-ali" Button
+    t =    69.40s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =    69.44s     Synthesize event
+    t =    69.74s     Wait for com.eros.memoryos.demo to idle
+    t =    70.12s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =    70.21s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =    70.28s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =    70.34s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+TEXT-SIZE UICTContentSizeCategoryL معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق.: (20.0, 690.6666666666666, 400.0, 53.66666666666674)
+    t =    70.40s Find the "الخيار الحالي" StaticText
+    t =    70.46s Find the "الخيار الحالي" StaticText
+    t =    70.53s Find the "الخيار الحالي" StaticText
+    t =    70.59s Find the "الخيار الحالي" StaticText
+TEXT-SIZE UICTContentSizeCategoryL الخيار الحالي: (20.0, 744.6666666666666, 400.0, 42.33333333333337)
+    t =    70.65s Terminate com.eros.memoryos.demo:84850
+    t =    71.69s Open com.eros.memoryos.demo
+    t =    71.69s     Launch com.eros.memoryos.demo
+2026-11-14 21:26:50.612 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:26:50.612 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    71.90s         Setting up automation session
+    t =    74.73s         Wait for com.eros.memoryos.demo to idle
+    t =    76.38s Tap "open-menu" Button
+    t =    76.38s     Wait for com.eros.memoryos.demo to idle
+    t =    76.38s     Find the "open-menu" Button
+    t =    76.57s     Check for interrupting elements affecting "open-menu" Button
+    t =    76.60s     Synthesize event
+    t =    76.90s     Wait for com.eros.memoryos.demo to idle
+    t =    76.91s Find the "section-settings" Button
+    t =    76.97s Tap "section-settings" Button
+    t =    76.97s     Wait for com.eros.memoryos.demo to idle
+    t =    76.98s     Find the "section-settings" Button
+    t =    77.02s     Check for interrupting elements affecting "section-settings" Button
+    t =    77.07s     Synthesize event
+    t =    77.37s     Wait for com.eros.memoryos.demo to idle
+    t =    77.56s Tap "language-picker" Button
+    t =    77.56s     Wait for com.eros.memoryos.demo to idle
+    t =    77.56s     Find the "language-picker" Button
+    t =    77.61s     Check for interrupting elements affecting "language-picker" Button
+    t =    77.64s     Synthesize event
+    t =    77.94s     Wait for com.eros.memoryos.demo to idle
+    t =    79.32s Tap "العربية" Button
+    t =    79.32s     Wait for com.eros.memoryos.demo to idle
+    t =    79.32s     Find the "العربية" Button
+    t =    79.38s     Check for interrupting elements affecting "العربية" Button
+    t =    79.41s     Synthesize event
+    t =    79.71s     Wait for com.eros.memoryos.demo to idle
+    t =    81.21s Tap "open-menu" Button
+    t =    81.21s     Wait for com.eros.memoryos.demo to idle
+    t =    81.22s     Find the "open-menu" Button
+    t =    81.25s     Check for interrupting elements affecting "open-menu" Button
+    t =    81.28s     Synthesize event
+    t =    81.58s     Wait for com.eros.memoryos.demo to idle
+    t =    81.59s Find the "section-profiles" Button
+    t =    81.65s Tap "section-profiles" Button
+    t =    81.65s     Wait for com.eros.memoryos.demo to idle
+    t =    81.66s     Find the "section-profiles" Button
+    t =    81.69s     Check for interrupting elements affecting "section-profiles" Button
+    t =    81.73s     Synthesize event
+    t =    82.03s     Wait for com.eros.memoryos.demo to idle
+    t =    82.18s Tap "record-ali" Button
+    t =    82.18s     Wait for com.eros.memoryos.demo to idle
+    t =    82.18s     Find the "record-ali" Button
+    t =    82.23s     Check for interrupting elements affecting "record-ali" Button
+    t =    82.26s     Synthesize event
+    t =    82.56s     Wait for com.eros.memoryos.demo to idle
+    t =    83.01s Find the "١٢ أيار" StaticText
+    t =    84.07s     Find the "١٢ أيار" StaticText (retry 1)
+    t =    85.13s     Find the "١٢ أيار" StaticText (retry 2)
+    t =    85.19s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    85.19s     Wait for com.eros.memoryos.demo to idle
+    t =    85.19s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    85.22s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    85.26s     Synthesize event
+    t =    85.68s     Wait for com.eros.memoryos.demo to idle
+    t =    87.77s Find the "١٢ أيار" StaticText
+    t =    87.85s Find the "١٢ أيار" StaticText
+    t =    87.90s Find the "١٢ أيار" StaticText
+    t =    87.95s Find the "١٢ أيار" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL ١٢ أيار: (239.0, 410.00000000000017, 119.0, 69.0)
+    t =    88.00s Find the "عرض خيارات التذكير" StaticText
+    t =    88.06s Find the "عرض خيارات التذكير" StaticText
+    t =    88.12s Find the "عرض خيارات التذكير" StaticText
+    t =    88.16s Find the "عرض خيارات التذكير" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL عرض خيارات التذكير: (108.66666666666669, 485.00000000000017, 249.33333333333331, 128.33333333333331)
+    t =    88.21s Tap "open-menu" Button
+    t =    88.21s     Wait for com.eros.memoryos.demo to idle
+    t =    88.21s     Find the "open-menu" Button
+    t =    88.28s     Check for interrupting elements affecting "open-menu" Button
+    t =    88.32s     Synthesize event
+    t =    88.63s     Wait for com.eros.memoryos.demo to idle
+    t =    89.33s Find the "section-projects" Button
+    t =    89.43s Tap "section-projects" Button
+    t =    89.43s     Wait for com.eros.memoryos.demo to idle
+    t =    89.43s     Find the "section-projects" Button
+    t =    89.50s     Check for interrupting elements affecting "section-projects" Button
+    t =    89.55s     Synthesize event
+    t =    89.85s     Wait for com.eros.memoryos.demo to idle
+    t =    89.93s Tap "record-website" Button
+    t =    89.93s     Wait for com.eros.memoryos.demo to idle
+    t =    89.93s     Find the "record-website" Button
+    t =    89.97s     Check for interrupting elements affecting "record-website" Button
+    t =    89.99s     Synthesize event
+    t =    90.30s     Wait for com.eros.memoryos.demo to idle
+    t =    90.66s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    91.72s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText (retry 1)
+    t =    92.77s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText (retry 2)
+    t =    92.83s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    92.83s     Wait for com.eros.memoryos.demo to idle
+    t =    92.83s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    92.86s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    92.89s     Synthesize event
+    t =    93.32s     Wait for com.eros.memoryos.demo to idle
+    t =    95.43s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =    96.48s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText (retry 1)
+    t =    97.54s     Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText (retry 2)
+    t =    97.60s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    97.60s     Wait for com.eros.memoryos.demo to idle
+    t =    97.60s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    97.63s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    97.67s     Synthesize event
+    t =    98.10s     Wait for com.eros.memoryos.demo to idle
+    t =   100.19s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =   100.26s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =   100.32s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+    t =   100.38s Find the "قد نضيف معرض صور صغيراً لاحقاً." StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL قد نضيف معرض صور صغيراً لاحقاً.: (20.0, 372.0, 400.0, 246.33333333333337)
+    t =   100.43s Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+    t =   100.49s Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+    t =   100.55s Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+    t =   100.60s Find the "هذه احتمالات ولم نتفق عليها كخطط." StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL هذه احتمالات ولم نتفق عليها كخطط.: (20.0, 618.3333333333333, 400.0, 141.66666666666663)
+    t =   100.65s Tap "open-menu" Button
+    t =   100.65s     Wait for com.eros.memoryos.demo to idle
+    t =   100.66s     Find the "open-menu" Button
+    t =   100.71s     Check for interrupting elements affecting "open-menu" Button
+    t =   100.75s     Synthesize event
+    t =   101.06s     Wait for com.eros.memoryos.demo to idle
+    t =   101.77s Find the "section-birthdays" Button
+    t =   101.86s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =   101.86s     Wait for com.eros.memoryos.demo to idle
+    t =   101.87s     Find the Target Application 'com.eros.memoryos.demo'
+    t =   101.91s     Check for interrupting elements affecting "MemoryOS" Application
+    t =   101.96s     Synthesize event
+    t =   102.40s     Wait for com.eros.memoryos.demo to idle
+    t =   102.97s Tap "section-birthdays" Button
+    t =   102.97s     Wait for com.eros.memoryos.demo to idle
+    t =   102.97s     Find the "section-birthdays" Button
+    t =   103.05s     Check for interrupting elements affecting "section-birthdays" Button
+    t =   103.11s     Synthesize event
+    t =   103.41s     Wait for com.eros.memoryos.demo to idle
+    t =   103.48s Tap "birthday-birthday-ali" Button
+    t =   103.48s     Wait for com.eros.memoryos.demo to idle
+    t =   103.48s     Find the "birthday-birthday-ali" Button
+    t =   103.53s     Check for interrupting elements affecting "birthday-birthday-ali" Button
+    t =   103.57s     Synthesize event
+    t =   103.87s     Wait for com.eros.memoryos.demo to idle
+    t =   104.23s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =   105.31s     Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText (retry 1)
+    t =   106.39s     Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText (retry 2)
+    t =   106.46s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =   106.46s     Wait for com.eros.memoryos.demo to idle
+    t =   106.47s     Find the Target Application 'com.eros.memoryos.demo'
+    t =   106.51s     Check for interrupting elements affecting "MemoryOS" Application
+    t =   106.55s     Synthesize event
+    t =   106.98s     Wait for com.eros.memoryos.demo to idle
+    t =   109.08s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =   109.15s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =   109.22s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+    t =   109.27s Find the "معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق." StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL معاينة فقط. لن ينشئ التطبيق إشعاراً أو حدث تقويم. تُمسح الخيارات عند إغلاق التطبيق.: (20.0, 481.33333333333326, 400.0, 329.33333333333326)
+    t =   109.32s Find the "الخيار الحالي" StaticText
+    t =   109.37s Find the "الخيار الحالي" StaticText
+    t =   109.43s Find the "الخيار الحالي" StaticText
+    t =   109.49s Find the "الخيار الحالي" StaticText
+TEXT-SIZE UICTContentSizeCategoryAccessibilityXXXL الخيار الحالي: (20.0, 810.6666666666666, 400.0, 89.0)
+    t =   109.54s Terminate com.eros.memoryos.demo:85099
+    t =   110.64s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testLinkedTextScalesInBothLanguages]' passed (110.858 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testMapExplorationOpensLinkedProject]' started.
+    t =     0.00s Start Test at 2026-11-14 21:27:29.782
+    t =     0.02s Set Up
+    t =     0.02s Open com.eros.memoryos.demo
+    t =     0.02s     Launch com.eros.memoryos.demo
+2026-11-14 21:27:29.801 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:27:29.801 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     0.23s         Setting up automation session
+    t =     3.52s         Wait for com.eros.memoryos.demo to idle
+    t =     5.07s Tap "open-menu" Button
+    t =     5.07s     Wait for com.eros.memoryos.demo to idle
+    t =     5.07s     Find the "open-menu" Button
+    t =     5.32s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.34s     Synthesize event
+    t =     5.64s     Wait for com.eros.memoryos.demo to idle
+    t =     5.64s Find the "section-brainMap" Button
+    t =     5.71s Tap "section-brainMap" Button
+    t =     5.71s     Wait for com.eros.memoryos.demo to idle
+    t =     5.71s     Find the "section-brainMap" Button
+    t =     5.76s     Check for interrupting elements affecting "section-brainMap" Button
+    t =     5.80s     Synthesize event
+    t =     6.10s     Wait for com.eros.memoryos.demo to idle
+    t =     6.10s Tap "map-focus-website" Button
+    t =     6.10s     Wait for com.eros.memoryos.demo to idle
+    t =     6.30s     Find the "map-focus-website" Button
+    t =     6.38s     Check for interrupting elements affecting "map-focus-website" Button
+    t =     6.42s     Synthesize event
+    t =     6.72s     Wait for com.eros.memoryos.demo to idle
+    t =     6.72s Checking existence of `"map-open-website" Button`
+    t =     6.76s Tap "map-open-website" Button
+    t =     6.76s     Wait for com.eros.memoryos.demo to idle
+    t =     6.77s     Find the "map-open-website" Button
+    t =     6.81s     Check for interrupting elements affecting "map-open-website" Button
+    t =     6.85s     Synthesize event
+    t =     7.15s     Wait for com.eros.memoryos.demo to idle
+    t =     7.65s Checking existence of `"Current plans" StaticText`
+    t =     7.75s Tap Button (First Match)
+    t =     7.75s     Wait for com.eros.memoryos.demo to idle
+    t =     7.75s     Find the Button (First Match)
+    t =     7.77s     Check for interrupting elements affecting "BackButton" Button
+    t =     7.83s     Synthesize event
+    t =     8.14s     Wait for com.eros.memoryos.demo to idle
+    t =     8.46s Tap "List" Button
+    t =     8.46s     Wait for com.eros.memoryos.demo to idle
+    t =     8.46s     Find the "List" Button
+    t =     8.51s     Check for interrupting elements affecting "List" Button
+    t =     8.55s     Synthesize event
+    t =     8.85s     Wait for com.eros.memoryos.demo to idle
+    t =    10.46s Checking existence of `"record-ali" Button`
+    t =    10.52s Tap "record-ali" Button
+    t =    10.52s     Wait for com.eros.memoryos.demo to idle
+    t =    10.52s     Find the "record-ali" Button
+    t =    10.56s     Check for interrupting elements affecting "record-ali" Button
+    t =    10.60s     Synthesize event
+    t =    10.90s     Wait for com.eros.memoryos.demo to idle
+    t =    11.27s Find the "original-source" StaticText
+    t =    11.35s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testMapExplorationOpensLinkedProject]' passed (11.676 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testMenuDismissalPreservesRootAndDetailControls]' started.
+    t =     0.00s Start Test at 2026-11-14 21:27:41.459
+    t =     0.04s Set Up
+    t =     0.04s Open com.eros.memoryos.demo
+    t =     0.04s     Launch com.eros.memoryos.demo
+    t =     0.04s         Terminate com.eros.memoryos.demo:85822
+2026-11-14 21:27:42.560 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:27:42.560 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.32s         Setting up automation session
+    t =     4.01s         Wait for com.eros.memoryos.demo to idle
+    t =     5.59s Tap "open-menu" Button
+    t =     5.59s     Wait for com.eros.memoryos.demo to idle
+    t =     5.60s     Find the "open-menu" Button
+    t =     5.83s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.86s     Synthesize event
+    t =     6.17s     Wait for com.eros.memoryos.demo to idle
+    t =     6.17s Tap "close-menu" Button
+    t =     6.17s     Wait for com.eros.memoryos.demo to idle
+    t =     6.17s     Find the "close-menu" Button
+    t =     6.23s     Check for interrupting elements affecting "close-menu" Button
+    t =     6.27s     Synthesize event
+    t =     6.57s     Wait for com.eros.memoryos.demo to idle
+    t =     6.58s Get number of matches for: Elements matching predicate '"open-menu" IN identifiers'
+    t =     7.62s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =     7.62s     Find the "close-menu" Button
+    t =     7.65s Tap "open-menu" Button
+    t =     7.65s     Wait for com.eros.memoryos.demo to idle
+    t =     7.65s     Find the "open-menu" Button
+    t =     7.68s     Check for interrupting elements affecting "open-menu" Button
+    t =     7.70s     Synthesize event
+    t =     8.00s     Wait for com.eros.memoryos.demo to idle
+    t =     8.00s Find the "section-profiles" Button
+    t =     8.06s Tap "section-profiles" Button
+    t =     8.06s     Wait for com.eros.memoryos.demo to idle
+    t =     8.06s     Find the "section-profiles" Button
+    t =     8.10s     Check for interrupting elements affecting "section-profiles" Button
+    t =     8.14s     Synthesize event
+    t =     8.43s     Wait for com.eros.memoryos.demo to idle
+    t =     8.57s Tap "record-ali" Button
+    t =     8.58s     Wait for com.eros.memoryos.demo to idle
+    t =     8.58s     Find the "record-ali" Button
+    t =     8.62s     Check for interrupting elements affecting "record-ali" Button
+    t =     8.65s     Synthesize event
+    t =     8.95s     Wait for com.eros.memoryos.demo to idle
+    t =     9.46s Tap "open-menu" Button
+    t =     9.46s     Wait for com.eros.memoryos.demo to idle
+    t =     9.46s     Find the "open-menu" Button
+    t =     9.56s     Check for interrupting elements affecting "open-menu" Button
+    t =     9.61s     Synthesize event
+    t =     9.92s     Wait for com.eros.memoryos.demo to idle
+    t =    10.63s Tap "close-menu" Button
+    t =    10.63s     Wait for com.eros.memoryos.demo to idle
+    t =    10.63s     Find the "close-menu" Button
+    t =    10.71s     Check for interrupting elements affecting "close-menu" Button
+    t =    10.77s     Synthesize event
+    t =    11.07s     Wait for com.eros.memoryos.demo to idle
+    t =    11.08s Checking existence of `"Original sample" StaticText`
+    t =    11.14s Find the "open-menu" Button
+    t =    12.25s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    12.25s     Find the "close-menu" Button
+    t =    12.31s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testMenuDismissalPreservesRootAndDetailControls]' passed (12.565 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testPeopleToProjectAndSourceWithBackNavigation]' started.
+    t =     0.00s Start Test at 2026-11-14 21:27:54.025
+    t =     0.03s Set Up
+    t =     0.04s Open com.eros.memoryos.demo
+    t =     0.04s     Launch com.eros.memoryos.demo
+    t =     0.04s         Terminate com.eros.memoryos.demo:86126
+2026-11-14 21:27:55.125 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:27:55.125 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.32s         Setting up automation session
+    t =     4.07s         Wait for com.eros.memoryos.demo to idle
+    t =     5.72s Tap "open-menu" Button
+    t =     5.72s     Wait for com.eros.memoryos.demo to idle
+    t =     5.72s     Find the "open-menu" Button
+    t =     6.00s     Check for interrupting elements affecting "open-menu" Button
+    t =     6.02s     Synthesize event
+    t =     6.32s     Wait for com.eros.memoryos.demo to idle
+    t =     6.33s Find the "section-profiles" Button
+    t =     6.39s Tap "section-profiles" Button
+    t =     6.39s     Wait for com.eros.memoryos.demo to idle
+    t =     6.39s     Find the "section-profiles" Button
+    t =     6.43s     Check for interrupting elements affecting "section-profiles" Button
+    t =     6.47s     Synthesize event
+    t =     6.77s     Wait for com.eros.memoryos.demo to idle
+    t =     6.91s Tap "record-ali" Button
+    t =     6.91s     Wait for com.eros.memoryos.demo to idle
+    t =     6.91s     Find the "record-ali" Button
+    t =     6.96s     Check for interrupting elements affecting "record-ali" Button
+    t =     6.99s     Synthesize event
+    t =     7.29s     Wait for com.eros.memoryos.demo to idle
+    t =     7.77s Checking existence of `"Original sample" StaticText`
+    t =     7.87s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =     7.87s     Wait for com.eros.memoryos.demo to idle
+    t =     7.88s     Find the Target Application 'com.eros.memoryos.demo'
+    t =     7.92s     Check for interrupting elements affecting "MemoryOS" Application
+    t =     7.97s     Synthesize event
+    t =     8.40s     Wait for com.eros.memoryos.demo to idle
+    t =     8.88s Tap "record-website" Button
+    t =     8.88s     Wait for com.eros.memoryos.demo to idle
+    t =     8.88s     Find the "record-website" Button
+    t =     8.95s     Check for interrupting elements affecting "record-website" Button
+    t =     9.00s     Synthesize event
+    t =     9.30s     Wait for com.eros.memoryos.demo to idle
+    t =     9.66s Checking existence of `"Current plans" StaticText`
+    t =     9.75s Checking existence of `"Tentative ideas" StaticText`
+    t =     9.81s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =     9.81s     Wait for com.eros.memoryos.demo to idle
+    t =     9.81s     Find the Target Application 'com.eros.memoryos.demo'
+    t =     9.86s     Check for interrupting elements affecting "MemoryOS" Application
+    t =     9.92s     Synthesize event
+    t =    10.35s     Wait for com.eros.memoryos.demo to idle
+    t =    10.83s Tap "record-chat-ali" Button
+    t =    10.83s     Wait for com.eros.memoryos.demo to idle
+    t =    10.83s     Find the "record-chat-ali" Button
+    t =    10.91s     Check for interrupting elements affecting "record-chat-ali" Button
+    t =    10.97s     Synthesize event
+    t =    11.27s     Wait for com.eros.memoryos.demo to idle
+    t =    11.61s Find the "original-source" StaticText
+    t =    11.69s Tap Button (First Match)
+    t =    11.69s     Wait for com.eros.memoryos.demo to idle
+    t =    11.69s     Find the Button (First Match)
+    t =    11.71s     Check for interrupting elements affecting "BackButton" Button
+    t =    11.76s     Synthesize event
+    t =    12.07s     Wait for com.eros.memoryos.demo to idle
+    t =    12.42s Checking existence of `"Tentative ideas" StaticText`
+    t =    12.49s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testPeopleToProjectAndSourceWithBackNavigation]' passed (12.792 seconds).
+Test Case '-[MemoryOSUITests.DemoFlowTests testSearchRecoveryAndSectionState]' started.
+    t =     0.00s Start Test at 2026-11-14 21:28:06.817
+    t =     0.02s Set Up
+    t =     0.02s Open com.eros.memoryos.demo
+    t =     0.02s     Launch com.eros.memoryos.demo
+    t =     0.02s         Terminate com.eros.memoryos.demo:86642
+2026-11-14 21:28:07.912 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:28:07.912 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.31s         Setting up automation session
+    t =     4.03s         Wait for com.eros.memoryos.demo to idle
+    t =     5.65s Tap "open-menu" Button
+    t =     5.65s     Wait for com.eros.memoryos.demo to idle
+    t =     5.65s     Find the "open-menu" Button
+    t =     5.90s     Check for interrupting elements affecting "open-menu" Button
+    t =     5.93s     Synthesize event
+    t =     6.23s     Wait for com.eros.memoryos.demo to idle
+    t =     6.23s Find the "section-profiles" Button
+    t =     6.29s Tap "section-profiles" Button
+    t =     6.29s     Wait for com.eros.memoryos.demo to idle
+    t =     6.29s     Find the "section-profiles" Button
+    t =     6.33s     Check for interrupting elements affecting "section-profiles" Button
+    t =     6.36s     Synthesize event
+    t =     6.66s     Wait for com.eros.memoryos.demo to idle
+    t =     6.80s Tap "catalog-search" Any
+    t =     6.80s     Wait for com.eros.memoryos.demo to idle
+    t =     6.81s     Find the "catalog-search" Any
+    t =     6.86s     Check for interrupting elements affecting "catalog-search" TextField
+    t =     6.88s     Synthesize event
+    t =     7.18s     Wait for com.eros.memoryos.demo to idle
+    t =     8.39s Type 'missing sample
+' into "catalog-search" TextField
+    t =     8.39s     Wait for com.eros.memoryos.demo to idle
+    t =     8.73s     Find the "catalog-search" TextField
+    t =     8.81s     Check for interrupting elements affecting "catalog-search" TextField
+    t =     8.85s     Synthesize event
+    t =     9.32s     Wait for com.eros.memoryos.demo to idle
+    t =     9.39s Checking existence of `"No matches" StaticText`
+    t =     9.43s Tap "clear-empty-search" Button
+    t =     9.43s     Wait for com.eros.memoryos.demo to idle
+    t =     9.44s     Find the "clear-empty-search" Button
+    t =     9.48s     Check for interrupting elements affecting "clear-empty-search" Button
+    t =     9.52s     Synthesize event
+    t =     9.82s     Wait for com.eros.memoryos.demo to idle
+    t =     9.82s Checking existence of `"record-sara" Button`
+    t =     9.87s Tap "catalog-search" TextField
+    t =     9.87s     Wait for com.eros.memoryos.demo to idle
+    t =     9.87s     Find the "catalog-search" TextField
+    t =     9.91s     Check for interrupting elements affecting "catalog-search" TextField
+    t =     9.94s     Synthesize event
+    t =    10.24s     Wait for com.eros.memoryos.demo to idle
+    t =    10.60s Type 'Ali' into "catalog-search" TextField
+    t =    10.60s     Wait for com.eros.memoryos.demo to idle
+    t =    10.61s     Find the "catalog-search" TextField
+    t =    10.67s     Check for interrupting elements affecting "catalog-search" TextField
+    t =    10.71s     Synthesize event
+    t =    10.97s     Wait for com.eros.memoryos.demo to idle
+    t =    11.19s Checking existence of `"record-ali" Button`
+    t =    11.25s Checking existence of `"record-sara" Button`
+    t =    11.29s Tap "open-menu" Button
+    t =    11.29s     Wait for com.eros.memoryos.demo to idle
+    t =    11.30s     Find the "open-menu" Button
+    t =    11.35s     Check for interrupting elements affecting "open-menu" Button
+    t =    11.38s     Synthesize event
+    t =    11.68s     Wait for com.eros.memoryos.demo to idle
+    t =    11.69s Checking existence of `Keyboard (First Match)`
+    t =    11.75s Tap "section-projects" Button
+    t =    11.75s     Wait for com.eros.memoryos.demo to idle
+    t =    11.75s     Find the "section-projects" Button
+    t =    11.80s     Check for interrupting elements affecting "section-projects" Button
+    t =    11.83s     Synthesize event
+    t =    12.14s     Wait for com.eros.memoryos.demo to idle
+    t =    12.20s Tap "open-menu" Button
+    t =    12.20s     Wait for com.eros.memoryos.demo to idle
+    t =    12.20s     Find the "open-menu" Button
+    t =    12.25s     Check for interrupting elements affecting "open-menu" Button
+    t =    12.28s     Synthesize event
+    t =    12.57s     Wait for com.eros.memoryos.demo to idle
+    t =    12.58s Find the "section-profiles" Button
+    t =    12.65s Tap "section-profiles" Button
+    t =    12.65s     Wait for com.eros.memoryos.demo to idle
+    t =    12.65s     Find the "section-profiles" Button
+    t =    12.70s     Check for interrupting elements affecting "section-profiles" Button
+    t =    12.74s     Synthesize event
+    t =    13.03s     Wait for com.eros.memoryos.demo to idle
+    t =    13.08s Find the "catalog-search" TextField
+    t =    13.12s Tap "record-ali" Button
+    t =    13.12s     Wait for com.eros.memoryos.demo to idle
+    t =    13.13s     Find the "record-ali" Button
+    t =    13.16s     Check for interrupting elements affecting "record-ali" Button
+    t =    13.19s     Synthesize event
+    t =    13.48s     Wait for com.eros.memoryos.demo to idle
+    t =    14.00s Tap "open-menu" Button
+    t =    14.00s     Wait for com.eros.memoryos.demo to idle
+    t =    14.00s     Find the "open-menu" Button
+    t =    14.09s     Check for interrupting elements affecting "open-menu" Button
+    t =    14.14s     Synthesize event
+    t =    14.45s     Wait for com.eros.memoryos.demo to idle
+    t =    15.16s Find the "section-capture" Button
+    t =    15.26s Tap "section-capture" Button
+    t =    15.26s     Wait for com.eros.memoryos.demo to idle
+    t =    15.26s     Find the "section-capture" Button
+    t =    15.33s     Check for interrupting elements affecting "section-capture" Button
+    t =    15.39s     Synthesize event
+    t =    15.69s     Wait for com.eros.memoryos.demo to idle
+    t =    15.75s Tap "open-menu" Button
+    t =    15.75s     Wait for com.eros.memoryos.demo to idle
+    t =    15.75s     Find the "open-menu" Button
+    t =    15.79s     Check for interrupting elements affecting "open-menu" Button
+    t =    15.81s     Synthesize event
+    t =    16.11s     Wait for com.eros.memoryos.demo to idle
+    t =    16.12s Find the "section-profiles" Button
+    t =    16.19s Tap "section-profiles" Button
+    t =    16.19s     Wait for com.eros.memoryos.demo to idle
+    t =    16.19s     Find the "section-profiles" Button
+    t =    16.24s     Check for interrupting elements affecting "section-profiles" Button
+    t =    16.28s     Synthesize event
+    t =    16.58s     Wait for com.eros.memoryos.demo to idle
+    t =    16.58s Checking existence of `"Original sample" StaticText`
+    t =    16.66s Tear Down
+Test Case '-[MemoryOSUITests.DemoFlowTests testSearchRecoveryAndSectionState]' passed (16.938 seconds).
+Test Suite 'DemoFlowTests' passed at 2026-11-14 21:28:23.757.
+	 Executed 8 tests, with 0 failures (0 unexpected) in 226.042 (226.061) seconds
+Test Suite 'FoundationTests' started at 2026-11-14 21:28:23.769.
+Test Case '-[MemoryOSUITests.FoundationTests testArabicDrawerClosesFullyOutsideTheScreen]' started.
+    t =     0.00s Start Test at 2026-11-14 21:28:23.770
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:86786
+2026-11-14 21:28:24.873 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:28:24.873 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.32s         Setting up automation session
+    t =     4.11s         Wait for com.eros.memoryos.demo to idle
+    t =     5.79s Tap "open-menu" Button
+    t =     5.79s     Wait for com.eros.memoryos.demo to idle
+    t =     5.80s     Find the "open-menu" Button
+    t =     6.00s     Check for interrupting elements affecting "open-menu" Button
+    t =     6.03s     Synthesize event
+    t =     6.34s     Wait for com.eros.memoryos.demo to idle
+    t =     6.34s Tap "section-settings" Button
+    t =     6.34s     Wait for com.eros.memoryos.demo to idle
+    t =     6.34s     Find the "section-settings" Button
+    t =     6.41s     Check for interrupting elements affecting "section-settings" Button
+    t =     6.45s     Synthesize event
+    t =     6.76s     Wait for com.eros.memoryos.demo to idle
+    t =     6.77s Tap "language-picker" Button
+    t =     6.77s     Wait for com.eros.memoryos.demo to idle
+    t =     6.96s     Find the "language-picker" Button
+    t =     7.02s     Check for interrupting elements affecting "language-picker" Button
+    t =     7.05s     Synthesize event
+    t =     7.36s     Wait for com.eros.memoryos.demo to idle
+    t =     8.56s Tap "العربية" Button
+    t =     8.56s     Wait for com.eros.memoryos.demo to idle
+    t =     8.57s     Find the "العربية" Button
+    t =     8.61s     Check for interrupting elements affecting "العربية" Button
+    t =     8.64s     Synthesize event
+    t =     8.94s     Wait for com.eros.memoryos.demo to idle
+    t =    10.44s Tap "open-menu" Button
+    t =    10.44s     Wait for com.eros.memoryos.demo to idle
+    t =    10.44s     Find the "open-menu" Button
+    t =    10.48s     Check for interrupting elements affecting "open-menu" Button
+    t =    10.50s     Synthesize event
+    t =    10.80s     Wait for com.eros.memoryos.demo to idle
+    t =    10.80s Tap "section-capture" Button
+    t =    10.80s     Wait for com.eros.memoryos.demo to idle
+    t =    10.81s     Find the "section-capture" Button
+    t =    10.86s     Check for interrupting elements affecting "section-capture" Button
+    t =    10.89s     Synthesize event
+    t =    11.19s     Wait for com.eros.memoryos.demo to idle
+    t =    12.40s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    12.40s     Find the "close-menu" Button
+    t =    12.45s Find the "open-menu" Button
+    t =    12.49s Checking existence of `"اضغط للتسجيل" StaticText`
+    t =    13.54s Find the "section-settings" Button
+    t =    13.58s Find the Target Application 'com.eros.memoryos.demo'
+    t =    13.60s Tear Down
+Test Case '-[MemoryOSUITests.FoundationTests testArabicDrawerClosesFullyOutsideTheScreen]' passed (13.824 seconds).
+Test Case '-[MemoryOSUITests.FoundationTests testLocalCaptureSurvivesRelaunch]' started.
+    t =     0.00s Start Test at 2026-11-14 21:28:37.596
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:86969
+2026-11-14 21:28:38.715 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:28:38.715 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.33s         Setting up automation session
+    t =     4.14s         Wait for com.eros.memoryos.demo to idle
+    t =     5.85s Find the "send-memory" Button
+    t =     6.01s Checking existence of `"capture-composer" TextField`
+    t =     6.04s Tap "capture-composer" TextField
+    t =     6.04s     Wait for com.eros.memoryos.demo to idle
+    t =     6.04s     Find the "capture-composer" TextField
+    t =     6.07s     Check for interrupting elements affecting "capture-composer" TextField
+    t =     6.10s     Synthesize event
+    t =     6.41s     Wait for com.eros.memoryos.demo to idle
+    t =     6.85s Type 'A fictional projec...' into "capture-composer" TextField
+    t =     6.85s     Wait for com.eros.memoryos.demo to idle
+    t =     7.20s     Find the "capture-composer" TextField
+    t =     7.27s     Check for interrupting elements affecting "capture-composer" TextField
+    t =     7.30s     Synthesize event
+    t =     7.98s     Wait for com.eros.memoryos.demo to idle
+    t =     8.00s Tap "send-memory" Button
+    t =     8.00s     Wait for com.eros.memoryos.demo to idle
+    t =     8.04s     Find the "send-memory" Button
+    t =     8.09s     Check for interrupting elements affecting "send-memory" Button
+    t =     8.13s     Synthesize event
+    t =     8.42s     Wait for com.eros.memoryos.demo to idle
+    t =     8.80s Waiting 3.0s for Alert (First Match) to exist
+    t =     9.82s     Checking `Expect predicate `existsNoRetry == 1` for object Alert (First Match)`
+    t =     9.82s         Checking existence of `Alert (First Match)`
+    t =     9.83s Tap "OK" Button
+    t =     9.83s     Wait for com.eros.memoryos.demo to idle
+    t =     9.84s     Find the "OK" Button
+    t =     9.88s     Check for interrupting elements affecting "OK" Button
+    t =     9.92s     Synthesize event
+    t =    10.22s     Wait for com.eros.memoryos.demo to idle
+    t =    10.48s Tap "your-memories" Button
+    t =    10.48s     Wait for com.eros.memoryos.demo to idle
+    t =    10.48s     Find the "your-memories" Button
+    t =    10.51s     Check for interrupting elements affecting "your-memories" Button
+    t =    10.54s     Synthesize event
+    t =    10.84s     Wait for com.eros.memoryos.demo to idle
+    t =    10.87s Waiting 3.0s for "A fictional project thought" StaticText to exist
+    t =    11.90s     Checking `Expect predicate `existsNoRetry == 1` for object "A fictional project thought" StaticText`
+    t =    11.90s         Checking existence of `"A fictional project thought" StaticText`
+    t =    11.95s Terminate com.eros.memoryos.demo:87770
+    t =    13.02s Open com.eros.memoryos.demo
+    t =    13.02s     Launch com.eros.memoryos.demo
+2026-11-14 21:28:50.624 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:28:50.624 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =    13.24s         Setting up automation session
+    t =    15.96s         Wait for com.eros.memoryos.demo to idle
+    t =    17.55s Tap "your-memories" Button
+    t =    17.55s     Wait for com.eros.memoryos.demo to idle
+    t =    17.55s     Find the "your-memories" Button
+    t =    17.71s     Check for interrupting elements affecting "your-memories" Button
+    t =    17.73s     Synthesize event
+    t =    18.03s     Wait for com.eros.memoryos.demo to idle
+    t =    18.04s Waiting 3.0s for "A fictional project thought" StaticText to exist
+    t =    19.11s     Checking `Expect predicate `existsNoRetry == 1` for object "A fictional project thought" StaticText`
+    t =    19.11s         Checking existence of `"A fictional project thought" StaticText`
+    t =    19.19s Tear Down
+Test Case '-[MemoryOSUITests.FoundationTests testLocalCaptureSurvivesRelaunch]' passed (19.440 seconds).
+Test Case '-[MemoryOSUITests.FoundationTests testRecordingExplainsDemoBoundary]' started.
+    t =     0.00s Start Test at 2026-11-14 21:28:57.036
+    t =     0.03s Set Up
+    t =     0.03s Open com.eros.memoryos.demo
+    t =     0.03s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:87929
+2026-11-14 21:28:58.154 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:28:58.154 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.33s         Setting up automation session
+    t =     4.05s         Wait for com.eros.memoryos.demo to idle
+    t =     5.70s Tap "record-preview" Button
+    t =     5.70s     Wait for com.eros.memoryos.demo to idle
+    t =     5.70s     Find the "record-preview" Button
+    t =     5.83s     Check for interrupting elements affecting "record-preview" Button
+    t =     5.85s     Synthesize event
+    t =     6.16s     Wait for com.eros.memoryos.demo to idle
+    t =     6.46s Checking existence of `"Voice capture comes in a later step. This preview does not use your microphone." StaticText`
+    t =     6.51s Tap "OK" Button
+    t =     6.51s     Wait for com.eros.memoryos.demo to idle
+    t =     6.51s     Find the "OK" Button
+    t =     6.55s     Check for interrupting elements affecting "OK" Button
+    t =     6.59s     Synthesize event
+    t =     6.88s     Wait for com.eros.memoryos.demo to idle
+    t =     7.12s Checking existence of `"record-preview" Button`
+    t =     7.15s Tear Down
+Test Case '-[MemoryOSUITests.FoundationTests testRecordingExplainsDemoBoundary]' passed (7.489 seconds).
+Test Case '-[MemoryOSUITests.FoundationTests testSidebarRoutesAndCloses]' started.
+    t =     0.00s Start Test at 2026-11-14 21:29:04.525
+    t =     0.02s Set Up
+    t =     0.02s Open com.eros.memoryos.demo
+    t =     0.02s     Launch com.eros.memoryos.demo
+    t =     0.03s         Terminate com.eros.memoryos.demo:88006
+2026-11-14 21:29:05.594 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:29:05.594 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.39s         Setting up automation session
+    t =     4.17s         Wait for com.eros.memoryos.demo to idle
+    t =     5.87s Tap "open-menu" Button
+    t =     5.88s     Wait for com.eros.memoryos.demo to idle
+    t =     5.88s     Find the "open-menu" Button
+    t =     6.10s     Check for interrupting elements affecting "open-menu" Button
+    t =     6.12s     Synthesize event
+    t =     6.43s     Wait for com.eros.memoryos.demo to idle
+    t =     6.43s Waiting 3.0s for "close-menu" Button to exist
+    t =     7.46s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =     7.46s         Checking existence of `"close-menu" Button`
+    t =     7.50s Tap "section-brainMap" Button
+    t =     7.50s     Wait for com.eros.memoryos.demo to idle
+    t =     7.50s     Find the "section-brainMap" Button
+    t =     7.55s     Check for interrupting elements affecting "section-brainMap" Button
+    t =     7.58s     Synthesize event
+    t =     7.88s     Wait for com.eros.memoryos.demo to idle
+    t =     9.10s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =     9.10s     Find the "close-menu" Button
+    t =     9.20s Find the "open-menu" Button
+    t =     9.25s Checking existence of `"BrainMap" StaticText`
+    t =     9.27s Tap "open-menu" Button
+    t =     9.27s     Wait for com.eros.memoryos.demo to idle
+    t =     9.27s     Find the "open-menu" Button
+    t =     9.31s     Check for interrupting elements affecting "open-menu" Button
+    t =     9.35s     Synthesize event
+    t =     9.64s     Wait for com.eros.memoryos.demo to idle
+    t =     9.65s Waiting 3.0s for "close-menu" Button to exist
+    t =    10.69s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    10.69s         Checking existence of `"close-menu" Button`
+    t =    10.77s Tap "section-profiles" Button
+    t =    10.77s     Wait for com.eros.memoryos.demo to idle
+    t =    10.77s     Find the "section-profiles" Button
+    t =    10.83s     Check for interrupting elements affecting "section-profiles" Button
+    t =    10.87s     Synthesize event
+    t =    11.17s     Wait for com.eros.memoryos.demo to idle
+    t =    12.25s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    12.25s     Find the "close-menu" Button
+    t =    12.31s Find the "open-menu" Button
+    t =    12.35s Checking existence of `"People" StaticText`
+    t =    12.38s Tap "open-menu" Button
+    t =    12.38s     Wait for com.eros.memoryos.demo to idle
+    t =    12.38s     Find the "open-menu" Button
+    t =    12.41s     Check for interrupting elements affecting "open-menu" Button
+    t =    12.44s     Synthesize event
+    t =    12.75s     Wait for com.eros.memoryos.demo to idle
+    t =    12.79s Waiting 3.0s for "close-menu" Button to exist
+    t =    13.81s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    13.82s         Checking existence of `"close-menu" Button`
+    t =    13.87s Tap "section-projects" Button
+    t =    13.87s     Wait for com.eros.memoryos.demo to idle
+    t =    13.87s     Find the "section-projects" Button
+    t =    13.93s     Check for interrupting elements affecting "section-projects" Button
+    t =    13.98s     Synthesize event
+    t =    14.28s     Wait for com.eros.memoryos.demo to idle
+    t =    15.34s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    15.34s     Find the "close-menu" Button
+    t =    15.39s Find the "open-menu" Button
+    t =    15.43s Checking existence of `"Projects" StaticText`
+    t =    15.45s Tap "open-menu" Button
+    t =    15.45s     Wait for com.eros.memoryos.demo to idle
+    t =    15.46s     Find the "open-menu" Button
+    t =    15.49s     Check for interrupting elements affecting "open-menu" Button
+    t =    15.52s     Synthesize event
+    t =    15.81s     Wait for com.eros.memoryos.demo to idle
+    t =    15.82s Waiting 3.0s for "close-menu" Button to exist
+    t =    16.84s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    16.84s         Checking existence of `"close-menu" Button`
+    t =    16.91s Tap "section-memories" Button
+    t =    16.91s     Wait for com.eros.memoryos.demo to idle
+    t =    16.91s     Find the "section-memories" Button
+    t =    16.96s     Check for interrupting elements affecting "section-memories" Button
+    t =    16.99s     Synthesize event
+    t =    17.29s     Wait for com.eros.memoryos.demo to idle
+    t =    18.45s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    18.46s     Find the "close-menu" Button
+    t =    18.54s Find the "open-menu" Button
+    t =    18.58s Checking existence of `"Memories" StaticText`
+    t =    18.61s Tap "open-menu" Button
+    t =    18.61s     Wait for com.eros.memoryos.demo to idle
+    t =    18.61s     Find the "open-menu" Button
+    t =    18.65s     Check for interrupting elements affecting "open-menu" Button
+    t =    18.68s     Synthesize event
+    t =    18.98s     Wait for com.eros.memoryos.demo to idle
+    t =    18.98s Waiting 3.0s for "close-menu" Button to exist
+    t =    20.00s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    20.00s         Checking existence of `"close-menu" Button`
+    t =    20.07s Tap "section-birthdays" Button
+    t =    20.07s     Wait for com.eros.memoryos.demo to idle
+    t =    20.07s     Find the "section-birthdays" Button
+    t =    20.12s     Check for interrupting elements affecting "section-birthdays" Button
+    t =    20.16s     Synthesize event
+    t =    20.46s     Wait for com.eros.memoryos.demo to idle
+    t =    21.54s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    21.54s     Find the "close-menu" Button
+    t =    21.60s Find the "open-menu" Button
+    t =    21.65s Checking existence of `"Birthdays" StaticText`
+    t =    21.68s Tap "open-menu" Button
+    t =    21.68s     Wait for com.eros.memoryos.demo to idle
+    t =    21.68s     Find the "open-menu" Button
+    t =    21.72s     Check for interrupting elements affecting "open-menu" Button
+    t =    21.75s     Synthesize event
+    t =    22.05s     Wait for com.eros.memoryos.demo to idle
+    t =    22.05s Waiting 3.0s for "close-menu" Button to exist
+    t =    23.07s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    23.07s         Checking existence of `"close-menu" Button`
+    t =    23.15s Tap "section-settings" Button
+    t =    23.15s     Wait for com.eros.memoryos.demo to idle
+    t =    23.15s     Find the "section-settings" Button
+    t =    23.20s     Check for interrupting elements affecting "section-settings" Button
+    t =    23.25s     Synthesize event
+    t =    23.54s     Wait for com.eros.memoryos.demo to idle
+    t =    24.66s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    24.66s     Find the "close-menu" Button
+    t =    24.72s Find the "open-menu" Button
+    t =    24.76s Checking existence of `"Settings" StaticText`
+    t =    24.78s Tap "open-menu" Button
+    t =    24.78s     Wait for com.eros.memoryos.demo to idle
+    t =    24.78s     Find the "open-menu" Button
+    t =    24.81s     Check for interrupting elements affecting "open-menu" Button
+    t =    24.83s     Synthesize event
+    t =    25.13s     Wait for com.eros.memoryos.demo to idle
+    t =    25.13s Waiting 3.0s for "close-menu" Button to exist
+    t =    26.16s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    26.16s         Checking existence of `"close-menu" Button`
+    t =    26.22s Tap "section-capture" Button
+    t =    26.22s     Wait for com.eros.memoryos.demo to idle
+    t =    26.22s     Find the "section-capture" Button
+    t =    26.26s     Check for interrupting elements affecting "section-capture" Button
+    t =    26.30s     Synthesize event
+    t =    26.59s     Wait for com.eros.memoryos.demo to idle
+    t =    27.67s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    27.67s     Find the "close-menu" Button
+    t =    27.70s Find the "open-menu" Button
+    t =    27.74s Checking existence of `"MemoryOS" StaticText`
+    t =    27.75s Tap "open-menu" Button
+    t =    27.75s     Wait for com.eros.memoryos.demo to idle
+    t =    27.75s     Find the "open-menu" Button
+    t =    27.78s     Check for interrupting elements affecting "open-menu" Button
+    t =    27.80s     Synthesize event
+    t =    28.10s     Wait for com.eros.memoryos.demo to idle
+    t =    28.10s Waiting 3.0s for "close-menu" Button to exist
+    t =    29.12s     Checking `Expect predicate `existsNoRetry == 1` for object "close-menu" Button`
+    t =    29.12s         Checking existence of `"close-menu" Button`
+    t =    29.19s Tap "close-menu" Button
+    t =    29.19s     Wait for com.eros.memoryos.demo to idle
+    t =    29.19s     Find the "close-menu" Button
+    t =    29.23s     Check for interrupting elements affecting "close-menu" Button
+    t =    29.27s     Synthesize event
+    t =    29.56s     Wait for com.eros.memoryos.demo to idle
+    t =    30.59s Checking `Expect predicate `hittable == 0` for object "close-menu" Button`
+    t =    30.59s     Find the "close-menu" Button
+    t =    30.64s Checking existence of `"record-preview" Button`
+    t =    30.67s Tear Down
+Test Case '-[MemoryOSUITests.FoundationTests testSidebarRoutesAndCloses]' passed (30.918 seconds).
+Test Suite 'FoundationTests' passed at 2026-11-14 21:29:35.444.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 71.670 (71.674) seconds
+Test Suite 'LocalStorageFlowTests' started at 2026-11-14 21:29:35.444.
+Test Case '-[MemoryOSUITests.LocalStorageFlowTests testCorrectionLinkAndTrashSurviveRelaunch]' started.
+    t =     0.00s Start Test at 2026-11-14 21:29:35.446
+    t =     0.03s Set Up
+    t =     0.04s Open com.eros.memoryos.demo
+    t =     0.04s     Launch com.eros.memoryos.demo
+    t =     0.04s         Terminate com.eros.memoryos.demo:88104
+2026-11-14 21:29:36.552 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: debugger version lookup failed for path '<nil>': noURL
+2026-11-14 21:29:36.552 xcodebuild[81331:1182618] [MT] IDELaunchParametersSnapshot: no debugger version
+    t =     1.32s         Setting up automation session
+    t =     4.21s         Wait for com.eros.memoryos.demo to idle
+    t =     5.77s Checking existence of `"capture-composer" TextField`
+    t =     5.94s Waiting 5.0s for "capture-composer" TextField to exist
+    t =     6.96s     Checking `Expect predicate `existsNoRetry == 1` for object "capture-composer" TextField`
+    t =     6.96s         Checking existence of `"capture-composer" TextField`
+    t =     6.99s Tap "capture-composer" TextField
+    t =     6.99s     Wait for com.eros.memoryos.demo to idle
+    t =     7.00s     Find the "capture-composer" TextField
+    t =     7.02s     Check for interrupting elements affecting "capture-composer" TextField
+    t =     7.04s     Synthesize event
+    t =     7.34s     Wait for com.eros.memoryos.demo to idle
+    t =     7.69s Type 'Local source 54B7FC' into "capture-composer" TextField
+    t =     7.69s     Wait for com.eros.memoryos.demo to idle
+    t =     8.04s     Find the "capture-composer" TextField
+    t =     8.11s     Check for interrupting elements affecting "capture-composer" TextField
+    t =     8.15s     Synthesize event
+    t =     8.67s     Wait for com.eros.memoryos.demo to idle
+    t =     8.67s Tap "send-memory" Button
+    t =     8.67s     Wait for com.eros.memoryos.demo to idle
+    t =     8.67s     Find the "send-memory" Button
+    t =     8.72s     Check for interrupting elements affecting "send-memory" Button
+    t =     8.75s     Synthesize event
+    t =     9.05s     Wait for com.eros.memoryos.demo to idle
+    t =     9.39s Waiting 5.0s for Alert (First Match) to exist
+    t =    10.41s     Checking `Expect predicate `existsNoRetry == 1` for object Alert (First Match)`
+    t =    10.41s         Checking existence of `Alert (First Match)`
+    t =    10.43s Tap "OK" Button
+    t =    10.43s     Wait for com.eros.memoryos.demo to idle
+    t =    10.43s     Find the "OK" Button
+    t =    10.48s     Check for interrupting elements affecting "OK" Button
+    t =    10.52s     Synthesize event
+    t =    10.82s     Wait for com.eros.memoryos.demo to idle
+    t =    11.06s Tap "your-memories" Button
+    t =    11.06s     Wait for com.eros.memoryos.demo to idle
+    t =    11.07s     Find the "your-memories" Button
+    t =    11.11s     Check for interrupting elements affecting "your-memories" Button
+    t =    11.13s     Synthesize event
+    t =    11.43s     Wait for com.eros.memoryos.demo to idle
+    t =    11.43s Tap "add-local-record" Button
+    t =    11.43s     Wait for com.eros.memoryos.demo to idle
+    t =    11.43s     Find the "add-local-record" Button
+    t =    11.50s     Check for interrupting elements affecting "add-local-record" Button
+    t =    11.54s     Synthesize event
+    t =    11.84s     Wait for com.eros.memoryos.demo to idle
+    t =    11.98s Waiting 3.0s for "local-record-editor" TextView to exist
+    t =    13.01s     Checking `Expect predicate `existsNoRetry == 1` for object "local-record-editor" TextView`
+    t =    13.01s         Checking existence of `"local-record-editor" TextView`
+    t =    13.11s Tap "local-record-editor" TextView
+    t =    13.11s     Wait for com.eros.memoryos.demo to idle
+    t =    13.12s     Find the "local-record-editor" TextView
+    t =    13.18s     Check for interrupting elements affecting "local-record-editor" TextView
+    t =    13.23s     Synthesize event
+    t =    13.53s     Wait for com.eros.memoryos.demo to idle
+    t =    13.86s Type 'Fictional person 5...' into "local-record-editor" TextView
+    t =    13.86s     Wait for com.eros.memoryos.demo to idle
+    t =    13.87s     Find the "local-record-editor" TextView
+    t =    13.96s     Check for interrupting elements affecting "local-record-editor" TextView
+    t =    14.02s     Synthesize event
+    t =    14.62s     Wait for com.eros.memoryos.demo to idle
+    t =    14.62s Tap "save-local-edit" Button
+    t =    14.62s     Wait for com.eros.memoryos.demo to idle
+    t =    14.62s     Find the "save-local-edit" Button
+    t =    14.70s     Check for interrupting elements affecting "save-local-edit" Button
+    t =    14.77s     Synthesize event
+    t =    15.07s     Wait for com.eros.memoryos.demo to idle
+    t =    15.54s Waiting 5.0s for "Fictional person 54B7FC" StaticText to exist
+    t =    16.57s     Checking `Expect predicate `existsNoRetry == 1` for object "Fictional person 54B7FC" StaticText`
+    t =    16.57s         Checking existence of `"Fictional person 54B7FC" StaticText`
+    t =    16.64s Tap "Local source 54B7FC" StaticText
+    t =    16.64s     Wait for com.eros.memoryos.demo to idle
+    t =    16.64s     Find the "Local source 54B7FC" StaticText
+    t =    16.69s     Check for interrupting elements affecting "Local source 54B7FC" StaticText
+    t =    16.73s     Synthesize event
+    t =    17.02s     Wait for com.eros.memoryos.demo to idle
+    t =    17.08s Tap "correct-local-record" Button
+    t =    17.08s     Wait for com.eros.memoryos.demo to idle
+    t =    17.57s     Find the "correct-local-record" Button
+    t =    17.63s     Check for interrupting elements affecting "correct-local-record" Button
+    t =    17.68s     Synthesize event
+    t =    17.98s     Wait for com.eros.memoryos.demo to idle
+    t =    18.38s Waiting 3.0s for "local-record-editor" TextView to exist
+    t =    19.41s     Checking `Expect predicate `existsNoRetry == 1` for object "local-record-editor" TextView`
+    t =    19.42s         Checking existence of `"local-record-editor" TextView`
+    t =    19.51s Tap "local-record-editor" TextView
+    t =    19.51s     Wait for com.eros.memoryos.demo to idle
+    t =    19.51s     Find the "local-record-editor" TextView
+    t =    19.58s     Check for interrupting elements affecting "local-record-editor" TextView
+    t =    19.64s     Synthesize event
+    t =    19.94s     Wait for com.eros.memoryos.demo to idle
+    t =    19.97s Press "local-record-editor" TextView for 1.2 seconds
+    t =    19.97s     Wait for com.eros.memoryos.demo to idle
+    t =    20.34s     Find the "local-record-editor" TextView
+    t =    20.45s     Check for interrupting elements affecting "local-record-editor" TextView
+    t =    20.53s     Synthesize event
+    t =    21.96s     Wait for com.eros.memoryos.demo to idle
+    t =    22.79s Waiting 2.0s for "Select All" MenuItem to exist
+    t =    23.82s     Checking `Expect predicate `existsNoRetry == 1` for object "Select All" MenuItem`
+    t =    23.82s         Checking existence of `"Select All" MenuItem`
+    t =    23.94s Tap "Select All" MenuItem
+    t =    23.94s     Wait for com.eros.memoryos.demo to idle
+    t =    23.94s     Find the "Select All" MenuItem
+    t =    24.04s     Check for interrupting elements affecting "Select All" MenuItem
+    t =    24.14s     Synthesize event
+    t =    24.43s     Wait for com.eros.memoryos.demo to idle
+    t =    25.02s Type 'Corrected source 5...' into "local-record-editor" TextView
+    t =    25.02s     Wait for com.eros.memoryos.demo to idle
+    t =    25.03s     Find the "local-record-editor" TextView
+    t =    25.14s     Check for interrupting elements affecting "local-record-editor" TextView
+    t =    25.23s     Synthesize event
+    t =    25.82s     Wait for com.eros.memoryos.demo to idle
+    t =    25.83s Tap "save-local-edit" Button
+    t =    25.83s     Wait for com.eros.memoryos.demo to idle
+    t =    25.83s     Find the "save-local-edit" Button
+    t =    25.93s     Check for interrupting elements affecting "save-local-edit" Button
+    t =    26.02s     Synthesize event
+    t =    26.32s     Wait for com.eros.memoryos.demo to idle
+    t =    26.77s Waiting 5.0s for "local-record-text" StaticText to exist
+    t =    27.78s     Checking `Expect predicate `existsNoRetry == 1` for object "local-record-text" StaticText`
+    t =    27.78s         Checking existence of `"local-record-text" StaticText`
+    t =    27.84s Find the "local-record-text" StaticText
+    t =    27.89s Find the "local-record-original" StaticText
+    t =    27.94s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    27.94s     Wait for com.eros.memoryos.demo to idle
+    t =    27.95s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    27.99s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    28.04s     Synthesize event
+    t =    28.47s     Wait for com.eros.memoryos.demo to idle
+    t =    28.96s Tap "link-local-record" Button
+    t =    28.96s     Wait for com.eros.memoryos.demo to idle
+    t =    28.96s     Find the "link-local-record" Button
+    t =    29.04s     Check for interrupting elements affecting "link-local-record" Button
+    t =    29.09s     Synthesize event
+    t =    29.38s     Wait for com.eros.memoryos.demo to idle
+    t =    29.77s Tap "Fictional person 54B7FC" Button
+    t =    29.77s     Wait for com.eros.memoryos.demo to idle
+    t =    29.77s     Find the "Fictional person 54B7FC" Button
+    t =    29.86s     Check for interrupting elements affecting "Fictional person 54B7FC" Button
+    t =    29.92s     Synthesize event
+    t =    30.22s     Wait for com.eros.memoryos.demo to idle
+    t =    30.59s Waiting 5.0s for "Fictional person 54B7FC" Button to exist
+    t =    31.62s     Checking `Expect predicate `existsNoRetry == 1` for object "Fictional person 54B7FC" Button`
+    t =    31.62s         Checking existence of `"Fictional person 54B7FC" Button`
+    t =    31.70s Swipe up Target Application 'com.eros.memoryos.demo'
+    t =    31.70s     Wait for com.eros.memoryos.demo to idle
+    t =    31.70s     Find the Target Application 'com.eros.memoryos.demo'
+    t =    31.75s     Check for interrupting elements affecting "MemoryOS" Application
+    t =    31.80s     Synthesize event
+    t =    32.23s     Wait for com.eros.memoryos.demo to idle
+    t =    32.71s Tap "trash-local-record" Button
+    t =    32.71s     Wait for com.eros.memoryos.demo to idle
+    t =    32.71s     Find the "trash-local-record" Button
+    t =    32.78s     Check for interrupting elements affecting "trash-local-record" Button
+    t =    32.83s     Synthesize event
+    t =    33.13s     Wait for com.eros.memoryos.demo to idle
+    t =    33.47s Waiting 5.0s for "show-trash" Switch to exist
+    t =    34.51s     Checking `Expect predicate `existsNoRetry == 1` for object "show-trash" Switch`
+    t =    34.51s         Checking existence of `"show-trash" Switch`
+    t =    34.57s Tap "show-trash" Switch
+    t =    34.57s     Wait for com.eros.memoryos.demo to idle
+    t =    34.57s     Find the "show-trash" Switch
+    t =    34.61s     Check for interrupting elements affecting "show-trash" Switch
+    t =    34.65s     Synthesize event
+    t =    34.95s     Wait for com.eros.memoryos.demo to idle
+    t =    34.96s Waiting 3.0s for "Corrected source 54B7FC" StaticText to exist
+    t =    35.98s     Checking `Expect predicate `existsNoRetry == 1` for object "Corrected source 54B7FC" StaticText`
+    t =    35.98s         Checking existence of `"Corrected source 54B7FC" StaticText`
+    t =    36.02s         Capturing element debug description
+    t =    37.06s     Checking `Expect predicate `existsNoRetry == 1` for object "Corrected source 54B7FC" StaticText`
+    t =    37.06s         Checking existence of `"Corrected source 54B7FC" StaticText`
+    t =    37.10s         Capturing element debug description
+    t =    37.96s     Checking `Expect predicate `existsNoRetry == 1` for object "Corrected source 54B7FC" StaticText`
+    t =    37.96s         Checking existence of `"Corrected source 54B7FC" StaticText`
+    t =    38.01s         Capturing element debug description
+    t =    38.01s     Checking existence of `"Corrected source 54B7FC" StaticText`
+    t =    38.06s Collecting debug information to assist test failure triage
+    t =    38.06s     Requesting snapshot of accessibility hierarchy for app with pid 88521
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOSUITests/LocalStorageFlowTests.swift:54: error: -[MemoryOSUITests.LocalStorageFlowTests testCorrectionLinkAndTrashSurviveRelaunch] : XCTAssertTrue failed
+    t =    38.65s Tear Down
+Test Case '-[MemoryOSUITests.LocalStorageFlowTests testCorrectionLinkAndTrashSurviveRelaunch]' failed (38.949 seconds).
+Test Suite 'LocalStorageFlowTests' failed at 2026-11-14 21:30:14.395.
+	 Executed 1 test, with 1 failure (0 unexpected) in 38.949 (38.950) seconds
+Test Suite 'MemoryOSUITests.xctest' failed at 2026-11-14 21:30:14.396.
+	 Executed 13 tests, with 1 failure (0 unexpected) in 336.661 (336.700) seconds
+Test Suite 'Selected tests' failed at 2026-11-14 21:30:14.397.
+	 Executed 13 tests, with 1 failure (0 unexpected) in 336.661 (336.704) seconds
+2026-11-14 21:30:19.614485+0300 MemoryOS[89538:1203640] [XPCErrors] non-launching port is incompatible with service identifier "com.apple.PointerUI.pointeruid.default-service"
+2026-11-14 21:30:19.646139+0300 MemoryOS[89538:1203640] [API] cannot add handler to 0 from 0 - dropping
+2026-11-14 21:30:19.648616+0300 MemoryOS[89538:1203640] [API] cannot add handler to 0 from 0 - dropping
+objc[89538]: Class UIAccessibilityLoaderWebShared is implemented in both /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.2.8117.0.DPGacc/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebCore.axbundle/WebCore (0x10f1c0310) and /private/var/run/com.apple.security.cryptexd/mnt/com.apple.iPhoneOS.SimulatorRuntime-v24.2.8117.0.DPGacc/Library/Developer/CoreSimulator/Profiles/Runtimes/iOS 27.2.simruntime/Contents/Resources/RuntimeRoot/System/Library/AccessibilityBundles/WebKit.axbundle/WebKit (0x10f214398). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+Test Suite 'All tests' started at 2026-11-14 21:30:23.359.
+Test Suite 'All tests' passed at 2026-11-14 21:30:23.360.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.001) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64-apple-ios17.0-simulator
+◇ Suite CatalogTests started.
+◇ Test allLinksAndBirthdaysResolveToOriginalRecords() started.
+✔ Test allLinksAndBirthdaysResolveToOriginalRecords() passed after 0.001 seconds.
+◇ Test bilingualSearchFindsTheSamePerson(query:) started.
+◇ Test case passing 1 argument query → "Ali Hassan" to bilingualSearchFindsTheSamePerson(query:) started.
+​◇ Test case passing 1 argument query → "علي" to bilingualSearchFindsTheSamePerson(query:) started.
+​◇ Test case passing 1 argument query → "  Ali Hassan  " to bilingualSearchFindsTheSamePerson(query:) started.
+​✔ Test bilingualSearchFindsTheSamePerson(query:) with 3 test cases passed after 0.001 seconds.
+◇ Test whitespaceAndNoResults() started.
+✔ Test whitespaceAndNoResults() passed after 0.001 seconds.
+◇ Test connectedFlowPreservesSourceAndTentativeWording() started.
+✔ Test connectedFlowPreservesSourceAndTentativeWording() passed after 0.001 seconds.
+✔ Suite CatalogTests passed after 0.004 seconds.
+◇ Suite SessionTests started.
+◇ Test remindersRemainIndependentAndResetWithSession() started.
+✔ Test remindersRemainIndependentAndResetWithSession() passed after 0.001 seconds.
+◇ Test reminderSelectionHasBilingualLabels(choice:) started.
+◇ Test case passing 1 argument choice → .off to reminderSelectionHasBilingualLabels(choice:) started.
+​◇ Test case passing 1 argument choice → .onDay to reminderSelectionHasBilingualLabels(choice:) started.
+​◇ Test case passing 1 argument choice → .dayBefore to reminderSelectionHasBilingualLabels(choice:) started.
+​◇ Test case passing 1 argument choice → .weekBefore to reminderSelectionHasBilingualLabels(choice:) started.
+​✔ Test reminderSelectionHasBilingualLabels(choice:) with 4 test cases passed after 0.001 seconds.
+✔ Suite SessionTests passed after 0.001 seconds.
+◇ Suite LocalRecordsViewModelTests started.
+◇ Test savingPreservesExactTextAndClearsOnlyAfterSuccess() started.
+✔ Test savingPreservesExactTextAndClearsOnlyAfterSuccess() passed after 0.001 seconds.
+◇ Test storageFailureKeepsDraftAndReloadCanRecover() started.
+✔ Test storageFailureKeepsDraftAndReloadCanRecover() passed after 0.002 seconds.
+◇ Test pendingSaveRejectsDuplicateAndPreservesNewTyping() started.
+✔ Test pendingSaveRejectsDuplicateAndPreservesNewTyping() passed after 0.001 seconds.
+◇ Test unsupportedRestoreKeepsVisibleRecordsAndReportsFailure() started.
+✔ Test unsupportedRestoreKeepsVisibleRecordsAndReportsFailure() passed after 0.001 seconds.
+◇ Test unavailableStorageDoesNotAllowEphemeralSave() started.
+✔ Test unavailableStorageDoesNotAllowEphemeralSave() passed after 0.001 seconds.
+✔ Suite LocalRecordsViewModelTests passed after 0.004 seconds.
+✔ Test run with 11 tests in 3 suites passed after 0.015 seconds.
+Reload Package ‘localmemory’
+
+2026-11-14 21:30:41.596 xcodebuild[81331:1182618] [MT] IDETestOperationsObserverDebug: 376.624 elapsed -- Testing started completed.
+2026-11-14 21:30:41.596 xcodebuild[81331:1182618] [MT] IDETestOperationsObserverDebug: 0.000 sec, +0.000 sec -- start
+2026-11-14 21:30:41.596 xcodebuild[81331:1182618] [MT] IDETestOperationsObserverDebug: 376.624 sec, +376.624 sec -- end
+
+Test session results, code coverage, and logs:
+	/tmp/memoryos-local-storage-final-tests.xcresult
+
+Failing tests:
+	LocalStorageFlowTests.testCorrectionLinkAndTrashSurviveRelaunch()
+
+** TEST FAILED **
+
+Testing started

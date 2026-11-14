@@ -1,0 +1,18 @@
+{
+  "date_utc": "2026-11-14T19:56:24.492369+00:00",
+  "device": "iPhone 18 Pro",
+  "os": "iOS 27.2",
+  "physical": false,
+  "configuration": "Release",
+  "appearance": "dark",
+  "source_manifest": "../../step2/source-hashes.json",
+  "source_manifest_sha256": "411104601aac0d47756a5f2d8c95734c034dc2be6f5127f424456567afcc214f",
+  "binary_sha256": "1c4c7449738012347c0360e346c11afe4324e8c16075a67261fec3c8b8dcac9b",
+  "installed_binary_verified_byte_identical_to_step2": true,
+  "type": "Fresh Step3 actual app captures, unchanged reviewed product source",
+  "captures": {
+    "capture.png": "2968333aa894d5327b75c9dfd26510477b2f168aea1a769679614182958291c4",
+    "reopened-records.png": "2a8368728b5041fb061374441b1f738b2362f12dcf48422efc4d7be0b0552f89",
+    "source-history-links.png": "8f6e3e37eef252ee22764f7bb862c7d9e8ea1d096f714df31b45b29c8161d393"
+  }
+}

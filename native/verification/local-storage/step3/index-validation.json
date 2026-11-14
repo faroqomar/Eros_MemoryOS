@@ -1,0 +1,22 @@
+{
+  "checked_index_links": 183,
+  "missing_index_links": [],
+  "source_manifest_matches_index": 36,
+  "source_document_whitespace": "pass; raw verification excluded",
+  "raw_tool_whitespace_files": [
+    "native/verification/local-storage/analyze.log",
+    "native/verification/local-storage/build.log",
+    "native/verification/local-storage/device-build.log",
+    "native/verification/local-storage/final-build-analysis.log",
+    "native/verification/local-storage/final-device-build-analysis.log",
+    "native/verification/local-storage/final-simulator-build-analysis.log",
+    "native/verification/local-storage/final-test-build.log",
+    "native/verification/local-storage/step2/device-build-analysis.log",
+    "native/verification/local-storage/step2/functional.log",
+    "native/verification/local-storage/step2/physical-devices.txt",
+    "native/verification/local-storage/step2/simulator-build-analysis.log",
+    "native/verification/local-storage/step2/verifier-feature-tests.log",
+    "native/verification/local-storage/tests.log"
+  ],
+  "raw_log_policy": "retain exact tool output"
+}

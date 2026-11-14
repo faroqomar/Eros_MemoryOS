@@ -6,6 +6,7 @@ enum MenuFocusTarget: Hashable {
 
 struct RootView: View {
   @Bindable var session: DemoSession
+  let records: LocalRecordsViewModel
   @State private var menuIsOpen = false
   @Environment(\.accessibilityReduceMotion) private var reduceMotion
   @AccessibilityFocusState private var menuFocus: MenuFocusTarget?
@@ -14,7 +15,7 @@ struct RootView: View {
     GeometryReader { geometry in
       ZStack(alignment: .leading) {
         SectionHostView(
-          session: session, section: session.section, menuIsOpen: menuIsOpen,
+          session: session, records: records, section: session.section, menuIsOpen: menuIsOpen,
           openMenu: { setMenu(true) }, menuFocus: $menuFocus
         )
         .id(session.section)
