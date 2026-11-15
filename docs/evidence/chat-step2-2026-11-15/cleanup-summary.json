@@ -83,11 +83,6 @@
       "bytes": 2232066,
       "textLines": 1873
     },
-    "afterBeforeReceiptUpdate": {
-      "files": 31,
-      "bytes": 1887912,
-      "textLines": 714
-    },
     "removedFiles": 14,
     "removedFileBytes": 342543,
     "categories": [
@@ -95,6 +90,11 @@
       "Superseded screenshots and a duplicate video frame",
       "Superseded experiment advice in baseline review"
     ],
-    "retained": "Canonical findings, failed timing samples, source manifests, selected language/accessibility/recovery captures, unique Reduce Motion video, and ignored traces/test bundles for unresolved checks. Original research, app records, active unrelated work and Git metadata preserved."
+    "retained": "Canonical findings, failed timing samples, source manifests, selected language/accessibility/recovery captures, unique Reduce Motion video, and ignored traces/test bundles for unresolved checks. Original research, app records, active unrelated work and Git metadata preserved.",
+    "after": {
+      "files": 31,
+      "bytes": 1889004,
+      "textLines": 734
+    }
   }
 }

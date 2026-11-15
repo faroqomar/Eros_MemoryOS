@@ -123,4 +123,4 @@ Independent standards and spec reviewers confirm **57 source files match** the b
 
 C53 cleanup removes 14 redundant logs/exports/captures and consolidates superseded advice; [totals and retained exceptions](../evidence/chat-step2-2026-11-15/cleanup-summary.json). Links and evidence guard are checked before commit. The documentation preview shows the new standing rule and delivery status. PNG capture is blocked while the host downloads its browser; this is not a new app or phone benchmark.
 
-Delivery: branch `feat/local-ai-chat`, base `7e4297e165f03f3caf57de41f7fbec30135fe912`; draft PR pending. Merge blocked. Unrelated personal-context/roadmap documentation remains local. Memory sync/check must report no pending/failed operations before claiming completion.
+Delivery: branch `feat/local-ai-chat`, base `7e4297e165f03f3caf57de41f7fbec30135fe912`; [draft PR #5](https://github.com/faroqomar/Eros_MemoryOS/pull/5), source commit `20070f8`. Merge blocked. Unrelated personal-context/roadmap documentation remains local. Memory sync/check reported pending documentation with zero failed operations; delivery is not yet confirmed.
