@@ -1,0 +1,29 @@
+native/verification/local-ai-step3/standards-review.md
+  s_28978425e45104::t_030e56912821a7 1-13
+native/verification/local-ai-step3/implementation-commit.log
+  s_28978425e45104::t_57a818b4fc72b6 1-943
+native/verification/local-ai-step3/commit-source-recheck.json
+  s_28978425e45104::t_264becace6bb24 1-15
+native/verification/local-ai-step3/spec-review.json
+  s_28978425e45104::t_63f65f5de6623a 1-35
+native/verification/local-ai-step3/standards-review.json
+  s_28978425e45104::t_030e56912821a7 1-33
+native/verification/local-ai-step3/spec-review.md
+  s_28978425e45104::t_63f65f5de6623a 1-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "073d4f6050e95109e894abcb456767840310af27",
+  "prompts": {},
+  "sessions": {
+    "s_28978425e45104": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1dbbb-3f19-73a3-83f6-c6259ca42b4f",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
