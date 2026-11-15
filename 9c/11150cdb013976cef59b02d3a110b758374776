@@ -1,0 +1,21 @@
+docs/evidence/chat-step2-2026-11-15/cleanup-summary.json
+  s_b7a2c51ddd1171::t_fb3c656d017b1a 93-98
+docs/tasks/2026-11-15-local-ai-chat.md
+  s_b7a2c51ddd1171::t_5e157b1766fedf 126
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9c11150cdb013976cef59b02d3a110b758374776",
+  "prompts": {},
+  "sessions": {
+    "s_b7a2c51ddd1171": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1df01-1682-7fc0-aa04-28b0b21f4629",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
