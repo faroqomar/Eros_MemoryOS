@@ -1,0 +1,42 @@
+{
+  "capturedAtUTC": "2026-11-15T02:21:38.815782+00:00",
+  "removedPath": "/tmp/memoryos-ai-capture-regression",
+  "removedLogicalBytes": 196547085,
+  "reason": "Task-owned original Capture regression derived build completed; plaintext build/analysis output and unique build logs/config retained. No Git metadata or active build consumer.",
+  "preserved": [
+    {
+      "path": "native/verification/local-ai-step2/cleanup-preserved/capture-regression/Logs/Build/LogStoreManifest.plist",
+      "sha256": "5c524895ab1c96580188b53e46a4a918afd2a9ff8d433e4530d1dd0d21453028"
+    },
+    {
+      "path": "native/verification/local-ai-step2/cleanup-preserved/capture-regression/Logs/Build/F11E7C2E-2C55-43DB-93C7-3D4DE4451362.xcactivitylog",
+      "sha256": "420382fadda97aa95f648cdb7fdeed60e7d2f72db0011e19d7b327b41cd4fabc"
+    },
+    {
+      "path": "native/verification/local-ai-step2/cleanup-preserved/capture-regression/Logs/Build/FAC77B64-0A88-45A0-B288-8A5AB256DE09.xcactivitylog",
+      "sha256": "452f41e18cedf6ba18ce6af9b8963ac51eac003a50c2aa42a5a39bc7acb188f2"
+    },
+    {
+      "path": "native/verification/local-ai-step2/cleanup-preserved/capture-regression/Logs/Package/5E5B542A-365B-49AF-80C6-6498397BA983.xcactivitylog",
+      "sha256": "b08e11ff1be80243694de827b90db44ee713afe95fa328c27d386b54f2bad386"
+    },
+    {
+      "path": "native/verification/local-ai-step2/cleanup-preserved/capture-regression/Logs/Package/LogStoreManifest.plist",
+      "sha256": "4a26f70d97f2544eed25694aa9e32cddd250f2a533cc22da6b9f9991f8db52cf"
+    },
+    {
+      "path": "native/verification/local-ai-step2/cleanup-preserved/capture-regression/SourcePackages/workspace-state.json",
+      "sha256": "589d4db67f831bb92fbf513041423c381705ee38c9c4f92de63a312ac566644a"
+    },
+    {
+      "path": "native/verification/local-ai-step2/cleanup-preserved/capture-regression/info.plist",
+      "sha256": "54e58aef58c0a498a079c687a0a455ca3318850be5def509661d40bf9a0812fd"
+    }
+  ],
+  "otherRemoved": [
+    {
+      "path": "native/verification/local-ai-step2/in-progress-checks.json",
+      "reason": "Temporary progress checklist superseded by reviewed task/final verification receipts; no unique result or source."
+    }
+  ]
+}

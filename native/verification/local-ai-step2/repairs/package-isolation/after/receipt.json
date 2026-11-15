@@ -1,0 +1,51 @@
+{
+  "phase": "after",
+  "scratch": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-6z6y4gpf",
+  "artifactsCopied": false,
+  "sourceProjectSHA256": "5e2d8e1ef97898a3660f268d899e1c83db5b5c8dbc4b697f5774c3574e2b18c7",
+  "commands": [
+    {
+      "name": "resolve",
+      "arguments": [
+        "xcodebuild",
+        "-project",
+        "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-6z6y4gpf/native/MemoryOS.xcodeproj",
+        "-scheme",
+        "MemoryOS",
+        "-clonedSourcePackagesDirPath",
+        "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-6z6y4gpf/packages",
+        "-resolvePackageDependencies"
+      ],
+      "exitCode": 0,
+      "seconds": 1.963406834
+    },
+    {
+      "name": "release-build-analyze",
+      "arguments": [
+        "xcodebuild",
+        "-project",
+        "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-6z6y4gpf/native/MemoryOS.xcodeproj",
+        "-scheme",
+        "MemoryOS",
+        "-clonedSourcePackagesDirPath",
+        "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-6z6y4gpf/packages",
+        "-configuration",
+        "Release",
+        "-sdk",
+        "iphonesimulator",
+        "-destination",
+        "generic/platform=iOS Simulator",
+        "-derivedDataPath",
+        "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-6z6y4gpf/DerivedData",
+        "CODE_SIGNING_ALLOWED=NO",
+        "build",
+        "analyze"
+      ],
+      "exitCode": 0,
+      "seconds": 22.757603791
+    }
+  ],
+  "passed": true,
+  "scratchLogicalBytes": 197976854,
+  "scratchRemoved": true
+}

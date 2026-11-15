@@ -1,0 +1,59 @@
+{
+  "sourceIdentity": "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+  "finalSourceEvidence": true,
+  "captureTool": "T3 device-bound agent-device screenshot",
+  "device": "iPhone 18 Pro Max / iOS 27.2 Simulator",
+  "appearance": "dark",
+  "captures": [
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/final/01-english-dark.png",
+      "sha256": "20161c5ac977ed54b281d14cfe59108d93f515e5868f387ca1b53edda7118c85",
+      "width": 440,
+      "height": 956,
+      "note": "English, standard large text."
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/final/02-heading-largest-dark.png",
+      "sha256": "d2a84a9fc7f1b5cbd1e3d0937065fa1f2af98b7b90a359955cae618336aabec0",
+      "width": 440,
+      "height": 956,
+      "note": "English scalable heading, largest accessibility text."
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/final/03-arabic-largest-dark.png",
+      "sha256": "23e26676ae030cd8b55e508241dc285c3b479a32941a53b0f9c30c722229a9ee",
+      "width": 440,
+      "height": 956,
+      "note": "Arabic RTL heading, largest accessibility text."
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/final/04-arabic-largest-run-dark.png",
+      "sha256": "e677a670ca48c8cb9f11c8e6d082927c6d58beae428227107560e26e515e264d",
+      "width": 440,
+      "height": 956,
+      "note": "Run remains reachable with largest Arabic text."
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/final/05-scope-after-unstarted-run-dark.png",
+      "sha256": "9b37dc1a7f4c3f640d8cd88834ef6c744a074d157f47c1d8821b0b65c2695a3e",
+      "width": 440,
+      "height": 956,
+      "note": "Simulator scope before manual run; the rejected short ref did not start a run."
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/final/06-final-source-results-dark.png",
+      "sha256": "cf07024fca91e20ec4dc0e76171e925557574abd4c45e3212add97417459e3e2",
+      "width": 440,
+      "height": 956,
+      "note": "Completed control batch; visible final source prefix27da28f731c3."
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/final/07-arabic-dark.png",
+      "sha256": "c9d2dca6c69e1f438fa321b8fe1a1af8cbbef2abfdec6319bea69f4451cebef4",
+      "width": 440,
+      "height": 956,
+      "note": "Restored standard large text, Arabic dark configuration."
+    }
+  ],
+  "intermediateCaptures": "intermediate-manifest.json separately identifies1b978source, not final source."
+}

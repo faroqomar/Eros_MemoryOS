@@ -1,0 +1,86 @@
+{"path": "Sources/Crypto/AEADs/AES/GCM/AES-GCM.swift", "git_blob_sha1": "f91fa950ac3d242fea91d8939da767d28e489b50", "bytes": 9292, "attempt": 1}
+{"path": "Sources/Crypto/AEADs/ChachaPoly/BoringSSL/ChaChaPoly_boring.swift", "git_blob_sha1": "0d39339651a8961e94a121a0b152693cf3c9556d", "bytes": 4363, "attempt": 1}
+{"path": "Sources/Crypto/AEADs/ChachaPoly/ChaChaPoly.swift", "git_blob_sha1": "b1aee7cb3ae4769d214a85ab96cf83d3cd0d6bcf", "bytes": 7713, "attempt": 1}
+{"path": "Sources/Crypto/AEADs/AES/GCM/BoringSSL/AES-GCM_boring.swift", "git_blob_sha1": "666442b0c9899fb0d05122e6583e31af1b8ebec8", "bytes": 2986, "attempt": 1}
+{"path": "Sources/Crypto/AEADs/Cipher.swift", "git_blob_sha1": "9d6293f8ad2bff419b0e2e4d540f4c6e4e70a8ff", "bytes": 3026, "attempt": 1}
+{"path": "Sources/Crypto/AEADs/Nonces.swift.gyb", "git_blob_sha1": "19a25bb2a442a66e8130bee9a1f280c5fb192705", "bytes": 3798, "attempt": 1}
+{"path": "Sources/Crypto/AEADs/Nonces.swift", "git_blob_sha1": "fb03ebe7f07cc5d086aa1abd1a28c39d692eb678", "bytes": 6423, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ASN1Any.swift", "git_blob_sha1": "c4148099cf789967f281ba2a64ae4b263e65386b", "bytes": 3237, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/ASN1.swift", "git_blob_sha1": "dc189d9e6f5b5a982a7a652da5195a802b1326b7", "bytes": 34201, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ASN1Boolean.swift", "git_blob_sha1": "1786aa5d3a49b2f2a404f6a617eb24f93b0e4892", "bytes": 1900, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ASN1BitString.swift", "git_blob_sha1": "5ef695309142056468e814e6bbd597a02f786879", "bytes": 2656, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ASN1Identifier.swift", "git_blob_sha1": "0e41f8ca7f271e1439cfe9d6d9cbcc2111327099", "bytes": 6197, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ASN1Integer.swift", "git_blob_sha1": "8c4c4e9f7213e46204e94b1ad808c4c6fc839ef2", "bytes": 10665, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ASN1Null.swift", "git_blob_sha1": "f95b8a7b30b11ece792bf5baf66792a823edc6a8", "bytes": 1650, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ASN1OctetString.swift", "git_blob_sha1": "a2f5d00704e2e0b94b72dfd04ea2296e65614011", "bytes": 2353, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ASN1Strings.swift", "git_blob_sha1": "7f7443f771d83613819262412c9ba154826b3fce", "bytes": 8120, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ArraySliceBigint.swift", "git_blob_sha1": "fbdb633263ad7ef9734092034a9560ca9acc664f", "bytes": 1454, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/ObjectIdentifier.swift", "git_blob_sha1": "81de77eaf536f10fab65bc5f5c385f576bee37ba", "bytes": 11086, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/Basic ASN1 Types/GeneralizedTime.swift", "git_blob_sha1": "74177f76dc7906b325e97cf060333cb052c79704", "bytes": 14149, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/ECDSASignature.swift", "git_blob_sha1": "24945387024bbd9cf7bda7a26209a14246f05f71", "bytes": 2145, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/PEMDocument.swift", "git_blob_sha1": "f73141170b0bacea1f9bee2b6039d5d595e6987c", "bytes": 4660, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/PKCS8PrivateKey.swift", "git_blob_sha1": "22d7cee085d5752e7326daec16a6c68ffa5f1422", "bytes": 4480, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/SEC1PrivateKey.swift", "git_blob_sha1": "4bde009aebf3560ed3c6803decc51ab21b8b387a", "bytes": 4727, "attempt": 1}
+{"path": "Sources/Crypto/CMakeLists.txt", "git_blob_sha1": "6e9b14e4db10dfbaed9b95a46fd05215434624d9", "bytes": 4500, "attempt": 1}
+{"path": "Sources/Crypto/CryptoError_boring.swift", "git_blob_sha1": "685aeb76960f28e177470bc9c015f3a72cf8872e", "bytes": 720, "attempt": 1}
+{"path": "Sources/Crypto/ASN1/SubjectPublicKeyInfo.swift", "git_blob_sha1": "cf48a032878378381a57c7482773a425646f539d", "bytes": 5411, "attempt": 1}
+{"path": "Sources/Crypto/CryptoKitErrors.swift", "git_blob_sha1": "4bc957d5c2c62a70f2002212796957ad62c4ac2f", "bytes": 2494, "attempt": 1}
+{"path": "Sources/Crypto/Digests/BoringSSL/Digest_boring.swift", "git_blob_sha1": "b6e759cf253293110fea3a1cda5d6b366dc53314", "bytes": 7233, "attempt": 1}
+{"path": "Sources/Crypto/Digests/Digests.swift", "git_blob_sha1": "e539bb26a09bd528598948988034315c6fa92d5f", "bytes": 14462, "attempt": 1}
+{"path": "Sources/Crypto/Digests/Digest.swift", "git_blob_sha1": "9a73eb90c9af0a8754ed55a11c5a81fa6c867f16", "bytes": 3093, "attempt": 1}
+{"path": "Sources/Crypto/Digests/Digests.swift.gyb", "git_blob_sha1": "e059db61d6207b04c12042d102195681715e18bf", "bytes": 4314, "attempt": 1}
+{"path": "Sources/Crypto/Digests/HashFunctions.swift", "git_blob_sha1": "96e2b19f0483a7b8be03c5ab75d3d850b892bc39", "bytes": 7072, "attempt": 1}
+{"path": "Sources/Crypto/Digests/HashFunctions_SHA2.swift", "git_blob_sha1": "a87a03d6a2a00421128ae9954e8b7fb908b1feae", "bytes": 11690, "attempt": 1}
+{"path": "Sources/Crypto/Docs.docc/index.md", "git_blob_sha1": "93185778634fc2f17343f97d18ad188f44282e2e", "bytes": 1379, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/HPKE-AEAD.swift", "git_blob_sha1": "90764659d89521692c50a965a69dd624296a1d3b", "bytes": 4569, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/HPKE-KDF.swift", "git_blob_sha1": "5109adaebe7baf32f728353583b9343bbfe4d19b", "bytes": 4290, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/HPKE-KexKeyDerivation.swift", "git_blob_sha1": "05026a1077dc0374fb6ea180496547c0375ea3db", "bytes": 2050, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/HPKE-LabeledExtract.swift", "git_blob_sha1": "8f3ae5f9d680788c0ba984561aa9dd8a23fe72ba", "bytes": 3825, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/HPKE-Ciphersuite.swift", "git_blob_sha1": "5a145ce110c19c3b08eb51cadf4cbbad45944551", "bytes": 4075, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/HPKE-Utils.swift", "git_blob_sha1": "d0e8f8121d61d81c7ba8f95810422400015894fe", "bytes": 1502, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/KEM/Conformances/HPKE-KEM-Curve25519.swift", "git_blob_sha1": "e271956e84fe14419ca32efd2711ebed1f93de99", "bytes": 2710, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/KEM/Conformances/HPKE-NIST-EC-KEMs.swift", "git_blob_sha1": "3a8f2ad141f522a9aedf80c0e2da2c6ba2d70fa6", "bytes": 7007, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/KEM/Conformances/DHKEM.swift", "git_blob_sha1": "b620070478c57c0b9cd654d2e3aa6813284e9af9", "bytes": 7890, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Ciphersuite/KEM/HPKE-KEM.swift", "git_blob_sha1": "6cc3f466f8795588708c966f705eb3c4d331fe60", "bytes": 2707, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/HPKE-Errors.swift", "git_blob_sha1": "21764150bfd1f554b65a77da9aee1a80005f09ed", "bytes": 1852, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Key Schedule/HPKE-Context.swift", "git_blob_sha1": "f072a66449fc3d922331728f4b0983b81e0ecf69", "bytes": 3077, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/HPKE.swift", "git_blob_sha1": "83fe174176dea5cb84ffd0b0e42462daff05ecb1", "bytes": 21158, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Key Schedule/HPKE-KeySchedule.swift", "git_blob_sha1": "72e22da9edec2c1d30aa5253548ee3dd54a803df", "bytes": 7115, "attempt": 1}
+{"path": "Sources/Crypto/HPKE/Modes/HPKE-Modes.swift", "git_blob_sha1": "bae1d76dc3f3e403e9b41b38980f0cbc09457d50", "bytes": 1297, "attempt": 1}
+{"path": "Sources/Crypto/Insecure/Insecure.swift", "git_blob_sha1": "19adb1f2636d7d351e6d963e4bffdb2945bb58db", "bytes": 1035, "attempt": 1}
+{"path": "Sources/Crypto/KEM/KEM.swift", "git_blob_sha1": "e3939b654e95ae2603f95299e981bd89d86452d5", "bytes": 2304, "attempt": 1}
+{"path": "Sources/Crypto/Key Agreement/BoringSSL/ECDH_boring.swift", "git_blob_sha1": "932d61b4eea4f1036a2a37f8876dada7f2c608a4", "bytes": 1904, "attempt": 1}
+{"path": "Sources/Crypto/Key Agreement/DH.swift", "git_blob_sha1": "4eead0b61979536057df33041f3e0671bbe996a3", "bytes": 8562, "attempt": 1}
+{"path": "Sources/Crypto/Key Agreement/ECDH.swift", "git_blob_sha1": "56bf0dc511dafa56aa8375eb0f0fa17e4e61571d", "bytes": 66910, "attempt": 1}
+{"path": "Sources/Crypto/Insecure/Insecure_HashFunctions.swift", "git_blob_sha1": "a82e5330ba15ce1184be813c871baeb3993b242e", "bytes": 8815, "attempt": 1}
+{"path": "Sources/Crypto/Key Derivation/HKDF.swift", "git_blob_sha1": "9208634b1796cb8b2f12cd2332803d9b36141514", "bytes": 7901, "attempt": 1}
+{"path": "Sources/Crypto/Key Wrapping/AESWrap.swift", "git_blob_sha1": "33626e6da097c2a778558e8921819c745066fc0b", "bytes": 2492, "attempt": 1}
+{"path": "Sources/Crypto/Key Wrapping/BoringSSL/AESWrap_boring.swift", "git_blob_sha1": "5eebd15bcbde01ecd3575703f96f874adecb28c2", "bytes": 5229, "attempt": 1}
+{"path": "Sources/Crypto/Keys/EC/BoringSSL/Ed25519_boring.swift", "git_blob_sha1": "4a16757b1c96d807b87de59ec30bdda2c8b5fcf0", "bytes": 4554, "attempt": 1}
+{"path": "Sources/Crypto/Keys/EC/BoringSSL/NISTCurvesKeys_boring.swift", "git_blob_sha1": "f259fada4f5a04536725b1af9707e3c294f8963c", "bytes": 28164, "attempt": 1}
+{"path": "Sources/Crypto/Key Agreement/ECDH.swift.gyb", "git_blob_sha1": "d4aae6b7adc5daafd26a729bfbb708c5b81920ed", "bytes": 13096, "attempt": 1}
+{"path": "Sources/Crypto/Keys/EC/Curve25519.swift", "git_blob_sha1": "9f8b4a13b851a9123ea669834ea15a8a42d93dee", "bytes": 819, "attempt": 1}
+{"path": "Sources/Crypto/Keys/EC/Ed25519Keys.swift", "git_blob_sha1": "a5ba229e7f054e4ddcef5bfff10f9784fcb8b529", "bytes": 4243, "attempt": 1}
+{"path": "Sources/Crypto/Keys/EC/NISTCurvesKeys.swift", "git_blob_sha1": "2bb00bb38dbda1c77c0866cd617b6f6abfd0c9e3", "bytes": 2623, "attempt": 1}
+{"path": "Sources/Crypto/Keys/EC/X25519Keys.swift", "git_blob_sha1": "78b26e12835332eaeba4d338ff194a2b66702c1c", "bytes": 5134, "attempt": 1}
+{"path": "Sources/Crypto/Keys/Symmetric/SymmetricKeys.swift", "git_blob_sha1": "dfc84220424ecca8e790d75a6d73556b04cdb170", "bytes": 4836, "attempt": 1}
+{"path": "Sources/Crypto/Keys/EC/BoringSSL/X25519Keys_boring.swift", "git_blob_sha1": "67217df6235eeff6012c5947a462cdab12a7b342", "bytes": 7239, "attempt": 1}
+{"path": "Sources/Crypto/Message Authentication Codes/MACFunctions.swift", "git_blob_sha1": "851d4912309bb8c5962e6061823460d031d4eba8", "bytes": 2688, "attempt": 1}
+{"path": "Sources/Crypto/Message Authentication Codes/MessageAuthenticationCode.swift", "git_blob_sha1": "a5b881b579bf50e733359c1722666e438160e694", "bytes": 2660, "attempt": 1}
+{"path": "Sources/Crypto/PRF/AES.swift", "git_blob_sha1": "da5d082b3422fa0f4327a53bf9cc87c113fd2dde", "bytes": 1212, "attempt": 1}
+{"path": "Sources/Crypto/Signatures/BoringSSL/ECDSASignature_boring.swift", "git_blob_sha1": "28855a14fd94d8350d8ceccda484952017e3b84f", "bytes": 4493, "attempt": 1}
+{"path": "Sources/Crypto/Message Authentication Codes/HMAC/HMAC.swift", "git_blob_sha1": "3d7221854d9dba0d9b3878ef24240112615a52d8", "bytes": 9737, "attempt": 1}
+{"path": "Sources/Crypto/Signatures/BoringSSL/EdDSA_boring.swift", "git_blob_sha1": "b2ea6d2c31d0827385925d9db114955fc8025b2d", "bytes": 5248, "attempt": 1}
+{"path": "Sources/Crypto/Signatures/ECDSA.swift", "git_blob_sha1": "84959ee5204e15a40814f745c86d9ffbd4520314", "bytes": 23227, "attempt": 1}
+{"path": "Sources/Crypto/Signatures/ECDSA.swift.gyb", "git_blob_sha1": "f297738f4d8466155da1ed9b7a000574d22930bb", "bytes": 8455, "attempt": 1}
+{"path": "Sources/Crypto/Signatures/Ed25519.swift", "git_blob_sha1": "a6b38b304f187a0c087e0abcf7152b119cafcaef", "bytes": 3066, "attempt": 1}
+{"path": "Sources/Crypto/Signatures/Signature.swift", "git_blob_sha1": "b51f9434756ce607b79b24766d789fe3ac300803", "bytes": 1246, "attempt": 1}
+{"path": "Sources/Crypto/Util/BoringSSL/CryptoKitErrors_boring.swift", "git_blob_sha1": "78cd140a5054db280fd9a91ee2016f62422f52e0", "bytes": 1103, "attempt": 1}
+{"path": "Sources/Crypto/Signatures/BoringSSL/ECDSA_boring.swift", "git_blob_sha1": "d72b0226cebd48f5778bfc360ee5ba08882a503c", "bytes": 6514, "attempt": 1}
+{"path": "Sources/Crypto/Util/BoringSSL/RNG_boring.swift", "git_blob_sha1": "674bdb9aa46bf33b0da16593e2b571e8f4116517", "bytes": 1700, "attempt": 1}
+{"path": "Sources/Crypto/Util/BoringSSL/SafeCompare_boring.swift", "git_blob_sha1": "0999addf0e0823c66d8a3c4368eafa1344e6513f", "bytes": 1548, "attempt": 1}
+{"path": "Sources/Crypto/Util/BoringSSL/Zeroization_boring.swift", "git_blob_sha1": "1991f2f6ca4fbf722fb4724249e14319afdc414d", "bytes": 1146, "attempt": 1}
+{"path": "Sources/Crypto/Util/PrettyBytes.swift", "git_blob_sha1": "8db832af7ab31bdc15750a5b79ed22adbd759af8", "bytes": 3712, "attempt": 1}
+{"path": "Sources/Crypto/Util/SafeCompare.swift", "git_blob_sha1": "29fe5ea982851acc9dedccc8ab22cae32ae531a3", "bytes": 986, "attempt": 1}
+{"path": "Sources/Crypto/Util/SecureBytes.swift", "git_blob_sha1": "2efb994aab2c89f4a54cc646ac2d98ab839f9c95", "bytes": 23279, "attempt": 1}
+{"path": "Sources/Crypto/Util/Zeroization.swift", "git_blob_sha1": "07f9e8b515e3de4cf19f25bf11d81a698ff7417c", "bytes": 1838, "attempt": 1}

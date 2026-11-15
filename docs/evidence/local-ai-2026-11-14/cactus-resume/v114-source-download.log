@@ -1,0 +1,62 @@
+{"file": "cactus/CMakeLists.txt", "verified": true}
+{"file": "LICENSE", "verified": true}
+{"file": "cactus/build.sh", "verified": true}
+{"file": "CACTUS_VERSION", "verified": true}
+{"file": "cactus/engine/engine_image.cpp", "verified": true}
+{"file": "cactus/engine/engine_cache.cpp", "verified": true}
+{"file": "cactus/engine/engine.h", "verified": true}
+{"file": "cactus/engine/engine_constraints.cpp", "verified": true}
+{"file": "cactus/engine/engine_index.cpp", "verified": true}
+{"file": "cactus/engine/engine_sp.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_cloud.h", "verified": true}
+{"file": "cactus/engine/engine_model.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_embed.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_complete.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_embed_speaker.cpp", "verified": true}
+{"file": "cactus/engine/engine_tokenizer.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_index.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_init.cpp", "verified": true}
+{"file": "cactus/engine/engine_bpe.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_log.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_ffi.h", "verified": true}
+{"file": "cactus/ffi/cactus_rag.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_telemetry.cpp", "verified": true}
+{"retry": "cactus/cactus.h", "errorType": "URLError", "attempt": 1}
+{"file": "cactus/cactus.h", "verified": true}
+{"file": "cactus/ffi/cactus_transcribe.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_utils.h", "verified": true}
+{"file": "cactus/ffi/cactus_diarize.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_graph.cpp", "verified": true}
+{"file": "cactus/graph/graph_core.cpp", "verified": true}
+{"file": "cactus/graph/graph_builder.cpp", "verified": true}
+{"file": "cactus/graph/graph_ops_math.cpp", "verified": true}
+{"file": "cactus/graph/graph.h", "verified": true}
+{"file": "cactus/graph/graph_io.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_stream.cpp", "verified": true}
+{"file": "cactus/ffi/gemma_tools.h", "verified": true}
+Traceback (most recent call last):
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Support/fetch_upstream.py", line 73, in <module>
+    main()
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Support/fetch_upstream.py", line 64, in main
+    hashes = dict(pool.map(fetch, files))
+  File "/Users/eros/micromamba/lib/python3.9/concurrent/futures/_base.py", line 609, in result_iterator
+    yield fs.pop().result()
+  File "/Users/eros/micromamba/lib/python3.9/concurrent/futures/_base.py", line 446, in result
+    return self.__get_result()
+  File "/Users/eros/micromamba/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/Users/eros/micromamba/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Support/fetch_upstream.py", line 51, in fetch
+    content = response.read()
+  File "/Users/eros/micromamba/lib/python3.9/http/client.py", line 476, in read
+    s = self._safe_read(self.length)
+  File "/Users/eros/micromamba/lib/python3.9/http/client.py", line 626, in _safe_read
+    chunk = self.fp.read(min(amt, MAXAMOUNT))
+  File "/Users/eros/micromamba/lib/python3.9/socket.py", line 716, in readinto
+    return self._sock.recv_into(b)
+  File "/Users/eros/micromamba/lib/python3.9/ssl.py", line 1275, in recv_into
+    return self.read(nbytes, buffer)
+  File "/Users/eros/micromamba/lib/python3.9/ssl.py", line 1133, in read
+    return self._sslobj.read(len, buffer)
+socket.timeout: The read operation timed out

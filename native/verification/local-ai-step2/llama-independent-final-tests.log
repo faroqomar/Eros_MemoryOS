@@ -1,0 +1,34 @@
+Building for production...
+[Using on-disk description]
+[2 / 6] LlamaEvaluationAdapter
+[3 / 7] LlamaEvaluationAdapter
+[10 / 11] llama-evaluation-product
+[12 / 12] LlamaEvaluationAdapterTests-product
+[14 / 14] llama-evaluation-product
+Build complete! (2.73 secs)
+Test Suite 'All tests' started at 2026-11-15 04:59:52.857.
+Test Suite 'All tests' passed at 2026-11-15 04:59:52.869.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.013) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+◇ Test remoteAssetURLIsRejectedWithoutNetworkLoading() started.
+◇ Test mismatchedAssetIsRejectedBeforeModelLoading() started.
+◇ Test unsupportedSamplingCannotSilentlyChangeTheExperiment() started.
+◇ Test missingAssetCannotBecomeAResponse() started.
+◇ Test nativeSDKRejectsAHashVerifiedInvalidModel() started.
+◇ Test case passing 1 argument nulRequest → TextRequest(instruction: "Use\0all sources.", question: "Where?", sources: []) to embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+◇ Test case passing 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where\0is it?", sources: []) to embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+◇ Test case passing 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where?", sources: [AIEvaluationCore.SourceRecord(id: "source\0suffix", text: "Fictional source.", language: "en", revision: 1)]) to embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+◇ Test case passing 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where?", sources: [AIEvaluationCore.SourceRecord(id: "source", text: "Original\0source suffix.", language: "en", revision: 1)]) to embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+✔ Test remoteAssetURLIsRejectedWithoutNetworkLoading() passed after 0.001 seconds.
+✔ Test embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) with 4 test cases passed after 0.001 seconds.
+✔ Test unsupportedSamplingCannotSilentlyChangeTheExperiment() passed after 0.001 seconds.
+✔ Test missingAssetCannotBecomeAResponse() passed after 0.001 seconds.
+✔ Test mismatchedAssetIsRejectedBeforeModelLoading() passed after 0.001 seconds.
+gguf_init_from_reader: invalid magic characters: 'This', expected 'GGUF'
+llama_model_load: error loading model: llama_model_loader: failed to load model from /var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/CBCFE30E-2B20-4074-9004-720BDA578372
+llama_model_load_from_file_impl: failed to load model
+✔ Test nativeSDKRejectsAHashVerifiedInvalidModel() passed after 0.002 seconds.
+✔ Test run with 6 tests in 0 suites passed after 0.003 seconds.

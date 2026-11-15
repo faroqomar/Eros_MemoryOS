@@ -1,0 +1,19 @@
+{"identity": "mlx-swift-lm", "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6", "files": 364, "trees": 83, "gitlinks": 0}
+{"identity": "mlx-swift-lm", "completed": 25, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 50, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 75, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 100, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 125, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 150, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 175, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 200, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 225, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 250, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 275, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 300, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 325, "total": 364}
+{"event": "raw-transport-retry", "path": "Libraries/MLXLMCommon/InterpolationUtils.swift", "attempt": 1, "errorType": "ConnectionError"}
+{"event": "raw-transport-retry", "path": "Libraries/MLXLMCommon/ParoQuant/PairwiseRotation.swift", "attempt": 1, "errorType": "ConnectionError"}
+{"identity": "mlx-swift-lm", "completed": 350, "total": 364}
+{"identity": "mlx-swift-lm", "completed": 364, "total": 364}
+{"snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift-lm", "completeSelectedSources": true, "canonicalResolutionVerified": false, "manifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-snapshot-mlx-swift-lm.json"}

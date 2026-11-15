@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "consumer": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-binary-consumer",
+  "binary_directory": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-binary-consumer/.build/out/Products/Release",
+  "real_sdk_binary": true,
+  "core_implementation_separately_linked": true,
+  "source_package_sdk_not_in_consumer_graph": true
+}

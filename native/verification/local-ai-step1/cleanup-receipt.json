@@ -1,0 +1,25 @@
+{
+  "beforeBytes": {
+    "/tmp/memoryos-ai-regression-build": 197689344,
+    "/tmp/memoryos-ai-lab-device-build": 93323264,
+    "/tmp/memoryos-llama-headers": 282624,
+    "/tmp/memoryos-llama-typecheck": 266240,
+    "native/LocalTextEvaluation/.build": 4096,
+    "native/LocalAIIntegrations/.build": 12288
+  },
+  "retained": [
+    "/tmp/memoryos-ai-lab-build: active installed lab and replayable simulator build",
+    "native/LocalAIEvaluation/.build: active core/presentation tests and CLI",
+    "all authored sources, reference files, logs, screenshots, original research and pre-existing work"
+  ],
+  "removalReason": "Task-created reproducible compilation caches, incomplete SDK resolution state and temporary official headers. Retained header hashes and all unique verification logs in the canonical evidence folder.",
+  "afterBytes": {
+    "/tmp/memoryos-ai-regression-build": 0,
+    "/tmp/memoryos-ai-lab-device-build": 0,
+    "/tmp/memoryos-llama-headers": 0,
+    "/tmp/memoryos-llama-typecheck": 0,
+    "native/LocalTextEvaluation/.build": 0,
+    "native/LocalAIIntegrations/.build": 0
+  },
+  "reclaimedBytes": 291577856
+}

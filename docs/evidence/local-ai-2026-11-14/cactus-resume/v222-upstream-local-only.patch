@@ -1,0 +1,152 @@
+--- a/cactus-engine/cactus_engine.h
++++ b/cactus-engine/cactus_engine.h
+@@ -1,7 +1,6 @@
+ #ifndef CACTUS_FFI_H
+ #define CACTUS_FFI_H
+ 
+-#include "cactus_graph.h"
+ 
+ #include <stddef.h>
+ #include <stdint.h>
+@@ -18,6 +17,8 @@
+ #ifdef __cplusplus
+ extern "C" {
+ #endif
++
++CACTUS_FFI_EXPORT bool cactus_memoryos_evaluation_is_local_only(void);
+ 
+ typedef void* cactus_model_t;
+ typedef void* cactus_index_t;
+--- a/cactus-engine/CMakeLists.txt
++++ b/cactus-engine/CMakeLists.txt
+@@ -1,5 +1,7 @@
+ cmake_minimum_required(VERSION 3.10)
+ project(CactusEngine LANGUAGES CXX)
++
++option(CACTUS_LOCAL_EVALUATION_ONLY "Disable telemetry and cloud transport for personal offline evaluation" OFF)
+ 
+ set(CMAKE_CXX_STANDARD 20)
+ set(CMAKE_CXX_STANDARD_REQUIRED ON)
+@@ -23,7 +25,6 @@
+     src/log.cpp
+     src/rag.cpp
+     src/telemetry.cpp
+-    src/telemetry_impl.cpp
+     src/cloud.cpp
+     src/init.cpp
+     src/embed.cpp
+@@ -32,6 +33,11 @@
+     src/stream.cpp
+     src/tokenizer.cpp
+ )
++if(CACTUS_LOCAL_EVALUATION_ONLY)
++    list(APPEND ENGINE_SOURCES src/telemetry_local_only.cpp)
++else()
++    list(APPEND ENGINE_SOURCES src/telemetry_impl.cpp)
++endif()
+ if(APPLE)
+     enable_language(OBJCXX)
+     list(APPEND ENGINE_SOURCES src/npu_ane.mm)
+@@ -69,7 +75,7 @@
+     else()
+         set(_curl "${CACTUS_CURL_ROOT}/macos/libcurl.a")
+     endif()
+-    if(EXISTS "${_curl}")
++    if(EXISTS "${_curl}" AND NOT CACTUS_LOCAL_EVALUATION_ONLY)
+         target_link_libraries(cactus_engine PRIVATE "${_curl}")
+         target_include_directories(cactus_engine PRIVATE "${CACTUS_CURL_ROOT}/include")
+         target_compile_definitions(cactus_engine PRIVATE CACTUS_USE_CURL=1)
+@@ -85,14 +91,14 @@
+     )
+ 
+     set(_curl "${CACTUS_CURL_ROOT}/android/${ANDROID_ABI}/libcurl.a")
+-    if(EXISTS "${_curl}")
++    if(EXISTS "${_curl}" AND NOT CACTUS_LOCAL_EVALUATION_ONLY)
+         target_link_libraries(cactus_engine PRIVATE "${_curl}")
+         target_include_directories(cactus_engine PRIVATE "${CACTUS_CURL_ROOT}/include")
+         target_compile_definitions(cactus_engine PRIVATE CACTUS_USE_CURL=1)
+     endif()
+ else()
+     find_package(CURL QUIET)
+-    if(CURL_FOUND)
++    if(CURL_FOUND AND NOT CACTUS_LOCAL_EVALUATION_ONLY)
+         target_link_libraries(cactus_engine PRIVATE ${CURL_LIBRARIES})
+         target_include_directories(cactus_engine PRIVATE ${CURL_INCLUDE_DIRS})
+         target_compile_definitions(cactus_engine PRIVATE CACTUS_USE_CURL=1)
+@@ -152,7 +158,7 @@
+             -Wl,-force_load,$<TARGET_FILE:cactus_kernels>
+         )
+         set(_curl "${CACTUS_CURL_ROOT}/macos/libcurl.a")
+-        if(EXISTS "${_curl}")
++        if(EXISTS "${_curl}" AND NOT CACTUS_LOCAL_EVALUATION_ONLY)
+             target_link_libraries(cactus_engine_shared PRIVATE "${_curl}")
+         endif()
+         target_link_libraries(cactus_engine_shared PRIVATE
+@@ -164,7 +170,7 @@
+             -Wl,--whole-archive ${_CACTUS_ENGINE_ARCHIVES} -Wl,--no-whole-archive
+         )
+         find_package(CURL QUIET)
+-        if(CURL_FOUND)
++        if(CURL_FOUND AND NOT CACTUS_LOCAL_EVALUATION_ONLY)
+             target_link_libraries(cactus_engine_shared PRIVATE ${CURL_LIBRARIES})
+         endif()
+     endif()
+--- /dev/null
++++ b/cactus-engine/src/telemetry_local_only.cpp
+@@ -0,0 +1,24 @@
++// Local personal evaluation build: no telemetry, persisted identifiers or cloud keys.
++#include "telemetry.h"
++extern "C" bool cactus_memoryos_evaluation_is_local_only(void) { return true; }
++namespace cactus::telemetry {
++void init(const char*, const char*, const char*) {}
++void setEnabled(bool) {}
++void setCloudDisabled(bool) {}
++void setAppId(const char*) {}
++void setTelemetryEnvironment(const char*, const char*, const char*) {}
++void setCloudKey(const char*) {}
++void cacheCloudApiKey(const char*) {}
++std::string loadCachedCloudApiKey() { return {}; }
++void recordInit(const char*, bool, double, const char*) {}
++void recordCompletion(const char*, const CompletionMetrics&) {}
++void recordCompletion(const char*, bool, double, double, double, int, const char*) {}
++void recordEmbedding(const char*, bool, const char*) {}
++void recordTranscription(const char*, bool, double, double, double, int, double, const char*) {}
++void recordStreamTranscription(const char*, bool, double, double, double, int, double, double, double, int, const char*) {}
++void setStreamMode(bool) {}
++bool isStreamMode() { return false; }
++void markInference(bool) {}
++void flush() {}
++void shutdown() {}
++}
+--- a/cactus-kernels/CMakeLists.txt
++++ b/cactus-kernels/CMakeLists.txt
+@@ -32,16 +32,24 @@
+ 
+ add_library(cactus_flags INTERFACE)
+ 
++# The evaluation host/simulator is M1 Pro and does not support FEAT_I8MM.
++set(CACTUS_TARGET_ARCH "armv8.2-a+fp16+simd+dotprod+i8mm")
++if(CACTUS_LOCAL_EVALUATION_ONLY)
++    set(CACTUS_TARGET_ARCH "armv8.2-a+fp16+simd+dotprod")
++endif()
+ target_compile_options(cactus_flags INTERFACE
+-    -march=armv8.2-a+fp16+simd+dotprod+i8mm -pthread -O3
++    -march=${CACTUS_TARGET_ARCH} -pthread -O3
+     -fvisibility=hidden -fvisibility-inlines-hidden
+     -ffunction-sections -fdata-sections -fno-rtti
+-    $<$<CXX_COMPILER_ID:Clang,AppleClang>:-flto=thin>
+ )
+ 
+-target_link_options(cactus_flags INTERFACE
+-    $<$<CXX_COMPILER_ID:Clang,AppleClang>:-flto=thin>
+-)
++# XCFramework tooling requires Mach-O objects, not an archive of LLVM IR.
++if(NOT CACTUS_LOCAL_EVALUATION_ONLY)
++    target_compile_options(cactus_flags INTERFACE
++        $<$<CXX_COMPILER_ID:Clang,AppleClang>:-flto=thin>)
++    target_link_options(cactus_flags INTERFACE
++        $<$<CXX_COMPILER_ID:Clang,AppleClang>:-flto=thin>)
++endif()
+ 
+ if(APPLE)
+     target_link_options(cactus_flags INTERFACE -Wl,-dead_strip)

@@ -1,0 +1,39 @@
+{
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "frozenRuntimeFilesChecked": 99,
+  "driftedFiles": [],
+  "unchangedMainAppAndStore": true,
+  "originalIdeaFilesUnchanged": true,
+  "strictSwiftFormatFiles": 43,
+  "selectedSimulatorReports": 31,
+  "selectedCaseResults": 465,
+  "completedOperations": 450,
+  "explicitUnavailableCases": 15,
+  "sourceAndVendorBoundaries": "Core independent; Views render/forward; ViewModel calls injected use case; composition supplies thin SDK adapters and measurement/report writers. No main-store access in Lab.",
+  "humanQualityApproval": false,
+  "independentStep2Started": false,
+  "physicalBatteryAndHeatMeasured": false,
+  "evidence": [
+    "simulator-summary.json",
+    "comparison-inputs.json",
+    "screenshots/manifest.json",
+    "final-swift-format.log",
+    "capture-app-regression-build.log",
+    "lab-final-identified-build.log",
+    "../core-tests.log",
+    "core-tests.log",
+    "llama-tests.log",
+    "mlx-final-verification.json"
+  ],
+  "originalIdeaFiles": [
+    "Project_Idea.md",
+    "Project_Idea_Summary.md",
+    "Project_Idea_Expanded_Summary.md"
+  ],
+  "memorySources": 41,
+  "memoryPending": 0,
+  "memoryFailed": 0,
+  "usefulProjectRecallVerified": true,
+  "knowledgePageCorrected": true,
+  "finalLocalLinksChecked": 231
+}

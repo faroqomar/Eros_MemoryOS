@@ -1,0 +1,64 @@
+{
+  "devicesAndConfigurations" : [
+    {
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "modelName" : "iPhone 18 Pro",
+        "osBuildNumber" : "24B8117",
+        "osVersion" : "27.2",
+        "platform" : "iOS Simulator"
+      },
+      "expectedFailures" : 0,
+      "failedTests" : 2,
+      "passedTests" : 2,
+      "skippedTests" : 0,
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ],
+  "environmentDescription" : "MemoryOSAILab · Built with macOS 27.2.1",
+  "expectedFailures" : 0,
+  "failedTests" : 2,
+  "finishTime" : 1794708712.846,
+  "passedTests" : 2,
+  "result" : "Failed",
+  "runtimeWarnings" : [
+
+  ],
+  "skippedTests" : 0,
+  "startTime" : 1794708709.051,
+  "statistics" : [
+
+  ],
+  "testFailures" : [
+    {
+      "failureText" : "Dynamic Type font sizes are unsupported",
+      "targetName" : "MemoryOSAILabUITests",
+      "testIdentifier" : 1,
+      "testIdentifierString" : "LabUITests/testArabicConfigurationAccessibility()",
+      "testIdentifierURL" : "test://com.apple.xcode/MemoryOS/MemoryOSAILabUITests/LabUITests/testArabicConfigurationAccessibility",
+      "testName" : "testArabicConfigurationAccessibility()"
+    },
+    {
+      "failureText" : "Dynamic Type font sizes are partially unsupported",
+      "targetName" : "MemoryOSAILabUITests",
+      "testIdentifier" : 3,
+      "testIdentifierString" : "LabUITests/testEnglishConfigurationAccessibility()",
+      "testIdentifierURL" : "test://com.apple.xcode/MemoryOS/MemoryOSAILabUITests/LabUITests/testEnglishConfigurationAccessibility",
+      "testName" : "testEnglishConfigurationAccessibility()"
+    }
+  ],
+  "title" : "Test - MemoryOSAILab",
+  "topInsights" : [
+    {
+      "category" : "Common Failures",
+      "impact" : "100% of failures",
+      "text" : "2 runs of 2 tests failed with Dynamic Type font sizes are unsupported"
+    }
+  ],
+  "totalTestCount" : 4
+}

@@ -1,0 +1,29 @@
+{
+  "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+  "files": {
+    "native/AILabInfo.plist": "7b3bd02c07ff79964e8a47fe7762717fcadedda64a3d1524d88e85bd4aec9f6f",
+    "native/LocalAIEvaluation/Package.swift": "53b74c167e6b0686d564114e4a88a883fd2d813dc6a2f8976353e1a2b9efea07",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCLI/Main.swift": "714739b604f738f6e893a06af3799cd5d2ac093e132d9982f3557055d5d85feb",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/Contracts.swift": "fcdfa2607e00a037e5d2f93d7f8360d37f83524f705c4dd1ebd99b361ebcdd0c",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/EvaluationRunner.swift": "6dd57ee7e886a050aaf12add98e389cf596f3d952e89907baf33a94edf07f1b5",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/FictionalSuite.swift": "a3f48e99b8846c2175f9940c981c15d694b98dd2300b6f8292214f9e0ad2afc8",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/KeywordMemoryIndex.swift": "2de44da64204b514d542189e4bd55957d4299be3342a005fbffbbab046d07c10",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/Report.swift": "2f85dfc0d5c20d6e880dab0dbd785ff60ce21966f4e49ace065ecaecb143d461",
+    "native/LocalAIEvaluation/Sources/AIEvaluationPresentation/EvaluationViewModel.swift": "426c5ed6efbfc1c96f08106dacea397d66f12a7c50ba884137f38f7933bf7ca3",
+    "native/LocalAIEvaluation/Tests/AIEvaluationCoreTests/EvaluationTests.swift": "1e5d8cdc3231b9db8891c6a072167331607c2340757eab0391ea37a38a4e6f2b",
+    "native/LocalAIEvaluation/Tests/AIEvaluationPresentationTests/ViewModelTests.swift": "94871117ce4cd6370e178d5a549fbb3be46de3bbc8b23cd9e01843e596a35080",
+    "native/LocalAIIntegrations/Package.swift": "2407af986ef67c1b1651551821ea99d7542f0faaf1c78bcf7cbbb6e6c187b53e",
+    "native/LocalAIIntegrations/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift": "f9a00c922584cd3f45d1078847260025759fc76d4b62ee2755b3107e0df72887",
+    "native/LocalAIIntegrations/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift": "79b71e27f2c5acedf3eec87a14ece3be5f1f000f53ac264136c00b845cf05238",
+    "native/LocalTextEvaluation/Package.swift": "dd70c08099fb2501caf0c4171801e81e1d113aa1cfc3405a25fdfc58096c35c6",
+    "native/LocalTextEvaluation/Sources/LlamaEvaluationAdapter/LlamaTextRuntime.swift": "366b1c3a4bf61898b6c2f8f094139c2a6db44d66d1f93148d1b741223419d3b3",
+    "native/LocalTextEvaluation/Tests/LlamaEvaluationAdapterTests/LlamaAssetTests.swift": "6acbaa0b19b6a06002b5430eddf4b3c7d12508378e5283cf918eeb2b9dc92e33",
+    "native/MemoryOS.xcodeproj/project.pbxproj": "65f2416c98e29bb50caf8d36ba30314ebdcd70b32b38c985aca1db650e920849",
+    "native/MemoryOS.xcodeproj/xcshareddata/xcschemes/MemoryOSAILab.xcscheme": "d83a27b38afd7b5653ee7d8ea7f0d624acc210323df21cef20ef373b05122d0f",
+    "native/MemoryOSAILab/LabComposition.swift": "4b782db7c049e898176f1e198b71617b3deed1d75acce8619fa2647934d48b79",
+    "native/MemoryOSAILab/LabDomain.swift": "01dc9eb182aabc476faceeaf46438d86f7c75354d1917f9920bbc6e30d25e028",
+    "native/MemoryOSAILab/LabView.swift": "19c917d9497c6ce13e73c515d402b7abb5e59c2aa2a30b78b8236ac3bc4678bc",
+    "native/MemoryOSAILab/LabViewModel.swift": "ebbb4759f05612229851f1924b56748f282f12b9b7bfbede16ffa5d4aca68715",
+    "native/MemoryOSAILab/MemoryOSAILabApp.swift": "3bf26af5fa27b86a161305a39b02d3ae179047b665313d46213b206af83fd93f"
+  }
+}

@@ -1,0 +1,25 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Test Suite 'All tests' started at 2026-11-15 03:48:56.784.
+Test Suite 'All tests' passed at 2026-11-15 03:48:56.795.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.010) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test cancellationBeforeLoadDoesNotAccessModel() started.
+◇ Test promptPreservesFictionalUnicodeAndContainsNoAnswerKey() started.
+◇ Test changedAssetBytesAreRejectedBeforeSDKModelLoad() started.
+◇ Test missingAssetsStayUnavailableAndDoNotDownload() started.
+◇ Test realLocalModelGeneratesBoundedText() started.
+◇ Test remoteModelURLIsRejectedBeforeAnyLoading() started.
+◇ Test invalidSettingsAreRejectedBeforeLoading(_:) started.
+◇ Test case passing 1 argument settings → GenerationSettings(maximumOutputTokens: 0, temperature: 0.0, seed: 42) to invalidSettingsAreRejectedBeforeLoading(_:) started.
+✔ Test remoteModelURLIsRejectedBeforeAnyLoading() passed after 0.001 seconds.
+◇ Test case passing 1 argument settings → GenerationSettings(maximumOutputTokens: 256, temperature: nan, seed: 42) to invalidSettingsAreRejectedBeforeLoading(_:) started.
+◇ Test case passing 1 argument settings → GenerationSettings(maximumOutputTokens: 256, temperature: 1.7976931348623157e+308, seed: 42) to invalidSettingsAreRejectedBeforeLoading(_:) started.
+✔ Test invalidSettingsAreRejectedBeforeLoading(_:) with 3 test cases passed after 0.001 seconds.
+✔ Test cancellationBeforeLoadDoesNotAccessModel() passed after 0.002 seconds.
+✔ Test promptPreservesFictionalUnicodeAndContainsNoAnswerKey() passed after 0.002 seconds.
+✔ Test missingAssetsStayUnavailableAndDoNotDownload() passed after 0.002 seconds.
+✔ Test changedAssetBytesAreRejectedBeforeSDKModelLoad() passed after 0.005 seconds.
+✔ Test realLocalModelGeneratesBoundedText() passed after 1.306 seconds.
+✔ Test run with 7 tests in 0 suites passed after 1.306 seconds.

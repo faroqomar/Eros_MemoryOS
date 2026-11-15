@@ -1,0 +1,145 @@
+{
+  "review": "Inspection only; no paths removed by this verifier. Main owns preservation, activity checks and deletion.",
+  "externalCandidates": [
+    {
+      "candidate": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-derived-common",
+      "logicalRegularFileBytes": 2721808801,
+      "regularFiles": 10838,
+      "gitMetadataPaths": [],
+      "symlinks": [],
+      "preserveBeforeRemoval": [
+        {
+          "path": "SourcePackages/workspace-state.json",
+          "bytes": 6668,
+          "sha256": "d25dfec9e704d5565b49ce4e6cdfe80da9e5c46cae7c90bb11fe5025771e2af9"
+        },
+        {
+          "path": "Logs/Build/LogStoreManifest.plist",
+          "bytes": 3340,
+          "sha256": "2e443a7cb6e74bfa0dff0ce1b1783e7418b08960cbf8952fc35f5e0b1af775c2"
+        },
+        {
+          "path": "Logs/Build/73D9C903-B0F4-480B-ACF0-7DB6600A3146.xcactivitylog",
+          "bytes": 1214532,
+          "sha256": "34d560b05185f6778bd48a6d62ffe5a22d10bd5ebfc241766e1923464555074f"
+        },
+        {
+          "path": "Logs/Build/3C834A00-32A1-45FC-9986-048C68F3D3D8.xcactivitylog",
+          "bytes": 630491,
+          "sha256": "5d2e3e630e67137e9c5dbeab649c8280a4908e9f488519b01373673cfb5d77e1"
+        },
+        {
+          "path": "Logs/Package/LogStoreManifest.plist",
+          "bytes": 2532,
+          "sha256": "775d4d8b566b346a830950c131f724f701cfb7c19cc6b2f300b18a8d19baf15e"
+        },
+        {
+          "path": "Logs/Package/A012FE1B-8071-4A72-AD56-B328500B6C51.xcactivitylog",
+          "bytes": 1548,
+          "sha256": "e5454e0e4f6ee4fde617fbfb92d4b9a376db872d763604f0281b440342a43bb5"
+        },
+        {
+          "path": "Logs/Package/26DB4776-3ABD-459A-B148-A4DC68CA9365.xcactivitylog",
+          "bytes": 1544,
+          "sha256": "06160c5f357a97c26b2ac65ea5b63d55b7c6bd529270cfce0ac6f35102e2c76a"
+        }
+      ],
+      "recommendation": "Remove generated caches after preserving listed logs/configuration into evidence, checking no active consumer, and preserving canonical checkouts/locks/model assets elsewhere."
+    },
+    {
+      "candidate": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification",
+      "logicalRegularFileBytes": 878396669,
+      "regularFiles": 4579,
+      "gitMetadataPaths": [],
+      "symlinks": [
+        {
+          "path": ".build/release",
+          "target": "out/Products/Release"
+        },
+        {
+          "path": "SDK/GRDB.swift",
+          "target": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/GRDB.swift"
+        },
+        {
+          "path": "SDK/Wax",
+          "target": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-patched/Wax"
+        },
+        {
+          "path": "SDK/MetalANNS",
+          "target": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS"
+        },
+        {
+          "path": "SDK/swift-crypto",
+          "target": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto"
+        },
+        {
+          "path": "SDK/swift-asn1",
+          "target": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1"
+        }
+      ],
+      "preserveBeforeRemoval": [
+        {
+          "path": "Package.swift",
+          "bytes": 1290,
+          "sha256": "29306cc4fa323d2e52e0ed13cb7de7daa467eceb79c2e272526d349dc9492603"
+        },
+        {
+          "path": "Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift",
+          "bytes": 5224,
+          "sha256": "335751f0d5049f5bfe8782072e0f8f716c2e23027746750a91c4064e9570285d"
+        },
+        {
+          "path": "Sources/WaxEvaluationCLI/Main.swift",
+          "bytes": 4878,
+          "sha256": "dbbd5855ab331f99daf4c3a90802a20c33c64a28aea780b8aee0db53dfde617f"
+        },
+        {
+          "path": "Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift",
+          "bytes": 5506,
+          "sha256": "9c005037cf2a52471889b7954c935145e067d265fe0e4e7ae2df65a29db52c0a"
+        }
+      ],
+      "recommendation": "Remove generated caches after preserving listed logs/configuration into evidence, checking no active consumer, and preserving canonical checkouts/locks/model assets elsewhere."
+    }
+  ],
+  "projectCandidates": [
+    {
+      "candidate": "native/LocalMLXEvaluation/.build-manifest",
+      "regularFiles": 2,
+      "logicalBytes": 219,
+      "contents": [
+        "CACHEDIR.TAG",
+        ".buildSystem_debug"
+      ],
+      "recommendation": "Generated empty build markers or Python bytecode; no unique source/model/evidence found. Remove after no-active-process check."
+    },
+    {
+      "candidate": "native/LocalMLXEvaluation/.build-canonical",
+      "regularFiles": 3,
+      "logicalBytes": 223,
+      "contents": [
+        ".lock",
+        "CACHEDIR.TAG",
+        ".buildSystem_debug"
+      ],
+      "recommendation": "Generated empty build markers or Python bytecode; no unique source/model/evidence found. Remove after no-active-process check."
+    },
+    {
+      "candidate": "native/LocalMLXEvaluation/Tools/__pycache__",
+      "regularFiles": 9,
+      "logicalBytes": 38873,
+      "contents": [
+        "run-offline-host-smoke.cpython-39.pyc",
+        "recover-complete-git-cache.cpython-39.pyc",
+        "recover-canonical-graph.cpython-39.pyc",
+        "install-host-metal-resource.cpython-39.pyc",
+        "prepare-local-graph.cpython-39.pyc",
+        "gitcpython-39.pyc",
+        "hydrate-reviewed-snapshot.cpython-39.pyc",
+        "make-local-check-package.cpython-39.pyc",
+        "download-model.cpython-39.pyc"
+      ],
+      "recommendation": "Generated empty build markers or Python bytecode; no unique source/model/evidence found. Remove after no-active-process check."
+    }
+  ]
+}

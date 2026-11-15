@@ -1,0 +1,1732 @@
+{
+  "sha": "ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29",
+  "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2cc69bdc7daf2283a3f074a41291eda2b0b584d",
+      "size": 168,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/f2cc69bdc7daf2283a3f074a41291eda2b0b584d"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee993102be8ed93da57e1bf67e1af3b59ee65c0a",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/ee993102be8ed93da57e1bf67e1af3b59ee65c0a"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "081e6fd8989fb86a252fb04f6f11000bebe3ea46",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/081e6fd8989fb86a252fb04f6f11000bebe3ea46"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "801003974a4848136eee72ebb71edf3125ee6866",
+      "size": 569,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/801003974a4848136eee72ebb71edf3125ee6866"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95cefb4afe5c766f476ff9616cabe5b3d699f180",
+      "size": 256,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/95cefb4afe5c766f476ff9616cabe5b3d699f180"
+    },
+    {
+      "path": ".spi.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d96e1a071fc396e99043c856aa7d9aa481459e75",
+      "size": 94,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d96e1a071fc396e99043c856aa7d9aa481459e75"
+    },
+    {
+      "path": ".swift-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38eed15ae827b7fbb2bde22d4efee56474992403",
+      "size": 263,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/38eed15ae827b7fbb2bde22d4efee56474992403"
+    },
+    {
+      "path": "AGENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f97479d8cbe05077920af94e9b72c0beaec2428",
+      "size": 855,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/3f97479d8cbe05077920af94e9b72c0beaec2428"
+    },
+    {
+      "path": "BENCHMARKS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a59b65d768080ef4831bce9ecd89e0a9e81b93fd",
+      "size": 37906,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a59b65d768080ef4831bce9ecd89e0a9e81b93fd"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cfbc80e8365ccb0352beca6932996e11098d501",
+      "size": 14056,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/5cfbc80e8365ccb0352beca6932996e11098d501"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a93406bafb11830f6b431d213a0f0f5559a5ee5e",
+      "size": 1069,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a93406bafb11830f6b431d213a0f0f5559a5ee5e"
+    },
+    {
+      "path": "Package.resolved",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1c03b9b342ea240875df867801f97bac2f12e1d",
+      "size": 388,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/c1c03b9b342ea240875df867801f97bac2f12e1d"
+    },
+    {
+      "path": "Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5bd3f0c27a328cf68404336c2ea48e1bc5c0cef",
+      "size": 1468,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d5bd3f0c27a328cf68404336c2ea48e1bc5c0cef"
+    },
+    {
+      "path": "PrivacyInfo.xcprivacy",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9f04276c48d127f2e124f6e16258ecc46fce799",
+      "size": 977,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d9f04276c48d127f2e124f6e16258ecc46fce799"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2ba2e7ea806d319440e5943f4d19e7a53a383c9",
+      "size": 4965,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e2ba2e7ea806d319440e5943f4d19e7a53a383c9"
+    },
+    {
+      "path": "Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7631e70b7ddb03fb6e0053c08528ec5290f18bb1",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/7631e70b7ddb03fb6e0053c08528ec5290f18bb1"
+    },
+    {
+      "path": "Sources/MetalANNS",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6026cf78a40ee02de6e3489e10b8719c924413a5",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/6026cf78a40ee02de6e3489e10b8719c924413a5"
+    },
+    {
+      "path": "Sources/MetalANNS/ANNSIndex+Build.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46d323cac66a2197c54829872b742d3b74baafc2",
+      "size": 5896,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/46d323cac66a2197c54829872b742d3b74baafc2"
+    },
+    {
+      "path": "Sources/MetalANNS/ANNSIndex+Insert.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22d17443aae2e7984f52d51eb44fc602255673bf",
+      "size": 16142,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/22d17443aae2e7984f52d51eb44fc602255673bf"
+    },
+    {
+      "path": "Sources/MetalANNS/ANNSIndex+Internal.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee927bee19ea6bfa6b998da47daf54adfd89daa3",
+      "size": 9142,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ee927bee19ea6bfa6b998da47daf54adfd89daa3"
+    },
+    {
+      "path": "Sources/MetalANNS/ANNSIndex+Persistence.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5b46ddc9e9489b934e2db9b251150bcea6758f8",
+      "size": 8895,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a5b46ddc9e9489b934e2db9b251150bcea6758f8"
+    },
+    {
+      "path": "Sources/MetalANNS/ANNSIndex+Search.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac4f3535f6c9adcd29a32d02267e7757558a82aa",
+      "size": 9415,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ac4f3535f6c9adcd29a32d02267e7757558a82aa"
+    },
+    {
+      "path": "Sources/MetalANNS/ANNSIndex.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84d73725ff8f6715421f52a53ddc3e1a7b6bcba6",
+      "size": 2044,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/84d73725ff8f6715421f52a53ddc3e1a7b6bcba6"
+    },
+    {
+      "path": "Sources/MetalANNS/Advanced.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0876ad7e31f9076624d66c641ca214bd81415b9f",
+      "size": 474,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/0876ad7e31f9076624d66c641ca214bd81415b9f"
+    },
+    {
+      "path": "Sources/MetalANNS/BatchExecution.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edecee74de9345312f9f946aae1d684bd4f76c26",
+      "size": 2830,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/edecee74de9345312f9f946aae1d684bd4f76c26"
+    },
+    {
+      "path": "Sources/MetalANNS/IVFPQConfiguration.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9292c4d4508b7d71f3689fdab982920b6bdf7aef",
+      "size": 784,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/9292c4d4508b7d71f3689fdab982920b6bdf7aef"
+    },
+    {
+      "path": "Sources/MetalANNS/IVFPQIndex.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2731e9de313880fbd1d691bceedaabfbbbde2d5",
+      "size": 22246,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a2731e9de313880fbd1d691bceedaabfbbbde2d5"
+    },
+    {
+      "path": "Sources/MetalANNS/IndexConfiguration.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b7e82fa0dfdb7724086dcfe553a1a2f402c9466",
+      "size": 5996,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/3b7e82fa0dfdb7724086dcfe553a1a2f402c9466"
+    },
+    {
+      "path": "Sources/MetalANNS/IndexMetrics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cfff909f4ca1c0394c0e662d28350f8ada6e19a",
+      "size": 2765,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/6cfff909f4ca1c0394c0e662d28350f8ada6e19a"
+    },
+    {
+      "path": "Sources/MetalANNS/MetalANNS.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "994ecabf715e80a3f94299173cf7d3fcbc837db2",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/994ecabf715e80a3f94299173cf7d3fcbc837db2"
+    },
+    {
+      "path": "Sources/MetalANNS/MetalANNS.docc/GettingStarted.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41e725b069b4b97b172a64156ef1e75e56869ceb",
+      "size": 3073,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/41e725b069b4b97b172a64156ef1e75e56869ceb"
+    },
+    {
+      "path": "Sources/MetalANNS/MetalANNS.docc/IndexConfiguration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0c5161258f50480940a9f6684a1520f872186df",
+      "size": 1387,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d0c5161258f50480940a9f6684a1520f872186df"
+    },
+    {
+      "path": "Sources/MetalANNS/MetalANNS.docc/MetalANNS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e82587bf6bc351687385967f9ac907b1a195ede9",
+      "size": 1540,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e82587bf6bc351687385967f9ac907b1a195ede9"
+    },
+    {
+      "path": "Sources/MetalANNS/MetalANNS.docc/VectorIndex.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ca09e4c396aaf31a759aa7417f057523bb8916d",
+      "size": 1078,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4ca09e4c396aaf31a759aa7417f057523bb8916d"
+    },
+    {
+      "path": "Sources/MetalANNS/MetricsSnapshot.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3296322e04e6e91325ba65cfab6529b325c897fd",
+      "size": 860,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/3296322e04e6e91325ba65cfab6529b325c897fd"
+    },
+    {
+      "path": "Sources/MetalANNS/Reexports.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd5c18cf32bafae05efba9c2ea6183c5a1a5e557",
+      "size": 297,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/cd5c18cf32bafae05efba9c2ea6183c5a1a5e557"
+    },
+    {
+      "path": "Sources/MetalANNS/SearchExecution.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c8dda109ca5dab59f69f22e6ad0594f35675948",
+      "size": 11410,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/9c8dda109ca5dab59f69f22e6ad0594f35675948"
+    },
+    {
+      "path": "Sources/MetalANNS/ShardedIndex.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23fed87e8556baa05b13591f67ee85e89d74a607",
+      "size": 10318,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/23fed87e8556baa05b13591f67ee85e89d74a607"
+    },
+    {
+      "path": "Sources/MetalANNS/Storage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a4c435e5c71d3dc0e00738730c89d8409667d78",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/3a4c435e5c71d3dc0e00738730c89d8409667d78"
+    },
+    {
+      "path": "Sources/MetalANNS/Storage/IDMapPersistenceCompat.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "387084706d2780544edabb2834af766f1f60d3e2",
+      "size": 2111,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/387084706d2780544edabb2834af766f1f60d3e2"
+    },
+    {
+      "path": "Sources/MetalANNS/Storage/IndexDatabase.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b44bf588c64f123cb1cbd0098d4ba586672df0ac",
+      "size": 9520,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b44bf588c64f123cb1cbd0098d4ba586672df0ac"
+    },
+    {
+      "path": "Sources/MetalANNS/Storage/SQLiteStructuredStore.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a806768147a8029d18fe831f5ec82d40c408e8b",
+      "size": 4882,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/9a806768147a8029d18fe831f5ec82d40c408e8b"
+    },
+    {
+      "path": "Sources/MetalANNS/Storage/StreamingDatabase.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e9896e0758ee9937d1eacd774181788d736ca58",
+      "size": 8204,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/1e9896e0758ee9937d1eacd774181788d736ca58"
+    },
+    {
+      "path": "Sources/MetalANNS/StreamingConfiguration.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6221b44a969aace9ecd13569c5598cad8a04ac9",
+      "size": 3118,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d6221b44a969aace9ecd13569c5598cad8a04ac9"
+    },
+    {
+      "path": "Sources/MetalANNS/StreamingIndex.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4543a996443d5c4984f84e2775e6c3de874e8c37",
+      "size": 39558,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4543a996443d5c4984f84e2775e6c3de874e8c37"
+    },
+    {
+      "path": "Sources/MetalANNS/VectorIndex.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c530f397f7b4898bca4d5e45f5514988f14d9c0d",
+      "size": 12047,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/c530f397f7b4898bca4d5e45f5514988f14d9c0d"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "00376973ea652f76e1a4f8d7c7bdd886d2c39247",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/00376973ea652f76e1a4f8d7c7bdd886d2c39247"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/BenchmarkDataset.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d3f0448269a45e854397747bb96f8be278caa56",
+      "size": 12701,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/1d3f0448269a45e854397747bb96f8be278caa56"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/BenchmarkIDParser.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3cc0883e6b37a9c23d637646cc1e5645e8e673d",
+      "size": 857,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d3cc0883e6b37a9c23d637646cc1e5645e8e673d"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/BenchmarkReport.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "febfe1724c1f30276c115a08c1946518c5bea486",
+      "size": 12802,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/febfe1724c1f30276c115a08c1946518c5bea486"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/BenchmarkRunner.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26299ea628f6fb804c077d653e6390d34fe6c3a3",
+      "size": 32976,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/26299ea628f6fb804c077d653e6390d34fe6c3a3"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/EnvironmentProbe.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff8826fec9737c1dd5af609ad24b7432f086447c",
+      "size": 7289,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ff8826fec9737c1dd5af609ad24b7432f086447c"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/FlatSearchProbe.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9754029a5cdae6d116330c4781297a509412b72e",
+      "size": 4724,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/9754029a5cdae6d116330c4781297a509412b72e"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/HotPathProfiler.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bda9cff23fa9528ab23a913047412bad63a27be8",
+      "size": 12334,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/bda9cff23fa9528ab23a913047412bad63a27be8"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/IVFPQBenchmark.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "933e057f8ca3c578bda79a40a3d4af26f1b4ddf9",
+      "size": 10239,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/933e057f8ca3c578bda79a40a3d4af26f1b4ddf9"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/LatencyDistribution.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6720381328babc0dfd22dfeb22714ee357ecb557",
+      "size": 8467,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/6720381328babc0dfd22dfeb22714ee357ecb557"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/MemoryProbe.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4df33c1b1859a665d5d8fb120981067bde7ad82",
+      "size": 2238,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d4df33c1b1859a665d5d8fb120981067bde7ad82"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/OpsBenchmark.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e29ae58e6bebdb4da0b54e9a2fc2ddca98de60ba",
+      "size": 9950,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e29ae58e6bebdb4da0b54e9a2fc2ddca98de60ba"
+    },
+    {
+      "path": "Sources/MetalANNSBenchmarks/main.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4300cc0c647616ba67afb1e3f7b5cf3f3d14c605",
+      "size": 45310,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4300cc0c647616ba67afb1e3f7b5cf3f3d14c605"
+    },
+    {
+      "path": "Sources/MetalANNSC",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "38600aa346252d15b473388bcdf18343224617c9",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/38600aa346252d15b473388bcdf18343224617c9"
+    },
+    {
+      "path": "Sources/MetalANNSC/dots.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "668913d3f1485060c06c7d2c52684c6cbcbd1648",
+      "size": 5017,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/668913d3f1485060c06c7d2c52684c6cbcbd1648"
+    },
+    {
+      "path": "Sources/MetalANNSC/include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "978385e75bc1e8b3b5d81d039bc89a23f88841aa",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/978385e75bc1e8b3b5d81d039bc89a23f88841aa"
+    },
+    {
+      "path": "Sources/MetalANNSC/include/MetalANNSC.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31517a4cceae0f5c54609f12bf853b32015167ad",
+      "size": 1612,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/31517a4cceae0f5c54609f12bf853b32015167ad"
+    },
+    {
+      "path": "Sources/MetalANNSCore",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1fb29d06d7c6552674170d13d49d1644e785cc8e",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/1fb29d06d7c6552674170d13d49d1644e785cc8e"
+    },
+    {
+      "path": "Sources/MetalANNSCore/AccelerateBackend.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fe24a0bf8e9ac72ee2c763a236d1d4ffda1ee60",
+      "size": 5159,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4fe24a0bf8e9ac72ee2c763a236d1d4ffda1ee60"
+    },
+    {
+      "path": "Sources/MetalANNSCore/BatchIncrementalBuilder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7d89838b98bc7a3a5da9a8ccc63e4e0557c0a5f",
+      "size": 2214,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e7d89838b98bc7a3a5da9a8ccc63e4e0557c0a5f"
+    },
+    {
+      "path": "Sources/MetalANNSCore/BeamSearchCPU.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4580c7b4a3dc0713f7047d99fe62d00711883b21",
+      "size": 4824,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4580c7b4a3dc0713f7047d99fe62d00711883b21"
+    },
+    {
+      "path": "Sources/MetalANNSCore/BinaryVectorBuffer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b04761d99316742626745a74139368ffaf2e5df",
+      "size": 3661,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4b04761d99316742626745a74139368ffaf2e5df"
+    },
+    {
+      "path": "Sources/MetalANNSCore/BoundedExactScan.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da43e57b3b2ed8bafd35dc9a6d74312150e8db71",
+      "size": 16668,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/da43e57b3b2ed8bafd35dc9a6d74312150e8db71"
+    },
+    {
+      "path": "Sources/MetalANNSCore/BoundedSelection.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8eeaefda3e62ab08d6378cc15eeddee1b34a671",
+      "size": 6797,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a8eeaefda3e62ab08d6378cc15eeddee1b34a671"
+    },
+    {
+      "path": "Sources/MetalANNSCore/CommandQueuePool.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b6f7f7851bd629a77166aba032d7cdfd99a9ccf",
+      "size": 983,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4b6f7f7851bd629a77166aba032d7cdfd99a9ccf"
+    },
+    {
+      "path": "Sources/MetalANNSCore/ComputeBackend.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6604fc29650754d9434e9ce2c2f0dfc55581cf6",
+      "size": 617,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e6604fc29650754d9434e9ce2c2f0dfc55581cf6"
+    },
+    {
+      "path": "Sources/MetalANNSCore/DiskBackedVectorBuffer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46e387e8c0ed8803ae0a2c7e461654495a551ce1",
+      "size": 15429,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/46e387e8c0ed8803ae0a2c7e461654495a551ce1"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Errors.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b3abeb0fc1759b9e58e052545ad84d98a003077",
+      "size": 963,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4b3abeb0fc1759b9e58e052545ad84d98a003077"
+    },
+    {
+      "path": "Sources/MetalANNSCore/FlatGPUSearch.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34c0aa2e02d7d11b47bdba0101a3aadae5c0c4e8",
+      "size": 42539,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/34c0aa2e02d7d11b47bdba0101a3aadae5c0c4e8"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Float16VectorBuffer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07b2f712bea87561515f0a8b0c25bd12e45d281f",
+      "size": 2806,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/07b2f712bea87561515f0a8b0c25bd12e45d281f"
+    },
+    {
+      "path": "Sources/MetalANNSCore/FullGPUSearch.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30d133110bb3b7506e2b7cf272dd18c6dd3101ef",
+      "size": 2142,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/30d133110bb3b7506e2b7cf272dd18c6dd3101ef"
+    },
+    {
+      "path": "Sources/MetalANNSCore/GPUADCSearch.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df2ae2b628488280aeeb82f0dd0c72dd718ebcd4",
+      "size": 13273,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/df2ae2b628488280aeeb82f0dd0c72dd718ebcd4"
+    },
+    {
+      "path": "Sources/MetalANNSCore/GraphBuffer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "143d9d7a86491fa4638b2516aac0f56c39953f66",
+      "size": 5142,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/143d9d7a86491fa4638b2516aac0f56c39953f66"
+    },
+    {
+      "path": "Sources/MetalANNSCore/GraphPruner.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a34b624e9234a5aba32653f949743729f231006e",
+      "size": 6488,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a34b624e9234a5aba32653f949743729f231006e"
+    },
+    {
+      "path": "Sources/MetalANNSCore/GraphRepairer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab23b2aa2f5bba99c733a687e87cdfce93e489e7",
+      "size": 11665,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ab23b2aa2f5bba99c733a687e87cdfce93e489e7"
+    },
+    {
+      "path": "Sources/MetalANNSCore/HNSWBuilder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0aa425488897365c04817ebab79096e266528b4c",
+      "size": 8322,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/0aa425488897365c04817ebab79096e266528b4c"
+    },
+    {
+      "path": "Sources/MetalANNSCore/HNSWConfiguration.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ece29f46d24bcb538b70d419448257835a89df2",
+      "size": 668,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/3ece29f46d24bcb538b70d419448257835a89df2"
+    },
+    {
+      "path": "Sources/MetalANNSCore/HNSWLayers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49176a7da035804825c80ca46a083bfdff367a50",
+      "size": 1840,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/49176a7da035804825c80ca46a083bfdff367a50"
+    },
+    {
+      "path": "Sources/MetalANNSCore/HNSWSearchCPU.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b61537130ab4f7ea9e788773563ad0b86102c419",
+      "size": 5274,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b61537130ab4f7ea9e788773563ad0b86102c419"
+    },
+    {
+      "path": "Sources/MetalANNSCore/IDMap.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1f942bfcd8deb7ec81efeac7518e1a453e89090",
+      "size": 4941,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b1f942bfcd8deb7ec81efeac7518e1a453e89090"
+    },
+    {
+      "path": "Sources/MetalANNSCore/IVFFlatSearch.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31dba350b9b66d47fa05e5ad0dc052a9952de699",
+      "size": 25015,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/31dba350b9b66d47fa05e5ad0dc052a9952de699"
+    },
+    {
+      "path": "Sources/MetalANNSCore/IncrementalBuilder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "238cabf85286e5576ea30cbf5d8a5cce1026e1c7",
+      "size": 8072,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/238cabf85286e5576ea30cbf5d8a5cce1026e1c7"
+    },
+    {
+      "path": "Sources/MetalANNSCore/IndexCompactor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0e01f353a9387d2887f01f8d16c6c209935c5a50",
+      "size": 8519,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/0e01f353a9387d2887f01f8d16c6c209935c5a50"
+    },
+    {
+      "path": "Sources/MetalANNSCore/IndexSerializer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df45bd7b6469698bf32b76c295af3dedf44c6816",
+      "size": 16825,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/df45bd7b6469698bf32b76c295af3dedf44c6816"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Int8CodeCache.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ecbedd81c127aa72714055c3cb6307e7197985e",
+      "size": 6787,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/5ecbedd81c127aa72714055c3cb6307e7197985e"
+    },
+    {
+      "path": "Sources/MetalANNSCore/KMeans.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "548479da2f9d69f9b2e4f126a75ffed79d6d99a7",
+      "size": 14062,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/548479da2f9d69f9b2e4f126a75ffed79d6d99a7"
+    },
+    {
+      "path": "Sources/MetalANNSCore/MetadataBuffer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8050bfbf1dbaf9d4f418e03de7e12f0f32f3429",
+      "size": 1598,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a8050bfbf1dbaf9d4f418e03de7e12f0f32f3429"
+    },
+    {
+      "path": "Sources/MetalANNSCore/MetadataStore.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9db43c3b9208a88c9b49cb8018b9d8c3581b781",
+      "size": 4108,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a9db43c3b9208a88c9b49cb8018b9d8c3581b781"
+    },
+    {
+      "path": "Sources/MetalANNSCore/MetalBackend.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0125c18bb45ce3755c4db5cafb0f3409bc12fbd4",
+      "size": 3652,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/0125c18bb45ce3755c4db5cafb0f3409bc12fbd4"
+    },
+    {
+      "path": "Sources/MetalANNSCore/MetalDevice.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab65a49f13bb8e55f277fea811766bfbd997e486",
+      "size": 4380,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ab65a49f13bb8e55f277fea811766bfbd997e486"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Metric.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45c39d414ec0e485834ecfb132dad13b04263574",
+      "size": 117,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/45c39d414ec0e485834ecfb132dad13b04263574"
+    },
+    {
+      "path": "Sources/MetalANNSCore/MmapIndexLoader.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27d590bc334603c2718905cbf27753744e930d9c",
+      "size": 14543,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/27d590bc334603c2718905cbf27753744e930d9c"
+    },
+    {
+      "path": "Sources/MetalANNSCore/NNDescentCPU.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d111a6eb360c70a4d466e062705fd6d6e1fa1938",
+      "size": 6306,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d111a6eb360c70a4d466e062705fd6d6e1fa1938"
+    },
+    {
+      "path": "Sources/MetalANNSCore/NNDescentGPU.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "653d647db61bb3a15165b2e2a294aaff149c7f09",
+      "size": 13265,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/653d647db61bb3a15165b2e2a294aaff149c7f09"
+    },
+    {
+      "path": "Sources/MetalANNSCore/PQVectorBuffer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b066a7b021c78d6fe0a63813dbe8e0347b69d172",
+      "size": 4407,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b066a7b021c78d6fe0a63813dbe8e0347b69d172"
+    },
+    {
+      "path": "Sources/MetalANNSCore/ParallelFlatScan.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d78adfb0201bd3c1ee7a36ca62c9329b37687fe",
+      "size": 11642,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4d78adfb0201bd3c1ee7a36ca62c9329b37687fe"
+    },
+    {
+      "path": "Sources/MetalANNSCore/PipelineCache.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a973d6d98234d5eb5679683bf565c1ddc23b4e0",
+      "size": 964,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/7a973d6d98234d5eb5679683bf565c1ddc23b4e0"
+    },
+    {
+      "path": "Sources/MetalANNSCore/ProductQuantizer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b56a9d821efb5a8c11b2db749d845f92de860ad3",
+      "size": 11082,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b56a9d821efb5a8c11b2db749d845f92de860ad3"
+    },
+    {
+      "path": "Sources/MetalANNSCore/QuantizedStorage.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ddc584488b3ef12f8986a2ddf2b11696eb2c663",
+      "size": 473,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/8ddc584488b3ef12f8986a2ddf2b11696eb2c663"
+    },
+    {
+      "path": "Sources/MetalANNSCore/RepairConfiguration.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52b9e44cae02e986d727a8c8ff8e4e2ab6ef445",
+      "size": 1089,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e52b9e44cae02e986d727a8c8ff8e4e2ab6ef445"
+    },
+    {
+      "path": "Sources/MetalANNSCore/SIMDDistance.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e47cce283386f6751c9a9ddbc32728328c14b4f1",
+      "size": 4721,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e47cce283386f6751c9a9ddbc32728328c14b4f1"
+    },
+    {
+      "path": "Sources/MetalANNSCore/SearchBufferPool.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebd0c3e4fc51d7f35a87e72b6f45b50f9245ba6d",
+      "size": 5517,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ebd0c3e4fc51d7f35a87e72b6f45b50f9245ba6d"
+    },
+    {
+      "path": "Sources/MetalANNSCore/SearchFilter.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6f6150d587c80ad1a076f4a5363ac089fbefc0b",
+      "size": 481,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/c6f6150d587c80ad1a076f4a5363ac089fbefc0b"
+    },
+    {
+      "path": "Sources/MetalANNSCore/SearchGPU.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c512a888898f77c4b26cfdaaebfd7398278df1c",
+      "size": 11094,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/3c512a888898f77c4b26cfdaaebfd7398278df1c"
+    },
+    {
+      "path": "Sources/MetalANNSCore/SearchResult.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab62a5f8579d77b70e96404200e4f68ddf409c45",
+      "size": 380,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ab62a5f8579d77b70e96404200e4f68ddf409c45"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cbfa87293312833df22ea0b92edc5c632ce6686",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/2cbfa87293312833df22ea0b92edc5c632ce6686"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/Distance.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7c0a2b8ed090b092f50dada8621516d8069492c",
+      "size": 3740,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/f7c0a2b8ed090b092f50dada8621516d8069492c"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/DistanceFloat16.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dba263a528e95faab2785ad35118e00596c19afb",
+      "size": 3836,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/dba263a528e95faab2785ad35118e00596c19afb"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/FlatSearch.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "656dfa7accc1ea6c6cfad9d417cd9320ae440716",
+      "size": 2613,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/656dfa7accc1ea6c6cfad9d417cd9320ae440716"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/HammingDistance.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b3ab2437f6c0e4b4be5463f4e5265fcf20af8ddf",
+      "size": 602,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b3ab2437f6c0e4b4be5463f4e5265fcf20af8ddf"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/NNDescent.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a5ec94618d29ca9105e418bfaba79136b0f9dd7",
+      "size": 11247,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/5a5ec94618d29ca9105e418bfaba79136b0f9dd7"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/NNDescentFloat16.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f10b39c373d01301f72fada039981d1411562dfc",
+      "size": 8519,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/f10b39c373d01301f72fada039981d1411562dfc"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/PQDistance.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d83ca36288fb1996365f8f993a57d6b67eda7e88",
+      "size": 2046,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d83ca36288fb1996365f8f993a57d6b67eda7e88"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/Search.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afb997ecf5f2d0af87a272282addc975871a2244",
+      "size": 8948,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/afb997ecf5f2d0af87a272282addc975871a2244"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/SearchFloat16.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7fa6a6185ff880cd8922083954456d90cd76486",
+      "size": 9102,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e7fa6a6185ff880cd8922083954456d90cd76486"
+    },
+    {
+      "path": "Sources/MetalANNSCore/Shaders/Sort.metal",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ab22a172cf1cdd8cc354fa60558559268514f1c",
+      "size": 1993,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/6ab22a172cf1cdd8cc354fa60558559268514f1c"
+    },
+    {
+      "path": "Sources/MetalANNSCore/SoftDeletion.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "467ffb8680befcb42e7ff7c75d4cf2604260275e",
+      "size": 778,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/467ffb8680befcb42e7ff7c75d4cf2604260275e"
+    },
+    {
+      "path": "Sources/MetalANNSCore/VectorBuffer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "309273b2129acd3587c8210fd745c550246f278f",
+      "size": 4436,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/309273b2129acd3587c8210fd745c550246f278f"
+    },
+    {
+      "path": "Sources/MetalANNSCore/VectorStorage.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be74752850efaaa8df986eed102edac3356486c8",
+      "size": 585,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/be74752850efaaa8df986eed102edac3356486c8"
+    },
+    {
+      "path": "Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b263c3e1fdacd23669c88ea0653a5a5457384e33",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/b263c3e1fdacd23669c88ea0653a5a5457384e33"
+    },
+    {
+      "path": "Tests/MetalANNSTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b63f401f1dc9d67a9442d93198e74080c2c2069",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/8b63f401f1dc9d67a9442d93198e74080c2c2069"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ANNSIndexTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2be315cd84b2cbc6d88071b765021a77ae8fa540",
+      "size": 21256,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/2be315cd84b2cbc6d88071b765021a77ae8fa540"
+    },
+    {
+      "path": "Tests/MetalANNSTests/BackendProtocolTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb976dd718c798004a461e0867d137b2cf27134c",
+      "size": 345,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/fb976dd718c798004a461e0867d137b2cf27134c"
+    },
+    {
+      "path": "Tests/MetalANNSTests/BatchExecutionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfe4e94f52da001828d2f940424c01b27584e5eb",
+      "size": 10750,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/dfe4e94f52da001828d2f940424c01b27584e5eb"
+    },
+    {
+      "path": "Tests/MetalANNSTests/BatchInsertTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9e3323053fb938e499c6c7f04e0a3121ac4b22a",
+      "size": 3103,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e9e3323053fb938e499c6c7f04e0a3121ac4b22a"
+    },
+    {
+      "path": "Tests/MetalANNSTests/BatchSearchAdaptiveConcurrencyTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6378ca69e3735945b1979d8f9778ce8c040afb8a",
+      "size": 2649,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/6378ca69e3735945b1979d8f9778ce8c040afb8a"
+    },
+    {
+      "path": "Tests/MetalANNSTests/BinaryQuantizationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3d7f6a2df71e134bab6e1acbbca32ed08e42e17",
+      "size": 12208,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e3d7f6a2df71e134bab6e1acbbca32ed08e42e17"
+    },
+    {
+      "path": "Tests/MetalANNSTests/BitonicSortTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03c456ce437dfd2b22652f20a13a1a80f701a782",
+      "size": 1381,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/03c456ce437dfd2b22652f20a13a1a80f701a782"
+    },
+    {
+      "path": "Tests/MetalANNSTests/BoundedExactScanTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e0be3f436ceee33a325a654da24ab96006dbf73",
+      "size": 15545,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4e0be3f436ceee33a325a654da24ab96006dbf73"
+    },
+    {
+      "path": "Tests/MetalANNSTests/BoundedSelectionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76167dc83bc9d21c3b8dd22a86bf8235f918212e",
+      "size": 12576,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/76167dc83bc9d21c3b8dd22a86bf8235f918212e"
+    },
+    {
+      "path": "Tests/MetalANNSTests/CommandQueuePoolTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dda56f5456b5ab1dddcbbc8df625f733f19701db",
+      "size": 2574,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/dda56f5456b5ab1dddcbbc8df625f733f19701db"
+    },
+    {
+      "path": "Tests/MetalANNSTests/CompactionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bacda4b7dc6d3abc5471f7db07d9fad845fb1362",
+      "size": 3777,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/bacda4b7dc6d3abc5471f7db07d9fad845fb1362"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ConcurrentSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61ec5ca7549b5c8eaa4fd136a3c133d8508b9192",
+      "size": 2117,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/61ec5ca7549b5c8eaa4fd136a3c133d8508b9192"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ConfigurationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7871490614f06af86e2ba53aaa75dff9786e12f5",
+      "size": 2091,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/7871490614f06af86e2ba53aaa75dff9786e12f5"
+    },
+    {
+      "path": "Tests/MetalANNSTests/DeletionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92edf8c315b1c2b8fd64ae0ed11db002cced70bb",
+      "size": 1993,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/92edf8c315b1c2b8fd64ae0ed11db002cced70bb"
+    },
+    {
+      "path": "Tests/MetalANNSTests/DiskBackedTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "95bf06bf79b8f03f7911fdee5f8e307b4a7f087d",
+      "size": 4864,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/95bf06bf79b8f03f7911fdee5f8e307b4a7f087d"
+    },
+    {
+      "path": "Tests/MetalANNSTests/DistanceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "191ee7b81f55392429b03b4c2c2b370ce351daac",
+      "size": 4903,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/191ee7b81f55392429b03b4c2c2b370ce351daac"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ErrorModelTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63e193f6ccaeb8f9f445252d69441afe2c754e93",
+      "size": 9362,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/63e193f6ccaeb8f9f445252d69441afe2c754e93"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ExactSearchIntegrationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4995d3642b729be3a51cf14c966f159fc13a2754",
+      "size": 15595,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4995d3642b729be3a51cf14c966f159fc13a2754"
+    },
+    {
+      "path": "Tests/MetalANNSTests/FilteredSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b23f6420ea8b26357db09828614eca28288a6f9",
+      "size": 5750,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/1b23f6420ea8b26357db09828614eca28288a6f9"
+    },
+    {
+      "path": "Tests/MetalANNSTests/FlatSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05c9379bbf4bddf740a323007bdb7357ed11a53e",
+      "size": 9788,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/05c9379bbf4bddf740a323007bdb7357ed11a53e"
+    },
+    {
+      "path": "Tests/MetalANNSTests/Float16IntegrationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8691a24d67942168c8331d9b59df1667dd619a7",
+      "size": 2320,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e8691a24d67942168c8331d9b59df1667dd619a7"
+    },
+    {
+      "path": "Tests/MetalANNSTests/Float16Tests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81cd6f527bee4e474f3cea810d0d56252468fdb4",
+      "size": 2801,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/81cd6f527bee4e474f3cea810d0d56252468fdb4"
+    },
+    {
+      "path": "Tests/MetalANNSTests/FullGPUSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1935602281df46daf7711e583c89df4dd0cc3fd0",
+      "size": 8096,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/1935602281df46daf7711e583c89df4dd0cc3fd0"
+    },
+    {
+      "path": "Tests/MetalANNSTests/GPUADCSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cd603c5151720205377cb0e2f52c045a579d45a",
+      "size": 13284,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4cd603c5151720205377cb0e2f52c045a579d45a"
+    },
+    {
+      "path": "Tests/MetalANNSTests/GPUCPUParityTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "477022ae5d0edc75925daa30d5453967d27533d1",
+      "size": 6547,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/477022ae5d0edc75925daa30d5453967d27533d1"
+    },
+    {
+      "path": "Tests/MetalANNSTests/GraphBufferTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9acfebdb962a74cbfeffce0a2b7ff7831ff26aac",
+      "size": 1331,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/9acfebdb962a74cbfeffce0a2b7ff7831ff26aac"
+    },
+    {
+      "path": "Tests/MetalANNSTests/GraphPrunerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57a74976c2887409d6dbd4cdcfcaef6fd696c053",
+      "size": 6303,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/57a74976c2887409d6dbd4cdcfcaef6fd696c053"
+    },
+    {
+      "path": "Tests/MetalANNSTests/GraphRepairTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c5bc964193102423ce4e7b69e2822315df2b23d",
+      "size": 11949,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4c5bc964193102423ce4e7b69e2822315df2b23d"
+    },
+    {
+      "path": "Tests/MetalANNSTests/HNSWTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73996d4ac3dc8c31d79d1d7d4d3edc20470e3fcd",
+      "size": 507,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/73996d4ac3dc8c31d79d1d7d4d3edc20470e3fcd"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IDMapTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa68ff7fa12a921d0bee2e924a56b8997f308d58",
+      "size": 3387,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/aa68ff7fa12a921d0bee2e924a56b8997f308d58"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IVFFlatSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b25d054960ee978c7cab7f48ab116e42b3a3b73",
+      "size": 11294,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/0b25d054960ee978c7cab7f48ab116e42b3a3b73"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IVFPQComprehensiveTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11675c079d6c826bf5e41959b02da4f5cf385013",
+      "size": 6559,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/11675c079d6c826bf5e41959b02da4f5cf385013"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IVFPQGPUTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bdf3d21aeb6c0a48c766bc13fc1d3b6e403f2e8",
+      "size": 2657,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/8bdf3d21aeb6c0a48c766bc13fc1d3b6e403f2e8"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IVFPQIndexTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8f613cee248512a23379e803208c7ea807e70be",
+      "size": 6588,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/c8f613cee248512a23379e803208c7ea807e70be"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IVFPQPersistenceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bd3d8ce31baa650ff9d2c8963b3f0cba605563d",
+      "size": 4469,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/5bd3d8ce31baa650ff9d2c8963b3f0cba605563d"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IncrementalTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0493662db063884b874e2e3ba311ac0534900a6a",
+      "size": 7368,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/0493662db063884b874e2e3ba311ac0534900a6a"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IndexMetricsTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f8c3779a79d0f56a8e9643ecebfe78a52df8cb4",
+      "size": 10869,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/1f8c3779a79d0f56a8e9643ecebfe78a52df8cb4"
+    },
+    {
+      "path": "Tests/MetalANNSTests/IntegrationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c03ca02c03f29812b730c4c23c6c6a2c33c3d2a",
+      "size": 4894,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/0c03ca02c03f29812b730c4c23c6c6a2c33c3d2a"
+    },
+    {
+      "path": "Tests/MetalANNSTests/MetadataTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fa40db8f7161f5a603a46143e5eeb036870edfa",
+      "size": 1429,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/5fa40db8f7161f5a603a46143e5eeb036870edfa"
+    },
+    {
+      "path": "Tests/MetalANNSTests/MetalContextMultiQueueTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f94ce1b763cf52e98519557732c209104fdbedd",
+      "size": 1555,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/5f94ce1b763cf52e98519557732c209104fdbedd"
+    },
+    {
+      "path": "Tests/MetalANNSTests/MetalDeviceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "345149ee82c472fd1bc69fab9f2a7e63a87a71a6",
+      "size": 1086,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/345149ee82c472fd1bc69fab9f2a7e63a87a71a6"
+    },
+    {
+      "path": "Tests/MetalANNSTests/MetalDistanceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d3db876cf85185236b907e762a6de6d546cabe2",
+      "size": 3121,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/4d3db876cf85185236b907e762a6de6d546cabe2"
+    },
+    {
+      "path": "Tests/MetalANNSTests/MetalSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9c1041c17afbe2bfffef6de205722d2952280a1",
+      "size": 5022,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b9c1041c17afbe2bfffef6de205722d2952280a1"
+    },
+    {
+      "path": "Tests/MetalANNSTests/MmapTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc8b4c593c193f96e714ec8cb332a6952066c895",
+      "size": 4118,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/bc8b4c593c193f96e714ec8cb332a6952066c895"
+    },
+    {
+      "path": "Tests/MetalANNSTests/MultiQueuePerformanceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9931227e536c81100f6e6255502c38e6bdc2a67",
+      "size": 7460,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b9931227e536c81100f6e6255502c38e6bdc2a67"
+    },
+    {
+      "path": "Tests/MetalANNSTests/NNDescentCPUTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9162684af92f157999e6d95f350012f8f541470",
+      "size": 3101,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b9162684af92f157999e6d95f350012f8f541470"
+    },
+    {
+      "path": "Tests/MetalANNSTests/NNDescentGPUTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6a067b6d3505d446a5285bc61bc1ededdd7bdc0",
+      "size": 12704,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b6a067b6d3505d446a5285bc61bc1ededdd7bdc0"
+    },
+    {
+      "path": "Tests/MetalANNSTests/PQVectorBufferTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56a08c466b6606365b133a6bb457a9c35ae2b1d6",
+      "size": 4843,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/56a08c466b6606365b133a6bb457a9c35ae2b1d6"
+    },
+    {
+      "path": "Tests/MetalANNSTests/PersistenceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b52167a7269fe34d49c56bae743d06243eca7091",
+      "size": 7112,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b52167a7269fe34d49c56bae743d06243eca7091"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ProductQuantizerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31045aff32f8f772fb4956c388011b39f1f28d47",
+      "size": 6387,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/31045aff32f8f772fb4956c388011b39f1f28d47"
+    },
+    {
+      "path": "Tests/MetalANNSTests/QuantizedStorageTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fec37c4a9c01568e3c4da4e6d657135ce5c0525a",
+      "size": 2394,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/fec37c4a9c01568e3c4da4e6d657135ce5c0525a"
+    },
+    {
+      "path": "Tests/MetalANNSTests/RangeSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb961f40bf6b7a71e955ea184d0c2eee36134fa9",
+      "size": 1761,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/fb961f40bf6b7a71e955ea184d0c2eee36134fa9"
+    },
+    {
+      "path": "Tests/MetalANNSTests/RuntimeMetricTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5817ffae333caad82adb6b8978aa5ea64a79398e",
+      "size": 1957,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/5817ffae333caad82adb6b8978aa5ea64a79398e"
+    },
+    {
+      "path": "Tests/MetalANNSTests/SIMDDistanceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dbfcfba95fa56a9d70bc2fa7cbdae1cbca6909d",
+      "size": 4610,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/6dbfcfba95fa56a9d70bc2fa7cbdae1cbca6909d"
+    },
+    {
+      "path": "Tests/MetalANNSTests/SearchBufferPoolTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f3f80ba4eb420ef2b0168d43cd86d467ddd734d",
+      "size": 7924,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/6f3f80ba4eb420ef2b0168d43cd86d467ddd734d"
+    },
+    {
+      "path": "Tests/MetalANNSTests/SearchExecutionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b636f11f2374034ff25fcdd38616bde54f1dbdf0",
+      "size": 10941,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/b636f11f2374034ff25fcdd38616bde54f1dbdf0"
+    },
+    {
+      "path": "Tests/MetalANNSTests/SearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ddcd4f2cdf2b14fbce44d5f2c0a35e4f0796e5bd",
+      "size": 3334,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ddcd4f2cdf2b14fbce44d5f2c0a35e4f0796e5bd"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ShardedIndexParallelBuildTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d788130276da5f6f4ea36457face3a41aadcefc",
+      "size": 8376,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/8d788130276da5f6f4ea36457face3a41aadcefc"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ShardedIndexParallelSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6eaed0c8ed1fdb5ce39fadfcb12bc403c50be415",
+      "size": 9043,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/6eaed0c8ed1fdb5ce39fadfcb12bc403c50be415"
+    },
+    {
+      "path": "Tests/MetalANNSTests/ShardedIndexTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbb078e946d4801ef5620119c8dc0cb92614dddd",
+      "size": 2094,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/fbb078e946d4801ef5620119c8dc0cb92614dddd"
+    },
+    {
+      "path": "Tests/MetalANNSTests/Storage",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c52afe6083b8248f47a5f5b3c4ac78286ed2db37",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/c52afe6083b8248f47a5f5b3c4ac78286ed2db37"
+    },
+    {
+      "path": "Tests/MetalANNSTests/Storage/IndexDatabaseTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "871ddc51b0dda07b531d1e32caa76436d35bba80",
+      "size": 8021,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/871ddc51b0dda07b531d1e32caa76436d35bba80"
+    },
+    {
+      "path": "Tests/MetalANNSTests/Storage/StreamingDatabaseTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad9f3706d276ccae3d1fc0140f4c8ec379765463",
+      "size": 2789,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ad9f3706d276ccae3d1fc0140f4c8ec379765463"
+    },
+    {
+      "path": "Tests/MetalANNSTests/StreamingConfigurationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74da1fce27b350a64944dd8ef3d0c1c5e07f6514",
+      "size": 2022,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/74da1fce27b350a64944dd8ef3d0c1c5e07f6514"
+    },
+    {
+      "path": "Tests/MetalANNSTests/StreamingIndexFlushTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1657310f3975fd59fc6f4b870e9ad2fcbba32c9",
+      "size": 2787,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d1657310f3975fd59fc6f4b870e9ad2fcbba32c9"
+    },
+    {
+      "path": "Tests/MetalANNSTests/StreamingIndexInsertTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "765c07b2cbf5387f55b7c84d64d38c420ae7c9b4",
+      "size": 2492,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/765c07b2cbf5387f55b7c84d64d38c420ae7c9b4"
+    },
+    {
+      "path": "Tests/MetalANNSTests/StreamingIndexMergeTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd8baf7dcb4bc370d5da9cdae423300b365fded7",
+      "size": 2773,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/fd8baf7dcb4bc370d5da9cdae423300b365fded7"
+    },
+    {
+      "path": "Tests/MetalANNSTests/StreamingIndexMetadataTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8af8235b88c40f59ceafbd6d0442cc8ffb84baf",
+      "size": 2526,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/c8af8235b88c40f59ceafbd6d0442cc8ffb84baf"
+    },
+    {
+      "path": "Tests/MetalANNSTests/StreamingIndexPersistenceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84d8c11bce7158aae2b8e06e11ad71d9306873a5",
+      "size": 6592,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/84d8c11bce7158aae2b8e06e11ad71d9306873a5"
+    },
+    {
+      "path": "Tests/MetalANNSTests/StreamingIndexSearchTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed888d6fcc2087cf9d451ce23dec6f7fa612f2c9",
+      "size": 4747,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/ed888d6fcc2087cf9d451ce23dec6f7fa612f2c9"
+    },
+    {
+      "path": "Tests/MetalANNSTests/TestUtilities.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "985ed6da9696cb384818dba8b4eff9ba3a9b31cb",
+      "size": 1808,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/985ed6da9696cb384818dba8b4eff9ba3a9b31cb"
+    },
+    {
+      "path": "Tests/MetalANNSTests/VectorBufferTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fba83266dca255b47d5cf2b357c3556470deee2b",
+      "size": 1378,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/fba83266dca255b47d5cf2b357c3556470deee2b"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3130570689eb335c7ccfa0746f77dd0b6d137eae",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/3130570689eb335c7ccfa0746f77dd0b6d137eae"
+    },
+    {
+      "path": "docs/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8eb4639c012f4029665923639913067d68f236cc",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/8eb4639c012f4029665923639913067d68f236cc"
+    },
+    {
+      "path": "docs/assets/banner-dark.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e85c76913cfb5602588351bf6006a61dac65e45a",
+      "size": 758,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e85c76913cfb5602588351bf6006a61dac65e45a"
+    },
+    {
+      "path": "docs/assets/banner-light.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d469a2733824f0d05aa0871a555dab08278fc138",
+      "size": 758,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d469a2733824f0d05aa0871a555dab08278fc138"
+    },
+    {
+      "path": "docs/assets/chart-build-time.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d50874f674f6db8e65e36f86eeb61d4e8b26b7a",
+      "size": 2548,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/9d50874f674f6db8e65e36f86eeb61d4e8b26b7a"
+    },
+    {
+      "path": "docs/assets/chart-recall-latency.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c8ebfa7061085ec8be703524ce283d93279ee97",
+      "size": 3071,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/7c8ebfa7061085ec8be703524ce283d93279ee97"
+    },
+    {
+      "path": "docs/benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f75dc8adcaaaf5d2a3e78528dfc7cc420363dbdc",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/f75dc8adcaaaf5d2a3e78528dfc7cc420363dbdc"
+    },
+    {
+      "path": "docs/benchmarks/competitive-latency.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af41a2d73f8dfd0e82c9fda5ba948e72f88af460",
+      "size": 126426,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/af41a2d73f8dfd0e82c9fda5ba948e72f88af460"
+    },
+    {
+      "path": "docs/performance-report.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4686f57c1b5b9784d8df8919b1678d551fa88bd",
+      "size": 34690,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/d4686f57c1b5b9784d8df8919b1678d551fa88bd"
+    },
+    {
+      "path": "docs/production-readiness-audit.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "631e9451ca6db84c89b177ae0f04b5221f15e759",
+      "size": 45863,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/631e9451ca6db84c89b177ae0f04b5221f15e759"
+    },
+    {
+      "path": "locales",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "540c668d5083f609d5123e00ac657a9f98d376e8",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/540c668d5083f609d5123e00ac657a9f98d376e8"
+    },
+    {
+      "path": "locales/README.es.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dff3dad32e2e18fe6861000360cc419487101dbe",
+      "size": 5515,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/dff3dad32e2e18fe6861000360cc419487101dbe"
+    },
+    {
+      "path": "locales/README.ja.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7a90181c6d6d9cc007cfbcd809887c7651db11d",
+      "size": 6281,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/a7a90181c6d6d9cc007cfbcd809887c7651db11d"
+    },
+    {
+      "path": "locales/README.pt-BR.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b7ab3743913002ee9b3f4a9b35b4524fccf6e9c",
+      "size": 5452,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/2b7ab3743913002ee9b3f4a9b35b4524fccf6e9c"
+    },
+    {
+      "path": "locales/README.zh-CN.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96fb16942f6bd739427993665091ac782c9bac84",
+      "size": 5163,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/96fb16942f6bd739427993665091ac782c9bac84"
+    },
+    {
+      "path": "scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2d4b0660a5ebe81d12f54badc0089a32a8bad25",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/d2d4b0660a5ebe81d12f54badc0089a32a8bad25"
+    },
+    {
+      "path": "scripts/competitive-benchmark.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7466d80ea48a19716c3f331f356bf8dd562f885",
+      "size": 10047,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/e7466d80ea48a19716c3f331f356bf8dd562f885"
+    },
+    {
+      "path": "scripts/convert_hdf5.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "851c7784f9776eb58494a7e4de7725b915209680",
+      "size": 4913,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/851c7784f9776eb58494a7e4de7725b915209680"
+    },
+    {
+      "path": "scripts/render-competitive-chart.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c994a5fd44ba0eb2a0d2474c08c32f6ee7a0ce5",
+      "size": 3958,
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/blobs/1c994a5fd44ba0eb2a0d2474c08c32f6ee7a0ce5"
+    }
+  ],
+  "truncated": false
+}

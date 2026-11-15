@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "data": {
+    "ref": "e9",
+    "node": {
+      "index": 8,
+      "parentIndex": 3,
+      "type": "Cell",
+      "role": "SwiftUI.ListCollectionViewHeaderFooter",
+      "subrole": "UICollectionViewListCell",
+      "rect": {
+        "x": 16,
+        "y": 682,
+        "width": 370,
+        "height": 89
+      },
+      "enabled": true,
+      "depth": 2,
+      "pid": 92803,
+      "hittable": true,
+      "label": "Configuration",
+      "ref": "e9",
+      "kind": "cell"
+    }
+  }
+}

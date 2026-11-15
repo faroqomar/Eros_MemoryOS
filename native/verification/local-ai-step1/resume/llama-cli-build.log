@@ -1,0 +1,12 @@
+Building for production...
+[Planning 1 / 96]
+[Planning deferred tasks]
+[1 / 8]
+[2 / 9] AIEvaluationCore
+[4 / 10] AIEvaluationCore
+[10 / 13] LlamaEvaluationAdapter
+[11 / 14] LlamaEvaluationAdapter
+[19 / 22] llama-evaluation-product
+[21 / 22] llama-evaluation-product
+[22 / 22] llama-evaluation-product
+Build complete! (5.62 secs)

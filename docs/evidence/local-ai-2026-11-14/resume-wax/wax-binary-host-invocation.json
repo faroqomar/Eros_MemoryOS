@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-binary-consumer/.build/out/Products/Release/WaxBinaryRunner",
+    "--source-identity",
+    "sha256:4fedc5ca4a6d77204dc68fa13975386948f7bae61684b15b493bf5a67f950455",
+    "--toolchain",
+    "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+    "--sdk-patch-sha256",
+    "d55f4e047011249d9f40c70dcb2f615d6379257315fa1ba467500fc57351a7e4"
+  ],
+  "exit_code": 0,
+  "source_identity": "sha256:4fedc5ca4a6d77204dc68fa13975386948f7bae61684b15b493bf5a67f950455"
+}

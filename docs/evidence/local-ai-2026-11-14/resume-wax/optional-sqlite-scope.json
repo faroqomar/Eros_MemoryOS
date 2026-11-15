@@ -1,0 +1,36 @@
+{
+  "optional_submodule_path": "SQLiteCustom/src",
+  "scope": "Unselected optional custom SQLite engine",
+  "selected_product": "GRDB",
+  "selected_system_target": "GRDBSQLite",
+  "canonical_manifest_unchanged": true,
+  "initial_normal_resolver_exit": 0,
+  "transfer_already_finished_before_stop_audit": true,
+  "no_process_stopped": true,
+  "per_invocation_future_git_config": {
+    "submodule.SQLiteCustom/src.update": "none"
+  },
+  "lockfile_sha256": "8d8d81f5a24c05463d39bb243d156e0dcf2559e9fb061ce62a594f949a442baf",
+  "proof": {
+    "manifest_path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/GRDB.swift/Package.swift",
+    "manifest_sha256": "4118b6c48dcb87f91d95fe40420371b8a474a44b0b0be2bf0417e0be1ebf7853",
+    "GRDB_target_path": "GRDB",
+    "GRDB_dependency_target": "GRDBSQLite",
+    "GRDBSQLite_target_kind": "systemLibrary",
+    "system_modulemap": "module GRDBSQLite [system] {\n    header \"shim.h\"\n    link \"sqlite3\"\n    export *\n}\n",
+    "shim_header": "#include <sqlite3.h>\n\ntypedef void(*_errorLogCallback)(void *pArg, int iErrCode, const char *zMsg);\n\n/// Wrapper around sqlite3_config(SQLITE_CONFIG_LOG, ...) which is a variadic\n/// function that can't be used from Swift.\nstatic inline void _registerErrorLogCallback(_errorLogCallback callback) {\n    sqlite3_config(SQLITE_CONFIG_LOG, callback, 0);\n}\n\n#if SQLITE_VERSION_NUMBER >= 3029000\n/// Wrapper around sqlite3_db_config() which is a variadic function that can't\n/// be used from Swift.\nstatic inline void _disableDoubleQuotedStringLiterals(sqlite3 *db) {\n    sqlite3_db_config(db, SQLITE_DBCONFIG_DQS_DDL, 0, (void *)0);\n    sqlite3_db_config(db, SQLITE_DBCONFIG_DQS_DML, 0, (void *)0);\n}\n\n/// Wrapper around sqlite3_db_config() which is a variadic function that can't\n/// be used from Swift.\nstatic inline void _enableDoubleQuotedStringLiterals(sqlite3 *db) {\n    sqlite3_db_config(db, SQLITE_DBCONFIG_DQS_DDL, 1, (void *)0);\n    sqlite3_db_config(db, SQLITE_DBCONFIG_DQS_DML, 1, (void *)0);\n}\n#else\nstatic inline void _disableDoubleQuotedStringLiterals(sqlite3 *db) { }\nstatic inline void _enableDoubleQuotedStringLiterals(sqlite3 *db) { }\n#endif\n\n// Expose APIs that are missing from system <sqlite3.h>\n#ifdef GRDB_SQLITE_ENABLE_PREUPDATE_HOOK\nSQLITE_API void *sqlite3_preupdate_hook(\n  sqlite3 *db,\n  void(*xPreUpdate)(\n    void *pCtx,                   /* Copy of third arg to preupdate_hook() */\n    sqlite3 *db,                  /* Database handle */\n    int op,                       /* SQLITE_UPDATE, DELETE or INSERT */\n    char const *zDb,              /* Database name */\n    char const *zName,            /* Table name */\n    sqlite3_int64 iKey1,          /* Rowid of row about to be deleted/updated */\n    sqlite3_int64 iKey2           /* New rowid value (for a rowid UPDATE) */\n  ),\n  void*\n);\nSQLITE_API int sqlite3_preupdate_old(sqlite3 *, int, sqlite3_value **);\nSQLITE_API int sqlite3_preupdate_count(sqlite3 *);\nSQLITE_API int sqlite3_preupdate_depth(sqlite3 *);\nSQLITE_API int sqlite3_preupdate_new(sqlite3 *, int, sqlite3_value **);\n#endif /* GRDB_SQLITE_ENABLE_PREUPDATE_HOOK */\n",
+    "SQLiteCustom_path_occurs_in_selected_manifest": false,
+    "selected_archive_targets": [
+      "Crypto",
+      "GRDB",
+      "MetalANNS",
+      "MetalANNSC",
+      "MetalANNSCore",
+      "Wax",
+      "WaxCore",
+      "WaxEvaluationAdapter",
+      "WaxTextSearch",
+      "WaxVectorSearch"
+    ]
+  }
+}

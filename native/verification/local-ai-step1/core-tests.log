@@ -1,0 +1,79 @@
+Building for production...
+[Computing dependencies]
+[2 / 9] AIEvaluationCore
+[3 / 10] AIEvaluationCore
+[12 / 21] AIEvaluationPresentation
+[16 / 24] AIEvaluationPresentation
+[22 / 28] AIEvaluationPresentationTests-product
+[23 / 29] ai-evaluation-product
+[23 / 29] AIEvaluationPresentationTests-product
+[26 / 30] AIEvaluationPresentationTests-product
+[32 / 32] AIEvaluationPresentationTests-product
+[33 / 33] AIEvaluationCoreTests-product
+[38 / 38] AIEvaluationCoreTests-product
+Build complete! (6.53 secs)
+Test Suite 'All tests' started at 2026-11-14 23:35:03.829.
+Test Suite 'All tests' passed at 2026-11-14 23:35:03.844.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.015) seconds
+Test Suite 'All tests' started at 2026-11-14 23:35:04.000.
+Test Suite 'All tests' passed at 2026-11-14 23:35:04.013.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.013) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test unavailableCandidateReportRemainsBlockedWithoutUIFailure() started.
+◇ Test immediateCancelDoesNotPublishAResult() started.
+◇ Test invalidSelectionDoesNotChangeCandidateOrStartUseCase() started.
+◇ Test failedRunClearsOldResultsAndDoesNotExposePrivateDiagnostic() started.
+◇ Test successfulRunPublishesExportAndAllowsRerun() started.
+◇ Test cancellationPreventsLateNoncooperativeResultAndOverlappingRerun() started.
+✔ Test invalidSelectionDoesNotChangeCandidateOrStartUseCase() passed after 0.001 seconds.
+✔ Test immediateCancelDoesNotPublishAResult() passed after 0.004 seconds.
+✔ Test unavailableCandidateReportRemainsBlockedWithoutUIFailure() passed after 0.004 seconds.
+✔ Test failedRunClearsOldResultsAndDoesNotExposePrivateDiagnostic() passed after 0.004 seconds.
+✔ Test cancellationPreventsLateNoncooperativeResultAndOverlappingRerun() passed after 0.004 seconds.
+✔ Test successfulRunPublishesExportAndAllowsRerun() passed after 0.004 seconds.
+✔ Test run with 6 tests in 0 suites passed after 0.004 seconds.
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test unavailableAdaptersProduceBlockedResultsWithoutInventedOutputOrMetrics() started.
+◇ Test unavailableRuntimeStaysBlockedAndUnexpectedErrorsStaySanitized() started.
+◇ Test exportRoundtripKeepsUnicodeIDsAndAbsentTelemetry() started.
+◇ Test runnerRejectsExcessResultsAndNonfiniteScores() started.
+◇ Test runtimeReceivesSameCorpusAndNoAnswerKeyForEachCase() started.
+◇ Test repeatedRunsDoNotAccumulatePriorIndexState() started.
+◇ Test telemetryZeroAndMissingStayDistinct() started.
+◇ Test invalidSuiteFailsBeforeCallingProviders() started.
+◇ Test adapterCancellationPropagates() started.
+◇ Test fictionalCorpusHasRequiredLanguagesAndNoPrivateData() started.
+◇ Test absentRuntimeNeverCountsAsLanguageQualityPass() started.
+◇ Test cancellationDoesNotReturnACompletedReport() started.
+◇ Test lexicalControlRetrievesArabicAndEnglishSourceIDs() started.
+◇ Test rebuildingReplacesCorrectionsAndRemovesDeletedSources() started.
+◇ Test runnerRejectsUnknownAndDuplicateSources(_:) started.
+◇ Test runnerScoresRealRetrievalAndKeepsCanonicalSnapshot() started.
+◇ Test invalidRuntimeMeasurementsFail(_:) started.
+✔ Test unavailableAdaptersProduceBlockedResultsWithoutInventedOutputOrMetrics() passed after 0.001 seconds.
+◇ Test case passing 1 argument sources → [AIEvaluationCore.RetrievedSource(sourceID: "invented", score: nil)] to runnerRejectsUnknownAndDuplicateSources(_:) started.
+◇ Test case passing 1 argument sources → [AIEvaluationCore.RetrievedSource(sourceID: "en-birthday", score: nil), AIEvaluationCore.RetrievedSource(sourceID: "en-birthday", score: nil)] to runnerRejectsUnknownAndDuplicateSources(_:) started.
+◇ Test case passing 1 argument output → TextOutput(text: "x", generatedTokenCount: Optional(-1), firstTokenSeconds: nil) to invalidRuntimeMeasurementsFail(_:) started.
+◇ Test case passing 1 argument output → TextOutput(text: "x", generatedTokenCount: Optional(257), firstTokenSeconds: nil) to invalidRuntimeMeasurementsFail(_:) started.
+◇ Test case passing 1 argument output → TextOutput(text: "x", generatedTokenCount: nil, firstTokenSeconds: Optional(-1.0)) to invalidRuntimeMeasurementsFail(_:) started.
+✔ Test telemetryZeroAndMissingStayDistinct() passed after 0.002 seconds.
+✔ Test fictionalCorpusHasRequiredLanguagesAndNoPrivateData() passed after 0.002 seconds.
+✔ Test unavailableRuntimeStaysBlockedAndUnexpectedErrorsStaySanitized() passed after 0.002 seconds.
+✔ Test runnerRejectsExcessResultsAndNonfiniteScores() passed after 0.002 seconds.
+✔ Test invalidSuiteFailsBeforeCallingProviders() passed after 0.002 seconds.
+✔ Test runtimeReceivesSameCorpusAndNoAnswerKeyForEachCase() passed after 0.002 seconds.
+✔ Test rebuildingReplacesCorrectionsAndRemovesDeletedSources() passed after 0.002 seconds.
+✔ Test adapterCancellationPropagates() passed after 0.002 seconds.
+✔ Test lexicalControlRetrievesArabicAndEnglishSourceIDs() passed after 0.002 seconds.
+✔ Test absentRuntimeNeverCountsAsLanguageQualityPass() passed after 0.002 seconds.
+✔ Test runnerRejectsUnknownAndDuplicateSources(_:) with 2 test cases passed after 0.002 seconds.
+✔ Test runnerScoresRealRetrievalAndKeepsCanonicalSnapshot() passed after 0.002 seconds.
+✔ Test cancellationDoesNotReturnACompletedReport() passed after 0.002 seconds.
+✔ Test repeatedRunsDoNotAccumulatePriorIndexState() passed after 0.002 seconds.
+✔ Test invalidRuntimeMeasurementsFail(_:) with 3 test cases passed after 0.002 seconds.
+✔ Test exportRoundtripKeepsUnicodeIDsAndAbsentTelemetry() passed after 0.004 seconds.
+✔ Test run with 17 tests in 0 suites passed after 0.005 seconds.

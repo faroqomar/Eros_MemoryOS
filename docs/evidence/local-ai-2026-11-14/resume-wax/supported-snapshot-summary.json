@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Wax",
+    "tag": "0.1.47",
+    "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+    "root_tree": "653dd20a0d02944ffdcdb6e35d37a54449a64f2e",
+    "original_url": "https://github.com/christopherkarani/Wax.git",
+    "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/Wax",
+    "complete": true,
+    "files": 306,
+    "bytes": 4789404,
+    "reused": 159
+  },
+  {
+    "name": "MetalANNS",
+    "tag": "0.3.0",
+    "revision": "13960499c40abd3f06443eb80258e08a6b777da4",
+    "root_tree": "ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29",
+    "original_url": "https://github.com/christopherkarani/MetalANNS.git",
+    "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS",
+    "complete": true,
+    "files": 103,
+    "bytes": 765044,
+    "reused": 83
+  }
+]

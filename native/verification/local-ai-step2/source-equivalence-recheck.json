@@ -1,0 +1,20 @@
+{
+  "waxCanonicalSnapshot": {
+    "matchingOrPatchedFilesChecked": 1457,
+    "differences": [
+      "wax:Sources/Wax/MemorySemantics.swift",
+      "wax:Sources/Wax/Broker/AgentBrokerClient.swift"
+    ],
+    "onlyTwoReviewedGuardDifferences": true
+  },
+  "docs/evidence/local-ai-2026-11-14/cactus-resume/last-token-contracts-network-denied.log": {
+    "bytes": 2105,
+    "sha256": "bfa1cf5fd3f64196dd908d4b72aeab02c40f3546ea872e79f4db4584255b8970"
+  },
+  "native/verification/local-ai-step1/resume/mlx-host-canonical-network-denied-receipt.json": {
+    "bytes": 2589,
+    "sha256": "3340ab9cb329dcf46eaf62871a272352fccf84059588bb82790c2135956997f0"
+  },
+  "scope": "No source changes. Two explicit Wax guard differences preserved; source snapshots outside app runtime source.",
+  "errors": []
+}

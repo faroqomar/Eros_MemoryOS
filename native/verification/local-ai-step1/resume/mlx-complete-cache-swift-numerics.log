@@ -1,0 +1,6 @@
+{"event": "archive-response", "status": 200, "retainedBytes": 0, "contentLength": null}
+{"event": "archive-progress", "bytes": 16384}
+{"event": "archive-progress", "bytes": 32768}
+{"event": "archive-progress", "bytes": 49152}
+{"event": "archive-progress", "bytes": 71180}
+{"identity": "swift-numerics", "origin": "https://github.com/apple/swift-numerics", "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2", "rootTreeSHA1": "4560bfb65f2c26cbd159c3e1a9cbf01600bace1b", "genuineShallowBoundary": true, "promisor": false, "sourcePatched": false, "archiveSHA256": "d245f3fb06086ad0ea493b40d0a1058f17529344b5fd52ca4a7f4271240810c8", "archiveBytes": 71180, "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/swift-numerics-d936ec6c", "fsck": "", "canonicalResolutionVerified": false}

@@ -1,0 +1,43 @@
+Building for production...
+[Pre-planning 1 / 184]
+[Planning deferred tasks]
+[2 / 2]
+[7 / 25] CactusEvaluationAdapter
+[10 / 27] CactusEvaluationAdapter
+[17 / 29] cactus-evaluation-product
+[20 / 31] cactus-evaluation-product
+[22 / 31] cactus-evaluation-product
+[22 / 31] CactusEvaluationAdapterTests-product
+[26 / 30] CactusEvaluationAdapterTests-product
+[28 / 30] CactusEvaluationAdapterTests-product
+[31 / 31] cactus-evaluation-product
+Build complete! (5.10 secs)
+Test Suite 'All tests' started at 2026-11-15 03:01:10.055.
+Test Suite 'All tests' passed at 2026-11-15 03:01:10.067.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.012) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() started.
+◇ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() started.
+◇ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() started.
+◇ Test duplicateIDsFailBeforeOpeningModelOrIndex() started.
+◇ Test modifiedManifestCannotAuthorizeDifferentWeights() started.
+◇ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() started.
+◇ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() started.
+◇ Test missingAssetCannotProduceFakeRetrieval() started.
+◇ Test explicitLastTokenEmbeddingIsNormalizedAndDistinctFromMeanPooling() started.
+◇ Test cancelledRebuildCannotPublishResults() started.
+◇ Test nativeIndexRanksDeletesAndPersistsControlledVectors() started.
+✔ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() passed after 0.002 seconds.
+✔ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() passed after 0.002 seconds.
+✔ Test missingAssetCannotProduceFakeRetrieval() passed after 0.002 seconds.
+✔ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() passed after 0.002 seconds.
+✔ Test duplicateIDsFailBeforeOpeningModelOrIndex() passed after 0.002 seconds.
+✔ Test modifiedManifestCannotAuthorizeDifferentWeights() passed after 0.003 seconds.
+✔ Test cancelledRebuildCannotPublishResults() passed after 0.003 seconds.
+✔ Test nativeIndexRanksDeletesAndPersistsControlledVectors() passed after 0.005 seconds.
+✔ Test explicitLastTokenEmbeddingIsNormalizedAndDistinctFromMeanPooling() passed after 0.563 seconds.
+✔ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() passed after 1.189 seconds.
+✔ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() passed after 1.196 seconds.
+✔ Test run with 11 tests in 0 suites passed after 1.196 seconds.

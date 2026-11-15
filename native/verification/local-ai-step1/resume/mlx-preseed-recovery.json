@@ -1,0 +1,38 @@
+{
+  "reason": "Use verified exact-SHA treeless metadata preseed after repeated real remote reset failures. Continue full task; no elapsed-time cutoff.",
+  "ownedProcesses": [
+    {
+      "pid": 67864,
+      "ppid": 72261,
+      "start": "Sun Nov 15 00:17:14 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-package --package-path native/LocalMLXEvaluation --skip-update resolve"
+    },
+    {
+      "pid": 71430,
+      "ppid": 67864,
+      "start": "Sun Nov 15 00:20:40 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/git -c http.version=HTTP/1.1 clone --filter=blob:none --depth=1 --no-single-branch -c core.symlinks=true -c core.fsmonitor=false -c core.longpaths=true --mirror https://github.com/ml-explore/mlx-swift-lm /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/repositories/mlx-swift-lm-c90ccc0b --progress"
+    },
+    {
+      "pid": 71431,
+      "ppid": 71430,
+      "start": "Sun Nov 15 00:20:40 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git remote-https origin https://github.com/ml-explore/mlx-swift-lm"
+    },
+    {
+      "pid": 71432,
+      "ppid": 71431,
+      "start": "Sun Nov 15 00:20:40 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git-remote-https origin https://github.com/ml-explore/mlx-swift-lm"
+    },
+    {
+      "pid": 72706,
+      "ppid": 71430,
+      "start": "Sun Nov 15 00:22:13 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git --shallow-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/repositories/mlx-swift-lm-c90ccc0b/shallow.lock index-pack --stdin -v --fix-thin --keep=fetch-pack 71430 on Eros-MacBook-Pro.local --promisor"
+    }
+  ],
+  "forcedSurvivors": [],
+  "remainingOriginalPIDs": [],
+  "retainedIncompleteCaches": []
+}

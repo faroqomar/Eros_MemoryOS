@@ -1,0 +1,611 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Building for production...
+[Computing dependencies]
+[Pre-planning 1 / 838]
+[Planning deferred tasks]
+[Starting]
+[27 / 533] mlx-evaluation-product
+[167 / 533] swift-crypto_Crypto
+[173 / 533] mlx-swift_Cmlx
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/searchsorted.metal:6:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/searchsorted.metal:6:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/searchsorted.metal:7:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/sort.h:43:8: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    if constexpr (metal::is_floating_point_v<T>) {
+       ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/sort.h:49:15: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+    } else if constexpr (metal::is_same_v<T, complex64_t>) {
+              ^
+9 warnings generated.
+[174 / 533] yyjson
+[175 / 533] mlx-swift_Cmlx
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/scaled_dot_product_attention.metal:4:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/scaled_dot_product_attention.metal:4:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+7 warnings generated.
+[176 / 544]
+[180 / 544]
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/rope.metal:5:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/rope.metal:5:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+7 warnings generated.
+[183 / 544]
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/rms_norm.metal:6:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/rms_norm.metal:6:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+7 warnings generated.
+[185 / 544]
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/random.metal:3:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/random.metal:3:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+7 warnings generated.
+[188 / 544]
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/layer_norm.metal:6:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/layer_norm.metal:6:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+7 warnings generated.
+[190 / 544]
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/dot.metal:3:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/dot.h:5:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/dot.metal:3:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/dot.h:5:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+7 warnings generated.
+[192 / 544] yyjson
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/steel_attention.metal:4:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/steel_attention.metal:4:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/steel_attention.metal:6:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../steel/attn/kernels/steel_attention.h:3:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../steel/attn/attn.h:6:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../steel/attn/../../steel/attn/mma.h:11:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../steel/attn/../../steel/utils/integral_constant.h:105:6: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+  if constexpr (start < stop) {
+     ^
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/steel_attention.metal:6:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../steel/attn/kernels/steel_attention.h:361:16: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+            if constexpr (is_bool) {
+               ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../steel/attn/kernels/steel_attention.h:431:14: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+          if constexpr (BD >= 128) {
+             ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/steel/attn/kernels/../../../steel/attn/kernels/steel_attention.h:441:14: warning: constexpr if is a C++17 extension [-Wc++17-extensions]
+          if constexpr (BD >= 128) {
+             ^
+11 warnings generated.
+[193 / 544] mlx-swift_Cmlx
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/conv.metal:8:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/conv.metal:8:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+7 warnings generated.
+[194 / 544] mlx-swift_Cmlx
+[194 / 544]
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/arg_reduce.metal:5:
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:9:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:157:54: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex32_t) == 2 * sizeof(half));
+                                                     ^
+                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:158:55: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex64_t) == 2 * sizeof(float));
+                                                      ^
+                                                      , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:159:70: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+static_assert(sizeof(complex_t<bfloat16_t>) == 2 * sizeof(bfloat16_t));
+                                                                     ^
+                                                                     , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:299:78: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+    (complex_t<half>{1.0h, 2.0h} * complex_t<half>{3.0h, 4.0h}).real == -5.0h);
+                                                                             ^
+                                                                             , ""
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/complex.h:303:35: warning: 'static_assert' with no message is a C++17 extension [-Wc++17-extensions]
+        .real == bfloat16_t(-5.0f));
+                                  ^
+                                  , ""
+In file included from /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/arg_reduce.metal:5:
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:80:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> max = complex_t<T>(
+  ^
+/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-generated/metal/utils.h:83:3: warning: inline variables are a C++17 extension [-Wc++17-extensions]
+  inline static constexpr constant complex_t<T> min = complex_t<T>(
+  ^
+7 warnings generated.
+[195 / 544]
+[204 / 544] _NumericsShims
+[206 / 545]
+[209 / 549]
+[210 / 549]
+[211 / 549]
+[221 / 554] EventSource
+[222 / 554]
+[224 / 587] InternalCollectionsUtilities
+[224 / 587] yyjson
+[228 / 587]
+[230 / 587]
+[231 / 587] yyjson
+[234 / 587] InternalCollectionsUtilities
+[244 / 587]
+[249 / 590] AIEvaluationCore
+[249 / 591] Crypto
+[252 / 645]
+[255 / 645]
+[257 / 645]
+[258 / 645]
+[261 / 645]
+[263 / 645]
+[265 / 645]
+[266 / 645]
+[268 / 645]
+[269 / 645]
+[272 / 645]
+[274 / 645]
+[275 / 645]
+[278 / 645]
+[280 / 645]
+[280 / 645] OrderedCollections
+[284 / 645] OrderedCollections
+[291 / 645]
+[295 / 645]
+[297 / 645]
+[301 / 645]
+[302 / 645]
+[306 / 645]
+[307 / 645]
+[310 / 645]
+[311 / 645]
+[314 / 645]
+[316 / 645]
+[317 / 645]
+[320 / 645]
+[321 / 645]
+[321 / 645] EventSource
+[323 / 645] EventSource
+[331 / 645] OrderedCollections
+[332 / 645] OrderedCollections-product
+[333 / 645] Crypto
+[342 / 646] EventSource
+[343 / 647] AIEvaluationCore
+[352 / 647] Cmlx
+[353 / 647] Cmlx
+[355 / 647] Cmlx
+[356 / 647] Cmlx
+[358 / 647] Cmlx
+[359 / 647] Jinja
+[363 / 647] Jinja
+[368 / 647] Cmlx
+[369 / 647] Cmlx
+[370 / 647] Cmlx
+[371 / 647] Cmlx
+[372 / 647] Cmlx
+[375 / 647] Cmlx
+[376 / 647] Cmlx
+[377 / 647] Cmlx
+[383 / 647] Cmlx
+[388 / 647] Cmlx
+[395 / 647] Cmlx
+[396 / 647] Cmlx
+[398 / 647] Cmlx
+[399 / 647] Cmlx
+[401 / 647] Cmlx
+[402 / 647] Cmlx
+[404 / 647] Cmlx
+[406 / 647] Cmlx
+[408 / 647] Cmlx
+[409 / 647] Cmlx
+[411 / 647] Cmlx
+[412 / 647] Cmlx
+[413 / 647] Cmlx
+[414 / 647] Cmlx
+[416 / 647] Cmlx
+[417 / 647] Cmlx
+[420 / 647] Cmlx
+[421 / 647] Cmlx
+[425 / 647] Cmlx
+[426 / 647] Cmlx
+[427 / 647] Cmlx
+[428 / 647] Cmlx
+[429 / 647] Cmlx
+[430 / 647] Cmlx
+[431 / 647] Cmlx
+[432 / 647] Cmlx
+[433 / 647] Cmlx
+[434 / 647] Cmlx
+[435 / 647] Cmlx
+[436 / 647] Cmlx
+[438 / 647] Cmlx
+[440 / 647] Cmlx
+[441 / 647] Cmlx
+[442 / 647] Cmlx
+[443 / 647] Cmlx
+[444 / 647] Cmlx
+[445 / 647] Cmlx
+[446 / 647] Cmlx
+[447 / 647] Cmlx
+[449 / 647] Cmlx
+[450 / 647] Cmlx
+[451 / 647] Cmlx
+[452 / 647] Cmlx
+[454 / 647] Cmlx
+[455 / 647] Cmlx
+[457 / 647] Cmlx
+[458 / 647] Cmlx
+[459 / 647] Cmlx
+[460 / 647] Cmlx
+[461 / 647] Cmlx
+[462 / 647] Cmlx
+[463 / 647] Cmlx
+[464 / 647] Cmlx
+[465 / 647] Cmlx
+[466 / 647] Cmlx
+[469 / 647] Cmlx
+[470 / 647] Cmlx
+[475 / 647] Cmlx
+[480 / 647] Cmlx
+[481 / 647] Cmlx
+[484 / 647] Cmlx
+[485 / 647] Cmlx
+[486 / 647] Cmlx
+[487 / 647] Cmlx
+[489 / 647] Cmlx
+[490 / 647] Cmlx
+[491 / 647] Cmlx
+[492 / 647] Cmlx
+[493 / 647] Cmlx
+[494 / 647] Cmlx
+[495 / 647] Cmlx
+[496 / 647] Cmlx
+[497 / 647] Cmlx
+[498 / 647] Cmlx
+[499 / 647] Cmlx
+[500 / 647] Cmlx
+[501 / 647] Cmlx
+[503 / 647] Cmlx
+[504 / 647] Cmlx
+[505 / 647] Cmlx
+[506 / 647] Cmlx
+[507 / 647] Cmlx
+[509 / 647] Cmlx
+[510 / 647] Cmlx
+[512 / 647] Cmlx
+[514 / 647] Cmlx
+[516 / 647] Cmlx
+[517 / 647] Cmlx
+[518 / 647] Cmlx
+[521 / 647] Cmlx
+[522 / 647] Cmlx
+[523 / 647] Cmlx
+[524 / 647] Cmlx
+[525 / 647] Cmlx
+[527 / 647] Cmlx
+[528 / 647] Cmlx
+[529 / 647] Cmlx
+[530 / 647] Cmlx
+[531 / 647] Cmlx
+[534 / 647] Cmlx
+[535 / 647] Cmlx
+[537 / 647] Cmlx
+[538 / 647] Cmlx
+[539 / 647] Cmlx
+[541 / 647] Jinja
+[542 / 647] Jinja-product
+[549 / 678]
+[553 / 678] Jinja-product
+[557 / 678] Jinja-product
+[558 / 678] Jinja-product
+[563 / 678]
+[566 / 678] AIEvaluationCore-product
+[570 / 678]
+[571 / 678]
+[574 / 679]
+[575 / 680] ComplexModule
+[576 / 680]
+[579 / 680]
+[587 / 681] InternalCollectionsUtilities
+[591 / 686]
+[592 / 686] OrderedCollections
+[593 / 686] OrderedCollections
+[602 / 688] ComplexModule
+[608 / 689] OrderedCollections-product
+[611 / 694]
+[613 / 694]
+[614 / 694] Jinja
+[622 / 695]
+[626 / 703]
+[628 / 703]
+[630 / 703]
+[633 / 704] Tokenizers
+[633 / 704] Cmlx
+[635 / 705]
+[643 / 705] MLX
+[650 / 706] MLXNN
+[652 / 707] MLXNN
+[659 / 708] MLXOptimizers
+[661 / 709] MLXOptimizers
+[668 / 710] MLXLMCommon
+[673 / 733]
+[674 / 733]
+[679 / 733]
+[683 / 733]
+[684 / 733]
+[685 / 733]
+[686 / 733]
+[687 / 733]
+[688 / 733]
+[690 / 733]
+[691 / 733]
+[692 / 733] MLXLMCommon
+[699 / 734] MLXLLM
+[701 / 735] MLXLLM
+[708 / 736] MLXEvaluationAdapter
+[712 / 740]
+[713 / 740] MLXEvaluationAdapter
+[722 / 741]
+[725 / 742] MLXEvaluationAdapterTests-product
+[727 / 743] mlx-evaluation-product
+[728 / 746] mlx-evaluation-product
+[734 / 746] MLXEvaluationAdapterTests-product
+[735 / 746]
+[736 / 746] mlx-evaluation-product
+[738 / 746] MLXEvaluationAdapterTests-product
+[742 / 746] mlx-evaluation-product
+[744 / 746]
+[744 / 746] MLXEvaluationAdapterTests-product
+Build complete! (278.21 secs)
+Test Suite 'All tests' started at 2026-11-15 03:48:17.271.
+Test Suite 'All tests' passed at 2026-11-15 03:48:17.283.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.012) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test invalidSettingsAreRejectedBeforeLoading(_:) started.
+➜ Test realLocalModelGeneratesBoundedText() skipped.
+◇ Test changedAssetBytesAreRejectedBeforeSDKModelLoad() started.
+◇ Test missingAssetsStayUnavailableAndDoNotDownload() started.
+◇ Test promptPreservesFictionalUnicodeAndContainsNoAnswerKey() started.
+◇ Test cancellationBeforeLoadDoesNotAccessModel() started.
+◇ Test remoteModelURLIsRejectedBeforeAnyLoading() started.
+◇ Test case passing 1 argument settings → GenerationSettings(maximumOutputTokens: 0, temperature: 0.0, seed: 42) to invalidSettingsAreRejectedBeforeLoading(_:) started.
+◇ Test case passing 1 argument settings → GenerationSettings(maximumOutputTokens: 256, temperature: nan, seed: 42) to invalidSettingsAreRejectedBeforeLoading(_:) started.
+◇ Test case passing 1 argument settings → GenerationSettings(maximumOutputTokens: 256, temperature: 1.7976931348623157e+308, seed: 42) to invalidSettingsAreRejectedBeforeLoading(_:) started.
+✔ Test cancellationBeforeLoadDoesNotAccessModel() passed after 0.001 seconds.
+✔ Test promptPreservesFictionalUnicodeAndContainsNoAnswerKey() passed after 0.001 seconds.
+✔ Test remoteModelURLIsRejectedBeforeAnyLoading() passed after 0.001 seconds.
+✔ Test invalidSettingsAreRejectedBeforeLoading(_:) with 3 test cases passed after 0.001 seconds.
+✔ Test missingAssetsStayUnavailableAndDoNotDownload() passed after 0.001 seconds.
+✔ Test changedAssetBytesAreRejectedBeforeSDKModelLoad() passed after 0.003 seconds.
+✔ Test run with 7 tests in 0 suites passed after 0.004 seconds.

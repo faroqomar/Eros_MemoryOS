@@ -1,0 +1,82 @@
+{
+  "scope": "Step1 real MLX integration; Mac smoke and iOS compile evidence remain distinct from Simulator availability, physical phone performance and human acceptance.",
+  "checks": [
+    {
+      "check": "canonicalResolution",
+      "path": "native/verification/local-ai-step1/resume/mlx-canonical-complete-cache-resolve-v2.log",
+      "sha256": "30cd070e99114a1d39b4157cd6a9d06c305b232531129be68015d0d3cd4bc1fd",
+      "observedExitCode": 0
+    },
+    {
+      "check": "canonicalResolution",
+      "path": "native/verification/local-ai-step1/resume/mlx-canonical-resolution.json",
+      "sha256": "b3dd9e53731ad326f126fbbb1d7299e4c7bff359689e9105f467ed0f91904d19",
+      "observedExitCode": 0
+    },
+    {
+      "check": "canonicalReleaseTests",
+      "path": "native/verification/local-ai-step1/resume/mlx-canonical-release-tests.log",
+      "sha256": "e88deeb51a352f91093e2c71411835d08e6ec268eab11f2fd4787ee8b6ce7398",
+      "observedExitCode": 0
+    },
+    {
+      "check": "canonicalRealGPUAndCancellationTests",
+      "path": "native/verification/local-ai-step1/resume/mlx-canonical-real-model-tests.log",
+      "sha256": "331bdb558baf9c37b2d0cdb4947638fb9bb4f92d4f3472224a38f106b01c4e7b",
+      "observedExitCode": 0
+    },
+    {
+      "check": "canonicalIOSSimulatorCompilation",
+      "path": "native/verification/local-ai-step1/resume/mlx-canonical-ios-simulator-build.log",
+      "sha256": "4de682777f9d058940b9f7b891fa599dea5a371b65f4afaf19615425bcfb980d",
+      "observedExitCode": 0
+    },
+    {
+      "check": "canonicalIOSDeviceCompilation",
+      "path": "native/verification/local-ai-step1/resume/mlx-canonical-ios-device-build.log",
+      "sha256": "2f91855da232d9720dd9382a12a4ff934f76f076508a542d205126b1822848c0",
+      "observedExitCode": 0
+    },
+    {
+      "check": "canonicalOSNetworkDenied15CaseHostSmoke",
+      "path": "native/verification/local-ai-step1/resume/mlx-host-canonical-network-denied.json",
+      "sha256": "c4a419f70877d436e0a14a9ab8848cba6052946977b8342eac481cc865df903d",
+      "observedExitCode": 0
+    },
+    {
+      "check": "canonicalOSNetworkDenied15CaseHostSmoke",
+      "path": "native/verification/local-ai-step1/resume/mlx-host-canonical-network-denied-receipt.json",
+      "sha256": "3340ab9cb329dcf46eaf62871a272352fccf84059588bb82790c2135956997f0",
+      "observedExitCode": 0
+    },
+    {
+      "check": "sdkFreeAvailabilityFullSuiteContract",
+      "path": "native/verification/local-ai-step1/resume/mlx-simulator-availability-tests-final.log",
+      "sha256": "ffb178005d70962b95d37a46560eace3ae74dd5b2e42aae4fad1398a727a4836",
+      "observedExitCode": 0
+    },
+    {
+      "check": "formatAndPythonCompilation",
+      "path": "native/verification/local-ai-step1/resume/mlx-format-final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observedExitCode": 0
+    },
+    {
+      "check": "formatAndPythonCompilation",
+      "path": "native/verification/local-ai-step1/resume/mlx-manifest-format-final.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "observedExitCode": 0
+    }
+  ],
+  "canonicalGraphPins": 12,
+  "canonicalSwiftTestingDefinitions": 7,
+  "invalidSettingsParameterizedInputs": 3,
+  "realGPUResult": "passed cold/warm load, real bounded token count, first token, cancellation/join and rerun",
+  "hostCasesCompleted": 15,
+  "builderAIOverallPasses": 1,
+  "humanManualReviewsInserted": 0,
+  "simulatorInference": "Unsupported by pinned SDK; native Lab uses SDK-free availability target.",
+  "availabilityAndCoreUnchanged": true,
+  "provisionalEvidencePreserved": true,
+  "componentsSelected": false
+}

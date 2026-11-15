@@ -1,0 +1,112 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Building for production...
+[Computing dependencies]
+[Pre-planning 1 / 567]
+[Planning deferred tasks]
+[117 / 243]
+[125 / 243] Wax_Wax
+[127 / 243] MetalANNS_MetalANNSCore
+[131 / 243] MetalANNS_MetalANNSCore
+[133 / 243] MetalANNS_MetalANNSCore
+[136 / 243]
+[143 / 243] MetalANNS_MetalANNSCore
+[147 / 243]
+[152 / 247] AIEvaluationCore
+[153 / 256]
+[156 / 369]
+[162 / 380]
+[167 / 380]
+[172 / 380]
+[179 / 380]
+[184 / 380]
+[189 / 380]
+[195 / 380]
+[201 / 380]
+[205 / 380]
+[209 / 380]
+[214 / 380]
+[219 / 380]
+[222 / 380]
+[224 / 380]
+[230 / 380]
+[235 / 380]
+[244 / 380] AIEvaluationCore
+[251 / 380]
+[255 / 380]
+[260 / 380]
+[263 / 380]
+[266 / 380]
+[270 / 380]
+[272 / 380]
+[275 / 380] MetalANNSC
+[277 / 380]
+[279 / 380] MetalANNSC
+[280 / 380]
+[282 / 380]
+[285 / 380]
+[287 / 380]
+[289 / 380]
+[290 / 380]
+[291 / 380] Crypto
+[298 / 381] Crypto
+[301 / 387]
+[302 / 387]
+[303 / 387]
+[304 / 387]
+[304 / 387] Crypto
+[305 / 387]
+[311 / 387] MetalANNSCore
+[317 / 387] MetalANNSCore
+[317 / 387] WaxCore
+[323 / 387] GRDB
+[331 / 389] GRDB
+[331 / 389] MetalANNS
+[335 / 391] WaxTextSearch
+[341 / 391] MetalANNS
+[348 / 392] WaxVectorSearch
+[350 / 393] WaxVectorSearch
+[357 / 394] Wax
+[362 / 431]
+[367 / 431]
+[371 / 431]
+[374 / 431]
+[377 / 431]
+[381 / 431]
+[385 / 431]
+[387 / 431]
+[388 / 431]
+[390 / 431]
+[391 / 431]
+[393 / 431]
+[394 / 431]
+[395 / 431] Wax
+[402 / 432] WaxEvaluationAdapter
+[404 / 433] WaxEvaluationAdapter
+[420 / 435] WaxEvaluationAdapterTests-product
+[420 / 435] wax-evaluation-product
+[424 / 439]
+[426 / 439] wax-evaluation-product
+[428 / 439] wax-evaluation-product
+[429 / 439] WaxEvaluationAdapterTests-product
+[434 / 439] WaxEvaluationAdapterTests-product
+[436 / 439] WaxEvaluationAdapterTests-product
+Build complete! (1,311.77 secs)
+Test Suite 'All tests' started at 2026-11-15 03:44:23.453.
+Test Suite 'All tests' passed at 2026-11-15 03:44:23.465.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.011) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite WaxMemoryIndexAdapterTests started.
+◇ Test rebuildRetractsRemovedAndCorrectedSourcesWithoutDeletingOtherFiles() started.
+◇ Test preservesArabicAndMixedLanguageLexicalSearch() started.
+◇ Test storageFailurePreservesCallerOwnedFile() started.
+◇ Test rejectsUnavailableAndInvalidInputsAndRetainsPreviousIndex() started.
+◇ Test retrievesCanonicalUnicodeIDsAndPreservesIdenticalSources() started.
+✔ Test storageFailurePreservesCallerOwnedFile() passed after 0.021 seconds.
+✔ Test preservesArabicAndMixedLanguageLexicalSearch() passed after 0.131 seconds.
+✔ Test retrievesCanonicalUnicodeIDsAndPreservesIdenticalSources() passed after 0.132 seconds.
+✔ Test rejectsUnavailableAndInvalidInputsAndRetainsPreviousIndex() passed after 0.155 seconds.
+✔ Test rebuildRetractsRemovedAndCorrectedSourcesWithoutDeletingOtherFiles() passed after 0.165 seconds.
+✔ Suite WaxMemoryIndexAdapterTests passed after 0.165 seconds.
+✔ Test run with 5 tests in 1 suite passed after 0.166 seconds.

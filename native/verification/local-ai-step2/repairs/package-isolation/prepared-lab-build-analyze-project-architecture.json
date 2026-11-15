@@ -1,0 +1,25 @@
+{
+  "arguments": [
+    "xcodebuild",
+    "-project",
+    "native/MemoryOSAILab.xcodeproj",
+    "-scheme",
+    "MemoryOSAILab",
+    "-configuration",
+    "Release",
+    "-sdk",
+    "iphonesimulator",
+    "-destination",
+    "generic/platform=iOS Simulator",
+    "-derivedDataPath",
+    "/tmp/memoryos-ai-lab-build",
+    "CODE_SIGNING_ALLOWED=NO",
+    "build",
+    "analyze"
+  ],
+  "exitCode": 65,
+  "seconds": 9.384872249999999,
+  "sourceProjectSHA256": "bd37ce77f9048d27c540a2f2a3ffbb5e7a16a2761eb2f05cf070766951ad94ba",
+  "labViewSHA256": "e92ae5d62994a2b74dea1aad9cf7ad3b2040079c8f102715e5e798a0fa4eef42",
+  "note": "Prepared ignored artifacts reused; no SDK rebuild or UI/device test. LabSourceIdentity defaults to unrecorded; final identified build belongs to coordinator."
+}

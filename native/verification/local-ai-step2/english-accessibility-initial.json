@@ -1,0 +1,740 @@
+{
+  "testIdentifier" : "LabUITests/testEnglishConfigurationAccessibility()",
+  "testIdentifierURL" : "test://com.apple.xcode/MemoryOS/MemoryOSAILabUITests/LabUITests/testEnglishConfigurationAccessibility",
+  "testName" : "testEnglishConfigurationAccessibility()",
+  "testRuns" : [
+    {
+      "activities" : [
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "attachments" : [
+            {
+              "lifetime" : "deleteOnSuccess",
+              "name" : "Screen Recording 2026-11-15 at 05.04.20 am.mp4",
+              "payloadId" : "0~uaZM7OizZshgW5npcXbhWxt5qQUQU4vA4bjGtcpDV-pMvsowVbWW77VPg8-LG8GJUjyoo3gtAlEkbz8rGln2Lw==",
+              "timestamp" : 1794708260.852,
+              "userInfos" : [
+                {
+                  "key" : "scale",
+                  "value" : "3"
+                },
+                {
+                  "key" : "initialInterfaceOrientation",
+                  "value" : "1"
+                },
+                {
+                  "key" : "initialDeviceOrientation",
+                  "value" : "0"
+                }
+              ],
+              "uuid" : "631441CD-AC8E-4106-87D9-7222E1A57FD2"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708260.852,
+              "title" : "kXCTAttachmentScreenRecording"
+            }
+          ],
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708260.831,
+          "title" : "Start Test at 2026-11-15 05:04:20.831"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708260.854,
+          "title" : "Set Up"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "childActivities" : [
+            {
+              "activityType" : "com.apple.dt.xctest.activity-type.internal",
+              "childActivities" : [
+                {
+                  "activityType" : "com.apple.dt.xctest.activity-type.internal",
+                  "isAssociatedWithFailure" : false,
+                  "startTime" : 1794708260.857,
+                  "title" : "Terminate com.eros.memoryos.ailab:71557"
+                },
+                {
+                  "activityType" : "com.apple.dt.xctest.activity-type.internal",
+                  "isAssociatedWithFailure" : false,
+                  "startTime" : 1794708262.173,
+                  "title" : "Setting up automation session"
+                },
+                {
+                  "activityType" : "com.apple.dt.xctest.activity-type.internal",
+                  "isAssociatedWithFailure" : false,
+                  "startTime" : 1794708264.776,
+                  "title" : "Wait for com.eros.memoryos.ailab to idle"
+                }
+              ],
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708260.856,
+              "title" : "Launch com.eros.memoryos.ailab"
+            }
+          ],
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708260.856,
+          "title" : "Open com.eros.memoryos.ailab"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "childActivities" : [
+            {
+              "activityType" : "com.apple.dt.xctest.activity-type.internal",
+              "childActivities" : [
+                {
+                  "activityType" : "com.apple.dt.xctest.activity-type.internal",
+                  "isAssociatedWithFailure" : false,
+                  "startTime" : 1794708267.46,
+                  "title" : "Checking existence of `\"Local AI Lab\" NavigationBar`"
+                }
+              ],
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708267.458,
+              "title" : "Checking `Expect predicate `existsNoRetry == 1` for object \"Local AI Lab\" NavigationBar`"
+            }
+          ],
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708266.415,
+          "title" : "Waiting 10.0s for \"Local AI Lab\" NavigationBar to exist"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "42063182-C978-46B1-B2BE-DE05DEE8F53F"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_CC31D7D2-CD9A-4D10-9E5E-175E8A307B9A.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.063,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "CF44CC25-D33E-4B14-9D99-4C75249134E2"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "Element Screenshot_1_5C82CA50-51B7-4BA5-B62A-A0BE0328F734.png",
+              "payloadId" : "0~Zhto_ECHg2jRAQJ-t1UtnG8y-NyEXt3zsYk6rQhu2x107l8EfB5Pl-19o1GcUiKJAiRFR3HOUNdkJNnMK3J_zw==",
+              "timestamp" : 1794708270.063,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "061782DB-CD0F-4E83-8CD5-F9950DBCF41D"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.063,
+              "title" : "App Screenshot"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.063,
+              "title" : "Element Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.063,
+          "title" : "Dynamic Type font sizes are partially unsupported"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.064,
+          "title" : "Find the Any (Descendant with identity binding to AX element pid: 72404, elementOrHash.elementID: 4601209440.89)"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.098,
+          "title" : "Checking existence of `\"Configuration\" StaticText`"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.124,
+          "title" : "Find the \"Configuration\" StaticText"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "FC006B2E-89A1-47FE-9222-5C63006E7725"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_5BFA74DC-B9F3-4739-9416-C081CD0DB9C8.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.171,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "534A7028-F167-4F10-9445-C295DDDF669A"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "Element Screenshot_1_23422E91-1829-47AD-833B-45B41BBCD8EF.png",
+              "payloadId" : "0~nBdC3qi6vIXwiBWXW_8KV0zbbs3IWklzbPuaX39gWwuPlO92JByx_Gsg1J2vPjUsW_iXqgz9G3b-yEVSe1yFbA==",
+              "timestamp" : 1794708270.171,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "8D2DC070-0EB3-4C54-8E71-62DB4A5AF1B2"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.171,
+              "title" : "App Screenshot"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.171,
+              "title" : "Element Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.171,
+          "title" : "Dynamic Type font sizes are partially unsupported"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.172,
+          "title" : "Find the Any (Descendant with identity binding to AX element pid: 72404, elementOrHash.elementID: 4601208640.95)"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.202,
+          "title" : "Checking existence of `\"العربية\" StaticText`"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.23,
+          "title" : "Find the \"العربية\" StaticText"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "1DFB0FE5-7DF8-4C4D-A7D7-AC35691A1966"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_DFAA048C-BE99-45A6-8A13-0719D2E64000.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.276,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "C07C7347-B655-47B3-B6FE-7D52F901A687"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.276,
+              "title" : "App Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.276,
+          "title" : "Dynamic Type font sizes are unsupported"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.277,
+          "title" : "Find the Any (Descendant with identity binding to AX element pid: 72404, elementOrHash.elementID: 4601208000.86)"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "B6F47B1C-7517-41C3-B9C2-70E72A793294"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_62C703AB-9202-4EFC-8851-5A9F0581DF64.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.277,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "EF6C1779-D821-4CFC-BD18-738A99400D3E"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "Element Screenshot_1_B155513A-737E-443E-B76F-B84DA6371CDF.png",
+              "payloadId" : "0~7NwRCmT8tljgP8t_2V8K_qaGJVMVUzc0b-22kH1A2bVlNs8PXTf7etBXObomiaM9hndSGvPqYbT65Hh8f23U1g==",
+              "timestamp" : 1794708270.277,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "837857D6-73D1-43E9-A983-B1C86974079F"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.277,
+              "title" : "App Screenshot"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.277,
+              "title" : "Element Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.277,
+          "title" : "Text clipped"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.308,
+          "title" : "Checking existence of `\"Experimental comparison · no production selection\" StaticText`"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.335,
+          "title" : "Find the \"Experimental comparison · no production selection\" StaticText"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.387,
+          "title" : "Find the Any (Descendant with identity binding to AX element pid: 72404, elementOrHash.elementID: 4785372480.116)"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "55A49162-C021-452E-A507-0FD807E74B23"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_EE3486F0-56E0-4FCE-9296-A492259E7CCE.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.387,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "1D265669-9378-4A6D-A588-D11DC06F93B3"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "Element Screenshot_1_E217C3DB-B839-4356-801A-CCF67A7D9EE9.png",
+              "payloadId" : "0~hRG2NBQsei5_OLQrRBJ-6yFXHcBEiJvr7aLfHDai124NIA1RsXmdt7S4SkkHbvOHXmL4fUD5L2PC2P-nn3OYFw==",
+              "timestamp" : 1794708270.387,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "8D7EBFE8-741B-463D-B282-C66A76B1019A"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.387,
+              "title" : "App Screenshot"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.387,
+              "title" : "Element Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.387,
+          "title" : "Contrast failed"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.427,
+          "title" : "Checking existence of `\"Lexical retrieval only. No text model.\" StaticText`"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.462,
+          "title" : "Find the \"Lexical retrieval only. No text model.\" StaticText"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.519,
+          "title" : "Find the Any (Descendant with identity binding to AX element pid: 72404, elementOrHash.elementID: 4794572288.118)"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "52CB6CF0-D3D3-4107-8D1B-C6E8718711A8"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_3338663F-FF95-4A3E-B01F-FA5C4BB989FF.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.519,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "B89D6853-379D-4D3F-BDA9-12160411100F"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "Element Screenshot_1_642130C3-8DE8-4789-8810-072706FECFB1.png",
+              "payloadId" : "0~KSTu-NWZLn3GxYcnWldbrHkRS2BbwXQEbMBJ5sndqNI8A9RpMpQ7y-u5BWxY57C1-7a5aI8yz9jFZQAhSf3MdQ==",
+              "timestamp" : 1794708270.519,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "21AE3AF5-89B0-4829-AB1D-E2AC13283001"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.519,
+              "title" : "App Screenshot"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.519,
+              "title" : "Element Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.519,
+          "title" : "Contrast failed"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.562,
+          "title" : "Checking existence of `\"Local lexical index. Embeddings disabled.\" StaticText`"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.597,
+          "title" : "Find the \"Local lexical index. Embeddings disabled.\" StaticText"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "AFD7372B-053C-4B8B-B69C-728CEB85FB55"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_3D6341B7-2A73-43CA-ABBA-1508C4579332.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.662,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "E62829AE-8A61-4AB2-991A-CBA051021C86"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "Element Screenshot_1_37E39743-15D4-4838-B3CE-B5B86634CF95.png",
+              "payloadId" : "0~zVdryhcU4iKLR5bItg6JilajiHDkcSxpISNsqg-jjTva1cfjr00hT234x89h2j1rVV5_cqSFZemP0XSjMsOhBA==",
+              "timestamp" : 1794708270.662,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "44E469B4-48AD-4FC8-8783-A8EEA64268FF"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.662,
+              "title" : "App Screenshot"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.662,
+              "title" : "Element Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.662,
+          "title" : "Contrast failed"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.663,
+          "title" : "Find the Any (Descendant with identity binding to AX element pid: 72404, elementOrHash.elementID: 4785359200.120)"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.7,
+          "title" : "Checking existence of `\"Patched local CPU SDK. Verified embedding assets required.\" StaticText`"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.735,
+          "title" : "Find the \"Patched local CPU SDK. Verified embedding assets required.\" StaticText"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.793,
+          "title" : "Find the Any (Descendant with identity binding to AX element pid: 72404, elementOrHash.elementID: 4785367680.122)"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "F8974416-E70D-493A-897B-9BE6FB5DC7ED"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_FEF5BA05-DD71-4932-B7E9-3F558734BBDE.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.793,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "289ADFA2-93E1-4551-8DD0-59D930E0975E"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "Element Screenshot_1_10A3621D-EFDD-467A-B005-595FC9B578F0.png",
+              "payloadId" : "0~STS8HUPirpG02RgyECitFdpHZWKwXflo1qUHGpMRodOUgKY5ELf5kXK7hBHIngRVQ01phDQ4Wj7shub5hAXf_A==",
+              "timestamp" : 1794708270.793,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "415B5195-F6D0-46E7-A571-1170258B4206"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.793,
+              "title" : "App Screenshot"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.793,
+              "title" : "Element Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.793,
+          "title" : "Contrast failed"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.833,
+          "title" : "Checking existence of `\"Reviewed Q4_K_M asset. Same examples and generation settings.\" StaticText`"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.866,
+          "title" : "Find the \"Reviewed Q4_K_M asset. Same examples and generation settings.\" StaticText"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.915,
+          "title" : "Find the Any (Descendant with identity binding to AX element pid: 72404, elementOrHash.elementID: 4794580608.124)"
+        },
+        {
+          "attachments" : [
+            {
+              "lifetime" : "",
+              "name" : "Complete Issue Description.txt",
+              "uuid" : "A7918951-09F3-42EF-B8DE-9B6A1467EC1D"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "App Screenshot_0_5E049433-9B56-4BB6-B8AD-D3CD213A1213.png",
+              "payloadId" : "0~md_ppto0X0l_LqCCN2-B4nREzC9ETTAkfnnLZn6d1mQgqsUdTm3XKyZaaG4nBgoe_m9hMgL38-goi2bJTOAEdA==",
+              "timestamp" : 1794708270.915,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "5E3E7F06-F6F0-4040-89F8-98A7F650F94D"
+            },
+            {
+              "lifetime" : "keepAlways",
+              "name" : "Element Screenshot_1_CB776F47-3A5E-4928-AF99-CB3DB3D2033E.png",
+              "payloadId" : "0~lf6d_MMuOo60_JXYFF3bbBIXNwxO_5WveFNtrhCwEK3LYeYmEM4st5XA_mhfPThR-qKMaZCgV50XwUxB8cvOTQ==",
+              "timestamp" : 1794708270.915,
+              "userInfos" : [
+                {
+                  "key" : "Scale",
+                  "value" : "3"
+                }
+              ],
+              "uuid" : "21D608CA-3713-48EF-80CA-7C525C5882EB"
+            }
+          ],
+          "childActivities" : [
+            {
+              "isAssociatedWithFailure" : false,
+              "title" : "Complete Issue Description"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.915,
+              "title" : "App Screenshot"
+            },
+            {
+              "isAssociatedWithFailure" : false,
+              "startTime" : 1794708270.915,
+              "title" : "Element Screenshot"
+            }
+          ],
+          "isAssociatedWithFailure" : true,
+          "startTime" : 1794708270.915,
+          "title" : "Contrast failed"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.952,
+          "title" : "Checking existence of `\"Smaller Q4_K_M model. Compare source accuracy before selecting.\" StaticText`"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708270.98,
+          "title" : "Find the \"Smaller Q4_K_M model. Compare source accuracy before selecting.\" StaticText"
+        },
+        {
+          "activityType" : "com.apple.dt.xctest.activity-type.internal",
+          "isAssociatedWithFailure" : false,
+          "startTime" : 1794708271.042,
+          "title" : "Tear Down"
+        }
+      ],
+      "device" : {
+        "architecture" : "arm64",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "modelName" : "iPhone 18 Pro",
+        "osBuildNumber" : "24B8117",
+        "osVersion" : "27.2",
+        "platform" : "iOS Simulator"
+      },
+      "testPlanConfiguration" : {
+        "configurationId" : "1",
+        "configurationName" : "Test Scheme Action"
+      }
+    }
+  ]
+}

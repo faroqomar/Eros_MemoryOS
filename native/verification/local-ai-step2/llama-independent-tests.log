@@ -1,0 +1,24 @@
+Building for production...
+[Provisioning 1 / 7]
+[1 / 1]
+Build complete! (0.60 secs)
+Test Suite 'All tests' started at 2026-11-15 04:58:04.380.
+Test Suite 'All tests' passed at 2026-11-15 04:58:04.391.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.011) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test remoteAssetURLIsRejectedWithoutNetworkLoading() started.
+◇ Test mismatchedAssetIsRejectedBeforeModelLoading() started.
+◇ Test nativeSDKRejectsAHashVerifiedInvalidModel() started.
+◇ Test missingAssetCannotBecomeAResponse() started.
+◇ Test unsupportedSamplingCannotSilentlyChangeTheExperiment() started.
+✔ Test remoteAssetURLIsRejectedWithoutNetworkLoading() passed after 0.001 seconds.
+✔ Test missingAssetCannotBecomeAResponse() passed after 0.001 seconds.
+✔ Test unsupportedSamplingCannotSilentlyChangeTheExperiment() passed after 0.001 seconds.
+gguf_init_from_reader: invalid magic characters: 'This', expected 'GGUF'
+✔ Test mismatchedAssetIsRejectedBeforeModelLoading() passed after 0.002 seconds.
+llama_model_load: error loading model: llama_model_loader: failed to load model from /var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/B8B7868A-DFFE-4380-A79C-3E19C6F4C531
+llama_model_load_from_file_impl: failed to load model
+✔ Test nativeSDKRejectsAHashVerifiedInvalidModel() passed after 0.003 seconds.
+✔ Test run with 5 tests in 0 suites passed after 0.003 seconds.

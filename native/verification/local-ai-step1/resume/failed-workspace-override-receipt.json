@@ -1,0 +1,40 @@
+{
+  "explicit_local_overrides": true,
+  "canonical_manifests_changed": false,
+  "source_verification": "Manifest digests checked here; SDK file/patch integrity is recorded in the input receipts.",
+  "apple_documentation": "https://developer.apple.com/documentation/xcode/editing-a-package-dependency-as-a-local-package",
+  "inputs": [
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/evidence/local-ai-2026-11-14/resume-wax/tested-supported-patched-graph.json",
+      "sha256": "8e3353e24ad038c3ce3048874fe6b966ae93a9de94a49e9496a99755728afafc"
+    }
+  ],
+  "packages": {
+    "wax": {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-patched/Wax",
+      "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+      "manifest_sha256": "acf5c56bf1c0de065b8a42f4c72a0e3a9aef620cb191b33a62121b5a319db290"
+    },
+    "metalanns": {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS",
+      "revision": "13960499c40abd3f06443eb80258e08a6b777da4",
+      "manifest_sha256": "b688dee20c6da7019723e77067b1cc84fc9556bc6db45864d9ac23f25fb3ebb1"
+    },
+    "grdb.swift": {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/GRDB.swift",
+      "revision": "92a554cd0d5e8d67cb18993c6054e73fe42c066c",
+      "manifest_sha256": "4118b6c48dcb87f91d95fe40420371b8a474a44b0b0be2bf0417e0be1ebf7853"
+    },
+    "swift-crypto": {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto",
+      "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+      "manifest_sha256": "d51987333ca67380af875d853ff74a4a7bcb9095f220e7235aa2830706f96b54"
+    },
+    "swift-asn1": {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1",
+      "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+      "manifest_sha256": "c46482de4edb5c21c263682d102e52b180c1420be592d6c957cdc06f8fc4e516"
+    }
+  },
+  "workspace_sha256": "192504fa4ff7fc2bf1408ff0d75e6f6086b3555567a5e6097da82e4284e2a5b1"
+}

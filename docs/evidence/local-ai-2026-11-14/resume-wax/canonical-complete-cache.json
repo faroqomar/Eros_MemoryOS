@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+  "root_tree": "653dd20a0d02944ffdcdb6e35d37a54449a64f2e",
+  "original_url": "https://github.com/christopherkarani/Wax.git",
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/Wax-18aab7e9",
+  "verified_blobs": 857,
+  "verified_trees": 177,
+  "blob_bytes": 148656495,
+  "promisor": false,
+  "git_filter": null,
+  "local_server": false,
+  "transport_wrapper": false
+}

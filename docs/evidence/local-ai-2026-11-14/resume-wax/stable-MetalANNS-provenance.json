@@ -1,0 +1,74 @@
+{
+  "name": "MetalANNS",
+  "repo": "christopherkarani/MetalANNS",
+  "tag": "0.3.0",
+  "ref": {
+    "ref": "refs/tags/0.3.0",
+    "node_id": "REF_kwDORYJbsK9yZWZzL3RhZ3MvMC4zLjA",
+    "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/refs/tags/0.3.0",
+    "object": {
+      "sha": "6d178ce0f99a7e97ac92b6cd4b37c346db00341d",
+      "type": "tag",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/tags/6d178ce0f99a7e97ac92b6cd4b37c346db00341d"
+    }
+  },
+  "tag_object": {
+    "node_id": "TA_kwDORYJbsNoAKDZkMTc4Y2UwZjk5YTdlOTdhYzkyYjZjZDRiMzdjMzQ2ZGIwMDM0MWQ",
+    "sha": "6d178ce0f99a7e97ac92b6cd4b37c346db00341d",
+    "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/tags/6d178ce0f99a7e97ac92b6cd4b37c346db00341d",
+    "tagger": {
+      "name": "christopherkarani",
+      "email": "chrisbkarani@gmail.com",
+      "date": "2026-08-24T14:41:03Z"
+    },
+    "object": {
+      "sha": "13960499c40abd3f06443eb80258e08a6b777da4",
+      "type": "commit",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/commits/13960499c40abd3f06443eb80258e08a6b777da4"
+    },
+    "tag": "0.3.0",
+    "message": "Release 0.3.0\n",
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  },
+  "commit": {
+    "sha": "13960499c40abd3f06443eb80258e08a6b777da4",
+    "node_id": "C_kwDORYJbsNoAKDEzOTYwNDk5YzQwYWJkM2YwNjQ0M2ViODAyNThlMDhhNmI3NzdkYTQ",
+    "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/commits/13960499c40abd3f06443eb80258e08a6b777da4",
+    "html_url": "https://github.com/christopherkarani/MetalANNS/commit/13960499c40abd3f06443eb80258e08a6b777da4",
+    "author": {
+      "name": "christopherkarani",
+      "email": "chrisbkarani@gmail.com",
+      "date": "2026-08-24T14:41:00Z"
+    },
+    "committer": {
+      "name": "christopherkarani",
+      "email": "chrisbkarani@gmail.com",
+      "date": "2026-08-24T14:41:00Z"
+    },
+    "tree": {
+      "sha": "ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29",
+      "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29"
+    },
+    "message": "chore: prepare 0.3.0 release\n\nRaise the documented SwiftPM floor so install snippets match the new tag.",
+    "parents": [
+      {
+        "sha": "d29a61ebc70c10f4fad109451a7bde0b3fb614b7",
+        "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/commits/d29a61ebc70c10f4fad109451a7bde0b3fb614b7",
+        "html_url": "https://github.com/christopherkarani/MetalANNS/commit/d29a61ebc70c10f4fad109451a7bde0b3fb614b7"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  }
+}

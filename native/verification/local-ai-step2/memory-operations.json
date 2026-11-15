@@ -1,0 +1,30 @@
+{
+  "observedUTC": "2026-11-15T02:28:53.025823+00:00",
+  "operations": [
+    {
+      "source": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "status": "pending",
+      "created_at": "2026-11-15T02:28:39.498247+00:00",
+      "updated_at": "2026-11-15T02:28:39.498247+00:00",
+      "task_type": "batch_retain",
+      "retry_count": 0,
+      "next_retry_at": null,
+      "error_message": null,
+      "progress": null,
+      "children": [
+        {
+          "status": "processing",
+          "task_type": null
+        }
+      ],
+      "resultMetadataKeys": [
+        "is_parent",
+        "document_id",
+        "items_count",
+        "total_tokens",
+        "num_sub_batches"
+      ],
+      "detailsKeys": []
+    }
+  ]
+}

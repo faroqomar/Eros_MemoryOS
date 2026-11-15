@@ -1,0 +1,9 @@
+{
+  "authoredSourceExit": 0,
+  "authoredSourceDiagnostics": "",
+  "rawEvidenceExceptions": {
+    ".patch": 33,
+    ".txt": 5
+  },
+  "rawEvidencePolicy": "Original compiler/download logs are byte-preserved and marked binary diff. Historical patch/text snapshots are preserved without whitespace rewriting."
+}

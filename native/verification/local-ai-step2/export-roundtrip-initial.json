@@ -1,0 +1,14 @@
+{
+  "capturedAtUTC": "2026-11-15T02:01:06.335671+00:00",
+  "method": "Native fileExporter, On My iPhone, Save through T3 agent-device. Exported bytes compared to auto-saved suite report.",
+  "sha256": "047559b32ce50f1acb11eba70e3a8d558142c4f1d183fffe67130411e6f4c805",
+  "bytes": 7625,
+  "matchesAutoSavedReports": 1,
+  "batchID": "8635D0B8-B40F-4E16-890A-9DBEBB5131AE",
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "repetition": 5,
+  "results": 15,
+  "exportFile": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Shared/AppGroup/373DA5CD-B506-4409-AB96-929BF2889EE4/File Provider Storage/memoryos-ai-evaluation.json",
+  "matchingAutoSavedFile": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Data/Application/E0B4DF46-8B7E-49FF-9AE1-BC12DE584061/Documents/EvaluationReports/keyword-control-75FE32EB-0F24-40C9-B8B3-4499B7EF09CB.json",
+  "note": "Initial independent UI run before Step2 repairs; final source flow rerun follows."
+}

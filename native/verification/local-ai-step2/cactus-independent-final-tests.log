@@ -1,0 +1,41 @@
+Building for production...
+[Using on-disk description]
+[2 / 6] CactusEvaluationAdapter
+[4 / 8] CactusEvaluationAdapter
+[11 / 11] cactus-evaluation-product
+[13 / 15] CactusEvaluationAdapterTests-product
+[15 / 15] cactus-evaluation-product
+Build complete! (3.00 secs)
+Test Suite 'All tests' started at 2026-11-15 05:01:07.588.
+Test Suite 'All tests' passed at 2026-11-15 05:01:07.599.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.011) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test missingAssetCannotProduceFakeRetrieval() started.
+◇ Test cancelledRebuildCannotPublishResults() started.
+◇ Test duplicateIDsFailBeforeOpeningModelOrIndex() started.
+◇ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() started.
+◇ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() started.
+◇ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() started.
+◇ Test nativeIndexRanksDeletesAndPersistsControlledVectors() started.
+◇ Test remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) started.
+◇ Test explicitLastTokenEmbeddingIsNormalizedAndDistinctFromMeanPooling() started.
+◇ Test modifiedManifestCannotAuthorizeDifferentWeights() started.
+◇ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() started.
+◇ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() started.
+◇ Test case passing 1 argument remoteModel → true to remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) started.
+◇ Test case passing 1 argument remoteModel → false to remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) started.
+✔ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() passed after 0.005 seconds.
+✔ Test duplicateIDsFailBeforeOpeningModelOrIndex() passed after 0.005 seconds.
+✔ Test missingAssetCannotProduceFakeRetrieval() passed after 0.005 seconds.
+✔ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() passed after 0.005 seconds.
+✔ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() passed after 0.005 seconds.
+✔ Test cancelledRebuildCannotPublishResults() passed after 0.006 seconds.
+✔ Test remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) with 2 test cases passed after 0.007 seconds.
+✔ Test modifiedManifestCannotAuthorizeDifferentWeights() passed after 0.008 seconds.
+✔ Test nativeIndexRanksDeletesAndPersistsControlledVectors() passed after 0.008 seconds.
+✔ Test explicitLastTokenEmbeddingIsNormalizedAndDistinctFromMeanPooling() passed after 0.598 seconds.
+✔ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() passed after 1.251 seconds.
+✔ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() passed after 1.270 seconds.
+✔ Test run with 12 tests in 0 suites passed after 1.270 seconds.

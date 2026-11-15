@@ -1,0 +1,56 @@
+{
+  "cases": 15,
+  "completed": 15,
+  "exact_source_set": 10,
+  "mean_source_recall": 0.9333333333333333,
+  "median_search_seconds": 0.001332666,
+  "max_search_seconds": 0.004031833,
+  "telemetry": {
+    "measurementMethod": "macOS process-lifetime getrusage ru_maxrss high-water bytes; current derived index logical file sizes. No phone battery or thermal measurement.",
+    "peakMemoryBytes": 43253760,
+    "storageBytes": 8539018
+  },
+  "mismatches": [
+    {
+      "id": "en-birthday",
+      "retrieved": [
+        "en-birthday",
+        "unicode-name"
+      ],
+      "source_recall": 1
+    },
+    {
+      "id": "missing-evidence",
+      "retrieved": [
+        "en-birthday",
+        "unicode-name"
+      ],
+      "source_recall": 0
+    },
+    {
+      "id": "source-injection",
+      "retrieved": [
+        "untrusted-import",
+        "en-birthday"
+      ],
+      "source_recall": 1
+    },
+    {
+      "id": "ar-digits",
+      "retrieved": [
+        "ar-digits",
+        "iq-tentative",
+        "mixed-deadline"
+      ],
+      "source_recall": 1
+    },
+    {
+      "id": "unicode-name",
+      "retrieved": [
+        "unicode-name",
+        "en-birthday"
+      ],
+      "source_recall": 1
+    }
+  ]
+}

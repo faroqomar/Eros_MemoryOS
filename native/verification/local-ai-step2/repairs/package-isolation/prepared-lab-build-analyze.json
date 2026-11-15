@@ -1,0 +1,28 @@
+{
+  "arguments": [
+    "xcodebuild",
+    "-project",
+    "native/MemoryOSAILab.xcodeproj",
+    "-scheme",
+    "MemoryOSAILab",
+    "-configuration",
+    "Release",
+    "-sdk",
+    "iphonesimulator",
+    "-destination",
+    "generic/platform=iOS Simulator",
+    "-derivedDataPath",
+    "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-ai-lab-isolation-build-fexpo2om",
+    "ARCHS=arm64",
+    "ONLY_ACTIVE_ARCH=YES",
+    "CODE_SIGNING_ALLOWED=NO",
+    "build",
+    "analyze"
+  ],
+  "exitCode": 0,
+  "seconds": 29.074990042,
+  "derivedData": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-ai-lab-isolation-build-fexpo2om",
+  "sourceProjectSHA256": "11e4196f7eccb5549ba5b805645584c3b7b1b399bf2327399579906ead181c01",
+  "labViewSHA256": "e92ae5d62994a2b74dea1aad9cf7ad3b2040079c8f102715e5e798a0fa4eef42",
+  "note": "Prepared ignored artifacts reused; arm64-only experiment declared for whole graph. No SDK rebuild or UI/device test. LabSourceIdentity defaults to unrecorded; final identified build belongs to coordinator."
+}

@@ -1,0 +1,26 @@
+{
+  "temporaryIntegrationOnly": true,
+  "canonicalResolutionVerified": false,
+  "canonicalManifestSHA256": "507bb4cac8504808f28a454cd717fca1876dd0cf311aa9a24607d8441cda7c1c",
+  "checkPackage": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/local-sdk-checks-common",
+  "snapshotRoots": {
+    "mlx-swift-lm": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift-lm",
+    "mlx-swift": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift",
+    "swift-transformers": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-transformers",
+    "swift-numerics": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-numerics",
+    "swift-jinja": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-jinja",
+    "EventSource": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/EventSource",
+    "yyjson": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/yyjson",
+    "swift-huggingface": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-huggingface",
+    "swift-collections": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-collections",
+    "swift-syntax": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-syntax",
+    "swift-crypto": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto"
+  },
+  "sharedCryptoRevision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+  "sharedCryptoPermittedRanges": [
+    "Tokenizers3.0.0..<5.0.0",
+    "HuggingFace1.0.0..<5.0.0"
+  ],
+  "readOnlySharedASN1Snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1",
+  "sharedASN1Revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d"
+}

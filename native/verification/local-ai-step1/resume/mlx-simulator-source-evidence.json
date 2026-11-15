@@ -1,0 +1,14 @@
+{
+  "sdkVersion": "mlx-swift 0.32.3",
+  "documentationURL": "https://raw.githubusercontent.com/ml-explore/mlx-swift/0.32.3/Source/MLX/Documentation.docc/Articles/running-on-ios.md",
+  "documentationLines": [
+    81,
+    83,
+    102
+  ],
+  "quote": "It isn't possible to use the iOS simulator for developing MLX applications",
+  "finding": "The pinned documentation says Simulator lacks the Metal GPU family needed to evaluate MLX arrays. Simulator remains suitable for UI development. The evaluation adapter returns an unavailable result before GPU setup.",
+  "coreSubmoduleRevision": "1f8e74e3f12f31365464a6867c6579f0e9b29d85",
+  "metalDeviceSourceURL": "https://raw.githubusercontent.com/ml-explore/mlx/1f8e74e3f12f31365464a6867c6579f0e9b29d85/mlx/backend/metal/device.cpp",
+  "evidenceBoundary": "Documentation and adapter guard are not a successful Simulator inference measurement."
+}

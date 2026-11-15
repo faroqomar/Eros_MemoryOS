@@ -1,0 +1,17 @@
+{
+  "exportReceiptSHA256": "91d7a6a2f5ac65245bf840d4ef30e929e6ae6b5a0da0e5b622444404af5e32d6",
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "files": {
+    "sourcePath": {
+      "sha256": "949ada3544530b6b7a825b4542cae976a7f2f69d18a72a74b500bd721e783687",
+      "bytes": 7630,
+      "identity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675"
+    },
+    "automaticReport": {
+      "sha256": "949ada3544530b6b7a825b4542cae976a7f2f69d18a72a74b500bd721e783687",
+      "bytes": 7630,
+      "identity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675"
+    }
+  },
+  "result": "PASS"
+}

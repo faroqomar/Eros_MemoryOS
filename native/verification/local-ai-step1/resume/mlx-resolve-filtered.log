@@ -1,0 +1,7 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Fetching https://github.com/ml-explore/mlx-swift-lm
+warning: 'mlx-swift-lm': skipping cache due to an error: Failed to clone repository https://github.com/ml-explore/mlx-swift-lm:
+    Cloning into bare repository '/Users/eros/Library/Caches/org.swift.swiftpm/repositories/mlx-swift-lm-c90ccc0b'...
+    error: RPC failed; curl 56 Recv failure: Connection reset by peer
+    fatal: error processing shallow info: 4
+[1/5460] Fetching mlx-swift-lm

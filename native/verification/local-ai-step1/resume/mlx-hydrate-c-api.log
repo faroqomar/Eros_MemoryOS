@@ -1,0 +1,6 @@
+{"identity": "mlx-c-api", "revision": "ebc88f10caa1b625e6b581437a8dea6df8a70085", "files": 79, "trees": 9, "gitlinks": 0}
+{"identity": "mlx-c-api", "completed": 25, "total": 79}
+{"identity": "mlx-c-api", "completed": 50, "total": 79}
+{"identity": "mlx-c-api", "completed": 75, "total": 79}
+{"identity": "mlx-c-api", "completed": 79, "total": 79}
+{"snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift/Source/Cmlx/mlx-c", "completeSelectedSources": true, "canonicalResolutionVerified": false, "manifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-snapshot-mlx-c-api.json"}

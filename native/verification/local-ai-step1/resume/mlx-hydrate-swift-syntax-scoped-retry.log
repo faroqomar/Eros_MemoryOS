@@ -1,0 +1,23 @@
+{"identity": "swift-syntax", "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1", "files": 398, "trees": 73, "gitlinks": 0}
+{"event": "raw-transport-retry", "path": "WORKSPACE", "attempt": 1, "errorType": "HTTPError"}
+{"identity": "swift-syntax", "completed": 25, "total": 398}
+{"identity": "swift-syntax", "completed": 50, "total": 398}
+{"identity": "swift-syntax", "completed": 75, "total": 398}
+{"event": "raw-transport-retry", "path": "Changelog.md", "attempt": 1, "errorType": "ReadTimeout"}
+{"identity": "swift-syntax", "completed": 100, "total": 398}
+{"identity": "swift-syntax", "completed": 125, "total": 398}
+{"identity": "swift-syntax", "completed": 150, "total": 398}
+{"identity": "swift-syntax", "completed": 175, "total": 398}
+{"identity": "swift-syntax", "completed": 200, "total": 398}
+{"identity": "swift-syntax", "completed": 225, "total": 398}
+{"identity": "swift-syntax", "completed": 250, "total": 398}
+{"identity": "swift-syntax", "completed": 275, "total": 398}
+{"event": "raw-transport-retry", "path": "Sources/SwiftParser/generated/LayoutNodes+Parsable.swift", "attempt": 1, "errorType": "ReadTimeout"}
+{"event": "raw-transport-retry", "path": "Sources/SwiftSyntax/generated/ChildNameForKeyPath.swift", "attempt": 1, "errorType": "ConnectionError"}
+{"identity": "swift-syntax", "completed": 300, "total": 398}
+{"event": "raw-transport-retry", "path": "Sources/SwiftSyntax/generated/SyntaxRewriter.swift", "attempt": 1, "errorType": "ConnectionError"}
+{"identity": "swift-syntax", "completed": 325, "total": 398}
+{"identity": "swift-syntax", "completed": 350, "total": 398}
+{"identity": "swift-syntax", "completed": 375, "total": 398}
+{"identity": "swift-syntax", "completed": 398, "total": 398}
+{"snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-syntax", "completeSelectedSources": true, "canonicalResolutionVerified": false, "manifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-snapshot-swift-syntax.json"}

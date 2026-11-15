@@ -1,0 +1,251 @@
+{
+  "report" : {
+    "configuration" : {
+      "displayName" : "Keyword control (no model)",
+      "id" : "keyword-control",
+      "provenance" : [
+        {
+          "notes" : "Deterministic lexical control, not Wax or Cactus.",
+          "revision" : "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+          "sourceURL" : "app-owned:LocalAIEvaluation/AIEvaluationCore/KeywordMemoryIndex.swift"
+        }
+      ]
+    },
+    "context" : {
+      "buildConfiguration" : "Release requested by command",
+      "conditions" : "Synthetic lexical-control smoke only. No model, phone energy measurement or winner.",
+      "deviceModel" : "Mac host",
+      "environment" : "host",
+      "offlineConfirmed" : false,
+      "operatingSystem" : "Version 27.2.1 (Build 26B131)",
+      "purpose" : "smoke",
+      "sourceIdentity" : "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+      "toolchain" : "Record swift --version alongside this result"
+    },
+    "formatVersion" : 1,
+    "generatedAt" : "2026-11-14T20:42:40Z",
+    "manualReviews" : [
+
+    ],
+    "results" : [
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "en-birthday",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "en-birthday"
+        ],
+        "searchSeconds" : 9.0292e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "ar-birthday",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "ar-birthday"
+        ],
+        "searchSeconds" : 3.0167e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "iq-tentative",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "iq-tentative"
+        ],
+        "searchSeconds" : 8.3e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "en-commitment",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "en-commitment"
+        ],
+        "searchSeconds" : 5.6792e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "mixed-deadline",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "mixed-deadline"
+        ],
+        "searchSeconds" : 3.575e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "name-ar-to-en",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "name-alias"
+        ],
+        "searchSeconds" : 8.0625e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "name-nickname",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "name-alias"
+        ],
+        "searchSeconds" : 1.6209e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "name-disambiguation",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "same-name"
+        ],
+        "searchSeconds" : 2.0292e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "correction-history",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "date-correction",
+          "date-original"
+        ],
+        "searchSeconds" : 2.1167e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "iq-negation",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "iq-negation"
+        ],
+        "searchSeconds" : 3.0959e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "iq-sarcasm",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "iq-sarcasm"
+        ],
+        "searchSeconds" : 0.000187625,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "missing-evidence",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+
+        ],
+        "searchSeconds" : 5.125e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "source-injection",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "untrusted-import",
+          "en-birthday"
+        ],
+        "searchSeconds" : 4.2125e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "ar-digits",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "ar-digits",
+          "mixed-deadline"
+        ],
+        "searchSeconds" : 4.6541e-05,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationIssue" : "No text runtime is installed for this configuration.",
+        "generationStatus" : "blocked",
+        "id" : "unicode-name",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "unicode-name"
+        ],
+        "searchSeconds" : 4.125e-05,
+        "sourceRecall" : 1
+      }
+    ],
+    "settings" : {
+      "maximumOutputTokens" : 256,
+      "seed" : 42,
+      "temperature" : 0
+    },
+    "suiteID" : "memoryos-local-ai-fictional-v1",
+    "telemetry" : {
+
+    }
+  },
+  "selectionBlockers" : [
+    "Physical-phone measurements are missing.",
+    "This is a smoke run, not a comparison.",
+    "The target iPhone 15 Pro Max has not been measured.",
+    "A Release run is required.",
+    "Offline operation has not been confirmed.",
+    "The model asset and its SHA-256 are missing.",
+    "Memory, storage, battery, heat and measurement methods are required.",
+    "Some retrieval or generation cases have no successful measurements.",
+    "Each generated answer needs one passing human language/source review."
+  ]
+}

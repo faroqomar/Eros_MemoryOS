@@ -1,0 +1,26 @@
+{
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+  "candidateID": "llama-qwen",
+  "simulatorSuites": 6,
+  "simulatorAnswers": 90,
+  "distinctTextsPerCase": {
+    "en-birthday": 1,
+    "ar-birthday": 1,
+    "iq-tentative": 1,
+    "en-commitment": 1,
+    "mixed-deadline": 1,
+    "name-ar-to-en": 1,
+    "name-nickname": 1,
+    "name-disambiguation": 1,
+    "correction-history": 1,
+    "iq-negation": 1,
+    "iq-sarcasm": 1,
+    "missing-evidence": 1,
+    "source-injection": 1,
+    "ar-digits": 1,
+    "unicode-name": 1
+  },
+  "builderReview": "llama-qwen17-simulator-builder-review.json",
+  "reviewAppliesTo": "Byte-identical text in all six clean simulator suites; no human approval inferred."
+}

@@ -1,0 +1,70 @@
+warning: 'wax': Invalid Resource 'Resources/all-MiniLM-L6-v2.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/snowflake-arctic-embed-s.mlmodelc': File not found.
+warning: 'swift-crypto': Conflicting identity for swift-asn1: dependency 'github.com/apple/swift-asn1' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-asn1' both point to the same package identity 'swift-asn1'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto->github.com/apple/swift-asn1 (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-asn1. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'metalanns': Conflicting identity for grdb.swift: dependency 'github.com/groue/grdb.swift' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift' both point to the same package identity 'grdb.swift'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/groue/grdb.swift (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for metalanns: dependency 'github.com/christopherkarani/metalanns' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns' both point to the same package identity 'metalanns'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/christopherkarani/metalanns (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for grdb.swift: dependency 'github.com/groue/grdb.swift' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift' both point to the same package identity 'grdb.swift'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/groue/grdb.swift (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for swift-crypto: dependency 'github.com/apple/swift-crypto' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto' both point to the same package identity 'swift-crypto'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/apple/swift-crypto (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax-snapshot-verification': dependency 'metalanns' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'grdb.swift' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'swift-crypto' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'swift-asn1' is not used by any target
+warning: 'wax': Invalid Resource 'Resources/snowflake-arctic-embed-s.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/all-MiniLM-L6-v2.mlmodelc': File not found.
+warning: 'swift-crypto': Conflicting identity for swift-asn1: dependency 'github.com/apple/swift-asn1' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-asn1' both point to the same package identity 'swift-asn1'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto->github.com/apple/swift-asn1 (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-asn1. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'metalanns': Conflicting identity for grdb.swift: dependency 'github.com/groue/grdb.swift' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift' both point to the same package identity 'grdb.swift'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns->github.com/groue/grdb.swift (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for metalanns: dependency 'github.com/christopherkarani/metalanns' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns' both point to the same package identity 'metalanns'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/christopherkarani/metalanns (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for grdb.swift: dependency 'github.com/groue/grdb.swift' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift' both point to the same package identity 'grdb.swift'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns->github.com/groue/grdb.swift (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for swift-crypto: dependency 'github.com/apple/swift-crypto' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto' both point to the same package identity 'swift-crypto'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/apple/swift-crypto (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax-snapshot-verification': dependency 'metalanns' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'grdb.swift' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'swift-crypto' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'swift-asn1' is not used by any target
+Building for production...
+[Computing dependencies]
+[Pre-planning 1 / 567]
+[Planning deferred tasks]
+[5 / 30] MetalANNS_MetalANNSCore
+[6 / 32]
+[10 / 24] WaxCore
+[12 / 25] WaxCore
+[22 / 36] WaxTextSearch
+[26 / 39] WaxTextSearch
+[30 / 41] WaxVectorSearch
+[34 / 39] Wax
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-patched/Wax/Sources/Wax/Broker/AgentBrokerService.swift:2997:5: warning: 'package' modifier is redundant for property declared in a package extension
+2995 | 
+2996 | package extension AgentBrokerValue {
+2997 |     package var debugJSONString: String {
+     |     `- warning: 'package' modifier is redundant for property declared in a package extension
+2998 |         guard let data = try? JSONEncoder().encode(self),
+2999 |               let string = String(data: data, encoding: .utf8) else {
+[35 / 40] Wax
+[41 / 46] WaxEvaluationAdapter
+[43 / 47] WaxEvaluationAdapter
+[49 / 55] wax-evaluation-product
+[52 / 57] wax-evaluation-product
+[54 / 57] WaxEvaluationAdapterTests-product
+[57 / 61] WaxEvaluationAdapterTests-product
+[59 / 61] WaxEvaluationAdapterTests-product
+[60 / 60] wax-evaluation-product
+Build complete! (71.18 secs)
+Test Suite 'All tests' started at 2026-11-15 02:31:35.708.
+Test Suite 'All tests' passed at 2026-11-15 02:31:35.720.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.011) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite WaxMemoryIndexAdapterTests started.
+◇ Test rebuildRetractsRemovedAndCorrectedSourcesWithoutDeletingOtherFiles() started.
+◇ Test retrievesCanonicalUnicodeIDsAndPreservesIdenticalSources() started.
+◇ Test rejectsUnavailableAndInvalidInputsAndRetainsPreviousIndex() started.
+◇ Test preservesArabicAndMixedLanguageLexicalSearch() started.
+◇ Test storageFailurePreservesCallerOwnedFile() started.
+✔ Test storageFailurePreservesCallerOwnedFile() passed after 0.033 seconds.
+✔ Test preservesArabicAndMixedLanguageLexicalSearch() passed after 0.138 seconds.
+✔ Test retrievesCanonicalUnicodeIDsAndPreservesIdenticalSources() passed after 0.138 seconds.
+✔ Test rejectsUnavailableAndInvalidInputsAndRetainsPreviousIndex() passed after 0.168 seconds.
+✔ Test rebuildRetractsRemovedAndCorrectedSourcesWithoutDeletingOtherFiles() passed after 0.179 seconds.
+✔ Suite WaxMemoryIndexAdapterTests passed after 0.179 seconds.
+✔ Test run with 5 tests in 1 suite passed after 0.179 seconds.

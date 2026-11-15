@@ -1,0 +1,36 @@
+{"identity": "mlx-swift", "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075", "files": 703, "trees": 108, "gitlinks": 2}
+{"identity": "mlx-swift", "completed": 25, "total": 703}
+{"identity": "mlx-swift", "completed": 50, "total": 703}
+{"event": "raw-transport-retry", "path": "Source/Cmlx/fmt/doc/get-started.md", "attempt": 1, "errorType": "ConnectionError"}
+{"identity": "mlx-swift", "completed": 75, "total": 703}
+{"identity": "mlx-swift", "completed": 100, "total": 703}
+{"identity": "mlx-swift", "completed": 125, "total": 703}
+{"identity": "mlx-swift", "completed": 150, "total": 703}
+{"identity": "mlx-swift", "completed": 175, "total": 703}
+{"event": "raw-transport-retry", "path": "Source/Cmlx/fmt/test/gtest/gtest/gtest.h", "attempt": 1, "errorType": "ConnectionError"}
+{"identity": "mlx-swift", "completed": 200, "total": 703}
+{"identity": "mlx-swift", "completed": 225, "total": 703}
+{"identity": "mlx-swift", "completed": 250, "total": 703}
+{"event": "raw-transport-retry", "path": "Source/Cmlx/include-framework/mlx-random.h", "attempt": 1, "errorType": "ReadTimeout"}
+{"identity": "mlx-swift", "completed": 275, "total": 703}
+{"identity": "mlx-swift", "completed": 300, "total": 703}
+{"identity": "mlx-swift", "completed": 325, "total": 703}
+{"identity": "mlx-swift", "completed": 350, "total": 703}
+{"identity": "mlx-swift", "completed": 375, "total": 703}
+{"identity": "mlx-swift", "completed": 400, "total": 703}
+{"identity": "mlx-swift", "completed": 425, "total": 703}
+{"identity": "mlx-swift", "completed": 450, "total": 703}
+{"identity": "mlx-swift", "completed": 475, "total": 703}
+{"identity": "mlx-swift", "completed": 500, "total": 703}
+{"identity": "mlx-swift", "completed": 525, "total": 703}
+{"identity": "mlx-swift", "completed": 550, "total": 703}
+{"identity": "mlx-swift", "completed": 575, "total": 703}
+{"identity": "mlx-swift", "completed": 600, "total": 703}
+{"event": "raw-transport-retry", "path": "Source/Cmlx/mlx-generated/reduce_utils.cpp", "attempt": 1, "errorType": "ConnectionError"}
+{"identity": "mlx-swift", "completed": 625, "total": 703}
+{"identity": "mlx-swift", "completed": 650, "total": 703}
+{"identity": "mlx-swift", "completed": 675, "total": 703}
+{"identity": "mlx-swift", "completed": 700, "total": 703}
+{"event": "raw-transport-retry", "path": "Source/MLX/Logging.swift", "attempt": 1, "errorType": "ConnectionError"}
+{"identity": "mlx-swift", "completed": 703, "total": 703}
+{"snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift", "completeSelectedSources": true, "canonicalResolutionVerified": false, "manifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-snapshot-mlx-swift.json"}

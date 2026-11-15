@@ -1,0 +1,11 @@
+{
+  "source": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/out/Products/Release/mlx-swift_Cmlx.bundle/Contents/Resources/default.metallib",
+  "sha256": "cc3fc4850eb72caa36e9db2640b421f1ac2bfda2174dd58f8c15b52233ec154c",
+  "bytes": 2401016,
+  "stagedPaths": [
+    "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/out/Products/Release/mlx.metallib",
+    "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/out/Products/Release/MLXEvaluationAdapterTests.xctest/Contents/MacOS/mlx.metallib"
+  ],
+  "reason": "The SwiftBuild test runner did not resolve the SDK resource bundle. The original pinned MLX device.cpp supports colocated mlx.metallib.",
+  "sdkSourcePatched": false
+}

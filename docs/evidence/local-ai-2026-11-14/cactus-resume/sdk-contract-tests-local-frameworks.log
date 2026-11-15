@@ -1,0 +1,35 @@
+Building for production...
+[Using on-disk description]
+[2 / 10] CactusEvaluationAdapter
+[4 / 11] CactusEvaluationAdapter
+[11 / 17] cactus-evaluation-product
+[13 / 19] cactus-evaluation-product
+[15 / 19] cactus-evaluation-product
+[15 / 19] CactusEvaluationAdapterTests-product
+[19 / 20] CactusEvaluationAdapterTests-product
+[22 / 22] CactusEvaluationAdapterTests-product
+[25 / 25] cactus-evaluation-product
+Build complete! (3.98 secs)
+Test Suite 'All tests' started at 2026-11-15 00:50:10.311.
+Test Suite 'All tests' passed at 2026-11-15 00:50:10.321.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.010) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() started.
+◇ Test cancelledRebuildCannotPublishResults() started.
+◇ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() started.
+➜ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() skipped.
+◇ Test missingAssetCannotProduceFakeRetrieval() started.
+➜ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() skipped.
+◇ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() started.
+◇ Test duplicateIDsFailBeforeOpeningModelOrIndex() started.
+◇ Test nativeIndexRanksDeletesAndPersistsControlledVectors() started.
+✔ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() passed after 0.001 seconds.
+✔ Test duplicateIDsFailBeforeOpeningModelOrIndex() passed after 0.002 seconds.
+✔ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() passed after 0.002 seconds.
+✔ Test missingAssetCannotProduceFakeRetrieval() passed after 0.002 seconds.
+✔ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() passed after 0.002 seconds.
+✔ Test cancelledRebuildCannotPublishResults() passed after 0.002 seconds.
+✔ Test nativeIndexRanksDeletesAndPersistsControlledVectors() passed after 0.004 seconds.
+✔ Test run with 9 tests in 0 suites passed after 0.004 seconds.

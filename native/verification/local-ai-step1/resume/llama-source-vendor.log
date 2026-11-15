@@ -1,0 +1,24 @@
+{"verified": "vendor/hash/rotate-bits/LICENSE.md", "bytes": 1088}
+{"verified": "vendor/cpp-httplib/CMakeLists.txt", "bytes": 6813}
+{"verified": "vendor/hash/CMakeLists.txt", "bytes": 1010}
+{"verified": "vendor/hash/rotate-bits/rotate-bits.h", "bytes": 1017}
+{"verified": "vendor/hash/sha1/sha1.c", "bytes": 7676}
+{"verified": "vendor/hash/sha256/LICENSE", "bytes": 41}
+{"verified": "vendor/hash/xxhash/LICENSE", "bytes": 1389}
+{"verified": "vendor/hash/sha256/sha256.c", "bytes": 5282}
+{"verified": "vendor/hash/xxhash/xxhash.c", "bytes": 1855}
+{"verified": "vendor/hash/hash.h", "bytes": 216}
+{"verified": "vendor/miniaudio/CMakeLists.txt", "bytes": 245}
+{"verified": "vendor/hash/sha256/sha256.h", "bytes": 549}
+{"verified": "vendor/nlohmann/CMakeLists.txt", "bytes": 237}
+{"verified": "vendor/stb/CMakeLists.txt", "bytes": 333}
+{"verified": "vendor/hash/hash.cpp", "bytes": 581}
+{"retry": "vendor/hash/sha1/sha1.h", "attempt": 1, "errorType": "URLError"}
+{"retry": "vendor/sheredom/CMakeLists.txt", "attempt": 1, "errorType": "URLError"}
+{"verified": "vendor/sheredom/CMakeLists.txt", "bytes": 241}
+{"retry": "vendor/hash/xxhash/xxhash.h", "attempt": 1, "errorType": "timeout"}
+{"retry": "vendor/hash/sha1/sha1.h", "attempt": 2, "errorType": "URLError"}
+{"verified": "vendor/hash/sha1/sha1.h", "bytes": 689}
+{"retry": "vendor/hash/xxhash/xxhash.h", "attempt": 2, "errorType": "timeout"}
+{"verified": "vendor/hash/xxhash/xxhash.h", "bytes": 264750}
+{"event": "complete", "files": 531, "revision": "a956a852c9c8bc1fb07206364838ddef299178c0"}

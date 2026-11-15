@@ -1,0 +1,26 @@
+Building for production...
+[2 / 6] LlamaEvaluationAdapterTests-product
+[3 / 7] LlamaEvaluationAdapterTests-product
+[7 / 8] LlamaEvaluationAdapterTests-product
+[10 / 10] LlamaEvaluationAdapterTests-product
+Build complete! (2.22 secs)
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+◇ Test case passing 1 argument nulRequest → TextRequest(instruction: "Use\0all sources.", question: "Where?", sources: []) to embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+◇ Test case passing 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where\0is it?", sources: []) to embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+◇ Test case passing 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where?", sources: [AIEvaluationCore.SourceRecord(id: "source\0suffix", text: "Fictional source.", language: "en", revision: 1)]) to embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+◇ Test case passing 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where?", sources: [AIEvaluationCore.SourceRecord(id: "source", text: "Original\0source suffix.", language: "en", revision: 1)]) to embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) started.
+✘ Test embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) recorded an issue with 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where\0is it?", sources: []) at LlamaAssetTests.swift:29:17: Issue recorded
+↳ Expected invalidSuite before model loading, received: .unavailable("Cannot read the local GGUF model.")
+✘ Test embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) recorded an issue with 1 argument nulRequest → TextRequest(instruction: "Use\0all sources.", question: "Where?", sources: []) at LlamaAssetTests.swift:29:17: Issue recorded
+↳ Expected invalidSuite before model loading, received: .unavailable("Cannot read the local GGUF model.")
+✘ Test embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) recorded an issue with 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where?", sources: [AIEvaluationCore.SourceRecord(id: "source\0suffix", text: "Fictional source.", language: "en", revision: 1)]) at LlamaAssetTests.swift:29:17: Issue recorded
+↳ Expected invalidSuite before model loading, received: .unavailable("Cannot read the local GGUF model.")
+✘ Test embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) recorded an issue with 1 argument nulRequest → TextRequest(instruction: "Use sources only.", question: "Where?", sources: [AIEvaluationCore.SourceRecord(id: "source", text: "Original\0source suffix.", language: "en", revision: 1)]) at LlamaAssetTests.swift:29:17: Issue recorded
+↳ Expected invalidSuite before model loading, received: .unavailable("Cannot read the local GGUF model.")
+✘ Test embeddedNullPromptIsRejectedBeforeOpeningTheModel(_:) with 4 test cases failed after 0.001 seconds with 4 issues.
+✘ Test run with 1 test in 0 suites failed after 0.001 seconds with 4 issues.
+Note: Some test targets reported failures:
+  - LlamaEvaluationAdapterTests (Swift Testing)

@@ -1,0 +1,11 @@
+{
+  "scope": "Earlier C34 architecture documentation remains outside group4 delivery. Shared register C34 paragraphs are excluded from the index without changing working files.",
+  "files": {
+    "AGENTS.md": "59f4210ba13140f9f49509b8adffd3c1f176366da6e351184472f7e61822269f",
+    "docs/decisions/independent-engine-packages.md": "1af6080300da78df3471c70f10ca241eec771cfb4253d6b108b458bda0a773ea",
+    "docs/how-to/commercial-engineering-rules.md": "bbe83e495924f1a67597828a569ac05b3ec30b343295b72ffe1f5dbfd6ffc09a",
+    "docs/how-to/development-workflow.md": "a70a85c90118741a401d9ab9398216ad98bf86c65c7ce6b21507441e6520063f",
+    "docs/templates/development-task.md": "8671d90eb5b4b1a1d3e368a508fba8f441320ab075d53c76f0dd9b204f636d1a",
+    "docs/tasks/2026-11-14-explicit-architecture-rules.md": "0f2fa8bbd409233f32dbda257c2628b9f0c25a13a281cd6a1ebbb0b7e53f7f66"
+  }
+}

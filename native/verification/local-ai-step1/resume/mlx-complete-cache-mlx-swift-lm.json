@@ -1,0 +1,14 @@
+{
+  "identity": "mlx-swift-lm",
+  "origin": "https://github.com/ml-explore/mlx-swift-lm",
+  "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+  "rootTreeSHA1": "bbba5542694fbf2eaa3e8cfd053aa0e7edb8f79b",
+  "genuineShallowBoundary": true,
+  "promisor": false,
+  "sourcePatched": false,
+  "archiveSHA256": "b8b975ee439f8444e3718b08e461d5796bcde1eb40e191b1fec46dfe84146fb1",
+  "archiveBytes": 1844933,
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/mlx-swift-lm-c90ccc0b",
+  "fsck": "",
+  "canonicalResolutionVerified": false
+}

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-11-15T00:03:23.700977+00:00",
+  "pid": 46143,
+  "ownership": "46143 72261 Sun Nov 15 02:47:25 2026     python3 docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-complete-canonical-wax.py",
+  "reason": "Repeated logged transport resets/read timeouts; replace nonresumable response loader with persisted ranged downloads; not an elapsed-time cutoff",
+  "preserved": "All verified complete objects and metadata; no other download/process touched"
+}

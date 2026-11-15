@@ -1,0 +1,9 @@
+{
+  "cases": 15,
+  "completed": 15,
+  "exact_source_set": 10,
+  "mean_source_recall": 0.9333333333333333,
+  "os_network_denied": true,
+  "raw_output_unchanged": true,
+  "performance_scope": "Concurrent source build; smoke only"
+}

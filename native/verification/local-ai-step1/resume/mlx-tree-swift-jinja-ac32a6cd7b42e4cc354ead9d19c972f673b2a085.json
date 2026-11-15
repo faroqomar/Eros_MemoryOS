@@ -1,0 +1,668 @@
+{
+  "sha": "ac32a6cd7b42e4cc354ead9d19c972f673b2a085",
+  "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/ac32a6cd7b42e4cc354ead9d19c972f673b2a085",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a4728541bb1f56448d6d7147beace2608d8606e1",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/a4728541bb1f56448d6d7147beace2608d8606e1"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e131634e69ec0431f3cd12dcc0a5a7ff4f50f9f0",
+      "size": 206,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/e131634e69ec0431f3cd12dcc0a5a7ff4f50f9f0"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "42eb91f18e314128353c93074b458ff890a1f348",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/42eb91f18e314128353c93074b458ff890a1f348"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8eaa2d48ecd2601ee34ded046a1d232e6fe6841",
+      "size": 2378,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/e8eaa2d48ecd2601ee34ded046a1d232e6fe6841"
+    },
+    {
+      "path": ".github/workflows/fuzz.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca5d60c63de0880f0393e0753ddce2702a5a34a2",
+      "size": 1728,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/ca5d60c63de0880f0393e0753ddce2702a5a34a2"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "596c631e7b034c7f5c790111aa31db3ddc87f6a0",
+      "size": 2321,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/596c631e7b034c7f5c790111aa31db3ddc87f6a0"
+    },
+    {
+      "path": ".spi.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0a0a1eee2429be38f080e076f342f28507fd1f0",
+      "size": 68,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/e0a0a1eee2429be38f080e076f342f28507fd1f0"
+    },
+    {
+      "path": ".swift-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd02f707f96db196721f42d0a5fab3fccce1b10f",
+      "size": 333,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/fd02f707f96db196721f42d0a5fab3fccce1b10f"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e524e5fbe7f233fca0852ba1554c9326a207954e",
+      "size": 11347,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/e524e5fbe7f233fca0852ba1554c9326a207954e"
+    },
+    {
+      "path": "Package.resolved",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb9509a403461109d8098368562950662cd1049b",
+      "size": 316,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/cb9509a403461109d8098368562950662cd1049b"
+    },
+    {
+      "path": "Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fed18b2b1f969cf0ca234b8059509a44489ca564",
+      "size": 1140,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/fed18b2b1f969cf0ca234b8059509a44489ca564"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e833b3b47cf02768bf238f802221e5ecb62cad8d",
+      "size": 16247,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/e833b3b47cf02768bf238f802221e5ecb62cad8d"
+    },
+    {
+      "path": "Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5117f0577f5b047b1b74b729755f2de259cce784",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/5117f0577f5b047b1b74b729755f2de259cce784"
+    },
+    {
+      "path": "Sources/Jinja",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "18391b1fa50343e1439e12c085f4d8cd34cb2fdc",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/18391b1fa50343e1439e12c085f4d8cd34cb2fdc"
+    },
+    {
+      "path": "Sources/Jinja/AST.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8a674fb5be34c7205a3a7fc8fbd65b9bec12e65",
+      "size": 5930,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/a8a674fb5be34c7205a3a7fc8fbd65b9bec12e65"
+    },
+    {
+      "path": "Sources/Jinja/Error.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd08188d777a1c38dbbf78169b30bc570d24ac04",
+      "size": 780,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/fd08188d777a1c38dbbf78169b30bc570d24ac04"
+    },
+    {
+      "path": "Sources/Jinja/Filters.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1be7b57c895e0e42c0edca4d9c4cdc52b698be01",
+      "size": 79199,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/1be7b57c895e0e42c0edca4d9c4cdc52b698be01"
+    },
+    {
+      "path": "Sources/Jinja/Globals.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c579fc5db06cd0e9d94d58f9d286f6d3346cc351",
+      "size": 16225,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/c579fc5db06cd0e9d94d58f9d286f6d3346cc351"
+    },
+    {
+      "path": "Sources/Jinja/Interpreter.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b3223c6be84bba81d89515a3b27157d244122fe",
+      "size": 45641,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/4b3223c6be84bba81d89515a3b27157d244122fe"
+    },
+    {
+      "path": "Sources/Jinja/JSON.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64fd2b63bac7939b3c1aa72255be9d830e8230e8",
+      "size": 10553,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/64fd2b63bac7939b3c1aa72255be9d830e8230e8"
+    },
+    {
+      "path": "Sources/Jinja/Lexer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fe9eb115ad05c0859191d15d1e4b8c9242c6861",
+      "size": 19069,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/0fe9eb115ad05c0859191d15d1e4b8c9242c6861"
+    },
+    {
+      "path": "Sources/Jinja/Macro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "132ea9f06fc255bad43688ba33da89df91af4d34",
+      "size": 2702,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/132ea9f06fc255bad43688ba33da89df91af4d34"
+    },
+    {
+      "path": "Sources/Jinja/Namespace.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15f8bd2ebc823d50776d537c25f6190a404718da",
+      "size": 1701,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/15f8bd2ebc823d50776d537c25f6190a404718da"
+    },
+    {
+      "path": "Sources/Jinja/Parser.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c99d0252366d8e798baba707979ae5b88ed215c",
+      "size": 31540,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/4c99d0252366d8e798baba707979ae5b88ed215c"
+    },
+    {
+      "path": "Sources/Jinja/PropertyMembers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d2f996e70929ea2236662f7a0855b8480809ada",
+      "size": 22999,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/1d2f996e70929ea2236662f7a0855b8480809ada"
+    },
+    {
+      "path": "Sources/Jinja/Template.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae27869f3ebb0811f88654a825b125817ea65b56",
+      "size": 4426,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/ae27869f3ebb0811f88654a825b125817ea65b56"
+    },
+    {
+      "path": "Sources/Jinja/Tests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f22e87e2adb5d8e1c9bf07f344f099c54e24e98",
+      "size": 17891,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/8f22e87e2adb5d8e1c9bf07f344f099c54e24e98"
+    },
+    {
+      "path": "Sources/Jinja/Token.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da4f0b9800cfb9385d1bfead9d35c3fc2c98ff02",
+      "size": 5958,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/da4f0b9800cfb9385d1bfead9d35c3fc2c98ff02"
+    },
+    {
+      "path": "Sources/Jinja/Utilities.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be86b815e75c230d460625b0a9e74beee68488a1",
+      "size": 6553,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/be86b815e75c230d460625b0a9e74beee68488a1"
+    },
+    {
+      "path": "Sources/Jinja/Value.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f02b367a9b86e30d2735e197666ac766f5f54392",
+      "size": 37148,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/f02b367a9b86e30d2735e197666ac766f5f54392"
+    },
+    {
+      "path": "Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0df6958be4c8b05fd4acf00f1565dee71c858845",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/0df6958be4c8b05fd4acf00f1565dee71c858845"
+    },
+    {
+      "path": "Tests/JinjaTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d6156aab33e5005cecfb2ac3c3e109321984f7ee",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/d6156aab33e5005cecfb2ac3c3e109321984f7ee"
+    },
+    {
+      "path": "Tests/JinjaTests/ArgumentBoundsTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c717ca2b2eeb39d6663f1497e675e8c878b52738",
+      "size": 7416,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/c717ca2b2eeb39d6663f1497e675e8c878b52738"
+    },
+    {
+      "path": "Tests/JinjaTests/ArithmeticOverflowTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b30170b7426a70dc1ac8917c5cac8789a153ae38",
+      "size": 5704,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/b30170b7426a70dc1ac8917c5cac8789a153ae38"
+    },
+    {
+      "path": "Tests/JinjaTests/CommentWhitespaceControlTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fc6fe890ba42bd02b2066652c6a12580c77b269",
+      "size": 2275,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/0fc6fe890ba42bd02b2066652c6a12580c77b269"
+    },
+    {
+      "path": "Tests/JinjaTests/ConformanceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b163b1dff9deb753485f0c319b1cd38e95e25b5",
+      "size": 16290,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/4b163b1dff9deb753485f0c319b1cd38e95e25b5"
+    },
+    {
+      "path": "Tests/JinjaTests/ErrorTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf38b96f6755bc0be6358341c4e74a0d800dc2bf",
+      "size": 2045,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/bf38b96f6755bc0be6358341c4e74a0d800dc2bf"
+    },
+    {
+      "path": "Tests/JinjaTests/FilterPrecedenceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8534f88c149a099b011fbfb9c53165635627041",
+      "size": 5807,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/c8534f88c149a099b011fbfb9c53165635627041"
+    },
+    {
+      "path": "Tests/JinjaTests/FiltersTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12735283c4228066f08c6d7a81e5123484bf6dee",
+      "size": 86715,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/12735283c4228066f08c6d7a81e5123484bf6dee"
+    },
+    {
+      "path": "Tests/JinjaTests/GlobalsTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a68696f12d364117e05686deaf97f946a1e5d9de",
+      "size": 14491,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/a68696f12d364117e05686deaf97f946a1e5d9de"
+    },
+    {
+      "path": "Tests/JinjaTests/IntegerLiteralTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59e9360bde4e4cc17d7f83a012390f438dbff975",
+      "size": 4042,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/59e9360bde4e4cc17d7f83a012390f438dbff975"
+    },
+    {
+      "path": "Tests/JinjaTests/IntegrationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a801dbb2e894fe096234ab3ce0ad28b7daa4c0c4",
+      "size": 118933,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/a801dbb2e894fe096234ab3ce0ad28b7daa4c0c4"
+    },
+    {
+      "path": "Tests/JinjaTests/InterpreterTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d492a7de535de61bc0d90e0876352b17d8d292d",
+      "size": 38680,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/6d492a7de535de61bc0d90e0876352b17d8d292d"
+    },
+    {
+      "path": "Tests/JinjaTests/JSONTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4019f48df5cae3f9c571429c2f133a744ca87c8",
+      "size": 6553,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/c4019f48df5cae3f9c571429c2f133a744ca87c8"
+    },
+    {
+      "path": "Tests/JinjaTests/LexerPositionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb9803c2d5aac16a6212fac44963e98863fefa7b",
+      "size": 13153,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/fb9803c2d5aac16a6212fac44963e98863fefa7b"
+    },
+    {
+      "path": "Tests/JinjaTests/MacroRecursionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3afbbe3ef580e76bae6b1a7776d0277c77ab3cb3",
+      "size": 9871,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/3afbbe3ef580e76bae6b1a7776d0277c77ab3cb3"
+    },
+    {
+      "path": "Tests/JinjaTests/MacroTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "264e016dd7adbfc2c5e66f9c60a19d5a690b174f",
+      "size": 4839,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/264e016dd7adbfc2c5e66f9c60a19d5a690b174f"
+    },
+    {
+      "path": "Tests/JinjaTests/NamespaceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3106ab8532f09c88c77bf52e01264469b6bdc72e",
+      "size": 13980,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/3106ab8532f09c88c77bf52e01264469b6bdc72e"
+    },
+    {
+      "path": "Tests/JinjaTests/OrderedJSON.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f65da7d77eed85cfab8293d3366723691c23e333",
+      "size": 6089,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/f65da7d77eed85cfab8293d3366723691c23e333"
+    },
+    {
+      "path": "Tests/JinjaTests/PerformanceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9ce6a887e8fd7805f71d40ddb3b2a84b4b9fe2b",
+      "size": 26492,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/d9ce6a887e8fd7805f71d40ddb3b2a84b4b9fe2b"
+    },
+    {
+      "path": "Tests/JinjaTests/PropertyMembersTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7eccb7ec26111c4d82cd365bd024f55b0e9e3a43",
+      "size": 27555,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/7eccb7ec26111c4d82cd365bd024f55b0e9e3a43"
+    },
+    {
+      "path": "Tests/JinjaTests/PublicAPITests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db645ffd5067a8d7a33fcca1bbc58519098217a0",
+      "size": 4814,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/db645ffd5067a8d7a33fcca1bbc58519098217a0"
+    },
+    {
+      "path": "Tests/JinjaTests/RenderEnvironmentTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7531780a11e31955ac80985c74be29ed1f64be8b",
+      "size": 7133,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/7531780a11e31955ac80985c74be29ed1f64be8b"
+    },
+    {
+      "path": "Tests/JinjaTests/StringSliceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "035508405db41577a694caed9068624dfc6e37a5",
+      "size": 4775,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/035508405db41577a694caed9068624dfc6e37a5"
+    },
+    {
+      "path": "Tests/JinjaTests/TemplateTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b85d0d74d91e1b2f2f1fc8a59124fd69e8b230dd",
+      "size": 103199,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/b85d0d74d91e1b2f2f1fc8a59124fd69e8b230dd"
+    },
+    {
+      "path": "Tests/JinjaTests/TestsTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c615b4bae6d8226f756dfbde8569a678e36cef9",
+      "size": 27842,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/1c615b4bae6d8226f756dfbde8569a678e36cef9"
+    },
+    {
+      "path": "Tests/JinjaTests/TokenTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa88bcb45e6ec6cbaefc707007b05bdf82dee834",
+      "size": 2744,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/fa88bcb45e6ec6cbaefc707007b05bdf82dee834"
+    },
+    {
+      "path": "Tests/JinjaTests/TrailingNewlineTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "29e2692a1aaa89d7ed9acb7047e4b9c4f8105def",
+      "size": 5129,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/29e2692a1aaa89d7ed9acb7047e4b9c4f8105def"
+    },
+    {
+      "path": "Tests/JinjaTests/ValueTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a790d62f249aef1fdcd2be92e1cf4f1b466cc6e8",
+      "size": 36094,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/a790d62f249aef1fdcd2be92e1cf4f1b466cc6e8"
+    },
+    {
+      "path": "Tests/JinjaTests/WhitespaceControlTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3f245ace9b5adf70694145eee56f5d46f24918a",
+      "size": 5959,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/f3f245ace9b5adf70694145eee56f5d46f24918a"
+    },
+    {
+      "path": "Tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a984f4feff32394608dab931bd04773ba86914f",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/1a984f4feff32394608dab931bd04773ba86914f"
+    },
+    {
+      "path": "Tools/conformance",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f564f9437522121338b24940a7a8f683184e2d70",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/f564f9437522121338b24940a7a8f683184e2d70"
+    },
+    {
+      "path": "Tools/conformance/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6747db3247cf7c99c5f98462a5682432c6f428ac",
+      "size": 43,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/6747db3247cf7c99c5f98462a5682432c6f428ac"
+    },
+    {
+      "path": "Tools/conformance/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "256478e8950457ebe6734a01954e383293377656",
+      "size": 9379,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/256478e8950457ebe6734a01954e383293377656"
+    },
+    {
+      "path": "Tools/conformance/extract_pallets.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eb0daa07e45f1b5cc430750aef36f45d0230f70",
+      "size": 6392,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/9eb0daa07e45f1b5cc430750aef36f45d0230f70"
+    },
+    {
+      "path": "Tools/conformance/fetch.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "921f76148c014c1481b254985a3f44108427abe2",
+      "size": 14176,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/921f76148c014c1481b254985a3f44108427abe2"
+    },
+    {
+      "path": "Tools/conformance/fuzz.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0c5c06a0a1acee31768b363d753ef1549927fff",
+      "size": 14173,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/b0c5c06a0a1acee31768b363d753ef1549927fff"
+    },
+    {
+      "path": "Tools/conformance/gen.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61af71054c7c97dc5fd720e4cd79f05d5131bf85",
+      "size": 44691,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/61af71054c7c97dc5fd720e4cd79f05d5131bf85"
+    },
+    {
+      "path": "Tools/conformance/jinja-render",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "918f8e10f05c515b2085f85cca7fcc74ee46836c",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/918f8e10f05c515b2085f85cca7fcc74ee46836c"
+    },
+    {
+      "path": "Tools/conformance/jinja-render/Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47920f263e84bf6b03d885d0c86328d669c7792f",
+      "size": 964,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/47920f263e84bf6b03d885d0c86328d669c7792f"
+    },
+    {
+      "path": "Tools/conformance/jinja-render/Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e12dcc8ab66a4b577ca8c6a71af090b1e39985cb",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/e12dcc8ab66a4b577ca8c6a71af090b1e39985cb"
+    },
+    {
+      "path": "Tools/conformance/jinja-render/Sources/jinja-render",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "248244df12be0799d4b43bd5fa471bf66fde1301",
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/trees/248244df12be0799d4b43bd5fa471bf66fde1301"
+    },
+    {
+      "path": "Tools/conformance/jinja-render/Sources/jinja-render/OrderedJSON.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f95ec230da7625a918458139495639c3ee10533",
+      "size": 6059,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/7f95ec230da7625a918458139495639c3ee10533"
+    },
+    {
+      "path": "Tools/conformance/jinja-render/Sources/jinja-render/main.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58a9921b640aa928c7e05162b28eb3c5381dad16",
+      "size": 3664,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/58a9921b640aa928c7e05162b28eb3c5381dad16"
+    },
+    {
+      "path": "Tools/conformance/jinja2_server.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86ebc7ed80c2da79602286211b35dc78e9150ce2",
+      "size": 4335,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/86ebc7ed80c2da79602286211b35dc78e9150ce2"
+    },
+    {
+      "path": "Tools/conformance/known-differences.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bda565dcb8d737a810aca2715428e00d3857ba7",
+      "size": 69079,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/3bda565dcb8d737a810aca2715428e00d3857ba7"
+    },
+    {
+      "path": "Tools/conformance/known.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a124627490f97150bd0dc47372e9eeda0e97438f",
+      "size": 24760,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/a124627490f97150bd0dc47372e9eeda0e97438f"
+    },
+    {
+      "path": "Tools/conformance/literal.jsonl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efaefef6dac62bdd6ab627e9b6ed37d620a80136",
+      "size": 60928,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/efaefef6dac62bdd6ab627e9b6ed37d620a80136"
+    },
+    {
+      "path": "Tools/conformance/manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d66ba00fa06da3f24a0de0c9f2d377b84648424",
+      "size": 24236,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/2d66ba00fa06da3f24a0de0c9f2d377b84648424"
+    },
+    {
+      "path": "Tools/conformance/oracle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67958cfe5a84b0bb8df59fc4ac98433195b272b7",
+      "size": 5461,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/67958cfe5a84b0bb8df59fc4ac98433195b272b7"
+    },
+    {
+      "path": "Tools/conformance/reduce.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89422e54c6e16b0cb6feb5db913bc22276fa1417",
+      "size": 9588,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/89422e54c6e16b0cb6feb5db913bc22276fa1417"
+    },
+    {
+      "path": "Tools/conformance/regenerate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "191bb3588ff022388a5f250cc8ee92e5d763bd26",
+      "size": 12635,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/191bb3588ff022388a5f250cc8ee92e5d763bd26"
+    },
+    {
+      "path": "Tools/conformance/report.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "448bec9566fa3c060dde705d443dfacec83336c4",
+      "size": 3068,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/448bec9566fa3c060dde705d443dfacec83336c4"
+    },
+    {
+      "path": "Tools/conformance/test_known.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5decca29b6edd0bc8c9ade0e8cc9311226de8290",
+      "size": 7022,
+      "url": "https://api.github.com/repos/huggingface/swift-jinja/git/blobs/5decca29b6edd0bc8c9ade0e8cc9311226de8290"
+    }
+  ],
+  "truncated": false
+}

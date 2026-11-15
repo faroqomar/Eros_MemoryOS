@@ -1,0 +1,7 @@
+{
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "installedExecutableSHA256": "e0816dde47b65131b6986f175ebf315ca697acb85189a7626cef9123b40e47f6",
+  "bundleIdentifier": "com.eros.memoryos.ailab",
+  "device": "iPhone18Pro/iOS27.2Simulator",
+  "note": "Container lookup and plist/hash inspection only. All UI uses T3 device command."
+}

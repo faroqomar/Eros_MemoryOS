@@ -1,0 +1,16 @@
+{"identity": "swift-numerics", "alreadyRecovered": true}{"identity": "EventSource", "alreadyRecovered": true}
+{"identity": "swift-jinja", "alreadyRecovered": true}
+
+{"identity": "swift-asn1", "alreadyRecovered": true}
+{"identity": "swift-transformers", "alreadyRecovered": true}{"identity": "mlx-swift", "alreadyRecovered": true}
+{"identity": "swift-collections", "alreadyRecovered": true}
+{"identity": "swift-huggingface", "alreadyRecovered": true}
+{"identity": "swift-syntax", "alreadyRecovered": true}
+{"identity": "yyjson", "alreadyRecovered": true}
+
+{"identity": "swift-crypto", "alreadyRecovered": true}{"identity": "mlx-cpp-core", "started": true}{"identity": "mlx-c-api", "started": true}
+
+
+{"identity": "mlx-c-api", "recovered": true}
+{"identity": "mlx-cpp-core", "recovered": true}
+{"completeReviewedCaches": true, "canonicalResolutionVerified": false}

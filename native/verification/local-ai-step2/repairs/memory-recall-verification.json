@@ -1,0 +1,30 @@
+{
+  "usefulCurrentRepairRecall": true,
+  "hits": [
+    {
+      "source": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "text": "C42 requested focused defect, security, and unused-code reviews; C43 authorized fixes. Three scoped reviewers inspected the current group 4 implementation. Group 5 remains a proposed chat checklist, and no chat feature was started. | When: 2026-11-15 | Involving: C42 reviewers; C43 | The review and repair scope is limited to the current group 4 implementation.",
+      "sourceSHA256": "6c2fc7e3a0dc902f8cbf65beaef48c8a9fde3984a52bec4587587d685249e863"
+    },
+    {
+      "source": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "text": "The earlier Step 2 checkpoint was BLOCKED by three Dynamic Type diagnostics and must be preserved as historical evidence. The C43 repair review and current repair section supersede that checkpoint for the C40 experiment, but do not grant Step 3 or release authorization. | The project record distinguishes the historical blocked checkpoint from the newer C40 repair evidence.",
+      "sourceSHA256": "6c2fc7e3a0dc902f8cbf65beaef48c8a9fde3984a52bec4587587d685249e863"
+    }
+  ],
+  "status": {
+    "project": "memoryos",
+    "api": {
+      "status": "healthy",
+      "database": "connected",
+      "db_acquire_ms": 0.9,
+      "db_pool_waiting": 0,
+      "db_pool_in_use": 0,
+      "db_pool_max": 100,
+      "db_pool_idle": 6
+    },
+    "sources": 41,
+    "pending": [],
+    "failed": {}
+  }
+}

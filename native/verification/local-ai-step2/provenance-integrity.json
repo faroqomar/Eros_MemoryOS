@@ -1,0 +1,365 @@
+{
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "frozenSourceFiles": 99,
+  "sourceIdentityDigestValid": true,
+  "driftedSourceFilesAtReview": [],
+  "immutableReportsChecked": 31,
+  "caseResults": 465,
+  "independentStatisticsErrors": [],
+  "fullBuilderSummaryRegeneratedIdentically": true,
+  "groups": {
+    "keyword-control": {
+      "retrievalSeconds": {
+        "count": 75,
+        "median": 5.8083e-05,
+        "p95NearestRank": 9.3084e-05,
+        "minimum": 1.4417e-05,
+        "maximum": 0.000135625
+      },
+      "generationSeconds": null,
+      "requestToFirstTokenSeconds": null,
+      "preparationSeconds": null,
+      "tokensPerSecond": null,
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 42133928.0,
+        "p95NearestRank": 42437032,
+        "minimum": 42125736,
+        "maximum": 42437032
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 0.0,
+        "p95NearestRank": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "reports": 6,
+      "cases": 90,
+      "repetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exactSourceSets": 78,
+      "relevantFirst": 84,
+      "noEvidenceAbstentions": 6,
+      "peakMiB": 40.471107482910156
+    },
+    "llama-qwen06": {
+      "retrievalSeconds": null,
+      "generationSeconds": {
+        "count": 75,
+        "median": 1.475634375,
+        "p95NearestRank": 2.437512,
+        "minimum": 1.157773125,
+        "maximum": 2.782354125
+      },
+      "requestToFirstTokenSeconds": {
+        "count": 75,
+        "median": 1.062500166,
+        "p95NearestRank": 1.380011542,
+        "minimum": 1.0000295,
+        "maximum": 1.829680792
+      },
+      "preparationSeconds": {
+        "count": 75,
+        "median": 0.002202291,
+        "p95NearestRank": 0.003564458,
+        "minimum": 0.002081667,
+        "maximum": 0.014880333
+      },
+      "tokensPerSecond": {
+        "count": 75,
+        "median": 20.80695408677104,
+        "p95NearestRank": 38.54940722915738,
+        "minimum": 8.016628955107956,
+        "maximum": 44.1002487286455
+      },
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 734629080.0,
+        "p95NearestRank": 734760152,
+        "minimum": 734399704,
+        "maximum": 734760152
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 396705472.0,
+        "p95NearestRank": 396705472,
+        "minimum": 396705472,
+        "maximum": 396705472
+      },
+      "reports": 6,
+      "cases": 90,
+      "repetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exactSourceSets": 0,
+      "relevantFirst": 0,
+      "noEvidenceAbstentions": 0,
+      "peakMiB": 700.7218856811523,
+      "allSixOutputsByteIdentical": true
+    },
+    "cactus": {
+      "retrievalSeconds": {
+        "count": 75,
+        "median": 0.080101917,
+        "p95NearestRank": 0.104324542,
+        "minimum": 0.060953,
+        "maximum": 0.1111065
+      },
+      "generationSeconds": null,
+      "requestToFirstTokenSeconds": null,
+      "preparationSeconds": null,
+      "tokensPerSecond": null,
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 102419336.0,
+        "p95NearestRank": 119327528,
+        "minimum": 102337416,
+        "maximum": 119327528
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 428548677.0,
+        "p95NearestRank": 428548677,
+        "minimum": 428548677,
+        "maximum": 428548677
+      },
+      "reports": 6,
+      "cases": 90,
+      "repetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exactSourceSets": 0,
+      "relevantFirst": 84,
+      "noEvidenceAbstentions": 0,
+      "peakMiB": 113.79959869384766
+    },
+    "llama-qwen": {
+      "retrievalSeconds": null,
+      "generationSeconds": {
+        "count": 75,
+        "median": 4.330102167,
+        "p95NearestRank": 8.001267958,
+        "minimum": 3.033195916,
+        "maximum": 8.403132667
+      },
+      "requestToFirstTokenSeconds": {
+        "count": 75,
+        "median": 2.597119834,
+        "p95NearestRank": 2.899503459,
+        "minimum": 2.488334792,
+        "maximum": 2.920597709
+      },
+      "preparationSeconds": {
+        "count": 75,
+        "median": 0.002540708,
+        "p95NearestRank": 0.015151083,
+        "minimum": 0.002126208,
+        "maximum": 0.0608185
+      },
+      "tokensPerSecond": {
+        "count": 75,
+        "median": 17.933603194138943,
+        "p95NearestRank": 31.50165869129001,
+        "minimum": 8.459460293753946,
+        "maximum": 32.52285658211518
+      },
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 1472975096.0,
+        "p95NearestRank": 1473024248,
+        "minimum": 1472893176,
+        "maximum": 1473024248
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 1107409472.0,
+        "p95NearestRank": 1107409472,
+        "minimum": 1107409472,
+        "maximum": 1107409472
+      },
+      "reports": 6,
+      "cases": 90,
+      "repetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exactSourceSets": 0,
+      "relevantFirst": 0,
+      "noEvidenceAbstentions": 0,
+      "peakMiB": 1404.7853927612305,
+      "allSixOutputsByteIdentical": true
+    },
+    "mlx-qwen": {
+      "retrievalSeconds": null,
+      "generationSeconds": null,
+      "requestToFirstTokenSeconds": null,
+      "preparationSeconds": null,
+      "tokensPerSecond": null,
+      "reportedPeakMemoryBytes": {
+        "count": 1,
+        "median": 36932008,
+        "p95NearestRank": 36932008,
+        "minimum": 36932008,
+        "maximum": 36932008
+      },
+      "reportedStorageBytes": {
+        "count": 1,
+        "median": 0,
+        "p95NearestRank": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "reports": 1,
+      "cases": 15,
+      "repetitions": [
+        0
+      ],
+      "exactSourceSets": 0,
+      "relevantFirst": 0,
+      "noEvidenceAbstentions": 0,
+      "peakMiB": 35.221107482910156
+    },
+    "wax-lexical": {
+      "retrievalSeconds": {
+        "count": 75,
+        "median": 0.001816333,
+        "p95NearestRank": 0.002786167,
+        "minimum": 0.001009375,
+        "maximum": 0.003044875
+      },
+      "generationSeconds": null,
+      "requestToFirstTokenSeconds": null,
+      "preparationSeconds": null,
+      "tokensPerSecond": null,
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 53340608.0,
+        "p95NearestRank": 57690584,
+        "minimum": 53316032,
+        "maximum": 57690584
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 8539018.0,
+        "p95NearestRank": 8539018,
+        "minimum": 8539018,
+        "maximum": 8539018
+      },
+      "reports": 6,
+      "cases": 90,
+      "repetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "exactSourceSets": 60,
+      "relevantFirst": 84,
+      "noEvidenceAbstentions": 0,
+      "peakMiB": 55.018028259277344
+    }
+  },
+  "builderReviewRawHashesAndCounts": [
+    {
+      "path": "native/verification/local-ai-step1/resume/llama-qwen06-host-builder-review.json",
+      "rawHashValid": true,
+      "reviewKind": "Builder AI review, not human review or owner acceptance",
+      "counts": {
+        "factsAndMeaning": {
+          "pass": 7,
+          "fail": 8
+        },
+        "questionLanguage": {
+          "pass": 10,
+          "fail": 5
+        },
+        "sourceIDCitations": {
+          "fail": 13,
+          "notApplicable": 1,
+          "pass": 1
+        },
+        "overall": {
+          "fail": 14,
+          "pass": 1
+        }
+      }
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/llama-qwen17-simulator-builder-review.json",
+      "rawHashValid": true,
+      "reviewKind": "Builder AI review, not human review or owner acceptance",
+      "counts": {
+        "factsAndMeaning": {
+          "pass": 8,
+          "fail": 7
+        },
+        "questionLanguage": {
+          "pass": 9,
+          "fail": 6
+        },
+        "sourceIDCitations": {
+          "pass": 12,
+          "fail": 2,
+          "notApplicable": 1
+        },
+        "overall": {
+          "pass": 7,
+          "fail": 8
+        }
+      }
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-host-canonical-builder-review.json",
+      "rawHashValid": true,
+      "reviewKind": "Builder AI review, not human review or owner acceptance",
+      "counts": {
+        "factsAndMeaning": {
+          "pass": 9,
+          "fail": 6
+        },
+        "questionLanguage": {
+          "pass": 9,
+          "fail": 6
+        },
+        "sourceIDCitations": {
+          "fail": 14,
+          "notApplicable": 1
+        },
+        "overall": {
+          "fail": 14,
+          "pass": 1
+        }
+      }
+    }
+  ],
+  "method": "Independent direct calculations from immutable raw report bytes, separate from a full regeneration using the retained builder summarizer. No workload rerun or hardware claim.",
+  "step1ScreenshotHashes": {
+    "captures": 11,
+    "mismatches": [],
+    "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+    "scope": "Historical Step1 captures; fresh Step2 captures remain main-agent evidence."
+  }
+}

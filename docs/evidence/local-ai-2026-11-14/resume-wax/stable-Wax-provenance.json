@@ -1,0 +1,51 @@
+{
+  "name": "Wax",
+  "repo": "christopherkarani/Wax",
+  "tag": "0.1.47",
+  "ref": {
+    "ref": "refs/tags/0.1.47",
+    "node_id": "REF_kwDOQ9SfPbByZWZzL3RhZ3MvMC4xLjQ3",
+    "url": "https://api.github.com/repos/christopherkarani/Wax/git/refs/tags/0.1.47",
+    "object": {
+      "sha": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+      "type": "commit",
+      "url": "https://api.github.com/repos/christopherkarani/Wax/git/commits/e4587f8cebb76aa92ece008253f13c66b756e68b"
+    }
+  },
+  "tag_object": null,
+  "commit": {
+    "sha": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+    "node_id": "C_kwDOQ9SfPdoAKGU0NTg3ZjhjZWJiNzZhYTkyZWNlMDA4MjUzZjEzYzY2Yjc1NmU2OGI",
+    "url": "https://api.github.com/repos/christopherkarani/Wax/git/commits/e4587f8cebb76aa92ece008253f13c66b756e68b",
+    "html_url": "https://github.com/christopherkarani/Wax/commit/e4587f8cebb76aa92ece008253f13c66b756e68b",
+    "author": {
+      "name": "christopherkarani",
+      "email": "chrisbkarani@gmail.com",
+      "date": "2026-09-20T21:28:16Z"
+    },
+    "committer": {
+      "name": "christopherkarani",
+      "email": "chrisbkarani@gmail.com",
+      "date": "2026-09-20T21:28:16Z"
+    },
+    "tree": {
+      "sha": "653dd20a0d02944ffdcdb6e35d37a54449a64f2e",
+      "url": "https://api.github.com/repos/christopherkarani/Wax/git/trees/653dd20a0d02944ffdcdb6e35d37a54449a64f2e"
+    },
+    "message": "release: waxmcp v0.1.47\n\nLet remember commit when several replacements share one predecessor\nso a poisoned WAL can flush.\n\nCo-authored-by: Cursor <cursoragent@cursor.com>",
+    "parents": [
+      {
+        "sha": "83fbfcdbe392c27033cb4e97c80832bf4f97e852",
+        "url": "https://api.github.com/repos/christopherkarani/Wax/git/commits/83fbfcdbe392c27033cb4e97c80832bf4f97e852",
+        "html_url": "https://github.com/christopherkarani/Wax/commit/83fbfcdbe392c27033cb4e97c80832bf4f97e852"
+      }
+    ],
+    "verification": {
+      "verified": false,
+      "reason": "unsigned",
+      "signature": null,
+      "payload": null,
+      "verified_at": null
+    }
+  }
+}

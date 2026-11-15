@@ -1,0 +1,29 @@
+{
+  "helper_sha256": "b20a3cb4e5be037150cf007987446da9fbc77b488b82facbf199622a1140ba96",
+  "checks": [
+    {
+      "check": "actual simulator resources with explicit staging root",
+      "exit": 0
+    },
+    {
+      "check": "repeat preserves unrelated resource",
+      "exit": 0
+    },
+    {
+      "check": "owned platform resource replacement",
+      "exit": 0
+    },
+    {
+      "check": "unknown bundle conflict preserved",
+      "exit": 1,
+      "diagnostic": "RuntimeError: Preserving app resources with no matching Wax ownership: Wax_Wax.bundle"
+    },
+    {
+      "check": "actual source tamper rejected before destination replacement",
+      "exit": 1,
+      "diagnostic": "RuntimeError: Source resource hashes differ from packaging receipt: {\"missing\": [], \"extra\": [], \"changed\": [\"Wax_Wax.bundle/cl100k_base.tiktoken\"]}"
+    }
+  ],
+  "unrelated_resource_hash_preserved": "7c7c8e704a6344bbb8053554b91763431461ecec16c823397e83eab81563b9b7",
+  "all_passed": true
+}

@@ -1,0 +1,31 @@
+test_added_c_source_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_added_compiled_source_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_already_patched_checkout_still_rejects_unrelated_edits (test_prepare_runtime.SourceVerificationTests) ... ok
+test_approved_patch_without_receipt_is_supported (test_prepare_runtime.SourceVerificationTests) ... ok
+test_clean_git_checkout_without_receipt_is_supported (test_prepare_runtime.SourceVerificationTests) ... ok
+test_deleted_tracked_source_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_ignored_compiled_source_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_main_refuses_source_edit_before_patch_or_build (test_prepare_runtime.SourceVerificationTests) ... ok
+test_main_reuses_approved_patch_and_reaches_only_build_boundary (test_prepare_runtime.SourceVerificationTests) ... ok
+test_missing_git_and_receipt_fail_closed (test_prepare_runtime.SourceVerificationTests) ... ok
+test_modified_patch_added_source_is_rejected (test_prepare_runtime.SourceVerificationTests) ... error: patch failed: cactus/local_only.cpp:1
+error: cactus/local_only.cpp: patch does not apply
+ok
+test_parent_directory_symlink_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_patch_parent_directory_symlink_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_patch_symlink_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_receipt_snapshot_detects_source_edit (test_prepare_runtime.SourceVerificationTests) ... ok
+test_receipt_snapshot_rejects_new_compiled_source (test_prepare_runtime.SourceVerificationTests) ... ok
+test_receipt_snapshot_rejects_symlinked_source (test_prepare_runtime.SourceVerificationTests) ... ok
+test_receipt_snapshot_remains_supported (test_prepare_runtime.SourceVerificationTests) ... ok
+test_retained_patch_empty_preimage_additions_are_supported (test_prepare_runtime.SourceVerificationTests) ... ok
+test_source_symlink_is_rejected_even_with_identical_bytes (test_prepare_runtime.SourceVerificationTests) ... ok
+test_staged_source_edit_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_unstaged_source_edit_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_wrong_git_revision_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+test_wrong_receipt_revision_is_rejected (test_prepare_runtime.SourceVerificationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 11.299s
+
+OK

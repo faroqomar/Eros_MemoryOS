@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/.build/release/wax-evaluation",
+    "--source-identity",
+    "sha256:18117106eb15d8e9fe462c037b8dd48fe48906d1630c1e9fd0fcb81997bd9506",
+    "--toolchain",
+    "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+    "--sdk-patch-sha256",
+    "d55f4e047011249d9f40c70dcb2f615d6379257315fa1ba467500fc57351a7e4"
+  ],
+  "exit_code": 0,
+  "source_identity": "sha256:18117106eb15d8e9fe462c037b8dd48fe48906d1630c1e9fd0fcb81997bd9506",
+  "temporary_path_override": true,
+  "patch_sha256": "d55f4e047011249d9f40c70dcb2f615d6379257315fa1ba467500fc57351a7e4"
+}

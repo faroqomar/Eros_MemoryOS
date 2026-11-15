@@ -1,0 +1,43 @@
+{
+  "format_version": 1,
+  "started_at": "2026-11-15T00:44:04.359706+00:00",
+  "finished_at": "2026-11-15T00:44:04.691163+00:00",
+  "duration_seconds": 0.3312418460845947,
+  "launcher_argv": [
+    "/usr/bin/sandbox-exec",
+    "-p",
+    "(version 1)\n(allow default)\n(deny network*)\n",
+    "/usr/bin/python3",
+    "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/scripts/run-wax-offline.py",
+    "--probe-and-exec",
+    "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-wax-deny-network-164lop7h/state.json"
+  ],
+  "launcher_source_sha256": "c64dcf1043de20b889a276f37c74854c5e7ab6691df4468c2d0ee8f87f57542e",
+  "binary_path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-binary-consumer/.build/out/Products/Release/WaxBinaryRunner",
+  "binary_sha256": "90f3137401bad117528013eb9ac56c40360dcdb66c8a587e371492dfe6bf5992",
+  "binary_unchanged": true,
+  "packaging_receipt_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/BinaryIntegration/Artifacts/packaging-receipt.json",
+  "packaging_receipt_sha256": "4ca5ee868713951e935378810fefb4132a94faca6b348b3ce26a5b0ca09ee057",
+  "packaging_receipt_unchanged": true,
+  "source_identity": "sha256:4ca5ee868713951e935378810fefb4132a94faca6b348b3ce26a5b0ca09ee057",
+  "source_provenance_sha256": "79e87978267b9313b240feb4219fa4d0400c3d513d6d6850b358356feb113117",
+  "raw_report_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/evidence/local-ai-2026-11-14/resume-wax/wax-binary-host-deny-network.json",
+  "raw_report_sha256": "5d15b92a3d921a7e1f4e3d2465646e5a16d760d3584f55be0ed7d373a3342fc4",
+  "stderr_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/evidence/local-ai-2026-11-14/resume-wax/wax-binary-host-deny-network.stderr.log",
+  "runner_exit_code": 0,
+  "os_probe": {
+    "pid": 47867,
+    "probe": "AF_INET TCP connect to 127.0.0.1:9; no payload sent",
+    "errno": 1,
+    "network_denied": true
+  },
+  "same_process_exec_inherits_policy": true,
+  "raw_report_was_not_modified": true,
+  "raw_context_offline_confirmed": false,
+  "raw_parse_error": null,
+  "offline_evidence_authority": "This launcher OS policy/probe receipt; the unchanged CLI has no sandbox attestation argument",
+  "retrieval_cases": 15,
+  "retrieval_completed": 15,
+  "raw_source_identity_matches": true,
+  "conditions": "Host smoke run after parent timing-done; canonical source compilation was still finishing. Timing fields are not isolated benchmark results."
+}

@@ -1,0 +1,970 @@
+{
+  "results": [
+    {
+      "id": "5986c523-d776-40d4-9bf6-51bc35a69c7a",
+      "text": "The owner selected the available iOS Simulator for the current local-AI evaluation. Supported integrations and common examples must run there with simulator and host results clearly labeled, while unsupported runtime paths must be documented with evidence. Simulator or desktop runs are limited to plumbing validation: they cannot satisfy physical-phone cost gates or select a winning candidate. Physical-device battery and heat checks remain future phone-readiness checks and must not be fabricated or used to block the current simulator implementation.",
+      "type": "observation",
+      "entities": [
+        "six evaluation outcomes",
+        "user",
+        "phone-readiness checks",
+        "memoryos",
+        "app-owned records",
+        "simulator",
+        "physical-device readiness",
+        "desktop",
+        "isolated native lab",
+        "production component selection",
+        "iOS Simulator"
+      ],
+      "context": null,
+      "occurred_start": "2026-11-14T00:00:00.120000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.120000+00:00",
+      "mentioned_at": "2026-11-14T21:00:25.382360+00:00",
+      "document_id": null,
+      "metadata": {},
+      "chunk_id": null,
+      "tags": [
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.1015184735364636,
+        "reranker": null,
+        "semantic": 0.8816343404810897,
+        "keyword": 1.100000023841858
+      },
+      "attachments": null
+    },
+    {
+      "id": "fb3f8f46-f608-40e4-aa4e-18a72b7e32cf",
+      "text": "D34 requires explicit MVVM and concrete app/upstream engine ownership checks. The required ownership path is View → ViewModel → use case → app-owned protocol → adapter; the app must retain one Git repository while upstream library checkouts/pins remain separate. Step 1 maps files and dependencies, Step 2 inspects source, action traces, imports/injection, relevant tests, and ownership with pass/fail/blocked/N/A evidence, and Step 3 confirms the evidence matches the reviewed head. This records policy and is not existing-demo compliance or provider selection. Source: docs/decisions/decision-register.md. | When: November 14, 2026 | Involving: MemoryOS project | To prevent agents from guessing MVVM, repository, and upstream engine ownership.",
+      "type": "world",
+      "entities": [
+        "app-owned protocol",
+        "use case",
+        "Step 1",
+        "View",
+        "memoryos",
+        "ViewModel",
+        "adapters",
+        "D34",
+        "Step 2",
+        "Step 3",
+        "MVVM"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.030000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.030000+00:00",
+      "mentioned_at": "2026-11-14T17:54:48.318894+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "4a9681010acc4203a35b6cdd810d50bedf110f04eaf7c3893498251b6fbaabb3",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_4",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0994769457442288,
+        "reranker": null,
+        "semantic": 0.8463937113275728,
+        "keyword": 1.2000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "26dff413-26da-4729-844f-285b265e8f2a",
+      "text": "The owner explicitly selects the iOS Simulator for this task: supported integrations and the same fictional multilingual cases should be run there, simulator results must be labeled, and no physical-phone battery or heat measurements may be claimed. The original six evaluation outcomes, app-owned records, and isolated native lab must be preserved; production component selection and physical-device readiness remain separate and unresolved. | When: Saturday, November 14, 2026 | Involving: Project owner | To keep simulator-based evaluation distinct from physical-device validation and production readiness.",
+      "type": "world",
+      "entities": [
+        "six evaluation outcomes",
+        "memoryos",
+        "app-owned records",
+        "physical-device readiness",
+        "isolated native lab",
+        "production component selection",
+        "iOS Simulator"
+      ],
+      "context": "initiative marker for [[page:kp-5e606f16d2d545e2854fbbba5f7b5c95]]",
+      "occurred_start": "2026-11-14T20:56:47.562907+00:00",
+      "occurred_end": "2026-11-14T20:56:47.562907+00:00",
+      "mentioned_at": "2026-11-14T20:56:47.562907+00:00",
+      "document_id": "initiative-marker-local-ai-phone-comparison-checklist-group-4-step-1-1794689807247",
+      "metadata": {
+        "relatedPageId": "kp-5e606f16d2d545e2854fbbba5f7b5c95"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-local-ai-phone-comparison-checklist-group-4-step-1-1794689807247_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0966442753096142,
+        "reranker": null,
+        "semantic": 0.8665881077401841,
+        "keyword": 1.399999976158142
+      },
+      "attachments": null
+    },
+    {
+      "id": "7da88594-ad09-4ff2-9a1e-e78c8263e412",
+      "text": "The interface demo remains separate evidence: the native sample includes Capture, hidden navigation, People, Projects, Birthdays, BrainMap, and Arabic/English dark mode. Twelve functional UI scenarios, seven unit tests, Release analysis/build, unsigned iPhone compilation, and cleanup pass; however, two accessibility diagnostic methods fail, unlocated findings remain unresolved, physical iPhone checks and iOS 18 runtime validation are open, and owner visual acceptance is still pending. PR #1 was merged on 2026-11-14, but Step 2 remains blocked. Source: README.md and docs/tasks/2026-11-14-complete-interface-demo.md. | When: 2026-11-14 | Involving: Eros MemoryOS owner | The demo's passing checks and merged PR do not resolve the listed verification gaps.",
+      "type": "world",
+      "entities": [
+        "BrainMap",
+        "English",
+        "Arabic",
+        "PR #1",
+        "Eros MemoryOS",
+        "projects",
+        "people",
+        "Step 2",
+        "iOS 18.0"
+      ],
+      "context": "Authoritative project source README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-14T20:38:31.179447+00:00",
+      "document_id": "repo:README.md",
+      "metadata": {
+        "sha256": "39f25fd5fd126a719d9ce66bef42e50ecec716afea6f74f8f2216594096faaf9",
+        "source_path": "README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:README.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0928580209242025,
+        "reranker": null,
+        "semantic": 0.854056902834315,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "eeec5f28-cd86-4cb5-8201-4ad2e8a20fe1",
+      "text": "On November 14, 2026, the owner authorized Step 1 of checklist group 4, “Test local AI tools on the phone.” The evaluation must compare Wax, a supported Cactus-based memory configuration, llama.cpp, suitable text-runtime alternatives, and models including Qwen3-1.7B using the same examples across Arabic, Iraqi Arabic, English, names, and mixed text, while measuring physical-phone speed, memory, storage, battery, and heat before selecting components. This authorizes evaluation planning, implementation, and builder checks only; it does not select production components, authorize Step 2, delivery Step 3, cloud fallback, or release. Sources: docs/reference/source-register.md, docs/tasks/2026-11-14-local-ai-phone-evaluation.md, docs/reference/2026-11-14-local-ai-support.md. | When: November 14, 2026 | Involving: The owner | Production selection must be based on measured results while preserving original records and physical-device evidence.",
+      "type": "world",
+      "entities": [
+        "Cactus",
+        "English",
+        "Arabic",
+        "memoryos",
+        "Qwen3-1.7B",
+        "Wax",
+        "Iraqi Arabic",
+        "llama.cpp"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.050000+00:00",
+      "occurred_end": "2026-11-14T00:00:00.050000+00:00",
+      "mentioned_at": "2026-11-14T20:38:31.205293+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "e059e0df467fbed18d7c36d4c250266f08bb69e902192f8e7d7481f67a97bfa1",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_8",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0862390963555637,
+        "reranker": null,
+        "semantic": 0.8439479377238849,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "4bc3675b-7c0e-47be-a0e4-2852ac38adbf",
+      "text": "On 2026-11-13, the owner selected the newly supplied Capture/sidebar screenshots and requested the native SwiftUI foundation plus a device connection check. Native source exists under `native/` and the simulator build passes, but the full feature demo and physical iPhone launch remain incomplete. Source: `docs/plans/implementation-checklist.md`. | When: November 13, 2026 | Involving: Project owner | The checklist records the current foundation status while explicitly noting that the document is a snapshot, not proof of full implementation.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "native/",
+        "capture",
+        "physical iPhone launch",
+        "sidebar",
+        "memoryos",
+        "simulator build"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00+00:00",
+      "occurred_end": "2026-11-13T23:59:59+00:00",
+      "mentioned_at": "2026-11-14T13:59:35.618212+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "4b396453e47b9675e6f382519b6733c800d7547ed871a735a9e89b3bc15ebe1a",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0823899351258546,
+        "reranker": null,
+        "semantic": 0.8440351300281501,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "23fa3ff2-f0a2-4c23-9cda-8f6bd9a03973",
+      "text": "Affected interfaces must be checked for dark mode, Arabic/English and mixed-direction text, Dynamic Type, VoiceOver, contrast, touch targets, and Reduced Motion. T3 device tools are required for device interaction, and the supplied Capture/sidebar composition and owner review boundaries must be preserved. | When: Ongoing rule documented on November 14, 2026 | Involving: MemoryOS engineers | This defines accessibility, localization, device-tooling, and review constraints.",
+      "type": "world",
+      "entities": [
+        "capture",
+        "English",
+        "T3",
+        "Arabic",
+        "memoryos",
+        "VoiceOver"
+      ],
+      "context": "Authoritative project source docs/how-to/agent-skills.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T13:30:02.090082+00:00",
+      "document_id": "repo:docs/how-to/agent-skills.md",
+      "metadata": {
+        "sha256": "c1f62e726259d5fd4840c2f5a8f7a7a8b2488a6e2e205bbc2ead0a77366f14d7",
+        "source_path": "docs/how-to/agent-skills.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/how-to/agent-skills.md_3",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0799228369801375,
+        "reranker": null,
+        "semantic": 0.8520517172875128,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "64464834-fb96-480e-8b1e-332600e4b33c",
+      "text": "At actual SDK integration, the app repository must enforce an independent plain Swift core and required integration-target boundaries. No empty packages or custom engine repositories may be added for this policy; recording, transcription, retrieval, and model execution must have separate replaceable contracts when implemented. | When: Document snapshot dated November 14, 2026; applies at actual SDK integration | Involving: MemoryOS project | These are planned architecture constraints, not evidence that the boundaries have already been implemented.",
+      "type": "world",
+      "entities": [
+        "recording",
+        "retrieval",
+        "Swift",
+        "text-model execution",
+        "memoryos",
+        "transcription",
+        "SDK integration"
+      ],
+      "context": "Authoritative project source docs/how-to/commercial-engineering-rules.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T17:54:15.330359+00:00",
+      "document_id": "repo:docs/how-to/commercial-engineering-rules.md",
+      "metadata": {
+        "sha256": "bbe83e495924f1a67597828a569ac05b3ec30b343295b72ffe1f5dbfd6ffc09a",
+        "source_path": "docs/how-to/commercial-engineering-rules.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/how-to/commercial-engineering-rules.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.076710868988798,
+        "reranker": null,
+        "semantic": 0.8439305834687512,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "a72c9fc8-3cc9-4164-aead-e7c9e29260fc",
+      "text": "As of 2026-11-13, MemoryOS has selected Swift/SwiftUI with Xcode 27.2 and the iOS 27.2 SDK; a native simulator build passes. Physical-phone signing and device connection remain open. Source: docs/plans/implementation-checklist.md. | When: 2026-11-13 | Involving: MemoryOS | This records a selected technology and a verified simulator outcome, while explicitly preserving the unresolved physical-device status.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "Xcode 27.2",
+        "iOS 27.2 SDK",
+        "Swift",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.100000+00:00",
+      "occurred_end": "2026-11-13T23:59:59.100000+00:00",
+      "mentioned_at": "2026-11-13T18:09:14.767181+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "4b396453e47b9675e6f382519b6733c800d7547ed871a735a9e89b3bc15ebe1a",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.072466496611197,
+        "reranker": null,
+        "semantic": 0.8488566009145873,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "ed65f3b9-c1a0-405b-9c21-b5acda4de63c",
+      "text": "On November 13, 2026, reviewed repository Markdown corrected the knowledge page “MemoryOS SwiftUI foundation and iPhone readiness” (kp-8de3c978e4094ef5bba6944d5c3f8646): README.md and docs/decisions/decision-register.md D24/C20 are authoritative and select/authorize a limited native SwiftUI foundation using the supplied Capture and sidebar screenshots, navigation, typography, shared controls, and temporary demo interactions. docs/how-to/native-swiftui.md records the native Xcode project, temporary in-memory capture, placeholder sections, and historical simulator verification; physical iPhone launch remains unverified, and AI, imports, production persistence, publication, and release are outside this foundation step. No new build or test run is claimed. | When: Friday, November 13, 2026 | Involving: Project memoryos | To supersede outdated claims that native implementation had not begun and that C19 Apple-inspired browser work was the latest direction, while distinguishing authorization and historical verification from newly implemented or tested results.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "D24",
+        "C20",
+        "Xcode",
+        "memoryos",
+        "docs/how-to/native-swiftui.md",
+        "docs/decisions/decision-register.md",
+        "iPhone",
+        "MemoryOS SwiftUI foundation and iPhone readiness",
+        "README.md"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-13T18:25:42.291795+00:00",
+      "occurred_end": "2026-11-13T18:25:42.291795+00:00",
+      "mentioned_at": "2026-11-13T18:25:42.291795+00:00",
+      "document_id": "correction-memoryos-native-foundation-status-and-current-reference",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-memoryos-native-foundation-status-and-current-reference_0",
+      "tags": [
+        "harness:codex",
+        "source:upload",
+        "project:memoryos"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0695680250275337,
+        "reranker": null,
+        "semantic": 0.8426711371745095,
+        "keyword": 0.699999988079071
+      },
+      "attachments": null
+    },
+    {
+      "id": "5d6bb3d4-3e4f-4c46-8658-d9c9fd4fb9fa",
+      "text": "Performance claims about phone latency, memory, battery, or heat require measurements on supported physical hardware; a simulator build cannot establish those results. | When: Ongoing rule documented on November 14, 2026 | Involving: MemoryOS engineers | The project requires hardware-based evidence before claiming device performance.",
+      "type": "world",
+      "entities": [
+        "physical hardware",
+        "memoryos",
+        "simulator"
+      ],
+      "context": "Authoritative project source docs/how-to/agent-skills.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T13:30:02.100082+00:00",
+      "document_id": "repo:docs/how-to/agent-skills.md",
+      "metadata": {
+        "sha256": "c1f62e726259d5fd4840c2f5a8f7a7a8b2488a6e2e205bbc2ead0a77366f14d7",
+        "source_path": "docs/how-to/agent-skills.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/how-to/agent-skills.md_3",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0666812763702296,
+        "reranker": null,
+        "semantic": 0.867210253144539,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "5d95b94b-89a7-4928-9b7d-0298d66c6683",
+      "text": "Project memoryos requires commercial-release evidence for the implemented configuration covering migration/data-loss safety, backup restoration, privacy controls, applicable cloud isolation, accessibility, AI quality, and supported physical-device performance; applicable legal and distribution obligations must also be resolved. Outstanding checks must remain visible, and compilation alone is not evidence of compliance, restoration, AI quality, or installed-device behavior. Source: docs/how-to/commercial-engineering-rules.md; this is a documented engineering rule, not proof of implementation. | When: 2026-11-14 | The document distinguishes release evidence and unresolved checks from implementation status and keeps authorization for publication, deployment, purchases, and release separate.",
+      "type": "world",
+      "entities": [
+        "commercial release",
+        "memoryos",
+        "release evidence",
+        "docs/how-to/commercial-engineering-rules.md"
+      ],
+      "context": "Authoritative project source docs/how-to/commercial-engineering-rules.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T17:54:15.300359+00:00",
+      "document_id": "repo:docs/how-to/commercial-engineering-rules.md",
+      "metadata": {
+        "sha256": "bbe83e495924f1a67597828a569ac05b3ec30b343295b72ffe1f5dbfd6ffc09a",
+        "source_path": "docs/how-to/commercial-engineering-rules.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/how-to/commercial-engineering-rules.md_7",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0634680976112627,
+        "reranker": null,
+        "semantic": 0.8553765753584952,
+        "keyword": 1.3000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "ef26c177-a4f3-44d4-a637-2dd19fe579cd",
+      "text": "The decision register records unresolved product and engineering questions for future work, including device constraints, local model quality, Swift/SwiftUI storage design under D21 and app-owned records under D27, reusable versus custom memory components, source export priorities, audio and transcript requirements, integrations, birthday automation, profiles and images, natural-language rules, Obsidian access, document import, languages, data locality, ChatGPT/provider access, sync architecture, historical features, device limits, backup/recovery, and native demo layouts. | When: November 14, 2026 | Involving: Eros MemoryOS project owner and engineering team | These questions are explicitly retained for future product review and do not need to be answered before reviewing the product idea.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "Swift",
+        "ChatGPT",
+        "D27",
+        "Eros MemoryOS",
+        "Convex",
+        "Supabase",
+        "D21",
+        "Obsidian"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:24:22.820731+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "4a9681010acc4203a35b6cdd810d50bedf110f04eaf7c3893498251b6fbaabb3",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_8",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.060168453976371,
+        "reranker": null,
+        "semantic": 0.8537940891858529,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "a8dae0fc-dce5-4384-8728-30e8849149d3",
+      "text": "The selected first build has S01, S03, and S09 marked complete: the native Swift + SwiftUI iPhone project and shared scheme build in the simulator; hidden-sidebar simulator checks for all seven routes, close/reopen, and return to Capture; and demo-boundary labels plus passing recording-notice and process-reset tests. These results do not prove physical iPhone launch or complete the remaining demo screens. | When: Historical evidence recorded as of Saturday, November 14, 2026 | The checklist explicitly distinguishes simulator/test evidence from physical-device and unfinished feature acceptance.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "S03",
+        "Swift",
+        "S01",
+        "iPhone",
+        "S09",
+        "VoiceOver",
+        "docs/plans/implementation-checklist.md"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-14T16:58:15.208893+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "4b396453e47b9675e6f382519b6733c800d7547ed871a735a9e89b3bc15ebe1a",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_1",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0564539347628645,
+        "reranker": null,
+        "semantic": 0.8425500456318361,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "b2cfee38-5841-45c7-8fba-ce721731d528",
+      "text": "MemoryOS must own durable source records, stable IDs, source dates and links, user corrections, and confirmed facts while distinguishing original sources, extracted claims, user confirmations, and AI interpretations. Provenance must survive corrections; embeddings and provider search indexes are derived data that must be rebuildable from app-owned records and verified across provider or model changes. | Involving: MemoryOS project | This establishes data ownership, provenance, recovery, and provider-switching requirements.",
+      "type": "world",
+      "entities": [
+        "embeddings",
+        "provenance",
+        "memoryos",
+        "provider indexes"
+      ],
+      "context": "Authoritative project source docs/how-to/commercial-engineering-rules.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T17:54:15.330359+00:00",
+      "document_id": "repo:docs/how-to/commercial-engineering-rules.md",
+      "metadata": {
+        "sha256": "bbe83e495924f1a67597828a569ac05b3ec30b343295b72ffe1f5dbfd6ffc09a",
+        "source_path": "docs/how-to/commercial-engineering-rules.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/how-to/commercial-engineering-rules.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.05353601940004,
+        "reranker": null,
+        "semantic": 0.8650853650449982,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "c6d5d9a6-0999-49a9-ac74-955617dec89a",
+      "text": "On November 13, 2026, C20 authorized a native SwiftUI foundation and device-readiness check. The source exists under `native/` and passes a simulator build; capture and the hidden sidebar follow the supplied screenshots, but other sections are placeholders. Demo memories are process-local and disappear on exit, and recording/attachment controls only show scope notices. Microphone access, imports, AI, networking, production store, release, deployment, physical iPhone launch, and phone benchmarks are not implemented or verified. | When: November 13, 2026 | Involving: C20; memoryos project | This is a dated implementation checkpoint; the document explicitly states it is a snapshot, not proof of implementation beyond the listed checks.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "native/",
+        "C20",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/product-overview.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.020000+00:00",
+      "mentioned_at": "2026-11-14T18:27:46.838427+00:00",
+      "document_id": "repo:docs/product-overview.md",
+      "metadata": {
+        "sha256": "230110ea134911ec7cad349bb9d1e2578729dacc4db8333d9c19afe563e06124",
+        "source_path": "docs/product-overview.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/product-overview.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0493118048016945,
+        "reranker": null,
+        "semantic": 0.8628155086659688,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    }
+  ],
+  "trace": null,
+  "entities": {
+    "six evaluation outcomes": {
+      "entity_id": "15ab2855-cfd1-4112-b10d-63a71a8f8ce3",
+      "canonical_name": "six evaluation outcomes",
+      "observations": []
+    },
+    "user": {
+      "entity_id": "27d90ade-0dd2-4593-882b-eaa7eb7ff7c3",
+      "canonical_name": "user",
+      "observations": []
+    },
+    "phone-readiness checks": {
+      "entity_id": "3503e7e1-24c1-4812-be3e-d84cbb1bd4a5",
+      "canonical_name": "phone-readiness checks",
+      "observations": []
+    },
+    "memoryos": {
+      "entity_id": "6f1f3ee3-9405-473e-9b40-924988e4cebb",
+      "canonical_name": "memoryos",
+      "observations": []
+    },
+    "app-owned records": {
+      "entity_id": "71ccb89e-787d-415c-94e3-9df068b78739",
+      "canonical_name": "app-owned records",
+      "observations": []
+    },
+    "simulator": {
+      "entity_id": "90fe09c7-5b4c-4c7e-aca9-701ba5146799",
+      "canonical_name": "simulator",
+      "observations": []
+    },
+    "physical-device readiness": {
+      "entity_id": "a7d3508f-30ef-41c3-a9e2-97a071ce35d1",
+      "canonical_name": "physical-device readiness",
+      "observations": []
+    },
+    "desktop": {
+      "entity_id": "b85c075e-83d2-43c5-a614-7fc0b0443aa9",
+      "canonical_name": "desktop",
+      "observations": []
+    },
+    "isolated native lab": {
+      "entity_id": "e0c7d47b-12fd-43a8-a96f-8daa0c865110",
+      "canonical_name": "isolated native lab",
+      "observations": []
+    },
+    "production component selection": {
+      "entity_id": "e745a826-2d76-455e-8ec4-ee2a1eb9a987",
+      "canonical_name": "production component selection",
+      "observations": []
+    },
+    "iOS Simulator": {
+      "entity_id": "f34b83c6-22bf-45be-a16a-bfb9b8b85f48",
+      "canonical_name": "iOS Simulator",
+      "observations": []
+    },
+    "app-owned protocol": {
+      "entity_id": "0db2dafc-c68f-429f-b20f-cc07f9afbbb7",
+      "canonical_name": "app-owned protocol",
+      "observations": []
+    },
+    "use case": {
+      "entity_id": "25b8683c-a937-43e0-be62-b288169bb876",
+      "canonical_name": "use case",
+      "observations": []
+    },
+    "Step 1": {
+      "entity_id": "416f96f9-2630-4578-818c-31390f344a7b",
+      "canonical_name": "Step 1",
+      "observations": []
+    },
+    "View": {
+      "entity_id": "69206c44-f554-4005-ad30-64b16fd6e528",
+      "canonical_name": "View",
+      "observations": []
+    },
+    "ViewModel": {
+      "entity_id": "8e2cb8ed-b456-4332-8a17-86989cad999d",
+      "canonical_name": "ViewModel",
+      "observations": []
+    },
+    "adapters": {
+      "entity_id": "b65d631f-bd07-4419-9ee1-83ff7406aabf",
+      "canonical_name": "adapters",
+      "observations": []
+    },
+    "D34": {
+      "entity_id": "bfbefadc-4b25-4b92-abfb-edf34ee3973a",
+      "canonical_name": "D34",
+      "observations": []
+    },
+    "Step 2": {
+      "entity_id": "c7583145-493a-4cde-9b58-4b7036635eca",
+      "canonical_name": "Step 2",
+      "observations": []
+    },
+    "Step 3": {
+      "entity_id": "c863f1e2-f683-4368-89ed-ec382238e090",
+      "canonical_name": "Step 3",
+      "observations": []
+    },
+    "MVVM": {
+      "entity_id": "d5ff7a50-e999-43ea-9978-8546c13ec25c",
+      "canonical_name": "MVVM",
+      "observations": []
+    },
+    "BrainMap": {
+      "entity_id": "1a44775f-0343-420a-b4e8-18c536e1d7fa",
+      "canonical_name": "BrainMap",
+      "observations": []
+    },
+    "English": {
+      "entity_id": "23c57e1e-b10d-4de5-9739-200c0ba0d801",
+      "canonical_name": "English",
+      "observations": []
+    },
+    "Arabic": {
+      "entity_id": "689441f3-37d2-4758-80f6-50938a1a0034",
+      "canonical_name": "Arabic",
+      "observations": []
+    },
+    "PR #1": {
+      "entity_id": "69c0dd76-338b-4289-b036-a518861a4c6f",
+      "canonical_name": "PR #1",
+      "observations": []
+    },
+    "Eros MemoryOS": {
+      "entity_id": "ad223ee8-dfd6-49a3-b62b-1c19b3aa754c",
+      "canonical_name": "Eros MemoryOS",
+      "observations": []
+    },
+    "projects": {
+      "entity_id": "af7b6d6a-84d8-4de6-b908-7be7d8452e93",
+      "canonical_name": "projects",
+      "observations": []
+    },
+    "people": {
+      "entity_id": "c383c298-6268-47e7-9898-3c6daefc00d9",
+      "canonical_name": "people",
+      "observations": []
+    },
+    "iOS 18.0": {
+      "entity_id": "fc9b3814-3b2f-4220-a1ce-a8ae6a5a3fe2",
+      "canonical_name": "iOS 18.0",
+      "observations": []
+    },
+    "Cactus": {
+      "entity_id": "04d7c68b-330c-478b-833f-d210f7799bb0",
+      "canonical_name": "Cactus",
+      "observations": []
+    },
+    "Qwen3-1.7B": {
+      "entity_id": "706f20ad-de63-4909-89d6-0ff1ff5086ea",
+      "canonical_name": "Qwen3-1.7B",
+      "observations": []
+    },
+    "Wax": {
+      "entity_id": "cdd26aa3-c5f1-4c81-8158-408dd89385eb",
+      "canonical_name": "Wax",
+      "observations": []
+    },
+    "Iraqi Arabic": {
+      "entity_id": "d28c75a5-1ea8-40eb-9f1d-bc7058f6e3d7",
+      "canonical_name": "Iraqi Arabic",
+      "observations": []
+    },
+    "llama.cpp": {
+      "entity_id": "d5c0aa39-4ce9-4198-85a6-06f11e299bbb",
+      "canonical_name": "llama.cpp",
+      "observations": []
+    },
+    "SwiftUI": {
+      "entity_id": "00138a1f-a0e0-41bd-a564-3124295f9f55",
+      "canonical_name": "SwiftUI",
+      "observations": []
+    },
+    "native/": {
+      "entity_id": "052cb0d0-9275-4dc9-9bf5-c2f5b1844b68",
+      "canonical_name": "native/",
+      "observations": []
+    },
+    "capture": {
+      "entity_id": "0f124364-654e-4664-8adc-1ecd80edacbb",
+      "canonical_name": "capture",
+      "observations": []
+    },
+    "physical iPhone launch": {
+      "entity_id": "214419de-5635-453c-a5b5-00eacf9ef705",
+      "canonical_name": "physical iPhone launch",
+      "observations": []
+    },
+    "sidebar": {
+      "entity_id": "5a920b86-6a15-4bb4-bc6f-bfa7a3389f05",
+      "canonical_name": "sidebar",
+      "observations": []
+    },
+    "simulator build": {
+      "entity_id": "a5211722-a177-4477-b156-dc198a0ce3c5",
+      "canonical_name": "simulator build",
+      "observations": []
+    },
+    "T3": {
+      "entity_id": "3d80683b-d0d6-4ec0-99bc-030deec17161",
+      "canonical_name": "T3",
+      "observations": []
+    },
+    "VoiceOver": {
+      "entity_id": "b8087f17-d69f-4429-a99d-bc46ce00c1e6",
+      "canonical_name": "VoiceOver",
+      "observations": []
+    },
+    "recording": {
+      "entity_id": "25c3a5c5-368c-439f-a317-5278855f1b3d",
+      "canonical_name": "recording",
+      "observations": []
+    },
+    "retrieval": {
+      "entity_id": "5b6dc120-e062-4635-bfbd-47d3aa5749c4",
+      "canonical_name": "retrieval",
+      "observations": []
+    },
+    "Swift": {
+      "entity_id": "61272ff3-9624-422a-a449-966148c79dde",
+      "canonical_name": "Swift",
+      "observations": []
+    },
+    "text-model execution": {
+      "entity_id": "62154dc8-f630-4d79-abd1-c9a540365b6a",
+      "canonical_name": "text-model execution",
+      "observations": []
+    },
+    "transcription": {
+      "entity_id": "7ee726ca-0916-48da-bbd8-be6a664102ef",
+      "canonical_name": "transcription",
+      "observations": []
+    },
+    "SDK integration": {
+      "entity_id": "9ad57b91-6e93-4633-894e-87ef69b2b69a",
+      "canonical_name": "SDK integration",
+      "observations": []
+    },
+    "Xcode 27.2": {
+      "entity_id": "42805c72-5f16-41d3-8f1c-28605706c1cb",
+      "canonical_name": "Xcode 27.2",
+      "observations": []
+    },
+    "iOS 27.2 SDK": {
+      "entity_id": "530af0ca-aa01-4f91-ace5-d506c01cb45f",
+      "canonical_name": "iOS 27.2 SDK",
+      "observations": []
+    },
+    "D24": {
+      "entity_id": "26ae0fe1-3482-49c1-bb68-5cf99dbc75f4",
+      "canonical_name": "D24",
+      "observations": []
+    },
+    "C20": {
+      "entity_id": "27491c69-15f3-4fa9-a27b-d8fe43e2acf0",
+      "canonical_name": "C20",
+      "observations": []
+    },
+    "Xcode": {
+      "entity_id": "37e26951-3e2a-419b-b4ea-1001e3f3a3fa",
+      "canonical_name": "Xcode",
+      "observations": []
+    },
+    "docs/how-to/native-swiftui.md": {
+      "entity_id": "71386888-adf7-4010-9e67-242723fe1a60",
+      "canonical_name": "docs/how-to/native-swiftui.md",
+      "observations": []
+    },
+    "docs/decisions/decision-register.md": {
+      "entity_id": "7c65f49b-bbaf-484f-9221-60058080dd15",
+      "canonical_name": "docs/decisions/decision-register.md",
+      "observations": []
+    },
+    "iPhone": {
+      "entity_id": "8f13d56c-b107-4393-9125-f2222b81cd82",
+      "canonical_name": "iPhone",
+      "observations": []
+    },
+    "MemoryOS SwiftUI foundation and iPhone readiness": {
+      "entity_id": "a1d423a7-01a5-41b9-ac68-a6ac0978dd69",
+      "canonical_name": "MemoryOS SwiftUI foundation and iPhone readiness",
+      "observations": []
+    },
+    "README.md": {
+      "entity_id": "f52c8375-ee97-4f13-9091-4aa7bf452706",
+      "canonical_name": "README.md",
+      "observations": []
+    },
+    "physical hardware": {
+      "entity_id": "1b91e3f1-6b77-4c1d-b07a-190a0fd54de4",
+      "canonical_name": "physical hardware",
+      "observations": []
+    },
+    "commercial release": {
+      "entity_id": "43f2856d-1c4a-47b3-acc7-b171994a149e",
+      "canonical_name": "commercial release",
+      "observations": []
+    },
+    "release evidence": {
+      "entity_id": "a50ba1a2-d333-4733-b77f-505cc9fb3c4d",
+      "canonical_name": "release evidence",
+      "observations": []
+    },
+    "docs/how-to/commercial-engineering-rules.md": {
+      "entity_id": "bcd940e4-9999-4b28-be3a-b8022c620835",
+      "canonical_name": "docs/how-to/commercial-engineering-rules.md",
+      "observations": []
+    },
+    "ChatGPT": {
+      "entity_id": "66c67387-ed7a-4795-895e-4c20914d1795",
+      "canonical_name": "ChatGPT",
+      "observations": []
+    },
+    "D27": {
+      "entity_id": "7c036491-e94e-4930-a9e7-6b3a50cf30b7",
+      "canonical_name": "D27",
+      "observations": []
+    },
+    "Convex": {
+      "entity_id": "c8e306c0-4987-439b-a551-4bdcedb6c5ae",
+      "canonical_name": "Convex",
+      "observations": []
+    },
+    "Supabase": {
+      "entity_id": "cd4bc457-b4ad-419b-9c40-91587ffe5c0e",
+      "canonical_name": "Supabase",
+      "observations": []
+    },
+    "D21": {
+      "entity_id": "e378250b-03bc-4195-9411-93c1f7109c47",
+      "canonical_name": "D21",
+      "observations": []
+    },
+    "Obsidian": {
+      "entity_id": "f6c8d65a-3926-401b-94a2-53119e39f8b4",
+      "canonical_name": "Obsidian",
+      "observations": []
+    },
+    "S03": {
+      "entity_id": "367bb089-ae01-483e-a1c8-be820a14b607",
+      "canonical_name": "S03",
+      "observations": []
+    },
+    "S01": {
+      "entity_id": "7f7d4ef8-1148-4fa3-9cc6-c793f496b1da",
+      "canonical_name": "S01",
+      "observations": []
+    },
+    "S09": {
+      "entity_id": "93bdf799-2aa8-461b-bba6-ffba8f5a3e0c",
+      "canonical_name": "S09",
+      "observations": []
+    },
+    "docs/plans/implementation-checklist.md": {
+      "entity_id": "e441a9b8-73f4-458a-a6c4-96f54241c585",
+      "canonical_name": "docs/plans/implementation-checklist.md",
+      "observations": []
+    },
+    "embeddings": {
+      "entity_id": "06bb0a30-f987-4c84-ba9e-d35d13b18d1e",
+      "canonical_name": "embeddings",
+      "observations": []
+    },
+    "provenance": {
+      "entity_id": "5e02197f-65e4-4de6-aa29-626f8e84d470",
+      "canonical_name": "provenance",
+      "observations": []
+    },
+    "provider indexes": {
+      "entity_id": "a6dc7469-38e4-45ae-a6d6-ebf86227e092",
+      "canonical_name": "provider indexes",
+      "observations": []
+    }
+  },
+  "chunks": null,
+  "source_facts": null,
+  "source_facts_truncated": null
+}

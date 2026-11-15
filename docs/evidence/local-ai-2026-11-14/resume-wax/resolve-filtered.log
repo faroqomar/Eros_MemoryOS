@@ -1,0 +1,7 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Fetching https://github.com/apple/swift-crypto.git
+Fetching https://github.com/christopherkarani/MetalANNS.git
+Fetching https://github.com/groue/GRDB.swift.git
+[1/1477] Fetching metalanns
+[917/11228] Fetching metalanns, swift-crypto
+[1165/65856] Fetching metalanns, swift-crypto, grdb.swift

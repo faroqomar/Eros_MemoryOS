@@ -1,0 +1,102 @@
+{"file": "CACTUS_VERSION", "verified": true}
+{"file": "cactus/build.sh", "verified": true}
+{"file": "LICENSE", "verified": true}
+{"file": "cactus/cactus.h", "verified": true}
+{"file": "cactus/engine/engine_cache.cpp", "verified": true}
+{"file": "cactus/CMakeLists.txt", "verified": true}
+{"file": "cactus/engine/engine_image.cpp", "verified": true}
+{"file": "cactus/engine/engine.h", "verified": true}
+{"file": "cactus/engine/engine_bpe.cpp", "verified": true}
+{"file": "cactus/engine/engine_constraints.cpp", "verified": true}
+{"file": "cactus/engine/engine_model.cpp", "verified": true}
+{"file": "cactus/engine/engine_index.cpp", "verified": true}
+{"file": "cactus/engine/engine_sp.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_cloud.h", "verified": true}
+{"file": "cactus/engine/engine_tokenizer.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_diarize.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_embed.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_ffi.h", "verified": true}
+{"file": "cactus/ffi/cactus_init.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_complete.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_embed_speaker.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_telemetry.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_log.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_graph.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_index.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_rag.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_utils.h", "verified": true}
+{"file": "cactus/ffi/cactus_stream.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_transcribe.cpp", "verified": true}
+{"file": "cactus/ffi/gemma_tools.h", "verified": true}
+{"file": "cactus/graph/graph_builder.cpp", "verified": true}
+{"file": "cactus/graph/graph.h", "verified": true}
+{"file": "cactus/graph/graph_core.cpp", "verified": true}
+{"file": "cactus/graph/graph_io.cpp", "verified": true}
+{"file": "cactus/graph/graph_ops_math.cpp", "verified": true}
+{"file": "cactus/graph/graph_ops_sample.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_altup.cpp", "verified": true}
+{"file": "cactus/graph/graph_ops_tensor.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_vad.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_bilstm.cpp", "verified": true}
+{"file": "cactus/engine/engine_signals.cpp", "verified": true}
+{"file": "cactus/kernel/kernel.h", "verified": true}
+{"file": "cactus/graph/graph_execute.cpp", "verified": true}
+{"file": "cactus/graph/graph_ops_nn.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_deltanet.cpp", "verified": true}
+{"file": "cactus/ffi/cactus_cloud.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_i8mm.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_reduce.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_conv.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_lstm.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_scalar.cpp", "verified": true}
+{"file": "cactus/models/gemma4/model_gemma4.h", "verified": true}
+{"file": "cactus/kernel/kernel_utils.h", "verified": true}
+{"file": "cactus/models/gemma4/model_gemma4_audio.cpp", "verified": true}
+{"file": "cactus/models/gemma4/model_gemma4_vision.cpp", "verified": true}
+{"retry": "cactus/kernel/kernel_blas.cpp", "errorType": "timeout", "attempt": 1}
+{"retry": "cactus/kernel/kernel_attention.cpp", "errorType": "timeout", "attempt": 1}
+{"file": "cactus/kernel/kernel_blas.cpp", "verified": true}
+{"retry": "cactus/kernel/kernel_matmul.cpp", "errorType": "timeout", "attempt": 1}
+{"retry": "cactus/kernel/kernel_quants.cpp", "errorType": "timeout", "attempt": 1}
+{"retry": "cactus/kernel/kernel_nn.cpp", "errorType": "timeout", "attempt": 1}
+{"retry": "cactus/models/gemma4/model_gemma4.cpp", "errorType": "timeout", "attempt": 1}
+{"file": "cactus/kernel/kernel_quants.cpp", "verified": true}
+{"file": "cactus/models/model.h", "verified": true}
+{"file": "cactus/models/model_lfm2.cpp", "verified": true}
+{"file": "cactus/models/model_gemma3n.cpp", "verified": true}
+{"retry": "cactus/models/gemma4/model_gemma4_mm.cpp", "errorType": "timeout", "attempt": 1}
+{"file": "cactus/models/gemma4/model_gemma4_mm.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_matmul.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_nn.cpp", "verified": true}
+{"file": "cactus/models/model_moonshine.cpp", "verified": true}
+{"file": "cactus/models/model_parakeet.cpp", "verified": true}
+{"retry": "cactus/models/model_gemma.cpp", "errorType": "URLError", "attempt": 1}
+{"file": "cactus/models/model_parakeet_tdt.cpp", "verified": true}
+{"file": "cactus/models/model_pyannote.cpp", "verified": true}
+{"file": "cactus/models/model_gemma.cpp", "verified": true}
+{"file": "cactus/models/model_qwen.cpp", "verified": true}
+{"file": "cactus/kernel/kernel_attention.cpp", "verified": true}
+{"retry": "cactus/models/gemma4/model_gemma4.cpp", "errorType": "URLError", "attempt": 2}
+{"file": "cactus/models/model_siglip2.cpp", "verified": true}
+{"file": "cactus/models/model_silero_vad.cpp", "verified": true}
+{"file": "cactus/models/gemma4/model_gemma4.cpp", "verified": true}
+{"file": "cactus/models/model_youtu.cpp", "verified": true}
+{"file": "cactus/models/model_whisper.cpp", "verified": true}
+{"file": "cactus/npu/npu.cpp", "verified": true}
+{"file": "cactus/npu/npu.h", "verified": true}
+{"file": "cactus/models/model_lfm2moe.cpp", "verified": true}
+{"file": "cactus/npu/npu_ane.h", "verified": true}
+{"file": "cactus/models/model_wespeaker.cpp", "verified": true}
+{"file": "cactus/telemetry/telemetry.cpp", "verified": true}
+{"retry": "cactus/models/model_needle.cpp", "errorType": "URLError", "attempt": 1}
+{"retry": "cactus/models/model_nomic.cpp", "errorType": "URLError", "attempt": 1}
+{"file": "cactus/models/model_needle.cpp", "verified": true}
+{"retry": "cactus/models/model_lfm2vl.cpp", "errorType": "timeout", "attempt": 1}
+{"file": "cactus/models/model_nomic.cpp", "verified": true}
+{"file": "cactus/telemetry/telemetry.h", "verified": true}
+{"file": "cactus/models/model_qwen3p5.cpp", "verified": true}
+{"retry": "cactus/npu/npu_ane.mm", "errorType": "timeout", "attempt": 1}
+{"file": "cactus/npu/npu_ane.mm", "verified": true}
+{"retry": "cactus/models/model_lfm2vl.cpp", "errorType": "timeout", "attempt": 2}
+{"file": "cactus/models/model_lfm2vl.cpp", "verified": true}
+{"verifiedFiles": 87, "revision": "40a7123b0788f5b38c5fe0daa0d909b4286fe773"}

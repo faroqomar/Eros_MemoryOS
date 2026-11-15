@@ -1,0 +1,160 @@
+{
+  "checks": {
+    "llama": {
+      "checkedFiles": 3,
+      "mismatches": []
+    },
+    "cactus": {
+      "checkedFiles": 11,
+      "mismatches": []
+    },
+    "cactusPatchDigestMatches": true,
+    "wax": {
+      "licenseFiles": 7,
+      "platforms": 3,
+      "resourceFiles": 50,
+      "mismatches": [],
+      "patchHashMatches": true
+    },
+    "waxCanonicalPins": {
+      "lockHashMatchesReceipt": true,
+      "pins": [
+        {
+          "identity": "grdb.swift",
+          "revision": "92a554cd0d5e8d67cb18993c6054e73fe42c066c",
+          "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/GRDB.swift",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "metalanns",
+          "revision": "13960499c40abd3f06443eb80258e08a6b777da4",
+          "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/MetalANNS",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-asn1",
+          "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+          "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/swift-asn1",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-crypto",
+          "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+          "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/swift-crypto",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "wax",
+          "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+          "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/Wax",
+          "headMatches": true,
+          "originalURLMatches": true
+        }
+      ]
+    },
+    "mlxCanonicalPins": {
+      "lockHashMatchesReceipt": true,
+      "pins": [
+        {
+          "identity": "eventsource",
+          "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/EventSource",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "mlx-swift",
+          "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "mlx-swift-lm",
+          "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift-lm",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-asn1",
+          "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/swift-asn1",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-collections",
+          "revision": "88754449ab766a739610b660e117762115fabc9c",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/swift-collections",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-crypto",
+          "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/swift-crypto",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-huggingface",
+          "revision": "c30143a4616f3fa994ee3ab3e3464f752845c07c",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/swift-huggingface",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-jinja",
+          "revision": "66042420a9225c98ea9382d705e2285769dfdbe5",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/swift-jinja",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-numerics",
+          "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/swift-numerics",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-syntax",
+          "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/swift-syntax",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "swift-transformers",
+          "revision": "402a8a1105f52038b0949d9596981fc9e32bed17",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/swift-transformers",
+          "headMatches": true,
+          "originalURLMatches": true
+        },
+        {
+          "identity": "yyjson",
+          "revision": "6447536015f3d600f3d65323b10976103b337ca7",
+          "checkout": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/yyjson",
+          "headMatches": true,
+          "originalURLMatches": true
+        }
+      ]
+    },
+    "mlxCanonicalLicenses": {
+      "packages": 12,
+      "files": 24,
+      "mismatches": []
+    },
+    "mlxFinalEvidence": {
+      "files": 11,
+      "mismatches": []
+    }
+  },
+  "errors": [],
+  "scope": "Independent immutable dependency/SDK artifact/canonical lock/source checkout/license inventory hash checks. Build and source equivalence logs reviewed separately; no new build or benchmark."
+}

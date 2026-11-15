@@ -1,0 +1,8 @@
+{
+  "change": "Normalize duplicate download=true from source URL; helper adds it",
+  "oldURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/model.safetensors?download=true",
+  "newURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/model.safetensors",
+  "sameBytes": 335450584,
+  "sameSHA256": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+  "retainedPrefixBytes": 716800
+}

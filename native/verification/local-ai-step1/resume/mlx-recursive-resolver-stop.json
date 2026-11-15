@@ -1,0 +1,22 @@
+{
+  "reason": "Stop only own SwiftPM resolver/wrapper ancestry after confirmed recursive local promisor clone exhausted the per-user process limit. Preserve independent model/HTTP downloads.",
+  "ownedProcesses": [
+    {
+      "pid": 46373,
+      "ppid": 85090,
+      "state": "T",
+      "start": "Sun Nov 15 01:14:12 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Tools/git clone -c core.symlinks=true -c core.fsmonitor=false -c core.longpaths=true --shared --no-checkout /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/repositories/swift-collections-9a58d5cf /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/checkouts/swift-collections"
+    },
+    {
+      "pid": 85090,
+      "ppid": 72261,
+      "state": "Ts",
+      "start": "Sun Nov 15 01:03:19 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-package --package-path native/LocalMLXEvaluation --skip-update resolve"
+    }
+  ],
+  "remainingOriginalPIDs": [],
+  "remainingTotalProcessCount": 947,
+  "weightsDownloaderUntouched": true
+}

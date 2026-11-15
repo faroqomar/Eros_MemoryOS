@@ -1,0 +1,278 @@
+warning: 'wax': Invalid Resource 'Resources/snowflake-arctic-embed-s.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/all-MiniLM-L6-v2.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/ms-marco-MiniLM-L-6-v2.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/ms-marco-MiniLM-L-6-v2-LICENSE.txt': File not found.
+warning: 'wax': Invalid Resource 'Resources/e5-small-v2.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/e5-small-v2-LICENSE.txt': File not found.
+warning: 'swift-crypto': Conflicting identity for swift-asn1: dependency 'github.com/apple/swift-asn1' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-asn1' both point to the same package identity 'swift-asn1'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto->github.com/apple/swift-asn1 (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-asn1. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'metalanns': Conflicting identity for grdb.swift: dependency 'github.com/groue/grdb.swift' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift' both point to the same package identity 'grdb.swift'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/groue/grdb.swift (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for metalanns: dependency 'github.com/christopherkarani/metalanns' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns' both point to the same package identity 'metalanns'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/christopherkarani/metalanns (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for grdb.swift: dependency 'github.com/groue/grdb.swift' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift' both point to the same package identity 'grdb.swift'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/groue/grdb.swift (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for swift-crypto: dependency 'github.com/apple/swift-crypto' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto' both point to the same package identity 'swift-crypto'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/apple/swift-crypto (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax-snapshot-verification': dependency 'metalanns' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'grdb.swift' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'swift-crypto' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'swift-asn1' is not used by any target
+warning: 'wax': Invalid Resource 'Resources/e5-small-v2.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/e5-small-v2-LICENSE.txt': File not found.
+warning: 'wax': Invalid Resource 'Resources/snowflake-arctic-embed-s.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/ms-marco-MiniLM-L-6-v2.mlmodelc': File not found.
+warning: 'wax': Invalid Resource 'Resources/ms-marco-MiniLM-L-6-v2-LICENSE.txt': File not found.
+warning: 'wax': Invalid Resource 'Resources/all-MiniLM-L6-v2.mlmodelc': File not found.
+warning: 'swift-crypto': Conflicting identity for swift-asn1: dependency 'github.com/apple/swift-asn1' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-asn1' both point to the same package identity 'swift-asn1'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto->github.com/apple/swift-asn1 (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-asn1. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'metalanns': Conflicting identity for grdb.swift: dependency 'github.com/groue/grdb.swift' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift' both point to the same package identity 'grdb.swift'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/groue/grdb.swift (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for metalanns: dependency 'github.com/christopherkarani/metalanns' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns' both point to the same package identity 'metalanns'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/christopherkarani/metalanns (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/metalanns. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for grdb.swift: dependency 'github.com/groue/grdb.swift' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift' both point to the same package identity 'grdb.swift'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/groue/grdb.swift (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/grdb.swift. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax': Conflicting identity for swift-crypto: dependency 'github.com/apple/swift-crypto' and dependency '/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto' both point to the same package identity 'swift-crypto'. The dependencies are introduced through the following chains: (A) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/wax->github.com/apple/swift-crypto (B) /users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification->/users/eros/library/caches/memoryos-ai-evaluation/wax-snapshot-verification/sdk/swift-crypto. If there are multiple chains that lead to the same dependency, only the first chain is shown here. To see all chains use debug output option. To resolve the conflict, coordinate with the maintainer of the package that introduces the conflicting dependency. This will be escalated to an error in future versions of SwiftPM.
+warning: 'wax-snapshot-verification': dependency 'metalanns' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'grdb.swift' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'swift-crypto' is not used by any target
+warning: 'wax-snapshot-verification': dependency 'swift-asn1' is not used by any target
+Building for production...
+[Computing dependencies]
+[Pre-planning 1 / 597]
+[Planning deferred tasks]
+[9 / 131]
+[10 / 131]
+[14 / 131] MetalANNS_MetalANNSCore
+[18 / 131] MetalANNS_MetalANNSCore
+[23 / 131] MetalANNS_MetalANNSCore
+[26 / 132]
+[31 / 141]
+[43 / 143]
+[46 / 143]
+[48 / 171]
+[53 / 230]
+[62 / 266]
+[70 / 266]
+[77 / 266]
+[89 / 267]
+[95 / 267]
+[100 / 267]
+[107 / 268]
+[113 / 268]
+[115 / 268]
+[119 / 268]
+[122 / 268] MetalANNSC
+[123 / 268] MetalANNSC
+[128 / 268]
+[131 / 268]
+[136 / 268]
+[141 / 268]
+[146 / 268]
+[148 / 268]
+[153 / 268]
+[156 / 268]
+[160 / 268]
+[162 / 268]
+[165 / 268]
+[168 / 268]
+[172 / 268]
+[175 / 268]
+[176 / 268]
+[185 / 269] Crypto
+[190 / 275] MetalANNSCore
+[192 / 275]
+[193 / 275]
+[199 / 275] MetalANNSCore
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNSCore/BoundedExactScan.swift:162:24: warning: capture of 'dotsScratch' with non-Sendable type 'UnsafeMutablePointer<Float>' in a '@Sendable' closure [#SendableClosureCaptures]
+160 |             guard start < end else { return }
+161 |             let rows = end - start
+162 |             let dots = dotsScratch + slice * chunkSize
+    |                        `- warning: capture of 'dotsScratch' with non-Sendable type 'UnsafeMutablePointer<Float>' in a '@Sendable' closure [#SendableClosureCaptures]
+163 | 
+164 |             context.queryCodes.withUnsafeBufferPointer { queryBuffer in
+
+Swift.UnsafeMutablePointer:1:23: note: generic struct 'UnsafeMutablePointer' does not conform to the 'Sendable' protocol
+1 | @frozen public struct UnsafeMutablePointer<Pointee> : Copyable where Pointee : ~Copyable {
+  |                       `- note: generic struct 'UnsafeMutablePointer' does not conform to the 'Sendable' protocol
+2 |     public let _rawValue: Builtin.RawPointer
+3 |     public init(_ _rawValue: Builtin.RawPointer)
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNSCore/BoundedExactScan.swift:230:13: warning: capture of 'resultsStorage' with non-Sendable type 'UnsafeMutableBufferPointer<[BoundedExactScan.HeapEntry]>' (aka 'UnsafeMutableBufferPointer<Array<(key: Float, id: UInt32)>>') in a '@Sendable' closure [#SendableClosureCaptures]
+228 |             }
+229 | 
+230 |             resultsStorage[slice] = heapSortedAscending(heap)
+    |             `- warning: capture of 'resultsStorage' with non-Sendable type 'UnsafeMutableBufferPointer<[BoundedExactScan.HeapEntry]>' (aka 'UnsafeMutableBufferPointer<Array<(key: Float, id: UInt32)>>') in a '@Sendable' closure [#SendableClosureCaptures]
+231 |         }
+232 | 
+
+Swift.UnsafeMutableBufferPointer:1:23: note: generic struct 'UnsafeMutableBufferPointer' does not conform to the 'Sendable' protocol
+1 | @frozen public struct UnsafeMutableBufferPointer<Element> : Copyable where Element : ~Copyable {
+  |                       `- note: generic struct 'UnsafeMutableBufferPointer' does not conform to the 'Sendable' protocol
+2 |     public let count: Int
+3 |     @inlinable public init(start: UnsafeMutablePointer<Element>?, count: Int)
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNSCore/FlatGPUSearch.swift:517:21: warning: 'cblas_sgemv' was deprecated in macOS 13.3: An updated CBLAS interface supporting ILP64 is available.  Please compile with -DACCELERATE_NEW_LAPACK to access the new headers and -DACCELERATE_LAPACK_ILP64 for ILP64 support. [#DeprecatedDeclaration]
+ 515 |                 ones.withUnsafeBufferPointer { onesBuffer in
+ 516 |                     guard let onesBase = onesBuffer.baseAddress else { return }
+ 517 |                     cblas_sgemv(
+     |                     `- warning: 'cblas_sgemv' was deprecated in macOS 13.3: An updated CBLAS interface supporting ILP64 is available.  Please compile with -DACCELERATE_NEW_LAPACK to access the new headers and -DACCELERATE_LAPACK_ILP64 for ILP64 support. [#DeprecatedDeclaration]
+ 518 |                         CblasRowMajor,
+ 519 |                         CblasNoTrans,
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNSCore/IVFFlatSearch.swift:651:9: warning: 'cblas_sgemm' was deprecated in macOS 13.3: An updated CBLAS interface supporting ILP64 is available.  Please compile with -DACCELERATE_NEW_LAPACK to access the new headers and -DACCELERATE_LAPACK_ILP64 for ILP64 support. [#DeprecatedDeclaration]
+649 |         }
+650 | 
+651 |         cblas_sgemm(
+    |         `- warning: 'cblas_sgemm' was deprecated in macOS 13.3: An updated CBLAS interface supporting ILP64 is available.  Please compile with -DACCELERATE_NEW_LAPACK to access the new headers and -DACCELERATE_LAPACK_ILP64 for ILP64 support. [#DeprecatedDeclaration]
+652 |             CblasRowMajor,
+653 |             CblasNoTrans,
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNSCore/IVFFlatSearch.swift:684:33: warning: capture of 'scores' with non-Sendable type 'UnsafeMutablePointer<Float>' in a '@Sendable' closure [#SendableClosureCaptures]
+682 |                 var best = 0
+683 |                 var bestKey = Float.greatestFiniteMagnitude
+684 |                 let rowScores = scores.advanced(by: row * nlist)
+    |                                 `- warning: capture of 'scores' with non-Sendable type 'UnsafeMutablePointer<Float>' in a '@Sendable' closure [#SendableClosureCaptures]
+685 |                 let qn = rowNormSq[row]
+686 |                 for cluster in 0..<nlist {
+
+Swift.UnsafeMutablePointer:1:23: note: generic struct 'UnsafeMutablePointer' does not conform to the 'Sendable' protocol
+1 | @frozen public struct UnsafeMutablePointer<Pointee> : Copyable where Pointee : ~Copyable {
+  |                       `- note: generic struct 'UnsafeMutablePointer' does not conform to the 'Sendable' protocol
+2 |     public let _rawValue: Builtin.RawPointer
+3 |     public init(_ _rawValue: Builtin.RawPointer)
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNSCore/IVFFlatSearch.swift:685:26: warning: capture of 'rowNormSq' with non-Sendable type 'UnsafePointer<Float>' in a '@Sendable' closure [#SendableClosureCaptures]
+683 |                 var bestKey = Float.greatestFiniteMagnitude
+684 |                 let rowScores = scores.advanced(by: row * nlist)
+685 |                 let qn = rowNormSq[row]
+    |                          `- warning: capture of 'rowNormSq' with non-Sendable type 'UnsafePointer<Float>' in a '@Sendable' closure [#SendableClosureCaptures]
+686 |                 for cluster in 0..<nlist {
+687 |                     let key = distance(
+
+Swift.UnsafePointer:1:23: note: generic struct 'UnsafePointer' does not conform to the 'Sendable' protocol
+1 | @frozen public struct UnsafePointer<Pointee> : Copyable where Pointee : ~Copyable {
+  |                       `- note: generic struct 'UnsafePointer' does not conform to the 'Sendable' protocol
+2 |     public let _rawValue: Builtin.RawPointer
+3 |     public init(_ _rawValue: Builtin.RawPointer)
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNSCore/IVFFlatSearch.swift:690:36: warning: capture of 'centroidNormSq' with non-Sendable type 'UnsafePointer<Float>' in a '@Sendable' closure [#SendableClosureCaptures]
+688 |                         dot: rowScores[cluster],
+689 |                         queryNormSq: qn,
+690 |                         rowNormSq: centroidNormSq[cluster],
+    |                                    `- warning: capture of 'centroidNormSq' with non-Sendable type 'UnsafePointer<Float>' in a '@Sendable' closure [#SendableClosureCaptures]
+691 |                         metric: metric
+692 |                     )
+
+Swift.UnsafePointer:1:23: note: generic struct 'UnsafePointer' does not conform to the 'Sendable' protocol
+1 | @frozen public struct UnsafePointer<Pointee> : Copyable where Pointee : ~Copyable {
+  |                       `- note: generic struct 'UnsafePointer' does not conform to the 'Sendable' protocol
+2 |     public let _rawValue: Builtin.RawPointer
+3 |     public init(_ _rawValue: Builtin.RawPointer)
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNSCore/IVFFlatSearch.swift:698:17: warning: capture of 'assignments' with non-Sendable type 'UnsafeMutablePointer<Int>' in a '@Sendable' closure [#SendableClosureCaptures]
+696 |                     }
+697 |                 }
+698 |                 assignments[row] = best
+    |                 `- warning: capture of 'assignments' with non-Sendable type 'UnsafeMutablePointer<Int>' in a '@Sendable' closure [#SendableClosureCaptures]
+699 |             }
+700 |         }
+
+Swift.UnsafeMutablePointer:1:23: note: generic struct 'UnsafeMutablePointer' does not conform to the 'Sendable' protocol
+1 | @frozen public struct UnsafeMutablePointer<Pointee> : Copyable where Pointee : ~Copyable {
+  |                       `- note: generic struct 'UnsafeMutablePointer' does not conform to the 'Sendable' protocol
+2 |     public let _rawValue: Builtin.RawPointer
+3 |     public init(_ _rawValue: Builtin.RawPointer)
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+[#SendableClosureCaptures]: <https://docs.swift.org/compiler/documentation/diagnostics/sendable-closure-captures>
+[205 / 275] WaxCore
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/GRDB.swift/GRDB/Record/EncodableRecord.swift:243:28: warning: type 'Any' does not conform to the 'Sendable' protocol
+241 |         // guarantee some stability in order to ease record comparison
+242 |         encoder.outputFormatting = .sortedKeys
+243 |         encoder.userInfo = databaseEncodingUserInfo
+    |                            `- warning: type 'Any' does not conform to the 'Sendable' protocol
+244 |         return encoder
+245 |     }
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/GRDB.swift/GRDB/Record/FetchableRecord.swift:269:28: warning: type 'Any' does not conform to the 'Sendable' protocol
+ 267 |         decoder.dateDecodingStrategy = .millisecondsSince1970
+ 268 |         decoder.nonConformingFloatDecodingStrategy = .throw
+ 269 |         decoder.userInfo = databaseDecodingUserInfo
+     |                            `- warning: type 'Any' does not conform to the 'Sendable' protocol
+ 270 |         return decoder
+ 271 |     }
+[211 / 275] GRDB
+[219 / 277] GRDB
+[219 / 277] MetalANNS
+[223 / 279] WaxTextSearch
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/MetalANNS/Sources/MetalANNS/Storage/SQLiteStructuredStore.swift:92:17: warning: result of call to 'withUnsafeBytes' is unused [#NoUsage]
+ 90 | 
+ 91 |         sqlite3_bind_text(statement, 1, key, -1, sqliteTransient)
+ 92 |         payload.withUnsafeBytes { rawBuffer in
+    |                 `- warning: result of call to 'withUnsafeBytes' is unused [#NoUsage]
+ 93 |             sqlite3_bind_blob(statement, 2, rawBuffer.baseAddress, Int32(rawBuffer.count), sqliteTransient)
+ 94 |         }
+
+[#NoUsage]: <https://docs.swift.org/compiler/documentation/diagnostics/no-usage>
+[229 / 279] MetalANNS
+[236 / 280] WaxVectorSearch
+[239 / 282] WaxVectorSearch
+[246 / 283] Wax
+[253 / 320]
+[260 / 320]
+[266 / 320]
+[272 / 320]
+[276 / 320]
+[277 / 320]
+[279 / 320]
+[280 / 320]
+[282 / 320]
+[283 / 320]
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/Wax/Sources/Wax/Broker/AgentBrokerService.swift:498:5: warning: 'package' modifier is redundant for property declared in a package extension
+496 | 
+497 | package extension AgentBrokerValue {
+498 |     package var debugJSONString: String {
+    |     `- warning: 'package' modifier is redundant for property declared in a package extension
+499 |         guard let data = try? JSONEncoder().encode(self),
+500 |               let string = String(data: data, encoding: .utf8) else {
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/Wax/Sources/Wax/Broker/BrokerCorpusStore.swift:569:5: warning: 'package' modifier conflicts with extension's default access of 'private'
+567 |     /// Corpus opens are brief: a superseded-vector re-embed would be cancelled by `close()`
+568 |     /// before its first checkpoint, so it stays with the long-lived broker session.
+569 |     package static func memoryConfig(structuredMemoryEnabled: Bool) -> OrchestratorConfig {
+    |     `- warning: 'package' modifier conflicts with extension's default access of 'private'
+570 |         var config = OrchestratorConfig.default
+571 |         config.enableStructuredMemory = structuredMemoryEnabled
+
+/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/Wax/Sources/Wax/Orchestrator/MemoryOrchestrator+Maintenance+Scheduled.swift:252:5: warning: 'package' modifier is redundant for static method declared in a package extension
+250 |     /// candidates, and it runs on a GCD thread: fetching a modification date for every entry
+251 |     /// of a 59k-entry TMPDIR took about 4 s of a cooperative thread on each store close.
+252 |     package static func pruneScheduledRewriteCandidates(
+    |     `- warning: 'package' modifier is redundant for static method declared in a package extension
+253 |         in directory: URL,
+254 |         baseName: String,
+[284 / 320] Wax
+[291 / 321] Wax
+[291 / 321] WaxEvaluationAdapter
+[293 / 322] WaxEvaluationAdapter
+[309 / 324] WaxEvaluationAdapter-product
+[309 / 324] wax-evaluation-product
+[313 / 328]
+[315 / 328] wax-evaluation-product
+[317 / 328] wax-evaluation-product
+[318 / 328] WaxEvaluationAdapterTests-product
+[323 / 328] WaxEvaluationAdapterTests-product
+[325 / 328] wax-evaluation-product
+[326 / 328] WaxEvaluationAdapterTests-product
+Build complete! (110.21 secs)
+Test Suite 'All tests' started at 2026-11-15 01:48:19.172.
+Test Suite 'All tests' passed at 2026-11-15 01:48:19.183.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.011) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite WaxMemoryIndexAdapterTests started.
+◇ Test rebuildRetractsRemovedAndCorrectedSourcesWithoutDeletingOtherFiles() started.
+◇ Test retrievesCanonicalUnicodeIDsAndPreservesIdenticalSources() started.
+◇ Test storageFailurePreservesCallerOwnedFile() started.
+◇ Test preservesArabicAndMixedLanguageLexicalSearch() started.
+◇ Test rejectsUnavailableAndInvalidInputsAndRetainsPreviousIndex() started.
+✔ Test storageFailurePreservesCallerOwnedFile() passed after 0.025 seconds.
+✔ Test retrievesCanonicalUnicodeIDsAndPreservesIdenticalSources() passed after 0.119 seconds.
+✔ Test preservesArabicAndMixedLanguageLexicalSearch() passed after 0.120 seconds.
+✔ Test rejectsUnavailableAndInvalidInputsAndRetainsPreviousIndex() passed after 0.149 seconds.
+✔ Test rebuildRetractsRemovedAndCorrectedSourcesWithoutDeletingOtherFiles() passed after 0.158 seconds.
+✔ Suite WaxMemoryIndexAdapterTests passed after 0.158 seconds.
+✔ Test run with 5 tests in 1 suite passed after 0.158 seconds.

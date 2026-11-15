@@ -1,0 +1,14 @@
+{
+  "cases": 15,
+  "completed": 15,
+  "exact_source_set": 10,
+  "mean_source_recall": 0.9333333333333333,
+  "median_search_seconds": 0.001355875,
+  "maximum_search_seconds": 0.003957208,
+  "telemetry": {
+    "measurementMethod": "macOS process-lifetime getrusage ru_maxrss high-water bytes; current derived index logical file sizes. No phone battery or thermal measurement.",
+    "peakMemoryBytes": 43859968,
+    "storageBytes": 8539018
+  },
+  "source_identity": "sha256:4fedc5ca4a6d77204dc68fa13975386948f7bae61684b15b493bf5a67f950455"
+}

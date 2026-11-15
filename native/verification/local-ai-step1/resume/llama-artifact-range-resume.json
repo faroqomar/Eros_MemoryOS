@@ -1,0 +1,114 @@
+{
+  "reason": "Split preserved8MiB prefixes into1MiB ranges so remaining official release bytes can use16concurrent requests; no bytes discarded",
+  "oldWorkers": 4,
+  "newWorkers": 16,
+  "oldChunkBytes": 8388608,
+  "newChunkBytes": 1048576,
+  "preservedLegacyDirectory": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/artifacts/llama-b12387-xcframework.zip.parts-legacy-8m",
+  "retainedBytes": 47448064,
+  "parts": [
+    {
+      "oldPart": "00000.part",
+      "bytes": 8388608,
+      "sha256": "527270e4aece4cade7098be61e87fd5ccad2d0d2413abd35e87796b9d34557e8",
+      "newParts": [
+        "00000.part",
+        "00001.part",
+        "00002.part",
+        "00003.part",
+        "00004.part",
+        "00005.part",
+        "00006.part",
+        "00007.part"
+      ]
+    },
+    {
+      "oldPart": "00001.part",
+      "bytes": 8388608,
+      "sha256": "5c70e2965eaea6bc13a4ff08ebbc61f917e9e04451b5949282f2fa962e3cad29",
+      "newParts": [
+        "00008.part",
+        "00009.part",
+        "00010.part",
+        "00011.part",
+        "00012.part",
+        "00013.part",
+        "00014.part",
+        "00015.part"
+      ]
+    },
+    {
+      "oldPart": "00002.part",
+      "bytes": 8388608,
+      "sha256": "da061e7b8be2efc304c2857c2f28f82c837e233c018b8a2bc972423bb383a3e5",
+      "newParts": [
+        "00016.part",
+        "00017.part",
+        "00018.part",
+        "00019.part",
+        "00020.part",
+        "00021.part",
+        "00022.part",
+        "00023.part"
+      ]
+    },
+    {
+      "oldPart": "00003.part",
+      "bytes": 8388608,
+      "sha256": "633d8ace2a68c89723806d9b9e549effa4c9934297bfee4eb66e6f37d5e1d9fa",
+      "newParts": [
+        "00024.part",
+        "00025.part",
+        "00026.part",
+        "00027.part",
+        "00028.part",
+        "00029.part",
+        "00030.part",
+        "00031.part"
+      ]
+    },
+    {
+      "oldPart": "00004.part",
+      "bytes": 3342336,
+      "sha256": "f0991fcddc51156bc8f9b06099ad41a319f5507b230db5303e8bb7d471307060",
+      "newParts": [
+        "00032.part",
+        "00033.part",
+        "00034.part",
+        "00035.part"
+      ]
+    },
+    {
+      "oldPart": "00005.part",
+      "bytes": 4980736,
+      "sha256": "df593aaa4aa3ff1c1cfec8d80c04644b3e8be62b63de9a56777a260c71424366",
+      "newParts": [
+        "00040.part",
+        "00041.part",
+        "00042.part",
+        "00043.part",
+        "00044.part"
+      ]
+    },
+    {
+      "oldPart": "00006.part",
+      "bytes": 3538944,
+      "sha256": "79e4cd57f42b58085af4c00664ef8a058a69651135afa8fd56d3b5aaca8ac2be",
+      "newParts": [
+        "00048.part",
+        "00049.part",
+        "00050.part",
+        "00051.part"
+      ]
+    },
+    {
+      "oldPart": "00007.part",
+      "bytes": 2031616,
+      "sha256": "5c21756f27f9a6af8ef7890077b6216a0c0b5f856b2805c9a2154113935c49b6",
+      "newParts": [
+        "00056.part",
+        "00057.part"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "configuration" : {
+    "displayName" : "Wax · keyword",
+    "id" : "wax-lexical",
+    "provenance" : [
+      {
+        "notes" : "Wax 0.1.47 with recorded iOS desktop guards; textOnly retrieval; embeddings disabled.",
+        "revision" : "e4587f8cebb76aa92ece008253f13c66b756e68b",
+        "sourceURL" : "https://github.com/christopherkarani/Wax"
+      }
+    ],
+    "scope" : "retrieval"
+  },
+  "context" : {
+    "batchID" : "CF818A95-44F8-4A98-838A-3CE0626799AF",
+    "buildConfiguration" : "Release",
+    "conditions" : "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+    "deviceModel" : "iPhone19,2",
+    "environment" : "simulator",
+    "offlineConfirmed" : false,
+    "operatingSystem" : "Version 27.2 (Build 24B8117)",
+    "purpose" : "comparison",
+    "repetition" : 2,
+    "repetitionCount" : 6,
+    "sourceIdentity" : "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+    "toolchain" : "Xcode 27.2 / Swift 6.4.2"
+  },
+  "formatVersion" : 2,
+  "generatedAt" : "2026-11-15T00:41:56Z",
+  "indexBuildSeconds" : 0.030720375,
+  "manualReviews" : [
+
+  ],
+  "results" : [
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "en-birthday",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 3.2249999046325684,
+        "unicode-name" : -0.4312500059604645
+      },
+      "retrievedSourceIDs" : [
+        "en-birthday",
+        "unicode-name"
+      ],
+      "searchSeconds" : 0.002209333,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-birthday",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-birthday" : 0.20000000298023224
+      },
+      "retrievedSourceIDs" : [
+        "ar-birthday"
+      ],
+      "searchSeconds" : 0.001446917,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-tentative",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-tentative" : 0.1111111119389534
+      },
+      "retrievedSourceIDs" : [
+        "iq-tentative"
+      ],
+      "searchSeconds" : 0.002042625,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "en-commitment",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-commitment" : 0.3333333134651184
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment"
+      ],
+      "searchSeconds" : 0.001793,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "mixed-deadline",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "mixed-deadline" : 0.1111111119389534
+      },
+      "retrievedSourceIDs" : [
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.00185375,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "name-ar-to-en",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 0.1666666716337204
+      },
+      "retrievedSourceIDs" : [
+        "name-alias"
+      ],
+      "searchSeconds" : 0.001649959,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "name-nickname",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 0.3333333134651184
+      },
+      "retrievedSourceIDs" : [
+        "name-alias"
+      ],
+      "searchSeconds" : 0.001023625,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "name-disambiguation",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "same-name" : 0.20000000298023224
+      },
+      "retrievedSourceIDs" : [
+        "same-name"
+      ],
+      "searchSeconds" : 0.001509208,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "correction-history",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-correction" : 3.3321428298950195,
+        "date-original" : 3.3321428298950195
+      },
+      "retrievedSourceIDs" : [
+        "date-original",
+        "date-correction"
+      ],
+      "searchSeconds" : 0.002386625,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-negation",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-negation" : 0.1428571343421936
+      },
+      "retrievedSourceIDs" : [
+        "iq-negation"
+      ],
+      "searchSeconds" : 0.001816333,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-sarcasm",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-sarcasm" : 0.1666666567325592
+      },
+      "retrievedSourceIDs" : [
+        "iq-sarcasm"
+      ],
+      "searchSeconds" : 0.002027458,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "missing-evidence",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 0.2499999850988388,
+        "unicode-name" : 0.2499999850988388
+      },
+      "retrievedSourceIDs" : [
+        "en-birthday",
+        "unicode-name"
+      ],
+      "searchSeconds" : 0.001445916,
+      "sourceRecall" : 0
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "source-injection",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 0.09090908616781235,
+        "untrusted-import" : 0.09090908616781235
+      },
+      "retrievedSourceIDs" : [
+        "untrusted-import",
+        "en-birthday"
+      ],
+      "searchSeconds" : 0.002698,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-digits",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-digits" : 0.20000000298023224,
+        "iq-tentative" : 0.19999998807907104,
+        "mixed-deadline" : 0.19999998807907104
+      },
+      "retrievedSourceIDs" : [
+        "ar-digits",
+        "iq-tentative",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.001784875,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "unicode-name",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 0.09090908616781235,
+        "unicode-name" : 0.09090909361839294
+      },
+      "retrievedSourceIDs" : [
+        "unicode-name",
+        "en-birthday"
+      ],
+      "searchSeconds" : 0.002439416,
+      "sourceRecall" : 1
+    }
+  ],
+  "settings" : {
+    "maximumOutputTokens" : 256,
+    "seed" : 42,
+    "temperature" : 0
+  },
+  "suiteID" : "memoryos-local-ai-fictional-v1",
+  "telemetry" : {
+    "measurementMethod" : "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured.",
+    "peakMemoryBytes" : 53348800,
+    "storageBytes" : 8539018
+  }
+}

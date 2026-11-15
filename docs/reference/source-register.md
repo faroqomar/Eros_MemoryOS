@@ -139,3 +139,20 @@ C35: the owner requests Step 1 of checklist group 3, “Add reliable local stora
 C36, 2026-11-14: the owner requests Step 2 for the active checklist group 3 local-storage task. This authorizes independent verification, in-scope repairs, required cleanup, affected checks and fresh evidence under the standing workflow. It does not start Step 3 or authorize release.
 
 C37, 2026-11-14: the owner requests Step 3 for checklist group 3 local storage. This authorizes final review, scoped commit/push and private PR delivery, followed by merge only when required gates pass under C33. The request does not waive blocked physical-device/minimum-runtime checks, unresolved accessibility findings or required product/design acceptance.
+
+## Local AI evaluation authorization, 2026-11-14
+
+C38: the owner requests Step 1 of checklist group 4, “Test local AI tools on the phone.” The six items require comparing Wax and a supported Cactus-based memory configuration, llama.cpp and suitable text runtime alternatives, Qwen3-1.7B and other models on the same examples, Arabic/Iraqi Arabic/English/names/mixed text, physical phone speed/memory/storage/battery/heat, then component selection from measured results while preserving original records. This authorizes evaluation planning, implementation and builder checks. It does not waive physical-device evidence, select production components, start independent Step 2 or delivery Step 3, enable cloud fallback or authorize release. See the [task record](../tasks/2026-11-14-local-ai-phone-evaluation.md) and [primary-source support review](2026-11-14-local-ai-support.md).
+
+
+C39: after the initial group 4 handback, the owner directs the agent to fix the missing integrations, wait through slow downloads, and give a heads-up while waiting. This supersedes the agent's earlier self-imposed five-minute download cutoff. It does not authorize skipping compilation, tests or actual model runs.
+
+C40: the owner answers the physical-device request with “use the simulator.” This selects the simulator as the current group 4 Step 1 evaluation target. Record its device/OS and keep simulator results distinct from physical battery/heat and production readiness. Continue the existing authorized comparisons; no new app feature, release or Step 2/3 follows.
+
+C41, 2026-11-15: the owner requests Step 2 for checklist group 4 local AI evaluation. This authorizes independent verification, in-scope repairs, affected tests/Simulator checks, cleanup and fresh evidence. It preserves the C40 Simulator scope; no Step 3, production adoption, cloud transfer or release starts. Required unresolved findings still block passage.
+
+C42, 2026-11-15: the owner requests a defect, security and unused-code review before Step 3, with the named review skills and scoped parallel reviewers. The review covers the current group 4 implementation. Group 5 chat remains a proposed checklist, not implemented chat.
+
+C43, 2026-11-15: the owner directs the agent to fix the review findings. This authorizes the project-dependency isolation and Cactus source-verification repairs, affected regression checks and continued repair of the existing group 4 accessibility findings. It supersedes the review-only restriction for these fixes. Step 3, production selection and release remain separate.
+
+C44, 2026-11-15: after the C43 repair handback passes, the owner requests Step 3 for the active group 4 local AI evaluation. Under C33, this authorizes final scoped review, commit/push, private PR delivery and merge of the verified head after the applicable repository gates pass. Group 5 chat, production model adoption, physical-phone claims, cloud processing and release are outside this delivery. Preserve unrelated local architecture-policy work.

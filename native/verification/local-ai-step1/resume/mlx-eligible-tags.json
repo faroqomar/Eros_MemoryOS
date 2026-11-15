@@ -1,0 +1,26 @@
+{
+  "mlx-swift-0.32": [
+    {
+      "ref": "refs/tags/0.32.2",
+      "object": {
+        "sha": "2b5e8775270c2047f51f05cb3d87cdeea9a125e3",
+        "type": "commit",
+        "url": "https://api.github.com/repos/ml-explore/mlx-swift/git/commits/2b5e8775270c2047f51f05cb3d87cdeea9a125e3"
+      }
+    },
+    {
+      "ref": "refs/tags/0.32.3",
+      "object": {
+        "sha": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+        "type": "commit",
+        "url": "https://api.github.com/repos/ml-explore/mlx-swift/git/commits/19601207e9a0de51e03ee6ec0c3c5f3784275075"
+      }
+    }
+  ],
+  "swift-syntax-602": {
+    "error": "URLError"
+  },
+  "swift-syntax-603": {
+    "error": "RemoteDisconnected"
+  }
+}

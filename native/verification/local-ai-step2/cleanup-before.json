@@ -1,0 +1,24 @@
+{
+  "capturedAtUTC": "2026-11-15T02:01:21.218266+00:00",
+  "method": "du -sk per path; overlaps/APFS shares mean values are not additive unique disk costs",
+  "paths": [
+    {
+      "path": ".",
+      "allocatedKiB": 5392620
+    },
+    {
+      "path": "native/verification",
+      "allocatedKiB": 891288
+    },
+    {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation",
+      "allocatedKiB": 10747852
+    }
+  ],
+  "volumeAvailableBytes": 52913143808,
+  "status": " M .gitignore\n M AGENTS.md\n M README.md\n M docs/decisions/decision-register.md\n M docs/decisions/independent-engine-packages.md\n M docs/decisions/runtime-memory-options.md\n M docs/how-to/commercial-engineering-rules.md\n M docs/how-to/development-workflow.md\n M docs/plans/implementation-checklist.md\n M docs/reference/source-register.md\n M docs/templates/development-task.md\n M native/MemoryOS.xcodeproj/project.pbxproj\n?? docs/evidence/architecture-2026-11-14/\n?? docs/evidence/local-ai-2026-11-14/\n?? docs/reference/2026-11-14-local-ai-support.md\n?? docs/tasks/2026-11-14-explicit-architecture-rules.md\n?? docs/tasks/2026-11-14-local-ai-phone-evaluation.md\n?? native/AILabInfo.plist\n?? native/LocalAIEvaluation/\n?? native/LocalAIIntegrations/\n?? native/LocalCactusEvaluation/\n?? native/LocalMLXEvaluation/\n?? native/LocalTextEvaluation/\n?? native/MemoryOS.xcodeproj/xcshareddata/xcschemes/MemoryOSAILab.xcscheme\n?? native/MemoryOSAILab/\n?? native/verification/local-ai-step1/\n?? native/verification/local-ai-step2/\n?? scripts/fetch-evaluation-asset.py\n?? scripts/fetch-llama-evaluation-source.py\n?? scripts/prepare-llama-evaluation.py\n?? scripts/summarize-local-ai.py\n!! .build/\n!! .codex/\n!! .playwright-mcp/\n!! design-lab/reviews/\n!! docs/evidence/local-ai-2026-11-14/resume-wax/__pycache__/\n!! native/.build/\n!! native/.destinations.log\n!! native/.test-final.log\n!! native/.test-fixed.log\n!! native/.test-sidebar-final.log\n!! native/LocalAIEvaluation/.build/\n!! native/LocalAIIntegrations/.build/\n!! native/LocalAIIntegrations/BinaryIntegration/Artifacts/\n!! native/LocalCactusEvaluation/.build/\n!! native/LocalCactusEvaluation/Artifacts/\n!! native/LocalMLXEvaluation/.build-canonical/\n!! native/LocalMLXEvaluation/.build-manifest/\n!! native/LocalMLXEvaluation/.build/\n!! native/LocalMLXEvaluation/SimulatorAvailability/.build/\n!! native/LocalMLXEvaluation/Tools/__pycache__/\n!! native/LocalTextEvaluation/.build/\n!! native/LocalTextEvaluation/Artifacts/\n!! native/verification/interface-demo/step2/accessibility-categories.xcresult/\n!! native/verification/interface-demo/step2/accessibility-components.xcresult/\n!! native/verification/interface-demo/step2/accessibility-diagnostics.xcresult/\n!! native/verification/interface-demo/step2/accessibility-expanding-search.xcresult/\n!! native/verification/interface-demo/step2/accessibility-initial.xcresult/\n!! native/verification/interface-demo/step2/accessibility-search-fix.xcresult/\n!! native/verification/interface-demo/step2/cleanup/tests.xcresult/\n!! native/verification/interface-demo/step2/functional-final.xcresult/\n!! native/verification/interface-demo/step2/map-header-recheck.xcresult/\n!! native/verification/interface-demo/step2/menu-recheck.xcresult/\n!! native/verification/interface-demo/tests-final.xcresult/\n!! native/verification/interface-demo/tests-navigation-final.xcresult/\n!! native/verification/interface-demo/tests-second.xcresult/\n!! native/verification/interface-demo/tests.xcresult/\n!! native/verification/interface-demo/unit-final.xcresult/\n!! native/verification/local-storage/candidate-ui.xcresult/\n!! native/verification/local-storage/final-ui-recheck.xcresult/\n!! native/verification/local-storage/step2/functional.xcresult/\n!! native/verification/local-storage/step2/local-accessibility-run.xcresult/\n!! native/verification/local-storage/step2/local-accessibility.xcresult/\n!! native/verification/preserved-foundation-results/\n!! scripts/__pycache__/\n",
+  "preservedStep1Evidence": {
+    "native/verification/local-ai-step1/resume/comparison-inputs.json": "4f1740a38e0b517634484c53577ae2feb0468713d9e3dc8fd81faa0f7213598d",
+    "native/verification/local-ai-step1/resume/source-hashes.json": "5de729d860978c685783e5a5a23de14f76a388198ef302d55b1fea9da86afa1e"
+  }
+}

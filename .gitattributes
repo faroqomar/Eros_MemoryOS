@@ -1,0 +1,5 @@
+# Preserve original generated evidence bytes without expanding compiler/download
+# logs into the code-review diff. Source, tests, patches and JSON remain diffable.
+docs/evidence/local-ai-2026-11-14/**/*.log -diff
+native/verification/local-ai-step1/**/*.log -diff
+native/verification/local-ai-step2/**/*.log -diff

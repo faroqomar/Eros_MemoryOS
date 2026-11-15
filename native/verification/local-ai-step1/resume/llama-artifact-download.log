@@ -1,0 +1,915 @@
+{"event": "progress", "receivedBytes": 65536, "totalBytes": 65737008, "averageBytesPerSecond": 4367}
+{"event": "progress", "receivedBytes": 65536, "totalBytes": 65737008, "averageBytesPerSecond": 2184}
+{"event": "progress", "receivedBytes": 131072, "totalBytes": 65737008, "averageBytesPerSecond": 2912}
+{"event": "progress", "receivedBytes": 196608, "totalBytes": 65737008, "averageBytesPerSecond": 3276}
+{"event": "progress", "receivedBytes": 196608, "totalBytes": 65737008, "averageBytesPerSecond": 2620}
+{"event": "progress", "receivedBytes": 327680, "totalBytes": 65737008, "averageBytesPerSecond": 3639}
+{"event": "progress", "receivedBytes": 524288, "totalBytes": 65737008, "averageBytesPerSecond": 4991}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 720896, "totalBytes": 65737008, "averageBytesPerSecond": 6005}
+{"event": "progress", "receivedBytes": 1114112, "totalBytes": 65737008, "averageBytesPerSecond": 8249}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 1310720, "totalBytes": 65737008, "averageBytesPerSecond": 8735}
+{"event": "progress", "receivedBytes": 1572864, "totalBytes": 65737008, "averageBytesPerSecond": 9529}
+{"event": "progress", "receivedBytes": 1703936, "totalBytes": 65737008, "averageBytesPerSecond": 9463}
+{"event": "progress", "receivedBytes": 1966080, "totalBytes": 65737008, "averageBytesPerSecond": 10079}
+{"event": "progress", "receivedBytes": 2162688, "totalBytes": 65737008, "averageBytesPerSecond": 10295}
+{"event": "progress", "receivedBytes": 2228224, "totalBytes": 65737008, "averageBytesPerSecond": 9899}
+{"event": "progress", "receivedBytes": 2228224, "totalBytes": 65737008, "averageBytesPerSecond": 9281}
+{"event": "progress", "receivedBytes": 2555904, "totalBytes": 65737008, "averageBytesPerSecond": 10019}
+{"event": "progress", "receivedBytes": 2686976, "totalBytes": 65737008, "averageBytesPerSecond": 9947}
+{"event": "progress", "receivedBytes": 2883584, "totalBytes": 65737008, "averageBytesPerSecond": 10114}
+{"event": "progress", "receivedBytes": 3014656, "totalBytes": 65737008, "averageBytesPerSecond": 10045}
+{"event": "progress", "receivedBytes": 3145728, "totalBytes": 65737008, "averageBytesPerSecond": 9982}
+{"event": "progress", "receivedBytes": 3211264, "totalBytes": 65737008, "averageBytesPerSecond": 9727}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 3276800, "totalBytes": 65737008, "averageBytesPerSecond": 9494}
+{"event": "progress", "receivedBytes": 3342336, "totalBytes": 65737008, "averageBytesPerSecond": 9280}
+{"event": "progress", "receivedBytes": 3407872, "totalBytes": 65737008, "averageBytesPerSecond": 9083}
+{"event": "progress", "receivedBytes": 3538944, "totalBytes": 65737008, "averageBytesPerSecond": 9070}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 3538944, "totalBytes": 65737008, "averageBytesPerSecond": 8734}
+{"event": "progress", "receivedBytes": 3538944, "totalBytes": 65737008, "averageBytesPerSecond": 8422}
+{"event": "progress", "receivedBytes": 3538944, "totalBytes": 65737008, "averageBytesPerSecond": 8132}
+{"event": "progress", "receivedBytes": 3538944, "totalBytes": 65737008, "averageBytesPerSecond": 7861}
+{"event": "progress", "receivedBytes": 3538944, "totalBytes": 65737008, "averageBytesPerSecond": 7607}
+{"event": "progress", "receivedBytes": 3604480, "totalBytes": 65737008, "averageBytesPerSecond": 7506}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 3735552, "totalBytes": 65737008, "averageBytesPerSecond": 7543}
+{"event": "retry", "range": 2, "errorType": "URLError", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 3801088, "totalBytes": 65737008, "averageBytesPerSecond": 7450}
+{"event": "progress", "receivedBytes": 3932160, "totalBytes": 65737008, "averageBytesPerSecond": 7486}
+{"event": "progress", "receivedBytes": 4128768, "totalBytes": 65737008, "averageBytesPerSecond": 7642}
+{"event": "progress", "receivedBytes": 4194304, "totalBytes": 65737008, "averageBytesPerSecond": 7554}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 4456448, "totalBytes": 65737008, "averageBytesPerSecond": 7815}
+{"event": "progress", "receivedBytes": 4521984, "totalBytes": 65737008, "averageBytesPerSecond": 7726}
+{"event": "progress", "receivedBytes": 4587520, "totalBytes": 65737008, "averageBytesPerSecond": 7642}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 4653056, "totalBytes": 65737008, "averageBytesPerSecond": 7562}
+{"event": "progress", "receivedBytes": 4718592, "totalBytes": 65737008, "averageBytesPerSecond": 7486}
+{"event": "progress", "receivedBytes": 4718592, "totalBytes": 65737008, "averageBytesPerSecond": 7312}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 4784128, "totalBytes": 65737008, "averageBytesPerSecond": 7245}
+{"event": "progress", "receivedBytes": 4849664, "totalBytes": 65737008, "averageBytesPerSecond": 7181}
+{"event": "progress", "receivedBytes": 4849664, "totalBytes": 65737008, "averageBytesPerSecond": 7025}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 4980736, "totalBytes": 65737008, "averageBytesPerSecond": 7062}
+{"event": "progress", "receivedBytes": 5046272, "totalBytes": 65737008, "averageBytesPerSecond": 7005}
+{"event": "progress", "receivedBytes": 5111808, "totalBytes": 65737008, "averageBytesPerSecond": 6952}
+{"event": "progress", "receivedBytes": 5242880, "totalBytes": 65737008, "averageBytesPerSecond": 6987}
+{"event": "progress", "receivedBytes": 5505024, "totalBytes": 65737008, "averageBytesPerSecond": 7193}
+{"event": "progress", "receivedBytes": 5767168, "totalBytes": 65737008, "averageBytesPerSecond": 7390}
+{"event": "progress", "receivedBytes": 5832704, "totalBytes": 65737008, "averageBytesPerSecond": 7333}
+{"event": "progress", "receivedBytes": 5898240, "totalBytes": 65737008, "averageBytesPerSecond": 7278}
+{"event": "progress", "receivedBytes": 5963776, "totalBytes": 65737008, "averageBytesPerSecond": 7226}
+{"event": "progress", "receivedBytes": 6029312, "totalBytes": 65737008, "averageBytesPerSecond": 7174}
+{"event": "progress", "receivedBytes": 6029312, "totalBytes": 65737008, "averageBytesPerSecond": 7049}
+{"event": "progress", "receivedBytes": 6160384, "totalBytes": 65737008, "averageBytesPerSecond": 7078}
+{"event": "progress", "receivedBytes": 6225920, "totalBytes": 65737008, "averageBytesPerSecond": 7032}
+{"event": "progress", "receivedBytes": 6291456, "totalBytes": 65737008, "averageBytesPerSecond": 6987}
+{"event": "progress", "receivedBytes": 6291456, "totalBytes": 65737008, "averageBytesPerSecond": 6873}
+{"event": "progress", "receivedBytes": 6356992, "totalBytes": 65737008, "averageBytesPerSecond": 6832}
+{"event": "progress", "receivedBytes": 6422528, "totalBytes": 65737008, "averageBytesPerSecond": 6793}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 6422528, "totalBytes": 65737008, "averageBytesPerSecond": 6687}
+{"event": "progress", "receivedBytes": 6488064, "totalBytes": 65737008, "averageBytesPerSecond": 6652}
+{"event": "progress", "receivedBytes": 6553600, "totalBytes": 65737008, "averageBytesPerSecond": 6617}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 6684672, "totalBytes": 65737008, "averageBytesPerSecond": 6649}
+{"event": "progress", "receivedBytes": 6750208, "totalBytes": 65737008, "averageBytesPerSecond": 6615}
+{"event": "progress", "receivedBytes": 6750208, "totalBytes": 65737008, "averageBytesPerSecond": 6519}
+{"event": "progress", "receivedBytes": 6815744, "totalBytes": 65737008, "averageBytesPerSecond": 6488}
+{"event": "progress", "receivedBytes": 6815744, "totalBytes": 65737008, "averageBytesPerSecond": 6397}
+{"event": "progress", "receivedBytes": 6881280, "totalBytes": 65737008, "averageBytesPerSecond": 6369}
+{"event": "progress", "receivedBytes": 6881280, "totalBytes": 65737008, "averageBytesPerSecond": 6282}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 6946816, "totalBytes": 65737008, "averageBytesPerSecond": 6256}
+{"event": "progress", "receivedBytes": 6946816, "totalBytes": 65737008, "averageBytesPerSecond": 6172}
+{"event": "progress", "receivedBytes": 7012352, "totalBytes": 65737008, "averageBytesPerSecond": 6149}
+{"event": "progress", "receivedBytes": 7143424, "totalBytes": 65737008, "averageBytesPerSecond": 6182}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 7143424, "totalBytes": 65737008, "averageBytesPerSecond": 6103}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 7143424, "totalBytes": 65737008, "averageBytesPerSecond": 6026}
+{"event": "progress", "receivedBytes": 7143424, "totalBytes": 65737008, "averageBytesPerSecond": 5950}
+{"event": "progress", "receivedBytes": 7208960, "totalBytes": 65737008, "averageBytesPerSecond": 5931}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 7208960, "totalBytes": 65737008, "averageBytesPerSecond": 5859}
+{"event": "progress", "receivedBytes": 7274496, "totalBytes": 65737008, "averageBytesPerSecond": 5841}
+{"event": "progress", "receivedBytes": 7274496, "totalBytes": 65737008, "averageBytesPerSecond": 5771}
+{"event": "progress", "receivedBytes": 7274496, "totalBytes": 65737008, "averageBytesPerSecond": 5703}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 7274496, "totalBytes": 65737008, "averageBytesPerSecond": 5637}
+{"event": "progress", "receivedBytes": 7274496, "totalBytes": 65737008, "averageBytesPerSecond": 5572}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "progress", "receivedBytes": 7274496, "totalBytes": 65737008, "averageBytesPerSecond": 5509}
+{"event": "progress", "receivedBytes": 7274496, "totalBytes": 65737008, "averageBytesPerSecond": 5447}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 0, "errorType": "URLError", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 7340032, "totalBytes": 65737008, "averageBytesPerSecond": 5435}
+{"event": "progress", "receivedBytes": 7340032, "totalBytes": 65737008, "averageBytesPerSecond": 5375}
+{"event": "progress", "receivedBytes": 7340032, "totalBytes": 65737008, "averageBytesPerSecond": 5317}
+{"event": "progress", "receivedBytes": 7340032, "totalBytes": 65737008, "averageBytesPerSecond": 5260}
+{"event": "progress", "receivedBytes": 7405568, "totalBytes": 65737008, "averageBytesPerSecond": 5250}
+{"event": "progress", "receivedBytes": 7405568, "totalBytes": 65737008, "averageBytesPerSecond": 5195}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 8}
+{"event": "progress", "receivedBytes": 7471104, "totalBytes": 65737008, "averageBytesPerSecond": 5186}
+{"event": "progress", "receivedBytes": 7536640, "totalBytes": 65737008, "averageBytesPerSecond": 5178}
+{"event": "progress", "receivedBytes": 7602176, "totalBytes": 65737008, "averageBytesPerSecond": 5170}
+{"event": "progress", "receivedBytes": 7602176, "totalBytes": 65737008, "averageBytesPerSecond": 5117}
+{"event": "progress", "receivedBytes": 7602176, "totalBytes": 65737008, "averageBytesPerSecond": 5066}
+{"event": "progress", "receivedBytes": 7602176, "totalBytes": 65737008, "averageBytesPerSecond": 5016}
+{"event": "progress", "receivedBytes": 7602176, "totalBytes": 65737008, "averageBytesPerSecond": 4967}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 7602176, "totalBytes": 65737008, "averageBytesPerSecond": 4919}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "progress", "receivedBytes": 7667712, "totalBytes": 65737008, "averageBytesPerSecond": 4913}
+{"event": "progress", "receivedBytes": 7733248, "totalBytes": 65737008, "averageBytesPerSecond": 4908}
+{"event": "progress", "receivedBytes": 7733248, "totalBytes": 65737008, "averageBytesPerSecond": 4862}
+{"event": "progress", "receivedBytes": 7798784, "totalBytes": 65737008, "averageBytesPerSecond": 4857}
+{"event": "progress", "receivedBytes": 7798784, "totalBytes": 65737008, "averageBytesPerSecond": 4812}
+{"event": "progress", "receivedBytes": 7798784, "totalBytes": 65737008, "averageBytesPerSecond": 4768}
+{"event": "progress", "receivedBytes": 7864320, "totalBytes": 65737008, "averageBytesPerSecond": 4764}
+{"event": "progress", "receivedBytes": 7864320, "totalBytes": 65737008, "averageBytesPerSecond": 4721}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 8}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 7864320, "totalBytes": 65737008, "averageBytesPerSecond": 4679}
+{"event": "progress", "receivedBytes": 7995392, "totalBytes": 65737008, "averageBytesPerSecond": 4715}
+{"event": "progress", "receivedBytes": 7995392, "totalBytes": 65737008, "averageBytesPerSecond": 4674}
+{"event": "progress", "receivedBytes": 7995392, "totalBytes": 65737008, "averageBytesPerSecond": 4633}
+{"event": "progress", "receivedBytes": 7995392, "totalBytes": 65737008, "averageBytesPerSecond": 4593}
+{"event": "progress", "receivedBytes": 7995392, "totalBytes": 65737008, "averageBytesPerSecond": 4554}
+{"event": "progress", "receivedBytes": 8060928, "totalBytes": 65737008, "averageBytesPerSecond": 4552}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 9}
+{"event": "progress", "receivedBytes": 8126464, "totalBytes": 65737008, "averageBytesPerSecond": 4551}
+{"event": "progress", "receivedBytes": 8126464, "totalBytes": 65737008, "averageBytesPerSecond": 4513}
+{"event": "progress", "receivedBytes": 8126464, "totalBytes": 65737008, "averageBytesPerSecond": 4476}
+{"event": "progress", "receivedBytes": 8126464, "totalBytes": 65737008, "averageBytesPerSecond": 4439}
+{"event": "progress", "receivedBytes": 8257536, "totalBytes": 65737008, "averageBytesPerSecond": 4474}
+{"event": "progress", "receivedBytes": 8323072, "totalBytes": 65737008, "averageBytesPerSecond": 4473}
+{"event": "progress", "receivedBytes": 8323072, "totalBytes": 65737008, "averageBytesPerSecond": 4437}
+{"event": "progress", "receivedBytes": 8323072, "totalBytes": 65737008, "averageBytesPerSecond": 4402}
+{"event": "progress", "receivedBytes": 8454144, "totalBytes": 65737008, "averageBytesPerSecond": 4436}
+{"event": "progress", "receivedBytes": 8519680, "totalBytes": 65737008, "averageBytesPerSecond": 4436}
+{"event": "progress", "receivedBytes": 8585216, "totalBytes": 65737008, "averageBytesPerSecond": 4435}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "progress", "receivedBytes": 8650752, "totalBytes": 65737008, "averageBytesPerSecond": 4435}
+{"event": "progress", "receivedBytes": 8716288, "totalBytes": 65737008, "averageBytesPerSecond": 4434}
+{"event": "progress", "receivedBytes": 8716288, "totalBytes": 65737008, "averageBytesPerSecond": 4400}
+{"event": "progress", "receivedBytes": 8847360, "totalBytes": 65737008, "averageBytesPerSecond": 4433}
+{"event": "progress", "receivedBytes": 8912896, "totalBytes": 65737008, "averageBytesPerSecond": 4433}
+{"event": "progress", "receivedBytes": 9043968, "totalBytes": 65737008, "averageBytesPerSecond": 4464}
+{"event": "progress", "receivedBytes": 9043968, "totalBytes": 65737008, "averageBytesPerSecond": 4432}
+{"event": "progress", "receivedBytes": 9109504, "totalBytes": 65737008, "averageBytesPerSecond": 4431}
+{"event": "progress", "receivedBytes": 9175040, "totalBytes": 65737008, "averageBytesPerSecond": 4431}
+{"event": "progress", "receivedBytes": 9175040, "totalBytes": 65737008, "averageBytesPerSecond": 4399}
+{"event": "progress", "receivedBytes": 9240576, "totalBytes": 65737008, "averageBytesPerSecond": 4399}
+{"event": "progress", "receivedBytes": 9306112, "totalBytes": 65737008, "averageBytesPerSecond": 4398}
+{"event": "progress", "receivedBytes": 9371648, "totalBytes": 65737008, "averageBytesPerSecond": 4398}
+{"event": "progress", "receivedBytes": 9437184, "totalBytes": 65737008, "averageBytesPerSecond": 4398}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 8}
+{"event": "progress", "receivedBytes": 9502720, "totalBytes": 65737008, "averageBytesPerSecond": 4398}
+{"event": "progress", "receivedBytes": 9502720, "totalBytes": 65737008, "averageBytesPerSecond": 4367}
+{"event": "progress", "receivedBytes": 9699328, "totalBytes": 65737008, "averageBytesPerSecond": 4427}
+{"event": "progress", "receivedBytes": 9764864, "totalBytes": 65737008, "averageBytesPerSecond": 4427}
+{"event": "progress", "receivedBytes": 9830400, "totalBytes": 65737008, "averageBytesPerSecond": 4426}
+{"event": "progress", "receivedBytes": 9895936, "totalBytes": 65737008, "averageBytesPerSecond": 4426}
+{"event": "progress", "receivedBytes": 9895936, "totalBytes": 65737008, "averageBytesPerSecond": 4397}
+{"event": "progress", "receivedBytes": 9895936, "totalBytes": 65737008, "averageBytesPerSecond": 4367}
+{"event": "progress", "receivedBytes": 10040735, "totalBytes": 65737008, "averageBytesPerSecond": 4402}
+{"event": "progress", "receivedBytes": 10040735, "totalBytes": 65737008, "averageBytesPerSecond": 4373}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 9}
+{"event": "progress", "receivedBytes": 10040735, "totalBytes": 65737008, "averageBytesPerSecond": 4345}
+{"event": "progress", "receivedBytes": 10106271, "totalBytes": 65737008, "averageBytesPerSecond": 4345}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 10106271, "totalBytes": 65737008, "averageBytesPerSecond": 4317}
+{"event": "progress", "receivedBytes": 10106271, "totalBytes": 65737008, "averageBytesPerSecond": 4290}
+{"event": "progress", "receivedBytes": 10171807, "totalBytes": 65737008, "averageBytesPerSecond": 4290}
+{"event": "progress", "receivedBytes": 10368415, "totalBytes": 65737008, "averageBytesPerSecond": 4346}
+{"event": "progress", "receivedBytes": 10630559, "totalBytes": 65737008, "averageBytesPerSecond": 4428}
+{"event": "progress", "receivedBytes": 10761631, "totalBytes": 65737008, "averageBytesPerSecond": 4455}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 10}
+{"event": "progress", "receivedBytes": 10761631, "totalBytes": 65737008, "averageBytesPerSecond": 4427}
+{"event": "progress", "receivedBytes": 10892703, "totalBytes": 65737008, "averageBytesPerSecond": 4453}
+{"event": "progress", "receivedBytes": 11023775, "totalBytes": 65737008, "averageBytesPerSecond": 4480}
+{"event": "progress", "receivedBytes": 11023775, "totalBytes": 65737008, "averageBytesPerSecond": 4452}
+{"event": "progress", "receivedBytes": 11154847, "totalBytes": 65737008, "averageBytesPerSecond": 4478}
+{"event": "progress", "receivedBytes": 11220383, "totalBytes": 65737008, "averageBytesPerSecond": 4478}
+{"event": "progress", "receivedBytes": 11351455, "totalBytes": 65737008, "averageBytesPerSecond": 4503}
+{"event": "progress", "receivedBytes": 11482527, "totalBytes": 65737008, "averageBytesPerSecond": 4528}
+{"event": "progress", "receivedBytes": 11613599, "totalBytes": 65737008, "averageBytesPerSecond": 4553}
+{"event": "progress", "receivedBytes": 11613599, "totalBytes": 65737008, "averageBytesPerSecond": 4526}
+{"event": "progress", "receivedBytes": 11613599, "totalBytes": 65737008, "averageBytesPerSecond": 4500}
+{"event": "progress", "receivedBytes": 11679135, "totalBytes": 65737008, "averageBytesPerSecond": 4499}
+{"event": "progress", "receivedBytes": 11744671, "totalBytes": 65737008, "averageBytesPerSecond": 4498}
+{"event": "progress", "receivedBytes": 11744671, "totalBytes": 65737008, "averageBytesPerSecond": 4473}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 10}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "progress", "receivedBytes": 11744671, "totalBytes": 65737008, "averageBytesPerSecond": 4447}
+{"event": "progress", "receivedBytes": 11744671, "totalBytes": 65737008, "averageBytesPerSecond": 4422}
+{"event": "progress", "receivedBytes": 11744671, "totalBytes": 65737008, "averageBytesPerSecond": 4397}
+{"event": "progress", "receivedBytes": 11744671, "totalBytes": 65737008, "averageBytesPerSecond": 4373}
+{"event": "progress", "receivedBytes": 11875743, "totalBytes": 65737008, "averageBytesPerSecond": 4397}
+{"event": "progress", "receivedBytes": 11875743, "totalBytes": 65737008, "averageBytesPerSecond": 4373}
+{"event": "progress", "receivedBytes": 11941279, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "progress", "receivedBytes": 12006815, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "progress", "receivedBytes": 12072351, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "progress", "receivedBytes": 12137887, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "progress", "receivedBytes": 12203423, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 8}
+{"event": "progress", "receivedBytes": 12268959, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 11}
+{"event": "progress", "receivedBytes": 12465567, "totalBytes": 65737008, "averageBytesPerSecond": 4419}
+{"event": "progress", "receivedBytes": 12465567, "totalBytes": 65737008, "averageBytesPerSecond": 4395}
+{"event": "progress", "receivedBytes": 12465567, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "progress", "receivedBytes": 12465567, "totalBytes": 65737008, "averageBytesPerSecond": 4349}
+{"event": "progress", "receivedBytes": 12596639, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "progress", "receivedBytes": 12662175, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "progress", "receivedBytes": 12727711, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 10}
+{"event": "progress", "receivedBytes": 12793247, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 9}
+{"event": "progress", "receivedBytes": 12858783, "totalBytes": 65737008, "averageBytesPerSecond": 4372}
+{"event": "progress", "receivedBytes": 12858783, "totalBytes": 65737008, "averageBytesPerSecond": 4350}
+{"event": "progress", "receivedBytes": 12924319, "totalBytes": 65737008, "averageBytesPerSecond": 4350}
+{"event": "progress", "receivedBytes": 12924319, "totalBytes": 65737008, "averageBytesPerSecond": 4328}
+{"event": "progress", "receivedBytes": 13055391, "totalBytes": 65737008, "averageBytesPerSecond": 4350}
+{"event": "progress", "receivedBytes": 13317535, "totalBytes": 65737008, "averageBytesPerSecond": 4415}
+{"event": "progress", "receivedBytes": 13514143, "totalBytes": 65737008, "averageBytesPerSecond": 4458}
+{"event": "progress", "receivedBytes": 13776287, "totalBytes": 65737008, "averageBytesPerSecond": 4523}
+{"event": "progress", "receivedBytes": 13841823, "totalBytes": 65737008, "averageBytesPerSecond": 4522}
+{"event": "progress", "receivedBytes": 13907359, "totalBytes": 65737008, "averageBytesPerSecond": 4521}
+{"event": "progress", "receivedBytes": 14235039, "totalBytes": 65737008, "averageBytesPerSecond": 4605}
+{"event": "progress", "receivedBytes": 14431647, "totalBytes": 65737008, "averageBytesPerSecond": 4646}
+{"event": "progress", "receivedBytes": 14693791, "totalBytes": 65737008, "averageBytesPerSecond": 4708}
+{"event": "progress", "receivedBytes": 14890399, "totalBytes": 65737008, "averageBytesPerSecond": 4748}
+{"event": "progress", "receivedBytes": 15087007, "totalBytes": 65737008, "averageBytesPerSecond": 4788}
+{"event": "progress", "receivedBytes": 15283615, "totalBytes": 65737008, "averageBytesPerSecond": 4827}
+{"event": "progress", "receivedBytes": 15414687, "totalBytes": 65737008, "averageBytesPerSecond": 4846}
+{"event": "progress", "receivedBytes": 15545759, "totalBytes": 65737008, "averageBytesPerSecond": 4864}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 11}
+{"event": "progress", "receivedBytes": 15611295, "totalBytes": 65737008, "averageBytesPerSecond": 4862}
+{"event": "progress", "receivedBytes": 15611295, "totalBytes": 65737008, "averageBytesPerSecond": 4839}
+{"event": "progress", "receivedBytes": 15742367, "totalBytes": 65737008, "averageBytesPerSecond": 4857}
+{"event": "progress", "receivedBytes": 15807903, "totalBytes": 65737008, "averageBytesPerSecond": 4855}
+{"event": "progress", "receivedBytes": 15873439, "totalBytes": 65737008, "averageBytesPerSecond": 4853}
+{"event": "progress", "receivedBytes": 15938975, "totalBytes": 65737008, "averageBytesPerSecond": 4850}
+{"event": "progress", "receivedBytes": 16070047, "totalBytes": 65737008, "averageBytesPerSecond": 4868}
+{"event": "progress", "receivedBytes": 16135583, "totalBytes": 65737008, "averageBytesPerSecond": 4866}
+{"event": "progress", "receivedBytes": 16201119, "totalBytes": 65737008, "averageBytesPerSecond": 4863}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 12}
+{"event": "progress", "receivedBytes": 16397727, "totalBytes": 65737008, "averageBytesPerSecond": 4900}
+{"event": "progress", "receivedBytes": 16397727, "totalBytes": 65737008, "averageBytesPerSecond": 4879}
+{"event": "progress", "receivedBytes": 16397727, "totalBytes": 65737008, "averageBytesPerSecond": 4857}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 11}
+{"event": "progress", "receivedBytes": 16463263, "totalBytes": 65737008, "averageBytesPerSecond": 4855}
+{"event": "progress", "receivedBytes": 16528799, "totalBytes": 65737008, "averageBytesPerSecond": 4853}
+{"event": "progress", "receivedBytes": 16659871, "totalBytes": 65737008, "averageBytesPerSecond": 4870}
+{"event": "progress", "receivedBytes": 16790943, "totalBytes": 65737008, "averageBytesPerSecond": 4886}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 12}
+{"event": "progress", "receivedBytes": 16922015, "totalBytes": 65737008, "averageBytesPerSecond": 4903}
+{"event": "progress", "receivedBytes": 16987551, "totalBytes": 65737008, "averageBytesPerSecond": 4901}
+{"event": "progress", "receivedBytes": 17053087, "totalBytes": 65737008, "averageBytesPerSecond": 4899}
+{"event": "progress", "receivedBytes": 17184159, "totalBytes": 65737008, "averageBytesPerSecond": 4915}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 13}
+{"event": "progress", "receivedBytes": 17315231, "totalBytes": 65737008, "averageBytesPerSecond": 4931}
+{"event": "progress", "receivedBytes": 17446303, "totalBytes": 65737008, "averageBytesPerSecond": 4947}
+{"event": "progress", "receivedBytes": 17642911, "totalBytes": 65737008, "averageBytesPerSecond": 4982}
+{"event": "progress", "receivedBytes": 17642911, "totalBytes": 65737008, "averageBytesPerSecond": 4961}
+{"event": "progress", "receivedBytes": 17642911, "totalBytes": 65737008, "averageBytesPerSecond": 4940}
+{"event": "progress", "receivedBytes": 17642911, "totalBytes": 65737008, "averageBytesPerSecond": 4919}
+{"event": "progress", "receivedBytes": 17642911, "totalBytes": 65737008, "averageBytesPerSecond": 4899}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 13}
+{"event": "progress", "receivedBytes": 17642911, "totalBytes": 65737008, "averageBytesPerSecond": 4879}
+{"event": "progress", "receivedBytes": 17708447, "totalBytes": 65737008, "averageBytesPerSecond": 4877}
+{"event": "progress", "receivedBytes": 17773983, "totalBytes": 65737008, "averageBytesPerSecond": 4874}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 14}
+{"event": "progress", "receivedBytes": 17905055, "totalBytes": 65737008, "averageBytesPerSecond": 4890}
+{"event": "progress", "receivedBytes": 17905055, "totalBytes": 65737008, "averageBytesPerSecond": 4870}
+{"event": "progress", "receivedBytes": 17970591, "totalBytes": 65737008, "averageBytesPerSecond": 4868}
+{"event": "progress", "receivedBytes": 17970591, "totalBytes": 65737008, "averageBytesPerSecond": 4849}
+{"event": "progress", "receivedBytes": 18036127, "totalBytes": 65737008, "averageBytesPerSecond": 4847}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 10}
+{"event": "progress", "receivedBytes": 18036127, "totalBytes": 65737008, "averageBytesPerSecond": 4827}
+{"event": "progress", "receivedBytes": 18036127, "totalBytes": 65737008, "averageBytesPerSecond": 4808}
+{"event": "progress", "receivedBytes": 18036127, "totalBytes": 65737008, "averageBytesPerSecond": 4789}
+{"event": "progress", "receivedBytes": 18101663, "totalBytes": 65737008, "averageBytesPerSecond": 4787}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 15}
+{"event": "progress", "receivedBytes": 18232735, "totalBytes": 65737008, "averageBytesPerSecond": 4803}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 12}
+{"event": "progress", "receivedBytes": 18298271, "totalBytes": 65737008, "averageBytesPerSecond": 4801}
+{"event": "progress", "receivedBytes": 18363807, "totalBytes": 65737008, "averageBytesPerSecond": 4799}
+{"event": "progress", "receivedBytes": 18429343, "totalBytes": 65737008, "averageBytesPerSecond": 4797}
+{"event": "progress", "receivedBytes": 18560415, "totalBytes": 65737008, "averageBytesPerSecond": 4813}
+{"event": "progress", "receivedBytes": 18822559, "totalBytes": 65737008, "averageBytesPerSecond": 4862}
+{"event": "progress", "receivedBytes": 18822559, "totalBytes": 65737008, "averageBytesPerSecond": 4843}
+{"event": "progress", "receivedBytes": 19084703, "totalBytes": 65737008, "averageBytesPerSecond": 4892}
+{"event": "progress", "receivedBytes": 19215775, "totalBytes": 65737008, "averageBytesPerSecond": 4906}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 14}
+{"event": "progress", "receivedBytes": 19412383, "totalBytes": 65737008, "averageBytesPerSecond": 4938}
+{"event": "progress", "receivedBytes": 19412383, "totalBytes": 65737008, "averageBytesPerSecond": 4919}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 11}
+{"event": "progress", "receivedBytes": 19412383, "totalBytes": 65737008, "averageBytesPerSecond": 4900}
+{"event": "progress", "receivedBytes": 19543455, "totalBytes": 65737008, "averageBytesPerSecond": 4915}
+{"event": "progress", "receivedBytes": 19543455, "totalBytes": 65737008, "averageBytesPerSecond": 4896}
+{"event": "progress", "receivedBytes": 19608991, "totalBytes": 65737008, "averageBytesPerSecond": 4894}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 16}
+{"event": "progress", "receivedBytes": 19740063, "totalBytes": 65737008, "averageBytesPerSecond": 4909}
+{"event": "progress", "receivedBytes": 19740063, "totalBytes": 65737008, "averageBytesPerSecond": 4890}
+{"event": "progress", "receivedBytes": 19871135, "totalBytes": 65737008, "averageBytesPerSecond": 4905}
+{"event": "progress", "receivedBytes": 19936671, "totalBytes": 65737008, "averageBytesPerSecond": 4903}
+{"event": "progress", "receivedBytes": 20002207, "totalBytes": 65737008, "averageBytesPerSecond": 4901}
+{"event": "progress", "receivedBytes": 20002207, "totalBytes": 65737008, "averageBytesPerSecond": 4883}
+{"event": "progress", "receivedBytes": 20002207, "totalBytes": 65737008, "averageBytesPerSecond": 4865}
+{"event": "progress", "receivedBytes": 20002207, "totalBytes": 65737008, "averageBytesPerSecond": 4847}
+{"event": "progress", "receivedBytes": 20067743, "totalBytes": 65737008, "averageBytesPerSecond": 4845}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 15}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4844}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4826}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4809}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4792}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 13}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 17}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4775}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4758}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4741}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 12}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4724}
+{"event": "retry", "range": 0, "errorType": "URLError", "httpStatus": null, "attempt": 16}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4708}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4691}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4675}
+{"event": "progress", "receivedBytes": 20133279, "totalBytes": 65737008, "averageBytesPerSecond": 4659}
+{"event": "retry", "range": 1, "errorType": "URLError", "httpStatus": null, "attempt": 14}
+{"event": "progress", "receivedBytes": 20198815, "totalBytes": 65737008, "averageBytesPerSecond": 4658}
+{"event": "progress", "receivedBytes": 20264351, "totalBytes": 65737008, "averageBytesPerSecond": 4657}
+{"event": "progress", "receivedBytes": 20264351, "totalBytes": 65737008, "averageBytesPerSecond": 4641}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 13}
+{"event": "progress", "receivedBytes": 20329887, "totalBytes": 65737008, "averageBytesPerSecond": 4640}
+{"event": "progress", "receivedBytes": 20395423, "totalBytes": 65737008, "averageBytesPerSecond": 4639}
+{"event": "progress", "receivedBytes": 20526495, "totalBytes": 65737008, "averageBytesPerSecond": 4653}
+{"event": "progress", "receivedBytes": 20592031, "totalBytes": 65737008, "averageBytesPerSecond": 4652}
+{"event": "progress", "receivedBytes": 20788639, "totalBytes": 65737008, "averageBytesPerSecond": 4680}
+{"event": "progress", "receivedBytes": 20854175, "totalBytes": 65737008, "averageBytesPerSecond": 4679}
+{"event": "progress", "receivedBytes": 20985247, "totalBytes": 65737008, "averageBytesPerSecond": 4693}
+{"event": "progress", "receivedBytes": 21050783, "totalBytes": 65737008, "averageBytesPerSecond": 4692}
+{"event": "progress", "receivedBytes": 21116319, "totalBytes": 65737008, "averageBytesPerSecond": 4691}
+{"event": "progress", "receivedBytes": 21247391, "totalBytes": 65737008, "averageBytesPerSecond": 4704}
+{"event": "progress", "receivedBytes": 21312927, "totalBytes": 65737008, "averageBytesPerSecond": 4703}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 15}
+{"event": "progress", "receivedBytes": 21443999, "totalBytes": 65737008, "averageBytesPerSecond": 4716}
+{"event": "progress", "receivedBytes": 21509535, "totalBytes": 65737008, "averageBytesPerSecond": 4715}
+{"event": "progress", "receivedBytes": 21640607, "totalBytes": 65737008, "averageBytesPerSecond": 4728}
+{"event": "progress", "receivedBytes": 21706143, "totalBytes": 65737008, "averageBytesPerSecond": 4727}
+{"event": "progress", "receivedBytes": 21771679, "totalBytes": 65737008, "averageBytesPerSecond": 4726}
+{"event": "progress", "receivedBytes": 21902751, "totalBytes": 65737008, "averageBytesPerSecond": 4739}
+{"event": "progress", "receivedBytes": 21902751, "totalBytes": 65737008, "averageBytesPerSecond": 4724}
+{"event": "progress", "receivedBytes": 21902751, "totalBytes": 65737008, "averageBytesPerSecond": 4708}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 18}
+{"event": "progress", "receivedBytes": 21902751, "totalBytes": 65737008, "averageBytesPerSecond": 4693}
+{"event": "progress", "receivedBytes": 22033823, "totalBytes": 65737008, "averageBytesPerSecond": 4706}
+{"event": "progress", "receivedBytes": 22099359, "totalBytes": 65737008, "averageBytesPerSecond": 4705}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 17}
+{"event": "progress", "receivedBytes": 22230431, "totalBytes": 65737008, "averageBytesPerSecond": 4718}
+{"event": "progress", "receivedBytes": 22230431, "totalBytes": 65737008, "averageBytesPerSecond": 4703}
+{"event": "progress", "receivedBytes": 22295967, "totalBytes": 65737008, "averageBytesPerSecond": 4702}
+{"event": "progress", "receivedBytes": 22361503, "totalBytes": 65737008, "averageBytesPerSecond": 4701}
+{"event": "progress", "receivedBytes": 22492575, "totalBytes": 65737008, "averageBytesPerSecond": 4714}
+{"event": "progress", "receivedBytes": 22558111, "totalBytes": 65737008, "averageBytesPerSecond": 4712}
+{"event": "progress", "receivedBytes": 22623647, "totalBytes": 65737008, "averageBytesPerSecond": 4711}
+{"event": "progress", "receivedBytes": 22623647, "totalBytes": 65737008, "averageBytesPerSecond": 4697}
+{"event": "progress", "receivedBytes": 22885791, "totalBytes": 65737008, "averageBytesPerSecond": 4736}
+{"event": "progress", "receivedBytes": 22951327, "totalBytes": 65737008, "averageBytesPerSecond": 4735}
+{"event": "progress", "receivedBytes": 23213471, "totalBytes": 65737008, "averageBytesPerSecond": 4774}
+{"event": "progress", "receivedBytes": 23554296, "totalBytes": 65737008, "averageBytesPerSecond": 4830}
+{"event": "progress", "receivedBytes": 23750904, "totalBytes": 65737008, "averageBytesPerSecond": 4855}
+{"event": "progress", "receivedBytes": 24013048, "totalBytes": 65737008, "averageBytesPerSecond": 4894}
+{"event": "progress", "receivedBytes": 24209656, "totalBytes": 65737008, "averageBytesPerSecond": 4919}
+{"event": "progress", "receivedBytes": 24406264, "totalBytes": 65737008, "averageBytesPerSecond": 4944}
+{"event": "progress", "receivedBytes": 24406264, "totalBytes": 65737008, "averageBytesPerSecond": 4929}
+{"event": "progress", "receivedBytes": 24471800, "totalBytes": 65737008, "averageBytesPerSecond": 4927}
+{"event": "progress", "receivedBytes": 24471800, "totalBytes": 65737008, "averageBytesPerSecond": 4912}
+{"event": "progress", "receivedBytes": 24471800, "totalBytes": 65737008, "averageBytesPerSecond": 4897}
+{"event": "progress", "receivedBytes": 24537336, "totalBytes": 65737008, "averageBytesPerSecond": 4896}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 15}
+{"event": "progress", "receivedBytes": 24668408, "totalBytes": 65737008, "averageBytesPerSecond": 4907}
+{"event": "progress", "receivedBytes": 24733944, "totalBytes": 65737008, "averageBytesPerSecond": 4905}
+{"event": "progress", "receivedBytes": 24865016, "totalBytes": 65737008, "averageBytesPerSecond": 4917}
+{"event": "progress", "receivedBytes": 24930552, "totalBytes": 65737008, "averageBytesPerSecond": 4915}
+{"event": "progress", "receivedBytes": 24996088, "totalBytes": 65737008, "averageBytesPerSecond": 4914}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 16}
+{"event": "progress", "receivedBytes": 25061624, "totalBytes": 65737008, "averageBytesPerSecond": 4912}
+{"event": "progress", "receivedBytes": 25061624, "totalBytes": 65737008, "averageBytesPerSecond": 4898}
+{"event": "progress", "receivedBytes": 25127160, "totalBytes": 65737008, "averageBytesPerSecond": 4896}
+{"event": "progress", "receivedBytes": 25127160, "totalBytes": 65737008, "averageBytesPerSecond": 4882}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 18}
+{"event": "progress", "receivedBytes": 25127160, "totalBytes": 65737008, "averageBytesPerSecond": 4868}
+{"event": "progress", "receivedBytes": 25127160, "totalBytes": 65737008, "averageBytesPerSecond": 4853}
+{"event": "progress", "receivedBytes": 25127160, "totalBytes": 65737008, "averageBytesPerSecond": 4839}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 16}
+{"event": "progress", "receivedBytes": 25127160, "totalBytes": 65737008, "averageBytesPerSecond": 4825}
+{"event": "retry", "range": 1, "errorType": "URLError", "httpStatus": null, "attempt": 17}
+{"event": "progress", "receivedBytes": 25127160, "totalBytes": 65737008, "averageBytesPerSecond": 4812}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 19}
+{"event": "progress", "receivedBytes": 25127160, "totalBytes": 65737008, "averageBytesPerSecond": 4798}
+{"event": "progress", "receivedBytes": 25192696, "totalBytes": 65737008, "averageBytesPerSecond": 4797}
+{"event": "progress", "receivedBytes": 25192696, "totalBytes": 65737008, "averageBytesPerSecond": 4783}
+{"event": "progress", "receivedBytes": 25192696, "totalBytes": 65737008, "averageBytesPerSecond": 4769}
+{"event": "progress", "receivedBytes": 25192696, "totalBytes": 65737008, "averageBytesPerSecond": 4756}
+{"event": "progress", "receivedBytes": 25258232, "totalBytes": 65737008, "averageBytesPerSecond": 4755}
+{"event": "progress", "receivedBytes": 25323768, "totalBytes": 65737008, "averageBytesPerSecond": 4754}
+{"event": "progress", "receivedBytes": 25323768, "totalBytes": 65737008, "averageBytesPerSecond": 4740}
+{"event": "progress", "receivedBytes": 25454840, "totalBytes": 65737008, "averageBytesPerSecond": 4751}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 17}
+{"event": "progress", "receivedBytes": 25520376, "totalBytes": 65737008, "averageBytesPerSecond": 4750}
+{"event": "progress", "receivedBytes": 25651448, "totalBytes": 65737008, "averageBytesPerSecond": 4761}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 18}
+{"event": "progress", "receivedBytes": 25716984, "totalBytes": 65737008, "averageBytesPerSecond": 4760}
+{"event": "progress", "receivedBytes": 25782520, "totalBytes": 65737008, "averageBytesPerSecond": 4759}
+{"event": "progress", "receivedBytes": 25913592, "totalBytes": 65737008, "averageBytesPerSecond": 4770}
+{"event": "progress", "receivedBytes": 26175736, "totalBytes": 65737008, "averageBytesPerSecond": 4805}
+{"event": "progress", "receivedBytes": 26306808, "totalBytes": 65737008, "averageBytesPerSecond": 4816}
+{"event": "progress", "receivedBytes": 26568952, "totalBytes": 65737008, "averageBytesPerSecond": 4851}
+{"event": "progress", "receivedBytes": 26700024, "totalBytes": 65737008, "averageBytesPerSecond": 4861}
+{"event": "progress", "receivedBytes": 26962168, "totalBytes": 65737008, "averageBytesPerSecond": 4896}
+{"event": "progress", "receivedBytes": 27093240, "totalBytes": 65737008, "averageBytesPerSecond": 4906}
+{"event": "progress", "receivedBytes": 27224312, "totalBytes": 65737008, "averageBytesPerSecond": 4916}
+{"event": "progress", "receivedBytes": 27420920, "totalBytes": 65737008, "averageBytesPerSecond": 4939}
+{"event": "progress", "receivedBytes": 27420920, "totalBytes": 65737008, "averageBytesPerSecond": 4925}
+{"event": "progress", "receivedBytes": 27420920, "totalBytes": 65737008, "averageBytesPerSecond": 4912}
+{"event": "progress", "receivedBytes": 27486456, "totalBytes": 65737008, "averageBytesPerSecond": 4911}
+{"event": "progress", "receivedBytes": 27617528, "totalBytes": 65737008, "averageBytesPerSecond": 4921}
+{"event": "progress", "receivedBytes": 27748600, "totalBytes": 65737008, "averageBytesPerSecond": 4931}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 19}
+{"event": "progress", "receivedBytes": 27879672, "totalBytes": 65737008, "averageBytesPerSecond": 4941}
+{"event": "progress", "receivedBytes": 27945208, "totalBytes": 65737008, "averageBytesPerSecond": 4940}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 19}
+{"event": "progress", "receivedBytes": 28010744, "totalBytes": 65737008, "averageBytesPerSecond": 4938}
+{"event": "progress", "receivedBytes": 28010744, "totalBytes": 65737008, "averageBytesPerSecond": 4925}
+{"event": "progress", "receivedBytes": 28141816, "totalBytes": 65737008, "averageBytesPerSecond": 4935}
+{"event": "progress", "receivedBytes": 28272888, "totalBytes": 65737008, "averageBytesPerSecond": 4945}
+{"event": "progress", "receivedBytes": 28403960, "totalBytes": 65737008, "averageBytesPerSecond": 4955}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 18}
+{"event": "progress", "receivedBytes": 28469496, "totalBytes": 65737008, "averageBytesPerSecond": 4953}
+{"event": "progress", "receivedBytes": 28469496, "totalBytes": 65737008, "averageBytesPerSecond": 4941}
+{"event": "progress", "receivedBytes": 28535032, "totalBytes": 65737008, "averageBytesPerSecond": 4939}
+{"event": "progress", "receivedBytes": 28535032, "totalBytes": 65737008, "averageBytesPerSecond": 4926}
+{"event": "progress", "receivedBytes": 28600568, "totalBytes": 65737008, "averageBytesPerSecond": 4925}
+{"event": "progress", "receivedBytes": 28600568, "totalBytes": 65737008, "averageBytesPerSecond": 4912}
+{"event": "progress", "receivedBytes": 28666104, "totalBytes": 65737008, "averageBytesPerSecond": 4911}
+{"event": "progress", "receivedBytes": 28797176, "totalBytes": 65737008, "averageBytesPerSecond": 4920}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 20}
+{"event": "progress", "receivedBytes": 28862712, "totalBytes": 65737008, "averageBytesPerSecond": 4919}
+{"event": "progress", "receivedBytes": 28993784, "totalBytes": 65737008, "averageBytesPerSecond": 4929}
+{"event": "progress", "receivedBytes": 29124856, "totalBytes": 65737008, "averageBytesPerSecond": 4938}
+{"event": "progress", "receivedBytes": 29124856, "totalBytes": 65737008, "averageBytesPerSecond": 4926}
+{"event": "progress", "receivedBytes": 29255928, "totalBytes": 65737008, "averageBytesPerSecond": 4936}
+{"event": "progress", "receivedBytes": 29321464, "totalBytes": 65737008, "averageBytesPerSecond": 4934}
+{"event": "progress", "receivedBytes": 29321464, "totalBytes": 65737008, "averageBytesPerSecond": 4922}
+{"event": "retry", "range": 0, "errorType": "timeout", "httpStatus": null, "attempt": 20}
+{"event": "progress", "receivedBytes": 29321464, "totalBytes": 65737008, "averageBytesPerSecond": 4909}
+{"event": "progress", "receivedBytes": 29321464, "totalBytes": 65737008, "averageBytesPerSecond": 4897}
+{"event": "progress", "receivedBytes": 29387000, "totalBytes": 65737008, "averageBytesPerSecond": 4896}
+{"event": "progress", "receivedBytes": 29452536, "totalBytes": 65737008, "averageBytesPerSecond": 4894}
+{"event": "progress", "receivedBytes": 29714680, "totalBytes": 65737008, "averageBytesPerSecond": 4926}
+{"event": "progress", "receivedBytes": 29911288, "totalBytes": 65737008, "averageBytesPerSecond": 4946}
+{"event": "progress", "receivedBytes": 30107896, "totalBytes": 65737008, "averageBytesPerSecond": 4966}
+{"event": "progress", "receivedBytes": 30238968, "totalBytes": 65737008, "averageBytesPerSecond": 4975}
+{"event": "progress", "receivedBytes": 30370040, "totalBytes": 65737008, "averageBytesPerSecond": 4985}
+{"event": "progress", "receivedBytes": 30435576, "totalBytes": 65737008, "averageBytesPerSecond": 4983}
+{"event": "progress", "receivedBytes": 30618457, "totalBytes": 65737008, "averageBytesPerSecond": 5001}
+{"event": "progress", "receivedBytes": 30749529, "totalBytes": 65737008, "averageBytesPerSecond": 5010}
+{"event": "progress", "receivedBytes": 30749529, "totalBytes": 65737008, "averageBytesPerSecond": 4998}
+{"event": "progress", "receivedBytes": 30946137, "totalBytes": 65737008, "averageBytesPerSecond": 5017}
+{"event": "progress", "receivedBytes": 31011673, "totalBytes": 65737008, "averageBytesPerSecond": 5016}
+{"event": "progress", "receivedBytes": 31077209, "totalBytes": 65737008, "averageBytesPerSecond": 5014}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 19}
+{"event": "progress", "receivedBytes": 31077209, "totalBytes": 65737008, "averageBytesPerSecond": 5002}
+{"event": "progress", "receivedBytes": 31142745, "totalBytes": 65737008, "averageBytesPerSecond": 5001}
+{"event": "progress", "receivedBytes": 31142745, "totalBytes": 65737008, "averageBytesPerSecond": 4989}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 31208281, "totalBytes": 65737008, "averageBytesPerSecond": 4987}
+{"event": "progress", "receivedBytes": 31208281, "totalBytes": 65737008, "averageBytesPerSecond": 4975}
+{"event": "progress", "receivedBytes": 31273817, "totalBytes": 65737008, "averageBytesPerSecond": 4974}
+{"event": "progress", "receivedBytes": 31339353, "totalBytes": 65737008, "averageBytesPerSecond": 4972}
+{"event": "progress", "receivedBytes": 31404889, "totalBytes": 65737008, "averageBytesPerSecond": 4971}
+{"event": "retry", "range": 1, "errorType": "timeout", "httpStatus": null, "attempt": 20}
+{"event": "progress", "receivedBytes": 31404889, "totalBytes": 65737008, "averageBytesPerSecond": 4959}
+{"event": "retry", "range": 2, "errorType": "timeout", "httpStatus": null, "attempt": 20}
+{"event": "progress", "receivedBytes": 31470425, "totalBytes": 65737008, "averageBytesPerSecond": 4958}
+{"event": "progress", "receivedBytes": 31470425, "totalBytes": 65737008, "averageBytesPerSecond": 4946}
+{"event": "progress", "receivedBytes": 31535961, "totalBytes": 65737008, "averageBytesPerSecond": 4945}
+{"event": "progress", "receivedBytes": 31601497, "totalBytes": 65737008, "averageBytesPerSecond": 4943}
+{"event": "progress", "receivedBytes": 31798105, "totalBytes": 65737008, "averageBytesPerSecond": 4962}
+{"event": "progress", "receivedBytes": 31863641, "totalBytes": 65737008, "averageBytesPerSecond": 4961}
+{"event": "progress", "receivedBytes": 32125785, "totalBytes": 65737008, "averageBytesPerSecond": 4990}
+{"event": "retry", "range": 1, "errorType": "URLError", "httpStatus": null, "attempt": 21}
+{"event": "progress", "receivedBytes": 32256857, "totalBytes": 65737008, "averageBytesPerSecond": 4999}
+{"event": "progress", "receivedBytes": 32374784, "totalBytes": 65737008, "averageBytesPerSecond": 5005}
+{"event": "progress", "receivedBytes": 32440320, "totalBytes": 65737008, "averageBytesPerSecond": 5004}
+{"event": "progress", "receivedBytes": 32636928, "totalBytes": 65737008, "averageBytesPerSecond": 5023}
+{"event": "progress", "receivedBytes": 32702464, "totalBytes": 65737008, "averageBytesPerSecond": 5021}
+{"event": "progress", "receivedBytes": 32768000, "totalBytes": 65737008, "averageBytesPerSecond": 5020}
+{"event": "progress", "receivedBytes": 32964608, "totalBytes": 65737008, "averageBytesPerSecond": 5038}
+{"event": "progress", "receivedBytes": 33095680, "totalBytes": 65737008, "averageBytesPerSecond": 5047}
+{"event": "progress", "receivedBytes": 33357824, "totalBytes": 65737008, "averageBytesPerSecond": 5075}
+{"event": "progress", "receivedBytes": 33554432, "totalBytes": 65737008, "averageBytesPerSecond": 5093}
+{"event": "progress", "receivedBytes": 33619968, "totalBytes": 65737008, "averageBytesPerSecond": 5092}
+{"event": "progress", "receivedBytes": 33882112, "totalBytes": 65737008, "averageBytesPerSecond": 5120}
+{"event": "progress", "receivedBytes": 33882112, "totalBytes": 65737008, "averageBytesPerSecond": 5108}
+{"event": "retry", "range": 5, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 33947648, "totalBytes": 65737008, "averageBytesPerSecond": 5106}
+{"event": "progress", "receivedBytes": 34013184, "totalBytes": 65737008, "averageBytesPerSecond": 5105}
+{"event": "progress", "receivedBytes": 34013184, "totalBytes": 65737008, "averageBytesPerSecond": 5093}
+{"event": "progress", "receivedBytes": 34013184, "totalBytes": 65737008, "averageBytesPerSecond": 5082}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 21}
+{"event": "progress", "receivedBytes": 34078720, "totalBytes": 65737008, "averageBytesPerSecond": 5080}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 34144256, "totalBytes": 65737008, "averageBytesPerSecond": 5079}
+{"event": "progress", "receivedBytes": 34209792, "totalBytes": 65737008, "averageBytesPerSecond": 5077}
+{"event": "progress", "receivedBytes": 34340864, "totalBytes": 65737008, "averageBytesPerSecond": 5085}
+{"event": "progress", "receivedBytes": 34340864, "totalBytes": 65737008, "averageBytesPerSecond": 5074}
+{"event": "progress", "receivedBytes": 34340864, "totalBytes": 65737008, "averageBytesPerSecond": 5063}
+{"event": "progress", "receivedBytes": 34340864, "totalBytes": 65737008, "averageBytesPerSecond": 5052}
+{"event": "progress", "receivedBytes": 34340864, "totalBytes": 65737008, "averageBytesPerSecond": 5040}
+{"event": "progress", "receivedBytes": 34340864, "totalBytes": 65737008, "averageBytesPerSecond": 5029}
+{"event": "progress", "receivedBytes": 34340864, "totalBytes": 65737008, "averageBytesPerSecond": 5018}
+{"event": "progress", "receivedBytes": 34340864, "totalBytes": 65737008, "averageBytesPerSecond": 5007}
+{"event": "progress", "receivedBytes": 34406400, "totalBytes": 65737008, "averageBytesPerSecond": 5006}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 34406400, "totalBytes": 65737008, "averageBytesPerSecond": 4995}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 22}
+{"event": "progress", "receivedBytes": 34471936, "totalBytes": 65737008, "averageBytesPerSecond": 4994}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 34537472, "totalBytes": 65737008, "averageBytesPerSecond": 4992}
+{"event": "progress", "receivedBytes": 34537472, "totalBytes": 65737008, "averageBytesPerSecond": 4982}
+{"event": "progress", "receivedBytes": 34603008, "totalBytes": 65737008, "averageBytesPerSecond": 4980}
+{"event": "progress", "receivedBytes": 34603008, "totalBytes": 65737008, "averageBytesPerSecond": 4969}
+{"event": "progress", "receivedBytes": 34668544, "totalBytes": 65737008, "averageBytesPerSecond": 4968}
+{"event": "progress", "receivedBytes": 34734080, "totalBytes": 65737008, "averageBytesPerSecond": 4967}
+{"event": "progress", "receivedBytes": 34865152, "totalBytes": 65737008, "averageBytesPerSecond": 4975}
+{"event": "progress", "receivedBytes": 34930688, "totalBytes": 65737008, "averageBytesPerSecond": 4974}
+{"event": "progress", "receivedBytes": 35061760, "totalBytes": 65737008, "averageBytesPerSecond": 4982}
+{"event": "progress", "receivedBytes": 35258368, "totalBytes": 65737008, "averageBytesPerSecond": 4999}
+{"event": "retry", "range": 3, "errorType": "timeout", "httpStatus": null, "attempt": 23}
+{"event": "progress", "receivedBytes": 35389440, "totalBytes": 65737008, "averageBytesPerSecond": 5007}
+{"event": "progress", "receivedBytes": 35586048, "totalBytes": 65737008, "averageBytesPerSecond": 5024}
+{"event": "progress", "receivedBytes": 35848192, "totalBytes": 65737008, "averageBytesPerSecond": 5050}
+{"event": "progress", "receivedBytes": 36044800, "totalBytes": 65737008, "averageBytesPerSecond": 5067}
+{"event": "progress", "receivedBytes": 36241408, "totalBytes": 65737008, "averageBytesPerSecond": 5084}
+{"event": "progress", "receivedBytes": 36438016, "totalBytes": 65737008, "averageBytesPerSecond": 5101}
+{"event": "progress", "receivedBytes": 36700160, "totalBytes": 65737008, "averageBytesPerSecond": 5127}
+{"event": "progress", "receivedBytes": 36831232, "totalBytes": 65737008, "averageBytesPerSecond": 5135}
+{"event": "progress", "receivedBytes": 36962304, "totalBytes": 65737008, "averageBytesPerSecond": 5142}
+{"event": "progress", "receivedBytes": 37093376, "totalBytes": 65737008, "averageBytesPerSecond": 5150}
+{"event": "progress", "receivedBytes": 37421056, "totalBytes": 65737008, "averageBytesPerSecond": 5184}
+{"event": "progress", "receivedBytes": 37486592, "totalBytes": 65737008, "averageBytesPerSecond": 5183}
+{"event": "progress", "receivedBytes": 37552128, "totalBytes": 65737008, "averageBytesPerSecond": 5181}
+{"event": "progress", "receivedBytes": 37683200, "totalBytes": 65737008, "averageBytesPerSecond": 5188}
+{"event": "retry", "range": 5, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 37879808, "totalBytes": 65737008, "averageBytesPerSecond": 5204}
+{"event": "progress", "receivedBytes": 38076416, "totalBytes": 65737008, "averageBytesPerSecond": 5221}
+{"event": "progress", "receivedBytes": 38141952, "totalBytes": 65737008, "averageBytesPerSecond": 5219}
+{"event": "progress", "receivedBytes": 38273024, "totalBytes": 65737008, "averageBytesPerSecond": 5226}
+{"event": "progress", "receivedBytes": 38469632, "totalBytes": 65737008, "averageBytesPerSecond": 5242}
+{"event": "progress", "receivedBytes": 38666240, "totalBytes": 65737008, "averageBytesPerSecond": 5258}
+{"event": "progress", "receivedBytes": 38928384, "totalBytes": 65737008, "averageBytesPerSecond": 5283}
+{"event": "progress", "receivedBytes": 39124992, "totalBytes": 65737008, "averageBytesPerSecond": 5299}
+{"event": "progress", "receivedBytes": 39256064, "totalBytes": 65737008, "averageBytesPerSecond": 5306}
+{"event": "progress", "receivedBytes": 39321600, "totalBytes": 65737008, "averageBytesPerSecond": 5304}
+{"event": "progress", "receivedBytes": 39387136, "totalBytes": 65737008, "averageBytesPerSecond": 5302}
+{"event": "progress", "receivedBytes": 39452672, "totalBytes": 65737008, "averageBytesPerSecond": 5300}
+{"event": "progress", "receivedBytes": 39518208, "totalBytes": 65737008, "averageBytesPerSecond": 5298}
+{"event": "progress", "receivedBytes": 39649280, "totalBytes": 65737008, "averageBytesPerSecond": 5305}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 39780352, "totalBytes": 65737008, "averageBytesPerSecond": 5312}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 39911424, "totalBytes": 65737008, "averageBytesPerSecond": 5319}
+{"event": "progress", "receivedBytes": 39911424, "totalBytes": 65737008, "averageBytesPerSecond": 5308}
+{"event": "progress", "receivedBytes": 39911424, "totalBytes": 65737008, "averageBytesPerSecond": 5298}
+{"event": "progress", "receivedBytes": 39911424, "totalBytes": 65737008, "averageBytesPerSecond": 5287}
+{"event": "progress", "receivedBytes": 39976960, "totalBytes": 65737008, "averageBytesPerSecond": 5286}
+{"event": "retry", "range": 7, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 39976960, "totalBytes": 65737008, "averageBytesPerSecond": 5275}
+{"event": "progress", "receivedBytes": 40042496, "totalBytes": 65737008, "averageBytesPerSecond": 5273}
+{"event": "progress", "receivedBytes": 40173568, "totalBytes": 65737008, "averageBytesPerSecond": 5280}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 40173568, "totalBytes": 65737008, "averageBytesPerSecond": 5270}
+{"event": "progress", "receivedBytes": 40173568, "totalBytes": 65737008, "averageBytesPerSecond": 5259}
+{"event": "progress", "receivedBytes": 40239104, "totalBytes": 65737008, "averageBytesPerSecond": 5258}
+{"event": "progress", "receivedBytes": 40304640, "totalBytes": 65737008, "averageBytesPerSecond": 5256}
+{"event": "progress", "receivedBytes": 40370176, "totalBytes": 65737008, "averageBytesPerSecond": 5254}
+{"event": "progress", "receivedBytes": 40370176, "totalBytes": 65737008, "averageBytesPerSecond": 5244}
+{"event": "retry", "range": 5, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 40370176, "totalBytes": 65737008, "averageBytesPerSecond": 5234}
+{"event": "progress", "receivedBytes": 40435712, "totalBytes": 65737008, "averageBytesPerSecond": 5232}
+{"event": "progress", "receivedBytes": 40566784, "totalBytes": 65737008, "averageBytesPerSecond": 5239}
+{"event": "progress", "receivedBytes": 40697856, "totalBytes": 65737008, "averageBytesPerSecond": 5246}
+{"event": "progress", "receivedBytes": 40828928, "totalBytes": 65737008, "averageBytesPerSecond": 5252}
+{"event": "progress", "receivedBytes": 40894464, "totalBytes": 65737008, "averageBytesPerSecond": 5251}
+{"event": "retry", "range": 5, "errorType": "URLError", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 40960000, "totalBytes": 65737008, "averageBytesPerSecond": 5249}
+{"event": "progress", "receivedBytes": 40960000, "totalBytes": 65737008, "averageBytesPerSecond": 5239}
+{"event": "progress", "receivedBytes": 41091072, "totalBytes": 65737008, "averageBytesPerSecond": 5245}
+{"event": "progress", "receivedBytes": 41222144, "totalBytes": 65737008, "averageBytesPerSecond": 5252}
+{"event": "progress", "receivedBytes": 41353216, "totalBytes": 65737008, "averageBytesPerSecond": 5259}
+{"event": "progress", "receivedBytes": 41680896, "totalBytes": 65737008, "averageBytesPerSecond": 5290}
+{"event": "progress", "receivedBytes": 41746432, "totalBytes": 65737008, "averageBytesPerSecond": 5289}
+{"event": "progress", "receivedBytes": 41811968, "totalBytes": 65737008, "averageBytesPerSecond": 5287}
+{"event": "progress", "receivedBytes": 41877504, "totalBytes": 65737008, "averageBytesPerSecond": 5285}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 41943040, "totalBytes": 65737008, "averageBytesPerSecond": 5283}
+{"event": "progress", "receivedBytes": 42074112, "totalBytes": 65737008, "averageBytesPerSecond": 5290}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 42074112, "totalBytes": 65737008, "averageBytesPerSecond": 5280}
+{"event": "progress", "receivedBytes": 42139648, "totalBytes": 65737008, "averageBytesPerSecond": 5278}
+{"event": "progress", "receivedBytes": 42139648, "totalBytes": 65737008, "averageBytesPerSecond": 5268}
+{"event": "progress", "receivedBytes": 42205184, "totalBytes": 65737008, "averageBytesPerSecond": 5267}
+{"event": "progress", "receivedBytes": 42270720, "totalBytes": 65737008, "averageBytesPerSecond": 5265}
+{"event": "progress", "receivedBytes": 42270720, "totalBytes": 65737008, "averageBytesPerSecond": 5255}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 42336256, "totalBytes": 65737008, "averageBytesPerSecond": 5253}
+{"event": "progress", "receivedBytes": 42401792, "totalBytes": 65737008, "averageBytesPerSecond": 5252}
+{"event": "progress", "receivedBytes": 42467328, "totalBytes": 65737008, "averageBytesPerSecond": 5250}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 42467328, "totalBytes": 65737008, "averageBytesPerSecond": 5240}
+{"event": "progress", "receivedBytes": 42467328, "totalBytes": 65737008, "averageBytesPerSecond": 5231}
+{"event": "progress", "receivedBytes": 42467328, "totalBytes": 65737008, "averageBytesPerSecond": 5221}
+{"event": "progress", "receivedBytes": 42598400, "totalBytes": 65737008, "averageBytesPerSecond": 5228}
+{"event": "progress", "receivedBytes": 42598400, "totalBytes": 65737008, "averageBytesPerSecond": 5218}
+{"event": "retry", "range": 5, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 42598400, "totalBytes": 65737008, "averageBytesPerSecond": 5208}
+{"event": "progress", "receivedBytes": 42598400, "totalBytes": 65737008, "averageBytesPerSecond": 5199}
+{"event": "progress", "receivedBytes": 42598400, "totalBytes": 65737008, "averageBytesPerSecond": 5189}
+{"event": "progress", "receivedBytes": 42598400, "totalBytes": 65737008, "averageBytesPerSecond": 5180}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 42663936, "totalBytes": 65737008, "averageBytesPerSecond": 5178}
+{"event": "progress", "receivedBytes": 42663936, "totalBytes": 65737008, "averageBytesPerSecond": 5169}
+{"event": "retry", "range": 7, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 42795008, "totalBytes": 65737008, "averageBytesPerSecond": 5175}
+{"event": "progress", "receivedBytes": 42860544, "totalBytes": 65737008, "averageBytesPerSecond": 5174}
+{"event": "progress", "receivedBytes": 42860544, "totalBytes": 65737008, "averageBytesPerSecond": 5165}
+{"event": "progress", "receivedBytes": 42860544, "totalBytes": 65737008, "averageBytesPerSecond": 5155}
+{"event": "progress", "receivedBytes": 42926080, "totalBytes": 65737008, "averageBytesPerSecond": 5154}
+{"event": "progress", "receivedBytes": 42926080, "totalBytes": 65737008, "averageBytesPerSecond": 5145}
+{"event": "progress", "receivedBytes": 42926080, "totalBytes": 65737008, "averageBytesPerSecond": 5135}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "retry", "range": 7, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "progress", "receivedBytes": 42991616, "totalBytes": 65737008, "averageBytesPerSecond": 5134}
+{"event": "progress", "receivedBytes": 42991616, "totalBytes": 65737008, "averageBytesPerSecond": 5125}
+{"event": "progress", "receivedBytes": 42991616, "totalBytes": 65737008, "averageBytesPerSecond": 5116}
+{"event": "progress", "receivedBytes": 42991616, "totalBytes": 65737008, "averageBytesPerSecond": 5107}
+{"event": "progress", "receivedBytes": 42991616, "totalBytes": 65737008, "averageBytesPerSecond": 5097}
+{"event": "progress", "receivedBytes": 43057152, "totalBytes": 65737008, "averageBytesPerSecond": 5096}
+{"event": "progress", "receivedBytes": 43122688, "totalBytes": 65737008, "averageBytesPerSecond": 5095}
+{"event": "progress", "receivedBytes": 43122688, "totalBytes": 65737008, "averageBytesPerSecond": 5086}
+{"event": "progress", "receivedBytes": 43122688, "totalBytes": 65737008, "averageBytesPerSecond": 5077}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 8}
+{"event": "progress", "receivedBytes": 43122688, "totalBytes": 65737008, "averageBytesPerSecond": 5068}
+{"event": "progress", "receivedBytes": 43253760, "totalBytes": 65737008, "averageBytesPerSecond": 5074}
+{"event": "retry", "range": 5, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 43253760, "totalBytes": 65737008, "averageBytesPerSecond": 5065}
+{"event": "progress", "receivedBytes": 43319296, "totalBytes": 65737008, "averageBytesPerSecond": 5064}
+{"event": "progress", "receivedBytes": 43319296, "totalBytes": 65737008, "averageBytesPerSecond": 5055}
+{"event": "progress", "receivedBytes": 43319296, "totalBytes": 65737008, "averageBytesPerSecond": 5047}
+{"event": "progress", "receivedBytes": 43384832, "totalBytes": 65737008, "averageBytesPerSecond": 5045}
+{"event": "progress", "receivedBytes": 43450368, "totalBytes": 65737008, "averageBytesPerSecond": 5044}
+{"event": "progress", "receivedBytes": 43646976, "totalBytes": 65737008, "averageBytesPerSecond": 5058}
+{"event": "progress", "receivedBytes": 43712512, "totalBytes": 65737008, "averageBytesPerSecond": 5057}
+{"event": "progress", "receivedBytes": 43909120, "totalBytes": 65737008, "averageBytesPerSecond": 5071}
+{"event": "progress", "receivedBytes": 43909120, "totalBytes": 65737008, "averageBytesPerSecond": 5062}
+{"event": "progress", "receivedBytes": 44105728, "totalBytes": 65737008, "averageBytesPerSecond": 5076}
+{"event": "progress", "receivedBytes": 44236800, "totalBytes": 65737008, "averageBytesPerSecond": 5082}
+{"event": "progress", "receivedBytes": 44367872, "totalBytes": 65737008, "averageBytesPerSecond": 5089}
+{"event": "progress", "receivedBytes": 44367872, "totalBytes": 65737008, "averageBytesPerSecond": 5080}
+{"event": "progress", "receivedBytes": 44433408, "totalBytes": 65737008, "averageBytesPerSecond": 5079}
+{"event": "progress", "receivedBytes": 44433408, "totalBytes": 65737008, "averageBytesPerSecond": 5070}
+{"event": "progress", "receivedBytes": 44498944, "totalBytes": 65737008, "averageBytesPerSecond": 5069}
+{"event": "progress", "receivedBytes": 44564480, "totalBytes": 65737008, "averageBytesPerSecond": 5068}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 8}
+{"event": "progress", "receivedBytes": 44630016, "totalBytes": 65737008, "averageBytesPerSecond": 5066}
+{"event": "progress", "receivedBytes": 44630016, "totalBytes": 65737008, "averageBytesPerSecond": 5058}
+{"event": "progress", "receivedBytes": 44695552, "totalBytes": 65737008, "averageBytesPerSecond": 5057}
+{"event": "progress", "receivedBytes": 44695552, "totalBytes": 65737008, "averageBytesPerSecond": 5048}
+{"event": "progress", "receivedBytes": 44826624, "totalBytes": 65737008, "averageBytesPerSecond": 5054}
+{"event": "progress", "receivedBytes": 44892160, "totalBytes": 65737008, "averageBytesPerSecond": 5053}
+{"event": "progress", "receivedBytes": 44957696, "totalBytes": 65737008, "averageBytesPerSecond": 5052}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 5058}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 5050}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 9}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 5041}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 5033}
+{"event": "retry", "range": 7, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 5024}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 5016}
+{"event": "retry", "range": 5, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 5008}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 4999}
+{"event": "progress", "receivedBytes": 45088768, "totalBytes": 65737008, "averageBytesPerSecond": 4991}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 9}
+{"event": "progress", "receivedBytes": 45154304, "totalBytes": 65737008, "averageBytesPerSecond": 4990}
+{"event": "progress", "receivedBytes": 45219840, "totalBytes": 65737008, "averageBytesPerSecond": 4989}
+{"event": "retry", "range": 7, "errorType": "URLError", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 45416448, "totalBytes": 65737008, "averageBytesPerSecond": 5002}
+{"event": "progress", "receivedBytes": 45678592, "totalBytes": 65737008, "averageBytesPerSecond": 5023}
+{"event": "progress", "receivedBytes": 45809664, "totalBytes": 65737008, "averageBytesPerSecond": 5029}
+{"event": "progress", "receivedBytes": 46006272, "totalBytes": 65737008, "averageBytesPerSecond": 5042}
+{"event": "progress", "receivedBytes": 46071808, "totalBytes": 65737008, "averageBytesPerSecond": 5041}
+{"event": "progress", "receivedBytes": 46202880, "totalBytes": 65737008, "averageBytesPerSecond": 5047}
+{"event": "progress", "receivedBytes": 46202880, "totalBytes": 65737008, "averageBytesPerSecond": 5039}
+{"event": "progress", "receivedBytes": 46268416, "totalBytes": 65737008, "averageBytesPerSecond": 5038}
+{"event": "progress", "receivedBytes": 46399488, "totalBytes": 65737008, "averageBytesPerSecond": 5044}
+{"event": "progress", "receivedBytes": 46465024, "totalBytes": 65737008, "averageBytesPerSecond": 5043}
+{"event": "progress", "receivedBytes": 46465024, "totalBytes": 65737008, "averageBytesPerSecond": 5034}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 10}
+{"event": "progress", "receivedBytes": 46596096, "totalBytes": 65737008, "averageBytesPerSecond": 5040}
+{"event": "progress", "receivedBytes": 46661632, "totalBytes": 65737008, "averageBytesPerSecond": 5039}
+{"event": "progress", "receivedBytes": 46727168, "totalBytes": 65737008, "averageBytesPerSecond": 5038}
+{"event": "progress", "receivedBytes": 46727168, "totalBytes": 65737008, "averageBytesPerSecond": 5030}
+{"event": "progress", "receivedBytes": 46792704, "totalBytes": 65737008, "averageBytesPerSecond": 5029}
+{"event": "progress", "receivedBytes": 46858240, "totalBytes": 65737008, "averageBytesPerSecond": 5028}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 5027}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 5019}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 11}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 5011}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 5003}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 4995}
+{"event": "retry", "range": 5, "errorType": "timeout", "httpStatus": null, "attempt": 8}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 4987}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 10}
+{"event": "retry", "range": 7, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 4979}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 4971}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 4963}
+{"event": "progress", "receivedBytes": 46923776, "totalBytes": 65737008, "averageBytesPerSecond": 4955}
+{"event": "progress", "receivedBytes": 46989312, "totalBytes": 65737008, "averageBytesPerSecond": 4954}
+{"event": "progress", "receivedBytes": 46989312, "totalBytes": 65737008, "averageBytesPerSecond": 4946}
+{"event": "retry", "range": 4, "errorType": "timeout", "httpStatus": null, "attempt": 12}
+{"event": "progress", "receivedBytes": 47054848, "totalBytes": 65737008, "averageBytesPerSecond": 4946}
+{"event": "progress", "receivedBytes": 47120384, "totalBytes": 65737008, "averageBytesPerSecond": 4945}
+{"event": "retry", "range": 6, "errorType": "timeout", "httpStatus": null, "attempt": 11}
+{"event": "progress", "receivedBytes": 47251456, "totalBytes": 65737008, "averageBytesPerSecond": 4951}
+{"event": "progress", "receivedBytes": 47251456, "totalBytes": 65737008, "averageBytesPerSecond": 4943}
+{"event": "progress", "receivedBytes": 47316992, "totalBytes": 65737008, "averageBytesPerSecond": 4942}
+{"event": "progress", "receivedBytes": 47382528, "totalBytes": 65737008, "averageBytesPerSecond": 4941}
+{"event": "progress", "receivedBytes": 47382528, "totalBytes": 65737008, "averageBytesPerSecond": 4933}
+{"event": "progress", "receivedBytes": 47382528, "totalBytes": 65737008, "averageBytesPerSecond": 4926}
+{"event": "progress", "receivedBytes": 47382528, "totalBytes": 65737008, "averageBytesPerSecond": 4918}
+{"event": "progress", "receivedBytes": 47448064, "totalBytes": 65737008, "averageBytesPerSecond": 4917}
+{"event": "progress", "receivedBytes": 47448064, "totalBytes": 65737008, "averageBytesPerSecond": 4909}
+{"event": "progress", "receivedBytes": 47448064, "totalBytes": 65737008, "averageBytesPerSecond": 4902}
+{"event": "started", "resumedBytes": 47448064, "totalBytes": 65737008, "workers": 16}
+{"event": "progress", "receivedBytes": 47448064, "totalBytes": 65737008, "averageBytesPerSecond": 0}
+{"event": "progress", "receivedBytes": 47513600, "totalBytes": 65737008, "averageBytesPerSecond": 2183}
+{"event": "progress", "receivedBytes": 47513600, "totalBytes": 65737008, "averageBytesPerSecond": 1455}
+{"event": "progress", "receivedBytes": 47513600, "totalBytes": 65737008, "averageBytesPerSecond": 1092}
+{"event": "progress", "receivedBytes": 47513600, "totalBytes": 65737008, "averageBytesPerSecond": 873}
+{"event": "progress", "receivedBytes": 47579136, "totalBytes": 65737008, "averageBytesPerSecond": 1456}
+{"event": "retry", "range": 46, "errorType": "URLError", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 37, "errorType": "URLError", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 58, "errorType": "URLError", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 36, "errorType": "URLError", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 35, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 38, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 47579136, "totalBytes": 65737008, "averageBytesPerSecond": 1248}
+{"event": "retry", "range": 57, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 45, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 47579136, "totalBytes": 65737008, "averageBytesPerSecond": 1092}
+{"event": "progress", "receivedBytes": 47579136, "totalBytes": 65737008, "averageBytesPerSecond": 970}
+{"event": "retry", "range": 55, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 39, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 44, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 47644672, "totalBytes": 65737008, "averageBytesPerSecond": 1310}
+{"event": "progress", "receivedBytes": 47710208, "totalBytes": 65737008, "averageBytesPerSecond": 1588}
+{"event": "progress", "receivedBytes": 47710208, "totalBytes": 65737008, "averageBytesPerSecond": 1456}
+{"event": "retry", "range": 46, "errorType": "URLError", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 58, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 47775744, "totalBytes": 65737008, "averageBytesPerSecond": 1679}
+{"event": "retry", "range": 36, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 53, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 47841280, "totalBytes": 65737008, "averageBytesPerSecond": 1871}
+{"event": "progress", "receivedBytes": 47972352, "totalBytes": 65737008, "averageBytesPerSecond": 2329}
+{"event": "retry", "range": 35, "errorType": "URLError", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 45, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 57, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 39, "errorType": "URLError", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 47972352, "totalBytes": 65737008, "averageBytesPerSecond": 2183}
+{"event": "retry", "range": 44, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 55, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 37, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 47972352, "totalBytes": 65737008, "averageBytesPerSecond": 2055}
+{"event": "progress", "receivedBytes": 48037888, "totalBytes": 65737008, "averageBytesPerSecond": 2183}
+{"event": "progress", "receivedBytes": 48037888, "totalBytes": 65737008, "averageBytesPerSecond": 2068}
+{"event": "retry", "range": 46, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 36, "errorType": "URLError", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 51, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "retry", "range": 52, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 48103424, "totalBytes": 65737008, "averageBytesPerSecond": 2183}
+{"event": "retry", "range": 38, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 48103424, "totalBytes": 65737008, "averageBytesPerSecond": 2079}
+{"event": "retry", "range": 35, "errorType": "URLError", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 45, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 57, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 48168960, "totalBytes": 65737008, "averageBytesPerSecond": 2183}
+{"event": "progress", "receivedBytes": 48168960, "totalBytes": 65737008, "averageBytesPerSecond": 2088}
+{"event": "retry", "range": 37, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 48168960, "totalBytes": 65737008, "averageBytesPerSecond": 2001}
+{"event": "retry", "range": 58, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 53, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 48234496, "totalBytes": 65737008, "averageBytesPerSecond": 2096}
+{"event": "retry", "range": 47, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 48234496, "totalBytes": 65737008, "averageBytesPerSecond": 2015}
+{"event": "retry", "range": 52, "errorType": "URLError", "httpStatus": null, "attempt": 2}
+{"event": "retry", "range": 51, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 48234496, "totalBytes": 65737008, "averageBytesPerSecond": 1941}
+{"event": "retry", "range": 46, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 54, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 48234496, "totalBytes": 65737008, "averageBytesPerSecond": 1871}
+{"event": "retry", "range": 36, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 48234496, "totalBytes": 65737008, "averageBytesPerSecond": 1807}
+{"event": "retry", "range": 38, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 45, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 44, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 48365568, "totalBytes": 65737008, "averageBytesPerSecond": 2038}
+{"event": "retry", "range": 37, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 48431104, "totalBytes": 65737008, "averageBytesPerSecond": 2113}
+{"event": "retry", "range": 57, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 39, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 58, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 48496640, "totalBytes": 65737008, "averageBytesPerSecond": 2183}
+{"event": "progress", "receivedBytes": 48627712, "totalBytes": 65737008, "averageBytesPerSecond": 2382}
+{"event": "progress", "receivedBytes": 48758784, "totalBytes": 65737008, "averageBytesPerSecond": 2569}
+{"event": "retry", "range": 54, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 48758784, "totalBytes": 65737008, "averageBytesPerSecond": 2495}
+{"event": "progress", "receivedBytes": 48758784, "totalBytes": 65737008, "averageBytesPerSecond": 2426}
+{"event": "retry", "range": 52, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 36, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "retry", "range": 46, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 48824320, "totalBytes": 65737008, "averageBytesPerSecond": 2478}
+{"event": "retry", "range": 35, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 37, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "retry", "range": 38, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 48824320, "totalBytes": 65737008, "averageBytesPerSecond": 2413}
+{"event": "retry", "range": 58, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 48889856, "totalBytes": 65737008, "averageBytesPerSecond": 2463}
+{"event": "retry", "range": 51, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 48955392, "totalBytes": 65737008, "averageBytesPerSecond": 2511}
+{"event": "retry", "range": 45, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "retry", "range": 54, "errorType": "URLError", "httpStatus": null, "attempt": 3}
+{"event": "progress", "receivedBytes": 49020928, "totalBytes": 65737008, "averageBytesPerSecond": 2556}
+{"event": "progress", "receivedBytes": 49086464, "totalBytes": 65737008, "averageBytesPerSecond": 2599}
+{"event": "retry", "range": 47, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 49152000, "totalBytes": 65737008, "averageBytesPerSecond": 2640}
+{"event": "progress", "receivedBytes": 49283072, "totalBytes": 65737008, "averageBytesPerSecond": 2779}
+{"event": "retry", "range": 46, "errorType": "URLError", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 49283072, "totalBytes": 65737008, "averageBytesPerSecond": 2717}
+{"event": "retry", "range": 36, "errorType": "URLError", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 49283072, "totalBytes": 65737008, "averageBytesPerSecond": 2658}
+{"event": "retry", "range": 39, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 51, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "progress", "receivedBytes": 49283072, "totalBytes": 65737008, "averageBytesPerSecond": 2601}
+{"event": "retry", "range": 37, "errorType": "URLError", "httpStatus": null, "attempt": 6}
+{"event": "retry", "range": 38, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "retry", "range": 54, "errorType": "URLError", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 35, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 49283072, "totalBytes": 65737008, "averageBytesPerSecond": 2547}
+{"event": "retry", "range": 55, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 47, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 59, "errorType": "timeout", "httpStatus": null, "attempt": 1}
+{"event": "progress", "receivedBytes": 49283072, "totalBytes": 65737008, "averageBytesPerSecond": 2495}
+{"event": "retry", "range": 44, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 53, "errorType": "timeout", "httpStatus": null, "attempt": 3}
+{"event": "retry", "range": 45, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "retry", "range": 52, "errorType": "timeout", "httpStatus": null, "attempt": 4}
+{"event": "retry", "range": 58, "errorType": "URLError", "httpStatus": null, "attempt": 6}
+{"event": "progress", "receivedBytes": 49283072, "totalBytes": 65737008, "averageBytesPerSecond": 2445}
+{"event": "progress", "receivedBytes": 49283072, "totalBytes": 65737008, "averageBytesPerSecond": 2397}
+{"event": "progress", "receivedBytes": 49348608, "totalBytes": 65737008, "averageBytesPerSecond": 2435}
+{"event": "progress", "receivedBytes": 49414144, "totalBytes": 65737008, "averageBytesPerSecond": 2472}
+{"event": "progress", "receivedBytes": 49545216, "totalBytes": 65737008, "averageBytesPerSecond": 2588}
+{"event": "progress", "receivedBytes": 49676288, "totalBytes": 65737008, "averageBytesPerSecond": 2699}
+{"event": "retry", "range": 59, "errorType": "timeout", "httpStatus": null, "attempt": 2}
+{"event": "progress", "receivedBytes": 49676288, "totalBytes": 65737008, "averageBytesPerSecond": 2651}
+{"event": "retry", "range": 38, "errorType": "timeout", "httpStatus": null, "attempt": 6}
+{"event": "retry", "range": 44, "errorType": "URLError", "httpStatus": null, "attempt": 5}
+{"event": "retry", "range": 51, "errorType": "timeout", "httpStatus": null, "attempt": 5}
+{"event": "progress", "receivedBytes": 49741824, "totalBytes": 65737008, "averageBytesPerSecond": 2681}
+{"event": "retry", "range": 45, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "progress", "receivedBytes": 49938432, "totalBytes": 65737008, "averageBytesPerSecond": 2861}
+{"event": "retry", "range": 58, "errorType": "timeout", "httpStatus": null, "attempt": 7}
+{"event": "progress", "receivedBytes": 50003968, "totalBytes": 65737008, "averageBytesPerSecond": 2886}
+{"event": "progress", "receivedBytes": 52625408, "totalBytes": 65737008, "averageBytesPerSecond": 5749}
+{"event": "progress", "receivedBytes": 54001664, "totalBytes": 65737008, "averageBytesPerSecond": 7158}
+{"event": "progress", "receivedBytes": 55574528, "totalBytes": 65737008, "averageBytesPerSecond": 8733}
+{"event": "progress", "receivedBytes": 57212928, "totalBytes": 65737008, "averageBytesPerSecond": 10328}
+{"event": "progress", "receivedBytes": 58523648, "totalBytes": 65737008, "averageBytesPerSecond": 11531}
+{"event": "progress", "receivedBytes": 60162048, "totalBytes": 65737008, "averageBytesPerSecond": 13033}
+{"event": "progress", "receivedBytes": 61669376, "totalBytes": 65737008, "averageBytesPerSecond": 14357}
+{"event": "progress", "receivedBytes": 63373312, "totalBytes": 65737008, "averageBytesPerSecond": 15837}
+{"event": "progress", "receivedBytes": 64552960, "totalBytes": 65737008, "averageBytesPerSecond": 16760}
+{"event": "progress", "receivedBytes": 65470464, "totalBytes": 65737008, "averageBytesPerSecond": 17403}
+{"event": "verified", "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12387/llama-b12387-xcframework.zip", "bytes": 65737008, "sha256": "93d4ab674c75d590b6e0650b24683964c61dbbeb6bb94aa8dbed5a61346899f8", "chunkBytes": 1048576, "verified": true, "elapsedSeconds": 1038.99}

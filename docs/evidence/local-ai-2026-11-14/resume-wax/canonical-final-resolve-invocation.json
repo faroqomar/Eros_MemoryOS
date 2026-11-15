@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/swift",
+    "package",
+    "--package-path",
+    "native/LocalAIIntegrations",
+    "--scratch-path",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build",
+    "--cache-path",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache",
+    "--skip-update",
+    "resolve"
+  ],
+  "canonical_original_urls": true,
+  "local_dependency_override": false,
+  "complete_verified_bare_caches": true,
+  "promisor": false,
+  "transport_wrapper": false,
+  "skip_remote_update": true
+}

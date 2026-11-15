@@ -1,0 +1,7 @@
+{
+  "cmake": "/Users/eros/Library/Android/sdk/cmake/3.22.1/bin/cmake",
+  "cmakeVersion": "3.22.1-g37088a8",
+  "ninja": "/Users/eros/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+  "ninjaVersion": "1.10.2",
+  "action": "Verified existing tools meet upstream CMake minimum3.10, then stopped task-owned redundant pip install process50309. Cactus source and embedding downloads continue."
+}

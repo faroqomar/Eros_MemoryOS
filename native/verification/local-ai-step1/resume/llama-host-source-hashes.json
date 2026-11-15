@@ -1,0 +1,21 @@
+{
+  "sourceIdentity": "e33f9ed07596657980b2a7d50022b2e04bf207d4c43dcd552abbad9ef6766b51",
+  "method": "SHA256 of sorted compact JSON file/hash map",
+  "files": {
+    "native/LocalAIEvaluation/Package.swift": "53b74c167e6b0686d564114e4a88a883fd2d813dc6a2f8976353e1a2b9efea07",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCLI/Main.swift": "714739b604f738f6e893a06af3799cd5d2ac093e132d9982f3557055d5d85feb",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/Contracts.swift": "3a65ab229a78b0364d921195d2a455eaa89513f6cf2bbc6739a571f1e5efae77",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/EvaluationRunner.swift": "e576091852b24603208dfdf9af932eea7865b45da0d5e9caebae2cedb64a954a",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/FictionalSuite.swift": "a3f48e99b8846c2175f9940c981c15d694b98dd2300b6f8292214f9e0ad2afc8",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/KeywordMemoryIndex.swift": "2de44da64204b514d542189e4bd55957d4299be3342a005fbffbbab046d07c10",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/Report.swift": "372b36be8e9520622629010e65cd5bd8a78e28351115b1c2dce22dce5644849f",
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/RunEvaluationComparison.swift": "6609128f074e8dcf51b1caf918ebbf5cf933d96bb89b5450852a291e730bab81",
+    "native/LocalAIEvaluation/Sources/AIEvaluationPresentation/EvaluationViewModel.swift": "e27447388be3d94d3fe33fb108c01fa8444e36bd81e1d80a74a4735b03d5e8d0",
+    "native/LocalTextEvaluation/Artifacts/llama-build-receipt.json": "58a5b750be1a8d872ec83042d8d257f054174f8072e506ff6c4143b47e70ffd1",
+    "native/LocalTextEvaluation/Artifacts/llama.xcframework/macos-arm64/llama.framework/llama": "577e42691cc56ca337d1cc06670f8f2a8be57dcda4d5872d78386878bdd9d137",
+    "native/LocalTextEvaluation/Package.swift": "43d843c82802032cd82856117692dd790b351849c790edb75e0b7ed1928b64d0",
+    "native/LocalTextEvaluation/Sources/LlamaEvaluationAdapter/LlamaTextRuntime.swift": "6f336dea275997ca6664307c6437528bd8dd56577e883f37dd662130b0823363",
+    "native/LocalTextEvaluation/Sources/LlamaEvaluationCLI/Main.swift": "61db2c56c5e0e1d425cefba2f0c1fad2f7c488089f8b51d4a2faec6bbb0d68a2"
+  },
+  "scope": "Actual host CLI/Core sources and linked reviewed CPU SDK; not the simulator lab source identity"
+}

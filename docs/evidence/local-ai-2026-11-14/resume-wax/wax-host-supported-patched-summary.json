@@ -1,0 +1,20 @@
+{
+  "cases": 15,
+  "completed": 15,
+  "exact_source_set": 10,
+  "mean_source_recall": 0.9333333333333333,
+  "median_search_seconds": 0.001727791,
+  "max_search_seconds": 0.004954875,
+  "telemetry": {
+    "measurementMethod": "macOS process-lifetime getrusage ru_maxrss high-water bytes; current derived index logical file sizes. No phone battery or thermal measurement.",
+    "peakMemoryBytes": 43761664,
+    "storageBytes": 8539018
+  },
+  "patch_provenance": [
+    {
+      "notes": "Wax 0.1.47 with explicit desktop guard patch sha256:d55f4e047011249d9f40c70dcb2f615d6379257315fa1ba467500fc57351a7e4; empty embedding traits; textOnly search; SDK default context budget.",
+      "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+      "sourceURL": "https://github.com/christopherkarani/Wax"
+    }
+  ]
+}

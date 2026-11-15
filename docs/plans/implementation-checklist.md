@@ -152,7 +152,7 @@ These entries preserve the existing proposal register. They are not additional s
 - [ ] **P15 · Local data protection:** Use encryption, protected keys, backup/restore, export, and deletion. Exact designs remain open.
 - [ ] **P16 · Obsidian import/export boundary:** Keep structured app records and readable Markdown views. Define what happens when the same note changes in both places.
 - [ ] **P17 · Two external-AI routes:** Offer manual context handoff or an official API connection. Limit transferred context to owner-selected data.
-- [ ] **P18 · Native AI components:** Evaluate llama.cpp for text and WhisperKit or whisper.cpp for speech. Evaluate small multilingual models such as Qwen3-1.7B. No selection or benchmark exists.
+- [ ] **P18 · Native AI components:** Evaluate llama.cpp for text and WhisperKit or whisper.cpp for speech. Evaluate small multilingual models such as Qwen3-1.7B. Text-runtime/model Simulator experiments now exist under group 4; production selection and speech benchmarks remain open.
 - [ ] **P19 · Local storage and search:** Evaluate SQLite, keyword search, multilingual semantic search, and linked records. A graph server is not assumed.
 - [ ] **P20 · Historical app language and framework options:** Resolved by D21/C10: Swift with SwiftUI is selected. The earlier Flutter proposal and Swift-versus-Objective-C comparison remain history. This row does not assert an implementation or efficiency result.
 - [ ] **P21 · Cross-device record protocol:** Plan stable IDs, edit versions, attachment transfer, conflict resolution, and deletion propagation. Encryption and key recovery remain open.
@@ -216,3 +216,15 @@ C35 authorizes Step 1, C36 starts Step 2 and C37 authorizes Step 3 review/privat
 - [ ] **Edit and correct:** Let the owner fix information without losing its source.
 - [ ] **Protect records:** Define deletion, export, backup, and restore behavior.
 - [ ] **Keep local use independent:** Make capture work without an external service.
+
+
+## 4. Test local AI tools on the phone
+
+C38 authorizes Step 1; C39 requires completed downloads/repairs and C40 selects Simulator for this stage. Step 1 now completes actual SDK/model checks and repeated Simulator comparisons: 450 completed operations plus 15 explicit MLX unavailable cases, with separate real Mac MLX execution. Quality failures keep production adoption open. Physical battery/heat remains future phone-readiness work. See the [measured results](../evidence/local-ai-2026-11-14/resume-summary.md) and [task record](../tasks/2026-11-14-local-ai-phone-evaluation.md). C41 starts independent Step 2. C43 follow-up repairs close the clean-checkout package regression, Cactus source-verification gap and Dynamic Type findings. Independent repair checks and both unfiltered accessibility audits now pass for the C40 Simulator experiment. These broader outcome boxes remain open for applicable physical-phone evidence and production component selection; they do not mean the Simulator implementation/downloads are unfinished. The proposed group 5 chat checklist is not implemented by this evaluation.
+
+- [ ] **Compare memory options:** Evaluate Wax and a supported Cactus-based configuration.
+- [ ] **Compare text runtimes:** Evaluate llama.cpp and other suitable supported options.
+- [ ] **Compare models:** Test Qwen3-1.7B and other candidates on the same examples.
+- [ ] **Test your languages:** Check Arabic, Iraqi Arabic, English, names, and mixed text.
+- [ ] **Measure phone cost:** Record speed, memory, storage, battery use, and heat.
+- [ ] **Select components:** Choose from measured results and keep original records independent of those choices.

@@ -1,0 +1,139 @@
+{"file": "apple/cactus-macos.Info.plist", "bytes": 643, "verified": true}
+{"file": "apple/Info.plist", "bytes": 718, "verified": true}
+{"file": "apple/cactus-ios.Info.plist", "bytes": 1005, "verified": true}
+{"file": "apple/README.md", "bytes": 780, "verified": true}
+{"file": "CACTUS_VERSION", "bytes": 7, "verified": true}
+{"file": "cactus-engine/build.sh", "bytes": 426, "verified": true}
+{"file": "cactus-engine/CMakeLists.txt", "bytes": 6347, "verified": true}
+{"file": "apple/module.modulemap", "bytes": 70, "verified": true}
+{"file": "cactus-engine/src/chat_tools.h", "bytes": 10706, "verified": true}
+{"file": "apple/CMakeLists.txt", "bytes": 2611, "verified": true}
+{"file": "cactus-engine/src/cloud.h", "bytes": 1487, "verified": true}
+{"file": "apple/build.sh", "bytes": 7467, "verified": true}
+{"file": "cactus-engine/src/embed.cpp", "bytes": 6438, "verified": true}
+{"file": "cactus-engine/src/bpe.cpp", "bytes": 18249, "verified": true}
+{"file": "cactus-engine/src/constraints.cpp", "bytes": 22050, "verified": true}
+{"file": "cactus-engine/src/gemma_tools.h", "bytes": 34451, "verified": true}
+{"file": "cactus-engine/src/engine_image.cpp", "bytes": 44445, "verified": true}
+{"file": "cactus-engine/cactus_engine.h", "bytes": 6812, "verified": true}
+{"file": "cactus-engine/src/init.cpp", "bytes": 17097, "verified": true}
+{"file": "cactus-engine/src/index_ffi.cpp", "bytes": 15864, "verified": true}
+{"file": "cactus-engine/src/complete.cpp", "bytes": 68893, "verified": true}
+{"file": "cactus-engine/src/json_escape.h", "bytes": 1078, "verified": true}
+{"file": "cactus-engine/src/kv_compress.h", "bytes": 6380, "verified": true}
+{"file": "cactus-engine/src/log.cpp", "bytes": 724, "verified": true}
+{"file": "cactus-engine/src/index.cpp", "bytes": 31380, "verified": true}
+{"file": "cactus-engine/src/npu.cpp", "bytes": 215, "verified": true}
+{"file": "cactus-engine/src/npu_ane.h", "bytes": 2956, "verified": true}
+{"file": "cactus-engine/src/npu_ane.mm", "bytes": 37416, "verified": true}
+{"retry": "LICENSE", "error": "timeout"}
+{"file": "LICENSE", "bytes": 2152, "verified": true}
+{"file": "cactus-engine/src/sp.cpp", "bytes": 18150, "verified": true}
+{"retry": "cactus-engine/libs/picojson.h", "error": "timeout"}
+{"file": "cactus-engine/src/kv_compress.cpp", "bytes": 21388, "verified": true}
+{"retry": "cactus-engine/src/cloud.cpp", "error": "timeout"}
+{"file": "cactus-engine/src/telemetry.cpp", "bytes": 506, "verified": true}
+{"file": "cactus-engine/src/telemetry.h", "bytes": 1838, "verified": true}
+{"retry": "cactus-engine/src/engine.h", "error": "timeout"}
+{"file": "cactus-engine/src/stream.cpp", "bytes": 18208, "verified": true}
+{"file": "cactus-engine/src/telemetry_impl.cpp", "bytes": 57096, "verified": true}
+{"file": "cactus-engine/src/transcribe.cpp", "bytes": 24660, "verified": true}
+{"retry": "cactus-engine/src/model_npu.cpp", "error": "timeout"}
+{"file": "cactus-engine/src/cloud.cpp", "bytes": 21482, "verified": true}
+{"file": "cactus-engine/test.sh", "bytes": 2629, "verified": true}
+{"file": "cactus-engine/src/model_npu.cpp", "bytes": 15763, "verified": true}
+{"file": "cactus-engine/src/engine.h", "bytes": 63074, "verified": true}
+{"file": "cactus-graph/cactus_graph.h", "bytes": 67540, "verified": true}
+{"file": "cactus-graph/build.sh", "bytes": 347, "verified": true}
+{"file": "cactus-graph/CMakeLists.txt", "bytes": 1565, "verified": true}
+{"file": "cactus-engine/src/utils.h", "bytes": 76048, "verified": true}
+{"file": "cactus-graph/src/core.cpp", "bytes": 11494, "verified": true}
+{"retry": "cactus-engine/src/rag.cpp", "error": "timeout"}
+{"file": "cactus-graph/src/builder.cpp", "bytes": 89538, "verified": true}
+{"file": "cactus-engine/src/rag.cpp", "bytes": 16834, "verified": true}
+{"file": "cactus-graph/src/io.cpp", "bytes": 44407, "verified": true}
+{"file": "cactus-graph/src/last_error.cpp", "bytes": 184, "verified": true}
+{"file": "cactus-graph/src/ops_cache.cpp", "bytes": 34105, "verified": true}
+{"file": "cactus-graph/src/metal_runtime.cpp", "bytes": 7672, "verified": true}
+{"file": "cactus-graph/src/graph_ffi.cpp", "bytes": 82140, "verified": true}
+{"file": "cactus-graph/src/ops_image.cpp", "bytes": 2068, "verified": true}
+{"file": "cactus-graph/src/ops_dsp.cpp", "bytes": 6252, "verified": true}
+{"retry": "cactus-engine/libs/picojson.h", "error": "timeout"}
+{"retry": "cactus-engine/src/tokenizer.cpp", "error": "timeout"}
+{"file": "cactus-graph/src/ops_conv.cpp", "bytes": 35122, "verified": true}
+{"file": "cactus-graph/src/ops_nn.cpp", "bytes": 54445, "verified": true}
+{"file": "cactus-engine/libs/picojson.h", "bytes": 34027, "verified": true}
+{"file": "cactus-graph/src/metal_plan.cpp", "bytes": 95581, "verified": true}
+{"file": "cactus-graph/src/ops_tensor.cpp", "bytes": 37281, "verified": true}
+{"file": "cactus-graph/src/ops_recurrent.cpp", "bytes": 17299, "verified": true}
+{"file": "cactus-graph/src/param_io.h", "bytes": 271, "verified": true}
+{"file": "cactus-graph/src/ops_sample.cpp", "bytes": 5978, "verified": true}
+{"file": "cactus-engine/src/tokenizer.cpp", "bytes": 40014, "verified": true}
+{"file": "cactus-graph/tests/test_dynamic_shapes.cpp", "bytes": 3771, "verified": true}
+{"file": "cactus-graph/tests/test_dsp_ops.cpp", "bytes": 6392, "verified": true}
+{"file": "cactus-graph/tests/test_graph.cpp", "bytes": 5818, "verified": true}
+{"file": "cactus-graph/tests/test_cache.cpp", "bytes": 45028, "verified": true}
+{"file": "cactus-graph/test.sh", "bytes": 800, "verified": true}
+{"retry": "cactus-graph/src/execute.cpp", "error": "timeout"}
+{"file": "cactus-graph/tests/test_metal_parity.cpp", "bytes": 22596, "verified": true}
+{"file": "cactus-graph/tests/test_nn.cpp", "bytes": 32766, "verified": true}
+{"file": "cactus-graph/tests/test_io.cpp", "bytes": 21808, "verified": true}
+{"file": "cactus-graph/src/param_io.cpp", "bytes": 25136, "verified": true}
+{"file": "cactus-graph/src/ops_math.cpp", "bytes": 43015, "verified": true}
+{"file": "cactus-kernels/CMakeLists.txt", "bytes": 3174, "verified": true}
+{"file": "cactus-kernels/build.sh", "bytes": 353, "verified": true}
+{"file": "cactus-graph/tests/test_ops.cpp", "bytes": 28939, "verified": true}
+{"file": "cactus-graph/src/execute.cpp", "bytes": 125693, "verified": true}
+{"file": "cactus-kernels/cactus_kernels.h", "bytes": 21521, "verified": true}
+{"file": "cactus-engine/src/model.cpp", "bytes": 292799, "verified": true}
+{"file": "cactus-kernels/metal_backend.h", "bytes": 16088, "verified": true}
+{"file": "cactus-graph/tests/test_utils.h", "bytes": 7521, "verified": true}
+{"file": "cactus-kernels/src/attention_hybrid.cpp", "bytes": 34552, "verified": true}
+{"retry": "cactus-graph/tests/test_image.cpp", "error": "URLError"}
+{"file": "cactus-graph/tests/test_image.cpp", "bytes": 4198, "verified": true}
+{"file": "cactus-kernels/cmake/embed_msl.cmake", "bytes": 172, "verified": true}
+{"retry": "cactus-graph/tests/test_precision.cpp", "error": "timeout"}
+{"file": "cactus-kernels/src/attention.cpp", "bytes": 46151, "verified": true}
+{"file": "cactus-kernels/src/conv.cpp", "bytes": 37563, "verified": true}
+{"file": "cactus-kernels/src/conv2d.cpp", "bytes": 26673, "verified": true}
+{"file": "cactus-kernels/src/image.cpp", "bytes": 4313, "verified": true}
+{"file": "cactus-kernels/src/lstm.cpp", "bytes": 19816, "verified": true}
+{"file": "cactus-kernels/src/matmul.cpp", "bytes": 137661, "verified": true}
+{"retry": "cactus-kernels/libs/stb_image.h", "error": "timeout"}
+{"retry": "cactus-kernels/src/blas.cpp", "error": "timeout"}
+{"file": "cactus-kernels/src/blas.cpp", "bytes": 25070, "verified": true}
+{"file": "cactus-kernels/src/metal_backend_stub.cpp", "bytes": 12259, "verified": true}
+{"retry": "cactus-kernels/src/cactus_kernels.metal", "error": "timeout"}
+{"file": "cactus-kernels/libs/stb_image.h", "bytes": 161589, "verified": true}
+{"file": "cactus-kernels/src/fused.cpp", "bytes": 35358, "verified": true}
+{"file": "cactus-kernels/src/quants.cpp", "bytes": 12602, "verified": true}
+{"retry": "cactus-graph/tests/test_precision.cpp", "error": "URLError"}
+{"retry": "cactus-kernels/src/dsp.cpp", "error": "URLError"}
+{"file": "cactus-kernels/src/reduce.cpp", "bytes": 14129, "verified": true}
+{"file": "cactus-kernels/src/norms_rope.cpp", "bytes": 18315, "verified": true}
+{"file": "cactus-kernels/src/threading.h", "bytes": 30298, "verified": true}
+{"file": "cactus-kernels/src/wav.h", "bytes": 4750, "verified": true}
+{"file": "cactus-kernels/test.sh", "bytes": 802, "verified": true}
+{"file": "cactus-kernels/src/scalar.cpp", "bytes": 4628, "verified": true}
+{"retry": "cactus-kernels/libs/stb_image_resize2.h", "error": "timeout"}
+{"file": "cactus-kernels/tests/test_attention.cpp", "bytes": 13017, "verified": true}
+{"file": "cactus-kernels/tests/test_conv.cpp", "bytes": 8028, "verified": true}
+{"file": "cactus-kernels/src/dsp.cpp", "bytes": 21227, "verified": true}
+{"file": "cactus-kernels/tests/test_matmul.cpp", "bytes": 29623, "verified": true}
+{"file": "cactus-kernels/tests/test_elementwise.cpp", "bytes": 9364, "verified": true}
+{"file": "cactus-kernels/tests/test_dsp.cpp", "bytes": 6832, "verified": true}
+{"file": "cactus-kernels/tests/test_reduce.cpp", "bytes": 10362, "verified": true}
+{"file": "cactus-kernels/tests/test_quant.cpp", "bytes": 8266, "verified": true}
+{"file": "cactus-kernels/tests/test_utils.h", "bytes": 3532, "verified": true}
+{"retry": "cactus-kernels/src/metal_backend.mm", "error": "timeout"}
+{"retry": "cactus-kernels/src/nn.cpp", "error": "URLError"}
+{"retry": "cactus-kernels/src/cactus_kernels.metal", "error": "URLError"}
+{"file": "cactus-kernels/src/nn.cpp", "bytes": 33341, "verified": true}
+{"retry": "cactus-graph/tests/test_precision.cpp", "error": "URLError"}
+{"file": "cactus-graph/tests/test_precision.cpp", "bytes": 6925, "verified": true}
+{"file": "cactus-kernels/src/metal_backend.mm", "bytes": 138178, "verified": true}
+{"retry": "cactus-kernels/libs/stb_image_resize2.h", "error": "timeout"}
+{"file": "cactus-kernels/src/cactus_kernels.metal", "bytes": 201126, "verified": true}
+{"retry": "cactus-kernels/libs/stb_image_resize2.h", "error": "timeout"}
+{"file": "cactus-kernels/libs/stb_image_resize2.h", "bytes": 391329, "verified": true}
+SDK SOURCE COMPLETE 115

@@ -1,0 +1,16 @@
+{
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "candidate": "llama-qwen",
+  "completedSuites": 1,
+  "completedCases": 15,
+  "generationStatusesAllCompleted": true,
+  "rawReport": "native/verification/local-ai-step2/simulator-reports/llama-qwen-60F31A39-351E-438C-AC2E-82E1FD46CF3C.json",
+  "sha256": "af998017e3888fae23054c3c1238adb6785edc0313733e26c465cd6043ecb657",
+  "byteIdenticalAnswersToOriginal15": true,
+  "originalBatchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+  "newBatchID": "4BD4E12A-7499-40C7-B2CF-A05A600395B4",
+  "intent": "Bounded real model recheck plus deliberate native cancellation during next warm suite; not a replacement six-suite comparative benchmark.",
+  "cancelObservedProgress": "16/90 ar-birthday in the pre-capture AX snapshot; screenshot07 shows17/90 iq-tentative. Cancel followed during the first warm suite.",
+  "cancellationOutcome": "Cancelled. No final result; controls reenabled after workerreturn, completed cold-suite report preserved.",
+  "measurementScope": "Fresh app, large standard text, real CPU/Accelerate. No heavy worker/build active. UI automation active. Single cold suite, no new warm distribution claim."
+}

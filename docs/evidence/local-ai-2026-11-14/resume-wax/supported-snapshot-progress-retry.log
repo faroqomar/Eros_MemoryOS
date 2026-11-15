@@ -1,0 +1,28 @@
+{"package": "Wax", "completed": 25, "total": 306, "reused": 11, "bytes": 533056}
+{"package": "Wax", "completed": 50, "total": 306, "reused": 21, "bytes": 750049}
+{"package": "Wax", "completed": 75, "total": 306, "reused": 41, "bytes": 869457}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/christopherkarani/Wax/e4587f8cebb76aa92ece008253f13c66b756e68b/Sources/Wax/Broker/BrokerCommandCatalog.swift"}
+{"package": "Wax", "completed": 100, "total": 306, "reused": 51, "bytes": 2956270}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/christopherkarani/Wax/e4587f8cebb76aa92ece008253f13c66b756e68b/Sources/Wax/Broker/TaskStateMigration.swift"}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/christopherkarani/Wax/e4587f8cebb76aa92ece008253f13c66b756e68b/Sources/Wax/Ingest/TextChunker.swift"}
+{"package": "Wax", "completed": 125, "total": 306, "reused": 67, "bytes": 3116077}
+{"package": "Wax", "completed": 150, "total": 306, "reused": 81, "bytes": 3556531}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/christopherkarani/Wax/e4587f8cebb76aa92ece008253f13c66b756e68b/Sources/Wax/RAG/FastRAGContextBuilder.swift"}
+{"package": "Wax", "completed": 175, "total": 306, "reused": 97, "bytes": 3793366}
+{"package": "Wax", "completed": 200, "total": 306, "reused": 109, "bytes": 3949795}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/christopherkarani/Wax/e4587f8cebb76aa92ece008253f13c66b756e68b/Sources/Wax/WaxSession.swift"}
+{"package": "Wax", "completed": 225, "total": 306, "reused": 127, "bytes": 4045291}
+{"package": "Wax", "completed": 250, "total": 306, "reused": 136, "bytes": 4215343}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/christopherkarani/Wax/e4587f8cebb76aa92ece008253f13c66b756e68b/Sources/WaxCLI/DaemonCompatibility.swift"}
+{"package": "Wax", "completed": 275, "total": 306, "reused": 154, "bytes": 4337254}
+{"package": "Wax", "completed": 300, "total": 306, "reused": 159, "bytes": 4601489}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/christopherkarani/Wax/e4587f8cebb76aa92ece008253f13c66b756e68b/Sources/WaxCore/Wax.swift"}
+{"package": "Wax", "completed": 306, "total": 306, "reused": 159, "bytes": 4789404}
+{"name": "Wax", "tag": "0.1.47", "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b", "root_tree": "653dd20a0d02944ffdcdb6e35d37a54449a64f2e", "original_url": "https://github.com/christopherkarani/Wax.git", "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/Wax", "complete": true, "files": 306, "bytes": 4789404, "reused": 159}
+{"transport_retry": 1, "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))", "url": "https://api.github.com/repos/christopherkarani/MetalANNS/git/trees/ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29?recursive=1"}
+{"package": "MetalANNS", "completed": 25, "total": 103, "reused": 19, "bytes": 136354}
+{"package": "MetalANNS", "completed": 50, "total": 103, "reused": 42, "bytes": 361653}
+{"package": "MetalANNS", "completed": 75, "total": 103, "reused": 61, "bytes": 586478}
+{"package": "MetalANNS", "completed": 100, "total": 103, "reused": 83, "bytes": 709408}
+{"package": "MetalANNS", "completed": 103, "total": 103, "reused": 83, "bytes": 765044}
+{"name": "MetalANNS", "tag": "0.3.0", "revision": "13960499c40abd3f06443eb80258e08a6b777da4", "root_tree": "ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29", "original_url": "https://github.com/christopherkarani/MetalANNS.git", "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS", "complete": true, "files": 103, "bytes": 765044, "reused": 83}

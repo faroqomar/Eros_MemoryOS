@@ -1,0 +1,9 @@
+{
+  "device": "iPhone18Pro / iOS27.2 Simulator",
+  "bundleID": "com.eros.memoryos.ailab",
+  "source": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/models/Qwen3-1.7B-Q4_K_M.gguf",
+  "destination": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Data/Application/E0B4DF46-8B7E-49FF-9AE1-BC12DE584061/Documents/EvaluationModels/Qwen3-1.7B-Q4_K_M.gguf",
+  "bytes": 1107409472,
+  "sha256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+  "method": "APFS clone and full destination SHA256 verification; filesystem asset sync only"
+}

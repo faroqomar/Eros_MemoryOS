@@ -1,0 +1,193 @@
+{
+  "configuration" : {
+    "displayName" : "MLX Swift LM · Qwen3-0.6B MLX 4-bit",
+    "id" : "mlx-qwen3-0.6b-4bit",
+    "provenance" : [
+      {
+        "modelAsset" : "mlx-community/Qwen3-0.6B-4bit@73e3e38d981303bc594367cd910ea6eb48349da8/model.safetensors",
+        "modelSHA256" : "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+        "notes" : "Model and tokenizer files require the separately verified local asset manifest.",
+        "revision" : "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+        "sourceURL" : "https://github.com/ml-explore/mlx-swift-lm"
+      }
+    ],
+    "scope" : "text"
+  },
+  "context" : {
+    "buildConfiguration" : "Release",
+    "conditions" : "Local MLX model, fresh chat per case, temperature 0, seed 42, Qwen3 thinking disabled. Host smoke only; no phone claims.",
+    "deviceModel" : "Mac host",
+    "environment" : "host",
+    "offlineConfirmed" : false,
+    "operatingSystem" : "Version 27.2.1 (Build 26B131)",
+    "purpose" : "smoke",
+    "sourceIdentity" : "temporary-common-source-graph",
+    "toolchain" : "Xcode 27.2 / Swift 6.4.2"
+  },
+  "formatVersion" : 2,
+  "generatedAt" : "2026-11-14T23:41:50Z",
+  "manualReviews" : [
+
+  ],
+  "results" : [
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "en-birthday",
+      "language" : "en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "ar-birthday",
+      "language" : "ar",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "iq-tentative",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "en-commitment",
+      "language" : "en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "mixed-deadline",
+      "language" : "ar-en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "name-ar-to-en",
+      "language" : "ar-en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "name-nickname",
+      "language" : "ar",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "name-disambiguation",
+      "language" : "en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "correction-history",
+      "language" : "en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "iq-negation",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "iq-sarcasm",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "missing-evidence",
+      "language" : "en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "source-injection",
+      "language" : "en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "ar-digits",
+      "language" : "ar",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    },
+    {
+      "generationIssue" : "A required local MLX model/tokenizer asset is missing.",
+      "generationStatus" : "blocked",
+      "id" : "unicode-name",
+      "language" : "ar-en",
+      "retrievalStatus" : "notApplicable",
+      "retrievedSourceIDs" : [
+
+      ]
+    }
+  ],
+  "settings" : {
+    "maximumOutputTokens" : 256,
+    "seed" : 42,
+    "temperature" : 0
+  },
+  "suiteID" : "memoryos-local-ai-fictional-v1",
+  "telemetry" : {
+
+  }
+}

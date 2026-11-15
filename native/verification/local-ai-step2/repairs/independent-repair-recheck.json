@@ -1,0 +1,103 @@
+{
+  "verdict": "PASS",
+  "scope": "Checklist group4 Step2 C40 fictional-data experiment on iOS27.2 Simulator; focused independent review of pre-Step3 repairs.",
+  "sourceIdentity": "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+  "findingsRemaining": [],
+  "independence": "Reviewer did not implement these repairs; no production-source changes or device driving by reviewer.",
+  "checks": {
+    "runtimeManifest": {
+      "files": 100,
+      "drift": [],
+      "unchangedBinaryResourceFiles": 67
+    },
+    "authoredSwiftSnapshot": {
+      "files": 44,
+      "drift": [],
+      "formatReceipt": "PASS"
+    },
+    "mainProjectExactHEAD": true,
+    "freshMainSourceOnlyResolution": {
+      "result": "PASS",
+      "experimentalPackagesCopied": false,
+      "binaryArtifactsCopied": false,
+      "resolvedPackage": "LocalMemory"
+    },
+    "mainSourceOnlyReleaseBuildAnalysis": "PASS by exact-source reuse of retained package-isolation/after receipt and log; reviewer reran resolution only.",
+    "cactusSourceGate": {
+      "independentTests": 24,
+      "result": "PASS",
+      "retainedPatchedSourceFilesVerified": 90,
+      "upstreamOrBinaryChanged": false
+    },
+    "corePresentationRelease": {
+      "independentFunctions": 32,
+      "core": 25,
+      "presentation": 7,
+      "result": "PASS",
+      "includesNewSanitizedRecoveryAssertion": true
+    },
+    "finalSimulatorUITests": {
+      "passed": 4,
+      "failed": 0,
+      "skipped": 0,
+      "expectedFailures": 0,
+      "unfilteredAccessibilityAuditsPassed": 2,
+      "auditDiagnostics": 0,
+      "issueSuppression": false,
+      "xcresultIndependentlyParsed": true
+    },
+    "finalReleaseStaticAnalysis": "PASS",
+    "installedAppSourceAndExecutable": "PASS by independent read-only container/plist/hash inspection",
+    "finalDarkCaptures": {
+      "verified": 7,
+      "viewed": 7,
+      "dimensions": [
+        440,
+        956
+      ],
+      "device": "iPhone18ProMax / iOS27.2 Simulator",
+      "largestEnglishAndArabicHeadingAndReachableRunObserved": true
+    },
+    "finalReports": {
+      "verified": 13,
+      "completedControlRetrievals": 180,
+      "explicitMLXUnavailable": 15,
+      "controlBatches": 2,
+      "isReplacementComparativeModelBenchmark": false
+    },
+    "reviewScratchCleanup": {
+      "coreScratchLogicalBytesRemoved": 86451404,
+      "resolutionScratchRemoved": true,
+      "uniqueLogsRetained": true
+    }
+  },
+  "closedFindings": [
+    "P1 original Capture project coupled to ignored experimental SDK artifacts",
+    "P2 Cactus source preparation accepted dirty pinned Git source without a receipt",
+    "Required Dynamic Type diagnostics in native collection headers",
+    "P3 generic adapter report error directed the user to a nonexistent diagnostic log"
+  ],
+  "limits": [
+    "No production provider/model adoption: existing Arabic/Iraqi answer-quality failures remain.",
+    "No physical-phone, battery/heat, iOS18 runtime, distribution or release claim.",
+    "This reviewer did not rerun unchanged SDK contracts or model inference or freshly hash external weight files; prior source-identified evidence is reused because adapters, kernels, fixtures, model settings, declared asset identities and67binary/resource files remain unchanged in the reviewed repairs.",
+    "Existing Wax dSYM/debug-map warnings remain a packaging/debug-symbol limitation; no distribution-readiness claim.",
+    "Intermediate1b978captures and failed/flaky UI runs remain diagnostic history; final evidence identifies27da.",
+    "No Step3/Git delivery performed or inferred."
+  ],
+  "evidenceHashes": {
+    "source-hashes.json": "d9143f1cdafb77506c3221252b3c70bc6b8514dd7944540ab8cd0fed156ee619",
+    "verification-source-hashes.json": "7330609c12ac88d3aaedb0174a2ec5ca7174b626cfe7f188d8d5a75163050fdf",
+    "independent-final-integrity.json": "52203b2fc8bba055e569f97b180f6e7748b328ea73e3d8de447b7b173062197d",
+    "independent-installed-identity.json": "c71381c343ab9f0cab30c6359bd3c2ba1f7424b2535ed5944be1ccec6d30748b",
+    "independent-main-resolution.json": "85386b841cd2f81c9d38564e76b5dcbc243ba17cf3fc3715cd16ca99000f87d0",
+    "independent-main-resolution.log": "962cd128452ef66fab3f7db243927b7f8bdad9d7040023bc76d17b2e6c07768c",
+    "independent-cactus-source-tests.log": "edfdfdb4c3097d23ecad3666bb7ae086ca92eb57c882d9a3d613bcd2afce263d",
+    "independent-final-core-tests.log": "267d2129e92012b7a395e4513fca14a49d40a73ad001d9da305b025858b7828d",
+    "independent-xcresult-summary.json": "a164550ae6dd39c92eed81626de314fc7a94f3e16a79a0f8e032f2a0d4af7560",
+    "independent-scratch-cleanup.json": "5f7eb2597c2816eee8286605953f3a71dfdae302c24de02d9f98fd253991d121",
+    "accessibility/final-source-ui.log": "f275f621c7b0587a3cb5078509a9b3d488a0f0ea52fa21aa4190e00e6b932cf9",
+    "accessibility/final-source-analysis.log": "e44659bec669e590878d4c102fa01927577f2df7dbb78d2d74d0a77fbc132410",
+    "screenshots/manifest.json": "303a6a9287aa8927c39105b395f0b3951bb24136f2721714bcada725ac0b6762"
+  }
+}

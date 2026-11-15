@@ -1,0 +1,14 @@
+{
+  "identity": "EventSource",
+  "origin": "https://github.com/mattt/EventSource.git",
+  "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1",
+  "rootTreeSHA1": "baf8b7bbc5db310c8c934a62abcfaa384c620c7d",
+  "genuineShallowBoundary": true,
+  "promisor": false,
+  "sourcePatched": false,
+  "archiveSHA256": "8164e32dbbe0e4e055cd6d63d7a83447c01971eb3bb33574d5016ecc0411e95c",
+  "archiveBytes": 28297,
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/EventSource-24732f58",
+  "fsck": "",
+  "canonicalResolutionVerified": false
+}

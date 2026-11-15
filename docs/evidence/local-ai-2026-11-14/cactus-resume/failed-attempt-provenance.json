@@ -1,0 +1,20 @@
+[
+  {
+    "originalPath": "sdk-contracts-network-denied-final.log",
+    "retainedPath": "failed-direct-bundle-invocation.log",
+    "sha256": "ea9874bb52d86ea774c1f91ecf64141713be8a9342c014c6623ad5a66a08c1cd",
+    "status": "failed attempt; not pass evidence"
+  },
+  {
+    "originalPath": "sdk-contract-tests-network-denied.log",
+    "retainedPath": "failed-nested-swiftpm-sandbox.log",
+    "sha256": "fc8ce4d6dfec1359bd73788d386f6312ffd90987a2890d611d859501055d0ba2",
+    "status": "failed attempt; not pass evidence"
+  },
+  {
+    "originalPath": "sdk-contract-tests.log",
+    "retainedPath": "failed-sdk-contract-compile.log",
+    "sha256": "3713e377f42e78572aeeea741841e61c1b13562988a464cfeb21f55a469f124b",
+    "status": "failed attempt; not pass evidence"
+  }
+]

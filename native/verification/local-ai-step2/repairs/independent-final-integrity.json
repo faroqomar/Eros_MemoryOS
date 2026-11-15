@@ -1,0 +1,41 @@
+{
+  "runtimeFiles": 100,
+  "runtimeIdentity": "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+  "runtimeDrift": [],
+  "swiftSourcesVerified": 44,
+  "capturesVerified": 7,
+  "captureDimensions": [
+    440,
+    956
+  ],
+  "reportsVerified": 13,
+  "reportCounts": {
+    "retrievalCompleted": 180,
+    "generationBlocked": 15
+  },
+  "controlBatches": {
+    "7C1F3F6A-46AE-4E27-BD23-7860A6A6BB29": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "260EA354-84FC-4E87-B527-59A1AF90A206": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "allBinaryResourcePathsUnchanged": true,
+  "unchangedBinaryResourceFiles": 67,
+  "uiAuditSuppression": false,
+  "uiTestSourceSHA256": "1c8d6e008e96eb3da76a22362be06bcc4e7b8b75c550e662c415697f539975a4",
+  "mainProjectExactHEAD": true,
+  "sourceGateSHA256": "ad3e86998513b4359468e92f2f914d49e4cc82b1c7e7e0cadc38cef1369fa2f2",
+  "sourceGateTestsSHA256": "46a1cd8075a77a9b0da7f28fca6e8a3b370739ad8d8984bfa3e4a5fbdd6a7efd"
+}

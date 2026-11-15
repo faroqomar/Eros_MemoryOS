@@ -1,0 +1,339 @@
+{
+  "configuration" : {
+    "displayName" : "Cactus-based memory",
+    "id" : "cactus",
+    "provenance" : [
+      {
+        "notes" : "Compatible v1.14 local-only CPU build; explicit last-token/L2 pooling. Four workers, top3, threshold0.35. See reproducible patch and build receipt.",
+        "revision" : "40a7123b0788f5b38c5fe0daa0d909b4286fe773",
+        "sourceURL" : "https://github.com/cactus-compute/engine"
+      },
+      {
+        "modelAsset" : "weights/qwen3-embedding-0.6b-int4.zip",
+        "modelSHA256" : "22ff768a984fe931ac463b02cedce2ebd65172c6877d210bd5dc6d058fffbd7b",
+        "notes" : "Archive and extracted file hashes must verify before local embedding.",
+        "revision" : "0df64898a34c75c209b9882110cd6f9aeb7115cd",
+        "sourceURL" : "https://huggingface.co/Cactus-Compute/Qwen3-Embedding-0.6B"
+      }
+    ],
+    "scope" : "retrieval"
+  },
+  "context" : {
+    "batchID" : "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+    "buildConfiguration" : "Release",
+    "conditions" : "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+    "deviceModel" : "iPhone19,2",
+    "environment" : "simulator",
+    "offlineConfirmed" : false,
+    "operatingSystem" : "Version 27.2 (Build 24B8117)",
+    "purpose" : "comparison",
+    "repetition" : 4,
+    "repetitionCount" : 6,
+    "sourceIdentity" : "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+    "toolchain" : "Xcode 27.2 / Swift 6.4.2"
+  },
+  "formatVersion" : 2,
+  "generatedAt" : "2026-11-15T00:16:25Z",
+  "indexBuildSeconds" : 1.037878167,
+  "manualReviews" : [
+
+  ],
+  "results" : [
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "en-birthday",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-birthday" : 0.47607421875,
+        "en-birthday" : 0.6484375,
+        "name-alias" : 0.49072265625
+      },
+      "retrievedSourceIDs" : [
+        "en-birthday",
+        "name-alias",
+        "ar-birthday"
+      ],
+      "searchSeconds" : 0.068782041,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-birthday",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-birthday" : 0.63720703125,
+        "en-birthday" : 0.5087890625,
+        "mixed-deadline" : 0.439453125
+      },
+      "retrievedSourceIDs" : [
+        "ar-birthday",
+        "en-birthday",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.078201917,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-tentative",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-tentative" : 0.7490234375,
+        "mixed-deadline" : 0.5556640625,
+        "same-name" : 0.5224609375
+      },
+      "retrievedSourceIDs" : [
+        "iq-tentative",
+        "mixed-deadline",
+        "same-name"
+      ],
+      "searchSeconds" : 0.104324542,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "en-commitment",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-correction" : 0.57177734375,
+        "en-commitment" : 0.6396484375,
+        "mixed-deadline" : 0.55810546875
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment",
+        "date-correction",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.0701275,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "mixed-deadline",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 0.57373046875,
+        "mixed-deadline" : 0.71533203125,
+        "untrusted-import" : 0.6552734375
+      },
+      "retrievedSourceIDs" : [
+        "mixed-deadline",
+        "untrusted-import",
+        "en-birthday"
+      ],
+      "searchSeconds" : 0.087243041,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-ar-to-en",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 0.79052734375,
+        "same-name" : 0.5693359375,
+        "unicode-name" : 0.521484375
+      },
+      "retrievedSourceIDs" : [
+        "name-alias",
+        "same-name",
+        "unicode-name"
+      ],
+      "searchSeconds" : 0.072957583,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-nickname",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 0.6474609375,
+        "same-name" : 0.5166015625,
+        "unicode-name" : 0.47509765625
+      },
+      "retrievedSourceIDs" : [
+        "name-alias",
+        "same-name",
+        "unicode-name"
+      ],
+      "searchSeconds" : 0.061294833,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-disambiguation",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-sarcasm" : 0.489013671875,
+        "name-alias" : 0.5888671875,
+        "same-name" : 0.6787109375
+      },
+      "retrievedSourceIDs" : [
+        "same-name",
+        "name-alias",
+        "iq-sarcasm"
+      ],
+      "searchSeconds" : 0.073189667,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "correction-history",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-correction" : 0.8623046875,
+        "date-original" : 0.861328125,
+        "mixed-deadline" : 0.55859375
+      },
+      "retrievedSourceIDs" : [
+        "date-correction",
+        "date-original",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.089013083,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-negation",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-negation" : 0.7275390625,
+        "iq-sarcasm" : 0.52978515625,
+        "mixed-deadline" : 0.5380859375
+      },
+      "retrievedSourceIDs" : [
+        "iq-negation",
+        "mixed-deadline",
+        "iq-sarcasm"
+      ],
+      "searchSeconds" : 0.1032035,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-sarcasm",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-negation" : 0.50244140625,
+        "iq-sarcasm" : 0.72314453125,
+        "same-name" : 0.5419921875
+      },
+      "retrievedSourceIDs" : [
+        "iq-sarcasm",
+        "same-name",
+        "iq-negation"
+      ],
+      "searchSeconds" : 0.110667833,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "missing-evidence",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "mixed-deadline" : 0.5234375,
+        "name-alias" : 0.5615234375,
+        "same-name" : 0.51513671875
+      },
+      "retrievedSourceIDs" : [
+        "name-alias",
+        "mixed-deadline",
+        "same-name"
+      ],
+      "searchSeconds" : 0.078428833,
+      "sourceRecall" : 0
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "source-injection",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 0.5498046875,
+        "mixed-deadline" : 0.53564453125,
+        "untrusted-import" : 0.767578125
+      },
+      "retrievedSourceIDs" : [
+        "untrusted-import",
+        "en-birthday",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.093458625,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-digits",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-digits" : 0.732421875,
+        "mixed-deadline" : 0.496826171875,
+        "untrusted-import" : 0.48681640625
+      },
+      "retrievedSourceIDs" : [
+        "ar-digits",
+        "mixed-deadline",
+        "untrusted-import"
+      ],
+      "searchSeconds" : 0.0753015,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "unicode-name",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 0.513671875,
+        "same-name" : 0.4970703125,
+        "unicode-name" : 0.744140625
+      },
+      "retrievedSourceIDs" : [
+        "unicode-name",
+        "name-alias",
+        "same-name"
+      ],
+      "searchSeconds" : 0.081360792,
+      "sourceRecall" : 1
+    }
+  ],
+  "settings" : {
+    "maximumOutputTokens" : 256,
+    "seed" : 42,
+    "temperature" : 0
+  },
+  "suiteID" : "memoryos-local-ai-fictional-v1",
+  "telemetry" : {
+    "measurementMethod" : "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured.",
+    "peakMemoryBytes" : 102419336,
+    "storageBytes" : 428548677
+  }
+}

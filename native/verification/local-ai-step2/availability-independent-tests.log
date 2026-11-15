@@ -1,0 +1,13 @@
+Building for production...
+[Using on-disk description]
+[1 / 4]
+Build complete! (0.45 secs)
+Test Suite 'All tests' started at 2026-11-15 04:58:05.768.
+Test Suite 'All tests' passed at 2026-11-15 04:58:05.778.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.010) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test unavailableCandidateKeepsEveryCaseBlockedWithoutGeneratedValues() started.
+✔ Test unavailableCandidateKeepsEveryCaseBlockedWithoutGeneratedValues() passed after 0.001 seconds.
+✔ Test run with 1 test in 0 suites passed after 0.001 seconds.

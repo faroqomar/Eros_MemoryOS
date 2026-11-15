@@ -1,0 +1,470 @@
+{
+  "cLanguageStandard" : null,
+  "cxxLanguageStandard" : null,
+  "defaultLocalization" : null,
+  "dependencies" : [
+    {
+      "sourceControl" : [
+        {
+          "identity" : "eventsource",
+          "location" : {
+            "remote" : [
+              {
+                "urlString" : "https://github.com/mattt/EventSource.git"
+              }
+            ]
+          },
+          "productFilter" : null,
+          "requirement" : {
+            "range" : [
+              {
+                "lowerBound" : "1.0.0",
+                "upperBound" : "2.0.0"
+              }
+            ]
+          },
+          "traits" : [
+            {
+              "name" : "default"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceControl" : [
+        {
+          "identity" : "swift-crypto",
+          "location" : {
+            "remote" : [
+              {
+                "urlString" : "https://github.com/apple/swift-crypto.git"
+              }
+            ]
+          },
+          "productFilter" : null,
+          "requirement" : {
+            "range" : [
+              {
+                "lowerBound" : "1.0.0",
+                "upperBound" : "5.0.0"
+              }
+            ]
+          },
+          "traits" : [
+            {
+              "name" : "default"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceControl" : [
+        {
+          "identity" : "swift-xet",
+          "location" : {
+            "remote" : [
+              {
+                "urlString" : "https://github.com/huggingface/swift-xet.git"
+              }
+            ]
+          },
+          "productFilter" : null,
+          "requirement" : {
+            "range" : [
+              {
+                "lowerBound" : "1.0.0",
+                "upperBound" : "2.0.0"
+              }
+            ]
+          },
+          "traits" : [
+            {
+              "name" : "default"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceControl" : [
+        {
+          "identity" : "replay",
+          "location" : {
+            "remote" : [
+              {
+                "urlString" : "https://github.com/mattt/Replay.git"
+              }
+            ]
+          },
+          "productFilter" : null,
+          "requirement" : {
+            "range" : [
+              {
+                "lowerBound" : "0.6.0",
+                "upperBound" : "1.0.0"
+              }
+            ]
+          },
+          "traits" : [
+            {
+              "name" : "AsyncHTTPClient"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name" : "swift-huggingface",
+  "packageKind" : {
+    "root" : [
+      "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-huggingface"
+    ]
+  },
+  "pkgConfig" : null,
+  "platforms" : [
+    {
+      "options" : [
+
+      ],
+      "platformName" : "macos",
+      "version" : "13.0"
+    },
+    {
+      "options" : [
+
+      ],
+      "platformName" : "maccatalyst",
+      "version" : "16.0"
+    },
+    {
+      "options" : [
+
+      ],
+      "platformName" : "ios",
+      "version" : "16.0"
+    },
+    {
+      "options" : [
+
+      ],
+      "platformName" : "watchos",
+      "version" : "9.0"
+    },
+    {
+      "options" : [
+
+      ],
+      "platformName" : "tvos",
+      "version" : "16.0"
+    },
+    {
+      "options" : [
+
+      ],
+      "platformName" : "visionos",
+      "version" : "1.0"
+    }
+  ],
+  "products" : [
+    {
+      "name" : "HuggingFace",
+      "settings" : [
+
+      ],
+      "targets" : [
+        "HuggingFace"
+      ],
+      "type" : {
+        "library" : [
+          "automatic"
+        ]
+      }
+    },
+    {
+      "name" : "HuggingFaceOAuth",
+      "settings" : [
+
+      ],
+      "targets" : [
+        "HuggingFaceOAuth"
+      ],
+      "type" : {
+        "library" : [
+          "automatic"
+        ]
+      }
+    }
+  ],
+  "providers" : null,
+  "swiftLanguageVersions" : null,
+  "targets" : [
+    {
+      "dependencies" : [
+        {
+          "product" : [
+            "EventSource",
+            "EventSource",
+            null,
+            null
+          ]
+        },
+        {
+          "product" : [
+            "Crypto",
+            "swift-crypto",
+            null,
+            null
+          ]
+        },
+        {
+          "product" : [
+            "Xet",
+            "swift-xet",
+            null,
+            {
+              "platformNames" : [
+
+              ],
+              "traits" : [
+                "Xet"
+              ]
+            }
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "HuggingFace",
+      "packageAccess" : true,
+      "path" : "Sources/HuggingFace",
+      "resources" : [
+
+      ],
+      "settings" : [
+        {
+          "condition" : {
+            "platformNames" : [
+
+            ],
+            "traits" : [
+              "Xet"
+            ]
+          },
+          "kind" : {
+            "define" : {
+              "_0" : "HUGGINGFACE_ENABLE_XET"
+            }
+          },
+          "tool" : "swift"
+        }
+      ],
+      "type" : "regular"
+    },
+    {
+      "dependencies" : [
+        {
+          "byName" : [
+            "HuggingFace",
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "HuggingFaceOAuth",
+      "packageAccess" : true,
+      "path" : "Sources/HuggingFaceOAuth",
+      "resources" : [
+
+      ],
+      "settings" : [
+
+      ],
+      "type" : "regular"
+    },
+    {
+      "dependencies" : [
+        {
+          "byName" : [
+            "HuggingFace",
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "HuggingFaceTests",
+      "packageAccess" : true,
+      "resources" : [
+
+      ],
+      "settings" : [
+        {
+          "condition" : {
+            "platformNames" : [
+
+            ],
+            "traits" : [
+              "Xet"
+            ]
+          },
+          "kind" : {
+            "define" : {
+              "_0" : "HUGGINGFACE_ENABLE_XET"
+            }
+          },
+          "tool" : "swift"
+        }
+      ],
+      "type" : "test"
+    },
+    {
+      "dependencies" : [
+        {
+          "byName" : [
+            "HuggingFace",
+            null
+          ]
+        },
+        {
+          "byName" : [
+            "HuggingFaceOAuth",
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "HuggingFaceOAuthTests",
+      "packageAccess" : true,
+      "resources" : [
+
+      ],
+      "settings" : [
+
+      ],
+      "type" : "test"
+    },
+    {
+      "dependencies" : [
+        {
+          "byName" : [
+            "HuggingFace",
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "HuggingFaceSwift5Tests",
+      "packageAccess" : true,
+      "resources" : [
+
+      ],
+      "settings" : [
+        {
+          "kind" : {
+            "swiftLanguageMode" : {
+              "_0" : "5"
+            }
+          },
+          "tool" : "swift"
+        }
+      ],
+      "type" : "test"
+    },
+    {
+      "dependencies" : [
+        {
+          "byName" : [
+            "HuggingFace",
+            null
+          ]
+        },
+        {
+          "product" : [
+            "Replay",
+            "Replay",
+            null,
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+        "README.md"
+      ],
+      "name" : "HubReplayTests",
+      "packageAccess" : true,
+      "resources" : [
+        {
+          "path" : "Replays",
+          "rule" : {
+            "copy" : {
+
+            }
+          }
+        }
+      ],
+      "settings" : [
+
+      ],
+      "type" : "test"
+    },
+    {
+      "dependencies" : [
+        {
+          "byName" : [
+            "HuggingFace",
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "HubBenchmarks",
+      "packageAccess" : true,
+      "resources" : [
+
+      ],
+      "settings" : [
+        {
+          "condition" : {
+            "platformNames" : [
+
+            ],
+            "traits" : [
+              "Xet"
+            ]
+          },
+          "kind" : {
+            "define" : {
+              "_0" : "HUGGINGFACE_ENABLE_XET"
+            }
+          },
+          "tool" : "swift"
+        }
+      ],
+      "type" : "test"
+    }
+  ],
+  "toolsVersion" : {
+    "_version" : "6.1.0"
+  },
+  "traits" : [
+    {
+      "description" : "Enable Xet transport support.",
+      "enabledTraits" : [
+
+      ],
+      "name" : "Xet"
+    }
+  ]
+}

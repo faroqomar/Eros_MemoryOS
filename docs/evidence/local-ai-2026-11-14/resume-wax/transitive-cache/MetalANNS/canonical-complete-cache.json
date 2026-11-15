@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "revision": "13960499c40abd3f06443eb80258e08a6b777da4",
+  "root_tree": "ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29",
+  "original_url": "https://github.com/christopherkarani/MetalANNS.git",
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/MetalANNS-3408e04a",
+  "verified_blobs": 199,
+  "verified_trees": 20,
+  "blob_bytes": 1483141,
+  "promisor": false,
+  "git_filter": null,
+  "local_server": false,
+  "transport_wrapper": false
+}

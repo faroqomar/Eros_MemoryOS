@@ -1,0 +1,151 @@
+{
+  "repository": "huggingface/swift-jinja",
+  "revision": "66042420a9225c98ea9382d705e2285769dfdbe5",
+  "rootTreeSHA1": "ac32a6cd7b42e4cc354ead9d19c972f673b2a085",
+  "sourceRoots": [
+    "Sources"
+  ],
+  "temporaryIntegrationOnly": true,
+  "canonicalResolutionVerified": false,
+  "gitlinks": [],
+  "files": [
+    {
+      "path": ".spi.yml",
+      "gitBlobSHA1": "e0a0a1eee2429be38f080e076f342f28507fd1f0",
+      "sha256": "d9cf5acb60fe23c094acb37e3ebcc0bf9f4bcfc5d87fa325eac6d6d6231aa4cb",
+      "bytes": 68
+    },
+    {
+      "path": ".swift-format",
+      "gitBlobSHA1": "fd02f707f96db196721f42d0a5fab3fccce1b10f",
+      "sha256": "13069d47d0ecbe914c578795d1bf56c703dc07dbcf48794e8d94888ca4d22cdb",
+      "bytes": 333
+    },
+    {
+      "path": ".gitignore",
+      "gitBlobSHA1": "596c631e7b034c7f5c790111aa31db3ddc87f6a0",
+      "sha256": "4e6b40be162014d07085527d493a55e1f40cb4317f5071b57d2377e3ede13859",
+      "bytes": 2321
+    },
+    {
+      "path": "LICENSE",
+      "gitBlobSHA1": "e524e5fbe7f233fca0852ba1554c9326a207954e",
+      "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+      "bytes": 11347
+    },
+    {
+      "path": "Package.swift",
+      "gitBlobSHA1": "fed18b2b1f969cf0ca234b8059509a44489ca564",
+      "sha256": "c7ad37066329649ad87577b9b8e48c2dc3f3f667ca39aa5023d97a928449f18f",
+      "bytes": 1140
+    },
+    {
+      "path": "Package.resolved",
+      "gitBlobSHA1": "cb9509a403461109d8098368562950662cd1049b",
+      "sha256": "c8038ced95dd54a11e6c3d0ec8574a1d22ba9e6111d610fb722e5b8be5f745c4",
+      "bytes": 316
+    },
+    {
+      "path": "Sources/Jinja/AST.swift",
+      "gitBlobSHA1": "a8a674fb5be34c7205a3a7fc8fbd65b9bec12e65",
+      "sha256": "c85e3ebddacbd658cb85fb04558a2386364568e37b2bc880df340e7523bd0446",
+      "bytes": 5930
+    },
+    {
+      "path": "Sources/Jinja/Error.swift",
+      "gitBlobSHA1": "fd08188d777a1c38dbbf78169b30bc570d24ac04",
+      "sha256": "0da7f0b94887cc93dca513b8be68d150abd1c96d57f82c2d0554cc06e133434b",
+      "bytes": 780
+    },
+    {
+      "path": "README.md",
+      "gitBlobSHA1": "e833b3b47cf02768bf238f802221e5ecb62cad8d",
+      "sha256": "f912e6cb4970778b4c07e24e835222a10fb35c444785627cd015b9dc49f3daec",
+      "bytes": 16247
+    },
+    {
+      "path": "Sources/Jinja/Globals.swift",
+      "gitBlobSHA1": "c579fc5db06cd0e9d94d58f9d286f6d3346cc351",
+      "sha256": "96b80ca27cdda7b1886151bfc82618df08e051c15452949078dc6993137d33cb",
+      "bytes": 16225
+    },
+    {
+      "path": "Sources/Jinja/Filters.swift",
+      "gitBlobSHA1": "1be7b57c895e0e42c0edca4d9c4cdc52b698be01",
+      "sha256": "3bab326a07ccb77fa100ff58219253c3a97ddce5c44b458fb640b2dfecf0543c",
+      "bytes": 79199
+    },
+    {
+      "path": "Sources/Jinja/JSON.swift",
+      "gitBlobSHA1": "64fd2b63bac7939b3c1aa72255be9d830e8230e8",
+      "sha256": "00e95b80fc181163c1a59ebde41a3803696728ebb42e3049673a0ade00481de9",
+      "bytes": 10553
+    },
+    {
+      "path": "Sources/Jinja/Lexer.swift",
+      "gitBlobSHA1": "0fe9eb115ad05c0859191d15d1e4b8c9242c6861",
+      "sha256": "82a5ad6880254f3ba638d1981891888351bdaedad42781b50a51437ef54be46a",
+      "bytes": 19069
+    },
+    {
+      "path": "Sources/Jinja/Macro.swift",
+      "gitBlobSHA1": "132ea9f06fc255bad43688ba33da89df91af4d34",
+      "sha256": "422749b19691f9594504fec5e886826548b40eb6e0a6c66611c1e6fc2ddee6bc",
+      "bytes": 2702
+    },
+    {
+      "path": "Sources/Jinja/Interpreter.swift",
+      "gitBlobSHA1": "4b3223c6be84bba81d89515a3b27157d244122fe",
+      "sha256": "8e4b36ef52f8f1197b410368170cc04dcb270b68065b3c2305a9520d6b6ca94d",
+      "bytes": 45641
+    },
+    {
+      "path": "Sources/Jinja/Namespace.swift",
+      "gitBlobSHA1": "15f8bd2ebc823d50776d537c25f6190a404718da",
+      "sha256": "f8c9e1c867f8172eec8cad99b46c09718c1fd298c5495d8f80c4c53c6de67ab3",
+      "bytes": 1701
+    },
+    {
+      "path": "Sources/Jinja/Parser.swift",
+      "gitBlobSHA1": "4c99d0252366d8e798baba707979ae5b88ed215c",
+      "sha256": "4ba58530a78d26529f89ad11696b7cff94120877da9646f118599b742dc5056c",
+      "bytes": 31540
+    },
+    {
+      "path": "Sources/Jinja/PropertyMembers.swift",
+      "gitBlobSHA1": "1d2f996e70929ea2236662f7a0855b8480809ada",
+      "sha256": "7e0d6c3945a42eb5bade55190703c0809fa35cca3a3ae4381ff94da7f565ae22",
+      "bytes": 22999
+    },
+    {
+      "path": "Sources/Jinja/Template.swift",
+      "gitBlobSHA1": "ae27869f3ebb0811f88654a825b125817ea65b56",
+      "sha256": "95354ee5c1195faaca670ee56340cb5e2404970b6752631f8952c6886fa77f9c",
+      "bytes": 4426
+    },
+    {
+      "path": "Sources/Jinja/Token.swift",
+      "gitBlobSHA1": "da4f0b9800cfb9385d1bfead9d35c3fc2c98ff02",
+      "sha256": "cfd33800ca59ca229481bcd1d92d3f360c8bdcea5a0a3ea4ead4a9df1f770210",
+      "bytes": 5958
+    },
+    {
+      "path": "Sources/Jinja/Tests.swift",
+      "gitBlobSHA1": "8f22e87e2adb5d8e1c9bf07f344f099c54e24e98",
+      "sha256": "e7bba9b59b444008f773053dd58ddec7ae2400ea70a243488704201045c9bd2d",
+      "bytes": 17891
+    },
+    {
+      "path": "Sources/Jinja/Utilities.swift",
+      "gitBlobSHA1": "be86b815e75c230d460625b0a9e74beee68488a1",
+      "sha256": "fb0ec692ec23b846eb6a8181ab6377014833f0bd14888798889e06174a83c7a0",
+      "bytes": 6553
+    },
+    {
+      "path": "Sources/Jinja/Value.swift",
+      "gitBlobSHA1": "f02b367a9b86e30d2735e197666ac766f5f54392",
+      "sha256": "bd4e5f02ba4b64f52fe4f428078010747dcf3f251a64a4414b069d4afdf1e34f",
+      "bytes": 37148
+    }
+  ]
+}

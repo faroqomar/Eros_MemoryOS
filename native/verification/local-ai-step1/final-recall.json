@@ -1,0 +1,976 @@
+{
+  "results": [
+    {
+      "id": "fb00d7fa-1591-4a6f-a3e0-b97a39fc2998",
+      "text": "As of 2026-11-14, Checklist 3 Step 2 is blocked after independent review and repairs. Physical iPhone protection/performance, the iOS 18 runtime, and unresolved accessibility checks block passage; Step 3 draft PR #3 is open under C37 but merge remains blocked. This document is a snapshot and does not prove implementation. | When: 2026-11-14 | Involving: memoryos project; independent review | These unresolved verification constraints prevent checklist progression and PR merge.",
+      "type": "world",
+      "entities": [
+        "C37",
+        "memoryos",
+        "PR #3",
+        "Checklist 3",
+        "iPhone",
+        "Step 2",
+        "Step 3",
+        "accessibility",
+        "iOS 18.0"
+      ],
+      "context": "Authoritative project source docs/tasks/2026-11-14-local-storage-text-capture.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.040000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.040000+00:00",
+      "mentioned_at": "2026-11-14T20:01:30.206636+00:00",
+      "document_id": "repo:docs/tasks/2026-11-14-local-storage-text-capture.md",
+      "metadata": {
+        "sha256": "0e98dd5add38b09ca253bf1f8ee34b78867f214136b6d8f0a59fe8c56e03068b",
+        "source_path": "docs/tasks/2026-11-14-local-storage-text-capture.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/tasks/2026-11-14-local-storage-text-capture.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.099524878393715,
+        "reranker": null,
+        "semantic": 0.8478097481557505,
+        "keyword": 1.2000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "8e139b8c-8a6e-4cc7-a604-9805bf9cf8b8",
+      "text": "C38 authorizes Step 1 implementation and builder checks for local AI comparisons, but does not select Wax, Cactus, llama.cpp, MLX, or a production model. The task record separates the implemented lexical control/core/lab and prepared SDK adapter source from blocked dependency/model checks and unavailable target-phone measurements; all six group 4 outcomes and component selection remain open. | When: November 14, 2026 | Involving: Project memoryos | The document is a snapshot of project status and explicitly does not establish implementation verification or target-phone results.",
+      "type": "world",
+      "entities": [
+        "Cactus",
+        "MLX",
+        "local AI",
+        "C38",
+        "memoryos",
+        "Group 4",
+        "Wax",
+        "llama.cpp"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-14T20:47:23.136577+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "4a9681010acc4203a35b6cdd810d50bedf110f04eaf7c3893498251b6fbaabb3",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_9",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0962152715466567,
+        "reranker": null,
+        "semantic": 0.9037003901272763,
+        "keyword": 2.299999952316284
+      },
+      "attachments": null
+    },
+    {
+      "id": "db28ce82-72c0-42ad-ac6f-eec1e7abd021",
+      "text": "Subagents are allowed in Steps 1, 2, and 3 for result quality and dependency work; Step 3 must merge after review and push; and screenshots of changes and additions are required at every step. This replaces the earlier fixed two-agent limit and separate routine merge confirmation, while required verification and product/design acceptance remain in force. The current app's blocked checks are not claimed to have passed, and no app release is authorized. Source: docs/reference/source-register.md. | When: November 14, 2026 | Involving: Project owner; subagents and project agents | To support dependency work and improve implementation outcomes while preserving review and verification requirements.",
+      "type": "world",
+      "entities": [
+        "AGENTS.md",
+        "Step 1",
+        "memoryos",
+        "Step 2",
+        "Step 3"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-14T17:54:48.309353+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "5a7ecda5d72d8c496182be1f619d253216741c9ade8cba781c90aa917ac2765d",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_6",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0929056649528948,
+        "reranker": null,
+        "semantic": 0.8511428744282051,
+        "keyword": 1.100000023841858
+      },
+      "attachments": null
+    },
+    {
+      "id": "81d26570-ba01-42fb-a28b-aa5844208176",
+      "text": "The owner authorized Step 1 of checklist group 2 for the memoryos initiative: implement a complete SwiftUI sample-data demo covering Capture, hidden sidebar, People/details, Projects/plans/ideas, Birthdays/reminder previews, BrainMap linked exploration, and Arabic/English. The demo must preserve C20 composition and C21 dark appearance, use fictional session-only data without providers or scheduling, run builder checks and simulator review, and attempt a physical iPhone launch only if a device is available. | When: November 14, 2026 | Involving: The owner; memoryos initiative | Independent verification and push/merge are separate steps, and new screen layouts require owner visual review.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "capture",
+        "BrainMap",
+        "birthdays",
+        "English",
+        "C20",
+        "Arabic",
+        "memoryos",
+        "iPhone",
+        "C21",
+        "projects",
+        "people"
+      ],
+      "context": "initiative marker for [[page:kp-2e49f86557004e368780d0a54ddc30bd]]",
+      "occurred_start": "2026-11-14T00:00:00+00:00",
+      "occurred_end": "2026-11-14T23:59:59+00:00",
+      "mentioned_at": "2026-11-14T13:46:29.671424+00:00",
+      "document_id": "initiative-marker-complete-native-interface-demo-step-1-1794663988337",
+      "metadata": {
+        "relatedPageId": "kp-2e49f86557004e368780d0a54ddc30bd"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-complete-native-interface-demo-step-1-1794663988337_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0895960581702104,
+        "reranker": null,
+        "semantic": 0.8470686330517723,
+        "keyword": 0.6000000238418579
+      },
+      "attachments": null
+    },
+    {
+      "id": "6bd64749-764b-40a3-a064-91e3d139fe0f",
+      "text": "Project memoryos Group 4 local AI phone evaluation is only partially implemented: Step 1 has no pass, SDK/model integration and physical-device comparison are blocked, and component selection remains open pending complete physical-phone evidence. Source: docs/tasks/2026-11-14-local-ai-phone-evaluation.md. | When: November 14, 2026 | Involving: Project memoryos | The document is an authoritative snapshot of status and uncertainty, not proof of implementation.",
+      "type": "world",
+      "entities": [
+        "memoryos",
+        "local AI phone evaluation",
+        "Group 4",
+        "docs/tasks/2026-11-14-local-ai-phone-evaluation.md"
+      ],
+      "context": "Authoritative project source docs/tasks/2026-11-14-local-ai-phone-evaluation.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T20:40:42.350045+00:00",
+      "occurred_end": "2026-11-14T20:40:42.350045+00:00",
+      "mentioned_at": "2026-11-14T20:40:42.350045+00:00",
+      "document_id": "repo:docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "metadata": {
+        "sha256": "1693f61f223840220f952c1720d93c4d2b9efacb5a4e9ee1d3be7ad874fc59a5",
+        "source_path": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/tasks/2026-11-14-local-ai-phone-evaluation.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.08675287752953,
+        "reranker": null,
+        "semantic": 0.8892101910474958,
+        "keyword": 2.1000001430511475
+      },
+      "attachments": null
+    },
+    {
+      "id": "9949ba6b-55a1-460b-8616-eed3c4cd810b",
+      "text": "On November 14, 2026, the memoryos evaluation update recorded that checklist group 4 Step 1 had started; the keyword control was implemented, while the Wax adapter remained blocked on dependency resolution/compilation and contract work. Cactus still required a supported, reviewed native configuration, and no target-phone experiment or final selection had passed; this snapshot is not proof of implementation. | When: Saturday, November 14, 2026 | Involving: memoryos project owner | To record the current status and uncertainty of the local-AI phone evaluation.",
+      "type": "world",
+      "entities": [
+        "Cactus",
+        "memoryos",
+        "target-phone experiment",
+        "keyword control",
+        "checklist group 4 Step 1",
+        "Wax adapter",
+        "docs/decisions/runtime-memory-options.md",
+        "final selection"
+      ],
+      "context": "Authoritative project source docs/decisions/runtime-memory-options.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00+00:00",
+      "occurred_end": "2026-11-14T23:59:59+00:00",
+      "mentioned_at": "2026-11-14T20:38:31.158229+00:00",
+      "document_id": "repo:docs/decisions/runtime-memory-options.md",
+      "metadata": {
+        "sha256": "f5e894057f642c6f6288d369d493bbc96f1599e56ead56ce5b244a33f74d8020",
+        "source_path": "docs/decisions/runtime-memory-options.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/runtime-memory-options.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0829768448569927,
+        "reranker": null,
+        "semantic": 0.8736484311118258,
+        "keyword": 2.299999952316284
+      },
+      "attachments": null
+    },
+    {
+      "id": "778e5184-3f43-4e6e-b7c1-6ac4d227ae1b",
+      "text": "Local AI evaluation C38 is partially implemented as a separate `MemoryOSAILab` scheme and `native/LocalAIEvaluation` package for fictional multilingual lexical control, exporting explicit blocked/model/telemetry states. Candidate adapter builds, model tests, and physical iPhone speed, memory, storage, battery, and heat evaluation remain open; no production AI component has been selected. Source: README.md and docs/tasks/2026-11-14-local-ai-phone-evaluation.md. | When: 2026-11-14 | Involving: Eros MemoryOS | The evaluation is not yet a verified production AI selection.",
+      "type": "world",
+      "entities": [
+        "native/LocalAIEvaluation",
+        "C38",
+        "MemoryOSAILab",
+        "iPhone",
+        "AI"
+      ],
+      "context": "Authoritative project source README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.030000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.030000+00:00",
+      "mentioned_at": "2026-11-14T20:38:31.189447+00:00",
+      "document_id": "repo:README.md",
+      "metadata": {
+        "sha256": "39f25fd5fd126a719d9ce66bef42e50ecec716afea6f74f8f2216594096faaf9",
+        "source_path": "README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:README.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0796672383872066,
+        "reranker": null,
+        "semantic": 0.8871956135986933,
+        "keyword": 1.7000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "eeec5f28-cd86-4cb5-8201-4ad2e8a20fe1",
+      "text": "On November 14, 2026, the owner authorized Step 1 of checklist group 4, “Test local AI tools on the phone.” The evaluation must compare Wax, a supported Cactus-based memory configuration, llama.cpp, suitable text-runtime alternatives, and models including Qwen3-1.7B using the same examples across Arabic, Iraqi Arabic, English, names, and mixed text, while measuring physical-phone speed, memory, storage, battery, and heat before selecting components. This authorizes evaluation planning, implementation, and builder checks only; it does not select production components, authorize Step 2, delivery Step 3, cloud fallback, or release. Sources: docs/reference/source-register.md, docs/tasks/2026-11-14-local-ai-phone-evaluation.md, docs/reference/2026-11-14-local-ai-support.md. | When: November 14, 2026 | Involving: The owner | Production selection must be based on measured results while preserving original records and physical-device evidence.",
+      "type": "world",
+      "entities": [
+        "Cactus",
+        "English",
+        "Arabic",
+        "memoryos",
+        "Qwen3-1.7B",
+        "Wax",
+        "Iraqi Arabic",
+        "llama.cpp"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.050000+00:00",
+      "occurred_end": "2026-11-14T00:00:00.050000+00:00",
+      "mentioned_at": "2026-11-14T20:38:31.205293+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "5a7ecda5d72d8c496182be1f619d253216741c9ade8cba781c90aa917ac2765d",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_8",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0763576318541919,
+        "reranker": null,
+        "semantic": 0.8767255879424373,
+        "keyword": 2.200000047683716
+      },
+      "attachments": null
+    },
+    {
+      "id": "288f0f04-f7dd-49ea-a880-e2d1a02683ff",
+      "text": "As of 2026-11-14, checklist group 3 Step 2 is blocked after independent review and repairs. Local SQLite capture retains originals and correction history, provides stable links, reversible Trash, and explicit JSON backup/restore; exact-Unicode preservation and storage-open retry bugs were closed, and local storage/app/UI checks plus Release builds and analysis pass. Physical iPhone protection/performance, iOS 18 runtime validation, and unresolved accessibility checks still block passage. Source: README.md; see docs/tasks/2026-11-14-local-storage-text-capture.md and docs/decisions/local-record-storage.md. | When: 2026-11-14 | Involving: Eros MemoryOS | The verified local-storage outcome does not constitute Step 2 completion; merge and release remain blocked.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "JSON",
+        "Eros MemoryOS",
+        "Step 2",
+        "iOS 18.0"
+      ],
+      "context": "Authoritative project source README.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.010000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.010000+00:00",
+      "mentioned_at": "2026-11-14T20:38:31.169447+00:00",
+      "document_id": "repo:README.md",
+      "metadata": {
+        "sha256": "39f25fd5fd126a719d9ce66bef42e50ecec716afea6f74f8f2216594096faaf9",
+        "source_path": "README.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:README.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0730480249490588,
+        "reranker": null,
+        "semantic": 0.8413450372619942,
+        "keyword": 1.2000000476837158
+      },
+      "attachments": null
+    },
+    {
+      "id": "64031c39-be05-4d6a-b869-1d8fc32d2aa4",
+      "text": "UI recheck and screenshots were blocked by device contention and are being resumed; the available results do not claim final UI, independent verification, or release acceptance. Step 2, Step 3, physical-device validation, AI, recording, sync, and release remain separate. | When: November 14, 2026 | These validation and scope boundaries remain unresolved or out of scope for the reported Step 1 results.",
+      "type": "world",
+      "entities": [
+        "recording",
+        "UI recheck",
+        "sync",
+        "memoryos",
+        "screenshots",
+        "AI",
+        "Step 2",
+        "Step 3",
+        "release",
+        "physical-device validation"
+      ],
+      "context": "ingested document",
+      "occurred_start": "2026-11-14T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-14T23:59:59.020000+00:00",
+      "mentioned_at": "2026-11-14T18:41:08.874917+00:00",
+      "document_id": "correction-local-storage-step-1-scope-and-implementation",
+      "metadata": {
+        "harness": "codex"
+      },
+      "chunk_id": "project-memoryos_correction-local-storage-step-1-scope-and-implementation_0",
+      "tags": [
+        "project:memoryos",
+        "harness:codex",
+        "source:upload"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0697384183539604,
+        "reranker": null,
+        "semantic": 0.8502601638513856,
+        "keyword": 0.9000000357627869
+      },
+      "attachments": null
+    },
+    {
+      "id": "b19be711-1fef-4edc-9346-829459894841",
+      "text": "For on-device local AI evaluation, Step 1 was authorized on November 14, 2026; an isolated evaluation core and dark native lab exist, and a host lexical control has been run against 15 fictional multilingual cases. SDK/model comparisons and target-phone measurements are still blocked, so no component winner has been selected or verified. | When: November 14, 2026 | Applicable implementation and independent verification are required before closing the evaluation tasks.",
+      "type": "world",
+      "entities": [
+        "Cactus",
+        "local AI",
+        "memoryos",
+        "Qwen3-1.7B",
+        "Wax",
+        "llama.cpp"
+      ],
+      "context": "Authoritative project source docs/plans/implementation-checklist.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-14T00:00:00.020000+00:00",
+      "mentioned_at": "2026-11-14T20:38:31.176026+00:00",
+      "document_id": "repo:docs/plans/implementation-checklist.md",
+      "metadata": {
+        "sha256": "4b396453e47b9675e6f382519b6733c800d7547ed871a735a9e89b3bc15ebe1a",
+        "source_path": "docs/plans/implementation-checklist.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/plans/implementation-checklist.md_16",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0664288116969698,
+        "reranker": null,
+        "semantic": 0.8796463942633189,
+        "keyword": 1.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "91b64db1-6759-460b-bf0a-6dc733bdbc96",
+      "text": "Step 1 acceptance records the following as selected requirements: preserve the C20 Capture/sidebar composition and C21 dark palette; support section navigation, fictional People and Projects data, BrainMap linked-detail navigation, Arabic/English UI and mixed-language samples, and birthday reminder previews with choices Off, On the day, One day before, and One week before. Birthday choices are session-only and the app schedules nothing; project ideas must remain tentative rather than commitments. | These are explicit product/interface rules and boundaries for the demo.",
+      "type": "world",
+      "entities": [
+        "BrainMap",
+        "birthdays",
+        "English",
+        "C20",
+        "Arabic",
+        "C21",
+        "projects",
+        "people"
+      ],
+      "context": "Authoritative project source docs/tasks/2026-11-14-complete-interface-demo.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T17:42:15.858799+00:00",
+      "document_id": "repo:docs/tasks/2026-11-14-complete-interface-demo.md",
+      "metadata": {
+        "sha256": "5c0b83faaf572032ca9f981e2be5a904b25434a2fe0824f492ea25bdf44fb297",
+        "source_path": "docs/tasks/2026-11-14-complete-interface-demo.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/tasks/2026-11-14-complete-interface-demo.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.063510031534959,
+        "reranker": null,
+        "semantic": 0.8502612874145471,
+        "keyword": 0.4000000059604645
+      },
+      "attachments": null
+    },
+    {
+      "id": "b61e478e-fb2a-4781-bf55-89db337b3566",
+      "text": "No cloud transfer, release, or Step 2/3 work is authorized to start before the physical-phone evaluation is unblocked. | When: Saturday, November 14, 2026 | Involving: memoryos project | The initiative is limited to the authorized Step 1 evaluation until the target phone is available.",
+      "type": "world",
+      "entities": [
+        "memoryos",
+        "release",
+        "cloud transfer",
+        "checklist group 4"
+      ],
+      "context": "initiative marker for [[page:kp-5e606f16d2d545e2854fbbba5f7b5c95]]",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T20:25:30.637959+00:00",
+      "document_id": "initiative-marker-local-ai-phone-comparison-checklist-group-4-step-1-1794687930083",
+      "metadata": {
+        "relatedPageId": "kp-5e606f16d2d545e2854fbbba5f7b5c95"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-local-ai-phone-comparison-checklist-group-4-step-1-1794687930083_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0602590825441236,
+        "reranker": null,
+        "semantic": 0.8500554218904803,
+        "keyword": 1.0
+      },
+      "attachments": null
+    },
+    {
+      "id": "c6d5d9a6-0999-49a9-ac74-955617dec89a",
+      "text": "On November 13, 2026, C20 authorized a native SwiftUI foundation and device-readiness check. The source exists under `native/` and passes a simulator build; capture and the hidden sidebar follow the supplied screenshots, but other sections are placeholders. Demo memories are process-local and disappear on exit, and recording/attachment controls only show scope notices. Microphone access, imports, AI, networking, production store, release, deployment, physical iPhone launch, and phone benchmarks are not implemented or verified. | When: November 13, 2026 | Involving: C20; memoryos project | This is a dated implementation checkpoint; the document explicitly states it is a snapshot, not proof of implementation beyond the listed checks.",
+      "type": "world",
+      "entities": [
+        "SwiftUI",
+        "native/",
+        "C20",
+        "memoryos"
+      ],
+      "context": "Authoritative project source docs/product-overview.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-13T00:00:00.020000+00:00",
+      "occurred_end": "2026-11-13T00:00:00.020000+00:00",
+      "mentioned_at": "2026-11-14T18:27:46.838427+00:00",
+      "document_id": "repo:docs/product-overview.md",
+      "metadata": {
+        "sha256": "230110ea134911ec7cad349bb9d1e2578729dacc4db8333d9c19afe563e06124",
+        "source_path": "docs/product-overview.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/product-overview.md_2",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0559734878546463,
+        "reranker": null,
+        "semantic": 0.850045970085023,
+        "keyword": 0.800000011920929
+      },
+      "attachments": null
+    },
+    {
+      "id": "eef84d2c-89c2-413e-9e4e-a1c24bcbe686",
+      "text": "C35 authorizes Step 1 of reliable local storage and text capture. The selected design uses the OS SQLite library behind an app-owned protocol, schema/archive version 1, app-owned immutable originals with correction history, stable links, reversible Trash, and explicit readable JSON export with transactional merge restore; this resolves A02 for the implementation. | When: November 14, 2026 | Involving: Project memoryos | This is an explicit storage decision for Step 1, while AI/search provider selection, permanent deletion, automatic cloud backup, custom encryption/key recovery, and sync remain unsettled.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "C35",
+        "memoryos",
+        "text capture",
+        "JSON export",
+        "A02",
+        "local storage",
+        "Trash"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00+00:00",
+      "occurred_end": "2026-11-14T23:59:59+00:00",
+      "mentioned_at": "2026-11-14T20:47:23.126577+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "4a9681010acc4203a35b6cdd810d50bedf110f04eaf7c3893498251b6fbaabb3",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_9",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0531903849475135,
+        "reranker": null,
+        "semantic": 0.8400488400488401,
+        "keyword": 1.100000023841858
+      },
+      "attachments": null
+    },
+    {
+      "id": "1feacd71-4881-4001-b18f-ea4f466d7cf4",
+      "text": "The owner authorized Step 1 of checklist group 4 for the initiative “Local AI phone comparison”: compare Wax, a supported Cactus-based memory configuration, and local text runtimes including llama.cpp and Qwen3-1.7B on the same fictional multilingual cases. | When: Saturday, November 14, 2026 | Involving: initiative owner | To evaluate candidate local AI and memory configurations consistently.",
+      "type": "world",
+      "entities": [
+        "Cactus",
+        "user",
+        "Qwen3-1.7B",
+        "Local AI phone comparison",
+        "Wax",
+        "llama.cpp",
+        "checklist group 4"
+      ],
+      "context": "initiative marker for [[page:kp-5e606f16d2d545e2854fbbba5f7b5c95]]",
+      "occurred_start": "2026-11-14T20:25:30.607959+00:00",
+      "occurred_end": "2026-11-14T20:25:30.607959+00:00",
+      "mentioned_at": "2026-11-14T20:25:30.607959+00:00",
+      "document_id": "initiative-marker-local-ai-phone-comparison-checklist-group-4-step-1-1794687930083",
+      "metadata": {
+        "relatedPageId": "kp-5e606f16d2d545e2854fbbba5f7b5c95"
+      },
+      "chunk_id": "project-memoryos_initiative-marker-local-ai-phone-comparison-checklist-group-4-step-1-1794687930083_0",
+      "tags": [
+        "project:memoryos",
+        "knowledge:feature-work"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.050326051401771,
+        "reranker": null,
+        "semantic": 0.8559465663417154,
+        "keyword": 1.8000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "99c21584-dc18-4a43-82a9-4b50c813b4ce",
+      "text": "On 2026-11-14, the project completed source-level upstream support checks for checklist group 4, Step 1; these are not MemoryOS phone results or proof of implementation. No production provider or model has been selected. | When: November 14, 2026 | Authoritative snapshot from docs/reference/2026-11-14-local-ai-support.md; implementation status remains unverified.",
+      "type": "world",
+      "entities": [
+        "Step 1",
+        "memoryos",
+        "docs/reference/2026-11-14-local-ai-support.md",
+        "checklist group 4"
+      ],
+      "context": "Authoritative project source docs/reference/2026-11-14-local-ai-support.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-14T00:00:00+00:00",
+      "occurred_end": "2026-11-14T23:59:59+00:00",
+      "mentioned_at": "2026-11-14T20:34:12.028827+00:00",
+      "document_id": "repo:docs/reference/2026-11-14-local-ai-support.md",
+      "metadata": {
+        "sha256": "95ae2d7ebab4fe5414fff8285a9e9790ff3e56a038f0f4cc34ce9ac6cff5a448",
+        "source_path": "docs/reference/2026-11-14-local-ai-support.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/2026-11-14-local-ai-support.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.046571171634296,
+        "reranker": null,
+        "semantic": 0.8561605470228362,
+        "keyword": 1.600000023841858
+      },
+      "attachments": null
+    },
+    {
+      "id": "f8e9d1dd-eeab-434e-8cdd-348fd789e368",
+      "text": "SQLite is resolved for local records in checklist group 3, Step 1; this does not claim production readiness. | Explicitly resolved in the decision register, but limited to the specified checklist step.",
+      "type": "world",
+      "entities": [
+        "SQLite",
+        "memoryos",
+        "local records"
+      ],
+      "context": "Authoritative project source docs/decisions/decision-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": null,
+      "occurred_end": null,
+      "mentioned_at": "2026-11-14T18:24:22.730731+00:00",
+      "document_id": "repo:docs/decisions/decision-register.md",
+      "metadata": {
+        "sha256": "4a9681010acc4203a35b6cdd810d50bedf110f04eaf7c3893498251b6fbaabb3",
+        "source_path": "docs/decisions/decision-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/decisions/decision-register.md_6",
+      "tags": [
+        "project:memoryos",
+        "kind:decision"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0337276820323287,
+        "reranker": null,
+        "semantic": 0.8359480153306731,
+        "keyword": 1.0
+      },
+      "attachments": null
+    }
+  ],
+  "trace": null,
+  "entities": {
+    "C37": {
+      "entity_id": "3a61cf31-ff2b-4738-af37-b66e286d147e",
+      "canonical_name": "C37",
+      "observations": []
+    },
+    "memoryos": {
+      "entity_id": "6f1f3ee3-9405-473e-9b40-924988e4cebb",
+      "canonical_name": "memoryos",
+      "observations": []
+    },
+    "PR #3": {
+      "entity_id": "859c4a57-4101-4e26-afbe-767a265df0a9",
+      "canonical_name": "PR #3",
+      "observations": []
+    },
+    "Checklist 3": {
+      "entity_id": "88fde758-2c3e-4a36-b2b5-994d99f05c22",
+      "canonical_name": "Checklist 3",
+      "observations": []
+    },
+    "iPhone": {
+      "entity_id": "8f13d56c-b107-4393-9125-f2222b81cd82",
+      "canonical_name": "iPhone",
+      "observations": []
+    },
+    "Step 2": {
+      "entity_id": "c7583145-493a-4cde-9b58-4b7036635eca",
+      "canonical_name": "Step 2",
+      "observations": []
+    },
+    "Step 3": {
+      "entity_id": "c863f1e2-f683-4368-89ed-ec382238e090",
+      "canonical_name": "Step 3",
+      "observations": []
+    },
+    "accessibility": {
+      "entity_id": "f4930993-36ea-43fd-a333-41e0e9d5c015",
+      "canonical_name": "accessibility",
+      "observations": []
+    },
+    "iOS 18.0": {
+      "entity_id": "fc9b3814-3b2f-4220-a1ce-a8ae6a5a3fe2",
+      "canonical_name": "iOS 18.0",
+      "observations": []
+    },
+    "Cactus": {
+      "entity_id": "04d7c68b-330c-478b-833f-d210f7799bb0",
+      "canonical_name": "Cactus",
+      "observations": []
+    },
+    "MLX": {
+      "entity_id": "19291c02-d3c6-4fd2-88d6-855c283f5a64",
+      "canonical_name": "MLX",
+      "observations": []
+    },
+    "local AI": {
+      "entity_id": "2afdfee4-6d92-443d-b928-c741f260b2bc",
+      "canonical_name": "local AI",
+      "observations": []
+    },
+    "C38": {
+      "entity_id": "653d82e2-36f9-480e-9404-6cb2ae8fb975",
+      "canonical_name": "C38",
+      "observations": []
+    },
+    "Group 4": {
+      "entity_id": "c9d55892-58f1-4bc5-8bf5-461b168f89bf",
+      "canonical_name": "Group 4",
+      "observations": []
+    },
+    "Wax": {
+      "entity_id": "cdd26aa3-c5f1-4c81-8158-408dd89385eb",
+      "canonical_name": "Wax",
+      "observations": []
+    },
+    "llama.cpp": {
+      "entity_id": "d5c0aa39-4ce9-4198-85a6-06f11e299bbb",
+      "canonical_name": "llama.cpp",
+      "observations": []
+    },
+    "AGENTS.md": {
+      "entity_id": "228dda9d-6f65-446d-bb20-0e5131d67027",
+      "canonical_name": "AGENTS.md",
+      "observations": []
+    },
+    "Step 1": {
+      "entity_id": "416f96f9-2630-4578-818c-31390f344a7b",
+      "canonical_name": "Step 1",
+      "observations": []
+    },
+    "SwiftUI": {
+      "entity_id": "00138a1f-a0e0-41bd-a564-3124295f9f55",
+      "canonical_name": "SwiftUI",
+      "observations": []
+    },
+    "capture": {
+      "entity_id": "0f124364-654e-4664-8adc-1ecd80edacbb",
+      "canonical_name": "capture",
+      "observations": []
+    },
+    "BrainMap": {
+      "entity_id": "1a44775f-0343-420a-b4e8-18c536e1d7fa",
+      "canonical_name": "BrainMap",
+      "observations": []
+    },
+    "birthdays": {
+      "entity_id": "1f4a151f-ef78-4ef6-902e-8d7459c2eca6",
+      "canonical_name": "birthdays",
+      "observations": []
+    },
+    "English": {
+      "entity_id": "23c57e1e-b10d-4de5-9739-200c0ba0d801",
+      "canonical_name": "English",
+      "observations": []
+    },
+    "C20": {
+      "entity_id": "27491c69-15f3-4fa9-a27b-d8fe43e2acf0",
+      "canonical_name": "C20",
+      "observations": []
+    },
+    "Arabic": {
+      "entity_id": "689441f3-37d2-4758-80f6-50938a1a0034",
+      "canonical_name": "Arabic",
+      "observations": []
+    },
+    "C21": {
+      "entity_id": "a1de7f43-4aa0-4782-952e-eedfbb1b0b5e",
+      "canonical_name": "C21",
+      "observations": []
+    },
+    "projects": {
+      "entity_id": "af7b6d6a-84d8-4de6-b908-7be7d8452e93",
+      "canonical_name": "projects",
+      "observations": []
+    },
+    "people": {
+      "entity_id": "c383c298-6268-47e7-9898-3c6daefc00d9",
+      "canonical_name": "people",
+      "observations": []
+    },
+    "local AI phone evaluation": {
+      "entity_id": "7f5a4242-2297-4a1c-b52e-03f5cc7e4c01",
+      "canonical_name": "local AI phone evaluation",
+      "observations": []
+    },
+    "docs/tasks/2026-11-14-local-ai-phone-evaluation.md": {
+      "entity_id": "f65466d4-446a-4e15-a6e8-c25d86a9d67d",
+      "canonical_name": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "observations": []
+    },
+    "target-phone experiment": {
+      "entity_id": "7c309ad1-e310-4599-bf09-b51070cdf03f",
+      "canonical_name": "target-phone experiment",
+      "observations": []
+    },
+    "keyword control": {
+      "entity_id": "97860883-e37b-4e5d-aa44-0310198a5961",
+      "canonical_name": "keyword control",
+      "observations": []
+    },
+    "checklist group 4 Step 1": {
+      "entity_id": "97d45571-02de-4099-a6cd-219118697958",
+      "canonical_name": "checklist group 4 Step 1",
+      "observations": []
+    },
+    "Wax adapter": {
+      "entity_id": "bdb9da32-c4d5-4be3-ab9d-af8c30dc50c1",
+      "canonical_name": "Wax adapter",
+      "observations": []
+    },
+    "docs/decisions/runtime-memory-options.md": {
+      "entity_id": "c6acc70d-3a3d-4a7f-9e4c-f84ed329f393",
+      "canonical_name": "docs/decisions/runtime-memory-options.md",
+      "observations": []
+    },
+    "final selection": {
+      "entity_id": "d7fef1d7-baf8-4462-aaf6-b33f34bc191c",
+      "canonical_name": "final selection",
+      "observations": []
+    },
+    "native/LocalAIEvaluation": {
+      "entity_id": "14190fc9-cd51-453b-8fa6-7b895b64ffd0",
+      "canonical_name": "native/LocalAIEvaluation",
+      "observations": []
+    },
+    "MemoryOSAILab": {
+      "entity_id": "78e71756-7256-40fd-868c-9fd7d00901dd",
+      "canonical_name": "MemoryOSAILab",
+      "observations": []
+    },
+    "AI": {
+      "entity_id": "9f6659e9-8cb7-44f8-9acd-26c1159d6d2a",
+      "canonical_name": "AI",
+      "observations": []
+    },
+    "Qwen3-1.7B": {
+      "entity_id": "706f20ad-de63-4909-89d6-0ff1ff5086ea",
+      "canonical_name": "Qwen3-1.7B",
+      "observations": []
+    },
+    "Iraqi Arabic": {
+      "entity_id": "d28c75a5-1ea8-40eb-9f1d-bc7058f6e3d7",
+      "canonical_name": "Iraqi Arabic",
+      "observations": []
+    },
+    "SQLite": {
+      "entity_id": "10574ba2-395d-456f-9028-2723692876cc",
+      "canonical_name": "SQLite",
+      "observations": []
+    },
+    "JSON": {
+      "entity_id": "59e49abd-b0b4-41fc-8ab7-65749ee2791d",
+      "canonical_name": "JSON",
+      "observations": []
+    },
+    "Eros MemoryOS": {
+      "entity_id": "ad223ee8-dfd6-49a3-b62b-1c19b3aa754c",
+      "canonical_name": "Eros MemoryOS",
+      "observations": []
+    },
+    "recording": {
+      "entity_id": "25c3a5c5-368c-439f-a317-5278855f1b3d",
+      "canonical_name": "recording",
+      "observations": []
+    },
+    "UI recheck": {
+      "entity_id": "4082fe52-1dd0-439d-9bd5-fa0724c079c3",
+      "canonical_name": "UI recheck",
+      "observations": []
+    },
+    "sync": {
+      "entity_id": "58b585ce-aef4-403c-a09d-0d8c9d502173",
+      "canonical_name": "sync",
+      "observations": []
+    },
+    "screenshots": {
+      "entity_id": "8513aef0-2b90-40c5-8f7e-f0207d9967bb",
+      "canonical_name": "screenshots",
+      "observations": []
+    },
+    "release": {
+      "entity_id": "dfb1ea2a-a736-4137-9cc2-e9fe4d1d527d",
+      "canonical_name": "release",
+      "observations": []
+    },
+    "physical-device validation": {
+      "entity_id": "e6281bdd-3ddf-4035-bbb1-4158026164fd",
+      "canonical_name": "physical-device validation",
+      "observations": []
+    },
+    "cloud transfer": {
+      "entity_id": "f99c84bd-54b2-4248-9d88-e2c4daae1724",
+      "canonical_name": "cloud transfer",
+      "observations": []
+    },
+    "checklist group 4": {
+      "entity_id": "fc979556-fa37-4c1f-867a-996c185ab9e1",
+      "canonical_name": "checklist group 4",
+      "observations": []
+    },
+    "native/": {
+      "entity_id": "052cb0d0-9275-4dc9-9bf5-c2f5b1844b68",
+      "canonical_name": "native/",
+      "observations": []
+    },
+    "C35": {
+      "entity_id": "4a9ad797-58ac-4a7f-8a7e-aaf44623d930",
+      "canonical_name": "C35",
+      "observations": []
+    },
+    "text capture": {
+      "entity_id": "75897bed-90b6-440a-84a5-30c2773376e3",
+      "canonical_name": "text capture",
+      "observations": []
+    },
+    "JSON export": {
+      "entity_id": "977b280d-60c1-4536-a2f5-4d4e8ad7c79a",
+      "canonical_name": "JSON export",
+      "observations": []
+    },
+    "A02": {
+      "entity_id": "ba79912a-5eb3-46a6-b517-a2c46b09093e",
+      "canonical_name": "A02",
+      "observations": []
+    },
+    "local storage": {
+      "entity_id": "fa42f6fb-a156-45fc-b6e9-007c392e5c27",
+      "canonical_name": "local storage",
+      "observations": []
+    },
+    "Trash": {
+      "entity_id": "fb25523a-d7a1-45ce-8659-a96cdb05a7dc",
+      "canonical_name": "Trash",
+      "observations": []
+    },
+    "user": {
+      "entity_id": "27d90ade-0dd2-4593-882b-eaa7eb7ff7c3",
+      "canonical_name": "user",
+      "observations": []
+    },
+    "Local AI phone comparison": {
+      "entity_id": "9346ba25-d708-4309-b0de-5e95d9a5c3b4",
+      "canonical_name": "Local AI phone comparison",
+      "observations": []
+    },
+    "docs/reference/2026-11-14-local-ai-support.md": {
+      "entity_id": "a96cde6b-1e6f-45ac-a244-3394d1cac9b5",
+      "canonical_name": "docs/reference/2026-11-14-local-ai-support.md",
+      "observations": []
+    },
+    "local records": {
+      "entity_id": "f072dd97-7f47-4aa3-a2b0-f7ce2c886560",
+      "canonical_name": "local records",
+      "observations": []
+    }
+  },
+  "chunks": null,
+  "source_facts": null,
+  "source_facts_truncated": null
+}

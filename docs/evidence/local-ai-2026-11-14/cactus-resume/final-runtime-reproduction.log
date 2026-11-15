@@ -1,0 +1,23 @@
+-- Cactus version: v1.14
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/macos
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+-- Cactus version: v1.14
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/simulator
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+-- Cactus version: v1.14
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/device
+[0/2] Re-checking globbed directories...
+ninja: no work to do.
+xcframework successfully written out to: /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework
+{"output": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework", "files": 11}

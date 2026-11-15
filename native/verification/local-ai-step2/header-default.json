@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "data": {
+    "ref": "e14",
+    "node": {
+      "index": 13,
+      "parentIndex": 12,
+      "type": "StaticText",
+      "role": "SwiftUI.AccessibilityNode",
+      "subrole": "NSObject",
+      "label": "Configuration",
+      "rect": {
+        "x": 16,
+        "y": 370,
+        "width": 370,
+        "height": 42.333333333333314
+      },
+      "enabled": true,
+      "depth": 3,
+      "pid": 90301,
+      "hittable": true,
+      "ref": "e14",
+      "kind": "text"
+    }
+  }
+}

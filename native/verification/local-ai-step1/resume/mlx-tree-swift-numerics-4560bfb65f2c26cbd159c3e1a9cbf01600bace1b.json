@@ -1,0 +1,679 @@
+{
+  "sha": "4560bfb65f2c26cbd159c3e1a9cbf01600bace1b",
+  "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/4560bfb65f2c26cbd159c3e1a9cbf01600bace1b",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "32c85ff9ea599f3130f4dab10fbadc2dfdcdf0b0",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/32c85ff9ea599f3130f4dab10fbadc2dfdcdf0b0"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a88fcc6ea151579393b5f8273b933e2dbff27a0",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/1a88fcc6ea151579393b5f8273b933e2dbff27a0"
+    },
+    {
+      "path": ".github/workflows/pull_request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf0ce91728ade86fad5ca09fa9d697bf50340367",
+      "size": 670,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/bf0ce91728ade86fad5ca09fa9d697bf50340367"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85dfaf7bc56d2696270a5571edeabc59bfb0a2d5",
+      "size": 82,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/85dfaf7bc56d2696270a5571edeabc59bfb0a2d5"
+    },
+    {
+      "path": ".spi.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b85910250ed62a69cbd1b234d02624dba966f19",
+      "size": 98,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/1b85910250ed62a69cbd1b234d02624dba966f19"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "897ee839d057a835d5d5adbda4c2ccccd5b32009",
+      "size": 940,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/897ee839d057a835d5d5adbda4c2ccccd5b32009"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ed4dbd196b9725b9e0275e03f1a4f00f00dfa04",
+      "size": 468,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/4ed4dbd196b9725b9e0275e03f1a4f00f00dfa04"
+    },
+    {
+      "path": "LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61b0c78195f2d00acaf658000eeca6ad406a3a29",
+      "size": 11751,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/61b0c78195f2d00acaf658000eeca6ad406a3a29"
+    },
+    {
+      "path": "Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae835441958bc437564f9f33c8f6d7fea7db44ed",
+      "size": 1871,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/ae835441958bc437564f9f33c8f6d7fea7db44ed"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b34346519cd5f2b29f6abd9c0c6d0555e13fa4e",
+      "size": 7001,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/9b34346519cd5f2b29f6abd9c0c6d0555e13fa4e"
+    },
+    {
+      "path": "Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92891eac219071415093809ed2c06ec8be70a801",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/92891eac219071415093809ed2c06ec8be70a801"
+    },
+    {
+      "path": "Sources/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e184fecac2fe29476ad48570fca095186bdf93d8",
+      "size": 456,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/e184fecac2fe29476ad48570fca095186bdf93d8"
+    },
+    {
+      "path": "Sources/ComplexModule",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "674e8fd914ede78a42deaf3384d7b575feb69a43",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/674e8fd914ede78a42deaf3384d7b575feb69a43"
+    },
+    {
+      "path": "Sources/ComplexModule/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecc46538441416a9f110cd33f9783ceaae8eaf24",
+      "size": 858,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/ecc46538441416a9f110cd33f9783ceaae8eaf24"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+AdditiveArithmetic.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0806fb4f7d8e2adb8cb724773b7d39854dd9cd78",
+      "size": 1142,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/0806fb4f7d8e2adb8cb724773b7d39854dd9cd78"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+AlgebraicField.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6f4cb85f77281e44709ff0a5e9194a9641871da",
+      "size": 7223,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/c6f4cb85f77281e44709ff0a5e9194a9641871da"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+Codable.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c233cb7c4f30e73bf20534ee419da4b94ad02387",
+      "size": 1189,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/c233cb7c4f30e73bf20534ee419da4b94ad02387"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+ElementaryFunctions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38c8cdced4b3d3103a8a517444a316497ed4291f",
+      "size": 20892,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/38c8cdced4b3d3103a8a517444a316497ed4291f"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+Hashable.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91e43618e4488d8bd947cfec9442a01f5416618b",
+      "size": 1644,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/91e43618e4488d8bd947cfec9442a01f5416618b"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+IntegerLiteral.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07126fc73ed7c4f4ebe9ffb66fdc49d18e1961d9",
+      "size": 696,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/07126fc73ed7c4f4ebe9ffb66fdc49d18e1961d9"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+Numeric.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a5d9fbe80e5db263ae258e0bdaef8f6c2ddd0e4",
+      "size": 1946,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/5a5d9fbe80e5db263ae258e0bdaef8f6c2ddd0e4"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+StringConvertible.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c88b5b3f68c4d31e2f56bd99c447b1d27b5984f",
+      "size": 837,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/1c88b5b3f68c4d31e2f56bd99c447b1d27b5984f"
+    },
+    {
+      "path": "Sources/ComplexModule/Complex.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5929a7efc20b63466299bc9a61ef7420cfe63371",
+      "size": 6404,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/5929a7efc20b63466299bc9a61ef7420cfe63371"
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4bdcc00f629613c814d30dd0e5b8e6f27be88dbb",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/4bdcc00f629613c814d30dd0e5b8e6f27be88dbb"
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc/Complex.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7198461265a7c9e78a649993f6debf2e1a9877e8",
+      "size": 1493,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/7198461265a7c9e78a649993f6debf2e1a9877e8"
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc/ComplexModule.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f77ecd21cd1b214998dbaec6f214df13d28018c8",
+      "size": 2746,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/f77ecd21cd1b214998dbaec6f214df13d28018c8"
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc/Infinity.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c1f0819cd93c0d29c9ca3a021b6c7997639b3d",
+      "size": 2316,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/c4c1f0819cd93c0d29c9ca3a021b6c7997639b3d"
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc/Magnitude.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1565e34a30f7b60ef3f8217ba7eb6a1f0542f9c",
+      "size": 5068,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/f1565e34a30f7b60ef3f8217ba7eb6a1f0542f9c"
+    },
+    {
+      "path": "Sources/ComplexModule/Polar.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5dabaac6a29a7b842e337d4e2cf3913ed24cb5a",
+      "size": 4740,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/e5dabaac6a29a7b842e337d4e2cf3913ed24cb5a"
+    },
+    {
+      "path": "Sources/ComplexModule/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5179a04f3a632a7ed58f26e6a8beb31ec65b10c",
+      "size": 5860,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/b5179a04f3a632a7ed58f26e6a8beb31ec65b10c"
+    },
+    {
+      "path": "Sources/ComplexModule/Scale.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37275cc325e2cb32fa49d14c48e53d4c804cae61",
+      "size": 1574,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/37275cc325e2cb32fa49d14c48e53d4c804cae61"
+    },
+    {
+      "path": "Sources/Numerics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac42fdb7011d85fb5801ce5f3e2dc30ce03d06d1",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/ac42fdb7011d85fb5801ce5f3e2dc30ce03d06d1"
+    },
+    {
+      "path": "Sources/Numerics/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4a219a9e42f7a55fc58693de16f353d5e9aa29f",
+      "size": 956,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/a4a219a9e42f7a55fc58693de16f353d5e9aa29f"
+    },
+    {
+      "path": "Sources/Numerics/Numerics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f379dbea797dd3bdd3187e3006e7972911ee46d",
+      "size": 576,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/0f379dbea797dd3bdd3187e3006e7972911ee46d"
+    },
+    {
+      "path": "Sources/Numerics/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9de275962f4095a2131af08babbfbd32a096b29",
+      "size": 159,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/d9de275962f4095a2131af08babbfbd32a096b29"
+    },
+    {
+      "path": "Sources/RealModule",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "380c413baafdc2830c0a178d34f6b0960532bb5d",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/380c413baafdc2830c0a178d34f6b0960532bb5d"
+    },
+    {
+      "path": "Sources/RealModule/AlgebraicField.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1c276bc9678597505e74233d53d1426bf475b90",
+      "size": 5427,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/d1c276bc9678597505e74233d53d1426bf475b90"
+    },
+    {
+      "path": "Sources/RealModule/ApproximateEquality.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8081e37793e9e6b9d535ff8ea7c384981bf6a116",
+      "size": 9578,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/8081e37793e9e6b9d535ff8ea7c384981bf6a116"
+    },
+    {
+      "path": "Sources/RealModule/AugmentedArithmetic.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec314adf8b0651293861df65f148c3cc0b60f74e",
+      "size": 5691,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/ec314adf8b0651293861df65f148c3cc0b60f74e"
+    },
+    {
+      "path": "Sources/RealModule/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "acc78da4ec164b07b41c25626dcc9e3336cbcdd3",
+      "size": 812,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/acc78da4ec164b07b41c25626dcc9e3336cbcdd3"
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "16ac7d8692a4684f5e2e276893d8f3f79310f917",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/16ac7d8692a4684f5e2e276893d8f3f79310f917"
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/Augmented.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc60ec04383a139c9ecb7032a0d5ea3cdfd2b31f",
+      "size": 1340,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/dc60ec04383a139c9ecb7032a0d5ea3cdfd2b31f"
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/ElementaryFunctions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68fb20451129be52e29eaf1e2cfc3199fd1274c3",
+      "size": 1654,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/68fb20451129be52e29eaf1e2cfc3199fd1274c3"
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/RealFunctions.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0652d043b4c1c62cd77edee121d9b1ba8aa76eb3",
+      "size": 444,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/0652d043b4c1c62cd77edee121d9b1ba8aa76eb3"
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/RealModule.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "971b8858ad9bba048ac9cb2764d35faa840b9e11",
+      "size": 1290,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/971b8858ad9bba048ac9cb2764d35faa840b9e11"
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/Relaxed.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46623c91313f8e23b2c1602ad46fbae4adac267e",
+      "size": 1966,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/46623c91313f8e23b2c1602ad46fbae4adac267e"
+    },
+    {
+      "path": "Sources/RealModule/Double+Real.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a4138dd227d70e0d949b2f4eab2cfc732fea4e6",
+      "size": 6567,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/1a4138dd227d70e0d949b2f4eab2cfc732fea4e6"
+    },
+    {
+      "path": "Sources/RealModule/ElementaryFunctions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d59043b75679dfbf402492095f2c23eb3027a7cf",
+      "size": 7067,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/d59043b75679dfbf402492095f2c23eb3027a7cf"
+    },
+    {
+      "path": "Sources/RealModule/Float+Real.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab459bbf5598979c808743706d76e80db06d598f",
+      "size": 5214,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/ab459bbf5598979c808743706d76e80db06d598f"
+    },
+    {
+      "path": "Sources/RealModule/Float16+Real.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98e97e897c2636667450781ebca8200f69e4fa61",
+      "size": 4916,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/98e97e897c2636667450781ebca8200f69e4fa61"
+    },
+    {
+      "path": "Sources/RealModule/Float80+Real.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4ca39b6276352ea78bcff25bf33c11479be5cd2",
+      "size": 4320,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/b4ca39b6276352ea78bcff25bf33c11479be5cd2"
+    },
+    {
+      "path": "Sources/RealModule/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0075d84b47da574042d652642097500c518a239e",
+      "size": 3953,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/0075d84b47da574042d652642097500c518a239e"
+    },
+    {
+      "path": "Sources/RealModule/Real.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f32b7111eacb0a009972d525f3ef6f18e4d1156",
+      "size": 5974,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/2f32b7111eacb0a009972d525f3ef6f18e4d1156"
+    },
+    {
+      "path": "Sources/RealModule/RealFunctions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de44752e03e6b97766ec37018fc7389762aef7e4",
+      "size": 3712,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/de44752e03e6b97766ec37018fc7389762aef7e4"
+    },
+    {
+      "path": "Sources/RealModule/RelaxedArithmetic.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d08215179a3e183d5284d422563b01b58f6460fe",
+      "size": 3228,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/d08215179a3e183d5284d422563b01b58f6460fe"
+    },
+    {
+      "path": "Sources/_NumericsShims",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ae97a3aacc873b2c840ea471737d23b0e51e60a5",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/ae97a3aacc873b2c840ea471737d23b0e51e60a5"
+    },
+    {
+      "path": "Sources/_NumericsShims/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94f73782052f03ff54f5b2e444da35e4d1dbe950",
+      "size": 524,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/94f73782052f03ff54f5b2e444da35e4d1dbe950"
+    },
+    {
+      "path": "Sources/_NumericsShims/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90a0a21fdc48953de55373a7400aa06081efab60",
+      "size": 445,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/90a0a21fdc48953de55373a7400aa06081efab60"
+    },
+    {
+      "path": "Sources/_NumericsShims/_NumericsShims.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ac212f325103cb325268116481aaf4686447b7e",
+      "size": 791,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/8ac212f325103cb325268116481aaf4686447b7e"
+    },
+    {
+      "path": "Sources/_NumericsShims/include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "921cca69bd9b2667bd209f9404168e4db3bb1687",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/921cca69bd9b2667bd209f9404168e4db3bb1687"
+    },
+    {
+      "path": "Sources/_NumericsShims/include/_NumericsShims.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b7bf995bd7de35f4233dc2868788f38667c47b3",
+      "size": 10396,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/8b7bf995bd7de35f4233dc2868788f38667c47b3"
+    },
+    {
+      "path": "Sources/_NumericsShims/include/module.modulemap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "077fb436f60bd9f428d5c7b18ede6addcd3726a1",
+      "size": 54,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/077fb436f60bd9f428d5c7b18ede6addcd3726a1"
+    },
+    {
+      "path": "Sources/_TestSupport",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "96fc54756293aa8b47c59ccd1b7605a2363275ae",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/96fc54756293aa8b47c59ccd1b7605a2363275ae"
+    },
+    {
+      "path": "Sources/_TestSupport/BlackHole.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c614028cfaa34bb72484a57b011edc8ed11ec908",
+      "size": 601,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/c614028cfaa34bb72484a57b011edc8ed11ec908"
+    },
+    {
+      "path": "Sources/_TestSupport/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96c30790cfcc5ea9c109a68acdcd5c548699a6c2",
+      "size": 665,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/96c30790cfcc5ea9c109a68acdcd5c548699a6c2"
+    },
+    {
+      "path": "Sources/_TestSupport/DoubleWidth.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dc1ee9d37f98612fc05ab84940254263705f522",
+      "size": 25205,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/1dc1ee9d37f98612fc05ab84940254263705f522"
+    },
+    {
+      "path": "Sources/_TestSupport/Error.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e5a1b40a03b9bc8bd33277ac1a0dcc81b4e5616",
+      "size": 1250,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/5e5a1b40a03b9bc8bd33277ac1a0dcc81b4e5616"
+    },
+    {
+      "path": "Sources/_TestSupport/Interval.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "697b50b041dd6a76948582b0298f5935e8f23223",
+      "size": 1481,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/697b50b041dd6a76948582b0298f5935e8f23223"
+    },
+    {
+      "path": "Sources/_TestSupport/RealTestSupport.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61893362f10d030cd0044320c111365d7c761121",
+      "size": 1176,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/61893362f10d030cd0044320c111365d7c761121"
+    },
+    {
+      "path": "Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3ddf6e942b84021e67189751365f781df2656d50",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/3ddf6e942b84021e67189751365f781df2656d50"
+    },
+    {
+      "path": "Tests/ComplexTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4b6b1d24b39f42df4a1f4a416e84c4b997aae6fa",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/4b6b1d24b39f42df4a1f4a416e84c4b997aae6fa"
+    },
+    {
+      "path": "Tests/ComplexTests/ApproximateEqualityTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a51c01a8ccd3acbc34d024e5bf7d75fabe41b19",
+      "size": 2819,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/6a51c01a8ccd3acbc34d024e5bf7d75fabe41b19"
+    },
+    {
+      "path": "Tests/ComplexTests/ArithmeticTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd76bd2c824b090c8cf504e9f46cde04b9280e5e",
+      "size": 10518,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/fd76bd2c824b090c8cf504e9f46cde04b9280e5e"
+    },
+    {
+      "path": "Tests/ComplexTests/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b1b698231fab2d0bd58addf705a5d6a250cfe7c",
+      "size": 721,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/9b1b698231fab2d0bd58addf705a5d6a250cfe7c"
+    },
+    {
+      "path": "Tests/ComplexTests/ElementaryFunctionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dd9b157c89164327a0f517ffc55d90ad415dca8",
+      "size": 22718,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/2dd9b157c89164327a0f517ffc55d90ad415dca8"
+    },
+    {
+      "path": "Tests/ComplexTests/PropertyTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca3714844f058ce73a56076bd323438a0d643a0f",
+      "size": 4720,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/ca3714844f058ce73a56076bd323438a0d643a0f"
+    },
+    {
+      "path": "Tests/RealTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64647e2a5049c7fe752c5f88099109b94990777a",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/64647e2a5049c7fe752c5f88099109b94990777a"
+    },
+    {
+      "path": "Tests/RealTests/ApproximateEqualityTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "640f8b94a6d95ab81b95ecb46eee2c0d1c10b01b",
+      "size": 5971,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/640f8b94a6d95ab81b95ecb46eee2c0d1c10b01b"
+    },
+    {
+      "path": "Tests/RealTests/AugmentedArithmeticTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec42cef8df2b19a864ae9d043c96f05b6a6a06bb",
+      "size": 7412,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/ec42cef8df2b19a864ae9d043c96f05b6a6a06bb"
+    },
+    {
+      "path": "Tests/RealTests/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a46c475d5a50e559d00cd40e827d5ea2d76f3401",
+      "size": 635,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/a46c475d5a50e559d00cd40e827d5ea2d76f3401"
+    },
+    {
+      "path": "Tests/RealTests/ElementaryFunctionChecks.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6bd35a20c14491636f0aa091d89eebd5b5108ae",
+      "size": 6991,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/b6bd35a20c14491636f0aa091d89eebd5b5108ae"
+    },
+    {
+      "path": "Tests/RealTests/IntegerExponentTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d41113e35467f0c485e23f43dd1279bcd0b0daa9",
+      "size": 9330,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/d41113e35467f0c485e23f43dd1279bcd0b0daa9"
+    },
+    {
+      "path": "Tests/RealTests/RelaxedArithmeticTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8f1127c85ff83ca4a9247120908c522d9316434",
+      "size": 4140,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/b8f1127c85ff83ca4a9247120908c522d9316434"
+    },
+    {
+      "path": "cmake",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e42b91a6b2876649ebeb7864e1374f6f341eaf03",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/e42b91a6b2876649ebeb7864e1374f6f341eaf03"
+    },
+    {
+      "path": "cmake/modules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6967ba7d92127301690955a4be434eb39433dcf8",
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/trees/6967ba7d92127301690955a4be434eb39433dcf8"
+    },
+    {
+      "path": "cmake/modules/SwiftSupport.cmake",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef3e9a3bd9dfdb074bf0b757c5f8b86e6d7f3a0f",
+      "size": 3811,
+      "url": "https://api.github.com/repos/apple/swift-numerics/git/blobs/ef3e9a3bd9dfdb074bf0b757c5f8b86e6d7f3a0f"
+    }
+  ],
+  "truncated": false
+}

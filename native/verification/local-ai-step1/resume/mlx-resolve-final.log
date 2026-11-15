@@ -1,0 +1,46 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Fetching https://github.com/swiftlang/swift-syntax.git from cache
+Fetched https://github.com/swiftlang/swift-syntax.git from cache (0.01s)
+Computing version for https://github.com/ibireme/yyjson.git
+Computed https://github.com/ibireme/yyjson.git at 0.13.0 (12.01s)
+Computing version for https://github.com/ml-explore/mlx-swift
+Computed https://github.com/ml-explore/mlx-swift at 0.32.3 (57.53s)
+Fetching https://github.com/apple/swift-numerics
+[1/321] Fetching swift-numerics
+Fetched https://github.com/apple/swift-numerics (174.08s)
+Computing version for https://github.com/swiftlang/swift-syntax.git
+Computed https://github.com/swiftlang/swift-syntax.git at 603.0.2 (197.67s)
+Computing version for https://github.com/apple/swift-numerics
+Computed https://github.com/apple/swift-numerics at 1.1.1 (4.65s)
+Computing version for https://github.com/huggingface/swift-jinja.git
+Computed https://github.com/huggingface/swift-jinja.git at 3.1.0 (3.19s)
+Computing version for https://github.com/huggingface/swift-huggingface.git
+Computed https://github.com/huggingface/swift-huggingface.git at 1.0.0 (15.67s)
+Fetching https://github.com/mattt/EventSource.git
+[1/34] Fetching eventsource
+Fetched https://github.com/mattt/EventSource.git (196.50s)
+Computing version for https://github.com/mattt/EventSource.git
+Computed https://github.com/mattt/EventSource.git at 1.6.0 (208.06s)
+Computing version for https://github.com/apple/swift-collections.git
+Computed https://github.com/apple/swift-collections.git at 1.7.6 (14.38s)
+Computing version for https://github.com/apple/swift-crypto.git
+Computed https://github.com/apple/swift-crypto.git at 4.5.2 (38.98s)
+Fetching https://github.com/apple/swift-asn1.git from cache
+Fetched https://github.com/apple/swift-asn1.git from cache (0.01s)
+Computing version for https://github.com/apple/swift-asn1.git
+Computed https://github.com/apple/swift-asn1.git at 1.7.4 (91.78s)
+Creating working copy for https://github.com/ml-explore/mlx-swift
+error: 'mlx-swift': Failed to clone repository https://github.com/ml-explore/mlx-swift:
+    Traceback (most recent call last):
+      File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Tools/git", line 23, in <module>
+        original = subprocess.check_output(real + ["-C", source, "config", "--get", "remote.origin.url"], text=True).strip()
+      File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 424, in check_output
+        return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+      File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 505, in run
+        with Popen(*popenargs, **kwargs) as process:
+      File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 951, in __init__
+        self._execute_child(args, executable, preexec_fn, close_fds,
+      File "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1754, in _execute_child
+        self.pid = _posixsubprocess.fork_exec(
+    BlockingIOError: [Errno 35] Resource temporarily unavailable
+Creating working copy for https://github.com/apple/swift-collections.git

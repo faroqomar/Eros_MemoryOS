@@ -1,0 +1,21 @@
+Building for production...
+[Starting]
+[2 / 4] CactusEvaluationAdapterTests-product
+[5 / 7] CactusEvaluationAdapterTests-product
+[9 / 13] CactusEvaluationAdapterTests-product
+[11 / 13] CactusEvaluationAdapterTests-product
+Build complete! (2.96 secs)
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) started.
+◇ Test case passing 1 argument remoteModel → false to remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) started.
+◇ Test case passing 1 argument remoteModel → true to remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) started.
+✘ Test remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) recorded an issue with 1 argument remoteModel → false at CactusContracts.swift:24:17: Issue recorded
+↳ The local-only adapter accepted a remote model or index directory.
+✘ Test remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) recorded an issue with 1 argument remoteModel → true at CactusContracts.swift:24:17: Issue recorded
+↳ The local-only adapter accepted a remote model or index directory.
+✘ Test remoteDirectoriesAreRejectedBeforeAnyFileAccess(_:) with 2 test cases failed after 0.002 seconds with 2 issues.
+✘ Test run with 1 test in 0 suites failed after 0.002 seconds with 2 issues.
+Note: Some test targets reported failures:
+  - CactusEvaluationAdapterTests (Swift Testing)

@@ -1,0 +1,7 @@
+{
+  "action": "Read-only app container lookup and plist/executable hashing; no device interaction",
+  "sourceIdentity": "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+  "bundleIdentifier": "com.eros.memoryos.ailab",
+  "executableSHA256": "12ad3a029862c28b251d5f2979dfd2a383d78be4afeced965440dab38a227455",
+  "matchesInstalledReceipt": true
+}

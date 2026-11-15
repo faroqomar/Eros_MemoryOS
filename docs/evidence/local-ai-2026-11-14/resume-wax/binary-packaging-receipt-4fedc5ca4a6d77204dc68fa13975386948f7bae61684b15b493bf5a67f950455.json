@@ -1,0 +1,357 @@
+{
+  "format_version": 1,
+  "purpose": "Personal experimental evaluation; not a release artifact",
+  "upstream_revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+  "patch_sha256": "d55f4e047011249d9f40c70dcb2f615d6379257315fa1ba467500fc57351a7e4",
+  "temporary_root_manifest_sha256": "29306cc4fa323d2e52e0ed13cb7de7daa467eceb79c2e272526d349dc9492603",
+  "required_resource_bundles": [
+    "GRDB_GRDB.bundle",
+    "MetalANNS_MetalANNSCore.bundle",
+    "Wax_Wax.bundle",
+    "Wax_WaxVectorSearch.bundle",
+    "swift-crypto_Crypto.bundle"
+  ],
+  "platforms": {
+    "iphonesimulator": {
+      "triple": "arm64-apple-ios18.0-simulator",
+      "argv": [
+        "/usr/bin/swift",
+        "build",
+        "--package-path",
+        "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification",
+        "--scratch-path",
+        "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-xcframework-build/simulator",
+        "-c",
+        "release",
+        "--target",
+        "WaxEvaluationAdapter",
+        "--triple",
+        "arm64-apple-ios18.0-simulator",
+        "--sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk",
+        "--jobs",
+        "4"
+      ],
+      "build_seconds": 7.444063901901245,
+      "static_object_count": 530,
+      "excluded_core_objects": true,
+      "framework": "Slices/simulator/WaxEvaluationAdapter.framework",
+      "binary_sha256": "b3e537bf1f4fd1d471c817dba9eaf31a146d748a976998106abd49e9bb8e5149",
+      "interface_sha256": "92702ca9d02feb24f7e1c6941c3abefda6d97b9088165dc4e5d7c44179cfb0ec",
+      "resources_directory": "Resources/iphonesimulator",
+      "resource_files": [
+        {
+          "path": "GRDB_GRDB.bundle/Info.plist",
+          "sha256": "44fc2daaef75fffb1b6d7199c3b55bf07ebf1a0ef3a6ffd880281d617f316389",
+          "bytes": 616
+        },
+        {
+          "path": "GRDB_GRDB.bundle/PrivacyInfo.xcprivacy",
+          "sha256": "17784da62e51f74c5859df32fe402e01e25cdf6f797a4add06e2a3ce15c911f4",
+          "bytes": 397
+        },
+        {
+          "path": "GRDB_GRDB.bundle/_CodeSignature/CodeDirectory",
+          "sha256": "846ca803afbfbd868109919491769ac25c7f66e0d3e454a21dea611be048bcf8",
+          "bytes": 202
+        },
+        {
+          "path": "GRDB_GRDB.bundle/_CodeSignature/CodeRequirements",
+          "sha256": "987920904eab650e75788c054aa0b0524e6a80bfc71aa32df8d237a61743f986",
+          "bytes": 12
+        },
+        {
+          "path": "GRDB_GRDB.bundle/_CodeSignature/CodeResources",
+          "sha256": "c96f20aa88498932239a3f82620add84755f0ad0ed33ef7e9ae4db8328f91e0e",
+          "bytes": 1960
+        },
+        {
+          "path": "GRDB_GRDB.bundle/_CodeSignature/CodeSignature",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/Info.plist",
+          "sha256": "604eeb3d61d7e819f6034efc22845d937edd3ff48e50079be721eb45cbc4cb7b",
+          "bytes": 640
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/_CodeSignature/CodeDirectory",
+          "sha256": "7785e6a9d78607bd10a7333b79668581597c1e1fd88efea15bcadf0f56bf3fca",
+          "bytes": 210
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/_CodeSignature/CodeRequirements",
+          "sha256": "987920904eab650e75788c054aa0b0524e6a80bfc71aa32df8d237a61743f986",
+          "bytes": 12
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/_CodeSignature/CodeResources",
+          "sha256": "d7c30d476511ea7fda3f8b6f2fa59a850e8fe41416b1dfa1661f47d4f5a08e0b",
+          "bytes": 1950
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/_CodeSignature/CodeSignature",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/default.metallib",
+          "sha256": "9330871aa1d91e56c7198a0c730a68fe01ba87eddfe03020f2523114d4d7bd09",
+          "bytes": 155032
+        },
+        {
+          "path": "Wax_Wax.bundle/Info.plist",
+          "sha256": "49c71a76e21b3eff981b727d6cecffec22c21759d683e50db4d12dee270be8c9",
+          "bytes": 606
+        },
+        {
+          "path": "Wax_Wax.bundle/_CodeSignature/CodeDirectory",
+          "sha256": "82a7e2c358d9edd668bd8e393b9b04d123e4c45359209cdd3b9fce2bffeb8444",
+          "bytes": 194
+        },
+        {
+          "path": "Wax_Wax.bundle/_CodeSignature/CodeRequirements",
+          "sha256": "987920904eab650e75788c054aa0b0524e6a80bfc71aa32df8d237a61743f986",
+          "bytes": 12
+        },
+        {
+          "path": "Wax_Wax.bundle/_CodeSignature/CodeResources",
+          "sha256": "45026c071109af212d0d9eca022f114f3a15e134ec192c806f1b44831c7293f5",
+          "bytes": 1958
+        },
+        {
+          "path": "Wax_Wax.bundle/_CodeSignature/CodeSignature",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "Wax_Wax.bundle/cl100k_base.tiktoken",
+          "sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+          "bytes": 1681126
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/Info.plist",
+          "sha256": "63d30284d02035d335a90ac737964fbbf29c5fde64a680f854da8b81e48a83c3",
+          "bytes": 632
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/_CodeSignature/CodeDirectory",
+          "sha256": "bc5e4f5d3e48d5e9c1b8f0db892103cc4efa3695484d31975bf68d4332419b99",
+          "bytes": 206
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/_CodeSignature/CodeRequirements",
+          "sha256": "987920904eab650e75788c054aa0b0524e6a80bfc71aa32df8d237a61743f986",
+          "bytes": 12
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/_CodeSignature/CodeResources",
+          "sha256": "fb5dcd08500f70b833a62a79ab3a0dfa183506a5c81b284a7c2cb640617db185",
+          "bytes": 1950
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/_CodeSignature/CodeSignature",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/default.metallib",
+          "sha256": "395f801537b2a426c4b5fd51fb48248742ac58e5db85d9c21ac6cdc03c587782",
+          "bytes": 38968
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/Info.plist",
+          "sha256": "120d8970f44b931bded1322ba731ae08de359ea3097bd72ec84905115a100744",
+          "bytes": 632
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/PrivacyInfo.xcprivacy",
+          "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0",
+          "bytes": 398
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/_CodeSignature/CodeDirectory",
+          "sha256": "d70a5dbc728dc4366ef9efd87f564a0f0e9ecc4ea85f47ed4cb11cb0678aa976",
+          "bytes": 206
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/_CodeSignature/CodeRequirements",
+          "sha256": "987920904eab650e75788c054aa0b0524e6a80bfc71aa32df8d237a61743f986",
+          "bytes": 12
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/_CodeSignature/CodeResources",
+          "sha256": "992cb9b56db418544103d3f0d9cfe363d28882ab1d8aa3cac3cd2099aa799d4d",
+          "bytes": 1960
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/_CodeSignature/CodeSignature",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        }
+      ]
+    },
+    "iphoneos": {
+      "triple": "arm64-apple-ios18.0",
+      "argv": [
+        "/usr/bin/swift",
+        "build",
+        "--package-path",
+        "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification",
+        "--scratch-path",
+        "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-xcframework-build/device",
+        "-c",
+        "release",
+        "--target",
+        "WaxEvaluationAdapter",
+        "--triple",
+        "arm64-apple-ios18.0",
+        "--sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS27.2.sdk",
+        "--jobs",
+        "4"
+      ],
+      "build_seconds": 111.28756499290466,
+      "static_object_count": 530,
+      "excluded_core_objects": true,
+      "framework": "Slices/device/WaxEvaluationAdapter.framework",
+      "binary_sha256": "911a29e9bcd9e2b814cd7ea92380645207baae4be05f6a36db97c6dd1a880b92",
+      "interface_sha256": "f52158d5494251722f64f809755c33f2a1858fffe2a0ff0d5360967ebf8389f4",
+      "resources_directory": "Resources/iphoneos",
+      "resource_files": [
+        {
+          "path": "GRDB_GRDB.bundle/Info.plist",
+          "sha256": "a3ea191651309c013bc244d3081b2262efc317053776f4e1c8df5173a3dddf27",
+          "bytes": 636
+        },
+        {
+          "path": "GRDB_GRDB.bundle/PrivacyInfo.xcprivacy",
+          "sha256": "17784da62e51f74c5859df32fe402e01e25cdf6f797a4add06e2a3ce15c911f4",
+          "bytes": 397
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/Info.plist",
+          "sha256": "329700af93ee8b0559daec0f93e1db0dbc2dc8dabd2f09932e99579d426a6ac9",
+          "bytes": 660
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/default.metallib",
+          "sha256": "cde15c664b985897a67e59b4c916676a073e0b6212b8ab4cc42ab6a8eaf751ba",
+          "bytes": 154312
+        },
+        {
+          "path": "Wax_Wax.bundle/Info.plist",
+          "sha256": "81e4e166c94cb475022d362fa2efabfabf9dcf09ed1d1fa6f7cb40b53463601f",
+          "bytes": 626
+        },
+        {
+          "path": "Wax_Wax.bundle/cl100k_base.tiktoken",
+          "sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+          "bytes": 1681126
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/Info.plist",
+          "sha256": "f024afa76b75ba5d2172f0a414f0462e8a08bd290aa6868fe3934a07a1ecd197",
+          "bytes": 652
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/default.metallib",
+          "sha256": "2616f02b12eec0d6890f8aae26d6bc7ff804fe8fcaa0e84ddf95d71ebd154343",
+          "bytes": 38840
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/Info.plist",
+          "sha256": "1646b334ee588724e2b9746d9058bc2dce30184e41a9347d590bc6e3ceea2520",
+          "bytes": 652
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/PrivacyInfo.xcprivacy",
+          "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0",
+          "bytes": 398
+        }
+      ]
+    },
+    "macosx": {
+      "triple": "arm64-apple-macos14.0",
+      "argv": [
+        "/usr/bin/swift",
+        "build",
+        "--package-path",
+        "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification",
+        "--scratch-path",
+        "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-xcframework-build/macos",
+        "-c",
+        "release",
+        "--target",
+        "WaxEvaluationAdapter",
+        "--triple",
+        "arm64-apple-macos14.0",
+        "--sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX27.2.sdk",
+        "--jobs",
+        "4"
+      ],
+      "build_seconds": 126.43344378471375,
+      "static_object_count": 530,
+      "excluded_core_objects": true,
+      "framework": "Slices/macos/WaxEvaluationAdapter.framework",
+      "binary_sha256": "0bd6a79971f814ab6f1d02385a3b865d4908e7e5cd05ec9173e3b8be43bf6661",
+      "interface_sha256": "1f290fda7681d618e1f912aa403fb3f793e6379ec25d5bcae7d413b87afcde85",
+      "resources_directory": "Resources/macosx",
+      "resource_files": [
+        {
+          "path": "GRDB_GRDB.bundle/Contents/Info.plist",
+          "sha256": "923210a2409cf3040953de7637d8987efb707be5b8539de61bb22da46ae25c8f",
+          "bytes": 1118
+        },
+        {
+          "path": "GRDB_GRDB.bundle/Contents/Resources/PrivacyInfo.xcprivacy",
+          "sha256": "17784da62e51f74c5859df32fe402e01e25cdf6f797a4add06e2a3ce15c911f4",
+          "bytes": 397
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/Contents/Info.plist",
+          "sha256": "b80b64881079e376ab1ad9e62a595f0c82dd3779f7303c05e7420858f8ceb852",
+          "bytes": 1140
+        },
+        {
+          "path": "MetalANNS_MetalANNSCore.bundle/Contents/Resources/default.metallib",
+          "sha256": "e978ee1f38a54c7fdf6c4697faea168fe2727155afd2187e2ea6554cb6ef1e74",
+          "bytes": 154600
+        },
+        {
+          "path": "Wax_Wax.bundle/Contents/Info.plist",
+          "sha256": "aac1c7e8ae24015f7c659943e1e734f14b7c1d06b2ad43257813ddb1c1996502",
+          "bytes": 1108
+        },
+        {
+          "path": "Wax_Wax.bundle/Contents/Resources/cl100k_base.tiktoken",
+          "sha256": "223921b76ee99bde995b7ff738513eef100fb51d18c93597a113bcffe865b2a7",
+          "bytes": 1681126
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/Contents/Info.plist",
+          "sha256": "390bb515cea8b834264a723ab8c32925d73d9576ff10f9dc6f1ad3bd95c6abce",
+          "bytes": 1132
+        },
+        {
+          "path": "Wax_WaxVectorSearch.bundle/Contents/Resources/default.metallib",
+          "sha256": "dde740a6197fa27dc600fd8c315f96b5f56ca4d82bfe671ec9ad67f4013cfb47",
+          "bytes": 38872
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/Contents/Info.plist",
+          "sha256": "c71df17db3f8abb59fbe5c3d42e7b074881e2cd5ea8e054ff2260148f70d6243",
+          "bytes": 1132
+        },
+        {
+          "path": "swift-crypto_Crypto.bundle/Contents/Resources/PrivacyInfo.xcprivacy",
+          "sha256": "42fb8a30dd8d7ba0900e1bf17fe64ed8c12cfdb8a9c791ab6b4e1eceb0f299c0",
+          "bytes": 398
+        }
+      ]
+    }
+  },
+  "toolchain": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0"
+}

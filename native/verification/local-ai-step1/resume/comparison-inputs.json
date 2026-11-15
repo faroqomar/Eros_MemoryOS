@@ -1,0 +1,237 @@
+{
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "selectedBatches": {
+    "keyword-control": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+    "llama-qwen06": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+    "cactus": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+    "llama-qwen": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+    "mlx-qwen": "6284B9B7-6E34-402C-A5C6-3AD97B996F55",
+    "wax-lexical": "CF818A95-44F8-4A98-838A-3CE0626799AF"
+  },
+  "includedReports": [
+    {
+      "candidateID": "keyword-control",
+      "batchID": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+      "repetition": 4,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-D5BA1ABB-4BD1-4110-AE04-40F6E640309F.json",
+      "sha256": "b0be943504f25f953350d70c519682543c34ffcdf15d444b8ebaacd591247d08"
+    },
+    {
+      "candidateID": "keyword-control",
+      "batchID": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+      "repetition": 2,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-D6CA2910-FE16-46A1-BFE1-F0FF1180C878.json",
+      "sha256": "1589c89030ab5e7e0ae177d5334e92e47415fc6f034f303a3ec8f3837ab2c284"
+    },
+    {
+      "candidateID": "keyword-control",
+      "batchID": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+      "repetition": 0,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-18362EF6-112B-49AC-9D0C-4D4B8D7A87C3.json",
+      "sha256": "2606db5f01302d063784ec27080bcdd24bdb219e7dd2c07a9329cf4afdf261fe"
+    },
+    {
+      "candidateID": "keyword-control",
+      "batchID": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+      "repetition": 5,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-06130348-CBBD-4F50-928C-5968A72C981F.json",
+      "sha256": "da954149669be195feab00a3718f5c33a71e30e91f4e90ad7e625758e444c3e6"
+    },
+    {
+      "candidateID": "keyword-control",
+      "batchID": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+      "repetition": 3,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-25A7B237-98C6-4FB0-8209-111087ABC9D7.json",
+      "sha256": "0f1cec12800cf91475e6ec324a26b37da89e9bc7bfeb1f3dec40554d093f8803"
+    },
+    {
+      "candidateID": "keyword-control",
+      "batchID": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+      "repetition": 1,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-DDBC4F92-FC62-4C69-8946-491E49E64B6D.json",
+      "sha256": "38b888c951098856750182337e95247e42da10cdfc2b0a096fd5bbed399baca8"
+    },
+    {
+      "candidateID": "llama-qwen06",
+      "batchID": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+      "repetition": 3,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-7C05F288-1A79-4DBB-920F-A613916AF498.json",
+      "sha256": "319f6e6fcd7aceae12868e62ef24a0329bccd975c825caae79c0876f99b775a8"
+    },
+    {
+      "candidateID": "llama-qwen06",
+      "batchID": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+      "repetition": 5,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-E9E7E755-9074-43B7-B299-F089102DDD64.json",
+      "sha256": "bd86cd68958fe3a7b628edf6f100cd9f6852d5bca49a4bc9c36e50f7cd26664a"
+    },
+    {
+      "candidateID": "llama-qwen06",
+      "batchID": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+      "repetition": 4,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-A20E0B63-121E-46ED-ABFB-0A1DB8ACB40E.json",
+      "sha256": "1724f9995ad17fd7d52a10345093f15984130b12c3a5ec50d4b5a29f7b3d4ccc"
+    },
+    {
+      "candidateID": "llama-qwen06",
+      "batchID": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+      "repetition": 2,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-9215D038-AE18-46E3-924C-7AFF69168771.json",
+      "sha256": "25bf58fefee3217cfc4494318a2f8b7daf3d64aaf819d0bc7935bf36952e4c37"
+    },
+    {
+      "candidateID": "llama-qwen06",
+      "batchID": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+      "repetition": 0,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-3B24890F-3CA1-4AA0-9756-F986BD27DA60.json",
+      "sha256": "9edbc758f11b8eb7e9e38771b49724e07965dfebe19f68a3e9a14fe6b4fcc248"
+    },
+    {
+      "candidateID": "llama-qwen06",
+      "batchID": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+      "repetition": 1,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-B0CCCEFB-CA39-49DE-B376-B7DBAAC7A7C3.json",
+      "sha256": "9926c414f7d0ee9669cc05e809f27a09dfad893153fd5612c62fb00e216afa20"
+    },
+    {
+      "candidateID": "cactus",
+      "batchID": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+      "repetition": 3,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-BB046816-A756-461B-8FC4-33B260B473E0.json",
+      "sha256": "82d1e0661f48975ab10b9c31cec61df1c36753796c7ede089b5994fba15a89b3"
+    },
+    {
+      "candidateID": "cactus",
+      "batchID": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+      "repetition": 1,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-FC3C8F71-21B8-4FA5-967A-F9D842811798.json",
+      "sha256": "5b991794e8bbaf7e8c7ce91e433cd48ae915d0eb4df201772301a5f39f170cc1"
+    },
+    {
+      "candidateID": "cactus",
+      "batchID": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+      "repetition": 0,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-951DB1F4-4D36-4D1A-96F8-D1341989B0CC.json",
+      "sha256": "9e0dfab0b6367abf309fbec80248a082f89c708c8815ed8319ecba7da985c50c"
+    },
+    {
+      "candidateID": "cactus",
+      "batchID": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+      "repetition": 5,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-B7AF7C59-CE2E-4878-9B4B-2890DD09B52D.json",
+      "sha256": "a9d9dc4e90e32dfcebd44c44a9913ea24a58d8b2c5a591bf9a86a415c7dc4655"
+    },
+    {
+      "candidateID": "cactus",
+      "batchID": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+      "repetition": 4,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-5AE6030E-0CAD-42F7-9234-2CEC4FDFAA89.json",
+      "sha256": "2da902d51bedc940bfff10beb50a0b1d39cedce3b780231cccebbaec64843c01"
+    },
+    {
+      "candidateID": "cactus",
+      "batchID": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+      "repetition": 2,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-1F33C359-FD88-49C6-AED3-ACF3C76120D1.json",
+      "sha256": "cd227f66c6e1b05c1536341a9d2ef1d0ada351d2f955d58d7b274092785ea257"
+    },
+    {
+      "candidateID": "llama-qwen",
+      "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+      "repetition": 2,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-7911B9EF-1E57-4C19-BE41-26923DCCA169.json",
+      "sha256": "b1ba9b659e7a562c298bb36b878aa44ba30cbdf18e1c50fb8f0f4df2e1bb6e59"
+    },
+    {
+      "candidateID": "llama-qwen",
+      "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+      "repetition": 5,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-A7B8810B-C341-4E92-B77A-7DCBA5F2052F.json",
+      "sha256": "4e0dfa78557f85af2762bb32d8fcf76224263bff5e1442f6966db617b22be4cc"
+    },
+    {
+      "candidateID": "llama-qwen",
+      "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+      "repetition": 0,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-F6BCA932-2FB9-4215-812C-8DB5D9E4D28B.json",
+      "sha256": "de0014e3a490b91a62c19671d98fb1f79bcc21d0bb1d53b83a8ae4947f15f9fb"
+    },
+    {
+      "candidateID": "llama-qwen",
+      "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+      "repetition": 3,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-2E152742-2162-4407-BD3D-1905A7855C20.json",
+      "sha256": "e231fc80c4b9f64ae5209fbc27c3123fb1f2e1062467a836309b60d6cd73f7b3"
+    },
+    {
+      "candidateID": "llama-qwen",
+      "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+      "repetition": 4,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-5BA73B83-D733-448B-8661-BA0D11215DD5.json",
+      "sha256": "e6ffa4b9295eab9cc9c13b2fe77bc03f7710aab943e0c724e7f72bdb05aab3bf"
+    },
+    {
+      "candidateID": "llama-qwen",
+      "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+      "repetition": 1,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-42447A9B-4173-4FFC-B3BA-F61978A90F96.json",
+      "sha256": "13484f5e79f3a222fe7c71c2831b654a6fed8225eb61531a3077b0c2980c75f3"
+    },
+    {
+      "candidateID": "mlx-qwen",
+      "batchID": "6284B9B7-6E34-402C-A5C6-3AD97B996F55",
+      "repetition": 0,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/mlx-qwen-FF7FE5CC-024D-4145-B239-8EC0D58F5500.json",
+      "sha256": "e60b7ba9ff04c15c3153037aaa0a565f38311e08097d8810693fcd9f278da2b4"
+    },
+    {
+      "candidateID": "wax-lexical",
+      "batchID": "CF818A95-44F8-4A98-838A-3CE0626799AF",
+      "repetition": 3,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-4B73FDC1-811F-4119-B334-6B767191609F.json",
+      "sha256": "8984dcf268f000f9c0312d86e50ed75c31e1db6ec430d11f2bf4ff165a38200b"
+    },
+    {
+      "candidateID": "wax-lexical",
+      "batchID": "CF818A95-44F8-4A98-838A-3CE0626799AF",
+      "repetition": 2,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-510FA262-06C0-4CCB-A555-E3E435EFA10C.json",
+      "sha256": "fd7e8ff653e5c098c087f1c99512c80ec92ee9f274bb9cdb209d324001fa9e52"
+    },
+    {
+      "candidateID": "wax-lexical",
+      "batchID": "CF818A95-44F8-4A98-838A-3CE0626799AF",
+      "repetition": 5,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-DAE27252-4793-476A-9D0F-FF70B9DA0EA8.json",
+      "sha256": "2875289405392a7678d427f98669ebf7e284aef72f2af6954fa184f3f65d6f66"
+    },
+    {
+      "candidateID": "wax-lexical",
+      "batchID": "CF818A95-44F8-4A98-838A-3CE0626799AF",
+      "repetition": 1,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-4AC8EA9D-67D7-41B5-A87C-52F5B31A74E7.json",
+      "sha256": "57893c960e04d752ef39896e16528ecc801f8e9a982dca6f874728168e5d0d01"
+    },
+    {
+      "candidateID": "wax-lexical",
+      "batchID": "CF818A95-44F8-4A98-838A-3CE0626799AF",
+      "repetition": 4,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-8BD5B166-BAEF-4664-A837-3D8262458D38.json",
+      "sha256": "5e579d379de11f6fbaa558615b162195e3e66c7c668f11c49ef85a77622e0180"
+    },
+    {
+      "candidateID": "wax-lexical",
+      "batchID": "CF818A95-44F8-4A98-838A-3CE0626799AF",
+      "repetition": 0,
+      "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-6FE303B1-4488-4A69-BF91-ECC283B24293.json",
+      "sha256": "181e746c6438ab4c7e8d5d063b854384eec8714fc33706e1b4ae55bd6241ee9a"
+    }
+  ],
+  "includedCaseResults": 465,
+  "excludedTimingBatch": {
+    "batchID": "EB493729-524D-4F48-9417-C4EFC3057F56",
+    "reason": "Overlapping canonical build; preserved unchanged outside comparative timing",
+    "receipt": "benchmark-interference.json"
+  },
+  "selectionBasis": "Complete preplanned suites with controlled timing. No quality-based filtering or prompt changes."
+}

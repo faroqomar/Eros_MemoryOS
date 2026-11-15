@@ -1,0 +1,65 @@
+-- Cactus version: v1.14
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/macos
+[0/2] Re-checking globbed directories...
+[1/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed_speaker.cpp.o
+[2/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed.cpp.o
+[3/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_diarize.cpp.o
+[4/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_graph.cpp.o
+[5/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_index.cpp.o
+[6/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_init.cpp.o
+[7/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_log.cpp.o
+[8/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_complete.cpp.o
+[9/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_telemetry.cpp.o
+[10/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_memoryos_embedding.cpp.o
+[11/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_rag.cpp.o
+[12/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_vad.cpp.o
+[13/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_stream.cpp.o
+[14/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_transcribe.cpp.o
+[15/15] Linking CXX static library libcactus.a
+-- Cactus version: v1.14
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/simulator
+[0/2] Re-checking globbed directories...
+[1/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed.cpp.o
+[2/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed_speaker.cpp.o
+[3/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_diarize.cpp.o
+[4/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_graph.cpp.o
+[5/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_index.cpp.o
+[6/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_init.cpp.o
+[7/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_log.cpp.o
+[8/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_complete.cpp.o
+[9/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_telemetry.cpp.o
+[10/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_memoryos_embedding.cpp.o
+[11/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_rag.cpp.o
+[12/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_vad.cpp.o
+[13/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_stream.cpp.o
+[14/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_transcribe.cpp.o
+[15/15] Linking CXX static library libcactus.a
+-- Cactus version: v1.14
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/device
+[0/2] Re-checking globbed directories...
+[1/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed.cpp.o
+[2/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed_speaker.cpp.o
+[3/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_diarize.cpp.o
+[4/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_graph.cpp.o
+[5/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_index.cpp.o
+[6/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_init.cpp.o
+[7/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_log.cpp.o
+[8/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_complete.cpp.o
+[9/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_telemetry.cpp.o
+[10/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_memoryos_embedding.cpp.o
+[11/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_rag.cpp.o
+[12/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_vad.cpp.o
+[13/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_stream.cpp.o
+[14/15] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_transcribe.cpp.o
+[15/15] Linking CXX static library libcactus.a
+xcframework successfully written out to: /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework
+{"output": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework", "files": 11}

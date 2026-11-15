@@ -1,0 +1,102 @@
+{
+  "device": "iPhone18Pro",
+  "operatingSystem": "iOS27.2",
+  "environment": "Simulator",
+  "host": "AppleM1Pro / 16GiB / macOS27.2.1",
+  "appearance": "Dark",
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "sourceManifest": "../source-hashes.json",
+  "captureMethod": "Actual T3 agent-device screenshots at1x; no image edits",
+  "data": "Fictional evaluation records only; main Capture app storage not opened",
+  "languageInteraction": "Fresh actual inner switch ref with200ms hold changed checked state and Arabic title; early short/wrapper presses did not land. No app source change.",
+  "captures": [
+    {
+      "file": "01-configuration-dark.png",
+      "state": "English candidate configuration",
+      "sha256": "1fe9b989cd5ee8968fbca608590962357bf2bb480075b1a259daaa33ee356ad6",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:09:10.911033+00:00"
+    },
+    {
+      "file": "02-qwen06-progress-dark.png",
+      "state": "Measured Qwen3-0.6B progress",
+      "sha256": "333df082e2a3701cb8a62a5c19d63f9567914f7db52986d13428c831e8935946",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:14:09.352333+00:00"
+    },
+    {
+      "file": "03-qwen06-results-dark.png",
+      "state": "Actual 0.6B mixed-text answer and incorrect citation",
+      "sha256": "97b36618e85d85f976813606ef7dbdd645d61881b9a89689f73998ed5ebea650",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:15:18.016668+00:00"
+    },
+    {
+      "file": "04-cactus-results-dark.png",
+      "state": "Cactus result header and runtime source identity",
+      "sha256": "aeade930b5a64b0935baad64b521977ce51f57568f10c8b943d163c34835908a",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:18:03.155034+00:00"
+    },
+    {
+      "file": "05-qwen17-cancelled-dark.png",
+      "state": "Actual1.7B cancellation with no final result and enabled rerun",
+      "sha256": "0f19a8c056954f978220924e0f64acb5da06c5b7add61c97d38930f2e23075f1",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:26:43.667544+00:00"
+    },
+    {
+      "file": "06-qwen17-results-dark.png",
+      "state": "Clean1.7B six-suite results, source identity, metrics and answers",
+      "sha256": "51774ee6beecc8b5adca3a6460615cba22445e280f6a19569845ea9afb398d37",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:38:40.106061+00:00"
+    },
+    {
+      "file": "07-mlx-simulator-unavailable-dark.png",
+      "state": "MLX explicit Simulator-unavailable result; no inference or zero-cost claim",
+      "sha256": "4875ae96aaf0094002e416508fff40c0f1608d12438cceccf5aea04d56f7e14c",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:40:17.074200+00:00"
+    },
+    {
+      "file": "08-arabic-rtl-dark.png",
+      "state": "Arabic title, checked language switch and mirrored RTL configuration",
+      "sha256": "201950ba866c9e1c6454c49bde4c84553556bbc91639ba65fe1d20bb40339965",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:54:44.395066+00:00"
+    },
+    {
+      "file": "09-wax-results-dark.png",
+      "state": "Wax results, source identity, file bytes and source-set differences",
+      "sha256": "21ae8aab61acbcc0a6ca07093dfc1dc6376166fa5747853387c100ae23b0b2b0",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:51:27.134135+00:00"
+    },
+    {
+      "file": "10-wax-arabic-results-dark.png",
+      "state": "Arabic/RTL Wax result flow and runtime source identity",
+      "sha256": "e8bd75033a2a036819ce8e6170e155d879789e0daf3c63cf61edf29464a3cd71",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:56:26.754284+00:00"
+    },
+    {
+      "file": "failed-arabic-toggle-first.png",
+      "state": "Historical short-press attempt; language stayed English, not Arabic evidence",
+      "sha256": "eb3860c48e0bdcce452664e6b09ef5929f66f49d2ba3d7a1e12b22e265eea5f8",
+      "pixelWidth": 402,
+      "pixelHeight": 874,
+      "capturedAtUTC": "2026-11-15T00:49:33.554279+00:00"
+    }
+  ]
+}

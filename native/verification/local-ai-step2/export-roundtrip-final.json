@@ -1,0 +1,11 @@
+{
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "sha256": "949ada3544530b6b7a825b4542cae976a7f2f69d18a72a74b500bd721e783687",
+  "batchID": "34BACD70-B65F-495E-B9E3-99A09F9FCE9A",
+  "repetition": 5,
+  "cases": 15,
+  "byteIdenticalAutomaticReport": true,
+  "method": "Actual T3 native fileExporter -> Save -> Keep Both. Final-source control run initiated and export reached at largest DynamicType Arabic; category restored to large in native picker before Save. Earlier export preserved.",
+  "sourcePath": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Shared/AppGroup/373DA5CD-B506-4409-AB96-929BF2889EE4/File Provider Storage/memoryos-ai-evaluation 2.json",
+  "automaticReport": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Data/Application/6D884E5F-AE7A-4109-A0D7-ACAC768DEFFF/Documents/EvaluationReports/keyword-control-E7B67EA3-B2F0-4BB4-BC82-A5747A2AD4F9.json"
+}

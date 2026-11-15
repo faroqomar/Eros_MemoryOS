@@ -1,0 +1,79 @@
+#!/usr/bin/env python3
+"""Build the reviewed local-only Cactus XCFramework outside app source."""
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import shutil
+import subprocess
+
+PIN = '2cfcdb8568eb9192323b27fd0012a834517b4419'
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def run(args, cwd=None):
+    subprocess.run([str(x) for x in args], cwd=cwd, check=True)
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--upstream', type=Path, required=True)
+    parser.add_argument('--cmake', default='cmake')
+    parser.add_argument('--ninja', default='ninja')
+    parser.add_argument('--jobs', default='4')
+    args = parser.parse_args()
+    upstream = args.upstream.resolve()
+    if (upstream / '.git').exists():
+        actual = subprocess.check_output(['git', 'rev-parse', 'HEAD'], cwd=upstream, text=True).strip()
+    else:
+        receipt = json.loads((upstream / '.memoryos-upstream-source.json').read_text())
+        actual = receipt['revision']
+    if actual != PIN:
+        raise SystemExit(f'Refusing unexpected upstream revision: {actual}')
+    patch = ROOT / 'Support' / 'upstream-local-only.patch'
+    checked = subprocess.run(['git', 'apply', '--check', str(patch)], cwd=upstream, capture_output=True)
+    if checked.returncode == 0:
+        run(['git', 'apply', str(patch)], cwd=upstream)
+    else:
+        run(['git', 'apply', '--reverse', '--check', str(patch)], cwd=upstream)
+    build_base = upstream / '.memoryos-evaluation-build'
+    artifacts = ROOT / 'Artifacts'
+    artifacts.mkdir(exist_ok=True)
+    libraries = []
+    for name, sdk, target in [('macos', 'macosx', 'Darwin'), ('simulator', 'iphonesimulator', 'iOS'), ('device', 'iphoneos', 'iOS')]:
+        sdk_path = subprocess.check_output(['xcrun', '--sdk', sdk, '--show-sdk-path'], text=True).strip()
+        build = build_base / name
+        run([
+            args.cmake, '-S', upstream / 'cactus-engine', '-B', build, '-G', 'Ninja',
+            '-DCMAKE_MAKE_PROGRAM=' + args.ninja,
+            '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_OSX_ARCHITECTURES=arm64',
+            '-DCMAKE_OSX_SYSROOT=' + sdk_path, '-DCMAKE_SYSTEM_NAME=' + target,
+            '-DCMAKE_OSX_DEPLOYMENT_TARGET=' + ('14.0' if name == 'macos' else '18.0'),
+            '-DCACTUS_LOCAL_EVALUATION_ONLY=ON',
+            '-DCACTUS_CURL_ROOT=' + str(build_base / 'network-excluded'),
+        ])
+        run([args.cmake, '--build', build, '--target', 'cactus_engine_bundle', '--parallel', args.jobs])
+        headers = build / 'public-headers'
+        headers.mkdir(exist_ok=True)
+        shutil.copy2(upstream / 'cactus-engine' / 'cactus_engine.h', headers / 'cactus_engine.h')
+        (headers / 'module.modulemap').write_text('module cactus {\n  header "cactus_engine.h"\n  export *\n}\n')
+        libraries += ['-library', build / 'libcactus_engine.a', '-headers', headers]
+    output = artifacts / 'cactus.xcframework'
+    if output.exists():
+        shutil.rmtree(output)
+    run(['xcodebuild', '-create-xcframework', *libraries, '-output', output])
+    shutil.copy2(upstream / 'LICENSE', output / 'LICENSE')
+    files = {str(p.relative_to(output)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.rglob('*')) if p.is_file()}
+    receipt = {
+        'upstreamURL': 'https://github.com/cactus-compute/engine', 'upstreamRevision': PIN,
+        'patchSHA256': hashlib.sha256(patch.read_bytes()).hexdigest(),
+        'configuration': 'Release, arm64 macOS14 / iOS18 device / iOS18 simulator, CPU selected by Swift adapter',
+        'network': 'Telemetry implementation excluded; curl transport compile definitions disabled; no cloud credentials or downloader',
+        'artifactFiles': files,
+    }
+    (artifacts / 'build-receipt.json').write_text(json.dumps(receipt, indent=2) + '\n')
+    print(json.dumps({'output': str(output), 'files': len(files)}))
+
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,24 @@
+{
+  "removed": [
+    {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/cactus-qwen3-embedding-0.6b/model-int4.zip.contiguous-prefix",
+      "bytesBefore": 15790080,
+      "bytesAfter": 0,
+      "reason": "Redundant partial prefix after full archive verification"
+    },
+    {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/cactus-tools",
+      "bytesBefore": 26217943,
+      "bytesAfter": 0,
+      "reason": "Unused replacement build-tool environment; existing SDK CMake/Ninja used"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Support/__pycache__",
+      "bytesBefore": 11387,
+      "bytesAfter": 0,
+      "reason": "Generated Python bytecode; no runtime consumer"
+    }
+  ],
+  "removedLogicalBytes": 42019410,
+  "retained": "Verified ZIP, unpacked model, source/build checkout, XCFramework and all unique logs/failed-attempt provenance remain required evaluation assets. Parent owns simulator copies and wider Step2 cleanup."
+}

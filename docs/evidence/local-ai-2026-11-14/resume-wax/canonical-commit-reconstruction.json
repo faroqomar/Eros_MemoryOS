@@ -1,0 +1,8 @@
+{
+  "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+  "verified_git_sha1": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+  "author_timezone": "+0300",
+  "committer_timezone": "+0300",
+  "message_trailing_newline": true,
+  "method": "Original GitHub commit metadata; exact byte reconstruction accepted only when Git SHA1 equals reviewed upstream commit; no content changes"
+}

@@ -1,0 +1,33 @@
+{
+  "sourceIdentity": "1b978142c6193ff5e2ad02bb12c7dc0d91ef05ab4e136f5f94f69431fb85b882",
+  "finalSourceEvidence": false,
+  "note": "Intermediate source before final generic-error copy correction. All captures are actual T3 device PNGs.",
+  "device": "iPhone 18 Pro Max / iOS 27.2 Simulator",
+  "appearance": "dark",
+  "captures": [
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/01-english-dark.png",
+      "sha256": "5c12e9dc7f06e3aab3f6ad0beea96c2526e76ac9e0c537573accfbc97fa7d627"
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/02-english-largest-dark.png",
+      "sha256": "7e9f560c46f27afe1bcf4a265049c7e2d53923c2006109a749b459763ff4ee35"
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/03-heading-largest-dark.png",
+      "sha256": "2979655db40f3eebb7317fcc08c499a35e09252e5519c6c5eb185921a8caea4f"
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/04-arabic-largest-dark.png",
+      "sha256": "d0361e29dcc0f43669072f69ac206c047496d3e66269abe8f46230a30928beaa"
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/05-arabic-largest-run-dark.png",
+      "sha256": "ddd2e0c1d101f82d778b41980616afe547055adb53618fc399d39d4c8b977632"
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/screenshots/06-arabic-dark.png",
+      "sha256": "3af231734ce2b94c93680da3702b6b41031960457e13d57c8290743d6056ffe0"
+    }
+  ]
+}

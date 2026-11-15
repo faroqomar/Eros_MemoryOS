@@ -1,0 +1,233 @@
+{
+  "scope": "Canonical generated SwiftPM graph and original SDK source, including nested MLX submodule notices. Evaluation only; no distribution or commercial readiness claim.",
+  "resolvedSHA256": "b0b669e88f2946f1b70b5354eb50ae27b21eddb8f1710f3e0fafa84ffd647d8b",
+  "packages": [
+    {
+      "identity": "eventsource",
+      "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1",
+      "version": "1.6.0",
+      "location": "https://github.com/mattt/EventSource.git",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE.md",
+          "sha256": "2f9b695627d569a3ce452b2c03fdd34310df78c8ea94edfafd9ce38381e5b502",
+          "licenseOrNotice": "MIT"
+        }
+      ]
+    },
+    {
+      "identity": "mlx-swift",
+      "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+      "version": "0.32.3",
+      "location": "https://github.com/ml-explore/mlx-swift",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+          "licenseOrNotice": "MIT"
+        },
+        {
+          "path": "Source/Cmlx/metal-cpp/LICENSE.txt",
+          "sha256": "f4e92c7fe2aa066e294c0da9d08683dc9fb741ee6e6debbfad99a0c96e07c1f2",
+          "licenseOrNotice": "Apache-2.0"
+        },
+        {
+          "path": "Source/Cmlx/fmt/LICENSE",
+          "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8",
+          "licenseOrNotice": "MIT"
+        },
+        {
+          "path": "Source/Cmlx/fmt/test/noexception-test.cc",
+          "sha256": "e8a1746fc7bb2aa4775756923d3b1281b03188b5e7a361bb9cbec4b1b91d43ba",
+          "licenseOrNotice": "Notice or exception; retain original text"
+        },
+        {
+          "path": "Source/Cmlx/mlx-c/LICENSE",
+          "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+          "licenseOrNotice": "MIT"
+        },
+        {
+          "path": "Source/Cmlx/json/LICENSE.MIT",
+          "sha256": "86b998c792894ccb911a1cb7994f7a9652894e7a094c0b5e45be2f553f45cf14",
+          "licenseOrNotice": "MIT"
+        },
+        {
+          "path": "Source/Cmlx/json/include/nlohmann/detail/exceptions.hpp",
+          "sha256": "55299c55106de2624ca7aa6a5705ad6ff53814c1b52f8fe8d2872f13c956c95a",
+          "licenseOrNotice": "Notice or exception; retain original text"
+        },
+        {
+          "path": "Source/Cmlx/mlx/LICENSE",
+          "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+          "licenseOrNotice": "MIT"
+        }
+      ]
+    },
+    {
+      "identity": "mlx-swift-lm",
+      "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+      "version": null,
+      "location": "https://github.com/ml-explore/mlx-swift-lm",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323",
+          "licenseOrNotice": "MIT"
+        },
+        {
+          "path": "Libraries/MLXCXGrammar/xgrammar/LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+          "licenseOrNotice": "Apache-2.0"
+        },
+        {
+          "path": "Libraries/MLXCXGrammar/xgrammar/NOTICE",
+          "sha256": "769c6907073c65801bfcfe3ce1c0e80bf0ae4e124e2769d4f026c038ad583c0f",
+          "licenseOrNotice": "Notice or exception; retain original text"
+        },
+        {
+          "path": "Libraries/MLXCXGrammar/xgrammar/include/xgrammar/exception.h",
+          "sha256": "78e2ebf1e34ac464c8611571fd2eb4689a016a4fff314e8cd4cad2419ce89d63",
+          "licenseOrNotice": "Notice or exception; retain original text"
+        }
+      ]
+    },
+    {
+      "identity": "swift-asn1",
+      "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+      "version": "1.7.4",
+      "location": "https://github.com/apple/swift-asn1.git",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "NOTICE.txt",
+          "sha256": "11dd3b3b783e6ec26098dd38ebc962986ea109b85447e28e62867b83bd0f8c5b",
+          "licenseOrNotice": "Apache-2.0"
+        },
+        {
+          "path": "LICENSE.txt",
+          "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+          "licenseOrNotice": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "identity": "swift-collections",
+      "revision": "88754449ab766a739610b660e117762115fabc9c",
+      "version": "1.7.6",
+      "location": "https://github.com/apple/swift-collections.git",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "770af8291f708538d8ff885a0bbc4e045cd700531741c4f99528d435c14d7f55",
+          "licenseOrNotice": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "identity": "swift-crypto",
+      "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+      "version": "3.15.1",
+      "location": "https://github.com/apple/swift-crypto.git",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "NOTICE.txt",
+          "sha256": "b3ddc2ae068e76b3beb71be03c0400f90090f9469aa491bf7b1ac42320af37b8",
+          "licenseOrNotice": "Apache-2.0"
+        },
+        {
+          "path": "LICENSE.txt",
+          "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+          "licenseOrNotice": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "identity": "swift-huggingface",
+      "revision": "c30143a4616f3fa994ee3ab3e3464f752845c07c",
+      "version": "1.0.0",
+      "location": "https://github.com/huggingface/swift-huggingface.git",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "4d6ad72952a8329063a71de28329b493de96cf57459e2ac217110d1a6a5f84ae",
+          "licenseOrNotice": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "identity": "swift-jinja",
+      "revision": "66042420a9225c98ea9382d705e2285769dfdbe5",
+      "version": "3.1.0",
+      "location": "https://github.com/huggingface/swift-jinja.git",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+          "licenseOrNotice": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "identity": "swift-numerics",
+      "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+      "version": "1.1.1",
+      "location": "https://github.com/apple/swift-numerics",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "770af8291f708538d8ff885a0bbc4e045cd700531741c4f99528d435c14d7f55",
+          "licenseOrNotice": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "identity": "swift-syntax",
+      "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+      "version": "603.0.2",
+      "location": "https://github.com/swiftlang/swift-syntax.git",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE.txt",
+          "sha256": "770af8291f708538d8ff885a0bbc4e045cd700531741c4f99528d435c14d7f55",
+          "licenseOrNotice": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "identity": "swift-transformers",
+      "revision": "402a8a1105f52038b0949d9596981fc9e32bed17",
+      "version": null,
+      "location": "https://github.com/huggingface/swift-transformers",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+          "licenseOrNotice": "Apache-2.0"
+        }
+      ]
+    },
+    {
+      "identity": "yyjson",
+      "revision": "6447536015f3d600f3d65323b10976103b337ca7",
+      "version": "0.13.0",
+      "location": "https://github.com/ibireme/yyjson.git",
+      "licenseAndNoticeFiles": [
+        {
+          "path": "LICENSE",
+          "sha256": "45e384d3d52c73cba3a64d6e6c25d47cd738cd8a55c30629e3201046eda62947",
+          "licenseOrNotice": "MIT"
+        }
+      ]
+    }
+  ],
+  "modelLicense": "Apache-2.0 as declared by the immutable reviewed model card",
+  "obligations": [
+    "Preserve included copyright and license notices.",
+    "Preserve applicable Apache NOTICE files and exceptions.",
+    "Retain original third-party source headers and notices; root license alone does not replace component notices."
+  ],
+  "privacyBoundary": "The adapter uses explicit local model/tokenizer APIs, provides no downloader and has no cloud fallback. The canonical 15-case host run passed under OS network denial; its separate receipt records the kernel EPERM probe and immutable raw output.",
+  "offlineEvidence": {
+    "receipt": "native/verification/local-ai-step1/resume/mlx-host-canonical-network-denied-receipt.json",
+    "sha256": "3340ab9cb329dcf46eaf62871a272352fccf84059588bb82790c2135956997f0"
+  }
+}

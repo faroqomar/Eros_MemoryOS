@@ -1,0 +1,16 @@
+{
+  "candidateID": "llama-qwen",
+  "batchID": "EB493729-524D-4F48-9417-C4EFC3057F56",
+  "excludeFromComparativeTiming": true,
+  "reason": "Canonical dependency compilation overlapped warm repetition1, which took95.757s versus roughly69s in adjacent suites. Keep raw outputs; rerun entire batch with builds paused.",
+  "buildOverlapUTC": [
+    "2026-11-15T00:22:24.137Z",
+    "2026-11-15T00:23:46.225Z"
+  ],
+  "cancellationRequestedAtUTC": "2026-11-15T00:25:58.391136+00:00",
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "cancellationObservedAtUTC": "2026-11-15T00:26:43.714688+00:00",
+  "observedUI": "Cancelled. No final result. / \u0623\u064f\u0644\u063a\u064a \u0627\u0644\u0627\u062e\u062a\u0628\u0627\u0631.",
+  "workerReturnEvidence": "Run and selection controls enabled again; cancelled batch produced no final result or export. Completed suite reports retained.",
+  "screenshot": "screenshots/05-qwen17-cancelled-dark.png"
+}

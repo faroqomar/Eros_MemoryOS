@@ -1,0 +1,5 @@
+{"package": "Wax", "complete": true, "materialized_files": 436, "missing_objects": 0}
+{"package": "swift-asn1", "complete": true, "materialized_files": 26, "missing_objects": 0}
+{"package": "MetalANNS", "complete": true, "materialized_files": 107, "missing_objects": 0}
+{"package": "GRDB.swift", "complete": true, "materialized_files": 228, "missing_objects": 0}
+{"package": "swift-crypto", "complete": false, "materialized_files": 324, "missing_objects": 470}

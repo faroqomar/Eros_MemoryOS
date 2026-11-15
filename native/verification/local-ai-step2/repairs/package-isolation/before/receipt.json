@@ -1,0 +1,27 @@
+{
+  "phase": "before",
+  "scratch": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-dqiwqce4",
+  "artifactsCopied": false,
+  "sourceProjectSHA256": "9ad760d163382a286d86008b596ac25cb9b7f33c227889766cde0a6f8591ceb6",
+  "commands": [
+    {
+      "name": "resolve",
+      "arguments": [
+        "xcodebuild",
+        "-project",
+        "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-dqiwqce4/native/MemoryOS.xcodeproj",
+        "-scheme",
+        "MemoryOS",
+        "-clonedSourcePackagesDirPath",
+        "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-package-isolation-dqiwqce4/packages",
+        "-resolvePackageDependencies"
+      ],
+      "exitCode": 74,
+      "seconds": 9.447837166
+    }
+  ],
+  "expectedMissingArtifactFailureReproduced": true,
+  "passed": true,
+  "scratchLogicalBytes": 348738,
+  "scratchRemoved": true
+}

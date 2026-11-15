@@ -1,0 +1,14 @@
+{
+  "identity": "swift-collections",
+  "origin": "https://github.com/apple/swift-collections.git",
+  "revision": "88754449ab766a739610b660e117762115fabc9c",
+  "rootTreeSHA1": "b35c65ea3a803957050693b0e7b598b3fc51637f",
+  "genuineShallowBoundary": true,
+  "promisor": false,
+  "sourcePatched": false,
+  "archiveSHA256": "dcef63bc26e29089d18089abbc4ffaa932d38b94d7d0bc807cdada2a038c64d1",
+  "archiveBytes": 5969457,
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/swift-collections-9a58d5cf",
+  "fsck": "",
+  "canonicalResolutionVerified": false
+}

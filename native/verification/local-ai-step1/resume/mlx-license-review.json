@@ -1,0 +1,127 @@
+{
+  "scope": "Reviewed local source snapshots; canonical resolution remains pending. No distribution or release claim.",
+  "notices": [
+    {
+      "path": "EventSource/LICENSE.md",
+      "sha256": "2f9b695627d569a3ce452b2c03fdd34310df78c8ea94edfafd9ce38381e5b502",
+      "licenseOrNotice": "MIT"
+    },
+    {
+      "path": "mlx-swift/LICENSE",
+      "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+      "licenseOrNotice": "MIT"
+    },
+    {
+      "path": "mlx-swift/Source/Cmlx/fmt/LICENSE",
+      "sha256": "07580f2a3b35709ce703d523f447b242f6dfec7582a8c0df102c7fa2849375f8",
+      "licenseOrNotice": "MIT"
+    },
+    {
+      "path": "mlx-swift/Source/Cmlx/json/LICENSE.MIT",
+      "sha256": "86b998c792894ccb911a1cb7994f7a9652894e7a094c0b5e45be2f553f45cf14",
+      "licenseOrNotice": "MIT"
+    },
+    {
+      "path": "mlx-swift/Source/Cmlx/metal-cpp/LICENSE.txt",
+      "sha256": "f4e92c7fe2aa066e294c0da9d08683dc9fb741ee6e6debbfad99a0c96e07c1f2",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "mlx-swift/Source/Cmlx/mlx/LICENSE",
+      "sha256": "ccfab7ccb2ea306f71531c8ca77bb55507606cd90768b1e32b8b52ab5b48cf01",
+      "licenseOrNotice": "MIT"
+    },
+    {
+      "path": "mlx-swift/Source/Cmlx/mlx-c/LICENSE",
+      "sha256": "44326a4ea062241ae6fc26ee2ec90bdc81af7eb7b9d3966181b733fa69d42057",
+      "licenseOrNotice": "MIT"
+    },
+    {
+      "path": "mlx-swift-lm/LICENSE",
+      "sha256": "7b1d86acac816ce8192209d7e01141c129b4d48d474c15cc5fb4af62f497c323",
+      "licenseOrNotice": "MIT"
+    },
+    {
+      "path": "mlx-swift-lm/Libraries/MLXCXGrammar/xgrammar/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "mlx-swift-lm/Libraries/MLXCXGrammar/xgrammar/NOTICE",
+      "sha256": "769c6907073c65801bfcfe3ce1c0e80bf0ae4e124e2769d4f026c038ad583c0f",
+      "licenseOrNotice": "Notice"
+    },
+    {
+      "path": "swift-collections/LICENSE.txt",
+      "sha256": "770af8291f708538d8ff885a0bbc4e045cd700531741c4f99528d435c14d7f55",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "swift-crypto/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "swift-crypto/NOTICE.txt",
+      "sha256": "b3ddc2ae068e76b3beb71be03c0400f90090f9469aa491bf7b1ac42320af37b8",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "swift-huggingface/LICENSE",
+      "sha256": "4d6ad72952a8329063a71de28329b493de96cf57459e2ac217110d1a6a5f84ae",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "swift-jinja/LICENSE",
+      "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "swift-numerics/LICENSE.txt",
+      "sha256": "770af8291f708538d8ff885a0bbc4e045cd700531741c4f99528d435c14d7f55",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "swift-syntax/LICENSE.txt",
+      "sha256": "770af8291f708538d8ff885a0bbc4e045cd700531741c4f99528d435c14d7f55",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "swift-transformers/LICENSE",
+      "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "yyjson/LICENSE",
+      "sha256": "45e384d3d52c73cba3a64d6e6c25d47cd738cd8a55c30629e3201046eda62947",
+      "licenseOrNotice": "MIT"
+    },
+    {
+      "path": "shared/swift-crypto/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "shared/swift-crypto/NOTICE.txt",
+      "sha256": "b3ddc2ae068e76b3beb71be03c0400f90090f9469aa491bf7b1ac42320af37b8",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "shared/swift-asn1/LICENSE.txt",
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+      "licenseOrNotice": "Apache-2.0"
+    },
+    {
+      "path": "shared/swift-asn1/NOTICE.txt",
+      "sha256": "11dd3b3b783e6ec26098dd38ebc962986ea109b85447e28e62867b83bd0f8c5b",
+      "licenseOrNotice": "Apache-2.0"
+    }
+  ],
+  "modelLicense": "Apache-2.0 as declared by immutable model card",
+  "obligations": [
+    "Preserve copyright and license notices for included SDKs and converted model.",
+    "Preserve applicable Apache NOTICE files with distributed artifacts.",
+    "Retain source copyright headers and third-party notices; unused vendored targets are not proof of linked distribution."
+  ],
+  "appleDistributionReview": "Not in this isolated evaluation scope; app release needs its own privacy/license/distribution checks."
+}

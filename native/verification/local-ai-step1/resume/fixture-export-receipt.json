@@ -1,0 +1,10 @@
+{
+  "method": "Actual Foundation core factory encoded through JSONEncoder; temporary source package contains no SDK dependencies",
+  "coreSourceSHA256": "a3f48e99b8846c2175f9940c981c15d694b98dd2300b6f8292214f9e0ad2afc8",
+  "fixtureSHA256": "00ff43ef2b7694fb89ee41dc488186ed66ab8dbea6d1253a7d5bb83f696bc0c5",
+  "records": 14,
+  "cases": 15,
+  "manifest": "// swift-tools-version: 6.0\nimport PackageDescription\nlet package=Package(name:\"FixtureExport\",platforms:[.macOS(.v14)],products:[.executable(name:\"fixture-export\",targets:[\"FixtureExport\"])],dependencies:[.package(path:\"/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation\")],targets:[.executableTarget(name:\"FixtureExport\",dependencies:[.product(name:\"AIEvaluationCore\",package:\"LocalAIEvaluation\")])])\n",
+  "exportSource": "import AIEvaluationCore\nimport Foundation\n@main enum FixtureExport { static func main() throws { let encoder=JSONEncoder(); encoder.outputFormatting=[.prettyPrinted,.sortedKeys,.withoutEscapingSlashes]; FileHandle.standardOutput.write(try encoder.encode(EvaluationSuite.fictional())) } }\n",
+  "temporaryDirectoryRemoved": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-fixture-export-njwy5bpg"
+}

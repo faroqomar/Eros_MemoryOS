@@ -1,0 +1,7 @@
+{"package": "swift-asn1", "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d", "selected_files": 26, "missing_files": 25, "verified_tree_objects": 5}
+{"package": "swift-asn1", "completed": 25, "total": 25, "verified_bytes": 257066}
+{"package": "swift-asn1", "complete": true, "verified_source_files": 26, "verified_trees": 5, "new_bytes": 257066}
+Traceback (most recent call last):
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-dependency-blobs.py", line 31, in <module>
+    root=next(line.split()[1] for line in commit.splitlines() if line.startswith('tree '))
+StopIteration

@@ -1,0 +1,14 @@
+{
+  "identity": "yyjson",
+  "origin": "https://github.com/ibireme/yyjson.git",
+  "revision": "8b4a38dc994a110abaec8a400615567bd996105f",
+  "rootTreeSHA1": "a51e8386f5e259392d2a77ee2300ea17210f5fa1",
+  "genuineShallowBoundary": true,
+  "promisor": false,
+  "sourcePatched": false,
+  "archiveSHA256": "94e9c90f8f12d8329f2c0756782d21e5c278729023cd2c5fe47e323a35947ed6",
+  "archiveBytes": 1621181,
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/yyjson-04ab5379",
+  "fsck": "",
+  "canonicalResolutionVerified": false
+}

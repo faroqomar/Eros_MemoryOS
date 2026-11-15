@@ -1,0 +1,2541 @@
+{
+  "formatVersion": 1,
+  "fixture": {
+    "path": "native/verification/local-ai-step1/resume/fictional-suite.json",
+    "sha256": "00ff43ef2b7694fb89ee41dc488186ed66ab8dbea6d1253a7d5bb83f696bc0c5"
+  },
+  "method": "Nearest-rank p95; warm means suite repetitions 1-5. End-to-end output tokens/s includes prompt preparation and prefill. Cold means an explicit wasColdLoad=true. Read each group's measurementMethods: host RSS and simulator sampled phys_footprint are different measures. Groups keep environment, source identity and batch separate. Simulator results do not estimate phone battery or heat.",
+  "groups": [
+    {
+      "candidateID": "cactus",
+      "environment": "simulator",
+      "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+      "batchID": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+      "context": {
+        "batchID": "0B4A8BBB-4000-44CA-80BE-B3F0A42BBF45",
+        "buildConfiguration": "Release",
+        "conditions": "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+        "deviceModel": "iPhone19,2",
+        "environment": "simulator",
+        "offlineConfirmed": false,
+        "operatingSystem": "Version 27.2 (Build 24B8117)",
+        "purpose": "comparison",
+        "repetition": 0,
+        "repetitionCount": 6,
+        "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+        "toolchain": "Xcode 27.2 / Swift 6.4.2"
+      },
+      "configuration": {
+        "displayName": "Cactus-based memory",
+        "id": "cactus",
+        "provenance": [
+          {
+            "notes": "Compatible v1.14 local-only CPU build; explicit last-token/L2 pooling. Four workers, top3, threshold0.35. See reproducible patch and build receipt.",
+            "revision": "40a7123b0788f5b38c5fe0daa0d909b4286fe773",
+            "sourceURL": "https://github.com/cactus-compute/engine"
+          },
+          {
+            "modelAsset": "weights/qwen3-embedding-0.6b-int4.zip",
+            "modelSHA256": "22ff768a984fe931ac463b02cedce2ebd65172c6877d210bd5dc6d058fffbd7b",
+            "notes": "Archive and extracted file hashes must verify before local embedding.",
+            "revision": "0df64898a34c75c209b9882110cd6f9aeb7115cd",
+            "sourceURL": "https://huggingface.co/Cactus-Compute/Qwen3-Embedding-0.6B"
+          }
+        ],
+        "scope": "retrieval"
+      },
+      "settings": {
+        "maximumOutputTokens": 256,
+        "seed": 42,
+        "temperature": 0
+      },
+      "recordedSuites": 6,
+      "recordedRepetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "inputs": [
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-951DB1F4-4D36-4D1A-96F8-D1341989B0CC.json",
+          "sha256": "9e0dfab0b6367abf309fbec80248a082f89c708c8815ed8319ecba7da985c50c"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-FC3C8F71-21B8-4FA5-967A-F9D842811798.json",
+          "sha256": "5b991794e8bbaf7e8c7ce91e433cd48ae915d0eb4df201772301a5f39f170cc1"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-1F33C359-FD88-49C6-AED3-ACF3C76120D1.json",
+          "sha256": "cd227f66c6e1b05c1536341a9d2ef1d0ada351d2f955d58d7b274092785ea257"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-BB046816-A756-461B-8FC4-33B260B473E0.json",
+          "sha256": "82d1e0661f48975ab10b9c31cec61df1c36753796c7ede089b5994fba15a89b3"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-5AE6030E-0CAD-42F7-9234-2CEC4FDFAA89.json",
+          "sha256": "2da902d51bedc940bfff10beb50a0b1d39cedce3b780231cccebbaec64843c01"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/cactus-B7AF7C59-CE2E-4878-9B4B-2890DD09B52D.json",
+          "sha256": "a9d9dc4e90e32dfcebd44c44a9913ea24a58d8b2c5a591bf9a86a415c7dc4655"
+        }
+      ],
+      "retrievalStatuses": {
+        "completed": 90
+      },
+      "generationStatuses": {
+        "notApplicable": 90
+      },
+      "outputsAtTokenCap": 0,
+      "exactSourceSetMatches": 0,
+      "completedRetrievalCases": 90,
+      "evidencePresentRetrievalCases": 84,
+      "relevantSourceRankedFirst": 84,
+      "noEvidenceRetrievalCases": 6,
+      "noEvidenceAbstentions": 0,
+      "meanSourceRecall": 0.9333333333333333,
+      "allCases": {
+        "retrievalSeconds": {
+          "count": 90,
+          "median": 0.080260396,
+          "p95NearestRank": 0.104324542,
+          "minimum": 0.060953,
+          "maximum": 0.1111065
+        },
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "fiveWarmSuites": {
+        "retrievalSeconds": {
+          "count": 75,
+          "median": 0.080101917,
+          "p95NearestRank": 0.104324542,
+          "minimum": 0.060953,
+          "maximum": 0.1111065
+        },
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "perCaseWarm": {
+        "en-birthday": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.068782041,
+            "p95NearestRank": 0.074937167,
+            "minimum": 0.068588917,
+            "maximum": 0.074937167
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "ar-birthday": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.078926,
+            "p95NearestRank": 0.082998959,
+            "minimum": 0.078201917,
+            "maximum": 0.082998959
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-tentative": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.104324542,
+            "p95NearestRank": 0.1111065,
+            "minimum": 0.103099708,
+            "maximum": 0.1111065
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "en-commitment": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.07201075,
+            "p95NearestRank": 0.07589875,
+            "minimum": 0.0701275,
+            "maximum": 0.07589875
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "mixed-deadline": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.087243041,
+            "p95NearestRank": 0.09059925,
+            "minimum": 0.086366125,
+            "maximum": 0.09059925
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-ar-to-en": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.073369542,
+            "p95NearestRank": 0.0771885,
+            "minimum": 0.072957583,
+            "maximum": 0.0771885
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-nickname": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.061294833,
+            "p95NearestRank": 0.066635292,
+            "minimum": 0.060953,
+            "maximum": 0.066635292
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-disambiguation": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.072851416,
+            "p95NearestRank": 0.079508834,
+            "minimum": 0.072040542,
+            "maximum": 0.079508834
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "correction-history": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.087538208,
+            "p95NearestRank": 0.089013083,
+            "minimum": 0.086578959,
+            "maximum": 0.089013083
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-negation": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.089657209,
+            "p95NearestRank": 0.1032035,
+            "minimum": 0.088788125,
+            "maximum": 0.1032035
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-sarcasm": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.088480333,
+            "p95NearestRank": 0.110667833,
+            "minimum": 0.086527666,
+            "maximum": 0.110667833
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "missing-evidence": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.071934209,
+            "p95NearestRank": 0.080906292,
+            "minimum": 0.070328125,
+            "maximum": 0.080906292
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "source-injection": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.086874916,
+            "p95NearestRank": 0.093518167,
+            "minimum": 0.086468292,
+            "maximum": 0.093518167
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "ar-digits": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.072138542,
+            "p95NearestRank": 0.0753015,
+            "minimum": 0.070825125,
+            "maximum": 0.0753015
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "unicode-name": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.080430834,
+            "p95NearestRank": 0.08160275,
+            "minimum": 0.080101917,
+            "maximum": 0.08160275
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        }
+      },
+      "coldModelRequests": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "indexBuildSeconds": {
+        "count": 6,
+        "median": 1.0464993329999999,
+        "p95NearestRank": 2.041881125,
+        "minimum": 1.037878167,
+        "maximum": 2.041881125
+      },
+      "coldIndexBuildSeconds": {
+        "count": 1,
+        "median": 2.041881125,
+        "p95NearestRank": 2.041881125,
+        "minimum": 2.041881125,
+        "maximum": 2.041881125
+      },
+      "warmIndexBuildSeconds": {
+        "count": 5,
+        "median": 1.04083075,
+        "p95NearestRank": 1.090929458,
+        "minimum": 1.037878167,
+        "maximum": 1.090929458
+      },
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 102419336.0,
+        "p95NearestRank": 119327528,
+        "minimum": 102337416,
+        "maximum": 119327528
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 428548677.0,
+        "p95NearestRank": 428548677,
+        "minimum": 428548677,
+        "maximum": 428548677
+      },
+      "measurementMethods": [
+        "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured."
+      ],
+      "qualityReview": "No semantic pass is inferred. Review raw answers against the separate rubric."
+    },
+    {
+      "candidateID": "keyword-control",
+      "environment": "simulator",
+      "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+      "batchID": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+      "context": {
+        "batchID": "B535EEB2-486B-4550-9DD3-7CD60BCC59F7",
+        "buildConfiguration": "Release",
+        "conditions": "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+        "deviceModel": "iPhone19,2",
+        "environment": "simulator",
+        "offlineConfirmed": false,
+        "operatingSystem": "Version 27.2 (Build 24B8117)",
+        "purpose": "comparison",
+        "repetition": 0,
+        "repetitionCount": 6,
+        "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+        "toolchain": "Xcode 27.2 / Swift 6.4.2"
+      },
+      "configuration": {
+        "displayName": "Keyword control",
+        "id": "keyword-control",
+        "provenance": [
+          {
+            "notes": "Lexical control; no model.",
+            "revision": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+            "sourceURL": "app-owned:KeywordMemoryIndex"
+          }
+        ],
+        "scope": "retrieval"
+      },
+      "settings": {
+        "maximumOutputTokens": 256,
+        "seed": 42,
+        "temperature": 0
+      },
+      "recordedSuites": 6,
+      "recordedRepetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "inputs": [
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-18362EF6-112B-49AC-9D0C-4D4B8D7A87C3.json",
+          "sha256": "2606db5f01302d063784ec27080bcdd24bdb219e7dd2c07a9329cf4afdf261fe"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-DDBC4F92-FC62-4C69-8946-491E49E64B6D.json",
+          "sha256": "38b888c951098856750182337e95247e42da10cdfc2b0a096fd5bbed399baca8"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-D6CA2910-FE16-46A1-BFE1-F0FF1180C878.json",
+          "sha256": "1589c89030ab5e7e0ae177d5334e92e47415fc6f034f303a3ec8f3837ab2c284"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-25A7B237-98C6-4FB0-8209-111087ABC9D7.json",
+          "sha256": "0f1cec12800cf91475e6ec324a26b37da89e9bc7bfeb1f3dec40554d093f8803"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-D5BA1ABB-4BD1-4110-AE04-40F6E640309F.json",
+          "sha256": "b0be943504f25f953350d70c519682543c34ffcdf15d444b8ebaacd591247d08"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/keyword-control-06130348-CBBD-4F50-928C-5968A72C981F.json",
+          "sha256": "da954149669be195feab00a3718f5c33a71e30e91f4e90ad7e625758e444c3e6"
+        }
+      ],
+      "retrievalStatuses": {
+        "completed": 90
+      },
+      "generationStatuses": {
+        "notApplicable": 90
+      },
+      "outputsAtTokenCap": 0,
+      "exactSourceSetMatches": 78,
+      "completedRetrievalCases": 90,
+      "evidencePresentRetrievalCases": 84,
+      "relevantSourceRankedFirst": 84,
+      "noEvidenceRetrievalCases": 6,
+      "noEvidenceAbstentions": 6,
+      "meanSourceRecall": 1,
+      "allCases": {
+        "retrievalSeconds": {
+          "count": 90,
+          "median": 5.7708500000000005e-05,
+          "p95NearestRank": 0.000116125,
+          "minimum": 1.4417e-05,
+          "maximum": 0.000136792
+        },
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "fiveWarmSuites": {
+        "retrievalSeconds": {
+          "count": 75,
+          "median": 5.8083e-05,
+          "p95NearestRank": 9.3084e-05,
+          "minimum": 1.4417e-05,
+          "maximum": 0.000135625
+        },
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "perCaseWarm": {
+        "en-birthday": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 3.2667e-05,
+            "p95NearestRank": 7.0459e-05,
+            "minimum": 1.4417e-05,
+            "maximum": 7.0459e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "ar-birthday": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 5.3792e-05,
+            "p95NearestRank": 0.000135625,
+            "minimum": 4.7084e-05,
+            "maximum": 0.000135625
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-tentative": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 6.4458e-05,
+            "p95NearestRank": 8.9583e-05,
+            "minimum": 4.8041e-05,
+            "maximum": 8.9583e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "en-commitment": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 4.7209e-05,
+            "p95NearestRank": 5.7375e-05,
+            "minimum": 3.4375e-05,
+            "maximum": 5.7375e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "mixed-deadline": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 5.775e-05,
+            "p95NearestRank": 7.375e-05,
+            "minimum": 3.9166e-05,
+            "maximum": 7.375e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-ar-to-en": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 6.4333e-05,
+            "p95NearestRank": 9.3084e-05,
+            "minimum": 4.9291e-05,
+            "maximum": 9.3084e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-nickname": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 4.8959e-05,
+            "p95NearestRank": 6.3458e-05,
+            "minimum": 3.4125e-05,
+            "maximum": 6.3458e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-disambiguation": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 6.1458e-05,
+            "p95NearestRank": 8.6e-05,
+            "minimum": 3.0125e-05,
+            "maximum": 8.6e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "correction-history": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 5.8083e-05,
+            "p95NearestRank": 6.7834e-05,
+            "minimum": 4.3875e-05,
+            "maximum": 6.7834e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-negation": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 7.3541e-05,
+            "p95NearestRank": 8.5459e-05,
+            "minimum": 4.8791e-05,
+            "maximum": 8.5459e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-sarcasm": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 6.8042e-05,
+            "p95NearestRank": 8.825e-05,
+            "minimum": 5.6875e-05,
+            "maximum": 8.825e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "missing-evidence": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 4.3084e-05,
+            "p95NearestRank": 5.7667e-05,
+            "minimum": 3.9292e-05,
+            "maximum": 5.7667e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "source-injection": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 7.1208e-05,
+            "p95NearestRank": 0.000130917,
+            "minimum": 6.5541e-05,
+            "maximum": 0.000130917
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "ar-digits": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 6.3208e-05,
+            "p95NearestRank": 0.000132667,
+            "minimum": 4.1708e-05,
+            "maximum": 0.000132667
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "unicode-name": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 5.9667e-05,
+            "p95NearestRank": 6.5708e-05,
+            "minimum": 3.4333e-05,
+            "maximum": 6.5708e-05
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        }
+      },
+      "coldModelRequests": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "indexBuildSeconds": {
+        "count": 6,
+        "median": 0.000190292,
+        "p95NearestRank": 0.004546125,
+        "minimum": 0.000161333,
+        "maximum": 0.004546125
+      },
+      "coldIndexBuildSeconds": {
+        "count": 1,
+        "median": 0.004546125,
+        "p95NearestRank": 0.004546125,
+        "minimum": 0.004546125,
+        "maximum": 0.004546125
+      },
+      "warmIndexBuildSeconds": {
+        "count": 5,
+        "median": 0.000173917,
+        "p95NearestRank": 0.0002355,
+        "minimum": 0.000161333,
+        "maximum": 0.0002355
+      },
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 42133928.0,
+        "p95NearestRank": 42437032,
+        "minimum": 42125736,
+        "maximum": 42437032
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 0.0,
+        "p95NearestRank": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "measurementMethods": [
+        "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured."
+      ],
+      "qualityReview": "No semantic pass is inferred. Review raw answers against the separate rubric."
+    },
+    {
+      "candidateID": "llama-qwen",
+      "environment": "simulator",
+      "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+      "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+      "context": {
+        "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+        "buildConfiguration": "Release",
+        "conditions": "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+        "deviceModel": "iPhone19,2",
+        "environment": "simulator",
+        "offlineConfirmed": false,
+        "operatingSystem": "Version 27.2 (Build 24B8117)",
+        "purpose": "comparison",
+        "repetition": 0,
+        "repetitionCount": 6,
+        "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+        "toolchain": "Xcode 27.2 / Swift 6.4.2"
+      },
+      "configuration": {
+        "displayName": "llama.cpp · Qwen3-1.7B",
+        "id": "llama-qwen",
+        "provenance": [
+          {
+            "notes": "b12387; CPU on simulator.",
+            "revision": "a956a852c9c8bc1fb07206364838ddef299178c0",
+            "sourceURL": "https://github.com/ggml-org/llama.cpp"
+          },
+          {
+            "modelAsset": "Qwen3-1.7B-Q4_K_M.gguf",
+            "modelSHA256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+            "notes": "Community conversion; declared asset hash must pass local verification.",
+            "revision": "d7f544eead698dbd1f15126ef60b45a1e1933222",
+            "sourceURL": "https://huggingface.co/unsloth/Qwen3-1.7B-GGUF"
+          }
+        ],
+        "scope": "text"
+      },
+      "settings": {
+        "maximumOutputTokens": 256,
+        "seed": 42,
+        "temperature": 0
+      },
+      "recordedSuites": 6,
+      "recordedRepetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "inputs": [
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-F6BCA932-2FB9-4215-812C-8DB5D9E4D28B.json",
+          "sha256": "de0014e3a490b91a62c19671d98fb1f79bcc21d0bb1d53b83a8ae4947f15f9fb"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-42447A9B-4173-4FFC-B3BA-F61978A90F96.json",
+          "sha256": "13484f5e79f3a222fe7c71c2831b654a6fed8225eb61531a3077b0c2980c75f3"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-7911B9EF-1E57-4C19-BE41-26923DCCA169.json",
+          "sha256": "b1ba9b659e7a562c298bb36b878aa44ba30cbdf18e1c50fb8f0f4df2e1bb6e59"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-2E152742-2162-4407-BD3D-1905A7855C20.json",
+          "sha256": "e231fc80c4b9f64ae5209fbc27c3123fb1f2e1062467a836309b60d6cd73f7b3"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-5BA73B83-D733-448B-8661-BA0D11215DD5.json",
+          "sha256": "e6ffa4b9295eab9cc9c13b2fe77bc03f7710aab943e0c724e7f72bdb05aab3bf"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-A7B8810B-C341-4E92-B77A-7DCBA5F2052F.json",
+          "sha256": "4e0dfa78557f85af2762bb32d8fcf76224263bff5e1442f6966db617b22be4cc"
+        }
+      ],
+      "retrievalStatuses": {
+        "notApplicable": 90
+      },
+      "generationStatuses": {
+        "completed": 90
+      },
+      "outputsAtTokenCap": 6,
+      "exactSourceSetMatches": 0,
+      "completedRetrievalCases": 0,
+      "evidencePresentRetrievalCases": 0,
+      "relevantSourceRankedFirst": 0,
+      "noEvidenceRetrievalCases": 0,
+      "noEvidenceAbstentions": 0,
+      "meanSourceRecall": null,
+      "allCases": {
+        "retrievalSeconds": null,
+        "generationSeconds": {
+          "count": 90,
+          "median": 4.3496237085,
+          "p95NearestRank": 7.9280761250000005,
+          "minimum": 3.033195916,
+          "maximum": 8.403132667
+        },
+        "requestToFirstTokenSeconds": {
+          "count": 90,
+          "median": 2.6020256665,
+          "p95NearestRank": 2.920597709,
+          "minimum": 2.488334792,
+          "maximum": 5.806955958
+        },
+        "preparationSeconds": {
+          "count": 90,
+          "median": 0.0027846875,
+          "p95NearestRank": 0.0204455,
+          "minimum": 0.002126208,
+          "maximum": 2.396264958
+        },
+        "endToEndOutputTokensPerSecond": {
+          "count": 90,
+          "median": 17.9250815497059,
+          "p95NearestRank": 31.50165869129001,
+          "minimum": 4.09633635207857,
+          "maximum": 32.52285658211518
+        }
+      },
+      "fiveWarmSuites": {
+        "retrievalSeconds": null,
+        "generationSeconds": {
+          "count": 75,
+          "median": 4.330102167,
+          "p95NearestRank": 8.001267958,
+          "minimum": 3.033195916,
+          "maximum": 8.403132667
+        },
+        "requestToFirstTokenSeconds": {
+          "count": 75,
+          "median": 2.597119834,
+          "p95NearestRank": 2.899503459,
+          "minimum": 2.488334792,
+          "maximum": 2.920597709
+        },
+        "preparationSeconds": {
+          "count": 75,
+          "median": 0.002540708,
+          "p95NearestRank": 0.015151083,
+          "minimum": 0.002126208,
+          "maximum": 0.0608185
+        },
+        "endToEndOutputTokensPerSecond": {
+          "count": 75,
+          "median": 17.933603194138943,
+          "p95NearestRank": 31.50165869129001,
+          "minimum": 8.459460293753946,
+          "maximum": 32.52285658211518
+        }
+      },
+      "perCaseWarm": {
+        "en-birthday": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 3.0518495,
+            "p95NearestRank": 3.073482125,
+            "minimum": 3.033195916,
+            "maximum": 3.073482125
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.519435167,
+            "p95NearestRank": 2.545557666,
+            "minimum": 2.507179666,
+            "maximum": 2.545557666
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.003310833,
+            "p95NearestRank": 0.012794625,
+            "minimum": 0.0021625,
+            "maximum": 0.012794625
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 8.519424041061002,
+            "p95NearestRank": 8.57181689545701,
+            "minimum": 8.459460293753946,
+            "maximum": 8.57181689545701
+          }
+        },
+        "ar-birthday": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 4.220865666,
+            "p95NearestRank": 4.429435833,
+            "minimum": 4.126331959,
+            "maximum": 4.429435833
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.62771925,
+            "p95NearestRank": 2.668961625,
+            "minimum": 2.527193208,
+            "maximum": 2.668961625
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.00234,
+            "p95NearestRank": 0.005145458,
+            "minimum": 0.002170125,
+            "maximum": 0.005145458
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 17.53194862278756,
+            "p95NearestRank": 17.933603194138943,
+            "minimum": 16.70641652570927,
+            "maximum": 17.933603194138943
+          }
+        },
+        "iq-tentative": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 8.046287792,
+            "p95NearestRank": 8.403132667,
+            "minimum": 7.871387292,
+            "maximum": 8.403132667
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.6369434160000003,
+            "p95NearestRank": 2.918492792,
+            "minimum": 2.603021042,
+            "maximum": 2.918492792
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002756042,
+            "p95NearestRank": 0.005749,
+            "minimum": 0.00232575,
+            "maximum": 0.005749
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 31.81591394910425,
+            "p95NearestRank": 32.52285658211518,
+            "minimum": 30.46482902802896,
+            "maximum": 32.52285658211518
+          }
+        },
+        "en-commitment": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 3.28178025,
+            "p95NearestRank": 3.349028208,
+            "minimum": 3.145277125,
+            "maximum": 3.349028208
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.580720792,
+            "p95NearestRank": 2.619066708,
+            "minimum": 2.509421708,
+            "maximum": 2.619066708
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.003069833,
+            "p95NearestRank": 0.014122709,
+            "minimum": 0.002293041,
+            "maximum": 0.014122709
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 10.055517885452568,
+            "p95NearestRank": 10.491921280227414,
+            "minimum": 9.853604672893217,
+            "maximum": 10.491921280227414
+          }
+        },
+        "mixed-deadline": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 4.330102167,
+            "p95NearestRank": 4.505194917,
+            "minimum": 4.185222583,
+            "maximum": 4.505194917
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.641083375,
+            "p95NearestRank": 2.7042972499999998,
+            "minimum": 2.591700041,
+            "maximum": 2.7042972499999998
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002813333,
+            "p95NearestRank": 0.011005375,
+            "minimum": 0.002212417,
+            "maximum": 0.011005375
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 18.244373216425313,
+            "p95NearestRank": 18.87593752382273,
+            "minimum": 17.535312335077823,
+            "maximum": 18.87593752382273
+          }
+        },
+        "name-ar-to-en": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 3.974501875,
+            "p95NearestRank": 4.702425083,
+            "minimum": 3.83561875,
+            "maximum": 4.702425083
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.582102833,
+            "p95NearestRank": 2.920597709,
+            "minimum": 2.534778,
+            "maximum": 2.920597709
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002342917,
+            "p95NearestRank": 0.011504666,
+            "minimum": 0.002142041,
+            "maximum": 0.011504666
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 16.605854538689833,
+            "p95NearestRank": 17.20713248677283,
+            "minimum": 14.035311320237785,
+            "maximum": 17.20713248677283
+          }
+        },
+        "name-nickname": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 4.984656958,
+            "p95NearestRank": 5.006155083,
+            "minimum": 4.849181875,
+            "maximum": 5.006155083
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.6034242499999998,
+            "p95NearestRank": 2.6626017920000002,
+            "minimum": 2.5180875,
+            "maximum": 2.6626017920000002
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.003996417,
+            "p95NearestRank": 0.0608185,
+            "minimum": 0.002236625,
+            "maximum": 0.0608185
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 22.4689484038111,
+            "p95NearestRank": 23.096679581645922,
+            "minimum": 22.372459131426393,
+            "maximum": 23.096679581645922
+          }
+        },
+        "name-disambiguation": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 4.713256375,
+            "p95NearestRank": 4.958916042,
+            "minimum": 4.441366458,
+            "maximum": 4.958916042
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.601030291,
+            "p95NearestRank": 2.912940125,
+            "minimum": 2.505892041,
+            "maximum": 2.912940125
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.003722291,
+            "p95NearestRank": 0.057790917,
+            "minimum": 0.002175,
+            "maximum": 0.057790917
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 20.58025116446164,
+            "p95NearestRank": 21.840125312172564,
+            "minimum": 19.56072641247593,
+            "maximum": 21.840125312172564
+          }
+        },
+        "correction-history": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 3.759101958,
+            "p95NearestRank": 4.247176958,
+            "minimum": 3.625010458,
+            "maximum": 4.247176958
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.647726208,
+            "p95NearestRank": 2.899503459,
+            "minimum": 2.554942333,
+            "maximum": 2.899503459
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002346209,
+            "p95NearestRank": 0.038544125,
+            "minimum": 0.002165625,
+            "maximum": 0.038544125
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 13.833091142775542,
+            "p95NearestRank": 14.344786201993351,
+            "minimum": 12.243426754812415,
+            "maximum": 14.344786201993351
+          }
+        },
+        "iq-negation": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 4.815341792,
+            "p95NearestRank": 5.46659525,
+            "minimum": 4.69579125,
+            "maximum": 5.46659525
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.661977334,
+            "p95NearestRank": 2.714280084,
+            "minimum": 2.551126333,
+            "maximum": 2.714280084
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.00252,
+            "p95NearestRank": 0.014462542,
+            "minimum": 0.002152209,
+            "maximum": 0.014462542
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 22.220644893321,
+            "p95NearestRank": 22.78636214929699,
+            "minimum": 19.57342643942772,
+            "maximum": 22.78636214929699
+          }
+        },
+        "iq-sarcasm": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 4.678292042,
+            "p95NearestRank": 5.058404625,
+            "minimum": 4.5486872080000005,
+            "maximum": 5.058404625
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.5874879589999997,
+            "p95NearestRank": 2.597119834,
+            "minimum": 2.54551225,
+            "maximum": 2.597119834
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002444833,
+            "p95NearestRank": 0.008903625,
+            "minimum": 0.00223225,
+            "maximum": 0.008903625
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 21.161569032290867,
+            "p95NearestRank": 21.764521382319675,
+            "minimum": 19.571388083649005,
+            "maximum": 21.764521382319675
+          }
+        },
+        "missing-evidence": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 3.689266167,
+            "p95NearestRank": 3.784550166,
+            "minimum": 3.607700833,
+            "maximum": 3.784550166
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.532615667,
+            "p95NearestRank": 2.566020666,
+            "minimum": 2.488334792,
+            "maximum": 2.566020666
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002316125,
+            "p95NearestRank": 0.009853792,
+            "minimum": 0.002126208,
+            "maximum": 0.009853792
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 15.450227069507072,
+            "p95NearestRank": 15.799536225014919,
+            "minimum": 15.061235153409248,
+            "maximum": 15.799536225014919
+          }
+        },
+        "source-injection": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 4.40313725,
+            "p95NearestRank": 4.7490855,
+            "minimum": 4.335344667,
+            "maximum": 4.7490855
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.541673417,
+            "p95NearestRank": 2.680304167,
+            "minimum": 2.532717792,
+            "maximum": 2.680304167
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002191,
+            "p95NearestRank": 0.015151083,
+            "minimum": 0.002159875,
+            "maximum": 0.015151083
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 20.89419311196806,
+            "p95NearestRank": 21.220919457751616,
+            "minimum": 19.372150701435046,
+            "maximum": 21.220919457751616
+          }
+        },
+        "ar-digits": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 4.3655315,
+            "p95NearestRank": 4.576771458,
+            "minimum": 4.150447166,
+            "maximum": 4.576771458
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.678949542,
+            "p95NearestRank": 2.730748417,
+            "minimum": 2.488466542,
+            "maximum": 2.730748417
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002879792,
+            "p95NearestRank": 0.007240334,
+            "minimum": 0.0021895,
+            "maximum": 0.007240334
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 18.783508949597543,
+            "p95NearestRank": 19.756907321152006,
+            "minimum": 17.91655990527286,
+            "maximum": 19.756907321152006
+          }
+        },
+        "unicode-name": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 3.304955959,
+            "p95NearestRank": 3.475217083,
+            "minimum": 3.284928791,
+            "maximum": 3.475217083
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 2.593152,
+            "p95NearestRank": 2.642493,
+            "minimum": 2.524017958,
+            "maximum": 2.642493
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002318417,
+            "p95NearestRank": 0.009618292,
+            "minimum": 0.002139791,
+            "maximum": 0.009618292
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 10.590156248433082,
+            "p95NearestRank": 10.654721069111906,
+            "minimum": 10.07131329182638,
+            "maximum": 10.654721069111906
+          }
+        }
+      },
+      "coldModelRequests": {
+        "retrievalSeconds": null,
+        "generationSeconds": {
+          "count": 1,
+          "median": 6.347135041,
+          "p95NearestRank": 6.347135041,
+          "minimum": 6.347135041,
+          "maximum": 6.347135041
+        },
+        "requestToFirstTokenSeconds": {
+          "count": 1,
+          "median": 5.806955958,
+          "p95NearestRank": 5.806955958,
+          "minimum": 5.806955958,
+          "maximum": 5.806955958
+        },
+        "preparationSeconds": {
+          "count": 1,
+          "median": 2.396264958,
+          "p95NearestRank": 2.396264958,
+          "minimum": 2.396264958,
+          "maximum": 2.396264958
+        },
+        "endToEndOutputTokensPerSecond": {
+          "count": 1,
+          "median": 4.09633635207857,
+          "p95NearestRank": 4.09633635207857,
+          "minimum": 4.09633635207857,
+          "maximum": 4.09633635207857
+        }
+      },
+      "indexBuildSeconds": null,
+      "coldIndexBuildSeconds": null,
+      "warmIndexBuildSeconds": null,
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 1472975096.0,
+        "p95NearestRank": 1473024248,
+        "minimum": 1472893176,
+        "maximum": 1473024248
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 1107409472.0,
+        "p95NearestRank": 1107409472,
+        "minimum": 1107409472,
+        "maximum": 1107409472
+      },
+      "measurementMethods": [
+        "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured."
+      ],
+      "qualityReview": "No semantic pass is inferred. Review raw answers against the separate rubric."
+    },
+    {
+      "candidateID": "llama-qwen06",
+      "environment": "simulator",
+      "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+      "batchID": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+      "context": {
+        "batchID": "B5FD2A5D-6B0B-4286-B52F-05213EDF4795",
+        "buildConfiguration": "Release",
+        "conditions": "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+        "deviceModel": "iPhone19,2",
+        "environment": "simulator",
+        "offlineConfirmed": false,
+        "operatingSystem": "Version 27.2 (Build 24B8117)",
+        "purpose": "comparison",
+        "repetition": 0,
+        "repetitionCount": 6,
+        "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+        "toolchain": "Xcode 27.2 / Swift 6.4.2"
+      },
+      "configuration": {
+        "displayName": "llama.cpp · Qwen3-0.6B",
+        "id": "llama-qwen06",
+        "provenance": [
+          {
+            "notes": "b12387; CPU on simulator.",
+            "revision": "a956a852c9c8bc1fb07206364838ddef299178c0",
+            "sourceURL": "https://github.com/ggml-org/llama.cpp"
+          },
+          {
+            "modelAsset": "Qwen3-0.6B-Q4_K_M.gguf",
+            "modelSHA256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+            "notes": "Community conversion; declared asset hash must pass local verification.",
+            "revision": "50968a4468ef4233ed78cd7c3de230dd1d61a56b",
+            "sourceURL": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF"
+          }
+        ],
+        "scope": "text"
+      },
+      "settings": {
+        "maximumOutputTokens": 256,
+        "seed": 42,
+        "temperature": 0
+      },
+      "recordedSuites": 6,
+      "recordedRepetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "inputs": [
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-3B24890F-3CA1-4AA0-9756-F986BD27DA60.json",
+          "sha256": "9edbc758f11b8eb7e9e38771b49724e07965dfebe19f68a3e9a14fe6b4fcc248"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-B0CCCEFB-CA39-49DE-B376-B7DBAAC7A7C3.json",
+          "sha256": "9926c414f7d0ee9669cc05e809f27a09dfad893153fd5612c62fb00e216afa20"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-9215D038-AE18-46E3-924C-7AFF69168771.json",
+          "sha256": "25bf58fefee3217cfc4494318a2f8b7daf3d64aaf819d0bc7935bf36952e4c37"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-7C05F288-1A79-4DBB-920F-A613916AF498.json",
+          "sha256": "319f6e6fcd7aceae12868e62ef24a0329bccd975c825caae79c0876f99b775a8"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-A20E0B63-121E-46ED-ABFB-0A1DB8ACB40E.json",
+          "sha256": "1724f9995ad17fd7d52a10345093f15984130b12c3a5ec50d4b5a29f7b3d4ccc"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-E9E7E755-9074-43B7-B299-F089102DDD64.json",
+          "sha256": "bd86cd68958fe3a7b628edf6f100cd9f6852d5bca49a4bc9c36e50f7cd26664a"
+        }
+      ],
+      "retrievalStatuses": {
+        "notApplicable": 90
+      },
+      "generationStatuses": {
+        "completed": 90
+      },
+      "outputsAtTokenCap": 0,
+      "exactSourceSetMatches": 0,
+      "completedRetrievalCases": 0,
+      "evidencePresentRetrievalCases": 0,
+      "relevantSourceRankedFirst": 0,
+      "noEvidenceRetrievalCases": 0,
+      "noEvidenceAbstentions": 0,
+      "meanSourceRecall": null,
+      "allCases": {
+        "retrievalSeconds": null,
+        "generationSeconds": {
+          "count": 90,
+          "median": 1.4766608749999999,
+          "p95NearestRank": 2.64583625,
+          "minimum": 1.157773125,
+          "maximum": 2.840643375
+        },
+        "requestToFirstTokenSeconds": {
+          "count": 90,
+          "median": 1.0735637085,
+          "p95NearestRank": 1.420655958,
+          "minimum": 1.0000295,
+          "maximum": 2.6912383330000003
+        },
+        "preparationSeconds": {
+          "count": 90,
+          "median": 0.0022052505000000003,
+          "p95NearestRank": 0.006074417,
+          "minimum": 0.002081667,
+          "maximum": 0.984994917
+        },
+        "endToEndOutputTokensPerSecond": {
+          "count": 90,
+          "median": 20.74439154627671,
+          "p95NearestRank": 38.54940722915738,
+          "minimum": 4.576428042467668,
+          "maximum": 44.1002487286455
+        }
+      },
+      "fiveWarmSuites": {
+        "retrievalSeconds": null,
+        "generationSeconds": {
+          "count": 75,
+          "median": 1.475634375,
+          "p95NearestRank": 2.437512,
+          "minimum": 1.157773125,
+          "maximum": 2.782354125
+        },
+        "requestToFirstTokenSeconds": {
+          "count": 75,
+          "median": 1.062500166,
+          "p95NearestRank": 1.380011542,
+          "minimum": 1.0000295,
+          "maximum": 1.829680792
+        },
+        "preparationSeconds": {
+          "count": 75,
+          "median": 0.002202291,
+          "p95NearestRank": 0.003564458,
+          "minimum": 0.002081667,
+          "maximum": 0.014880333
+        },
+        "endToEndOutputTokensPerSecond": {
+          "count": 75,
+          "median": 20.80695408677104,
+          "p95NearestRank": 38.54940722915738,
+          "minimum": 8.016628955107956,
+          "maximum": 44.1002487286455
+        }
+      },
+      "perCaseWarm": {
+        "en-birthday": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.2705856660000001,
+            "p95NearestRank": 1.62162925,
+            "minimum": 1.157773125,
+            "maximum": 1.62162925
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.113703833,
+            "p95NearestRank": 1.380011542,
+            "minimum": 1.008428542,
+            "maximum": 1.380011542
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002153542,
+            "p95NearestRank": 0.003529792,
+            "minimum": 0.002081667,
+            "maximum": 0.003529792
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 10.231502170905175,
+            "p95NearestRank": 11.228452033726382,
+            "minimum": 8.016628955107956,
+            "maximum": 11.228452033726382
+          }
+        },
+        "ar-birthday": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.271615916,
+            "p95NearestRank": 1.7055120000000001,
+            "minimum": 1.219458292,
+            "maximum": 1.7055120000000001
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.088378125,
+            "p95NearestRank": 1.416559792,
+            "minimum": 1.032372916,
+            "maximum": 1.416559792
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002226708,
+            "p95NearestRank": 0.002889416,
+            "minimum": 0.002131083,
+            "maximum": 0.002889416
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 12.582415648216847,
+            "p95NearestRank": 13.120579936980738,
+            "minimum": 9.38134706762544,
+            "maximum": 13.120579936980738
+          }
+        },
+        "iq-tentative": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.617936166,
+            "p95NearestRank": 2.079119791,
+            "minimum": 1.556924291,
+            "maximum": 2.079119791
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.06663025,
+            "p95NearestRank": 1.3488229999999999,
+            "minimum": 1.060280458,
+            "maximum": 1.3488229999999999
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002194167,
+            "p95NearestRank": 0.010323292,
+            "minimum": 0.002140458,
+            "maximum": 0.010323292
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 26.577068306908718,
+            "p95NearestRank": 27.618555538356617,
+            "minimum": 20.68182900578238,
+            "maximum": 27.618555538356617
+          }
+        },
+        "en-commitment": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.2436283750000001,
+            "p95NearestRank": 1.404195,
+            "minimum": 1.224876375,
+            "maximum": 1.404195
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.023723875,
+            "p95NearestRank": 1.206626834,
+            "minimum": 1.014137459,
+            "maximum": 1.206626834
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002222917,
+            "p95NearestRank": 0.014880333,
+            "minimum": 0.002170042,
+            "maximum": 0.014880333
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 13.669678451973242,
+            "p95NearestRank": 13.878951661550333,
+            "minimum": 12.106580638728952,
+            "maximum": 13.878951661550333
+          }
+        },
+        "mixed-deadline": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.949496333,
+            "p95NearestRank": 1.960524458,
+            "minimum": 1.945555208,
+            "maximum": 1.960524458
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.05391675,
+            "p95NearestRank": 1.069892292,
+            "minimum": 1.048180541,
+            "maximum": 1.069892292
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002202375,
+            "p95NearestRank": 0.003564458,
+            "minimum": 0.002136042,
+            "maximum": 0.003564458
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 38.47147528848417,
+            "p95NearestRank": 38.54940722915738,
+            "minimum": 38.25506980744843,
+            "maximum": 38.54940722915738
+          }
+        },
+        "name-ar-to-en": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.209533125,
+            "p95NearestRank": 1.281041792,
+            "minimum": 1.193857458,
+            "maximum": 1.281041792
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.025224666,
+            "p95NearestRank": 1.113239375,
+            "minimum": 1.017320417,
+            "maximum": 1.113239375
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002173958,
+            "p95NearestRank": 0.002202291,
+            "minimum": 0.002137167,
+            "maximum": 0.002202291
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 12.401479289787948,
+            "p95NearestRank": 12.56431402215188,
+            "minimum": 11.709219865951104,
+            "maximum": 12.56431402215188
+          }
+        },
+        "name-nickname": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.4375001250000001,
+            "p95NearestRank": 1.58741625,
+            "minimum": 1.414507583,
+            "maximum": 1.58741625
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.004281375,
+            "p95NearestRank": 1.048334375,
+            "minimum": 1.0000295,
+            "maximum": 1.048334375
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002162541,
+            "p95NearestRank": 0.002325,
+            "minimum": 0.002150375,
+            "maximum": 0.002325
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 25.04347608317599,
+            "p95NearestRank": 25.45055285150776,
+            "minimum": 22.67836177184151,
+            "maximum": 25.45055285150776
+          }
+        },
+        "name-disambiguation": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.477687375,
+            "p95NearestRank": 1.6477200829999998,
+            "minimum": 1.446199291,
+            "maximum": 1.6477200829999998
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.023376125,
+            "p95NearestRank": 1.187937667,
+            "minimum": 1.017212416,
+            "maximum": 1.187937667
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002168958,
+            "p95NearestRank": 0.002252292,
+            "minimum": 0.002151666,
+            "maximum": 0.002252292
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 24.362392620428256,
+            "p95NearestRank": 24.892834773212453,
+            "minimum": 21.84837119570388,
+            "maximum": 24.892834773212453
+          }
+        },
+        "correction-history": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.771214292,
+            "p95NearestRank": 2.64583625,
+            "minimum": 1.622650041,
+            "maximum": 2.64583625
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.17526,
+            "p95NearestRank": 1.829680792,
+            "minimum": 1.041706708,
+            "maximum": 1.829680792
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002241917,
+            "p95NearestRank": 0.002395958,
+            "minimum": 0.002176125,
+            "maximum": 0.002395958
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 27.664636753055287,
+            "p95NearestRank": 30.1975156453344,
+            "minimum": 18.519664623991755,
+            "maximum": 30.1975156453344
+          }
+        },
+        "iq-negation": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 2.437512,
+            "p95NearestRank": 2.782354125,
+            "minimum": 2.312912125,
+            "maximum": 2.782354125
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.138887875,
+            "p95NearestRank": 1.271207375,
+            "minimum": 1.090598917,
+            "maximum": 1.271207375
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002234083,
+            "p95NearestRank": 0.002381459,
+            "minimum": 0.002184084,
+            "maximum": 0.002381459
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 41.84594783533374,
+            "p95NearestRank": 44.1002487286455,
+            "minimum": 36.65960385254699,
+            "maximum": 44.1002487286455
+          }
+        },
+        "iq-sarcasm": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.5112445,
+            "p95NearestRank": 1.735678875,
+            "minimum": 1.438151083,
+            "maximum": 1.735678875
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.09437525,
+            "p95NearestRank": 1.2237335,
+            "minimum": 1.047076583,
+            "maximum": 1.2237335
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002206167,
+            "p95NearestRank": 0.0025785,
+            "minimum": 0.002143291,
+            "maximum": 0.0025785
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 21.836307758274717,
+            "p95NearestRank": 22.946128810862913,
+            "minimum": 19.012733562249526,
+            "maximum": 22.946128810862913
+          }
+        },
+        "missing-evidence": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.399397167,
+            "p95NearestRank": 1.91942825,
+            "minimum": 1.3977184999999999,
+            "maximum": 1.91942825
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.028630208,
+            "p95NearestRank": 1.420655958,
+            "minimum": 1.021299458,
+            "maximum": 1.420655958
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002213792,
+            "p95NearestRank": 0.002655917,
+            "minimum": 0.002160709,
+            "maximum": 0.002655917
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 22.152395853749788,
+            "p95NearestRank": 22.17900099340461,
+            "minimum": 16.15064277604542,
+            "maximum": 22.17900099340461
+          }
+        },
+        "source-injection": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.475634375,
+            "p95NearestRank": 1.638467834,
+            "minimum": 1.418836375,
+            "maximum": 1.638467834
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.088498833,
+            "p95NearestRank": 1.234990625,
+            "minimum": 1.038817958,
+            "maximum": 1.234990625
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.00218975,
+            "p95NearestRank": 0.002790584,
+            "minimum": 0.002148875,
+            "maximum": 0.002790584
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 21.68558861337179,
+            "p95NearestRank": 22.553692986620817,
+            "minimum": 19.530441389183842,
+            "maximum": 22.553692986620817
+          }
+        },
+        "ar-digits": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.457294083,
+            "p95NearestRank": 1.627363333,
+            "minimum": 1.3254386249999999,
+            "maximum": 1.627363333
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.1527795,
+            "p95NearestRank": 1.311114375,
+            "minimum": 1.021153916,
+            "maximum": 1.311114375
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002249583,
+            "p95NearestRank": 0.002297334,
+            "minimum": 0.002132917,
+            "maximum": 0.002297334
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 17.841285642549334,
+            "p95NearestRank": 19.616147824272137,
+            "minimum": 15.976764053095451,
+            "maximum": 19.616147824272137
+          }
+        },
+        "unicode-name": {
+          "retrievalSeconds": null,
+          "generationSeconds": {
+            "count": 5,
+            "median": 1.37755575,
+            "p95NearestRank": 1.456251792,
+            "minimum": 1.283231583,
+            "maximum": 1.456251792
+          },
+          "requestToFirstTokenSeconds": {
+            "count": 5,
+            "median": 1.108683416,
+            "p95NearestRank": 1.156970125,
+            "minimum": 1.032596583,
+            "maximum": 1.156970125
+          },
+          "preparationSeconds": {
+            "count": 5,
+            "median": 0.002300291,
+            "p95NearestRank": 0.002403917,
+            "minimum": 0.002135834,
+            "maximum": 0.002403917
+          },
+          "endToEndOutputTokensPerSecond": {
+            "count": 5,
+            "median": 14.518468671776079,
+            "p95NearestRank": 15.585651307960365,
+            "minimum": 13.733888679053381,
+            "maximum": 15.585651307960365
+          }
+        }
+      },
+      "coldModelRequests": {
+        "retrievalSeconds": null,
+        "generationSeconds": {
+          "count": 1,
+          "median": 2.840643375,
+          "p95NearestRank": 2.840643375,
+          "minimum": 2.840643375,
+          "maximum": 2.840643375
+        },
+        "requestToFirstTokenSeconds": {
+          "count": 1,
+          "median": 2.6912383330000003,
+          "p95NearestRank": 2.6912383330000003,
+          "minimum": 2.6912383330000003,
+          "maximum": 2.6912383330000003
+        },
+        "preparationSeconds": {
+          "count": 1,
+          "median": 0.984994917,
+          "p95NearestRank": 0.984994917,
+          "minimum": 0.984994917,
+          "maximum": 0.984994917
+        },
+        "endToEndOutputTokensPerSecond": {
+          "count": 1,
+          "median": 4.576428042467668,
+          "p95NearestRank": 4.576428042467668,
+          "minimum": 4.576428042467668,
+          "maximum": 4.576428042467668
+        }
+      },
+      "indexBuildSeconds": null,
+      "coldIndexBuildSeconds": null,
+      "warmIndexBuildSeconds": null,
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 734629080.0,
+        "p95NearestRank": 734760152,
+        "minimum": 734399704,
+        "maximum": 734760152
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 396705472.0,
+        "p95NearestRank": 396705472,
+        "minimum": 396705472,
+        "maximum": 396705472
+      },
+      "measurementMethods": [
+        "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured."
+      ],
+      "qualityReview": "No semantic pass is inferred. Review raw answers against the separate rubric."
+    },
+    {
+      "candidateID": "mlx-qwen",
+      "environment": "simulator",
+      "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+      "batchID": "6284B9B7-6E34-402C-A5C6-3AD97B996F55",
+      "context": {
+        "batchID": "6284B9B7-6E34-402C-A5C6-3AD97B996F55",
+        "buildConfiguration": "Release",
+        "conditions": "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+        "deviceModel": "iPhone19,2",
+        "environment": "simulator",
+        "offlineConfirmed": false,
+        "operatingSystem": "Version 27.2 (Build 24B8117)",
+        "purpose": "comparison",
+        "repetition": 0,
+        "repetitionCount": 6,
+        "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+        "toolchain": "Xcode 27.2 / Swift 6.4.2"
+      },
+      "configuration": {
+        "displayName": "MLX Swift · Qwen3",
+        "id": "mlx-qwen",
+        "provenance": [
+          {
+            "notes": "MLX Swift LM 3.32.3; simulator unsupported by upstream.",
+            "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+            "sourceURL": "https://github.com/ml-explore/mlx-swift-lm"
+          },
+          {
+            "modelAsset": "model.safetensors",
+            "modelSHA256": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2",
+            "notes": "Real Mac output comparison is recorded separately from simulator runs.",
+            "revision": "73e3e38d981303bc594367cd910ea6eb48349da8",
+            "sourceURL": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit"
+          }
+        ],
+        "scope": "text"
+      },
+      "settings": {
+        "maximumOutputTokens": 256,
+        "seed": 42,
+        "temperature": 0
+      },
+      "recordedSuites": 1,
+      "recordedRepetitions": [
+        0
+      ],
+      "inputs": [
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/mlx-qwen-FF7FE5CC-024D-4145-B239-8EC0D58F5500.json",
+          "sha256": "e60b7ba9ff04c15c3153037aaa0a565f38311e08097d8810693fcd9f278da2b4"
+        }
+      ],
+      "retrievalStatuses": {
+        "notApplicable": 15
+      },
+      "generationStatuses": {
+        "blocked": 15
+      },
+      "outputsAtTokenCap": 0,
+      "exactSourceSetMatches": 0,
+      "completedRetrievalCases": 0,
+      "evidencePresentRetrievalCases": 0,
+      "relevantSourceRankedFirst": 0,
+      "noEvidenceRetrievalCases": 0,
+      "noEvidenceAbstentions": 0,
+      "meanSourceRecall": null,
+      "allCases": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "fiveWarmSuites": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "perCaseWarm": {},
+      "coldModelRequests": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "indexBuildSeconds": null,
+      "coldIndexBuildSeconds": null,
+      "warmIndexBuildSeconds": null,
+      "reportedPeakMemoryBytes": {
+        "count": 1,
+        "median": 36932008,
+        "p95NearestRank": 36932008,
+        "minimum": 36932008,
+        "maximum": 36932008
+      },
+      "reportedStorageBytes": {
+        "count": 1,
+        "median": 0,
+        "p95NearestRank": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "measurementMethods": [
+        "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured."
+      ],
+      "qualityReview": "No semantic pass is inferred. Review raw answers against the separate rubric."
+    },
+    {
+      "candidateID": "wax-lexical",
+      "environment": "simulator",
+      "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+      "batchID": "CF818A95-44F8-4A98-838A-3CE0626799AF",
+      "context": {
+        "batchID": "CF818A95-44F8-4A98-838A-3CE0626799AF",
+        "buildConfiguration": "Release",
+        "conditions": "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+        "deviceModel": "iPhone19,2",
+        "environment": "simulator",
+        "offlineConfirmed": false,
+        "operatingSystem": "Version 27.2 (Build 24B8117)",
+        "purpose": "comparison",
+        "repetition": 0,
+        "repetitionCount": 6,
+        "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+        "toolchain": "Xcode 27.2 / Swift 6.4.2"
+      },
+      "configuration": {
+        "displayName": "Wax · keyword",
+        "id": "wax-lexical",
+        "provenance": [
+          {
+            "notes": "Wax 0.1.47 with recorded iOS desktop guards; textOnly retrieval; embeddings disabled.",
+            "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+            "sourceURL": "https://github.com/christopherkarani/Wax"
+          }
+        ],
+        "scope": "retrieval"
+      },
+      "settings": {
+        "maximumOutputTokens": 256,
+        "seed": 42,
+        "temperature": 0
+      },
+      "recordedSuites": 6,
+      "recordedRepetitions": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "inputs": [
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-6FE303B1-4488-4A69-BF91-ECC283B24293.json",
+          "sha256": "181e746c6438ab4c7e8d5d063b854384eec8714fc33706e1b4ae55bd6241ee9a"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-4AC8EA9D-67D7-41B5-A87C-52F5B31A74E7.json",
+          "sha256": "57893c960e04d752ef39896e16528ecc801f8e9a982dca6f874728168e5d0d01"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-510FA262-06C0-4CCB-A555-E3E435EFA10C.json",
+          "sha256": "fd7e8ff653e5c098c087f1c99512c80ec92ee9f274bb9cdb209d324001fa9e52"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-4B73FDC1-811F-4119-B334-6B767191609F.json",
+          "sha256": "8984dcf268f000f9c0312d86e50ed75c31e1db6ec430d11f2bf4ff165a38200b"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-8BD5B166-BAEF-4664-A837-3D8262458D38.json",
+          "sha256": "5e579d379de11f6fbaa558615b162195e3e66c7c668f11c49ef85a77622e0180"
+        },
+        {
+          "path": "native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-DAE27252-4793-476A-9D0F-FF70B9DA0EA8.json",
+          "sha256": "2875289405392a7678d427f98669ebf7e284aef72f2af6954fa184f3f65d6f66"
+        }
+      ],
+      "retrievalStatuses": {
+        "completed": 90
+      },
+      "generationStatuses": {
+        "notApplicable": 90
+      },
+      "outputsAtTokenCap": 0,
+      "exactSourceSetMatches": 60,
+      "completedRetrievalCases": 90,
+      "evidencePresentRetrievalCases": 84,
+      "relevantSourceRankedFirst": 84,
+      "noEvidenceRetrievalCases": 6,
+      "noEvidenceAbstentions": 0,
+      "meanSourceRecall": 0.9333333333333333,
+      "allCases": {
+        "retrievalSeconds": {
+          "count": 90,
+          "median": 0.0018555835,
+          "p95NearestRank": 0.003044875,
+          "minimum": 0.001009375,
+          "maximum": 0.01958525
+        },
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "fiveWarmSuites": {
+        "retrievalSeconds": {
+          "count": 75,
+          "median": 0.001816333,
+          "p95NearestRank": 0.002786167,
+          "minimum": 0.001009375,
+          "maximum": 0.003044875
+        },
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "perCaseWarm": {
+        "en-birthday": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001923459,
+            "p95NearestRank": 0.002209333,
+            "minimum": 0.001656083,
+            "maximum": 0.002209333
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "ar-birthday": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001458417,
+            "p95NearestRank": 0.001496125,
+            "minimum": 0.001207833,
+            "maximum": 0.001496125
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-tentative": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.002020875,
+            "p95NearestRank": 0.0022615,
+            "minimum": 0.001796709,
+            "maximum": 0.0022615
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "en-commitment": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001577958,
+            "p95NearestRank": 0.002005042,
+            "minimum": 0.001412709,
+            "maximum": 0.002005042
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "mixed-deadline": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.0018615,
+            "p95NearestRank": 0.002120875,
+            "minimum": 0.001630417,
+            "maximum": 0.002120875
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-ar-to-en": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.0016345,
+            "p95NearestRank": 0.001786208,
+            "minimum": 0.001431792,
+            "maximum": 0.001786208
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-nickname": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001081875,
+            "p95NearestRank": 0.001428875,
+            "minimum": 0.001009375,
+            "maximum": 0.001428875
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "name-disambiguation": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001533834,
+            "p95NearestRank": 0.002028,
+            "minimum": 0.001298666,
+            "maximum": 0.002028
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "correction-history": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.002386625,
+            "p95NearestRank": 0.00287875,
+            "minimum": 0.002302709,
+            "maximum": 0.00287875
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-negation": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001816333,
+            "p95NearestRank": 0.002017458,
+            "minimum": 0.001602917,
+            "maximum": 0.002017458
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "iq-sarcasm": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001567417,
+            "p95NearestRank": 0.002027458,
+            "minimum": 0.001377209,
+            "maximum": 0.002027458
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "missing-evidence": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001445916,
+            "p95NearestRank": 0.001916,
+            "minimum": 0.001394125,
+            "maximum": 0.001916
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "source-injection": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.00277325,
+            "p95NearestRank": 0.003044875,
+            "minimum": 0.002612167,
+            "maximum": 0.003044875
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "ar-digits": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.001905333,
+            "p95NearestRank": 0.002225792,
+            "minimum": 0.001751,
+            "maximum": 0.002225792
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        },
+        "unicode-name": {
+          "retrievalSeconds": {
+            "count": 5,
+            "median": 0.00243825,
+            "p95NearestRank": 0.002786167,
+            "minimum": 0.002321708,
+            "maximum": 0.002786167
+          },
+          "generationSeconds": null,
+          "requestToFirstTokenSeconds": null,
+          "preparationSeconds": null,
+          "endToEndOutputTokensPerSecond": null
+        }
+      },
+      "coldModelRequests": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "indexBuildSeconds": {
+        "count": 6,
+        "median": 0.024520333499999998,
+        "p95NearestRank": 0.139462791,
+        "minimum": 0.022171125,
+        "maximum": 0.139462791
+      },
+      "coldIndexBuildSeconds": {
+        "count": 1,
+        "median": 0.139462791,
+        "p95NearestRank": 0.139462791,
+        "minimum": 0.139462791,
+        "maximum": 0.139462791
+      },
+      "warmIndexBuildSeconds": {
+        "count": 5,
+        "median": 0.024420125,
+        "p95NearestRank": 0.030720375,
+        "minimum": 0.022171125,
+        "maximum": 0.030720375
+      },
+      "reportedPeakMemoryBytes": {
+        "count": 6,
+        "median": 53340608.0,
+        "p95NearestRank": 57690584,
+        "minimum": 53316032,
+        "maximum": 57690584
+      },
+      "reportedStorageBytes": {
+        "count": 6,
+        "median": 8539018.0,
+        "p95NearestRank": 8539018,
+        "minimum": 8539018,
+        "maximum": 8539018
+      },
+      "measurementMethods": [
+        "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured."
+      ],
+      "qualityReview": "No semantic pass is inferred. Review raw answers against the separate rubric."
+    }
+  ]
+}

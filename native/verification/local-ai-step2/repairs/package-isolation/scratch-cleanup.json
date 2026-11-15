@@ -1,0 +1,51 @@
+{
+  "derivedData": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-ai-lab-isolation-build-fexpo2om",
+  "logicalBytesRemoved": 239126699,
+  "buildExitCode": 0,
+  "reason": "Completed isolated package-wiring build; current coordinator lab build preserved separately. Unique logs/configuration retained before removal.",
+  "executableSHA256": "c7910031771a34c4596afc40d7d419221cb4896a6595d9fc2308e430ec793829",
+  "preserved": [
+    {
+      "path": "native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/.memoryos-wax-resource-ownership.json",
+      "sha256": "714d25b9428b4def0bfc64bd35d70a8e8a3b14e997cf5900016037e89d489b37",
+      "bytes": 3861
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/Logs/Build/45D99C12-ADDF-4554-ABC2-9C3578821492.xcactivitylog",
+      "sha256": "96aec29acc9b91db1f0ae763d897ba97d710d03da5057f504673a15cce28905f",
+      "bytes": 133614
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/Logs/Build/79621633-F843-4FB8-8517-58510CE038BE.xcactivitylog",
+      "sha256": "dc79e25bd9e920164a6df2ccc4aeffef71c01bcbd39e0e8793356cd309359236",
+      "bytes": 65009
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/Logs/Build/LogStoreManifest.plist",
+      "sha256": "726529e8156898f6b06d11fb11c442ecca198783511cfc63b2f95af227808623",
+      "bytes": 3212
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/Logs/Package/9D293FAA-7E42-45EF-891F-F2083AAEF8B3.xcactivitylog",
+      "sha256": "f8181e807b79dbf408545d456cbb6fb3770b8e4a64a174facf2fd8a18009df06",
+      "bytes": 267
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/Logs/Package/LogStoreManifest.plist",
+      "sha256": "4cd1ee7689d23616c2962c2ba794350f790fe4fd79696a80161ad45dd737d185",
+      "bytes": 1402
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/SourcePackages/workspace-state.json",
+      "sha256": "00ef9e18f3f2c806d1663eb4f0cf693427a766c97acbc96159c17b99ce24f42a",
+      "bytes": 4408
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/info.plist",
+      "sha256": "ab758fa302211f771911097851911091d2d0a3e5edd870f8cefb591663d41db0",
+      "bytes": 982
+    }
+  ],
+  "scratchRemoved": true,
+  "preservedHashesVerified": true
+}

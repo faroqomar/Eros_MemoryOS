@@ -57,9 +57,9 @@ R01-R32 in the [feature register](../feature-register.md) are owner requests. Th
 | ID | Choice | Current status |
 | --- | --- | --- |
 | A02 | SQLite for local records | Resolved for checklist group 3 Step 1 by the implementation selection below. This is not a production-readiness claim. |
-| A03 | llama.cpp for local text inference | Candidate runtime. No build, model compatibility test, or device result exists. |
+| A03 | llama.cpp for local text inference | Experimental Simulator baseline under C40. Real CPU/Accelerate SDK builds and Qwen3-0.6B/1.7B comparisons run; quality prevents production adoption. Physical-device results remain open. See the [measured report](../evidence/local-ai-2026-11-14/resume-summary.md). |
 | A04 | WhisperKit or whisper.cpp for transcription | D14 records the shortlist. Evaluate multilingual models for Arabic and English. No final speech model or benchmark exists. See [audio options](audio-recording-and-transcription.md). |
-| A05 | Multiple local model candidates, including earlier multilingual suggestions | D16 requires selection through testing and analysis. Qwen3-1.7B is an earlier example, not a chosen model or fixed shortlist. No quality, speed, memory, or battery result exists. |
+| A05 | Multiple local model candidates, including earlier multilingual suggestions | D16 requires selection through testing and analysis. Qwen3-1.7B is an earlier example, not a chosen model or fixed shortlist. Group 4 now records Simulator speed/memory/storage and builder quality review. Physical battery/heat and production adoption remain open. |
 | A06 | Custom memory behavior over existing components | Assistant recommendation. D13 records Wax and Cactus as candidate foundations; exact reuse and custom scope remain open. See [runtime memory options](runtime-memory-options.md). |
 | A08 | Saved filters for generated tabs | Proposed implementation of R21. No design approval exists. |
 | A09 | Concrete app-owned storage and Obsidian integration | D27/C23 requires MemoryOS-owned durable records. Database/package selection and Obsidian access/two-way editing remain open. App database plus Markdown views is still an implementation proposal. Encryption, backup, and recovery need detailed design and verification under the standing rules. |
@@ -119,3 +119,8 @@ These questions are a record for future work. They do not require the owner to a
 ## Checklist group 3 storage implementation, 2026-11-14
 
 C35 authorizes Step 1 of reliable local storage and text capture. The [storage decision](local-record-storage.md) selects the OS SQLite library behind an app-owned protocol, schema/archive version 1, app-owned immutable originals and correction history, stable links, reversible Trash, and explicit readable JSON export/transactional merge restore. This resolves A02 for this implementation. It does not select an AI/search provider or settle permanent deletion, automatic cloud backup, custom encryption/key recovery or sync. The [task record](../tasks/2026-11-14-local-storage-text-capture.md) distinguishes implementation, local checks, independent verification and physical-device gaps.
+
+
+## Checklist group 4 evaluation, C38, 2026-11-14
+
+C38 authorizes Step 1 implementation and builder checks for local AI comparisons. It does not select Wax, Cactus, llama.cpp, MLX or a model for production. C39 requires completed downloads/repairs and C40 selects Simulator. The [task record](../tasks/2026-11-14-local-ai-phone-evaluation.md) and [measured summary](../evidence/local-ai-2026-11-14/resume-summary.md) now record completed SDK/model comparisons, explicit unsupported-platform results and measured quality failures. Builder recommendations select llama.cpp and Wax lexical as experimental baselines only. Neither tested text model meets the Arabic/Iraqi bar; no production provider/model is adopted. C41 separately starts independent Step 2. C43 repairs subsequently pass its C40 Simulator checks, including unfiltered accessibility audits; this does not change failed model-quality results or start Step 3. Physical cost remains separate.

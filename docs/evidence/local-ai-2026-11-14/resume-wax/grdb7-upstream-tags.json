@@ -1,0 +1,98 @@
+[
+  {
+    "tag": "v7.12.0",
+    "sha": "92a554cd0d5e8d67cb18993c6054e73fe42c066c"
+  },
+  {
+    "tag": "v7.11.1",
+    "sha": "b83108d10f42680d78f23fe4d4d80fc88dab3212"
+  },
+  {
+    "tag": "v7.11.0",
+    "sha": "9ed8c8457e00ff9c7aedb3bf213f20a2cfdf509e"
+  },
+  {
+    "tag": "v7.10.0",
+    "sha": "36e30a6f1ef10e4194f6af0cff90888526f0c115"
+  },
+  {
+    "tag": "v7.9.0",
+    "sha": "aa0079aeb82a4bf00324561a40bffe68c6fe1c26"
+  },
+  {
+    "tag": "v7.8.0",
+    "sha": "18497b68fdbb3a09528d260a0a0e1e7e61c8c53d"
+  },
+  {
+    "tag": "v7.7.1",
+    "sha": "db695cf7dc2632c263bcf0b26f118074feb2697a"
+  },
+  {
+    "tag": "v7.7.0",
+    "sha": "c5d02eac3241dd980fa42e5644afd2e7e3f63401"
+  },
+  {
+    "tag": "v7.6.1",
+    "sha": "8ba1bc9a96afc731a000fd4136dd13a5a46297bd"
+  },
+  {
+    "tag": "v7.6.0",
+    "sha": "fb68849bfb7a1b0ff80734fed6872364aab6c5d0"
+  },
+  {
+    "tag": "v7.5.0",
+    "sha": "a5a1be26b4513dc7ec360eb56bc08a345bac6649"
+  },
+  {
+    "tag": "v7.4.1",
+    "sha": "04e73c26c4ce8218ab85aaf791942bb0b204f330"
+  },
+  {
+    "tag": "v7.4.0",
+    "sha": "52b7b7bd26821c67f1c26b5e248fd6bcac4903a7"
+  },
+  {
+    "tag": "v7.3.0",
+    "sha": "6eba24d16952452a8a54f6a639491f3c8215527f"
+  },
+  {
+    "tag": "v7.2.0",
+    "sha": "c7205b172f38439e7ee62c208d1d76fa353c0a81"
+  },
+  {
+    "tag": "v7.1.0",
+    "sha": "ea6d8e0123b0db79cd3cf736f5d9798a89839c51"
+  },
+  {
+    "tag": "v7.0.0",
+    "sha": "4de97e6903d29697caae1179cdef8479c64c2639"
+  },
+  {
+    "tag": "v7.0.0-beta.7",
+    "sha": "bbf39353b5f7c5f5643cb8569ee575a7757ed106"
+  },
+  {
+    "tag": "v7.0.0-beta.6",
+    "sha": "84d25dfc9dc1766feb8c80fb04b9f7e2337fb83e"
+  },
+  {
+    "tag": "v7.0.0-beta.5",
+    "sha": "c396fc20be91fd75bf392ffec50b2cab6d1e0cee"
+  },
+  {
+    "tag": "v7.0.0-beta.4",
+    "sha": "d6b50b2c5413b803b72f97d4cf0b1e761e564eaf"
+  },
+  {
+    "tag": "v7.0.0-beta.3",
+    "sha": "bccf312af65b59e67b40d63afd89e46e0d3fae61"
+  },
+  {
+    "tag": "v7.0.0-beta.2",
+    "sha": "ed5f8c11ab53a4df0f882f1045c65aab59193611"
+  },
+  {
+    "tag": "v7.0.0-beta",
+    "sha": "47a7ddf08a619fff3e215df321fba9f4d77413e5"
+  }
+]

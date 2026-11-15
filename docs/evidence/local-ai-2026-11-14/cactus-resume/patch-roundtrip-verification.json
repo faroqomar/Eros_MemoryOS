@@ -1,0 +1,7 @@
+{
+  "originalSourceFiles": 90,
+  "patchedSourceFiles": 92,
+  "reverseMatchesPinnedOriginalHashes": true,
+  "forwardPatchMatchesActualCompiledSources": true,
+  "patchSHA256": "7ac5cdced684b3c452be7147a689cd901eeb8bf48723b4913b5aa65abcd5ab0e"
+}

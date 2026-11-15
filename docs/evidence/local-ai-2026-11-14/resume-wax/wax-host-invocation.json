@@ -1,0 +1,8 @@
+{
+  "executable": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/.build/release/wax-evaluation",
+  "configuration": "Release",
+  "source_identity": "sha256:8038f0c6992e5dfda324296696426e3438176025b4a10073f477052867be3e48",
+  "toolchain": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+  "exit_code": 0,
+  "temporary_path_override": true
+}

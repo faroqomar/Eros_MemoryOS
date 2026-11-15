@@ -1,0 +1,38 @@
+{
+  "kind": "Real Mac host smoke under externally enforced OS network denial",
+  "launcher": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Tools/run-offline-host-smoke.py",
+  "launcherSHA256": "59d6ca3d588ca88394d3f2c2f946d1a377887887eae8ead120b73150d46e2e5b",
+  "command": [
+    "/usr/bin/sandbox-exec",
+    "-p",
+    "(version 1)(allow default)(deny network*)",
+    "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/out/Products/Release/mlx-evaluation",
+    "--model-dir",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/models/mlx-qwen3-0.6b-4bit-73e3e38d",
+    "--source-identity",
+    "sha256:28376ac50c700154790360a97a349dd9fd548718cd1511560a621517821c9147",
+    "--output",
+    "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-host-canonical-network-denied.json"
+  ],
+  "sandboxPolicy": "(version 1)(allow default)(deny network*)",
+  "networkDenialProbe": {
+    "networkDenied": true,
+    "errno": 1
+  },
+  "binary": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/out/Products/Release/mlx-evaluation",
+  "binarySHA256": "411bf6319dc8fa977bbdb212474bd163974d1f4b1360220dcdc3d12a3a974345",
+  "binaryUnchangedAfterRun": true,
+  "sourceManifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-source-manifest-canonical.json",
+  "sourceManifestSHA256": "28376ac50c700154790360a97a349dd9fd548718cd1511560a621517821c9147",
+  "metallib": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/out/Products/Release/mlx.metallib",
+  "metallibSHA256": "cc3fc4850eb72caa36e9db2640b421f1ac2bfda2174dd58f8c15b52233ec154c",
+  "assetManifest": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/models/mlx-qwen3-0.6b-4bit-73e3e38d/memoryos-asset-manifest.json",
+  "assetManifestSHA256": "5fa5d39edfabe19cc121712642e847bb297b14f243abc82d5a68d54ba0844669",
+  "assetCountVerifiedBeforeLaunch": 10,
+  "assetManifestUnchangedAfterRun": true,
+  "exitCode": 0,
+  "rawReport": "native/verification/local-ai-step1/resume/mlx-host-canonical-network-denied.json",
+  "conditions": "Other source downloads may be active. Host timings do not establish simulator or phone performance. The CLI report keeps its default offlineConfirmed field; this separate receipt records OS enforcement without editing raw results.",
+  "rawReportSHA256": "c4a419f70877d436e0a14a9ab8848cba6052946977b8342eac481cc865df903d",
+  "rawReportOfflineConfirmed": false
+}

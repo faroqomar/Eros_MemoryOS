@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+  "root_tree": "e66cabf366880e5314973dd47f8b793b5ea7bfe8",
+  "original_url": "https://github.com/apple/swift-asn1.git",
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/swift-asn1-7065ad2c",
+  "verified_blobs": 211,
+  "verified_trees": 24,
+  "blob_bytes": 849711,
+  "promisor": false,
+  "git_filter": null,
+  "local_server": false,
+  "transport_wrapper": false
+}

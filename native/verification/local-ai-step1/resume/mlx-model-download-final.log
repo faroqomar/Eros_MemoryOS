@@ -1,0 +1,671 @@
+Downloading model.safetensors, expected 335,450,584 bytes
+{"event": "progress", "receivedBytes": 847872, "totalBytes": 335450584, "averageBytesPerSecond": 56510}
+{"event": "progress", "receivedBytes": 1175552, "totalBytes": 335450584, "averageBytesPerSecond": 39178}
+{"event": "progress", "receivedBytes": 1634304, "totalBytes": 335450584, "averageBytesPerSecond": 36312}
+{"event": "progress", "receivedBytes": 2355200, "totalBytes": 335450584, "averageBytesPerSecond": 39245}
+{"event": "progress", "receivedBytes": 3272704, "totalBytes": 335450584, "averageBytesPerSecond": 43622}
+{"event": "progress", "receivedBytes": 3993600, "totalBytes": 335450584, "averageBytesPerSecond": 44357}
+{"event": "progress", "receivedBytes": 4845568, "totalBytes": 335450584, "averageBytesPerSecond": 46129}
+{"event": "progress", "receivedBytes": 5959680, "totalBytes": 335450584, "averageBytesPerSecond": 49645}
+{"event": "progress", "receivedBytes": 6811648, "totalBytes": 335450584, "averageBytesPerSecond": 50435}
+{"event": "progress", "receivedBytes": 7794688, "totalBytes": 335450584, "averageBytesPerSecond": 51942}
+{"event": "progress", "receivedBytes": 8646656, "totalBytes": 335450584, "averageBytesPerSecond": 52380}
+{"event": "progress", "receivedBytes": 9695232, "totalBytes": 335450584, "averageBytesPerSecond": 53837}
+{"event": "progress", "receivedBytes": 11464704, "totalBytes": 335450584, "averageBytesPerSecond": 58767}
+{"event": "progress", "receivedBytes": 12972032, "totalBytes": 335450584, "averageBytesPerSecond": 61744}
+{"event": "progress", "receivedBytes": 13692928, "totalBytes": 335450584, "averageBytesPerSecond": 60829}
+{"event": "progress", "receivedBytes": 14217216, "totalBytes": 335450584, "averageBytesPerSecond": 59212}
+{"event": "progress", "receivedBytes": 14413824, "totalBytes": 335450584, "averageBytesPerSecond": 56499}
+{"event": "progress", "receivedBytes": 15003648, "totalBytes": 335450584, "averageBytesPerSecond": 55545}
+{"event": "progress", "receivedBytes": 15593472, "totalBytes": 335450584, "averageBytesPerSecond": 54689}
+{"event": "progress", "receivedBytes": 16379904, "totalBytes": 335450584, "averageBytesPerSecond": 54574}
+{"event": "progress", "receivedBytes": 17100800, "totalBytes": 335450584, "averageBytesPerSecond": 54263}
+{"event": "progress", "receivedBytes": 17887232, "totalBytes": 335450584, "averageBytesPerSecond": 54178}
+{"event": "progress", "receivedBytes": 18608128, "totalBytes": 335450584, "averageBytesPerSecond": 53912}
+{"event": "progress", "receivedBytes": 19394560, "totalBytes": 335450584, "averageBytesPerSecond": 53848}
+{"event": "progress", "receivedBytes": 20049920, "totalBytes": 335450584, "averageBytesPerSecond": 53442}
+{"event": "progress", "receivedBytes": 20836352, "totalBytes": 335450584, "averageBytesPerSecond": 53402}
+{"event": "progress", "receivedBytes": 22081536, "totalBytes": 335450584, "averageBytesPerSecond": 54497}
+{"event": "progress", "receivedBytes": 23719936, "totalBytes": 335450584, "averageBytesPerSecond": 56450}
+{"event": "progress", "receivedBytes": 25030656, "totalBytes": 335450584, "averageBytesPerSecond": 57514}
+{"event": "progress", "receivedBytes": 26144768, "totalBytes": 335450584, "averageBytesPerSecond": 58073}
+{"event": "progress", "receivedBytes": 26865664, "totalBytes": 335450584, "averageBytesPerSecond": 57750}
+{"event": "progress", "receivedBytes": 27258880, "totalBytes": 335450584, "averageBytesPerSecond": 56763}
+{"event": "progress", "receivedBytes": 27783168, "totalBytes": 335450584, "averageBytesPerSecond": 56102}
+{"event": "progress", "receivedBytes": 28569600, "totalBytes": 335450584, "averageBytesPerSecond": 55993}
+{"event": "progress", "receivedBytes": 29356032, "totalBytes": 335450584, "averageBytesPerSecond": 55890}
+{"event": "progress", "receivedBytes": 30142464, "totalBytes": 335450584, "averageBytesPerSecond": 55793}
+{"event": "progress", "receivedBytes": 30928896, "totalBytes": 335450584, "averageBytesPerSecond": 55701}
+{"event": "progress", "receivedBytes": 31715328, "totalBytes": 335450584, "averageBytesPerSecond": 55614}
+{"event": "progress", "receivedBytes": 32632832, "totalBytes": 335450584, "averageBytesPerSecond": 55756}
+{"event": "progress", "receivedBytes": 33030144, "totalBytes": 335450584, "averageBytesPerSecond": 55023}
+{"event": "progress", "receivedBytes": 33751040, "totalBytes": 335450584, "averageBytesPerSecond": 54852}
+{"event": "progress", "receivedBytes": 34406400, "totalBytes": 335450584, "averageBytesPerSecond": 54586}
+{"event": "progress", "receivedBytes": 34930688, "totalBytes": 335450584, "averageBytesPerSecond": 54129}
+{"event": "progress", "receivedBytes": 35323904, "totalBytes": 335450584, "averageBytesPerSecond": 53494}
+{"event": "progress", "receivedBytes": 35782656, "totalBytes": 335450584, "averageBytesPerSecond": 52985}
+{"event": "progress", "receivedBytes": 36306944, "totalBytes": 335450584, "averageBytesPerSecond": 52593}
+{"event": "progress", "receivedBytes": 36634624, "totalBytes": 335450584, "averageBytesPerSecond": 51938}
+{"event": "progress", "receivedBytes": 37158912, "totalBytes": 335450584, "averageBytesPerSecond": 51584}
+{"event": "progress", "receivedBytes": 37748736, "totalBytes": 335450584, "averageBytesPerSecond": 51334}
+{"event": "progress", "receivedBytes": 38535168, "totalBytes": 335450584, "averageBytesPerSecond": 51355}
+{"event": "progress", "receivedBytes": 39124992, "totalBytes": 335450584, "averageBytesPerSecond": 51120}
+{"event": "progress", "receivedBytes": 39845888, "totalBytes": 335450584, "averageBytesPerSecond": 51060}
+{"event": "progress", "receivedBytes": 40304640, "totalBytes": 335450584, "averageBytesPerSecond": 50674}
+{"event": "progress", "receivedBytes": 41025536, "totalBytes": 335450584, "averageBytesPerSecond": 50625}
+{"event": "progress", "receivedBytes": 41484288, "totalBytes": 335450584, "averageBytesPerSecond": 50261}
+{"event": "progress", "receivedBytes": 41877504, "totalBytes": 335450584, "averageBytesPerSecond": 49831}
+{"event": "progress", "receivedBytes": 42139648, "totalBytes": 335450584, "averageBytesPerSecond": 49263}
+{"event": "progress", "receivedBytes": 42467328, "totalBytes": 335450584, "averageBytesPerSecond": 48791}
+{"event": "progress", "receivedBytes": 42860544, "totalBytes": 335450584, "averageBytesPerSecond": 48408}
+{"event": "progress", "receivedBytes": 43188224, "totalBytes": 335450584, "averageBytesPerSecond": 47965}
+{"event": "progress", "receivedBytes": 43581440, "totalBytes": 335450584, "averageBytesPerSecond": 47608}
+{"event": "progress", "receivedBytes": 43974656, "totalBytes": 335450584, "averageBytesPerSecond": 47263}
+{"event": "progress", "receivedBytes": 44302336, "totalBytes": 335450584, "averageBytesPerSecond": 46860}
+{"event": "progress", "receivedBytes": 44683475, "totalBytes": 335450584, "averageBytesPerSecond": 46525}
+{"event": "progress", "receivedBytes": 45207763, "totalBytes": 335450584, "averageBytesPerSecond": 46346}
+{"event": "progress", "receivedBytes": 46190803, "totalBytes": 335450584, "averageBytesPerSecond": 46637}
+{"event": "progress", "receivedBytes": 47370451, "totalBytes": 335450584, "averageBytesPerSecond": 47114}
+{"event": "progress", "receivedBytes": 48234496, "totalBytes": 335450584, "averageBytesPerSecond": 47268}
+{"event": "progress", "receivedBytes": 49348608, "totalBytes": 335450584, "averageBytesPerSecond": 47659}
+{"event": "progress", "receivedBytes": 50593792, "totalBytes": 335450584, "averageBytesPerSecond": 48164}
+{"event": "progress", "receivedBytes": 51576832, "totalBytes": 335450584, "averageBytesPerSecond": 48408}
+{"event": "progress", "receivedBytes": 53018624, "totalBytes": 335450584, "averageBytesPerSecond": 49070}
+{"event": "progress", "receivedBytes": 53805056, "totalBytes": 335450584, "averageBytesPerSecond": 49116}
+{"event": "progress", "receivedBytes": 54329344, "totalBytes": 335450584, "averageBytesPerSecond": 48924}
+{"event": "progress", "receivedBytes": 54984704, "totalBytes": 335450584, "averageBytesPerSecond": 48854}
+{"event": "progress", "receivedBytes": 55836672, "totalBytes": 335450584, "averageBytesPerSecond": 48959}
+{"event": "progress", "receivedBytes": 56754176, "totalBytes": 335450584, "averageBytesPerSecond": 49117}
+{"event": "progress", "receivedBytes": 57540608, "totalBytes": 335450584, "averageBytesPerSecond": 49159}
+{"event": "progress", "receivedBytes": 58195968, "totalBytes": 335450584, "averageBytesPerSecond": 49089}
+{"event": "progress", "receivedBytes": 58982400, "totalBytes": 335450584, "averageBytesPerSecond": 49131}
+{"event": "progress", "receivedBytes": 59572224, "totalBytes": 335450584, "averageBytesPerSecond": 49010}
+{"event": "progress", "receivedBytes": 60227584, "totalBytes": 335450584, "averageBytesPerSecond": 48945}
+{"event": "progress", "receivedBytes": 60686336, "totalBytes": 335450584, "averageBytesPerSecond": 48723}
+{"event": "progress", "receivedBytes": 61014016, "totalBytes": 335450584, "averageBytesPerSecond": 48403}
+{"event": "progress", "receivedBytes": 61538304, "totalBytes": 335450584, "averageBytesPerSecond": 48245}
+{"event": "progress", "receivedBytes": 62062592, "totalBytes": 335450584, "averageBytesPerSecond": 48090}
+{"event": "progress", "receivedBytes": 62717952, "totalBytes": 335450584, "averageBytesPerSecond": 48039}
+{"event": "progress", "receivedBytes": 63307776, "totalBytes": 335450584, "averageBytesPerSecond": 47940}
+{"event": "progress", "receivedBytes": 63963136, "totalBytes": 335450584, "averageBytesPerSecond": 47892}
+{"event": "progress", "receivedBytes": 64421888, "totalBytes": 335450584, "averageBytesPerSecond": 47700}
+{"event": "progress", "receivedBytes": 64946176, "totalBytes": 335450584, "averageBytesPerSecond": 47560}
+{"event": "progress", "receivedBytes": 65404928, "totalBytes": 335450584, "averageBytesPerSecond": 47375}
+{"event": "progress", "receivedBytes": 65994752, "totalBytes": 335450584, "averageBytesPerSecond": 47288}
+{"event": "progress", "receivedBytes": 66584576, "totalBytes": 335450584, "averageBytesPerSecond": 47203}
+{"event": "progress", "receivedBytes": 67043328, "totalBytes": 335450584, "averageBytesPerSecond": 47028}
+{"event": "progress", "receivedBytes": 67633152, "totalBytes": 335450584, "averageBytesPerSecond": 46948}
+{"event": "progress", "receivedBytes": 68681728, "totalBytes": 335450584, "averageBytesPerSecond": 47184}
+{"event": "progress", "receivedBytes": 69664768, "totalBytes": 335450584, "averageBytesPerSecond": 47371}
+{"event": "progress", "receivedBytes": 70582272, "totalBytes": 335450584, "averageBytesPerSecond": 47510}
+{"event": "progress", "receivedBytes": 71303168, "totalBytes": 335450584, "averageBytesPerSecond": 47516}
+{"event": "progress", "receivedBytes": 72089600, "totalBytes": 335450584, "averageBytesPerSecond": 47564}
+{"event": "progress", "receivedBytes": 73007104, "totalBytes": 335450584, "averageBytesPerSecond": 47697}
+{"event": "progress", "receivedBytes": 74055680, "totalBytes": 335450584, "averageBytesPerSecond": 47912}
+{"event": "progress", "receivedBytes": 75169792, "totalBytes": 335450584, "averageBytesPerSecond": 48165}
+{"event": "progress", "receivedBytes": 76218368, "totalBytes": 335450584, "averageBytesPerSecond": 48372}
+{"event": "progress", "receivedBytes": 77398016, "totalBytes": 335450584, "averageBytesPerSecond": 48657}
+{"event": "progress", "receivedBytes": 78577664, "totalBytes": 335450584, "averageBytesPerSecond": 48937}
+{"event": "progress", "receivedBytes": 79626240, "totalBytes": 335450584, "averageBytesPerSecond": 49131}
+{"event": "progress", "receivedBytes": 80543744, "totalBytes": 335450584, "averageBytesPerSecond": 49241}
+{"event": "progress", "receivedBytes": 81330176, "totalBytes": 335450584, "averageBytesPerSecond": 49270}
+{"event": "progress", "receivedBytes": 81985536, "totalBytes": 335450584, "averageBytesPerSecond": 49220}
+{"event": "progress", "receivedBytes": 82640896, "totalBytes": 335450584, "averageBytesPerSecond": 49170}
+{"event": "progress", "receivedBytes": 83361792, "totalBytes": 335450584, "averageBytesPerSecond": 49160}
+{"event": "progress", "receivedBytes": 84017152, "totalBytes": 335450584, "averageBytesPerSecond": 49112}
+{"event": "progress", "receivedBytes": 84606976, "totalBytes": 335450584, "averageBytesPerSecond": 49027}
+{"event": "progress", "receivedBytes": 85196800, "totalBytes": 335450584, "averageBytesPerSecond": 48943}
+{"event": "progress", "receivedBytes": 85786624, "totalBytes": 335450584, "averageBytesPerSecond": 48861}
+{"event": "progress", "receivedBytes": 86114304, "totalBytes": 335450584, "averageBytesPerSecond": 48632}
+{"event": "progress", "receivedBytes": 86507520, "totalBytes": 335450584, "averageBytesPerSecond": 48443}
+{"event": "progress", "receivedBytes": 86835200, "totalBytes": 335450584, "averageBytesPerSecond": 48222}
+{"event": "progress", "receivedBytes": 87228416, "totalBytes": 335450584, "averageBytesPerSecond": 48040}
+{"event": "progress", "receivedBytes": 87752704, "totalBytes": 335450584, "averageBytesPerSecond": 47932}
+{"event": "progress", "receivedBytes": 88215760, "totalBytes": 335450584, "averageBytesPerSecond": 47794}
+{"event": "progress", "receivedBytes": 88543440, "totalBytes": 335450584, "averageBytesPerSecond": 47584}
+{"event": "progress", "receivedBytes": 89133264, "totalBytes": 335450584, "averageBytesPerSecond": 47518}
+{"event": "progress", "receivedBytes": 89592016, "totalBytes": 335450584, "averageBytesPerSecond": 47384}
+{"event": "progress", "receivedBytes": 89919696, "totalBytes": 335450584, "averageBytesPerSecond": 47183}
+{"event": "progress", "receivedBytes": 90378448, "totalBytes": 335450584, "averageBytesPerSecond": 47053}
+{"event": "progress", "receivedBytes": 90706128, "totalBytes": 335450584, "averageBytesPerSecond": 46857}
+{"event": "progress", "receivedBytes": 91033808, "totalBytes": 335450584, "averageBytesPerSecond": 46665}
+{"event": "progress", "receivedBytes": 91230416, "totalBytes": 335450584, "averageBytesPerSecond": 46409}
+{"event": "progress", "receivedBytes": 91623632, "totalBytes": 335450584, "averageBytesPerSecond": 46256}
+{"event": "progress", "receivedBytes": 92344528, "totalBytes": 335450584, "averageBytesPerSecond": 46269}
+{"event": "progress", "receivedBytes": 92999888, "totalBytes": 335450584, "averageBytesPerSecond": 46250}
+{"event": "progress", "receivedBytes": 93655248, "totalBytes": 335450584, "averageBytesPerSecond": 46231}
+{"event": "progress", "receivedBytes": 94048464, "totalBytes": 335450584, "averageBytesPerSecond": 46084}
+{"event": "progress", "receivedBytes": 94507216, "totalBytes": 335450584, "averageBytesPerSecond": 45970}
+{"event": "progress", "receivedBytes": 94834896, "totalBytes": 335450584, "averageBytesPerSecond": 45795}
+{"event": "progress", "receivedBytes": 95162576, "totalBytes": 335450584, "averageBytesPerSecond": 45623}
+{"event": "progress", "receivedBytes": 95752400, "totalBytes": 335450584, "averageBytesPerSecond": 45578}
+{"event": "progress", "receivedBytes": 96145616, "totalBytes": 335450584, "averageBytesPerSecond": 45441}
+{"event": "progress", "receivedBytes": 96800976, "totalBytes": 335450584, "averageBytesPerSecond": 45428}
+{"event": "progress", "receivedBytes": 97390800, "totalBytes": 335450584, "averageBytesPerSecond": 45385}
+{"event": "progress", "receivedBytes": 97915088, "totalBytes": 335450584, "averageBytesPerSecond": 45313}
+{"event": "progress", "receivedBytes": 98504912, "totalBytes": 335450584, "averageBytesPerSecond": 45271}
+{"event": "progress", "receivedBytes": 99029200, "totalBytes": 335450584, "averageBytesPerSecond": 45201}
+{"event": "progress", "receivedBytes": 99619024, "totalBytes": 335450584, "averageBytesPerSecond": 45161}
+{"event": "progress", "receivedBytes": 100405456, "totalBytes": 335450584, "averageBytesPerSecond": 45210}
+{"event": "progress", "receivedBytes": 101060816, "totalBytes": 335450584, "averageBytesPerSecond": 45199}
+{"event": "progress", "receivedBytes": 101847248, "totalBytes": 335450584, "averageBytesPerSecond": 45247}
+{"event": "progress", "receivedBytes": 102371536, "totalBytes": 335450584, "averageBytesPerSecond": 45179}
+{"event": "progress", "receivedBytes": 102830288, "totalBytes": 335450584, "averageBytesPerSecond": 45083}
+{"event": "progress", "receivedBytes": 103157968, "totalBytes": 335450584, "averageBytesPerSecond": 44931}
+{"event": "progress", "receivedBytes": 103944400, "totalBytes": 335450584, "averageBytesPerSecond": 44980}
+{"event": "progress", "receivedBytes": 104665296, "totalBytes": 335450584, "averageBytesPerSecond": 44999}
+{"event": "progress", "receivedBytes": 105582800, "totalBytes": 335450584, "averageBytesPerSecond": 45103}
+{"event": "progress", "receivedBytes": 106238160, "totalBytes": 335450584, "averageBytesPerSecond": 45094}
+{"event": "progress", "receivedBytes": 106827984, "totalBytes": 335450584, "averageBytesPerSecond": 45057}
+{"event": "progress", "receivedBytes": 107352272, "totalBytes": 335450584, "averageBytesPerSecond": 44993}
+{"event": "progress", "receivedBytes": 107811024, "totalBytes": 335450584, "averageBytesPerSecond": 44903}
+{"event": "progress", "receivedBytes": 108335312, "totalBytes": 335450584, "averageBytesPerSecond": 44842}
+{"event": "progress", "receivedBytes": 108466384, "totalBytes": 335450584, "averageBytesPerSecond": 44619}
+{"event": "progress", "receivedBytes": 108925136, "totalBytes": 335450584, "averageBytesPerSecond": 44532}
+{"event": "progress", "receivedBytes": 109842640, "totalBytes": 335450584, "averageBytesPerSecond": 44634}
+{"event": "progress", "receivedBytes": 110498000, "totalBytes": 335450584, "averageBytesPerSecond": 44628}
+{"event": "progress", "receivedBytes": 110956752, "totalBytes": 335450584, "averageBytesPerSecond": 44543}
+{"event": "progress", "receivedBytes": 111349968, "totalBytes": 335450584, "averageBytesPerSecond": 44434}
+{"event": "progress", "receivedBytes": 111677648, "totalBytes": 335450584, "averageBytesPerSecond": 44299}
+{"event": "progress", "receivedBytes": 111874256, "totalBytes": 335450584, "averageBytesPerSecond": 44115}
+{"event": "progress", "receivedBytes": 112070864, "totalBytes": 335450584, "averageBytesPerSecond": 43932}
+{"event": "progress", "receivedBytes": 112333008, "totalBytes": 335450584, "averageBytesPerSecond": 43777}
+{"event": "progress", "receivedBytes": 112791760, "totalBytes": 335450584, "averageBytesPerSecond": 43701}
+{"event": "progress", "receivedBytes": 113316048, "totalBytes": 335450584, "averageBytesPerSecond": 43650}
+{"event": "progress", "receivedBytes": 113774800, "totalBytes": 335450584, "averageBytesPerSecond": 43575}
+{"event": "progress", "receivedBytes": 114057632, "totalBytes": 335450584, "averageBytesPerSecond": 43434}
+{"event": "progress", "receivedBytes": 114450848, "totalBytes": 335450584, "averageBytesPerSecond": 43336}
+{"event": "progress", "receivedBytes": 114778528, "totalBytes": 335450584, "averageBytesPerSecond": 43214}
+{"event": "progress", "receivedBytes": 115302816, "totalBytes": 335450584, "averageBytesPerSecond": 43168}
+{"event": "progress", "receivedBytes": 115892640, "totalBytes": 335450584, "averageBytesPerSecond": 43146}
+{"event": "progress", "receivedBytes": 116482464, "totalBytes": 335450584, "averageBytesPerSecond": 43125}
+{"event": "progress", "receivedBytes": 116740304, "totalBytes": 335450584, "averageBytesPerSecond": 42981}
+{"event": "progress", "receivedBytes": 117264592, "totalBytes": 335450584, "averageBytesPerSecond": 42937}
+{"event": "progress", "receivedBytes": 117657808, "totalBytes": 335450584, "averageBytesPerSecond": 42846}
+{"event": "progress", "receivedBytes": 118182096, "totalBytes": 335450584, "averageBytesPerSecond": 42803}
+{"event": "progress", "receivedBytes": 118837456, "totalBytes": 335450584, "averageBytesPerSecond": 42808}
+{"event": "progress", "receivedBytes": 119689424, "totalBytes": 335450584, "averageBytesPerSecond": 42883}
+{"event": "progress", "receivedBytes": 120475856, "totalBytes": 335450584, "averageBytesPerSecond": 42934}
+{"event": "progress", "receivedBytes": 121655504, "totalBytes": 335450584, "averageBytesPerSecond": 43124}
+{"event": "progress", "receivedBytes": 122507472, "totalBytes": 335450584, "averageBytesPerSecond": 43196}
+{"event": "progress", "receivedBytes": 123359440, "totalBytes": 335450584, "averageBytesPerSecond": 43267}
+{"event": "progress", "receivedBytes": 123949264, "totalBytes": 335450584, "averageBytesPerSecond": 43247}
+{"event": "progress", "receivedBytes": 124539088, "totalBytes": 335450584, "averageBytesPerSecond": 43226}
+{"event": "progress", "receivedBytes": 125325520, "totalBytes": 335450584, "averageBytesPerSecond": 43274}
+{"event": "progress", "receivedBytes": 126046416, "totalBytes": 335450584, "averageBytesPerSecond": 43298}
+{"event": "progress", "receivedBytes": 126570704, "totalBytes": 335450584, "averageBytesPerSecond": 43255}
+{"event": "progress", "receivedBytes": 127094992, "totalBytes": 335450584, "averageBytesPerSecond": 43213}
+{"event": "progress", "receivedBytes": 127619280, "totalBytes": 335450584, "averageBytesPerSecond": 43171}
+{"event": "progress", "receivedBytes": 128012496, "totalBytes": 335450584, "averageBytesPerSecond": 43085}
+{"event": "progress", "receivedBytes": 128405712, "totalBytes": 335450584, "averageBytesPerSecond": 43000}
+{"event": "progress", "receivedBytes": 128798928, "totalBytes": 335450584, "averageBytesPerSecond": 42916}
+{"event": "progress", "receivedBytes": 129257680, "totalBytes": 335450584, "averageBytesPerSecond": 42855}
+{"event": "progress", "receivedBytes": 129748904, "totalBytes": 335450584, "averageBytesPerSecond": 42805}
+{"event": "progress", "receivedBytes": 130207656, "totalBytes": 335450584, "averageBytesPerSecond": 42745}
+{"event": "progress", "receivedBytes": 130863016, "totalBytes": 335450584, "averageBytesPerSecond": 42749}
+{"event": "progress", "receivedBytes": 131452840, "totalBytes": 335450584, "averageBytesPerSecond": 42732}
+{"event": "progress", "receivedBytes": 132435880, "totalBytes": 335450584, "averageBytesPerSecond": 42843}
+{"event": "progress", "receivedBytes": 133353384, "totalBytes": 335450584, "averageBytesPerSecond": 42931}
+{"event": "progress", "receivedBytes": 134467496, "totalBytes": 335450584, "averageBytesPerSecond": 43082}
+{"event": "progress", "receivedBytes": 135909288, "totalBytes": 335450584, "averageBytesPerSecond": 43336}
+{"event": "progress", "receivedBytes": 136957864, "totalBytes": 335450584, "averageBytesPerSecond": 43462}
+{"event": "progress", "receivedBytes": 137547688, "totalBytes": 335450584, "averageBytesPerSecond": 43442}
+{"event": "progress", "receivedBytes": 138182360, "totalBytes": 335450584, "averageBytesPerSecond": 43437}
+{"event": "progress", "receivedBytes": 138968792, "totalBytes": 335450584, "averageBytesPerSecond": 43479}
+{"event": "progress", "receivedBytes": 139427544, "totalBytes": 335450584, "averageBytesPerSecond": 43419}
+{"event": "progress", "receivedBytes": 139689688, "totalBytes": 335450584, "averageBytesPerSecond": 43298}
+{"event": "progress", "receivedBytes": 140148440, "totalBytes": 335450584, "averageBytesPerSecond": 43239}
+{"event": "progress", "receivedBytes": 140541656, "totalBytes": 335450584, "averageBytesPerSecond": 43161}
+{"event": "progress", "receivedBytes": 140869336, "totalBytes": 335450584, "averageBytesPerSecond": 43063}
+{"event": "progress", "receivedBytes": 141262552, "totalBytes": 335450584, "averageBytesPerSecond": 42986}
+{"event": "progress", "receivedBytes": 141721304, "totalBytes": 335450584, "averageBytesPerSecond": 42930}
+{"event": "progress", "receivedBytes": 141983448, "totalBytes": 335450584, "averageBytesPerSecond": 42814}
+{"event": "progress", "receivedBytes": 142442200, "totalBytes": 335450584, "averageBytesPerSecond": 42759}
+{"event": "progress", "receivedBytes": 142835416, "totalBytes": 335450584, "averageBytesPerSecond": 42685}
+{"event": "progress", "receivedBytes": 143163096, "totalBytes": 335450584, "averageBytesPerSecond": 42592}
+{"event": "progress", "receivedBytes": 143556312, "totalBytes": 335450584, "averageBytesPerSecond": 42519}
+{"event": "progress", "receivedBytes": 143818456, "totalBytes": 335450584, "averageBytesPerSecond": 42408}
+{"event": "progress", "receivedBytes": 144473816, "totalBytes": 335450584, "averageBytesPerSecond": 42414}
+{"event": "progress", "receivedBytes": 144670424, "totalBytes": 335450584, "averageBytesPerSecond": 42285}
+{"event": "progress", "receivedBytes": 145260248, "totalBytes": 335450584, "averageBytesPerSecond": 42272}
+{"event": "progress", "receivedBytes": 145915608, "totalBytes": 335450584, "averageBytesPerSecond": 42278}
+{"event": "progress", "receivedBytes": 146702040, "totalBytes": 335450584, "averageBytesPerSecond": 42322}
+{"event": "progress", "receivedBytes": 147456000, "totalBytes": 335450584, "averageBytesPerSecond": 42356}
+{"event": "progress", "receivedBytes": 147718144, "totalBytes": 335450584, "averageBytesPerSecond": 42249}
+{"event": "progress", "receivedBytes": 148176896, "totalBytes": 335450584, "averageBytesPerSecond": 42199}
+{"event": "progress", "receivedBytes": 148439040, "totalBytes": 335450584, "averageBytesPerSecond": 42094}
+{"event": "progress", "receivedBytes": 148766720, "totalBytes": 335450584, "averageBytesPerSecond": 42008}
+{"event": "progress", "receivedBytes": 149094400, "totalBytes": 335450584, "averageBytesPerSecond": 41923}
+{"event": "progress", "receivedBytes": 149291008, "totalBytes": 335450584, "averageBytesPerSecond": 41802}
+{"event": "progress", "receivedBytes": 149682285, "totalBytes": 335450584, "averageBytesPerSecond": 41736}
+{"event": "progress", "receivedBytes": 150141037, "totalBytes": 335450584, "averageBytesPerSecond": 41690}
+{"event": "progress", "receivedBytes": 150730861, "totalBytes": 335450584, "averageBytesPerSecond": 41680}
+{"event": "progress", "receivedBytes": 151451757, "totalBytes": 335450584, "averageBytesPerSecond": 41706}
+{"event": "progress", "receivedBytes": 152107117, "totalBytes": 335450584, "averageBytesPerSecond": 41714}
+{"event": "progress", "receivedBytes": 152762477, "totalBytes": 335450584, "averageBytesPerSecond": 41722}
+{"event": "progress", "receivedBytes": 153483373, "totalBytes": 335450584, "averageBytesPerSecond": 41748}
+{"event": "progress", "receivedBytes": 154269805, "totalBytes": 335450584, "averageBytesPerSecond": 41791}
+{"event": "progress", "receivedBytes": 154990701, "totalBytes": 335450584, "averageBytesPerSecond": 41816}
+{"event": "progress", "receivedBytes": 155646061, "totalBytes": 335450584, "averageBytesPerSecond": 41824}
+{"event": "progress", "receivedBytes": 156104813, "totalBytes": 335450584, "averageBytesPerSecond": 41779}
+{"event": "progress", "receivedBytes": 156563565, "totalBytes": 335450584, "averageBytesPerSecond": 41734}
+{"event": "progress", "receivedBytes": 157218925, "totalBytes": 335450584, "averageBytesPerSecond": 41742}
+{"event": "progress", "receivedBytes": 157743213, "totalBytes": 335450584, "averageBytesPerSecond": 41714}
+{"event": "progress", "receivedBytes": 158398573, "totalBytes": 335450584, "averageBytesPerSecond": 41722}
+{"event": "progress", "receivedBytes": 158988397, "totalBytes": 335450584, "averageBytesPerSecond": 41713}
+{"event": "progress", "receivedBytes": 159512685, "totalBytes": 335450584, "averageBytesPerSecond": 41686}
+{"event": "progress", "receivedBytes": 159971437, "totalBytes": 335450584, "averageBytesPerSecond": 41643}
+{"event": "progress", "receivedBytes": 160495725, "totalBytes": 335450584, "averageBytesPerSecond": 41617}
+{"event": "progress", "receivedBytes": 160954477, "totalBytes": 335450584, "averageBytesPerSecond": 41574}
+{"event": "progress", "receivedBytes": 161413229, "totalBytes": 335450584, "averageBytesPerSecond": 41531}
+{"event": "progress", "receivedBytes": 161871981, "totalBytes": 335450584, "averageBytesPerSecond": 41489}
+{"event": "progress", "receivedBytes": 162265197, "totalBytes": 335450584, "averageBytesPerSecond": 41430}
+{"event": "progress", "receivedBytes": 162592877, "totalBytes": 335450584, "averageBytesPerSecond": 41356}
+{"event": "progress", "receivedBytes": 162920557, "totalBytes": 335450584, "averageBytesPerSecond": 41281}
+{"event": "progress", "receivedBytes": 163248237, "totalBytes": 335450584, "averageBytesPerSecond": 41208}
+{"event": "progress", "receivedBytes": 163510381, "totalBytes": 335450584, "averageBytesPerSecond": 41118}
+{"event": "progress", "receivedBytes": 163969133, "totalBytes": 335450584, "averageBytesPerSecond": 41078}
+{"event": "progress", "receivedBytes": 164362349, "totalBytes": 335450584, "averageBytesPerSecond": 41023}
+{"event": "progress", "receivedBytes": 164821101, "totalBytes": 335450584, "averageBytesPerSecond": 40984}
+{"event": "progress", "receivedBytes": 165410925, "totalBytes": 335450584, "averageBytesPerSecond": 40977}
+{"event": "progress", "receivedBytes": 165738605, "totalBytes": 335450584, "averageBytesPerSecond": 40906}
+{"event": "progress", "receivedBytes": 165935213, "totalBytes": 335450584, "averageBytesPerSecond": 40804}
+{"event": "progress", "receivedBytes": 166197357, "totalBytes": 335450584, "averageBytesPerSecond": 40718}
+{"event": "progress", "receivedBytes": 166393965, "totalBytes": 335450584, "averageBytesPerSecond": 40617}
+{"event": "progress", "receivedBytes": 166459501, "totalBytes": 335450584, "averageBytesPerSecond": 40484}
+{"event": "progress", "receivedBytes": 166721645, "totalBytes": 335450584, "averageBytesPerSecond": 40401}
+{"event": "progress", "receivedBytes": 166983789, "totalBytes": 335450584, "averageBytesPerSecond": 40318}
+{"event": "progress", "receivedBytes": 167180397, "totalBytes": 335450584, "averageBytesPerSecond": 40219}
+{"event": "progress", "receivedBytes": 167508077, "totalBytes": 335450584, "averageBytesPerSecond": 40153}
+{"event": "progress", "receivedBytes": 167770221, "totalBytes": 335450584, "averageBytesPerSecond": 40072}
+{"event": "progress", "receivedBytes": 168032365, "totalBytes": 335450584, "averageBytesPerSecond": 39991}
+{"event": "progress", "receivedBytes": 168622189, "totalBytes": 335450584, "averageBytesPerSecond": 39989}
+{"event": "progress", "receivedBytes": 169446930, "totalBytes": 335450584, "averageBytesPerSecond": 40042}
+{"event": "progress", "receivedBytes": 170036754, "totalBytes": 335450584, "averageBytesPerSecond": 40039}
+{"event": "progress", "receivedBytes": 170429970, "totalBytes": 335450584, "averageBytesPerSecond": 39991}
+{"event": "progress", "receivedBytes": 171019794, "totalBytes": 335450584, "averageBytesPerSecond": 39988}
+{"event": "progress", "receivedBytes": 171609618, "totalBytes": 335450584, "averageBytesPerSecond": 39986}
+{"event": "progress", "receivedBytes": 172527122, "totalBytes": 335450584, "averageBytesPerSecond": 40059}
+{"event": "progress", "receivedBytes": 173313554, "totalBytes": 335450584, "averageBytesPerSecond": 40102}
+{"event": "progress", "receivedBytes": 174099986, "totalBytes": 335450584, "averageBytesPerSecond": 40145}
+{"event": "progress", "receivedBytes": 174886418, "totalBytes": 335450584, "averageBytesPerSecond": 40187}
+{"event": "progress", "receivedBytes": 175279634, "totalBytes": 335450584, "averageBytesPerSecond": 40139}
+{"event": "progress", "receivedBytes": 175738386, "totalBytes": 335450584, "averageBytesPerSecond": 40106}
+{"event": "progress", "receivedBytes": 176066066, "totalBytes": 335450584, "averageBytesPerSecond": 40044}
+{"event": "progress", "receivedBytes": 176328210, "totalBytes": 335450584, "averageBytesPerSecond": 39967}
+{"event": "progress", "receivedBytes": 176852498, "totalBytes": 335450584, "averageBytesPerSecond": 39950}
+{"event": "progress", "receivedBytes": 177704466, "totalBytes": 335450584, "averageBytesPerSecond": 40007}
+{"event": "progress", "receivedBytes": 178753911, "totalBytes": 335450584, "averageBytesPerSecond": 40108}
+{"event": "progress", "receivedBytes": 179605879, "totalBytes": 335450584, "averageBytesPerSecond": 40163}
+{"event": "progress", "receivedBytes": 180549741, "totalBytes": 335450584, "averageBytesPerSecond": 40239}
+{"event": "progress", "receivedBytes": 181401709, "totalBytes": 335450584, "averageBytesPerSecond": 40295}
+{"event": "progress", "receivedBytes": 182122605, "totalBytes": 335450584, "averageBytesPerSecond": 40320}
+{"event": "progress", "receivedBytes": 182974573, "totalBytes": 335450584, "averageBytesPerSecond": 40375}
+{"event": "progress", "receivedBytes": 183629933, "totalBytes": 335450584, "averageBytesPerSecond": 40386}
+{"event": "progress", "receivedBytes": 184285293, "totalBytes": 335450584, "averageBytesPerSecond": 40396}
+{"event": "progress", "receivedBytes": 185006189, "totalBytes": 335450584, "averageBytesPerSecond": 40422}
+{"event": "progress", "receivedBytes": 185464941, "totalBytes": 335450584, "averageBytesPerSecond": 40389}
+{"event": "progress", "receivedBytes": 186316909, "totalBytes": 335450584, "averageBytesPerSecond": 40443}
+{"event": "progress", "receivedBytes": 187037805, "totalBytes": 335450584, "averageBytesPerSecond": 40467}
+{"event": "progress", "receivedBytes": 188217453, "totalBytes": 335450584, "averageBytesPerSecond": 40591}
+{"event": "progress", "receivedBytes": 188940288, "totalBytes": 335450584, "averageBytesPerSecond": 40615}
+{"event": "progress", "receivedBytes": 189923328, "totalBytes": 335450584, "averageBytesPerSecond": 40695}
+{"event": "progress", "receivedBytes": 190644224, "totalBytes": 335450584, "averageBytesPerSecond": 40719}
+{"event": "progress", "receivedBytes": 191561728, "totalBytes": 335450584, "averageBytesPerSecond": 40784}
+{"event": "progress", "receivedBytes": 192479232, "totalBytes": 335450584, "averageBytesPerSecond": 40849}
+{"event": "progress", "receivedBytes": 193331200, "totalBytes": 335450584, "averageBytesPerSecond": 40899}
+{"event": "progress", "receivedBytes": 194510848, "totalBytes": 335450584, "averageBytesPerSecond": 41019}
+{"event": "progress", "receivedBytes": 196018176, "totalBytes": 335450584, "averageBytesPerSecond": 41206}
+{"event": "progress", "receivedBytes": 197328896, "totalBytes": 335450584, "averageBytesPerSecond": 41351}
+{"event": "progress", "receivedBytes": 198639616, "totalBytes": 335450584, "averageBytesPerSecond": 41495}
+{"event": "progress", "receivedBytes": 199753728, "totalBytes": 335450584, "averageBytesPerSecond": 41598}
+{"event": "progress", "receivedBytes": 200998912, "totalBytes": 335450584, "averageBytesPerSecond": 41726}
+{"event": "progress", "receivedBytes": 201981952, "totalBytes": 335450584, "averageBytesPerSecond": 41800}
+{"event": "progress", "receivedBytes": 203161600, "totalBytes": 335450584, "averageBytesPerSecond": 41914}
+{"event": "progress", "receivedBytes": 203816960, "totalBytes": 335450584, "averageBytesPerSecond": 41920}
+{"event": "progress", "receivedBytes": 204537856, "totalBytes": 335450584, "averageBytesPerSecond": 41938}
+{"event": "progress", "receivedBytes": 205193216, "totalBytes": 335450584, "averageBytesPerSecond": 41944}
+{"event": "progress", "receivedBytes": 205717504, "totalBytes": 335450584, "averageBytesPerSecond": 41922}
+{"event": "progress", "receivedBytes": 206766080, "totalBytes": 335450584, "averageBytesPerSecond": 42007}
+{"event": "progress", "receivedBytes": 207683584, "totalBytes": 335450584, "averageBytesPerSecond": 42066}
+{"event": "progress", "receivedBytes": 208797696, "totalBytes": 335450584, "averageBytesPerSecond": 42163}
+{"event": "progress", "receivedBytes": 209649664, "totalBytes": 335450584, "averageBytesPerSecond": 42207}
+{"event": "progress", "receivedBytes": 210305024, "totalBytes": 335450584, "averageBytesPerSecond": 42212}
+{"event": "progress", "receivedBytes": 210960384, "totalBytes": 335450584, "averageBytesPerSecond": 42216}
+{"event": "progress", "receivedBytes": 211615744, "totalBytes": 335450584, "averageBytesPerSecond": 42220}
+{"event": "progress", "receivedBytes": 212336640, "totalBytes": 335450584, "averageBytesPerSecond": 42238}
+{"event": "progress", "receivedBytes": 213319680, "totalBytes": 335450584, "averageBytesPerSecond": 42307}
+{"event": "progress", "receivedBytes": 214302720, "totalBytes": 335450584, "averageBytesPerSecond": 42376}
+{"event": "progress", "receivedBytes": 215285760, "totalBytes": 335450584, "averageBytesPerSecond": 42444}
+{"event": "progress", "receivedBytes": 216465408, "totalBytes": 335450584, "averageBytesPerSecond": 42551}
+{"event": "progress", "receivedBytes": 217251840, "totalBytes": 335450584, "averageBytesPerSecond": 42580}
+{"event": "progress", "receivedBytes": 218300416, "totalBytes": 335450584, "averageBytesPerSecond": 42660}
+{"event": "progress", "receivedBytes": 219348992, "totalBytes": 335450584, "averageBytesPerSecond": 42739}
+{"event": "progress", "receivedBytes": 220528640, "totalBytes": 335450584, "averageBytesPerSecond": 42844}
+{"event": "progress", "receivedBytes": 221380608, "totalBytes": 335450584, "averageBytesPerSecond": 42885}
+{"event": "progress", "receivedBytes": 221904896, "totalBytes": 335450584, "averageBytesPerSecond": 42861}
+{"event": "progress", "receivedBytes": 222429184, "totalBytes": 335450584, "averageBytesPerSecond": 42839}
+{"event": "progress", "receivedBytes": 223150080, "totalBytes": 335450584, "averageBytesPerSecond": 42853}
+{"event": "progress", "receivedBytes": 223739904, "totalBytes": 335450584, "averageBytesPerSecond": 42843}
+{"event": "progress", "receivedBytes": 224395264, "totalBytes": 335450584, "averageBytesPerSecond": 42846}
+{"event": "progress", "receivedBytes": 224788480, "totalBytes": 335450584, "averageBytesPerSecond": 42798}
+{"event": "progress", "receivedBytes": 225050624, "totalBytes": 335450584, "averageBytesPerSecond": 42726}
+{"event": "progress", "receivedBytes": 225378304, "totalBytes": 335450584, "averageBytesPerSecond": 42666}
+{"event": "progress", "receivedBytes": 226033664, "totalBytes": 335450584, "averageBytesPerSecond": 42669}
+{"event": "progress", "receivedBytes": 226754560, "totalBytes": 335450584, "averageBytesPerSecond": 42684}
+{"event": "progress", "receivedBytes": 227475456, "totalBytes": 335450584, "averageBytesPerSecond": 42700}
+{"event": "progress", "receivedBytes": 227999744, "totalBytes": 335450584, "averageBytesPerSecond": 42678}
+{"event": "progress", "receivedBytes": 228524032, "totalBytes": 335450584, "averageBytesPerSecond": 42656}
+{"event": "progress", "receivedBytes": 229310464, "totalBytes": 335450584, "averageBytesPerSecond": 42683}
+{"event": "progress", "receivedBytes": 230227968, "totalBytes": 335450584, "averageBytesPerSecond": 42735}
+{"event": "progress", "receivedBytes": 231211008, "totalBytes": 335450584, "averageBytesPerSecond": 42798}
+{"event": "progress", "receivedBytes": 231931904, "totalBytes": 335450584, "averageBytesPerSecond": 42812}
+{"event": "progress", "receivedBytes": 232718336, "totalBytes": 335450584, "averageBytesPerSecond": 42839}
+{"event": "progress", "receivedBytes": 233897984, "totalBytes": 335450584, "averageBytesPerSecond": 42937}
+{"event": "progress", "receivedBytes": 235143168, "totalBytes": 335450584, "averageBytesPerSecond": 43047}
+{"event": "progress", "receivedBytes": 235929600, "totalBytes": 335450584, "averageBytesPerSecond": 43073}
+{"event": "progress", "receivedBytes": 236519424, "totalBytes": 335450584, "averageBytesPerSecond": 43063}
+{"event": "progress", "receivedBytes": 237240320, "totalBytes": 335450584, "averageBytesPerSecond": 43076}
+{"event": "progress", "receivedBytes": 238026752, "totalBytes": 335450584, "averageBytesPerSecond": 43102}
+{"event": "progress", "receivedBytes": 238751952, "totalBytes": 335450584, "averageBytesPerSecond": 43116}
+{"event": "progress", "receivedBytes": 239276240, "totalBytes": 335450584, "averageBytesPerSecond": 43094}
+{"event": "progress", "receivedBytes": 239931600, "totalBytes": 335450584, "averageBytesPerSecond": 43095}
+{"event": "progress", "receivedBytes": 240324816, "totalBytes": 335450584, "averageBytesPerSecond": 43050}
+{"event": "progress", "receivedBytes": 240783568, "totalBytes": 335450584, "averageBytesPerSecond": 43016}
+{"event": "progress", "receivedBytes": 241242320, "totalBytes": 335450584, "averageBytesPerSecond": 42983}
+{"event": "progress", "receivedBytes": 241635536, "totalBytes": 335450584, "averageBytesPerSecond": 42938}
+{"event": "progress", "receivedBytes": 242553040, "totalBytes": 335450584, "averageBytesPerSecond": 42987}
+{"event": "progress", "receivedBytes": 243142864, "totalBytes": 335450584, "averageBytesPerSecond": 42977}
+{"event": "progress", "receivedBytes": 244060368, "totalBytes": 335450584, "averageBytesPerSecond": 43025}
+{"event": "progress", "receivedBytes": 245043408, "totalBytes": 335450584, "averageBytesPerSecond": 43084}
+{"event": "progress", "receivedBytes": 246026448, "totalBytes": 335450584, "averageBytesPerSecond": 43143}
+{"event": "progress", "receivedBytes": 246747344, "totalBytes": 335450584, "averageBytesPerSecond": 43156}
+{"event": "progress", "receivedBytes": 247655692, "totalBytes": 335450584, "averageBytesPerSecond": 43201}
+{"event": "progress", "receivedBytes": 248376588, "totalBytes": 335450584, "averageBytesPerSecond": 43214}
+{"event": "progress", "receivedBytes": 249163020, "totalBytes": 335450584, "averageBytesPerSecond": 43238}
+{"event": "progress", "receivedBytes": 250342668, "totalBytes": 335450584, "averageBytesPerSecond": 43330}
+{"event": "progress", "receivedBytes": 251653388, "totalBytes": 335450584, "averageBytesPerSecond": 43444}
+{"event": "progress", "receivedBytes": 253029644, "totalBytes": 335450584, "averageBytesPerSecond": 43568}
+{"event": "progress", "receivedBytes": 253689856, "totalBytes": 335450584, "averageBytesPerSecond": 43570}
+{"event": "progress", "receivedBytes": 254345216, "totalBytes": 335450584, "averageBytesPerSecond": 43570}
+{"event": "progress", "receivedBytes": 254935040, "totalBytes": 335450584, "averageBytesPerSecond": 43559}
+{"event": "progress", "receivedBytes": 255459328, "totalBytes": 335450584, "averageBytesPerSecond": 43537}
+{"event": "progress", "receivedBytes": 256180224, "totalBytes": 335450584, "averageBytesPerSecond": 43548}
+{"event": "progress", "receivedBytes": 256770048, "totalBytes": 335450584, "averageBytesPerSecond": 43537}
+{"event": "progress", "receivedBytes": 257359872, "totalBytes": 335450584, "averageBytesPerSecond": 43527}
+{"event": "progress", "receivedBytes": 257949696, "totalBytes": 335450584, "averageBytesPerSecond": 43516}
+{"event": "progress", "receivedBytes": 258736128, "totalBytes": 335450584, "averageBytesPerSecond": 43538}
+{"event": "progress", "receivedBytes": 259457024, "totalBytes": 335450584, "averageBytesPerSecond": 43550}
+{"event": "progress", "receivedBytes": 260112384, "totalBytes": 335450584, "averageBytesPerSecond": 43550}
+{"event": "progress", "receivedBytes": 260702208, "totalBytes": 335450584, "averageBytesPerSecond": 43539}
+{"event": "progress", "receivedBytes": 261423104, "totalBytes": 335450584, "averageBytesPerSecond": 43551}
+{"event": "progress", "receivedBytes": 262537216, "totalBytes": 335450584, "averageBytesPerSecond": 43627}
+{"event": "progress", "receivedBytes": 264110080, "totalBytes": 335450584, "averageBytesPerSecond": 43779}
+{"event": "progress", "receivedBytes": 265355264, "totalBytes": 335450584, "averageBytesPerSecond": 43877}
+{"event": "progress", "receivedBytes": 266797056, "totalBytes": 335450584, "averageBytesPerSecond": 44006}
+{"event": "progress", "receivedBytes": 267780096, "totalBytes": 335450584, "averageBytesPerSecond": 44059}
+{"event": "progress", "receivedBytes": 268763136, "totalBytes": 335450584, "averageBytesPerSecond": 44112}
+{"event": "progress", "receivedBytes": 269746176, "totalBytes": 335450584, "averageBytesPerSecond": 44164}
+{"event": "progress", "receivedBytes": 270401536, "totalBytes": 335450584, "averageBytesPerSecond": 44163}
+{"event": "progress", "receivedBytes": 271056896, "totalBytes": 335450584, "averageBytesPerSecond": 44162}
+{"event": "progress", "receivedBytes": 271515648, "totalBytes": 335450584, "averageBytesPerSecond": 44129}
+{"event": "progress", "receivedBytes": 272105472, "totalBytes": 335450584, "averageBytesPerSecond": 44117}
+{"event": "progress", "receivedBytes": 272564224, "totalBytes": 335450584, "averageBytesPerSecond": 44084}
+{"event": "progress", "receivedBytes": 273022976, "totalBytes": 335450584, "averageBytesPerSecond": 44051}
+{"event": "progress", "receivedBytes": 273481728, "totalBytes": 335450584, "averageBytesPerSecond": 44019}
+{"event": "progress", "receivedBytes": 273940480, "totalBytes": 335450584, "averageBytesPerSecond": 43986}
+{"event": "progress", "receivedBytes": 274464768, "totalBytes": 335450584, "averageBytesPerSecond": 43965}
+{"event": "progress", "receivedBytes": 275185664, "totalBytes": 335450584, "averageBytesPerSecond": 43974}
+{"event": "progress", "receivedBytes": 275841024, "totalBytes": 335450584, "averageBytesPerSecond": 43974}
+{"event": "progress", "receivedBytes": 276561920, "totalBytes": 335450584, "averageBytesPerSecond": 43983}
+{"event": "progress", "receivedBytes": 277217280, "totalBytes": 335450584, "averageBytesPerSecond": 43982}
+{"event": "progress", "receivedBytes": 278265856, "totalBytes": 335450584, "averageBytesPerSecond": 44044}
+{"event": "progress", "receivedBytes": 278986752, "totalBytes": 335450584, "averageBytesPerSecond": 44053}
+{"event": "progress", "receivedBytes": 279379968, "totalBytes": 335450584, "averageBytesPerSecond": 44011}
+{"event": "progress", "receivedBytes": 279969792, "totalBytes": 335450584, "averageBytesPerSecond": 44000}
+{"event": "progress", "receivedBytes": 280494080, "totalBytes": 335450584, "averageBytesPerSecond": 43979}
+{"event": "progress", "receivedBytes": 281149440, "totalBytes": 335450584, "averageBytesPerSecond": 43978}
+{"event": "progress", "receivedBytes": 281804800, "totalBytes": 335450584, "averageBytesPerSecond": 43977}
+{"event": "progress", "receivedBytes": 282394624, "totalBytes": 335450584, "averageBytesPerSecond": 43966}
+{"event": "progress", "receivedBytes": 283049984, "totalBytes": 335450584, "averageBytesPerSecond": 43966}
+{"event": "progress", "receivedBytes": 284033024, "totalBytes": 335450584, "averageBytesPerSecond": 44016}
+{"event": "progress", "receivedBytes": 285540352, "totalBytes": 335450584, "averageBytesPerSecond": 44147}
+{"event": "progress", "receivedBytes": 287113216, "totalBytes": 335450584, "averageBytesPerSecond": 44287}
+{"event": "progress", "receivedBytes": 288620544, "totalBytes": 335450584, "averageBytesPerSecond": 44417}
+{"event": "progress", "receivedBytes": 289734656, "totalBytes": 335450584, "averageBytesPerSecond": 44485}
+{"event": "progress", "receivedBytes": 290652160, "totalBytes": 335450584, "averageBytesPerSecond": 44524}
+{"event": "progress", "receivedBytes": 291438592, "totalBytes": 335450584, "averageBytesPerSecond": 44542}
+{"event": "progress", "receivedBytes": 292093952, "totalBytes": 335450584, "averageBytesPerSecond": 44540}
+{"event": "progress", "receivedBytes": 292945920, "totalBytes": 335450584, "averageBytesPerSecond": 44568}
+{"event": "progress", "receivedBytes": 293797888, "totalBytes": 335450584, "averageBytesPerSecond": 44595}
+{"event": "progress", "receivedBytes": 294846464, "totalBytes": 335450584, "averageBytesPerSecond": 44653}
+{"event": "progress", "receivedBytes": 295698432, "totalBytes": 335450584, "averageBytesPerSecond": 44680}
+{"event": "progress", "receivedBytes": 296484864, "totalBytes": 335450584, "averageBytesPerSecond": 44698}
+{"event": "progress", "receivedBytes": 297336832, "totalBytes": 335450584, "averageBytesPerSecond": 44725}
+{"event": "progress", "receivedBytes": 298254336, "totalBytes": 335450584, "averageBytesPerSecond": 44762}
+{"event": "progress", "receivedBytes": 299171840, "totalBytes": 335450584, "averageBytesPerSecond": 44799}
+{"event": "progress", "receivedBytes": 299761664, "totalBytes": 335450584, "averageBytesPerSecond": 44786}
+{"event": "progress", "receivedBytes": 300220416, "totalBytes": 335450584, "averageBytesPerSecond": 44755}
+{"event": "progress", "receivedBytes": 300679168, "totalBytes": 335450584, "averageBytesPerSecond": 44723}
+{"event": "progress", "receivedBytes": 301268992, "totalBytes": 335450584, "averageBytesPerSecond": 44711}
+{"event": "progress", "receivedBytes": 301858816, "totalBytes": 335450584, "averageBytesPerSecond": 44699}
+{"event": "progress", "receivedBytes": 302186496, "totalBytes": 335450584, "averageBytesPerSecond": 44648}
+{"event": "progress", "receivedBytes": 302448640, "totalBytes": 335450584, "averageBytesPerSecond": 44588}
+{"event": "progress", "receivedBytes": 302841856, "totalBytes": 335450584, "averageBytesPerSecond": 44547}
+{"event": "progress", "receivedBytes": 303169536, "totalBytes": 335450584, "averageBytesPerSecond": 44497}
+{"event": "progress", "receivedBytes": 303562752, "totalBytes": 335450584, "averageBytesPerSecond": 44457}
+{"event": "progress", "receivedBytes": 304218112, "totalBytes": 335450584, "averageBytesPerSecond": 44456}
+{"event": "progress", "receivedBytes": 304742400, "totalBytes": 335450584, "averageBytesPerSecond": 44435}
+{"event": "progress", "receivedBytes": 305463296, "totalBytes": 335450584, "averageBytesPerSecond": 44443}
+{"event": "progress", "receivedBytes": 305790976, "totalBytes": 335450584, "averageBytesPerSecond": 44393}
+{"event": "progress", "receivedBytes": 306315264, "totalBytes": 335450584, "averageBytesPerSecond": 44373}
+{"event": "progress", "receivedBytes": 306511872, "totalBytes": 335450584, "averageBytesPerSecond": 44305}
+{"event": "progress", "receivedBytes": 306970624, "totalBytes": 335450584, "averageBytesPerSecond": 44275}
+{"event": "progress", "receivedBytes": 307625984, "totalBytes": 335450584, "averageBytesPerSecond": 44274}
+{"event": "progress", "receivedBytes": 308674560, "totalBytes": 335450584, "averageBytesPerSecond": 44329}
+{"event": "progress", "receivedBytes": 309460992, "totalBytes": 335450584, "averageBytesPerSecond": 44346}
+{"event": "progress", "receivedBytes": 310378496, "totalBytes": 335450584, "averageBytesPerSecond": 44382}
+{"event": "progress", "receivedBytes": 311361536, "totalBytes": 335450584, "averageBytesPerSecond": 44428}
+{"event": "progress", "receivedBytes": 312344576, "totalBytes": 335450584, "averageBytesPerSecond": 44473}
+{"event": "progress", "receivedBytes": 313458688, "totalBytes": 335450584, "averageBytesPerSecond": 44536}
+{"event": "progress", "receivedBytes": 314310656, "totalBytes": 335450584, "averageBytesPerSecond": 44562}
+{"event": "progress", "receivedBytes": 315293696, "totalBytes": 335450584, "averageBytesPerSecond": 44607}
+{"event": "progress", "receivedBytes": 315817984, "totalBytes": 335450584, "averageBytesPerSecond": 44586}
+{"event": "progress", "receivedBytes": 316211200, "totalBytes": 335450584, "averageBytesPerSecond": 44547}
+{"event": "progress", "receivedBytes": 316932096, "totalBytes": 335450584, "averageBytesPerSecond": 44555}
+{"event": "progress", "receivedBytes": 317390848, "totalBytes": 335450584, "averageBytesPerSecond": 44525}
+{"event": "progress", "receivedBytes": 317915136, "totalBytes": 335450584, "averageBytesPerSecond": 44505}
+{"event": "progress", "receivedBytes": 318242816, "totalBytes": 335450584, "averageBytesPerSecond": 44458}
+{"event": "progress", "receivedBytes": 318570496, "totalBytes": 335450584, "averageBytesPerSecond": 44410}
+{"event": "progress", "receivedBytes": 318832640, "totalBytes": 335450584, "averageBytesPerSecond": 44354}
+{"event": "progress", "receivedBytes": 319094784, "totalBytes": 335450584, "averageBytesPerSecond": 44298}
+{"event": "progress", "receivedBytes": 319356928, "totalBytes": 335450584, "averageBytesPerSecond": 44242}
+{"event": "progress", "receivedBytes": 319684608, "totalBytes": 335450584, "averageBytesPerSecond": 44196}
+{"event": "progress", "receivedBytes": 320143360, "totalBytes": 335450584, "averageBytesPerSecond": 44167}
+{"event": "progress", "receivedBytes": 320405504, "totalBytes": 335450584, "averageBytesPerSecond": 44112}
+{"event": "progress", "receivedBytes": 320667648, "totalBytes": 335450584, "averageBytesPerSecond": 44057}
+{"event": "progress", "receivedBytes": 320929792, "totalBytes": 335450584, "averageBytesPerSecond": 44003}
+{"event": "progress", "receivedBytes": 321060864, "totalBytes": 335450584, "averageBytesPerSecond": 43930}
+{"event": "progress", "receivedBytes": 321257472, "totalBytes": 335450584, "averageBytesPerSecond": 43867}
+{"event": "progress", "receivedBytes": 321454080, "totalBytes": 335450584, "averageBytesPerSecond": 43804}
+{"event": "progress", "receivedBytes": 321781760, "totalBytes": 335450584, "averageBytesPerSecond": 43759}
+{"event": "progress", "receivedBytes": 322371584, "totalBytes": 335450584, "averageBytesPerSecond": 43750}
+{"event": "progress", "receivedBytes": 322764800, "totalBytes": 335450584, "averageBytesPerSecond": 43714}
+{"event": "progress", "receivedBytes": 323420160, "totalBytes": 335450584, "averageBytesPerSecond": 43714}
+{"event": "progress", "receivedBytes": 323813376, "totalBytes": 335450584, "averageBytesPerSecond": 43679}
+{"event": "progress", "receivedBytes": 324403200, "totalBytes": 335450584, "averageBytesPerSecond": 43670}
+{"event": "progress", "receivedBytes": 324927488, "totalBytes": 335450584, "averageBytesPerSecond": 43652}
+{"event": "progress", "receivedBytes": 325320704, "totalBytes": 335450584, "averageBytesPerSecond": 43617}
+{"event": "progress", "receivedBytes": 325582848, "totalBytes": 335450584, "averageBytesPerSecond": 43565}
+{"event": "progress", "receivedBytes": 326107136, "totalBytes": 335450584, "averageBytesPerSecond": 43548}
+{"event": "progress", "receivedBytes": 326434816, "totalBytes": 335450584, "averageBytesPerSecond": 43504}
+{"event": "progress", "receivedBytes": 326696960, "totalBytes": 335450584, "averageBytesPerSecond": 43452}
+{"event": "progress", "receivedBytes": 326893568, "totalBytes": 335450584, "averageBytesPerSecond": 43392}
+{"event": "progress", "receivedBytes": 327090176, "totalBytes": 335450584, "averageBytesPerSecond": 43331}
+{"event": "progress", "receivedBytes": 327221248, "totalBytes": 335450584, "averageBytesPerSecond": 43263}
+{"event": "progress", "receivedBytes": 327417856, "totalBytes": 335450584, "averageBytesPerSecond": 43203}
+{"event": "progress", "receivedBytes": 327548928, "totalBytes": 335450584, "averageBytesPerSecond": 43135}
+{"event": "progress", "receivedBytes": 327876608, "totalBytes": 335450584, "averageBytesPerSecond": 43093}
+{"event": "progress", "receivedBytes": 328204288, "totalBytes": 335450584, "averageBytesPerSecond": 43051}
+{"event": "progress", "receivedBytes": 328400896, "totalBytes": 335450584, "averageBytesPerSecond": 42992}
+{"event": "progress", "receivedBytes": 328728576, "totalBytes": 335450584, "averageBytesPerSecond": 42951}
+{"event": "progress", "receivedBytes": 328990720, "totalBytes": 335450584, "averageBytesPerSecond": 42901}
+{"event": "progress", "receivedBytes": 329449472, "totalBytes": 335450584, "averageBytesPerSecond": 42877}
+{"event": "progress", "receivedBytes": 329842688, "totalBytes": 335450584, "averageBytesPerSecond": 42844}
+{"event": "progress", "receivedBytes": 330235904, "totalBytes": 335450584, "averageBytesPerSecond": 42812}
+{"event": "progress", "receivedBytes": 330629120, "totalBytes": 335450584, "averageBytesPerSecond": 42780}
+{"event": "progress", "receivedBytes": 331022336, "totalBytes": 335450584, "averageBytesPerSecond": 42748}
+{"event": "progress", "receivedBytes": 331481088, "totalBytes": 335450584, "averageBytesPerSecond": 42724}
+{"event": "progress", "receivedBytes": 331874304, "totalBytes": 335450584, "averageBytesPerSecond": 42692}
+{"event": "progress", "receivedBytes": 332201984, "totalBytes": 335450584, "averageBytesPerSecond": 42652}
+{"event": "progress", "receivedBytes": 332660736, "totalBytes": 335450584, "averageBytesPerSecond": 42629}
+{"event": "progress", "receivedBytes": 333119488, "totalBytes": 335450584, "averageBytesPerSecond": 42605}
+{"event": "progress", "receivedBytes": 333578240, "totalBytes": 335450584, "averageBytesPerSecond": 42582}
+{"event": "progress", "receivedBytes": 333840384, "totalBytes": 335450584, "averageBytesPerSecond": 42534}
+{"event": "progress", "receivedBytes": 333971456, "totalBytes": 335450584, "averageBytesPerSecond": 42470}
+{"event": "progress", "receivedBytes": 334168064, "totalBytes": 335450584, "averageBytesPerSecond": 42414}
+{"event": "progress", "receivedBytes": 334233600, "totalBytes": 335450584, "averageBytesPerSecond": 42342}
+{"event": "progress", "receivedBytes": 334299136, "totalBytes": 335450584, "averageBytesPerSecond": 42270}
+{"event": "progress", "receivedBytes": 334430208, "totalBytes": 335450584, "averageBytesPerSecond": 42206}
+{"event": "progress", "receivedBytes": 334477421, "totalBytes": 335450584, "averageBytesPerSecond": 42132}
+{"event": "progress", "receivedBytes": 334739565, "totalBytes": 335450584, "averageBytesPerSecond": 42086}
+{"event": "progress", "receivedBytes": 335067245, "totalBytes": 335450584, "averageBytesPerSecond": 42048}
+{"event": "progress", "receivedBytes": 335198317, "totalBytes": 335450584, "averageBytesPerSecond": 41985}
+{"event": "progress", "receivedBytes": 335394925, "totalBytes": 335450584, "averageBytesPerSecond": 41931}
+{"event": "verified", "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/model.safetensors", "bytes": 335450584, "sha256": "392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2", "verified": true, "elapsedSeconds": 8000.14}
+Verified model.safetensors: 392e8d466d56100ada00eb82031fb854297fc9e389b7d303eba3af114e87bce2
+Downloading tokenizer.json, expected 11,422,654 bytes
+{"event": "started", "resumedBytes": 0, "totalBytes": 11422654, "workers": 4}
+{"event": "progress", "receivedBytes": 0, "totalBytes": 11422654, "averageBytesPerSecond": 0}
+{"event": "progress", "receivedBytes": 393216, "totalBytes": 11422654, "averageBytesPerSecond": 13099}
+{"event": "progress", "receivedBytes": 655360, "totalBytes": 11422654, "averageBytesPerSecond": 14555}
+{"event": "progress", "receivedBytes": 851968, "totalBytes": 11422654, "averageBytesPerSecond": 14191}
+{"event": "progress", "receivedBytes": 1048576, "totalBytes": 11422654, "averageBytesPerSecond": 13974}
+{"event": "progress", "receivedBytes": 1179648, "totalBytes": 11422654, "averageBytesPerSecond": 13100}
+{"event": "progress", "receivedBytes": 1376256, "totalBytes": 11422654, "averageBytesPerSecond": 13100}
+{"event": "progress", "receivedBytes": 1441792, "totalBytes": 11422654, "averageBytesPerSecond": 12009}
+{"event": "progress", "receivedBytes": 1507328, "totalBytes": 11422654, "averageBytesPerSecond": 11160}
+{"event": "progress", "receivedBytes": 1572864, "totalBytes": 11422654, "averageBytesPerSecond": 10481}
+{"event": "progress", "receivedBytes": 1638400, "totalBytes": 11422654, "averageBytesPerSecond": 9925}
+{"event": "progress", "receivedBytes": 1703936, "totalBytes": 11422654, "averageBytesPerSecond": 9461}
+{"event": "progress", "receivedBytes": 1835008, "totalBytes": 11422654, "averageBytesPerSecond": 9405}
+{"event": "progress", "receivedBytes": 1900544, "totalBytes": 11422654, "averageBytesPerSecond": 9046}
+{"event": "progress", "receivedBytes": 2031616, "totalBytes": 11422654, "averageBytesPerSecond": 9025}
+{"event": "progress", "receivedBytes": 2097152, "totalBytes": 11422654, "averageBytesPerSecond": 8734}
+{"event": "progress", "receivedBytes": 2228224, "totalBytes": 11422654, "averageBytesPerSecond": 8733}
+{"event": "progress", "receivedBytes": 2555904, "totalBytes": 11422654, "averageBytesPerSecond": 9461}
+{"event": "progress", "receivedBytes": 2686976, "totalBytes": 11422654, "averageBytesPerSecond": 9423}
+{"event": "progress", "receivedBytes": 2818048, "totalBytes": 11422654, "averageBytesPerSecond": 9388}
+{"event": "progress", "receivedBytes": 3014656, "totalBytes": 11422654, "averageBytesPerSecond": 9565}
+{"event": "progress", "receivedBytes": 3276800, "totalBytes": 11422654, "averageBytesPerSecond": 9925}
+{"event": "progress", "receivedBytes": 3670016, "totalBytes": 11422654, "averageBytesPerSecond": 10632}
+{"event": "progress", "receivedBytes": 3932160, "totalBytes": 11422654, "averageBytesPerSecond": 10917}
+{"event": "progress", "receivedBytes": 4128768, "totalBytes": 11422654, "averageBytesPerSecond": 11004}
+{"event": "progress", "receivedBytes": 4325376, "totalBytes": 11422654, "averageBytesPerSecond": 11085}
+{"event": "progress", "receivedBytes": 4456448, "totalBytes": 11422654, "averageBytesPerSecond": 10998}
+{"event": "progress", "receivedBytes": 4587520, "totalBytes": 11422654, "averageBytesPerSecond": 10917}
+{"event": "progress", "receivedBytes": 4718592, "totalBytes": 11422654, "averageBytesPerSecond": 10842}
+{"event": "progress", "receivedBytes": 4849664, "totalBytes": 11422654, "averageBytesPerSecond": 10771}
+{"event": "progress", "receivedBytes": 4915200, "totalBytes": 11422654, "averageBytesPerSecond": 10565}
+{"event": "progress", "receivedBytes": 5046272, "totalBytes": 11422654, "averageBytesPerSecond": 10508}
+{"event": "progress", "receivedBytes": 5177344, "totalBytes": 11422654, "averageBytesPerSecond": 10454}
+{"event": "progress", "receivedBytes": 5308416, "totalBytes": 11422654, "averageBytesPerSecond": 10403}
+{"event": "progress", "receivedBytes": 5439488, "totalBytes": 11422654, "averageBytesPerSecond": 10356}
+{"event": "progress", "receivedBytes": 5570560, "totalBytes": 11422654, "averageBytesPerSecond": 10311}
+{"event": "progress", "receivedBytes": 5701632, "totalBytes": 11422654, "averageBytesPerSecond": 10268}
+{"event": "progress", "receivedBytes": 5767168, "totalBytes": 11422654, "averageBytesPerSecond": 10113}
+{"event": "progress", "receivedBytes": 5898240, "totalBytes": 11422654, "averageBytesPerSecond": 10077}
+{"event": "progress", "receivedBytes": 6094848, "totalBytes": 11422654, "averageBytesPerSecond": 10153}
+{"event": "progress", "receivedBytes": 6160384, "totalBytes": 11422654, "averageBytesPerSecond": 10012}
+{"event": "progress", "receivedBytes": 6356992, "totalBytes": 11422654, "averageBytesPerSecond": 10085}
+{"event": "progress", "receivedBytes": 6553600, "totalBytes": 11422654, "averageBytesPerSecond": 10155}
+{"event": "progress", "receivedBytes": 6704062, "totalBytes": 11422654, "averageBytesPerSecond": 10153}
+{"event": "progress", "receivedBytes": 6704062, "totalBytes": 11422654, "averageBytesPerSecond": 9927}
+{"event": "progress", "receivedBytes": 6769598, "totalBytes": 11422654, "averageBytesPerSecond": 9806}
+{"event": "progress", "receivedBytes": 6769598, "totalBytes": 11422654, "averageBytesPerSecond": 9597}
+{"event": "progress", "receivedBytes": 6835134, "totalBytes": 11422654, "averageBytesPerSecond": 9488}
+{"event": "progress", "receivedBytes": 6835134, "totalBytes": 11422654, "averageBytesPerSecond": 9295}
+{"event": "progress", "receivedBytes": 6900670, "totalBytes": 11422654, "averageBytesPerSecond": 9196}
+{"event": "progress", "receivedBytes": 6900670, "totalBytes": 11422654, "averageBytesPerSecond": 9016}
+{"event": "progress", "receivedBytes": 6966206, "totalBytes": 11422654, "averageBytesPerSecond": 8927}
+{"event": "progress", "receivedBytes": 6966206, "totalBytes": 11422654, "averageBytesPerSecond": 8758}
+{"event": "progress", "receivedBytes": 6966206, "totalBytes": 11422654, "averageBytesPerSecond": 8596}
+{"event": "progress", "receivedBytes": 7031742, "totalBytes": 11422654, "averageBytesPerSecond": 8519}
+{"event": "progress", "receivedBytes": 7031742, "totalBytes": 11422654, "averageBytesPerSecond": 8367}
+{"event": "progress", "receivedBytes": 7031742, "totalBytes": 11422654, "averageBytesPerSecond": 8220}
+{"event": "progress", "receivedBytes": 7097278, "totalBytes": 11422654, "averageBytesPerSecond": 8154}
+{"event": "progress", "receivedBytes": 7162814, "totalBytes": 11422654, "averageBytesPerSecond": 8089}
+{"event": "progress", "receivedBytes": 7162814, "totalBytes": 11422654, "averageBytesPerSecond": 7955}
+{"event": "progress", "receivedBytes": 7293886, "totalBytes": 11422654, "averageBytesPerSecond": 7967}
+{"event": "progress", "receivedBytes": 7490494, "totalBytes": 11422654, "averageBytesPerSecond": 8050}
+{"event": "progress", "receivedBytes": 7621566, "totalBytes": 11422654, "averageBytesPerSecond": 8061}
+{"event": "progress", "receivedBytes": 7752638, "totalBytes": 11422654, "averageBytesPerSecond": 8071}
+{"event": "progress", "receivedBytes": 7883710, "totalBytes": 11422654, "averageBytesPerSecond": 8082}
+{"event": "progress", "receivedBytes": 8014782, "totalBytes": 11422654, "averageBytesPerSecond": 8091}
+{"event": "progress", "receivedBytes": 8080318, "totalBytes": 11422654, "averageBytesPerSecond": 8036}
+{"event": "progress", "receivedBytes": 8145854, "totalBytes": 11422654, "averageBytesPerSecond": 7982}
+{"event": "progress", "receivedBytes": 8276926, "totalBytes": 11422654, "averageBytesPerSecond": 7993}
+{"event": "progress", "receivedBytes": 8473534, "totalBytes": 11422654, "averageBytesPerSecond": 8066}
+{"event": "progress", "receivedBytes": 8670142, "totalBytes": 11422654, "averageBytesPerSecond": 8137}
+{"event": "progress", "receivedBytes": 8735678, "totalBytes": 11422654, "averageBytesPerSecond": 8084}
+{"event": "progress", "receivedBytes": 8801214, "totalBytes": 11422654, "averageBytesPerSecond": 8033}
+{"event": "progress", "receivedBytes": 8866750, "totalBytes": 11422654, "averageBytesPerSecond": 7984}
+{"event": "progress", "receivedBytes": 8997822, "totalBytes": 11422654, "averageBytesPerSecond": 7994}
+{"event": "progress", "receivedBytes": 9194430, "totalBytes": 11422654, "averageBytesPerSecond": 8061}
+{"event": "progress", "receivedBytes": 9391038, "totalBytes": 11422654, "averageBytesPerSecond": 8126}
+{"event": "progress", "receivedBytes": 9456574, "totalBytes": 11422654, "averageBytesPerSecond": 8078}
+{"event": "progress", "receivedBytes": 9522110, "totalBytes": 11422654, "averageBytesPerSecond": 8031}
+{"event": "progress", "receivedBytes": 9653182, "totalBytes": 11422654, "averageBytesPerSecond": 8040}
+{"event": "progress", "receivedBytes": 9784254, "totalBytes": 11422654, "averageBytesPerSecond": 8049}
+{"event": "progress", "receivedBytes": 9849790, "totalBytes": 11422654, "averageBytesPerSecond": 8004}
+{"event": "progress", "receivedBytes": 10046398, "totalBytes": 11422654, "averageBytesPerSecond": 8065}
+{"event": "progress", "receivedBytes": 10177470, "totalBytes": 11422654, "averageBytesPerSecond": 8073}
+{"event": "progress", "receivedBytes": 10308542, "totalBytes": 11422654, "averageBytesPerSecond": 8081}
+{"event": "progress", "receivedBytes": 10374078, "totalBytes": 11422654, "averageBytesPerSecond": 8038}
+{"event": "progress", "receivedBytes": 10439614, "totalBytes": 11422654, "averageBytesPerSecond": 7995}
+{"event": "progress", "receivedBytes": 10505150, "totalBytes": 11422654, "averageBytesPerSecond": 7954}
+{"event": "progress", "receivedBytes": 10570686, "totalBytes": 11422654, "averageBytesPerSecond": 7914}
+{"event": "progress", "receivedBytes": 10636222, "totalBytes": 11422654, "averageBytesPerSecond": 7874}
+{"event": "progress", "receivedBytes": 10701758, "totalBytes": 11422654, "averageBytesPerSecond": 7836}
+{"event": "progress", "receivedBytes": 10701758, "totalBytes": 11422654, "averageBytesPerSecond": 7751}
+{"event": "progress", "receivedBytes": 10767294, "totalBytes": 11422654, "averageBytesPerSecond": 7714}
+{"event": "progress", "receivedBytes": 10832830, "totalBytes": 11422654, "averageBytesPerSecond": 7679}
+{"event": "progress", "receivedBytes": 10898366, "totalBytes": 11422654, "averageBytesPerSecond": 7644}
+{"event": "progress", "receivedBytes": 10963902, "totalBytes": 11422654, "averageBytesPerSecond": 7610}
+{"event": "progress", "receivedBytes": 10963902, "totalBytes": 11422654, "averageBytesPerSecond": 7531}
+{"event": "progress", "receivedBytes": 11029438, "totalBytes": 11422654, "averageBytesPerSecond": 7499}
+{"event": "progress", "receivedBytes": 11094974, "totalBytes": 11422654, "averageBytesPerSecond": 7467}
+{"event": "progress", "receivedBytes": 11226046, "totalBytes": 11422654, "averageBytesPerSecond": 7480}
+{"event": "progress", "receivedBytes": 11291582, "totalBytes": 11422654, "averageBytesPerSecond": 7449}
+{"event": "progress", "receivedBytes": 11357118, "totalBytes": 11422654, "averageBytesPerSecond": 7419}
+{"event": "verified", "url": "https://huggingface.co/mlx-community/Qwen3-0.6B-4bit/resolve/73e3e38d981303bc594367cd910ea6eb48349da8/tokenizer.json", "bytes": 11422654, "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4", "verified": true, "elapsedSeconds": 1532.96}
+Verified tokenizer.json: aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4
+Verified README.md: 43209eb9544b7d4871f54673b35a1c434155fcff0c31eced56571e0489629bf0
+Verified added_tokens.json: c0284b582e14987fbd3d5a2cb2bd139084371ed9acbae488829a1c900833c680
+Verified config.json: 15d3ac26c043ae477273ed5802ee0f0b33bb14f18c9d3dd70910c02d906e3f1f
+Verified merges.txt: 8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5
+Downloading model.safetensors.index.json, expected 49,731 bytes
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0100   226  100   226    0     0     76      0  0:00:02  0:00:02 --:--:--    76
+  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0 16 49731   16  8192    0     0   1077      0  0:00:46  0:00:07  0:00:39  1880 16 49731   16  8192    0     0    951      0  0:00:52  0:00:08  0:00:44  1526 16 49731   16  8192    0     0    851      0  0:00:58  0:00:09  0:00:49  1510 16 49731   16  8192    0     0    770      0  0:01:04  0:00:10  0:00:54  1650 16 49731   16  8192    0     0    703      0  0:01:10  0:00:11  0:00:59  1650 16 49731   16  8192    0     0    669      0  0:01:14  0:00:12  0:01:02     0 16 49731   16  8192    0     0    618      0  0:01:20  0:00:13  0:01:07     0 16 49731   16  8192    0     0    566      0  0:01:27  0:00:14  0:01:13     0 16 49731   16  8192    0     0    539      0  0:01:32  0:00:15  0:01:17     0 49 49731   49 24558    0     0   1434      0  0:00:34  0:00:17  0:00:17  2983 49 49731   49 24558    0     0   1381      0  0:00:36  0:00:17  0:00:19  2961 49 49731   49 24558    0     0   1281      0  0:00:38  0:00:19  0:00:19  2769 49 49731   49 24558    0     0   1228      0  0:00:40  0:00:19  0:00:21  2960 49 49731   49 24558    0     0   1206      0  0:00:41  0:00:20  0:00:21  3170 49 49731   49 24558    0     0   1154      0  0:00:43  0:00:21  0:00:22     0 49 49731   49 24558    0     0   1082      0  0:00:45  0:00:22  0:00:23     0 49 49731   49 24558    0     0   1037      0  0:00:47  0:00:23  0:00:24     0 49 49731   49 24558    0     0    994      0  0:00:50  0:00:24  0:00:26     0 49 49731   49 24558    0     0    969      0  0:00:51  0:00:25  0:00:26     0 49 49731   49 24558    0     0    932      0  0:00:53  0:00:26  0:00:27     0 49 49731   49 24558    0     0    891      0  0:00:55  0:00:27  0:00:28     0 49 49731   49 24558    0     0    843      0  0:00:58  0:00:29  0:00:29     0 49 49731   49 24558    0     0    815      0  0:01:01  0:00:30  0:00:31     0 82 49731   82 40924    0     0   1314      0  0:00:37  0:00:31  0:00:06  2820 82 49731   82 40924    0     0   1284      0  0:00:38  0:00:31  0:00:07  2955 88 49731   88 43988    0     0   1364      0  0:00:36  0:00:32  0:00:04  4132 88 49731   88 43988    0     0   1297      0  0:00:38  0:00:33  0:00:05  4052 88 49731   88 43988    0     0   1273      0  0:00:39  0:00:34  0:00:05  4374 88 49731   88 43988    0     0   1249      0  0:00:39  0:00:35  0:00:04   754100 49731  100 49731    0     0   1387      0  0:00:35  0:00:35 --:--:--  2221
+Verified model.safetensors.index.json: 7b294141456f6904936db03c00bca50fb5f6198f652fe8483f9cd2a1018accfb
+Downloading special_tokens_map.json, expected 613 bytes
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100   221  100   221    0     0    132      0  0:00:01  0:00:01 --:--:--   132
+100   613  100   613    0     0    301      0  0:00:02  0:00:02 --:--:--   301
+Verified special_tokens_map.json: 76862e765266b85aa9459767e33cbaf13970f327a0e88d1c65846c2ddd3a1ecd
+Downloading tokenizer_config.json, expected 9,706 bytes
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   219  100   219    0     0    264      0 --:--:-- --:--:-- --:--:--   263
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0100  9706  100  9706    0     0   1773      0  0:00:05  0:00:05 --:--:--  2436
+Verified tokenizer_config.json: 253153d0738ceb4c668d2eff957714dd2bea0b56de772a9fdccd96cbf517e6a0
+Downloading vocab.json, expected 2,776,833 bytes
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:06 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0100   208  100   208    0     0     28      0  0:00:07  0:00:07 --:--:--    57
+  0     0    0     0    0     0      0      0 --:--:--  0:00:07 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:08 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:09 --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:10 --:--:--     0  0 2711k    0  6596    0     0    558      0  1:22:56  0:00:11  1:22:45  1669  0 2711k    0 24494    0     0   1916      0  0:24:09  0:00:12  0:23:57  4981  1 2711k    1 42392    0     0   2870      0  0:16:07  0:00:14  0:15:53  7188  3 2711k    3 91544    0     0   5699      0  0:08:07  0:00:16  0:07:51 14808  3 2711k    3  105k    0     0   6130      0  0:07:32  0:00:17  0:07:15 16135  3 2711k    3  105k    0     0   6057      0  0:07:38  0:00:17  0:07:21 16874  4 2711k    4  110k    0     0   5906      0  0:07:50  0:00:19  0:07:31 13916  4 2711k    4  126k    0     0   6536      0  0:07:04  0:00:19  0:06:45 17291  5 2711k    5  142k    0     0   6751      0  0:06:51  0:00:21  0:06:30  9801  5 2711k    5  142k    0     0   6660      0  0:06:56  0:00:21  0:06:35  8834  5 2711k    5  152k    0     0   6864      0  0:06:44  0:00:22  0:06:22  9769  6 2711k    6  174k    0     0   7440      0  0:06:13  0:00:24  0:05:49 13481  6 2711k    6  174k    0     0   7205      0  0:06:25  0:00:24  0:06:01  9861  7 2711k    7  190k    0     0   7453      0  0:06:12  0:00:26  0:05:46 10783  7 2711k    7  206k    0     0   7816      0  0:05:55  0:00:27  0:05:28 12735  7 2711k    7  216k    0     0   7934      0  0:05:49  0:00:27  0:05:22 12629  7 2711k    7  216k    0     0   7636      0  0:06:03  0:00:29  0:05:34  8567  8 2711k    8  234k    0     0   8044      0  0:05:45  0:00:29  0:05:16 12194  8 2711k    8  238k    0     0   7933      0  0:05:50  0:00:30  0:05:20 10655  9 2711k    9  254k    0     0   8194      0  0:05:38  0:00:31  0:05:07 10349  9 2711k    9  263k    0     0   8203      0  0:05:38  0:00:32  0:05:06  9739 10 2711k   10  280k    0     0   8485      0  0:05:27  0:00:33  0:04:54 13605 10 2711k   10  296k    0     0   8712      0  0:05:18  0:00:34  0:04:44 12649 11 2711k   11  302k    0     0   8618      0  0:05:22  0:00:35  0:04:47 12703 11 2711k   11  302k    0     0   8421      0  0:05:29  0:00:36  0:04:53  9865 11 2711k   11  318k    0     0   8597      0  0:05:23  0:00:37  0:04:46 11147 11 2711k   11  318k    0     0   8253      0  0:05:36  0:00:39  0:04:57  6860 12 2711k   12  335k    0     0   8563      0  0:05:24  0:00:40  0:04:44  7586 12 2711k   12  335k    0     0   8313      0  0:05:34  0:00:41  0:04:53  6302 12 2711k   12  335k    0     0   8216      0  0:05:37  0:00:41  0:04:56  6737 12 2711k   12  351k    0     0   8366      0  0:05:31  0:00:43  0:04:48  6663 12 2711k   12  351k    0     0   8211      0  0:05:38  0:00:43  0:04:55  7832 13 2711k   13  366k    0     0   8381      0  0:05:31  0:00:44  0:04:47  6786 13 2711k   13  366k    0     0   8128      0  0:05:41  0:00:46  0:04:55  6528 14 2711k   14  382k    0     0   8331      0  0:05:33  0:00:47  0:04:46  9271 14 2711k   14  382k    0     0   8182      0  0:05:39  0:00:47  0:04:52  6526 14 2711k   14  398k    0     0   8223      0  0:05:37  0:00:49  0:04:48  8318 14 2711k   14  398k    0     0   8190      0  0:05:39  0:00:49  0:04:50  6497 15 2711k   15  408k    0     0   8241      0  0:05:36  0:00:50  0:04:46  9367 15 2711k   15  430k    0     0   8511      0  0:05:26  0:00:51  0:04:35 10280 16 2711k   16  446k    0     0   8650      0  0:05:21  0:00:52  0:04:29 13141 17 2711k   17  462k    0     0   8801      0  0:05:15  0:00:53  0:04:22 15637 17 2711k   17  472k    0     0   8834      0  0:05:14  0:00:54  0:04:20 15288 18 2711k   18  494k    0     0   9033      0  0:05:07  0:00:56  0:04:11 16668 18 2711k   18  494k    0     0   8844      0  0:05:13  0:00:57  0:04:16 11998 18 2711k   18  510k    0     0   8988      0  0:05:08  0:00:58  0:04:10 12351 19 2711k   19  519k    0     0   9038      0  0:05:07  0:00:58  0:04:09 11590 19 2711k   19  519k    0     0   8879      0  0:05:12  0:00:59  0:04:13  9366 19 2711k   19  535k    0     0   8905      0  0:05:11  0:01:01  0:04:10  7597 19 2711k   19  535k    0     0   8849      0  0:05:13  0:01:01  0:04:12  8917 20 2711k   20  554k    0     0   9023      0  0:05:07  0:01:02  0:04:05  9457 20 2711k   20  558k    0     0   8935      0  0:05:10  0:01:03  0:04:07  7765 21 2711k   21  574k    0     0   9030      0  0:05:07  0:01:05  0:04:02 10741 21 2711k   21  590k    0     0   9187      0  0:05:02  0:01:05  0:03:57 13258 21 2711k   21  590k    0     0   8976      0  0:05:09  0:01:07  0:04:02 10417 22 2711k   22  606k    0     0   9101      0  0:05:05  0:01:08  0:03:57 10015 22 2711k   22  618k    0     0   9179      0  0:05:02  0:01:08  0:03:54 12326 22 2711k   22  618k    0     0   9035      0  0:05:07  0:01:10  0:03:57  9113 23 2711k   23  634k    0     0   9062      0  0:05:06  0:01:11  0:03:55  7648 23 2711k   23  638k    0     0   9100      0  0:05:05  0:01:11  0:03:54 10966 23 2711k   23  638k    0     0   8945      0  0:05:10  0:01:13  0:03:57  6758 24 2711k   24  654k    0     0   9076      0  0:05:05  0:01:13  0:03:52  7611 24 2711k   24  654k    0     0   8959      0  0:05:09  0:01:14  0:03:55  7831 24 2711k   24  670k    0     0   9045      0  0:05:07  0:01:15  0:03:52  8761 24 2711k   24  670k    0     0   8927      0  0:05:11  0:01:16  0:03:55  6470 25 2711k   25  686k    0     0   8969      0  0:05:09  0:01:18  0:03:51  9307 25 2711k   25  686k    0     0   8899      0  0:05:12  0:01:18  0:03:54  6368 25 2711k   25  702k    0     0   8981      0  0:05:09  0:01:20  0:03:49  9288 26 2711k   26  711k    0     0   9013      0  0:05:08  0:01:20  0:03:48  8511 26 2711k   26  727k    0     0   9059      0  0:05:06  0:01:22  0:03:44 10983 27 2711k   27  734k    0     0   9085      0  0:05:05  0:01:22  0:03:43 11130 27 2711k   27  734k    0     0   8973      0  0:05:09  0:01:23  0:03:46 10182 27 2711k   27  759k    0     0   9170      0  0:05:02  0:01:24  0:03:38 12394 27 2711k   27  759k    0     0   9035      0  0:05:07  0:01:26  0:03:41  9374 28 2711k   28  775k    0     0   9138      0  0:05:03  0:01:26  0:03:37 10529 28 2711k   28  785k    0     0   9135      0  0:05:03  0:01:28  0:03:35  9931 29 2711k   29  798k    0     0   9172      0  0:05:02  0:01:29  0:03:33 12295 30 2711k   30  814k    0     0   9260      0  0:04:59  0:01:30  0:03:29 10717 30 2711k   30  814k    0     0   9157      0  0:05:03  0:01:31  0:03:32 11263 30 2711k   30  814k    0     0   8998      0  0:05:08  0:01:32  0:03:36  6904 30 2711k   30  814k    0     0   8901      0  0:05:11  0:01:33  0:03:38  5260 30 2711k   30  830k    0     0   9038      0  0:05:07  0:01:34  0:03:33  6621 31 2711k   31  840k    0     0   9068      0  0:05:06  0:01:34  0:03:32  5509 31 2711k   31  840k    0     0   8973      0  0:05:09  0:01:35  0:03:34  5524 31 2711k   31  840k    0     0   8881      0  0:05:12  0:01:36  0:03:36  6327 31 2711k   31  856k    0     0   8971      0  0:05:09  0:01:37  0:03:32 10578 31 2711k   31  862k    0     0   8920      0  0:05:11  0:01:38  0:03:33  6670 31 2711k   31  862k    0     0   8850      0  0:05:13  0:01:39  0:03:34  4598 31 2711k   31  862k    0     0   8762      0  0:05:16  0:01:40  0:03:36  4590 32 2711k   32  887k    0     0   8921      0  0:05:11  0:01:41  0:03:30  9714 32 2711k   32  887k    0     0   8810      0  0:05:15  0:01:43  0:03:32  5851 33 2711k   33  903k    0     0   8910      0  0:05:11  0:01:43  0:03:28  8707 33 2711k   33  903k    0     0   8827      0  0:05:14  0:01:44  0:03:30  8350 34 2711k   34  926k    0     0   8961      0  0:05:09  0:01:45  0:03:24 12903 34 2711k   34  926k    0     0   8810      0  0:05:15  0:01:47  0:03:28  6886 34 2711k   34  942k    0     0   8878      0  0:05:12  0:01:48  0:03:24 10141 34 2711k   34  942k    0     0   8855      0  0:05:13  0:01:48  0:03:25  7745 35 2711k   35  951k    0     0   8849      0  0:05:13  0:01:50  0:03:23  9298 35 2711k   35  951k    0     0   8736      0  0:05:17  0:01:51  0:03:26  4502 35 2711k   35  968k    0     0   8843      0  0:05:14  0:01:52  0:03:22  9630 35 2711k   35  968k    0     0   8747      0  0:05:17  0:01:53  0:03:24  5715 35 2711k   35  968k    0     0   8682      0  0:05:19  0:01:54  0:03:25  5099 36 2711k   36  990k    0     0   8824      0  0:05:14  0:01:54  0:03:20  8246 36 2711k   36  990k    0     0   8713      0  0:05:18  0:01:56  0:03:22  8201 36 2711k   36  990k    0     0   8638      0  0:05:21  0:01:57  0:03:24  4254 36 2711k   36  990k    0     0   8605      0  0:05:22  0:01:57  0:03:25  4997 37 2711k   37 1006k    0     0   8662      0  0:05:20  0:01:58  0:03:22  8186 37 2711k   37 1006k    0     0   8597      0  0:05:23  0:01:59  0:03:24  3319 37 2711k   37 1015k    0     0   8590      0  0:05:23  0:02:01  0:03:22  5483 37 2711k   37 1015k    0     0   8517      0  0:05:26  0:02:02  0:03:24  5457 38 2711k   38 1031k    0     0   8562      0  0:05:24  0:02:03  0:03:21  7635 38 2711k   38 1031k    0     0   8514      0  0:05:26  0:02:04  0:03:22  5030 38 2711k   38 1031k    0     0   8435      0  0:05:29  0:02:05  0:03:24  4773 38 2711k   38 1047k    0     0   8512      0  0:05:26  0:02:05  0:03:21  6608 39 2711k   39 1063k    0     0   8576      0  0:05:23  0:02:06  0:03:17 10032 39 2711k   39 1063k    0     0   8499      0  0:05:26  0:02:08  0:03:18  6875 39 2711k   39 1079k    0     0   8560      0  0:05:24  0:02:09  0:03:15  9667 39 2711k   39 1079k    0     0   8514      0  0:05:26  0:02:09  0:03:17 10646 39 2711k   39 1079k    0     0   8445      0  0:05:28  0:02:10  0:03:18  6719 40 2711k   40 1095k    0     0   8488      0  0:05:27  0:02:12  0:03:15  6334 40 2711k   40 1095k    0     0   8416      0  0:05:29  0:02:13  0:03:16  6353 40 2711k   40 1095k    0     0   8378      0  0:05:31  0:02:13  0:03:18  3441 40 2711k   40 1111k    0     0   8413      0  0:05:30  0:02:15  0:03:15  6017 40 2711k   40 1111k    0     0   8369      0  0:05:31  0:02:15  0:03:16  6423 40 2711k   40 1111k    0     0   8313      0  0:05:34  0:02:16  0:03:18  3442 41 2711k   41 1127k    0     0   8354      0  0:05:32  0:02:18  0:03:14  6669 41 2711k   41 1127k    0     0   8305      0  0:05:34  0:02:18  0:03:16  6403 41 2711k   41 1127k    0     0   8250      0  0:05:36  0:02:19  0:03:17  3517 42 2711k   42 1143k    0     0   8304      0  0:05:34  0:02:20  0:03:14  6539 42 2711k   42 1143k    0     0   8216      0  0:05:37  0:02:22  0:03:15  5841 42 2711k   42 1143k    0     0   8151      0  0:05:40  0:02:23  0:03:17  3002 42 2711k   42 1143k    0     0   8126      0  0:05:41  0:02:24  0:03:17  3226 42 2711k   42 1143k    0     0   8075      0  0:05:43  0:02:24  0:03:19  3228 42 2711k   42 1158k    0     0   8126      0  0:05:41  0:02:26  0:03:15  3200 42 2711k   42 1158k    0     0   8032      0  0:05:45  0:02:27  0:03:18  3096 42 2711k   42 1158k    0     0   7978      0  0:05:48  0:02:28  0:03:20  3166 42 2711k   42 1158k    0     0   7943      0  0:05:49  0:02:29  0:03:20  3034 42 2711k   42 1158k    0     0   7909      0  0:05:51  0:02:30  0:03:21  3203 42 2711k   42 1158k    0     0   7860      0  0:05:53  0:02:30  0:03:23     0 43 2711k   43 1174k    0     0   7903      0  0:05:51  0:02:32  0:03:19  3650 43 2711k   43 1174k    0     0   7863      0  0:05:53  0:02:33  0:03:20  3848 43 2711k   43 1174k    0     0   7819      0  0:05:55  0:02:33  0:03:22  3681 43 2711k   43 1190k    0     0   7863      0  0:05:53  0:02:35  0:03:18  6495 43 2711k   43 1190k    0     0   7814      0  0:05:55  0:02:36  0:03:19  6432 43 2711k   43 1190k    0     0   7758      0  0:05:57  0:02:37  0:03:20  3297 44 2711k   44 1206k    0     0   7832      0  0:05:54  0:02:37  0:03:17  6832 44 2711k   44 1206k    0     0   7770      0  0:05:57  0:02:39  0:03:18  6311 44 2711k   44 1206k    0     0   7731      0  0:05:59  0:02:39  0:03:20  3436 44 2711k   44 1206k    0     0   7677      0  0:06:01  0:02:40  0:03:21  3331 45 2711k   45 1222k    0     0   7739      0  0:05:58  0:02:41  0:03:17  7098 45 2711k   45 1222k    0     0   7693      0  0:06:00  0:02:42  0:03:18  3288 45 2711k   45 1222k    0     0   7625      0  0:06:04  0:02:44  0:03:20  3157 45 2711k   45 1238k    0     0   7698      0  0:06:00  0:02:44  0:03:16  6638 45 2711k   45 1238k    0     0   7621      0  0:06:04  0:02:46  0:03:18  5977 45 2711k   45 1238k    0     0   7605      0  0:06:05  0:02:46  0:03:19  3272 46 2711k   46 1254k    0     0   7643      0  0:06:03  0:02:48  0:03:15  6116 46 2711k   46 1254k    0     0   7596      0  0:06:05  0:02:49  0:03:16  6659 46 2711k   46 1254k    0     0   7568      0  0:06:06  0:02:49  0:03:17  3268 46 2711k   46 1254k    0     0   7519      0  0:06:09  0:02:50  0:03:19  3682 46 2711k   46 1271k    0     0   7574      0  0:06:06  0:02:51  0:03:15  6543 46 2711k   46 1271k    0     0   7533      0  0:06:08  0:02:52  0:03:16  3576 47 2711k   47 1287k    0     0   7578      0  0:06:06  0:02:53  0:03:13  6923 47 2711k   47 1287k    0     0   7539      0  0:06:08  0:02:54  0:03:14  6587 48 2711k   48 1303k    0     0   7590      0  0:06:05  0:02:55  0:03:10 10085 48 2711k   48 1303k    0     0   7543      0  0:06:08  0:02:56  0:03:12  6482 48 2711k   48 1319k    0     0   7593      0  0:06:05  0:02:57  0:03:08  9653 48 2711k   48 1319k    0     0   7554      0  0:06:07  0:02:58  0:03:09  6693 48 2711k   48 1319k    0     0   7512      0  0:06:09  0:02:59  0:03:10  6566 49 2711k   49 1335k    0     0   7560      0  0:06:07  0:03:00  0:03:07  6488 49 2711k   49 1335k    0     0   7501      0  0:06:10  0:03:02  0:03:08  6112 49 2711k   49 1351k    0     0   7568      0  0:06:06  0:03:02  0:03:04  6655 49 2711k   49 1351k    0     0   7527      0  0:06:08  0:03:03  0:03:05  6572 50 2711k   50 1367k    0     0   7574      0  0:06:06  0:03:04  0:03:02  9774 50 2711k   50 1367k    0     0   7528      0  0:06:08  0:03:05  0:03:03  6425 50 2711k   50 1367k    0     0   7478      0  0:06:11  0:03:07  0:03:04  6625 51 2711k   51 1383k    0     0   7535      0  0:06:08  0:03:07  0:03:01  6365 51 2711k   51 1383k    0     0   7495      0  0:06:10  0:03:08  0:03:02  6342 51 2711k   51 1383k    0     0   7448      0  0:06:12  0:03:10  0:03:02  3082 51 2711k   51 1383k    0     0   7421      0  0:06:14  0:03:10  0:03:04  3343 51 2711k   51 1383k    0     0   7372      0  0:06:16  0:03:12  0:03:04  3342 51 2711k   51 1399k    0     0   7427      0  0:06:13  0:03:12  0:03:01  3312 51 2711k   51 1399k    0     0   7368      0  0:06:16  0:03:14  0:03:02  2987 51 2711k   51 1399k    0     0   7335      0  0:06:18  0:03:15  0:03:03  3169 52 2711k   52 1415k    0     0   7392      0  0:06:15  0:03:15  0:03:00  6337 52 2711k   52 1415k    0     0   7363      0  0:06:17  0:03:16  0:03:01  6980 52 2711k   52 1415k    0     0   7317      0  0:06:19  0:03:18  0:03:01  3178 52 2711k   52 1415k    0     0   7284      0  0:06:21  0:03:18  0:03:03  3658 52 2711k   52 1415k    0     0   7247      0  0:06:23  0:03:19  0:03:04  3540 52 2711k   52 1431k    0     0   7298      0  0:06:20  0:03:20  0:03:00  3420 52 2711k   52 1431k    0     0   7241      0  0:06:23  0:03:22  0:03:01  2944 52 2711k   52 1431k    0     0   7211      0  0:06:25  0:03:23  0:03:02  3167 53 2711k   53 1446k    0     0   7269      0  0:06:22  0:03:23  0:02:59  6659 53 2711k   53 1446k    0     0   7234      0  0:06:23  0:03:24  0:02:59  6699 53 2711k   53 1462k    0     0   7276      0  0:06:21  0:03:25  0:02:56  6409 53 2711k   53 1462k    0     0   7245      0  0:06:23  0:03:26  0:02:57  7385 55 2711k   55 1494k    0     0   7362      0  0:06:17  0:03:27  0:02:50 13857 56 2711k   56 1527k    0     0   7483      0  0:06:11  0:03:28  0:02:43 15917 56 2711k   56 1543k    0     0   7526      0  0:06:08  0:03:29  0:02:39 19126 57 2711k   57 1559k    0     0   7574      0  0:06:06  0:03:30  0:02:36 20127 58 2711k   58 1575k    0     0   7609      0  0:06:04  0:03:31  0:02:33 22103 58 2711k   58 1591k    0     0   7656      0  0:06:02  0:03:32  0:02:30 20197 59 2711k   59 1607k    0     0   7691      0  0:06:01  0:03:33  0:02:28 16418 59 2711k   59 1623k    0     0   7730      0  0:05:59  0:03:35  0:02:24 16171 60 2711k   60 1639k    0     0   7771      0  0:05:57  0:03:35  0:02:22 15782 61 2711k   61 1655k    0     0   7808      0  0:05:55  0:03:37  0:02:18 16175 61 2711k   61 1671k    0     0   7851      0  0:05:53  0:03:37  0:02:16 15917 62 2711k   62 1687k    0     0   7896      0  0:05:51  0:03:38  0:02:13 17005 62 2711k   62 1702k    0     0   7927      0  0:05:50  0:03:39  0:02:11 16451 63 2711k   63 1718k    0     0   7972      0  0:05:48  0:03:40  0:02:08 17012 63 2711k   63 1718k    0     0   7931      0  0:05:50  0:03:41  0:02:09 13373 63 2711k   63 1734k    0     0   7964      0  0:05:48  0:03:43  0:02:05 12741 63 2711k   63 1734k    0     0   7924      0  0:05:50  0:03:44  0:02:06  9060 64 2711k   64 1750k    0     0   7972      0  0:05:48  0:03:44  0:02:04  9971 65 2711k   65 1766k    0     0   8006      0  0:05:46  0:03:45  0:02:01  9416 65 2711k   65 1766k    0     0   7970      0  0:05:48  0:03:47  0:02:01  9653 65 2711k   65 1783k    0     0   8013      0  0:05:46  0:03:47  0:01:59 10286 66 2711k   66 1799k    0     0   8039      0  0:05:45  0:03:49  0:01:56 13232 66 2711k   66 1815k    0     0   8082      0  0:05:43  0:03:49  0:01:54 13015 66 2711k   66 1815k    0     0   8049      0  0:05:44  0:03:50  0:01:54 10005 67 2711k   67 1831k    0     0   8090      0  0:05:43  0:03:51  0:01:52 13793 67 2711k   67 1831k    0     0   8054      0  0:05:44  0:03:52  0:01:52  9985 68 2711k   68 1847k    0     0   8089      0  0:05:43  0:03:53  0:01:50 10522 68 2711k   68 1863k    0     0   8123      0  0:05:41  0:03:54  0:01:47 10034 69 2711k   69 1879k    0     0   8147      0  0:05:40  0:03:56  0:01:44 12519 69 2711k   69 1879k    0     0   8123      0  0:05:41  0:03:56  0:01:45  9676 69 2711k   69 1895k    0     0   8160      0  0:05:40  0:03:57  0:01:43 13048 69 2711k   69 1895k    0     0   8121      0  0:05:41  0:03:58  0:01:43  9619 70 2711k   70 1911k    0     0   8151      0  0:05:40  0:04:00  0:01:40  9427 70 2711k   70 1911k    0     0   8117      0  0:05:42  0:04:01  0:01:41  6644 70 2711k   70 1911k    0     0   8089      0  0:05:43  0:04:01  0:01:42  6479 71 2711k   71 1927k    0     0   8125      0  0:05:41  0:04:02  0:01:39  6475 71 2711k   71 1943k    0     0   8151      0  0:05:40  0:04:04  0:01:36  9504 71 2711k   71 1943k    0     0   8108      0  0:05:42  0:04:05  0:01:37  6153 71 2711k   71 1943k    0     0   8075      0  0:05:43  0:04:06  0:01:37  6165 71 2711k   71 1943k    0     0   8042      0  0:05:45  0:04:07  0:01:38  5957 71 2711k   71 1943k    0     0   8029      0  0:05:45  0:04:07  0:01:38  3315 72 2711k   72 1958k    0     0   8062      0  0:05:44  0:04:08  0:01:36  3480 72 2711k   72 1958k    0     0   8031      0  0:05:45  0:04:09  0:01:36  3723 72 2711k   72 1958k    0     0   7993      0  0:05:47  0:04:10  0:01:37  3578 72 2711k   72 1974k    0     0   8032      0  0:05:45  0:04:11  0:01:34  7467 73 2711k   73 1990k    0     0   8053      0  0:05:44  0:04:13  0:01:31  9166 73 2711k   73 1990k    0     0   8031      0  0:05:45  0:04:13  0:01:32  6469 74 2711k   74 2006k    0     0   8065      0  0:05:44  0:04:14  0:01:30  9759 74 2711k   74 2006k    0     0   8018      0  0:05:46  0:04:16  0:01:30  9180 74 2711k   74 2022k    0     0   8058      0  0:05:44  0:04:17  0:01:27  9307 74 2711k   74 2022k    0     0   8025      0  0:05:46  0:04:18  0:01:28  6591 75 2711k   75 2039k    0     0   8062      0  0:05:44  0:04:18  0:01:26  9626 75 2711k   75 2039k    0     0   8033      0  0:05:45  0:04:19  0:01:26  6440 75 2711k   75 2039k    0     0   8000      0  0:05:47  0:04:20  0:01:27  7045 75 2711k   75 2055k    0     0   8035      0  0:05:45  0:04:21  0:01:24  6797 75 2711k   75 2055k    0     0   8005      0  0:05:46  0:04:22  0:01:24  6918 76 2711k   76 2071k    0     0   8037      0  0:05:45  0:04:23  0:01:22  6711 76 2711k   76 2087k    0     0   8060      0  0:05:44  0:04:25  0:01:19  9441 76 2711k   76 2087k    0     0   8033      0  0:05:45  0:04:26  0:01:19  9762 77 2711k   77 2103k    0     0   8071      0  0:05:44  0:04:26  0:01:18 10015 78 2711k   78 2119k    0     0   8100      0  0:05:42  0:04:27  0:01:15 13169 78 2711k   78 2135k    0     0   8131      0  0:05:41  0:04:28  0:01:13 13038 79 2711k   79 2151k    0     0   8147      0  0:05:40  0:04:30  0:01:10 12550 79 2711k   79 2167k    0     0   8191      0  0:05:39  0:04:30  0:01:09 16847 80 2711k   80 2183k    0     0   8222      0  0:05:37  0:04:31  0:01:06 16236 81 2711k   81 2199k    0     0   8251      0  0:05:36  0:04:32  0:01:04 16320 81 2711k   81 2214k    0     0   8283      0  0:05:35  0:04:33  0:01:02 16544 82 2711k   82 2230k    0     0   8314      0  0:05:33  0:04:34  0:00:59 18488 82 2711k   82 2246k    0     0   8339      0  0:05:32  0:04:35  0:00:57 16326 83 2711k   83 2262k    0     0   8372      0  0:05:31  0:04:36  0:00:55 16615 84 2711k   84 2278k    0     0   8400      0  0:05:30  0:04:37  0:00:53 16638 84 2711k   84 2278k    0     0   8370      0  0:05:31  0:04:38  0:00:53 13230 84 2711k   84 2295k    0     0   8395      0  0:05:30  0:04:39  0:00:51 12720 85 2711k   85 2311k    0     0   8419      0  0:05:29  0:04:41  0:00:48 12622 85 2711k   85 2327k    0     0   8455      0  0:05:28  0:04:41  0:00:47 13035 85 2711k   85 2327k    0     0   8426      0  0:05:29  0:04:42  0:00:47  9873 86 2711k   86 2343k    0     0   8448      0  0:05:28  0:04:43  0:00:45 12608 86 2711k   86 2359k    0     0   8471      0  0:05:27  0:04:45  0:00:42 12574 86 2711k   86 2359k    0     0   8449      0  0:05:28  0:04:45  0:00:43 10233 87 2711k   87 2375k    0     0   8478      0  0:05:27  0:04:46  0:00:41  9747 88 2711k   88 2391k    0     0   8508      0  0:05:26  0:04:47  0:00:39 13137 88 2711k   88 2391k    0     0   8478      0  0:05:27  0:04:48  0:00:39 10269 88 2711k   88 2407k    0     0   8500      0  0:05:26  0:04:49  0:00:37 10177 88 2711k   88 2407k    0     0   8472      0  0:05:27  0:04:50  0:00:37  9772 89 2711k   89 2423k    0     0   8499      0  0:05:26  0:04:51  0:00:35  9674 89 2711k   89 2423k    0     0   8470      0  0:05:27  0:04:52  0:00:35  6348 89 2711k   89 2439k    0     0   8494      0  0:05:26  0:04:54  0:00:32  9334 89 2711k   89 2439k    0     0   8471      0  0:05:27  0:04:54  0:00:33  6764 90 2711k   90 2455k    0     0   8496      0  0:05:26  0:04:55  0:00:31  9902 90 2711k   90 2455k    0     0   8465      0  0:05:28  0:04:56  0:00:32  6522 91 2711k   91 2470k    0     0   8491      0  0:05:27  0:04:57  0:00:30  9764 91 2711k   91 2470k    0     0   8461      0  0:05:28  0:04:59  0:00:29  6547 91 2711k   91 2470k    0     0   8434      0  0:05:29  0:04:59  0:00:30  6327 91 2711k   91 2486k    0     0   8466      0  0:05:27  0:05:00  0:00:27  6673 91 2711k   91 2486k    0     0   8438      0  0:05:29  0:05:01  0:00:28  6758 92 2711k   92 2502k    0     0   8458      0  0:05:28  0:05:03  0:00:25  6486 92 2711k   92 2502k    0     0   8433      0  0:05:29  0:05:03  0:00:26  6689 92 2711k   92 2518k    0     0   8452      0  0:05:28  0:05:05  0:00:23  9471 92 2711k   92 2518k    0     0   8420      0  0:05:29  0:05:06  0:00:23  5922 92 2711k   92 2518k    0     0   8404      0  0:05:30  0:05:06  0:00:24  6431 92 2711k   92 2518k    0     0   8355      0  0:05:32  0:05:08  0:00:24  2881 92 2711k   92 2518k    0     0   8350      0  0:05:32  0:05:08  0:00:24  3299 92 2711k   92 2518k    0     0   8325      0  0:05:33  0:05:09  0:00:24     0 93 2711k   93 2534k    0     0   8326      0  0:05:33  0:05:11  0:00:22  3018 93 2711k   93 2534k    0     0   8321      0  0:05:33  0:05:11  0:00:22  3245 93 2711k   93 2534k    0     0   8297      0  0:05:34  0:05:12  0:00:22  3937 94 2711k   94 2551k    0     0   8314      0  0:05:33  0:05:14  0:00:19  6210 94 2711k   94 2551k    0     0   8293      0  0:05:34  0:05:15  0:00:19  6364 94 2711k   94 2551k    0     0   8252      0  0:05:36  0:05:16  0:00:20  3465 94 2711k   94 2551k    0     0   8234      0  0:05:37  0:05:17  0:00:20  3129 94 2711k   94 2551k    0     0   8196      0  0:05:38  0:05:18  0:00:20  2833 94 2711k   94 2551k    0     0   8176      0  0:05:39  0:05:19  0:00:20     0 94 2711k   94 2551k    0     0   8169      0  0:05:39  0:05:19  0:00:20     0 94 2711k   94 2551k    0     0   8126      0  0:05:41  0:05:21  0:00:20     0 94 2711k   94 2551k    0     0   8118      0  0:05:42  0:05:21  0:00:21     0 94 2711k   94 2567k    0     0   8129      0  0:05:41  0:05:23  0:00:18  3524 94 2711k   94 2567k    0     0   8115      0  0:05:42  0:05:23  0:00:19  3705 94 2711k   94 2567k    0     0   8092      0  0:05:43  0:05:24  0:00:19  3241 94 2711k   94 2567k    0     0   8056      0  0:05:44  0:05:26  0:00:18  3389 94 2711k   94 2567k    0     0   8040      0  0:05:45  0:05:26  0:00:19  3172 94 2711k   94 2567k    0     0   8017      0  0:05:46  0:05:27  0:00:19     0 94 2711k   94 2567k    0     0   7993      0  0:05:47  0:05:28  0:00:19     0 95 2711k   95 2583k    0     0   8019      0  0:05:46  0:05:29  0:00:17  3260 95 2711k   95 2583k    0     0   7989      0  0:05:47  0:05:31  0:00:16  3408 95 2711k   95 2583k    0     0   7972      0  0:05:48  0:05:31  0:00:17  3391 95 2711k   95 2599k    0     0   7997      0  0:05:47  0:05:32  0:00:15  6666 95 2711k   95 2599k    0     0   7973      0  0:05:48  0:05:33  0:00:15  6627 96 2711k   96 2615k    0     0   7981      0  0:05:47  0:05:35  0:00:12  5769 96 2711k   96 2615k    0     0   7971      0  0:05:48  0:05:35  0:00:13  6769 96 2711k   96 2615k    0     0   7950      0  0:05:49  0:05:36  0:00:13  6526 97 2711k   97 2647k    0     0   8023      0  0:05:46  0:05:37  0:00:09  9689 98 2711k   98 2663k    0     0   8049      0  0:05:44  0:05:38  0:00:06 13095 99 2711k   99 2695k    0     0   8119      0  0:05:42  0:05:39  0:00:03 18781100 2711k  100 2711k    0     0   8156      0  0:05:40  0:05:40 --:--:-- 21987
+Verified vocab.json: ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910
+Local model directory: /Users/eros/Library/Caches/MemoryOS-AI-Evaluation/models/mlx-qwen3-0.6b-4bit-73e3e38d

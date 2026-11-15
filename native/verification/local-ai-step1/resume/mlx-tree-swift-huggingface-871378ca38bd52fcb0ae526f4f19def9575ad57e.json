@@ -1,0 +1,1097 @@
+{
+  "sha": "871378ca38bd52fcb0ae526f4f19def9575ad57e",
+  "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/871378ca38bd52fcb0ae526f4f19def9575ad57e",
+  "tree": [
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cb7e5264ed68d4abc516a2443002a811499163b",
+      "size": 35,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/1cb7e5264ed68d4abc516a2443002a811499163b"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e37392ec6972c9aeb41f49240f1c0484a067b889",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/e37392ec6972c9aeb41f49240f1c0484a067b889"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e35dfc5b345e9300791463c40a198828c72c0a1",
+      "size": 206,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/6e35dfc5b345e9300791463c40a198828c72c0a1"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ce52f59e6467d1d5c6db31a89e3ad70515bb4289",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/ce52f59e6467d1d5c6db31a89e3ad70515bb4289"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8d39f53e2bcd1da13957172c1c062c9154a94bd",
+      "size": 3583,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/b8d39f53e2bcd1da13957172c1c062c9154a94bd"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "144ca3b4f83db156fb913c2fc30d51bda2be12b4",
+      "size": 158,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/144ca3b4f83db156fb913c2fc30d51bda2be12b4"
+    },
+    {
+      "path": ".swift-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0de28396b711704339c78afcfd2b8ab469e6d57",
+      "size": 362,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/a0de28396b711704339c78afcfd2b8ab469e6d57"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45f4b9a3ac8e7a69e79e391fc37bf52631788f82",
+      "size": 11347,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/45f4b9a3ac8e7a69e79e391fc37bf52631788f82"
+    },
+    {
+      "path": "Package.resolved",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51556e9d45ec681c8258f6b71f67087aa434b030",
+      "size": 7351,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/51556e9d45ec681c8258f6b71f67087aa434b030"
+    },
+    {
+      "path": "Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa277c97861bfd829335da683d995373c5aa6f65",
+      "size": 3184,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/fa277c97861bfd829335da683d995373c5aa6f65"
+    },
+    {
+      "path": "Package@swift-6.0.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41ed8bf34ba5336f53c81a49a50397b7aa5b41b6",
+      "size": 2330,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/41ed8bf34ba5336f53c81a49a50397b7aa5b41b6"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8134dc2017a4454c3ec4ed4e8fb22fc12d9cae77",
+      "size": 37262,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/8134dc2017a4454c3ec4ed4e8fb22fc12d9cae77"
+    },
+    {
+      "path": "Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba25e5948bea7162ebe220da34d5a154e19f2893",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/ba25e5948bea7162ebe220da34d5a154e19f2893"
+    },
+    {
+      "path": "Sources/HuggingFace",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f39f2279fff51ebe31caccc1c42f6c078ee7c87",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/8f39f2279fff51ebe31caccc1c42f6c078ee7c87"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dbd402876e9bd90101d7b157d84a0da9992a6044",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/dbd402876e9bd90101d7b157d84a0da9992a6044"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/AccessRequest.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57fce949a35816500c804352e4d6ef398acb30e3",
+      "size": 3419,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/57fce949a35816500c804352e4d6ef398acb30e3"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Billing.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "223976e859167290665da5ba2ade49e1c68decc4",
+      "size": 6383,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/223976e859167290665da5ba2ade49e1c68decc4"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Bucket.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b154e76165f5c9d7117875d1eb49336659a395fa",
+      "size": 4447,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/b154e76165f5c9d7117875d1eb49336659a395fa"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Collection.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "026f6954639d773cf4a0ed5fd29a9a96d6e17d66",
+      "size": 4607,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/026f6954639d773cf4a0ed5fd29a9a96d6e17d66"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/CommaSeparatedList.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ad5a96014aa3786ebc82c1a71697cc8ae14424c",
+      "size": 5615,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/4ad5a96014aa3786ebc82c1a71697cc8ae14424c"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Dataset.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e6752133c4547993c0ef9dfaf64c12a574029db",
+      "size": 5988,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/7e6752133c4547993c0ef9dfaf64c12a574029db"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Discussion.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dabb5cc4c8caaa57cd7ff7e5a7f256a6093743b1",
+      "size": 4805,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/dabb5cc4c8caaa57cd7ff7e5a7f256a6093743b1"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/File.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "663d3efeab49610d347eb4a3cc126cb180e91b74",
+      "size": 5737,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/663d3efeab49610d347eb4a3cc126cb180e91b74"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Git.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab4c8a3a874bd54d646679216676ab1df5b84172",
+      "size": 3691,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/ab4c8a3a874bd54d646679216676ab1df5b84172"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubCache.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f62ef953c4a4663486eec7f7518b564fea587996",
+      "size": 25729,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/f62ef953c4a4663486eec7f7518b564fea587996"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Buckets.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8950e546d650d8033293ae8569132b90fdb57bf2",
+      "size": 13574,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/8950e546d650d8033293ae8569132b90fdb57bf2"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Collections.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fbc1885764716580dd8e1389bd0f5a59e302dba",
+      "size": 4490,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/0fbc1885764716580dd8e1389bd0f5a59e302dba"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Datasets.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08007e83a69fef99084454075bce961d2c1beb08",
+      "size": 15135,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/08007e83a69fef99084454075bce961d2c1beb08"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Discussions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8fc4f44c3aab5f6c2bf6fb73e13ba275dea33a89",
+      "size": 7649,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/8fc4f44c3aab5f6c2bf6fb73e13ba275dea33a89"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Files.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26a549848831fce1f0a258ff1d467a2cdb0c4111",
+      "size": 101187,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/26a549848831fce1f0a258ff1d467a2cdb0c4111"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Git.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "735764083d1af0acd5f592f7130aa17431997da7",
+      "size": 22493,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/735764083d1af0acd5f592f7130aa17431997da7"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Models.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e77110eb28df18309b1e5fc0aab1eac3acce40b",
+      "size": 15003,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/7e77110eb28df18309b1e5fc0aab1eac3acce40b"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+OAuth.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffe6cc290c2a01c0423e2c6de4595f875206d2c5",
+      "size": 538,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/ffe6cc290c2a01c0423e2c6de4595f875206d2c5"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Organizations.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0acd8b8882e0e5d29997bf57bd5cd40b044aa175",
+      "size": 5620,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/0acd8b8882e0e5d29997bf57bd5cd40b044aa175"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Pagination.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98eba3aed2a3f71fe2a399c86da3c0ba4bb7b529",
+      "size": 11118,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/98eba3aed2a3f71fe2a399c86da3c0ba4bb7b529"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Papers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f23460fb0b6aded5a8a69120eb5561a60e78e70",
+      "size": 2866,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/5f23460fb0b6aded5a8a69120eb5561a60e78e70"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Repos.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbaf61a2601de6553645b40da70c892f464b8406",
+      "size": 5908,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/fbaf61a2601de6553645b40da70c892f464b8406"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+Spaces.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "711bee2bb14bb269804e2b82257eeb8e7dc330eb",
+      "size": 16165,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/711bee2bb14bb269804e2b82257eeb8e7dc330eb"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient+User.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a128103996c2d473cbb1554f9fe526190ba78acc",
+      "size": 431,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/a128103996c2d473cbb1554f9fe526190ba78acc"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/HubClient.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9ece3ae79483526769e6b2d97ddc7741b72598b",
+      "size": 7503,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/a9ece3ae79483526769e6b2d97ddc7741b72598b"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Model.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "686494e46f2721e073c2fdaf7f825c4d65aeb8d1",
+      "size": 4687,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/686494e46f2721e073c2fdaf7f825c4d65aeb8d1"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/OAuth.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f10b36db9f64f123c5a0642fc93b06dc931fd9a",
+      "size": 3019,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/6f10b36db9f64f123c5a0642fc93b06dc931fd9a"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Organization.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4654c20b95a843952190ce459a1dc8df6ed4f1c",
+      "size": 1969,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/e4654c20b95a843952190ce459a1dc8df6ed4f1c"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Pagination.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20896d5ddf12d001e749c670b6c6c2bc79ceb732",
+      "size": 7007,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/20896d5ddf12d001e749c670b6c6c2bc79ceb732"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Paper.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4425a223451875074ed69437656c70463e662658",
+      "size": 2249,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/4425a223451875074ed69437656c70463e662658"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Repo.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca8ddcd9ccacd7bd71d4cd8a8b2652320bf721c7",
+      "size": 8076,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/ca8ddcd9ccacd7bd71d4cd8a8b2652320bf721c7"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/ResourceGroup.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8359677b70ecfdd2b3f06370ecec75e6fce9209",
+      "size": 1134,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/b8359677b70ecfdd2b3f06370ecec75e6fce9209"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Space.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3dfe40fde68f33395e7cc76a35625b64d98113b",
+      "size": 5340,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/f3dfe40fde68f33395e7cc76a35625b64d98113b"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/Tags.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e57c5c07a037da7ac0e242711b217c38e4edfd7",
+      "size": 3473,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/7e57c5c07a037da7ac0e242711b217c38e4edfd7"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/User.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be64898be8c9e75b8b45899bf5c405d52f67fc38",
+      "size": 1622,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/be64898be8c9e75b8b45899bf5c405d52f67fc38"
+    },
+    {
+      "path": "Sources/HuggingFace/Hub/XetDownloadProgress.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7267080f794319c2155c8f61010b7cba82d885ca",
+      "size": 1010,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/7267080f794319c2155c8f61010b7cba82d885ca"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "22edb622e60162fe00f0080a47cba55f66df0070",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/22edb622e60162fe00f0080a47cba55f66df0070"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders/ChatCompletion.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1457fc7b7c35626995ed7f971211758d6487b30",
+      "size": 32487,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/c1457fc7b7c35626995ed7f971211758d6487b30"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders/FeatureExtraction.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3e91192ba09c6372cede23ad87556532e3f2c6f",
+      "size": 3196,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/f3e91192ba09c6372cede23ad87556532e3f2c6f"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders/InferenceClient.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02ca8def86533ebc47acf93abbfc5650f9ca4830",
+      "size": 5255,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/02ca8def86533ebc47acf93abbfc5650f9ca4830"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders/Message.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e8f195030676e6d39a4f74a19647a268e1533e9",
+      "size": 9316,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/6e8f195030676e6d39a4f74a19647a268e1533e9"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders/Provider.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2418f36e2b2a022ca2e06839c2cf4c64240ffcb8",
+      "size": 11701,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/2418f36e2b2a022ca2e06839c2cf4c64240ffcb8"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders/SpeechToText.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "551a149c9e241b0cef7b30e564c501f33437fc13",
+      "size": 3012,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/551a149c9e241b0cef7b30e564c501f33437fc13"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders/TextToImage.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a461cd8b8c2742d7c24eacba70e6ae0341a7eed8",
+      "size": 8820,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/a461cd8b8c2742d7c24eacba70e6ae0341a7eed8"
+    },
+    {
+      "path": "Sources/HuggingFace/InferenceProviders/TextToVideo.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f08c6edc989eba73de0d905c500584bea627b4a",
+      "size": 5437,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/2f08c6edc989eba73de0d905c500584bea627b4a"
+    },
+    {
+      "path": "Sources/HuggingFace/OAuth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ae1d13ddc60e338cf36d3f66ce2a8e50e33e65e",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/0ae1d13ddc60e338cf36d3f66ce2a8e50e33e65e"
+    },
+    {
+      "path": "Sources/HuggingFace/OAuth/OAuthClient.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a5348aaea6a4c23d1633fafc1cc2841703e0eec",
+      "size": 14188,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/4a5348aaea6a4c23d1633fafc1cc2841703e0eec"
+    },
+    {
+      "path": "Sources/HuggingFace/OAuth/TokenStorage.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71fd3e7ec33a1b9a2881c25ab905621cfdc896ba",
+      "size": 6864,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/71fd3e7ec33a1b9a2881c25ab905621cfdc896ba"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4b9acec963ec3a2f44f67febad54e8eac954e328",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/4b9acec963ec3a2f44f67febad54e8eac954e328"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/CacheLocationProvider.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f812bf0ca3b011db48eab524796fe1a151d378b6",
+      "size": 8378,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/f812bf0ca3b011db48eab524796fe1a151d378b6"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/Extensions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0a779ac1959e366b761ca5571fb16a47adb3dd29",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/0a779ac1959e366b761ca5571fb16a47adb3dd29"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/Extensions/Data+Extensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31c6a4f188c1491373627fb379e3c89658e48911",
+      "size": 2964,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/31c6a4f188c1491373627fb379e3c89658e48911"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/Extensions/JSONDecoder+Extensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "625f28ebd14cde477d6912de958a5c3822c53d2f",
+      "size": 1326,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/625f28ebd14cde477d6912de958a5c3822c53d2f"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/Extensions/URL+Extensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81b98138003e774558f09dc806a005135e425369",
+      "size": 635,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/81b98138003e774558f09dc806a005135e425369"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/Extensions/URLSession+Linux.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33644944ef2c5e36e0e5a9dca075fee0483af2e1",
+      "size": 10139,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/33644944ef2c5e36e0e5a9dca075fee0483af2e1"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/FileLock.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f5c3f8761d13846468e62091bd041829c4d0499",
+      "size": 13495,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/5f5c3f8761d13846468e62091bd041829c4d0499"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/HTTPClient.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a02f7e63bfcf2328d1796e4bbe6cfc026b43de2e",
+      "size": 18900,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/a02f7e63bfcf2328d1796e4bbe6cfc026b43de2e"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/MultipartBuilder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc2350c4d169bdc37a43210b36418817fd27d08d",
+      "size": 6958,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/bc2350c4d169bdc37a43210b36418817fd27d08d"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/TokenProvider.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb46523061be821e0fe9d4d19b87c9c9e7d7f109",
+      "size": 10843,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/cb46523061be821e0fe9d4d19b87c9c9e7d7f109"
+    },
+    {
+      "path": "Sources/HuggingFace/Shared/Value.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80f069635c4015da8ee567b019915593f68098cb",
+      "size": 7466,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/80f069635c4015da8ee567b019915593f68098cb"
+    },
+    {
+      "path": "Sources/HuggingFaceOAuth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d2e4099ba9a1dec626a0e6eb98a5fe3916115d9",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/8d2e4099ba9a1dec626a0e6eb98a5fe3916115d9"
+    },
+    {
+      "path": "Sources/HuggingFaceOAuth/HuggingFaceAuthenticationManager.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4128a0872055ec2ff4ea721f3253fa965bcc3ff",
+      "size": 20713,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/f4128a0872055ec2ff4ea721f3253fa965bcc3ff"
+    },
+    {
+      "path": "Sources/HuggingFaceOAuth/TokenProvider+OAuth.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a41b46aa016f3bf8725d351630cc56d59a155e9",
+      "size": 1354,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/0a41b46aa016f3bf8725d351630cc56d59a155e9"
+    },
+    {
+      "path": "Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "99f85f6c16e5e282787c8414ec163e03a1ee9903",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/99f85f6c16e5e282787c8414ec163e03a1ee9903"
+    },
+    {
+      "path": "Tests/HubBenchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fa09ee70536f46607200cd14e651bd213a129ea",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/2fa09ee70536f46607200cd14e651bd213a129ea"
+    },
+    {
+      "path": "Tests/HubBenchmarks/DownloadSnapshotBenchmarks.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d63d3203fbb304f0fe983800a8d5528a0eb4acf5",
+      "size": 16811,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/d63d3203fbb304f0fe983800a8d5528a0eb4acf5"
+    },
+    {
+      "path": "Tests/HubReplayTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3af7d3b801df105ec41def093988b8d5b9b30eb0",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/3af7d3b801df105ec41def093988b8d5b9b30eb0"
+    },
+    {
+      "path": "Tests/HubReplayTests/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15c536da42a0658c36551e62883bfa0d26eb9da2",
+      "size": 2884,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/15c536da42a0658c36551e62883bfa0d26eb9da2"
+    },
+    {
+      "path": "Tests/HubReplayTests/Replays",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "63456c60680bf70b8fa45cc826b91d395c039254",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/63456c60680bf70b8fa45cc826b91d395c039254"
+    },
+    {
+      "path": "Tests/HubReplayTests/Replays/dataset-tags.har",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "951dbb0ebeaf9e3cf01b06bf714797012482d3e1",
+      "size": 3960,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/951dbb0ebeaf9e3cf01b06bf714797012482d3e1"
+    },
+    {
+      "path": "Tests/HubReplayTests/Replays/model-tags.har",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5464411fffee72530bcfdb32f7af8b2ed8f05c5",
+      "size": 4062,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/a5464411fffee72530bcfdb32f7af8b2ed8f05c5"
+    },
+    {
+      "path": "Tests/HubReplayTests/TagsReplayTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c68105ade1379d5b9b44aa8b2c467c282bb5c04c",
+      "size": 4407,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/c68105ade1379d5b9b44aa8b2c467c282bb5c04c"
+    },
+    {
+      "path": "Tests/HuggingFaceOAuthTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c44c41cebf3e3bc8228a6c1af2466b66f2ecc6b3",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/c44c41cebf3e3bc8228a6c1af2466b66f2ecc6b3"
+    },
+    {
+      "path": "Tests/HuggingFaceOAuthTests/HuggingFaceAuthenticationManagerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dada271219da70b6e32e9a40d8c573c54bc2bb18",
+      "size": 8274,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/dada271219da70b6e32e9a40d8c573c54bc2bb18"
+    },
+    {
+      "path": "Tests/HuggingFaceSwift5Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d2d1ebf0d38547611b2129367331f0f68590ca8d",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/d2d1ebf0d38547611b2129367331f0f68590ca8d"
+    },
+    {
+      "path": "Tests/HuggingFaceSwift5Tests/TrailingClosureTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e13f1373c77311ca95ef4ee3046a22c33c314d1",
+      "size": 5213,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/6e13f1373c77311ca95ef4ee3046a22c33c314d1"
+    },
+    {
+      "path": "Tests/HuggingFaceTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "33f521cd3525ca5ff9eb46f193d88e25bd415513",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/33f521cd3525ca5ff9eb46f193d88e25bd415513"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/Helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1362f720cd2f9f1fe1c0bd9d1f2ee6ff01df1598",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/1362f720cd2f9f1fe1c0bd9d1f2ee6ff01df1598"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/Helpers/MockURLProtocol.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed7825075b7a932cc371f9d71ff3b63fb3a2e867",
+      "size": 6240,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/ed7825075b7a932cc371f9d71ff3b63fb3a2e867"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/Helpers/SlowDownloadServer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "27935ecc37308d57a3641783fc73638a1ef872fe",
+      "size": 4849,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/27935ecc37308d57a3641783fc73638a1ef872fe"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a6e44fb2376f36a71796e39704b4a4b905f4424",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/6a6e44fb2376f36a71796e39704b4a4b905f4424"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/BucketDownloadTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba47c01db95909e0a9b3a1f79fa15e5ff4136d3c",
+      "size": 7767,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/ba47c01db95909e0a9b3a1f79fa15e5ff4136d3c"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/BucketIntegrationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4b7645084b0a78f6e923e2d803d308e473111cd",
+      "size": 6604,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/e4b7645084b0a78f6e923e2d803d308e473111cd"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/BucketTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c4918406a52f8ad389fb6bfeeeeded09a2da849",
+      "size": 4891,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/2c4918406a52f8ad389fb6bfeeeeded09a2da849"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/CacheLocationProviderTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9ef564ce5d9a882d8f4cd907545992213a6d112",
+      "size": 11927,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/b9ef564ce5d9a882d8f4cd907545992213a6d112"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/CollectionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a76fc5fac811655626f2a6352683e6e06d01738",
+      "size": 7044,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/9a76fc5fac811655626f2a6352683e6e06d01738"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/CommaSeparatedListTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07f946020fc1ab965eafaffe4869021f8e07f671",
+      "size": 3685,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/07f946020fc1ab965eafaffe4869021f8e07f671"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/DatasetTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aae1d8ae5955faf15f8dafb97dc3112e58f74b11",
+      "size": 17294,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/aae1d8ae5955faf15f8dafb97dc3112e58f74b11"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/DiscussionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5819c241bbcd480735b350bb56b8c248b8b30d3",
+      "size": 17557,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/c5819c241bbcd480735b350bb56b8c248b8b30d3"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/DownloadProgressTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "387337342a8a0f10078c84c90ab9d11b70df6c6c",
+      "size": 18461,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/387337342a8a0f10078c84c90ab9d11b70df6c6c"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/FileLockTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b848aa0a5db330208ad8ecf1dd3843d0ce2ab54",
+      "size": 19641,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/0b848aa0a5db330208ad8ecf1dd3843d0ce2ab54"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/FileOperationsTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "084dcf8afeff6c3da36d40f36868e737d36a8bc5",
+      "size": 123458,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/084dcf8afeff6c3da36d40f36868e737d36a8bc5"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/GatedModeTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94bd50000096090edd1ad0525b93e78ba41857c7",
+      "size": 1881,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/94bd50000096090edd1ad0525b93e78ba41857c7"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/GitOperationsTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d9174b5a577985d6cd05a84d77f9e24c982b2a9",
+      "size": 12240,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/3d9174b5a577985d6cd05a84d77f9e24c982b2a9"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/GitTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7fb155cb7298c5843a23ab15c86dd527340145f3",
+      "size": 7507,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/7fb155cb7298c5843a23ab15c86dd527340145f3"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/HubCacheTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb10ca1027f4b10116f41be0b3d3215eb03f2851",
+      "size": 39180,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/eb10ca1027f4b10116f41be0b3d3215eb03f2851"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/HubClientTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb6bef9933c07f17228f32b0d7581816b0111ff3",
+      "size": 1412,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/cb6bef9933c07f17228f32b0d7581816b0111ff3"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/ModelTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bda05a6cc770a9f357a003de1a01fca4efa0467",
+      "size": 13005,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/0bda05a6cc770a9f357a003de1a01fca4efa0467"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/OrganizationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bf92d9aca905b84a3416c87b6024dd7e6040f5e",
+      "size": 9526,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/6bf92d9aca905b84a3416c87b6024dd7e6040f5e"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/PaginationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74a367e5778684a35d7ed1e4f67ebee92b8c2864",
+      "size": 20560,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/74a367e5778684a35d7ed1e4f67ebee92b8c2864"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/PaperTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1145cf9a8110032ba5dbcfc5f087e95b4da0e5a",
+      "size": 8558,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/e1145cf9a8110032ba5dbcfc5f087e95b4da0e5a"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/RepoIDTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62c45fbc31b2cf234aaa2a7156f7ff60be06ebf0",
+      "size": 1524,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/62c45fbc31b2cf234aaa2a7156f7ff60be06ebf0"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/RepoTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9fbdaf345a29b0ae90be60c6818ce1144505d6e",
+      "size": 15351,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/f9fbdaf345a29b0ae90be60c6818ce1144505d6e"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/SpaceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e5c241ee351854744aa7a055bed4ef1a37a4908",
+      "size": 11174,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/5e5c241ee351854744aa7a055bed4ef1a37a4908"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/TagsTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e064ae842620622f876a33870f8a5e98c61c03b2",
+      "size": 3059,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/e064ae842620622f876a33870f8a5e98c61c03b2"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/TreePaginationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58541c305b2447c5dcbaac2cbc296dc5835ee1d4",
+      "size": 11429,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/58541c305b2447c5dcbaac2cbc296dc5835ee1d4"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/UserTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7217c8567fe8bf770bd0fde5b76ae4fc02a88218",
+      "size": 4662,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/7217c8567fe8bf770bd0fde5b76ae4fc02a88218"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/XetDownloadProgressTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80c66906276f8195d1c0143c49647c544faf2868",
+      "size": 3570,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/80c66906276f8195d1c0143c49647c544faf2868"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/HubTests/XetEndpointTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3410dc0cad1ec64a55a1bc67431af0c4d91d73d1",
+      "size": 7926,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/3410dc0cad1ec64a55a1bc67431af0c4d91d73d1"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "70d0cfeba69f334ee341405893aa3b313db91134",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/70d0cfeba69f334ee341405893aa3b313db91134"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests/ChatCompletionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "713ed780a317db04d12c97e20aeaf7c3929f1d59",
+      "size": 20453,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/713ed780a317db04d12c97e20aeaf7c3929f1d59"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests/FeatureExtractionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00bc60fe1c34a99ec0c36f1626367089bbb3cfd3",
+      "size": 12258,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/00bc60fe1c34a99ec0c36f1626367089bbb3cfd3"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests/InferenceClientTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0d0dc0ba498b6e0650eb9b92338731e37700a0c",
+      "size": 9993,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/a0d0dc0ba498b6e0650eb9b92338731e37700a0c"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests/MessageCodableTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c97db6a4c9689bb6858be590a508c95d0a8e849",
+      "size": 4281,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/7c97db6a4c9689bb6858be590a508c95d0a8e849"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests/ProviderTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c51756887d7c26caad8920263e1fc23c862a9b62",
+      "size": 5361,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/c51756887d7c26caad8920263e1fc23c862a9b62"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests/SpeechToTextTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa00576f3ec37a8d4d68f98b1deaf06ff902c43d",
+      "size": 6084,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/fa00576f3ec37a8d4d68f98b1deaf06ff902c43d"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests/TextToImageTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ac57346d157204e22df7b319b0a67e5bcebb80a",
+      "size": 17023,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/8ac57346d157204e22df7b319b0a67e5bcebb80a"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/InferenceProvidersTests/TextToVideoTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d19c2b11bcf252cd3a7c011f0d9db709ddd18548",
+      "size": 6929,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/d19c2b11bcf252cd3a7c011f0d9db709ddd18548"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/OAuthTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e505704b39cb25fe7f1c52e70f46f2a56cba05d8",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/e505704b39cb25fe7f1c52e70f46f2a56cba05d8"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/OAuthTests/OAuthClientTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15b73bb82e371a5d7ea3e81cd8c83bce84edb91e",
+      "size": 10151,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/15b73bb82e371a5d7ea3e81cd8c83bce84edb91e"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/OAuthTests/TokenStorageTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "923d75caaea3c13f9530602d33e96b5776330ee6",
+      "size": 6075,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/923d75caaea3c13f9530602d33e96b5776330ee6"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/SharedTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7b76692ac2ea826a86b3b976ca2d2b7e6763ab2",
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/trees/b7b76692ac2ea826a86b3b976ca2d2b7e6763ab2"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/SharedTests/HTTPClientErrorTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63ab8d35d99fd5049211d8e6dc19b16f90c7e4a3",
+      "size": 2040,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/63ab8d35d99fd5049211d8e6dc19b16f90c7e4a3"
+    },
+    {
+      "path": "Tests/HuggingFaceTests/SharedTests/MultipartBuilderTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ed2f63d33502d8b91c1195b8ac35a7c07704c48",
+      "size": 3520,
+      "url": "https://api.github.com/repos/huggingface/swift-huggingface/git/blobs/9ed2f63d33502d8b91c1195b8ac35a7c07704c48"
+    }
+  ],
+  "truncated": false
+}

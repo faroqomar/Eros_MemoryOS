@@ -1,0 +1,133 @@
+{
+  "sourceIdentity": "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+  "uiTestsPassed": 4,
+  "uiTestsFailed": 0,
+  "unfilteredAccessibilityAuditsPassed": 2,
+  "unfilteredAccessibilityIssues": 0,
+  "auditHandlerSuppressesIssues": false,
+  "log": "accessibility/final-source-ui.log",
+  "resultBundle": "accessibility/final-source-ui.xcresult",
+  "analysis": "accessibility/final-source-analysis.log",
+  "controls": "Native switch center tap asserts its value and Arabic title before audit.",
+  "manualLargestText": "English/Arabic headings scale; Arabic Run reachable, then standard large restored.",
+  "reports": [
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-10B508B9-AFEE-470E-827F-C01666D3A6D3.json",
+      "sha256": "9ccf7538f3ccf797f78d8e94c3b6b57c9f6bd28976b84769d7488eb4079a97f5",
+      "candidate": "keyword-control",
+      "batchID": "7C1F3F6A-46AE-4E27-BD23-7860A6A6BB29",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-118C812D-5834-4E7D-8EF0-F4672FB26A75.json",
+      "sha256": "f9249e9cb72a3624b444becd2b5994e28e14ea37a7b9c1f8aa1e362a52f3d7eb",
+      "candidate": "keyword-control",
+      "batchID": "260EA354-84FC-4E87-B527-59A1AF90A206",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-14C1C5FF-F698-4CB6-974B-455182198EBA.json",
+      "sha256": "ba9151e03baafbd2f2e599d098d916f91b660ee5ba8fbbb03791b53985a8781e",
+      "candidate": "keyword-control",
+      "batchID": "260EA354-84FC-4E87-B527-59A1AF90A206",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-1DF1D873-8909-4B09-B87F-B55BB96250E4.json",
+      "sha256": "f18cc6775f000552e9df6ddabdcf4abd63a78f9b07c8eebc1f2193b363c47aaa",
+      "candidate": "keyword-control",
+      "batchID": "7C1F3F6A-46AE-4E27-BD23-7860A6A6BB29",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-2ACF41A7-C697-4F07-9E11-825ADC014CCB.json",
+      "sha256": "e550b8bf213f3bdfeaf1e9e15b4ae7c6663a1eff738d6f4859eda12dbfe32cfc",
+      "candidate": "keyword-control",
+      "batchID": "7C1F3F6A-46AE-4E27-BD23-7860A6A6BB29",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-4973876A-FB46-4D2D-A86E-39B330D3B060.json",
+      "sha256": "782582b51f386b31ae2dad3c7e55818340e8d80624945808ed5002d493d91b47",
+      "candidate": "keyword-control",
+      "batchID": "7C1F3F6A-46AE-4E27-BD23-7860A6A6BB29",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-4F940027-90DE-4D44-84CE-2EC2D9D121FC.json",
+      "sha256": "5be39c4e288d3e78aaf5052360d01dc6835289601da0414aadb78973626a58bf",
+      "candidate": "keyword-control",
+      "batchID": "7C1F3F6A-46AE-4E27-BD23-7860A6A6BB29",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-57444321-CCD0-4A4C-B41F-9D33FBB0C6D6.json",
+      "sha256": "11661768ff1a3319bd2836bda8c97ce17769144ac9e46d047c17a9eda74d7cc8",
+      "candidate": "keyword-control",
+      "batchID": "7C1F3F6A-46AE-4E27-BD23-7860A6A6BB29",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-7F9D49F6-1720-4767-A25A-283E8CA29184.json",
+      "sha256": "f57952e018e762d6745a4f8a73fc2734b4daa02366c5e6206ab54a4ab287cc0a",
+      "candidate": "keyword-control",
+      "batchID": "260EA354-84FC-4E87-B527-59A1AF90A206",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-9F42D9B4-145E-4803-8093-0288F51561E7.json",
+      "sha256": "408f9729049bb1ac9f342f6fecbaad8e35c5d7134bb3109c420e4adc783675d1",
+      "candidate": "keyword-control",
+      "batchID": "260EA354-84FC-4E87-B527-59A1AF90A206",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-A2B2405E-06DA-4720-94AB-DC24175A1AA4.json",
+      "sha256": "6b3f5954c50bbbb54fea22df7d5d5558bb7c9262a100908d0813455272697c17",
+      "candidate": "keyword-control",
+      "batchID": "260EA354-84FC-4E87-B527-59A1AF90A206",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-FDB900B9-C08B-44D2-BD72-2ADBA3980CFF.json",
+      "sha256": "1b9b025eff535f65605cdf8cce8291929009ae8e41720afc66268094de8a9490",
+      "candidate": "keyword-control",
+      "batchID": "260EA354-84FC-4E87-B527-59A1AF90A206",
+      "cases": 15,
+      "retrievalCompleted": 15,
+      "generationBlocked": 0
+    },
+    {
+      "path": "native/verification/local-ai-step2/repairs/simulator-reports/mlx-qwen-487A1B79-250A-4098-893A-8BCD6C032DD0.json",
+      "sha256": "6fc467bceef54855b4c31e8b9d61d186c8ad6351003c724083fc2edfe62c4d26",
+      "candidate": "mlx-qwen",
+      "batchID": "4BD4DFD9-4A3C-41D9-90EB-91CC18705574",
+      "cases": 15,
+      "retrievalCompleted": 0,
+      "generationBlocked": 15
+    }
+  ],
+  "scope": "Control/unsupported flow checks only; these reports do not replace original comparative model benchmarks."
+}

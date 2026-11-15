@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "/usr/bin/swift",
+    "test",
+    "--package-path",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification",
+    "-c",
+    "release",
+    "--jobs",
+    "4"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 73.84042692184448,
+  "temporary_path_override": true,
+  "patch_receipt": "supported-patch-receipt.json"
+}

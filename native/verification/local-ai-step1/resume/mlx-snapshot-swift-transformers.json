@@ -1,0 +1,247 @@
+{
+  "repository": "huggingface/swift-transformers",
+  "revision": "402a8a1105f52038b0949d9596981fc9e32bed17",
+  "rootTreeSHA1": "e4ec8482c08167e58c9238eb8a2b1178f557665c",
+  "sourceRoots": [
+    "Sources"
+  ],
+  "temporaryIntegrationOnly": true,
+  "canonicalResolutionVerified": false,
+  "gitlinks": [],
+  "files": [
+    {
+      "path": ".git-blame-ignore-revs",
+      "gitBlobSHA1": "7abb885964b4c1bb3136c64d559212356e2910fe",
+      "sha256": "1baa1a3712df30eac12eb31d1c5985de99b2d0c99d14f10a66a223cfb70d130f",
+      "bytes": 81
+    },
+    {
+      "path": ".gitignore",
+      "gitBlobSHA1": "fe9534bca44d76957a1b2755ec6f9e3cca49aa99",
+      "sha256": "be7762b6a1bab739fa13f15738f386d2d8ef8ef70520e814daa6f8c37680d456",
+      "bytes": 219
+    },
+    {
+      "path": "Package.swift",
+      "gitBlobSHA1": "cabd59d0037db1359dd7ecbca477c0dd61935386",
+      "sha256": "2aea578a1c5dc4c79f047808f65f36e6bed1d37f9bc43929c3ba3945aa5694de",
+      "bytes": 2669
+    },
+    {
+      "path": "Package@swift-6.1.swift",
+      "gitBlobSHA1": "e3bbfd0fdd756009d21c3665e9cb8e99e5a6b26b",
+      "sha256": "fea233c174575986e1ac5242c0905519481d9c11ad7f98a15f299547ffef48a7",
+      "bytes": 3370
+    },
+    {
+      "path": "README.md",
+      "gitBlobSHA1": "319dfa5adddc7fcc5592c0709e7b2d8725f32515",
+      "sha256": "7ffe439c475f45c43a9170136289caee5e8ca0b7e82ae6565192994b94f14d3e",
+      "bytes": 12087
+    },
+    {
+      "path": "LICENSE",
+      "gitBlobSHA1": "e524e5fbe7f233fca0852ba1554c9326a207954e",
+      "sha256": "648b81e6c6f9975c3b6cf6d630229b6c8d6f1ddaef55f5770f576adda19f3495",
+      "bytes": 11347
+    },
+    {
+      "path": "Sources/Generation/Decoders.swift",
+      "gitBlobSHA1": "0432da3a55622399cda588bad2788b22bd83f246",
+      "sha256": "ed9582b0edf5c7e921eda2a3ac2009c31e4e2d812796529c2340e71c683ed960",
+      "bytes": 2541
+    },
+    {
+      "path": "Sources/Generation/GenerationConfig.swift",
+      "gitBlobSHA1": "db125a969140d2b9e97816ece034c6b3118995e4",
+      "sha256": "de524f228eabbcd87900d678c5f196ae09ddcc97cf92b65399b0e4d97122d61f",
+      "bytes": 4147
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/LogitsProcessor.swift",
+      "gitBlobSHA1": "affa5159b49c13468b1738197dec984c5aae774b",
+      "sha256": "9648099ae20dc1dfee824aa24b830a39090d51c8a4a09312f18bc1365cee82d4",
+      "bytes": 2946
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/MinPLogitsWarper.swift",
+      "gitBlobSHA1": "3ba7c2ac839eb04746ee5ffb96bd89e683c6ef16",
+      "sha256": "fb2a6412de6984f42d3dd08bfa02ee792f288b25715eecd115cd63b213b866cb",
+      "bytes": 4868
+    },
+    {
+      "path": ".spi.yml",
+      "gitBlobSHA1": "be24f71ae9364feaa5059a25fe97f407b2acb00a",
+      "sha256": "eb5246702a6588c98bf8415a8d9318e49a83244b9a3919db11f32940ab3bb7cf",
+      "bytes": 98
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/TemperatureLogitsWarper.swift",
+      "gitBlobSHA1": "140e93b4866e5e96c682d116227d8fe14a2c5442",
+      "sha256": "cd53677a17072c993a6d66a499f866596c352e9711a1ec5cfe8e940018d98519",
+      "bytes": 1446
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/RepetitionPenaltyLogitsProcessor.swift",
+      "gitBlobSHA1": "42c4d5fb5a1cea7862e403897d27eec80e87c7cd",
+      "sha256": "54dcab0c42cb509d90c9c71d050ff54a2fb9c2cd097f27b62c2ff618be8692bf",
+      "bytes": 4197
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/TopKLogitsWarper.swift",
+      "gitBlobSHA1": "91b4a8f08a523a1060d85061c2ddbd82680ae28f",
+      "sha256": "4461b3d78a5af48eff56478cc635f74eec98b83b5f64b0b35be18673735ef52a",
+      "bytes": 3472
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/TopPLogitsWarper.swift",
+      "gitBlobSHA1": "c4f89609fa5000270fdd04c31d792d945436a78d",
+      "sha256": "1338cf020fce09a5ab44456a747a362d166053ec02088f42d468a0c1be96cc11",
+      "bytes": 4710
+    },
+    {
+      "path": "Sources/Hub/BinaryDistinct.swift",
+      "gitBlobSHA1": "6a80b55963effe50d0db5922ebb51ae1d4f1b629",
+      "sha256": "98b33fe86a865fb2961c710d6ab0aea10d5f5a90ac49ac26b116fb693fb4acbe",
+      "bytes": 12865
+    },
+    {
+      "path": "Sources/Hub/Hub.swift",
+      "gitBlobSHA1": "403e65337da08f0a44c2a25b66e4bd5648fd3261",
+      "sha256": "82ce5ad91c8eedc4304a5887c4d7460478795aeaccfec3da3a5f09cf6c33f342",
+      "bytes": 16682
+    },
+    {
+      "path": ".swift-format",
+      "gitBlobSHA1": "7e6f18f258f344f63e2c537e8b1e29c5cd08734d",
+      "sha256": "9f6fd8e56898828ae994712319ced1ec1f3bb2275efb7c39b56c517218c5d9e1",
+      "bytes": 2905
+    },
+    {
+      "path": "Sources/Hub/Resources/gpt2_tokenizer_config.json",
+      "gitBlobSHA1": "546efe6d18ae2ad7758d0c9ef51cacdb81c8dc9d",
+      "sha256": "551e26ec611d8d0c8edc3ef72e518a38418cb71f40de1347dd486a595e1557d7",
+      "bytes": 234
+    },
+    {
+      "path": "Sources/Hub/Resources/t5_tokenizer_config.json",
+      "gitBlobSHA1": "6975fae99e7e198105184e95972c3585975ca003",
+      "sha256": "e0aff0b1de9071e30d9a60a199303b6abe916a64a19932bd1c46992279b41a1f",
+      "bytes": 20746
+    },
+    {
+      "path": "Sources/Generation/Generation.swift",
+      "gitBlobSHA1": "c0040a0fd9839510a15c45edf0c2f7b3e62bdfa4",
+      "sha256": "83cc4ea4e48bce147c8cecf2e97eccc0ff0058d4313923037766cfc19b4d6b34",
+      "bytes": 7586
+    },
+    {
+      "path": "Sources/Models/LanguageModel.swift",
+      "gitBlobSHA1": "1c1f74c7358dcc156ad9de3bcf438cd766a1bd5a",
+      "sha256": "0725ffa81e48513b451b7819cebe314ed1a1b2e5413fb445a763a3532d34e4ac",
+      "bytes": 22148
+    },
+    {
+      "path": "Sources/Models/LanguageModelTypes.swift",
+      "gitBlobSHA1": "6f83166df2dfe90e7d5688136baa662b5cfbe133",
+      "sha256": "b0adcfed5725417124ffe322a59ccc9374be5cb81fb9960b67b344a8209aeb29",
+      "bytes": 4674
+    },
+    {
+      "path": "Sources/Hub/Config.swift",
+      "gitBlobSHA1": "c722c901370ba415c81b4fb3cbd95fb182a15a84",
+      "sha256": "7e9ab7cb99d80b0146de96692f0231ab7d22a1e66b5d36bf74a08c0a01e4740e",
+      "bytes": 24764
+    },
+    {
+      "path": "Sources/Models/Weights.swift",
+      "gitBlobSHA1": "eafce2690da76eedbf4fb668a681e3b8d9d210a7",
+      "sha256": "b2c07d0a08afc51fd8187c3754ecf697714a2970b6be04fa01c799addd85a5a7",
+      "bytes": 6271
+    },
+    {
+      "path": "Sources/Tokenizers/BPETokenizer.swift",
+      "gitBlobSHA1": "118530874b7b33f29362319282fb43ce2f7f760c",
+      "sha256": "2a9e661d2296974be62e7df6f5ff373bbf0ebf8139541dcb8af6dbff5fc75afb",
+      "bytes": 15014
+    },
+    {
+      "path": "Sources/Tokenizers/ByteEncoder.swift",
+      "gitBlobSHA1": "604e6bfa1793eabfd296535f847f8981deec39ca",
+      "sha256": "90170a15615c81e2065e65cb95e4c15f3c41be424cb3dd5620e735abeab2df89",
+      "bytes": 5686
+    },
+    {
+      "path": "Sources/Tokenizers/BertTokenizer.swift",
+      "gitBlobSHA1": "111f41f6d20974e1bfe33d63ce89db194805d147",
+      "sha256": "415177301b77dc5a9aa5500cf842041929d98e37ea957a8e3313da16619e421b",
+      "bytes": 12834
+    },
+    {
+      "path": "Sources/Tokenizers/Normalizer.swift",
+      "gitBlobSHA1": "e496c4562b190b1253714649f8e531b70e68aec7",
+      "sha256": "bed64e57fa8953e62a3ac463160bd33b90d40dbc15314e3b420627c201cb1a33",
+      "bytes": 16725
+    },
+    {
+      "path": "Sources/Tokenizers/Decoder.swift",
+      "gitBlobSHA1": "fc690197f894d825dee85fb47deb0bc8728b4bc6",
+      "sha256": "25883963584b3b41b607b8303afe4f39275173fee21e21a458e864714de75ebf",
+      "bytes": 9832
+    },
+    {
+      "path": "Sources/Tokenizers/PostProcessor.swift",
+      "gitBlobSHA1": "374b43a5197f944753c01d37c712fc6b79d914eb",
+      "sha256": "05ae1f2db9bc5135adb6d8a9aed69e134296724ebbc934afe343ef101ab4c55c",
+      "bytes": 8377
+    },
+    {
+      "path": "Sources/Tokenizers/PreTokenizer.swift",
+      "gitBlobSHA1": "9eb7ef5419736176ce97fd9a235cc6d5a486f85e",
+      "sha256": "6ff42690a6fdfdd3b875f882dd27f89e71c825777f0e7363e57a7167e4678392",
+      "bytes": 14828
+    },
+    {
+      "path": "Sources/Tokenizers/String+PreTokenization.swift",
+      "gitBlobSHA1": "1ae2b1b2f8533f93b77a4266530a93af2b7d6936",
+      "sha256": "7c04bfd672d363c4da2cff38f26a9ea912503a49845557eaaa56bb3fed017b0c",
+      "bytes": 7639
+    },
+    {
+      "path": "Sources/Tokenizers/TokenLattice.swift",
+      "gitBlobSHA1": "c47ab03b814fe22124beeddbe496e6e8595944f8",
+      "sha256": "84a91faef99b1035629f63ee0ada985430f78b76b11118b6f6f7bbfd38c0b4d8",
+      "bytes": 5834
+    },
+    {
+      "path": "Sources/Hub/HubApi.swift",
+      "gitBlobSHA1": "7887abce1b839ef6e4871eecec75300708502948",
+      "sha256": "2c41f331d2bcb6817a63f745d62a53eeb09e161401c0e2fd0d9a99c0632e2146",
+      "bytes": 59821
+    },
+    {
+      "path": "Sources/Tokenizers/Trie.swift",
+      "gitBlobSHA1": "9456be807aba81de89786b6e697e6cd55be28018",
+      "sha256": "7a40d98d252bfe161dd93334fb85e39ad113915ecc425c86be62b198c176de81",
+      "bytes": 2680
+    },
+    {
+      "path": "Sources/Tokenizers/UnigramTokenizer.swift",
+      "gitBlobSHA1": "1c13e97557965df16f290fd318922a374ea4abab",
+      "sha256": "c32d964f0c324054dbf07cedfea9dcd73b6e14fce4ad4ae1ae89165f18db9ea9",
+      "bytes": 6814
+    },
+    {
+      "path": "Sources/Tokenizers/Tokenizer.swift",
+      "gitBlobSHA1": "751b9f44788dd7bc897ad1b6df9b57725aa469fa",
+      "sha256": "200df63be7f987205f9742915127eb605e4d1d5ad512daa11fb1b8d81c6af3fd",
+      "bytes": 47042
+    },
+    {
+      "path": "Sources/Hub/YYJSONParser.swift",
+      "gitBlobSHA1": "d11aa65b6cff1b02a8ea2b0434f0a0b666357310",
+      "sha256": "6e70134d0ed3a1a3968417443bdcc5eb3d3ecb80e43f9d8e0055b2a8d4084184",
+      "bytes": 5720
+    }
+  ]
+}

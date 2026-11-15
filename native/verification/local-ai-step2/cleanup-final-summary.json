@@ -1,0 +1,23 @@
+{
+  "capturedAtUTC": "2026-11-15T02:23:06.040492+00:00",
+  "initialReceipt": "cleanup-removals.json",
+  "finalDerivedReceipt": "cleanup-final-derived.json",
+  "totalRemovedLogicalBytes": 3796811378,
+  "preservedFiles": 18,
+  "allocatedKiBObservations": [
+    {
+      "path": ".",
+      "allocatedKiB": 5787700
+    },
+    {
+      "path": "native/verification",
+      "allocatedKiB": 1260428
+    },
+    {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation",
+      "allocatedKiB": 7195492
+    }
+  ],
+  "availableVolumeBytes": 54931607552,
+  "note": "Logical removal count; APFS share/clone/build/evidence writes make du/free-space deltas non-additive."
+}

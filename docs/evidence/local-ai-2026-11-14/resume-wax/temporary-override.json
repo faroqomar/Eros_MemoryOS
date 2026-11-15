@@ -1,0 +1,28 @@
+{
+  "canonical_manifest_unchanged": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Package.swift",
+  "temporary_root": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification",
+  "temporary_manifest": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/Package.swift",
+  "sdk_root": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots",
+  "network_disabled_for_build": true,
+  "source_files": [
+    {
+      "canonical": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift",
+      "verification_copy": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift",
+      "sha256": "f9a00c922584cd3f45d1078847260025759fc76d4b62ee2755b3107e0df72887",
+      "copy_sha256": "f9a00c922584cd3f45d1078847260025759fc76d4b62ee2755b3107e0df72887"
+    },
+    {
+      "canonical": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Sources/WaxEvaluationCLI/Main.swift",
+      "verification_copy": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/Sources/WaxEvaluationCLI/Main.swift",
+      "sha256": "2701445ecff188e97f9b0a0aa3c4f4a64eee776009e828c96c96d65a356a3b7f",
+      "copy_sha256": "2701445ecff188e97f9b0a0aa3c4f4a64eee776009e828c96c96d65a356a3b7f"
+    },
+    {
+      "canonical": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift",
+      "verification_copy": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift",
+      "sha256": "335751f0d5049f5bfe8782072e0f8f716c2e23027746750a91c4064e9570285d",
+      "copy_sha256": "335751f0d5049f5bfe8782072e0f8f716c2e23027746750a91c4064e9570285d"
+    }
+  ],
+  "original_pin_recheck": "Required after temporary verification; no canonical-pin success claim."
+}

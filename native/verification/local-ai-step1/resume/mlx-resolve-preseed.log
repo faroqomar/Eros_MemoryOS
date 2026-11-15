@@ -1,0 +1,9 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Fetching https://github.com/ml-explore/mlx-swift-lm from cache
+Fetched https://github.com/ml-explore/mlx-swift-lm from cache (0.01s)
+Fetching https://github.com/huggingface/swift-transformers
+warning: 'swift-transformers': skipping cache due to an error: Failed to clone repository https://github.com/huggingface/swift-transformers:
+    Cloning into bare repository '/Users/eros/Library/Caches/org.swift.swiftpm/repositories/swift-transformers-e50307c3'...
+    error: RPC failed; curl 56 Recv failure: Connection reset by peer
+    fatal: expected flush after ref listing
+[1/375] Fetching swift-transformers

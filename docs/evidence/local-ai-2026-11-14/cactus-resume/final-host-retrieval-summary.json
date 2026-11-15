@@ -1,0 +1,17 @@
+{
+  "configuration": "corrected explicit last-token pooling; CPU4; threshold0.35/top3 unchanged; denied network",
+  "sourceIdentity": "33f41dfcb88600d1d525d963c4f623f2be6d586746881f26a0ccd8d49842c4b7",
+  "caseCount": 15,
+  "retrievalCompleted": 15,
+  "expectedSourcesFullyRecalledCases": 14,
+  "meanSourceRecall": 0.9333333333333333,
+  "exactSourceSetCases": 0,
+  "missedOrUnexpectedCases": [
+    "missing-evidence"
+  ],
+  "indexBuildSeconds": 1.648760166,
+  "searchMedianMilliseconds": 77.960083,
+  "searchMinMilliseconds": 60.016124999999995,
+  "searchMaxMilliseconds": 101.217167,
+  "limits": "Host smoke only; no physical phone battery/heat or generation; final build-recipe source identity, unchanged native/Swift implementation."
+}

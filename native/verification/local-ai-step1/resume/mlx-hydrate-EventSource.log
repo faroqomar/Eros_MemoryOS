@@ -1,0 +1,3 @@
+{"identity": "EventSource", "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1", "files": 11, "trees": 8, "gitlinks": 0}
+{"identity": "EventSource", "completed": 11, "total": 11}
+{"snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/EventSource", "completeSelectedSources": true, "canonicalResolutionVerified": false, "manifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-snapshot-EventSource.json"}

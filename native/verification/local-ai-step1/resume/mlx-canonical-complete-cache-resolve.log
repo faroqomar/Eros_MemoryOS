@@ -1,0 +1,21 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Fetching https://github.com/ml-explore/mlx-swift-lm from cache
+Fetched https://github.com/ml-explore/mlx-swift-lm from cache (0.22s)
+Fetching https://github.com/huggingface/swift-transformers from cache
+Fetched https://github.com/huggingface/swift-transformers from cache (0.07s)
+Fetching https://github.com/ibireme/yyjson.git from cache
+Fetching https://github.com/apple/swift-collections.git from cache
+Fetching https://github.com/apple/swift-crypto.git from cache
+Fetching https://github.com/ml-explore/mlx-swift from cache
+Fetching https://github.com/huggingface/swift-huggingface.git from cache
+Fetching https://github.com/swiftlang/swift-syntax.git from cache
+Fetched https://github.com/huggingface/swift-huggingface.git from cache (0.17s)
+Fetching https://github.com/huggingface/swift-jinja.git from cache
+Fetched https://github.com/huggingface/swift-jinja.git from cache (0.14s)
+Fetched https://github.com/ibireme/yyjson.git from cache (0.58s)
+Fetched https://github.com/ml-explore/mlx-swift from cache (0.58s)
+Fetched https://github.com/apple/swift-collections.git from cache (0.60s)
+Fetched https://github.com/swiftlang/swift-syntax.git from cache (0.61s)
+Fetched https://github.com/apple/swift-crypto.git from cache (0.63s)
+Computing version for https://github.com/ibireme/yyjson.git
+error: Dependencies could not be resolved because no versions of 'yyjson' match the requirement 0.13.0 and 'swift-transformers' depends on 'yyjson' 0.13.0.
