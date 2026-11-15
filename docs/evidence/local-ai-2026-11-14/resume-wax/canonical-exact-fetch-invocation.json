@@ -1,0 +1,37 @@
+{
+  "commands": [
+    [
+      "/usr/bin/git",
+      "init",
+      "--bare",
+      "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/Wax-18aab7e9"
+    ],
+    [
+      "/usr/bin/git",
+      "-C",
+      "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/Wax-18aab7e9",
+      "remote",
+      "add",
+      "origin",
+      "https://github.com/christopherkarani/Wax.git"
+    ],
+    [
+      "/usr/bin/git",
+      "-c",
+      "http.version=HTTP/1.1",
+      "-C",
+      "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/Wax-18aab7e9",
+      "fetch",
+      "--depth=1",
+      "--no-tags",
+      "origin",
+      "e4587f8cebb76aa92ece008253f13c66b756e68b:refs/heads/memoryos-reviewed"
+    ]
+  ],
+  "original_url": true,
+  "depth": 1,
+  "filter": null,
+  "promisor": false,
+  "local_server": false,
+  "transport_wrapper": false
+}

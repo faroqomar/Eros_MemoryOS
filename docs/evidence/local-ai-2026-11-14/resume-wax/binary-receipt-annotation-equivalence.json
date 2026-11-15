@@ -1,0 +1,11 @@
+{
+  "host_run_receipt_sha256": "4fedc5ca4a6d77204dc68fa13975386948f7bae61684b15b493bf5a67f950455",
+  "current_receipt_sha256": "4ca5ee868713951e935378810fefb4132a94faca6b348b3ce26a5b0ca09ee057",
+  "all_platform_archive_interface_and_resource_fields_identical": true,
+  "added_metadata_only": [
+    "source_provenance_sha256",
+    "license_files",
+    "core_binary_abi",
+    "selected_object_targets"
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "object" : {
+    "artifacts" : [
+
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "eventsource",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/EventSource",
+          "name" : "EventSource"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/EventSource"
+        },
+        "subpath" : "eventsource"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "localaievaluation",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation",
+          "name" : "LocalAIEvaluation"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation"
+        },
+        "subpath" : "localaievaluation"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "mlx-swift",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift",
+          "name" : "mlx-swift"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift"
+        },
+        "subpath" : "mlx-swift"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "mlx-swift-lm",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift-lm",
+          "name" : "mlx-swift-lm"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/mlx-swift-lm"
+        },
+        "subpath" : "mlx-swift-lm"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-asn1",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1",
+          "name" : "swift-asn1"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1"
+        },
+        "subpath" : "swift-asn1"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-collections",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-collections",
+          "name" : "swift-collections"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-collections"
+        },
+        "subpath" : "swift-collections"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-crypto",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto",
+          "name" : "swift-crypto"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto"
+        },
+        "subpath" : "swift-crypto"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-huggingface",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-huggingface",
+          "name" : "swift-huggingface"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-huggingface"
+        },
+        "subpath" : "swift-huggingface"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-jinja",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-jinja",
+          "name" : "swift-jinja"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-jinja"
+        },
+        "subpath" : "swift-jinja"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-numerics",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-numerics",
+          "name" : "swift-numerics"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-numerics"
+        },
+        "subpath" : "swift-numerics"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-syntax",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-syntax",
+          "name" : "swift-syntax"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-syntax"
+        },
+        "subpath" : "swift-syntax"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "swift-transformers",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-transformers",
+          "name" : "swift-transformers"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-transformers"
+        },
+        "subpath" : "swift-transformers"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "yyjson",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/yyjson",
+          "name" : "yyjson"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/yyjson"
+        },
+        "subpath" : "yyjson"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

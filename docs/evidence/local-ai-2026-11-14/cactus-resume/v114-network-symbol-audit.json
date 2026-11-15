@@ -1,0 +1,6 @@
+{
+  "revision": "40a7123b0788f5b38c5fe0daa0d909b4286fe773",
+  "audit": "undefined symbols in current arm64 macOS static library; structural check, not packet capture",
+  "networkReferences": [],
+  "networkDeniedModelContracts": "11 passed; see last-token-contracts-network-denied.log"
+}

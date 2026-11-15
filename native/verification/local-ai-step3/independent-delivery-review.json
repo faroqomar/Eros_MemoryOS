@@ -1,0 +1,437 @@
+{
+  "verdict": "PASS",
+  "readyForScopedCommit": true,
+  "reviewTarget": "Current Git index against HEAD, before this review report is staged; no code or index mutation by reviewer.",
+  "baseHead": "b2163d589a6ede62fabb2c362351979a355641a6",
+  "originMain": "b2163d589a6ede62fabb2c362351979a355641a6",
+  "indexTreeBeforeReviewReport": "186600ecb677026a442cfd0db06fb5765488a6ef",
+  "indexTreeMethod": "Pure SHA-1 Git tree serialization from read-only git ls-files --stage data; no git write-tree/object mutation.",
+  "stagedChangedPaths": 944,
+  "stagedDeltaBlobMapSHA256": "d30dfd662b0561817e53e6f14e453e3f68a670be2ebeac2de28655bd0bb18650",
+  "runtimeIdentity": "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+  "authoredSourceManifestSHA256": "5a343ee0911a2ed2bdbab4029d11e63e57c7c4361164665add0d4fa4e52b2b3e",
+  "authoredSourceBlobMap": {
+    "docs/evidence/local-ai-2026-11-14/resume-wax/git-checkout-transport.py": {
+      "mode": "100755",
+      "gitBlob": "f309cb8065c7d74e48008d5e270dafc62ee22f8b",
+      "sha256": "2061faf8cde371c4d0683a2a9efffa10b2b541705368c1fd071da6bd978b532c"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/git-filter-transport.py": {
+      "mode": "100755",
+      "gitBlob": "e9790d978499403276a1c41c580164c50f935dcc",
+      "sha256": "15a8982a423584b1d82ab959e783dd7ab528833ed2953f3536d866d5fe56d63e"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/git-treeless-transport.py": {
+      "mode": "100755",
+      "gitBlob": "2189e97a186d77e4b8d204a567b79c8fbb9d4ac6",
+      "sha256": "186d20bfef0b9032d2435819e5e0b5535b75470281500f524567d73515c95c5d"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-apple-crypto-priority.py": {
+      "mode": "100644",
+      "gitBlob": "8b5111f1f85b346ecd647a092e1635f2f3553cca",
+      "sha256": "41dc6a722b4e7b78666da185a797f21b3342107f7dba51a74c73c836a156437e"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-canonical-transitives.py": {
+      "mode": "100644",
+      "gitBlob": "3a62786424b2107ca53f612929b018a9f4ffc9c3",
+      "sha256": "aa570b3f30f26d03040eee0d9862832c9a4116ddbb7305d46c4a7cb7f459a102"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-complete-canonical-wax.py": {
+      "mode": "100644",
+      "gitBlob": "244ed8d323ea8e7fdf6dadd44de26a969054f6c8",
+      "sha256": "a5f68c5b90475d02baa04e070a6dbbb8595ab4f233f62f06fd95c2d874a50eb6"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-dependency-blobs.py": {
+      "mode": "100644",
+      "gitBlob": "e53dbcfbfe160cbb320f56028e5e5c1613c1084f",
+      "sha256": "3996a0381baeb09bed064a879fb2a2a512005037318a8b979f6975ae23a1bada"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-wax-blobs.py": {
+      "mode": "100644",
+      "gitBlob": "f3b69b7d7715a2653840e4ea0315e32bd57d0ca9",
+      "sha256": "5c6ca9284627672b5bde817b1640741cbb9cc8ff993965aa59759d2f92317a2c"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/materialize-verified-snapshots.py": {
+      "mode": "100644",
+      "gitBlob": "a7b9f022980e5c5e004ceec34e90fb163effcb4d",
+      "sha256": "f3b373b0325a2eebdc4c2a6a467f4876b3d2d2fbbe5d60215823328c6162fd24"
+    },
+    "docs/evidence/local-ai-2026-11-14/resume-wax/prepare-supported-snapshots.py": {
+      "mode": "100644",
+      "gitBlob": "7eb190fc9aec7a53b269c4153a890890f0ca0590",
+      "sha256": "1ebfabf190e1446a1eeb9c986c453c308b48700e03789a946aa97febe48ca365"
+    },
+    "native/AILabInfo.plist": {
+      "mode": "100644",
+      "gitBlob": "6cf5b79b72041e6039a7e1f8eaeef8c9c003e1d3",
+      "sha256": "7b3bd02c07ff79964e8a47fe7762717fcadedda64a3d1524d88e85bd4aec9f6f"
+    },
+    "native/LocalAIEvaluation/Package.swift": {
+      "mode": "100644",
+      "gitBlob": "359fbc1e4c6f2cd988f5331d8486b7e6a71323d4",
+      "sha256": "53b74c167e6b0686d564114e4a88a883fd2d813dc6a2f8976353e1a2b9efea07"
+    },
+    "native/LocalAIEvaluation/Sources/AIEvaluationCLI/Main.swift": {
+      "mode": "100644",
+      "gitBlob": "31244477c3ebb17bf95f5ab9f1f305c6c6750c85",
+      "sha256": "714739b604f738f6e893a06af3799cd5d2ac093e132d9982f3557055d5d85feb"
+    },
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/Contracts.swift": {
+      "mode": "100644",
+      "gitBlob": "ab206b70d20ea2e398f512340c89f59260d1553e",
+      "sha256": "3a65ab229a78b0364d921195d2a455eaa89513f6cf2bbc6739a571f1e5efae77"
+    },
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/EvaluationRunner.swift": {
+      "mode": "100644",
+      "gitBlob": "8243bf513f34763462176e2dc19d28f87e7211cf",
+      "sha256": "a505522c6585e181a1cbf4999b62c65ac763422e4f7fe79d2c95b66c9e8b6ea0"
+    },
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/FictionalSuite.swift": {
+      "mode": "100644",
+      "gitBlob": "8b371844b905a552df459a0f6f63d820f7c15b55",
+      "sha256": "a3f48e99b8846c2175f9940c981c15d694b98dd2300b6f8292214f9e0ad2afc8"
+    },
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/KeywordMemoryIndex.swift": {
+      "mode": "100644",
+      "gitBlob": "5af4c4708e7b4e0c4366252f243ce142d974eea7",
+      "sha256": "2de44da64204b514d542189e4bd55957d4299be3342a005fbffbbab046d07c10"
+    },
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/Report.swift": {
+      "mode": "100644",
+      "gitBlob": "30fa743ab9ed9df806e07cf67927b35a3e69a1c3",
+      "sha256": "372b36be8e9520622629010e65cd5bd8a78e28351115b1c2dce22dce5644849f"
+    },
+    "native/LocalAIEvaluation/Sources/AIEvaluationCore/RunEvaluationComparison.swift": {
+      "mode": "100644",
+      "gitBlob": "c1873373568996cc0b6124eb280cf6a6c28707ce",
+      "sha256": "6609128f074e8dcf51b1caf918ebbf5cf933d96bb89b5450852a291e730bab81"
+    },
+    "native/LocalAIEvaluation/Sources/AIEvaluationPresentation/EvaluationViewModel.swift": {
+      "mode": "100644",
+      "gitBlob": "e4aa72b34843b7299722f4c42c36d1380bf05525",
+      "sha256": "c95b4030fad2e4e0afb53693bfc0e0e5537d09378bbf32e1af11b4140ab78368"
+    },
+    "native/LocalAIEvaluation/Tests/AIEvaluationCoreTests/ComparisonTests.swift": {
+      "mode": "100644",
+      "gitBlob": "c1c66710dccea3f4530c514dad77d4bd7118ac0a",
+      "sha256": "831da76543067ae09876be7d68e8c1e04bb591a7b52f135997d739d1b42a84df"
+    },
+    "native/LocalAIEvaluation/Tests/AIEvaluationCoreTests/EvaluationTests.swift": {
+      "mode": "100644",
+      "gitBlob": "47d5394c453532d822ecd563978a2a0c9a59cf25",
+      "sha256": "25f8ee136cf4dcfde82f20d99f32374990ada8752262c540aa13c3c773593f7d"
+    },
+    "native/LocalAIEvaluation/Tests/AIEvaluationPresentationTests/ViewModelTests.swift": {
+      "mode": "100644",
+      "gitBlob": "4191e6021896aca82dcd773ea027f36032e650e1",
+      "sha256": "7b9a4f7b2ee457c835563131e7bda78f81efa18f5e7228e62e3e0234ebd1a4f3"
+    },
+    "native/LocalAIIntegrations/BinaryIntegration/Package.swift": {
+      "mode": "100644",
+      "gitBlob": "c59ed4d89cbffdd5e95d865bae020c307b9060ab",
+      "sha256": "604e33c62b5c166d5bf3d0604b6f5bb6a0b9d4c70a288c1c656fe5699deda34e"
+    },
+    "native/LocalAIIntegrations/BinaryIntegration/Sources/WaxEvaluationBinaryDependencies/Exports.swift": {
+      "mode": "100644",
+      "gitBlob": "4dd7482ea8e4313e9c9b8f9cbb9dd2db1ed31ca7",
+      "sha256": "6a36064fd6edb0279fff6add30bb5440ec74198bcd4d7bb0870a536c981df8e4"
+    },
+    "native/LocalAIIntegrations/Package.resolved": {
+      "mode": "100644",
+      "gitBlob": "791b720d539fe4e5946836eb7f81807ad0526b54",
+      "sha256": "8d8d81f5a24c05463d39bb243d156e0dcf2559e9fb061ce62a594f949a442baf"
+    },
+    "native/LocalAIIntegrations/Package.swift": {
+      "mode": "100644",
+      "gitBlob": "ec9f2b8049b1cc78bd08bc2ad68f14ab0230455f",
+      "sha256": "813b3e7147ea860c8d1d67cba8df6f3e97eeaba480494a4b90f5753f6e8225e7"
+    },
+    "native/LocalAIIntegrations/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift": {
+      "mode": "100644",
+      "gitBlob": "4e18c80ed4b72d84fa4ce349b256a53fc95a9896",
+      "sha256": "9c005037cf2a52471889b7954c935145e067d265fe0e4e7ae2df65a29db52c0a"
+    },
+    "native/LocalAIIntegrations/Sources/WaxEvaluationCLI/Main.swift": {
+      "mode": "100644",
+      "gitBlob": "fb008a874c26ef87577439a32854943c93bbd82b",
+      "sha256": "dbbd5855ab331f99daf4c3a90802a20c33c64a28aea780b8aee0db53dfde617f"
+    },
+    "native/LocalAIIntegrations/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift": {
+      "mode": "100644",
+      "gitBlob": "f3d5e4a4a35ee20336b8197d7cd95cbac9eed4f2",
+      "sha256": "335751f0d5049f5bfe8782072e0f8f716c2e23027746750a91c4064e9570285d"
+    },
+    "native/LocalAIIntegrations/scripts/build-wax-xcframework.py": {
+      "mode": "100755",
+      "gitBlob": "b35dc049623d3840d9109805b46e3873e85cb518",
+      "sha256": "cb010e896eb8f752743ea1e55084b5ac2142d8733332504d4ad9e384890be19a"
+    },
+    "native/LocalAIIntegrations/scripts/copy-wax-resources.py": {
+      "mode": "100755",
+      "gitBlob": "f1cc67293a1819e149c78c750f73f641ac2ecbce",
+      "sha256": "b20a3cb4e5be037150cf007987446da9fbc77b488b82facbf199622a1140ba96"
+    },
+    "native/LocalAIIntegrations/scripts/prepare-wax-ios-override.py": {
+      "mode": "100755",
+      "gitBlob": "86e7ce74bddd172c6d0f27149fb1f3ef44b784c3",
+      "sha256": "f990e38ab1a849dda453584f07c1dd48b8ebc11b0bc5eb3e28fbff9a3ddb4ddc"
+    },
+    "native/LocalAIIntegrations/scripts/run-wax-offline.py": {
+      "mode": "100755",
+      "gitBlob": "028bafb9f520a1d6096bb0cd6224115756241e82",
+      "sha256": "c64dcf1043de20b889a276f37c74854c5e7ab6691df4468c2d0ee8f87f57542e"
+    },
+    "native/LocalCactusEvaluation/Package.swift": {
+      "mode": "100644",
+      "gitBlob": "a6d6655e102fbe5b4dbd23856b6f4161c05be8c1",
+      "sha256": "062ca66af23839534e3e41bac412b5078ed348eebb8b89e1ae40b802b9b8dc9d"
+    },
+    "native/LocalCactusEvaluation/Sources/CactusEvaluationAdapter/CactusMemoryIndexAdapter.swift": {
+      "mode": "100644",
+      "gitBlob": "4a1d66147a908a3e30e63b3163f1a75aa0206073",
+      "sha256": "7d0d6df548e556f39bd73449b5d56f8036e113f13d11473add859900f9fa7ad3"
+    },
+    "native/LocalCactusEvaluation/Sources/CactusEvaluationCLI/Main.swift": {
+      "mode": "100644",
+      "gitBlob": "6b8d5ab1859db2e8f845180b408c0bd0cdc7053b",
+      "sha256": "1cc23501758397a8266d2a80a389bd97e974363522fbe830e37cc96c80fb2901"
+    },
+    "native/LocalCactusEvaluation/Support/fetch_upstream.py": {
+      "mode": "100644",
+      "gitBlob": "a9c4a20b43bd0f9e1bd78ceff6018a55018e1650",
+      "sha256": "dbe8b4f553354bbf5340df7bc63a4dbde20483bfe5df186a77a27756354460d0"
+    },
+    "native/LocalCactusEvaluation/Support/prepare_asset.py": {
+      "mode": "100644",
+      "gitBlob": "d61fd3f0ad22fe272872e3bba6629aabbe63ca92",
+      "sha256": "5608e36d3a25b8e1d4cbb6fd2aae5a7cd0a2d4fdf6106afa61f081371df32330"
+    },
+    "native/LocalCactusEvaluation/Support/prepare_runtime.py": {
+      "mode": "100644",
+      "gitBlob": "aa3845463ae0b9da99f8b87694805119e8d13a06",
+      "sha256": "ad3e86998513b4359468e92f2f914d49e4cc82b1c7e7e0cadc38cef1369fa2f2"
+    },
+    "native/LocalCactusEvaluation/Support/tests/test_prepare_runtime.py": {
+      "mode": "100644",
+      "gitBlob": "8c5ff967b977df5826ce75b1b2a0bef323dc92b9",
+      "sha256": "46a1cd8075a77a9b0da7f28fca6e8a3b370739ad8d8984bfa3e4a5fbdd6a7efd"
+    },
+    "native/LocalCactusEvaluation/Tests/CactusEvaluationAdapterTests/CactusContracts.swift": {
+      "mode": "100644",
+      "gitBlob": "d18c5e9256cb6b4b100fea939be5f3d5f679d260",
+      "sha256": "b9394cae6de9492ad51f841fcf084d9a8aeed26937550fb1fb977998dc9f2eb9"
+    },
+    "native/LocalCactusEvaluation/Tests/CactusEvaluationAdapterTests/NativeEmbeddingContract.swift": {
+      "mode": "100644",
+      "gitBlob": "60f3829153543b770f52bd58142b303ce4b463dd",
+      "sha256": "30d71587607c998da145e76313789cb0a0a2e898ded4ebeee5eb83218cbd8e89"
+    },
+    "native/LocalCactusEvaluation/Tests/CactusEvaluationAdapterTests/NativeIndexContract.swift": {
+      "mode": "100644",
+      "gitBlob": "c6864fb2210643861b662f8ad217274e5615a71f",
+      "sha256": "d66fd759bed7169985c5a45ba7b93e2304ffdb583a3665e9ccae4678c53d44f6"
+    },
+    "native/LocalMLXEvaluation/Package.resolved": {
+      "mode": "100644",
+      "gitBlob": "915f7540ecd1f09e5f3d4302ab28a5ea43554768",
+      "sha256": "b0b669e88f2946f1b70b5354eb50ae27b21eddb8f1710f3e0fafa84ffd647d8b"
+    },
+    "native/LocalMLXEvaluation/Package.swift": {
+      "mode": "100644",
+      "gitBlob": "84cccb6042741e586a16b27588dbdae8532f8fd5",
+      "sha256": "507bb4cac8504808f28a454cd717fca1876dd0cf311aa9a24607d8441cda7c1c"
+    },
+    "native/LocalMLXEvaluation/SimulatorAvailability/Package.swift": {
+      "mode": "100644",
+      "gitBlob": "d72ba2ac70504b4376037c955c0b42a6fd6dd7f9",
+      "sha256": "27e91e716373481fcd8404b1928d59e1da62c9769a1c7a11b12883cbe699e766"
+    },
+    "native/LocalMLXEvaluation/SimulatorAvailability/Sources/MLXSimulatorAvailability/MLXSimulatorUnavailableRuntime.swift": {
+      "mode": "100644",
+      "gitBlob": "9c6096d04071f267d4a9d00f7fc61bddd4345367",
+      "sha256": "f0678b44091bbe27d456601ec066076a7d241c135ac274b0c47b0b89a5e2a833"
+    },
+    "native/LocalMLXEvaluation/SimulatorAvailability/Tests/MLXSimulatorAvailabilityTests/SimulatorAvailabilityTests.swift": {
+      "mode": "100644",
+      "gitBlob": "470bb531c79d7fc9bda3c2705e0b523cb840133f",
+      "sha256": "963919d4be582f171d9bf40298978dc34fa78706776b7df9ff41398669342774"
+    },
+    "native/LocalMLXEvaluation/Sources/MLXEvaluationAdapter/LocalTokenizer.swift": {
+      "mode": "100644",
+      "gitBlob": "f1eb536853df3ef745476321d5f6cb7bf8354808",
+      "sha256": "01df6d4efe90d83c16cb60440897244b8450faf803245398d9af54c20a989764"
+    },
+    "native/LocalMLXEvaluation/Sources/MLXEvaluationAdapter/MLXTextRuntime.swift": {
+      "mode": "100644",
+      "gitBlob": "b1a142c6998441ed5d07c7e44f8f21d11e063954",
+      "sha256": "49eb6fc7ca62fbfad21ff7592a052830a635dc9d0fd033ffa3f0e725e31fa8a5"
+    },
+    "native/LocalMLXEvaluation/Sources/MLXEvaluationCLI/Main.swift": {
+      "mode": "100644",
+      "gitBlob": "7a489eaba27079605cedceea2cce5201e574f23d",
+      "sha256": "5025e40db6d51ff638641c43a91ffbe3ad6996ad5871f5b4481d8887c36607b4"
+    },
+    "native/LocalMLXEvaluation/Tests/MLXEvaluationAdapterTests/MLXAdapterTests.swift": {
+      "mode": "100644",
+      "gitBlob": "b9e9317ef4f41ee9eede32f86b5d818bdf40bf5f",
+      "sha256": "839149cc2d9d1486ff76735f0f29b2f22b7a25b6a0703eca1f1062a7afef518a"
+    },
+    "native/LocalMLXEvaluation/Tools/download-model.py": {
+      "mode": "100644",
+      "gitBlob": "b112051969783be1fa132a3d8b494dea4ba25389",
+      "sha256": "1513ef7f6b20cca46434c79215907a3d6b1aa5b5878acd89e65219be5774040e"
+    },
+    "native/LocalMLXEvaluation/Tools/hydrate-reviewed-snapshot.py": {
+      "mode": "100644",
+      "gitBlob": "740faae1b28e4a01dbf6bb01bc812426622f5d06",
+      "sha256": "8807961170a26447ec10567143a760088119791b637808e7b7a8d951c774d762"
+    },
+    "native/LocalMLXEvaluation/Tools/install-host-metal-resource.py": {
+      "mode": "100644",
+      "gitBlob": "d6dc8e273e3b35ea42ef7a6fad9c6fe02a37f17b",
+      "sha256": "a6b33f6eab063063cd2400116345dc358548666d559a72a9b93d5afe5687f45a"
+    },
+    "native/LocalMLXEvaluation/Tools/recover-canonical-graph.py": {
+      "mode": "100644",
+      "gitBlob": "7b40fb3fbd1d7823bdee5fbaf9452b5bd51f60fa",
+      "sha256": "144baf12545eca7a95470ae169eb3bd0e0b4c501ec4d069ae04c11dae1ddefd9"
+    },
+    "native/LocalMLXEvaluation/Tools/recover-complete-git-cache.py": {
+      "mode": "100644",
+      "gitBlob": "5f0a331c78e351a321558f14018535b01e3ff6a5",
+      "sha256": "753ea470764c7c5f62b0d3fc03dbf8f464d96d4c08833406db6aa2879814c5aa"
+    },
+    "native/LocalMLXEvaluation/Tools/run-offline-host-smoke.py": {
+      "mode": "100644",
+      "gitBlob": "4aad39b63a860257b65b74e620dc5b470abca874",
+      "sha256": "59d6ca3d588ca88394d3f2c2f946d1a377887887eae8ead120b73150d46e2e5b"
+    },
+    "native/LocalTextEvaluation/Package.swift": {
+      "mode": "100644",
+      "gitBlob": "f530e36936dbeabbbd3fbe0f5503dc2bf0a2320d",
+      "sha256": "43d843c82802032cd82856117692dd790b351849c790edb75e0b7ed1928b64d0"
+    },
+    "native/LocalTextEvaluation/Sources/LlamaEvaluationAdapter/LlamaTextRuntime.swift": {
+      "mode": "100644",
+      "gitBlob": "659d3cebda49ee313051802671ceb2ef9f7e3d8d",
+      "sha256": "00c7c170ee5e14eff3b78a050a85df2997a97d8491164b500bd4a080338d16d6"
+    },
+    "native/LocalTextEvaluation/Sources/LlamaEvaluationCLI/Main.swift": {
+      "mode": "100644",
+      "gitBlob": "5e678fcbd919650f7bef31dd54a8144c344c2900",
+      "sha256": "61db2c56c5e0e1d425cefba2f0c1fad2f7c488089f8b51d4a2faec6bbb0d68a2"
+    },
+    "native/LocalTextEvaluation/Tests/LlamaEvaluationAdapterTests/LlamaAssetTests.swift": {
+      "mode": "100644",
+      "gitBlob": "6ce4facad61919ca6e3f87eda4efcf20a456f871",
+      "sha256": "aae9bd6db31f11799e93b2fa6c517378e2745e6edffa1b87114dcf2ebc1f1154"
+    },
+    "native/MemoryOSAILab.xcodeproj/project.pbxproj": {
+      "mode": "100644",
+      "gitBlob": "96f4d520602887f19e1815a92697f6d7e3f4306b",
+      "sha256": "11e4196f7eccb5549ba5b805645584c3b7b1b399bf2327399579906ead181c01"
+    },
+    "native/MemoryOSAILab.xcodeproj/xcshareddata/xcschemes/MemoryOSAILab.xcscheme": {
+      "mode": "100644",
+      "gitBlob": "2d5339b44a680e0460bd86e2a01ca277de3c58dd",
+      "sha256": "0dbbe8b121bf6ab5df907e668c08253710f55750777d92cd1aacdbe16a455ed1"
+    },
+    "native/MemoryOSAILab/LabComposition.swift": {
+      "mode": "100644",
+      "gitBlob": "01d1169a0033db0eb8af2c567c457cd0cef78624",
+      "sha256": "2c7f333f952a587e9a4f75b9846085406c9db67a471c289e70bcee323b653652"
+    },
+    "native/MemoryOSAILab/LabDomain.swift": {
+      "mode": "100644",
+      "gitBlob": "cbb96f90b4ed868e8473b4fca1df24da513dbe41",
+      "sha256": "aa1af6b15aed12d4a339784a08f0a468b0e2755757b0ec07dea53402a2f12e28"
+    },
+    "native/MemoryOSAILab/LabProcessMeasurement.swift": {
+      "mode": "100644",
+      "gitBlob": "4953be0542103a18c3709e65cffea620ad757cdf",
+      "sha256": "84857a0b1b8529d29d41b430e549b661db853ba5c4899815078d93814e29341c"
+    },
+    "native/MemoryOSAILab/LabReportWriter.swift": {
+      "mode": "100644",
+      "gitBlob": "a6acabd2a8f7287271ceaf745a2b78352b49e760",
+      "sha256": "733432f2eb67d77ae659b517b0249a8abaea191edaf217b96f74028d8181dd8c"
+    },
+    "native/MemoryOSAILab/LabView.swift": {
+      "mode": "100644",
+      "gitBlob": "57ff667226287ffb6d8bbc2807940c050899402f",
+      "sha256": "e92ae5d62994a2b74dea1aad9cf7ad3b2040079c8f102715e5e798a0fa4eef42"
+    },
+    "native/MemoryOSAILab/LabViewModel.swift": {
+      "mode": "100644",
+      "gitBlob": "64e8998c70131e557ff0621c9ac67e8c6e86f1a3",
+      "sha256": "ebbb4759f05612229851f1924b56748f282f12b9b7bfbede16ffa5d4aca68715"
+    },
+    "native/MemoryOSAILab/MemoryOSAILabApp.swift": {
+      "mode": "100644",
+      "gitBlob": "a8bbaa8842c77c6951b8cb97729a69ed04bed341",
+      "sha256": "3bf26af5fa27b86a161305a39b02d3ae179047b665313d46213b206af83fd93f"
+    },
+    "native/MemoryOSAILabUITests/LabUITests.swift": {
+      "mode": "100644",
+      "gitBlob": "aef86dde2d23fab1c03c19cceece2941a52d3fce",
+      "sha256": "1c8d6e008e96eb3da76a22362be06bcc4e7b8b75c550e662c415697f539975a4"
+    },
+    "scripts/fetch-evaluation-asset.py": {
+      "mode": "100644",
+      "gitBlob": "bac3660412cc0345befad88fa583bbfb47fb42aa",
+      "sha256": "559c4d782f3565ab164dae3d3214bb1c37cb690a26959d0d8643837d8e33c13c"
+    },
+    "scripts/fetch-llama-evaluation-source.py": {
+      "mode": "100644",
+      "gitBlob": "85838aaebbe62c425c99c9b21fece9f0ec110e29",
+      "sha256": "eda5bad1b01bf31ae2359e32ba6d8ac1f981d0720c826134cfeb2277ff318383"
+    },
+    "scripts/prepare-llama-evaluation.py": {
+      "mode": "100644",
+      "gitBlob": "ffe303d95a9b3437b9158c6d086b180394306391",
+      "sha256": "22309943fc0a910cff750e384a671d1bdd6de24352c7b678e938f7f94d24995d"
+    },
+    "scripts/summarize-local-ai.py": {
+      "mode": "100644",
+      "gitBlob": "cd9af68fa5b8a0def92ab6d7eab0490f66537ffb",
+      "sha256": "28ec8364486dabced70d1861823fe1e3e6260eb25bfdae2afc0eac83f77743ea"
+    }
+  },
+  "checks": {
+    "reviewedSwiftAndTestFilesMatchIndex": 44,
+    "runtimeNonArtifactPathsMatchIndex": 33,
+    "runtimeArtifactPathsExcludedFromGit": 67,
+    "mainProjectMatchesHEAD": true,
+    "mainAppAndLocalMemorySourceChanges": false,
+    "authoredHelperProjectIndexWorkingDrift": [],
+    "unrelatedArchitecturePolicyAndTaskExcluded": true,
+    "C44Step3AuthorizationStaged": true,
+    "sourceAndPinRecipesPresent": true,
+    "pinnedWaxRevision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+    "pinnedMLXLMRevision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+    "pinnedSwiftTransformersRevision": "402a8a1105f52038b0949d9596981fc9e32bed17",
+    "pinnedCactusRevision": "40a7123b0788f5b38c5fe0daa0d909b4286fe773",
+    "pinnedLlamaRevision": "a956a852c9c8bc1fb07206364838ddef299178c0",
+    "stagedGeneratedArtifactWeightsCachesOrXcresults": [],
+    "credentialPatternScan": {
+      "filesScanned": 944,
+      "matchingFileNames": [],
+      "valuesPrinted": false,
+      "scope": "Provider/API/AWS/private-key/Bearer/assigned-secret/signed-download-URL byte patterns; no claim that pattern scanning proves absence of every secret."
+    },
+    "gitattributesOnlyGeneratedEvidenceLogsAreDiffUnset": true,
+    "sourceTestsJsonPatchAndTxtRemainDiffable": true,
+    "authoredWhitespaceCheck": "PASS; historical evidence patch/text whitespace exceptions preserved in whitespace-review.json",
+    "step2FinalPassEvidenceUnchanged": true,
+    "additionalTestsRun": false,
+    "newProductDesignGateForUnchangedExperimentUI": false
+  },
+  "findings": [],
+  "limits": [
+    "This is commit-readiness for the staged C40 experiment, not a merge/release claim. Main agent owns repository checks and GitHub delivery.",
+    "Physical-phone measurements, minimum iOS18 runtime validation and production model quality remain explicitly separate.",
+    "Generated SDK frameworks/resources and model weights are intentionally absent from Git. A new lab checkout requires documented pinned preparation; the main Capture project remains independent.",
+    "The index may gain delivery-only review receipts after this snapshot. Any authored source/test/project/pin change invalidates this scoped review and requires a focused recheck.",
+    "Unrelated C34 architecture-policy working edits and architecture records remain uncommitted; the shared staged register copies deliberately omit those changes."
+  ]
+}

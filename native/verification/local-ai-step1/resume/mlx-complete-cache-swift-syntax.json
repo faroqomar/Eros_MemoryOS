@@ -1,0 +1,14 @@
+{
+  "identity": "swift-syntax",
+  "origin": "https://github.com/swiftlang/swift-syntax.git",
+  "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+  "rootTreeSHA1": "f2f9593e75815c34b4ea53977d0065b182a5b6fd",
+  "genuineShallowBoundary": true,
+  "promisor": false,
+  "sourcePatched": false,
+  "archiveSHA256": "1662d6e1bac221b7efe638c9573d0e82656d2ae236a7fdf6c0101281c9021008",
+  "archiveBytes": 1450032,
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/swift-syntax-e1f983d3",
+  "fsck": "",
+  "canonicalResolutionVerified": false
+}

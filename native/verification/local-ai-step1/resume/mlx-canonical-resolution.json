@@ -1,0 +1,119 @@
+{
+  "canonicalResolutionVerified": true,
+  "sourcePatched": false,
+  "sourceControlURLOverrides": false,
+  "canonicalManifestSHA256": "507bb4cac8504808f28a454cd717fca1876dd0cf311aa9a24607d8441cda7c1c",
+  "resolvedSHA256": "b0b669e88f2946f1b70b5354eb50ae27b21eddb8f1710f3e0fafa84ffd647d8b",
+  "command": "swift package --cache-path VERIFIED_COMPLETE_CACHE --scratch-path .build/canonical-original-v2 --skip-update --disable-prefetching resolve",
+  "sourceRecovery": "Original complete Git objects reconstructed from immutable upstream archives; original root-tree identities and fsck checked. Standard SwiftPM consumed original HTTPS URLs and performed ordinary shared working clones. No Git transport wrapper, source override or promisor repository was used.",
+  "pins": [
+    {
+      "identity": "eventsource",
+      "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1",
+      "originalURL": "https://github.com/mattt/EventSource.git",
+      "version": "1.6.0",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/EventSource-24732f58",
+      "noPromisor": true
+    },
+    {
+      "identity": "mlx-swift",
+      "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+      "originalURL": "https://github.com/ml-explore/mlx-swift",
+      "version": "0.32.3",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/mlx-swift-eecb5611",
+      "noPromisor": true
+    },
+    {
+      "identity": "mlx-swift-lm",
+      "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6",
+      "originalURL": "https://github.com/ml-explore/mlx-swift-lm",
+      "version": null,
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/mlx-swift-lm-c90ccc0b",
+      "noPromisor": true
+    },
+    {
+      "identity": "swift-asn1",
+      "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+      "originalURL": "https://github.com/apple/swift-asn1.git",
+      "version": "1.7.4",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/swift-asn1-7065ad2c",
+      "noPromisor": true
+    },
+    {
+      "identity": "swift-collections",
+      "revision": "88754449ab766a739610b660e117762115fabc9c",
+      "originalURL": "https://github.com/apple/swift-collections.git",
+      "version": "1.7.6",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/swift-collections-9a58d5cf",
+      "noPromisor": true
+    },
+    {
+      "identity": "swift-crypto",
+      "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+      "originalURL": "https://github.com/apple/swift-crypto.git",
+      "version": "3.15.1",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/swift-crypto-7e0614ea",
+      "noPromisor": true
+    },
+    {
+      "identity": "swift-huggingface",
+      "revision": "c30143a4616f3fa994ee3ab3e3464f752845c07c",
+      "originalURL": "https://github.com/huggingface/swift-huggingface.git",
+      "version": "1.0.0",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/swift-huggingface-ffa527b1",
+      "noPromisor": true
+    },
+    {
+      "identity": "swift-jinja",
+      "revision": "66042420a9225c98ea9382d705e2285769dfdbe5",
+      "originalURL": "https://github.com/huggingface/swift-jinja.git",
+      "version": "3.1.0",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/swift-jinja-c9e03d9c",
+      "noPromisor": true
+    },
+    {
+      "identity": "swift-numerics",
+      "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+      "originalURL": "https://github.com/apple/swift-numerics",
+      "version": "1.1.1",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/swift-numerics-d936ec6c",
+      "noPromisor": true
+    },
+    {
+      "identity": "swift-syntax",
+      "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+      "originalURL": "https://github.com/swiftlang/swift-syntax.git",
+      "version": "603.0.2",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/swift-syntax-e1f983d3",
+      "noPromisor": true
+    },
+    {
+      "identity": "swift-transformers",
+      "revision": "402a8a1105f52038b0949d9596981fc9e32bed17",
+      "originalURL": "https://github.com/huggingface/swift-transformers",
+      "version": null,
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/swift-transformers-e50307c3",
+      "noPromisor": true
+    },
+    {
+      "identity": "yyjson",
+      "revision": "6447536015f3d600f3d65323b10976103b337ca7",
+      "originalURL": "https://github.com/ibireme/yyjson.git",
+      "version": "0.13.0",
+      "stockSwiftPMWorkingOrigin": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/canonical-original-v2/repositories/yyjson-04ab5379",
+      "noPromisor": true
+    }
+  ],
+  "ordinaryOriginalURLSubmoduleClones": [
+    {
+      "path": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx",
+      "revision": "1f8e74e3f12f31365464a6867c6579f0e9b29d85",
+      "originalURL": "https://github.com/ml-explore/mlx"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/.build/canonical-original-v2/checkouts/mlx-swift/Source/Cmlx/mlx-c",
+      "revision": "ebc88f10caa1b625e6b581437a8dea6df8a70085",
+      "originalURL": "https://github.com/ml-explore/mlx-c"
+    }
+  ]
+}

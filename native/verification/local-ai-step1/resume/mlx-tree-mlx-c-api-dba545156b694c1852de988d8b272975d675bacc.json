@@ -1,0 +1,1151 @@
+{
+  "sha": "dba545156b694c1852de988d8b272975d675bacc",
+  "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/dba545156b694c1852de988d8b272975d675bacc",
+  "tree": [
+    {
+      "path": ".clang-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eab4576fe09a53b1c71603d923bc3431367f3b9a",
+      "size": 2552,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/eab4576fe09a53b1c71603d923bc3431367f3b9a"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "567609b1234a9b8806c5a05da6c866e480aa148d",
+      "size": 7,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/567609b1234a9b8806c5a05da6c866e480aa148d"
+    },
+    {
+      "path": "ACKNOWLEDGMENTS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ae38fd97576dbe2c5116278a50676c77d863bb0",
+      "size": 291,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/4ae38fd97576dbe2c5116278a50676c77d863bb0"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f96c72a79aa57b7ee46497991b82f128088d7d64",
+      "size": 4380,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/f96c72a79aa57b7ee46497991b82f128088d7d64"
+    },
+    {
+      "path": "CODE_OF_CONDUCT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8d213c7b24581d85b981d812af53e0fa3413186",
+      "size": 5544,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/e8d213c7b24581d85b981d812af53e0fa3413186"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8fd9de3fdfdd17b3e5f52727985a01b5c014052",
+      "size": 1326,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/f8fd9de3fdfdd17b3e5f52727985a01b5c014052"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb7f03109713c4d9298a4c9e4e24f0f163e4be5e",
+      "size": 1067,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/bb7f03109713c4d9298a4c9e4e24f0f163e4be5e"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d57abc96e88b8a25ba4cc33f6475d85728c7baf0",
+      "size": 1332,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/d57abc96e88b8a25ba4cc33f6475d85728c7baf0"
+    },
+    {
+      "path": "docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bee1267e5c1945822b957c3183a9bc16c6d62a01",
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/bee1267e5c1945822b957c3183a9bc16c6d62a01"
+    },
+    {
+      "path": "docs/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "378eac25d311703f3f2cd456d8036da525cd0366",
+      "size": 6,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/378eac25d311703f3f2cd456d8036da525cd0366"
+    },
+    {
+      "path": "docs/.nojekyll",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "docs/Doxyfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf94d06bc2a010252c663d70d5fce9935c64fa7",
+      "size": 1990,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/faf94d06bc2a010252c663d70d5fce9935c64fa7"
+    },
+    {
+      "path": "docs/Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5888bc2f1f5984ac2bd3fbdb486cd16dc918431",
+      "size": 580,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/e5888bc2f1f5984ac2bd3fbdb486cd16dc918431"
+    },
+    {
+      "path": "docs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4f649254478f36e483f1f6236aa620fcad42ea4",
+      "size": 591,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/b4f649254478f36e483f1f6236aa620fcad42ea4"
+    },
+    {
+      "path": "docs/index.html",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0707108937b1e335e54b4d12e59883e81d3872e0",
+      "size": 71,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/0707108937b1e335e54b4d12e59883e81d3872e0"
+    },
+    {
+      "path": "docs/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9db77517d08eaa77600b8e7f6eef56edad0e95e",
+      "size": 33,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/d9db77517d08eaa77600b8e7f6eef56edad0e95e"
+    },
+    {
+      "path": "docs/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eecb2316cdec0ed3ec01f07459baf918e71fd28f",
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/eecb2316cdec0ed3ec01f07459baf918e71fd28f"
+    },
+    {
+      "path": "docs/src/_static",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7a6cdd993c91ff3ba1b8ecaf15aa0ec2ac74b429",
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/7a6cdd993c91ff3ba1b8ecaf15aa0ec2ac74b429"
+    },
+    {
+      "path": "docs/src/_static/mlx_logo.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be122bf7cd07560f1118eef458da8e472de6a8d2",
+      "size": 78025,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/be122bf7cd07560f1118eef458da8e472de6a8d2"
+    },
+    {
+      "path": "docs/src/_static/mlx_logo_dark.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cda3c1f61326b05c26d7248e6a44816043d0c424",
+      "size": 48758,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/cda3c1f61326b05c26d7248e6a44816043d0c424"
+    },
+    {
+      "path": "docs/src/array.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afc922fc9384d39e8b3b0cf002f8942e24eb788f",
+      "size": 59,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/afc922fc9384d39e8b3b0cf002f8942e24eb788f"
+    },
+    {
+      "path": "docs/src/closure.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "022dd6d1e6c74d0f609092bb898d0cceccadd67a",
+      "size": 67,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/022dd6d1e6c74d0f609092bb898d0cceccadd67a"
+    },
+    {
+      "path": "docs/src/compile.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "696b761472c09788cb7012589012f7f1d313eefa",
+      "size": 69,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/696b761472c09788cb7012589012f7f1d313eefa"
+    },
+    {
+      "path": "docs/src/conf.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "660fbb7dfd118198957ae894eff1c6c417b6d29d",
+      "size": 1160,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/660fbb7dfd118198957ae894eff1c6c417b6d29d"
+    },
+    {
+      "path": "docs/src/device.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "813aa23e259cc0804afd37b7b68698b4d6c453c2",
+      "size": 62,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/813aa23e259cc0804afd37b7b68698b4d6c453c2"
+    },
+    {
+      "path": "docs/src/distributed_group.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b73386ecf6e0d5b7017d41416164f8c2a2dbb815",
+      "size": 95,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/b73386ecf6e0d5b7017d41416164f8c2a2dbb815"
+    },
+    {
+      "path": "docs/src/distributed_ops.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e301e569e6e505308b3fbe24f0cabd9766bf7089",
+      "size": 95,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/e301e569e6e505308b3fbe24f0cabd9766bf7089"
+    },
+    {
+      "path": "docs/src/error.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90dba5af605aaca8333cf69c04cd53f51cbf9546",
+      "size": 81,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/90dba5af605aaca8333cf69c04cd53f51cbf9546"
+    },
+    {
+      "path": "docs/src/export.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c0b74e37684d0e52ed202a03d2f6fcb3564b5b5",
+      "size": 90,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/7c0b74e37684d0e52ed202a03d2f6fcb3564b5b5"
+    },
+    {
+      "path": "docs/src/fast.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ba37e668beb3efa7d3576a40743e3a62922c005",
+      "size": 74,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/0ba37e668beb3efa7d3576a40743e3a62922c005"
+    },
+    {
+      "path": "docs/src/fft.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30e3437e4ef879c6514c4b49cc588856c49a8daa",
+      "size": 49,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/30e3437e4ef879c6514c4b49cc588856c49a8daa"
+    },
+    {
+      "path": "docs/src/index.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f70c9bdc89aec38cf0303da41efc1282b01bf614",
+      "size": 929,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/f70c9bdc89aec38cf0303da41efc1282b01bf614"
+    },
+    {
+      "path": "docs/src/install.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25842ed7a902ccc09ec83161603e22640d0d4413",
+      "size": 439,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/25842ed7a902ccc09ec83161603e22640d0d4413"
+    },
+    {
+      "path": "docs/src/io.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d608c5851e76cc997d94ff506f711a0ca8e88fc",
+      "size": 68,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/8d608c5851e76cc997d94ff506f711a0ca8e88fc"
+    },
+    {
+      "path": "docs/src/linalg.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5be9220b0b756ce57116a814bebf0631a8a04d0",
+      "size": 74,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/c5be9220b0b756ce57116a814bebf0631a8a04d0"
+    },
+    {
+      "path": "docs/src/map.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8512ae36adc77d7975bdc40cb6dde8809dabf69d",
+      "size": 55,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/8512ae36adc77d7975bdc40cb6dde8809dabf69d"
+    },
+    {
+      "path": "docs/src/metal.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55009fb83a4d5d298c9630b11cae3a6100f0328b",
+      "size": 79,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/55009fb83a4d5d298c9630b11cae3a6100f0328b"
+    },
+    {
+      "path": "docs/src/ops.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba2c31996b09b71c0a35ad8fb4746d4c6c8996f1",
+      "size": 63,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/ba2c31996b09b71c0a35ad8fb4746d4c6c8996f1"
+    },
+    {
+      "path": "docs/src/optional.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "398bce27bf1fcf3a1a4a471bd6223f7c686fc349",
+      "size": 70,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/398bce27bf1fcf3a1a4a471bd6223f7c686fc349"
+    },
+    {
+      "path": "docs/src/overview.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fa9dcb0150fd419e425cce8d23387d22cf84451",
+      "size": 6462,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/4fa9dcb0150fd419e425cce8d23387d22cf84451"
+    },
+    {
+      "path": "docs/src/random.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "258227191d14e502234de9d4a017ab68fff73be6",
+      "size": 58,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/258227191d14e502234de9d4a017ab68fff73be6"
+    },
+    {
+      "path": "docs/src/stream.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b9e1d5903df346dd67ea0115d9833bf15da8767",
+      "size": 62,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/8b9e1d5903df346dd67ea0115d9833bf15da8767"
+    },
+    {
+      "path": "docs/src/string.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "990920e1a9911112a0e49a8f3f31f6081d57cfd3",
+      "size": 62,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/990920e1a9911112a0e49a8f3f31f6081d57cfd3"
+    },
+    {
+      "path": "docs/src/transforms.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39acab36c5c473ed675f58c0f0c9708dc6a4867f",
+      "size": 70,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/39acab36c5c473ed675f58c0f0c9708dc6a4867f"
+    },
+    {
+      "path": "docs/src/vector.rst",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc0fc4e63e91c5b982fb5bc9f48115b5e1fb3669",
+      "size": 64,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/fc0fc4e63e91c5b982fb5bc9f48115b5e1fb3669"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fcb95cf26a540e951d27b37712f67224a8124c16",
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/fcb95cf26a540e951d27b37712f67224a8124c16"
+    },
+    {
+      "path": "examples/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61b889bcd3f519bc04c909903a88dab7c23facb8",
+      "size": 1688,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/61b889bcd3f519bc04c909903a88dab7c23facb8"
+    },
+    {
+      "path": "examples/arrays.safetensors",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "408049e4afbd23ea76fa85508a8b7e5493d1d645",
+      "size": 155,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/408049e4afbd23ea76fa85508a8b7e5493d1d645"
+    },
+    {
+      "path": "examples/example-closure.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7f97e98f2cfcb7f9c8d85360a32861b21e91c1e",
+      "size": 2978,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/b7f97e98f2cfcb7f9c8d85360a32861b21e91c1e"
+    },
+    {
+      "path": "examples/example-export.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c4314e8e6ec36541c83a591ec7f49afc8faa476",
+      "size": 3291,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/1c4314e8e6ec36541c83a591ec7f49afc8faa476"
+    },
+    {
+      "path": "examples/example-float64.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03fd8ed1857afe7308704be151f2d84480fb38d3",
+      "size": 1011,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/03fd8ed1857afe7308704be151f2d84480fb38d3"
+    },
+    {
+      "path": "examples/example-gguf.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5193f016aef1ac1f660e0235737eebec1b7a9324",
+      "size": 2479,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/5193f016aef1ac1f660e0235737eebec1b7a9324"
+    },
+    {
+      "path": "examples/example-grad.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1327cb45a80d5831e939f1fefbeec5a7065133ce",
+      "size": 4009,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/1327cb45a80d5831e939f1fefbeec5a7065133ce"
+    },
+    {
+      "path": "examples/example-graph.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bda0e8592d0a531f63a28e31a9ad32cc7283bcf7",
+      "size": 962,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/bda0e8592d0a531f63a28e31a9ad32cc7283bcf7"
+    },
+    {
+      "path": "examples/example-metal-kernel.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7146b603245d2fb284c28b4d011e52c0192d835",
+      "size": 2161,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/e7146b603245d2fb284c28b4d011e52c0192d835"
+    },
+    {
+      "path": "examples/example-ops.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a408e8555b8c6205635f9820e43fadb68739d39",
+      "size": 2233,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/8a408e8555b8c6205635f9820e43fadb68739d39"
+    },
+    {
+      "path": "examples/example-safe-tensors.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab2d49a273e978138bf06b95c4cbd03702fc9c54",
+      "size": 4712,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/ab2d49a273e978138bf06b95c4cbd03702fc9c54"
+    },
+    {
+      "path": "examples/example-stream-tls.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "966f7824ad96510bc5feb299d8d6a4dacf9ad2a3",
+      "size": 1713,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/966f7824ad96510bc5feb299d8d6a4dacf9ad2a3"
+    },
+    {
+      "path": "examples/example-thread-stream.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe846c31c90b235bd9d853b3a41e52cfb3ad4d17",
+      "size": 1774,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/fe846c31c90b235bd9d853b3a41e52cfb3ad4d17"
+    },
+    {
+      "path": "examples/example.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e80396060ad449d1349c7cb4a05cc85b3763cdd",
+      "size": 2773,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/2e80396060ad449d1349c7cb4a05cc85b3763cdd"
+    },
+    {
+      "path": "mlx-c.pc.in",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9dc09e7bd7c0131d567a6426776183b682f7c62",
+      "size": 813,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/d9dc09e7bd7c0131d567a6426776183b682f7c62"
+    },
+    {
+      "path": "mlx",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "905262921d3d310ccfde2f28d1efe53df363f446",
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/905262921d3d310ccfde2f28d1efe53df363f446"
+    },
+    {
+      "path": "mlx/c",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7168ca432a265ea5ff7d47336ad6188596fd84dd",
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/7168ca432a265ea5ff7d47336ad6188596fd84dd"
+    },
+    {
+      "path": "mlx/c/array.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c7342d3c2318abf2020acf56d8f7c2e6c2fb364",
+      "size": 16641,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/7c7342d3c2318abf2020acf56d8f7c2e6c2fb364"
+    },
+    {
+      "path": "mlx/c/array.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3b382bb2a5d4a338c459730f99d1b13db0acd7e",
+      "size": 10297,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/a3b382bb2a5d4a338c459730f99d1b13db0acd7e"
+    },
+    {
+      "path": "mlx/c/closure.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee700f1d556739fe580fd6643fcc3049bd00faa6",
+      "size": 25115,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/ee700f1d556739fe580fd6643fcc3049bd00faa6"
+    },
+    {
+      "path": "mlx/c/closure.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33f71157291480386adc131c6a699e377ba8951f",
+      "size": 5792,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/33f71157291480386adc131c6a699e377ba8951f"
+    },
+    {
+      "path": "mlx/c/compile.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52ebc35190e9e4f173e4b4e2e989eae7520cc8b4",
+      "size": 2835,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/52ebc35190e9e4f173e4b4e2e989eae7520cc8b4"
+    },
+    {
+      "path": "mlx/c/compile.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68605ce5fa8019279ca649e3b8e28aa6e9e48dd8",
+      "size": 1596,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/68605ce5fa8019279ca649e3b8e28aa6e9e48dd8"
+    },
+    {
+      "path": "mlx/c/cuda.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71c07f57d6f8a36ae8a8a08943445a5baaa5b085",
+      "size": 535,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/71c07f57d6f8a36ae8a8a08943445a5baaa5b085"
+    },
+    {
+      "path": "mlx/c/cuda.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4734f8c513eaca8f44b17afab901ba1ba9a05114",
+      "size": 733,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/4734f8c513eaca8f44b17afab901ba1ba9a05114"
+    },
+    {
+      "path": "mlx/c/device.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "632ef9aaeb5454a0d2e79bde0a15e33df4e37243",
+      "size": 5401,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/632ef9aaeb5454a0d2e79bde0a15e33df4e37243"
+    },
+    {
+      "path": "mlx/c/device.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "705aea9dbd78b0f617cef910ea00e98b0ed8ea2f",
+      "size": 3557,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/705aea9dbd78b0f617cef910ea00e98b0ed8ea2f"
+    },
+    {
+      "path": "mlx/c/distributed.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83c09d1498f210bcc40a7959ce639716a4adae8c",
+      "size": 4727,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/83c09d1498f210bcc40a7959ce639716a4adae8c"
+    },
+    {
+      "path": "mlx/c/distributed.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3b0baeeec770125c234da5709cd919b47754ad1",
+      "size": 2031,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/c3b0baeeec770125c234da5709cd919b47754ad1"
+    },
+    {
+      "path": "mlx/c/distributed_group.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0db5d5aea6aa72a3c41ae06c97f9c25d0e67559",
+      "size": 2023,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/d0db5d5aea6aa72a3c41ae06c97f9c25d0e67559"
+    },
+    {
+      "path": "mlx/c/distributed_group.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfbaa80ebc06bc9b686914872d2c6d458874d83f",
+      "size": 1211,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/bfbaa80ebc06bc9b686914872d2c6d458874d83f"
+    },
+    {
+      "path": "mlx/c/error.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "679f0f68938bccedec12d63ce094c1701c8b101b",
+      "size": 1393,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/679f0f68938bccedec12d63ce094c1701c8b101b"
+    },
+    {
+      "path": "mlx/c/error.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c063a4038d520c8fbfcc7a60ca98c2b6d7d6471",
+      "size": 693,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/8c063a4038d520c8fbfcc7a60ca98c2b6d7d6471"
+    },
+    {
+      "path": "mlx/c/export.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f77a3db70885fd0497958d920f6ef598125e669",
+      "size": 3499,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/2f77a3db70885fd0497958d920f6ef598125e669"
+    },
+    {
+      "path": "mlx/c/export.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52cb2835c5daf11027af80272a70fa40e9b4396b",
+      "size": 1880,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/52cb2835c5daf11027af80272a70fa40e9b4396b"
+    },
+    {
+      "path": "mlx/c/fast.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11a60082a0155da33543788f2857feae3b755d75",
+      "size": 18101,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/11a60082a0155da33543788f2857feae3b755d75"
+    },
+    {
+      "path": "mlx/c/fast.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "914fd2a283b1193e703eb087e49570ee21a2ff32",
+      "size": 5698,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/914fd2a283b1193e703eb087e49570ee21a2ff32"
+    },
+    {
+      "path": "mlx/c/fft.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c65cd436a7012d8d4aa245a294b34eb322cae190",
+      "size": 7989,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/c65cd436a7012d8d4aa245a294b34eb322cae190"
+    },
+    {
+      "path": "mlx/c/fft.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7140b601f92ee1939f5161da8f320097cc935154",
+      "size": 3252,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/7140b601f92ee1939f5161da8f320097cc935154"
+    },
+    {
+      "path": "mlx/c/graph_utils.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8cb80764654d93ad31623b445ab802400c01f2c",
+      "size": 2071,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/e8cb80764654d93ad31623b445ab802400c01f2c"
+    },
+    {
+      "path": "mlx/c/graph_utils.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81eec7a87904b72d5e8e4c450f6ad83f43a57270",
+      "size": 1270,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/81eec7a87904b72d5e8e4c450f6ad83f43a57270"
+    },
+    {
+      "path": "mlx/c/half.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "958d555f58fcb4a7c207043c3dec1bdd5189eeca",
+      "size": 440,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/958d555f58fcb4a7c207043c3dec1bdd5189eeca"
+    },
+    {
+      "path": "mlx/c/io.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24e8093f1a5ac1081dc4f9d564ae704a7db561ef",
+      "size": 3752,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/24e8093f1a5ac1081dc4f9d564ae704a7db561ef"
+    },
+    {
+      "path": "mlx/c/io.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1a0c0a7d779852e26f76df219e59e0bb95884dd",
+      "size": 1682,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/e1a0c0a7d779852e26f76df219e59e0bb95884dd"
+    },
+    {
+      "path": "mlx/c/io_types.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a054a6ac9b72f0370cf3a399967ce885d332045",
+      "size": 7598,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/1a054a6ac9b72f0370cf3a399967ce885d332045"
+    },
+    {
+      "path": "mlx/c/io_types.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f15873e379ef0b6c0740a29441c0aabcde2b885",
+      "size": 3566,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/3f15873e379ef0b6c0740a29441c0aabcde2b885"
+    },
+    {
+      "path": "mlx/c/linalg.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ea04a8b00e5be547450db30b5a5baae8ff461d5",
+      "size": 8550,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/4ea04a8b00e5be547450db30b5a5baae8ff461d5"
+    },
+    {
+      "path": "mlx/c/linalg.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d5b5ae157517299b36f31e1ddeafc45a04687a5",
+      "size": 3172,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/6d5b5ae157517299b36f31e1ddeafc45a04687a5"
+    },
+    {
+      "path": "mlx/c/map.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d372ff137c8fea238ff15bd175e64aa4db004e3",
+      "size": 5962,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/9d372ff137c8fea238ff15bd175e64aa4db004e3"
+    },
+    {
+      "path": "mlx/c/map.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56abe84f1d6c843c1a19cf8218b7d99d47559750",
+      "size": 3386,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/56abe84f1d6c843c1a19cf8218b7d99d47559750"
+    },
+    {
+      "path": "mlx/c/memory.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb38921d5e928cfbecf3037006d251ebe870bb54",
+      "size": 2064,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/fb38921d5e928cfbecf3037006d251ebe870bb54"
+    },
+    {
+      "path": "mlx/c/memory.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bae9e08ec392561a46ae50f995bd7a9294648d01",
+      "size": 1067,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/bae9e08ec392561a46ae50f995bd7a9294648d01"
+    },
+    {
+      "path": "mlx/c/metal.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "005685eaec631f6c38149a529ea522cbf5cd633a",
+      "size": 1380,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/005685eaec631f6c38149a529ea522cbf5cd633a"
+    },
+    {
+      "path": "mlx/c/metal.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f65d15b621c4ddefa104afb0a70896a0ed85ee59",
+      "size": 920,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/f65d15b621c4ddefa104afb0a70896a0ed85ee59"
+    },
+    {
+      "path": "mlx/c/mlx.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aa9077c6b259b4defec6555c182fe237351a132",
+      "size": 833,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/2aa9077c6b259b4defec6555c182fe237351a132"
+    },
+    {
+      "path": "mlx/c/ops.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf565d1e3d1be669a9375e51fb6315bfd0b48504",
+      "size": 109611,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/bf565d1e3d1be669a9375e51fb6315bfd0b48504"
+    },
+    {
+      "path": "mlx/c/ops.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7417785702988a81e83f94612c75a7257fc857ec",
+      "size": 34916,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/7417785702988a81e83f94612c75a7257fc857ec"
+    },
+    {
+      "path": "mlx/c/optional.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff9ea14e5616e09aa9ad6c11d1eec7d9cea5c530",
+      "size": 687,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/ff9ea14e5616e09aa9ad6c11d1eec7d9cea5c530"
+    },
+    {
+      "path": "mlx/c/private",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dace2e4eacd64dd83f93dec6fd02a162781a00ec",
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/dace2e4eacd64dd83f93dec6fd02a162781a00ec"
+    },
+    {
+      "path": "mlx/c/private/array.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a0553d106ff45c070095968ba49d4b358960148",
+      "size": 1374,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/2a0553d106ff45c070095968ba49d4b358960148"
+    },
+    {
+      "path": "mlx/c/private/closure.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d4bf3b333ad9ded3f62bfd3c0e9fbd8e1f61511",
+      "size": 18501,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/5d4bf3b333ad9ded3f62bfd3c0e9fbd8e1f61511"
+    },
+    {
+      "path": "mlx/c/private/compile.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf3cef2f9b9e3c7cbb2f389201199b4f05896a3f",
+      "size": 1875,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/bf3cef2f9b9e3c7cbb2f389201199b4f05896a3f"
+    },
+    {
+      "path": "mlx/c/private/device.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a55f3264055d02f0dcfdf93c605b47e340cd5c4",
+      "size": 2721,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/5a55f3264055d02f0dcfdf93c605b47e340cd5c4"
+    },
+    {
+      "path": "mlx/c/private/distributed_group.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f19e488a2742656de19cc14482bfe0e03a7fbbf9",
+      "size": 1859,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/f19e488a2742656de19cc14482bfe0e03a7fbbf9"
+    },
+    {
+      "path": "mlx/c/private/enums.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59a1e78787a769c2eb25f6c63d86e0720c3e3143",
+      "size": 2542,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/59a1e78787a769c2eb25f6c63d86e0720c3e3143"
+    },
+    {
+      "path": "mlx/c/private/export.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "422c2761e0d78dc40eaac2c7236e0fb6eeb64149",
+      "size": 2282,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/422c2761e0d78dc40eaac2c7236e0fb6eeb64149"
+    },
+    {
+      "path": "mlx/c/private/gguf.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58b087c09bc5602c478e35b3dafae760a93fce1d",
+      "size": 1096,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/58b087c09bc5602c478e35b3dafae760a93fce1d"
+    },
+    {
+      "path": "mlx/c/private/graph_utils.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9def07380f1ceca8788a45fd1ceff4beebd0af3",
+      "size": 1172,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/a9def07380f1ceca8788a45fd1ceff4beebd0af3"
+    },
+    {
+      "path": "mlx/c/private/io.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f17ceb499f8d2ee98189f08f88ab4be2aa54966d",
+      "size": 5317,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/f17ceb499f8d2ee98189f08f88ab4be2aa54966d"
+    },
+    {
+      "path": "mlx/c/private/map.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9df9997cfcadbd59fbda27d0fff4b44ee8ff6b64",
+      "size": 7214,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/9df9997cfcadbd59fbda27d0fff4b44ee8ff6b64"
+    },
+    {
+      "path": "mlx/c/private/mlx.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fef37616c89f3f2cd1c0e77e678a9a069422585f",
+      "size": 537,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/fef37616c89f3f2cd1c0e77e678a9a069422585f"
+    },
+    {
+      "path": "mlx/c/private/stream.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55d7b4d4a3660e98026f4b819e8d4709e84c9442",
+      "size": 2919,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/55d7b4d4a3660e98026f4b819e8d4709e84c9442"
+    },
+    {
+      "path": "mlx/c/private/string.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1e1a71520280e5b5f6a5d2cb2da29e28eeeb158",
+      "size": 1332,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/f1e1a71520280e5b5f6a5d2cb2da29e28eeeb158"
+    },
+    {
+      "path": "mlx/c/private/vector.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09d8d0ff699f25b42e1f0100e9b5078cb2414bd4",
+      "size": 7304,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/09d8d0ff699f25b42e1f0100e9b5078cb2414bd4"
+    },
+    {
+      "path": "mlx/c/random.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ec3cc59025c6a6dded9e96869b8a475d31a3f8c",
+      "size": 10656,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/3ec3cc59025c6a6dded9e96869b8a475d31a3f8c"
+    },
+    {
+      "path": "mlx/c/random.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbce0be379353579e8da84d74abb281dacd4b89e",
+      "size": 4010,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/dbce0be379353579e8da84d74abb281dacd4b89e"
+    },
+    {
+      "path": "mlx/c/stream.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d55254e836fba78f93d3ee03e4b40b7ff296cc15",
+      "size": 5138,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/d55254e836fba78f93d3ee03e4b40b7ff296cc15"
+    },
+    {
+      "path": "mlx/c/stream.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6df1a63c95b632ecd997de4aafebdf5848cafb9c",
+      "size": 3689,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/6df1a63c95b632ecd997de4aafebdf5848cafb9c"
+    },
+    {
+      "path": "mlx/c/string.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe50fb6b1a266246eddeedc0b7415dd22b95b06",
+      "size": 977,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/efe50fb6b1a266246eddeedc0b7415dd22b95b06"
+    },
+    {
+      "path": "mlx/c/string.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d2a356ba921dfbf029cb4b8905baa5591dbb1f0",
+      "size": 858,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/0d2a356ba921dfbf029cb4b8905baa5591dbb1f0"
+    },
+    {
+      "path": "mlx/c/transforms.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a418e44416158d00a06dd9e513acb008f82c512",
+      "size": 3763,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/2a418e44416158d00a06dd9e513acb008f82c512"
+    },
+    {
+      "path": "mlx/c/transforms.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2434619b72561c41e7c68ae95ff2e296ff28568",
+      "size": 1712,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/b2434619b72561c41e7c68ae95ff2e296ff28568"
+    },
+    {
+      "path": "mlx/c/transforms_impl.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dddda8c04995a002ec796e59e98b5980876cb90",
+      "size": 1674,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/1dddda8c04995a002ec796e59e98b5980876cb90"
+    },
+    {
+      "path": "mlx/c/transforms_impl.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b1356ebcbfda806d661ab83c7718cdcc154c32a",
+      "size": 1197,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/2b1356ebcbfda806d661ab83c7718cdcc154c32a"
+    },
+    {
+      "path": "mlx/c/vector.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63f1ea29d0132162895ab883e548546bf1b5a197",
+      "size": 15441,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/63f1ea29d0132162895ab883e548546bf1b5a197"
+    },
+    {
+      "path": "mlx/c/vector.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30d1b1838abe7ffe1ef81f16973f2179e48f54b8",
+      "size": 5263,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/30d1b1838abe7ffe1ef81f16973f2179e48f54b8"
+    },
+    {
+      "path": "mlx/c/version.cpp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "783368038e13e83e08210651c73bd91dac68a613",
+      "size": 294,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/783368038e13e83e08210651c73bd91dac68a613"
+    },
+    {
+      "path": "mlx/c/version.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96dd23877d44ac5cf5b41b5b4c1743ed04b64c9f",
+      "size": 225,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/96dd23877d44ac5cf5b41b5b4c1743ed04b64c9f"
+    },
+    {
+      "path": "python",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1c99b88d72dbcff03c7903a56e45bf7cd91d6ee7",
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/trees/1c99b88d72dbcff03c7903a56e45bf7cd91d6ee7"
+    },
+    {
+      "path": "python/c.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ece443b23a43ae9bef300e8cd41e22043cdf9384",
+      "size": 7124,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/ece443b23a43ae9bef300e8cd41e22043cdf9384"
+    },
+    {
+      "path": "python/closure_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "845dd896ab1cbc4de9aa78a9d1c23bb93bd97828",
+      "size": 10255,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/845dd896ab1cbc4de9aa78a9d1c23bb93bd97828"
+    },
+    {
+      "path": "python/generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7edb8b0cd4a2efaa29a7b6eece170bf7c31f133a",
+      "size": 4923,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/7edb8b0cd4a2efaa29a7b6eece170bf7c31f133a"
+    },
+    {
+      "path": "python/map_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6402f6ad61e829a0fb332e84645d25c1d50381a4",
+      "size": 8864,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/6402f6ad61e829a0fb332e84645d25c1d50381a4"
+    },
+    {
+      "path": "python/mlxhooks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96b13ee7c4bc499a1449d35928049a763315641e",
+      "size": 14581,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/96b13ee7c4bc499a1449d35928049a763315641e"
+    },
+    {
+      "path": "python/mlxtypes.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e06ea628fd6684bbde2d645e6e95ec0698d461f",
+      "size": 20232,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/9e06ea628fd6684bbde2d645e6e95ec0698d461f"
+    },
+    {
+      "path": "python/mlxvariants.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1d5ed15a07d928c5258abe50b85c5dbc8eb538e",
+      "size": 5200,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/a1d5ed15a07d928c5258abe50b85c5dbc8eb538e"
+    },
+    {
+      "path": "python/type_private_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6df496c1285a221b364ac4b1aad0fc76c48376ae",
+      "size": 3280,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/6df496c1285a221b364ac4b1aad0fc76c48376ae"
+    },
+    {
+      "path": "python/vector_generator.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8462ff16eff58e6307eaa52991d14f9bd2dd4231",
+      "size": 8125,
+      "url": "https://api.github.com/repos/ml-explore/mlx-c/git/blobs/8462ff16eff58e6307eaa52991d14f9bd2dd4231"
+    }
+  ],
+  "truncated": false
+}

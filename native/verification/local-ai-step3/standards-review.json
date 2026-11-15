@@ -1,0 +1,33 @@
+{
+  "axis": "standards",
+  "verdict": "PASS",
+  "base": "b2163d589a6ede62fabb2c362351979a355641a6",
+  "head": "de2cccc4243a9426744b4d1c1bdbb5ffe0f442f2",
+  "scope": "C40 fictional-data iOS 27.2 Simulator experiment",
+  "runtimeIdentity": "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+  "runtimeFilesChecked": 100,
+  "committedAuthoredFilesChecked": 44,
+  "runtimeDrift": [],
+  "committedAuthoredDrift": [],
+  "mainAppLocalMemoryMainProjectChangedPaths": [],
+  "documentedViolations": [],
+  "heuristicFindings": [],
+  "currentTurnProjectRecall": "success",
+  "freshWork": [
+    "source inspection",
+    "committed snapshot hash comparison",
+    "runtime manifest hash comparison"
+  ],
+  "reusedEvidence": [
+    "native/verification/local-ai-step2/repairs/independent-repair-recheck.md",
+    "native/verification/local-ai-step2/provenance-review.md",
+    "native/verification/local-ai-step2/repairs/security-review.md",
+    "native/verification/local-ai-step3/independent-delivery-review.md"
+  ],
+  "limits": [
+    "No SDK/model/device rerun",
+    "No production adoption or physical-phone result",
+    "No iOS 18 runtime result or release certification",
+    "No source/index/GitHub mutation"
+  ]
+}

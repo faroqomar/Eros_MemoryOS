@@ -1,0 +1,36 @@
+{
+  "temporary_root": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification",
+  "sdk_overrides": {
+    "Wax": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/Wax",
+    "MetalANNS": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS"
+  },
+  "stock_versions": {
+    "Wax": "0.1.47",
+    "MetalANNS": "0.3.0",
+    "GRDB.swift": "7.12.0",
+    "swift-crypto": "3.15.1",
+    "swift-asn1": "1.7.4"
+  },
+  "canonical_manifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Package.swift",
+  "source_copies": [
+    {
+      "canonical": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift",
+      "verification_copy": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift",
+      "canonical_sha256": "f9db283c99d0dea35db40c326169cf1ddb01ce30a62745e17ba36b0463b1fe3e",
+      "copy_sha256": "f9db283c99d0dea35db40c326169cf1ddb01ce30a62745e17ba36b0463b1fe3e"
+    },
+    {
+      "canonical": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Sources/WaxEvaluationCLI/Main.swift",
+      "verification_copy": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/Sources/WaxEvaluationCLI/Main.swift",
+      "canonical_sha256": "cbb0dd464e70cd51b4915e17ccc8ee19dd951845e48b82a4e435cd60ebe679ec",
+      "copy_sha256": "cbb0dd464e70cd51b4915e17ccc8ee19dd951845e48b82a4e435cd60ebe679ec"
+    },
+    {
+      "canonical": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift",
+      "verification_copy": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift",
+      "canonical_sha256": "335751f0d5049f5bfe8782072e0f8f716c2e23027746750a91c4064e9570285d",
+      "copy_sha256": "335751f0d5049f5bfe8782072e0f8f716c2e23027746750a91c4064e9570285d"
+    }
+  ],
+  "normal_original_pin_recheck": "Required separately; no local-only delivery claim"
+}

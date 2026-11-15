@@ -1,0 +1,8 @@
+{
+  "path": "/tmp/memoryos-independent-repair-core",
+  "logicalBytesRemoved": 86451404,
+  "removed": true,
+  "reason": "Task-owned completed independent core/presentation scratch build; unique full test log retained",
+  "retainedTestLog": "native/verification/local-ai-step2/repairs/independent-final-core-tests.log",
+  "retainedTestLogSHA256": "267d2129e92012b7a395e4513fca14a49d40a73ad001d9da305b025858b7828d"
+}

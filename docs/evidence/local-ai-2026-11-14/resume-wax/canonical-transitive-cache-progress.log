@@ -1,0 +1,145 @@
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/MetalANNS-3408e04a/
+{"starting": "MetalANNS", "revision": "13960499c40abd3f06443eb80258e08a6b777da4", "root_tree": "ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29"}
+{"total_blobs": 199, "total_blob_bytes": 1483141, "missing_blobs": 96, "missing_bytes": 718097}
+{"range_download": {"path": ".github/workflows/ci.yml", "sha1": "801003974a4848136eee72ebb71edf3125ee6866", "received": 569, "total": 569}}
+{"range_download": {"path": ".gitattributes", "sha1": "f2cc69bdc7daf2283a3f074a41291eda2b0b584d", "received": 168, "total": 168}}
+{"range_download": {"path": ".gitignore", "sha1": "95cefb4afe5c766f476ff9616cabe5b3d699f180", "received": 256, "total": 256}}
+{"range_download": {"path": ".spi.yml", "sha1": "d96e1a071fc396e99043c856aa7d9aa481459e75", "received": 94, "total": 94}}
+{"range_download": {"path": "AGENTS.md", "sha1": "3f97479d8cbe05077920af94e9b72c0beaec2428", "received": 855, "total": 855}}
+{"range_download": {"path": ".swift-format", "sha1": "38eed15ae827b7fbb2bde22d4efee56474992403", "received": 263, "total": 263}}
+{"range_download": {"path": "CLAUDE.md", "sha1": "5cfbc80e8365ccb0352beca6932996e11098d501", "received": 14056, "total": 14056}}
+{"range_download": {"path": "BENCHMARKS.md", "sha1": "a59b65d768080ef4831bce9ecd89e0a9e81b93fd", "received": 37906, "total": 37906}}
+{"range_download": {"path": "Package.resolved", "sha1": "c1c03b9b342ea240875df867801f97bac2f12e1d", "received": 388, "total": 388}}
+{"range_download": {"path": "PrivacyInfo.xcprivacy", "sha1": "d9f04276c48d127f2e124f6e16258ecc46fce799", "received": 977, "total": 977}}
+{"completed": 25, "total": 199, "bytes": 147771, "reused": 15}
+{"completed": 50, "total": 199, "bytes": 368678, "reused": 40}
+{"completed": 75, "total": 199, "bytes": 583032, "reused": 65}
+{"completed": 100, "total": 199, "bytes": 762131, "reused": 90}
+{"range_download": {"path": "README.md", "sha1": "e2ba2e7ea806d319440e5943f4d19e7a53a383c9", "received": 4965, "total": 4965}}
+{"range_download": {"path": "Tests/MetalANNSTests/ANNSIndexTests.swift", "sha1": "2be315cd84b2cbc6d88071b765021a77ae8fa540", "received": 21256, "total": 21256}}
+{"range_download": {"path": "Tests/MetalANNSTests/BackendProtocolTests.swift", "sha1": "fb976dd718c798004a461e0867d137b2cf27134c", "received": 345, "total": 345}}
+{"range_download": {"path": "Tests/MetalANNSTests/BatchExecutionTests.swift", "sha1": "dfe4e94f52da001828d2f940424c01b27584e5eb", "received": 10750, "total": 10750}}
+{"range_download": {"path": "Tests/MetalANNSTests/BatchInsertTests.swift", "sha1": "e9e3323053fb938e499c6c7f04e0a3121ac4b22a", "received": 3103, "total": 3103}}
+{"range_download": {"path": "Tests/MetalANNSTests/BatchSearchAdaptiveConcurrencyTests.swift", "sha1": "6378ca69e3735945b1979d8f9778ce8c040afb8a", "received": 2649, "total": 2649}}
+{"range_download": {"path": "Tests/MetalANNSTests/BinaryQuantizationTests.swift", "sha1": "e3d7f6a2df71e134bab6e1acbbca32ed08e42e17", "received": 12208, "total": 12208}}
+{"range_download": {"path": "Tests/MetalANNSTests/BitonicSortTests.swift", "sha1": "03c456ce437dfd2b22652f20a13a1a80f701a782", "received": 1381, "total": 1381}}
+{"range_download": {"path": "Tests/MetalANNSTests/BoundedExactScanTests.swift", "sha1": "4e0be3f436ceee33a325a654da24ab96006dbf73", "received": 15545, "total": 15545}}
+{"range_download": {"path": "Tests/MetalANNSTests/BoundedSelectionTests.swift", "sha1": "76167dc83bc9d21c3b8dd22a86bf8235f918212e", "received": 12576, "total": 12576}}
+{"range_download": {"path": "Tests/MetalANNSTests/CommandQueuePoolTests.swift", "sha1": "dda56f5456b5ab1dddcbbc8df625f733f19701db", "received": 2574, "total": 2574}}
+{"range_download": {"path": "Tests/MetalANNSTests/CompactionTests.swift", "sha1": "bacda4b7dc6d3abc5471f7db07d9fad845fb1362", "received": 3777, "total": 3777}}
+{"completed": 125, "total": 199, "bytes": 911705, "reused": 103}
+{"range_download": {"path": "Tests/MetalANNSTests/ConcurrentSearchTests.swift", "sha1": "61ec5ca7549b5c8eaa4fd136a3c133d8508b9192", "received": 2117, "total": 2117}}
+{"range_download": {"path": "Tests/MetalANNSTests/ConfigurationTests.swift", "sha1": "7871490614f06af86e2ba53aaa75dff9786e12f5", "received": 2091, "total": 2091}}
+{"range_download": {"path": "Tests/MetalANNSTests/DeletionTests.swift", "sha1": "92edf8c315b1c2b8fd64ae0ed11db002cced70bb", "received": 1993, "total": 1993}}
+{"range_download": {"path": "Tests/MetalANNSTests/DiskBackedTests.swift", "sha1": "95bf06bf79b8f03f7911fdee5f8e307b4a7f087d", "received": 4864, "total": 4864}}
+{"range_download": {"path": "Tests/MetalANNSTests/DistanceTests.swift", "sha1": "191ee7b81f55392429b03b4c2c2b370ce351daac", "received": 4903, "total": 4903}}
+{"range_download": {"path": "Tests/MetalANNSTests/ErrorModelTests.swift", "sha1": "63e193f6ccaeb8f9f445252d69441afe2c754e93", "received": 9362, "total": 9362}}
+{"range_download": {"path": "Tests/MetalANNSTests/ExactSearchIntegrationTests.swift", "sha1": "4995d3642b729be3a51cf14c966f159fc13a2754", "received": 15595, "total": 15595}}
+{"range_download": {"path": "Tests/MetalANNSTests/FilteredSearchTests.swift", "sha1": "1b23f6420ea8b26357db09828614eca28288a6f9", "received": 5750, "total": 5750}}
+{"range_download": {"path": "Tests/MetalANNSTests/FlatSearchTests.swift", "sha1": "05c9379bbf4bddf740a323007bdb7357ed11a53e", "received": 9788, "total": 9788}}
+{"range_download": {"path": "Tests/MetalANNSTests/Float16IntegrationTests.swift", "sha1": "e8691a24d67942168c8331d9b59df1667dd619a7", "received": 2320, "total": 2320}}
+{"range_download": {"path": "Tests/MetalANNSTests/Float16Tests.swift", "sha1": "81cd6f527bee4e474f3cea810d0d56252468fdb4", "received": 2801, "total": 2801}}
+{"range_download": {"path": "Tests/MetalANNSTests/FullGPUSearchTests.swift", "sha1": "1935602281df46daf7711e583c89df4dd0cc3fd0", "received": 8096, "total": 8096}}
+{"range_download": {"path": "Tests/MetalANNSTests/GPUADCSearchTests.swift", "sha1": "4cd603c5151720205377cb0e2f52c045a579d45a", "received": 13284, "total": 13284}}
+{"range_download": {"path": "Tests/MetalANNSTests/GPUCPUParityTests.swift", "sha1": "477022ae5d0edc75925daa30d5453967d27533d1", "received": 6547, "total": 6547}}
+{"range_download": {"path": "Tests/MetalANNSTests/GraphBufferTests.swift", "sha1": "9acfebdb962a74cbfeffce0a2b7ff7831ff26aac", "received": 1331, "total": 1331}}
+{"range_download": {"path": "Tests/MetalANNSTests/GraphPrunerTests.swift", "sha1": "57a74976c2887409d6dbd4cdcfcaef6fd696c053", "received": 6303, "total": 6303}}
+{"range_download": {"path": "Tests/MetalANNSTests/GraphRepairTests.swift", "sha1": "4c5bc964193102423ce4e7b69e2822315df2b23d", "received": 11949, "total": 11949}}
+{"range_download": {"path": "Tests/MetalANNSTests/HNSWTests.swift", "sha1": "73996d4ac3dc8c31d79d1d7d4d3edc20470e3fcd", "received": 507, "total": 507}}
+{"range_download": {"path": "Tests/MetalANNSTests/IDMapTests.swift", "sha1": "aa68ff7fa12a921d0bee2e924a56b8997f308d58", "received": 3387, "total": 3387}}
+{"range_download": {"path": "Tests/MetalANNSTests/IVFFlatSearchTests.swift", "sha1": "0b25d054960ee978c7cab7f48ab116e42b3a3b73", "received": 11294, "total": 11294}}
+{"range_download": {"path": "Tests/MetalANNSTests/IVFPQComprehensiveTests.swift", "sha1": "11675c079d6c826bf5e41959b02da4f5cf385013", "received": 6559, "total": 6559}}
+{"range_download": {"path": "Tests/MetalANNSTests/IVFPQGPUTests.swift", "sha1": "8bdf3d21aeb6c0a48c766bc13fc1d3b6e403f2e8", "received": 2657, "total": 2657}}
+{"range_download": {"path": "Tests/MetalANNSTests/IVFPQIndexTests.swift", "sha1": "c8f613cee248512a23379e803208c7ea807e70be", "received": 6588, "total": 6588}}
+{"range_download": {"path": "Tests/MetalANNSTests/IVFPQPersistenceTests.swift", "sha1": "5bd3d8ce31baa650ff9d2c8963b3f0cba605563d", "received": 4469, "total": 4469}}
+{"range_download": {"path": "Tests/MetalANNSTests/IncrementalTests.swift", "sha1": "0493662db063884b874e2e3ba311ac0534900a6a", "received": 7368, "total": 7368}}
+{"completed": 150, "total": 199, "bytes": 1063628, "reused": 103}
+{"range_download": {"path": "Tests/MetalANNSTests/IndexMetricsTests.swift", "sha1": "1f8c3779a79d0f56a8e9643ecebfe78a52df8cb4", "received": 10869, "total": 10869}}
+{"range_download": {"path": "Tests/MetalANNSTests/IntegrationTests.swift", "sha1": "0c03ca02c03f29812b730c4c23c6c6a2c33c3d2a", "received": 4894, "total": 4894}}
+{"range_download": {"path": "Tests/MetalANNSTests/MetadataTests.swift", "sha1": "5fa40db8f7161f5a603a46143e5eeb036870edfa", "received": 1429, "total": 1429}}
+{"range_download": {"path": "Tests/MetalANNSTests/MetalContextMultiQueueTests.swift", "sha1": "5f94ce1b763cf52e98519557732c209104fdbedd", "received": 1555, "total": 1555}}
+{"range_download": {"path": "Tests/MetalANNSTests/MetalDeviceTests.swift", "sha1": "345149ee82c472fd1bc69fab9f2a7e63a87a71a6", "received": 1086, "total": 1086}}
+{"range_download": {"path": "Tests/MetalANNSTests/MetalDistanceTests.swift", "sha1": "4d3db876cf85185236b907e762a6de6d546cabe2", "received": 3121, "total": 3121}}
+{"range_download": {"path": "Tests/MetalANNSTests/MetalSearchTests.swift", "sha1": "b9c1041c17afbe2bfffef6de205722d2952280a1", "received": 5022, "total": 5022}}
+{"range_download": {"path": "Tests/MetalANNSTests/MmapTests.swift", "sha1": "bc8b4c593c193f96e714ec8cb332a6952066c895", "received": 4118, "total": 4118}}
+{"range_download": {"path": "Tests/MetalANNSTests/MultiQueuePerformanceTests.swift", "sha1": "b9931227e536c81100f6e6255502c38e6bdc2a67", "received": 7460, "total": 7460}}
+{"range_download": {"path": "Tests/MetalANNSTests/NNDescentCPUTests.swift", "sha1": "b9162684af92f157999e6d95f350012f8f541470", "received": 3101, "total": 3101}}
+{"range_download": {"path": "Tests/MetalANNSTests/NNDescentGPUTests.swift", "sha1": "b6a067b6d3505d446a5285bc61bc1ededdd7bdc0", "received": 12704, "total": 12704}}
+{"range_download": {"path": "Tests/MetalANNSTests/PQVectorBufferTests.swift", "sha1": "56a08c466b6606365b133a6bb457a9c35ae2b1d6", "received": 4843, "total": 4843}}
+{"range_download": {"path": "Tests/MetalANNSTests/PersistenceTests.swift", "sha1": "b52167a7269fe34d49c56bae743d06243eca7091", "received": 7112, "total": 7112}}
+{"range_download": {"path": "Tests/MetalANNSTests/ProductQuantizerTests.swift", "sha1": "31045aff32f8f772fb4956c388011b39f1f28d47", "received": 6387, "total": 6387}}
+{"range_download": {"path": "Tests/MetalANNSTests/QuantizedStorageTests.swift", "sha1": "fec37c4a9c01568e3c4da4e6d657135ce5c0525a", "received": 2394, "total": 2394}}
+{"range_download": {"path": "Tests/MetalANNSTests/RangeSearchTests.swift", "sha1": "fb961f40bf6b7a71e955ea184d0c2eee36134fa9", "received": 1761, "total": 1761}}
+{"range_download": {"path": "Tests/MetalANNSTests/RuntimeMetricTests.swift", "sha1": "5817ffae333caad82adb6b8978aa5ea64a79398e", "received": 1957, "total": 1957}}
+{"range_download": {"path": "Tests/MetalANNSTests/SIMDDistanceTests.swift", "sha1": "6dbfcfba95fa56a9d70bc2fa7cbdae1cbca6909d", "received": 4610, "total": 4610}}
+{"range_download": {"path": "Tests/MetalANNSTests/SearchBufferPoolTests.swift", "sha1": "6f3f80ba4eb420ef2b0168d43cd86d467ddd734d", "received": 7924, "total": 7924}}
+{"range_download": {"path": "Tests/MetalANNSTests/SearchExecutionTests.swift", "sha1": "b636f11f2374034ff25fcdd38616bde54f1dbdf0", "received": 10941, "total": 10941}}
+{"range_download": {"path": "Tests/MetalANNSTests/SearchTests.swift", "sha1": "ddcd4f2cdf2b14fbce44d5f2c0a35e4f0796e5bd", "received": 3334, "total": 3334}}
+{"range_download": {"path": "Tests/MetalANNSTests/ShardedIndexParallelBuildTests.swift", "sha1": "8d788130276da5f6f4ea36457face3a41aadcefc", "received": 8376, "total": 8376}}
+{"range_download": {"path": "Tests/MetalANNSTests/ShardedIndexTests.swift", "sha1": "fbb078e946d4801ef5620119c8dc0cb92614dddd", "received": 2094, "total": 2094}}
+{"range_download": {"path": "Tests/MetalANNSTests/ShardedIndexParallelSearchTests.swift", "sha1": "6eaed0c8ed1fdb5ce39fadfcb12bc403c50be415", "received": 9043, "total": 9043}}
+{"range_download": {"path": "Tests/MetalANNSTests/Storage/StreamingDatabaseTests.swift", "sha1": "ad9f3706d276ccae3d1fc0140f4c8ec379765463", "received": 2789, "total": 2789}}
+{"range_download": {"path": "Tests/MetalANNSTests/Storage/IndexDatabaseTests.swift", "sha1": "871ddc51b0dda07b531d1e32caa76436d35bba80", "received": 8021, "total": 8021}}
+{"completed": 175, "total": 199, "bytes": 1192552, "reused": 103}
+{"range_download": {"path": "Tests/MetalANNSTests/StreamingIndexFlushTests.swift", "sha1": "d1657310f3975fd59fc6f4b870e9ad2fcbba32c9", "received": 2787, "total": 2787}}
+{"range_download": {"path": "Tests/MetalANNSTests/StreamingConfigurationTests.swift", "sha1": "74da1fce27b350a64944dd8ef3d0c1c5e07f6514", "received": 2022, "total": 2022}}
+{"range_download": {"path": "Tests/MetalANNSTests/StreamingIndexInsertTests.swift", "sha1": "765c07b2cbf5387f55b7c84d64d38c420ae7c9b4", "received": 2492, "total": 2492}}
+{"range_download": {"path": "Tests/MetalANNSTests/StreamingIndexMergeTests.swift", "sha1": "fd8baf7dcb4bc370d5da9cdae423300b365fded7", "received": 2773, "total": 2773}}
+{"range_download": {"path": "Tests/MetalANNSTests/StreamingIndexPersistenceTests.swift", "sha1": "84d8c11bce7158aae2b8e06e11ad71d9306873a5", "received": 6592, "total": 6592}}
+{"range_download": {"path": "Tests/MetalANNSTests/StreamingIndexMetadataTests.swift", "sha1": "c8af8235b88c40f59ceafbd6d0442cc8ffb84baf", "received": 2526, "total": 2526}}
+{"range_download": {"path": "Tests/MetalANNSTests/StreamingIndexSearchTests.swift", "sha1": "ed888d6fcc2087cf9d451ce23dec6f7fa612f2c9", "received": 4747, "total": 4747}}
+{"range_download": {"path": "Tests/MetalANNSTests/TestUtilities.swift", "sha1": "985ed6da9696cb384818dba8b4eff9ba3a9b31cb", "received": 1808, "total": 1808}}
+{"range_download": {"path": "Tests/MetalANNSTests/VectorBufferTests.swift", "sha1": "fba83266dca255b47d5cf2b357c3556470deee2b", "received": 1378, "total": 1378}}
+{"range_download": {"path": "docs/assets/banner-dark.svg", "sha1": "e85c76913cfb5602588351bf6006a61dac65e45a", "received": 758, "total": 758}}
+{"range_download": {"path": "docs/assets/banner-light.svg", "sha1": "d469a2733824f0d05aa0871a555dab08278fc138", "received": 758, "total": 758}}
+{"range_download": {"path": "docs/assets/chart-build-time.svg", "sha1": "9d50874f674f6db8e65e36f86eeb61d4e8b26b7a", "received": 2548, "total": 2548}}
+{"range_download": {"path": "docs/assets/chart-recall-latency.svg", "sha1": "7c8ebfa7061085ec8be703524ce283d93279ee97", "received": 3071, "total": 3071}}
+{"range_download": {"path": "docs/benchmarks/competitive-latency.png", "sha1": "af41a2d73f8dfd0e82c9fda5ba948e72f88af460", "received": 126426, "total": 126426}}
+{"range_download": {"path": "docs/performance-report.html", "sha1": "d4686f57c1b5b9784d8df8919b1678d551fa88bd", "received": 34690, "total": 34690}}
+{"range_download": {"path": "docs/production-readiness-audit.md", "sha1": "631e9451ca6db84c89b177ae0f04b5221f15e759", "received": 45863, "total": 45863}}
+{"range_download": {"path": "locales/README.es.md", "sha1": "dff3dad32e2e18fe6861000360cc419487101dbe", "received": 5515, "total": 5515}}
+{"range_download": {"path": "locales/README.ja.md", "sha1": "a7a90181c6d6d9cc007cfbcd809887c7651db11d", "received": 6281, "total": 6281}}
+{"range_download": {"path": "locales/README.pt-BR.md", "sha1": "2b7ab3743913002ee9b3f4a9b35b4524fccf6e9c", "received": 5452, "total": 5452}}
+{"range_download": {"path": "locales/README.zh-CN.md", "sha1": "96fb16942f6bd739427993665091ac782c9bac84", "received": 5163, "total": 5163}}
+{"range_download": {"path": "scripts/competitive-benchmark.py", "sha1": "e7466d80ea48a19716c3f331f356bf8dd562f885", "received": 10047, "total": 10047}}
+{"range_download": {"path": "scripts/convert_hdf5.py", "sha1": "851c7784f9776eb58494a7e4de7725b915209680", "received": 4913, "total": 4913}}
+{"range_download": {"path": "scripts/render-competitive-chart.py", "sha1": "1c994a5fd44ba0eb2a0d2474c08c32f6ee7a0ce5", "received": 3958, "total": 3958}}
+{"completed": 199, "total": 199, "bytes": 1483141, "reused": 103}
+{"complete": true, "revision": "13960499c40abd3f06443eb80258e08a6b777da4", "root_tree": "ebc25e77f8a7d799fbd5f3e8250adbc0dfe1bd29", "original_url": "https://github.com/christopherkarani/MetalANNS.git", "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/MetalANNS-3408e04a", "verified_blobs": 199, "verified_trees": 20, "blob_bytes": 1483141, "promisor": false, "git_filter": null, "local_server": false, "transport_wrapper": false}
+{"complete": "MetalANNS", "revision": "13960499c40abd3f06443eb80258e08a6b777da4", "fsck_exit_code": 0}
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: will change to "main" in Git 3.0. To configure the initial branch name
+hint: to use in all of your new repositories, which will suppress this warning,
+hint: call:
+hint:
+hint: 	git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint: 	git branch -m <name>
+hint:
+hint: Disable this message with "git config set advice.defaultBranchName false"
+Initialized empty Git repository in /Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/GRDB.swift-dd0599db/
+{"starting": "GRDB", "revision": "92a554cd0d5e8d67cb18993c6054e73fe42c066c", "root_tree": "6332703370f22e72d6bac3fb6a8fe5d9aef90bb7"}
+Traceback (most recent call last):
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-canonical-transitives.py", line 96, in <module>
+    main()
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-canonical-transitives.py", line 78, in main
+    m.main()
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-complete-canonical-wax.py", line 152, in main
+    raise RuntimeError('Unexpected Git entry type ' + e['type'])
+RuntimeError: Unexpected Git entry type commit

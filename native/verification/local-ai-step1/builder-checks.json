@@ -1,0 +1,31 @@
+{
+  "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+  "toolchain": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+  "xcode": "Xcode 27.2\nBuild version 27B52",
+  "checks": {
+    "releaseCoreFunctions": 17,
+    "releasePresentationFunctions": 6,
+    "coreAndPresentationTests": "passed",
+    "strictSwiftFormat": "passed",
+    "simulatorLabBuildAnalysis": "passed",
+    "unsignedDeviceLabBuildAnalysis": "passed-compilation-only",
+    "captureAppRegressionBuild": "passed",
+    "llamaHeaderAdapterAndTestTypecheck": "passed-source-only",
+    "llamaBinaryLinkAndTests": "blocked",
+    "waxDependencyBuildAndTests": "blocked",
+    "physicalPhoneModelCostAndSelection": "blocked"
+  },
+  "fixture": {
+    "sourceRecords": 14,
+    "cases": 15,
+    "retrievalCompleted": 15,
+    "exactSourceSets": 13,
+    "textBlocked": 15,
+    "controlMismatches": [
+      "source-injection",
+      "ar-digits"
+    ]
+  },
+  "sourceIdentityInInstalledBuild": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+  "independentStep2": "not started"
+}

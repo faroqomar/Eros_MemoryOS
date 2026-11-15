@@ -1,0 +1,14 @@
+{
+  "identity": "mlx-cpp-core",
+  "origin": "https://github.com/ml-explore/mlx",
+  "revision": "1f8e74e3f12f31365464a6867c6579f0e9b29d85",
+  "rootTreeSHA1": "05433bcb7241af2b3531e7ee94f1eed07d4bf15c",
+  "genuineShallowBoundary": true,
+  "promisor": false,
+  "sourcePatched": false,
+  "archiveSHA256": "cb988a5bdc38c798918d042b9b1c6edda3ccc5f23a2155138d3aa5c1b2acc301",
+  "archiveBytes": 4415184,
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/mlx-core.git",
+  "fsck": "",
+  "canonicalResolutionVerified": false
+}

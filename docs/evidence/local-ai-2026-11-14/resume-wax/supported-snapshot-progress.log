@@ -1,0 +1,4 @@
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/docs/evidence/local-ai-2026-11-14/resume-wax/prepare-supported-snapshots.py", line 64
+    destination.chmod(0o555 if entry['mode']=='100755'else0o444)
+                                                      ^
+SyntaxError: invalid syntax

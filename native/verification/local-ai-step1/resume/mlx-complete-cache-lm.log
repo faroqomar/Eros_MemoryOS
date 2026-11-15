@@ -1,0 +1,15 @@
+{"event": "archive-progress", "bytes": 16384}
+{"event": "archive-progress", "bytes": 49152}
+{"event": "archive-progress", "bytes": 98304}
+{"event": "archive-progress", "bytes": 163840}
+{"event": "archive-transport-retry", "attempt": 1, "errorType": "ConnectionError"}
+{"event": "archive-transport-retry", "attempt": 2, "errorType": "ConnectionError"}
+{"event": "archive-transport-retry", "attempt": 3, "errorType": "ConnectionError"}
+{"event": "archive-transport-retry", "attempt": 4, "errorType": "ReadTimeout"}
+{"event": "archive-transport-retry", "attempt": 5, "errorType": "ConnectionError"}
+{"event": "archive-transport-retry", "attempt": 6, "errorType": "ConnectionError"}
+{"event": "archive-progress", "bytes": 65536}
+{"event": "archive-progress", "bytes": 131072}
+{"event": "archive-progress", "bytes": 196608}
+{"event": "archive-progress", "bytes": 262144}
+{"event": "archive-progress", "bytes": 327680}

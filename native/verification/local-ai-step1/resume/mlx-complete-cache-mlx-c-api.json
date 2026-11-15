@@ -1,0 +1,14 @@
+{
+  "identity": "mlx-c-api",
+  "origin": "https://github.com/ml-explore/mlx-c",
+  "revision": "ebc88f10caa1b625e6b581437a8dea6df8a70085",
+  "rootTreeSHA1": "dba545156b694c1852de988d8b272975d675bacc",
+  "genuineShallowBoundary": true,
+  "promisor": false,
+  "sourcePatched": false,
+  "archiveSHA256": "0559a688fe6ef20f6bcb6aac3b419e878fcbc295e19bef816afd51e4b3134e25",
+  "archiveBytes": 178723,
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/mlx-c.git",
+  "fsck": "",
+  "canonicalResolutionVerified": false
+}

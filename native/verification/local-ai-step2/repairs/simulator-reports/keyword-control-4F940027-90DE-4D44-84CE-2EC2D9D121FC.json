@@ -1,0 +1,278 @@
+{
+  "configuration" : {
+    "displayName" : "Keyword control",
+    "id" : "keyword-control",
+    "provenance" : [
+      {
+        "notes" : "Lexical control; no model.",
+        "revision" : "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+        "sourceURL" : "app-owned:KeywordMemoryIndex"
+      }
+    ],
+    "scope" : "retrieval"
+  },
+  "context" : {
+    "batchID" : "7C1F3F6A-46AE-4E27-BD23-7860A6A6BB29",
+    "buildConfiguration" : "Release",
+    "conditions" : "Owner-selected simulator evaluation. Same fictional corpus; one cold suite followed by five warm suites using the same adapter. Each suite rebuilds its derived index. Text requests reuse weights with fresh context. CPU: llama decode/batch threads=4; Cactus CACTUS_NUM_THREADS=4 before first SDK use. OS/Accelerate scheduling may differ. Network isolation not instrumented. Battery/physical heat not measured.",
+    "deviceModel" : "iPhone19,3",
+    "environment" : "simulator",
+    "offlineConfirmed" : false,
+    "operatingSystem" : "Version 27.2 (Build 24B8117)",
+    "purpose" : "comparison",
+    "repetition" : 5,
+    "repetitionCount" : 6,
+    "sourceIdentity" : "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+    "toolchain" : "Xcode 27.2 / Swift 6.4.2"
+  },
+  "formatVersion" : 2,
+  "generatedAt" : "2026-11-15T10:41:55Z",
+  "indexBuildSeconds" : 0.000188375,
+  "manualReviews" : [
+
+  ],
+  "results" : [
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "en-birthday",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 3
+      },
+      "retrievedSourceIDs" : [
+        "en-birthday"
+      ],
+      "searchSeconds" : 2.85e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-birthday",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-birthday" : 4
+      },
+      "retrievedSourceIDs" : [
+        "ar-birthday"
+      ],
+      "searchSeconds" : 5.0125e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-tentative",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-tentative" : 3
+      },
+      "retrievedSourceIDs" : [
+        "iq-tentative"
+      ],
+      "searchSeconds" : 6.3792e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "en-commitment",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-commitment" : 2
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment"
+      ],
+      "searchSeconds" : 7.275e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "mixed-deadline",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "mixed-deadline" : 4
+      },
+      "retrievedSourceIDs" : [
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 6.5209e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "name-ar-to-en",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 4
+      },
+      "retrievedSourceIDs" : [
+        "name-alias"
+      ],
+      "searchSeconds" : 5.125e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "name-nickname",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 1
+      },
+      "retrievedSourceIDs" : [
+        "name-alias"
+      ],
+      "searchSeconds" : 5.2333e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "name-disambiguation",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "same-name" : 3
+      },
+      "retrievedSourceIDs" : [
+        "same-name"
+      ],
+      "searchSeconds" : 4.3e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "correction-history",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-correction" : 3,
+        "date-original" : 3
+      },
+      "retrievedSourceIDs" : [
+        "date-correction",
+        "date-original"
+      ],
+      "searchSeconds" : 4.4541e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-negation",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-negation" : 2
+      },
+      "retrievedSourceIDs" : [
+        "iq-negation"
+      ],
+      "searchSeconds" : 6.1125e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-sarcasm",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-sarcasm" : 4
+      },
+      "retrievedSourceIDs" : [
+        "iq-sarcasm"
+      ],
+      "searchSeconds" : 7.8542e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "missing-evidence",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+
+      },
+      "retrievedSourceIDs" : [
+
+      ],
+      "searchSeconds" : 3.175e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "source-injection",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 1,
+        "untrusted-import" : 4
+      },
+      "retrievedSourceIDs" : [
+        "untrusted-import",
+        "en-birthday"
+      ],
+      "searchSeconds" : 7.3875e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-digits",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-digits" : 4,
+        "mixed-deadline" : 1
+      },
+      "retrievedSourceIDs" : [
+        "ar-digits",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 6.1375e-05,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : true,
+      "generationStatus" : "notApplicable",
+      "id" : "unicode-name",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "unicode-name" : 6
+      },
+      "retrievedSourceIDs" : [
+        "unicode-name"
+      ],
+      "searchSeconds" : 4.4167e-05,
+      "sourceRecall" : 1
+    }
+  ],
+  "settings" : {
+    "maximumOutputTokens" : 256,
+    "seed" : 42,
+    "temperature" : 0
+  },
+  "suiteID" : "memoryos-local-ai-fictional-v1",
+  "telemetry" : {
+    "measurementMethod" : "Process TASK_VM_INFO phys_footprint sampled every 100 ms; includes the whole lab process. Storage is logical bytes of this candidate's model/index paths. Simulator battery and physical heat are not measured.",
+    "peakMemoryBytes" : 37734848,
+    "storageBytes" : 0
+  }
+}

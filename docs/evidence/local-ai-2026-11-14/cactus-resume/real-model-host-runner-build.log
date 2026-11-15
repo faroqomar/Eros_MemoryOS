@@ -1,0 +1,12 @@
+Building for production...
+[Pre-planning 1 / 125]
+[Planning deferred tasks]
+[3 / 7] AIEvaluationCore
+[4 / 8] AIEvaluationCore
+[10 / 14] CactusEvaluationAdapter
+[12 / 15] CactusEvaluationAdapter
+[18 / 21] cactus-evaluation-product
+[19 / 22] cactus-evaluation-product
+[21 / 22] cactus-evaluation-product
+[22 / 22] cactus-evaluation-product
+Build complete! (6.03 secs)

@@ -1,0 +1,38 @@
+{"identity": "swift-crypto", "revision": "da9d28d69ebe3894b18376c8f2395c2f37b8448f", "files": 863, "trees": 206, "gitlinks": 0}
+{"identity": "swift-crypto", "completed": 25, "total": 863}
+{"identity": "swift-crypto", "completed": 50, "total": 863}
+{"identity": "swift-crypto", "completed": 75, "total": 863}
+{"identity": "swift-crypto", "completed": 100, "total": 863}
+{"identity": "swift-crypto", "completed": 125, "total": 863}
+{"identity": "swift-crypto", "completed": 150, "total": 863}
+{"identity": "swift-crypto", "completed": 175, "total": 863}
+{"identity": "swift-crypto", "completed": 200, "total": 863}
+{"identity": "swift-crypto", "completed": 225, "total": 863}
+{"identity": "swift-crypto", "completed": 250, "total": 863}
+{"identity": "swift-crypto", "completed": 275, "total": 863}
+{"identity": "swift-crypto", "completed": 300, "total": 863}
+{"identity": "swift-crypto", "completed": 325, "total": 863}
+{"identity": "swift-crypto", "completed": 350, "total": 863}
+{"identity": "swift-crypto", "completed": 375, "total": 863}
+{"identity": "swift-crypto", "completed": 400, "total": 863}
+{"identity": "swift-crypto", "completed": 425, "total": 863}
+{"identity": "swift-crypto", "completed": 450, "total": 863}
+{"identity": "swift-crypto", "completed": 475, "total": 863}
+{"identity": "swift-crypto", "completed": 500, "total": 863}
+{"identity": "swift-crypto", "completed": 525, "total": 863}
+{"identity": "swift-crypto", "completed": 550, "total": 863}
+{"identity": "swift-crypto", "completed": 575, "total": 863}
+{"identity": "swift-crypto", "completed": 600, "total": 863}
+{"identity": "swift-crypto", "completed": 625, "total": 863}
+{"identity": "swift-crypto", "completed": 650, "total": 863}
+{"identity": "swift-crypto", "completed": 675, "total": 863}
+{"identity": "swift-crypto", "completed": 700, "total": 863}
+{"identity": "swift-crypto", "completed": 725, "total": 863}
+{"identity": "swift-crypto", "completed": 750, "total": 863}
+{"identity": "swift-crypto", "completed": 775, "total": 863}
+{"identity": "swift-crypto", "completed": 800, "total": 863}
+{"identity": "swift-crypto", "completed": 825, "total": 863}
+{"identity": "swift-crypto", "completed": 850, "total": 863}
+{"event": "raw-transport-retry", "path": "Sources/CryptoExtras/ARC/ARCPresentation.swift", "attempt": 1, "errorType": "ReadTimeout"}
+{"identity": "swift-crypto", "completed": 863, "total": 863}
+{"snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-crypto", "completeSelectedSources": true, "canonicalResolutionVerified": false, "manifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-snapshot-swift-crypto.json"}

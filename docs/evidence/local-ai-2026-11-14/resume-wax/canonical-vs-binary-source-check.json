@@ -1,0 +1,55 @@
+{
+  "canonical_remote_pin_graph_matches_compiled_sdk_graph": true,
+  "app_owned_core_adapter_cli_test_sources_unchanged": true,
+  "packages": [
+    {
+      "identity": "wax",
+      "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+      "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/Wax",
+      "original_url": "https://github.com/christopherkarani/Wax.git",
+      "matching_compiled_source_files": 304,
+      "explicit_patch_differences": [
+        "Sources/Wax/MemorySemantics.swift",
+        "Sources/Wax/Broker/AgentBrokerClient.swift"
+      ],
+      "versioned_manifest_audit": "effective-manifest-audit.json"
+    },
+    {
+      "identity": "metalanns",
+      "revision": "13960499c40abd3f06443eb80258e08a6b777da4",
+      "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/MetalANNS",
+      "original_url": "https://github.com/christopherkarani/MetalANNS.git",
+      "matching_compiled_source_files": 103,
+      "explicit_patch_differences": [],
+      "versioned_manifest_audit": "effective-manifest-audit.json"
+    },
+    {
+      "identity": "grdb.swift",
+      "revision": "92a554cd0d5e8d67cb18993c6054e73fe42c066c",
+      "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/GRDB.swift",
+      "original_url": "https://github.com/groue/GRDB.swift.git",
+      "matching_compiled_source_files": 228,
+      "explicit_patch_differences": [],
+      "versioned_manifest_audit": "effective-manifest-audit.json"
+    },
+    {
+      "identity": "swift-crypto",
+      "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+      "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/swift-crypto",
+      "original_url": "https://github.com/apple/swift-crypto.git",
+      "matching_compiled_source_files": 794,
+      "explicit_patch_differences": [],
+      "versioned_manifest_audit": "effective-manifest-audit.json"
+    },
+    {
+      "identity": "swift-asn1",
+      "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+      "checkout": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build/checkouts/swift-asn1",
+      "original_url": "https://github.com/apple/swift-asn1.git",
+      "matching_compiled_source_files": 26,
+      "explicit_patch_differences": [],
+      "versioned_manifest_audit": "effective-manifest-audit.json"
+    }
+  ],
+  "lockfile_sha256": "8d8d81f5a24c05463d39bb243d156e0dcf2559e9fb061ce62a594f949a442baf"
+}

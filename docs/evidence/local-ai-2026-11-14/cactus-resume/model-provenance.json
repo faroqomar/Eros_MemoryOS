@@ -1,0 +1,17 @@
+{
+  "repository": "Cactus-Compute/Qwen3-Embedding-0.6B",
+  "revision": "0df64898a34c75c209b9882110cd6f9aeb7115cd",
+  "license": "apache-2.0",
+  "baseModel": "Qwen/Qwen3-Embedding-0.6B",
+  "asset": "weights/qwen3-embedding-0.6b-int4.zip",
+  "bytes": 376277536,
+  "sha256": "22ff768a984fe931ac463b02cedce2ebd65172c6877d210bd5dc6d058fffbd7b",
+  "localVerification": "passed full ZIP SHA-256 and extracted per-file manifest",
+  "dimensionFromArchiveConfig": 1024,
+  "quantizationFromArchiveConfig": "INT4",
+  "upstreamSourceRevision": "40a7123b0788f5b38c5fe0daa0d909b4286fe773",
+  "manifestSHA256": "229ba9eb5d361209c7f01d34cac0db77a623a33bb845c2eb90050ccc831c60af",
+  "extractedFiles": 317,
+  "assetFormat": "verified legacy flat .weights; actual engine v1.14 model contracts passed",
+  "pooling": "explicit last unpadded token, then L2 normalization; original tensors unchanged"
+}

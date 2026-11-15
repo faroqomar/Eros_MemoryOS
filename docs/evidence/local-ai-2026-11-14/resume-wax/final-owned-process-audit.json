@@ -1,0 +1,10 @@
+{
+  "utc": "2026-11-15T00:47:22.545975+00:00",
+  "confirmed_owned_active_processes": [],
+  "owned_build_paths_checked": [
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-xcframework-build",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification"
+  ],
+  "scope": "Task-owned canonical, snapshot, framework build trees and HTTPS hydrators; unrelated processes not touched"
+}

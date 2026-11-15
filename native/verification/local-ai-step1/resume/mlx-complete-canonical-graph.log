@@ -1,0 +1,40 @@
+{"identity": "swift-numerics", "started": true}{"identity": "EventSource", "started": true}{"identity": "swift-jinja", "started": true}{"identity": "swift-asn1", "started": true}
+
+
+
+{"identity": "EventSource", "recovered": true}
+{"identity": "swift-transformers", "started": true}
+{"identity": "swift-numerics", "recovered": true}
+{"identity": "mlx-swift", "started": true}
+{"identity": "swift-jinja", "recovered": true}
+{"identity": "swift-huggingface", "started": true}
+{"identity": "swift-asn1", "recovered": true}
+{"identity": "swift-collections", "started": true}
+{"identity": "swift-huggingface", "recovered": true}
+{"identity": "swift-syntax", "started": true}
+{"identity": "mlx-swift", "recovered": true}
+{"identity": "yyjson", "started": true}
+{"identity": "swift-syntax", "recovered": true}
+{"identity": "swift-crypto", "started": true}
+{"identity": "yyjson", "recovered": true}
+{"identity": "mlx-cpp-core", "started": true}
+{"identity": "mlx-c-api", "started": true}
+{"identity": "swift-transformers", "recovered": true}
+{"identity": "swift-crypto", "recovered": true}
+{"identity": "swift-collections", "recovered": true}
+Traceback (most recent call last):
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Tools/recover-canonical-graph.py", line 49, in <module>
+    list(executor.map(recover, specifications))
+  File "/Users/eros/micromamba/lib/python3.9/concurrent/futures/_base.py", line 609, in result_iterator
+    yield fs.pop().result()
+  File "/Users/eros/micromamba/lib/python3.9/concurrent/futures/_base.py", line 439, in result
+    return self.__get_result()
+  File "/Users/eros/micromamba/lib/python3.9/concurrent/futures/_base.py", line 391, in __get_result
+    raise self._exception
+  File "/Users/eros/micromamba/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Tools/recover-canonical-graph.py", line 44, in recover
+    subprocess.run(command, check=True, stdout=log, stderr=subprocess.STDOUT)
+  File "/Users/eros/micromamba/lib/python3.9/subprocess.py", line 528, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/Users/eros/micromamba/bin/python3', '/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Tools/recover-complete-git-cache.py', '--identity', 'mlx-cpp-core', '--source-cache', '/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/upstream/mlx-submodules/mlx-core.git', '--upstream', 'ml-explore/mlx', '--revision', '1f8e74e3f12f31365464a6867c6579f0e9b29d85']' returned non-zero exit status 1.

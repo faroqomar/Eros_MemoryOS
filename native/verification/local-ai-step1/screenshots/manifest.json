@@ -1,0 +1,71 @@
+{
+  "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+  "captures": [
+    {
+      "path": "configurations-ar.png",
+      "sha256": "3830f1c5951d53e8eb10f631f95409c8c7621e8b0c4b7be207bef49e5da8ae97",
+      "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+      "device": "iPhone 18 Pro",
+      "operatingSystem": "iOS 27.2",
+      "physical": false,
+      "configuration": "Release",
+      "appearance": "dark",
+      "kind": "Native lab/control or system export picker; no model/phone benchmark"
+    },
+    {
+      "path": "configurations-en.png",
+      "sha256": "75a40b92c1d301f0b9c14b471f47f1f095c3cf894ce30ca84aaad04e00fcdc0d",
+      "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+      "device": "iPhone 18 Pro",
+      "operatingSystem": "iOS 27.2",
+      "physical": false,
+      "configuration": "Release",
+      "appearance": "dark",
+      "kind": "Native lab/control or system export picker; no model/phone benchmark"
+    },
+    {
+      "path": "control-results-en.png",
+      "sha256": "22c693025e59b17cb76f4e5a9dba550d1af209c087d653f66510987e9a43b994",
+      "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+      "device": "iPhone 18 Pro",
+      "operatingSystem": "iOS 27.2",
+      "physical": false,
+      "configuration": "Release",
+      "appearance": "dark",
+      "kind": "Native lab/control or system export picker; no model/phone benchmark"
+    },
+    {
+      "path": "export-picker-en.png",
+      "sha256": "39de8a3bc33a52086a65c58f883edfd2e9f0497cd708d54f5e1c8e93136fa782",
+      "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+      "device": "iPhone 18 Pro",
+      "operatingSystem": "iOS 27.2",
+      "physical": false,
+      "configuration": "Release",
+      "appearance": "dark",
+      "kind": "Native lab/control or system export picker; no model/phone benchmark"
+    },
+    {
+      "path": "selection-blockers-en.png",
+      "sha256": "acf2674634c77aa17a04375a7b3c124102112126c7698787a209896eb9e19166",
+      "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+      "device": "iPhone 18 Pro",
+      "operatingSystem": "iOS 27.2",
+      "physical": false,
+      "configuration": "Release",
+      "appearance": "dark",
+      "kind": "Native lab/control or system export picker; no model/phone benchmark"
+    },
+    {
+      "path": "shared-examples-ar.png",
+      "sha256": "37c0b0b4668aa5ca6ea012eba482612b684e9d9d49e45c752375d157f85af212",
+      "sourceIdentity": "de619d7ee699faf15dcdade9ecbe854b543b473282348d21a531e7181b68c9fb",
+      "device": "iPhone 18 Pro",
+      "operatingSystem": "iOS 27.2",
+      "physical": false,
+      "configuration": "Release",
+      "appearance": "dark",
+      "kind": "Native lab/control or system export picker; no model/phone benchmark"
+    }
+  ]
+}

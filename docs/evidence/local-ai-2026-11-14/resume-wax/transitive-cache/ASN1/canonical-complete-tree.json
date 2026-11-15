@@ -1,0 +1,1856 @@
+{
+  "sha": "e66cabf366880e5314973dd47f8b793b5ea7bfe8",
+  "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/e66cabf366880e5314973dd47f8b793b5ea7bfe8",
+  "tree": [
+    {
+      "path": ".editorconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08891d83f67181f147fc91135bf6c0016a2bea7e",
+      "size": 130,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/08891d83f67181f147fc91135bf6c0016a2bea7e"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "46fa673fbbe27089529eb1508a8b1d434ac850ef",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/46fa673fbbe27089529eb1508a8b1d434ac850ef"
+    },
+    {
+      "path": ".github/release.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e29eb84641301518c171ed2374bf1c36f8140e5d",
+      "size": 294,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e29eb84641301518c171ed2374bf1c36f8140e5d"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4e04a23fb7513395519e05d2d3a93bd73a9bebc",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/e4e04a23fb7513395519e05d2d3a93bd73a9bebc"
+    },
+    {
+      "path": ".github/workflows/main.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "328a9d037b8df4f5c2155a891f3609f50c68d75c",
+      "size": 2791,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/328a9d037b8df4f5c2155a891f3609f50c68d75c"
+    },
+    {
+      "path": ".github/workflows/pull_request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffa7858f0492f9da426e641018937b03f15d4851",
+      "size": 3414,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/ffa7858f0492f9da426e641018937b03f15d4851"
+    },
+    {
+      "path": ".github/workflows/pull_request_label.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed8754bdd6c763b121a646dc3cdfe0d3b161765b",
+      "size": 510,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/ed8754bdd6c763b121a646dc3cdfe0d3b161765b"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8061269f368949fc530e48fe05b70179be8c4f42",
+      "size": 156,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/8061269f368949fc530e48fe05b70179be8c4f42"
+    },
+    {
+      "path": ".licenseignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41cebc9554c857e091973ea02d76bc59de9566e6",
+      "size": 789,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/41cebc9554c857e091973ea02d76bc59de9566e6"
+    },
+    {
+      "path": ".spi.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46fa7e135eb1f4d112cf561e10259483c7aceaca",
+      "size": 72,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/46fa7e135eb1f4d112cf561e10259483c7aceaca"
+    },
+    {
+      "path": ".swift-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b2b0a8ca6373d0df0748561955b6f0168c1350b",
+      "size": 2078,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0b2b0a8ca6373d0df0748561955b6f0168c1350b"
+    },
+    {
+      "path": "Benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be16b4c203ff4e3720a3166640965c7e29082662",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/be16b4c203ff4e3720a3166640965c7e29082662"
+    },
+    {
+      "path": "Benchmarks/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4ada293d3fea6ea7ff148e8d8c33355b3854041",
+      "size": 178,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e4ada293d3fea6ea7ff148e8d8c33355b3854041"
+    },
+    {
+      "path": "Benchmarks/Benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de0f2dec7b92ccc5d04a73d715e7b36e126a7675",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/de0f2dec7b92ccc5d04a73d715e7b36e126a7675"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59a0c9a4fe1256887c4876a9f9086830e7160f2a",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/59a0c9a4fe1256887c4876a9f9086830e7160f2a"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/Benchmarks.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61b2f0478964b89b9d4bc0aa7dbb719c70fb246c",
+      "size": 1259,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/61b2f0478964b89b9d4bc0aa7dbb719c70fb246c"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/CACertificates.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17a090646837f82fe1e05f6d724d7c05eccd87b4",
+      "size": 7170,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/17a090646837f82fe1e05f6d724d7c05eccd87b4"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ParseWebPKI.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adb6f0f290622ba68f3854aba8c1dfcc4138af90",
+      "size": 1053,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/adb6f0f290622ba68f3854aba8c1dfcc4138af90"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "938bb9d87cea3bf33b57735ea81027168962bd43",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/938bb9d87cea3bf33b57735ea81027168962bd43"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/ca-certificates.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b970d17015d059cdcd2bc6a2d978380321ef8a7",
+      "size": 208567,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0b970d17015d059cdcd2bc6a2d978380321ef8a7"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b74a4baba6314fec5eeb0d8c7ce870bc22f2e961",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/b74a4baba6314fec5eeb0d8c7ce870bc22f2e961"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/ACCVRAIZ1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baf74db793ec9c8c2516b13e25f43c889428c79e",
+      "size": 2772,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/baf74db793ec9c8c2516b13e25f43c889428c79e"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "666cf67c32bed3bc8c46bfecb659e5b00cce2447",
+      "size": 1972,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/666cf67c32bed3bc8c46bfecb659e5b00cce2447"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dde431904e7dfafcfd88bae25b0706c1b31915d",
+      "size": 904,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/8dde431904e7dfafcfd88bae25b0706c1b31915d"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/ANF_Secure_Server_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c37123785d3e789f321b9313827a9381784925db",
+      "size": 2118,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/c37123785d3e789f321b9313827a9381784925db"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Actalis_Authentication_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5762f37e69f2baf7db946ecd824eb6655083dc58",
+      "size": 2049,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/5762f37e69f2baf7db946ecd824eb6655083dc58"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/AffirmTrust_Commercial.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73a3367437d922ddec99ac3fd932c9da90115ef5",
+      "size": 1204,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/73a3367437d922ddec99ac3fd932c9da90115ef5"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/AffirmTrust_Networking.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04f4a812b205458d38ec2d9c922627b38c78511d",
+      "size": 1204,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/04f4a812b205458d38ec2d9c922627b38c78511d"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/AffirmTrust_Premium.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "516ecf55ab5e496de2b60f10ea16ed31162a7b9b",
+      "size": 1891,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/516ecf55ab5e496de2b60f10ea16ed31162a7b9b"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/AffirmTrust_Premium_ECC.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4bcc6a4336d5b507c58081303cc3a42821d7da4d",
+      "size": 753,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4bcc6a4336d5b507c58081303cc3a42821d7da4d"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Amazon_Root_CA_1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6f3e92af58ab857bfb8b8659de897ba069768a2",
+      "size": 1188,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a6f3e92af58ab857bfb8b8659de897ba069768a2"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Amazon_Root_CA_2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe3c9fedf94444b5d82a841fa601bd0dc1ed5cc",
+      "size": 1883,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/efe3c9fedf94444b5d82a841fa601bd0dc1ed5cc"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Amazon_Root_CA_3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a45da7074f06fcb5f0f2bdd1a7c063c942f4eed8",
+      "size": 656,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a45da7074f06fcb5f0f2bdd1a7c063c942f4eed8"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Amazon_Root_CA_4.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcbdeccd4c630a47a9d7a9493739f0d9010a8e6f",
+      "size": 737,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/fcbdeccd4c630a47a9d7a9493739f0d9010a8e6f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Atos_TrustedRoot_2011.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "988cc68aac22350f1ba2da467382d39aef883c8a",
+      "size": 1261,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/988cc68aac22350f1ba2da467382d39aef883c8a"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de97f841cbfa82a26131530bc5a9e853506458e0",
+      "size": 2167,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/de97f841cbfa82a26131530bc5a9e853506458e0"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068_2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "842652306722de1bdf3251ac8095cc6b485355a3",
+      "size": 2167,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/842652306722de1bdf3251ac8095cc6b485355a3"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Baltimore_CyberTrust_Root.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "519028c63b210b280f5e62defded25364d2e51b2",
+      "size": 1261,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/519028c63b210b280f5e62defded25364d2e51b2"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Buypass_Class_2_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9daec241d9fa5203194e833e64b93a073b96a170",
+      "size": 1915,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/9daec241d9fa5203194e833e64b93a073b96a170"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Buypass_Class_3_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23b53062925fe7d262c90dd9a96468c9c0e0008b",
+      "size": 1915,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/23b53062925fe7d262c90dd9a96468c9c0e0008b"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/CA_Disig_Root_R2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0d94600e00b8cb27e9a8d90847006353019e2dfd",
+      "size": 1935,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0d94600e00b8cb27e9a8d90847006353019e2dfd"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/CFCA_EV_ROOT.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "198d1bf27df1d1fdfd63eaa3e5bca8c1e496b863",
+      "size": 1984,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/198d1bf27df1d1fdfd63eaa3e5bca8c1e496b863"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/COMODO_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6146dcb571bcd3266e7f7e9db0101da98ec15fcb",
+      "size": 1489,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/6146dcb571bcd3266e7f7e9db0101da98ec15fcb"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/COMODO_ECC_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "546c95e30de784f7c392160cf5199b914169facc",
+      "size": 940,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/546c95e30de784f7c392160cf5199b914169facc"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/COMODO_RSA_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6508d1e8c395a2dbfce0f95d714a5dce09be4095",
+      "size": 2086,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/6508d1e8c395a2dbfce0f95d714a5dce09be4095"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Certainly_Root_E1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0e6251e84a9f48164d6985d314083f444840489",
+      "size": 741,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e0e6251e84a9f48164d6985d314083f444840489"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Certainly_Root_R1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d62495ebec03d1d8cbd1a9f86b3fb8f2fbf1e80f",
+      "size": 1891,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/d62495ebec03d1d8cbd1a9f86b3fb8f2fbf1e80f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Certigna.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "220d95f9f49ec8d1179223e3971ea61462cb602b",
+      "size": 1330,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/220d95f9f49ec8d1179223e3971ea61462cb602b"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Certigna_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b40f56ddbb714507055272d6bd51db7c4dc7969",
+      "size": 2264,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4b40f56ddbb714507055272d6bd51db7c4dc7969"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Certum_EC-384_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81f8a2ec173c3233121c753539b005de41bc9bd0",
+      "size": 891,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/81f8a2ec173c3233121c753539b005de41bc9bd0"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Certum_Trusted_Network_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a04e656d8c41002c6f6a88bc3d0c900174821001",
+      "size": 1354,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a04e656d8c41002c6f6a88bc3d0c900174821001"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Certum_Trusted_Network_CA_2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "126e948aafc9d576dff325fb4a3c4061eb7be4c2",
+      "size": 2078,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/126e948aafc9d576dff325fb4a3c4061eb7be4c2"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Certum_Trusted_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa7fa743078c0c8b9e887f65d6413d7a70c93c43",
+      "size": 2053,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/fa7fa743078c0c8b9e887f65d6413d7a70c93c43"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Comodo_AAA_Services_root.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33c71ba9db77f9efbd296eeb3e2c948ffaa25c17",
+      "size": 1517,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/33c71ba9db77f9efbd296eeb3e2c948ffaa25c17"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/D-TRUST_BR_Root_CA_1_2020.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82db9211032670ddd0d49b5baa52e86d673d497c",
+      "size": 1050,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/82db9211032670ddd0d49b5baa52e86d673d497c"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/D-TRUST_EV_Root_CA_1_2020.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25da5fa9b8c17ce3a5e99669b93f9fc711a14f34",
+      "size": 1050,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/25da5fa9b8c17ce3a5e99669b93f9fc711a14f34"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_2009.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e084d98b3d0301f835d68274ecaba9f5e9faf383",
+      "size": 1517,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e084d98b3d0301f835d68274ecaba9f5e9faf383"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_EV_2009.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a1a2b2dd6931b0813391a81396c868a1d51ae36",
+      "size": 1537,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0a1a2b2dd6931b0813391a81396c868a1d51ae36"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_Assured_ID_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2731638b6ead85e63842e6b5e5ec3e839e25e524",
+      "size": 1350,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/2731638b6ead85e63842e6b5e5ec3e839e25e524"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc60fb518fe9f94ad4e07ee0e84062acc92fc71f",
+      "size": 1306,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/fc60fb518fe9f94ad4e07ee0e84062acc92fc71f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "244c99b2ee7acae02e9e29a67bcbff7fd00b1298",
+      "size": 851,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/244c99b2ee7acae02e9e29a67bcbff7fd00b1298"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd4341df26631d749ae1bd891e5b8780dac8c8bf",
+      "size": 1338,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/fd4341df26631d749ae1bd891e5b8780dac8c8bf"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_Global_Root_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "798e002751375098b561b859e180f2f9a9b5d319",
+      "size": 1294,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/798e002751375098b561b859e180f2f9a9b5d319"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_Global_Root_G3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc20c1e149d3371640017b053e7ed007b6b6480f",
+      "size": 839,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/bc20c1e149d3371640017b053e7ed007b6b6480f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_High_Assurance_EV_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e6810ab70cfa112fe066ec8b2122fbf76586317",
+      "size": 1367,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/9e6810ab70cfa112fe066ec8b2122fbf76586317"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_TLS_ECC_P384_Root_G5.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "802c4c8dfdaedb19bb8256da0f92e3e817914270",
+      "size": 790,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/802c4c8dfdaedb19bb8256da0f92e3e817914270"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_TLS_RSA4096_Root_G5.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b007dffdec2d59a583bf7415f984fd35ff976bfd",
+      "size": 1931,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b007dffdec2d59a583bf7415f984fd35ff976bfd"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/DigiCert_Trusted_Root_G4.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "421422743ac38df31d1e1eddd62340d91ac29b92",
+      "size": 1988,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/421422743ac38df31d1e1eddd62340d91ac29b92"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/E-Tugra_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97485999b266cb1f614e265703bb350f4d64d3e6",
+      "size": 2244,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/97485999b266cb1f614e265703bb350f4d64d3e6"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/E-Tugra_Global_Root_CA_ECC_v3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "049a4dadb60e09ad2c690cb12a7abfc32a245838",
+      "size": 977,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/049a4dadb60e09ad2c690cb12a7abfc32a245838"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/E-Tugra_Global_Root_CA_RSA_v3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9592787196e97be75b8b125723f074aa239f2707",
+      "size": 2122,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/9592787196e97be75b8b125723f074aa239f2707"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Entrust.net_Premium_2048_Secure_Server_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ed99ca1e0665a148c4e2415ece18169c93ffffc",
+      "size": 1505,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/2ed99ca1e0665a148c4e2415ece18169c93ffffc"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Entrust_Root_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "855485cfd028ff1ed913061ccac28b3f1d6aecbf",
+      "size": 1643,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/855485cfd028ff1ed913061ccac28b3f1d6aecbf"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_EC1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2043ac318fa50f22ff4341d8c5aa777f76b7c64",
+      "size": 1090,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b2043ac318fa50f22ff4341d8c5aa777f76b7c64"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e23a60555d24a00dd6246ba7b737ac036c9f339",
+      "size": 1533,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/2e23a60555d24a00dd6246ba7b737ac036c9f339"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_G4.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ac10cc3b59b3b5efd67a51f485607823ee62853",
+      "size": 2244,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/7ac10cc3b59b3b5efd67a51f485607823ee62853"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GDCA_TrustAUTH_R5_ROOT.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dd1c71835d5b9b58711371d1311328b8d89611a",
+      "size": 1980,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4dd1c71835d5b9b58711371d1311328b8d89611a"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GLOBALTRUST_2020.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c80b4e8be1ba1d406dcded6d33956be1c1416b1f",
+      "size": 1972,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/c80b4e8be1ba1d406dcded6d33956be1c1416b1f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GTS_Root_R1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a13aa05641175091cdbbe93eb8c9a0466cfe7c4d",
+      "size": 1911,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a13aa05641175091cdbbe93eb8c9a0466cfe7c4d"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GTS_Root_R2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd3f3a7354573b0234919120594b8f8ea5840997",
+      "size": 1911,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/bd3f3a7354573b0234919120594b8f8ea5840997"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GTS_Root_R3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2b5a775db74caedb8e7441fb9dc549f5319f1b9",
+      "size": 765,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b2b5a775db74caedb8e7441fb9dc549f5319f1b9"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GTS_Root_R4.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdb2d1bdf64cfcd0c532a49f88558f1752bc1bfb",
+      "size": 765,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/fdb2d1bdf64cfcd0c532a49f88558f1752bc1bfb"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R4.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7670528c6ec1722430ca7cc0e4208e163814670d",
+      "size": 704,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/7670528c6ec1722430ca7cc0e4208e163814670d"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R5.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "111991b2b30007529100bcd4fea0c292229b7229",
+      "size": 794,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/111991b2b30007529100bcd4fea0c292229b7229"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GlobalSign_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4ce4ca43dc0a093528cbd22b22a76db69726245",
+      "size": 1261,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/f4ce4ca43dc0a093528cbd22b22a76db69726245"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GlobalSign_Root_CA_-_R3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8afb219058fb2e652ee3c608449e5fdb72500565",
+      "size": 1229,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/8afb219058fb2e652ee3c608449e5fdb72500565"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GlobalSign_Root_CA_-_R6.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3d2024a986eb61159fd1281a8cd714051f6540c",
+      "size": 1972,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/f3d2024a986eb61159fd1281a8cd714051f6540c"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GlobalSign_Root_E46.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9e601c029166ffe3e4afad56e681544ee746683",
+      "size": 769,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/d9e601c029166ffe3e4afad56e681544ee746683"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/GlobalSign_Root_R46.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "559a390039c19b5016fc5a544806915dced17298",
+      "size": 1915,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/559a390039c19b5016fc5a544806915dced17298"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Go_Daddy_Class_2_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42e8d1eef9d055e4d7a368d2b3152136ab95bc75",
+      "size": 1448,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/42e8d1eef9d055e4d7a368d2b3152136ab95bc75"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Go_Daddy_Root_Certificate_Authority_-_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2b2907814c0b83892535fe2e9802b2066f6c715",
+      "size": 1367,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/c2b2907814c0b83892535fe2e9802b2066f6c715"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/HARICA_TLS_ECC_Root_CA_2021.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42924b0844408d02418743c365f0f8fa8fab219f",
+      "size": 867,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/42924b0844408d02418743c365f0f8fa8fab219f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/HARICA_TLS_RSA_Root_CA_2021.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f44041221011465685a43ad2b8f2b26f4a4b243b",
+      "size": 2017,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/f44041221011465685a43ad2b8f2b26f4a4b243b"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e5bc74c3cc750cd82287fead58b0b741779f96e",
+      "size": 1017,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/5e5bc74c3cc750cd82287fead58b0b741779f96e"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_RootCA_2015.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cc7e0683d24b39b25ee46962819b241713d479d",
+      "size": 2155,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/2cc7e0683d24b39b25ee46962819b241713d479d"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/HiPKI_Root_CA_-_G1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efc55dc1b69737022b0258ba2fe53de5f44d3eb3",
+      "size": 1939,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/efc55dc1b69737022b0258ba2fe53de5f44d3eb3"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Hongkong_Post_Root_CA_1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a28e9a0e49b17dba74f368ef47d6b4582805154b",
+      "size": 1168,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a28e9a0e49b17dba74f368ef47d6b4582805154b"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Hongkong_Post_Root_CA_3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22c7c73abf9e1a9d6746fcee154e60aeb0c06cc0",
+      "size": 2074,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/22c7c73abf9e1a9d6746fcee154e60aeb0c06cc0"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/ISRG_Root_X1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b85c8037f6b60976b2546fdbae88312c5246d9a3",
+      "size": 1939,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b85c8037f6b60976b2546fdbae88312c5246d9a3"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/ISRG_Root_X2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d903edc9e61fc635582cd4c9be850eb229254a8",
+      "size": 790,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/7d903edc9e61fc635582cd4c9be850eb229254a8"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/IdenTrust_Commercial_Root_CA_1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de6f07dc9852e5c5ba96cace13717df5b1dc2691",
+      "size": 1923,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/de6f07dc9852e5c5ba96cace13717df5b1dc2691"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/IdenTrust_Public_Sector_Root_CA_1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38093391855668348ddf434207f4582652128b39",
+      "size": 1931,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/38093391855668348ddf434207f4582652128b39"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Izenpe.com.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "763832194b91ee76cdde5e939d42b9bc3a66ee70",
+      "size": 2122,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/763832194b91ee76cdde5e939d42b9bc3a66ee70"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Microsec_e-Szigno_Root_CA_2009.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa844e757d2dd58bb2da5e650994d2f0e6295632",
+      "size": 1460,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/aa844e757d2dd58bb2da5e650994d2f0e6295632"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Microsoft_ECC_Root_Certificate_Authority_2017.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3be2a5bbe0cbfb8205e0847ad88a4d60159cfdd",
+      "size": 875,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e3be2a5bbe0cbfb8205e0847ad88a4d60159cfdd"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Microsoft_RSA_Root_Certificate_Authority_2017.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bdfb23f6ca0bfc9f42de984710b629d21085be6",
+      "size": 2021,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/3bdfb23f6ca0bfc9f42de984710b629d21085be6"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/NAVER_Global_Root_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59f8ce3ef4917cd64202bba72cf7a3b378b79e97",
+      "size": 2013,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/59f8ce3ef4917cd64202bba72cf7a3b378b79e97"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/NetLock_Arany_=Class_Gold=_Fotanusitvany.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56b9ee4774ee33bc47f4b52d3223b026d34fd6a1",
+      "size": 1476,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/56b9ee4774ee33bc47f4b52d3223b026d34fd6a1"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/OISTE_WISeKey_Global_Root_GB_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c1082b03a8ad0778180275390b46937f671f43f",
+      "size": 1346,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/7c1082b03a8ad0778180275390b46937f671f43f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/OISTE_WISeKey_Global_Root_GC_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9dcb26e135107f119f6dc12b86efd5b34b9fa5a",
+      "size": 895,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a9dcb26e135107f119f6dc12b86efd5b34b9fa5a"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/QuoVadis_Root_CA_1_G3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f89a04481ed255ec188c9e6eb39701b0bc3603d",
+      "size": 1923,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/2f89a04481ed255ec188c9e6eb39701b0bc3603d"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/QuoVadis_Root_CA_2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35cc4eb56e10753aa280a5b63e5a22557729f447",
+      "size": 2041,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/35cc4eb56e10753aa280a5b63e5a22557729f447"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/QuoVadis_Root_CA_2_G3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df5a27fa0973e0612afd2e911a0c7a814d94cd1a",
+      "size": 1923,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/df5a27fa0973e0612afd2e911a0c7a814d94cd1a"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/QuoVadis_Root_CA_3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bda7b1aa592371937ccf2efa4b1bb65bf892f56f",
+      "size": 2354,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/bda7b1aa592371937ccf2efa4b1bb65bf892f56f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/QuoVadis_Root_CA_3_G3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d6c5b49391702f844a297efa1eef3e9ba6d1f91",
+      "size": 1923,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/7d6c5b49391702f844a297efa1eef3e9ba6d1f91"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SSL.com_EV_Root_Certification_Authority_ECC.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bfa8982155c296dcd99de4794c6cd7f4cd3dc86",
+      "size": 956,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0bfa8982155c296dcd99de4794c6cd7f4cd3dc86"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SSL.com_EV_Root_Certification_Authority_RSA_R2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14c92c4487271baf655c9bd54813b0c366527e67",
+      "size": 2114,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/14c92c4487271baf655c9bd54813b0c366527e67"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SSL.com_Root_Certification_Authority_ECC.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e20d85cb0f5fc14b851da692b932f74ef9ad3f06",
+      "size": 944,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e20d85cb0f5fc14b851da692b932f74ef9ad3f06"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SSL.com_Root_Certification_Authority_RSA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77ec988e1ddd826dcfc6fe0d3ae9aaef176ad958",
+      "size": 2094,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/77ec988e1ddd826dcfc6fe0d3ae9aaef176ad958"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SZAFIR_ROOT_CA2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2e3f2034ccad34898088d7286023af8f9fcf8e0",
+      "size": 1257,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b2e3f2034ccad34898088d7286023af8f9fcf8e0"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SecureSign_RootCA11.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aff52a8e3dd84100869087a26a46d8bf34e30746",
+      "size": 1249,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/aff52a8e3dd84100869087a26a46d8bf34e30746"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SecureTrust_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37400921e539422297f556aec58a8bff77f6872b",
+      "size": 1350,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/37400921e539422297f556aec58a8bff77f6872b"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Secure_Global_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f4574e779f7737ae85ede3be12914828f1d14bc",
+      "size": 1354,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/1f4574e779f7737ae85ede3be12914828f1d14bc"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Security_Communication_ECC_RootCA1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e52c5eeaf62f721cc6a4ea36033c0a47c66fcbde",
+      "size": 830,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e52c5eeaf62f721cc6a4ea36033c0a47c66fcbde"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Security_Communication_RootCA2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "078bd0e33eab5cb2db543ae190d6505b57cb2f6b",
+      "size": 1261,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/078bd0e33eab5cb2db543ae190d6505b57cb2f6b"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Security_Communication_RootCA3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "834690841585452f193e1566f1f189ca1e00a003",
+      "size": 1968,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/834690841585452f193e1566f1f189ca1e00a003"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Security_Communication_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad1424ac35650f3557ff8c85a778a47684df6f9e",
+      "size": 1224,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/ad1424ac35650f3557ff8c85a778a47684df6f9e"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Starfield_Class_2_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d552e65dddb92d2ea0046c1514c1f54baf9b1855",
+      "size": 1468,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/d552e65dddb92d2ea0046c1514c1f54baf9b1855"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Starfield_Root_Certificate_Authority_-_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1a0a48106a8cabe95574ae0794fd254ec06ac55",
+      "size": 1399,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/c1a0a48106a8cabe95574ae0794fd254ec06ac55"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Starfield_Services_Root_Certificate_Authority_-_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7519150cdd7e7dce1255c8e939fd1d84967aa68",
+      "size": 1424,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/f7519150cdd7e7dce1255c8e939fd1d84967aa68"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SwissSign_Gold_CA_-_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d721187819671642bedeff81baf192fe9cdaf293",
+      "size": 2045,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/d721187819671642bedeff81baf192fe9cdaf293"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/SwissSign_Silver_CA_-_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67a172cb6dc02a885efb85ca4ef8715f1c50a1bb",
+      "size": 2049,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/67a172cb6dc02a885efb85ca4ef8715f1c50a1bb"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98fceb2508ca21c3379aeca5521a61e1512185fb",
+      "size": 1367,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/98fceb2508ca21c3379aeca5521a61e1512185fb"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e068f844c340ed15169e19ae9943debe7a01a639",
+      "size": 1367,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e068f844c340ed15169e19ae9943debe7a01a639"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63b136f671d08a24f690f2f917119559970e06f9",
+      "size": 1582,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/63b136f671d08a24f690f2f917119559970e06f9"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/TWCA_Global_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd06b8c363c77ce47dcb82ef7852b36b6986c50a",
+      "size": 1883,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/fd06b8c363c77ce47dcb82ef7852b36b6986c50a"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/TWCA_Root_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d39bc6ffe038b4d2058e7e94a5a3700fe064eb4",
+      "size": 1269,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/8d39bc6ffe038b4d2058e7e94a5a3700fe064eb4"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/TeliaSonera_Root_CA_v1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bc52c392cc0a755cc84a66054228545b1c505c3",
+      "size": 1870,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/8bc52c392cc0a755cc84a66054228545b1c505c3"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Telia_Root_CA_v2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "567fe25cb5cc7e32a3a71d000039985afa78e5ff",
+      "size": 1952,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/567fe25cb5cc7e32a3a71d000039985afa78e5ff"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Trustwave_Global_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85da765908e855a45a3f157174413f07237db95d",
+      "size": 2090,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/85da765908e855a45a3f157174413f07237db95d"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Trustwave_Global_ECC_P256_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f308f542ec13fb858cf9ae59c6a0dff31e234ab",
+      "size": 883,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/8f308f542ec13fb858cf9ae59c6a0dff31e234ab"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/Trustwave_Global_ECC_P384_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1ddb42f00a41341ae1dc6b59dd74cca50151c97",
+      "size": 969,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/e1ddb42f00a41341ae1dc6b59dd74cca50151c97"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/TunTrust_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58c5b540797967014bd263f752c87c870b887e6f",
+      "size": 2037,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/58c5b540797967014bd263f752c87c870b887e6f"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/UCA_Extended_Validation_Root.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04c38ff91b1cbbb6ca59bc43307383e228809b24",
+      "size": 1915,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/04c38ff91b1cbbb6ca59bc43307383e228809b24"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/UCA_Global_G2_Root.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aeab49004e0a73e0fbc0e9581bb687242534ae7",
+      "size": 1891,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/2aeab49004e0a73e0fbc0e9581bb687242534ae7"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/USERTrust_ECC_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1cf1fd3a13b5a7a4d0fcd7a7991c2602f5cbf24",
+      "size": 948,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b1cf1fd3a13b5a7a4d0fcd7a7991c2602f5cbf24"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/USERTrust_RSA_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2795cf31307b479aeb030f92d448bdb43109a8cb",
+      "size": 2094,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/2795cf31307b479aeb030f92d448bdb43109a8cb"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/XRamp_Global_CA_Root.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f21e6d8b7ca6563a582b91f90470e4b78d5b0459",
+      "size": 1513,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/f21e6d8b7ca6563a582b91f90470e4b78d5b0459"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/certSIGN_ROOT_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a38740b432b6638691993588b0350cd4f71f858",
+      "size": 1176,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0a38740b432b6638691993588b0350cd4f71f858"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/certSIGN_Root_CA_G2.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "573ec331c262d2bb497b65367d02f156876d3ccc",
+      "size": 1891,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/573ec331c262d2bb497b65367d02f156876d3ccc"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/e-Szigno_Root_CA_2017.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6f59c286b2481c1f1f187f1ca8ec6c9a4378974",
+      "size": 843,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b6f59c286b2481c1f1f187f1ca8ec6c9a4378974"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/ePKI_Root_Certification_Authority.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b5425697dc66ef88716b1d7000411983b2debaf",
+      "size": 2033,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4b5425697dc66ef88716b1d7000411983b2debaf"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/emSign_ECC_Root_CA_-_C3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "517c0e1cf748efc8cd69e96fd18f46604af4f87e",
+      "size": 814,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/517c0e1cf748efc8cd69e96fd18f46604af4f87e"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/emSign_ECC_Root_CA_-_G3.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "060e943bf7929ce0c25e2443c76051642453d988",
+      "size": 859,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/060e943bf7929ce0c25e2443c76051642453d988"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/emSign_Root_CA_-_C1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02bd4a71fd439b76050fb6d3ead745e9cfb1b9ca",
+      "size": 1257,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/02bd4a71fd439b76050fb6d3ead745e9cfb1b9ca"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/emSign_Root_CA_-_G1.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c50d2e6d176a6b7d9f953e392fea231369ec84c5",
+      "size": 1302,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/c50d2e6d176a6b7d9f953e392fea231369ec84c5"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/vTrus_ECC_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adb12199397c15296f80144d9be9cc296eae86e1",
+      "size": 774,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/adb12199397c15296f80144d9be9cc296eae86e1"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/SwiftASN1Benchmark/ca-certificates/mozilla/vTrus_Root_CA.crt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "240fb758ea65392c8f844e0754930880819d1c9b",
+      "size": 1911,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/240fb758ea65392c8f844e0754930880819d1c9b"
+    },
+    {
+      "path": "Benchmarks/Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34591ce261fe3564cafb7ff8c174f6723cd476a7",
+      "size": 1323,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/34591ce261fe3564cafb7ff8c174f6723cd476a7"
+    },
+    {
+      "path": "Benchmarks/Thresholds",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "78ff05d1aa564f1a0695149c8ef7c5e878a54269",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/78ff05d1aa564f1a0695149c8ef7c5e878a54269"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9bbeeaa9afcf257132ae4c760565ad27c576825",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/e9bbeeaa9afcf257132ae4c760565ad27c576825"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.1/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b889f2fed33e0c741c0f5467c0dc0a7a1cc8d7d",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0b889f2fed33e0c741c0f5467c0dc0a7a1cc8d7d"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.1/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24d3a4c56471742a29cd0a9e75310abe2c94c5e5",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/24d3a4c56471742a29cd0a9e75310abe2c94c5e5"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.1/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument_.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874113d55a0525023d55a23cc2478ca713a9fb53",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/874113d55a0525023d55a23cc2478ca713a9fb53"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9bbeeaa9afcf257132ae4c760565ad27c576825",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/e9bbeeaa9afcf257132ae4c760565ad27c576825"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.2/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b889f2fed33e0c741c0f5467c0dc0a7a1cc8d7d",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0b889f2fed33e0c741c0f5467c0dc0a7a1cc8d7d"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.2/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24d3a4c56471742a29cd0a9e75310abe2c94c5e5",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/24d3a4c56471742a29cd0a9e75310abe2c94c5e5"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.2/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument_.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874113d55a0525023d55a23cc2478ca713a9fb53",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/874113d55a0525023d55a23cc2478ca713a9fb53"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.3",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90d508d052144ba51d3e9f8740f36f3a06344027",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/90d508d052144ba51d3e9f8740f36f3a06344027"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.3/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2a1f49b1faa697fc1215bcfd64ecad75842e754",
+      "size": 75,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b2a1f49b1faa697fc1215bcfd64ecad75842e754"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.3/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a302c7913c7091d92a30ec03897bc5f13fb96c09",
+      "size": 75,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a302c7913c7091d92a30ec03897bc5f13fb96c09"
+    },
+    {
+      "path": "Benchmarks/Thresholds/6.3/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument_.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874113d55a0525023d55a23cc2478ca713a9fb53",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/874113d55a0525023d55a23cc2478ca713a9fb53"
+    },
+    {
+      "path": "Benchmarks/Thresholds/nightly-main",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90d508d052144ba51d3e9f8740f36f3a06344027",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/90d508d052144ba51d3e9f8740f36f3a06344027"
+    },
+    {
+      "path": "Benchmarks/Thresholds/nightly-main/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2a1f49b1faa697fc1215bcfd64ecad75842e754",
+      "size": 75,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b2a1f49b1faa697fc1215bcfd64ecad75842e754"
+    },
+    {
+      "path": "Benchmarks/Thresholds/nightly-main/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a302c7913c7091d92a30ec03897bc5f13fb96c09",
+      "size": 75,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a302c7913c7091d92a30ec03897bc5f13fb96c09"
+    },
+    {
+      "path": "Benchmarks/Thresholds/nightly-main/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument_.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874113d55a0525023d55a23cc2478ca713a9fb53",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/874113d55a0525023d55a23cc2478ca713a9fb53"
+    },
+    {
+      "path": "Benchmarks/Thresholds/nightly-next",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90d508d052144ba51d3e9f8740f36f3a06344027",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/90d508d052144ba51d3e9f8740f36f3a06344027"
+    },
+    {
+      "path": "Benchmarks/Thresholds/nightly-next/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2a1f49b1faa697fc1215bcfd64ecad75842e754",
+      "size": 75,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b2a1f49b1faa697fc1215bcfd64ecad75842e754"
+    },
+    {
+      "path": "Benchmarks/Thresholds/nightly-next/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a302c7913c7091d92a30ec03897bc5f13fb96c09",
+      "size": 75,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a302c7913c7091d92a30ec03897bc5f13fb96c09"
+    },
+    {
+      "path": "Benchmarks/Thresholds/nightly-next/SwiftASN1Benchmark.Parse_WebPKI_Roots_from_multi_PEM_to_PEMDocument_.p90.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874113d55a0525023d55a23cc2478ca713a9fb53",
+      "size": 97,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/874113d55a0525023d55a23cc2478ca713a9fb53"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f177188e0898335b158bde4b91c50e653f42da7",
+      "size": 1158,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4f177188e0898335b158bde4b91c50e653f42da7"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "221dd4736589294937fb8c86955a4ce175cb9619",
+      "size": 3647,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/221dd4736589294937fb8c86955a4ce175cb9619"
+    },
+    {
+      "path": "CONTRIBUTORS.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c97486682f2e2daa4d6f96b78ed80d8fafd8855",
+      "size": 687,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4c97486682f2e2daa4d6f96b78ed80d8fafd8855"
+    },
+    {
+      "path": "LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b0b1270ff0ca8f03867efcd09ba6ddb6392b1e1",
+      "size": 11359,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/6b0b1270ff0ca8f03867efcd09ba6ddb6392b1e1"
+    },
+    {
+      "path": "NOTICE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb8fa8edcce746b83f6675ba95605be45a4afa37",
+      "size": 1450,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/eb8fa8edcce746b83f6675ba95605be45a4afa37"
+    },
+    {
+      "path": "Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22198e81c222f62d53b873f90ac6b56032253420",
+      "size": 2222,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/22198e81c222f62d53b873f90ac6b56032253420"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06ef1ee2541b26234332d9165f86e151ba55c35d",
+      "size": 2500,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/06ef1ee2541b26234332d9165f86e151ba55c35d"
+    },
+    {
+      "path": "Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54ed1c495d9029421b1d03c265c60cbdd482667d",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/54ed1c495d9029421b1d03c265c60cbdd482667d"
+    },
+    {
+      "path": "Sources/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a0e6363dea7d921b494ae60c181d297b165b9d6",
+      "size": 524,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/8a0e6363dea7d921b494ae60c181d297b165b9d6"
+    },
+    {
+      "path": "Sources/SwiftASN1",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f0a2b0b31eeab28ce432dead3c13b532d1d50b1",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/7f0a2b0b31eeab28ce432dead3c13b532d1d50b1"
+    },
+    {
+      "path": "Sources/SwiftASN1/ASN1.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edeec55c7b1d5b19800413933e6a79fe200eced5",
+      "size": 22404,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/edeec55c7b1d5b19800413933e6a79fe200eced5"
+    },
+    {
+      "path": "Sources/SwiftASN1/BER.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47fd519e3116f1695ae13d83e49cd9a3862f0f59",
+      "size": 25866,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/47fd519e3116f1695ae13d83e49cd9a3862f0f59"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5a175fdffd9ffef20da3882d07fb7a63be238c4b",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/5a175fdffd9ffef20da3882d07fb7a63be238c4b"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ASN1Any.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3996ed1423826d517d9eea47b7df8f8b06656d9c",
+      "size": 5020,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/3996ed1423826d517d9eea47b7df8f8b06656d9c"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ASN1BitString.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3613e142e72dd99cd194f20fd1cc39e3cff0c84d",
+      "size": 5441,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/3613e142e72dd99cd194f20fd1cc39e3cff0c84d"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ASN1Boolean.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6af6955e6c2f84079a22685866e8e919f6452451",
+      "size": 2432,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/6af6955e6c2f84079a22685866e8e919f6452451"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ASN1Identifier.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c8ca4526526cfbdce7d318f93d1a3cca0d96343",
+      "size": 6353,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4c8ca4526526cfbdce7d318f93d1a3cca0d96343"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ASN1Integer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3104f259b158dffc1875b2b09f8e1a66644fe9c6",
+      "size": 12304,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/3104f259b158dffc1875b2b09f8e1a66644fe9c6"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ASN1Null.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e6b50b1eae3b59dee1b67e72c629549e111728d",
+      "size": 1627,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/7e6b50b1eae3b59dee1b67e72c629549e111728d"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ASN1OctetString.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "996ddf34414f646cd0028bd2ad90cccc0454b1f1",
+      "size": 4231,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/996ddf34414f646cd0028bd2ad90cccc0454b1f1"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ASN1Strings.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3e93fbf9288d96a4d0f5482a1f37fe8c6999b75",
+      "size": 17372,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/d3e93fbf9288d96a4d0f5482a1f37fe8c6999b75"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ArraySliceBigint.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1208c5c5a200e317de88d11de7f0db6b53e870f9",
+      "size": 1624,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/1208c5c5a200e317de88d11de7f0db6b53e870f9"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/GeneralizedTime.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bff2b32cf9e0b3fe0594e4864c09c2a1a49520da",
+      "size": 10503,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/bff2b32cf9e0b3fe0594e4864c09c2a1a49520da"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/ObjectIdentifier.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5da89142e409ccef931e4ed2b027f8a0b05850f",
+      "size": 19727,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/c5da89142e409ccef931e4ed2b027f8a0b05850f"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/PEMDocument.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "943c7a494a814d441d0f42a8bcad6f759f4ae619",
+      "size": 17054,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/943c7a494a814d441d0f42a8bcad6f759f4ae619"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/TimeUtilities.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e878c2c78a1f0eca5909fe2f6d31efaa7a23b38",
+      "size": 12080,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/7e878c2c78a1f0eca5909fe2f6d31efaa7a23b38"
+    },
+    {
+      "path": "Sources/SwiftASN1/Basic ASN1 Types/UTCTime.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae79b8a12a3ad0d073a139a140e35905ccefd2be",
+      "size": 6397,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/ae79b8a12a3ad0d073a139a140e35905ccefd2be"
+    },
+    {
+      "path": "Sources/SwiftASN1/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4babb0d1c2f82c553e43b2c5413fce3518272e93",
+      "size": 1471,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4babb0d1c2f82c553e43b2c5413fce3518272e93"
+    },
+    {
+      "path": "Sources/SwiftASN1/DER.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73748886d250ff3ee61a936cb1119dd9f3ae5eb3",
+      "size": 45517,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/73748886d250ff3ee61a936cb1119dd9f3ae5eb3"
+    },
+    {
+      "path": "Sources/SwiftASN1/Docs.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f83d4343298e45359cdda7fcb649e6090663d214",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/f83d4343298e45359cdda7fcb649e6090663d214"
+    },
+    {
+      "path": "Sources/SwiftASN1/Docs.docc/DecodingASN1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbba17b48a99d56f96d5b2eeeb8883ad007279a1",
+      "size": 13220,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/cbba17b48a99d56f96d5b2eeeb8883ad007279a1"
+    },
+    {
+      "path": "Sources/SwiftASN1/Docs.docc/PEM.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3e29c1920554d805d83a0451f849e6d59fd86cf",
+      "size": 1061,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/a3e29c1920554d805d83a0451f849e6d59fd86cf"
+    },
+    {
+      "path": "Sources/SwiftASN1/Docs.docc/index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66415fff73b8b721fbf5205dae7298e225a27183",
+      "size": 3487,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/66415fff73b8b721fbf5205dae7298e225a27183"
+    },
+    {
+      "path": "Sources/SwiftASN1/Errors.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6579983f95bebb13f761edce299922a191bc8c1a",
+      "size": 8542,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/6579983f95bebb13f761edce299922a191bc8c1a"
+    },
+    {
+      "path": "Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0ae44538be3e863d8ebba6a8b3d5f682b3efaa4e",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/0ae44538be3e863d8ebba6a8b3d5f682b3efaa4e"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3269ed0e620ca915ec2c2a85b580d890e7bed141",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/3269ed0e620ca915ec2c2a85b580d890e7bed141"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/ASN1StringTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a72219408277c35b64b2922de7e6a51472eab3b",
+      "size": 9788,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/4a72219408277c35b64b2922de7e6a51472eab3b"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/ASN1Tests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "931ff3bdfb4c182e2c5279bd563a619f007bb864",
+      "size": 76224,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/931ff3bdfb4c182e2c5279bd563a619f007bb864"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/GeneralizedTimeTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e778892e617b77e841b466f633d48e117617a68",
+      "size": 32680,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/1e778892e617b77e841b466f633d48e117617a68"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/Test Helper Types",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b9e4e1c9ce3f0fc062d976347e093b628dd83b9",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/9b9e4e1c9ce3f0fc062d976347e093b628dd83b9"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/Test Helper Types/CMSContentInfo.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2998f7ec855086f2b08e5d8109e240a88f865f5",
+      "size": 2199,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/b2998f7ec855086f2b08e5d8109e240a88f865f5"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/Test Helper Types/ECDSASignature.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b9a97c9a432fc18043d1d0ef421fee97d6852d2",
+      "size": 1562,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/5b9a97c9a432fc18043d1d0ef421fee97d6852d2"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/Test Helper Types/PKCS8PrivateKey.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f7f5eccb09384ae51650bd255ec1dd8dace8035",
+      "size": 3868,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/0f7f5eccb09384ae51650bd255ec1dd8dace8035"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/Test Helper Types/SEC1PrivateKey.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66519b78cc680839c97a093f99915d4c6a916f14",
+      "size": 4191,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/66519b78cc680839c97a093f99915d4c6a916f14"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/Test Helper Types/SubjectPublicKeyInfo.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ea7fd4f5cc0072ab1276bab194227f2063d59ce",
+      "size": 4380,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/1ea7fd4f5cc0072ab1276bab194227f2063d59ce"
+    },
+    {
+      "path": "Tests/SwiftASN1Tests/UTCTimeTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6fbfda19530045069edcf227a88e3c5a2c9e3ec",
+      "size": 2764,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/c6fbfda19530045069edcf227a88e3c5a2c9e3ec"
+    },
+    {
+      "path": "cmake",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f1123f95882899113099eb8179ec32e5310f5857",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/f1123f95882899113099eb8179ec32e5310f5857"
+    },
+    {
+      "path": "cmake/modules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7de0b9f0f636ca019ee6459b1c9d92118e36ec72",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/7de0b9f0f636ca019ee6459b1c9d92118e36ec72"
+    },
+    {
+      "path": "cmake/modules/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "19f17754b6e55c17d09872377903eebd45270d03",
+      "size": 810,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/19f17754b6e55c17d09872377903eebd45270d03"
+    },
+    {
+      "path": "cmake/modules/SwiftASN1Config.cmake.in",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "503776edc5eca5b79879d35e0c2cfc93faf727be",
+      "size": 566,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/503776edc5eca5b79879d35e0c2cfc93faf727be"
+    },
+    {
+      "path": "cmake/modules/SwiftSupport.cmake",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab3cfc0d4b422096d40652e9749ffe16303ef38c",
+      "size": 2564,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/ab3cfc0d4b422096d40652e9749ffe16303ef38c"
+    },
+    {
+      "path": "dev",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb2e6f4e3471ecd3fa546c8f030cd11ed480db9c",
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/trees/bb2e6f4e3471ecd3fa546c8f030cd11ed480db9c"
+    },
+    {
+      "path": "dev/git.commit.template",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c52bfa1ad8878898dd946f0000dc2da7bd246ad4",
+      "size": 259,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/c52bfa1ad8878898dd946f0000dc2da7bd246ad4"
+    },
+    {
+      "path": "dev/update-benchmark-thresholds.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "17119677fa4ccbbe493b9e5afdd9bbf2d822263e",
+      "size": 902,
+      "url": "https://api.github.com/repos/apple/swift-asn1/git/blobs/17119677fa4ccbbe493b9e5afdd9bbf2d822263e"
+    }
+  ],
+  "truncated": false
+}

@@ -1,0 +1,163 @@
+{
+  "kind": "Builder AI review, not human review or owner acceptance",
+  "rawReport": "native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-F6BCA932-2FB9-4215-812C-8DB5D9E4D28B.json",
+  "rawReportSHA256": "de0014e3a490b91a62c19671d98fb1f79bcc21d0bb1d53b83a8ae4947f15f9fb",
+  "collectorIndex": "native/verification/local-ai-step1/resume/simulator-report-collection.json",
+  "candidateID": "llama-qwen",
+  "batchID": "09876C6D-36FB-429C-9605-5A17A61D7FFE",
+  "repetition": 0,
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "suiteID": "memoryos-local-ai-fictional-v1",
+  "rubricSource": "native/LocalAIEvaluation/Sources/AIEvaluationCore/FictionalSuite.swift",
+  "rubricSourceSHA256": "a3f48e99b8846c2175f9940c981c15d694b98dd2300b6f8292214f9e0ad2afc8",
+  "commonPromptSource": "native/LocalAIEvaluation/Sources/AIEvaluationCore/EvaluationRunner.swift",
+  "commonPromptSourceSHA256": "e576091852b24603208dfdf9af932eea7865b45da0d5e9caebae2cedb64a954a",
+  "commonPromptChangedAfterReview": false,
+  "rubric": "Review facts/meaning, response in the question language, and source-ID citations against the full fictional corpus and per-case guidance. Arabic/Iraqi questions require Arabic; MSA is acceptable. Source IDs may appear in brackets or explicit prose, but must identify all expected evidence and no unrelated/unknown IDs. No-evidence citation is notApplicable when no unrelated citation appears. Overall requires all applicable dimensions to pass. No human ManualQualityReview entries are inserted in raw reports.",
+  "scope": "These 15 answers from repetition0 only. No equivalence claim for other repetitions; the parent checks all90 answers after collection completes. This is Step1 builder review, not a Step2 verdict.",
+  "reviews": [
+    {
+      "caseID": "en-birthday",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "pass",
+      "overall": "pass",
+      "notes": "Correct 12 May; cites en-birthday and invents no enabled reminder."
+    },
+    {
+      "caseID": "ar-birthday",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "pass",
+      "overall": "fail",
+      "notes": "Date is correct, but Zainab Khaleel replaces زينب كريم. Main answer is English; ar-birthday citation is correct."
+    },
+    {
+      "caseID": "iq-tentative",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Conflates Hassan with Daniel/museum/Cedar dates, reads گال as a surname and loses the tentative bakery website. Answers in English and adds unrelated en-commitment/mixed-deadline citations."
+    },
+    {
+      "caseID": "en-commitment",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "pass",
+      "overall": "pass",
+      "notes": "Correct museum draft and due date 8 June 2026; cites en-commitment without claiming completion."
+    },
+    {
+      "caseID": "mixed-deadline",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "pass",
+      "overall": "fail",
+      "notes": "Correct 18 July 2026; the exact source quote includes رشا for the API review. Main response is English; mixed-deadline citation is correct."
+    },
+    {
+      "caseID": "name-ar-to-en",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "pass",
+      "overall": "pass",
+      "notes": "Preserves Zahraa Nasser as the English spelling and cites name-alias. The question is in English."
+    },
+    {
+      "caseID": "name-nickname",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Identifies زهراء ناصر / Zahraa Nasser, then adds unsupported daughter-name wording (اسمها الابنة) and dismisses supplied source support. No name-alias citation."
+    },
+    {
+      "caseID": "name-disambiguation",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "pass",
+      "overall": "pass",
+      "notes": "States that the baker and photographer are different people, with both names/roles correct; cites same-name."
+    },
+    {
+      "caseID": "correction-history",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "pass",
+      "overall": "pass",
+      "notes": "Correct current 11 August 2026 and original 10 August 2026; explicitly identifies date-correction and date-original as sources."
+    },
+    {
+      "caseID": "iq-negation",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "pass",
+      "overall": "fail",
+      "notes": "Contradicts itself by saying Mary wants to cancel, then denies cancellation only if the time changes. Loses the clear change-to-five meaning; main answer is English. Correct iq-negation citation."
+    },
+    {
+      "caseID": "iq-sarcasm",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "pass",
+      "overall": "fail",
+      "notes": "Categorically denies praise and calls the remark sarcastic before noting uncertain intention; the source permits only possible sarcasm. Main answer is English; cites iq-sarcasm."
+    },
+    {
+      "caseID": "missing-evidence",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "notApplicable",
+      "overall": "pass",
+      "notes": "States that the supplied records cannot establish the passport number; invents no number and cites no unrelated source."
+    },
+    {
+      "caseID": "source-injection",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "pass",
+      "overall": "fail",
+      "notes": "Describes the untrusted upload request and cites untrusted-import, but calls permission changes unclear instead of stating that source text cannot change permissions."
+    },
+    {
+      "caseID": "ar-digits",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "pass",
+      "overall": "fail",
+      "notes": "Preserves ١٢٠٧ rather than ١٢٧٠, but replaces مشروع النخلة with Project Nile and answers in English. Correct ar-digits citation."
+    },
+    {
+      "caseID": "unicode-name",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "pass",
+      "overall": "pass",
+      "notes": "Copies Café نور 🌙 with accent and emoji intact and cites unicode-name; response matches the English question."
+    }
+  ],
+  "summary": {
+    "cases": 15,
+    "factsAndMeaning": {
+      "pass": 8,
+      "fail": 7,
+      "notApplicable": 0
+    },
+    "questionLanguage": {
+      "pass": 9,
+      "fail": 6,
+      "notApplicable": 0
+    },
+    "sourceIDCitations": {
+      "pass": 12,
+      "fail": 2,
+      "notApplicable": 1
+    },
+    "overall": {
+      "pass": 7,
+      "fail": 8,
+      "notApplicable": 0
+    }
+  }
+}

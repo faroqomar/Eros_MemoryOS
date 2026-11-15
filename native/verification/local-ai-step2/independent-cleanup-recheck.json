@@ -1,0 +1,9 @@
+{
+  "scope": "Independent focused C32 cleanup recheck of main-owned receipt; actual preserved bytes checked",
+  "cleanupReceipt": "native/verification/local-ai-step2/cleanup-removals.json",
+  "cleanupReceiptSHA256": "186c8e0eeb81ce736e4dd2d2fcfdb6dfd6df94f1d9aa7a4703932e446ac49f07",
+  "preservedFilesChecked": 11,
+  "removedEntriesChecked": 7,
+  "issues": [],
+  "result": "PASS"
+}

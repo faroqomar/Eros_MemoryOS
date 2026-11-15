@@ -1,0 +1,9 @@
+{"event": "archive-response", "status": 200, "retainedBytes": 0, "contentLength": null}
+{"event": "archive-progress", "bytes": 49152}
+{"event": "archive-progress", "bytes": 114688}
+{"event": "archive-progress", "bytes": 180224}
+{"event": "archive-progress", "bytes": 245760}
+{"event": "archive-progress", "bytes": 262144}
+{"event": "archive-progress", "bytes": 327680}
+{"event": "archive-progress", "bytes": 332090}
+{"identity": "swift-asn1", "origin": "https://github.com/apple/swift-asn1.git", "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d", "rootTreeSHA1": "e66cabf366880e5314973dd47f8b793b5ea7bfe8", "genuineShallowBoundary": true, "promisor": false, "sourcePatched": false, "archiveSHA256": "07674b91d1d9fbd96a47cb2378716d6fd70d239fea176b535f4116528edc5cca", "archiveBytes": 332090, "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/swift-asn1-7065ad2c", "fsck": "", "canonicalResolutionVerified": false}

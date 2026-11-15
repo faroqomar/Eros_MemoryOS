@@ -1,0 +1,221 @@
+--- a/cactus/CMakeLists.txt
++++ b/cactus/CMakeLists.txt
+@@ -18,7 +18,10 @@
+     message(STATUS "CMAKE_BUILD_TYPE was not set, defaulting to Release.")
+ endif()
+ 
+-find_package(CURL QUIET)
++option(CACTUS_LOCAL_EVALUATION_ONLY "Exclude telemetry and cloud transport for personal local evaluation" OFF)
++if(NOT CACTUS_LOCAL_EVALUATION_ONLY)
++    find_package(CURL QUIET)
++endif()
+ 
+ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/)
+ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/)
+@@ -39,32 +42,34 @@
+ 
+ if(APPLE)
+     set(CMAKE_OSX_ARCHITECTURES "arm64")
+-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -arch arm64 -march=armv8.2-a+fp16+simd+dotprod+i8mm -pthread -Wall -Wextra -pedantic -O3 -Wno-missing-field-initializers")
++    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -arch arm64 -march=armv8.2-a+fp16+simd+dotprod -pthread -Wall -Wextra -pedantic -O3 -Wno-missing-field-initializers")
+     add_compile_definitions(
+         __ARM_NEON=1
+         __ARM_FEATURE_FP16_VECTOR_ARITHMETIC=1
+         __ARM_FEATURE_DOTPROD=1
+-        __ARM_FEATURE_MATMUL_INT8=1
+         ACCELERATE_NEW_LAPACK
+     )
+ 
+     enable_language(OBJCXX)
++    if(NOT CACTUS_LOCAL_EVALUATION_ONLY)
+     set(CACTUS_CURL_INCLUDE_DIR "${CACTUS_CURL_ROOT}/include")
+     set(CACTUS_CURL_LIBRARY_MACOS "${CACTUS_CURL_ROOT}/macos/libcurl.a")
+     cactus_require_vendored_curl("${CACTUS_CURL_INCLUDE_DIR}" "${CACTUS_CURL_LIBRARY_MACOS}" "macOS")
++    endif()
+     find_library(COREML_FRAMEWORK CoreML REQUIRED)
+     find_library(FOUNDATION_FRAMEWORK Foundation REQUIRED)
+     find_library(ACCELERATE_FRAMEWORK Accelerate REQUIRED)
++    if(NOT CACTUS_LOCAL_EVALUATION_ONLY)
+     find_library(SECURITY_FRAMEWORK Security REQUIRED)
+     find_library(SYSTEMCONFIGURATION_FRAMEWORK SystemConfiguration REQUIRED)
+     find_library(CFNETWORK_FRAMEWORK CFNetwork REQUIRED)
++    endif()
+ else()
+-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=armv8.2-a+fp16+simd+dotprod+i8mm -pthread -Wall -Wextra -pedantic -O3 -Wno-missing-field-initializers")
++    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=armv8.2-a+fp16+simd+dotprod -pthread -Wall -Wextra -pedantic -O3 -Wno-missing-field-initializers")
+     add_compile_definitions(
+         __ARM_NEON=1
+         __ARM_FEATURE_FP16_VECTOR_ARITHMETIC=1
+         __ARM_FEATURE_DOTPROD=1
+-        __ARM_FEATURE_MATMUL_INT8=1
+     )
+ endif()
+ 
+@@ -74,6 +79,12 @@
+ file(GLOB FFI_SOURCES CONFIGURE_DEPENDS "ffi/*.cpp")
+ file(GLOB MODEL_SOURCES CONFIGURE_DEPENDS "models/*.cpp" "models/gemma4/*.cpp")
+ file(GLOB TELEMETRY_SOURCES CONFIGURE_DEPENDS "telemetry/*.cpp")
++if(CACTUS_LOCAL_EVALUATION_ONLY)
++    set(TELEMETRY_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/telemetry/telemetry_local_only.cpp")
++    add_compile_definitions(CACTUS_LOCAL_EVALUATION_ONLY=1)
++else()
++    list(REMOVE_ITEM TELEMETRY_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/telemetry/telemetry_local_only.cpp")
++endif()
+ set(I8MM_SOURCE "${CMAKE_CURRENT_SOURCE_DIR}/kernel/kernel_i8mm.cpp")
+ list(REMOVE_ITEM KERNEL_SOURCES "${I8MM_SOURCE}")
+ 
+@@ -125,14 +136,13 @@
+             ${COREML_FRAMEWORK}
+             ${FOUNDATION_FRAMEWORK}
+             ${ACCELERATE_FRAMEWORK}
+-            ${SECURITY_FRAMEWORK}
+-            ${SYSTEMCONFIGURATION_FRAMEWORK}
+-            ${CFNETWORK_FRAMEWORK}
+-            ${CACTUS_CURL_LIBRARY_MACOS}
+         )
++        if(NOT CACTUS_LOCAL_EVALUATION_ONLY)
++            target_link_libraries(${target_name} PUBLIC ${SECURITY_FRAMEWORK} ${SYSTEMCONFIGURATION_FRAMEWORK} ${CFNETWORK_FRAMEWORK} ${CACTUS_CURL_LIBRARY_MACOS})
+         target_include_directories(${target_name} PUBLIC ${CACTUS_CURL_INCLUDE_DIR})
+         target_compile_definitions(${target_name} PRIVATE CACTUS_USE_CURL=1)
+-    elseif(CURL_FOUND)
++        endif()
++    elseif(CURL_FOUND AND NOT CACTUS_LOCAL_EVALUATION_ONLY)
+         target_include_directories(${target_name} PRIVATE ${CURL_INCLUDE_DIRS})
+         target_link_libraries(${target_name} PUBLIC ${CURL_LIBRARIES})
+         target_compile_definitions(${target_name} PRIVATE CACTUS_USE_CURL)
+--- a/cactus/engine/engine_model.cpp
++++ b/cactus/engine/engine_model.cpp
+@@ -81,6 +81,10 @@
+         CACTUS_LOG_ERROR("model", "Model initialization failed - config not loaded from: " << model_folder);
+         return false;
+     }
++
++#if defined(CACTUS_LOCAL_EVALUATION_ONLY)
++    config_.default_backend = Config::Backend::CPU;
++#endif
+ 
+     std::string vocab_file = model_folder + "/vocab.txt";
+     std::string merges_file = model_folder + "/merges.txt";
+--- a/cactus/ffi/cactus_ffi.h
++++ b/cactus/ffi/cactus_ffi.h
+@@ -17,7 +17,15 @@
+ extern "C" {
+ #endif
+ 
++CACTUS_FFI_EXPORT bool cactus_memoryos_evaluation_is_local_only(void);
++CACTUS_FFI_EXPORT size_t cactus_memoryos_evaluation_thread_count(void);
++
++
+ typedef void* cactus_model_t;
++CACTUS_FFI_EXPORT int cactus_memoryos_evaluation_embed_last_token(
++    cactus_model_t model, const char* text, float* buffer, size_t buffer_size,
++    size_t* embedding_dim, bool normalize);
++
+ typedef void* cactus_index_t;
+ typedef void* cactus_stream_transcribe_t;
+ 
+--- a/cactus/ffi/cactus_memoryos_embedding.cpp
++++ b/cactus/ffi/cactus_memoryos_embedding.cpp
+@@ -0,0 +1,48 @@
++// Explicit Qwen3 Embedding preprocessing for this local evaluation.
++// Model card: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B#transformers-usage
++// Use the final unpadded token's hidden state, then L2-normalize that row.
++// The upstream cactus_embed mean-pooling API remains unchanged.
++#include "cactus_ffi.h"
++#include "cactus_utils.h"
++#include <algorithm>
++#include <cmath>
++#include <cstring>
++
++#if defined(CACTUS_LOCAL_EVALUATION_ONLY)
++extern "C" int cactus_memoryos_evaluation_embed_last_token(
++    cactus_model_t model, const char* text, float* buffer, size_t buffer_size,
++    size_t* embedding_dim, bool normalize) {
++    using namespace cactus::ffi;
++    if (!model || !text || !buffer || buffer_size == 0) return -1;
++    try {
++        auto* handle = static_cast<CactusModelHandle*>(model);
++        auto* tokenizer = handle->model->get_tokenizer();
++        if (!tokenizer) return -1;
++        const auto tokens = tokenizer->encode(text);
++        if (tokens.empty()) return -1;
++        const auto hidden = handle->model->get_embeddings(tokens, false, false);
++        if (hidden.empty() || hidden.size() % tokens.size() != 0) return -1;
++        const size_t dimension = hidden.size() / tokens.size();
++        if (dimension > buffer_size / sizeof(float)) return -2;
++        const size_t offset = hidden.size() - dimension;
++        double sum = 0.0;
++        for (size_t i = offset; i < hidden.size(); ++i) {
++            if (!std::isfinite(hidden[i])) return -1;
++            sum += static_cast<double>(hidden[i]) * hidden[i];
++        }
++        const double norm = std::sqrt(sum);
++        if (normalize && !(norm > 1e-12)) return -1;
++        for (size_t i = 0; i < dimension; ++i) {
++            buffer[i] = normalize ? static_cast<float>(hidden[offset + i] / norm) : hidden[offset + i];
++        }
++        if (embedding_dim) *embedding_dim = dimension;
++        return static_cast<int>(dimension);
++    } catch (const std::exception& error) {
++        last_error_message = error.what();
++        return -1;
++    } catch (...) {
++        last_error_message = "Unknown last-token embedding failure";
++        return -1;
++    }
++}
++#endif
+--- a/cactus/kernel/kernel_utils.h
++++ b/cactus/kernel/kernel_utils.h
+@@ -15,6 +15,7 @@
+ #include <algorithm>
+ #include <cmath>
+ #include <thread>
++#include <cstdlib>
+ #include <vector>
+ #include <functional>
+ #include <queue>
+@@ -298,6 +299,14 @@
+     public:
+         explicit ThreadPool(size_t num_threads = std::thread::hardware_concurrency())
+             : stop(false), pending_tasks(0) {
++            // Backport the reviewed v2.2.2 evaluation thread-count control.
++            if (const char* env_threads = std::getenv("CACTUS_NUM_THREADS")) {
++                char* end = nullptr;
++                unsigned long requested = std::strtoul(env_threads, &end, 10);
++                if (end != env_threads && requested > 0) {
++                    num_threads = static_cast<size_t>(requested);
++                }
++            }
+             num_workers_ = std::min(num_threads, MAX_WORKERS);
+             if (num_workers_ == 0) num_workers_ = 1;
+ 
+--- a/cactus/telemetry/telemetry_local_only.cpp
++++ b/cactus/telemetry/telemetry_local_only.cpp
+@@ -0,0 +1,26 @@
++// Local personal evaluation build: no telemetry, persisted identifiers or cloud keys.
++#include "telemetry.h"
++#include "../kernel/kernel_utils.h"
++extern "C" bool cactus_memoryos_evaluation_is_local_only(void) { return true; }
++extern "C" size_t cactus_memoryos_evaluation_thread_count(void) { return CactusThreading::get_thread_pool().num_workers(); }
++namespace cactus::telemetry {
++void init(const char*, const char*, const char*) {}
++void setEnabled(bool) {}
++void setCloudDisabled(bool) {}
++void setAppId(const char*) {}
++void setTelemetryEnvironment(const char*, const char*, const char*) {}
++void setCloudKey(const char*) {}
++void cacheCloudApiKey(const char*) {}
++std::string loadCachedCloudApiKey() { return {}; }
++void recordInit(const char*, bool, double, const char*) {}
++void recordCompletion(const char*, const CompletionMetrics&) {}
++void recordCompletion(const char*, bool, double, double, double, int, const char*) {}
++void recordEmbedding(const char*, bool, const char*) {}
++void recordTranscription(const char*, bool, double, double, double, int, double, const char*) {}
++void recordStreamTranscription(const char*, bool, double, double, double, int, double, double, double, int, const char*) {}
++void setStreamMode(bool) {}
++bool isStreamMode() { return false; }
++void markInference(bool) {}
++void flush() {}
++void shutdown() {}
++}

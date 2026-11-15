@@ -1,0 +1,13 @@
+{
+  "artifact_logical_bytes": 389626246,
+  "static_archive_bytes": {
+    "iphonesimulator": 61678856,
+    "iphoneos": 61571296,
+    "macosx": 68696256
+  },
+  "retained_exceptions": [
+    "Slices/ holds indexed archive inputs also present in XCFramework; retain through frozen b44 evidence and independent Step2; do not mutate current receipt/runtime identity during this handoff.",
+    "Verified upstream SDK sources, canonical caches/checkouts and actual build outputs retained for reproducibility and Step2 verification."
+  ],
+  "not_phone_installed_size": true
+}

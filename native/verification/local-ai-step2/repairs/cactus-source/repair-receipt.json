@@ -1,0 +1,27 @@
+{
+  "finding": "P2 Cactus builder accepted dirty pinned Git checkout without subset receipt",
+  "beforeFix": {
+    "reproducedFailures": 2,
+    "log": "before-fix.log"
+  },
+  "afterFix": {
+    "tests": 24,
+    "result": "PASS",
+    "log": "after-fix.log",
+    "pythonAST": "PASS",
+    "retainedSnapshotGate": "PASS",
+    "retainedSnapshotLog": "retained-snapshot.log"
+  },
+  "files": {
+    "native/LocalCactusEvaluation/Support/prepare_runtime.py": "ad3e86998513b4359468e92f2f914d49e4cc82b1c7e7e0cadc38cef1369fa2f2",
+    "native/LocalCactusEvaluation/Support/tests/test_prepare_runtime.py": "46a1cd8075a77a9b0da7f28fca6e8a3b370739ad8d8984bfa3e4a5fbdd6a7efd",
+    "native/LocalCactusEvaluation/README.md": "ea6cddedfc5a0f86a4254e2624b52b10406094fd9b595ed014211efbf6142b3d"
+  },
+  "preserved": [
+    "actual upstream checkout",
+    "SDK binaries and model assets",
+    "approved local-only patch"
+  ],
+  "scope": "Source preparation gate only. No SDK build, inference, cloud connection, or Git delivery. Main-agent concurrent repairs require a new final app source manifest.",
+  "diagnostic": "An initial real-snapshot gate recheck exposed the retained patch empty-old-hunk format; regression now covers its zero-byte reverse preimages, and final retained snapshot passes."
+}

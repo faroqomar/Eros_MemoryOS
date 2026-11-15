@@ -1,0 +1,18 @@
+{
+  "check": "Actual simulator control run; automatic persistence and six-suite repetition",
+  "environment": "iPhone 18 Pro / iOS 27.2 Simulator / Release",
+  "sourceIdentity": "unrecorded; interim interaction check only",
+  "batchID": "07DABE95-112F-4735-AE0D-ED50757795DA",
+  "repetitions": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "retrievalCompleted": 90,
+  "generationNotApplicable": 90,
+  "exactSourceSets": 78,
+  "phonePerformanceClaim": false
+}

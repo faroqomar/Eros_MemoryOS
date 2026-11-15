@@ -1,0 +1,291 @@
+{
+  "report" : {
+    "configuration" : {
+      "displayName" : "Wax lexical retrieval (no embedding model)",
+      "id" : "wax-lexical",
+      "provenance" : [
+        {
+          "notes" : "Wax 0.1.47 with explicit desktop guard patch sha256:d55f4e047011249d9f40c70dcb2f615d6379257315fa1ba467500fc57351a7e4; empty embedding traits; textOnly search; SDK default context budget.",
+          "revision" : "e4587f8cebb76aa92ece008253f13c66b756e68b",
+          "sourceURL" : "https://github.com/christopherkarani/Wax"
+        }
+      ],
+      "scope" : "retrieval"
+    },
+    "context" : {
+      "buildConfiguration" : "Release",
+      "conditions" : "Real Wax FTS5 lexical retrieval on the shared fictional suite. Embeddings and text generation disabled. Host measurements cannot establish iPhone behavior or a component winner.",
+      "deviceModel" : "Mac host",
+      "environment" : "host",
+      "offlineConfirmed" : false,
+      "operatingSystem" : "Version 27.2.1 (Build 26B131)",
+      "purpose" : "smoke",
+      "sourceIdentity" : "sha256:18117106eb15d8e9fe462c037b8dd48fe48906d1630c1e9fd0fcb81997bd9506",
+      "toolchain" : "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0"
+    },
+    "formatVersion" : 2,
+    "generatedAt" : "2026-11-14T23:35:14Z",
+    "manualReviews" : [
+
+    ],
+    "results" : [
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "en-birthday",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "en-birthday" : 3.2249999046325684,
+          "unicode-name" : -0.4312500059604645
+        },
+        "retrievedSourceIDs" : [
+          "en-birthday",
+          "unicode-name"
+        ],
+        "searchSeconds" : 0.004954875,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "ar-birthday",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "ar-birthday" : 0.20000000298023224
+        },
+        "retrievedSourceIDs" : [
+          "ar-birthday"
+        ],
+        "searchSeconds" : 0.001629791,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "iq-tentative",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "iq-tentative" : 0.1111111119389534
+        },
+        "retrievedSourceIDs" : [
+          "iq-tentative"
+        ],
+        "searchSeconds" : 0.001800709,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "en-commitment",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "en-commitment" : 0.3333333134651184
+        },
+        "retrievedSourceIDs" : [
+          "en-commitment"
+        ],
+        "searchSeconds" : 0.001780875,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "mixed-deadline",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "mixed-deadline" : 0.1111111119389534
+        },
+        "retrievedSourceIDs" : [
+          "mixed-deadline"
+        ],
+        "searchSeconds" : 0.001902625,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "name-ar-to-en",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "name-alias" : 0.1666666716337204
+        },
+        "retrievedSourceIDs" : [
+          "name-alias"
+        ],
+        "searchSeconds" : 0.0012805,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "name-nickname",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "name-alias" : 0.3333333134651184
+        },
+        "retrievedSourceIDs" : [
+          "name-alias"
+        ],
+        "searchSeconds" : 0.000776709,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "name-disambiguation",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "same-name" : 0.20000000298023224
+        },
+        "retrievedSourceIDs" : [
+          "same-name"
+        ],
+        "searchSeconds" : 0.001642708,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "correction-history",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "date-correction" : 3.3321428298950195,
+          "date-original" : 3.3321428298950195
+        },
+        "retrievedSourceIDs" : [
+          "date-original",
+          "date-correction"
+        ],
+        "searchSeconds" : 0.003372833,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "iq-negation",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "iq-negation" : 0.1428571343421936
+        },
+        "retrievedSourceIDs" : [
+          "iq-negation"
+        ],
+        "searchSeconds" : 0.001634333,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "iq-sarcasm",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "iq-sarcasm" : 0.1666666567325592
+        },
+        "retrievedSourceIDs" : [
+          "iq-sarcasm"
+        ],
+        "searchSeconds" : 0.001448542,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "missing-evidence",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "en-birthday" : 0.2499999850988388,
+          "unicode-name" : 0.2499999850988388
+        },
+        "retrievedSourceIDs" : [
+          "en-birthday",
+          "unicode-name"
+        ],
+        "searchSeconds" : 0.001650542,
+        "sourceRecall" : 0
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "source-injection",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "en-birthday" : 0.09090908616781235,
+          "untrusted-import" : 0.09090908616781235
+        },
+        "retrievedSourceIDs" : [
+          "untrusted-import",
+          "en-birthday"
+        ],
+        "searchSeconds" : 0.003396917,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "ar-digits",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "ar-digits" : 0.20000000298023224,
+          "iq-tentative" : 0.19999998807907104,
+          "mixed-deadline" : 0.19999998807907104
+        },
+        "retrievedSourceIDs" : [
+          "ar-digits",
+          "iq-tentative",
+          "mixed-deadline"
+        ],
+        "searchSeconds" : 0.001727791,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "unicode-name",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedScores" : {
+          "en-birthday" : 0.09090908616781235,
+          "unicode-name" : 0.09090909361839294
+        },
+        "retrievedSourceIDs" : [
+          "unicode-name",
+          "en-birthday"
+        ],
+        "searchSeconds" : 0.003038542,
+        "sourceRecall" : 1
+      }
+    ],
+    "settings" : {
+      "maximumOutputTokens" : 256,
+      "seed" : 42,
+      "temperature" : 0
+    },
+    "suiteID" : "memoryos-local-ai-fictional-v1",
+    "telemetry" : {
+      "measurementMethod" : "macOS process-lifetime getrusage ru_maxrss high-water bytes; current derived index logical file sizes. No phone battery or thermal measurement.",
+      "peakMemoryBytes" : 43761664,
+      "storageBytes" : 8539018
+    }
+  },
+  "selectionBlockers" : [
+    "Physical-phone measurements are missing.",
+    "This is a smoke run, not a comparison.",
+    "The target iPhone 15 Pro Max has not been measured.",
+    "Offline operation has not been confirmed.",
+    "Memory, storage, battery, heat and measurement methods are required."
+  ]
+}

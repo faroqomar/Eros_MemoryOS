@@ -1,0 +1,90 @@
+{
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "device": "iPhone18Pro/iOS27.2Simulator",
+  "defaultCategory": "large",
+  "largestCategory": "accessibility-extra-extra-extra-large",
+  "defaultConfigurationRect": {
+    "index": 13,
+    "parentIndex": 12,
+    "type": "StaticText",
+    "role": "SwiftUI.AccessibilityNode",
+    "subrole": "NSObject",
+    "label": "Configuration",
+    "rect": {
+      "x": 16,
+      "y": 370,
+      "width": 370,
+      "height": 42.333333333333314
+    },
+    "enabled": true,
+    "depth": 3,
+    "pid": 90301,
+    "hittable": true,
+    "ref": "e14",
+    "kind": "text"
+  },
+  "largestConfigurationRect": {
+    "index": 8,
+    "parentIndex": 3,
+    "type": "Cell",
+    "role": "SwiftUI.ListCollectionViewHeaderFooter",
+    "subrole": "UICollectionViewListCell",
+    "rect": {
+      "x": 16,
+      "y": 682,
+      "width": 370,
+      "height": 89
+    },
+    "enabled": true,
+    "depth": 2,
+    "pid": 92803,
+    "hittable": true,
+    "label": "Configuration",
+    "ref": "e9",
+    "kind": "cell"
+  },
+  "defaultToggleTextRect": {
+    "index": 10,
+    "parentIndex": 9,
+    "type": "StaticText",
+    "role": "SwiftUI.AccessibilityNode",
+    "subrole": "NSObject",
+    "label": "العربية",
+    "rect": {
+      "x": 36,
+      "y": 314.16666666666674,
+      "width": 44,
+      "height": 22.333333333333314
+    },
+    "enabled": true,
+    "depth": 4,
+    "pid": 90301,
+    "hittable": true,
+    "ref": "e11",
+    "kind": "text"
+  },
+  "largestToggleWrapperRect": {
+    "index": 6,
+    "parentIndex": 3,
+    "type": "Switch",
+    "role": "SwiftUI.AccessibilityNode",
+    "subrole": "NSObject",
+    "label": "العربية",
+    "value": "0",
+    "rect": {
+      "x": 16,
+      "y": 565.3333333333333,
+      "width": 370,
+      "height": 99
+    },
+    "enabled": true,
+    "depth": 3,
+    "checked": false,
+    "pid": 92803,
+    "hittable": true,
+    "ref": "e7",
+    "kind": "switch"
+  },
+  "limits": "Default and largest bridge representations expose different node roles. Do not calculate font-scale ratios from wrapper/text frame heights. Actual screenshots show larger glyphs and scrollable controls. These captures do not resolve the nil-element audit diagnostics.",
+  "auditVerdict": "BLOCKED, unfiltered final audits2/2fail:3DynamicType issues, including2without element identity. No remaining contrast/textClipped report in finalrun."
+}

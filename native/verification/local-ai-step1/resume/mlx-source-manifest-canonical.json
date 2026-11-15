@@ -1,0 +1,177 @@
+{
+  "sourceState": "Canonical original-URL SwiftPM graph; no third-party source path overrides or SDK source patches.",
+  "applicationSources": [
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation/Package.swift",
+      "sha256": "53b74c167e6b0686d564114e4a88a883fd2d813dc6a2f8976353e1a2b9efea07"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation/Sources/AIEvaluationCore/Contracts.swift",
+      "sha256": "3a65ab229a78b0364d921195d2a455eaa89513f6cf2bbc6739a571f1e5efae77"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation/Sources/AIEvaluationCore/EvaluationRunner.swift",
+      "sha256": "e576091852b24603208dfdf9af932eea7865b45da0d5e9caebae2cedb64a954a"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation/Sources/AIEvaluationCore/FictionalSuite.swift",
+      "sha256": "a3f48e99b8846c2175f9940c981c15d694b98dd2300b6f8292214f9e0ad2afc8"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation/Sources/AIEvaluationCore/KeywordMemoryIndex.swift",
+      "sha256": "2de44da64204b514d542189e4bd55957d4299be3342a005fbffbbab046d07c10"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation/Sources/AIEvaluationCore/Report.swift",
+      "sha256": "372b36be8e9520622629010e65cd5bd8a78e28351115b1c2dce22dce5644849f"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation/Sources/AIEvaluationCore/RunEvaluationComparison.swift",
+      "sha256": "6609128f074e8dcf51b1caf918ebbf5cf933d96bb89b5450852a291e730bab81"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Package.resolved",
+      "sha256": "b0b669e88f2946f1b70b5354eb50ae27b21eddb8f1710f3e0fafa84ffd647d8b"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Package.swift",
+      "sha256": "507bb4cac8504808f28a454cd717fca1876dd0cf311aa9a24607d8441cda7c1c"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/SimulatorAvailability/Sources/MLXSimulatorAvailability/MLXSimulatorUnavailableRuntime.swift",
+      "sha256": "f0678b44091bbe27d456601ec066076a7d241c135ac274b0c47b0b89a5e2a833"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/SimulatorAvailability/Tests/MLXSimulatorAvailabilityTests/SimulatorAvailabilityTests.swift",
+      "sha256": "963919d4be582f171d9bf40298978dc34fa78706776b7df9ff41398669342774"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Sources/MLXEvaluationAdapter/LocalTokenizer.swift",
+      "sha256": "01df6d4efe90d83c16cb60440897244b8450faf803245398d9af54c20a989764"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Sources/MLXEvaluationAdapter/MLXTextRuntime.swift",
+      "sha256": "49eb6fc7ca62fbfad21ff7592a052830a635dc9d0fd033ffa3f0e725e31fa8a5"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Sources/MLXEvaluationCLI/Main.swift",
+      "sha256": "5025e40db6d51ff638641c43a91ffbe3ad6996ad5871f5b4481d8887c36607b4"
+    },
+    {
+      "path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/Tests/MLXEvaluationAdapterTests/MLXAdapterTests.swift",
+      "sha256": "839149cc2d9d1486ff76735f0f29b2f22b7a25b6a0703eca1f1062a7afef518a"
+    }
+  ],
+  "sdkPins": [
+    {
+      "identity": "eventsource",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/mattt/EventSource.git",
+      "state": {
+        "revision": "bb4b61273b5a976bb571859c17f903ebc3439df1",
+        "version": "1.6.0"
+      }
+    },
+    {
+      "identity": "mlx-swift",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ml-explore/mlx-swift",
+      "state": {
+        "revision": "19601207e9a0de51e03ee6ec0c3c5f3784275075",
+        "version": "0.32.3"
+      }
+    },
+    {
+      "identity": "mlx-swift-lm",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ml-explore/mlx-swift-lm",
+      "state": {
+        "revision": "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6"
+      }
+    },
+    {
+      "identity": "swift-asn1",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-asn1.git",
+      "state": {
+        "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+        "version": "1.7.4"
+      }
+    },
+    {
+      "identity": "swift-collections",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-collections.git",
+      "state": {
+        "revision": "88754449ab766a739610b660e117762115fabc9c",
+        "version": "1.7.6"
+      }
+    },
+    {
+      "identity": "swift-crypto",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-crypto.git",
+      "state": {
+        "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+        "version": "3.15.1"
+      }
+    },
+    {
+      "identity": "swift-huggingface",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-huggingface.git",
+      "state": {
+        "revision": "c30143a4616f3fa994ee3ab3e3464f752845c07c",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "identity": "swift-jinja",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-jinja.git",
+      "state": {
+        "revision": "66042420a9225c98ea9382d705e2285769dfdbe5",
+        "version": "3.1.0"
+      }
+    },
+    {
+      "identity": "swift-numerics",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/apple/swift-numerics",
+      "state": {
+        "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+        "version": "1.1.1"
+      }
+    },
+    {
+      "identity": "swift-syntax",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/swiftlang/swift-syntax.git",
+      "state": {
+        "revision": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+        "version": "603.0.2"
+      }
+    },
+    {
+      "identity": "swift-transformers",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/huggingface/swift-transformers",
+      "state": {
+        "revision": "402a8a1105f52038b0949d9596981fc9e32bed17"
+      }
+    },
+    {
+      "identity": "yyjson",
+      "kind": "remoteSourceControl",
+      "location": "https://github.com/ibireme/yyjson.git",
+      "state": {
+        "revision": "6447536015f3d600f3d65323b10976103b337ca7",
+        "version": "0.13.0"
+      }
+    }
+  ],
+  "canonicalResolutionReceiptSHA256": "b3dd9e53731ad326f126fbbb1d7299e4c7bff359689e9105f467ed0f91904d19",
+  "modelAssetManifestSHA256": "5fa5d39edfabe19cc121712642e847bb297b14f243abc82d5a68d54ba0844669",
+  "toolchain": "swift-driver version: 1.168.6 Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+  "xcode": "Xcode 27.2\nBuild version 27B52"
+}

@@ -1,0 +1,334 @@
+{
+  "configuration" : {
+    "displayName" : "Cactus local-only · Qwen3 Embedding 0.6B int4 · CPU",
+    "id" : "cactus-qwen3-embedding-int4-cpu-last-token",
+    "provenance" : [
+      {
+        "notes" : "Local-only upstream patch; see artifact receipt. No telemetry or curl transport. CPU, normalized embeddings, query instruction, explicit last-token pooling, similarity threshold0.35.",
+        "revision" : "40a7123b0788f5b38c5fe0daa0d909b4286fe773",
+        "sourceURL" : "https://github.com/cactus-compute/engine"
+      },
+      {
+        "modelAsset" : "weights/qwen3-embedding-0.6b-int4.zip",
+        "modelSHA256" : "22ff768a984fe931ac463b02cedce2ebd65172c6877d210bd5dc6d058fffbd7b",
+        "notes" : "",
+        "revision" : "0df64898a34c75c209b9882110cd6f9aeb7115cd",
+        "sourceURL" : "https://huggingface.co/Cactus-Compute/Qwen3-Embedding-0.6B"
+      }
+    ],
+    "scope" : "retrieval"
+  },
+  "context" : {
+    "buildConfiguration" : "Release",
+    "conditions" : "Actual Cactus CPU embedding/index on fictional sources. Host smoke only. CPU worker setting: 4; actual worker count: 4. No text generation model, phone cost or winner.",
+    "deviceModel" : "Mac host",
+    "environment" : "host",
+    "offlineConfirmed" : true,
+    "operatingSystem" : "Version 27.2.1 (Build 26B131)",
+    "purpose" : "smoke",
+    "sourceIdentity" : "33f41dfcb88600d1d525d963c4f623f2be6d586746881f26a0ccd8d49842c4b7",
+    "toolchain" : "Record swift --version with invocation"
+  },
+  "formatVersion" : 2,
+  "generatedAt" : "2026-11-15T00:05:18Z",
+  "indexBuildSeconds" : 1.648760166,
+  "manualReviews" : [
+
+  ],
+  "results" : [
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "en-birthday",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-birthday" : 0.47607421875,
+        "en-birthday" : 0.6484375,
+        "name-alias" : 0.49072265625
+      },
+      "retrievedSourceIDs" : [
+        "en-birthday",
+        "name-alias",
+        "ar-birthday"
+      ],
+      "searchSeconds" : 0.066363417,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-birthday",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-birthday" : 0.63720703125,
+        "en-birthday" : 0.5087890625,
+        "mixed-deadline" : 0.439453125
+      },
+      "retrievedSourceIDs" : [
+        "ar-birthday",
+        "en-birthday",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.077960083,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-tentative",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-tentative" : 0.7490234375,
+        "mixed-deadline" : 0.5556640625,
+        "same-name" : 0.5224609375
+      },
+      "retrievedSourceIDs" : [
+        "iq-tentative",
+        "mixed-deadline",
+        "same-name"
+      ],
+      "searchSeconds" : 0.101217167,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "en-commitment",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-correction" : 0.57177734375,
+        "en-commitment" : 0.6396484375,
+        "mixed-deadline" : 0.55810546875
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment",
+        "date-correction",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.068110875,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "mixed-deadline",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 0.57373046875,
+        "mixed-deadline" : 0.71533203125,
+        "untrusted-import" : 0.6552734375
+      },
+      "retrievedSourceIDs" : [
+        "mixed-deadline",
+        "untrusted-import",
+        "en-birthday"
+      ],
+      "searchSeconds" : 0.084709833,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-ar-to-en",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 0.79052734375,
+        "same-name" : 0.5693359375,
+        "unicode-name" : 0.521484375
+      },
+      "retrievedSourceIDs" : [
+        "name-alias",
+        "same-name",
+        "unicode-name"
+      ],
+      "searchSeconds" : 0.0710215,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-nickname",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 0.6474609375,
+        "same-name" : 0.5166015625,
+        "unicode-name" : 0.47509765625
+      },
+      "retrievedSourceIDs" : [
+        "name-alias",
+        "same-name",
+        "unicode-name"
+      ],
+      "searchSeconds" : 0.060016125,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-disambiguation",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-sarcasm" : 0.489013671875,
+        "name-alias" : 0.5888671875,
+        "same-name" : 0.6787109375
+      },
+      "retrievedSourceIDs" : [
+        "same-name",
+        "name-alias",
+        "iq-sarcasm"
+      ],
+      "searchSeconds" : 0.069474875,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "correction-history",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-correction" : 0.8623046875,
+        "date-original" : 0.861328125,
+        "mixed-deadline" : 0.55859375
+      },
+      "retrievedSourceIDs" : [
+        "date-correction",
+        "date-original",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.084433666,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-negation",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-negation" : 0.7275390625,
+        "iq-sarcasm" : 0.52978515625,
+        "mixed-deadline" : 0.5380859375
+      },
+      "retrievedSourceIDs" : [
+        "iq-negation",
+        "mixed-deadline",
+        "iq-sarcasm"
+      ],
+      "searchSeconds" : 0.086996333,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-sarcasm",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-negation" : 0.50244140625,
+        "iq-sarcasm" : 0.72314453125,
+        "same-name" : 0.5419921875
+      },
+      "retrievedSourceIDs" : [
+        "iq-sarcasm",
+        "same-name",
+        "iq-negation"
+      ],
+      "searchSeconds" : 0.084412333,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "missing-evidence",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "mixed-deadline" : 0.5234375,
+        "name-alias" : 0.5615234375,
+        "same-name" : 0.51513671875
+      },
+      "retrievedSourceIDs" : [
+        "name-alias",
+        "mixed-deadline",
+        "same-name"
+      ],
+      "searchSeconds" : 0.070513667,
+      "sourceRecall" : 0
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "source-injection",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-birthday" : 0.5498046875,
+        "mixed-deadline" : 0.53564453125,
+        "untrusted-import" : 0.767578125
+      },
+      "retrievedSourceIDs" : [
+        "untrusted-import",
+        "en-birthday",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.083784417,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-digits",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "ar-digits" : 0.732421875,
+        "mixed-deadline" : 0.496826171875,
+        "untrusted-import" : 0.48681640625
+      },
+      "retrievedSourceIDs" : [
+        "ar-digits",
+        "mixed-deadline",
+        "untrusted-import"
+      ],
+      "searchSeconds" : 0.069830333,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "unicode-name",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "name-alias" : 0.513671875,
+        "same-name" : 0.4970703125,
+        "unicode-name" : 0.744140625
+      },
+      "retrievedSourceIDs" : [
+        "unicode-name",
+        "name-alias",
+        "same-name"
+      ],
+      "searchSeconds" : 0.08204525,
+      "sourceRecall" : 1
+    }
+  ],
+  "settings" : {
+    "maximumOutputTokens" : 256,
+    "seed" : 42,
+    "temperature" : 0
+  },
+  "suiteID" : "memoryos-local-ai-fictional-v1",
+  "telemetry" : {
+
+  }
+}

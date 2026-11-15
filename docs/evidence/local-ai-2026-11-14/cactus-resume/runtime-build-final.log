@@ -1,0 +1,200 @@
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/macos
+[1/59] Building CXX object CMakeFiles/cactus_engine.dir/src/constraints.cpp.o
+[2/59] Building CXX object CMakeFiles/cactus_engine.dir/src/sp.cpp.o
+[3/59] Building CXX object CMakeFiles/cactus_engine.dir/src/bpe.cpp.o
+[4/59] Building CXX object CMakeFiles/cactus_engine.dir/src/model_npu.cpp.o
+[5/59] Building CXX object CMakeFiles/cactus_engine.dir/src/kv_compress.cpp.o
+[6/59] Building CXX object CMakeFiles/cactus_engine.dir/src/engine_image.cpp.o
+[7/59] Building CXX object CMakeFiles/cactus_engine.dir/src/log.cpp.o
+[8/59] Building CXX object CMakeFiles/cactus_engine.dir/src/index.cpp.o
+[9/59] Building CXX object CMakeFiles/cactus_engine.dir/src/telemetry.cpp.o
+[10/59] Building CXX object CMakeFiles/cactus_engine.dir/src/index_ffi.cpp.o
+[11/59] Building CXX object CMakeFiles/cactus_engine.dir/src/model.cpp.o
+[12/59] Building CXX object CMakeFiles/cactus_engine.dir/src/cloud.cpp.o
+[13/59] Building CXX object CMakeFiles/cactus_engine.dir/src/rag.cpp.o
+[14/59] Building CXX object CMakeFiles/cactus_engine.dir/src/init.cpp.o
+[15/59] Building CXX object CMakeFiles/cactus_engine.dir/src/embed.cpp.o
+[16/59] Building CXX object CMakeFiles/cactus_engine.dir/src/transcribe.cpp.o
+[17/59] Building CXX object CMakeFiles/cactus_engine.dir/src/stream.cpp.o
+[18/59] Building CXX object CMakeFiles/cactus_engine.dir/src/telemetry_local_only.cpp.o
+[19/59] Building CXX object CMakeFiles/cactus_engine.dir/src/tokenizer.cpp.o
+[20/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/core.cpp.o
+[21/59] Building CXX object CMakeFiles/cactus_engine.dir/src/complete.cpp.o
+[22/59] Building OBJCXX object CMakeFiles/cactus_engine.dir/src/npu_ane.mm.o
+[23/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/metal_runtime.cpp.o
+[24/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/execute.cpp.o
+[25/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/builder.cpp.o
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/cactus-graph/src/builder.cpp:16:6: warning: unused function 'op_honors_explicit_output_precision' [-Wunused-function]
+   16 | bool op_honors_explicit_output_precision(OpType op_type) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[26/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/metal_plan.cpp.o
+[27/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/param_io.cpp.o
+[28/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/io.cpp.o
+[29/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_conv.cpp.o
+[30/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_math.cpp.o
+[31/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_nn.cpp.o
+[32/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_recurrent.cpp.o
+[33/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_sample.cpp.o
+[34/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_dsp.cpp.o
+[35/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_cache.cpp.o
+[36/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_tensor.cpp.o
+[37/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_image.cpp.o
+[38/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/graph_ffi.cpp.o
+[39/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/last_error.cpp.o
+[40/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/attention_hybrid.cpp.o
+[41/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/attention.cpp.o
+[42/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/blas.cpp.o
+[43/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/conv.cpp.o
+[44/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/conv2d.cpp.o
+[45/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/fused.cpp.o
+[46/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/dsp.cpp.o
+[47/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/image.cpp.o
+[48/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/lstm.cpp.o
+[49/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/nn.cpp.o
+[50/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/norms_rope.cpp.o
+[51/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/matmul.cpp.o
+[52/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/quants.cpp.o
+[53/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/scalar.cpp.o
+[54/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/reduce.cpp.o
+[55/59] Building OBJCXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/metal_backend.mm.o
+[56/59] Linking CXX static library cactus-graph/cactus-kernels/libcactus_kernels.a
+[57/59] Linking CXX static library cactus-graph/libcactus_graph.a
+[58/59] Linking CXX static library libcactus_engine_core.a
+[59/59] cd /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/macos && libtool -static -o /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/macos/libcactus_engine.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/macos/libcactus_engine_core.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/macos/cactus-graph/libcactus_graph.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/macos/cactus-graph/cactus-kernels/libcactus_kernels.a
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/simulator
+[1/59] Building CXX object CMakeFiles/cactus_engine.dir/src/kv_compress.cpp.o
+[2/59] Building CXX object CMakeFiles/cactus_engine.dir/src/constraints.cpp.o
+[3/59] Building CXX object CMakeFiles/cactus_engine.dir/src/sp.cpp.o
+[4/59] Building CXX object CMakeFiles/cactus_engine.dir/src/bpe.cpp.o
+[5/59] Building CXX object CMakeFiles/cactus_engine.dir/src/model_npu.cpp.o
+[6/59] Building CXX object CMakeFiles/cactus_engine.dir/src/index.cpp.o
+[7/59] Building CXX object CMakeFiles/cactus_engine.dir/src/engine_image.cpp.o
+[8/59] Building CXX object CMakeFiles/cactus_engine.dir/src/telemetry.cpp.o
+[9/59] Building CXX object CMakeFiles/cactus_engine.dir/src/log.cpp.o
+[10/59] Building CXX object CMakeFiles/cactus_engine.dir/src/index_ffi.cpp.o
+[11/59] Building CXX object CMakeFiles/cactus_engine.dir/src/cloud.cpp.o
+[12/59] Building CXX object CMakeFiles/cactus_engine.dir/src/rag.cpp.o
+[13/59] Building CXX object CMakeFiles/cactus_engine.dir/src/embed.cpp.o
+[14/59] Building CXX object CMakeFiles/cactus_engine.dir/src/model.cpp.o
+[15/59] Building CXX object CMakeFiles/cactus_engine.dir/src/init.cpp.o
+[16/59] Building CXX object CMakeFiles/cactus_engine.dir/src/telemetry_local_only.cpp.o
+[17/59] Building CXX object CMakeFiles/cactus_engine.dir/src/transcribe.cpp.o
+[18/59] Building CXX object CMakeFiles/cactus_engine.dir/src/stream.cpp.o
+[19/59] Building OBJCXX object CMakeFiles/cactus_engine.dir/src/npu_ane.mm.o
+[20/59] Building CXX object CMakeFiles/cactus_engine.dir/src/tokenizer.cpp.o
+[21/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/core.cpp.o
+[22/59] Building CXX object CMakeFiles/cactus_engine.dir/src/complete.cpp.o
+[23/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/metal_runtime.cpp.o
+[24/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/builder.cpp.o
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/cactus-graph/src/builder.cpp:16:6: warning: unused function 'op_honors_explicit_output_precision' [-Wunused-function]
+   16 | bool op_honors_explicit_output_precision(OpType op_type) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[25/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/execute.cpp.o
+[26/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/param_io.cpp.o
+[27/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/io.cpp.o
+[28/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/metal_plan.cpp.o
+[29/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_nn.cpp.o
+[30/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_conv.cpp.o
+[31/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_cache.cpp.o
+[32/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_recurrent.cpp.o
+[33/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_math.cpp.o
+[34/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_sample.cpp.o
+[35/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_dsp.cpp.o
+[36/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_image.cpp.o
+[37/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_tensor.cpp.o
+[38/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/last_error.cpp.o
+[39/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/graph_ffi.cpp.o
+[40/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/attention_hybrid.cpp.o
+[41/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/attention.cpp.o
+[42/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/conv2d.cpp.o
+[43/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/blas.cpp.o
+[44/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/conv.cpp.o
+[45/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/fused.cpp.o
+[46/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/dsp.cpp.o
+[47/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/lstm.cpp.o
+[48/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/norms_rope.cpp.o
+[49/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/image.cpp.o
+[50/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/nn.cpp.o
+[51/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/quants.cpp.o
+[52/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/matmul.cpp.o
+[53/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/reduce.cpp.o
+[54/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/scalar.cpp.o
+[55/59] Building OBJCXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/metal_backend.mm.o
+[56/59] Linking CXX static library cactus-graph/cactus-kernels/libcactus_kernels.a
+[57/59] Linking CXX static library cactus-graph/libcactus_graph.a
+[58/59] Linking CXX static library libcactus_engine_core.a
+[59/59] cd /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/simulator && libtool -static -o /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/simulator/libcactus_engine.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/simulator/libcactus_engine_core.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/simulator/cactus-graph/libcactus_graph.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/simulator/cactus-graph/cactus-kernels/libcactus_kernels.a
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/device
+[1/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_image.cpp.o
+[2/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_dsp.cpp.o
+[3/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_sample.cpp.o
+[4/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_cache.cpp.o
+[5/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/last_error.cpp.o
+[6/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/graph_ffi.cpp.o
+[7/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/attention_hybrid.cpp.o
+[8/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/attention.cpp.o
+[9/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/conv2d.cpp.o
+[10/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/conv.cpp.o
+[11/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/blas.cpp.o
+[12/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/fused.cpp.o
+[13/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/dsp.cpp.o
+[14/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/lstm.cpp.o
+[15/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/norms_rope.cpp.o
+[16/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/nn.cpp.o
+[17/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/image.cpp.o
+[18/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/matmul.cpp.o
+[19/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/quants.cpp.o
+[20/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/scalar.cpp.o
+[21/59] Building CXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/reduce.cpp.o
+[22/59] Building CXX object CMakeFiles/cactus_engine.dir/src/bpe.cpp.o
+[23/59] Building CXX object CMakeFiles/cactus_engine.dir/src/sp.cpp.o
+[24/59] Building CXX object CMakeFiles/cactus_engine.dir/src/constraints.cpp.o
+[25/59] Building OBJCXX object cactus-graph/cactus-kernels/CMakeFiles/cactus_kernels.dir/src/metal_backend.mm.o
+[26/59] Linking CXX static library cactus-graph/cactus-kernels/libcactus_kernels.a
+[27/59] Building CXX object CMakeFiles/cactus_engine.dir/src/model_npu.cpp.o
+[28/59] Building CXX object CMakeFiles/cactus_engine.dir/src/kv_compress.cpp.o
+[29/59] Building CXX object CMakeFiles/cactus_engine.dir/src/index.cpp.o
+[30/59] Building CXX object CMakeFiles/cactus_engine.dir/src/log.cpp.o
+[31/59] Building CXX object CMakeFiles/cactus_engine.dir/src/engine_image.cpp.o
+[32/59] Building CXX object CMakeFiles/cactus_engine.dir/src/telemetry.cpp.o
+[33/59] Building CXX object CMakeFiles/cactus_engine.dir/src/index_ffi.cpp.o
+[34/59] Building CXX object CMakeFiles/cactus_engine.dir/src/cloud.cpp.o
+[35/59] Building CXX object CMakeFiles/cactus_engine.dir/src/rag.cpp.o
+[36/59] Building CXX object CMakeFiles/cactus_engine.dir/src/init.cpp.o
+[37/59] Building CXX object CMakeFiles/cactus_engine.dir/src/model.cpp.o
+[38/59] Building CXX object CMakeFiles/cactus_engine.dir/src/embed.cpp.o
+[39/59] Building CXX object CMakeFiles/cactus_engine.dir/src/transcribe.cpp.o
+[40/59] Building CXX object CMakeFiles/cactus_engine.dir/src/telemetry_local_only.cpp.o
+[41/59] Building CXX object CMakeFiles/cactus_engine.dir/src/stream.cpp.o
+[42/59] Building CXX object CMakeFiles/cactus_engine.dir/src/tokenizer.cpp.o
+[43/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/core.cpp.o
+[44/59] Building CXX object CMakeFiles/cactus_engine.dir/src/complete.cpp.o
+[45/59] Building OBJCXX object CMakeFiles/cactus_engine.dir/src/npu_ane.mm.o
+[46/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/metal_runtime.cpp.o
+[47/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/builder.cpp.o
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/cactus-graph/src/builder.cpp:16:6: warning: unused function 'op_honors_explicit_output_precision' [-Wunused-function]
+   16 | bool op_honors_explicit_output_precision(OpType op_type) {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+[48/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/execute.cpp.o
+[49/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/metal_plan.cpp.o
+[50/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/param_io.cpp.o
+[51/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/io.cpp.o
+[52/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_conv.cpp.o
+[53/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_recurrent.cpp.o
+[54/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_nn.cpp.o
+[55/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_math.cpp.o
+[56/59] Building CXX object cactus-graph/CMakeFiles/cactus_graph.dir/src/ops_tensor.cpp.o
+[57/59] Linking CXX static library cactus-graph/libcactus_graph.a
+[58/59] Linking CXX static library libcactus_engine_core.a
+[59/59] cd /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/device && libtool -static -o /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/device/libcactus_engine.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/device/libcactus_engine_core.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/device/cactus-graph/libcactus_graph.a /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/.memoryos-evaluation-build/device/cactus-graph/cactus-kernels/libcactus_kernels.a
+xcframework successfully written out to: /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework
+{"output": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework", "files": 11}

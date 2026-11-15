@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Workspace version="1.0">
+  <FileRef location="absolute:/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/MemoryOS.xcodeproj" />
+  <FileRef location="absolute:/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/GRDB.swift" />
+  <FileRef location="absolute:/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS" />
+  <FileRef location="absolute:/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1" />
+  <FileRef location="absolute:/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto" />
+  <FileRef location="absolute:/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-patched/Wax" />
+</Workspace>

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "/usr/bin/patch",
+    "--batch",
+    "--forward",
+    "--dry-run",
+    "-p1",
+    "-i",
+    "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/Patches/wax-0.1.47-ios-desktop-guards.patch"
+  ],
+  "exit_code": 0,
+  "stdout": "patching file 'Sources/Wax/Broker/AgentBrokerClient.swift'\npatching file 'Sources/Wax/MemorySemantics.swift'\n",
+  "stderr": "",
+  "source_revision": "e4587f8cebb76aa92ece008253f13c66b756e68b"
+}

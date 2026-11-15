@@ -1,0 +1,14 @@
+{
+  "removed": [
+    {
+      "path": "/tmp/memoryos-step2-verifier-recall.json",
+      "logicalBytes": 42898,
+      "reason": "Task-owned duplicate sanitized recall output; authoritative project Markdown and Hindsight remain intact."
+    },
+    {
+      "path": "/tmp/memoryos-step2-verifier-final-recall.json",
+      "logicalBytes": 46297,
+      "reason": "Task-owned duplicate sanitized recall output; authoritative project Markdown and Hindsight remain intact."
+    }
+  ]
+}

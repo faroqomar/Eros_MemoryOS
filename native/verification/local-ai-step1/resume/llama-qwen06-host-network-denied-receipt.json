@@ -1,0 +1,18 @@
+{
+  "createdAt": "2026-11-14T23:42:55.642439+00:00",
+  "kind": "Actual host execution with OS network denial",
+  "environment": {
+    "host": "Apple M1 Pro",
+    "memoryBytes": 17179869184,
+    "macOS": "27.2.1 (26B131)"
+  },
+  "profile": "(version 1) (allow default) (deny network*)",
+  "launcher": "sandbox-exec",
+  "exitCode": 0,
+  "completedGenerationCases": 15,
+  "sourceIdentity": "e33f9ed07596657980b2a7d50022b2e04bf207d4c43dcd552abbad9ef6766b51",
+  "reportSHA256": "3270f6f3a1d095959ec5e59e5831d9e6f889b7a276894ff31e1c2bb6053e2195",
+  "binarySHA256": "c0f5dd2265610167d2e91d772d68746cfc20b0e0fcfb2a6ab391cffc22bb519c",
+  "verifiedAssetReceipt": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/models/Qwen3-0.6B-Q4_K_M.gguf.receipt.json",
+  "conditions": "Other task-owned SDK compilation/downloads ran concurrently. Host timing is not used as a simulator or phone comparison. The raw report retains offlineConfirmed=false because this CLI has no operator assertion flag; this launcher receipt records the enforced network-denied environment."
+}

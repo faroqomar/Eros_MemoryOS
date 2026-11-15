@@ -1,0 +1,25 @@
+{
+  "mainProjectMatchesHEAD": true,
+  "oldLabSchemeAbsent": true,
+  "schemeContainers": [
+    "container:MemoryOSAILab.xcodeproj"
+  ],
+  "sourceFiles": [
+    {
+      "path": "native/MemoryOS.xcodeproj/project.pbxproj",
+      "sha256": "5e2d8e1ef97898a3660f268d899e1c83db5b5c8dbc4b697f5774c3574e2b18c7"
+    },
+    {
+      "path": "native/MemoryOSAILab.xcodeproj/project.pbxproj",
+      "sha256": "11e4196f7eccb5549ba5b805645584c3b7b1b399bf2327399579906ead181c01"
+    },
+    {
+      "path": "native/MemoryOSAILab.xcodeproj/xcshareddata/xcschemes/MemoryOSAILab.xcscheme",
+      "sha256": "0dbbe8b121bf6ab5df907e668c08253710f55750777d92cd1aacdbe16a455ed1"
+    },
+    {
+      "path": "native/LocalAIEvaluation/README.md",
+      "sha256": "25c7671ebbc64213c593902b223b6576780c4d8e023b847bed567dd8155b8d2c"
+    }
+  ]
+}

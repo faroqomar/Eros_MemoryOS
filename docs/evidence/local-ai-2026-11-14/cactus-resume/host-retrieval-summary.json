@@ -1,0 +1,19 @@
+{
+  "environment": "host Release smoke; four actual Cactus CPU workers; network denied",
+  "caseCount": 15,
+  "retrievalCompleted": 15,
+  "expectedSourcesFullyRecalledCases": 11,
+  "meanSourceRecall": 0.7333333333333333,
+  "exactSourceSetCases": 0,
+  "missedOrUnexpectedCases": [
+    "ar-birthday",
+    "name-nickname",
+    "missing-evidence",
+    "ar-digits"
+  ],
+  "indexBuildSeconds": 2.238827667,
+  "searchMedianMilliseconds": 90.485542,
+  "searchMinMilliseconds": 63.47425,
+  "searchMaxMilliseconds": 112.64387500000001,
+  "limits": "Fixed provisional threshold0.35/top3, all15 result sets include extras; missing-evidence returns3 unrelated sources. No generation, phone battery/heat, production selection or tuned threshold."
+}

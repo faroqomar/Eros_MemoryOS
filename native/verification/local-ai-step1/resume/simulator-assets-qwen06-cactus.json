@@ -1,0 +1,1924 @@
+{
+  "device": "iPhone 18 Pro / iOS 27.2 Simulator",
+  "deviceID": "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+  "bundleID": "com.eros.memoryos.ailab",
+  "purpose": "Verified local model asset sync only; no UI or app launch through simctl",
+  "modelRoot": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Data/Application/F678413B-FE08-415A-AE18-47FB90A3884B/Documents/EvaluationModels",
+  "files": [
+    {
+      "destination": "Qwen3-0.6B-Q4_K_M.gguf",
+      "bytes": 396705472,
+      "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/chat_template.jinja2",
+      "bytes": 4116,
+      "sha256": "87a2728cb8dc9fe424d624542f6060ec05a1d285ebbec578bb078900e33396b5",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/config.txt",
+      "bytes": 822,
+      "sha256": "47c8435e5da357e6b1b6133a21e8877fc5ae058ec5b05a2fa5b37446c37035a9",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "3fff8e7748e3979843b1beccb1906f4fcbcdcb2c1f60af8b1eefcb90750e8c0d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "ccaf4db04a8e55d1efc201264bd163230d056f26124977221d0359d05f332122",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "cf6a2dbe6e2d5d81511dfa6a0dd9809037ebd50d2196c0073f15d79446d7f0a6",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "e37161064cade777062fad7ed9064dad21baff604279f3f399c1dc1d10e420b5",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "a3a12d3edb6c81691c0e3bd26a7f1797346c03cc2395f9715b44e4f0bca30e45",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "6b4e86cf84734bac216a1cd6b5e6aff8468466493a6c91b717ebb3f7307f5c70",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "a24aa8c86233453a755c2a00e8126e55c4d641aaeb0e7d6e2af59d625204c74e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "f1bdeb46dd43fe39c10eac03350d5a4e64088eff8538f861db673a80b8360d5d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "c2999bdf0bc85d3f4b8dd94f2f4f97bfa1d6d9960550518bb567bb2631fc0a78",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "cf2732bf03e4b422fed3da203be18a65d7d24a67c8ac68d4fc3b4fe7221dfc91",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_0_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "70038aff560deb795d390d810bf96f769e31b9609f198a53ce5f416bf1d29056",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "d5274dffd82425ee7691b70d649739e6bddc3af5e4504ab043bb81d2f3695b31",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "4ffc206a47ddc414f94c8ca00fcc8b44ee4bab749a2b521dbc018d8da90b2bf9",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "7f71b6e34061016f5ed8f810db22e5ec92b29ef9c6c86457515e229ac6e58c9d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "1100f2d532e071f2e4fb56508be2813747ed736e69effe8ad188f65a9feb8757",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "12cdd9cdc1827c9b0fa2bac373ff7c4ec395d42a543576568867c60bd38f974e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "41bd55a85e57ff7a78f40072d9f900ff3c164e1af344c0b36c9ddad560972d70",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "93825e3cc18660361da6579321bf21eb82b5c40de161e56852b6f9751a0eba42",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "6c52c058895dc8640ff1d6147257ae6ea6854544508cfe2c187391be9b7298f6",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "fd1e6041e195342c28faf94bdbf32a522c388450dc06b809087b0abc1da71671",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "2b84d818a124e67792439ba2a0f1e838d491365c39c421746874a9f945fd722e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_10_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "caa32e4c7011ad21b04fceaa8911b6e61e3ff02899ca18bab29cdb0d6201ac46",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "49267d8dc9d1885013628a3c19edbe76becd7da16d4c6f9fd9dbe2bb619c9d6d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "3384eeb4a678e1af342cada4f7aadd4132de47ce4509f448bd03efef816eda55",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "3a8bce0523b4f8d5515f67fcec9a1803d3baef839dac691da1fdbae011e9bf73",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "03df377aed4fa96e5b59a7d89a52ff03e3e74fefe912806bdba545c4019759ef",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "a7923a9f56c7355d3f64a135383adbcc9a7f69556763a6d0ea8755ae12b0896c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "74f4812a4f9895c70c9f816af3d49c96e8aabf6f916afba72d1244f55d410eb6",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "155c350adcd063a1d679c8180a416ac34eb29f1970a71b163169d2fbbad75e97",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "5693d6badba8933a00fb7a95fcfa2038f42658cac155046aa62a2cf9b1f02c8e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "6b02b5f25f1272ac24d73b5774033423e9fde38455c905b9039aa2cbf4f6f72e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "293ec9fb04ec26bbe5b83066bd8b56e75c38f34e93371cec6c7e913292ec6ec4",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_11_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "f5b2df723795b19459367a3154621cff8286718fc0529385120aefeebbfb8292",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "564125ec9e3b11d0e326d4eb73f313b34e54496d6e2aafa4e9e4e0e80837081f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "23847b4b45a2ba297d82b9b3c79a69635175649e247effa5217244cf4e246850",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "e06d3a5ccb20663e319bf16cc2e45f83ba1a5146416e5643bc1c7b2eb2beaf84",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "0f4ba4bb0132ce5ea995f0eecfe7a9a2798090c81aa3a5311b22e02126f67ded",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "543fec679f3dcbc9d61d984f60790f6bb3b7bc6e4db1ca2f973c00cd70a50bd3",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "92d7f07ff0e15e699332b80949d43cce144377583f9113fe6a02db9ca3ae808c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "4c859ed9bac53968103d39aedd7a0a6522012bc2a5aa8f87c814b2afff7cf569",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "473e03378034d121a34d439d988e0b615336e16e6ce111c35c2ee24e08874ad7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "87997faec3107dba7c9e55a84242674dd9c0671c87dc0308de89fc506afa34da",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "23a7021e8ca3eed06988a5df1e38401b91fd0df6bac0ce9020d2a3a4ef11d801",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_12_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "34f4979119b6005d5d1b995e12ba62244666740429ed06a167c7a475050e77e7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "c8296ed9a38327d2228a2ed8e122c1967d21d58069035e4eb5217994317426d7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "48bcc87ef034917d9c1b319809e92d44b85b07679cd805baa7ef3f45e6bc28f2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "06b43933f7e662c1a88d113f8ffc26755e89d5532063344128aa3284d4980434",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "f44c0474fecbd34df7f7aa1f613c396e30a2d7e58c880dd3259d18c24a200d13",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "a7b1336013da53a83114dbf2e46c264bdc9fbdf196ef3e8f2db8a68e2fb3fe66",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "6cd66411bed6f872e4ceda3b3444b95e51cfb4b7779a28063efdea3a56697780",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "f7d271aedaf75537193bf439055f70c91bfb5d9d9b4b5877e635aeb12fff598c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "8de1aae4a2f4c431788cd7c65eb1f65846f8b67c09ce59c40b7886bdf270864c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "cfaa4d8dc2d3b36fb1e2714955f7d5ce42b4f7e1778f764159ebfecca45b9f42",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "1a2cb1059146b89bc3502810ab1cac4ecc77152a9230dbc7ec92e2302040c33e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_13_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "4426bcb91612ae88edae89b4ed1568fadf97fda7eebe6e8ca3f9a4cdb3f66401",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "bfffbe89bb6976021d8266f30c1ad0a59f0586c4008555b82ae2e17433333d6d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "30a3009df4e89069737b746434e14ff8d2d0ea5789cbcca4c93516c0b27f52ba",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "3c37311a9b0d4fa84fb4d97b6ed98b2bbca23859d2e627640e948429d963ba80",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "33808c9dc7166be46e3465bd9b69b50c0586b9108a849ad6023574b281dc8167",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "b7c92428122b7d20325b1c5e00de7fbc319a4fa65838106069b60ca653861ab7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "29a5f743130753ec4035cae74ac0b0d838c9bab6c6a55acbf3415495ec8ec68a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "113cc51a40ee4d028b686a0bce1fec9c0cffd022ffca8f671cd619eaf584e81c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "0c19f20b88398851c42c7db100c513e0572c3265ed58ef590f29fa46f9bd4d82",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "0a33ea38cad237e7914a18d3ec1be77abf28615651f198d2b6f2bd8c33f4c80b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "4accd1d9709f391b8006bb3633e6c45af824cdb6d1ac0eef95991f86401cfd6a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_14_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "40fa777ad2d1957d363c5cb841f531d77ac4ecb33d34bbedee7c8dff95a3bce4",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "050e3f323522e4a26e7fbacbadad3e3fbe2e26798a8089d0106dab9321fef560",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "76ee3a1d24afc2529058beda7ce2901fd1ef13cb480dcd88d600a00ab79449a0",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "e946268e8cfe40dd49bd5130633db3079762611d238a9bdf807978885c9cc7e8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "5cff8c869f13481dc5701c172faa3190e4409628998826a59b1ebcafda7ba864",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "004ddb849b813a9f9e7224c251b71c294227412f097afd41d97d7e6f70f8af69",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "c251cbf61338cc78c4c3c1c833ee2eeb82328d94202ce691d2ea887a1a75e93c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "d7c9c80b54982522df23ccbcee0ee6fc0dea54756bafbc6122b290646f42de47",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "835ffcad6dc16810716d30cee3d7fba9a09fea7c691749208342551e957ac7e7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "f7ceaf9dfb3ceda9b1450cfbcbbadb950189daa236eaf576aae96d6ac9c487e8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "adc2418139cb01b81d27984edd9170fc3613913c470f294afcb242031872e4c1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_15_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "78bee01f7293cbe28a43e290d3c95eddf66d4adc8203d1fdb0c425bb9d68c63c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "84705b3c7f0a823efa1eb42dcf4acd5a4a821be95ce5e31224e950c96eb08a7c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "c2b04f6f8818d3407fa8985184202495a38ad0bf5588fbe2428cb7ae6882a5a8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "6bf302efb3e4c54249e83dccd4fc2aa9d26b592eff7e66f5230c209468bce225",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "28182ec78ba33284729a67ac0999e5575840b8c02f3092b3ad4d675c4696790e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "2989ec7fa4fd3b1fca55b10d663f620479ddc7d301b315032de613823a61553f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "4532fab5a56beb0ad1482999a94be40db73d06adeed988ec1d5bbd786c1825f2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "650be693cfef3b55a73e380d626977fa5976f8eb1fb086f2a2d279fff5ced938",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "07c4ff933a4437f71439c5d27ed44d1c3eba75013a6513ed64a5338dbd23c9df",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "701979bf3f1ab55338d7a6929134dc5b9e6ba82e8dd5bc550bd2689ba02acfb3",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "6a566ac6bd772f5b93ea0fc40bd00701ae1ea8cbf67ec2d671ffe3991f8aaf4f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_16_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "60d9655cb37fc6cb592029ba8e4d00d00b1500d8f79b51b5bbc6376f13efa60c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "692c3e28981e4991be82be578c59ee6fe9a533d17cc93a07a9aa74aaab74d75e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "f23ff805b0475b56e8e0e53dfbd115bc7ceb53b0dff171e16ff8ee6ddaba9884",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "b0b24e66bbbc4abd094ec6004ceb957bbc80e011b9c35e3f4b2b732c5e2be461",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "340d46bab346fa066401772e55e76f5ab219f3a3fc222dc3dac80178a66da9a8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "366a8004d6824ca4188326a0eb0c37f622353ea2d0047ef1c70b61d819bb50de",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "d886e3f63e6f77bf4fd06edbf271c3a57f0d7d60cc9cc7ee0e5fc028bd76346f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "dd2d2eea336cd9ec763676e9969476e3e6d9cd3a71f78571d9b990b27d62b112",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "600df22d409bc6c7747d089de8ecb31b4f3912856eb3fac5486e4b077eacda70",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "c3c087a3f7b5ffb3a30eeb28deb1f5fe6fd88483a91ae8c752805c7391f1c2c2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "ddc77dc5ea2b0039ac3a8207e828c795559c69baf75ccf51258c5036c5438da5",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_17_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "f4b3b592ccf638c07e75a20ebac0b715f0f4a496d199d09230d0b696b94cb596",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "59b7d39e7cd60e8db5d7ba4bcac479073c57d564c055369258eccb10a2f8c13d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "55e16f257deeb63882f4dbe5cf189066d91696151cac9d234cd41b072f2da066",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "4a1db36554ebdbe7d2fb732e6e04a8b878570448ec900e9d4d9c81b4bfe5006a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "a0ff271204291c7e7e3bb7f1c6dcd89c39748bd426f89687a6dcd444113cb2a6",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "6f1ccbc5e79051f3e2f02ad33af23fde594edab3b5851adab8f0198dcb4106be",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "447dd3be6679963da286ad77d3dc22b44f83e0e46548db2a7557bd802e142c7b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "ce561dc778e1da6ec5fe1f427144618c989fba41842819978ed46998732dd05d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "326dc19ac0ebe7c15ed6700ef90fcee9ad26f4942c6baefb2a64677d0d4b1002",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "9bd33ecb2afd2b24c52c3876f92ecf1b470b555f62adccbceeaacfe712b8d538",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "e78bff5fa16f9496761f9dcd4c94d18a49e36f9fa966a571b50366cc60210528",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_18_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "623df229fed1e762bb106d3a21fa31d87ffe8aa71dbaf231edc3ea9debf0e1e5",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "7cf8e650327a13d97eb96437ae63b4b4e5b38f779f44477261968afaf13306b1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "6fa96c8802575b701a2cee72e36a870ba97de9dc1ea5031e43563b37ee525aa1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "9a0a0d1a357c86037249b6cd9b2e0eca3e96844773b2ba4442d70c7c1bc98653",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "a5105177fa259b51defe0c7f993ff9a1d900f2fb2f78b9a6d9450f29fafd038e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "1bb3fae3dadf9243aa032e0f19790dc05570181393c3b6ce49bc467fe70df96d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "b0fed77ef0179b9a611f3c01ae1c1831ba0391865290f1feab489804ff064160",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "371897a37e83c0eb0389bc8822baa9444ca3cc5f9effdc5f01ee33c545b7ca37",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "fe315562272cd1eb2a9dfeb3de1ff853d465d15e423971e18a14cdaa4c0e0c00",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "538acd6a271adbc709f5184a4940035c9788868c52b496029494a5a5ee1e2e70",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "1676143525f59824ab0a8060b92fb0b8429c2aacf85c64ef0eb8d9816ca9ffa8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_19_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "779cc3925bde07462ad39265bbbb5aea33d47518655d6ee4c41999563c2420e6",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "0928483074c0a903965f55ec1f240cca689ab802d58f022f3831f1abf1d68037",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "edbc6da1373162c6c1879c64179e9da24cc9086eb6490ef21586976353fc244e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "9145e58e550c3b1c44ee2fedaff5849f960344764b0c2ebcec149dbe0efa1793",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "9dc7fd6aa02c695b6e62ec5638b80b0dc9ba5651e8834a9a3ef24dbd2a88f814",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "9389c2ecec8c21de3349e88194f49e9e204ea1e8ca64b1ad936cf1660025d725",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "02af0a4670d8e1f225c4d05b10621090d2ae6f65e7780ad8b3482264f333a602",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "8e5d354b9de520f8e7fdb0a266a54407b9b186b2a60b83b041f76625f49b235e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "035a2e8f100c2124ae3f900f46010ab643d2196ef20abdadcb98bac2230e609e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "c137d7d337dcf3fd174615dbef6a477b43ef12e00c43176097fd9f8e8a359a72",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "e89d11265dd40bc32e1b03fed6a0ab929929ea357e0d4c7f91d1b7ed470b5c97",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_1_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "48a0e484e0403ab56fb37bbc84ab4c1a51a5aa6c28d3a0995894f681e0008ab2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "7715176501467f4e496618101d22955d3200421ae907d4b4424a91203e10359c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "ad3cec837e381a52c4f17213446bac92ac1f871ef6417bcc44fc796ed91d2253",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "6231a148c3441dbe265767985ea2ddbb54251190e9912f1f4402eaddba0559fe",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "39ef36c1e789f18127dfca225cfe3c97a1c46a77d9b1743c92ecc752f4275d18",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "bd34b8ba67abbd2fb316e215ee0b5eadb9031b66951c5ff01c93dba561f663a8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "edd2c010ccd9e171fc172ee81b26fbac3ac055b6db41089d9a2d15397eccf4da",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "9aae1a068327e3c9b189877330663c3757b534531c07352ea0560d599089fdd7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "251350b5694c0518bc805ddbf520e426c82d2446470292b27af97ea5588d2d7f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "1776c126e55fc6deb14ce0afd3ca6388e7707760c4aeb2419e809f3e5077267f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "f2930d4a989ae33db6cfb96188c6d2d6a838ac1e0b38f08f8da3820dcfce25fc",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_20_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "9723f65ef5c843fff0aced9ecccae1b706c90c20d8b94641243a11e54edcfc32",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "fc61bcbb411653a3a820a7351f50a71df3c0d53f4be4daea55b6c5bea9bd2e53",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "525e2317603b31dc3478c5f2baa6cf2e4480ba337b71364e9c93368cd3022034",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "2b7ebf022de15730dd4fa0ce196320fc722d6a2a1e3a59ec7df2ee33a5565731",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "322a6c270da61b17ba195168170ee3ca0f75b9a5bfcc44b1bf82397798d6fe8f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "5984a18a2f6e4c1be80960dbf4c377a80b66e9b34a5958ef05875b1e7d6b9ebb",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "1348e697455a670997d69d41a138d40eaf6a2e6dc779dc8e42d2a67d9241ba68",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "207045d1b051df7c890f4e6ee439850841cedb312e40c7f3ea75fe0061a8c32a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "ef33c990faabfcd7337687e35a27bdfd8d271ed12fbd37324a15474549e6004c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "a1863356f3b0e727fce398dfe3d084e2c203380d786bf6fe730729d877ead887",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "733ec9532735db0941d9c2d539690f8134209a3c812405fe0bec62e4b743b20b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_21_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "9bc006293d613cc11644d354285211fd8dcccc7f4197c0521a96aa68e291e72b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "8fee35d4a709b56b1057881e8731725ce1e1d3e50c9e63a324faf93d2da69b46",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "252e10bcacf4a143f9e4effc45e430a3d7e84f8d12dc044211d1598a524d9c8d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "f0bb61d5a0e79ffbc67c5b5f11991ea8ce8d5ba9224b152a530bdad8140bddd9",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "5c416c88001898ee97c11ae32926a6a72f6090246f401fba682325d65f29bcaf",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "1b4c933de53e3e4a65045a2449d691e4483e09d7a369267a3cd974e0b6849fd7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "4e5a60f87010ce24327be4734e6433b505e99c87edd7173061c87946f9f40f4b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "009243ae9a8902dfbea1453c11e65609aa8fdc44e20bee3e45a20d9cc286ad94",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "f6d8fd420b4e0e378230a5549bf77973e1c08a944e62c739db8156f45c474757",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "39bc24502dbba4fb830c694deba652675f3051fc86d46f83c397a6118c658415",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "e6bdffa215aa30478ab2e5d39eb942a8a557c41a87b6f9b9986762a274d86fe0",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_22_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "bd4872952e5be67aa4176c97bc99701921923ed581b1b1b98a2c2ce31a7e7514",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "c5f7a55935b5e1096aa945635efc3983912533a96503cbffb0710d3c58c2b690",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "0ba8129c8e38708a85547ed3860db9ba520ab3a065886c07db0e15c3c35844aa",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "8a405d904e7806c3781a7e89d4f4c19a1cd03889f1909b8cf8f3336898617291",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "e278a2a1307bba460c42a9c653f27c3f4a4508fb635c83f45db912cdf6a51128",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "63e276afd069e6b3e4e4e836cba5d94bffee099df28294829b8d081ed26876b8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "59dca3df0f7be005340ca04b01fbedf08aee9fac358f1f9ca5edd01693aecdf2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "9dca763be6869d9577b6bfa6de47044b57898f82d1a4609ddbef677c82c10256",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "6c24253bcdedcbd7eeb34cf7f3f58f3e4ed614dda4d622508288ee460455e38b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "6541a8c63ba676574389420b8b5f2103ababdfb50bb5067e88ea654b67475e24",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "c03c2d266762ce4992c8c0ab532cc13ba81713d6c67ec74ffac76ef13258fe30",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_23_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "7ccacde7292565065e8a768daabd338f76c9f787d8d73c97e1fe38c85dede752",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "5844dea4e4f5c575af0efbe728bd6105b3efb7482ecfe125933e45513d60624b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "7213cea2a9b1ce2991e3cbfee2ee536329737619a60f6d6885e5e29e7b430aad",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "52eb8cf13e1ba28b37d897cf31a2cde0ba3e9632a66b1b94dfbced3467eb2091",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "a0d23e32e0e22e82410f777c9b1c12005a406a4e0603b1a46c15a641f1ba2f83",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "d82267738e5b3433044288985dc34a2f802c883932efe23f900025d472b4a58e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "0a26d86e3911d3413866cf668a71421914c20f7af9b7b5186aa8819e35cf70e6",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "efaec93cb58f4e22ef54b52683edbe438b6d977a1c51fa233e7331ddd855ff8b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "80b4e9b2dcb6fd89edf1de7215e1838b3dd4ea5a5f70abd53ec87671750ba477",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "2bd365887cf8a1f1e7a40e48235e747c9bc92d69391b267ddef5e7487cf84d1d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "1ce17a01c40a2b76b236e5b9b5c4608a1679e339658aa647229615ff03ec33c6",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_24_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "126e1bdae2a8f520334c11ea677f76517c638f83206b285731c72e6623be33ec",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "04c97a0b32481c67d1434176d7067ab9ffe7ac82073ece4fd4aaf6798050f051",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "78afff529a3292d6fde8736f5f61ae09b50708ae327472af613b52ee0ea00942",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "19400a9dcf783329a9301010e4f6d8721c653474090443a7183edc5fce88214a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "cc9c90a76e9c52159786fec354ce9b727cfbfe7139359eba998e45eac3b8a1dc",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "b4790df775f7580c6139a6bd5069f3aea501b10e073ffe190726b0db39aec93f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "cb4dbb55b95b5035aeaf9ba8a20c6f0c45af5650023775e7324fe6b931d807ca",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "b68eb3863411ae3ce067be72d48900ba37a1595989f271f2a8ec258d225308c1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "9e72a0bfb07e33dd48b8000605f64047298a56992e20b8ebec0a49c59a0be577",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "979858ea102afbdb6d74d6e6206216b00ffaca71ee6eab95b0a570e48fdfecf4",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "3548ecee778acc010c3cfa048e3a99db51aa8418fca0a39d946230bde063dcb2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_25_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "25a5021364a265b006b6c41ff222adee4b3a4f0db9a9dddd694e02d0df898653",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "3aef518ffb467684934702188b29eed0a85854c8aa18f4bacf74836073993556",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "d284e0a22f8fadda5876886f609effd84862711c6b745fb41a3c5050e2765e1e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "b19f0b7119a0857e27134ac00c2ed9c827ae67686c0ba50e710513d0dfa3071d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "d55bf399818a22fc40291773cf172361fb33c77bd819813e0026f65d61f4cb36",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "e2a164a9067e7c9d6330f11770bfd4819a03c1998580ea0ad614fbdaaa990ec1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "6f3c751e45d0e370a08d30805034c6133e9dc854fd5b24d383956fb01c0d1729",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "c8c3423d33e03e58848d8598a694646119208971056512ebe2d04fc0e12932a8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "f068720dbfeb611a99ff1fdc3f9a123b9db880f91e4b5e8d808ced330c1f7030",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "32c4e93fa65d0529f6dded59a2de1039c549c06eacd8db6edaf86bbd2ddaaf1f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "4fb9de9eb40b7d120bfceafdb794a336f2203c75396b75ad31d7debe347825c9",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_26_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "856b8966fc218c542e650400a92d24ad2050c3e0590f3397fdb4df14f9682fe7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "3b30f971ff7e322c6f3cab4771a5a6628310a94b93da5a214eeba931605a4121",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "739a78687f76772e7c53826b3cd2afad8c29a72854ad35347b6fdc66635752e8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "0a5363328d5ee1f344d7bee03df74bd765135f09af93b82b41ec9ee9befdc317",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "26f63cb15b824f20f4ce3fca3cb209b120d08ea7c4a52d3e2432e17b15b329b9",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "6c3d1d92252566dc4bf0842f76bdc3bd02547434f0eaf5966de67a04ba675d5c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "c2ce846c48397f5b7032fc1cbcbe647574c891373cba7dce7fd2812aaa3feb1b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "cb451126314d6c3a57d71d04c901be032e0af1191856947e7647e03e5e053208",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "509a058e4f5d184ff47d1bad01633974312565d7dfa26444d2e7ad1fb926d715",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "0c85a5f7a90e9f55de5e717c02aa78909051341d7658fae06619481ec0f87cd7",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "c3dd3fa10be2737287451c81c46a0f99b4f00c0c7c38eb9c7a033f8ba68ca94c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_27_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "ac48d4d17a25cbb40575d7009e9d7603d69e5255c0f9fd2aeb9f86b4141447af",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "6b0d5ba5f2be73abed80e2d3913f2726c81a984a2d9bfbc17cb57b7e194cfd30",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "d68a9dc3cd059ccb4418d81beca9d8be02c4aded80231bc3f364893117510c9e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "2430867cadfe810e6633687a53ec5b4325af00e357f3b3d8b724856becd4f785",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "0854a1127173961f4f50e31c058729dafdb69573dcdafbcd389d848df9321aeb",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "fd3db8fbcd12e5e59e7e5337d9d900a92685fb14d03d4d0370d155ca79653128",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "69e61f11bd5efe6b13d68c291e77581116fee900e4708922acd9e0a69e3efc55",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "6bbf207d705f0b8e0ad770fbc4dbbbf1bc871f13e4ad4873c591f4f75bfb4c49",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "d7b3e397bb6ca8a394893721a2f6beda595586c8fe4f8d009ff84063fba62479",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "e75aa21840684d04247f234b7b541f7033aff46205c144590594bab51ba2411c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "33509288a2edd42c3c9498e21a18184ec6d8d7245842fca41ae08b4f03dc710a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_2_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "29fe9cb4e2ad49d2cb75df9fd70aa050a350a16b0f8e762908d4d2e2d4926702",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "c08a84bbca75d4f713124c0dc7b5c0acd1c4b8b215b5c43aa5c7412c1c8cc696",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "9765dc8163a66bea9f2b2c63eabbc43191b7d72375f5aeb32a0332706740814e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "c09fd3d07d21a37d2a24ade2a095b5d4dbda02a2abbeb49ad8e707854c67764f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "f0d3d3b449c4d1eb95515a3e124b056c2fac698d374d1f033cf1f367e8d31f2e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "b4075ddb6c6e6840a0060695710bcce42e10288bd246158f7eb011403282cb38",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "93450f181bdc9ace4ca109ed39cb72ec155183d3a81de8580f769f15e125235b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "b7e4732a6d93ff64b227132d5834eb79b24ae35c24b47e01982a84c8f0b49a0b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "990e14b0c4ef281df8e02c7ba9031dbb431288872437ed14288ecaf117f462db",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "6792a05458115d262859e399c8f8d28a7c808eefbd266cad4cb17d4643d73a2d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "d0a781248e26bc1c48d33ce3eb2c4423842720a7fb0a136fd7d2d0b5a33d9e47",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_3_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "81057fd974744584ae89bbdd9516a04d8ab69b81445c3cbf6e8cf2b220baf81d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "f025a4b374ab838ad824d56a0a67cda571c69cac2b8a872d014884f54d9badbd",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "3a78a920615f321162129866f991cc1c8f3fc5456703fae2688c1af52b9d279d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "19ea258791e5c3b5b329c794c64931b19038ae3a6066663bfbf77e54e8c3033e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "7ff489a376c24665c37c2270eb854eb81006eddd376f280d48f4044f1cfb99c1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "e4d3362ee0ffc4c9be77196beaec23bcfb64e010ad4ae887f9d3883a4a3af5aa",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "d340e5220c1478175440c990acee1c8196b09bc6f8ea4c5584910cdc052f23d4",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "ad6accb01876cfa1fd0fee5423862755b63c182c757a662b2cd09b4f3c2d13f1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "ddbebbaf2264a7947f105ab32061ba108a85e570601b6fcc19a0c2a6425fd892",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "57239c230fa56071f55f1d7628b79c1f05d251050c668881887a2a3f88c29e0a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "d861941ab1ac11d16ccf0af5a1628e8e3fc65e795181f735944ac0b2746859aa",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_4_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "799feea1ef34eb98cd6a59cbbe67a535c959ef383591752e8c27d069a3978224",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "e7435e6a0123bfe792792aeaa9abc9773dee33b3722d8ea416bac7f0877bc13a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "53b1f4bba33c691c5b0a718b3373bcbd21a88cbf03bd6599caf9c2e6613383c2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "2e7cc77dbeb72e3bead1126cc023c232ff75b6efa7ae771888241aa172e7c921",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "f8419b044d886d3a93ddfa3e1892aa7fd850d52d898a89f4ed53f1be6a43283b",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "3d4cdaad0cc706a6067cc0b6e2e04e8aabe0ef8fc5f5cb3a583db9e51640479e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "4a5bc820b5c3e36ddea2bc2348b11bfc9f7eeb58074a932920c872820389d238",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "73083c11daed89332f9c469044451cf10a2ea3164f6881954e07b3bc7aad8a43",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "1c846f5c79d831fd20fc0f6c12e52c1fb09cee10a778f45372cb6b9ba8a229d3",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "65ae9d54daf430ad3c8a8dfeedc26878b9b1184a69131beff919864731c636f5",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "38aa0ce80be1d3634758e9fbfef2f5ab795debcee8b069af35eb2090535fcb91",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_5_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "cf4ea81e62993ad8366bd767313e35facb09f1b64a3a38c93c6ff7f0f63d1e57",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "33d20d939f74a0e6b51ed2e6ad8702a5d0ecc6143c9aaccae7df184e1f7b7366",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "685a01b7565c5d559c5d29ed67d06505df446f33ef90915135ee54041e6d8d3d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "ce76abf90047541d360f9dbd3c2bf4ed8c403ee0c58ca15b406319757e0d37a8",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "7ff1d7deee014344931e2658899572a712c14e447dc92668fb39b10fb2e0e652",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "2b333490b2d50f9859b133459120b3430f22ad8c4c9880007b22e0d96d33c0a2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "6f2e0355a20cabb8b11f2583cc8f17b4925d033dd0d87c586663fce469b3b4dc",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "d559c5662982426033c38ea2b07dc5a025eb08d912953ea2d2842ec9194eb5a2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "45b40ec33021181f85116e1e3084c05c3e7b5dfa8562cacc3985c504486647fd",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "0bff84b1f832b69b13c7acbe9808f11103849525bc45e5f10473d31f00688c34",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "33725a096994eb604d50fa0419bfb6420a6cd29a46029e24bb698020db1713b1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_6_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "dd0d8df66afb720791abd8bbcb5eb599c9c25b3a2a7c37c5a5aadfc614edb53a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "cbcbd9c681dd690f91fa77528cc8b793e4e90e79873ed5759e0fb16169a50067",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "c367db7d76743fbb488f242c545bf536b1366bff816643200ef37147ca3e5169",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "74f2c5823f00b650a64f5550368921c9cfc622bb01bae026495bb7789400fb25",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "8e8def925ff935f6b0c46156f83a225fcc7f0116f7f6e03a8d519190aa3edcbc",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "05c8556f5d2679504c860a4cf0b7c52b0cabef1435950067e19c08089f11ffe1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "b3caa19dd349a70eb505ca5937413df21f750fe7201360e9b659529bb8bb092a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "05881567731c2dacf602cc31cad32ee8f652736a8fbb39ba8d1ac586209de079",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "afa5441934cf52d39c003cd992913d397771e623f896c69683e931ecc4a0c48d",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "ff50ccb78cd4502544a1d0e70d7fa05f960db810d503c64a8835b698767c5b1c",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "00505d776e84fe2f8590b497ab1ac4845dae1215c2286c8dc4f792a9ea1ebe8f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_7_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "4e3dd00266d10cda90e5bde89118e955e67be61312818ad53b2d393c3af9dbcd",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "20925b16390cbfdbc2e5757a64897ab26b9c6c68cf397438725da55f53379a07",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "77a2795b59650c847c07b3acf9e21a8b5ab6d68d76067f178e06f3bc0926535a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "c8c3ca8692115be83bde0bb390643317abce6a0b85c48db4f0cfff10ea2f95a6",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "6be33d4b6d6c5b5055c4e07aa43cad1d959c96690f50fec12c3ed6365d2d558a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "065fc754117eab6c7227a3c333ce4237e61753c05462578c5a05a7a801d9b9b2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "2af00100d0e2e2522c9335a3fd1885f47b0981ef1e8bd0dce8c7f7f96c0822eb",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "2b5d10c79d0275b792b26608ded1dc5c905c3d95ecea42251d996a73009c0958",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "0ac0a7140d4a51581b499537ea514d13d543f052bc2bc973f009ea6e2ca65cb3",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "56f87f388e153c566ea6b4f931409b3d5129f81fc274eb477626de3d6f584097",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "4cc097e4aa8bc008ab535cf6932c5e93af36400815ccb9b2e7965401cb5ea76a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_8_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "5780f3f7f64e30d7cd594b6baf5b1900f4eee94d9afc45e472efaea2f8d1d822",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_attn_k.weights",
+      "bytes": 589920,
+      "sha256": "c3e1d9f52b2fb7ae68b82adc98ceffa80fa226e4d67011dd101a3e08abd8b1af",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_attn_k_norm.weights",
+      "bytes": 352,
+      "sha256": "5c51688fbadbf3345dfc05e6d81bfc5443e9e00202123bccc8901bdbb8dc8304",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_attn_output.weights",
+      "bytes": 1179744,
+      "sha256": "368faaef8a9c0f92bc0996a9412d239a30961923c705c699b6ce049ae37d641a",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_attn_q.weights",
+      "bytes": 1179744,
+      "sha256": "03c4940252974b72371c9ced414051d2e73f16f320f9fe551ff825b9bede5ef2",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_attn_q_norm.weights",
+      "bytes": 352,
+      "sha256": "3157eae88fcae22b190360b0cd33e5f69380b40e434762b4fe0e2a2e4803b707",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_attn_v.weights",
+      "bytes": 589920,
+      "sha256": "c67893cd60a1f841e07f08dca746074f20a290c273f855da9f32672727d8ee16",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_ffn_down.weights",
+      "bytes": 1769568,
+      "sha256": "235918f37df71253d25c06d0bf8612341d9856df83835ba9b4d9e579f78f8d6f",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_ffn_gate.weights",
+      "bytes": 1769568,
+      "sha256": "2f238c68c4a9b8f454dc29fb8aa08a9bdcca8d5aaf341f7c8277289dbcb2cfca",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_ffn_up.weights",
+      "bytes": 1769568,
+      "sha256": "1f484a7ff563f3bc85f8ba6578821da64b0371fbd58d1e2a3d9487f8bbdf6c02",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_input_norm.weights",
+      "bytes": 2144,
+      "sha256": "c12eae5319289cece6b38cbd59ab47cf83387d39a39f02757d1be4b18ef3cae9",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/layer_9_post_attn_norm.weights",
+      "bytes": 2144,
+      "sha256": "6bd725882cbccb089e6595641cf7506111f5dea6b23897d92f02e0e3050944f1",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/merges.txt",
+      "bytes": 1671853,
+      "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/output_norm.weights",
+      "bytes": 2144,
+      "sha256": "0c89c5d17d59b6bbc69f1391825637fcbbddfd276fb3438d05e507a94d92a654",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/special_tokens.json",
+      "bytes": 6996,
+      "sha256": "3d8c884d3ab7ae39dbfb93e34ad29cd4142514ab9ab14113a5ad4af4268af034",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/token_embeddings.weights",
+      "bytes": 165019232,
+      "sha256": "4beac46a341de5e92d8ed705a17fb31d031b78cc800ec60d6cc88a44a682ad2e",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/tokenizer.json",
+      "bytes": 11423701,
+      "sha256": "93623af029cdc69b87f2864d3b2cc2424fdf16684f15e139b5b9d08ec34ced91",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/tokenizer_config.txt",
+      "bytes": 260,
+      "sha256": "0e5c2d578d26bde98a00d9dab8cd3dc949631f0a60cca3118273735696722d85",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/vocab.txt",
+      "bytes": 2472065,
+      "sha256": "1c26410abd5642b735b24941f770906bfd8efb1f98b7fb15f2e38180c0c99ee0",
+      "method": "APFS clone"
+    },
+    {
+      "destination": "cactus-qwen3-embedding-0.6b/.memoryos-asset-manifest.json",
+      "bytes": 32299,
+      "sha256": "229ba9eb5d361209c7f01d34cac0db77a623a33bb845c2eb90050ccc831c60af",
+      "method": "APFS clone"
+    }
+  ],
+  "logicalBytes": 825223632
+}

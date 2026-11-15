@@ -1,0 +1,136 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "binaryintegration",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/BinaryIntegration",
+          "name" : "LocalWaxBinaryEvaluation"
+        },
+        "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/BinaryIntegration/Artifacts/WaxEvaluationAdapter.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "WaxEvaluationAdapter"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "localcactusevaluation",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation",
+          "name" : "LocalCactusEvaluation"
+        },
+        "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "cactus"
+      },
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "localtextevaluation",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalTextEvaluation",
+          "name" : "LocalTextEvaluation"
+        },
+        "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalTextEvaluation/Artifacts/llama.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "llama"
+      }
+    ],
+    "dependencies" : [
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "binaryintegration",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/BinaryIntegration",
+          "name" : "LocalWaxBinaryEvaluation"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/BinaryIntegration"
+        },
+        "subpath" : "binaryintegration"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "localaievaluation",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation",
+          "name" : "LocalAIEvaluation"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation"
+        },
+        "subpath" : "localaievaluation"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "localcactusevaluation",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation",
+          "name" : "LocalCactusEvaluation"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation"
+        },
+        "subpath" : "localcactusevaluation"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "localtextevaluation",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalTextEvaluation",
+          "name" : "LocalTextEvaluation"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalTextEvaluation"
+        },
+        "subpath" : "localtextevaluation"
+      },
+      {
+        "basedOn" : null,
+        "packageRef" : {
+          "identity" : "simulatoravailability",
+          "kind" : "fileSystem",
+          "location" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/SimulatorAvailability",
+          "name" : "MLXSimulatorAvailability"
+        },
+        "state" : {
+          "name" : "fileSystem",
+          "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/SimulatorAvailability"
+        },
+        "subpath" : "simulatoravailability"
+      }
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}

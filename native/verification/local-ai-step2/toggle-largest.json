@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "data": {
+    "ref": "e7",
+    "node": {
+      "index": 6,
+      "parentIndex": 3,
+      "type": "Switch",
+      "role": "SwiftUI.AccessibilityNode",
+      "subrole": "NSObject",
+      "label": "العربية",
+      "value": "0",
+      "rect": {
+        "x": 16,
+        "y": 565.3333333333333,
+        "width": 370,
+        "height": 99
+      },
+      "enabled": true,
+      "depth": 3,
+      "checked": false,
+      "pid": 92803,
+      "hittable": true,
+      "ref": "e7",
+      "kind": "switch"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+Wax process ownership audit
+2026-11-14T20:43:18.452401+00:00
+
+Original resolve PID91631 spawned clone91859 -> wrapper91862 -> transport91863/91864 and pack91923.
+At follow-up,91859 and91862 remained with original23:29:24 local start and exact Wax URL/cache path; parent91631 was absent and91859 had PPID1.
+SIGTERM had not stopped both wrappers. Revalidated command identity before sending SIGKILL to91859 and91862 only.
+
+Exact original PIDs after SIGKILL:
+  PID  PPID  PGID STARTED                      ELAPSED STAT ARGS
+
+Matching git executable commands after SIGKILL:
+none

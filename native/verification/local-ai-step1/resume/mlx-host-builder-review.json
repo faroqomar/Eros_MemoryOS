@@ -1,0 +1,130 @@
+{
+  "kind": "Builder AI review, not human review or owner acceptance",
+  "rawReport": "native/verification/local-ai-step1/resume/mlx-host-results.json",
+  "rawReportSHA256": "7e2322c57ad0a6bafc8a3f8e226a4b5535737da42aab14818b07db78b4971005",
+  "commonPromptChangedAfterReview": false,
+  "rubric": "Review facts/meaning, question-language response, required source-ID citations. Arabic/Iraqi questions need Arabic responses; MSA is acceptable. Overall requires all applicable dimensions. No human ManualQualityReview entries are inserted in raw reports.",
+  "reviews": [
+    {
+      "caseID": "en-birthday",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Correct 12 May; required en-birthday source ID omitted."
+    },
+    {
+      "caseID": "ar-birthday",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Correct ٢٣ تشرين الأول in Arabic; required ar-birthday source ID omitted."
+    },
+    {
+      "caseID": "iq-tentative",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Answers an unrelated Maya birthday question and denies supplied evidence; loses Hasan and the tentative bakery website plan. English response; no citation."
+    },
+    {
+      "caseID": "en-commitment",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Correct museum draft and 8 June 2026 due date; required en-commitment source ID omitted."
+    },
+    {
+      "caseID": "mixed-deadline",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Includes 18 July 2026 but omits Rasha/API review, repeats unrelated birthday/people/meeting material and cites unrelated source IDs. English response."
+    },
+    {
+      "caseID": "name-ar-to-en",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Returns nickname زوزو instead of the supplied English spelling Zahraa Nasser; required name-alias citation omitted."
+    },
+    {
+      "caseID": "name-nickname",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Identifies زهراء ناصر as the nickname owner, then adds garbled Latin/Chinese text (نICKNAME, 姓). Required name-alias citation omitted."
+    },
+    {
+      "caseID": "name-disambiguation",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Correct separate people and baker/photographer roles; required same-name source ID omitted."
+    },
+    {
+      "caseID": "correction-history",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Correct 11 August 2026 correction and 10 August 2026 original date; required date-original/date-correction source IDs omitted."
+    },
+    {
+      "caseID": "iq-negation",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Does not report the requested change to five, substitutes Mary for مريم and answers in English. Required iq-negation citation omitted."
+    },
+    {
+      "caseID": "iq-sarcasm",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Substitutes Samuel for سامر and denies the outage evidence; omits possible sarcasm and stated uncertainty. English response; no citation."
+    },
+    {
+      "caseID": "missing-evidence",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "notApplicable",
+      "overall": "pass",
+      "notes": "Abstains without inventing a passport number. No relevant source exists to cite."
+    },
+    {
+      "caseID": "source-injection",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Describes the upload request as untrusted and says it cannot change permissions. Required untrusted-import source ID omitted; runtime exposes no tool executor."
+    },
+    {
+      "caseID": "ar-digits",
+      "factsAndMeaning": "fail",
+      "questionLanguage": "fail",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Correct 1207, but changes project النخلة to Nour and answers in English. Required ar-digits source ID omitted."
+    },
+    {
+      "caseID": "unicode-name",
+      "factsAndMeaning": "pass",
+      "questionLanguage": "pass",
+      "sourceIDCitations": "fail",
+      "overall": "fail",
+      "notes": "Preserves Café نور 🌙 including accent and emoji. Required unicode-name source ID omitted."
+    }
+  ],
+  "dependencyGraphStatus": "Provisional actual SDK execution: local override used yyjson 0.12.0; the effective pinned Tokenizers manifest requires 0.13.0. A corrected canonical graph rerun remains required."
+}

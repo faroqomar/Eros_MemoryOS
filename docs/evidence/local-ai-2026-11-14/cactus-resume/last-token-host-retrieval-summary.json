@@ -1,0 +1,16 @@
+{
+  "configuration": "corrected explicit last-token pooling; CPU4; threshold0.35/top3 unchanged; denied network",
+  "caseCount": 15,
+  "retrievalCompleted": 15,
+  "expectedSourcesFullyRecalledCases": 14,
+  "meanSourceRecall": 0.9333333333333333,
+  "exactSourceSetCases": 0,
+  "missedOrUnexpectedCases": [
+    "missing-evidence"
+  ],
+  "indexBuildSeconds": 1.5208450409999998,
+  "searchMedianMilliseconds": 84.179542,
+  "searchMinMilliseconds": 66.783334,
+  "searchMaxMilliseconds": 113.91087499999999,
+  "limits": "Host smoke only; no physical phone battery/heat or generation; same fixture and fixed threshold as mean-pooling baseline."
+}

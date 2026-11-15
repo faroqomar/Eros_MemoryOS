@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/usr/bin/swift",
+    "test",
+    "--package-path",
+    "native/LocalAIIntegrations",
+    "--scratch-path",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-build",
+    "--cache-path",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache",
+    "--skip-update",
+    "--only-use-versions-from-resolved-file",
+    "-c",
+    "release",
+    "--jobs",
+    "4"
+  ],
+  "original_url_pins": true,
+  "local_dependency_override": false,
+  "git_scope_option": {
+    "submodule.SQLiteCustom/src.update": "none"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "at": "2026-11-14T22:24:55.698345+00:00",
+  "roots": [
+    83863,
+    2862
+  ],
+  "owned_before": [
+    {
+      "pid": 2862,
+      "ppid": 83863,
+      "state": "T",
+      "args": "/Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Python.app/Contents/MacOS/Python /tmp/memoryos-wax-git-checkout-transport/git clone -c core.symlinks=true -c core.fsmonitor=false -c core.longpaths=true --shared --no-checkout /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/.build/repositories/GRDB.swift-dd0599db /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIIntegrations/.build/checkouts/GRDB.swift"
+    },
+    {
+      "pid": 83863,
+      "ppid": 72261,
+      "state": "Ss",
+      "args": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-package --package-path native/LocalAIIntegrations --skip-update resolve"
+    }
+  ],
+  "http_downloaders_preserved": [
+    {
+      "pid": 21030,
+      "ppid": 72261,
+      "state": "Ss",
+      "args": "python3 -u docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-wax-blobs.py"
+    },
+    {
+      "pid": 79654,
+      "ppid": 72261,
+      "state": "Ss",
+      "args": "python3 -u docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-dependency-blobs.py"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{"source_revision": "67da356544e145a02f97fcf9cf6be39a199ced74", "selected_files": 436, "missing_files": 239}
+{"completed": 25, "total": 239, "verified_bytes": 202017}
+{"completed": 50, "total": 239, "verified_bytes": 419205}
+{"completed": 75, "total": 239, "verified_bytes": 585401}
+{"completed": 100, "total": 239, "verified_bytes": 990282}
+{"completed": 125, "total": 239, "verified_bytes": 1063373}
+{"completed": 150, "total": 239, "verified_bytes": 1358712}
+{"completed": 175, "total": 239, "verified_bytes": 1531004}
+{"completed": 200, "total": 239, "verified_bytes": 1721369}
+{"completed": 225, "total": 239, "verified_bytes": 1939361}
+{"completed": 239, "total": 239, "verified_bytes": 3760135}
+{"complete": true, "verified_source_files": 436, "newly_fetched_bytes": 3760135}

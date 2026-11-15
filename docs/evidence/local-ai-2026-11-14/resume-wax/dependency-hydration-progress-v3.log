@@ -1,0 +1,70 @@
+{"package": "swift-asn1", "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d", "selected_files": 26, "missing_files": 0, "verified_tree_objects": 5}
+{"package": "swift-asn1", "complete": true, "verified_source_files": 26, "verified_trees": 5, "new_bytes": 0}
+{"package": "MetalANNS", "revision": "1a8344c543eda41e3f4bb9826b1fe2f3dc03eb1f", "selected_files": 107, "missing_files": 106, "verified_tree_objects": 10}
+{"package": "MetalANNS", "completed": 25, "total": 106, "verified_bytes": 153574}
+{"package": "MetalANNS", "completed": 50, "total": 106, "verified_bytes": 415552}
+{"package": "MetalANNS", "completed": 75, "total": 106, "verified_bytes": 635632}
+{"package": "MetalANNS", "completed": 100, "total": 106, "verified_bytes": 777213}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=60)", "url": "https://raw.githubusercontent.com/christopherkarani/MetalANNS/1a8344c543eda41e3f4bb9826b1fe2f3dc03eb1f/LICENSE"}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/christopherkarani/MetalANNS/1a8344c543eda41e3f4bb9826b1fe2f3dc03eb1f/Sources/MetalANNSBenchmarks/BenchmarkReport.swift"}
+{"package": "MetalANNS", "completed": 106, "total": 106, "verified_bytes": 801715}
+{"package": "MetalANNS", "complete": true, "verified_source_files": 107, "verified_trees": 10, "new_bytes": 801715}
+{"package": "GRDB.swift", "revision": "92a554cd0d5e8d67cb18993c6054e73fe42c066c", "selected_files": 228, "missing_files": 227, "verified_tree_objects": 31}
+{"package": "GRDB.swift", "completed": 25, "total": 227, "verified_bytes": 551912}
+{"package": "GRDB.swift", "completed": 50, "total": 227, "verified_bytes": 767483}
+{"package": "GRDB.swift", "completed": 75, "total": 227, "verified_bytes": 1026424}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=60)", "url": "https://raw.githubusercontent.com/groue/GRDB.swift/92a554cd0d5e8d67cb18993c6054e73fe42c066c/LICENSE"}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/groue/GRDB.swift/92a554cd0d5e8d67cb18993c6054e73fe42c066c/GRDB/Documentation.docc/DatabaseSharing.md"}
+{"package": "GRDB.swift", "completed": 100, "total": 227, "verified_bytes": 2340063}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/groue/GRDB.swift/92a554cd0d5e8d67cb18993c6054e73fe42c066c/GRDB/Documentation.docc/Resources/concurrency-art/DatabasePoolConcurrentRead~dark.png"}
+{"package": "GRDB.swift", "completed": 125, "total": 227, "verified_bytes": 2837054}
+{"package": "GRDB.swift", "completed": 150, "total": 227, "verified_bytes": 3209712}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/groue/GRDB.swift/92a554cd0d5e8d67cb18993c6054e73fe42c066c/GRDB/Documentation.docc/Resources/concurrency-art/DatabaseQueueScheduling~dark%402x.png"}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/groue/GRDB.swift/92a554cd0d5e8d67cb18993c6054e73fe42c066c/GRDB/Documentation.docc/Resources/concurrency-art/DatabasePoolScheduling~dark%403x.png"}
+{"package": "GRDB.swift", "completed": 175, "total": 227, "verified_bytes": 3719373}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/groue/GRDB.swift/92a554cd0d5e8d67cb18993c6054e73fe42c066c/GRDB/Documentation.docc/Resources/concurrency-art/DatabaseQueueScheduling%403x.png"}
+{"package": "GRDB.swift", "completed": 200, "total": 227, "verified_bytes": 4357730}
+{"package": "GRDB.swift", "completed": 225, "total": 227, "verified_bytes": 4679957}
+{"package": "GRDB.swift", "completed": 227, "total": 227, "verified_bytes": 4682974}
+{"package": "GRDB.swift", "complete": true, "verified_source_files": 228, "verified_trees": 31, "new_bytes": 4682974}
+{"package": "swift-crypto", "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc", "selected_files": 794, "missing_files": 793, "verified_tree_objects": 150}
+{"package": "swift-crypto", "completed": 25, "total": 793, "verified_bytes": 159721}
+{"package": "swift-crypto", "completed": 50, "total": 793, "verified_bytes": 334880}
+{"package": "swift-crypto", "completed": 75, "total": 793, "verified_bytes": 557039}
+{"package": "swift-crypto", "completed": 100, "total": 793, "verified_bytes": 852649}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=60)", "url": "https://raw.githubusercontent.com/apple/swift-crypto/95ba0316a9b733e92bb6b071255ff46263bbe7dc/NOTICE.txt"}
+{"package": "swift-crypto", "completed": 125, "total": 793, "verified_bytes": 1252909}
+{"package": "swift-crypto", "completed": 150, "total": 793, "verified_bytes": 1523894}
+{"package": "swift-crypto", "completed": 175, "total": 793, "verified_bytes": 1813329}
+{"package": "swift-crypto", "completed": 200, "total": 793, "verified_bytes": 2137798}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/apple/swift-crypto/95ba0316a9b733e92bb6b071255ff46263bbe7dc/Sources/CCryptoBoringSSL/crypto/fipsmodule/cipher/e_aes.cc.inc"}
+{"package": "swift-crypto", "completed": 225, "total": 793, "verified_bytes": 2600003}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/apple/swift-crypto/95ba0316a9b733e92bb6b071255ff46263bbe7dc/Sources/CCryptoBoringSSL/crypto/fipsmodule/ec/p256-nistz-table.h"}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/apple/swift-crypto/95ba0316a9b733e92bb6b071255ff46263bbe7dc/Sources/CCryptoBoringSSL/crypto/fipsmodule/mldsa/mldsa.cc.inc"}
+{"package": "swift-crypto", "completed": 250, "total": 793, "verified_bytes": 3085896}
+{"package": "swift-crypto", "completed": 275, "total": 793, "verified_bytes": 3700447}
+{"package": "swift-crypto", "completed": 300, "total": 793, "verified_bytes": 3944803}
+{"package": "swift-crypto", "completed": 325, "total": 793, "verified_bytes": 4191129}
+{"package": "swift-crypto", "completed": 350, "total": 793, "verified_bytes": 4504221}
+{"package": "swift-crypto", "completed": 375, "total": 793, "verified_bytes": 4676102}
+{"package": "swift-crypto", "completed": 400, "total": 793, "verified_bytes": 5603453}
+{"package": "swift-crypto", "completed": 425, "total": 793, "verified_bytes": 6256327}
+{"package": "swift-crypto", "completed": 450, "total": 793, "verified_bytes": 6715872}
+{"package": "swift-crypto", "completed": 475, "total": 793, "verified_bytes": 8000150}
+{"package": "swift-crypto", "completed": 500, "total": 793, "verified_bytes": 8924515}
+{"package": "swift-crypto", "completed": 525, "total": 793, "verified_bytes": 9779822}
+{"package": "swift-crypto", "completed": 550, "total": 793, "verified_bytes": 10550052}
+{"package": "swift-crypto", "completed": 575, "total": 793, "verified_bytes": 11097999}
+{"package": "swift-crypto", "completed": 600, "total": 793, "verified_bytes": 11432542}
+{"package": "swift-crypto", "completed": 625, "total": 793, "verified_bytes": 12360378}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/apple/swift-crypto/95ba0316a9b733e92bb6b071255ff46263bbe7dc/Sources/CCryptoBoringSSL/gen/crypto/err_data.cc"}
+{"package": "swift-crypto", "completed": 650, "total": 793, "verified_bytes": 12603875}
+{"package": "swift-crypto", "completed": 675, "total": 793, "verified_bytes": 12994335}
+{"package": "swift-crypto", "completed": 700, "total": 793, "verified_bytes": 13136178}
+{"package": "swift-crypto", "completed": 725, "total": 793, "verified_bytes": 13322713}
+{"package": "swift-crypto", "completed": 750, "total": 793, "verified_bytes": 13484963}
+{"package": "swift-crypto", "completed": 775, "total": 793, "verified_bytes": 13686833}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out. (read timeout=120)", "url": "https://raw.githubusercontent.com/apple/swift-crypto/95ba0316a9b733e92bb6b071255ff46263bbe7dc/Sources/Crypto/ASN1/Basic%20ASN1%20Types/ASN1Null.swift"}
+{"transport_retry": 1, "error": "HTTPSConnectionPool(host='raw.githubusercontent.com', port=443): Read timed out.", "url": "https://raw.githubusercontent.com/apple/swift-crypto/95ba0316a9b733e92bb6b071255ff46263bbe7dc/Sources/Crypto/Key%20Agreement/ECDH.swift"}
+{"package": "swift-crypto", "completed": 793, "total": 793, "verified_bytes": 13806868}
+{"package": "swift-crypto", "complete": true, "verified_source_files": 794, "verified_trees": 150, "new_bytes": 13806868}

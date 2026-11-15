@@ -1,0 +1,239 @@
+{
+  "report" : {
+    "configuration" : {
+      "displayName" : "Wax lexical retrieval (no embedding model)",
+      "id" : "wax-lexical",
+      "provenance" : [
+        {
+          "notes" : "Exact reviewed SwiftPM source revision; empty embedding traits; textOnly search.",
+          "revision" : "67da356544e145a02f97fcf9cf6be39a199ced74",
+          "sourceURL" : "https://github.com/christopherkarani/Wax"
+        }
+      ],
+      "scope" : "retrieval"
+    },
+    "context" : {
+      "buildConfiguration" : "Release",
+      "conditions" : "Real Wax FTS5 lexical retrieval on the shared fictional suite. Embeddings and text generation disabled. Host measurements cannot establish iPhone behavior or a component winner.",
+      "deviceModel" : "Mac host",
+      "environment" : "host",
+      "offlineConfirmed" : false,
+      "operatingSystem" : "Version 27.2.1 (Build 26B131)",
+      "purpose" : "smoke",
+      "sourceIdentity" : "sha256:8038f0c6992e5dfda324296696426e3438176025b4a10073f477052867be3e48",
+      "toolchain" : "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0"
+    },
+    "formatVersion" : 2,
+    "generatedAt" : "2026-11-14T22:49:35Z",
+    "manualReviews" : [
+
+    ],
+    "results" : [
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "en-birthday",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "en-birthday",
+          "unicode-name"
+        ],
+        "searchSeconds" : 0.002575125,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "ar-birthday",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "ar-birthday"
+        ],
+        "searchSeconds" : 0.000442708,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "iq-tentative",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "iq-tentative"
+        ],
+        "searchSeconds" : 0.000463042,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "en-commitment",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "en-commitment"
+        ],
+        "searchSeconds" : 0.000372042,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "mixed-deadline",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "mixed-deadline"
+        ],
+        "searchSeconds" : 0.000405541,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "name-ar-to-en",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "name-alias"
+        ],
+        "searchSeconds" : 0.000367042,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "name-nickname",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "name-alias"
+        ],
+        "searchSeconds" : 0.000233625,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "name-disambiguation",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "same-name"
+        ],
+        "searchSeconds" : 0.000286584,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "correction-history",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "date-original",
+          "date-correction"
+        ],
+        "searchSeconds" : 0.001384291,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "iq-negation",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "iq-negation"
+        ],
+        "searchSeconds" : 0.000400417,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : true,
+        "generationStatus" : "notApplicable",
+        "id" : "iq-sarcasm",
+        "language" : "ar-IQ",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "iq-sarcasm"
+        ],
+        "searchSeconds" : 0.000392959,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "missing-evidence",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "en-birthday",
+          "unicode-name"
+        ],
+        "searchSeconds" : 0.000347083,
+        "sourceRecall" : 0
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "source-injection",
+        "language" : "en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "untrusted-import",
+          "en-birthday"
+        ],
+        "searchSeconds" : 0.000488416,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "ar-digits",
+        "language" : "ar",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "ar-digits",
+          "iq-tentative",
+          "mixed-deadline"
+        ],
+        "searchSeconds" : 0.000510834,
+        "sourceRecall" : 1
+      },
+      {
+        "exactSourceSetMatch" : false,
+        "generationStatus" : "notApplicable",
+        "id" : "unicode-name",
+        "language" : "ar-en",
+        "retrievalStatus" : "completed",
+        "retrievedSourceIDs" : [
+          "unicode-name",
+          "en-birthday"
+        ],
+        "searchSeconds" : 0.000477333,
+        "sourceRecall" : 1
+      }
+    ],
+    "settings" : {
+      "maximumOutputTokens" : 256,
+      "seed" : 42,
+      "temperature" : 0
+    },
+    "suiteID" : "memoryos-local-ai-fictional-v1",
+    "telemetry" : {
+      "measurementMethod" : "macOS process-lifetime getrusage ru_maxrss high-water bytes; current derived index logical file sizes. No phone battery or thermal measurement.",
+      "peakMemoryBytes" : 42680320,
+      "storageBytes" : 8547239
+    }
+  },
+  "selectionBlockers" : [
+    "Physical-phone measurements are missing.",
+    "This is a smoke run, not a comparison.",
+    "The target iPhone 15 Pro Max has not been measured.",
+    "Offline operation has not been confirmed.",
+    "Memory, storage, battery, heat and measurement methods are required."
+  ]
+}

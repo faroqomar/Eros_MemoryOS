@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "/usr/bin/swift",
+    "build",
+    "--package-path",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification",
+    "--scratch-path",
+    "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-xcframework-build/simulator",
+    "-c",
+    "release",
+    "--target",
+    "WaxEvaluationAdapter",
+    "--triple",
+    "arm64-apple-ios18.0-simulator",
+    "--sdk",
+    "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator27.2.sdk",
+    "--jobs",
+    "4"
+  ],
+  "exit_code": 0,
+  "duration_seconds": 131.52007412910461
+}

@@ -1,0 +1,9 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Fetching https://github.com/christopherkarani/Wax.git from cache
+Fetched https://github.com/christopherkarani/Wax.git from cache (0.01s)
+Fetching https://github.com/christopherkarani/MetalANNS.git
+Fetching https://github.com/apple/swift-crypto.git
+Fetching https://github.com/groue/GRDB.swift.git
+[1/2661] Fetching metalanns
+[276/117353] Fetching metalanns, grdb.swift
+[348/136301] Fetching metalanns, grdb.swift, swift-crypto

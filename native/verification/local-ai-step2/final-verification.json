@@ -1,0 +1,182 @@
+{
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "runtimeFiles": 99,
+  "sourceDrift": [],
+  "verdict": "BLOCKED",
+  "blockingCriterion": "Unresolved Dynamic Type audit diagnostics, including two without element identity.",
+  "checks": {
+    "independentCorePresentationFunctions": 32,
+    "llamaFunctions": 6,
+    "cactusRealModelFunctions": 12,
+    "waxBinaryFunctions": 5,
+    "mlxSimulatorAvailabilityFunctions": 1,
+    "strictFormatAuthoredSwiftFiles": 44,
+    "labReleaseBuild": "PASS",
+    "labStaticAnalysis": "PASS",
+    "originalCaptureRegression": "PASS",
+    "functionalUIScenarios": {
+      "passed": 2,
+      "failed": 0
+    },
+    "unfilteredAccessibilityAudits": {
+      "passed": 0,
+      "failed": 2,
+      "diagnostics": 3
+    },
+    "cleanup": "PASS",
+    "nativeFilesExportByteEquality": "PASS",
+    "cactusValidRankedIDsMatchingOld": 90,
+    "llamaValidAnswersMatchingOld": 15,
+    "nativeCancellationAndSubsequentRerun": "PASS"
+  },
+  "rawFinalSourceReports": [
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/cactus-10A1F408-0816-41AB-835F-CBE65CC97191.json",
+      "sha256": "fdd0a75fc9955e8f98c5af60e817213905bad3db3ba88da11dcd7d0823cb7de1",
+      "candidate": "cactus",
+      "batchID": "493771A1-0F2C-4FB7-BB77-5523FBF47200",
+      "repetition": 3,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/cactus-8633AA04-249A-4677-9BD3-7D7DE593A124.json",
+      "sha256": "faffce727359ee1ea2d2db2dc35c40cd649b383b1a361b848d4f3797091715dc",
+      "candidate": "cactus",
+      "batchID": "493771A1-0F2C-4FB7-BB77-5523FBF47200",
+      "repetition": 0,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/cactus-973CC5D5-56D7-473E-A1BA-D1D8810ABAB9.json",
+      "sha256": "e3e454f72f31f573ee54cae7439b41d7e1708d6a148ead029380796c314ceea9",
+      "candidate": "cactus",
+      "batchID": "493771A1-0F2C-4FB7-BB77-5523FBF47200",
+      "repetition": 2,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/cactus-E3A26EE8-3178-4E4E-AF8D-5E23CB97FD0F.json",
+      "sha256": "09c0b5628956a945fafd51f4c4791bcefe525904943228b7999987f138961562",
+      "candidate": "cactus",
+      "batchID": "493771A1-0F2C-4FB7-BB77-5523FBF47200",
+      "repetition": 5,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/cactus-E4D32BEB-C306-4C51-9464-B88241561758.json",
+      "sha256": "151fce6b4f8c7656367a55aac8bb260928378ecfeb355832710c5b2b709175e9",
+      "candidate": "cactus",
+      "batchID": "493771A1-0F2C-4FB7-BB77-5523FBF47200",
+      "repetition": 1,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/cactus-F6D6DBF8-D2A2-4A3E-BCCC-3FF6112872F4.json",
+      "sha256": "577610594606dbffb1a88183c51ef6a4251e35a4b12accc360b8028d95cd3bc7",
+      "candidate": "cactus",
+      "batchID": "493771A1-0F2C-4FB7-BB77-5523FBF47200",
+      "repetition": 4,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/keyword-control-20206A0A-B3EA-4415-8708-2D5AA5D10EF4.json",
+      "sha256": "72b0a30952ac6a10db96240cf0930e85c0e17a54f5382dcc46f0b1a8b5a666b5",
+      "candidate": "keyword-control",
+      "batchID": "34BACD70-B65F-495E-B9E3-99A09F9FCE9A",
+      "repetition": 3,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/keyword-control-4BF6320C-8E9C-432F-A518-956AF3CED8E7.json",
+      "sha256": "3242f67c2b27356dda3e0ef212041d45104d1be2b219d982af0ebedbcbfe3713",
+      "candidate": "keyword-control",
+      "batchID": "34BACD70-B65F-495E-B9E3-99A09F9FCE9A",
+      "repetition": 1,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/keyword-control-770DC05F-8287-4E44-8C26-C5AD834D7F0A.json",
+      "sha256": "89a454fad85c65039417aa7d081de0e8db2cedbf8cde5587ab724190552a1fad",
+      "candidate": "keyword-control",
+      "batchID": "34BACD70-B65F-495E-B9E3-99A09F9FCE9A",
+      "repetition": 2,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/keyword-control-843DA98B-1578-44AE-9EFC-4BAF1ACAF31C.json",
+      "sha256": "6df6d7ee612a496665ec2d3450199e7e4143136a168e78496684adacd388464c",
+      "candidate": "keyword-control",
+      "batchID": "34BACD70-B65F-495E-B9E3-99A09F9FCE9A",
+      "repetition": 0,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/keyword-control-9714CF1F-CE0A-4877-B09D-915E1687F091.json",
+      "sha256": "fccc55538ea98d6502bf370b50f4cd40c7b01039a165ec4e86f04a2a28cda6ad",
+      "candidate": "keyword-control",
+      "batchID": "34BACD70-B65F-495E-B9E3-99A09F9FCE9A",
+      "repetition": 4,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/keyword-control-E7B67EA3-B2F0-4BB4-BC82-A5747A2AD4F9.json",
+      "sha256": "949ada3544530b6b7a825b4542cae976a7f2f69d18a72a74b500bd721e783687",
+      "candidate": "keyword-control",
+      "batchID": "34BACD70-B65F-495E-B9E3-99A09F9FCE9A",
+      "repetition": 5,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/llama-qwen-60F31A39-351E-438C-AC2E-82E1FD46CF3C.json",
+      "sha256": "af998017e3888fae23054c3c1238adb6785edc0313733e26c465cd6043ecb657",
+      "candidate": "llama-qwen",
+      "batchID": "4BD4E12A-7499-40C7-B2CF-A05A600395B4",
+      "repetition": 0,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/mlx-qwen-F0753145-5DFC-4391-8E37-005E36417F82.json",
+      "sha256": "1367ce38669f34ede43aa08dc8c3befe47d481184df9eacc633118b5b6b16344",
+      "candidate": "mlx-qwen",
+      "batchID": "C290C878-E614-4B5D-AD56-8AE7711CDD40",
+      "repetition": 0,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    },
+    {
+      "path": "native/verification/local-ai-step2/simulator-reports/mlx-qwen-F85A0FCB-AF3A-44D7-8B7A-EBA9EBAE8D37.json",
+      "sha256": "a03300a9e2ffc8bd597bac25d91fc99944892dd9048fb1b759a305d32743e64f",
+      "candidate": "mlx-qwen",
+      "batchID": "A8D987AC-E83C-44C8-8E07-3782137E553C",
+      "repetition": 0,
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "cases": 15
+    }
+  ],
+  "oldComparativeSourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "noProductionSelection": true,
+  "physicalPhoneUnmeasured": true,
+  "minimumOSRuntimeUnverified": true,
+  "noGitDelivery": true,
+  "memoryDelivery": "Verified: project-memoryos,41sources,0pending,0failed; useful current-blocker recall confirmed.",
+  "independentFinalIntegrityReceipt": "independent-final-focused-recheck.json",
+  "cleanupLogicalBytesRemoved": 3796811378,
+  "memoryStatusReceipt": "memory-status.json",
+  "screenshotManifest": "screenshots/manifest.json",
+  "finalRuntimeSourceStillMatches": true,
+  "memoryDeliveryVerified": true,
+  "overallStep2": "BLOCKED by unresolved Dynamic Type audits; no audit waiver or Git delivery."
+}

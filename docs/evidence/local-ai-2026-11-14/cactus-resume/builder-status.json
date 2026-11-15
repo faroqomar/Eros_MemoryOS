@@ -1,0 +1,18 @@
+{
+  "sdkBuild": "passed arm64 macOS14/iOS18 device/iOS18 simulator; official v1.14 plus retained local-only/CPU/thread/last-token patch",
+  "contractsExecuted": 11,
+  "contractsPassed": 11,
+  "modelDependentTestsSkipped": 0,
+  "networkDeniedContracts": "all11 passed; actual model embeddings and native index persistence",
+  "modelArchiveVerification": "passed exact ZIP size/SHA-256, pinned extracted manifest, all317 file hashes before load",
+  "hostRetrieval": "15/15 completed;14/15 full source recall;0/15 exact sets; missing-evidence abstention failed; raw reports retained",
+  "physicalMeasurements": "not claimed; owner uses simulator in current task",
+  "unusedFrameworksRemoved": [
+    "CFNetwork",
+    "Security",
+    "SystemConfiguration",
+    "Metal",
+    "MetalPerformanceShaders"
+  ],
+  "remaining": "Parent owns simulator run, cross-provider comparison, screenshots and task/memory records."
+}

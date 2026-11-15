@@ -1,0 +1,5 @@
+{"identity": "swift-huggingface", "revision": "c30143a4616f3fa994ee3ab3e3464f752845c07c", "files": 66, "trees": 23, "gitlinks": 0}
+{"identity": "swift-huggingface", "completed": 25, "total": 66}
+{"identity": "swift-huggingface", "completed": 50, "total": 66}
+{"identity": "swift-huggingface", "completed": 66, "total": 66}
+{"snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-verified-snapshots/swift-huggingface", "completeSelectedSources": true, "canonicalResolutionVerified": false, "manifest": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/mlx-snapshot-swift-huggingface.json"}

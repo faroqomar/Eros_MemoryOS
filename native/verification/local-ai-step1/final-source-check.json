@@ -1,0 +1,7 @@
+{
+  "localLinksMissing": [],
+  "sourceDrift": [],
+  "productionSourceDiff": "none; native/MemoryOS and native/LocalMemory unchanged",
+  "step1": "partial-blocked",
+  "independentStep2": "not started"
+}

@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Wax",
+    "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/Wax",
+    "files": 306,
+    "bytes": 4789404,
+    "licenses": [
+      {
+        "path": "LICENSE",
+        "sha256": "97adb81c9bb1c8d6a1ec65e117da4bb2e11431de4ba6e7ff677a121f1c099108",
+        "first_lines": [
+          "                                 Apache License",
+          "                           Version 2.0, January 2004",
+          "                        http://www.apache.org/licenses/",
+          "",
+          "   TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "MetalANNS",
+    "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS",
+    "files": 103,
+    "bytes": 765044,
+    "licenses": [
+      {
+        "path": "LICENSE",
+        "sha256": "46c6277c9debd18273d4d05312b62698ac597b37c275c78c2c74a6a05271a6a8",
+        "first_lines": [
+          "MIT License",
+          "",
+          "Copyright (c) 2026 Chris Karani",
+          "",
+          "Permission is hereby granted, free of charge, to any person obtaining a copy"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "GRDB",
+    "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/GRDB.swift",
+    "files": 228,
+    "bytes": 4687484,
+    "licenses": [
+      {
+        "path": "LICENSE",
+        "sha256": "9853f9dce81365fcc1d9b46004633354450164b8d17904e92e80c444545f7e87",
+        "first_lines": [
+          "Copyright (C) 2015-2025 Gwendal Rou\u00e9",
+          "",
+          "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:",
+          "",
+          "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Crypto",
+    "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto",
+    "files": 794,
+    "bytes": 13815456,
+    "licenses": [
+      {
+        "path": "NOTICE.txt",
+        "sha256": "b3ddc2ae068e76b3beb71be03c0400f90090f9469aa491bf7b1ac42320af37b8",
+        "first_lines": [
+          "                            The SwiftCrypto Project",
+          "                            =======================",
+          "",
+          "Please visit the SwiftCrypto web site for more information:",
+          ""
+        ]
+      },
+      {
+        "path": "LICENSE.txt",
+        "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+        "first_lines": [
+          "",
+          "                                 Apache License",
+          "                           Version 2.0, January 2004",
+          "                        http://www.apache.org/licenses/",
+          ""
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ASN1",
+    "snapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1",
+    "files": 26,
+    "bytes": 259288,
+    "licenses": [
+      {
+        "path": "NOTICE.txt",
+        "sha256": "11dd3b3b783e6ec26098dd38ebc962986ea109b85447e28e62867b83bd0f8c5b",
+        "first_lines": [
+          "",
+          "                            The SwiftASN1 Project",
+          "                            =====================",
+          "",
+          "Please visit the SwiftASN1 web site for more information:"
+        ]
+      },
+      {
+        "path": "LICENSE.txt",
+        "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+        "first_lines": [
+          "",
+          "                                 Apache License",
+          "                           Version 2.0, January 2004",
+          "                        http://www.apache.org/licenses/",
+          ""
+        ]
+      }
+    ]
+  }
+]

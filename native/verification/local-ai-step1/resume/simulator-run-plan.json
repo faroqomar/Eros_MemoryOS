@@ -1,0 +1,15 @@
+{
+  "sourceIdentity": "b44661c8b96b5e54457dd3918a5eced91c856dcc90d03b08f1b0dfbf8c595e00",
+  "environment": "iPhone18Pro / iOS27.2 Simulator on Apple M1 Pro / 16GiB / macOS27.2.1",
+  "baselineFirst": "keyword-control",
+  "candidateOrder": [
+    "llama-qwen06",
+    "cactus",
+    "llama-qwen",
+    "mlx-qwen",
+    "wax-lexical"
+  ],
+  "shuffleSeed": 42,
+  "repetitions": "One cold suite plus five warm suites using resident adapter/model, fresh derived index and request context",
+  "conditions": "No concurrent task-owned MLX/Cactus/llama host inference. Healthy source and model downloads continue. Candidate app relaunches separate process memory samples. One host session, no cross-session counterbalancing. Network isolation is separately tested on host; Simulator context stays offlineConfirmed=false."
+}

@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+  "root_tree": "6c96986047e188c4cad5432a3f699908c52af245",
+  "original_url": "https://github.com/apple/swift-crypto.git",
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/swift-crypto-7e0614ea",
+  "verified_blobs": 964,
+  "verified_trees": 190,
+  "blob_bytes": 32704983,
+  "promisor": false,
+  "git_filter": null,
+  "local_server": false,
+  "transport_wrapper": false
+}

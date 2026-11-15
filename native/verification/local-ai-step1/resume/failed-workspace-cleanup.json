@@ -1,0 +1,10 @@
+{
+  "removedPath": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/native-lab/MemoryOSAILab.xcworkspace",
+  "beforeLogicalBytes": 2851,
+  "afterLogicalBytes": 0,
+  "files": {
+    "contents.xcworkspacedata": "192504fa4ff7fc2bf1408ff0d75e6f6086b3555567a5e6097da82e4284e2a5b1",
+    "memoryos-override-receipt.json": "d7fa9e961107e25b63265efc12001cb6a590a4a6284cfed7401a281fc7691678"
+  },
+  "reason": "Unused generated SDK-root workspace failed; production integration uses the real thin binary package instead. Unique failure log, XML and override receipt retained."
+}

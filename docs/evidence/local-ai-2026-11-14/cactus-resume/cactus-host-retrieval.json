@@ -1,0 +1,334 @@
+{
+  "configuration" : {
+    "displayName" : "Cactus local-only · Qwen3 Embedding 0.6B int4 · CPU",
+    "id" : "cactus-qwen3-embedding-int4-cpu",
+    "provenance" : [
+      {
+        "notes" : "Local-only upstream patch; see artifact receipt. No telemetry or curl transport. CPU, normalized embeddings, query instruction, similarity threshold0.35.",
+        "revision" : "40a7123b0788f5b38c5fe0daa0d909b4286fe773",
+        "sourceURL" : "https://github.com/cactus-compute/engine"
+      },
+      {
+        "modelAsset" : "weights/qwen3-embedding-0.6b-int4.zip",
+        "modelSHA256" : "22ff768a984fe931ac463b02cedce2ebd65172c6877d210bd5dc6d058fffbd7b",
+        "notes" : "",
+        "revision" : "0df64898a34c75c209b9882110cd6f9aeb7115cd",
+        "sourceURL" : "https://huggingface.co/Cactus-Compute/Qwen3-Embedding-0.6B"
+      }
+    ],
+    "scope" : "retrieval"
+  },
+  "context" : {
+    "buildConfiguration" : "Release",
+    "conditions" : "Actual Cactus CPU embedding/index on fictional sources. Host smoke only. CPU worker setting: 4; actual worker count: 4. No text generation model, phone cost or winner.",
+    "deviceModel" : "Mac host",
+    "environment" : "host",
+    "offlineConfirmed" : true,
+    "operatingSystem" : "Version 27.2.1 (Build 26B131)",
+    "purpose" : "smoke",
+    "sourceIdentity" : "7849f9ff348e1e3d37543b32a7f65aaec9a576209e03427152377e1cd769b8ea",
+    "toolchain" : "Record swift --version with invocation"
+  },
+  "formatVersion" : 2,
+  "generatedAt" : "2026-11-14T23:51:44Z",
+  "indexBuildSeconds" : 2.238827667,
+  "manualReviews" : [
+
+  ],
+  "results" : [
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "en-birthday",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.6611328125,
+        "en-birthday" : 0.65087890625,
+        "en-commitment" : 0.67236328125
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment",
+        "date-original",
+        "en-birthday"
+      ],
+      "searchSeconds" : 0.112643875,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-birthday",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.6669921875,
+        "en-commitment" : 0.65966796875,
+        "mixed-deadline" : 0.6572265625
+      },
+      "retrievedSourceIDs" : [
+        "date-original",
+        "en-commitment",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.084097959,
+      "sourceRecall" : 0
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-tentative",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-negation" : 0.72705078125,
+        "iq-tentative" : 0.79052734375,
+        "mixed-deadline" : 0.70263671875
+      },
+      "retrievedSourceIDs" : [
+        "iq-tentative",
+        "iq-negation",
+        "mixed-deadline"
+      ],
+      "searchSeconds" : 0.110588834,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "en-commitment",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.6396484375,
+        "en-commitment" : 0.7294921875,
+        "untrusted-import" : 0.65869140625
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment",
+        "untrusted-import",
+        "date-original"
+      ],
+      "searchSeconds" : 0.074840458,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "mixed-deadline",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.67919921875,
+        "mixed-deadline" : 0.716796875,
+        "untrusted-import" : 0.6806640625
+      },
+      "retrievedSourceIDs" : [
+        "mixed-deadline",
+        "untrusted-import",
+        "date-original"
+      ],
+      "searchSeconds" : 0.096591042,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-ar-to-en",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.6435546875,
+        "en-commitment" : 0.646484375,
+        "name-alias" : 0.662109375
+      },
+      "retrievedSourceIDs" : [
+        "name-alias",
+        "en-commitment",
+        "date-original"
+      ],
+      "searchSeconds" : 0.074449833,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-nickname",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.6171875,
+        "en-commitment" : 0.63671875,
+        "untrusted-import" : 0.6181640625
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment",
+        "untrusted-import",
+        "date-original"
+      ],
+      "searchSeconds" : 0.06347425,
+      "sourceRecall" : 0
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "name-disambiguation",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.630859375,
+        "en-commitment" : 0.64501953125,
+        "same-name" : 0.74658203125
+      },
+      "retrievedSourceIDs" : [
+        "same-name",
+        "en-commitment",
+        "date-original"
+      ],
+      "searchSeconds" : 0.076596958,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "correction-history",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-correction" : 0.73779296875,
+        "date-original" : 0.74267578125,
+        "en-commitment" : 0.70654296875
+      },
+      "retrievedSourceIDs" : [
+        "date-original",
+        "date-correction",
+        "en-commitment"
+      ],
+      "searchSeconds" : 0.1027355,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-negation",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.6689453125,
+        "iq-negation" : 0.7470703125,
+        "mixed-deadline" : 0.6708984375
+      },
+      "retrievedSourceIDs" : [
+        "iq-negation",
+        "mixed-deadline",
+        "date-original"
+      ],
+      "searchSeconds" : 0.094856334,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "iq-sarcasm",
+      "language" : "ar-IQ",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "iq-negation" : 0.671875,
+        "iq-sarcasm" : 0.72265625,
+        "same-name" : 0.6611328125
+      },
+      "retrievedSourceIDs" : [
+        "iq-sarcasm",
+        "iq-negation",
+        "same-name"
+      ],
+      "searchSeconds" : 0.095351792,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "missing-evidence",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.6396484375,
+        "en-commitment" : 0.6630859375,
+        "untrusted-import" : 0.654296875
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment",
+        "untrusted-import",
+        "date-original"
+      ],
+      "searchSeconds" : 0.074582083,
+      "sourceRecall" : 0
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "source-injection",
+      "language" : "en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-original" : 0.6435546875,
+        "en-commitment" : 0.6767578125,
+        "untrusted-import" : 0.791015625
+      },
+      "retrievedSourceIDs" : [
+        "untrusted-import",
+        "en-commitment",
+        "date-original"
+      ],
+      "searchSeconds" : 0.090485542,
+      "sourceRecall" : 1
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "ar-digits",
+      "language" : "ar",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "date-correction" : 0.6455078125,
+        "en-commitment" : 0.666015625,
+        "untrusted-import" : 0.658203125
+      },
+      "retrievedSourceIDs" : [
+        "en-commitment",
+        "untrusted-import",
+        "date-correction"
+      ],
+      "searchSeconds" : 0.07388125,
+      "sourceRecall" : 0
+    },
+    {
+      "exactSourceSetMatch" : false,
+      "generationStatus" : "notApplicable",
+      "id" : "unicode-name",
+      "language" : "ar-en",
+      "retrievalStatus" : "completed",
+      "retrievedScores" : {
+        "en-commitment" : 0.6533203125,
+        "unicode-name" : 0.7685546875,
+        "untrusted-import" : 0.673828125
+      },
+      "retrievedSourceIDs" : [
+        "unicode-name",
+        "untrusted-import",
+        "en-commitment"
+      ],
+      "searchSeconds" : 0.09385775,
+      "sourceRecall" : 1
+    }
+  ],
+  "settings" : {
+    "maximumOutputTokens" : 256,
+    "seed" : 42,
+    "temperature" : 0
+  },
+  "suiteID" : "memoryos-local-ai-fictional-v1",
+  "telemetry" : {
+
+  }
+}

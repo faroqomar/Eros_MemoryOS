@@ -1,0 +1,16 @@
+{
+  "verifiedUTC": "2026-11-15T02:24:21.790166+00:00",
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "runtimeFiles": 99,
+  "captureHashes": 11,
+  "finalCaptures": 10,
+  "diagnosticCaptures": 1,
+  "cactusReports": 6,
+  "cactusRankedIDsMatchingPriorCases": 90,
+  "llamaAnswersByteMatchingPriorCases": 15,
+  "postCancelMLXUnavailableNoOutput": true,
+  "preservedCleanupFiles": 18,
+  "issues": [],
+  "focusedIntegrityResult": "PASS",
+  "overallStep2": "BLOCKED: unresolved required Dynamic Type audits, independently inspected in ui-final.log"
+}

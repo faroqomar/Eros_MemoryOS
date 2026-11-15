@@ -20,6 +20,12 @@ xcuserdata/
 *.app/
 *.dSYM/
 
+# Reproducible local evaluation frameworks and model weights.
+native/LocalTextEvaluation/Artifacts/
+native/LocalCactusEvaluation/Artifacts/
+*.gguf
+*.safetensors
+
 # Local credentials and signing material.
 .env
 .env.*

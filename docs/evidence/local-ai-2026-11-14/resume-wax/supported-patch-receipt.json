@@ -1,0 +1,19 @@
+{
+  "upstream_revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+  "upstream_path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/Wax",
+  "patched_path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-patched/Wax",
+  "patch": "native/LocalAIIntegrations/Patches/wax-0.1.47-ios-desktop-guards.patch",
+  "patch_sha256": "d55f4e047011249d9f40c70dcb2f615d6379257315fa1ba467500fc57351a7e4",
+  "files": [
+    {
+      "path": "Sources/Wax/Broker/AgentBrokerClient.swift",
+      "upstream_sha256": "5a07d524f549ce2979694a886b6a014d049023245ab92078c3eb569b2138e983",
+      "patched_sha256": "f2a8e54b24fe67cb9ce097cbeaba963f1422feb97a375cfb1d699239a9f53112"
+    },
+    {
+      "path": "Sources/Wax/MemorySemantics.swift",
+      "upstream_sha256": "7867b423957b42dfbd8c678bc66649cc4a37c88e3cdcef04efdd378ef454cb3b",
+      "patched_sha256": "c39e51d3e91591c73ba76553a778ce5817826ba4b566509d3d78eee93a9b389e"
+    }
+  ]
+}

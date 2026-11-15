@@ -1,0 +1,4 @@
+{
+  "unexpectedTransportSymbols": [],
+  "method": "nm -u on macOS arm64 static library, inspected for curl/socket/connect/CFHTTP symbols. This is a structural check, not a physical-device packet trace."
+}

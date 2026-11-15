@@ -1,0 +1,10 @@
+{"path": ".gitattributes", "gitBlobSHA1": "dab4bd2c0ce5c9a695aef221e70a65f3bf2635bd", "sha256": "366e76e3e7247428a237067841dd367e92ae10f828eb3b7960ef9c8473d15a4a", "bytes": 24}
+{"path": ".gitignore", "gitBlobSHA1": "af38302799f22f051dc3fad7e1229119d8238ab0", "sha256": "143ffa410e600995086630b5c7697437f8f50a80e21f4068d7a5e25c5efe97e4", "bytes": 1105}
+{"path": "CHANGELOG.md", "gitBlobSHA1": "9300a5b49c22859dd16c194f1569a09bcaf32698", "sha256": "285ce63810c374d916397c430f0f5b01b290942dac5db38f502556084ceaf972", "bytes": 8376}
+{"path": "CMakeLists.txt", "gitBlobSHA1": "9c69b44140a5195da8f6ca27f52c71306ab3e6b1", "sha256": "feac682b7467fa5e057d530e99c945707328d65119777af1006fc8f6ee7d85ca", "bytes": 21420}
+{"path": "Package.swift", "gitBlobSHA1": "8f27d611e560858882596696c7c377e3a88dd34e", "sha256": "86c8ce8c0c4a0e5325a49c4ab35b65017ce376ce2c9318e04cd0bfce9e14af34", "bytes": 810}
+{"path": "LICENSE", "gitBlobSHA1": "a09bff355348932f9a1bd8c2e7417afb1ec0c943", "sha256": "45e384d3d52c73cba3a64d6e6c25d47cd738cd8a55c30629e3201046eda62947", "bytes": 1084}
+{"path": "README.md", "gitBlobSHA1": "a11f573cbd3fa71637dd34ebb54f41f2e1a6df28", "sha256": "d80f1b4b6d5a8e32af5df5e2cc06fe618db67962c9e1015c5d607c4a105b8259", "bytes": 11556}
+{"path": "src/yyjson.h", "gitBlobSHA1": "5eb6d46801c75c1fc26584a0ec6c2d82986f75b6", "sha256": "175867c5493a5df648cec566717fa1c29aa2f6096f5f0cf1efad0b65e1f6d7b3", "bytes": 322407}
+{"path": "yyjson.pc.in", "gitBlobSHA1": "beecb7b6e22076b96c5e17e16621658c684b4a6b", "sha256": "d9fc70f8785f7d9492ba7a1bedfd886412fae2299552b21f70e884d1872990f4", "bytes": 310}
+{"path": "src/yyjson.c", "gitBlobSHA1": "c16d9258116a01b9dbd46783d89d9c91938eb396", "sha256": "ac2e9bbb2e2d9149d90878d40506a1d624fa0b33c979a11b61075c54782c6d6a", "bytes": 410813}

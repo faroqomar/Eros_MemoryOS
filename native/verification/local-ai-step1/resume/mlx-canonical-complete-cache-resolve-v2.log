@@ -1,0 +1,71 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Fetching https://github.com/ml-explore/mlx-swift-lm from cache
+Fetched https://github.com/ml-explore/mlx-swift-lm from cache (0.20s)
+Fetching https://github.com/huggingface/swift-transformers from cache
+Fetched https://github.com/huggingface/swift-transformers from cache (0.07s)
+Fetching https://github.com/ibireme/yyjson.git from cache
+Fetching https://github.com/huggingface/swift-huggingface.git from cache
+Fetching https://github.com/huggingface/swift-jinja.git from cache
+Fetching https://github.com/swiftlang/swift-syntax.git from cache
+Fetching https://github.com/apple/swift-crypto.git from cache
+Fetching https://github.com/apple/swift-collections.git from cache
+Fetched https://github.com/huggingface/swift-jinja.git from cache (0.11s)
+Fetching https://github.com/ml-explore/mlx-swift from cache
+Fetched https://github.com/huggingface/swift-huggingface.git from cache (0.18s)
+Fetched https://github.com/ibireme/yyjson.git from cache (0.60s)
+Fetched https://github.com/swiftlang/swift-syntax.git from cache (0.61s)
+Fetched https://github.com/apple/swift-collections.git from cache (0.62s)
+Fetched https://github.com/apple/swift-crypto.git from cache (0.64s)
+Fetched https://github.com/ml-explore/mlx-swift from cache (0.52s)
+Computing version for https://github.com/ibireme/yyjson.git
+Computed https://github.com/ibireme/yyjson.git at 0.13.0 (1.31s)
+Computing version for https://github.com/apple/swift-crypto.git
+Computed https://github.com/apple/swift-crypto.git at 3.15.1 (0.83s)
+Fetching https://github.com/apple/swift-asn1.git from cache
+Fetched https://github.com/apple/swift-asn1.git from cache (0.09s)
+Computing version for https://github.com/apple/swift-collections.git
+Computed https://github.com/apple/swift-collections.git at 1.7.6 (0.69s)
+Computing version for https://github.com/huggingface/swift-huggingface.git
+Computed https://github.com/huggingface/swift-huggingface.git at 1.0.0 (0.62s)
+Fetching https://github.com/mattt/EventSource.git from cache
+Fetched https://github.com/mattt/EventSource.git from cache (0.02s)
+Computing version for https://github.com/huggingface/swift-jinja.git
+Computed https://github.com/huggingface/swift-jinja.git at 3.1.0 (0.48s)
+Computing version for https://github.com/swiftlang/swift-syntax.git
+Computed https://github.com/swiftlang/swift-syntax.git at 603.0.2 (0.61s)
+Computing version for https://github.com/ml-explore/mlx-swift
+Computed https://github.com/ml-explore/mlx-swift at 0.32.3 (0.46s)
+Fetching https://github.com/apple/swift-numerics from cache
+Fetched https://github.com/apple/swift-numerics from cache (0.05s)
+Computing version for https://github.com/apple/swift-asn1.git
+Computed https://github.com/apple/swift-asn1.git at 1.7.4 (0.67s)
+Computing version for https://github.com/mattt/EventSource.git
+Computed https://github.com/mattt/EventSource.git at 1.6.0 (0.54s)
+Computing version for https://github.com/apple/swift-numerics
+Computed https://github.com/apple/swift-numerics at 1.1.1 (0.54s)
+Creating working copy for https://github.com/apple/swift-collections.git
+Working copy of https://github.com/apple/swift-collections.git resolved at 1.7.6
+Creating working copy for https://github.com/ml-explore/mlx-swift-lm
+Working copy of https://github.com/ml-explore/mlx-swift-lm resolved at 3b339ad6e3b3f44c8121ecff5131c7fd55e075e6
+Creating working copy for https://github.com/huggingface/swift-jinja.git
+Working copy of https://github.com/huggingface/swift-jinja.git resolved at 3.1.0
+Creating working copy for https://github.com/apple/swift-asn1.git
+Working copy of https://github.com/apple/swift-asn1.git resolved at 1.7.4
+Creating working copy for https://github.com/swiftlang/swift-syntax.git
+Working copy of https://github.com/swiftlang/swift-syntax.git resolved at 603.0.2
+Creating working copy for https://github.com/huggingface/swift-transformers
+Working copy of https://github.com/huggingface/swift-transformers resolved at 402a8a1105f52038b0949d9596981fc9e32bed17
+Creating working copy for https://github.com/apple/swift-crypto.git
+Working copy of https://github.com/apple/swift-crypto.git resolved at 3.15.1
+Creating working copy for https://github.com/huggingface/swift-huggingface.git
+Working copy of https://github.com/huggingface/swift-huggingface.git resolved at 1.0.0
+Creating working copy for https://github.com/ibireme/yyjson.git
+Working copy of https://github.com/ibireme/yyjson.git resolved at 0.13.0
+Creating working copy for https://github.com/apple/swift-numerics
+Working copy of https://github.com/apple/swift-numerics resolved at 1.1.1
+Creating working copy for https://github.com/mattt/EventSource.git
+Working copy of https://github.com/mattt/EventSource.git resolved at 1.6.0
+Creating working copy for https://github.com/ml-explore/mlx-swift
+Working copy of https://github.com/ml-explore/mlx-swift resolved at 0.32.3
+Downloading package prebuilt https://download.swift.org/prebuilts/swift-syntax/603.0.2/swiftlang-6.4.2.1.9-macosx27.2-MacroSupport.zip
+Downloaded https://download.swift.org/prebuilts/swift-syntax/603.0.2/swiftlang-6.4.2.1.9-macosx27.2-MacroSupport.zip (24.19s)

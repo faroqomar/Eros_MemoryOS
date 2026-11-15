@@ -1,0 +1,10 @@
+{
+  "workspace" : {
+    "name" : "MLXLocalSourceChecks",
+    "schemes" : [
+      "mlx-evaluation",
+      "MLXEvaluationAdapter",
+      "MLXLocalSourceChecks-Package"
+    ]
+  }
+}

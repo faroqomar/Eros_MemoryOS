@@ -1,0 +1,19 @@
+Test Suite 'All tests' started at 2026-11-15 02:53:43.526.
+Test Suite 'All tests' passed at 2026-11-15 02:53:43.536.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.010) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Suite WaxMemoryIndexAdapterTests started.
+◇ Test preservesArabicAndMixedLanguageLexicalSearch() started.
+◇ Test rebuildRetractsRemovedAndCorrectedSourcesWithoutDeletingOtherFiles() started.
+◇ Test rejectsUnavailableAndInvalidInputsAndRetainsPreviousIndex() started.
+◇ Test retrievesCanonicalUnicodeIDsAndPreservesIdenticalSources() started.
+◇ Test storageFailurePreservesCallerOwnedFile() started.
+✔ Test storageFailurePreservesCallerOwnedFile() passed after 0.020 seconds.
+✔ Test preservesArabicAndMixedLanguageLexicalSearch() passed after 0.122 seconds.
+✔ Test retrievesCanonicalUnicodeIDsAndPreservesIdenticalSources() passed after 0.123 seconds.
+✔ Test rejectsUnavailableAndInvalidInputsAndRetainsPreviousIndex() passed after 0.141 seconds.
+✔ Test rebuildRetractsRemovedAndCorrectedSourcesWithoutDeletingOtherFiles() passed after 0.151 seconds.
+✔ Suite WaxMemoryIndexAdapterTests passed after 0.152 seconds.
+✔ Test run with 5 tests in 1 suite passed after 0.152 seconds.

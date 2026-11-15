@@ -1,0 +1,122 @@
+{
+  "sourceState": "Explicit temporary common source graph; canonical resolution pending.",
+  "applicationSources": [
+    {
+      "path": "native/LocalAIEvaluation/Package.swift",
+      "sha256": "53b74c167e6b0686d564114e4a88a883fd2d813dc6a2f8976353e1a2b9efea07"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/Contracts.swift",
+      "sha256": "3a65ab229a78b0364d921195d2a455eaa89513f6cf2bbc6739a571f1e5efae77"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/EvaluationRunner.swift",
+      "sha256": "e576091852b24603208dfdf9af932eea7865b45da0d5e9caebae2cedb64a954a"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/FictionalSuite.swift",
+      "sha256": "a3f48e99b8846c2175f9940c981c15d694b98dd2300b6f8292214f9e0ad2afc8"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/KeywordMemoryIndex.swift",
+      "sha256": "2de44da64204b514d542189e4bd55957d4299be3342a005fbffbbab046d07c10"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/Report.swift",
+      "sha256": "372b36be8e9520622629010e65cd5bd8a78e28351115b1c2dce22dce5644849f"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/RunEvaluationComparison.swift",
+      "sha256": "6609128f074e8dcf51b1caf918ebbf5cf933d96bb89b5450852a291e730bab81"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/.build/local-sdk-checks-common/Package.swift",
+      "sha256": "d8d5fe2dfb4bd20604fe4cfee391af98d41f15f31077d32d2129be8ef134aba8"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/Package.swift",
+      "sha256": "507bb4cac8504808f28a454cd717fca1876dd0cf311aa9a24607d8441cda7c1c"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/SimulatorAvailability/Sources/MLXSimulatorAvailability/MLXSimulatorUnavailableRuntime.swift",
+      "sha256": "f0678b44091bbe27d456601ec066076a7d241c135ac274b0c47b0b89a5e2a833"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/SimulatorAvailability/Tests/MLXSimulatorAvailabilityTests/SimulatorAvailabilityTests.swift",
+      "sha256": "963919d4be582f171d9bf40298978dc34fa78706776b7df9ff41398669342774"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/Sources/MLXEvaluationAdapter/LocalTokenizer.swift",
+      "sha256": "01df6d4efe90d83c16cb60440897244b8450faf803245398d9af54c20a989764"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/Sources/MLXEvaluationAdapter/MLXTextRuntime.swift",
+      "sha256": "49eb6fc7ca62fbfad21ff7592a052830a635dc9d0fd033ffa3f0e725e31fa8a5"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/Sources/MLXEvaluationCLI/Main.swift",
+      "sha256": "5025e40db6d51ff638641c43a91ffbe3ad6996ad5871f5b4481d8887c36607b4"
+    },
+    {
+      "path": "native/LocalMLXEvaluation/Tests/MLXEvaluationAdapterTests/MLXAdapterTests.swift",
+      "sha256": "839149cc2d9d1486ff76735f0f29b2f22b7a25b6a0703eca1f1062a7afef518a"
+    }
+  ],
+  "sdkReceipts": [
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-EventSource.json",
+      "sha256": "b8bb2e7ec9072bc2fb5f873eac9499c69907889e7215499b3639c56cf0a77d44"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-mlx-c-api.json",
+      "sha256": "c0319b0b00b91c723703f55e061f05b41c7f810639cb83b15d36c50772259919"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-mlx-cpp-core.json",
+      "sha256": "4e64acf800cf11d4ffc5b4ee1cd6afc8103bf225f3c8e53bd702d15d56c3000d"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-mlx-swift-lm.json",
+      "sha256": "2f2e131d9cf644774bfbb68de37f31edf36f5230b5f08249f9a8e70fab03f8aa"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-mlx-swift.json",
+      "sha256": "09956922001e3d1e7c97ae091ffb9f2d82c1bc9d999148c34043f8e7a1aebeb8"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-swift-collections.json",
+      "sha256": "2eb7a92596d1a096876d7e68219eb00ed7dc54070eb189a5acb3a68e19f0c1f0"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-swift-crypto.json",
+      "sha256": "379f8bf0abd66243a02f773a973dfbd6e1bdd58f2f20b8de920386a692576d27"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-swift-huggingface.json",
+      "sha256": "98951396e7498329abe8007110f044e642f6379a006f12e726d4ec9e85d98afb"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-swift-jinja.json",
+      "sha256": "57939b253c635deab3315f20ae57713f809a0f0c22c1abadc6a9ffc51006ae77"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-swift-numerics.json",
+      "sha256": "e5e0ebee95ff1e9283c58b5b775806e03b0b4dfd08c0673a31bcff1eb035d9b4"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-swift-syntax.json",
+      "sha256": "790023a2fe1e7b1053d48d52bdcef4ff4aa8d1f4c012b2fe8812d77893475a09"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-swift-transformers.json",
+      "sha256": "a1f94e7924f3a1501b2b94c836f280d751a13789f089096af2d30c2998358afa"
+    },
+    {
+      "path": "native/verification/local-ai-step1/resume/mlx-snapshot-yyjson.json",
+      "sha256": "ec1b05240f33129cacbf664ad880e9826fbf4e627dd7c314f4d0c5e4f2b64264"
+    }
+  ],
+  "commonGraphReceipt": "mlx-local-check-package-common.json",
+  "toolchain": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0",
+  "xcode": "Xcode 27.2\nBuild version 27B52"
+}

@@ -1,0 +1,11 @@
+{"path": ".gitignore", "gitBlobSHA1": "0023a5340637983755c8c19c18cc2c2bb1dbda1c", "sha256": "835a922c21f2f2c481698793aec2bbcb1f9723889b93f1928be851af9ec2e6f7", "bytes": 159}
+{"path": "LICENSE.md", "gitBlobSHA1": "1d7154314ce7df1bbcec09e1091e12ec5f5f985d", "sha256": "2f9b695627d569a3ce452b2c03fdd34310df78c8ea94edfafd9ce38381e5b502", "bytes": 1062}
+{"path": ".swift-format", "gitBlobSHA1": "2fce0f00291b0435963d760a6468a9622fed78cd", "sha256": "79f6e24236abc761a0d1ccbba5eb24785228b4b830af6eb779215147495e214b", "bytes": 250}
+{"path": "Package.swift", "gitBlobSHA1": "d5b1800b0af8d623f218628c80608d5294eadffc", "sha256": "1fdc2c108312c72e60c3a752abef7984a60e585005e32455a7d73b5f3f9dcc20", "bytes": 1941}
+{"path": "Package@swift-6.0.swift", "gitBlobSHA1": "2bfac39541490fe88f1bcf24e9611d57e6fd0c83", "sha256": "027b7b79b0442e256e82f2463b19977fc44851f0ddbd7c1ba002eee4a2001d4c", "bytes": 691}
+{"path": "Package.resolved", "gitBlobSHA1": "1aa5589320cbb17b50f44fe9dde42294965d55fd", "sha256": "bde942d0c58f5e34a06fe30b724193f5ea4d00f8ddcc8b5effc6af85ddfff4ff", "bytes": 1197}
+{"path": "README.md", "gitBlobSHA1": "11e8744c0eb00fceb207729b94f66209cc861994", "sha256": "30fc890c679d648337a41c455dead91a5596264297e3106aa7de7134b6c3fe09", "bytes": 7473}
+{"path": "Sources/EventSource/AsyncEventsSequence.swift", "gitBlobSHA1": "a607eaf85ce77c1f66dce5e193760f899e0039a4", "sha256": "928b1aeba3264bf976beecea0ed0fbdaa320a35042ccfbeb5137dceea0659375", "bytes": 1751}
+{"path": "Sources/EventSource/AsyncSequence+Events.swift", "gitBlobSHA1": "159314addcb6e1d8b6332301bf7564a174ba9e86", "sha256": "1b7d4fbdfe8f34484f72cbbcdf8cbdb711bbec805b37e5ce9f0cc23eb53e79de", "bytes": 319}
+{"path": "Sources/EventSource/EventSource+AsyncHTTPClient.swift", "gitBlobSHA1": "3fe769941c049f644ba8fa67e781216e9d52b134", "sha256": "913979dece1fbeecba159d5ce1faec620cfbbd10612b8571ff22b2babecc1cf2", "bytes": 6119}
+{"path": "Sources/EventSource/EventSource.swift", "gitBlobSHA1": "8c8d1ea32dfcbe6cb45104fe73cf5d24ca428b89", "sha256": "1d2c90ccef2e71bef5e5125f3799b30b9d4c9406f798d0748ba07a9fd04bbe3b", "bytes": 29301}

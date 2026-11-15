@@ -1,0 +1,126 @@
+{
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "images": [
+    {
+      "path": "01-final-english-dark.png",
+      "sha256": "d5828b4dd51fdd507b554101ebc753f8d6bac7ed4f5d5fab596020f4679a9798",
+      "capturedAtUTC": "2026-11-15T02:13:52.776631+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "02-final-largest-text-dark.png",
+      "sha256": "1132e328daa59bced0a333bcc59881df8351141131895354831a3e3738573722",
+      "capturedAtUTC": "2026-11-15T02:14:36.934446+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "03-final-arabic-largest-dark.png",
+      "sha256": "b17b5b970502cc90e43debc2045614480855f44768e6a05653044dd7360bfc8c",
+      "capturedAtUTC": "2026-11-15T02:14:47.470312+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "04-final-arabic-large-run-dark.png",
+      "sha256": "79b3f55d7f59d6891b2af22efef816adc8d08c6ca0aa664cc4691060e70cc8d8",
+      "capturedAtUTC": "2026-11-15T02:15:12.946157+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "05-final-arabic-large-export-dark.png",
+      "sha256": "a7dee8f7cbf492741d6ad07794fe13c539ad32cbb48389b5ec71314200ab2051",
+      "capturedAtUTC": "2026-11-15T02:16:20.945257+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "06-final-cactus-results-dark.png",
+      "sha256": "5de12c286c8abe0d0727fdc01079f5e12aa794e79b1eb98ab884f6b5f816b16b",
+      "capturedAtUTC": "2026-11-15T02:18:10.905863+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "07-final-qwen-progress-dark.png",
+      "sha256": "c41008ed4b5b0927d5655177a24cb76c06222dcbc09b3ea5f1a6f7ec658b1153",
+      "capturedAtUTC": "2026-11-15T02:20:12.926401+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "08-final-qwen-cancelled-dark.png",
+      "sha256": "0b0c85f1fc3ac340c1cd5ccc8177331b6f3eae6693ae42b71aaab9aa142cbdac",
+      "capturedAtUTC": "2026-11-15T02:20:39.136200+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "09-final-rerun-unavailable-dark.png",
+      "sha256": "bc8a9c314b6e72cfc22a8479a14824e576ea5439c40890b651df972deab29e3b",
+      "capturedAtUTC": "2026-11-15T02:21:07.004500+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "10-final-arabic-dark.png",
+      "sha256": "771f6fec8ac97a42663b564f903ff0c1f25f87704f534a4bc6911dbce6f8726f",
+      "capturedAtUTC": "2026-11-15T02:22:12.901618+00:00",
+      "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": true,
+      "note": "Source identity independently checked in installed Info.plist/executable receipt",
+      "dimensions": "402x874@1x"
+    },
+    {
+      "path": "diagnostic-largest-text.png",
+      "sha256": "6cf14844ea181ff33552733e2d3af85d3b9c792a87f5af45472c3490e2cbdd9e",
+      "capturedAtUTC": "2026-11-15T02:08:48.555200+00:00",
+      "sourceIdentity": null,
+      "type": "Actual T3 agent-device Simulator screenshot, dark",
+      "device": "iPhone18Pro/iOS27.2Simulator",
+      "finalSourceEvidence": false,
+      "note": "Diagnostic earlier build, not final-source verification",
+      "dimensions": "402x874@1x"
+    }
+  ]
+}

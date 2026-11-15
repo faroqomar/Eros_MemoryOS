@@ -1,0 +1,100 @@
+{
+  "capturedAtUTC": "2026-11-15T01:19:35.731633+00:00",
+  "scope": "Step1 retained artifacts, active installed lab and reusable verification inputs; not independent Step2 cleanup approval",
+  "method": "Regular-file logical bytes and st_blocks*512 per path. Paths overlap and APFS clones/hardlinks can share storage; do not sum these as unique physical disk cost.",
+  "volumeAvailableBytes": 52933816320,
+  "volumeTotalBytes": 494384795648,
+  "paths": [
+    {
+      "path": "native/LocalAIEvaluation",
+      "logicalBytes": 138714892,
+      "reportedAllocatedBytes": 140115968,
+      "files": 521,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "native/LocalAIIntegrations",
+      "logicalBytes": 399495107,
+      "reportedAllocatedBytes": 404324352,
+      "files": 1901,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "native/LocalCactusEvaluation",
+      "logicalBytes": 167548651,
+      "reportedAllocatedBytes": 168931328,
+      "files": 487,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "native/LocalTextEvaluation",
+      "logicalBytes": 177027338,
+      "reportedAllocatedBytes": 180015104,
+      "files": 529,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "native/LocalMLXEvaluation",
+      "logicalBytes": 2962247256,
+      "reportedAllocatedBytes": 3106168832,
+      "files": 31636,
+      "symlinksSkipped": 3
+    },
+    {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation",
+      "logicalBytes": 10846399436,
+      "reportedAllocatedBytes": 11098554368,
+      "files": 60460,
+      "symlinksSkipped": 2
+    },
+    {
+      "path": "/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream",
+      "logicalBytes": 121825154,
+      "reportedAllocatedBytes": 124985344,
+      "files": 1302,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "/tmp/memoryos-ai-lab-build",
+      "logicalBytes": 407143641,
+      "reportedAllocatedBytes": 411095040,
+      "files": 1420,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "/tmp/memoryos-capture-regression-build",
+      "logicalBytes": 97559645,
+      "reportedAllocatedBytes": 98701312,
+      "files": 471,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Bundle/Application/DFF7C3AB-CD31-41CF-BF9C-8628E5CF1C2D/MemoryOSAILab.app",
+      "logicalBytes": 26107412,
+      "reportedAllocatedBytes": 26218496,
+      "files": 41,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Data/Application/E0B4DF46-8B7E-49FF-9AE1-BC12DE584061/Documents/EvaluationModels",
+      "logicalBytes": 1932633104,
+      "reportedAllocatedBytes": 1933758464,
+      "files": 320,
+      "symlinksSkipped": 0
+    },
+    {
+      "path": "/Users/eros/Library/Developer/CoreSimulator/Devices/452C5AF6-8A30-4F73-9C34-AADF3D6CF96C/data/Containers/Data/Application/E0B4DF46-8B7E-49FF-9AE1-BC12DE584061/Documents/EvaluationReports",
+      "logicalBytes": 404179,
+      "reportedAllocatedBytes": 483328,
+      "files": 41,
+      "symlinksSkipped": 0
+    }
+  ],
+  "retentionReason": "Verified models, exact-source SDK/build caches and actual source-matched binaries support reproducibility and the future independent check. Unique original research, raw reports, screenshots and historical evidence remain.",
+  "housekeepingReceipts": [
+    "resume-housekeeping.json",
+    "failed-workspace-cleanup.json",
+    "failed-workspace-generator-cleanup.json",
+    "../cleanup-receipt.json"
+  ]
+}

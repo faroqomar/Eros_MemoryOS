@@ -1,0 +1,84 @@
+--- a/Sources/Wax/Broker/AgentBrokerClient.swift
++++ b/Sources/Wax/Broker/AgentBrokerClient.swift
+@@ -134,7 +134,7 @@
+         configuration: AgentBrokerConfiguration,
+         timeoutSeconds: TimeInterval
+     ) throws -> Bool {
+-        #if os(iOS) || os(tvOS) || os(watchOS)
++        #if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
+         throw BrokerClientError("Starting a broker process is not supported on this platform.")
+         #else
+         guard FileManager.default.isExecutableFile(atPath: configuration.brokerExecutablePath) else {
+@@ -231,6 +231,7 @@
+         #endif
+     }
+ 
++    #if !os(iOS) && !os(tvOS) && !os(watchOS) && !os(visionOS)
+     private static func terminateLaunchedBroker(_ process: Process) {
+         guard process.isRunning else { return }
+         process.terminate()
+@@ -242,6 +243,8 @@
+             kill(process.processIdentifier, SIGKILL)
+         }
+     }
++
++    #endif
+ 
+     private static func shutdownStartedBroker(configuration: AgentBrokerConfiguration) throws {
+         guard FileManager.default.fileExists(atPath: configuration.socketPath) else {
+@@ -324,7 +327,7 @@
+     /// Kill a mute `wax-cli` broker we can identify, then let `startBrokerIfNeeded` relaunch it.
+     /// Foreign listeners (tests, other apps) are left alone.
+     private static func restartMuteOwnedBroker(configuration: AgentBrokerConfiguration) throws -> Bool {
+-        #if canImport(Darwin)
++        #if os(macOS)
+         guard let pid = peerPID(socketPath: configuration.socketPath) else { return false }
+         guard isWaxCLIProcess(pid: pid) else { return false }
+         kill(pid, SIGTERM)
+@@ -344,7 +347,7 @@
+         #endif
+     }
+ 
+-    #if canImport(Darwin)
++    #if os(macOS)
+     private static func peerPID(socketPath: String) -> pid_t? {
+         let fd = socket(AF_UNIX, unixStreamSocketType, 0)
+         guard fd >= 0 else { return nil }
+--- a/Sources/Wax/MemorySemantics.swift
++++ b/Sources/Wax/MemorySemantics.swift
+@@ -1093,8 +1093,16 @@
+         if gitSHA(stored, matches: liveSHA) {
+             return .yes
+         }
+-        if let repoRootPath, isGitAncestor(stored, of: liveSHA, repoRootPath: repoRootPath) {
+-            return .ancestor
++        if let repoRootPath {
++            #if os(iOS) || os(tvOS) || os(watchOS) || os(visionOS)
++            // Sandboxed mobile platforms cannot invoke Git. Do not classify an
++            // unchecked ancestry relation as a different tree.
++            return .unknown
++            #else
++            if isGitAncestor(stored, of: liveSHA, repoRootPath: repoRootPath) {
++                return .ancestor
++            }
++            #endif
+         }
+         return .other
+     }
+@@ -1197,6 +1205,7 @@
+         return lhs.prefix(prefix) == rhs.prefix(prefix)
+     }
+ 
++    #if !os(iOS) && !os(tvOS) && !os(watchOS) && !os(visionOS)
+     private static func isGitAncestor(_ stored: String, of live: String, repoRootPath: String) -> Bool {
+         let process = Process()
+         process.executableURL = URL(fileURLWithPath: "/usr/bin/git")
+@@ -1219,6 +1228,8 @@
+         return process.terminationStatus == 0
+     }
+ 
++    #endif
++
+     private static func resolvedAbsoluteDirectoryPath(
+         _ path: String,
+         processDirectoryPath: String

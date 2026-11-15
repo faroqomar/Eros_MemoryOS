@@ -1,0 +1,13 @@
+{
+  "origin": "https://github.com/swiftlang/swift-syntax.git",
+  "head": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1",
+  "eligibleVersions": {
+    "602.0.0": "4799286537280063c85a32f09884cfbca301b1a1",
+    "603.0.0": "2b59c0c741e9184ab057fd22950b491076d42e91",
+    "603.0.1": "9de99a78f099e59caf2b2beec65a4c45d54b2081",
+    "603.0.2": "79e4b74a295b6eb74a8b585e3a39d29e70c1dbd1"
+  },
+  "promisor": "true",
+  "filter": "tree:0",
+  "reason": "Fetch only the stable upstream tag set satisfying declared 602.0.0..<604.0.0; no requirement override."
+}

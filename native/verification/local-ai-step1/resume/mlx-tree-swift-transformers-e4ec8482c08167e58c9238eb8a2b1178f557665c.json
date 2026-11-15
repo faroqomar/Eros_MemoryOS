@@ -1,0 +1,1114 @@
+{
+  "sha": "e4ec8482c08167e58c9238eb8a2b1178f557665c",
+  "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/e4ec8482c08167e58c9238eb8a2b1178f557665c",
+  "tree": [
+    {
+      "path": ".git-blame-ignore-revs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7abb885964b4c1bb3136c64d559212356e2910fe",
+      "size": 81,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/7abb885964b4c1bb3136c64d559212356e2910fe"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dfc3ccb341e1370edcac33ad17131f89b8f5fd61",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/dfc3ccb341e1370edcac33ad17131f89b8f5fd61"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ace4600a1f26e6892982f3e2f069ebfab108d87",
+      "size": 118,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/5ace4600a1f26e6892982f3e2f069ebfab108d87"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f77b9a5fe26653847156db22abdc3132718f247f",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/f77b9a5fe26653847156db22abdc3132718f247f"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ccdda7d1e55876437883bec27cd30fb31e04728",
+      "size": 4280,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/3ccdda7d1e55876437883bec27cd30fb31e04728"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe9534bca44d76957a1b2755ec6f9e3cca49aa99",
+      "size": 219,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/fe9534bca44d76957a1b2755ec6f9e3cca49aa99"
+    },
+    {
+      "path": ".spi.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be24f71ae9364feaa5059a25fe97f407b2acb00a",
+      "size": 98,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/be24f71ae9364feaa5059a25fe97f407b2acb00a"
+    },
+    {
+      "path": ".swift-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e6f18f258f344f63e2c537e8b1e29c5cd08734d",
+      "size": 2905,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/7e6f18f258f344f63e2c537e8b1e29c5cd08734d"
+    },
+    {
+      "path": ".vscode",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a94e85639525ecfb13e4951a3677ca48d0535679",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/a94e85639525ecfb13e4951a3677ca48d0535679"
+    },
+    {
+      "path": ".vscode/extensions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c8da70e9c8f2f02dd95d08eb6263b2245480671",
+      "size": 68,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/6c8da70e9c8f2f02dd95d08eb6263b2245480671"
+    },
+    {
+      "path": ".vscode/settings.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea21521c17510133b71f902fe0662d5d786a32eb",
+      "size": 1200,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/ea21521c17510133b71f902fe0662d5d786a32eb"
+    },
+    {
+      "path": "Benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "246c0c224090c2c2d4c4a8fb74b090e91f745f30",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/246c0c224090c2c2d4c4a8fb74b090e91f745f30"
+    },
+    {
+      "path": "Benchmarks/Benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e948eca08538a1ce1edf8f62947ef8a64a5ab43",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/7e948eca08538a1ce1edf8f62947ef8a64a5ab43"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/TokenizerBenchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6c413f5c5bc45dcd59829b66d60a6c6b0c1c9317",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/6c413f5c5bc45dcd59829b66d60a6c6b0c1c9317"
+    },
+    {
+      "path": "Benchmarks/Benchmarks/TokenizerBenchmarks/TokenizerBenchmarks.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11660a31e483a8ab1b3802e043743a808ef10036",
+      "size": 4020,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/11660a31e483a8ab1b3802e043743a808ef10036"
+    },
+    {
+      "path": "Benchmarks/Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f62d6535c03d3556bca390d4389ee78f78ce7be",
+      "size": 816,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/0f62d6535c03d3556bca390d4389ee78f78ce7be"
+    },
+    {
+      "path": "Benchmarks/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38d7e92339b758445505aab9ee225df2cc99870a",
+      "size": 1625,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/38d7e92339b758445505aab9ee225df2cc99870a"
+    },
+    {
+      "path": "Examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17e0d59499beee9d4a7c3303a9249a6ab0d9b188",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/17e0d59499beee9d4a7c3303a9249a6ab0d9b188"
+    },
+    {
+      "path": "Examples/Mistral7B",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ea940bccedceca92b040b6daf09118da03c4a2a",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/4ea940bccedceca92b040b6daf09118da03c4a2a"
+    },
+    {
+      "path": "Examples/Mistral7B/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30d64b142f4c2b6425d7dc03e8b61c81a7470ee0",
+      "size": 1525,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/30d64b142f4c2b6425d7dc03e8b61c81a7470ee0"
+    },
+    {
+      "path": "Examples/Mistral7B/export.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4509a937f74d4310d6b4c9c180ecef257a1922c3",
+      "size": 8358,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/4509a937f74d4310d6b4c9c180ecef257a1922c3"
+    },
+    {
+      "path": "Examples/Mistral7B/generate.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c90acd0bc283eb47e3d69e5123e665a7ab052d7",
+      "size": 3427,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/0c90acd0bc283eb47e3d69e5123e665a7ab052d7"
+    },
+    {
+      "path": "Examples/Mistral7B/requirements.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c954fb2f82d06665a4847cd16a65fb093aa2843",
+      "size": 56,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/3c954fb2f82d06665a4847cd16a65fb093aa2843"
+    },
+    {
+      "path": "Examples/transformers-cli",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "92b19a1351862430a2460366d3e1f70c6239af98",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/92b19a1351862430a2460366d3e1f70c6239af98"
+    },
+    {
+      "path": "Examples/transformers-cli/Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f360afb1a90977ed8346c89479ddcb70c95d897b",
+      "size": 876,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/f360afb1a90977ed8346c89479ddcb70c95d897b"
+    },
+    {
+      "path": "Examples/transformers-cli/Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3a51a5259c86b73f472a1a4d0a2d8c2ed41bb8cd",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/3a51a5259c86b73f472a1a4d0a2d8c2ed41bb8cd"
+    },
+    {
+      "path": "Examples/transformers-cli/Sources/transformers-cli",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0bb34cee2908e521be63bfe80b63104fd24a7341",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/0bb34cee2908e521be63bfe80b63104fd24a7341"
+    },
+    {
+      "path": "Examples/transformers-cli/Sources/transformers-cli/Transformers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b17f19d3a818786421720ab4d1d00d6dc4403f1d",
+      "size": 6676,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/b17f19d3a818786421720ab4d1d00d6dc4403f1d"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e524e5fbe7f233fca0852ba1554c9326a207954e",
+      "size": 11347,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/e524e5fbe7f233fca0852ba1554c9326a207954e"
+    },
+    {
+      "path": "Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cabd59d0037db1359dd7ecbca477c0dd61935386",
+      "size": 2669,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/cabd59d0037db1359dd7ecbca477c0dd61935386"
+    },
+    {
+      "path": "Package@swift-6.1.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3bbfd0fdd756009d21c3665e9cb8e99e5a6b26b",
+      "size": 3370,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/e3bbfd0fdd756009d21c3665e9cb8e99e5a6b26b"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "319dfa5adddc7fcc5592c0709e7b2d8725f32515",
+      "size": 12087,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/319dfa5adddc7fcc5592c0709e7b2d8725f32515"
+    },
+    {
+      "path": "Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29d51189819b564e6ef171056f8e9f2835be6936",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/29d51189819b564e6ef171056f8e9f2835be6936"
+    },
+    {
+      "path": "Sources/Generation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2aaa14831c9b2c61d463185c0d12bcc48deb9cb0",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/2aaa14831c9b2c61d463185c0d12bcc48deb9cb0"
+    },
+    {
+      "path": "Sources/Generation/Decoders.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0432da3a55622399cda588bad2788b22bd83f246",
+      "size": 2541,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/0432da3a55622399cda588bad2788b22bd83f246"
+    },
+    {
+      "path": "Sources/Generation/Generation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0040a0fd9839510a15c45edf0c2f7b3e62bdfa4",
+      "size": 7586,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c0040a0fd9839510a15c45edf0c2f7b3e62bdfa4"
+    },
+    {
+      "path": "Sources/Generation/GenerationConfig.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db125a969140d2b9e97816ece034c6b3118995e4",
+      "size": 4147,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/db125a969140d2b9e97816ece034c6b3118995e4"
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7da4a216da5b08b8fbdd2129d42bbe0ca97e983",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/a7da4a216da5b08b8fbdd2129d42bbe0ca97e983"
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/LogitsProcessor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "affa5159b49c13468b1738197dec984c5aae774b",
+      "size": 2946,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/affa5159b49c13468b1738197dec984c5aae774b"
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/MinPLogitsWarper.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ba7c2ac839eb04746ee5ffb96bd89e683c6ef16",
+      "size": 4868,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/3ba7c2ac839eb04746ee5ffb96bd89e683c6ef16"
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/RepetitionPenaltyLogitsProcessor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42c4d5fb5a1cea7862e403897d27eec80e87c7cd",
+      "size": 4197,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/42c4d5fb5a1cea7862e403897d27eec80e87c7cd"
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/TemperatureLogitsWarper.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "140e93b4866e5e96c682d116227d8fe14a2c5442",
+      "size": 1446,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/140e93b4866e5e96c682d116227d8fe14a2c5442"
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/TopKLogitsWarper.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91b4a8f08a523a1060d85061c2ddbd82680ae28f",
+      "size": 3472,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/91b4a8f08a523a1060d85061c2ddbd82680ae28f"
+    },
+    {
+      "path": "Sources/Generation/LogitsWarper/TopPLogitsWarper.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4f89609fa5000270fdd04c31d792d945436a78d",
+      "size": 4710,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c4f89609fa5000270fdd04c31d792d945436a78d"
+    },
+    {
+      "path": "Sources/Hub",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3f1389b4103639c0fae0a4cb836786118d7747da",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/3f1389b4103639c0fae0a4cb836786118d7747da"
+    },
+    {
+      "path": "Sources/Hub/BinaryDistinct.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a80b55963effe50d0db5922ebb51ae1d4f1b629",
+      "size": 12865,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/6a80b55963effe50d0db5922ebb51ae1d4f1b629"
+    },
+    {
+      "path": "Sources/Hub/Config.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c722c901370ba415c81b4fb3cbd95fb182a15a84",
+      "size": 24764,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c722c901370ba415c81b4fb3cbd95fb182a15a84"
+    },
+    {
+      "path": "Sources/Hub/Hub.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "403e65337da08f0a44c2a25b66e4bd5648fd3261",
+      "size": 16682,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/403e65337da08f0a44c2a25b66e4bd5648fd3261"
+    },
+    {
+      "path": "Sources/Hub/HubApi.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7887abce1b839ef6e4871eecec75300708502948",
+      "size": 59821,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/7887abce1b839ef6e4871eecec75300708502948"
+    },
+    {
+      "path": "Sources/Hub/Resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9df9ebe012c87664e4995e548d301acdb01ac99",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/e9df9ebe012c87664e4995e548d301acdb01ac99"
+    },
+    {
+      "path": "Sources/Hub/Resources/gpt2_tokenizer_config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "546efe6d18ae2ad7758d0c9ef51cacdb81c8dc9d",
+      "size": 234,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/546efe6d18ae2ad7758d0c9ef51cacdb81c8dc9d"
+    },
+    {
+      "path": "Sources/Hub/Resources/t5_tokenizer_config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6975fae99e7e198105184e95972c3585975ca003",
+      "size": 20746,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/6975fae99e7e198105184e95972c3585975ca003"
+    },
+    {
+      "path": "Sources/Hub/YYJSONParser.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d11aa65b6cff1b02a8ea2b0434f0a0b666357310",
+      "size": 5720,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/d11aa65b6cff1b02a8ea2b0434f0a0b666357310"
+    },
+    {
+      "path": "Sources/Models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1620164075a343d2dc5afd35a22c716dd36d001e",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/1620164075a343d2dc5afd35a22c716dd36d001e"
+    },
+    {
+      "path": "Sources/Models/LanguageModel.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c1f74c7358dcc156ad9de3bcf438cd766a1bd5a",
+      "size": 22148,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/1c1f74c7358dcc156ad9de3bcf438cd766a1bd5a"
+    },
+    {
+      "path": "Sources/Models/LanguageModelTypes.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f83166df2dfe90e7d5688136baa662b5cfbe133",
+      "size": 4674,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/6f83166df2dfe90e7d5688136baa662b5cfbe133"
+    },
+    {
+      "path": "Sources/Models/Weights.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eafce2690da76eedbf4fb668a681e3b8d9d210a7",
+      "size": 6271,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/eafce2690da76eedbf4fb668a681e3b8d9d210a7"
+    },
+    {
+      "path": "Sources/Tokenizers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a999297931b02348f491a0245201da0abcd98dc9",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/a999297931b02348f491a0245201da0abcd98dc9"
+    },
+    {
+      "path": "Sources/Tokenizers/BPETokenizer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "118530874b7b33f29362319282fb43ce2f7f760c",
+      "size": 15014,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/118530874b7b33f29362319282fb43ce2f7f760c"
+    },
+    {
+      "path": "Sources/Tokenizers/BertTokenizer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "111f41f6d20974e1bfe33d63ce89db194805d147",
+      "size": 12834,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/111f41f6d20974e1bfe33d63ce89db194805d147"
+    },
+    {
+      "path": "Sources/Tokenizers/ByteEncoder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "604e6bfa1793eabfd296535f847f8981deec39ca",
+      "size": 5686,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/604e6bfa1793eabfd296535f847f8981deec39ca"
+    },
+    {
+      "path": "Sources/Tokenizers/Decoder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc690197f894d825dee85fb47deb0bc8728b4bc6",
+      "size": 9832,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/fc690197f894d825dee85fb47deb0bc8728b4bc6"
+    },
+    {
+      "path": "Sources/Tokenizers/Normalizer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e496c4562b190b1253714649f8e531b70e68aec7",
+      "size": 16725,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/e496c4562b190b1253714649f8e531b70e68aec7"
+    },
+    {
+      "path": "Sources/Tokenizers/PostProcessor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "374b43a5197f944753c01d37c712fc6b79d914eb",
+      "size": 8377,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/374b43a5197f944753c01d37c712fc6b79d914eb"
+    },
+    {
+      "path": "Sources/Tokenizers/PreTokenizer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9eb7ef5419736176ce97fd9a235cc6d5a486f85e",
+      "size": 14828,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/9eb7ef5419736176ce97fd9a235cc6d5a486f85e"
+    },
+    {
+      "path": "Sources/Tokenizers/String+PreTokenization.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ae2b1b2f8533f93b77a4266530a93af2b7d6936",
+      "size": 7639,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/1ae2b1b2f8533f93b77a4266530a93af2b7d6936"
+    },
+    {
+      "path": "Sources/Tokenizers/TokenLattice.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c47ab03b814fe22124beeddbe496e6e8595944f8",
+      "size": 5834,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c47ab03b814fe22124beeddbe496e6e8595944f8"
+    },
+    {
+      "path": "Sources/Tokenizers/Tokenizer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "751b9f44788dd7bc897ad1b6df9b57725aa469fa",
+      "size": 47042,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/751b9f44788dd7bc897ad1b6df9b57725aa469fa"
+    },
+    {
+      "path": "Sources/Tokenizers/Trie.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9456be807aba81de89786b6e697e6cd55be28018",
+      "size": 2680,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/9456be807aba81de89786b6e697e6cd55be28018"
+    },
+    {
+      "path": "Sources/Tokenizers/UnigramTokenizer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c13e97557965df16f290fd318922a374ea4abab",
+      "size": 6814,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/1c13e97557965df16f290fd318922a374ea4abab"
+    },
+    {
+      "path": "Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7fbec7a4ff9a7c6fe23000d478d7dc18fea6612f",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/7fbec7a4ff9a7c6fe23000d478d7dc18fea6612f"
+    },
+    {
+      "path": "Tests/Benchmarks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b888b55a0386df2fdb7ec2b99836ebbefa073f08",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/b888b55a0386df2fdb7ec2b99836ebbefa073f08"
+    },
+    {
+      "path": "Tests/Benchmarks/BPEPreTokenizeBenchmarkTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c64b7ec1972cfe675c2974c3fbad987829ea4e34",
+      "size": 7223,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c64b7ec1972cfe675c2974c3fbad987829ea4e34"
+    },
+    {
+      "path": "Tests/Benchmarks/BPETokenizerBenchmarkTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9e2b86d5154ce2c36b3d700b2ff5c7d07390ec7",
+      "size": 5369,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/f9e2b86d5154ce2c36b3d700b2ff5c7d07390ec7"
+    },
+    {
+      "path": "Tests/Benchmarks/BenchmarkSupport.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c68cdfe1850ee01f5fc4464bedf56fdd27e60fe2",
+      "size": 2164,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c68cdfe1850ee01f5fc4464bedf56fdd27e60fe2"
+    },
+    {
+      "path": "Tests/Benchmarks/JSONParserBenchmarkTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2603aef98ea6019db6dc6c318a07c9abe5ceee57",
+      "size": 10643,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/2603aef98ea6019db6dc6c318a07c9abe5ceee57"
+    },
+    {
+      "path": "Tests/Benchmarks/PreTokenizeBenchmarkTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26cdce5f75f39d9e090ec53fba2b8c9d3db7da04",
+      "size": 5939,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/26cdce5f75f39d9e090ec53fba2b8c9d3db7da04"
+    },
+    {
+      "path": "Tests/Benchmarks/UnigramTokenizerBenchmarkTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab6bc9f1cb3962d3d257b266ecb4921b5684d097",
+      "size": 7804,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/ab6bc9f1cb3962d3d257b266ecb4921b5684d097"
+    },
+    {
+      "path": "Tests/GenerationTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b31d50ccef51bb7f99216bd80534b055cd2e800",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/7b31d50ccef51bb7f99216bd80534b055cd2e800"
+    },
+    {
+      "path": "Tests/GenerationTests/GenerationIntegrationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dff6c8e852585d5c933b307bcaebd472c7787fa9",
+      "size": 14409,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/dff6c8e852585d5c933b307bcaebd472c7787fa9"
+    },
+    {
+      "path": "Tests/GenerationTests/LogitsProcessorTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b1212ec66ccf194793f06dd697c0c4d072897b1",
+      "size": 15487,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/5b1212ec66ccf194793f06dd697c0c4d072897b1"
+    },
+    {
+      "path": "Tests/HubTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b2a0615c9b28020e62d000448904cb1419943b2",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/0b2a0615c9b28020e62d000448904cb1419943b2"
+    },
+    {
+      "path": "Tests/HubTests/ConfigTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2182a814ea23ef307fba7df7ac7b122b00839b9a",
+      "size": 16452,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/2182a814ea23ef307fba7df7ac7b122b00839b9a"
+    },
+    {
+      "path": "Tests/HubTests/HubApiTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dae9310aa2703a76496880fb3f17f6aada3172bf",
+      "size": 62489,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/dae9310aa2703a76496880fb3f17f6aada3172bf"
+    },
+    {
+      "path": "Tests/HubTests/HubTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a999afa84212343528a6c5f3b22d77681e8aa857",
+      "size": 4313,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/a999afa84212343528a6c5f3b22d77681e8aa857"
+    },
+    {
+      "path": "Tests/ModelsTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "615196813224a7ff6e455a8e82a11bb3e6bf1e36",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/615196813224a7ff6e455a8e82a11bb3e6bf1e36"
+    },
+    {
+      "path": "Tests/ModelsTests/Resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fd761a9ea0fc8d01536dff9a8f7eef8ede86f279",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/fd761a9ea0fc8d01536dff9a8f7eef8ede86f279"
+    },
+    {
+      "path": "Tests/ModelsTests/Resources/tensor-1d-int32.safetensors",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b60400284a288a972b32283e2f62a4390e500347",
+      "size": 84,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/b60400284a288a972b32283e2f62a4390e500347"
+    },
+    {
+      "path": "Tests/ModelsTests/Resources/tensor-2d-float64.safetensors",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb9fc262e96b2f4be83270a35663175282158ab9",
+      "size": 128,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/bb9fc262e96b2f4be83270a35663175282158ab9"
+    },
+    {
+      "path": "Tests/ModelsTests/Resources/tensor-3d-float32.safetensors",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9f058dafe588232323c3457b8ab4c386d6a140c",
+      "size": 128,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/f9f058dafe588232323c3457b8ab4c386d6a140c"
+    },
+    {
+      "path": "Tests/ModelsTests/Resources/tensor-4d-float32.safetensors",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f7a80d58dc60d0ddde9477125c42348722134fc",
+      "size": 152,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/0f7a80d58dc60d0ddde9477125c42348722134fc"
+    },
+    {
+      "path": "Tests/ModelsTests/WeightsTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33215536932d88999618a7121ba9e88ea1e705ca",
+      "size": 5237,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/33215536932d88999618a7121ba9e88ea1e705ca"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e08743d8192d8ccaca30114a28308091b5b474c",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/0e08743d8192d8ccaca30114a28308091b5b474c"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/BPECleanupTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3acf9879926a197abf27dd8d98e79c7dd8dd5ed",
+      "size": 994,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c3acf9879926a197abf27dd8d98e79c7dd8dd5ed"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/BPEIgnoreMergesTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6aaf65071ccaaf673e3098e48b9fe0021ae02a11",
+      "size": 1567,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/6aaf65071ccaaf673e3098e48b9fe0021ae02a11"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/ChatTemplateTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b84e070df1205b98f809db97665f3e222d84e2e3",
+      "size": 18678,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/b84e070df1205b98f809db97665f3e222d84e2e3"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/FactoryTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "453f5f408f5ff7f15866003ffd73f05ad961a94b",
+      "size": 3306,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/453f5f408f5ff7f15866003ffd73f05ad961a94b"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6648300d475b744a28b8b53a97dbf0d4589d6bb5",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/6648300d475b744a28b8b53a97dbf0d4589d6bb5"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/bert_uncased_encoded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df9df5e043ae7f5a950bd14b62498c723426190",
+      "size": 3907,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/4df9df5e043ae7f5a950bd14b62498c723426190"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/distilbert_cased_encoded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9637d3637775083563a2dc99624e7dce25c3662c",
+      "size": 3690,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/9637d3637775083563a2dc99624e7dce25c3662c"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/falcon_encoded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c28a475c0a63f8254387ad27da45100197c5732",
+      "size": 4487,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/1c28a475c0a63f8254387ad27da45100197c5732"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/gemma_encoded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5647f59c55785cd26e17ba16883b1b67ff6ad3d1",
+      "size": 4260,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/5647f59c55785cd26e17ba16883b1b67ff6ad3d1"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/gpt2_encoded_tokens.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "250b9a5b4ad34b027380c2be0defdb1ce79dc630",
+      "size": 6644,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/250b9a5b4ad34b027380c2be0defdb1ce79dc630"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/llama_3.2_encoded.json",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0f4971284ed40e9bd01addf3dd78342baf6f2692",
+      "size": 4510,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/0f4971284ed40e9bd01addf3dd78342baf6f2692"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/llama_encoded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5435c7c51a7efbc5c8c09254c09fe33711adc988",
+      "size": 4522,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/5435c7c51a7efbc5c8c09254c09fe33711adc988"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/t5_base_encoded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f565c27bca10812a263066fc3966963c77da07",
+      "size": 4320,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/f1f565c27bca10812a263066fc3966963c77da07"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/tokenizer_tests.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8bc3257c5c2eee2aeef095d32ce07873dce3a8f",
+      "size": 59629,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c8bc3257c5c2eee2aeef095d32ce07873dce3a8f"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/whisper_large_v2_encoded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0197656de4e0ef873dd786a52fb3f66abf4ecbdc",
+      "size": 4658,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/0197656de4e0ef873dd786a52fb3f66abf4ecbdc"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/Resources/whisper_tiny_en_encoded.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e65dfea0cbf4753ac73219e6f3c3836963b00b90",
+      "size": 4852,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/e65dfea0cbf4753ac73219e6f3c3836963b00b90"
+    },
+    {
+      "path": "Tests/TokenizersIntegrationTests/TokenizerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ca121b5f6057ca8611b427f5c0c25a1d125a47d",
+      "size": 20831,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/0ca121b5f6057ca8611b427f5c0c25a1d125a47d"
+    },
+    {
+      "path": "Tests/TokenizersTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e64143480584634ddd346a8168b4689207a83b6f",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/e64143480584634ddd346a8168b4689207a83b6f"
+    },
+    {
+      "path": "Tests/TokenizersTests/BPEByteFallbackTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc296d9a79b9afd64296edd6a39b92aa0c8b90fb",
+      "size": 3113,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/dc296d9a79b9afd64296edd6a39b92aa0c8b90fb"
+    },
+    {
+      "path": "Tests/TokenizersTests/BPEIgnoreMergesTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "852b5989ea9e9ee374b4b9e91978882024c556e3",
+      "size": 1998,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/852b5989ea9e9ee374b4b9e91978882024c556e3"
+    },
+    {
+      "path": "Tests/TokenizersTests/BPEMergesTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce314d846af87f15cb1885715b1b17e346f8774f",
+      "size": 1783,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/ce314d846af87f15cb1885715b1b17e346f8774f"
+    },
+    {
+      "path": "Tests/TokenizersTests/BPETokenizerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b66f5046f9b29e67eb19c792d170b3dcdff5781e",
+      "size": 1272,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/b66f5046f9b29e67eb19c792d170b3dcdff5781e"
+    },
+    {
+      "path": "Tests/TokenizersTests/BertTokenizerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e99b2561fadb09b56bb1b4256e173b937e4b6243",
+      "size": 9941,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/e99b2561fadb09b56bb1b4256e173b937e4b6243"
+    },
+    {
+      "path": "Tests/TokenizersTests/BinaryDistinctStringTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657bbd01af628a18c01b63063664f8a88200c74a",
+      "size": 8735,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/657bbd01af628a18c01b63063664f8a88200c74a"
+    },
+    {
+      "path": "Tests/TokenizersTests/ByteEncoderTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d77be0af48b6048d0e98aec77b94b2acdddb5aed",
+      "size": 2178,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/d77be0af48b6048d0e98aec77b94b2acdddb5aed"
+    },
+    {
+      "path": "Tests/TokenizersTests/ByteFallbackEndOfInputTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93a207f3c3347bbb2902308572c7e2f9b40ce21f",
+      "size": 3308,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/93a207f3c3347bbb2902308572c7e2f9b40ce21f"
+    },
+    {
+      "path": "Tests/TokenizersTests/DecoderTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1c61be28302c996f0e4341eb7c09b4852ceb57f",
+      "size": 7077,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/e1c61be28302c996f0e4341eb7c09b4852ceb57f"
+    },
+    {
+      "path": "Tests/TokenizersTests/LiteralSplitTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a552f7acb92cec94aaa26b903fc0efdfb90131b1",
+      "size": 1434,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/a552f7acb92cec94aaa26b903fc0efdfb90131b1"
+    },
+    {
+      "path": "Tests/TokenizersTests/NormalizerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ab2b80bb004da3a4a682efb55a32e920e5f4ab4",
+      "size": 12212,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/2ab2b80bb004da3a4a682efb55a32e920e5f4ab4"
+    },
+    {
+      "path": "Tests/TokenizersTests/PostProcessorTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1e48df07f12497fe7f1b34f0b2502b401e83519",
+      "size": 5400,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/b1e48df07f12497fe7f1b34f0b2502b401e83519"
+    },
+    {
+      "path": "Tests/TokenizersTests/PreTokenizerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf4e9d6d1c3663161c58a237240640c5f04f07f8",
+      "size": 18501,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/bf4e9d6d1c3663161c58a237240640c5f04f07f8"
+    },
+    {
+      "path": "Tests/TokenizersTests/RegexCompilationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5821ef30e1c1b4c8c73562e179c00f2d1255709",
+      "size": 2526,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/a5821ef30e1c1b4c8c73562e179c00f2d1255709"
+    },
+    {
+      "path": "Tests/TokenizersTests/Resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ea9ad7b22e2d8bc2bd4202f8f95d45523ae19d4",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/8ea9ad7b22e2d8bc2bd4202f8f95d45523ae19d4"
+    },
+    {
+      "path": "Tests/TokenizersTests/Resources/basic_tokenized_questions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c485b4d610798bc8e0e0329f319b6abc79ba513",
+      "size": 1052356,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/2c485b4d610798bc8e0e0329f319b6abc79ba513"
+    },
+    {
+      "path": "Tests/TokenizersTests/Resources/bert-vocab.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb140275c155a9c7c5a3b3e0e77a9e839594a938",
+      "size": 231508,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/fb140275c155a9c7c5a3b3e0e77a9e839594a938"
+    },
+    {
+      "path": "Tests/TokenizersTests/Resources/dev-v1.1.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07249a5218cc5d1bdb85ccbc2fc2e47f8a0a02d0",
+      "size": 6615283,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/07249a5218cc5d1bdb85ccbc2fc2e47f8a0a02d0"
+    },
+    {
+      "path": "Tests/TokenizersTests/Resources/question_tokens.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b62eb45a00e2a521a0fbb903c7d4c511893049f9",
+      "size": 3217844,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/b62eb45a00e2a521a0fbb903c7d4c511893049f9"
+    },
+    {
+      "path": "Tests/TokenizersTests/Resources/tokenized_questions.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "988a4843272e42f952ee9c74ea5846b93ac17d1c",
+      "size": 831602,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/988a4843272e42f952ee9c74ea5846b93ac17d1c"
+    },
+    {
+      "path": "Tests/TokenizersTests/Resources/tokenizer.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65b3e6d53f319189f0a29814e915f59eb5737f34",
+      "size": 768,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/65b3e6d53f319189f0a29814e915f59eb5737f34"
+    },
+    {
+      "path": "Tests/TokenizersTests/Resources/tokenizer_config.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a72a2381ea56b2609f8e68f9951a378a9a8a26ee",
+      "size": 189,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/a72a2381ea56b2609f8e68f9951a378a9a8a26ee"
+    },
+    {
+      "path": "Tests/TokenizersTests/TokenizationCleanupTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a71026857a6a9f93b3ed6f2b226fd350b0c975cf",
+      "size": 1587,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/a71026857a6a9f93b3ed6f2b226fd350b0c975cf"
+    },
+    {
+      "path": "Tests/TokenizersTests/TokenizerTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15e6f261b56bf79b7b188571eb114dac6f30accd",
+      "size": 1242,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/15e6f261b56bf79b7b188571eb114dac6f30accd"
+    },
+    {
+      "path": "Tests/TokenizersTests/TrieTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c720b1917ef82382caa131978078630e78e82431",
+      "size": 1890,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c720b1917ef82382caa131978078630e78e82431"
+    },
+    {
+      "path": "Tests/TokenizersTests/UnigramByteFallbackTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52a82762d23b2a2391587a2d34ff72b922e64641",
+      "size": 2751,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/52a82762d23b2a2391587a2d34ff72b922e64641"
+    },
+    {
+      "path": "Tests/TokenizersTests/UnknownTokenFusionTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb7682d8ec8c93a48b6b1f1263a5d009e389c714",
+      "size": 2867,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/bb7682d8ec8c93a48b6b1f1263a5d009e389c714"
+    },
+    {
+      "path": "Tests/TokenizersTests/VocabularyIdentityTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46d98e3285de717543816d5c21d70fbe593a6dae",
+      "size": 2037,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/46d98e3285de717543816d5c21d70fbe593a6dae"
+    },
+    {
+      "path": "Tests/TokenizersTests/YYJSONParserTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c798964a2758a695d20bf161577efbf54f82151a",
+      "size": 12788,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/c798964a2758a695d20bf161577efbf54f82151a"
+    },
+    {
+      "path": "media",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98821f2b2803d65bf2b1f5dd0c9cebb791e901fc",
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/trees/98821f2b2803d65bf2b1f5dd0c9cebb791e901fc"
+    },
+    {
+      "path": "media/swift-t-banner.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b64f3f9b63173acd9cdbcaac83217c9be8206aa",
+      "size": 297421,
+      "url": "https://api.github.com/repos/huggingface/swift-transformers/git/blobs/8b64f3f9b63173acd9cdbcaac83217c9be8206aa"
+    }
+  ],
+  "truncated": false
+}

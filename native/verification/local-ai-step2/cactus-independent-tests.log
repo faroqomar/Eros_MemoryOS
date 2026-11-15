@@ -1,0 +1,53 @@
+Building for production...
+[Computing dependencies]
+[Pre-planning 1 / 184]
+[Planning deferred tasks]
+[2 / 2]
+[3 / 8] CactusEvaluationAdapter
+[5 / 10] CactusEvaluationAdapter
+[10 / 13] cactus-evaluation-product
+[12 / 15] cactus-evaluation-product
+[14 / 15] cactus-evaluation-product
+[14 / 15] CactusEvaluationAdapterTests-product
+[18 / 22] CactusEvaluationAdapterTests-product
+[20 / 22] CactusEvaluationAdapterTests-product
+[23 / 23] cactus-evaluation-product
+Build complete! (4.47 secs)
+Test Suite 'All tests' started at 2026-11-15 04:59:54.791.
+Test Suite 'All tests' passed at 2026-11-15 04:59:54.800.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.010) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test cancelledRebuildCannotPublishResults() started.
+◇ Test modifiedManifestCannotAuthorizeDifferentWeights() started.
+◇ Test explicitLastTokenEmbeddingIsNormalizedAndDistinctFromMeanPooling() started.
+◇ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() started.
+◇ Test nativeIndexRanksDeletesAndPersistsControlledVectors() started.
+◇ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() started.
+◇ Test duplicateIDsFailBeforeOpeningModelOrIndex() started.
+◇ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() started.
+◇ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() started.
+◇ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() started.
+◇ Test missingAssetCannotProduceFakeRetrieval() started.
+✘ Test explicitLastTokenEmbeddingIsNormalizedAndDistinctFromMeanPooling() recorded an issue at NativeEmbeddingContract.swift:10:19: Expectation failed: cactus_init(path, nil, false)
+↳ cactus_init(path, nil, false) → nil
+↳   path → ()
+↳   nil → "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/cactus-qwen3-embedding-0.6b"
+↳   false → nil
+✔ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() passed after 0.002 seconds.
+✘ Test explicitLastTokenEmbeddingIsNormalizedAndDistinctFromMeanPooling() failed after 0.002 seconds with 1 issue.
+✔ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() passed after 0.002 seconds.
+✘ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() recorded an issue at CactusContracts.swift:104:2: Caught error: .unavailable("The verified Cactus embedding asset manifest is missing.")
+✘ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() recorded an issue at CactusContracts.swift:75:2: Caught error: .unavailable("The verified Cactus embedding asset manifest is missing.")
+✔ Test duplicateIDsFailBeforeOpeningModelOrIndex() passed after 0.002 seconds.
+✘ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() failed after 0.002 seconds with 1 issue.
+✘ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() failed after 0.002 seconds with 1 issue.
+✔ Test missingAssetCannotProduceFakeRetrieval() passed after 0.002 seconds.
+✔ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() passed after 0.002 seconds.
+✔ Test cancelledRebuildCannotPublishResults() passed after 0.003 seconds.
+✔ Test modifiedManifestCannotAuthorizeDifferentWeights() passed after 0.003 seconds.
+✔ Test nativeIndexRanksDeletesAndPersistsControlledVectors() passed after 0.004 seconds.
+✘ Test run with 11 tests in 0 suites failed after 0.004 seconds with 3 issues.
+Note: Some test targets reported failures:
+  - CactusEvaluationAdapterTests (Swift Testing)

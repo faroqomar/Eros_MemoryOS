@@ -1,0 +1,208 @@
+{
+  "sha": "baf8b7bbc5db310c8c934a62abcfaa384c620c7d",
+  "url": "https://api.github.com/repos/mattt/EventSource/git/trees/baf8b7bbc5db310c8c934a62abcfaa384c620c7d",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c6db15ecd7c703a9ffa1aebb58eb3d7f355676c",
+      "url": "https://api.github.com/repos/mattt/EventSource/git/trees/7c6db15ecd7c703a9ffa1aebb58eb3d7f355676c"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2ff0b2f49e7b24b78773c354d2e3bdc105e35529",
+      "url": "https://api.github.com/repos/mattt/EventSource/git/trees/2ff0b2f49e7b24b78773c354d2e3bdc105e35529"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b4ac8b90ad98bb7f8238101ad16e164ffc16064",
+      "size": 5307,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/9b4ac8b90ad98bb7f8238101ad16e164ffc16064"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0023a5340637983755c8c19c18cc2c2bb1dbda1c",
+      "size": 159,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/0023a5340637983755c8c19c18cc2c2bb1dbda1c"
+    },
+    {
+      "path": ".swift-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fce0f00291b0435963d760a6468a9622fed78cd",
+      "size": 250,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/2fce0f00291b0435963d760a6468a9622fed78cd"
+    },
+    {
+      "path": "LICENSE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d7154314ce7df1bbcec09e1091e12ec5f5f985d",
+      "size": 1062,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/1d7154314ce7df1bbcec09e1091e12ec5f5f985d"
+    },
+    {
+      "path": "Package.resolved",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aa5589320cbb17b50f44fe9dde42294965d55fd",
+      "size": 1197,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/1aa5589320cbb17b50f44fe9dde42294965d55fd"
+    },
+    {
+      "path": "Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5b1800b0af8d623f218628c80608d5294eadffc",
+      "size": 1941,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/d5b1800b0af8d623f218628c80608d5294eadffc"
+    },
+    {
+      "path": "Package@swift-6.0.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bfac39541490fe88f1bcf24e9611d57e6fd0c83",
+      "size": 691,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/2bfac39541490fe88f1bcf24e9611d57e6fd0c83"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11e8744c0eb00fceb207729b94f66209cc861994",
+      "size": 7473,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/11e8744c0eb00fceb207729b94f66209cc861994"
+    },
+    {
+      "path": "Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7da9fbf0c6e6ac943c81ed781f9b6472b02e188",
+      "url": "https://api.github.com/repos/mattt/EventSource/git/trees/a7da9fbf0c6e6ac943c81ed781f9b6472b02e188"
+    },
+    {
+      "path": "Sources/EventSource",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72b80c4e246c9e6105d3beacba6929b8ace05b66",
+      "url": "https://api.github.com/repos/mattt/EventSource/git/trees/72b80c4e246c9e6105d3beacba6929b8ace05b66"
+    },
+    {
+      "path": "Sources/EventSource/AsyncEventsSequence.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a607eaf85ce77c1f66dce5e193760f899e0039a4",
+      "size": 1751,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/a607eaf85ce77c1f66dce5e193760f899e0039a4"
+    },
+    {
+      "path": "Sources/EventSource/AsyncSequence+Events.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "159314addcb6e1d8b6332301bf7564a174ba9e86",
+      "size": 319,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/159314addcb6e1d8b6332301bf7564a174ba9e86"
+    },
+    {
+      "path": "Sources/EventSource/EventSource+AsyncHTTPClient.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fe769941c049f644ba8fa67e781216e9d52b134",
+      "size": 6119,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/3fe769941c049f644ba8fa67e781216e9d52b134"
+    },
+    {
+      "path": "Sources/EventSource/EventSource.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c8d1ea32dfcbe6cb45104fe73cf5d24ca428b89",
+      "size": 29301,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/8c8d1ea32dfcbe6cb45104fe73cf5d24ca428b89"
+    },
+    {
+      "path": "Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "897a2de5a9c3bfb68d29244f0d11d1eba9d8e889",
+      "url": "https://api.github.com/repos/mattt/EventSource/git/trees/897a2de5a9c3bfb68d29244f0d11d1eba9d8e889"
+    },
+    {
+      "path": "Tests/EventSourceTests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d9d842f7825bb41a64c14d329f0a295a49b3045f",
+      "url": "https://api.github.com/repos/mattt/EventSource/git/trees/d9d842f7825bb41a64c14d329f0a295a49b3045f"
+    },
+    {
+      "path": "Tests/EventSourceTests/AsyncEventsSequenceTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da1b520933431d999020218a17a4071bbf9cb3a6",
+      "size": 8927,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/da1b520933431d999020218a17a4071bbf9cb3a6"
+    },
+    {
+      "path": "Tests/EventSourceTests/AsyncHTTPClientTraitTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf80e5656dafff5cb60d2acfb6fa92ab8fbefdb5",
+      "size": 8630,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/bf80e5656dafff5cb60d2acfb6fa92ab8fbefdb5"
+    },
+    {
+      "path": "Tests/EventSourceTests/Helpers",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5aa2b77c8a76991ed36535349b6f98ea86e127f",
+      "url": "https://api.github.com/repos/mattt/EventSource/git/trees/e5aa2b77c8a76991ed36535349b6f98ea86e127f"
+    },
+    {
+      "path": "Tests/EventSourceTests/Helpers/AsyncBytes.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d23ed0015f59bb6e7ef8132c07e71a3b0c9add68",
+      "size": 661,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/d23ed0015f59bb6e7ef8132c07e71a3b0c9add68"
+    },
+    {
+      "path": "Tests/EventSourceTests/Helpers/ChunkedAsyncBytes.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb7f7651041179163c393fffff7bed2337a4fac6",
+      "size": 1053,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/cb7f7651041179163c393fffff7bed2337a4fac6"
+    },
+    {
+      "path": "Tests/EventSourceTests/Helpers/MockURLProtocol.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "372cdb3f441738e8f18dd8959c90b26035b05c47",
+      "size": 3654,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/372cdb3f441738e8f18dd8959c90b26035b05c47"
+    },
+    {
+      "path": "Tests/EventSourceTests/IntegrationTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a492a8ef3df0d508756dd2d992142500577da0d2",
+      "size": 37411,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/a492a8ef3df0d508756dd2d992142500577da0d2"
+    },
+    {
+      "path": "Tests/EventSourceTests/ParserTests.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2fd07996a45a5c229fe6a8b2d5ccd184b871a84",
+      "size": 26543,
+      "url": "https://api.github.com/repos/mattt/EventSource/git/blobs/e2fd07996a45a5c229fe6a8b2d5ccd184b871a84"
+    }
+  ],
+  "truncated": false
+}

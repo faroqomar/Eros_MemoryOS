@@ -1,0 +1,267 @@
+-- Cactus version: v1.14
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/macos
+[0/2] Re-checking globbed directories...
+[1/68] Building CXX object CMakeFiles/cactus_i8mm_obj.dir/kernel/kernel_i8mm.cpp.o
+[2/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_cache.cpp.o
+[3/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_constraints.cpp.o
+[4/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_bpe.cpp.o
+[5/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_index.cpp.o
+[6/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_model.cpp.o
+[7/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_sp.cpp.o
+[8/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_signals.cpp.o
+[9/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_image.cpp.o
+[10/68] Building CXX object CMakeFiles/cactus.dir/graph/graph_core.cpp.o
+[11/68] Building CXX object CMakeFiles/cactus.dir/engine/engine_tokenizer.cpp.o
+[12/68] Building CXX object CMakeFiles/cactus.dir/graph/graph_builder.cpp.o
+[13/68] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_math.cpp.o
+[14/68] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_sample.cpp.o
+[15/68] Building CXX object CMakeFiles/cactus.dir/graph/graph_execute.cpp.o
+[16/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_altup.cpp.o
+[17/68] Building CXX object CMakeFiles/cactus.dir/graph/graph_io.cpp.o
+[18/68] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_tensor.cpp.o
+[19/68] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_nn.cpp.o
+[20/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_bilstm.cpp.o
+[21/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_attention.cpp.o
+[22/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_blas.cpp.o
+[23/68] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_vision.cpp.o
+[24/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_matmul.cpp.o
+[25/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_nn.cpp.o
+[26/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_quants.cpp.o
+[27/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_reduce.cpp.o
+[28/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_scalar.cpp.o
+[29/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_cloud.cpp.o
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/cactus/ffi/cactus_cloud.cpp:295:52: warning: unused parameter 'cloud_key' [-Wunused-parameter]
+  295 |                                        const char* cloud_key) {
+      |                                                    ^
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/cactus/ffi/cactus_cloud.cpp:21:13: warning: unused function 'compact_error_detail' [-Wunused-function]
+   21 | std::string compact_error_detail(std::string detail) {
+      |             ^~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[30/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_diarize.cpp.o
+[31/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed.cpp.o
+[32/68] Building OBJCXX object CMakeFiles/cactus.dir/npu/npu_ane.mm.o
+[33/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed_speaker.cpp.o
+[34/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_graph.cpp.o
+[35/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_complete.cpp.o
+[36/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_log.cpp.o
+[37/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_index.cpp.o
+[38/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_telemetry.cpp.o
+[39/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_init.cpp.o
+[40/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_rag.cpp.o
+[41/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_vad.cpp.o
+[42/68] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4.cpp.o
+[43/68] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_audio.cpp.o
+[44/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_transcribe.cpp.o
+[45/68] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_stream.cpp.o
+[46/68] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_mm.cpp.o
+[47/68] Building CXX object CMakeFiles/cactus.dir/models/model_gemma3n.cpp.o
+[48/68] Building CXX object CMakeFiles/cactus.dir/models/model_gemma.cpp.o
+[49/68] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2.cpp.o
+[50/68] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2moe.cpp.o
+[51/68] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2vl.cpp.o
+[52/68] Building CXX object CMakeFiles/cactus.dir/models/model_needle.cpp.o
+[53/68] Building CXX object CMakeFiles/cactus.dir/models/model_moonshine.cpp.o
+[54/68] Building CXX object CMakeFiles/cactus.dir/models/model_nomic.cpp.o
+[55/68] Building CXX object CMakeFiles/cactus.dir/models/model_qwen.cpp.o
+[56/68] Building CXX object CMakeFiles/cactus.dir/models/model_pyannote.cpp.o
+[57/68] Building CXX object CMakeFiles/cactus.dir/models/model_parakeet.cpp.o
+[58/68] Building CXX object CMakeFiles/cactus.dir/models/model_parakeet_tdt.cpp.o
+[59/68] Building CXX object CMakeFiles/cactus.dir/models/model_siglip2.cpp.o
+[60/68] Building CXX object CMakeFiles/cactus.dir/models/model_silero_vad.cpp.o
+[61/68] Building CXX object CMakeFiles/cactus.dir/models/model_qwen3p5.cpp.o
+[62/68] Building CXX object CMakeFiles/cactus.dir/models/model_wespeaker.cpp.o
+[63/68] Building CXX object CMakeFiles/cactus.dir/telemetry/telemetry_local_only.cpp.o
+[64/68] Building CXX object CMakeFiles/cactus.dir/models/model_youtu.cpp.o
+[65/68] Building CXX object CMakeFiles/cactus.dir/models/model_whisper.cpp.o
+[66/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_deltanet.cpp.o
+[67/68] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_lstm.cpp.o
+[68/68] Linking CXX static library libcactus.a
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Cactus version: v1.14
+-- The OBJCXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting OBJCXX compiler ABI info
+-- Detecting OBJCXX compiler ABI info - done
+-- Check for working OBJCXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/simulator
+[0/2] Re-checking globbed directories...
+[1/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_cache.cpp.o
+[2/69] Building CXX object CMakeFiles/cactus_i8mm_obj.dir/kernel/kernel_i8mm.cpp.o
+[3/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_constraints.cpp.o
+[4/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_bpe.cpp.o
+[5/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_index.cpp.o
+[6/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_model.cpp.o
+[7/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_sp.cpp.o
+[8/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_signals.cpp.o
+[9/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_image.cpp.o
+[10/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_core.cpp.o
+[11/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_tokenizer.cpp.o
+[12/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_builder.cpp.o
+[13/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_conv.cpp.o
+[14/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_math.cpp.o
+[15/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_io.cpp.o
+[16/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_execute.cpp.o
+[17/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_altup.cpp.o
+[18/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_sample.cpp.o
+[19/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_tensor.cpp.o
+[20/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_nn.cpp.o
+[21/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_bilstm.cpp.o
+[22/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_attention.cpp.o
+[23/69] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_vision.cpp.o
+[24/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_deltanet.cpp.o
+[25/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_lstm.cpp.o
+[26/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_blas.cpp.o
+[27/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_quants.cpp.o
+[28/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_matmul.cpp.o
+[29/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_reduce.cpp.o
+[30/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_nn.cpp.o
+[31/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_cloud.cpp.o
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/cactus/ffi/cactus_cloud.cpp:295:52: warning: unused parameter 'cloud_key' [-Wunused-parameter]
+  295 |                                        const char* cloud_key) {
+      |                                                    ^
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/cactus/ffi/cactus_cloud.cpp:21:13: warning: unused function 'compact_error_detail' [-Wunused-function]
+   21 | std::string compact_error_detail(std::string detail) {
+      |             ^~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[32/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_scalar.cpp.o
+[33/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_diarize.cpp.o
+[34/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed.cpp.o
+[35/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed_speaker.cpp.o
+[36/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_graph.cpp.o
+[37/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_complete.cpp.o
+[38/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_log.cpp.o
+[39/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_index.cpp.o
+[40/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_telemetry.cpp.o
+[41/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_init.cpp.o
+[42/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_rag.cpp.o
+[43/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_vad.cpp.o
+[44/69] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4.cpp.o
+[45/69] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_audio.cpp.o
+[46/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_stream.cpp.o
+[47/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_transcribe.cpp.o
+[48/69] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_mm.cpp.o
+[49/69] Building CXX object CMakeFiles/cactus.dir/models/model_gemma.cpp.o
+[50/69] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2.cpp.o
+[51/69] Building CXX object CMakeFiles/cactus.dir/models/model_gemma3n.cpp.o
+[52/69] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2moe.cpp.o
+[53/69] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2vl.cpp.o
+[54/69] Building CXX object CMakeFiles/cactus.dir/models/model_needle.cpp.o
+[55/69] Building CXX object CMakeFiles/cactus.dir/models/model_moonshine.cpp.o
+[56/69] Building CXX object CMakeFiles/cactus.dir/models/model_nomic.cpp.o
+[57/69] Building CXX object CMakeFiles/cactus.dir/models/model_parakeet.cpp.o
+[58/69] Building CXX object CMakeFiles/cactus.dir/models/model_pyannote.cpp.o
+[59/69] Building CXX object CMakeFiles/cactus.dir/models/model_qwen.cpp.o
+[60/69] Building CXX object CMakeFiles/cactus.dir/models/model_parakeet_tdt.cpp.o
+[61/69] Building CXX object CMakeFiles/cactus.dir/models/model_siglip2.cpp.o
+[62/69] Building CXX object CMakeFiles/cactus.dir/models/model_silero_vad.cpp.o
+[63/69] Building CXX object CMakeFiles/cactus.dir/models/model_qwen3p5.cpp.o
+[64/69] Building CXX object CMakeFiles/cactus.dir/models/model_wespeaker.cpp.o
+[65/69] Building CXX object CMakeFiles/cactus.dir/models/model_youtu.cpp.o
+[66/69] Building CXX object CMakeFiles/cactus.dir/models/model_whisper.cpp.o
+[67/69] Building CXX object CMakeFiles/cactus.dir/telemetry/telemetry_local_only.cpp.o
+[68/69] Building OBJCXX object CMakeFiles/cactus.dir/npu/npu_ane.mm.o
+[69/69] Linking CXX static library libcactus.a
+-- The CXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Cactus version: v1.14
+-- The OBJCXX compiler identification is AppleClang 21.0.0.21000401
+-- Detecting OBJCXX compiler ABI info
+-- Detecting OBJCXX compiler ABI info - done
+-- Check for working OBJCXX compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ - skipped
+-- Apple platform detected - NPU/ANE acceleration enabled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/.memoryos-evaluation-build/device
+[0/2] Re-checking globbed directories...
+[1/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_cache.cpp.o
+[2/69] Building CXX object CMakeFiles/cactus_i8mm_obj.dir/kernel/kernel_i8mm.cpp.o
+[3/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_bpe.cpp.o
+[4/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_constraints.cpp.o
+[5/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_index.cpp.o
+[6/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_model.cpp.o
+[7/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_sp.cpp.o
+[8/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_signals.cpp.o
+[9/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_image.cpp.o
+[10/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_core.cpp.o
+[11/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_builder.cpp.o
+[12/69] Building CXX object CMakeFiles/cactus.dir/engine/engine_tokenizer.cpp.o
+[13/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_execute.cpp.o
+[14/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_io.cpp.o
+[15/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_math.cpp.o
+[16/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_altup.cpp.o
+[17/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_sample.cpp.o
+[18/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_tensor.cpp.o
+[19/69] Building CXX object CMakeFiles/cactus.dir/graph/graph_ops_nn.cpp.o
+[20/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_bilstm.cpp.o
+[21/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_attention.cpp.o
+[22/69] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_vision.cpp.o
+[23/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_blas.cpp.o
+[24/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_deltanet.cpp.o
+[25/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_lstm.cpp.o
+[26/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_conv.cpp.o
+[27/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_matmul.cpp.o
+[28/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_quants.cpp.o
+[29/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_nn.cpp.o
+[30/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_reduce.cpp.o
+[31/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_cloud.cpp.o
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/cactus/ffi/cactus_cloud.cpp:295:52: warning: unused parameter 'cloud_key' [-Wunused-parameter]
+  295 |                                        const char* cloud_key) {
+      |                                                    ^
+/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible/cactus/ffi/cactus_cloud.cpp:21:13: warning: unused function 'compact_error_detail' [-Wunused-function]
+   21 | std::string compact_error_detail(std::string detail) {
+      |             ^~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+[32/69] Building CXX object CMakeFiles/cactus.dir/kernel/kernel_scalar.cpp.o
+[33/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed.cpp.o
+[34/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_diarize.cpp.o
+[35/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_embed_speaker.cpp.o
+[36/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_graph.cpp.o
+[37/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_complete.cpp.o
+[38/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_index.cpp.o
+[39/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_init.cpp.o
+[40/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_log.cpp.o
+[41/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_telemetry.cpp.o
+[42/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_rag.cpp.o
+[43/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_vad.cpp.o
+[44/69] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4.cpp.o
+[45/69] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_audio.cpp.o
+[46/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_transcribe.cpp.o
+[47/69] Building CXX object CMakeFiles/cactus.dir/ffi/cactus_stream.cpp.o
+[48/69] Building CXX object CMakeFiles/cactus.dir/models/gemma4/model_gemma4_mm.cpp.o
+[49/69] Building CXX object CMakeFiles/cactus.dir/models/model_gemma.cpp.o
+[50/69] Building CXX object CMakeFiles/cactus.dir/models/model_gemma3n.cpp.o
+[51/69] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2.cpp.o
+[52/69] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2moe.cpp.o
+[53/69] Building CXX object CMakeFiles/cactus.dir/models/model_lfm2vl.cpp.o
+[54/69] Building CXX object CMakeFiles/cactus.dir/models/model_needle.cpp.o
+[55/69] Building CXX object CMakeFiles/cactus.dir/models/model_moonshine.cpp.o
+[56/69] Building CXX object CMakeFiles/cactus.dir/models/model_nomic.cpp.o
+[57/69] Building CXX object CMakeFiles/cactus.dir/models/model_parakeet.cpp.o
+[58/69] Building CXX object CMakeFiles/cactus.dir/models/model_pyannote.cpp.o
+[59/69] Building CXX object CMakeFiles/cactus.dir/models/model_qwen.cpp.o
+[60/69] Building CXX object CMakeFiles/cactus.dir/models/model_parakeet_tdt.cpp.o
+[61/69] Building CXX object CMakeFiles/cactus.dir/models/model_siglip2.cpp.o
+[62/69] Building CXX object CMakeFiles/cactus.dir/models/model_silero_vad.cpp.o
+[63/69] Building CXX object CMakeFiles/cactus.dir/models/model_qwen3p5.cpp.o
+[64/69] Building CXX object CMakeFiles/cactus.dir/models/model_wespeaker.cpp.o
+[65/69] Building CXX object CMakeFiles/cactus.dir/models/model_youtu.cpp.o
+[66/69] Building CXX object CMakeFiles/cactus.dir/telemetry/telemetry_local_only.cpp.o
+[67/69] Building CXX object CMakeFiles/cactus.dir/models/model_whisper.cpp.o
+[68/69] Building OBJCXX object CMakeFiles/cactus.dir/npu/npu_ane.mm.o
+[69/69] Linking CXX static library libcactus.a
+xcframework successfully written out to: /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework
+{"output": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Artifacts/cactus.xcframework", "files": 11}

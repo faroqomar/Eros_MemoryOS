@@ -1,0 +1,15 @@
+{
+  "sourceIdentity": "4d7a28a2b1a74e46840c0e5852a949ed79e4622240365a3b68f17abed1a01675",
+  "cactusCompletedCases": 90,
+  "cactusSixSuites": true,
+  "cactusRankedSourceIDsMatchOriginal": 90,
+  "llamaValidInput": "llama-valid-input-cancellation.json",
+  "postCancellationRerun": {
+    "candidate": "mlx-qwen",
+    "batchID": "A8D987AC-E83C-44C8-8E07-3782137E553C",
+    "rawReport": "native/verification/local-ai-step2/simulator-reports/mlx-qwen-F85A0FCB-AF3A-44D7-8B7A-EBA9EBAE8D37.json",
+    "cases": 15,
+    "allUnavailableWithoutOutput": true
+  },
+  "reuse": "Wax/MLXruntime/model unchanged, unchanged SDK/kernel/prompt/asset historical comparative data remains attributed to original b446source. Final repairs verified by independent tests and these new smoke runs."
+}

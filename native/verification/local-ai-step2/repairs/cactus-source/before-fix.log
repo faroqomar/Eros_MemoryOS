@@ -1,0 +1,27 @@
+test_staged_source_edit_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests) ... FAIL
+test_unstaged_source_edit_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests) ... FAIL
+
+======================================================================
+FAIL: test_staged_source_edit_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Support/tests/test_prepare_runtime.py", line 108, in test_staged_source_edit_without_receipt_is_rejected
+    self.assert_rejected()
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Support/tests/test_prepare_runtime.py", line 91, in assert_rejected
+    self.verify(patched)
+AssertionError: SystemExit not raised
+
+======================================================================
+FAIL: test_unstaged_source_edit_without_receipt_is_rejected (test_prepare_runtime.SourceVerificationTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Support/tests/test_prepare_runtime.py", line 103, in test_unstaged_source_edit_without_receipt_is_rejected
+    self.assert_rejected()
+  File "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalCactusEvaluation/Support/tests/test_prepare_runtime.py", line 91, in assert_rejected
+    self.verify(patched)
+AssertionError: SystemExit not raised
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.968s
+
+FAILED (failures=2)

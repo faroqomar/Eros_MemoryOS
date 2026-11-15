@@ -1,0 +1,29 @@
+{
+  "reason": "Git blob transfer reset midstream. Replace repeated batched fetch with per-file exact Git blob verification; retain successfully fetched metadata and packs.",
+  "ownedProcesses": {
+    "77602": {
+      "parent": 62795,
+      "command": "git -C /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/llama.cpp -c http.version=HTTP/1.1 checkout --detach a956a852c9c8bc1fb07206364838ddef299178c0"
+    },
+    "77605": {
+      "parent": 77602,
+      "command": "/usr/local/bin/git -C /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/llama.cpp -c http.version=HTTP/1.1 checkout --detach a956a852c9c8bc1fb07206364838ddef299178c0"
+    },
+    "77606": {
+      "parent": 77605,
+      "command": "/usr/local/opt/git/libexec/git-core/git -c fetch.negotiationAlgorithm=noop fetch origin --no-tags --no-write-fetch-head --recurse-submodules=no --filter=blob:none --stdin"
+    },
+    "77607": {
+      "parent": 77606,
+      "command": "/usr/local/opt/git/libexec/git-core/git remote-https origin https://github.com/ggml-org/llama.cpp.git"
+    },
+    "77608": {
+      "parent": 77607,
+      "command": "/usr/local/opt/git/libexec/git-core/git-remote-https origin https://github.com/ggml-org/llama.cpp.git"
+    },
+    "62795": {
+      "parent": 72261,
+      "command": "python3 -"
+    }
+  }
+}

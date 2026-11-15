@@ -1,0 +1,8 @@
+{
+  "provisionalReportSHA256": "7e2322c57ad0a6bafc8a3f8e226a4b5535737da42aab14818b07db78b4971005",
+  "canonicalReportSHA256": "c4a419f70877d436e0a14a9ab8848cba6052946977b8342eac481cc865df903d",
+  "caseIDsMatch": true,
+  "generatedTextMatchesExactly": true,
+  "differentCaseIDs": [],
+  "comparisonScope": "Raw generated text only; provenance, timing and OS network-denial evidence differ."
+}

@@ -1,0 +1,23 @@
+Test Suite 'All tests' started at 2026-11-15 00:51:23.931.
+Test Suite 'All tests' passed at 2026-11-15 00:51:23.941.
+	 Executed 0 tests, with 0 failures (0 unexpected) in 0.000 (0.010) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+◇ Test missingAssetCannotProduceFakeRetrieval() started.
+✔ Test missingAssetCannotProduceFakeRetrieval() passed after 0.001 seconds.
+◇ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() started.
+✔ Test emptySnapshotAndClosePreserveUnrelatedOriginalFiles() passed after 0.001 seconds.
+◇ Test duplicateIDsFailBeforeOpeningModelOrIndex() started.
+✔ Test duplicateIDsFailBeforeOpeningModelOrIndex() passed after 0.001 seconds.
+◇ Test cancelledRebuildCannotPublishResults() started.
+✔ Test cancelledRebuildCannotPublishResults() passed after 0.001 seconds.
+➜ Test realEmbeddingIndexSupportsArabicAndMixedSourceIDs() skipped.
+➜ Test realCorrectionAndRemovalRebuildNeverReturnDeletedSourceIDs() skipped.
+◇ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() started.
+✔ Test embeddedNullTextCannotSilentlyTruncateAtTheCBoundary() passed after 0.001 seconds.
+◇ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() started.
+✔ Test runtimeRequiresTheLocalOnlyBuildGuardAndCPUBackend() passed after 0.001 seconds.
+◇ Test nativeIndexRanksDeletesAndPersistsControlledVectors() started.
+✔ Test nativeIndexRanksDeletesAndPersistsControlledVectors() passed after 0.002 seconds.
+✔ Test run with 9 tests in 0 suites passed after 0.006 seconds.

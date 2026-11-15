@@ -1,0 +1,240 @@
+{
+  "cLanguageStandard" : null,
+  "cxxLanguageStandard" : null,
+  "defaultLocalization" : null,
+  "dependencies" : [
+    {
+      "fileSystem" : [
+        {
+          "identity" : "localaievaluation",
+          "path" : "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalAIEvaluation",
+          "productFilter" : null,
+          "traits" : [
+            {
+              "name" : "default"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sourceControl" : [
+        {
+          "identity" : "mlx-swift-lm",
+          "location" : {
+            "remote" : [
+              {
+                "urlString" : "https://github.com/ml-explore/mlx-swift-lm"
+              }
+            ]
+          },
+          "productFilter" : null,
+          "requirement" : {
+            "revision" : [
+              "3b339ad6e3b3f44c8121ecff5131c7fd55e075e6"
+            ]
+          },
+          "traits" : [
+
+          ]
+        }
+      ]
+    },
+    {
+      "sourceControl" : [
+        {
+          "identity" : "swift-transformers",
+          "location" : {
+            "remote" : [
+              {
+                "urlString" : "https://github.com/huggingface/swift-transformers"
+              }
+            ]
+          },
+          "productFilter" : null,
+          "requirement" : {
+            "revision" : [
+              "402a8a1105f52038b0949d9596981fc9e32bed17"
+            ]
+          },
+          "traits" : [
+            {
+              "name" : "default"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "name" : "LocalMLXEvaluation",
+  "packageKind" : {
+    "root" : [
+      "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation"
+    ]
+  },
+  "pkgConfig" : null,
+  "platforms" : [
+    {
+      "options" : [
+
+      ],
+      "platformName" : "ios",
+      "version" : "18.0"
+    },
+    {
+      "options" : [
+
+      ],
+      "platformName" : "macos",
+      "version" : "14.0"
+    }
+  ],
+  "products" : [
+    {
+      "name" : "MLXEvaluationAdapter",
+      "settings" : [
+
+      ],
+      "targets" : [
+        "MLXEvaluationAdapter"
+      ],
+      "type" : {
+        "library" : [
+          "automatic"
+        ]
+      }
+    },
+    {
+      "name" : "mlx-evaluation",
+      "settings" : [
+
+      ],
+      "targets" : [
+        "MLXEvaluationCLI"
+      ],
+      "type" : {
+        "executable" : null
+      }
+    }
+  ],
+  "providers" : null,
+  "swiftLanguageVersions" : [
+    "6"
+  ],
+  "targets" : [
+    {
+      "dependencies" : [
+        {
+          "product" : [
+            "AIEvaluationCore",
+            "LocalAIEvaluation",
+            null,
+            null
+          ]
+        },
+        {
+          "product" : [
+            "MLXLLM",
+            "mlx-swift-lm",
+            null,
+            null
+          ]
+        },
+        {
+          "product" : [
+            "MLXLMCommon",
+            "mlx-swift-lm",
+            null,
+            null
+          ]
+        },
+        {
+          "product" : [
+            "Tokenizers",
+            "swift-transformers",
+            null,
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "MLXEvaluationAdapter",
+      "packageAccess" : true,
+      "resources" : [
+
+      ],
+      "settings" : [
+
+      ],
+      "type" : "regular"
+    },
+    {
+      "dependencies" : [
+        {
+          "byName" : [
+            "MLXEvaluationAdapter",
+            null
+          ]
+        },
+        {
+          "product" : [
+            "AIEvaluationCore",
+            "LocalAIEvaluation",
+            null,
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "MLXEvaluationCLI",
+      "packageAccess" : true,
+      "resources" : [
+
+      ],
+      "settings" : [
+
+      ],
+      "type" : "executable"
+    },
+    {
+      "dependencies" : [
+        {
+          "byName" : [
+            "MLXEvaluationAdapter",
+            null
+          ]
+        },
+        {
+          "product" : [
+            "AIEvaluationCore",
+            "LocalAIEvaluation",
+            null,
+            null
+          ]
+        }
+      ],
+      "exclude" : [
+
+      ],
+      "name" : "MLXEvaluationAdapterTests",
+      "packageAccess" : true,
+      "resources" : [
+
+      ],
+      "settings" : [
+
+      ],
+      "type" : "test"
+    }
+  ],
+  "toolsVersion" : {
+    "_version" : "6.2.0"
+  },
+  "traits" : [
+
+  ]
+}

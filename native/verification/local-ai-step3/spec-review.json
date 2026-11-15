@@ -1,0 +1,35 @@
+{
+  "axis": "SPEC",
+  "verdict": "PASS",
+  "reviewedHead": "de2cccc4243a9426744b4d1c1bdbb5ffe0f442f2",
+  "fixedPoint": "b2163d589a6ede62fabb2c362351979a355641a6",
+  "diffCommand": "git diff b2163d589a6ede62fabb2c362351979a355641a6...HEAD",
+  "scope": "C44 group 4 delivery of C40 fictional-data iOS 27.2 Simulator experiment",
+  "findings": {
+    "missingOrPartial": [],
+    "unaskedBehavior": [],
+    "wrongImplementation": []
+  },
+  "checks": {
+    "runtimeIdentity": "27da28f731c39205d196215d9d2e891a7f45202c457299d9880f7d95fd7b4a63",
+    "runtimeFiles": 100,
+    "runtimeDrift": [],
+    "committedRuntimeFiles": 33,
+    "committedRuntimeDrift": [],
+    "localBinaryResourceFiles": 67,
+    "selectedRawReports": 31,
+    "selectedRawReportDrift": [],
+    "completedSimulatorOperations": 450,
+    "explicitMLXUnavailableCases": 15,
+    "mainAppLocalMemoryAndOriginalProjectUnchanged": true,
+    "currentTurnProjectScopedHindsightRecall": "succeeded"
+  },
+  "evidenceReuse": "Inspected independent C43 repair PASS and retained contracts/export/model/UI evidence; no redundant workload, build or device runs. External model weights not rehashed by this review.",
+  "limits": [
+    "No physical-phone or iOS 18 runtime claim",
+    "Quality failures reject production adoption; no model/provider selected",
+    "No group 5 chat, cloud connection or release",
+    "Main agent owns final repository gate inspection and merge"
+  ],
+  "report": "native/verification/local-ai-step3/spec-review.md"
+}

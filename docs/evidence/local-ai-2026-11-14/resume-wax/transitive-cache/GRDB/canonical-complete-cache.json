@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "revision": "92a554cd0d5e8d67cb18993c6054e73fe42c066c",
+  "root_tree": "6332703370f22e72d6bac3fb6a8fe5d9aef90bb7",
+  "original_url": "https://github.com/groue/GRDB.swift.git",
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-canonical-original-pin-cache/repositories/GRDB.swift-dd0599db",
+  "verified_blobs": 775,
+  "verified_trees": 224,
+  "blob_bytes": 21002856,
+  "promisor": false,
+  "git_filter": null,
+  "local_server": false,
+  "transport_wrapper": false
+}

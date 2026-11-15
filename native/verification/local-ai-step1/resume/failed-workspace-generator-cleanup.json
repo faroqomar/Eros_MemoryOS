@@ -1,0 +1,7 @@
+{
+  "removedFile": "scripts/prepare-ai-evaluation-workspace.py",
+  "sha256": "c10ef80fe34c980c990c9d46a0423ab06f6f44f3dea4d423bf47d7f4e7f8185f",
+  "reason": "Unused failed SDK-root override generator; roots enabled upstream tests/tools/default traits outside the evaluated library graph. Real adapters now use explicit binary/availability integration packages.",
+  "retainedFailureLog": "native/verification/local-ai-step1/resume/lab-wax-workspace-resolve.log",
+  "actualSourceManifestsChanged": false
+}

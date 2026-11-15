@@ -1,0 +1,10 @@
+{
+  "verifiedRequiredSDKFiles": 115,
+  "lastHeaderGitBlob": "8ac4c6e2f65a3518499de15b816659ffd9cc8fd2",
+  "lastHeaderTransport": "https://cdn.jsdelivr.net/gh/cactus-compute/engine@2cfcdb8568eb9192323b27fd0012a834517b4419/cactus-kernels/libs/stb_image_resize2.h",
+  "stoppedOwnedRedundantPIDs": [
+    61806,
+    89218
+  ],
+  "reason": "Required source acquisition finished and verified using exact pinned Git blobs. Stopped only now-redundant archive and duplicate-header transfer; model download remains active. No work or required source skipped."
+}

@@ -1,0 +1,14 @@
+{
+  "identity": "swift-transformers",
+  "origin": "https://github.com/huggingface/swift-transformers",
+  "revision": "402a8a1105f52038b0949d9596981fc9e32bed17",
+  "rootTreeSHA1": "e4ec8482c08167e58c9238eb8a2b1178f557665c",
+  "genuineShallowBoundary": true,
+  "promisor": false,
+  "sourcePatched": false,
+  "archiveSHA256": "53acafa0b2ec44a64cdd15d2efebae30db9eabadacfb1b4c30a45c4abfba05a5",
+  "archiveBytes": 2607135,
+  "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/swift-transformers-e50307c3",
+  "fsck": "",
+  "canonicalResolutionVerified": false
+}

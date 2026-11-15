@@ -1,0 +1,137 @@
+{
+  "sdks": [
+    {
+      "identity": "wax",
+      "original_url": "https://github.com/christopherkarani/Wax.git",
+      "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-patched/Wax",
+      "manifest_sha256": "acf5c56bf1c0de065b8a42f4c72a0e3a9aef620cb191b33a62121b5a319db290",
+      "source_patch": "wax-0.1.47-ios-desktop-guards.patch"
+    },
+    {
+      "identity": "metalanns",
+      "original_url": "https://github.com/christopherkarani/MetalANNS.git",
+      "revision": "13960499c40abd3f06443eb80258e08a6b777da4",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS",
+      "manifest_sha256": "b688dee20c6da7019723e77067b1cc84fc9556bc6db45864d9ac23f25fb3ebb1",
+      "source_patch": null
+    },
+    {
+      "identity": "grdb.swift",
+      "original_url": "https://github.com/groue/GRDB.swift.git",
+      "revision": "92a554cd0d5e8d67cb18993c6054e73fe42c066c",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/GRDB.swift",
+      "manifest_sha256": "4118b6c48dcb87f91d95fe40420371b8a474a44b0b0be2bf0417e0be1ebf7853",
+      "source_patch": null
+    },
+    {
+      "identity": "swift-crypto",
+      "original_url": "https://github.com/apple/swift-crypto.git",
+      "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto",
+      "manifest_sha256": "d51987333ca67380af875d853ff74a4a7bcb9095f220e7235aa2830706f96b54",
+      "source_patch": null
+    },
+    {
+      "identity": "swift-asn1",
+      "original_url": "https://github.com/apple/swift-asn1.git",
+      "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1",
+      "manifest_sha256": "c46482de4edb5c21c263682d102e52b180c1420be592d6c957cdc06f8fc4e516",
+      "source_patch": null
+    }
+  ],
+  "source_files": [
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCLI/Main.swift",
+      "sha256": "714739b604f738f6e893a06af3799cd5d2ac093e132d9982f3557055d5d85feb",
+      "modified_at": "2026-11-14T20:33:45.367645+00:00"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/Contracts.swift",
+      "sha256": "3a65ab229a78b0364d921195d2a455eaa89513f6cf2bbc6739a571f1e5efae77",
+      "modified_at": "2026-11-14T21:34:19.125309+00:00"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/EvaluationRunner.swift",
+      "sha256": "e576091852b24603208dfdf9af932eea7865b45da0d5e9caebae2cedb64a954a",
+      "modified_at": "2026-11-14T23:09:10.662305+00:00"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/FictionalSuite.swift",
+      "sha256": "a3f48e99b8846c2175f9940c981c15d694b98dd2300b6f8292214f9e0ad2afc8",
+      "modified_at": "2026-11-14T20:33:45.443819+00:00"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/KeywordMemoryIndex.swift",
+      "sha256": "2de44da64204b514d542189e4bd55957d4299be3342a005fbffbbab046d07c10",
+      "modified_at": "2026-11-14T20:33:45.411264+00:00"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/Report.swift",
+      "sha256": "372b36be8e9520622629010e65cd5bd8a78e28351115b1c2dce22dce5644849f",
+      "modified_at": "2026-11-14T23:09:10.661736+00:00"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationCore/RunEvaluationComparison.swift",
+      "sha256": "6609128f074e8dcf51b1caf918ebbf5cf933d96bb89b5450852a291e730bab81",
+      "modified_at": "2026-11-14T22:05:40.869044+00:00"
+    },
+    {
+      "path": "native/LocalAIEvaluation/Sources/AIEvaluationPresentation/EvaluationViewModel.swift",
+      "sha256": "e27447388be3d94d3fe33fb108c01fa8444e36bd81e1d80a74a4735b03d5e8d0",
+      "modified_at": "2026-11-14T22:03:39.584550+00:00"
+    },
+    {
+      "path": "native/LocalAIIntegrations/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift",
+      "sha256": "9c005037cf2a52471889b7954c935145e067d265fe0e4e7ae2df65a29db52c0a",
+      "modified_at": "2026-11-14T23:39:00.465287+00:00"
+    },
+    {
+      "path": "native/LocalAIIntegrations/Sources/WaxEvaluationCLI/Main.swift",
+      "sha256": "dbbd5855ab331f99daf4c3a90802a20c33c64a28aea780b8aee0db53dfde617f",
+      "modified_at": "2026-11-14T23:33:12.614078+00:00"
+    },
+    {
+      "path": "native/LocalAIIntegrations/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift",
+      "sha256": "335751f0d5049f5bfe8782072e0f8f716c2e23027746750a91c4064e9570285d",
+      "modified_at": "2026-11-14T21:13:54.951330+00:00"
+    }
+  ],
+  "core_binary_objects_excluded": true,
+  "core_source_compatibility_only": true,
+  "temporary_root_manifest_sha256": "29306cc4fa323d2e52e0ed13cb7de7daa467eceb79c2e272526d349dc9492603",
+  "canonical_manifest_sha256": "813b3e7147ea860c8d1d67cba8df6f3e97eeaba480494a4b90f5753f6e8225e7",
+  "patch_sha256": "d55f4e047011249d9f40c70dcb2f615d6379257315fa1ba467500fc57351a7e4",
+  "sdk_manifests_unchanged": true,
+  "license_files": [
+    {
+      "path": "Licenses/wax/LICENSE",
+      "sha256": "97adb81c9bb1c8d6a1ec65e117da4bb2e11431de4ba6e7ff677a121f1c099108"
+    },
+    {
+      "path": "Licenses/metalanns/LICENSE",
+      "sha256": "46c6277c9debd18273d4d05312b62698ac597b37c275c78c2c74a6a05271a6a8"
+    },
+    {
+      "path": "Licenses/grdb.swift/LICENSE",
+      "sha256": "9853f9dce81365fcc1d9b46004633354450164b8d17904e92e80c444545f7e87"
+    },
+    {
+      "path": "Licenses/swift-crypto/NOTICE.txt",
+      "sha256": "b3ddc2ae068e76b3beb71be03c0400f90090f9469aa491bf7b1ac42320af37b8"
+    },
+    {
+      "path": "Licenses/swift-crypto/LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "Licenses/swift-asn1/NOTICE.txt",
+      "sha256": "11dd3b3b783e6ec26098dd38ebc962986ea109b85447e28e62867b83bd0f8c5b"
+    },
+    {
+      "path": "Licenses/swift-asn1/LICENSE.txt",
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac"
+    }
+  ]
+}

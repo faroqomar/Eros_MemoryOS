@@ -1,0 +1,3759 @@
+{
+  "sha": "f2f9593e75815c34b4ea53977d0065b182a5b6fd",
+  "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/f2f9593e75815c34b4ea53977d0065b182a5b6fd",
+  "tree": [
+    {
+      "path": ".bazelrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d851908af509f19a3198d481f410c75b6de055f",
+      "size": 1018,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1d851908af509f19a3198d481f410c75b6de055f"
+    },
+    {
+      "path": ".bazelversion",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8907c025d5fa57971ede25ae0ccb5135b00f35e",
+      "size": 6,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a8907c025d5fa57971ede25ae0ccb5135b00f35e"
+    },
+    {
+      "path": ".editorconfig",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5115e8fa34eaa29a6445ef57ce36c63524576f5b",
+      "size": 654,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5115e8fa34eaa29a6445ef57ce36c63524576f5b"
+    },
+    {
+      "path": ".gitattributes",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89f6c55bce661a5b225498f18af0cd02ec25abca",
+      "size": 40,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/89f6c55bce661a5b225498f18af0cd02ec25abca"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee5fbfbc8094cdafb1ae3b30919462c48162f037",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/ee5fbfbc8094cdafb1ae3b30919462c48162f037"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34ed9cba6539820e2ca0b0b434291b010b46f7c1",
+      "size": 718,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/34ed9cba6539820e2ca0b0b434291b010b46f7c1"
+    },
+    {
+      "path": ".license_header_template",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "309ac5afe41c93e5b08ba0887526513f65ecc154",
+      "size": 513,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/309ac5afe41c93e5b08ba0887526513f65ecc154"
+    },
+    {
+      "path": ".licenseignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7db8ca67dea883d3f812372c57e41dbf1c5bb03",
+      "size": 190,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a7db8ca67dea883d3f812372c57e41dbf1c5bb03"
+    },
+    {
+      "path": ".spi.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f03c01270f359c0f3cae312334cc92eac5a6bcd",
+      "size": 984,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6f03c01270f359c0f3cae312334cc92eac5a6bcd"
+    },
+    {
+      "path": ".swift-format",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e882b3623ced3fa38c5aafae5c147410aa9abebf",
+      "size": 2800,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e882b3623ced3fa38c5aafae5c147410aa9abebf"
+    },
+    {
+      "path": "BUILD.bazel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f548b9bb3bebcf78c61bb467efe33a102aa5f5a",
+      "size": 9329,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1f548b9bb3bebcf78c61bb467efe33a102aa5f5a"
+    },
+    {
+      "path": "CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f63782038ec607fa8f8e3f68f88d9dddb0486910",
+      "size": 2977,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f63782038ec607fa8f8e3f68f88d9dddb0486910"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c29132cbe370ec8c58a1a8c3dc8911adffa628d",
+      "size": 8151,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0c29132cbe370ec8c58a1a8c3dc8911adffa628d"
+    },
+    {
+      "path": "Changelog.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f11e19eeb328bf683158e573f23b1e9e259259c",
+      "size": 6166,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9f11e19eeb328bf683158e573f23b1e9e259259c"
+    },
+    {
+      "path": "CodeGeneration",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9d14bee3bdc823e071bc487213ef4c3e6c62e23b",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/9d14bee3bdc823e071bc487213ef4c3e6c62e23b"
+    },
+    {
+      "path": "Contributor Documentation",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e210caa3020c08d95ce8af091140f816cc406488",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/e210caa3020c08d95ce8af091140f816cc406488"
+    },
+    {
+      "path": "EditorExtension",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e0fb844ffd7d10d1c9d988748d41f645b96004d2",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/e0fb844ffd7d10d1c9d988748d41f645b96004d2"
+    },
+    {
+      "path": "Examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fe60bd5529004e8e6e3891db6317c9029073d597",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/fe60bd5529004e8e6e3891db6317c9029073d597"
+    },
+    {
+      "path": "LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61b0c78195f2d00acaf658000eeca6ad406a3a29",
+      "size": 11751,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/61b0c78195f2d00acaf658000eeca6ad406a3a29"
+    },
+    {
+      "path": "MODULE.bazel",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2557653456db95baa80e4eeddf6f65188e95375a",
+      "size": 921,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2557653456db95baa80e4eeddf6f65188e95375a"
+    },
+    {
+      "path": "Package.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba92d6854a76feacd87c1083da99ad8188e21be1",
+      "size": 14319,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ba92d6854a76feacd87c1083da99ad8188e21be1"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02aca2873841ee4523257554a2f8ea4813daf27b",
+      "size": 3192,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/02aca2873841ee4523257554a2f8ea4813daf27b"
+    },
+    {
+      "path": "Release Notes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37dea6dead606b26b3005c866420c54230444009",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/37dea6dead606b26b3005c866420c54230444009"
+    },
+    {
+      "path": "Sources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e13013226ab8bfa05fa954420973aa6985c0255",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/7e13013226ab8bfa05fa954420973aa6985c0255"
+    },
+    {
+      "path": "SwiftParserCLI",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e72efa9eaff0c808aca47612704c12b9c66905e3",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/e72efa9eaff0c808aca47612704c12b9c66905e3"
+    },
+    {
+      "path": "SwiftSyntaxDevUtils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14f7e05dfbef9ae8d4cecb691e33c4843650820e",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/14f7e05dfbef9ae8d4cecb691e33c4843650820e"
+    },
+    {
+      "path": "Tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bfa9a1cdf0a4f2decc8ee23ea6b1c454c1788975",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/bfa9a1cdf0a4f2decc8ee23ea6b1c454c1788975"
+    },
+    {
+      "path": "WORKSPACE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "cmake",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "08dfe3cd30f4afa631a76c2ab0fcb1e872e75fd8",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/08dfe3cd30f4afa631a76c2ab0fcb1e872e75fd8"
+    },
+    {
+      "path": "swift-syntax-dev-utils",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0bc2050d28438301c17e937eb982b024154a6e20",
+      "size": 108,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0bc2050d28438301c17e937eb982b024154a6e20"
+    },
+    {
+      "path": "utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dec92a59184715a3875da788de9b78f451cb1750",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/dec92a59184715a3875da788de9b78f451cb1750"
+    },
+    {
+      "path": "Sources/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b28ca199275b15ca058c93337f045640390859e",
+      "size": 1087,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0b28ca199275b15ca058c93337f045640390859e"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e68b5ceabd52576e1c25115faf0bd05645ed85b3",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/e68b5ceabd52576e1c25115faf0bd05645ed85b3"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/BasicFormat.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77f84cfc7a886d2d6bcac5cb1358dba1b3ceb30b",
+      "size": 25942,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/77f84cfc7a886d2d6bcac5cb1358dba1b3ceb30b"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86564bcaa759dfe14633213cb9f9390d054f3aa7",
+      "size": 603,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/86564bcaa759dfe14633213cb9f9390d054f3aa7"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/Indenter.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c45ffb6b97ff44d494771ec31da07c6192d987b7",
+      "size": 3671,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c45ffb6b97ff44d494771ec31da07c6192d987b7"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/InferIndentation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c6d48684965f62d01a8570c19a54d0210675642",
+      "size": 4875,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0c6d48684965f62d01a8570c19a54d0210675642"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/SwiftBasicFormat.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ca4fbc2e8c2a8b66a8e0f8665ff1f30330eb68b3",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/ca4fbc2e8c2a8b66a8e0f8665ff1f30330eb68b3"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/SwiftBasicFormat.docc/FilingBugReports.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbcfdf9c447f02d2ef00004fb718c7bcdfbe8571",
+      "size": 1330,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/cbcfdf9c447f02d2ef00004fb718c7bcdfbe8571"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/SwiftBasicFormat.docc/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "732f8de27d2404c1c288394dec36a71bd2948604",
+      "size": 1510,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/732f8de27d2404c1c288394dec36a71bd2948604"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/Syntax+Extensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93d479cde690b1a8bfdcfad0abcf528417860a0f",
+      "size": 1438,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/93d479cde690b1a8bfdcfad0abcf528417860a0f"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/SyntaxProtocol+Formatted.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce35f141dc02967f1a562f8d2994658850af8510",
+      "size": 845,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ce35f141dc02967f1a562f8d2994658850af8510"
+    },
+    {
+      "path": "Sources/SwiftBasicFormat/Trivia+FormatExtensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "295461546d6826d3a3dad7e74f7d23e902cc6d24",
+      "size": 4401,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/295461546d6826d3a3dad7e74f7d23e902cc6d24"
+    },
+    {
+      "path": "Sources/SwiftCompilerPlugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "58b656c380d8c55641998a6d074348f2e95fb2ca",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/58b656c380d8c55641998a6d074348f2e95fb2ca"
+    },
+    {
+      "path": "Sources/SwiftCompilerPlugin/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20c7d9a787232cce961f7c25c54d303551ec5f57",
+      "size": 542,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/20c7d9a787232cce961f7c25c54d303551ec5f57"
+    },
+    {
+      "path": "Sources/SwiftCompilerPlugin/CompilerPlugin.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "850f7869aca837d1931806133a7a966fe759f2bb",
+      "size": 4416,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/850f7869aca837d1931806133a7a966fe759f2bb"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ecfd4e67da26a4c7182d4cd2db4296e1eb6c3a50",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/ecfd4e67da26a4c7182d4cd2db4296e1eb6c3a50"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c6a9f416ab1ac5150fa261244f8ed910f0f0a34",
+      "size": 1040,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3c6a9f416ab1ac5150fa261244f8ed910f0f0a34"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/CompilerPluginMessageHandler.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4065a814b71226462fd7fa9a261333eaf9ee7383",
+      "size": 11088,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4065a814b71226462fd7fa9a261333eaf9ee7383"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/Diagnostics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "277212cd08c3d8d1c66186fd789290e791b6d212",
+      "size": 5940,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/277212cd08c3d8d1c66186fd789290e791b6d212"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/JSON",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9876b5173efc33e208b884fee86d4e0612457687",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/9876b5173efc33e208b884fee86d4e0612457687"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/JSON/CodingUtilities.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c165b95313372633bd0f389cadb1000dfc8a8a3",
+      "size": 2752,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0c165b95313372633bd0f389cadb1000dfc8a8a3"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/JSON/JSON.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e36b1ee3f8a60d7e073a476ca1bfef570e49db40",
+      "size": 906,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e36b1ee3f8a60d7e073a476ca1bfef570e49db40"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/JSON/JSONDecoding.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20a56a633c6d6f2812fa8f607140040ecbb5d0c4",
+      "size": 40649,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/20a56a633c6d6f2812fa8f607140040ecbb5d0c4"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/JSON/JSONEncoding.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17b659ab3e2b1cad579708f92dbe324f5dbf7b33",
+      "size": 15910,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/17b659ab3e2b1cad579708f92dbe324f5dbf7b33"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/LRUCache.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edb0848d6b5b45771e1296c32ae0905b049aada4",
+      "size": 2636,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/edb0848d6b5b45771e1296c32ae0905b049aada4"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/Macros.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52e0d9e69ab3fe7866a9e79d72749205c62cdd4b",
+      "size": 9630,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/52e0d9e69ab3fe7866a9e79d72749205c62cdd4b"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/PluginMacroExpansionContext.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a53c520f2a51038a17f4135fcc8d7fa1f8fda34",
+      "size": 11842,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2a53c520f2a51038a17f4135fcc8d7fa1f8fda34"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/PluginMessageCompatibility.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53285fd06fe5839a60f17a2c9983046b4405ccf2",
+      "size": 1216,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/53285fd06fe5839a60f17a2c9983046b4405ccf2"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/PluginMessages.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab55433521ada8c7f2d883197310176c673d2ebb",
+      "size": 7672,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ab55433521ada8c7f2d883197310176c673d2ebb"
+    },
+    {
+      "path": "Sources/SwiftCompilerPluginMessageHandling/StandardIOMessageConnection.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74bb6768d38caa1c709f4b982818efa9e19c0917",
+      "size": 7681,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/74bb6768d38caa1c709f4b982818efa9e19c0917"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90ccd5e03093b82c15cc5b0f1d830f7a3e1554a8",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/90ccd5e03093b82c15cc5b0f1d830f7a3e1554a8"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6273688c2184ff54e1ddd2ab42a93399487957fa",
+      "size": 745,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6273688c2184ff54e1ddd2ab42a93399487957fa"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/Convenience.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "999cdb20403cfad03a28c28bb47b7a7356240f9a",
+      "size": 1860,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/999cdb20403cfad03a28c28bb47b7a7356240f9a"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/Diagnostic.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4655bb85c32f3844b14220d418116d4043f52d2",
+      "size": 4355,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c4655bb85c32f3844b14220d418116d4043f52d2"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/DiagnosticDecorators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b58c2018efee05b868afadd3fd8c40afdb35a07",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/9b58c2018efee05b868afadd3fd8c40afdb35a07"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/DiagnosticDecorators/ANSIDiagnosticDecorator.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5782b76c1688383faad7a99f945735b31dda27f",
+      "size": 8249,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d5782b76c1688383faad7a99f945735b31dda27f"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/DiagnosticDecorators/BasicDiagnosticDecorator.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d586d707b92d14523dbe2dbd95e3da43c861883",
+      "size": 3062,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1d586d707b92d14523dbe2dbd95e3da43c861883"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/DiagnosticDecorators/DiagnosticDecorator.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07eac10e84fe441775c12f5f235b49015c974008",
+      "size": 4301,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/07eac10e84fe441775c12f5f235b49015c974008"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/DiagnosticsFormatter.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e93bc1d609f268b6c667e89472e9bef908f0d090",
+      "size": 14250,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e93bc1d609f268b6c667e89472e9bef908f0d090"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/FixIt.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af238a31c6cc15f8619acc1a1e9c5ef96117fba4",
+      "size": 6806,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/af238a31c6cc15f8619acc1a1e9c5ef96117fba4"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/GroupedDiagnostics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1f3059bc193f146a4b8b929a1365e50508ab634",
+      "size": 10391,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f1f3059bc193f146a4b8b929a1365e50508ab634"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/Message.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99525084220b96fce250ffe4321cca94e5cbf441",
+      "size": 2321,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/99525084220b96fce250ffe4321cca94e5cbf441"
+    },
+    {
+      "path": "Sources/SwiftDiagnostics/Note.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a85d79a969ad7b032a940d5afb0d7fa5df21c2c",
+      "size": 2453,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8a85d79a969ad7b032a940d5afb0d7fa5df21c2c"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "66e50ec0a3bd27c322699db365d9073c5dcb5485",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/66e50ec0a3bd27c322699db365d9073c5dcb5485"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8eae681961b77aba38ec398289f5dfb42d671df3",
+      "size": 658,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8eae681961b77aba38ec398289f5dfb42d671df3"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/DeclNameLocation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18df8864b1d2b05978acaa0abf69af3d8753f4df",
+      "size": 7235,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/18df8864b1d2b05978acaa0abf69af3d8753f4df"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/FixItApplier.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6253710930deeb7e18daaca7515418a708d52ee4",
+      "size": 5635,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6253710930deeb7e18daaca7515418a708d52ee4"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/NameMatcher.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ba9ab4fba3d82833889415e9724ba7fec0333d4",
+      "size": 18120,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5ba9ab4fba3d82833889415e9724ba7fec0333d4"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/SwiftIDEUtilsCompatibility.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b51140d8dcb726f10f266318bc1a912045642405",
+      "size": 1980,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b51140d8dcb726f10f266318bc1a912045642405"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/Syntax+Classifications.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "324bb9727155d4c1d901b38397a4f17e4506926f",
+      "size": 3093,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/324bb9727155d4c1d901b38397a4f17e4506926f"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/SyntaxClassification.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92a35d917239beb761baf088d7ea2e1b66162dc9",
+      "size": 6042,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/92a35d917239beb761baf088d7ea2e1b66162dc9"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/SyntaxClassifier.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b12d22df33c8856912e83db1d1d393a0d5086522",
+      "size": 9670,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b12d22df33c8856912e83db1d1d393a0d5086522"
+    },
+    {
+      "path": "Sources/SwiftIDEUtils/Utils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34f27282644acea0ae2066a97f9faa417517fe2a",
+      "size": 907,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/34f27282644acea0ae2066a97f9faa417517fe2a"
+    },
+    {
+      "path": "Sources/SwiftIfConfig",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52aad22076a84ece6f736ea7a38bf1c957f941ff",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/52aad22076a84ece6f736ea7a38bf1c957f941ff"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/ActiveClauseEvaluator.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e7b9e2f5d9df2a76ab8834e73ad11b2d2f45be1",
+      "size": 1783,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8e7b9e2f5d9df2a76ab8834e73ad11b2d2f45be1"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/ActiveSyntaxRewriter.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1822c1f08782f0868b4f0aac988fe220cf7981c",
+      "size": 16844,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d1822c1f08782f0868b4f0aac988fe220cf7981c"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/ActiveSyntaxVisitor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba1d3ccfe46e1b03d7bf7b91b76fa7f6dd2bb32d",
+      "size": 5289,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ba1d3ccfe46e1b03d7bf7b91b76fa7f6dd2bb32d"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/BuildConfiguration.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51daaaeac84f2f4a65f17adfaf0d2bc0c8fff23b",
+      "size": 11404,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/51daaaeac84f2f4a65f17adfaf0d2bc0c8fff23b"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "90601a0ae59a818d072fd0aa1697046828e69b0f",
+      "size": 935,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/90601a0ae59a818d072fd0aa1697046828e69b0f"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/ConfiguredRegions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7329ba324c3aa5aae9810f4de4522367760b64f1",
+      "size": 11252,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/7329ba324c3aa5aae9810f4de4522367760b64f1"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/IfConfigDecl+IfConfig.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5d286d4ba743f1f0144c137c4b9a3a955e732f4",
+      "size": 2437,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d5d286d4ba743f1f0144c137c4b9a3a955e732f4"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/IfConfigDiagnostic.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8deec6322742e6e96bdfbfcfc2ba8c72f9c5600",
+      "size": 9573,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a8deec6322742e6e96bdfbfcfc2ba8c72f9c5600"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/IfConfigEvaluation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50c28802544a547f80f62c32308be851d83d2d6b",
+      "size": 29290,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/50c28802544a547f80f62c32308be851d83d2d6b"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/IfConfigFunctions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66407751360f8fe3f14eb3e06cd77d1d94d649a0",
+      "size": 2866,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/66407751360f8fe3f14eb3e06cd77d1d94d649a0"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/IfConfigRegionState.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d2553d1d4a7ba3395b8564ea0c2148d87ad0cae",
+      "size": 2080,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5d2553d1d4a7ba3395b8564ea0c2148d87ad0cae"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/StaticBuildConfiguration.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f15ffdd3f069dc46c6a993277bc2e926a8cb71d5",
+      "size": 15277,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f15ffdd3f069dc46c6a993277bc2e926a8cb71d5"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/SwiftIfConfig.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a1f06e254c256f040cc3d81426dacc29f01c4d29",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/a1f06e254c256f040cc3d81426dacc29f01c4d29"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/SwiftIfConfig.docc/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f69f2f1a65c45bd21327cf87869a5f3335119601",
+      "size": 1030,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f69f2f1a65c45bd21327cf87869a5f3335119601"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/SwiftIfConfig.docc/SwiftIfConfig.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ef92b16e73bca7f0d17d5de5edd9120531210c6",
+      "size": 2568,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5ef92b16e73bca7f0d17d5de5edd9120531210c6"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/SyntaxLiteralUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4eae713a432fb61ca1e680aa22ccc7c5bbe95bf9",
+      "size": 1669,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4eae713a432fb61ca1e680aa22ccc7c5bbe95bf9"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/SyntaxProtocol+IfConfig.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afc7993913077881637a6ccc9ce2290d385e7382",
+      "size": 2119,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/afc7993913077881637a6ccc9ce2290d385e7382"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/VersionTuple+Parsing.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "804f5185db8bada1e769779c4a7aff7dddb58698",
+      "size": 5635,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/804f5185db8bada1e769779c4a7aff7dddb58698"
+    },
+    {
+      "path": "Sources/SwiftIfConfig/VersionTuple.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce2484c5a3c9ee4a0db509bcb4632cfbbc5d0968",
+      "size": 2264,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ce2484c5a3c9ee4a0db509bcb4632cfbbc5d0968"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bb605003d70a503f8571f3b81d26c9dc63feb2ac",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/bb605003d70a503f8571f3b81d26c9dc63feb2ac"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a73e79486975ff363d6d3623060269943237d05",
+      "size": 1001,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3a73e79486975ff363d6d3623060269943237d05"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/IdentifiableSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa053a00699616741dd86c924cb5eb9d83a69b41",
+      "size": 1517,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/fa053a00699616741dd86c924cb5eb9d83a69b41"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/LookupConfig.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d5be3d09c7d794200ed6b2861ae6e7bbddf6c57",
+      "size": 1735,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8d5be3d09c7d794200ed6b2861ae6e7bbddf6c57"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/LookupName.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b750cc4c5aac983b6ff33982fd54de9500f20925",
+      "size": 12539,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b750cc4c5aac983b6ff33982fd54de9500f20925"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/LookupResult.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b86378a7e71f8fe074dee435d6822491667ba568",
+      "size": 3947,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b86378a7e71f8fe074dee435d6822491667ba568"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "66f62ddfbf90f59f90d4e23e738d9a57f3f2c2d2",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/66f62ddfbf90f59f90d4e23e738d9a57f3f2c2d2"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/CanInterleaveResultsLaterScopeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c21d49c7ee2d1dc9f51114a5f5f7190f42421d7",
+      "size": 961,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5c21d49c7ee2d1dc9f51114a5f5f7190f42421d7"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/FunctionScopeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b2d22c2b8e4139131b38114f711119abcf50588",
+      "size": 1783,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1b2d22c2b8e4139131b38114f711119abcf50588"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/GenericParameterScopeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd6e30361296a91189f65f0e9a379865544db7af",
+      "size": 3300,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/dd6e30361296a91189f65f0e9a379865544db7af"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/IntroducingToSequentialParentScopeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9163ffa7359dc9da1fda23bdbb42fece55bb6e90",
+      "size": 985,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9163ffa7359dc9da1fda23bdbb42fece55bb6e90"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/LookInMembersScopeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06b9353c9d3e91b139b411fc28535b11784bcdb5",
+      "size": 694,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/06b9353c9d3e91b139b411fc28535b11784bcdb5"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/NominalTypeDeclSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32a1d2cca52addfc93aee85fcd41ab0a72cd8f32",
+      "size": 2109,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/32a1d2cca52addfc93aee85fcd41ab0a72cd8f32"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/ScopeImplementations.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94db0fa4605d8da89540b91ba41a7d90f27f9f56",
+      "size": 34415,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/94db0fa4605d8da89540b91ba41a7d90f27f9f56"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/ScopeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdac3f27ec48865554a802f285c76d4a9ceebf86",
+      "size": 5430,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/bdac3f27ec48865554a802f285c76d4a9ceebf86"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/SequentialScopeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e917b70cb97d3fdf83843ca3fc23af595a0ce8cb",
+      "size": 5017,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e917b70cb97d3fdf83843ca3fc23af595a0ce8cb"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/Scopes/WithGenericParametersScopeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bf75dfa824265801a91bac096a7f4208b21de03",
+      "size": 3286,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8bf75dfa824265801a91bac096a7f4208b21de03"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/SimpleLookupQueries.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35320ced03682d35aebe52596473ed2f436cd7b4",
+      "size": 7553,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/35320ced03682d35aebe52596473ed2f436cd7b4"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/SwiftLexicalLookup.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c9dc1da64f9594fe27ae7394235715f9e5348c8f",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/c9dc1da64f9594fe27ae7394235715f9e5348c8f"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/SwiftLexicalLookup.docc/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e8758efc6682f38d6be1adefbca4f291d2c3eab",
+      "size": 1050,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9e8758efc6682f38d6be1adefbca4f291d2c3eab"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/SwiftLexicalLookup.docc/LookupRules.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "554da7bb79f42f046507bfd58848190e1ff6fbad",
+      "size": 7144,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/554da7bb79f42f046507bfd58848190e1ff6fbad"
+    },
+    {
+      "path": "Sources/SwiftLexicalLookup/SwiftLexicalLookup.docc/SwiftLexicalLookup.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f42ecf53c26f68c5d6d742739584a0b29570530",
+      "size": 2792,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0f42ecf53c26f68c5d6d742739584a0b29570530"
+    },
+    {
+      "path": "Sources/SwiftLibraryPluginProvider",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "315da2100890214e611bef1304c9c11b76037a98",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/315da2100890214e611bef1304c9c11b76037a98"
+    },
+    {
+      "path": "Sources/SwiftLibraryPluginProvider/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d05d703cffd702b5ffa207aed82db73c6dbb84a",
+      "size": 644,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/7d05d703cffd702b5ffa207aed82db73c6dbb84a"
+    },
+    {
+      "path": "Sources/SwiftLibraryPluginProvider/LibraryPluginProvider.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae95aeb7445a2738e951be922d3a1cb4fd530357",
+      "size": 7210,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ae95aeb7445a2738e951be922d3a1cb4fd530357"
+    },
+    {
+      "path": "Sources/SwiftOperators",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eab8dd61b5e957e65007ca42bc3aafb14dd6b1fd",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/eab8dd61b5e957e65007ca42bc3aafb14dd6b1fd"
+    },
+    {
+      "path": "Sources/SwiftOperators/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "998b51abb66e1e946373587bc95a94dd5db7a561",
+      "size": 739,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/998b51abb66e1e946373587bc95a94dd5db7a561"
+    },
+    {
+      "path": "Sources/SwiftOperators/Operator.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21b2692930ee4254fe21cc3841afb7767bb8356b",
+      "size": 1740,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/21b2692930ee4254fe21cc3841afb7767bb8356b"
+    },
+    {
+      "path": "Sources/SwiftOperators/OperatorError+Diagnostics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ae891ffad02e7c93ea1faada24b6af08343622f",
+      "size": 2508,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6ae891ffad02e7c93ea1faada24b6af08343622f"
+    },
+    {
+      "path": "Sources/SwiftOperators/OperatorError.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e6638f6dfd4c6510a2d0001cfd4a0ddd4640f37",
+      "size": 2058,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6e6638f6dfd4c6510a2d0001cfd4a0ddd4640f37"
+    },
+    {
+      "path": "Sources/SwiftOperators/OperatorTable+Defaults.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6dbc5833a4fd3f86417b4cd56e2510b85efa7d5b",
+      "size": 10312,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6dbc5833a4fd3f86417b4cd56e2510b85efa7d5b"
+    },
+    {
+      "path": "Sources/SwiftOperators/OperatorTable+Folding.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c2c63d3e9741eeca9b1816f9e4dafdc17b61158",
+      "size": 18036,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3c2c63d3e9741eeca9b1816f9e4dafdc17b61158"
+    },
+    {
+      "path": "Sources/SwiftOperators/OperatorTable+Semantics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bf67ca9e61f03f22bf061c5f2aa1606c12c7219",
+      "size": 4602,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6bf67ca9e61f03f22bf061c5f2aa1606c12c7219"
+    },
+    {
+      "path": "Sources/SwiftOperators/OperatorTable.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caa3b38a061f86a6cfe511597134f7a335b755f3",
+      "size": 4911,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/caa3b38a061f86a6cfe511597134f7a335b755f3"
+    },
+    {
+      "path": "Sources/SwiftOperators/PrecedenceGraph.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e8ab7daf8cb41ecb34ff0b34b7268842a439eb1",
+      "size": 5756,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4e8ab7daf8cb41ecb34ff0b34b7268842a439eb1"
+    },
+    {
+      "path": "Sources/SwiftOperators/PrecedenceGroup.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e002a5b0b4bea6dc6cfcfd76a9c75a13008cd185",
+      "size": 4678,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e002a5b0b4bea6dc6cfcfd76a9c75a13008cd185"
+    },
+    {
+      "path": "Sources/SwiftOperators/SwiftOperators.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6ee79928cee5c0178c8b43171fcd23f68ebf380d",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/6ee79928cee5c0178c8b43171fcd23f68ebf380d"
+    },
+    {
+      "path": "Sources/SwiftOperators/SwiftOperators.docc/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41dc5d9d9b70f510561f2a6ac91d77611577f2b1",
+      "size": 1033,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/41dc5d9d9b70f510561f2a6ac91d77611577f2b1"
+    },
+    {
+      "path": "Sources/SwiftOperators/SwiftOperators.docc/SwiftOperators.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc443364165a4c00e880a35833b7b685812286ad",
+      "size": 5189,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/bc443364165a4c00e880a35833b7b685812286ad"
+    },
+    {
+      "path": "Sources/SwiftOperators/SyntaxSynthesis.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fe15687b7f2f7bcd64b29e7e193f8437edbbfe2",
+      "size": 4554,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5fe15687b7f2f7bcd64b29e7e193f8437edbbfe2"
+    },
+    {
+      "path": "Sources/SwiftParser",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9e3fd2aa603cde39c2dfa97f4f8190662bf5363",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/f9e3fd2aa603cde39c2dfa97f4f8190662bf5363"
+    },
+    {
+      "path": "Sources/SwiftParser/Attributes.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9add4a654aec115610654486d69f5fcb18a8bd49",
+      "size": 42211,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9add4a654aec115610654486d69f5fcb18a8bd49"
+    },
+    {
+      "path": "Sources/SwiftParser/Availability.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc0979937a26ac28f801eedec5527e23e5f710ed",
+      "size": 11070,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/fc0979937a26ac28f801eedec5527e23e5f710ed"
+    },
+    {
+      "path": "Sources/SwiftParser/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d42b440c89e8abf083418dc0d673deb39a051058",
+      "size": 1570,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d42b440c89e8abf083418dc0d673deb39a051058"
+    },
+    {
+      "path": "Sources/SwiftParser/CharacterInfo.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17e9d63ef54111f7ea212fd1e514e6993a910556",
+      "size": 3055,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/17e9d63ef54111f7ea212fd1e514e6993a910556"
+    },
+    {
+      "path": "Sources/SwiftParser/CollectionNodes+Parsable.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3424de77418d6d04ee88496376562c6152b32663",
+      "size": 5836,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3424de77418d6d04ee88496376562c6152b32663"
+    },
+    {
+      "path": "Sources/SwiftParser/CompilerFiles.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2424c7964a619b8c3c7daffc2861aeece9fdc8b1",
+      "size": 3738,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2424c7964a619b8c3c7daffc2861aeece9fdc8b1"
+    },
+    {
+      "path": "Sources/SwiftParser/Declarations.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfe5d3022e149d2f97428e7cebe7c4cbd37cce07",
+      "size": 84821,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/bfe5d3022e149d2f97428e7cebe7c4cbd37cce07"
+    },
+    {
+      "path": "Sources/SwiftParser/Directives.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd26429f3ca85cfa39424035257e3ef49b9d1f72",
+      "size": 8029,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/cd26429f3ca85cfa39424035257e3ef49b9d1f72"
+    },
+    {
+      "path": "Sources/SwiftParser/ExpressionInterpretedAsVersionTuple.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd1b43b6db648b69e675f2b4ac9fecc5825033de",
+      "size": 1803,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/fd1b43b6db648b69e675f2b4ac9fecc5825033de"
+    },
+    {
+      "path": "Sources/SwiftParser/Expressions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a1f4da04cc428e119410d7287d24753641af12c",
+      "size": 93224,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5a1f4da04cc428e119410d7287d24753641af12c"
+    },
+    {
+      "path": "Sources/SwiftParser/IncrementalParseTransition.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d5d6debcebf4a2de22ee8256e1fad353aca5d07",
+      "size": 15498,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3d5d6debcebf4a2de22ee8256e1fad353aca5d07"
+    },
+    {
+      "path": "Sources/SwiftParser/IsValidIdentifier.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65d9ae613c4a377b771a9265897be70bc8892913",
+      "size": 4869,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/65d9ae613c4a377b771a9265897be70bc8892913"
+    },
+    {
+      "path": "Sources/SwiftParser/Lexer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11edc281a38a4adfb1092f88af83974a5b621d06",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/11edc281a38a4adfb1092f88af83974a5b621d06"
+    },
+    {
+      "path": "Sources/SwiftParser/Lexer/Cursor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d55f60240681b67906973b5ea76c8093673804f9",
+      "size": 90108,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d55f60240681b67906973b5ea76c8093673804f9"
+    },
+    {
+      "path": "Sources/SwiftParser/Lexer/Lexeme.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9285fc5fbb1e13bfdd2154ce42b228a11bb00b49",
+      "size": 4046,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9285fc5fbb1e13bfdd2154ce42b228a11bb00b49"
+    },
+    {
+      "path": "Sources/SwiftParser/Lexer/LexemeSequence.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f9950aae189ab28907081f219ad1c9bd5e49e0c",
+      "size": 6871,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1f9950aae189ab28907081f219ad1c9bd5e49e0c"
+    },
+    {
+      "path": "Sources/SwiftParser/Lexer/Lexer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65a6d638c2085f81a7ef092e8ea36b4bd5c01bb3",
+      "size": 684,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/65a6d638c2085f81a7ef092e8ea36b4bd5c01bb3"
+    },
+    {
+      "path": "Sources/SwiftParser/Lexer/RegexLiteralLexer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "477c2773e687998a55e8f906b5817b9f0c082153",
+      "size": 27911,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/477c2773e687998a55e8f906b5817b9f0c082153"
+    },
+    {
+      "path": "Sources/SwiftParser/Lexer/UnicodeScalarExtensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ec46c3ddbf529a776906d14c611660e8fca244d",
+      "size": 10159,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4ec46c3ddbf529a776906d14c611660e8fca244d"
+    },
+    {
+      "path": "Sources/SwiftParser/Lookahead.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ff3b1a66b2fcb1c88629c630d51afeb69a1c80e9",
+      "size": 13509,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ff3b1a66b2fcb1c88629c630d51afeb69a1c80e9"
+    },
+    {
+      "path": "Sources/SwiftParser/LoopProgressCondition.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bc185fb536884a05f8269c41afb743ebf506d38",
+      "size": 2745,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5bc185fb536884a05f8269c41afb743ebf506d38"
+    },
+    {
+      "path": "Sources/SwiftParser/Modifiers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57ef2b302ae24e0adf85bdb3811fe596ef0c6264",
+      "size": 9584,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/57ef2b302ae24e0adf85bdb3811fe596ef0c6264"
+    },
+    {
+      "path": "Sources/SwiftParser/Names.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3563fd412eead5e91d1d565c3584fb8f25214fdb",
+      "size": 15383,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3563fd412eead5e91d1d565c3584fb8f25214fdb"
+    },
+    {
+      "path": "Sources/SwiftParser/Nominals.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eebdcd6fa0ce8ad4016e07ad3168ef8b524bc69b",
+      "size": 13300,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/eebdcd6fa0ce8ad4016e07ad3168ef8b524bc69b"
+    },
+    {
+      "path": "Sources/SwiftParser/Parameters.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6ec75d36bbc0f2ad96bbda84fbe2bbc81797292",
+      "size": 13173,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e6ec75d36bbc0f2ad96bbda84fbe2bbc81797292"
+    },
+    {
+      "path": "Sources/SwiftParser/ParseSourceFile.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e790a5e4568929227ded89e5da3087c8d73011d1",
+      "size": 9059,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e790a5e4568929227ded89e5da3087c8d73011d1"
+    },
+    {
+      "path": "Sources/SwiftParser/Parser.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef268d21da5bc19491e822e1e6d9ddbedf5c4d44",
+      "size": 37071,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ef268d21da5bc19491e822e1e6d9ddbedf5c4d44"
+    },
+    {
+      "path": "Sources/SwiftParser/Patterns.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37e5c390ecf6a04baa944953dac9936d73fce6f7",
+      "size": 14171,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/37e5c390ecf6a04baa944953dac9936d73fce6f7"
+    },
+    {
+      "path": "Sources/SwiftParser/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59d72c887bd11456231165612704ddb75b43568d",
+      "size": 808,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/59d72c887bd11456231165612704ddb75b43568d"
+    },
+    {
+      "path": "Sources/SwiftParser/Recovery.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f42608f09cbb57053147545a0de56f8c0adab5a3",
+      "size": 8225,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f42608f09cbb57053147545a0de56f8c0adab5a3"
+    },
+    {
+      "path": "Sources/SwiftParser/Specifiers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f0816d1db951ce7dd67d4884f332363b0e17091",
+      "size": 28914,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5f0816d1db951ce7dd67d4884f332363b0e17091"
+    },
+    {
+      "path": "Sources/SwiftParser/Statements.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53ee258ce816ca6df2531f7a6a08fbcf97c1face",
+      "size": 40989,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/53ee258ce816ca6df2531f7a6a08fbcf97c1face"
+    },
+    {
+      "path": "Sources/SwiftParser/StringLiteralRepresentedLiteralValue.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4d30e62b509a91b99234641d89156bbbd23ce37",
+      "size": 4669,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d4d30e62b509a91b99234641d89156bbbd23ce37"
+    },
+    {
+      "path": "Sources/SwiftParser/StringLiterals.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40c6a7875bad13eff6cd48e2529d69aba7de575c",
+      "size": 30267,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/40c6a7875bad13eff6cd48e2529d69aba7de575c"
+    },
+    {
+      "path": "Sources/SwiftParser/SwiftParser.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b5e173b413a870969028c8693cb651a7af495501",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/b5e173b413a870969028c8693cb651a7af495501"
+    },
+    {
+      "path": "Sources/SwiftParser/SwiftParser.docc/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bca7f8b50e0ff27fc126f68aa85eca98be88edda",
+      "size": 1494,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/bca7f8b50e0ff27fc126f68aa85eca98be88edda"
+    },
+    {
+      "path": "Sources/SwiftParser/SwiftParser.docc/SwiftParser.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b71a83c5afa484e8c9bf5fe7d10abd9214a975db",
+      "size": 3195,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b71a83c5afa484e8c9bf5fe7d10abd9214a975db"
+    },
+    {
+      "path": "Sources/SwiftParser/SwiftParserCompatibility.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1f3515e07f3d8a946c05e59e4eb5df6cddeccb8",
+      "size": 1376,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c1f3515e07f3d8a946c05e59e4eb5df6cddeccb8"
+    },
+    {
+      "path": "Sources/SwiftParser/SwiftVersion.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1eeb64639576818b5ad45ea3e675877711b1017",
+      "size": 664,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a1eeb64639576818b5ad45ea3e675877711b1017"
+    },
+    {
+      "path": "Sources/SwiftParser/SyntaxUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "361de22fe2ea21feab01322d9a19324309ccb484",
+      "size": 10581,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/361de22fe2ea21feab01322d9a19324309ccb484"
+    },
+    {
+      "path": "Sources/SwiftParser/TokenConsumer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a603b77ae11bb9f3a3184f978b7be001ff5c2f6",
+      "size": 12834,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2a603b77ae11bb9f3a3184f978b7be001ff5c2f6"
+    },
+    {
+      "path": "Sources/SwiftParser/TokenPrecedence.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "212d6dfbcfa9360b86a2c01344477f2b47801db2",
+      "size": 11047,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/212d6dfbcfa9360b86a2c01344477f2b47801db2"
+    },
+    {
+      "path": "Sources/SwiftParser/TokenSpec.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d7dbc5d46560735a1189199b86ecb4e491ed660b",
+      "size": 7940,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d7dbc5d46560735a1189199b86ecb4e491ed660b"
+    },
+    {
+      "path": "Sources/SwiftParser/TokenSpecSet.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d44c9410047baf455d3bdc5c70ef34cb713ef550",
+      "size": 33416,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d44c9410047baf455d3bdc5c70ef34cb713ef550"
+    },
+    {
+      "path": "Sources/SwiftParser/TopLevel.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ceaeed59d018596bbeed73ec79715928ba97166",
+      "size": 10311,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9ceaeed59d018596bbeed73ec79715928ba97166"
+    },
+    {
+      "path": "Sources/SwiftParser/TriviaParser.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ef4d3fe9f5fb192de18ad44d1e7b20d3bd7ae3f",
+      "size": 6335,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4ef4d3fe9f5fb192de18ad44d1e7b20d3bd7ae3f"
+    },
+    {
+      "path": "Sources/SwiftParser/Types.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91441f903c5bb035744ded5a76fbe4a485ef3c6f",
+      "size": 49542,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/91441f903c5bb035744ded5a76fbe4a485ef3c6f"
+    },
+    {
+      "path": "Sources/SwiftParser/generated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b861ddcecbf7c29218fac8baa6c00f9d97962be",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/5b861ddcecbf7c29218fac8baa6c00f9d97962be"
+    },
+    {
+      "path": "Sources/SwiftParser/generated/ExperimentalFeatures.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "938e7d5679663ac8633696af73ee31939e163457",
+      "size": 3116,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/938e7d5679663ac8633696af73ee31939e163457"
+    },
+    {
+      "path": "Sources/SwiftParser/generated/IsLexerClassified.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52e0a81f9896c10bf2c6fa6a6efc815d218b512a",
+      "size": 3508,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/52e0a81f9896c10bf2c6fa6a6efc815d218b512a"
+    },
+    {
+      "path": "Sources/SwiftParser/generated/LayoutNodes+Parsable.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7dd4f5f89ab782f9ad67388640d5189e7e34d6fb",
+      "size": 6989,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/7dd4f5f89ab782f9ad67388640d5189e7e34d6fb"
+    },
+    {
+      "path": "Sources/SwiftParser/generated/Parser+TokenSpecSet.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92d9b8d96a4632f128c7ed48788a63a56c732537",
+      "size": 109452,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/92d9b8d96a4632f128c7ed48788a63a56c732537"
+    },
+    {
+      "path": "Sources/SwiftParser/generated/TokenSpecStaticMembers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "13b547bb2caf508ba52a113ebcaf310a55d713b1",
+      "size": 4883,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/13b547bb2caf508ba52a113ebcaf310a55d713b1"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0abef224c97ea263c16c942d4714345beaebf380",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/0abef224c97ea263c16c942d4714345beaebf380"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d73590bb0f81c3e96694effc18c8ad294fd72129",
+      "size": 938,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d73590bb0f81c3e96694effc18c8ad294fd72129"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/DiagnosticExtensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "939b56d805e1fa4829080cc2d88565889a0e3838",
+      "size": 8118,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/939b56d805e1fa4829080cc2d88565889a0e3838"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/LexerDiagnosticMessages.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c39030b1c29ea2e7745b643406c60e709f743da4",
+      "size": 17957,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c39030b1c29ea2e7745b643406c60e709f743da4"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/MissingNodesError.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82009342a6aef39506322ec4b62ee93d4fea4119",
+      "size": 17499,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/82009342a6aef39506322ec4b62ee93d4fea4119"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/MissingTokenError.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a061d775701b9d0ed210bfa81c5ac570b19ef483",
+      "size": 7431,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a061d775701b9d0ed210bfa81c5ac570b19ef483"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/MultiLineStringLiteralDiagnosticsGenerator.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d8d2300920eaadc6a95911bec591adfe4c1c242",
+      "size": 6071,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1d8d2300920eaadc6a95911bec591adfe4c1c242"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/ParseDiagnosticsGenerator.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ddf99358b1f8b733f62ecba46ef1766420cc480",
+      "size": 76004,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8ddf99358b1f8b733f62ecba46ef1766420cc480"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/ParserDiagnosticMessages.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d67c1412de9cd2e48c64f475c87fa37210b3724f",
+      "size": 26522,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d67c1412de9cd2e48c64f475c87fa37210b3724f"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/PresenceUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb336c6434f1eb6e6a1cd395d82738060cf2b17e",
+      "size": 1856,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/bb336c6434f1eb6e6a1cd395d82738060cf2b17e"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/SyntaxExtensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d044e030de5ddeb86b93abe8a66d874362df991a",
+      "size": 7500,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d044e030de5ddeb86b93abe8a66d874362df991a"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/Utils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75a36ff6482d3b407018410c82072cad362449ee",
+      "size": 1959,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/75a36ff6482d3b407018410c82072cad362449ee"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/generated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5ac9a3765b0317caf9524672fa47feed951d6207",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/5ac9a3765b0317caf9524672fa47feed951d6207"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/generated/ChildNameForDiagnostics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f047dc2cc51931990dbda195ef6e16b975a2e32d",
+      "size": 13152,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f047dc2cc51931990dbda195ef6e16b975a2e32d"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/generated/SyntaxKindNameForDiagnostics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e3216cdcb8e28cdf3afba73683a5d1247a34b67",
+      "size": 13336,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6e3216cdcb8e28cdf3afba73683a5d1247a34b67"
+    },
+    {
+      "path": "Sources/SwiftParserDiagnostics/generated/TokenNameForDiagnostics.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f7cfd67902b80f348c28e07a753ad7ed7b853e0",
+      "size": 3345,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2f7cfd67902b80f348c28e07a753ad7ed7b853e0"
+    },
+    {
+      "path": "Sources/SwiftRefactor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2e5609cf60e6b50ab4a127f3b265a0ee0146899c",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/2e5609cf60e6b50ab4a127f3b265a0ee0146899c"
+    },
+    {
+      "path": "Sources/SwiftRefactor/AddSeparatorsToIntegerLiteral.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b87fff1d09c9aaa9790f65d82e08d349d1cce7b2",
+      "size": 2136,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b87fff1d09c9aaa9790f65d82e08d349d1cce7b2"
+    },
+    {
+      "path": "Sources/SwiftRefactor/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e478a428a797cda48cafc4b2d08bffeba778b66a",
+      "size": 1570,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e478a428a797cda48cafc4b2d08bffeba778b66a"
+    },
+    {
+      "path": "Sources/SwiftRefactor/CallLikeSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c620a52fe97264057649d803144b8cf28bd1d3ca",
+      "size": 1408,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c620a52fe97264057649d803144b8cf28bd1d3ca"
+    },
+    {
+      "path": "Sources/SwiftRefactor/CallToTrailingClosures.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3641494334e217435f4a51683c33296266aa8fbd",
+      "size": 6557,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3641494334e217435f4a51683c33296266aa8fbd"
+    },
+    {
+      "path": "Sources/SwiftRefactor/ConvertComputedPropertyToStored.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2c14b7378e8c1cede02a69dc9e49c9754c20eae",
+      "size": 3072,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f2c14b7378e8c1cede02a69dc9e49c9754c20eae"
+    },
+    {
+      "path": "Sources/SwiftRefactor/ConvertComputedPropertyToZeroParameterFunction.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6224fe7f31d4b11dedc211a3066c998e2cc3cd5",
+      "size": 4187,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e6224fe7f31d4b11dedc211a3066c998e2cc3cd5"
+    },
+    {
+      "path": "Sources/SwiftRefactor/ConvertStoredPropertyToComputed.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "625432e603c41b5666a8f547949b5035c8da9e4e",
+      "size": 2580,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/625432e603c41b5666a8f547949b5035c8da9e4e"
+    },
+    {
+      "path": "Sources/SwiftRefactor/ConvertZeroParameterFunctionToComputedProperty.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7215b2fe0284b1f718f34abff761aa28f09a3d77",
+      "size": 2278,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/7215b2fe0284b1f718f34abff761aa28f09a3d77"
+    },
+    {
+      "path": "Sources/SwiftRefactor/ExpandEditorPlaceholder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9ef7deaf9bfb8e9adbd7d12b1b5c8d4791aa32d",
+      "size": 16520,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a9ef7deaf9bfb8e9adbd7d12b1b5c8d4791aa32d"
+    },
+    {
+      "path": "Sources/SwiftRefactor/FormatRawStringLiteral.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8208b56ec33404b9826fb5f37d05647c8e4c61d",
+      "size": 2778,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c8208b56ec33404b9826fb5f37d05647c8e4c61d"
+    },
+    {
+      "path": "Sources/SwiftRefactor/IntegerLiteralUtilities.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3a95f2ef011bbe6a90952369338661b34d7cbf6",
+      "size": 1402,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c3a95f2ef011bbe6a90952369338661b34d7cbf6"
+    },
+    {
+      "path": "Sources/SwiftRefactor/MigrateToNewIfLetSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "268d6a51c4601257544e8897923e7dffa5c84fcc",
+      "size": 2558,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/268d6a51c4601257544e8897923e7dffa5c84fcc"
+    },
+    {
+      "path": "Sources/SwiftRefactor/OpaqueParameterToGeneric.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c001aa3127b18f68f03137a4e90f9816ede5b830",
+      "size": 7226,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c001aa3127b18f68f03137a4e90f9816ede5b830"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a50cc402beee343de0c7f2e5f6851c1f1302ef0",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/1a50cc402beee343de0c7f2e5f6851c1f1302ef0"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/AddPackageDependency.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c29c68b6420a435fa93279d76235a7abcf97f63",
+      "size": 4675,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0c29c68b6420a435fa93279d76235a7abcf97f63"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/AddPackageTarget.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "396053e271f2e563607a92f2154931d7d8924a3e",
+      "size": 5586,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/396053e271f2e563607a92f2154931d7d8924a3e"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/AddPluginUsage.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "420c6468f9e251f5a935f7df3a522045d7bbf321",
+      "size": 1846,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/420c6468f9e251f5a935f7df3a522045d7bbf321"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/AddProduct.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "366d543e6d9a8704ed656b1a6a73a80f7d73d2d9",
+      "size": 1844,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/366d543e6d9a8704ed656b1a6a73a80f7d73d2d9"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/AddSwiftSetting.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e51c294accb0f08b0d768a6359acb52b44c84e37",
+      "size": 4350,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e51c294accb0f08b0d768a6359acb52b44c84e37"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/AddTargetDependency.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b3e0fceef26bdb18d335b0c2f4ed4288f869f83",
+      "size": 2677,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9b3e0fceef26bdb18d335b0c2f4ed4288f869f83"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/ManifestEditError.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d87de2913941431af8869e0af531ef73ade74333",
+      "size": 1888,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d87de2913941431af8869e0af531ef73ade74333"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/ManifestSyntaxRepresentable.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00e35dd00ea31690af0ec3673d1c97d457a6283a",
+      "size": 1932,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/00e35dd00ea31690af0ec3673d1c97d457a6283a"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/PackageDependency.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3db844e3ddc970a21e3ad627c5af197598162e31",
+      "size": 4328,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3db844e3ddc970a21e3ad627c5af197598162e31"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/PackageTarget.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c12ba32eef47a2a462fcf7d3bc48ccd7cd6bd45",
+      "size": 4429,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5c12ba32eef47a2a462fcf7d3bc48ccd7cd6bd45"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/ProductDescription.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bf34d317eb61e55ee52c4aac2308aa8e08b08b5",
+      "size": 2905,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1bf34d317eb61e55ee52c4aac2308aa8e08b08b5"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/StringUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a964cc33ec85431bf63d19f8db11555198d0d1bd",
+      "size": 8649,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a964cc33ec85431bf63d19f8db11555198d0d1bd"
+    },
+    {
+      "path": "Sources/SwiftRefactor/PackageManifest/SyntaxEditUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f1abdb3a0cb7ed011661b3a000823c0b7f65a16",
+      "size": 17599,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2f1abdb3a0cb7ed011661b3a000823c0b7f65a16"
+    },
+    {
+      "path": "Sources/SwiftRefactor/RefactoringProvider.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8a7781784e4254ea33d546e2c63348e6034a967",
+      "size": 5762,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d8a7781784e4254ea33d546e2c63348e6034a967"
+    },
+    {
+      "path": "Sources/SwiftRefactor/RemoveSeparatorsFromIntegerLiteral.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea0e1aa95d8e71c7aa790d92d733ecd54fde15e8",
+      "size": 1227,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ea0e1aa95d8e71c7aa790d92d733ecd54fde15e8"
+    },
+    {
+      "path": "Sources/SwiftRefactor/SyntaxUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f27b5dc71fbe0d8e31e8edfc338cde98b31af31",
+      "size": 1257,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6f27b5dc71fbe0d8e31e8edfc338cde98b31af31"
+    },
+    {
+      "path": "Sources/SwiftSyntax-all",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "830712890e5cee82a2f695b72da53c697b08e4d1",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/830712890e5cee82a2f695b72da53c697b08e4d1"
+    },
+    {
+      "path": "Sources/SwiftSyntax-all/empty.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "191aecaa1a45a8b961316b40715be1c488b1dd88",
+      "size": 696,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/191aecaa1a45a8b961316b40715be1c488b1dd88"
+    },
+    {
+      "path": "Sources/SwiftSyntax",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "95d537555463fbc0251a3a57349ca859df6dc486",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/95d537555463fbc0251a3a57349ca859df6dc486"
+    },
+    {
+      "path": "Sources/SwiftSyntax/AbsolutePosition.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfd49784f7b1f759aaa8d5d869d80762e0541d60",
+      "size": 1267,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/dfd49784f7b1f759aaa8d5d869d80762e0541d60"
+    },
+    {
+      "path": "Sources/SwiftSyntax/AbsoluteSyntaxInfo.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8f21dfd9d111b9f38c02d35198f95581ed6ac640",
+      "size": 2292,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8f21dfd9d111b9f38c02d35198f95581ed6ac640"
+    },
+    {
+      "path": "Sources/SwiftSyntax/ArenaAllocatedBuffer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ed9a3aa3b273448304be4d499bc68f3a32d804b",
+      "size": 4030,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8ed9a3aa3b273448304be4d499bc68f3a32d804b"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Assert.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "197d2740b743a7dc43096980ca20bdcae070f86e",
+      "size": 3158,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/197d2740b743a7dc43096980ca20bdcae070f86e"
+    },
+    {
+      "path": "Sources/SwiftSyntax/BumpPtrAllocator.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0db0043483d9de27d1e234c6b14897f80dc2fc52",
+      "size": 6711,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0db0043483d9de27d1e234c6b14897f80dc2fc52"
+    },
+    {
+      "path": "Sources/SwiftSyntax/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfb8d888622e79f31179fe5caf540b5854e386a4",
+      "size": 2862,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/cfb8d888622e79f31179fe5caf540b5854e386a4"
+    },
+    {
+      "path": "Sources/SwiftSyntax/CommonAncestor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ccffd627a2954b642a158cb049c5072a17fa519",
+      "size": 1425,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6ccffd627a2954b642a158cb049c5072a17fa519"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Convenience.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36b2e11e9ac29ff5c7e6751f3ed06118ed8b0a62",
+      "size": 5421,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/36b2e11e9ac29ff5c7e6751f3ed06118ed8b0a62"
+    },
+    {
+      "path": "Sources/SwiftSyntax/CustomTraits.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1daddf5722876315c5ed48753601c2bd2dd01f5",
+      "size": 1829,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f1daddf5722876315c5ed48753601c2bd2dd01f5"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2bd606fd649ba98e1506c9adee8613a5142bc1ed",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/2bd606fd649ba98e1506c9adee8613a5142bc1ed"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Glossary.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d7a8a335a06c473a68e0f662e75790f6f79a05d",
+      "size": 1356,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9d7a8a335a06c473a68e0f662e75790f6f79a05d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8c800e03f20ca6a1e909820f02ce711eb38b038",
+      "size": 1494,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a8c800e03f20ca6a1e909820f02ce711eb38b038"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Macro Versioning.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe96bc4a94d41e2875aa5a183532886f10ce1153",
+      "size": 2638,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/fe96bc4a94d41e2875aa5a183532886f10ce1153"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/RawSyntaxValidation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d20ae442ad3d2ce1cebfe0bdcc3103fb008fc459",
+      "size": 2147,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d20ae442ad3d2ce1cebfe0bdcc3103fb008fc459"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb911f5055e38185a173935a28eb50b09dead9c9",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/eb911f5055e38185a173935a28eb50b09dead9c9"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step1.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7e46c6b397c72aa3c735d385ce57b1ea172aa24",
+      "size": 80,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e7e46c6b397c72aa3c735d385ce57b1ea172aa24"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step10.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b42272425325e6bfc0d0beed85bca7a75488557e",
+      "size": 2069,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b42272425325e6bfc0d0beed85bca7a75488557e"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step11.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85859238dcf640cdc0e52d599ac7fc6de471e01d",
+      "size": 2202,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/85859238dcf640cdc0e52d599ac7fc6de471e01d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step2.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b71a0415b9f2aaab60278cef5020c13cb335174",
+      "size": 694,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0b71a0415b9f2aaab60278cef5020c13cb335174"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step3.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52ae726c33ed6eb2f6f65c11b12a1a3a4dfb013c",
+      "size": 732,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/52ae726c33ed6eb2f6f65c11b12a1a3a4dfb013c"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step4.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "398323377c64a4f50ad2ddc47c5a89be9bc3aa52",
+      "size": 806,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/398323377c64a4f50ad2ddc47c5a89be9bc3aa52"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step5.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecb399b1d1a35da8031d73fe19a2ff4c36508b22",
+      "size": 1030,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ecb399b1d1a35da8031d73fe19a2ff4c36508b22"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step6.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0145467d2018b3fe5a8b0a35a963d4dafbe97e4f",
+      "size": 1285,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0145467d2018b3fe5a8b0a35a963d4dafbe97e4f"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step7.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1b69f749dea52e0ddef61d75975ddd8b70df99e",
+      "size": 1455,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f1b69f749dea52e0ddef61d75975ddd8b70df99e"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step8.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f14d5633b13f2a2b94e1b1b93ebaddadf0e78c15",
+      "size": 1785,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f14d5633b13f2a2b94e1b1b93ebaddadf0e78c15"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Formatter.step9.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cf549ec99d8db09c3b1a81342f4afd0ad478842",
+      "size": 1991,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9cf549ec99d8db09c3b1a81342f4afd0ad478842"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Package.step1.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81dc1eeab25f76c68e7472e4a65777d95a2f8141",
+      "size": 774,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/81dc1eeab25f76c68e7472e4a65777d95a2f8141"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Package.step2.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "badfca59f8e9fd84f2509284f1085cc70808294c",
+      "size": 787,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/badfca59f8e9fd84f2509284f1085cc70808294c"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Package.step3.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb572c9659abcd06c320f175fc8e35cafd9fbf24",
+      "size": 966,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/bb572c9659abcd06c320f175fc8e35cafd9fbf24"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Package.step4.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "131b4f36a9088f2d793de978ca8fbdd854781e84",
+      "size": 1125,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/131b4f36a9088f2d793de978ca8fbdd854781e84"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/Package.step5.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc392b00c0534b05e0c2279dcda0e67505f99a68",
+      "size": 1165,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/dc392b00c0534b05e0c2279dcda0e67505f99a68"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/importformatter-package-project.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a568a5078ccbdb8ab087c2f1d4c3bbeed50ea01",
+      "size": 199442,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5a568a5078ccbdb8ab087c2f1d4c3bbeed50ea01"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/swift-syntax.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a2170c7674b327bbe308e7c2d433e181c69aaf4",
+      "size": 3629,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9a2170c7674b327bbe308e7c2d433e181c69aaf4"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Resources/swift-syntax@2x.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a2170c7674b327bbe308e7c2d433e181c69aaf4",
+      "size": 3629,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9a2170c7674b327bbe308e7c2d433e181c69aaf4"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Tutorials",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4f81a3aa72630038b19cb8e9d28d7463461c0c5d",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/4f81a3aa72630038b19cb8e9d28d7463461c0c5d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Tutorials/SwiftSyntax By Example.tutorial",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "650dbd49f523d67bee5445992a33fdf1439e6d45",
+      "size": 9731,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/650dbd49f523d67bee5445992a33fdf1439e6d45"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Tutorials/Tutorial Table of Contents.tutorial",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "faf14ccdcd592831a5a89b0474ed2b48e35d9fcd",
+      "size": 467,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/faf14ccdcd592831a5a89b0474ed2b48e35d9fcd"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/Working with SwiftSyntax.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d212b5b292f51a1c8c1f97bd6b9d2c281261ece",
+      "size": 10572,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2d212b5b292f51a1c8c1f97bd6b9d2c281261ece"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/generated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f54a0246a1701d98bdabd4ca588c137e878873c1",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/f54a0246a1701d98bdabd4ca588c137e878873c1"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Documentation.docc/generated/SwiftSyntax.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64ce006603e4b19caa38d581ed0ba0ba6a9f168c",
+      "size": 15755,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/64ce006603e4b19caa38d581ed0ba0ba6a9f168c"
+    },
+    {
+      "path": "Sources/SwiftSyntax/EditorPlaceholder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c03d769688e55c015650fcb93df036be8bfcebc",
+      "size": 3881,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6c03d769688e55c015650fcb93df036be8bfcebc"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Identifier.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "119a13948d62e094527100027a9cf521e91f294d",
+      "size": 4090,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/119a13948d62e094527100027a9cf521e91f294d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/MemoryLayout.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89e35bc11090fdbe9efc435392654ca843c355a4",
+      "size": 1382,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/89e35bc11090fdbe9efc435392654ca843c355a4"
+    },
+    {
+      "path": "Sources/SwiftSyntax/MissingNodeInitializers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "532f53a70cab3b65e83199b4ed303036e83b75bb",
+      "size": 2945,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/532f53a70cab3b65e83199b4ed303036e83b75bb"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Raw",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56dfb2baca61ca338cc166ac99e82c2da566e546",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/56dfb2baca61ca338cc166ac99e82c2da566e546"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Raw/RawSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "519e73902d8ed5c82de295ad88949a4810db4073",
+      "size": 32147,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/519e73902d8ed5c82de295ad88949a4810db4073"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Raw/RawSyntaxArena.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb6a163b8126c3db9ce90a90500a4dbfd41fc427",
+      "size": 13090,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/cb6a163b8126c3db9ce90a90500a4dbfd41fc427"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Raw/RawSyntaxLayoutView.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7e48b4284d5103054556394f0f38be748c74093",
+      "size": 5123,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c7e48b4284d5103054556394f0f38be748c74093"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Raw/RawSyntaxNodeProtocol.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2508778884d3241e84de33a7ab53595da7a2871f",
+      "size": 7869,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2508778884d3241e84de33a7ab53595da7a2871f"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Raw/RawSyntaxTokenView.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "098f022e0fd1f43d1a945d7ef4270f01e33a44c3",
+      "size": 10850,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/098f022e0fd1f43d1a945d7ef4270f01e33a44c3"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SourceEdit.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b65e97708dc4aee8684c5b8b51aa9d7d4e9e3aa",
+      "size": 5374,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8b65e97708dc4aee8684c5b8b51aa9d7d4e9e3aa"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SourceLength.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5f13b61702c53ede28a662df5ac79840ce12197",
+      "size": 3121,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c5f13b61702c53ede28a662df5ac79840ce12197"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SourceLocation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb9e63ebf78d3c784928c7f2cbc26ed88da76497",
+      "size": 31669,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/fb9e63ebf78d3c784928c7f2cbc26ed88da76497"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SourcePresence.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2c4c2c4c13aa00f1190bc3bfc56b19f0d585229a",
+      "size": 964,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2c4c2c4c13aa00f1190bc3bfc56b19f0d585229a"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SwiftSyntaxCompatibility.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3adfb33fbd03c614cc7d284bbc5da0930beb9ef1",
+      "size": 38401,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3adfb33fbd03c614cc7d284bbc5da0930beb9ef1"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Syntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "75d05295a70b2bb553886ef55f755efbdbda8705",
+      "size": 20914,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/75d05295a70b2bb553886ef55f755efbdbda8705"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SyntaxChildren.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e02bdb4fda934f2d084b9b9f0a2ec2cfcfafbd34",
+      "size": 4120,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e02bdb4fda934f2d084b9b9f0a2ec2cfcfafbd34"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SyntaxCollection.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af9341a5a2c6354a5c1f72eeaab66f44cc5bc724",
+      "size": 18545,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/af9341a5a2c6354a5c1f72eeaab66f44cc5bc724"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SyntaxHashable.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4f87b652334b2570d5ebd7841ea1baaaca06096",
+      "size": 922,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c4f87b652334b2570d5ebd7841ea1baaaca06096"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SyntaxIdentifier.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "74c3f3b5ef353e3ee4d85c6eeadedd755b96df6d",
+      "size": 4773,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/74c3f3b5ef353e3ee4d85c6eeadedd755b96df6d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SyntaxNodeStructure.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c6de9f98977d76b1d47e4c986cfa282dd67d102",
+      "size": 1659,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4c6de9f98977d76b1d47e4c986cfa282dd67d102"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SyntaxProtocol.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e4ba1decfcc9cb9e295360391bcad205401e064",
+      "size": 26764,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5e4ba1decfcc9cb9e295360391bcad205401e064"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SyntaxText.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc274a177a8b830126462d431d8fc8855964abd5",
+      "size": 11079,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/cc274a177a8b830126462d431d8fc8855964abd5"
+    },
+    {
+      "path": "Sources/SwiftSyntax/SyntaxTreeViewMode.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "485e535d8db49642726e9da9f8e6e4f74b12c480",
+      "size": 1689,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/485e535d8db49642726e9da9f8e6e4f74b12c480"
+    },
+    {
+      "path": "Sources/SwiftSyntax/TokenDiagnostic.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edeb28320531e35ab302c7d33d4502fa53c412eb",
+      "size": 7371,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/edeb28320531e35ab302c7d33d4502fa53c412eb"
+    },
+    {
+      "path": "Sources/SwiftSyntax/TokenSequence.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1567919c451a905cfdef673fcec5026ee6032b44",
+      "size": 6752,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1567919c451a905cfdef673fcec5026ee6032b44"
+    },
+    {
+      "path": "Sources/SwiftSyntax/TokenSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e00421f262d45c9b8b8726827b50f89ad5d61500",
+      "size": 7489,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e00421f262d45c9b8b8726827b50f89ad5d61500"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Trivia.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f45f8a781f99048532d74da1d42f21e426d85e70",
+      "size": 7334,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f45f8a781f99048532d74da1d42f21e426d85e70"
+    },
+    {
+      "path": "Sources/SwiftSyntax/Utils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f87dd535ae5944c96b0dc31ad1e1e53cb86f39d0",
+      "size": 4298,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f87dd535ae5944c96b0dc31ad1e1e53cb86f39d0"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6a67c846df7f29d01509f2a8eff70570f32aa75f",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/6a67c846df7f29d01509f2a8eff70570f32aa75f"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/ChildNameForKeyPath.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db537fb970b42f38f8c2a67a5f141e08adfb4dd1",
+      "size": 170029,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/db537fb970b42f38f8c2a67a5f141e08adfb4dd1"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/Keyword.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31007c1ade16ab673428d567805e9a24657c9772",
+      "size": 20638,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/31007c1ade16ab673428d567805e9a24657c9772"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/RenamedChildrenCompatibility.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d82e4cbad38714cf26a093c91db95afb4ac27f1",
+      "size": 279285,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1d82e4cbad38714cf26a093c91db95afb4ac27f1"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/RenamedNodesCompatibility.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3aa308c9fc13ec8b231eb300101d2d9ef91ac712",
+      "size": 21060,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3aa308c9fc13ec8b231eb300101d2d9ef91ac712"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/SyntaxAnyVisitor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5245e8feaf50bd0b3e365945c7437ce4b6a460d",
+      "size": 73105,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b5245e8feaf50bd0b3e365945c7437ce4b6a460d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/SyntaxBaseNodes.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "971e335ecd5a4756013442a4a544b93b461ff05d",
+      "size": 78508,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/971e335ecd5a4756013442a4a544b93b461ff05d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/SyntaxCollections.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "529785471e99fb03dec87b8114d5fac9e75652fe",
+      "size": 67253,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/529785471e99fb03dec87b8114d5fac9e75652fe"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/SyntaxEnum.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83e7c87c244d3fa9a62302c3b8a367f9947f0749",
+      "size": 60981,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/83e7c87c244d3fa9a62302c3b8a367f9947f0749"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/SyntaxKind.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51d1448bdd390edde6d27f36e85623685ec3cd20",
+      "size": 32573,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/51d1448bdd390edde6d27f36e85623685ec3cd20"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/SyntaxRewriter.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57adc1e1096e6a9c653c5fc11e48d3d9bd77bf8a",
+      "size": 196242,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/57adc1e1096e6a9c653c5fc11e48d3d9bd77bf8a"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/SyntaxTraits.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "670ea0e0dac4929d9ea976cb72ad939361124461",
+      "size": 28737,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/670ea0e0dac4929d9ea976cb72ad939361124461"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/SyntaxVisitor.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76b2db0d083a1154ac80498f464cac131ccc4a41",
+      "size": 268584,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/76b2db0d083a1154ac80498f464cac131ccc4a41"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/TokenKind.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab41c2cd4c7de30b817ffc968c4a3633fed21a6d",
+      "size": 26857,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ab41c2cd4c7de30b817ffc968c4a3633fed21a6d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/Tokens.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30ec618c5a48a28118acfdd7ea4840740b19456a",
+      "size": 17234,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/30ec618c5a48a28118acfdd7ea4840740b19456a"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/TriviaPieces.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "448a692506a63d0c4dc3479a09f5a1eb36528303",
+      "size": 16312,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/448a692506a63d0c4dc3479a09f5a1eb36528303"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "618e64a9f5d27b40c589d85ec6cabaa765047477",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/618e64a9f5d27b40c589d85ec6cabaa765047477"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesAB.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a04d4c66d1a69053871fb22e008ea490b17e0c87",
+      "size": 87414,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a04d4c66d1a69053871fb22e008ea490b17e0c87"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesC.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "030c263c433d55b4c5346db02084ab4d386b35ee",
+      "size": 78045,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/030c263c433d55b4c5346db02084ab4d386b35ee"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesD.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f27b8eaff232b22bebd4f1979a6ba0f33880626b",
+      "size": 71549,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f27b8eaff232b22bebd4f1979a6ba0f33880626b"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesEF.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f88c6b06b17dc045321e1542d25d00ab95cc433",
+      "size": 79977,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/7f88c6b06b17dc045321e1542d25d00ab95cc433"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesGHI.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "76ca388607166c239f0a808e837389133fb8cfb3",
+      "size": 81041,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/76ca388607166c239f0a808e837389133fb8cfb3"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesJKLMN.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df1142fe80ff5c795b459639302f66f2249d6059",
+      "size": 100643,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/df1142fe80ff5c795b459639302f66f2249d6059"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesOP.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8414accabb04fb1664c4d2c9dbc4b35fe569dec2",
+      "size": 84955,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8414accabb04fb1664c4d2c9dbc4b35fe569dec2"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesQRS.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3092d21e4579a1852860b1fcdee32728d20be5f6",
+      "size": 81942,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3092d21e4579a1852860b1fcdee32728d20be5f6"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxNodesTUVWXYZ.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b61e8335b431f298f55f9facc29b94bdbcfea46e",
+      "size": 86051,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b61e8335b431f298f55f9facc29b94bdbcfea46e"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/raw/RawSyntaxValidation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2592e549bbd9b6fe10a280a022c856d3d1bb5125",
+      "size": 237980,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2592e549bbd9b6fe10a280a022c856d3d1bb5125"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d312850c1b2783fc1aa172d095e62e03ed69038d",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/d312850c1b2783fc1aa172d095e62e03ed69038d"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesAB.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae96eca8816cd1328fd60e43d68c07c13dc5e8a5",
+      "size": 212737,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ae96eca8816cd1328fd60e43d68c07c13dc5e8a5"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesC.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c1de3f319e97e7e48fa60c3516d6c8dbf89f57f",
+      "size": 163973,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0c1de3f319e97e7e48fa60c3516d6c8dbf89f57f"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesD.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "235fcba86a2c0682bfd490aa44847136872b0da5",
+      "size": 147033,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/235fcba86a2c0682bfd490aa44847136872b0da5"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesEF.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41c56cd8b1d33881d7faa520d61de5db410cbd80",
+      "size": 179542,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/41c56cd8b1d33881d7faa520d61de5db410cbd80"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesGHI.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0882c9acf8e6039a1d04787e60d207b9fe6933f",
+      "size": 183043,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f0882c9acf8e6039a1d04787e60d207b9fe6933f"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesJKLMN.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92bbb9e6f28022f045d9990927412f73618bdfb9",
+      "size": 222248,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/92bbb9e6f28022f045d9990927412f73618bdfb9"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesOP.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e58d1c85e698dbb8bd54a1ad68cda2ed9c1eb06",
+      "size": 172493,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3e58d1c85e698dbb8bd54a1ad68cda2ed9c1eb06"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesQRS.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ad996a81d0ec50e0c0f92c51c4ace8a98d2baaa",
+      "size": 172204,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1ad996a81d0ec50e0c0f92c51c4ace8a98d2baaa"
+    },
+    {
+      "path": "Sources/SwiftSyntax/generated/syntaxNodes/SyntaxNodesTUVWXYZ.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "40a3bc8890cdb6ce7e5843c48388aa7233227779",
+      "size": 176586,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/40a3bc8890cdb6ce7e5843c48388aa7233227779"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7404ff2bbb85ad28993bc693f345e4ce2d8e87e5",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/7404ff2bbb85ad28993bc693f345e4ce2d8e87e5"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a05ff828483eae03fef164d46fc86e047d844eef",
+      "size": 1347,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a05ff828483eae03fef164d46fc86e047d844eef"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/ConvenienceInitializers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d31d56ba7db5305f81e3d939418db871dc5cd07e",
+      "size": 13940,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d31d56ba7db5305f81e3d939418db871dc5cd07e"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/DeclSyntaxParseable.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00ef9ce5bcef98e00c8b9a2c2c31e018183233a8",
+      "size": 2667,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/00ef9ce5bcef98e00c8b9a2c2c31e018183233a8"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/Documentation.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cbbad608da7b071e392dfce473cb0fd09156cde8",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/cbbad608da7b071e392dfce473cb0fd09156cde8"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/Documentation.docc/Index.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e3830ab20ac3c64ed984b6558f2394481232610",
+      "size": 124,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/8e3830ab20ac3c64ed984b6558f2394481232610"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/Indenter.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56c4453b1e08b245a79a46c31eaf1c2448bcefb8",
+      "size": 1860,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/56c4453b1e08b245a79a46c31eaf1c2448bcefb8"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/ListBuilder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "804a3f3a232c9acdab0171538ee830f772f971c4",
+      "size": 4568,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/804a3f3a232c9acdab0171538ee830f772f971c4"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/ResultBuilderExtensions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de2a66787d580665a4fa63163cf962d007c58f30",
+      "size": 5131,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/de2a66787d580665a4fa63163cf962d007c58f30"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/SwiftSyntaxBuilderCompatibility.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f40eca51f304f73b65a83b6f9e277efc30193bb4",
+      "size": 12326,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f40eca51f304f73b65a83b6f9e277efc30193bb4"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/Syntax+StringInterpolation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c73835c7a84d8c9a362a8303f30663c0f19d9953",
+      "size": 19312,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c73835c7a84d8c9a362a8303f30663c0f19d9953"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/SyntaxNodeWithBody.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4255b47c5932863b9e7120a88cf03b133db8732f",
+      "size": 14470,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4255b47c5932863b9e7120a88cf03b133db8732f"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/SyntaxParsable+ExpressibleByStringInterpolation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "662106b24b73b8a3b186fc67777fcfe804047e72",
+      "size": 3773,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/662106b24b73b8a3b186fc67777fcfe804047e72"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/ValidatingSyntaxNodes.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9136aeb9adce36112d8f80035e78907f45da7c6e",
+      "size": 2341,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9136aeb9adce36112d8f80035e78907f45da7c6e"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/WithTrailingCommaSyntax+EnsuringTrailingComma.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "966f542cdc6f388d42d55c4b22106e7952689b88",
+      "size": 804,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/966f542cdc6f388d42d55c4b22106e7952689b88"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/generated",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2c5876673304c3d4ad2d918ec5640e9d4dcd01dc",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/2c5876673304c3d4ad2d918ec5640e9d4dcd01dc"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/generated/BuildableNodes.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22a143f7258ae0fcccbc0042eac765f167e98360",
+      "size": 68121,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/22a143f7258ae0fcccbc0042eac765f167e98360"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/generated/RenamedChildrenBuilderCompatibility.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a60a0524b6f79803a357b75bba131d606a2f2806",
+      "size": 50034,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a60a0524b6f79803a357b75bba131d606a2f2806"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/generated/ResultBuilders.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1c1a59882587fe5e8ca3b013e12160a3ba239a1",
+      "size": 21773,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f1c1a59882587fe5e8ca3b013e12160a3ba239a1"
+    },
+    {
+      "path": "Sources/SwiftSyntaxBuilder/generated/SyntaxExpressibleByStringInterpolationConformances.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1985def3d8c675231571e587097075033ca16ce",
+      "size": 13077,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a1985def3d8c675231571e587097075033ca16ce"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1f54c0adb7e891dac6fcc6379d68c79afb9cd7c6",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/1f54c0adb7e891dac6fcc6379d68c79afb9cd7c6"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/BasicMacroExpansionContext.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5443b3ecb74498631ef93f5edbfe2bb2e5da6575",
+      "size": 9856,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5443b3ecb74498631ef93f5edbfe2bb2e5da6575"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "892a2e30fe651fafe321e2c0d341adb9a9fc10ab",
+      "size": 474,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/892a2e30fe651fafe321e2c0d341adb9a9fc10ab"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/FunctionParameterUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "070afd3f1a6d15122e204bd48e5840d8d27090fa",
+      "size": 1210,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/070afd3f1a6d15122e204bd48e5840d8d27090fa"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/IndentationUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7ddfc6119b6a4d1f6e60119e990db252c89f08f",
+      "size": 3166,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b7ddfc6119b6a4d1f6e60119e990db252c89f08f"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/MacroArgument.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9107d8df6f043d4a53314c47e088f5259d5107a9",
+      "size": 4462,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9107d8df6f043d4a53314c47e088f5259d5107a9"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/MacroExpansion.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffd31a16ef42ec53b46ee9fadacedd40b1e09b73",
+      "size": 22266,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ffd31a16ef42ec53b46ee9fadacedd40b1e09b73"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/MacroExpansionDiagnosticMessages.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e55dd02bbd25955dde3d1e3644670a4de4dcb0c",
+      "size": 1226,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9e55dd02bbd25955dde3d1e3644670a4de4dcb0c"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/MacroReplacement.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "697b802972d6fe171bbed7e69c97d9f884923753",
+      "size": 13198,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/697b802972d6fe171bbed7e69c97d9f884923753"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/MacroSpec.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcad671f9649e60fd70d34db10af9fe9f3611dad",
+      "size": 1790,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/fcad671f9649e60fd70d34db10af9fe9f3611dad"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacroExpansion/MacroSystem.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de6adebf527d09c1bcc57d152b6708cd17ceaf6b",
+      "size": 55751,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/de6adebf527d09c1bcc57d152b6708cd17ceaf6b"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e10b7c0376b81e2d5c8fe5e4cf7f4118f9ea9201",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/e10b7c0376b81e2d5c8fe5e4cf7f4118f9ea9201"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/AbstractSourceLocation.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3627cf2b9fcc151c2600ffe9b9b644da87c4a7e8",
+      "size": 1507,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3627cf2b9fcc151c2600ffe9b9b644da87c4a7e8"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b89a2b13826d66c954803634ea6f3b6259c0ef4f",
+      "size": 1127,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/b89a2b13826d66c954803634ea6f3b6259c0ef4f"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroExpansionContext.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53bee858e3d0f2c175ae3b4c96a88b9b4588cf7c",
+      "size": 7316,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/53bee858e3d0f2c175ae3b4c96a88b9b4588cf7c"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroExpansionDiagnosticMessages.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b13f8b61561cd2a066b08a27825406efbec341a",
+      "size": 3037,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/0b13f8b61561cd2a066b08a27825406efbec341a"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf5da91112aa200ae17b96a267677840990a18d9",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/cf5da91112aa200ae17b96a267677840990a18d9"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/AccessorMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "136b1075b24fadcc580d085e28db591b19026bc0",
+      "size": 1069,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/136b1075b24fadcc580d085e28db591b19026bc0"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/AttachedMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98c5db13fb36922d8d11cdd548724dc3df87b6d8",
+      "size": 690,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/98c5db13fb36922d8d11cdd548724dc3df87b6d8"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/BodyMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f741de36bc41578f350a9cca2dd8f6e83d49c36c",
+      "size": 2027,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f741de36bc41578f350a9cca2dd8f6e83d49c36c"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/CodeItemMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "878b80e61e609f7116aa807a77e2d735a56248f9",
+      "size": 1031,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/878b80e61e609f7116aa807a77e2d735a56248f9"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/DeclarationMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c31deedce81d5e1f3a26ada0ae560ad5b1d5c22",
+      "size": 1515,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1c31deedce81d5e1f3a26ada0ae560ad5b1d5c22"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/ExpressionMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d33ba705853f30f1c7fb7a7eb1aea25def4bc3f",
+      "size": 1006,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4d33ba705853f30f1c7fb7a7eb1aea25def4bc3f"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/ExtensionMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84b4b51bd57b1a252373ca72d29b0179b4183bce",
+      "size": 1746,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/84b4b51bd57b1a252373ca72d29b0179b4183bce"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/FreestandingMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c58616e8d81b22da614b4ed2e4146e67700bb7a",
+      "size": 658,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1c58616e8d81b22da614b4ed2e4146e67700bb7a"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/Macro+Format.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67e58c897625799a17b607bee8f56caee938e3db",
+      "size": 1080,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/67e58c897625799a17b607bee8f56caee938e3db"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/Macro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3045b3644756eb6bf97ab57c8308d6c54019ce59",
+      "size": 1023,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3045b3644756eb6bf97ab57c8308d6c54019ce59"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/MemberAttributeMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24a7c378f19103ec0330674bd9a9f4774e98dd35",
+      "size": 1493,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/24a7c378f19103ec0330674bd9a9f4774e98dd35"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/MemberMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b56f82037f7ecd22f166cbc56d523831c47856c",
+      "size": 3879,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1b56f82037f7ecd22f166cbc56d523831c47856c"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/PeerMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cd8f798f9c3cfa5d3c9c8fe8db716821b3f3527",
+      "size": 1104,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6cd8f798f9c3cfa5d3c9c8fe8db716821b3f3527"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/MacroProtocols/PreambleMacro.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8165137956eda35147f07ad6d5c40217f128a52",
+      "size": 1394,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c8165137956eda35147f07ad6d5c40217f128a52"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/SwiftSyntaxMacros.docc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c7e6b3b75b6809475a92d739484da276c8f6e899",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/c7e6b3b75b6809475a92d739484da276c8f6e899"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/SwiftSyntaxMacros.docc/Info.plist",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41f6cea50bcc2832014a530f9aca04ae91cc197b",
+      "size": 1046,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/41f6cea50bcc2832014a530f9aca04ae91cc197b"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/SwiftSyntaxMacros.docc/SwiftSyntaxMacros.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d90c6d5256412e8d0f4f664ac8433eba0aba28cf",
+      "size": 16238,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d90c6d5256412e8d0f4f664ac8433eba0aba28cf"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacros/Syntax+LexicalContext.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9132040dff0bcde599c714dd57a730cbcede6c9",
+      "size": 6530,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f9132040dff0bcde599c714dd57a730cbcede6c9"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacrosGenericTestSupport",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5d5da864d89a448154b30ce92e7d49cc7746eef7",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/5d5da864d89a448154b30ce92e7d49cc7746eef7"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacrosGenericTestSupport/Assertions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3450dbaac0602b64d1f3697a410227da686ad315",
+      "size": 23073,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3450dbaac0602b64d1f3697a410227da686ad315"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacrosTestSupport",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c01f71676835edf85687af80073e0506e79391f0",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/c01f71676835edf85687af80073e0506e79391f0"
+    },
+    {
+      "path": "Sources/SwiftSyntaxMacrosTestSupport/Assertions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac8694bc61498b391e8c5e044956fbe4188c9d31",
+      "size": 6720,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ac8694bc61498b391e8c5e044956fbe4188c9d31"
+    },
+    {
+      "path": "Sources/SwiftWarningControl",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7bf84f86a984c5c0679382ea2355ed64e166dd78",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/7bf84f86a984c5c0679382ea2355ed64e166dd78"
+    },
+    {
+      "path": "Sources/SwiftWarningControl/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f102e2358b9c430311f85ffdf3abc643a01fdb2e",
+      "size": 674,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/f102e2358b9c430311f85ffdf3abc643a01fdb2e"
+    },
+    {
+      "path": "Sources/SwiftWarningControl/DiagnosticGroupInheritanceTree.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4066dc43f83c7dee15c6ac31e0a9ff49ed4b88a",
+      "size": 2635,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c4066dc43f83c7dee15c6ac31e0a9ff49ed4b88a"
+    },
+    {
+      "path": "Sources/SwiftWarningControl/SwiftWarningControl.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d6a78f00457d4cd205c4ec9e4ed9465339b0505",
+      "size": 1602,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9d6a78f00457d4cd205c4ec9e4ed9465339b0505"
+    },
+    {
+      "path": "Sources/SwiftWarningControl/SyntaxProtocol+WarningControl.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b058d721a08ce6d886cbf2a64ed54f804669758",
+      "size": 1895,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2b058d721a08ce6d886cbf2a64ed54f804669758"
+    },
+    {
+      "path": "Sources/SwiftWarningControl/WarningControlDeclSyntax.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6480600645ab55421e976309df9b1085fd4a166a",
+      "size": 2008,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6480600645ab55421e976309df9b1085fd4a166a"
+    },
+    {
+      "path": "Sources/SwiftWarningControl/WarningControlRegionBuilder.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "285864bd2ee96507beb4178ab58f9d9349ff406f",
+      "size": 3198,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/285864bd2ee96507beb4178ab58f9d9349ff406f"
+    },
+    {
+      "path": "Sources/SwiftWarningControl/WarningControlRegions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e045a160e7248965d69f18fcd9efcd97be94579",
+      "size": 12367,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5e045a160e7248965d69f18fcd9efcd97be94579"
+    },
+    {
+      "path": "Sources/SwiftWarningControl/WarningGroupControl.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0e9a4d2b7b2696d7e61bbec083a4a8b9b0e9eb7",
+      "size": 877,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d0e9a4d2b7b2696d7e61bbec083a4a8b9b0e9eb7"
+    },
+    {
+      "path": "Sources/VersionMarkerModules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "330600819fbade29ae8d6f3646d6e7d7abd411cf",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/330600819fbade29ae8d6f3646d6e7d7abd411cf"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "609f1d308d47a356364e47e119c2956282fbfb6c",
+      "size": 986,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/609f1d308d47a356364e47e119c2956282fbfb6c"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax509",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3c52c203790a9aec98b602c51563f039729c09e5",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/3c52c203790a9aec98b602c51563f039729c09e5"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax509/Empty.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a88215cc57fb57c35880ce472eada0c1589f25d0",
+      "size": 723,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a88215cc57fb57c35880ce472eada0c1589f25d0"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax510",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c49ac9caf0982adcad9033358fe745fef16826fd",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/c49ac9caf0982adcad9033358fe745fef16826fd"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax510/Empty.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77a8628a3a824167e90f8853d599f56be81b584c",
+      "size": 723,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/77a8628a3a824167e90f8853d599f56be81b584c"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax600",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f48a8ab7affdf2ea4607f2cbe263b3e5da86263",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/5f48a8ab7affdf2ea4607f2cbe263b3e5da86263"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax600/Empty.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06eae434f8c8689779287e856d67631c6d5905a3",
+      "size": 723,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/06eae434f8c8689779287e856d67631c6d5905a3"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax601",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "530e5836b52ba6e87ca542dd642950331ab61f74",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/530e5836b52ba6e87ca542dd642950331ab61f74"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax601/Empty.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f93369e93adf2503e27ac43bffa9e9f66bbfea4",
+      "size": 723,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9f93369e93adf2503e27ac43bffa9e9f66bbfea4"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax602",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10bbffbabc44f98a525da09049f7cb07e1bde483",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/10bbffbabc44f98a525da09049f7cb07e1bde483"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax602/Empty.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a86367a450d63de23490979c7e54c9c3ae8eade6",
+      "size": 723,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a86367a450d63de23490979c7e54c9c3ae8eade6"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax603",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd92ea2a2f52fb5267a9633111647bbb62ab8d04",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/cd92ea2a2f52fb5267a9633111647bbb62ab8d04"
+    },
+    {
+      "path": "Sources/VersionMarkerModules/SwiftSyntax603/Empty.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc2ffc3c32ae39148d20156f227fd1551c6040f7",
+      "size": 723,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/cc2ffc3c32ae39148d20156f227fd1551c6040f7"
+    },
+    {
+      "path": "Sources/_InstructionCounter",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43a42cd258548f2d6ea20f2090ed320d56718693",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/43a42cd258548f2d6ea20f2090ed320d56718693"
+    },
+    {
+      "path": "Sources/_InstructionCounter/include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "76d61d4eaa0ad60599e4ebdd0f213492ddbc190e",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/76d61d4eaa0ad60599e4ebdd0f213492ddbc190e"
+    },
+    {
+      "path": "Sources/_InstructionCounter/include/InstructionsExecuted.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af9d9a4157b70ef6dc9ba080e3773b10062930ba",
+      "size": 711,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/af9d9a4157b70ef6dc9ba080e3773b10062930ba"
+    },
+    {
+      "path": "Sources/_InstructionCounter/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "03f2b657d9647b0c7f40bc34eb4cb8b704b992cb",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/03f2b657d9647b0c7f40bc34eb4cb8b704b992cb"
+    },
+    {
+      "path": "Sources/_InstructionCounter/src/InstructionsExecuted.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4df6fa632f23d93e8e926cf10239e5b0cef1a153",
+      "size": 1028,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4df6fa632f23d93e8e926cf10239e5b0cef1a153"
+    },
+    {
+      "path": "Sources/_SwiftLibraryPluginProviderCShims",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "486e4480262fe2cc74a15eee21723536f92a1fda",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/486e4480262fe2cc74a15eee21723536f92a1fda"
+    },
+    {
+      "path": "Sources/_SwiftLibraryPluginProviderCShims/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "243ea73d1a630a30c8b472f9ec5f57cf39cbc93e",
+      "size": 293,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/243ea73d1a630a30c8b472f9ec5f57cf39cbc93e"
+    },
+    {
+      "path": "Sources/_SwiftLibraryPluginProviderCShims/LoadLibrary.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55c0e29c46190e5115828c2a5a7777e65f787bd5",
+      "size": 850,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/55c0e29c46190e5115828c2a5a7777e65f787bd5"
+    },
+    {
+      "path": "Sources/_SwiftLibraryPluginProviderCShims/include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d29de1b44501dca135f30e0d42a688be5525f5de",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/d29de1b44501dca135f30e0d42a688be5525f5de"
+    },
+    {
+      "path": "Sources/_SwiftLibraryPluginProviderCShims/include/LoadLibrary.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c80ec25f01b1897db91fc82fb2a263d2f0daaef3",
+      "size": 865,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/c80ec25f01b1897db91fc82fb2a263d2f0daaef3"
+    },
+    {
+      "path": "Sources/_SwiftLibraryPluginProviderCShims/include/module.modulemap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "feb00a746946c248cb459dffe7c89d31a37ab075",
+      "size": 81,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/feb00a746946c248cb459dffe7c89d31a37ab075"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d65dd71610cbc707b41596a9cbce864af0aee676",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/d65dd71610cbc707b41596a9cbce864af0aee676"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/CMakeLists.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9505468103b3576ff0ce41bbd0031757de565a28",
+      "size": 280,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/9505468103b3576ff0ce41bbd0031757de565a28"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/PlatformMutex.c",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3ceede13ef5aa97b423182aa218a023379a090d",
+      "size": 2705,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a3ceede13ef5aa97b423182aa218a023379a090d"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "924b08752a94e72ac18d8bd78174ff3dafe409e3",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/924b08752a94e72ac18d8bd78174ff3dafe409e3"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include/Atomics.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5111b81682dd2088a93c90fa1c6b09e949dec67",
+      "size": 1678,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e5111b81682dd2088a93c90fa1c6b09e949dec67"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include/PlatformMutex.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "184368f2c4eb81424d8cc368154f10cbaf81d16a",
+      "size": 1181,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/184368f2c4eb81424d8cc368154f10cbaf81d16a"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include/SwiftSyntaxCShims.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbe705c5808093e29e8e324d7126512d7ca7455b",
+      "size": 646,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/cbe705c5808093e29e8e324d7126512d7ca7455b"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include/_bridging.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d4c83f2771b82741323d31f011ed989e87482ff",
+      "size": 743,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/5d4c83f2771b82741323d31f011ed989e87482ff"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include/_includes.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1502181da49e30954d314f99ab20f0802cb96177",
+      "size": 1266,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/1502181da49e30954d314f99ab20f0802cb96177"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include/module.modulemap",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a37c41fa2f9419b5049f9378e01805355ebc2c06",
+      "size": 207,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/a37c41fa2f9419b5049f9378e01805355ebc2c06"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include/swiftsyntax_errno.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "756574e4cb18be92983325f2fd29961bc13d2003",
+      "size": 820,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/756574e4cb18be92983325f2fd29961bc13d2003"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxCShims/include/swiftsyntax_stdio.h",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe28242a261808c19b06da45e04c9ae8efc6b515",
+      "size": 1046,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/fe28242a261808c19b06da45e04c9ae8efc6b515"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxGenericTestSupport",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2e28b8c6aff2c456ef07737595eb8f964b6db16",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/b2e28b8c6aff2c456ef07737595eb8f964b6db16"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxGenericTestSupport/AssertEqualWithDiff.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be336fe0d83223eb35a235c6370a4a0c8625bbbc",
+      "size": 4194,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/be336fe0d83223eb35a235c6370a4a0c8625bbbc"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxGenericTestSupport/String+TrimmingTrailingWhitespace.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2134b5632c565903d9bbaabe1b5c7a0e823c3111",
+      "size": 951,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/2134b5632c565903d9bbaabe1b5c7a0e823c3111"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxTestSupport",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9dd1053de739738de0078fdffc1f1b1f9d460b6c",
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/trees/9dd1053de739738de0078fdffc1f1b1f9d460b6c"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxTestSupport/AssertEqualWithDiff.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e8665f3a868b1b1098860b26b7f46bb2d720a14",
+      "size": 3330,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/6e8665f3a868b1b1098860b26b7f46bb2d720a14"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxTestSupport/IncrementalParseTestUtils.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6ff3f9e2ef27f58908c6308b224a63bb5e7458a",
+      "size": 8735,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/e6ff3f9e2ef27f58908c6308b224a63bb5e7458a"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxTestSupport/LocationMarkers.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cc67ff1319a1cad78a3dc87b034b0e917b11643",
+      "size": 2303,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/4cc67ff1319a1cad78a3dc87b034b0e917b11643"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxTestSupport/LongTestsDisabled.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3601cad082183661c4836348c1ae3a3e1c015035",
+      "size": 770,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/3601cad082183661c4836348c1ae3a3e1c015035"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxTestSupport/Syntax+Assertions.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3088107f8f4eed64a3f9928e91bb53c947dabff",
+      "size": 6916,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/d3088107f8f4eed64a3f9928e91bb53c947dabff"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxTestSupport/SyntaxComparison.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec1cdbe53fbe232d439da7be60dd7c7bea0e854b",
+      "size": 4805,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/ec1cdbe53fbe232d439da7be60dd7c7bea0e854b"
+    },
+    {
+      "path": "Sources/_SwiftSyntaxTestSupport/SyntaxProtocol+Initializer.swift",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34d02b484265bbdf7ce3fd6cd6031094750ab794",
+      "size": 9002,
+      "url": "https://api.github.com/repos/swiftlang/swift-syntax/git/blobs/34d02b484265bbdf7ce3fd6cd6031094750ab794"
+    }
+  ],
+  "truncated": false,
+  "verifiedDirectories": [
+    "",
+    "Sources",
+    "Sources/SwiftBasicFormat",
+    "Sources/SwiftBasicFormat/SwiftBasicFormat.docc",
+    "Sources/SwiftCompilerPlugin",
+    "Sources/SwiftCompilerPluginMessageHandling",
+    "Sources/SwiftCompilerPluginMessageHandling/JSON",
+    "Sources/SwiftDiagnostics",
+    "Sources/SwiftDiagnostics/DiagnosticDecorators",
+    "Sources/SwiftIDEUtils",
+    "Sources/SwiftIfConfig",
+    "Sources/SwiftIfConfig/SwiftIfConfig.docc",
+    "Sources/SwiftLexicalLookup",
+    "Sources/SwiftLexicalLookup/Scopes",
+    "Sources/SwiftLexicalLookup/SwiftLexicalLookup.docc",
+    "Sources/SwiftLibraryPluginProvider",
+    "Sources/SwiftOperators",
+    "Sources/SwiftOperators/SwiftOperators.docc",
+    "Sources/SwiftParser",
+    "Sources/SwiftParser/Lexer",
+    "Sources/SwiftParser/SwiftParser.docc",
+    "Sources/SwiftParser/generated",
+    "Sources/SwiftParserDiagnostics",
+    "Sources/SwiftParserDiagnostics/generated",
+    "Sources/SwiftRefactor",
+    "Sources/SwiftRefactor/PackageManifest",
+    "Sources/SwiftSyntax-all",
+    "Sources/SwiftSyntax",
+    "Sources/SwiftSyntax/Documentation.docc",
+    "Sources/SwiftSyntax/Documentation.docc/Resources",
+    "Sources/SwiftSyntax/Documentation.docc/Tutorials",
+    "Sources/SwiftSyntax/Documentation.docc/generated",
+    "Sources/SwiftSyntax/Raw",
+    "Sources/SwiftSyntax/generated",
+    "Sources/SwiftSyntax/generated/raw",
+    "Sources/SwiftSyntax/generated/syntaxNodes",
+    "Sources/SwiftSyntaxBuilder",
+    "Sources/SwiftSyntaxBuilder/Documentation.docc",
+    "Sources/SwiftSyntaxBuilder/generated",
+    "Sources/SwiftSyntaxMacroExpansion",
+    "Sources/SwiftSyntaxMacros",
+    "Sources/SwiftSyntaxMacros/MacroProtocols",
+    "Sources/SwiftSyntaxMacros/SwiftSyntaxMacros.docc",
+    "Sources/SwiftSyntaxMacrosGenericTestSupport",
+    "Sources/SwiftSyntaxMacrosTestSupport",
+    "Sources/SwiftWarningControl",
+    "Sources/VersionMarkerModules",
+    "Sources/VersionMarkerModules/SwiftSyntax509",
+    "Sources/VersionMarkerModules/SwiftSyntax510",
+    "Sources/VersionMarkerModules/SwiftSyntax600",
+    "Sources/VersionMarkerModules/SwiftSyntax601",
+    "Sources/VersionMarkerModules/SwiftSyntax602",
+    "Sources/VersionMarkerModules/SwiftSyntax603",
+    "Sources/_InstructionCounter",
+    "Sources/_InstructionCounter/include",
+    "Sources/_InstructionCounter/src",
+    "Sources/_SwiftLibraryPluginProviderCShims",
+    "Sources/_SwiftLibraryPluginProviderCShims/include",
+    "Sources/_SwiftSyntaxCShims",
+    "Sources/_SwiftSyntaxCShims/include",
+    "Sources/_SwiftSyntaxGenericTestSupport",
+    "Sources/_SwiftSyntaxTestSupport"
+  ]
+}

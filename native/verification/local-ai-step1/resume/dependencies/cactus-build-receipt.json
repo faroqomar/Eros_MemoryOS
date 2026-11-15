@@ -1,0 +1,20 @@
+{
+  "upstreamURL": "https://github.com/cactus-compute/engine",
+  "upstreamRevision": "40a7123b0788f5b38c5fe0daa0d909b4286fe773",
+  "patchSHA256": "7ac5cdced684b3c452be7147a689cd901eeb8bf48723b4913b5aa65abcd5ab0e",
+  "configuration": "Release, arm64 macOS14 / iOS18 device / iOS18 simulator, CPU enforced by the reviewed local-evaluation source patch",
+  "network": "Telemetry implementation excluded; curl transport compile definitions disabled; no cloud credentials or downloader",
+  "artifactFiles": {
+    "Info.plist": "4131ae0e6541dfa4b3adcfb94cff6ec9ed34ce0d0b2dbcbc22fb24d1d01f0faf",
+    "LICENSE": "f674bfde8b610bca266d51b3c50464657495ca204c74f3b72d52b562e17aa397",
+    "ios-arm64/Headers/cactus_engine.h": "49c585b8be2fdd04e22c93764f6db7ba6c33976cc220fde9f1e26e6fd374fb8c",
+    "ios-arm64/Headers/module.modulemap": "85354c37572d3b17ceb2557ef6b821c314c4b697a9cdbff2d4dca173397dd721",
+    "ios-arm64/libcactus.a": "2950f835500e22600ea023a92e0d8140bf76ca941b85b32284ee0d4bb08342c1",
+    "ios-arm64-simulator/Headers/cactus_engine.h": "49c585b8be2fdd04e22c93764f6db7ba6c33976cc220fde9f1e26e6fd374fb8c",
+    "ios-arm64-simulator/Headers/module.modulemap": "85354c37572d3b17ceb2557ef6b821c314c4b697a9cdbff2d4dca173397dd721",
+    "ios-arm64-simulator/libcactus.a": "2c6e3007ea72ee08e07872c915f27e4ad963c12956a7d3eda2079a725efc9791",
+    "macos-arm64/Headers/cactus_engine.h": "49c585b8be2fdd04e22c93764f6db7ba6c33976cc220fde9f1e26e6fd374fb8c",
+    "macos-arm64/Headers/module.modulemap": "85354c37572d3b17ceb2557ef6b821c314c4b697a9cdbff2d4dca173397dd721",
+    "macos-arm64/libcactus.a": "75a318fd51ab812b53cacd60e804785184c18a9635eda9498e8b535bbffb58ac"
+  }
+}

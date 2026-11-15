@@ -1,0 +1,19 @@
+{
+  "logicalBytesRemoved": 523903695,
+  "entries": {
+    "sourceOnlyBefore": 348738,
+    "sourceOnlyAfter": 197976854,
+    "preparedLabScratch": 239126699,
+    "independentCoreScratch": 86451404
+  },
+  "preservedMetadataFiles": 8,
+  "preservedHashesVerified": true,
+  "retainedExceptions": [
+    "canonical upstream source, packages and verified model/binary assets",
+    "all unique reports, old/intermediate/final xcresults and actual dark captures",
+    "current final lab build /tmp/memoryos-ai-lab-repairs and earlier source-identified /tmp/memoryos-ai-lab-build"
+  ],
+  "physicalAPFSSavingsClaimed": false,
+  "previousCleanupNotCountedAgain": true,
+  "deadProductCodeConfirmed": false
+}

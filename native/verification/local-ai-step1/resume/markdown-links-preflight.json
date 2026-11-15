@@ -1,0 +1,28 @@
+{
+  "markdownFiles": 18,
+  "localLinksChecked": 226,
+  "missingLinks": [],
+  "pendingDeliveryLinks": [
+    {
+      "source": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "target": "../../native/verification/local-ai-step1/resume/memory-sync.log",
+      "resolved": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/memory-sync.log"
+    },
+    {
+      "source": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "target": "../../native/verification/local-ai-step1/resume/memory-check.log",
+      "resolved": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/memory-check.log"
+    },
+    {
+      "source": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "target": "../../native/verification/local-ai-step1/resume/memory-status.json",
+      "resolved": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/memory-status.json"
+    },
+    {
+      "source": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "target": "../../native/verification/local-ai-step1/resume/final-recall.json",
+      "resolved": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/verification/local-ai-step1/resume/final-recall.json"
+    }
+  ],
+  "scope": "Task-owned reviewed Markdown; URL links not fetched, local target existence only"
+}

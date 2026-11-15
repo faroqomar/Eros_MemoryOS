@@ -1,0 +1,29 @@
+warning: '--skip-update' option is deprecated and will be removed in a future release
+Fetching https://github.com/christopherkarani/Wax.git from cache
+Fetched https://github.com/christopherkarani/Wax.git from cache (0.28s)
+Fetching https://github.com/groue/GRDB.swift.git from cache
+Fetching https://github.com/christopherkarani/MetalANNS.git from cache
+Fetching https://github.com/apple/swift-crypto.git from cache
+Fetched https://github.com/christopherkarani/MetalANNS.git from cache (0.18s)
+Fetched https://github.com/groue/GRDB.swift.git from cache (0.40s)
+Fetched https://github.com/apple/swift-crypto.git from cache (0.45s)
+Computing version for https://github.com/apple/swift-crypto.git
+Computed https://github.com/apple/swift-crypto.git at 3.15.1 (1.20s)
+Fetching https://github.com/apple/swift-asn1.git from cache
+Fetched https://github.com/apple/swift-asn1.git from cache (0.10s)
+Computing version for https://github.com/groue/GRDB.swift.git
+Computed https://github.com/groue/GRDB.swift.git at 7.12.0 (0.77s)
+Computing version for https://github.com/christopherkarani/MetalANNS.git
+Computed https://github.com/christopherkarani/MetalANNS.git at 0.3.0 (0.58s)
+Computing version for https://github.com/apple/swift-asn1.git
+Computed https://github.com/apple/swift-asn1.git at 1.7.4 (0.53s)
+Creating working copy for https://github.com/christopherkarani/MetalANNS.git
+Working copy of https://github.com/christopherkarani/MetalANNS.git resolved at 0.3.0
+Creating working copy for https://github.com/groue/GRDB.swift.git
+Working copy of https://github.com/groue/GRDB.swift.git resolved at 7.12.0
+Creating working copy for https://github.com/apple/swift-asn1.git
+Working copy of https://github.com/apple/swift-asn1.git resolved at 1.7.4
+Creating working copy for https://github.com/apple/swift-crypto.git
+Working copy of https://github.com/apple/swift-crypto.git resolved at 3.15.1
+Creating working copy for https://github.com/christopherkarani/Wax.git
+Working copy of https://github.com/christopherkarani/Wax.git resolved at e4587f8cebb76aa92ece008253f13c66b756e68b

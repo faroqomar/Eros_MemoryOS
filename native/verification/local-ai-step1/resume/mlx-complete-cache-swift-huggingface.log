@@ -1,0 +1,7 @@
+{"event": "archive-response", "status": 200, "retainedBytes": 0, "contentLength": null}
+{"event": "archive-progress", "bytes": 49152}
+{"event": "archive-progress", "bytes": 81920}
+{"event": "archive-progress", "bytes": 147456}
+{"event": "archive-progress", "bytes": 163840}
+{"event": "archive-progress", "bytes": 193928}
+{"identity": "swift-huggingface", "origin": "https://github.com/huggingface/swift-huggingface.git", "revision": "c30143a4616f3fa994ee3ab3e3464f752845c07c", "rootTreeSHA1": "871378ca38bd52fcb0ae526f4f19def9575ad57e", "genuineShallowBoundary": true, "promisor": false, "sourcePatched": false, "archiveSHA256": "9640056d62f5247e1699d2806236259e81dfa67f6e427ec4378bd4d2e9a44c6b", "archiveBytes": 193928, "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/swift-huggingface-ffa527b1", "fsck": "", "canonicalResolutionVerified": false}

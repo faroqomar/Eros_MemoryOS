@@ -1,0 +1,10 @@
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project /var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-independent-main-resolution-14pit4pt/native/MemoryOS.xcodeproj -scheme MemoryOS -clonedSourcePackagesDirPath /var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-independent-main-resolution-14pit4pt/packages -resolvePackageDependencies
+
+Resolve Package Graph
+
+
+Resolved source packages:
+  LocalMemory: /var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/memoryos-independent-main-resolution-14pit4pt/native/LocalMemory @ local
+
+resolved source packages: LocalMemory

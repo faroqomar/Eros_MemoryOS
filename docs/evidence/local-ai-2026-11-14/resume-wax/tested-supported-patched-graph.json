@@ -1,0 +1,79 @@
+{
+  "explicit_temporary_override": true,
+  "implicit_environment_switch": false,
+  "canonical_manifest": "native/LocalAIIntegrations/Package.swift",
+  "canonical_manifest_sha256": "813b3e7147ea860c8d1d67cba8df6f3e97eeaba480494a4b90f5753f6e8225e7",
+  "temporary_root": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-snapshot-verification/Package.swift",
+  "temporary_root_sha256": "ca1efce3c31bd381d77d7b7ca58f7756667b6b4c89b69ff2222910a3d01da1e3",
+  "packages": [
+    {
+      "identity": "wax",
+      "original_url": "https://github.com/christopherkarani/Wax.git",
+      "revision": "e4587f8cebb76aa92ece008253f13c66b756e68b",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-patched/Wax",
+      "manifest_git_blob_sha1": "d6cff6bdf205ba99abb4de3fbe8f021ed2c1435b",
+      "manifest_sha256": "acf5c56bf1c0de065b8a42f4c72a0e3a9aef620cb191b33a62121b5a319db290",
+      "manifest_unchanged": true,
+      "source_patch": "wax-0.1.47-ios-desktop-guards.patch"
+    },
+    {
+      "identity": "metalanns",
+      "original_url": "https://github.com/christopherkarani/MetalANNS.git",
+      "revision": "13960499c40abd3f06443eb80258e08a6b777da4",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-supported-snapshots/MetalANNS",
+      "manifest_git_blob_sha1": "d5bd3f0c27a328cf68404336c2ea48e1bc5c0cef",
+      "manifest_sha256": "b688dee20c6da7019723e77067b1cc84fc9556bc6db45864d9ac23f25fb3ebb1",
+      "manifest_unchanged": true,
+      "source_patch": null
+    },
+    {
+      "identity": "grdb.swift",
+      "original_url": "https://github.com/groue/GRDB.swift.git",
+      "revision": "92a554cd0d5e8d67cb18993c6054e73fe42c066c",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/GRDB.swift",
+      "manifest_git_blob_sha1": "057c6f14eadf9e9282808dbb7df44715387565ff",
+      "manifest_sha256": "4118b6c48dcb87f91d95fe40420371b8a474a44b0b0be2bf0417e0be1ebf7853",
+      "manifest_unchanged": true,
+      "source_patch": null
+    },
+    {
+      "identity": "swift-crypto",
+      "original_url": "https://github.com/apple/swift-crypto.git",
+      "revision": "95ba0316a9b733e92bb6b071255ff46263bbe7dc",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-crypto",
+      "manifest_git_blob_sha1": "59c17ab1d34f4e208402df87b2c63d5756ccfa8e",
+      "manifest_sha256": "d51987333ca67380af875d853ff74a4a7bcb9095f220e7235aa2830706f96b54",
+      "manifest_unchanged": true,
+      "source_patch": null
+    },
+    {
+      "identity": "swift-asn1",
+      "original_url": "https://github.com/apple/swift-asn1.git",
+      "revision": "917b472dbe53ba699cbb0495f9a95a084bc6364d",
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/wax-verified-snapshots/swift-asn1",
+      "manifest_git_blob_sha1": "22198e81c222f62d53b873f90ac6b56032253420",
+      "manifest_sha256": "c46482de4edb5c21c263682d102e52b180c1420be592d6c957cdc06f8fc4e516",
+      "manifest_unchanged": true,
+      "source_patch": null
+    }
+  ],
+  "patch_receipt": "supported-patch-receipt.json",
+  "ios_receipt": "supported-patched-ios-build-receipt.json",
+  "host_contract_receipt": "supported-patched-release-tests-receipt.json",
+  "canonical_source_files": [
+    {
+      "path": "native/LocalAIIntegrations/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift",
+      "sha256": "f9db283c99d0dea35db40c326169cf1ddb01ce30a62745e17ba36b0463b1fe3e"
+    },
+    {
+      "path": "native/LocalAIIntegrations/Sources/WaxEvaluationCLI/Main.swift",
+      "sha256": "dbbd5855ab331f99daf4c3a90802a20c33c64a28aea780b8aee0db53dfde617f"
+    },
+    {
+      "path": "native/LocalAIIntegrations/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift",
+      "sha256": "335751f0d5049f5bfe8782072e0f8f716c2e23027746750a91c4064e9570285d"
+    }
+  ],
+  "latest_host_source_identity": "sha256:18117106eb15d8e9fe462c037b8dd48fe48906d1630c1e9fd0fcb81997bd9506",
+  "patched_host_corpus": "wax-host-supported-patched.json"
+}

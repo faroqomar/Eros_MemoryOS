@@ -1,0 +1,355 @@
+{
+  "repository": "apple/swift-numerics",
+  "revision": "0c0290ff6b24942dadb83a929ffaaa1481df04a2",
+  "rootTreeSHA1": "4560bfb65f2c26cbd159c3e1a9cbf01600bace1b",
+  "sourceRoots": [
+    "Sources"
+  ],
+  "temporaryIntegrationOnly": true,
+  "canonicalResolutionVerified": false,
+  "gitlinks": [],
+  "files": [
+    {
+      "path": ".gitignore",
+      "gitBlobSHA1": "85dfaf7bc56d2696270a5571edeabc59bfb0a2d5",
+      "sha256": "1261b95ae5491e5b8714fdae3e38fed9f99d76b17fa6f397c60df94e7a0e3a2c",
+      "bytes": 82
+    },
+    {
+      "path": "CMakeLists.txt",
+      "gitBlobSHA1": "897ee839d057a835d5d5adbda4c2ccccd5b32009",
+      "sha256": "23862374919639eda35cc319f0f2a07ddb08d29f0f1a419bb019fbedd92b5228",
+      "bytes": 940
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "gitBlobSHA1": "4ed4dbd196b9725b9e0275e03f1a4f00f00dfa04",
+      "sha256": "a1ce665aa758e42d284855b1f254af8222e905c7e47f3feb2600d08ed865be1a",
+      "bytes": 468
+    },
+    {
+      "path": ".spi.yml",
+      "gitBlobSHA1": "1b85910250ed62a69cbd1b234d02624dba966f19",
+      "sha256": "4ee013b134532efcb71564cd013a921b216d67153f3b243d828b737fb0f65f67",
+      "bytes": 98
+    },
+    {
+      "path": "Package.swift",
+      "gitBlobSHA1": "ae835441958bc437564f9f33c8f6d7fea7db44ed",
+      "sha256": "a1613f1fdf148fb8c824c3a8f3e92928f8224bac25bfc3190d206c701087a6b9",
+      "bytes": 1871
+    },
+    {
+      "path": "README.md",
+      "gitBlobSHA1": "9b34346519cd5f2b29f6abd9c0c6d0555e13fa4e",
+      "sha256": "7906fc152e74a517df5e44567d6f826de1d19014807a97b034887e925063f799",
+      "bytes": 7001
+    },
+    {
+      "path": "Sources/CMakeLists.txt",
+      "gitBlobSHA1": "e184fecac2fe29476ad48570fca095186bdf93d8",
+      "sha256": "733d293f56265d75d8f1facfab4bd73831287f9f8f88a5a709b403fd38aed54f",
+      "bytes": 456
+    },
+    {
+      "path": "Sources/ComplexModule/CMakeLists.txt",
+      "gitBlobSHA1": "ecc46538441416a9f110cd33f9783ceaae8eaf24",
+      "sha256": "bfdce907e3316809568ec79e8dd059ae60e3cbc6f22124f2724e03e0199a4171",
+      "bytes": 858
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+AdditiveArithmetic.swift",
+      "gitBlobSHA1": "0806fb4f7d8e2adb8cb724773b7d39854dd9cd78",
+      "sha256": "f8d663fd2a2074f9cf7a3609ead8a2b3b24bd503dd45f54e1951fa3034ca2164",
+      "bytes": 1142
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+AlgebraicField.swift",
+      "gitBlobSHA1": "c6f4cb85f77281e44709ff0a5e9194a9641871da",
+      "sha256": "9f984d0229c4851537e5367bb944a7bd8073d35ea0e94084a201724baaca6f5b",
+      "bytes": 7223
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+Codable.swift",
+      "gitBlobSHA1": "c233cb7c4f30e73bf20534ee419da4b94ad02387",
+      "sha256": "bd1b51ea16e0a2f51691ad9e0b4c4fc163bd5fcbd5f248ba1fb03cae20cc941a",
+      "bytes": 1189
+    },
+    {
+      "path": "LICENSE.txt",
+      "gitBlobSHA1": "61b0c78195f2d00acaf658000eeca6ad406a3a29",
+      "sha256": "770af8291f708538d8ff885a0bbc4e045cd700531741c4f99528d435c14d7f55",
+      "bytes": 11751
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+ElementaryFunctions.swift",
+      "gitBlobSHA1": "38c8cdced4b3d3103a8a517444a316497ed4291f",
+      "sha256": "72b811ac8883065c6ac878d42fe748ac4f330bd1c3f0315affd498a8a368c501",
+      "bytes": 20892
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+IntegerLiteral.swift",
+      "gitBlobSHA1": "07126fc73ed7c4f4ebe9ffb66fdc49d18e1961d9",
+      "sha256": "55ede156efcfadc2a9fec17700bb453356e98a1e301f6ce34d38ea0ebf080806",
+      "bytes": 696
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+Hashable.swift",
+      "gitBlobSHA1": "91e43618e4488d8bd947cfec9442a01f5416618b",
+      "sha256": "8c5be27bfe6f680421bc43ea2fb93a4f8af558618318875bf0e0939dde3365ae",
+      "bytes": 1644
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+StringConvertible.swift",
+      "gitBlobSHA1": "1c88b5b3f68c4d31e2f56bd99c447b1d27b5984f",
+      "sha256": "87840963a492b702c9c740e199698216d058b32db73c6d05efbbdd4f20505565",
+      "bytes": 837
+    },
+    {
+      "path": "Sources/ComplexModule/Complex+Numeric.swift",
+      "gitBlobSHA1": "5a5d9fbe80e5db263ae258e0bdaef8f6c2ddd0e4",
+      "sha256": "b0425c0b2b446eb3dbab1dff0d424577b3c7726d11cca5e111d10d6609736889",
+      "bytes": 1946
+    },
+    {
+      "path": "Sources/ComplexModule/Complex.swift",
+      "gitBlobSHA1": "5929a7efc20b63466299bc9a61ef7420cfe63371",
+      "sha256": "2f7527cb2d285359ceb5626aecf253924b5c9b70560f8a28e21c6b1aca98c887",
+      "bytes": 6404
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc/Complex.md",
+      "gitBlobSHA1": "7198461265a7c9e78a649993f6debf2e1a9877e8",
+      "sha256": "0152046f6c1378b9b90a3c76954bf8c339d45870a17c00179bfb986a7569ad0a",
+      "bytes": 1493
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc/ComplexModule.md",
+      "gitBlobSHA1": "f77ecd21cd1b214998dbaec6f214df13d28018c8",
+      "sha256": "e94696e7f0b7ecb0cd1711a4348de5a819c8a757db6a8e98d30dcf9d3ed46614",
+      "bytes": 2746
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc/Infinity.md",
+      "gitBlobSHA1": "c4c1f0819cd93c0d29c9ca3a021b6c7997639b3d",
+      "sha256": "287ffcb494b4fa870efffbd1ba32aa150721be50c24cb80ee87ce4dee8df77c9",
+      "bytes": 2316
+    },
+    {
+      "path": "Sources/ComplexModule/Documentation.docc/Magnitude.md",
+      "gitBlobSHA1": "f1565e34a30f7b60ef3f8217ba7eb6a1f0542f9c",
+      "sha256": "24a4ac5bf6c401b70497d02acfdca0d0ad6853cef7cd6162cc4d951a3b722a75",
+      "bytes": 5068
+    },
+    {
+      "path": "Sources/ComplexModule/Polar.swift",
+      "gitBlobSHA1": "e5dabaac6a29a7b842e337d4e2cf3913ed24cb5a",
+      "sha256": "d7c8056e0014a70367480efe161c64fb4bc525047a8681cf2fdba8be192e68d4",
+      "bytes": 4740
+    },
+    {
+      "path": "Sources/ComplexModule/Scale.swift",
+      "gitBlobSHA1": "37275cc325e2cb32fa49d14c48e53d4c804cae61",
+      "sha256": "e00441e16fe433ce7ae934ea15cf7504cbee9700370aae6997e260d5aacf6d7a",
+      "bytes": 1574
+    },
+    {
+      "path": "Sources/ComplexModule/README.md",
+      "gitBlobSHA1": "b5179a04f3a632a7ed58f26e6a8beb31ec65b10c",
+      "sha256": "9fd75d404fc4c61920fdfb6ad263d629028f53fff6d10ad8e8e6639f2ad81a60",
+      "bytes": 5860
+    },
+    {
+      "path": "Sources/Numerics/CMakeLists.txt",
+      "gitBlobSHA1": "a4a219a9e42f7a55fc58693de16f353d5e9aa29f",
+      "sha256": "529ae579e882673088d14b20f6d3908c665612f49f0da8320ff535c58c2198dd",
+      "bytes": 956
+    },
+    {
+      "path": "Sources/Numerics/README.md",
+      "gitBlobSHA1": "d9de275962f4095a2131af08babbfbd32a096b29",
+      "sha256": "2daba1bb506e237b69e58e661fdea9ae92e3ba59cc340bc0110727c1146fd081",
+      "bytes": 159
+    },
+    {
+      "path": "Sources/RealModule/AlgebraicField.swift",
+      "gitBlobSHA1": "d1c276bc9678597505e74233d53d1426bf475b90",
+      "sha256": "c9897c0e9091ebfefac25f81b6cfed5ffbe173d84ce9ec06f682350e6bfec459",
+      "bytes": 5427
+    },
+    {
+      "path": "Sources/RealModule/ApproximateEquality.swift",
+      "gitBlobSHA1": "8081e37793e9e6b9d535ff8ea7c384981bf6a116",
+      "sha256": "e8bc49c228ad4260202e0a202fde27903be226d1db38bd507cb7c0eb26811ec6",
+      "bytes": 9578
+    },
+    {
+      "path": "Sources/RealModule/AugmentedArithmetic.swift",
+      "gitBlobSHA1": "ec314adf8b0651293861df65f148c3cc0b60f74e",
+      "sha256": "3452b577ff00add2250749e2bd369e0ff2cbb8c02fef02d904fa9dd6f68b0bd8",
+      "bytes": 5691
+    },
+    {
+      "path": "Sources/RealModule/CMakeLists.txt",
+      "gitBlobSHA1": "acc78da4ec164b07b41c25626dcc9e3336cbcdd3",
+      "sha256": "610c930dab46b5f82970c8255db28d34871fe8c7495eae1cd72760f18be00637",
+      "bytes": 812
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/Augmented.md",
+      "gitBlobSHA1": "dc60ec04383a139c9ecb7032a0d5ea3cdfd2b31f",
+      "sha256": "fb25b7baea0e5f84ce7f4ffee7e33a393e56b0098237c8066b6aa635b71b036b",
+      "bytes": 1340
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/ElementaryFunctions.md",
+      "gitBlobSHA1": "68fb20451129be52e29eaf1e2cfc3199fd1274c3",
+      "sha256": "a27100c69ecaf71b9796bb6cb0642fd7c2bb569617392ba2845b327a088acfd4",
+      "bytes": 1654
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/RealFunctions.md",
+      "gitBlobSHA1": "0652d043b4c1c62cd77edee121d9b1ba8aa76eb3",
+      "sha256": "5c32b4081badcd17322c5c9b014f5ff72f49aad0a3d4d8df2c8e99b07abf7b33",
+      "bytes": 444
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/RealModule.md",
+      "gitBlobSHA1": "971b8858ad9bba048ac9cb2764d35faa840b9e11",
+      "sha256": "47dc39d4e2a06e8d31daddaea41731f146e094d09b4dd2be41ee26e5337846b4",
+      "bytes": 1290
+    },
+    {
+      "path": "Sources/Numerics/Numerics.swift",
+      "gitBlobSHA1": "0f379dbea797dd3bdd3187e3006e7972911ee46d",
+      "sha256": "acc0de5919882e62d5e423595d58efb7e579d3d4516da04fda563dbf7cbcce8e",
+      "bytes": 576
+    },
+    {
+      "path": "Sources/RealModule/Documentation.docc/Relaxed.md",
+      "gitBlobSHA1": "46623c91313f8e23b2c1602ad46fbae4adac267e",
+      "sha256": "0af1526572015bf640ab98dc86817aca86a1700a37fb5ebb995679c524cd79c1",
+      "bytes": 1966
+    },
+    {
+      "path": "Sources/RealModule/ElementaryFunctions.swift",
+      "gitBlobSHA1": "d59043b75679dfbf402492095f2c23eb3027a7cf",
+      "sha256": "3db39611b9a7a768a688f91d6bfee53934ef6a62ea65e881de6f30a6856e832a",
+      "bytes": 7067
+    },
+    {
+      "path": "Sources/RealModule/Float+Real.swift",
+      "gitBlobSHA1": "ab459bbf5598979c808743706d76e80db06d598f",
+      "sha256": "c9552830663b3de666ef378fccd95db5820085e0277714c51503a72db6e055a8",
+      "bytes": 5214
+    },
+    {
+      "path": "Sources/RealModule/Float16+Real.swift",
+      "gitBlobSHA1": "98e97e897c2636667450781ebca8200f69e4fa61",
+      "sha256": "8ed7178fc7fcaf96f6467e5b0b336a4dc6603d12fb8a97c6d868ec83167e1698",
+      "bytes": 4916
+    },
+    {
+      "path": "Sources/RealModule/Float80+Real.swift",
+      "gitBlobSHA1": "b4ca39b6276352ea78bcff25bf33c11479be5cd2",
+      "sha256": "9b02cbf1a99ed4ddba3209915b33c28a109700eed7685ac739990c26decbcbe2",
+      "bytes": 4320
+    },
+    {
+      "path": "Sources/RealModule/README.md",
+      "gitBlobSHA1": "0075d84b47da574042d652642097500c518a239e",
+      "sha256": "4f511c5436901d337f0ad2a1342d480928de4c14ed4b371462fbee3a94d7c569",
+      "bytes": 3953
+    },
+    {
+      "path": "Sources/RealModule/Real.swift",
+      "gitBlobSHA1": "2f32b7111eacb0a009972d525f3ef6f18e4d1156",
+      "sha256": "6a54f0953409c9c3c32b496074e7ecede8eb514a523bda0a7cab3a37ecdefad6",
+      "bytes": 5974
+    },
+    {
+      "path": "Sources/RealModule/RealFunctions.swift",
+      "gitBlobSHA1": "de44752e03e6b97766ec37018fc7389762aef7e4",
+      "sha256": "2787e1a8c2a9a6e520388c59ff55e3c441cd560b26836c5e37cbbe409cbf0172",
+      "bytes": 3712
+    },
+    {
+      "path": "Sources/RealModule/RelaxedArithmetic.swift",
+      "gitBlobSHA1": "d08215179a3e183d5284d422563b01b58f6460fe",
+      "sha256": "78898fdb669ca4396d2c662b7bd97292e664d023ffa634981fb5d3a5a14b7637",
+      "bytes": 3228
+    },
+    {
+      "path": "Sources/_NumericsShims/CMakeLists.txt",
+      "gitBlobSHA1": "94f73782052f03ff54f5b2e444da35e4d1dbe950",
+      "sha256": "89b0588c20c43049c28a993c2c1b28a414c7899a75aa4b1ce1facde72b48c0a1",
+      "bytes": 524
+    },
+    {
+      "path": "Sources/_NumericsShims/README.md",
+      "gitBlobSHA1": "90a0a21fdc48953de55373a7400aa06081efab60",
+      "sha256": "8d82204dec4e841c8ea26f8b99ac8a1103514eb00548b92b69037125908d9afc",
+      "bytes": 445
+    },
+    {
+      "path": "Sources/_NumericsShims/_NumericsShims.c",
+      "gitBlobSHA1": "8ac212f325103cb325268116481aaf4686447b7e",
+      "sha256": "ae9d32c89fa0a942036896d3861779f9b56a22dcf3663cab67218947cc83b497",
+      "bytes": 791
+    },
+    {
+      "path": "Sources/RealModule/Double+Real.swift",
+      "gitBlobSHA1": "1a4138dd227d70e0d949b2f4eab2cfc732fea4e6",
+      "sha256": "50c5bd3132770502db21b148cff0033156672ceae0cc82ee93a672cc92c84e22",
+      "bytes": 6567
+    },
+    {
+      "path": "Sources/_NumericsShims/include/_NumericsShims.h",
+      "gitBlobSHA1": "8b7bf995bd7de35f4233dc2868788f38667c47b3",
+      "sha256": "361bd79467ead784ac39b7f187895f996e149d017a7270dc590d01ffa0037b3a",
+      "bytes": 10396
+    },
+    {
+      "path": "Sources/_NumericsShims/include/module.modulemap",
+      "gitBlobSHA1": "077fb436f60bd9f428d5c7b18ede6addcd3726a1",
+      "sha256": "c97db16dd177b4cee16673108b1dd2703d5cba99132ae45e16e4c0945941d8ed",
+      "bytes": 54
+    },
+    {
+      "path": "Sources/_TestSupport/BlackHole.swift",
+      "gitBlobSHA1": "c614028cfaa34bb72484a57b011edc8ed11ec908",
+      "sha256": "d4047997a8b06905606dd44ff26436563ed6158c31e0db1e17cca0f8f26e6a5a",
+      "bytes": 601
+    },
+    {
+      "path": "Sources/_TestSupport/CMakeLists.txt",
+      "gitBlobSHA1": "96c30790cfcc5ea9c109a68acdcd5c548699a6c2",
+      "sha256": "7f50f890c79dc55292efae6ebe4b93141cdc8b48785b0b3287b037d2541c23df",
+      "bytes": 665
+    },
+    {
+      "path": "Sources/_TestSupport/Error.swift",
+      "gitBlobSHA1": "5e5a1b40a03b9bc8bd33277ac1a0dcc81b4e5616",
+      "sha256": "6909790e77ddaf9296f14cb0f7e9d4a0fca13a138ea4c741b6d3b65a4f1e6ea1",
+      "bytes": 1250
+    },
+    {
+      "path": "Sources/_TestSupport/Interval.swift",
+      "gitBlobSHA1": "697b50b041dd6a76948582b0298f5935e8f23223",
+      "sha256": "bef58651691ad094dd0fcf4df62bc58649878b7efe39ca2e94950b41ee29fbea",
+      "bytes": 1481
+    },
+    {
+      "path": "Sources/_TestSupport/DoubleWidth.swift",
+      "gitBlobSHA1": "1dc1ee9d37f98612fc05ab84940254263705f522",
+      "sha256": "96395cb2276496fd289f556b5208f9b5102f0809ea851ab1ad575bd09fee9ee4",
+      "bytes": 25205
+    },
+    {
+      "path": "Sources/_TestSupport/RealTestSupport.swift",
+      "gitBlobSHA1": "61893362f10d030cd0044320c111365d7c761121",
+      "sha256": "aa4d774e6cf2dbe5c3659fe1d90f1ceeaf2543e77799493d6da43d3a2c7d938b",
+      "bytes": 1176
+    }
+  ]
+}

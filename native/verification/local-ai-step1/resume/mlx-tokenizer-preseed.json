@@ -1,0 +1,40 @@
+{
+  "reason": "Verified exact revision metadata preseed after real broad-ref curl56/flush failure; continue resolution.",
+  "ownedProcesses": [
+    {
+      "pid": 78635,
+      "ppid": 72261,
+      "start": "Sun Nov 15 00:26:33 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-package --package-path native/LocalMLXEvaluation --skip-update resolve"
+    },
+    {
+      "pid": 86647,
+      "ppid": 78635,
+      "start": "Sun Nov 15 00:31:34 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/bin/git -c http.version=HTTP/1.1 -c fetch.recurseSubmodules=false clone --filter=tree:0 --depth=1 --no-single-branch -c core.symlinks=true -c core.fsmonitor=false -c core.longpaths=true --mirror https://github.com/huggingface/swift-transformers /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/repositories/swift-transformers-e50307c3 --progress"
+    },
+    {
+      "pid": 86651,
+      "ppid": 86647,
+      "start": "Sun Nov 15 00:31:34 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git remote-https origin https://github.com/huggingface/swift-transformers"
+    },
+    {
+      "pid": 86653,
+      "ppid": 86651,
+      "start": "Sun Nov 15 00:31:34 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git-remote-https origin https://github.com/huggingface/swift-transformers"
+    },
+    {
+      "pid": 88117,
+      "ppid": 86647,
+      "start": "Sun Nov 15 00:32:57 2026",
+      "command": "/Applications/Xcode.app/Contents/Developer/usr/libexec/git-core/git --shallow-file /Users/eros/Dev/Eros_Projects/Eros_MemoryOS/native/LocalMLXEvaluation/.build/repositories/swift-transformers-e50307c3/shallow.lock index-pack --stdin -v --fix-thin --keep=fetch-pack 86647 on Eros-MacBook-Pro.local --promisor"
+    }
+  ],
+  "forcedSurvivors": [],
+  "remainingOriginalPIDs": [],
+  "retainedIncompleteCaches": [],
+  "originalURL": "https://github.com/huggingface/swift-transformers",
+  "head": "402a8a1105f52038b0949d9596981fc9e32bed17"
+}

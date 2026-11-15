@@ -1,0 +1,74 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "A5733BD5-10CA-4521-80CE-CA71EC6EB7E5.txt",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "Complete Issue Description.txt"
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "8857DDD1-29D3-4EA5-B8E8-23016A339D19.png",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "App Screenshot_0_C7DFA4C8-5171-4955-B4B5-33C400972482.png",
+        "timestamp" : 1794708738.369
+      }
+    ],
+    "testIdentifier" : "LabUITests/testArabicConfigurationAccessibility()",
+    "testIdentifierURL" : "test://com.apple.xcode/MemoryOS/MemoryOSAILabUITests/LabUITests/testArabicConfigurationAccessibility"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "2AD98C77-3632-45BE-B720-0DE36D664A2F.txt",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "Complete Issue Description.txt"
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "434EC242-9C1C-4B68-94B4-346B39B9ED9C.png",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "App Screenshot_0_62E8AE04-A87C-4B5B-829B-2EAAA526B842.png",
+        "timestamp" : 1794708780.239
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "DD2B25F5-1D89-4CBA-AD91-BEED6D117A15.png",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "Element Screenshot_1_F4E013A7-4121-4C14-A091-E9567F281E58.png",
+        "timestamp" : 1794708780.239
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "20238721-4354-4F92-90E9-000A6749DBAC.txt",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "Complete Issue Description.txt"
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "452C5AF6-8A30-4F73-9C34-AADF3D6CF96C",
+        "deviceName" : "iPhone 18 Pro",
+        "exportedFileName" : "C7FE71EB-2F52-4B01-B007-1DF1E5F19917.png",
+        "isAssociatedWithFailure" : true,
+        "suggestedHumanReadableName" : "App Screenshot_0_159FD6CD-63DE-42DC-8092-658BD4B6A8EE.png",
+        "timestamp" : 1794708780.34
+      }
+    ],
+    "testIdentifier" : "LabUITests/testEnglishConfigurationAccessibility()",
+    "testIdentifierURL" : "test://com.apple.xcode/MemoryOS/MemoryOSAILabUITests/LabUITests/testEnglishConfigurationAccessibility"
+  }
+]

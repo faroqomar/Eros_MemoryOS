@@ -1,0 +1,9 @@
+{"event": "archive-response", "status": 200, "retainedBytes": 0, "contentLength": null}
+{"event": "archive-progress", "bytes": 16384}
+{"event": "archive-progress", "bytes": 32768}
+{"event": "archive-progress", "bytes": 49152}
+{"event": "archive-progress", "bytes": 98304}
+{"event": "archive-progress", "bytes": 163840}
+{"event": "archive-progress", "bytes": 180224}
+{"event": "archive-progress", "bytes": 240912}
+{"identity": "swift-jinja", "origin": "https://github.com/huggingface/swift-jinja.git", "revision": "66042420a9225c98ea9382d705e2285769dfdbe5", "rootTreeSHA1": "ac32a6cd7b42e4cc354ead9d19c972f673b2a085", "genuineShallowBoundary": true, "promisor": false, "sourcePatched": false, "archiveSHA256": "17a178460f6f42d3a80834291b94f0a3c691b67b2ac5ec5fa81930d652391ca4", "archiveBytes": 240912, "cache": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/mlx-canonical-shallow-spm/repositories/swift-jinja-c9e03d9c", "fsck": "", "canonicalResolutionVerified": false}

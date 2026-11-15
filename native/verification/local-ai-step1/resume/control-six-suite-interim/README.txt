@@ -1,0 +1,1 @@
+Interim simulator batch: validates six-suite UI execution and automatic report persistence. Source identity is unrecorded; excluded from final performance comparison. iPhone 18 Pro simulator, iOS 27.2, Release.

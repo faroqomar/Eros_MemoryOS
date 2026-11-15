@@ -1,0 +1,15 @@
+{
+  "project": "memoryos",
+  "api": {
+    "status": "healthy",
+    "database": "connected",
+    "db_acquire_ms": 0.9,
+    "db_pool_waiting": 0,
+    "db_pool_in_use": 0,
+    "db_pool_max": 100,
+    "db_pool_idle": 5
+  },
+  "sources": 41,
+  "pending": [],
+  "failed": {}
+}

@@ -1,0 +1,27 @@
+{
+  "capturedAtUTC": "2026-11-15T02:04:15.497218+00:00",
+  "paths": [
+    {
+      "path": ".",
+      "allocatedKiBBefore": 5392620,
+      "allocatedKiBAfter": 5411164
+    },
+    {
+      "path": "native/verification",
+      "allocatedKiBBefore": 891288,
+      "allocatedKiBAfter": 903496
+    },
+    {
+      "path": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation",
+      "allocatedKiBBefore": 10747852,
+      "allocatedKiBAfter": 7196572
+    }
+  ],
+  "method": "du -sk per path; overlaps/APFS shares mean values are not additive unique disk costs",
+  "totalRemovedLogicalBytes": 3600264293,
+  "preservedFileHashesChecked": 11,
+  "historicalSourceManifestAndSelectionUnchanged": true,
+  "volumeAvailableBytes": 56474746880,
+  "volumeAvailableBytesBefore": 52913143808,
+  "note": "Other builds/evidence writes occurred during this task; du/free-space deltas are observational, not unique physical space reclaimed."
+}

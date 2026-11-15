@@ -63,3 +63,16 @@ Choose numeric targets after reviewing initial measurements. A successful deskto
 The existing Hindsight bank, `project-memoryos`, remains the separate documentation memory for coding agents. Listing Wax and Cactus here does not replace, migrate, or reconfigure that service.
 
 Related records: [decision register](decision-register.md), [product overview](../product-overview.md), [Hindsight workflow](../how-to/hindsight.md).
+
+
+## Evaluation implementation update, C38, 2026-11-14
+
+The owner starts checklist group 4 Step 1. The [evaluation task](../tasks/2026-11-14-local-ai-phone-evaluation.md) now owns its contract, common fictional corpus, provisional budgets, isolated lab and actual results. The keyword control is implemented. Wax adapter source is prepared, but dependency resolution/compilation and contracts remain blocked. Cactus needs a supported reviewed native configuration; old Python/package references do not establish that configuration. The [current upstream review](../reference/2026-11-14-local-ai-support.md) records exact candidate pins and support limits. No target-phone experiment or final selection has passed. The earlier no-experiment statement describes the November 7 checkpoint.
+
+## Measured Simulator update, C39–C40, 2026-11-15
+
+Step 1 now completes real Wax/Cactus retrieval and llama.cpp model comparisons, with separate actual Mac MLX tests and an explicit Simulator-unavailable path. All required downloads and canonical dependency checks finish. The [measured summary](../evidence/local-ai-2026-11-14/resume-summary.md) replaces the earlier unfinished-integration checkpoint.
+
+Builder recommendation: llama.cpp CPU/Accelerate is the current Simulator text-runtime baseline; Wax lexical is the lower-cost provider baseline. Corrected Cactus last-token retrieval remains a replaceable semantic experiment. Both providers return unrelated sources for the no-evidence query. Qwen3-1.7B improves source citation behavior over 0.6B but still fails the Iraqi/Arabic requirements. No production model/provider is adopted.
+
+These experiment choices keep canonical originals, IDs, source links and corrections in the existing app-owned store. Indexes are derivatives. The historical custom-engine fallback recommendation does not override D30/C26: use upstream libraries and thin app-owned interfaces, without starting a new custom engine repository. Physical phone cost, human review and independent Step 2 remain separate.

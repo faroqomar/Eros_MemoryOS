@@ -1,0 +1,200 @@
+{
+  "formatVersion": 1,
+  "method": "Nearest-rank p95; warm means suite repetitions 1-5. End-to-end output tokens/s includes prompt preparation and prefill. Cold means an explicit wasColdLoad=true. Memory is sampled whole-process footprint, not incremental SDK memory. Groups keep environment, source identity and batch separate. Simulator results do not estimate phone battery or heat.",
+  "groups": [
+    {
+      "candidateID": "keyword-control",
+      "environment": "simulator",
+      "sourceIdentity": "unrecorded",
+      "batchID": "native/verification/local-ai-step1/resume/control-simulator-89c04b411f6b.json",
+      "context": {
+        "buildConfiguration": "Release",
+        "conditions": "Owner-selected simulator evaluation. Same fictional corpus; each suite starts with a fresh adapter. First model request cold, later requests reuse weights with fresh context. Network isolation not instrumented. Battery/physical heat not measured.",
+        "deviceModel": "iPhone19,2",
+        "environment": "simulator",
+        "offlineConfirmed": false,
+        "operatingSystem": "Version 27.2 (Build 24B8117)",
+        "purpose": "comparison",
+        "sourceIdentity": "unrecorded",
+        "toolchain": "Xcode 27.2 / Swift 6.4.2"
+      },
+      "configuration": {
+        "displayName": "Keyword control",
+        "id": "keyword-control",
+        "provenance": [
+          {
+            "notes": "Lexical control; no model.",
+            "revision": "unrecorded",
+            "sourceURL": "app-owned:KeywordMemoryIndex"
+          }
+        ],
+        "scope": "retrieval"
+      },
+      "settings": {
+        "maximumOutputTokens": 256,
+        "seed": 42,
+        "temperature": 0
+      },
+      "recordedSuites": 1,
+      "recordedRepetitions": [
+        0
+      ],
+      "inputs": [
+        {
+          "path": "native/verification/local-ai-step1/resume/control-simulator-89c04b411f6b.json",
+          "sha256": "89c04b411f6b0a8e42f2f30e1a7e53e0633f68139255fde56e483f82e75acc00"
+        }
+      ],
+      "retrievalStatuses": {
+        "completed": 15
+      },
+      "generationStatuses": {
+        "notApplicable": 15
+      },
+      "outputsAtTokenCap": 0,
+      "exactSourceSetMatches": 13,
+      "completedRetrievalCases": 15,
+      "meanSourceRecall": 1,
+      "allCases": {
+        "retrievalSeconds": {
+          "count": 15,
+          "median": 5.7333e-05,
+          "p95NearestRank": 0.000217042,
+          "minimum": 3.2917e-05,
+          "maximum": 0.000217042
+        },
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "fiveWarmSuites": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "coldModelRequests": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "indexBuildSeconds": null,
+      "sampledWholeProcessPeakBytes": {
+        "count": 1,
+        "median": 41798032,
+        "p95NearestRank": 41798032,
+        "minimum": 41798032,
+        "maximum": 41798032
+      },
+      "candidateLogicalFileBytes": {
+        "count": 1,
+        "median": 0,
+        "p95NearestRank": 0,
+        "minimum": 0,
+        "maximum": 0
+      },
+      "qualityReview": "No semantic pass is inferred. Review raw answers against the separate rubric."
+    },
+    {
+      "candidateID": "wax-lexical",
+      "environment": "host",
+      "sourceIdentity": "sha256:8038f0c6992e5dfda324296696426e3438176025b4a10073f477052867be3e48",
+      "batchID": "docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-snapshot.json",
+      "context": {
+        "buildConfiguration": "Release",
+        "conditions": "Real Wax FTS5 lexical retrieval on the shared fictional suite. Embeddings and text generation disabled. Host measurements cannot establish iPhone behavior or a component winner.",
+        "deviceModel": "Mac host",
+        "environment": "host",
+        "offlineConfirmed": false,
+        "operatingSystem": "Version 27.2.1 (Build 26B131)",
+        "purpose": "smoke",
+        "sourceIdentity": "sha256:8038f0c6992e5dfda324296696426e3438176025b4a10073f477052867be3e48",
+        "toolchain": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0"
+      },
+      "configuration": {
+        "displayName": "Wax lexical retrieval (no embedding model)",
+        "id": "wax-lexical",
+        "provenance": [
+          {
+            "notes": "Exact reviewed SwiftPM source revision; empty embedding traits; textOnly search.",
+            "revision": "67da356544e145a02f97fcf9cf6be39a199ced74",
+            "sourceURL": "https://github.com/christopherkarani/Wax"
+          }
+        ],
+        "scope": "retrieval"
+      },
+      "settings": {
+        "maximumOutputTokens": 256,
+        "seed": 42,
+        "temperature": 0
+      },
+      "recordedSuites": 1,
+      "recordedRepetitions": [
+        0
+      ],
+      "inputs": [
+        {
+          "path": "docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-snapshot.json",
+          "sha256": "66b68e974228790529a71874773dda2bdd476cc670401f25a4d35c139058efd5"
+        }
+      ],
+      "retrievalStatuses": {
+        "completed": 15
+      },
+      "generationStatuses": {
+        "notApplicable": 15
+      },
+      "outputsAtTokenCap": 0,
+      "exactSourceSetMatches": 10,
+      "completedRetrievalCases": 15,
+      "meanSourceRecall": 0.9333333333333333,
+      "allCases": {
+        "retrievalSeconds": {
+          "count": 15,
+          "median": 0.000405541,
+          "p95NearestRank": 0.002575125,
+          "minimum": 0.000233625,
+          "maximum": 0.002575125
+        },
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "fiveWarmSuites": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "coldModelRequests": {
+        "retrievalSeconds": null,
+        "generationSeconds": null,
+        "requestToFirstTokenSeconds": null,
+        "preparationSeconds": null,
+        "endToEndOutputTokensPerSecond": null
+      },
+      "indexBuildSeconds": null,
+      "sampledWholeProcessPeakBytes": {
+        "count": 1,
+        "median": 42680320,
+        "p95NearestRank": 42680320,
+        "minimum": 42680320,
+        "maximum": 42680320
+      },
+      "candidateLogicalFileBytes": {
+        "count": 1,
+        "median": 8547239,
+        "p95NearestRank": 8547239,
+        "minimum": 8547239,
+        "maximum": 8547239
+      },
+      "qualityReview": "No semantic pass is inferred. Review raw answers against the separate rubric."
+    }
+  ]
+}
