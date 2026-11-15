@@ -1,0 +1,1636 @@
+native/verification/local-ai-step1/cleanup-receipt.json
+  s_28978425e45104::t_8ea9d5df1f8970 1-14,25
+  s_28978425e45104::t_cc02c738ec20fe 15-24
+native/verification/local-ai-step2/repairs/final-recall.json
+  s_28978425e45104::t_63cb53be1e8b73 1-3,42-45,48,51,53,57,60-61,63-68,70,113-116,119-120,122,136,139-140,142-147,149,152-155,158-159,165-166,170-171,173-175,177-182,184,187-190,193-194,198,203,209,212-213,215-220,222,225-228,231-232,237,243,246-247,322-323,325-327,329,332-335,338-339,345,351,354-355,357-362,364,367-370,373-374,379,385,388-389,391-396,398,401-404,407-408,415,421,425,427-428,430-432,434,437-440,443-444,456,459-460,462-467,469,472-475,478-479,494,497-498,500-501,503-505,507,510-513,517,521,523,529,532-533,535-540,542,545-548,551-552,557,563,567,569-570,572-574,576,579-582,585-586,589,592,598,601-602,604-609,611,653-658,692-693,697-698,702-706,712-713,802-803,807-808,812-813,817-818,822-823,827-828,832-833,837-838,842-843,847-848,857-858,862-863,867-868,872-873,877-878,882-883,887-888,892-893,897-898,902-903,907-908,917-918,927-928,932-933,937-938,942-943,947-948,952-953,957-958,962-968
+  s_28978425e45104::t_264bedbdae61e5 40-41,46-47,49-50,52,54-56,58-59,62,249-254,256,259-262,265-266,271,280,284,286-287,289-291,293,296-299,302-304,316,319-320,502,509,516,524,528,531,659-661,694-696,699-701,707-711,804-806,809-811,814-816,819-821,824-826,829-831,834-836
+  s_28978425e45104::t_f44a27d8a4bbb7 72-76,79-80,86,91-92,96-101,103-108,110,112,163,195,199-200,202,283,288,310,331,342,445,518,614-617,621,642,646-648,650,717-718,722-723,727-728,782-783,799-801,852-853,899-901,912-913,922-923
+  s_28978425e45104::t_456dcc16a39f99 4-39,69,71,77-78,81-85,87-90,93-95,102,109,111,117-118,121,123-135,137-138,141,148,150-151,156-157,160-162,164,167-169,172,176,183,185-186,191-192,196-197,201,204-208,210-211,214,221,223-224,229-230,233-236,238-242,244-245,248,255,257-258,263-264,267-270,272-279,281-282,285,292,294-295,300-301,305-309,311-315,317-318,321,324,328,330,336-337,340-341,343-344,346-350,352-353,356,363,365-366,371-372,375-378,380-384,386-387,390,397,399-400,405-406,409-414,416-420,422-424,426,429,433,435-436,441-442,446-455,457-458,461,468,470-471,476-477,480-493,495-496,499,506,508,514-515,519-520,522,525-527,530,534,541,543-544,549-550,553-556,558-562,564-566,568,571,575,577-578,583-584,587-588,590-591,593-597,599-600,603,610,612-613,618-620,622-641,643-645,649,651-652,662-691,714-716,719-721,724-726,729-781,784-798,839-841,844-846,849-851,854-856,859-861,864-866,869-871,874-876,879-881,884-886,889-891,894-896,904-906,909-911,914-916,919-921,924-926,929-931,934-936,939-941,944-946,949-951,954-956,959-961
+native/verification/local-ai-step2/repairs/independent-final-integrity.json
+  s_28978425e45104::t_33b0054438f582 1-41
+native/verification/local-ai-step2/repairs/final-verification.json
+  s_28978425e45104::t_d8fdb3e297efe7 23,31-33
+  s_28978425e45104::t_8b4cfc775a4b67 1-22,24-30,34
+native/verification/local-ai-step1/resume/mlx-host-builder-review.json
+  s_28978425e45104::t_021eba5f1a9481 1-127,130
+  s_28978425e45104::t_27cd52539ba409 128
+  s_28978425e45104::t_30da14ea5593b9 129
+native/LocalAIEvaluation/Package.swift
+  s_28978425e45104::t_6b7e1441e302cd 1-8,10-13,15-16,20-22
+  s_28978425e45104::t_93bfed40e34ad1 9,14,17-19
+native/LocalCactusEvaluation/Sources/CactusEvaluationCLI/Main.swift
+  s_28978425e45104::t_aad2103ac39da4 20,52
+  s_28978425e45104::t_33a4c1a81e6ce1 32,39
+  s_28978425e45104::t_a9e49a651171f0 1-19,21,25-31,33-38,40-45,47-51,53,55-66
+  s_28978425e45104::t_865fa83d79f28a 54
+  s_28978425e45104::t_5e07269d79fa4c 46
+  s_28978425e45104::t_092f13d124cabb 22-24
+native/verification/local-ai-step1/resume/mlx-hydration-mlx-swift-lm.jsonl
+  s_28978425e45104::t_a6802c7b8a52a8 141-155
+  s_28978425e45104::t_bc8543f75576d8 252
+  s_28978425e45104::t_e04d6a513a287a 1-140,156-251,253-364
+native/LocalAIEvaluation/Tests/AIEvaluationCoreTests/ComparisonTests.swift
+  s_28978425e45104::t_073341e04b5070 1-2,4-6,9-26,29-46,52-94
+  s_28978425e45104::t_392dadad391a27 3,7-8,27-28,47-51
+docs/evidence/local-ai-2026-11-14/cactus-resume/final-host-retrieval-summary.json
+  s_28978425e45104::t_78a08fb1d8864d 1-17
+docs/evidence/local-ai-2026-11-14/resume-wax/grdb7-upstream-tags.json
+  s_28978425e45104::t_bcc831d41003c9 1-98
+native/verification/local-ai-step2/independent-final-source-recheck.json
+  s_28978425e45104::t_b4131aa27eda8c 1-8
+docs/evidence/local-ai-2026-11-14/cactus-resume/redundant-transfer-cleanup.json
+  s_28978425e45104::t_ff71c2cf069b91 1-10
+native/verification/local-ai-step2/header-default.json
+  s_28978425e45104::t_8a769f90379c58 1-26
+native/LocalCactusEvaluation/Sources/CactusEvaluationAdapter/CactusMemoryIndexAdapter.swift
+  s_28978425e45104::t_ae728c89ca3cd1 8,16,19,24
+  s_28978425e45104::t_a9e49a651171f0 10-11,56-59,78-79,98-100,122-124,126-128,130-132,134-139,165-168,192-193,207,237-241,245-246,257-259,264-267
+  s_28978425e45104::t_0eb6e07d0e1c08 21,23,25-26,191
+  s_28978425e45104::t_50b5c28dd38768 17,20,22
+  s_28978425e45104::t_422ee1dca6440d 53,120-121
+  s_28978425e45104::t_33a4c1a81e6ce1 206
+  s_28978425e45104::t_21f0287301d4a5 1-7,9,12,27-44,48-52,54-55,60-77,80-97,101-119,125,129,133,140-164,169-190,194-205,208-223,233-236,242-244,247-256,260-263,268-284
+  s_28978425e45104::t_c1d531d5efc254 13-15,224-232
+  s_28978425e45104::t_f37cf453affa0e 45-47
+  s_28978425e45104::t_06b7c9aa154d78 18,285
+native/verification/local-ai-step2/provenance-integrity.json
+  s_28978425e45104::t_914467c26a9246 1-357,365
+  s_28978425e45104::t_a2994d59bed383 358-364
+native/LocalAIIntegrations/scripts/prepare-wax-ios-override.py
+  s_28978425e45104::t_ce3a7a9bd84fcc 1,3-25,29-81
+  s_28978425e45104::t_bb4004db8a551a 2,26-28
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-CFEE906C-62D6-46E1-842E-792DB87A8758.json
+  s_28978425e45104::t_5b44319548fa34 1-308
+native/verification/local-ai-step2/dependency-integrity.json
+  s_28978425e45104::t_84ea3780334975 1-160
+native/verification/local-ai-step2/accessibility-initial-attachments/C19EA9EA-1DB0-46C4-BF55-992F01FD2D8E.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step2/cleanup-final-summary.json
+  s_28978425e45104::t_3e363f36d4aa40 1-23
+native/LocalAIIntegrations/README.md
+  s_28978425e45104::t_42170dddda9216 1,3,5,7-17,19-22,27-35,40
+  s_28978425e45104::t_4e3cb659adddc5 18
+  s_28978425e45104::t_cf716f581a0783 2,4,6,23-26,37
+  s_28978425e45104::t_12bdface06fc8f 36
+  s_28978425e45104::t_41b3b63ee2015e 38-39
+native/LocalMLXEvaluation/Package.swift
+  s_28978425e45104::t_962c3ed850aec9 1-30,34-35,39-41
+  s_28978425e45104::t_0af4e93139eb49 31-33,36-38
+docs/tasks/2026-11-14-local-ai-phone-evaluation.md
+  s_28978425e45104::t_689e59abb364e2 78
+  s_28978425e45104::t_0d0ef8b80fde29 91
+  s_28978425e45104::t_163b5051c02b40 1-2,4-6,8-10,20,23-43,53-55,57,92,134-135,139-141
+  s_28978425e45104::t_e47ac97019371d 11-14,58-77,79-90
+  s_28978425e45104::t_c367888a1fc4e7 145,166,177-199
+  s_28978425e45104::t_0bae2d04ada297 109,120-124
+  s_28978425e45104::t_37be5752aafd62 93-96
+  s_28978425e45104::t_ee761f95ed5464 7,15-19,21-22,99,104,108,110,125-132
+  s_28978425e45104::t_01047fd343bd30 143-144,146-156,158-162
+  s_28978425e45104::t_363683ff918d60 157,163
+  s_28978425e45104::t_9b2847b85f50e9 164-165,167-174
+  s_28978425e45104::t_dec4d465a24733 56,98,100-102,107,111-119,133
+  s_28978425e45104::t_f9e744b2fd95ae 3,200-208
+  s_28978425e45104::t_fbcfd9aa4cd6ff 103
+  s_28978425e45104::t_13ecf38b4bcc45 142,175-176
+  s_28978425e45104::t_c03e5efd94de19 97,105-106,136-137
+  s_28978425e45104::t_cf8522073b26c3 138
+  s_28978425e45104::t_3437aada78b71b 44-52
+native/verification/local-ai-step1/resume/memory-status.json
+  s_28978425e45104::t_49498bb9fde3c4 6,8,10,12
+  s_28978425e45104::t_3d1a2e579ae092 1-5,7,9,11,13-15
+native/verification/local-ai-step1/resume/mlx-eligible-tags.json
+  s_28978425e45104::t_a6830b10059274 1-26
+native/LocalMLXEvaluation/Tools/recover-complete-git-cache.py
+  s_28978425e45104::t_44173c846bf254 180-183
+  s_28978425e45104::t_7412fe585baf5a 1-52,54-56,62,64-66,83,93-151,161-179,184-208
+  s_28978425e45104::t_fedc23e26c44fb 53,57-61,63,67-82,84-92,152-160
+native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-4B73FDC1-811F-4119-B334-6B767191609F.json
+  s_28978425e45104::t_ad3d36fb4a3de3 1-286
+native/verification/local-ai-step1/resume/mlx-source-manifest.json
+  s_28978425e45104::t_93b4fe7564fe4f 1-122
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-Package.resolved
+  s_28978425e45104::t_f08c9bfc581340 1-50
+native/verification/local-ai-step2/toggle-default.json
+  s_28978425e45104::t_57c4b1d4b5775d 1-26
+native/verification/local-ai-step3/memory-status.json
+  s_28978425e45104::t_405459b6c7efb1 1-15
+native/verification/local-ai-step1/resume/mlx-download-url-normalization.json
+  s_28978425e45104::t_770ce43ce9cb28 1-8
+native/verification/local-ai-step2/repairs/package-isolation/project-move-integrity.json
+  s_28978425e45104::t_707115aaa5e3a8 1-25
+native/LocalAIEvaluation/Sources/AIEvaluationCore/EvaluationRunner.swift
+  s_28978425e45104::t_1328effb33ecd0 1-8,11-13,16,20-22,28-32,34,38-39,41-45,47-53,58,63-64,69-70,74-75,79-80,82-86,89-92,102-105,109,120-122,125-126,131-132,134-136,138,143-151,153-159
+  s_28978425e45104::t_3abc177e5f55ae 9-10,33
+  s_28978425e45104::t_821378151b4b6e 130,133,137
+  s_28978425e45104::t_0dfbfa74496251 35-36,118-119
+  s_28978425e45104::t_bedf88baab0e23 17,19,23
+  s_28978425e45104::t_4890de2a2def56 152
+  s_28978425e45104::t_4d26cdd46a055d 40,59-62,113-114
+  s_28978425e45104::t_20e1070e262c14 96-97
+  s_28978425e45104::t_3612ead15fc819 24-26,54-57,65-68,71-73,87-88,93-95,98-101,106-108,110-112,115-117,127-129,139-142
+  s_28978425e45104::t_d6d23f28a20b41 14-15,18,27,37,46,76-78,81
+  s_28978425e45104::t_fe004d103538e9 123-124
+native/LocalTextEvaluation/Sources/LlamaEvaluationAdapter/LlamaTextRuntime.swift
+  s_28978425e45104::t_bcb555e1111dc3 200,208-210,213-216
+  s_28978425e45104::t_b24826fdd80f5b 6,12,14-16,18,27-34,58-67,113-115,117-122,125-131,136-144
+  s_28978425e45104::t_0b136b47ca34c7 1-5,7-11,13,35-43,51-57,68-101,105-110,145-147,152-184,189-197,217-222
+  s_28978425e45104::t_da5adbdfe1fee7 44-50
+  s_28978425e45104::t_9d700ea61fcbfa 116
+  s_28978425e45104::t_0dfbfa74496251 23-26,111-112,132-135
+  s_28978425e45104::t_b00086363e98bb 17,19-22,123-124,148-151,198-199,201-207,211-212
+  s_28978425e45104::t_808fee9928f8af 102-104
+  s_28978425e45104::t_1cbec2291a072a 185-188
+docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-complete-canonical-wax.py
+  s_28978425e45104::t_a9d787a38e6250 151
+  s_28978425e45104::t_6814569ffa0cde 1-20,24-80,84-85,93,97-98,124-126,129,135-139,141-150,152-179,181-182,184-185,187-188,192-200,202-221
+  s_28978425e45104::t_41114b6e137e54 21-23,90-92,140,180,186,201
+  s_28978425e45104::t_22a4efca108066 81-83,86-89,94-96,99-123,127-128,130-134,183,189-191
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-binary-host-deny-network-launcher.json
+  s_28978425e45104::t_c084f4d5fec64d 41-42
+  s_28978425e45104::t_c29e8b8c678a3f 1-40,43
+native/verification/local-ai-step1/resume/markdown-links-final.json
+  s_28978425e45104::t_44b05fca4e4055 1-6
+native/LocalAIEvaluation/Tests/AIEvaluationPresentationTests/ViewModelTests.swift
+  s_28978425e45104::t_d5161b01e890e4 15-31
+  s_28978425e45104::t_93bfed40e34ad1 1-14,32-33,36-51,54-71,74,77-93,96-137,142-147
+  s_28978425e45104::t_3612ead15fc819 34-35,52-53,72-73,75-76,94-95,138-141
+  s_28978425e45104::t_48ffbd2db2a094 148-152
+native/verification/local-ai-step1/resume/mlx-clone-commands.jsonl
+  s_28978425e45104::t_392dadad391a27 2
+  s_28978425e45104::t_4899f6369cc9db 1,3-4
+native/LocalAIIntegrations/BinaryIntegration/README.md
+  s_28978425e45104::t_65c7c90f982adf 1-6,8-18,21-25
+  s_28978425e45104::t_cb2ce5eb678e89 7,19-20
+docs/evidence/local-ai-2026-11-14/resume-summary.md
+  s_28978425e45104::t_9b2847b85f50e9 3
+  s_28978425e45104::t_187735b4c73a89 1-2,4-15,17-61,63-83
+  s_28978425e45104::t_73ba47342b79b4 16,62
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-build-timing-pause.json
+  s_28978425e45104::t_8f1657957207ce 1-14,23
+  s_28978425e45104::t_a62a3cca833d08 15-22
+native/verification/local-ai-step2/repairs/memory-recall-verification.json
+  s_28978425e45104::t_d8fdb3e297efe7 1-30
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-6349CFB0-3280-40A8-8840-F0510E9C6B02.json
+  s_28978425e45104::t_5b44319548fa34 1-308
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-release-tests-result.json
+  s_28978425e45104::t_27a81c1cf0e1bf 3-8
+  s_28978425e45104::t_061a5878d4542d 1-2,9
+native/LocalCactusEvaluation/README.md
+  s_28978425e45104::t_7ff4380735d4e0 5,19,68,72
+  s_28978425e45104::t_9d47ee415c5236 1-2,4,6,8,10,12,14,16,24,26-27,36,38-39,42-43,54,56-57,62,65,67,69,71
+  s_28978425e45104::t_e3ba4d7cccef66 21,45-53
+  s_28978425e45104::t_b8bd8152b37340 3,7,9,11,13,15,17,22-23,25,28-35,37,40-41,44,55,58-61,63-64,66,70
+  s_28978425e45104::t_983cdbe2386656 18,20
+native/verification/local-ai-step2/accessibility-initial-attachments/CC5679ED-0F5C-4B23-A73E-22C65B0612CD.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step2/repairs/source-hashes.json
+  s_28978425e45104::t_2f0cbec3d684d6 1-2,4-10,12-108
+  s_28978425e45104::t_67e2c6f7008f53 3,11
+native/verification/local-ai-step1/resume/mlx-hydration-swift-crypto.jsonl
+  s_28978425e45104::t_52a201394f3740 682
+  s_28978425e45104::t_666ee6df7d9eb1 732
+  s_28978425e45104::t_6dd4ca4d7fca45 1-681,683-731,733-863
+native/verification/local-ai-step1/resume/benchmark-interference.json
+  s_28978425e45104::t_364ae5db3ca51b 1-10,16
+  s_28978425e45104::t_b302b314591530 11-15
+native/verification/local-ai-step1/resume/simulator-reports/cactus-951DB1F4-4D36-4D1A-96F8-D1341989B0CC.json
+  s_28978425e45104::t_0162dfc29c8c45 1-339
+native/verification/local-ai-step2/repairs/package-isolation/after/receipt.json
+  s_28978425e45104::t_4904455eea151e 1-51
+docs/evidence/local-ai-2026-11-14/resume-wax/SUPPORTED-CONFIGURATION.md
+  s_28978425e45104::t_62ebd56013b283 1-4,6-18
+  s_28978425e45104::t_79e5f3eb0a8efd 19-28
+  s_28978425e45104::t_27a81c1cf0e1bf 29-33
+  s_28978425e45104::t_65c7c90f982adf 5
+native/verification/local-ai-step2/repairs/installed-identity.json
+  s_28978425e45104::t_ddbea96b513c09 1-7
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-http-retry-ownership.json
+  s_28978425e45104::t_16a13ee114e004 1-7
+native/verification/local-ai-step1/memory-status.json
+  s_28978425e45104::t_e9e847b8dedb34 13
+  s_28978425e45104::t_9bf303809c3015 1-12,14-15
+native/LocalMLXEvaluation/SimulatorAvailability/Sources/MLXSimulatorAvailability/MLXSimulatorUnavailableRuntime.swift
+  s_28978425e45104::t_6814569ffa0cde 1-21
+docs/evidence/local-ai-2026-11-14/cactus-resume/cactus-host-last-token-retrieval.json
+  s_28978425e45104::t_a845a6f12e6430 1-334
+native/verification/local-ai-step1/resume/mlx-final-verification.json
+  s_28978425e45104::t_e58ede34c7d07d 1-82
+native/verification/local-ai-step2/llama-valid-input-cancellation.json
+  s_28978425e45104::t_ecf95ec9d41df1 1-12,14-16
+  s_28978425e45104::t_f682081d4aebd5 13
+native/LocalAIEvaluation/Sources/AIEvaluationCore/Contracts.swift
+  s_28978425e45104::t_6b7e1441e302cd 1-2,15-82,84-107,110-111,114-117,120-146,148-150,152,157-159,169-182
+  s_28978425e45104::t_3abc177e5f55ae 3-14
+  s_28978425e45104::t_1328effb33ecd0 83
+  s_28978425e45104::t_d6d23f28a20b41 147,151,153-156,160-168
+  s_28978425e45104::t_facbd6fe444650 108-109,112-113,118-119
+docs/evidence/local-ai-2026-11-14/cactus-resume/builder-status.json
+  s_28978425e45104::t_795d9000936deb 1,9-12,16,18
+  s_28978425e45104::t_7ff4380735d4e0 2-8,13-15,17
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/Crypto/canonical-range-progress.jsonl
+  s_28978425e45104::t_44173c846bf254 278-281
+  s_28978425e45104::t_d4c8a087b86577 277
+  s_28978425e45104::t_fbc5ffa2d2ed6a 1-276
+native/verification/local-ai-step1/resume/mlx-syntax-602-tags-retry.json
+  s_28978425e45104::t_092f13d124cabb 1
+native/AILabInfo.plist
+  s_28978425e45104::t_6a80ddd7680b95 1-3
+native/verification/local-ai-step1/resume/mlx-hydration-mlx-cpp-core.jsonl
+  s_28978425e45104::t_a6e774288123b7 166-167
+  s_28978425e45104::t_6b9c9bb0c8b7a9 414-415
+  s_28978425e45104::t_1f012b9f9dacf5 456
+  s_28978425e45104::t_395c3e219b94e7 1-165,168-413,416-455,457-624
+native/verification/local-ai-step1/resume/mlx-license-review.json
+  s_28978425e45104::t_6fd85064fddb4d 1-127
+native/verification/local-ai-step2/accessibility-final-attachments/manifest.json
+  s_28978425e45104::t_feb0d121e78767 1-74
+native/verification/local-ai-step2/repairs/memory-status.json
+  s_28978425e45104::t_d4b245ac4f9dd8 1-18
+native/verification/local-ai-step2/repairs/independent-xcresult-summary.json
+  s_28978425e45104::t_782e18e353ab63 1-37
+native/verification/local-ai-step2/independent-semantic-review.json
+  s_28978425e45104::t_c09b07e53ddd35 1-503
+native/verification/local-ai-step2/accessibility-final-attachments/2AD98C77-3632-45BE-B720-0DE36D664A2F.txt
+  s_28978425e45104::t_feb0d121e78767 1
+native/LocalTextEvaluation/Package.swift
+  s_28978425e45104::t_0dfbfa74496251 20-24
+  s_28978425e45104::t_d6d23f28a20b41 25-29
+  s_28978425e45104::t_459c1fbfffc321 7-10
+  s_28978425e45104::t_065870401110a9 13-15,18-19
+  s_28978425e45104::t_95732e8b6d032b 1-6,11-12,16-17,30-32
+native/verification/local-ai-step1/resume/mlx-tree-swift-syntax-f2f9593e75815c34b4ea53977d0065b182a5b6fd-scoped.json
+  s_28978425e45104::t_4917b3c7a2a711 1-3759
+docs/evidence/local-ai-2026-11-14/resume-wax/final-owned-process-audit.json
+  s_28978425e45104::t_27a81c1cf0e1bf 1,3,10
+  s_28978425e45104::t_ae18175a2c1027 2,4-9
+native/verification/local-ai-step2/dynamic-type-observations.json
+  s_28978425e45104::t_11e8bc7a315a55 1-90
+native/verification/local-ai-step2/markdown-links.json
+  s_28978425e45104::t_689e59abb364e2 1-2,4-5
+  s_28978425e45104::t_123cab2793b82c 3
+native/verification/local-ai-step1/resume/mlx-recursive-resolver-stop.json
+  s_28978425e45104::t_a555d818f96e05 1-22
+native/verification/local-ai-step1/resume/mlx-syntax-tag-recovery.json
+  s_28978425e45104::t_b4f8bf6dec7f02 1-13
+native/verification/local-ai-step1/source-hashes.json
+  s_28978425e45104::t_6a80ddd7680b95 2,4,21
+  s_28978425e45104::t_a4fd87a052f519 1,3,5-20,22-24,26,28-29
+  s_28978425e45104::t_5ad697dcd5bb81 25,27
+docs/evidence/local-ai-2026-11-14/resume-wax/binary-receipt-annotation-equivalence.json
+  s_28978425e45104::t_84a12046ebf346 1-11
+native/verification/local-ai-step1/resume/mlx-complete-cache-swift-jinja.json
+  s_28978425e45104::t_5b0a09f69c5771 1-14
+native/LocalAIIntegrations/scripts/run-wax-offline.py
+  s_28978425e45104::t_b4f27b830c8ea4 1-55,59-72,82-84,87-90,92,95,99-107
+  s_28978425e45104::t_d8529d0ddd724d 56-58,73-81,85-86,91,93-94,96-98
+native/LocalAIEvaluation/Sources/AIEvaluationCore/FictionalSuite.swift
+  s_28978425e45104::t_1328effb33ecd0 1-15,18-19,22-23,26-27,30-31,34-35,38-39,43-47,51-52,56-60,64-68,71-72,76,82-83,88,93,99-100,103,110,117-118,121-122,127-128,133,141-142,145,151-154
+  s_28978425e45104::t_3612ead15fc819 16-17,20-21,24-25,28-29,32-33,36-37,40-42,48-50,53-55,61-63,69-70,73-75,77-81,84-87,89-92,94-98,101-102,104-109,111-116,119-120,123-126,129-132,134-140,143-144,146-150
+README.md
+  s_28978425e45104::t_9b637c627ada2d 12
+  s_28978425e45104::t_c367888a1fc4e7 11
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-binary-host.json
+  s_28978425e45104::t_4af52ecac22524 1-291
+native/verification/local-ai-step2/accessibility-initial-attachments/2CD57767-681A-4F06-840F-FBB468C041EE.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+docs/evidence/local-ai-2026-11-14/resume-wax/supported-dependency-footprint.json
+  s_28978425e45104::t_2aa14b5319c7c8 1-119
+docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-wax-blobs.py
+  s_28978425e45104::t_836cf90d6778cf 3,9,19,22,30-35,38
+  s_28978425e45104::t_092f13d124cabb 1-2,4-8,10-18,20-21,23-29,36-37,39-51
+native/verification/local-ai-step2/repairs/independent-repair-recheck.md
+  s_28978425e45104::t_e10b0458f76b4b 34
+  s_28978425e45104::t_782e18e353ab63 1-33
+native/verification/local-ai-step2/cleanup-final-derived.json
+  s_28978425e45104::t_8c3fdb8b6c5c20 1-42
+native/verification/local-ai-step2/installed-identity.json
+  s_28978425e45104::t_24725f9c4483ab 1-7
+native/LocalAIEvaluation/Sources/AIEvaluationCLI/Main.swift
+  s_28978425e45104::t_2ccff0cb76fbf7 1-8,11-14,17,20-21,28-43
+  s_28978425e45104::t_3612ead15fc819 9-10,15-16,18-19,22-27
+native/LocalMLXEvaluation/Sources/MLXEvaluationAdapter/MLXTextRuntime.swift
+  s_28978425e45104::t_144881aa0443b8 110-111,115-120
+  s_28978425e45104::t_06cdb7d5026626 152-158,161,163
+  s_28978425e45104::t_0af4e93139eb49 15-17,40-42,46-47,90-95,173
+  s_28978425e45104::t_4552537f69181c 112,129,148,162,164
+  s_28978425e45104::t_72758847fe7e83 144-145,168-169,171-172
+  s_28978425e45104::t_9f4c60352268f6 2,36,96-97,106-109,130-143,146-147,149-151,165-167,170
+  s_28978425e45104::t_c2946e0a6bd493 30
+  s_28978425e45104::t_e2b31eb6b714b6 159-160
+  s_28978425e45104::t_962c3ed850aec9 1,3-14,18,20-26,28,31-32,37-39,44-45,59,70,76,85-89,174-181,187,190,195
+  s_28978425e45104::t_fa6b05e9fcafda 27
+  s_28978425e45104::t_a40201921c0061 103-104,113-114
+  s_28978425e45104::t_082a75fd6eaa68 33-35,43,82,84,182-186
+  s_28978425e45104::t_52080ee02ca264 29,98-102,105
+  s_28978425e45104::t_969b7da93eb43a 121-128
+  s_28978425e45104::t_3e7288b19afdc6 19,48-58,60,62,65-67,73-74,77-81,83,188-189,191-194
+  s_28978425e45104::t_ad1d5710694391 61,63-64,68-69,71-72,75
+native/MemoryOSAILab/LabProcessMeasurement.swift
+  s_28978425e45104::t_8e70630a5a2b4b 1-5,7-30,34-37,40-51,56-57,60-64
+  s_28978425e45104::t_e17b74e13a8c6d 6,31-33,38-39,52-55,58-59
+native/LocalAIIntegrations/Package.swift
+  s_28978425e45104::t_4e3cb659adddc5 15
+  s_28978425e45104::t_e8991bc1f18963 7-10,18,25-31,41
+  s_28978425e45104::t_b3c7f2b5fb55b5 17,22-23,32-40
+  s_28978425e45104::t_75e2398946671b 1-6,11-14,16,19-21,24,42-43
+scripts/prepare-llama-evaluation.py
+  s_28978425e45104::t_47fa18f3ed3bd5 39,72,90
+  s_28978425e45104::t_0b62d4ae420fd5 45
+  s_28978425e45104::t_065870401110a9 1-38,40-44,46,48-71,73-89,91-99
+  s_28978425e45104::t_af479b291405e8 47
+native/verification/local-ai-step1/resume/simulator-report-collection.json
+  s_28978425e45104::t_03289a6e939ad4 93-95,101-104,107-114
+  s_28978425e45104::t_ad3d36fb4a3de3 154-155,211-251
+  s_28978425e45104::t_cfb538947faf1c 87-88,156-160,165-171,176-177,182-185,190-191,193
+  s_28978425e45104::t_d1a8145456e65a 90-92,98-100,105-106,115-116,121-124,126,128-130
+  s_28978425e45104::t_5b44319548fa34 133-135,139-146,151,153
+  s_28978425e45104::t_acc093ddb416a5 161-164,172-175,178-181,186-189,192,194
+  s_28978425e45104::t_7a14db59359c84 7-47
+  s_28978425e45104::t_3cd5fc72e4dabb 1-6,48-86,252-254
+  s_28978425e45104::t_9d51254d1a501d 195-210
+  s_28978425e45104::t_afb7af0716dad6 89,131-132,136-138,147-150,152
+  s_28978425e45104::t_819aea449cb5f9 96-97,117-120,125,127
+native/verification/local-ai-step1/resume/mlx-snapshot-swift-jinja.json
+  s_28978425e45104::t_fe2555e9ab88ed 1-151
+native/verification/local-ai-step2/accessibility-initial-attachments/13739920-784B-4D15-90A8-A5DADE46DA57.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-canonical-transitives.py
+  s_28978425e45104::t_0162dfc29c8c45 61-63
+  s_28978425e45104::t_f92e5fe20e33dc 1-60,64-99
+native/verification/local-ai-step2/accessibility-initial-attachments/F7ABFDC1-1DE1-415E-900B-04317444020F.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/MemoryOSAILab/LabDomain.swift
+  s_28978425e45104::t_7318c695f72589 17
+  s_28978425e45104::t_a8f22ada8c63a5 1-14,18-19,21-22,24,28,30-31
+  s_28978425e45104::t_dfe4242fb29624 20
+  s_28978425e45104::t_e17b74e13a8c6d 23,25-27,29
+  s_28978425e45104::t_51c946ffad7a96 15-16
+native/MemoryOSAILab.xcodeproj/project.pbxproj
+  s_28978425e45104::t_5b3f0dff7b71d0 1-10,13-53
+  s_28978425e45104::t_d0091ff440a062 11-12
+native/verification/local-ai-step2/repairs/screenshots/manifest.json
+  s_28978425e45104::t_ddbea96b513c09 1-59
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-A2B2405E-06DA-4720-94AB-DC24175A1AA4.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/verification/local-ai-step1/resume/simulator-reports/cactus-1F33C359-FD88-49C6-AED3-ACF3C76120D1.json
+  s_28978425e45104::t_0162dfc29c8c45 1-339
+native/verification/local-ai-step1/llama-artifact-status.json
+  s_28978425e45104::t_f501cfe217ca01 1-18
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-vs-binary-source-check.json
+  s_28978425e45104::t_977a81ff033305 1-55
+native/verification/local-ai-step2/repairs/final-ui-receipt.json
+  s_28978425e45104::t_ddbea96b513c09 1-133
+native/LocalCactusEvaluation/Sources/CactusEvaluationAdapter/Resources/CactusEngine-LICENSE.txt
+  s_28978425e45104::t_f87eff0445f39f 1-38
+native/verification/local-ai-step1/resume/mlx-offline-policy-probe.json
+  s_28978425e45104::t_7ac9f7568214fe 1
+docs/evidence/local-ai-2026-11-14/cactus-resume/summary.md
+  s_28978425e45104::t_7ff4380735d4e0 3,8,10,24,28-29,35-36
+  s_28978425e45104::t_581e9a07bc0386 7,12,26,46-49
+  s_28978425e45104::t_934177915ea019 31,33,44
+  s_28978425e45104::t_b8bd8152b37340 1,5,9,11,14,16,18,20,22,30,32,34,37-43,45
+  s_28978425e45104::t_9242d354e0e045 2,4,6,13,15,17,19,21,23,25,27
+native/verification/local-ai-step1/control-smoke.json
+  s_28978425e45104::t_53018bdd245fc9 1-251
+native/verification/local-ai-step2/accessibility-initial-attachments/2AC0F0F3-A603-4C4D-A390-E2BC1C4ACAA9.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+docs/evidence/local-ai-2026-11-14/resume-wax/binary-packaging-receipt-4ca5ee868713951e935378810fefb4132a94faca6b348b3ce26a5b0ca09ee057.json
+  s_28978425e45104::t_b9ce5aac3ef284 1-425
+docs/evidence/local-ai-2026-11-14/resume-wax/TRANSPORT-INCIDENT.md
+  s_28978425e45104::t_836cf90d6778cf 1-9
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-1DF1D873-8909-4B09-B87F-B55BB96250E4.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/verification/local-ai-step2/accessibility-initial-attachments/A96CFA68-5686-45AC-8668-9B1BB243F344.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step1/resume/qwen06-output-equivalence.json
+  s_28978425e45104::t_b3d53420cad0f5 1-26
+native/verification/local-ai-step1/resume/mlx-hydration-swift-huggingface.jsonl
+  s_28978425e45104::t_30873982622d9f 25
+  s_28978425e45104::t_9b26ac970699b0 20
+  s_28978425e45104::t_e87f4b7f9a802a 1-19,21-24,26-66
+native/LocalAIEvaluation/README.md
+  s_28978425e45104::t_821378151b4b6e 1-4,6-20
+  s_28978425e45104::t_3f29b6341ffa0c 5,21-27
+  s_28978425e45104::t_73ba47342b79b4 28-29
+  s_28978425e45104::t_a40e0aecf743ff 30-44
+docs/evidence/local-ai-2026-11-14/cactus-resume/storage-cleanup.json
+  s_28978425e45104::t_78a08fb1d8864d 1-24
+native/verification/local-ai-step1/resume/mlx-hydration-swift-syntax.jsonl
+  s_28978425e45104::t_4917b3c7a2a711 92-99
+  s_28978425e45104::t_5dcf099f647cf4 52
+  s_28978425e45104::t_24dc3a6f835f83 275
+  s_28978425e45104::t_052b440ae7409c 37-43
+  s_28978425e45104::t_504b7c7494a991 1-18
+  s_28978425e45104::t_caa57fa8f2a782 105
+  s_28978425e45104::t_e5d7c82b4cd8dd 90
+  s_28978425e45104::t_22b870ec5493fc 220
+  s_28978425e45104::t_d9914e201e442d 19-36,44-51,53-89,91,100-104,106-219,221-274,276-407
+native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-8BD5B166-BAEF-4664-A837-3D8262458D38.json
+  s_28978425e45104::t_ad3d36fb4a3de3 1-286
+native/verification/local-ai-step2/repairs/simulator-reports/mlx-qwen-487A1B79-250A-4098-893A-8BCD6C032DD0.json
+  s_28978425e45104::t_ddbea96b513c09 1-203
+native/verification/local-ai-step1/resume/mlx-effective-manifests.json
+  s_28978425e45104::t_21cb446700e1d4 1-2,4-43,46-49,51-63,66-77,81
+  s_28978425e45104::t_30da14ea5593b9 3,44-45,50,64-65,78,80
+  s_28978425e45104::t_e6335ad08ba354 79
+native/verification/local-ai-step2/accessibility-initial-attachments/6DB75890-B691-4749-B0C7-832D51CA0A2F.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-FDB900B9-C08B-44D2-BD72-2ADBA3980CFF.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/verification/local-ai-step3/source-recheck.json
+  s_28978425e45104::t_e83cedcc6e430e 1-12
+native/verification/local-ai-step2/simulator-reports/llama-qwen-60F31A39-351E-438C-AC2E-82E1FD46CF3C.json
+  s_28978425e45104::t_ecf95ec9d41df1 1-308
+native/verification/local-ai-step2/memory-operations.json
+  s_28978425e45104::t_1c72b99fac516e 1-30
+native/verification/local-ai-step2/repairs/package-isolation/check-isolation.py
+  s_28978425e45104::t_29f3637e1672e5 1-98
+native/verification/local-ai-step1/resume/mlx-canonical-resolution.json
+  s_28978425e45104::t_4616d764639016 1-119
+native/verification/local-ai-step1/resume/screenshots/manifest.json
+  s_28978425e45104::t_0e0c075a804215 1-102
+native/verification/local-ai-step1/resume/mlx-hydration-swift-jinja.jsonl
+  s_28978425e45104::t_fe2555e9ab88ed 13-23
+  s_28978425e45104::t_db53b53a4ee12b 1-12
+docs/evidence/local-ai-2026-11-14/cactus-resume/host-source-identity.txt
+  s_28978425e45104::t_4b6d98bb7b88c0 1
+native/verification/local-ai-step1/resume/failed-workspace-generator-cleanup.json
+  s_28978425e45104::t_3fcc790e50f626 1-7
+native/LocalMLXEvaluation/SimulatorAvailability/Package.swift
+  s_28978425e45104::t_6814569ffa0cde 1-21
+native/verification/local-ai-step2/accessibility-initial-attachments/ED49CA96-B170-4171-9447-D3D8C046711B.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+docs/decisions/runtime-memory-options.md
+  s_28978425e45104::t_73ba47342b79b4 76
+  s_28978425e45104::t_9b637c627ada2d 66-70
+  s_28978425e45104::t_ee761f95ed5464 71-75,77-78
+native/verification/local-ai-step2/screenshots/manifest.json
+  s_28978425e45104::t_3e363f36d4aa40 1-126
+scripts/summarize-local-ai.py
+  s_28978425e45104::t_4d26cdd46a055d 84-86
+  s_28978425e45104::t_29fef5b796b5e2 102-105
+  s_28978425e45104::t_25e9780de11b00 106,108,110-112,117
+  s_28978425e45104::t_2e64091fbf46be 98-99
+  s_28978425e45104::t_84f59f7f181ae8 1-22,26-29,33-46,51-83,87-88,96-97,100-101,107,109,113-115,118-124,126,128-134
+  s_28978425e45104::t_515ea891084bca 23-25,47-50,89-95,116,125,127
+  s_28978425e45104::t_9d700ea61fcbfa 30-32
+native/verification/local-ai-step1/resume/git-process-recovery.json
+  s_28978425e45104::t_5704e1ec7ceab0 1-15
+docs/evidence/local-ai-2026-11-14/cactus-resume/build-tools-reuse.json
+  s_28978425e45104::t_6495aa773e69c5 1-7
+docs/evidence/local-ai-2026-11-14/resume-wax/binary-packaging-receipt.json
+  s_28978425e45104::t_dfeeae75de40d4 1-425
+native/verification/local-ai-step2/cleanup-after.json
+  s_28978425e45104::t_aec8f392890375 1-27
+native/verification/local-ai-step2/export-roundtrip-final.json
+  s_28978425e45104::t_3a0aee3cdfb629 1-11
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-7F9D49F6-1720-4767-A25A-283E8CA29184.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/Crypto/canonical-complete-cache.json
+  s_28978425e45104::t_44173c846bf254 1-14
+native/LocalCactusEvaluation/Tests/CactusEvaluationAdapterTests/CactusContracts.swift
+  s_28978425e45104::t_2c9e811e5a73cf 13-31
+  s_28978425e45104::t_c1d531d5efc254 174-197
+  s_28978425e45104::t_422ee1dca6440d 148-163
+  s_28978425e45104::t_a9e49a651171f0 1-12,32-111,113,115-147
+  s_28978425e45104::t_50b5c28dd38768 164,166,173
+  s_28978425e45104::t_ae728c89ca3cd1 112,114,168-172
+  s_28978425e45104::t_f6514965c92ff8 165,167
+native/LocalAIEvaluation/Sources/AIEvaluationCore/KeywordMemoryIndex.swift
+  s_28978425e45104::t_1328effb33ecd0 1-42,45-48
+  s_28978425e45104::t_3612ead15fc819 43-44
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/Crypto/canonical-complete-objects.jsonl
+  s_28978425e45104::t_44173c846bf254 961-964
+  s_28978425e45104::t_d4c8a087b86577 960
+  s_28978425e45104::t_6810960835e5c3 1-959
+native/verification/local-ai-step1/resume/simulator-reports/mlx-qwen-FF7FE5CC-024D-4145-B239-8EC0D58F5500.json
+  s_28978425e45104::t_9d51254d1a501d 1-203
+native/verification/local-ai-step2/cleanup-before.json
+  s_28978425e45104::t_ca4f486715a81c 1-24
+native/verification/local-ai-step2/accessibility-initial-attachments/1EDEE3B3-F87C-441C-9F69-66542AD9BD96.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+docs/evidence/local-ai-2026-11-14/resume-wax/stable-MetalANNS-provenance.json
+  s_28978425e45104::t_30873982622d9f 1-74
+docs/evidence/local-ai-2026-11-14/resume-wax/tested-supported-patched-graph.json
+  s_28978425e45104::t_37539e56804ebb 62-78
+  s_28978425e45104::t_4573236e138e6e 1-61,79
+native/verification/local-ai-step1/resume/simulator-summary.json
+  s_28978425e45104::t_ded3d3d3caa658 1-126,324-337,352-480,678-690,698-699,707-877,1345-1378,1381-1551,2019-2052,2055-2154,2156-2163,2166-2294,2492-2504,2512,2520-2541
+  s_28978425e45104::t_0e0c075a804215 127-323,481-677,878-1344,1552-2018,2155,2295-2491
+  s_28978425e45104::t_094266e0aab4b6 338-351,691-697,700-706,1379-1380,2053-2054,2164-2165,2505-2511,2513-2519
+native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-6FE303B1-4488-4A69-BF91-ECC283B24293.json
+  s_28978425e45104::t_ad3d36fb4a3de3 1-286
+native/verification/local-ai-step2/accessibility-initial-attachments/CFBAC897-B980-4E35-8409-FE0C20592DF0.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step1/resume/control-six-suite-interim/README.txt
+  s_28978425e45104::t_fe2555e9ab88ed 1
+native/LocalTextEvaluation/README.md
+  s_28978425e45104::t_cf716f581a0783 1-2,4,6,8,10,12,17-19,22
+  s_28978425e45104::t_c03e5efd94de19 3,5,7,9,11,13-16,20-21,23
+native/verification/local-ai-step2/toggle-largest.json
+  s_28978425e45104::t_973e4a0cbd7d5b 1-28
+docs/evidence/local-ai-2026-11-14/resume-wax/binary-source-provenance.json
+  s_28978425e45104::t_dfeeae75de40d4 1-137
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-4F940027-90DE-4D44-84CE-2EC2D9D121FC.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/verification/local-ai-step2/repairs/markdown-links.json
+  s_28978425e45104::t_d4b245ac4f9dd8 1-5
+native/verification/local-ai-step2/repairs/memory-operations-final.json
+  s_28978425e45104::t_1a8a4ee44fa1d3 1-9
+native/verification/local-ai-step2/accessibility-initial-attachments/ED4D5EF7-CA6A-4CA7-9CD2-7F7E48B1F6F9.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step1/resume/mlx-complete-cache-yyjson-0.13.0.json
+  s_28978425e45104::t_44173c846bf254 1-14
+native/LocalMLXEvaluation/Tools/hydrate-reviewed-snapshot.py
+  s_28978425e45104::t_17c88bca26b1b4 106,115-116,120-136,150-151
+  s_28978425e45104::t_0f7c98025eb74a 28-29,47-48,201-202
+  s_28978425e45104::t_9d39894b8e814e 105,166-169
+  s_28978425e45104::t_3caa3ecf0ef3bd 26,30-33,36,103-104,178-188,220-222
+  s_28978425e45104::t_f9d8f3554e80b3 1-25,27,34-35,37-46,49-102,107-114,117-119,137-149,152-165,170-177,189-200,203-219,223-234
+native/verification/local-ai-step2/accessibility-initial-attachments/AB0BCF21-1B5F-4495-BF4E-B7420A607D3E.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/LocalAIIntegrations/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift
+  s_28978425e45104::t_c3c79b31d203c9 1-113
+docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-dependency-blobs.py
+  s_28978425e45104::t_836cf90d6778cf 1-95
+native/verification/local-ai-step1/resume/mlx-effective-huggingface-dump.json
+  s_28978425e45104::t_56b82a7d54b8ce 1-470
+docs/evidence/local-ai-2026-11-14/resume-wax/effective-manifest-audit.json
+  s_28978425e45104::t_12afd4e8b84e26 1-57
+native/verification/local-ai-step1/resume/comparison-inputs.json
+  s_28978425e45104::t_ce932fc67aba9e 1-237
+docs/evidence/local-ai-2026-11-14/resume-wax/resource-copy-checks.json
+  s_28978425e45104::t_3d3342a00611a5 1-29
+native/LocalMLXEvaluation/Tests/MLXEvaluationAdapterTests/MLXAdapterTests.swift
+  s_28978425e45104::t_bd3fa5d0943a13 113-114,116-121
+  s_28978425e45104::t_fa6b05e9fcafda 60-64,69
+  s_28978425e45104::t_a40201921c0061 48-49
+  s_28978425e45104::t_0af4e93139eb49 4,20-21,27-31,33-34,68,76-77
+  s_28978425e45104::t_938195838b35cf 52
+  s_28978425e45104::t_23e39634524e0d 115,122-136
+  s_28978425e45104::t_c2946e0a6bd493 10-11,14,17-18
+  s_28978425e45104::t_52080ee02ca264 46-47,50-51,53-54
+  s_28978425e45104::t_13b6337fbf1e36 88,90-92,96
+  s_28978425e45104::t_03d213948bc539 12-13,15-16
+  s_28978425e45104::t_59ff6560178680 1-3,5-9,19,22-26,32,35-37,65-67,70-75,78-87,89,93-95,97-112,137-138
+  s_28978425e45104::t_ad1d5710694391 38-45,55-59
+docs/evidence/local-ai-2026-11-14/cactus-resume/last-token-host-retrieval-summary.json
+  s_28978425e45104::t_77911bd3faf037 1-16
+native/verification/local-ai-step1/resume/mlx-host-metal-staging.json
+  s_28978425e45104::t_43b1b5e1f9fddf 1-11
+native/verification/local-ai-step1/resume/builder-checks-final.json
+  s_28978425e45104::t_44b05fca4e4055 27-38
+  s_28978425e45104::t_1797b13b4a0235 1-26,39
+native/verification/local-ai-step2/header-largest.json
+  s_28978425e45104::t_996914e949eb25 1-26
+native/verification/local-ai-step3/preserved-unrelated-work.json
+  s_28978425e45104::t_e83cedcc6e430e 1-11
+native/verification/local-ai-step1/resume/markdown-links-preflight.json
+  s_28978425e45104::t_c2ebacccfb8bd8 1-28
+native/MemoryOSAILab/LabView.swift
+  s_28978425e45104::t_47fa18f3ed3bd5 138,145-147
+  s_28978425e45104::t_f64139f23e6c87 40,42-44,46
+  s_28978425e45104::t_195774a196d057 111-115,225
+  s_28978425e45104::t_d6d23f28a20b41 74-79,116-121,129-130,132-133,136-137,185-190
+  s_28978425e45104::t_5cb90fbcc224a9 72-73,80-82,131,134-135,148,181-184,191-194,213-214
+  s_28978425e45104::t_59faf4722605fc 47,107-108,199-200,209-210,231-237
+  s_28978425e45104::t_f4d116464486af 54-57
+  s_28978425e45104::t_54c62cf20e6bfe 35,37
+  s_28978425e45104::t_a8f22ada8c63a5 1-18,20-34,36,45,48-53,58-60,62-66,68-71,83-85,90-92,106,109-110,149-155,168-170,195-198,201-208,211-212,215-224,226-230,238-239
+  s_28978425e45104::t_0537093406e991 86-89,122-128,139-144,157-159,161-166
+  s_28978425e45104::t_5ad697dcd5bb81 94-95
+  s_28978425e45104::t_790b86832f3d54 156,160,167
+  s_28978425e45104::t_c521ec5d0526f5 19,93,96-105,171-180
+  s_28978425e45104::t_0a0f5ba05d0147 38-39
+  s_28978425e45104::t_ec747f0a04f64c 41
+  s_28978425e45104::t_95f5ffe2b8ad58 61
+  s_28978425e45104::t_2fda9fee67b185 67
+docs/evidence/local-ai-2026-11-14/resume-wax/supported-patch-receipt.json
+  s_28978425e45104::t_059f4a870fc1ef 1-19
+native/LocalCactusEvaluation/Support/prepare_asset.py
+  s_28978425e45104::t_b5f96548842834 30-31,48
+  s_28978425e45104::t_265de145d3589e 1-29,32-47,49-52
+docs/evidence/local-ai-2026-11-14/resume-wax/owned-process-pause.json
+  s_28978425e45104::t_0452710bf0549c 1-35
+docs/evidence/local-ai-2026-11-14/cactus-resume/v114-patched-source-manifest.json
+  s_28978425e45104::t_a845a6f12e6430 26,31
+  s_28978425e45104::t_4b6d98bb7b88c0 3
+  s_28978425e45104::t_c1d531d5efc254 1-2,4-25,27-30,32-98
+native/LocalAIEvaluation/Sources/AIEvaluationCore/Report.swift
+  s_28978425e45104::t_bedf88baab0e23 16-18,23-24,35-37,110,116,127
+  s_28978425e45104::t_4d26cdd46a055d 72-73
+  s_28978425e45104::t_3612ead15fc819 134-136,144-145,150-152,160-161,165-167,171-178,184-187,198-199
+  s_28978425e45104::t_bab265ccaa2c1a 130-131,143,168,170
+  s_28978425e45104::t_6b7e1441e302cd 1-15,19-22,25-34,38-61,65-71,74-109,111-115,117,119-126,128-129,132-133,137-142,146-149,162-164,188,200-213,215-219
+  s_28978425e45104::t_d6d23f28a20b41 62-64,118,153-159,169,179-183,189-197,214
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/GRDB/canonical-complete-objects.jsonl
+  s_28978425e45104::t_d9b3c0391cff2b 578-673
+  s_28978425e45104::t_9c4a2ebb093df1 719-720
+  s_28978425e45104::t_9a48bb899d4334 510
+  s_28978425e45104::t_fe522eb78cc2ee 577
+  s_28978425e45104::t_b2111357dcf9e9 440-468
+  s_28978425e45104::t_7fc2b4d510befc 436-439
+  s_28978425e45104::t_0f84d6331e9ca8 27-70
+  s_28978425e45104::t_4c01b614126380 1-26,71-435,469-509,511-576,674-718,721-775
+native/verification/local-ai-step1/resume/simulator-reports/cactus-BB046816-A756-461B-8FC4-33B260B473E0.json
+  s_28978425e45104::t_0162dfc29c8c45 1-339
+native/verification/local-ai-step2/accessibility-initial-attachments/10B4DBF2-51C7-43DE-A244-7CBAA98FB943.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step2/exported-final-control-report.json
+  s_28978425e45104::t_3a0aee3cdfb629 1-278
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-10B508B9-AFEE-470E-827F-C01666D3A6D3.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/LocalAIIntegrations/BinaryIntegration/Sources/WaxEvaluationBinaryDependencies/Exports.swift
+  s_28978425e45104::t_69fa57eeb273d1 1-4
+native/verification/local-ai-step1/resume/llama-source-transport.json
+  s_28978425e45104::t_da467dd0dc9a4a 1-29
+native/verification/local-ai-step2/repairs/memory-status-final.json
+  s_28978425e45104::t_5921c78f366b1b 1-5,8-9,11-12,14-15
+  s_28978425e45104::t_456dcc16a39f99 6,10,13
+  s_28978425e45104::t_4d4db9fb127ad6 7
+docs/evidence/local-ai-2026-11-14/resume-wax/blob-hydration.jsonl
+  s_28978425e45104::t_aed5dff4f22bd0 338-350
+  s_28978425e45104::t_726e27062065d4 52
+  s_28978425e45104::t_f126508899496e 99-103
+  s_28978425e45104::t_392dadad391a27 176-191
+  s_28978425e45104::t_8d90bdf812610c 456
+  s_28978425e45104::t_01aea0603bfcc9 17-22
+  s_28978425e45104::t_088156fc8ae24d 23
+  s_28978425e45104::t_9c1d18d986707a 389
+  s_28978425e45104::t_a592e9fd24f350 98
+  s_28978425e45104::t_c22d9fc172823c 226
+  s_28978425e45104::t_ebb3295b2eb2cc 422-423
+  s_28978425e45104::t_1b47d08f8ef77f 1-16,24-51,53-97,104-175,192-225,227-337,351-388,390-421,424-455,457
+native/LocalAIIntegrations/scripts/build-wax-xcframework.py
+  s_28978425e45104::t_cb2ce5eb678e89 1-101,105-141
+  s_28978425e45104::t_fe244edfd4ac58 102-104
+native/verification/local-ai-step1/builder-checks.json
+  s_28978425e45104::t_023274139fcf84 1-31
+native/verification/local-ai-step1/resume/mlx-hydration-mlx-swift.jsonl
+  s_28978425e45104::t_716c1257677e15 247
+  s_28978425e45104::t_7631e073f2217a 654
+  s_28978425e45104::t_e4dbe8561a2213 296
+  s_28978425e45104::t_48e054e76f5126 700
+  s_28978425e45104::t_d67c9b1044851a 43
+  s_28978425e45104::t_5e516d3f2f1a4b 112
+  s_28978425e45104::t_cb1ab6b54b7198 70-83
+  s_28978425e45104::t_6b9c9bb0c8b7a9 599
+  s_28978425e45104::t_fe2555e9ab88ed 211-246
+  s_28978425e45104::t_cb46a9c30d0a20 1-42,44-69,84-111,113-210,248-295,297-598,600-653,655-699,701-703
+native/verification/local-ai-step1/resume/mlx-snapshot-EventSource.json
+  s_28978425e45104::t_fe2555e9ab88ed 1-79
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/ASN1/canonical-complete-tree.json
+  s_28978425e45104::t_44173c846bf254 1-1856
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/GRDB/canonical-range-progress.jsonl
+  s_28978425e45104::t_7fc2b4d510befc 212-215
+  s_28978425e45104::t_9c4a2ebb093df1 496-497
+  s_28978425e45104::t_0f84d6331e9ca8 28-94
+  s_28978425e45104::t_b2111357dcf9e9 216-244
+  s_28978425e45104::t_9a48bb899d4334 286
+  s_28978425e45104::t_fe522eb78cc2ee 353
+  s_28978425e45104::t_d9b3c0391cff2b 354-453
+  s_28978425e45104::t_89c769cf7b31ce 1-27,95-211,245-285,287-352,454-495,498-559
+native/verification/local-ai-step1/resume/memory-page-correction.json
+  s_28978425e45104::t_96a6842a7f4dc5 1-25
+native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-4AC8EA9D-67D7-41B5-A87C-52F5B31A74E7.json
+  s_28978425e45104::t_ad3d36fb4a3de3 1-286
+native/verification/local-ai-step2/repairs/screenshots/intermediate-manifest.json
+  s_28978425e45104::t_0c7d0729bf37a5 1-33
+native/verification/local-ai-step2/cleanup-removals.json
+  s_28978425e45104::t_1acae59e56c655 1-101
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-4973876A-FB46-4D2D-A86E-39B330D3B060.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/LocalAIEvaluation/Sources/AIEvaluationCore/RunEvaluationComparison.swift
+  s_28978425e45104::t_fb38dad407b66e 1-132
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-EEE2C6F9-3BF8-4EA4-A7A3-4E3C7EB94DC6.json
+  s_28978425e45104::t_735a5b3e9d739c 1-308
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-supported-summary.json
+  s_28978425e45104::t_2aa14b5319c7c8 1-56
+docs/evidence/local-ai-2026-11-14/resume-wax/temporary-override.json
+  s_28978425e45104::t_4545b97c473b05 1-28
+native/verification/local-ai-step2/affected-simulator-recheck.json
+  s_28978425e45104::t_6a9d2f21f84335 1-15
+native/LocalAIEvaluation/Sources/AIEvaluationPresentation/EvaluationViewModel.swift
+  s_28978425e45104::t_bedf88baab0e23 66
+  s_28978425e45104::t_93bfed40e34ad1 1-16,18-33,35-44,46-52,58-65,67-68,71-86,92-93
+  s_28978425e45104::t_3612ead15fc819 69
+  s_28978425e45104::t_0916ddeb57e53d 70
+  s_28978425e45104::t_0dfbfa74496251 53-57
+  s_28978425e45104::t_20e1070e262c14 17,34,45,87-91
+.gitignore
+  s_28978425e45104::t_facbd6fe444650 23-28
+native/verification/local-ai-step3/memory-check.log
+  s_28978425e45104::t_405459b6c7efb1 1-15
+native/verification/local-ai-step1/resume/mlx-host-canonical-network-denied.json
+  s_28978425e45104::t_a0fc4039abcfb9 1-298
+native/verification/local-ai-step2/memory-status.json
+  s_28978425e45104::t_00da5cb773a230 1-5,7-12,14-15
+  s_28978425e45104::t_aab88674fe6e2d 6,13
+native/LocalAIEvaluation/Tests/AIEvaluationCoreTests/EvaluationTests.swift
+  s_28978425e45104::t_4d26cdd46a055d 13-14,16-19,25-30,34-35,220-231
+  s_28978425e45104::t_2ccff0cb76fbf7 1-2,4-10,47-57,61-68,75-84,90-98,101-108,113-114,117,122-136,139-152,161-170,178-201,204-209,212-217,232-244,251-252,255-256,276-301,305-308,312-314,318-324
+  s_28978425e45104::t_3612ead15fc819 3,58-60,69-74,85-89,99-100,109-112,115-116,118-121,137-138,153-160,171-175,177,202-203,210-211,218-219,245-247,250,253-254,302-304,309-311,315-317
+  s_28978425e45104::t_4890de2a2def56 176
+  s_28978425e45104::t_87a0500016a7e3 11-12,15,20-24,31-33,36-46
+  s_28978425e45104::t_d5161b01e890e4 248-249,257-275
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-binary-host-deny-network.json
+  s_28978425e45104::t_c29e8b8c678a3f 1-291
+docs/evidence/local-ai-2026-11-14/resume-wax/git-filter-transport.py
+  s_28978425e45104::t_bff3337253037a 1-3
+  s_28978425e45104::t_0a5b5dd361c99c 4-7
+native/LocalMLXEvaluation/Sources/MLXEvaluationAdapter/LocalTokenizer.swift
+  s_28978425e45104::t_962c3ed850aec9 1-31,34-35
+  s_28978425e45104::t_0af4e93139eb49 32-33
+native/verification/local-ai-step2/final-verification.json
+  s_28978425e45104::t_435c0ce69afbc2 1-173,182
+  s_28978425e45104::t_123cab2793b82c 174,179-181
+  s_28978425e45104::t_5601332269e35e 175-178
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-2ACF41A7-C697-4F07-9E11-825ADC014CCB.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+docs/evidence/local-ai-2026-11-14/cactus-resume/asset-preparation.json
+  s_28978425e45104::t_6ab9e42ff77206 1
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/ASN1/canonical-range-progress.jsonl
+  s_28978425e45104::t_44173c846bf254 101-179
+  s_28978425e45104::t_014e20852881ca 100
+  s_28978425e45104::t_dfa3df557278a9 1-99
+native/verification/local-ai-step2/independent-final-focused-recheck.json
+  s_28978425e45104::t_3692f0755e3a67 1-16
+native/verification/local-ai-step2/repairs/memory-operations.json
+  s_28978425e45104::t_efe3ee6e33819a 1-10
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/ASN1/canonical-complete-objects.jsonl
+  s_28978425e45104::t_014e20852881ca 99
+  s_28978425e45104::t_44173c846bf254 100-211
+  s_28978425e45104::t_c3071f5aaf2c71 1-98
+native/verification/local-ai-step2/repairs/accessibility/LabView.before.swift.txt
+  s_28978425e45104::t_1154848d01450b 1-231
+docs/reference/2026-11-14-local-ai-support.md
+  s_28978425e45104::t_0e7a93fa85c9e9 5,7-8,24
+  s_28978425e45104::t_8078a2cf4694a2 30
+  s_28978425e45104::t_9669d651bf7087 67
+  s_28978425e45104::t_3baccfcf507845 73-79,81-82,84-91
+  s_28978425e45104::t_df9f78600f75ad 1-4,6,9-13,15-23,25-29,31-56
+  s_28978425e45104::t_f29d2cd258dc5d 14
+  s_28978425e45104::t_657114dab73c8d 68
+  s_28978425e45104::t_f5d9004d135c13 57-63,65-66
+  s_28978425e45104::t_aea8e63baa2b1b 69-72
+  s_28978425e45104::t_afb7af0716dad6 80
+  s_28978425e45104::t_ee761f95ed5464 83
+  s_28978425e45104::t_ed9428b8ee3f09 64
+native/verification/local-ai-step1/resume/mlx-tokenizer-preseed.json
+  s_28978425e45104::t_ee7f1b95af0f2e 1-40
+docs/decisions/decision-register.md
+  s_28978425e45104::t_c367888a1fc4e7 126
+  s_28978425e45104::t_ee761f95ed5464 62
+  s_28978425e45104::t_c03e5efd94de19 60
+  s_28978425e45104::t_5e8edc3fff865e 122-125
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-binary-host-deny-network-summary.json
+  s_28978425e45104::t_c084f4d5fec64d 1-9
+native/LocalMLXEvaluation/Package.resolved
+  s_28978425e45104::t_2ab7cd75066b56 1-112
+native/verification/local-ai-step2/accessibility-initial-attachments/501FA45D-1208-4E60-8E16-DCB537D74BB7.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+docs/evidence/local-ai-2026-11-14/resume-wax/optional-sqlite-scope.json
+  s_28978425e45104::t_79e5f3eb0a8efd 13-35
+  s_28978425e45104::t_f08c9bfc581340 1-12,36
+native/verification/local-ai-step1/final-recall.json
+  s_28978425e45104::t_bff95e5d4678d8 1-976
+docs/evidence/local-ai-2026-11-14/development-memory-correction.md
+  s_28978425e45104::t_cb2d987be63d4b 12-17
+  s_28978425e45104::t_b5a9238d9be69d 1-11
+docs/evidence/local-ai-2026-11-14/cactus-resume/patch-roundtrip-verification.json
+  s_28978425e45104::t_581e9a07bc0386 1-7
+docs/evidence/local-ai-2026-11-14/resume-wax/materialize-verified-snapshots.py
+  s_28978425e45104::t_d878e1652c1bdb 1-60,65-70
+  s_28978425e45104::t_c90ac753d4e445 61-64
+native/verification/local-ai-step3/whitespace-review.json
+  s_28978425e45104::t_268351f7185d41 1-9
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-complete-cache.json
+  s_28978425e45104::t_3cd5fc72e4dabb 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-swift-asn1.json
+  s_28978425e45104::t_5b0a09f69c5771 1-14
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-42447A9B-4173-4FFC-B3BA-F61978A90F96.json
+  s_28978425e45104::t_d1a8145456e65a 1-308
+native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-510FA262-06C0-4CCB-A555-E3E435EFA10C.json
+  s_28978425e45104::t_ad3d36fb4a3de3 1-286
+native/verification/local-ai-step1/resume/failed-workspace-cleanup.json
+  s_28978425e45104::t_15e67d8c24ad8a 1-10
+native/verification/local-ai-step1/resume/mlx-current-recall.json
+  s_28978425e45104::t_b08d720c054ae7 1-970
+native/verification/local-ai-step1/resume/mlx-provisional-helper-sources.json
+  s_28978425e45104::t_902c5161c9f9c7 1-21
+native/verification/local-ai-step2/repairs/independent-repair-recheck.json
+  s_28978425e45104::t_e10b0458f76b4b 83
+  s_28978425e45104::t_782e18e353ab63 1-82,84-103
+native/verification/local-ai-step3/independent-delivery-review.md
+  s_28978425e45104::t_58b3324f59ed33 1-25
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/Crypto/tag-proof.json
+  s_28978425e45104::t_44173c846bf254 1-7
+native/verification/local-ai-step2/provenance-cleanup-candidates.json
+  s_28978425e45104::t_5c2b045b395207 1-145
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-9215D038-AE18-46E3-924C-7AFF69168771.json
+  s_28978425e45104::t_cfb538947faf1c 1-308
+native/LocalCactusEvaluation/Tests/CactusEvaluationAdapterTests/NativeEmbeddingContract.swift
+  s_28978425e45104::t_33a4c1a81e6ce1 1-31
+native/verification/local-ai-step2/repairs/cleanup-summary.json
+  s_28978425e45104::t_816c63668c29f6 1-19
+docs/evidence/local-ai-2026-11-14/resume-wax/binary-packaging-receipt-4fedc5ca4a6d77204dc68fa13975386948f7bae61684b15b493bf5a67f950455.json
+  s_28978425e45104::t_b9ce5aac3ef284 1-357
+docs/evidence/local-ai-2026-11-14/cactus-resume/preprocessing-review.md
+  s_28978425e45104::t_c5b4e4732c4fe4 1-13
+native/verification/local-ai-step1/native-interaction-checks.json
+  s_28978425e45104::t_d78e9a5adc88c5 1-18
+native/verification/local-ai-step1/resume/resume-housekeeping.json
+  s_28978425e45104::t_081b5d56baae99 1-120
+native/verification/local-ai-step2/independent-source-hashes.json
+  s_28978425e45104::t_3692f0755e3a67 2,45,48
+  s_28978425e45104::t_f804b4e94b2b03 47
+  s_28978425e45104::t_edb3f292500b19 1,3-44,46,49-50
+native/LocalCactusEvaluation/Support/tests/test_prepare_runtime.py
+  s_28978425e45104::t_4cbb5618e69a60 101-111
+  s_28978425e45104::t_a784bb1a275eb0 1-100,112-163,179-190,205,211-249
+  s_28978425e45104::t_e3ba4d7cccef66 164-178,191-204,206-210
+docs/evidence/local-ai-2026-11-14/cactus-resume/v114-network-symbol-audit.json
+  s_28978425e45104::t_7ff4380735d4e0 3,5
+  s_28978425e45104::t_fd87023d384188 1-2,4,6
+docs/evidence/local-ai-2026-11-14/resume-wax/dependency-blob-hydration.jsonl
+  s_28978425e45104::t_d878e1652c1bdb 677
+  s_28978425e45104::t_7a932b5104432b 867
+  s_28978425e45104::t_60d132671f5f5d 52
+  s_28978425e45104::t_9a95d949e7e038 623
+  s_28978425e45104::t_3e0dea4dd056ad 1064
+  s_28978425e45104::t_4f12daa9530773 873
+  s_28978425e45104::t_cf1215ac1e1096 227-228
+  s_28978425e45104::t_15409b9abc6911 946
+  s_28978425e45104::t_f16f598a8b9dd7 1-51,53-226,229-622,624-676,678-866,868-872,874-945,947-1063,1065-1151
+docs/evidence/local-ai-2026-11-14/resume-wax/xcframework-simulator-build-receipt.json
+  s_28978425e45104::t_6ab9e42ff77206 1-22
+native/verification/local-ai-step1/resume/mlx-host-canonical-builder-review.json
+  s_28978425e45104::t_f1b510e8c0950f 1-137
+scripts/fetch-evaluation-asset.py
+  s_28978425e45104::t_d379110d6fe390 30-31
+  s_28978425e45104::t_dfb3de97aa873a 48-50,96
+  s_28978425e45104::t_817718d89d0e15 64,86-88
+  s_28978425e45104::t_31b212190ff659 24,38-39,43
+  s_28978425e45104::t_d7c8072942118f 1-23,25-29,32-37,40-42,44-47,51-63,65-85,89-95,97-137
+native/verification/local-ai-step1/resume/mlx-preseed-recovery.json
+  s_28978425e45104::t_ba93f001277e60 1-38
+native/verification/local-ai-step2/repairs/intermediate-source-hashes.json
+  s_28978425e45104::t_0c7d0729bf37a5 1-108
+native/LocalMLXEvaluation/Tools/run-offline-host-smoke.py
+  s_28978425e45104::t_a0fc4039abcfb9 57-60,73-74
+  s_28978425e45104::t_9e4a409b14889d 1-56,61-72,75-86
+docs/evidence/local-ai-2026-11-14/cactus-resume/host-source-manifest.json
+  s_28978425e45104::t_a845a6f12e6430 1,4-16,18-24,27-31
+  s_28978425e45104::t_4b6d98bb7b88c0 2-3,17,25-26
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-supported.json
+  s_28978425e45104::t_531aca485d6046 1-291
+native/LocalAIIntegrations/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift
+  s_28978425e45104::t_cddf759f3a04c5 4-147
+  s_28978425e45104::t_956f88229b1607 1-3
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-binary-host-summary.json
+  s_28978425e45104::t_b9470d346c1097 1-14
+docs/plans/implementation-checklist.md
+  s_28978425e45104::t_c367888a1fc4e7 223
+  s_28978425e45104::t_9b637c627ada2d 219-222,224-230
+  s_28978425e45104::t_ee761f95ed5464 155
+native/verification/local-ai-step2/repairs/verification-source-hashes.json
+  s_28978425e45104::t_d6af22d79fc01b 8,15
+  s_28978425e45104::t_3a616f765f65cc 1-7,9-14,16-50
+docs/evidence/local-ai-2026-11-14/resume-wax/prepare-supported-snapshots.py
+  s_28978425e45104::t_83b2475dd189f9 1-73
+native/MemoryOSAILab.xcodeproj/xcshareddata/xcschemes/MemoryOSAILab.xcscheme
+  s_28978425e45104::t_5b3f0dff7b71d0 1-11
+native/verification/local-ai-step2/accessibility-final-attachments/A5733BD5-10CA-4521-80CE-CA71EC6EB7E5.txt
+  s_28978425e45104::t_feb0d121e78767 1
+native/verification/local-ai-step2/accessibility-initial-attachments/D9D6A77E-B066-4F99-8F1E-B5F6EAEE5249.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step1/final-source-check.json
+  s_28978425e45104::t_987b878d95bbe2 1-7
+native/verification/local-ai-step1/resume/simulator-reports/cactus-B7AF7C59-CE2E-4878-9B4B-2890DD09B52D.json
+  s_28978425e45104::t_0162dfc29c8c45 1-339
+native/verification/local-ai-step2/repairs/package-isolation/after/project.pbxproj
+  s_28978425e45104::t_c2014b7aeb6e7c 1-53
+native/LocalAIIntegrations/Patches/wax-0.1.47-ios-desktop-guards.patch
+  s_28978425e45104::t_059f4a870fc1ef 1-84
+native/verification/local-ai-step1/resume/mlx-core-pinned-manifest.swift
+  s_28978425e45104::t_a24427950160ff 1-473
+native/verification/local-ai-step1/resume/control-simulator-89c04b411f6b.json
+  s_28978425e45104::t_7a82da1d4b744a 1-226
+native/verification/local-ai-step1/resume/mlx-hydration-swift-collections.jsonl
+  s_28978425e45104::t_dc825c73815b74 530
+  s_28978425e45104::t_2d9e0344ad70f2 157
+  s_28978425e45104::t_e5a0cfe37da33b 518
+  s_28978425e45104::t_722a033c64fe33 1-156,158-517,519-529,531-626
+native/verification/local-ai-step1/resume/source-hashes.json
+  s_28978425e45104::t_da09728063ad46 1-107
+docs/evidence/local-ai-2026-11-14/resume-wax/retained-artifact-footprint.json
+  s_28978425e45104::t_ae18175a2c1027 1-13
+native/verification/local-ai-step1/resume/storage-inventory.json
+  s_28978425e45104::t_51cc2a401f343e 1-100
+native/LocalCactusEvaluation/.gitignore
+  s_28978425e45104::t_1c29336324644e 1-2
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/ASN1/tag-proof.json
+  s_28978425e45104::t_44173c846bf254 1-7
+native/verification/local-ai-step1/resume/simulator-reports/cactus-FC3C8F71-21B8-4FA5-967A-F9D842811798.json
+  s_28978425e45104::t_0162dfc29c8c45 1-339
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-supported-invocation.json
+  s_28978425e45104::t_531aca485d6046 1-9
+native/LocalAIIntegrations/Sources/WaxEvaluationCLI/Main.swift
+  s_28978425e45104::t_12bdface06fc8f 49
+  s_28978425e45104::t_62ebd56013b283 13-17,20-21,23-27,47
+  s_28978425e45104::t_e8991bc1f18963 1-12,18-19,22,28-45,50-69,74-115
+  s_28978425e45104::t_363cf38e8a9e38 70-73
+  s_28978425e45104::t_4e3cb659adddc5 46,48
+native/MemoryOSAILab/LabComposition.swift
+  s_28978425e45104::t_7318c695f72589 138
+  s_28978425e45104::t_0537093406e991 61,67,76,89,103,106
+  s_28978425e45104::t_27c0987b7d0085 18-20,91-96
+  s_28978425e45104::t_8ec20fc84ae89f 146
+  s_28978425e45104::t_da09728063ad46 148-149
+  s_28978425e45104::t_51c946ffad7a96 2,62,123
+  s_28978425e45104::t_4dbcbd35e45577 5,29-30,40-41,46,48,52-56,59-60,68,73-75,77,84-88,90,101-102,107,111-119,129-133,135-137,141,143-145,147,156,159-173,187
+  s_28978425e45104::t_d6d23f28a20b41 57-58
+  s_28978425e45104::t_a8f22ada8c63a5 1,4,21,23-24,27-28,31-39,42,44,190-191
+  s_28978425e45104::t_af479b291405e8 150-155,174-186
+  s_28978425e45104::t_846b849d0990f6 3,25-26,47
+  s_28978425e45104::t_6b7255aaba06c3 6-17,22,43,45,49-51,63-66,69-72,78-83,97-100,104-105,108-110,120-122,124-128,134,142,157-158,188-189
+  s_28978425e45104::t_17319e7eed5969 139-140
+native/MemoryOSAILab/LabReportWriter.swift
+  s_28978425e45104::t_e17b74e13a8c6d 1-13
+native/verification/local-ai-step2/repairs/independent-scratch-cleanup.json
+  s_28978425e45104::t_f285ae3667c858 1-8
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-14C1C5FF-F698-4CB6-974B-455182198EBA.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/LocalCactusEvaluation/Package.swift
+  s_28978425e45104::t_a9e49a651171f0 24-26,29,32
+  s_28978425e45104::t_d5a9984e5f7de1 30-31
+  s_28978425e45104::t_265de145d3589e 16,18-19,21
+  s_28978425e45104::t_f87eff0445f39f 17
+  s_28978425e45104::t_1c29336324644e 1-15,22-23,27-28,33-35
+  s_28978425e45104::t_2eb31d2673e366 20
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/ASN1/canonical-complete-cache.json
+  s_28978425e45104::t_44173c846bf254 1-14
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-range-probe.json
+  s_28978425e45104::t_a845a6f12e6430 1-34
+docs/evidence/local-ai-2026-11-14/cactus-resume/source-provenance.json
+  s_28978425e45104::t_ff71c2cf069b91 1-122
+native/verification/local-ai-step2/repairs/package-isolation/scratch-cleanup.json
+  s_28978425e45104::t_88d2f4b6799c11 1-51
+docs/evidence/local-ai-2026-11-14/resume-wax/snapshot-source-manifest.json
+  s_28978425e45104::t_d878e1652c1bdb 1-10234,10237-10239,10242-10244,10247-10249,10252-10254,10257-10259,10262-10264,10267-10268
+  s_28978425e45104::t_76403edcd94ed3 10235-10236,10240-10241,10245-10246,10250-10251,10255-10256,10260-10261,10265-10266,10269-11210
+native/LocalMLXEvaluation/Tools/install-host-metal-resource.py
+  s_28978425e45104::t_75cd4ccf5c71bb 12,36-40
+  s_28978425e45104::t_43b1b5e1f9fddf 1-11,13-35,41
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-download-progress.jsonl
+  s_28978425e45104::t_37539e56804ebb 1
+native/verification/local-ai-step2/independent-review.md
+  s_28978425e45104::t_55aa53f0f8e8a4 1-4,6-8,10,16,19-25,28-43,45-48,51-55,58-61,63-64,71-72,79-80
+  s_28978425e45104::t_22ffcbfaba12ff 9,11-14,65
+  s_28978425e45104::t_955ac38adb4e8d 67
+  s_28978425e45104::t_bdf439868c9959 5,17-18,49-50,62,66,68-70,73-78
+  s_28978425e45104::t_cfbb64af4d32ff 15,27
+  s_28978425e45104::t_bbaf7a6fd7349d 26,44
+  s_28978425e45104::t_49545462fa7ddf 56-57
+native/verification/local-ai-step2/ui-recheck-summary.json
+  s_28978425e45104::t_97ee7f02689f0f 1-69
+native/verification/local-ai-step1/resume/mlx-availability-core-integrity.json
+  s_28978425e45104::t_2c506386462fed 1-6
+native/verification/local-ai-step2/independent-cleanup-recheck.json
+  s_28978425e45104::t_30ba8d4f7cd262 1-9
+native/verification/local-ai-step2/repairs/cactus-source/repair-receipt.json
+  s_28978425e45104::t_26f006f29316c5 1-27
+native/verification/local-ai-step2/repairs/independent-installed-identity.json
+  s_28978425e45104::t_791d8e60bbe5cb 1-7
+native/verification/local-ai-step2/accessibility-final-attachments/20238721-4354-4F92-90E9-000A6749DBAC.txt
+  s_28978425e45104::t_feb0d121e78767 1
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-supported-patched-summary.json
+  s_28978425e45104::t_37539e56804ebb 1-20
+native/verification/local-ai-step3/screenshot.json
+  s_28978425e45104::t_3ec6c94fd77ff6 1-9
+native/LocalCactusEvaluation/Support/prepare_runtime.py
+  s_28978425e45104::t_33b585b64d6b9c 12,140,156,164,167,169
+  s_28978425e45104::t_e339526b75752c 1-5,7-9,11,13-18,24,132-139,141-142,144-146,148-155,157-163,165-166,168,170-173,175-178,180-188
+  s_28978425e45104::t_4cbb5618e69a60 122-127
+  s_28978425e45104::t_865fa83d79f28a 179
+  s_28978425e45104::t_cdc0a84075840e 6,19-23,26-60,62-73,75,77-78,80-94,101,107-121
+  s_28978425e45104::t_f87eff0445f39f 174
+  s_28978425e45104::t_43b1b5e1f9fddf 10,25,61,76,79,95-100,102-106,128-131,143,147
+  s_28978425e45104::t_e3ba4d7cccef66 74
+native/verification/local-ai-step1/screenshots/manifest.json
+  s_28978425e45104::t_d78e9a5adc88c5 5-15,24,29-61,68
+  s_28978425e45104::t_023274139fcf84 1-4,16-23,25-28,62-67,69-71
+native/LocalMLXEvaluation/.gitignore
+  s_28978425e45104::t_3a378460f8499c 2
+  s_28978425e45104::t_4bf40261a1b39d 1
+native/verification/local-ai-step2/accessibility-initial-attachments/1B26EEC2-8DC8-48A4-8C86-C531ED15ECB9.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+native/verification/local-ai-step1/resume/llama-host-source-hashes.json
+  s_28978425e45104::t_907ab61552b394 1-21
+native/LocalMLXEvaluation/Tools/recover-canonical-graph.py
+  s_28978425e45104::t_44173c846bf254 24
+  s_28978425e45104::t_5d9aaa6eff0261 1-23,25-50
+docs/evidence/local-ai-2026-11-14/cactus-resume/model-provenance.json
+  s_28978425e45104::t_7ff4380735d4e0 9,12-16
+  s_28978425e45104::t_9d47ee415c5236 1-8,10-11,17
+docs/evidence/local-ai-2026-11-14/cactus-resume/host-retrieval-summary.json
+  s_28978425e45104::t_7181b774f23b07 1-19
+native/verification/local-ai-step3/current-turn-recall.json
+  s_28978425e45104::t_bbb0ccabb14598 1-942
+native/verification/local-ai-step1/resume/mlx-core-submodule.json
+  s_28978425e45104::t_726e27062065d4 1
+docs/evidence/local-ai-2026-11-14/cactus-resume/network-symbol-audit.json
+  s_28978425e45104::t_2edb151ff8efa4 1-4
+native/verification/local-ai-step1/resume/mlx-tree-swift-numerics-4560bfb65f2c26cbd159c3e1a9cbf01600bace1b.json
+  s_28978425e45104::t_4ea5b57d1545bd 1-679
+native/verification/local-ai-step1/resume/mlx-snapshot-swift-numerics.json
+  s_28978425e45104::t_28b2c7961250b5 1-355
+native/verification/local-ai-step1/resume/llama-qwen06-host-builder-review.json
+  s_28978425e45104::t_6fbc7b32903ba2 1-129
+native/verification/local-ai-step1/resume/llama-qwen17-simulator-builder-review.json
+  s_28978425e45104::t_589d26f61f8b4b 1-163
+native/verification/local-ai-step1/resume/mlx-canonical-host-metal-staging.json
+  s_28978425e45104::t_75cd4ccf5c71bb 1-11
+docs/evidence/local-ai-2026-11-14/resume-wax/supported-ios-invocation.json
+  s_28978425e45104::t_531aca485d6046 1-20
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-118C812D-5834-4E7D-8EF0-F4672FB26A75.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/LocalAIIntegrations/.gitignore
+  s_28978425e45104::t_69fa57eeb273d1 1-2
+native/LocalTextEvaluation/Tests/LlamaEvaluationAdapterTests/LlamaAssetTests.swift
+  s_28978425e45104::t_d591af04e5e1b5 3
+  s_28978425e45104::t_0b136b47ca34c7 1,4-7,45-73
+  s_28978425e45104::t_2fad717937563b 9-32,76-78
+  s_28978425e45104::t_6aec1b5a1fc331 74-75,79-85
+  s_28978425e45104::t_ccfcb2d5d49084 2,8,33-44
+native/LocalAIIntegrations/Patches/README.md
+  s_28978425e45104::t_41b3b63ee2015e 1-16,18-19
+  s_28978425e45104::t_bb4004db8a551a 17
+native/LocalAIIntegrations/scripts/copy-wax-resources.py
+  s_28978425e45104::t_23947389f263a5 30,54-57,71-76
+  s_28978425e45104::t_eba6df35fb5c04 46-53
+  s_28978425e45104::t_69fa57eeb273d1 1-29,31-45,58-70,77-109
+native/verification/local-ai-step2/final-recall.json
+  s_28978425e45104::t_003a43c7572533 1-979
+docs/evidence/local-ai-2026-11-14/resume-wax/upstream-patch-dry-run.json
+  s_28978425e45104::t_fe0052995c536b 1-15
+native/verification/local-ai-step1/resume/mlx-hydration-swift-numerics.jsonl
+  s_28978425e45104::t_28b2c7961250b5 43-57
+  s_28978425e45104::t_ea776c3899f6e6 1-3
+  s_28978425e45104::t_f3348e7ec5b9d0 10-41
+  s_28978425e45104::t_92853b0b579498 4-9,42
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-range-progress.jsonl
+  s_28978425e45104::t_6e50b1c7d410cf 1155-1223
+  s_28978425e45104::t_20e8dd63044601 991
+  s_28978425e45104::t_27e6d8bc7456cd 62
+  s_28978425e45104::t_69c68ce7aef597 294-682
+  s_28978425e45104::t_78a08fb1d8864d 118
+  s_28978425e45104::t_e634de0ada2f66 880-883
+  s_28978425e45104::t_9202e31f47fab4 1119
+  s_28978425e45104::t_f35fcb3839e5ee 63-117
+  s_28978425e45104::t_f20a17989bbbae 918-920
+  s_28978425e45104::t_41114b6e137e54 1496
+  s_28978425e45104::t_e9223a177582d6 1256
+  s_28978425e45104::t_074413c359c3d8 140
+  s_28978425e45104::t_2f4fe1771619fe 884-916
+  s_28978425e45104::t_29042ebe26c1e8 1497-1528
+  s_28978425e45104::t_43b1b5e1f9fddf 6-15
+  s_28978425e45104::t_80b2c5b79d4a18 1-5,16-61,119-139,141-293,683-879,917,921-990,992-1118,1120-1154,1224-1255,1257-1495
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-9F42D9B4-145E-4803-8093-0288F51561E7.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+native/verification/local-ai-step1/resume/llama-qwen06-host-network-denied-receipt.json
+  s_28978425e45104::t_6fbc7b32903ba2 1-18
+scripts/fetch-llama-evaluation-source.py
+  s_28978425e45104::t_aed5dff4f22bd0 23
+  s_28978425e45104::t_a7db0d51a898b3 1-22,24,29-82
+  s_28978425e45104::t_ebb3295b2eb2cc 25-28
+native/verification/local-ai-step2/ui-final-summary.json
+  s_28978425e45104::t_feb0d121e78767 1-64
+docs/evidence/local-ai-2026-11-14/resume-wax/git-checkout-transport.py
+  s_28978425e45104::t_95582544e1df27 1-27,29-33
+  s_28978425e45104::t_c1b2b9d7a0f2ed 28
+native/verification/local-ai-step2/exported-control-report.json
+  s_28978425e45104::t_8f603a9973afb3 1-278
+native/verification/local-ai-step2/export-roundtrip-initial.json
+  s_28978425e45104::t_8f603a9973afb3 1-14
+native/LocalCactusEvaluation/Support/fetch_upstream.py
+  s_28978425e45104::t_54ae10b9de0e83 43,49-52,61-62
+  s_28978425e45104::t_62ebd56013b283 8,14
+  s_28978425e45104::t_cb04e2dcbf0572 36
+  s_28978425e45104::t_2e28459c26e7de 6,60
+  s_28978425e45104::t_983cdbe2386656 1-5,7,9-13,15-35,37-42,44-48,53-59,63-75
+docs/evidence/local-ai-2026-11-14/resume-wax/temporary-override-supported.json
+  s_28978425e45104::t_4917b3c7a2a711 1-36
+native/verification/local-ai-step1/resume/mlx-host-canonical-network-denied-receipt.json
+  s_28978425e45104::t_a0fc4039abcfb9 1-38
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-ios-release-check-e4587f8cebb76aa92ece008253f13c66b756e68b.json
+  s_28978425e45104::t_cb1ab6b54b7198 1-6
+native/verification/local-ai-step1/resume/mlx-complete-cache-mlx-c-api.json
+  s_28978425e45104::t_55fda410d5cf04 1-14
+native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-build-analyze-before-architecture.json
+  s_28978425e45104::t_2b5bffaefd88b8 1-25
+native/LocalMLXEvaluation/SimulatorAvailability/Tests/MLXSimulatorAvailabilityTests/SimulatorAvailabilityTests.swift
+  s_28978425e45104::t_6814569ffa0cde 1-20
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-5BA73B83-D733-448B-8661-BA0D11215DD5.json
+  s_28978425e45104::t_03289a6e939ad4 1-308
+docs/evidence/local-ai-2026-11-14/cactus-resume/cactus-host-retrieval.json
+  s_28978425e45104::t_c1abbf1996f1ff 1-334
+docs/evidence/local-ai-2026-11-14/cactus-resume/failed-attempt-provenance.json
+  s_28978425e45104::t_934177915ea019 1-20
+native/verification/local-ai-step2/provenance-review.md
+  s_28978425e45104::t_6c70fb93bdbd39 7,9-10,32
+  s_28978425e45104::t_07556e5bd08b8a 1-6,8,11-31,33-41
+native/verification/local-ai-step1/resume/mlx-host-text-equivalence.json
+  s_28978425e45104::t_a32ba76378d897 1-8
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-E9E7E755-9074-43B7-B299-F089102DDD64.json
+  s_28978425e45104::t_acc093ddb416a5 1-308
+native/LocalAIIntegrations/BinaryIntegration/Package.swift
+  s_28978425e45104::t_69fa57eeb273d1 1-22
+native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-build-analyze.json
+  s_28978425e45104::t_969f914da645c8 1-14,18-21,26,28
+  s_28978425e45104::t_56a5d62939e672 15-17,22-25,27
+native/verification/local-ai-step2/memory-recall-verification.json
+  s_28978425e45104::t_17dd4fc5f8fbff 1-11
+native/verification/local-ai-step2/repairs/security-review.md
+  s_28978425e45104::t_7dddcbc4c3a7e3 1-10
+  s_28978425e45104::t_cf8522073b26c3 11
+native/verification/local-ai-step1/resume/control-six-suite-interim/builder-receipt.json
+  s_28978425e45104::t_28bb0506b46e82 1-18
+native/verification/local-ai-step1/resume/interim-summary.json
+  s_28978425e45104::t_713e245b3bc4c9 54,151
+  s_28978425e45104::t_c711e8b4d95e5a 101-150,152-197
+  s_28978425e45104::t_ed79d31651aa22 1-53,55-100,198-200
+native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-build-analyze-project-architecture.json
+  s_28978425e45104::t_2b5bffaefd88b8 1-25
+native/verification/local-ai-step1/resume/simulator-asset-qwen17.json
+  s_28978425e45104::t_df8cbba2e12636 1-9
+native/verification/local-ai-step2/independent-temporary-cleanup.json
+  s_28978425e45104::t_07fefe8a1095ea 1-14
+native/MemoryOSAILabUITests/LabUITests.swift
+  s_28978425e45104::t_1d362d9e71ad57 1-19,32-63,65-68,75,77-78
+  s_28978425e45104::t_39bbd339551a1d 20-31,64,76
+  s_28978425e45104::t_ec455d5dd6aea0 69-74
+native/LocalMLXEvaluation/Sources/MLXEvaluationCLI/Main.swift
+  s_28978425e45104::t_480b3d094f0fc0 7-14,29,32
+  s_28978425e45104::t_962c3ed850aec9 1-6,15-16,24-28,34-35,45,47,55-56
+  s_28978425e45104::t_8f0ca7fb70cfcc 44,46
+  s_28978425e45104::t_d99b18197d87ec 17-18,22-23
+  s_28978425e45104::t_0af4e93139eb49 20-21,30-31,33,36-43
+  s_28978425e45104::t_90c1bf86f37f59 19,48-54
+native/verification/local-ai-step2/repairs/simulator-reports/keyword-control-57444321-CCD0-4A4C-B41F-9D33FBB0C6D6.json
+  s_28978425e45104::t_ddbea96b513c09 1-278
+docs/evidence/local-ai-2026-11-14/resume-wax/xcframework-device-objects.txt
+  s_28978425e45104::t_995039cd8e451b 1-530
+native/verification/local-ai-step2/repairs/accessibility/LabUITests.before.swift.txt
+  s_28978425e45104::t_1154848d01450b 1-74
+native/verification/local-ai-step1/resume/qwen17-output-equivalence.json
+  s_28978425e45104::t_1893a5c6134247 1-26
+.gitattributes
+  s_28978425e45104::t_268351f7185d41 1-5
+native/verification/local-ai-step2/accessibility-initial-attachments/3431B33B-8E3B-4DD5-8972-05AFC3B1EA4F.txt
+  s_28978425e45104::t_1666a2aecfe53c 1
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-complete-objects.jsonl
+  s_28978425e45104::t_6814569ffa0cde 12-16
+  s_28978425e45104::t_fe244edfd4ac58 24
+  s_28978425e45104::t_074413c359c3d8 173
+  s_28978425e45104::t_f35fcb3839e5ee 85-142
+  s_28978425e45104::t_78a08fb1d8864d 143
+  s_28978425e45104::t_69c68ce7aef597 609-812
+  s_28978425e45104::t_5458459b069d4a 20
+  s_28978425e45104::t_3cd5fc72e4dabb 882
+  s_28978425e45104::t_27e6d8bc7456cd 84
+  s_28978425e45104::t_407a789163d080 1-11,17-19,21-23,25-83,144-172,174-608,813-881
+native/verification/local-ai-step1/resume/mlx-tokenizer-pinned-manifest.swift
+  s_28978425e45104::t_21eaa685b45690 1-51
+native/verification/local-ai-step1/resume/mlx-unavailable-host-results.json
+  s_28978425e45104::t_6ab9e42ff77206 1-193
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-commit-reconstruction.json
+  s_28978425e45104::t_3e156bfde59bc3 1-8
+native/verification/local-ai-step1/resume/mlx-source-manifest-canonical.json
+  s_28978425e45104::t_0585f06bd0d993 1-177
+native/MemoryOSAILab/MemoryOSAILabApp.swift
+  s_28978425e45104::t_a8f22ada8c63a5 2-9,11-14
+  s_28978425e45104::t_c521ec5d0526f5 1,10
+native/verification/local-ai-step1/resume/mlx-hydration-EventSource.jsonl
+  s_28978425e45104::t_fe2555e9ab88ed 1-11
+native/MemoryOSAILab/LabViewModel.swift
+  s_28978425e45104::t_51c946ffad7a96 1,3
+  s_28978425e45104::t_a8f22ada8c63a5 2
+native/LocalMLXEvaluation/README.md
+  s_28978425e45104::t_3e7288b19afdc6 15,17
+  s_28978425e45104::t_be66c38cbefff6 1-10,12-14,16,20-29,31-34,36,39
+  s_28978425e45104::t_3022c1fb282f58 41-47,49,51
+  s_28978425e45104::t_2c506386462fed 30
+  s_28978425e45104::t_144881aa0443b8 35,37-38
+  s_28978425e45104::t_4bf40261a1b39d 40
+  s_28978425e45104::t_d629302b7df030 19
+  s_28978425e45104::t_4552537f69181c 18
+  s_28978425e45104::t_4aade006b14e46 11,48,50,52-54
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-binary-host-invocation.json
+  s_28978425e45104::t_4af52ecac22524 1-13
+native/verification/local-ai-step1/resume/mlx-canonical-license-review.json
+  s_28978425e45104::t_2c506386462fed 228-232
+  s_28978425e45104::t_1e4c3ce68ebef2 1-227,233
+native/verification/local-ai-step1/resume/final-recall.json
+  s_28978425e45104::t_bc5818ac75cdd6 1-3,6-7,11,48,51,57,61,63-64,66-68,70,72-76,79-80,84,86,92,95-96,98-103,105,108-111,115-116,140-141,154,156-158,160,163-166,169-173,176-177,179-181,187,191,193-194,196-198,200,203-206,209-211,214,220,226,229-230,232-233,235-237,239,242-245,248-250,257,263,265,267-268,270-272,274,277-280,283-284,286,290,294,300,303-304,306-311,313,316-319,322-323,330,336,339-340,342-347,349,352-355,358-359,362,366,372,375-376,378-383,385,388-391,394-395,401-402,406-411,413-418,420,423-426,429-430,439-440,444-449,451-456,458,461-464,467-470,476,482,484,486-487,490-492,494,497-500,503-504,510,516,519-520,522-527,529,532-535,538-540,542,552,556,558-559,561-563,565,568-571,574-575,579,582,586,588,592,594,596-597,600-602,604,607-610,613-614,616,622,628,631-632,634-639,641,644-647,650-651,653,657,663,666-667,669-670,672-674,676,679-684,693-694,700-702,728-729,733-739,743-744,748-749,753-754,758-759,763-764,768-769,773-774,778-779,783-784,788-789,793-794,798-799,803-804,808-809,813-814,818-819,823-824,868-884,888-889,893-894,898-909,913-914,918-919,923-924,928-929,933-934,938-939,943-944,948-949,953-954,958-959,963-964,968-969,973-974,988-989,993-994,998-999,1003-1004,1008-1009,1013-1014,1018-1019,1023-1024,1028-1034
+  s_28978425e45104::t_7650f6d23c50a1 4-5,8-10,12-47,49-50,52-56,58-60,62,65,69,71,77-78,81-83,85,87-91,93-94,97,104,106-107,112-114,117-139,142-153,155,159,161-162,167-168,174-175,178,182-186,188-190,192,195,199,201-202,207-208,212-213,215-219,221-225,227-228,231,234,238,240-241,246-247,251-256,258-262,264,266,269,273,275-276,281-282,285,287-289,291-293,295-299,301-302,305,312,314-315,320-321,324-329,331-335,337-338,341,348,350-351,356-357,360-361,363-365,367-371,373-374,377,384,386-387,392-393,396-400,403-405,412,419,421-422,427-428,431-438,441-443,450,457,459-460,465-466,471-475,477-481,483,485,488-489,493,495-496,501-502,505-509,511-515,517-518,521,528,530-531,536-537,541,543-551,553-555,557,560,564,566-567,572-573,576-578,580-581,583-585,587,589-591,593,595,598-599,603,605-606,611-612,615,617-621,623-627,629-630,633,640,642-643,648-649,652,654-656,658-662,664-665,668,671,675,677-678,685-692,695-699,703-727,730-732,740-742,745-747,750-752,755-757,760-762,765-767,770-772,775-777,780-782,785-787,790-792,795-797,800-802,805-807,810-812,815-817,820-822,825-867,885-887,890-892,895-897,910-912,915-917,920-922,925-927,930-932,935-937,940-942,945-947,950-952,955-957,960-962,965-967,970-972,975-987,990-992,995-997,1000-1002,1005-1007,1010-1012,1015-1017,1020-1022,1025-1027
+native/LocalTextEvaluation/Sources/LlamaEvaluationCLI/Main.swift
+  s_28978425e45104::t_459c1fbfffc321 1-10,14-18,21,27-29,47-49,55-60,67-68
+  s_28978425e45104::t_8ad3d61993beea 22-26,32-33,36-45
+  s_28978425e45104::t_ecf21d58678f09 46
+  s_28978425e45104::t_0dfbfa74496251 11-13,19-20,30-31,34-35,50-54,61-66
+  s_28978425e45104::t_dd28421797ba01 69
+native/LocalCactusEvaluation/Tests/CactusEvaluationAdapterTests/NativeIndexContract.swift
+  s_28978425e45104::t_d5a9984e5f7de1 1-46,49-63
+  s_28978425e45104::t_dfe4242fb29624 47-48
+native/verification/local-ai-step2/accessibility-initial-attachments/manifest.json
+  s_28978425e45104::t_1666a2aecfe53c 1-464
+native/verification/local-ai-step1/resume/simulator-reports/cactus-5AE6030E-0CAD-42F7-9234-2CEC4FDFAA89.json
+  s_28978425e45104::t_0162dfc29c8c45 1-339
+native/verification/local-ai-step2/independent-export-recheck.json
+  s_28978425e45104::t_6dfe25e7414f26 1-17
+native/LocalMLXEvaluation/Tools/download-model.py
+  s_28978425e45104::t_5cdce3d70bc721 55
+  s_28978425e45104::t_51d44a2402560f 52-54,56-63,66-67
+  s_28978425e45104::t_58e448edc4a271 14-26,40
+  s_28978425e45104::t_9c7c5958752b9b 1-13,27-39,41-51,64-65,68-98
+native/LocalCactusEvaluation/Support/upstream-v114-local-only.patch
+  s_28978425e45104::t_995039cd8e451b 1-85,99-100,102-103,105-106,114,129-130,167-221
+  s_28978425e45104::t_2b79f215173487 101,104,109,113,115-116
+  s_28978425e45104::t_eb08646210bdbd 86-98,107-108,110-112,117-128,131-166
+native/verification/local-ai-step1/resume/mlx-tree-EventSource-baf8b7bbc5db310c8c934a62abcfaa384c620c7d.json
+  s_28978425e45104::t_fe2555e9ab88ed 1-208
+native/verification/local-ai-step3/independent-delivery-review.json
+  s_28978425e45104::t_58b3324f59ed33 1-437
+native/verification/local-ai-step1/resume/mlx-simulator-source-evidence.json
+  s_28978425e45104::t_d8ba6393cb4af8 2-13
+  s_28978425e45104::t_77885175468a9d 1,14
+native/verification/local-ai-step1/resume/simulator-reports/wax-lexical-DAE27252-4793-476A-9D0F-FF70B9DA0EA8.json
+  s_28978425e45104::t_ad3d36fb4a3de3 1-286
+native/verification/local-ai-step1/resume/collect-current-reports.py
+  s_28978425e45104::t_3cd5fc72e4dabb 1-31
+docs/reference/source-register.md
+  s_28978425e45104::t_3437aada78b71b 146-150
+  s_28978425e45104::t_a3ee023470ef25 153-156
+  s_28978425e45104::t_ab42f214252abe 157-158
+  s_28978425e45104::t_9b2847b85f50e9 151-152
+  s_28978425e45104::t_9b637c627ada2d 142-145
+native/verification/local-ai-step1/resume/simulator-run-plan.json
+  s_28978425e45104::t_29042ebe26c1e8 1-15
+native/verification/local-ai-step2/source-equivalence-recheck.json
+  s_28978425e45104::t_a3f55491503e45 1-20
+native/verification/local-ai-step2/english-accessibility-initial.json
+  s_28978425e45104::t_01047fd343bd30 1-740
+docs/evidence/local-ai-2026-11-14/cactus-resume/asset-download-receipt.json
+  s_28978425e45104::t_b300a4ae8e00e3 1-7
+docs/evidence/local-ai-2026-11-14/cactus-resume/asset-manifest.json
+  s_28978425e45104::t_ffd75078d0b039 1-324
+docs/evidence/local-ai-2026-11-14/cactus-resume/cactus-host-last-token-retrieval-final.json
+  s_28978425e45104::t_7dcf40aea7f6f1 1-334
+docs/evidence/local-ai-2026-11-14/cactus-resume/host-toolchain.txt
+  s_28978425e45104::t_ae39c6bfb22946 1-2
+docs/evidence/local-ai-2026-11-14/cactus-resume/last-token-first-host-source-identity.txt
+  s_28978425e45104::t_09de0b130168a2 1
+docs/evidence/local-ai-2026-11-14/cactus-resume/last-token-first-host-source-manifest.json
+  s_28978425e45104::t_84f8844e5a4bbf 1-31
+docs/evidence/local-ai-2026-11-14/cactus-resume/mean-pooling-host-source-identity.txt
+  s_28978425e45104::t_87052d94707200 1
+docs/evidence/local-ai-2026-11-14/cactus-resume/mean-pooling-host-source-manifest.json
+  s_28978425e45104::t_45f1e1576df434 1-30
+docs/evidence/local-ai-2026-11-14/cactus-resume/model-resume-preservation.json
+  s_28978425e45104::t_9e000d94ad303a 1-5
+docs/evidence/local-ai-2026-11-14/cactus-resume/v114-build-receipt.json
+  s_28978425e45104::t_35ba0532244be0 1-20
+docs/evidence/local-ai-2026-11-14/cactus-resume/v114-mean-pooling-build-receipt.json
+  s_28978425e45104::t_601504b8a10d84 1-20
+docs/evidence/local-ai-2026-11-14/cactus-resume/v114-mean-pooling-local-only.patch
+  s_28978425e45104::t_666429a6cf8be0 1-164
+docs/evidence/local-ai-2026-11-14/cactus-resume/v114-source-provenance.json
+  s_28978425e45104::t_6ced0610ae3016 1-97
+docs/evidence/local-ai-2026-11-14/cactus-resume/v222-build-receipt.json
+  s_28978425e45104::t_bdeaebf95e33c1 1-20
+docs/evidence/local-ai-2026-11-14/cactus-resume/v222-prepare-runtime.txt
+  s_28978425e45104::t_9c2bdc78851c33 1-79
+docs/evidence/local-ai-2026-11-14/cactus-resume/v222-upstream-local-only.patch
+  s_28978425e45104::t_4cc2207158d5da 1-152
+docs/evidence/local-ai-2026-11-14/resume-wax/apple-crypto-priority.jsonl
+  s_28978425e45104::t_f7a000b6824c8c 1-86
+docs/evidence/local-ai-2026-11-14/resume-wax/binary-consumer-contract-receipt.json
+  s_28978425e45104::t_3a390c10903df1 1-8
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-complete-tree.json
+  s_28978425e45104::t_15a047060a1244 1-8095
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-exact-fetch-invocation.json
+  s_28978425e45104::t_54ee75389a0c81 1-37
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-final-resolve-invocation.json
+  s_28978425e45104::t_0570e2476f0457 1-20
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-final-resolve-result.json
+  s_28978425e45104::t_0ac883f9f17708 1-4
+docs/evidence/local-ai-2026-11-14/resume-wax/canonical-release-tests-invocation.json
+  s_28978425e45104::t_905bbd1fb76c5e 1-23
+docs/evidence/local-ai-2026-11-14/resume-wax/clone-commands.jsonl
+  s_28978425e45104::t_b012c46d2cb3d8 1-8
+docs/evidence/local-ai-2026-11-14/resume-wax/git-treeless-transport.py
+  s_28978425e45104::t_b04b16101fb784 1-7
+docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-apple-crypto-priority.py
+  s_28978425e45104::t_a437f2b634d4fa 1-39
+docs/evidence/local-ai-2026-11-14/resume-wax/hydrate-complete-canonical-wax-whole-response.txt
+  s_28978425e45104::t_34af0a73516a76 1-162
+docs/evidence/local-ai-2026-11-14/resume-wax/stable-Wax-provenance.json
+  s_28978425e45104::t_9c8fe2a5146b29 1-51
+docs/evidence/local-ai-2026-11-14/resume-wax/stable-git.txt
+  s_28978425e45104::t_0945fd93849c2e 1
+docs/evidence/local-ai-2026-11-14/resume-wax/stable-memory.txt
+  s_28978425e45104::t_d0a2a63ddddecf 1-319
+docs/evidence/local-ai-2026-11-14/resume-wax/stable-package.txt
+  s_28978425e45104::t_d8aa14a2b12416 1-414
+docs/evidence/local-ai-2026-11-14/resume-wax/supported-patched-ios-build-receipt.json
+  s_28978425e45104::t_941e6ab6bd814b 1-22
+docs/evidence/local-ai-2026-11-14/resume-wax/supported-patched-release-tests-receipt.json
+  s_28978425e45104::t_41a9a1b0d99f06 1-16
+docs/evidence/local-ai-2026-11-14/resume-wax/supported-snapshot-blobs.jsonl
+  s_28978425e45104::t_0e404abe33cd6d 1-409
+docs/evidence/local-ai-2026-11-14/resume-wax/supported-snapshot-summary.json
+  s_28978425e45104::t_002a192d4fcadd 1-26
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/Crypto/canonical-complete-tree.json
+  s_28978425e45104::t_8fd2c082269363 1-9042
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/GRDB/canonical-complete-cache.json
+  s_28978425e45104::t_2036f547fbf405 1-14
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/GRDB/canonical-complete-tree.json
+  s_28978425e45104::t_cf4b08da84b319 1-7774
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/GRDB/tag-proof.json
+  s_28978425e45104::t_5ab21ad5047543 1-7
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/MetalANNS/canonical-complete-cache.json
+  s_28978425e45104::t_3537b00129fa0f 1-14
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/MetalANNS/canonical-complete-objects.jsonl
+  s_28978425e45104::t_07104f593e3daa 1-199
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/MetalANNS/canonical-complete-tree.json
+  s_28978425e45104::t_185d64e65e0e67 1-1732
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/MetalANNS/canonical-range-progress.jsonl
+  s_28978425e45104::t_83cf3357701f78 1-96
+docs/evidence/local-ai-2026-11-14/resume-wax/transitive-cache/MetalANNS/tag-proof.json
+  s_28978425e45104::t_d6d7bede742a5d 1-7
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-invocation.json
+  s_28978425e45104::t_c59822a48d9030 1-8
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-snapshot.json
+  s_28978425e45104::t_baef6fe5cc1a56 1-239
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-supported-patched-invocation.json
+  s_28978425e45104::t_a81fb257f85015 1-15
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-host-supported-patched.json
+  s_28978425e45104::t_784cc900a62d80 1-291
+docs/evidence/local-ai-2026-11-14/resume-wax/wax-ios-release-check-0.1.40.json
+  s_28978425e45104::t_e53b9b4f847656 1-6
+docs/evidence/local-ai-2026-11-14/resume-wax/xcframework-macos-objects.txt
+  s_28978425e45104::t_eb1e3d87b293fb 1-530
+docs/evidence/local-ai-2026-11-14/resume-wax/xcframework-simulator-objects.txt
+  s_28978425e45104::t_ebe553ea9c193c 1-530
+native/LocalAIIntegrations/Package.resolved
+  s_28978425e45104::t_1dabf79fd869ce 1-50
+native/LocalCactusEvaluation/Sources/CactusEvaluationAdapter/Resources/QwenModel-Apache-2.0.txt
+  s_28978425e45104::t_f74932eb7c0583 1-202
+native/verification/local-ai-step1/resume/control-six-suite-interim/keyword-control-27BFE6EE-AF34-41D7-848C-FC9BC4ACF4D0.json
+  s_28978425e45104::t_1b006e44f2edd0 1-230
+native/verification/local-ai-step1/resume/control-six-suite-interim/keyword-control-2CD91817-53E8-4F2A-B550-E72BA3AD5F6C.json
+  s_28978425e45104::t_fbd8c9d23272d6 1-230
+native/verification/local-ai-step1/resume/control-six-suite-interim/keyword-control-5C5C1631-F7B5-4F94-82C7-12352CFF6D6D.json
+  s_28978425e45104::t_cfc196b20e3ae5 1-230
+native/verification/local-ai-step1/resume/control-six-suite-interim/keyword-control-95B86A95-3187-4B58-992A-CC14D19C3283.json
+  s_28978425e45104::t_2854fcc42387d4 1-230
+native/verification/local-ai-step1/resume/control-six-suite-interim/keyword-control-CEA82C46-F0D2-4680-B96D-36DCEB55FC6C.json
+  s_28978425e45104::t_160fe31c8a4c09 1-230
+native/verification/local-ai-step1/resume/control-six-suite-interim/keyword-control-DAF2B93A-6180-45E1-B533-BF401806CB96.json
+  s_28978425e45104::t_9f87b3ac36072d 1-230
+native/verification/local-ai-step1/resume/dependencies/cactus-build-receipt.json
+  s_28978425e45104::t_3ef2aac0ca2cfb 1-20
+native/verification/local-ai-step1/resume/dependencies/llama-build-receipt.json
+  s_28978425e45104::t_c116be578d71d1 1-555
+native/verification/local-ai-step1/resume/dependencies/wax-packaging-receipt.json
+  s_28978425e45104::t_25a1d58b49e321 1-425
+native/verification/local-ai-step1/resume/dependencies/wax-source-provenance.json
+  s_28978425e45104::t_b7f66c1153d96c 1-137
+native/verification/local-ai-step1/resume/failed-workspace-contents.txt
+  s_28978425e45104::t_50aae316f3663a 1-9
+native/verification/local-ai-step1/resume/failed-workspace-override-receipt.json
+  s_28978425e45104::t_ac930d7b94feea 1-40
+native/verification/local-ai-step1/resume/fictional-suite.json
+  s_28978425e45104::t_ba3d4a739d7448 1-227
+native/verification/local-ai-step1/resume/fixture-export-receipt.json
+  s_28978425e45104::t_4261fc05495750 1-10
+native/verification/local-ai-step1/resume/llama-artifact-range-resume.json
+  s_28978425e45104::t_82f035c092bf16 1-114
+native/verification/local-ai-step1/resume/llama-qwen06-host-network-denied.json
+  s_28978425e45104::t_887348df85401d 1-303
+native/verification/local-ai-step1/resume/mlx-complete-cache-EventSource.json
+  s_28978425e45104::t_16492c9c6a6234 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-mlx-cpp-core.json
+  s_28978425e45104::t_cc493f0b47f710 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-mlx-swift-lm.json
+  s_28978425e45104::t_b53afcabe61628 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-mlx-swift.json
+  s_28978425e45104::t_527e0f6e4c097e 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-swift-collections.json
+  s_28978425e45104::t_e062c62f7f16c0 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-swift-crypto.json
+  s_28978425e45104::t_dae40844de055d 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-swift-huggingface.json
+  s_28978425e45104::t_0e61c63a7436e3 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-swift-numerics.json
+  s_28978425e45104::t_78a34bf6384725 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-swift-syntax.json
+  s_28978425e45104::t_49d79615aefbeb 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-swift-transformers.json
+  s_28978425e45104::t_bec964a1c527d1 1-14
+native/verification/local-ai-step1/resume/mlx-complete-cache-yyjson.json
+  s_28978425e45104::t_dac626819b2c4e 1-14
+native/verification/local-ai-step1/resume/mlx-doc-articles.json
+  s_28978425e45104::t_fcc0696103b075 1
+native/verification/local-ai-step1/resume/mlx-git-transport-recovery.json
+  s_28978425e45104::t_41ffc71365c0fa 1-37
+native/verification/local-ai-step1/resume/mlx-host-results.json
+  s_28978425e45104::t_6dc6078d0540bb 1-298
+native/verification/local-ai-step1/resume/mlx-hydration-mlx-c-api.jsonl
+  s_28978425e45104::t_14c28f79f8c572 1-79
+native/verification/local-ai-step1/resume/mlx-hydration-swift-transformers.jsonl
+  s_28978425e45104::t_661bdae5189be5 1-39
+native/verification/local-ai-step1/resume/mlx-hydration-yyjson.jsonl
+  s_28978425e45104::t_02f2c900814dee 1-10
+native/verification/local-ai-step1/resume/mlx-local-check-manifest-common.swift
+  s_28978425e45104::t_01d92401859392 1-40
+native/verification/local-ai-step1/resume/mlx-local-check-package-common.json
+  s_28978425e45104::t_26dedc24868f95 1-26
+native/verification/local-ai-step1/resume/mlx-local-snapshot-inputs.json
+  s_28978425e45104::t_8256d76edd79db 1-56
+native/verification/local-ai-step1/resume/mlx-manifest.json
+  s_28978425e45104::t_3294f84ff785eb 1-240
+native/verification/local-ai-step1/resume/mlx-snapshot-mlx-c-api.json
+  s_28978425e45104::t_681b93f454b018 1-487
+native/verification/local-ai-step1/resume/mlx-snapshot-mlx-cpp-core.json
+  s_28978425e45104::t_2db96a3dbbffd8 1-3757
+native/verification/local-ai-step1/resume/mlx-snapshot-mlx-swift-lm.json
+  s_28978425e45104::t_0163025f39cbe0 1-2197
+native/verification/local-ai-step1/resume/mlx-snapshot-mlx-swift.json
+  s_28978425e45104::t_97ba2887924813 1-4244
+native/verification/local-ai-step1/resume/mlx-snapshot-swift-collections.json
+  s_28978425e45104::t_3b353fa012d5f7 1-3769
+native/verification/local-ai-step1/resume/mlx-snapshot-swift-crypto.json
+  s_28978425e45104::t_f047f03437e46b 1-5191
+native/verification/local-ai-step1/resume/mlx-snapshot-swift-huggingface.json
+  s_28978425e45104::t_8aa7cc141d227b 1-409
+native/verification/local-ai-step1/resume/mlx-snapshot-swift-syntax.json
+  s_28978425e45104::t_873dd430db5ade 1-2401
+native/verification/local-ai-step1/resume/mlx-snapshot-swift-transformers.json
+  s_28978425e45104::t_b6b883a6a9191b 1-247
+native/verification/local-ai-step1/resume/mlx-snapshot-yyjson.json
+  s_28978425e45104::t_1e75a44032b960 1-74
+native/verification/local-ai-step1/resume/mlx-syntax-603-tags.json
+  s_28978425e45104::t_81b59b27abc56a 1
+native/verification/local-ai-step1/resume/mlx-tree-mlx-c-api-dba545156b694c1852de988d8b272975d675bacc.json
+  s_28978425e45104::t_b5b88866b2e77c 1-1151
+native/verification/local-ai-step1/resume/mlx-tree-mlx-cpp-core-05433bcb7241af2b3531e7ee94f1eed07d4bf15c.json
+  s_28978425e45104::t_b157a25e33e849 1-8244
+native/verification/local-ai-step1/resume/mlx-tree-mlx-swift-c3e78d3183a868b074be63acb65614d133b12bdd.json
+  s_28978425e45104::t_bd83485fbc142c 1-7392
+native/verification/local-ai-step1/resume/mlx-tree-mlx-swift-lm-bbba5542694fbf2eaa3e8cfd053aa0e7edb8f79b.json
+  s_28978425e45104::t_ab6bd78b353066 1-5813
+native/verification/local-ai-step1/resume/mlx-tree-swift-collections-b35c65ea3a803957050693b0e7b598b3fc51637f.json
+  s_28978425e45104::t_a54c4508f457b5 1-8225
+native/verification/local-ai-step1/resume/mlx-tree-swift-crypto-6a5d367ba234ea4f8fbc4a8bc98bc4c97c1141e8.json
+  s_28978425e45104::t_316c406b07e4a6 1-9794
+native/verification/local-ai-step1/resume/mlx-tree-swift-huggingface-871378ca38bd52fcb0ae526f4f19def9575ad57e.json
+  s_28978425e45104::t_99b24b7f9bb245 1-1097
+native/verification/local-ai-step1/resume/mlx-tree-swift-jinja-ac32a6cd7b42e4cc354ead9d19c972f673b2a085.json
+  s_28978425e45104::t_dc740da85c446e 1-668
+native/verification/local-ai-step1/resume/mlx-tree-swift-transformers-e4ec8482c08167e58c9238eb8a2b1178f557665c.json
+  s_28978425e45104::t_17f08ca3a9f587 1-1114
+native/verification/local-ai-step1/resume/mlx-tree-yyjson-a51e8386f5e259392d2a77ee2300ea17210f5fa1.json
+  s_28978425e45104::t_3b4b97ae75916f 1-7406
+native/verification/local-ai-step1/resume/mlx-xcode-schemes.json
+  s_28978425e45104::t_1dc13ea08fe9bf 1-10
+native/verification/local-ai-step1/resume/qwen-1.7b-worker-resume-16.json
+  s_28978425e45104::t_04c23563dfe953 1-57
+native/verification/local-ai-step1/resume/qwen-1.7b-worker-resume-32.json
+  s_28978425e45104::t_d0f01223bc03b7 1-84
+native/verification/local-ai-step1/resume/qwen-1.7b-worker-resume.json
+  s_28978425e45104::t_a0a376943ac04a 1-49
+native/verification/local-ai-step1/resume/simulator-assets-qwen06-cactus.json
+  s_28978425e45104::t_32d06cca321514 1-1924
+native/verification/local-ai-step1/resume/simulator-reports/keyword-control-06130348-CBBD-4F50-928C-5968A72C981F.json
+  s_28978425e45104::t_f93529c016dd89 1-278
+native/verification/local-ai-step1/resume/simulator-reports/keyword-control-18362EF6-112B-49AC-9D0C-4D4B8D7A87C3.json
+  s_28978425e45104::t_709a27fc9d56ad 1-278
+native/verification/local-ai-step1/resume/simulator-reports/keyword-control-25A7B237-98C6-4FB0-8209-111087ABC9D7.json
+  s_28978425e45104::t_036ad6589089e8 1-278
+native/verification/local-ai-step1/resume/simulator-reports/keyword-control-D5BA1ABB-4BD1-4110-AE04-40F6E640309F.json
+  s_28978425e45104::t_32d268150c41d5 1-278
+native/verification/local-ai-step1/resume/simulator-reports/keyword-control-D6CA2910-FE16-46A1-BFE1-F0FF1180C878.json
+  s_28978425e45104::t_0919d57c427dfd 1-278
+native/verification/local-ai-step1/resume/simulator-reports/keyword-control-DDBC4F92-FC62-4C69-8946-491E49E64B6D.json
+  s_28978425e45104::t_9b5b6497c666b3 1-278
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-2E152742-2162-4407-BD3D-1905A7855C20.json
+  s_28978425e45104::t_71e75ec543b140 1-308
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-7911B9EF-1E57-4C19-BE41-26923DCCA169.json
+  s_28978425e45104::t_45d3c7be81a91a 1-308
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-A7B8810B-C341-4E92-B77A-7DCBA5F2052F.json
+  s_28978425e45104::t_fe44324795923b 1-308
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen-F6BCA932-2FB9-4215-812C-8DB5D9E4D28B.json
+  s_28978425e45104::t_94bcaf9fbc004d 1-308
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-3B24890F-3CA1-4AA0-9756-F986BD27DA60.json
+  s_28978425e45104::t_3321b844811161 1-308
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-7C05F288-1A79-4DBB-920F-A613916AF498.json
+  s_28978425e45104::t_d5743c937073ac 1-308
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-A20E0B63-121E-46ED-ABFB-0A1DB8ACB40E.json
+  s_28978425e45104::t_d68df67e4eb2b2 1-308
+native/verification/local-ai-step1/resume/simulator-reports/llama-qwen06-B0CCCEFB-CA39-49DE-B376-B7DBAAC7A7C3.json
+  s_28978425e45104::t_9af42fbddb98bd 1-308
+native/verification/local-ai-step2/accessibility-recheck-attachments/07AF3BA5-A90B-41A6-ADD7-3B281FD8903C.txt
+  s_28978425e45104::t_7e331c7c5f5fd0 1
+native/verification/local-ai-step2/accessibility-recheck-attachments/24E3B800-EAE7-465A-ABD6-A5B606A2CF6F.txt
+  s_28978425e45104::t_59e62f703e165e 1
+native/verification/local-ai-step2/accessibility-recheck-attachments/3212619E-D90F-4E23-A121-8AEF7C251982.txt
+  s_28978425e45104::t_92b152bc99f3a2 1
+native/verification/local-ai-step2/accessibility-recheck-attachments/6B5387DB-9AA5-4BC7-8F8B-4846FE14D82E.txt
+  s_28978425e45104::t_44c30272a3432a 1
+native/verification/local-ai-step2/accessibility-recheck-attachments/F7B0BED0-1076-4F17-B1EE-D69D8BEACC61.txt
+  s_28978425e45104::t_0f24327bb4b957 1
+native/verification/local-ai-step2/accessibility-recheck-attachments/manifest.json
+  s_28978425e45104::t_7b0af7b8b53fac 1-135
+native/verification/local-ai-step2/cleanup-preserved/capture-regression/Logs/Package/LogStoreManifest.plist
+  s_28978425e45104::t_df2a305df1cd5d 1-47
+native/verification/local-ai-step2/cleanup-preserved/capture-regression/SourcePackages/workspace-state.json
+  s_28978425e45104::t_6fddf7d2466296 1-150
+native/verification/local-ai-step2/cleanup-preserved/capture-regression/info.plist
+  s_28978425e45104::t_df26009e27e61e 1-10
+native/verification/local-ai-step2/cleanup-preserved/mlx-derived-common/Logs/Package/LogStoreManifest.plist
+  s_28978425e45104::t_5af350f5e6d7b0 1-83
+native/verification/local-ai-step2/cleanup-preserved/mlx-derived-common/SourcePackages/workspace-state.json
+  s_28978425e45104::t_f2e6d3f625e735 1-195
+native/verification/local-ai-step2/cleanup-preserved/wax-snapshot-verification/Package.swift
+  s_28978425e45104::t_f03168af2d1c65 1-31
+native/verification/local-ai-step2/cleanup-preserved/wax-snapshot-verification/Sources/WaxEvaluationAdapter/WaxMemoryIndexAdapter.swift
+  s_28978425e45104::t_a627d433df06c4 1-147
+native/verification/local-ai-step2/cleanup-preserved/wax-snapshot-verification/Sources/WaxEvaluationCLI/Main.swift
+  s_28978425e45104::t_264351d492bc8e 1-115
+native/verification/local-ai-step2/cleanup-preserved/wax-snapshot-verification/Tests/WaxEvaluationAdapterTests/WaxMemoryIndexAdapterTests.swift
+  s_28978425e45104::t_775f87b3a2a64f 1-113
+native/verification/local-ai-step2/repairs/independent-main-resolution.json
+  s_28978425e45104::t_0513eb16780738 1-28
+native/verification/local-ai-step2/repairs/package-isolation/before/project.pbxproj
+  s_28978425e45104::t_1415a490f908e6 1-98
+native/verification/local-ai-step2/repairs/package-isolation/before/receipt.json
+  s_28978425e45104::t_1ddb025a53b839 1-27
+native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/.memoryos-wax-resource-ownership.json
+  s_28978425e45104::t_575490f781cdb7 1-36
+native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/Logs/Package/LogStoreManifest.plist
+  s_28978425e45104::t_023275e3006dc1 1-47
+native/verification/local-ai-step2/repairs/package-isolation/prepared-lab-metadata/SourcePackages/workspace-state.json
+  s_28978425e45104::t_f0918ad129110a 1-136
+native/verification/local-ai-step2/repairs/recall-before-task-completion.json
+  s_28978425e45104::t_6e4829ed108f51 1-842
+native/verification/local-ai-step2/repairs/recall-before-task-delivery.json
+  s_28978425e45104::t_694cc118f7a8f6 1-999
+native/verification/local-ai-step2/simulator-reports/cactus-10A1F408-0816-41AB-835F-CBE65CC97191.json
+  s_28978425e45104::t_fc13aaf0b3c7b9 1-339
+native/verification/local-ai-step2/simulator-reports/cactus-8633AA04-249A-4677-9BD3-7D7DE593A124.json
+  s_28978425e45104::t_ec7334fc5222b7 1-339
+native/verification/local-ai-step2/simulator-reports/cactus-973CC5D5-56D7-473E-A1BA-D1D8810ABAB9.json
+  s_28978425e45104::t_a3ce26816e3350 1-339
+native/verification/local-ai-step2/simulator-reports/cactus-E3A26EE8-3178-4E4E-AF8D-5E23CB97FD0F.json
+  s_28978425e45104::t_fd1ce2aad7ea9c 1-339
+native/verification/local-ai-step2/simulator-reports/cactus-E4D32BEB-C306-4C51-9464-B88241561758.json
+  s_28978425e45104::t_bcafe5cfbf1a54 1-339
+native/verification/local-ai-step2/simulator-reports/cactus-F6D6DBF8-D2A2-4A3E-BCCC-3FF6112872F4.json
+  s_28978425e45104::t_204d9951b7b50a 1-339
+native/verification/local-ai-step2/simulator-reports/keyword-control-20206A0A-B3EA-4415-8708-2D5AA5D10EF4.json
+  s_28978425e45104::t_911bd2ccc90a82 1-278
+native/verification/local-ai-step2/simulator-reports/keyword-control-4BF6320C-8E9C-432F-A518-956AF3CED8E7.json
+  s_28978425e45104::t_62919216b4da6d 1-278
+native/verification/local-ai-step2/simulator-reports/keyword-control-770DC05F-8287-4E44-8C26-C5AD834D7F0A.json
+  s_28978425e45104::t_1f8ab10992a94f 1-278
+native/verification/local-ai-step2/simulator-reports/keyword-control-843DA98B-1578-44AE-9EFC-4BAF1ACAF31C.json
+  s_28978425e45104::t_23d81dd54ed821 1-278
+native/verification/local-ai-step2/simulator-reports/keyword-control-9714CF1F-CE0A-4877-B09D-915E1687F091.json
+  s_28978425e45104::t_cc8b1da401615e 1-278
+native/verification/local-ai-step2/simulator-reports/keyword-control-E7B67EA3-B2F0-4BB4-BC82-A5747A2AD4F9.json
+  s_28978425e45104::t_e55c3a18a75b61 1-278
+native/verification/local-ai-step2/simulator-reports/mlx-qwen-F0753145-5DFC-4391-8E37-005E36417F82.json
+  s_28978425e45104::t_35bcd3daabf831 1-203
+native/verification/local-ai-step2/simulator-reports/mlx-qwen-F85A0FCB-AF3A-44D7-8B7A-EBA9EBAE8D37.json
+  s_28978425e45104::t_aef7a47cfc0cb2 1-203
+native/verification/local-ai-step2/source-hashes.json
+  s_28978425e45104::t_79501b6fa9e68a 1-117
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "de2cccc4243a9426744b4d1c1bdbb5ffe0f442f2",
+  "prompts": {},
+  "sessions": {
+    "s_28978425e45104": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1dbbb-3f19-73a3-83f6-c6259ca42b4f",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
