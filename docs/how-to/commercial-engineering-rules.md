@@ -8,12 +8,36 @@ Status: standing requirements for future authorized work. No compliance certific
 
 1. Keep everyday capture and local memory usable without a Mac, account, or server. A user may enable cloud features through an explicit connection decision.
 2. Use Swift with SwiftUI. Organize the app as a modular monolith: one app divided into modules with defined responsibilities. Use a small modular backend only when its implementation receives authorization.
-3. Separate feature views/view models, domain rules/use cases, local storage, and service adapters. Use cases coordinate product actions. Adapters connect external implementations through small interfaces.
+3. Use MVVM (Model-View-ViewModel) for SwiftUI features. Separate Views/ViewModels, domain models/rules/use cases, local storage, and service adapters. Follow the mandatory responsibilities and checks below. Use cases coordinate product actions. Adapters connect external implementations through small interfaces.
 4. Keep domain code independent of SwiftUI, database types, and vendor SDKs. Views must not call databases, AI providers, or network services. Inject dependencies through initializers and keep feature state bounded to its responsibility.
 5. MemoryOS must own durable source records, stable IDs, source dates/links, user corrections, and confirmed facts. Keep original sources, extracted claims, user confirmations, and AI interpretations distinguishable. Preserve provenance when a user corrects a claim.
 6. Treat embeddings and provider search indexes as derived data. Rebuild them from app-owned records. Verify source links, corrections, deletions, and recovery when switching providers or models. Do not assume model or index formats are interchangeable.
 7. Keep recording, transcription, retrieval, model inference, imports, sync, and purchases behind separate interfaces where their responsibilities differ. Prefer small interfaces over speculative abstraction layers.
 8. Record concrete storage/provider choices in decision notes with tradeoffs, license terms, supported versions, compatibility, and measured device results. These rules select boundaries, not a database or AI package.
+
+## Mandatory MVVM, repository, and engine rules
+
+Owner instruction C34, 2026-11-14, makes MVVM explicit alongside C26/D30 and C27/D31. Agents must apply these rules directly. A different feature architecture requires an explicit owner decision; do not infer an exception from a SwiftUI example or library preference.
+
+| Layer | Required responsibility and boundary |
+| --- | --- |
+| View | Render feature state, bind inputs, and forward user actions to its ViewModel. Keep layout, focus, sheet visibility, and other view-local presentation state here. Do not perform product rules, persistence, provider calls, or network requests in View bodies, lifecycle handlers, or button closures. Stateless display components do not need empty ViewModels. |
+| ViewModel | Own feature presentation state and action coordination. Call injected app use cases; expose results, progress, and recoverable errors to the View. Keep UI-facing state on the main actor when applicable. Do not import or call storage implementations, provider SDKs, or network clients. A renamed global service or a file named ViewModel does not establish this boundary. |
+| Model and domain | Own app records, stable IDs, corrections, product rules, use cases, and the small protocols the feature needs. Keep this code independent of SwiftUI/UIKit, concrete databases, network clients, and vendor SDKs. Use cases call these protocols; concrete implementations enter through dependency injection. |
+| Storage and integration adapters | Implement app-owned protocols and translate between app values and concrete storage, platform, or engine APIs. Keep vendor types inside the adapter. Use upstream libraries for their engine capabilities; keep product rules and authoritative records in MemoryOS. |
+| Composition root | Construct implementations and inject them at the app boundary. Views and ViewModels receive their required dependencies rather than creating concrete providers or looking them up through a global service locator. |
+
+The action path is **View → ViewModel → use case → app-owned protocol → storage/integration adapter → selected library or platform API**. Return app-owned values and structured errors along that path. Add only the use cases/protocols needed by implemented behavior; do not generate empty layers or duplicate business logic to match a diagram.
+
+Repository and engine ownership are mandatory:
+
+1. Keep one private canonical app Git repository, [faroqomar/Eros_MemoryOS](https://github.com/faroqomar/Eros_MemoryOS). Keep app features, domain code, small interfaces, thin adapters, and app tests there. A domain data-access “repository” protocol is a code interface, not a request to create another GitHub repository.
+2. “Separate engine repositories” means the upstream repositories/checkouts of selected libraries, such as a future approved Wax or transcription dependency. It does not mean custom `Eros_MemoryEngine` or `Eros_Speech` repositories. Reuse upstream capabilities; do not copy engine implementation into app source or create replacement engines without a separate owner decision.
+3. Integrate a selected library through a reviewed pinned package revision and retain the resolved dependency file. Keep upstream development and its tests in its own checkout. Use local overrides only for explicit integration tests; remove them and recheck the pinned delivered configuration. A fork requires a concrete necessary patch and a recorded maintenance reason. Libraries named in research remain candidates until selected for authorized work.
+4. At actual SDK integration, enforce an independent plain Swift core and the required integration target boundaries inside the app repository. Add no empty packages or custom engine repositories for this policy. Recording, transcription, retrieval, and model execution need separate replaceable contracts when implemented.
+5. MemoryOS owns originals, IDs, source links, user corrections, and confirmed facts. Provider indexes are rebuildable derivatives. Keep the existing contract, Arabic/English, offline, recovery, upgrade, and physical-device benchmark requirements in the [upstream rules](../decisions/independent-engine-packages.md#mandatory-architecture-and-adoption-rules).
+
+Step 1 must name the affected View, ViewModel, model/use case, protocol, adapter, composition root, repository/checkouts, and dependency revision in the task record, or justify an unaffected layer. Step 2 must apply the [explicit architecture checklist](development-workflow.md#mandatory-step-2-architecture-and-upstream-checks) to actual code and tests. Step 3 must confirm the reviewed head still matches that evidence. Unresolved required violations block passage; a documentation update or a build alone does not establish MVVM compliance.
 
 ## Privacy and cloud boundaries
 

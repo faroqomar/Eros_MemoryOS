@@ -8,14 +8,17 @@ let package = Package(
     .library(name: "LlamaEvaluationAdapter", targets: ["LlamaEvaluationAdapter"]),
     .executable(name: "llama-evaluation", targets: ["LlamaEvaluationCLI"]),
   ],
-  dependencies: [.package(path: "../LocalAIEvaluation")],
+  dependencies: [.package(path: "../LocalAIEvaluation"), .package(path: "../LocalChat")],
   targets: [
     // The official b12387 binary omits Simulator. Build this exact reviewed revision
     // with scripts/prepare-llama-evaluation.py; retain its source/binary hash receipt.
     .binaryTarget(name: "llama", path: "Artifacts/llama.xcframework"),
     .target(
       name: "LlamaEvaluationAdapter",
-      dependencies: ["llama", .product(name: "AIEvaluationCore", package: "LocalAIEvaluation")],
+      dependencies: [
+        "llama", .product(name: "AIEvaluationCore", package: "LocalAIEvaluation"),
+        .product(name: "ChatCore", package: "LocalChat"),
+      ],
       linkerSettings: [.linkedFramework("Accelerate"), .linkedLibrary("c++")]),
     .executableTarget(
       name: "LlamaEvaluationCLI",
@@ -26,6 +29,7 @@ let package = Package(
       name: "LlamaEvaluationAdapterTests",
       dependencies: [
         "LlamaEvaluationAdapter", .product(name: "AIEvaluationCore", package: "LocalAIEvaluation"),
+        .product(name: "ChatCore", package: "LocalChat"),
       ]),
   ],
   swiftLanguageModes: [.v6]

@@ -86,6 +86,8 @@ Owner instruction C32, 2026-11-14: the owner adds cleanup of dead code and unnec
 
 Owner instruction C33, 2026-11-14: the owner asks to allow subagents in Steps 1, 2, and 3 for better results and dependency work; requires Step 2 to clean dead code, useless files, and temporary outputs; requires Step 3 to merge after review/push; and requests screenshots of changes and additions at every step. D33 and the workflow/AGENTS/task template adopt this as a standing rule. It replaces the earlier fixed two-agent limit and separate routine merge confirmation. Required verification and any required product/design acceptance remain; the instruction does not claim that the current app's blocked checks passed or authorize an app release.
 
+Owner instruction C34, 2026-11-14: after learning that MVVM was not named as a mandatory architecture or explicit Step 2 checklist, the owner asks to make it explicit alongside the repository and engine rules so agents do not guess. D34, AGENTS.md, the commercial/engineering rules, upstream decision, workflow, and task template now name MVVM, define layer responsibilities and dependency direction, retain D30/D31 ownership boundaries, and require concrete implementation/test evidence in Step 2. This authorizes a policy/documentation clarification; it does not establish existing app compliance, select an engine, or start an app refactor.
+
 ## What changed
 
 1. The 2025 research focused on digital legacy and self-insight, with a cloud-oriented architecture and several possible audiences.
@@ -158,3 +160,21 @@ C43, 2026-11-15: the owner directs the agent to fix the review findings. This au
 C44, 2026-11-15: after the C43 repair handback passes, the owner requests Step 3 for the active group 4 local AI evaluation. Under C33, this authorizes final scoped review, commit/push, private PR delivery and merge of the verified head after the applicable repository gates pass. Group 5 chat, production model adoption, physical-phone claims, cloud processing and release are outside this delivery. Preserve unrelated local architecture-policy work.
 
 C44 delivery result: [PR #4](https://github.com/faroqomar/Eros_MemoryOS/pull/4) merges the reviewed group 4 head `073d4f6050e95109e894abcb456767840310af27` as `7e20302af39c341e409bd9a553746c15bc1af9de` on 2026-11-15. Independent delivery, standards and spec reviews pass. No production model, group 5 chat or release follows. The task record preserves the repository gate state and remaining limits.
+
+## Development-step skill routing, 2026-11-15
+
+C45: the owner states that new skills were added to T3 Code and asks the agent to search them, choose useful skills for each of Steps 1, 2, and 3, and write the steps with those skills. This authorizes the local workflow-guidance update. The agent selects shared T3 implementation/interface/TDD guidance for Step 1, review and relevant native verification guidance for Step 2, and final-review/PR guidance for Step 3, with conditional skills by task. See [D35](../decisions/decision-register.md) and the [step skill map](../how-to/agent-skills.md#skills-for-the-three-development-steps). Existing app scope, stage authorization, and delivery gates remain in force.
+
+C46, 2026-11-15: the owner adds that each task must include skill research to identify other useful skills because tasks differ. Treat the step map as a starting point. Search current installed skill descriptions before each task and step; add, replace, or skip skills by actual scope and record the selection rationale. This clarification expands skill selection, not app or delivery authorization.
+
+## Local AI chat authorization, 2026-11-15
+
+C47: the owner requests Step 1 of connecting local AI to main-app chat. The supplied checklist covers real streaming replies, full conversation context and limits, composer/keyboard/motion/scrolling, stop/retry/regenerate, durable chat management, formatting/copy, current app-owned memory sources and original-record protection, Arabic/Iraqi/English conversations, recovery/offline behavior, MVVM/replaceable adapters, accessibility and responsiveness targets. The requested simulator is iPhone 18 Pro Max. The final independent-verification checklist item remains the later Step 2 outcome under the standing workflow; this request starts Step 1. No cloud fallback, release, production model adoption or Step 3 follows. See the [task](../tasks/2026-11-15-local-ai-chat.md).
+
+C48, 2026-11-15: the owner requests Step 2 for the active C47 main-app local-chat task. This authorizes fresh independent verification, required repairs and affected rechecks, performance investigation, cleanup and dark evidence. It does not start Step 3 or adopt a production model.
+
+C49, 2026-11-15: the owner requests repair of chat responsiveness, withdraws the extended VoiceOver requirement from the current task, and asks to remove excessive documentation/evidence and prevent recurrence. VoiceOver is a screen reader; Voice Control uses spoken commands. Basic labels, larger text, contrast, Reduce Motion and usable touch controls remain in scope. Failed extended diagnostics are recorded as withdrawn, not passed. AGENTS.md and the workflow now require compact task/results records, selected captures, temporary ignored raw diagnostics and removal of resolved retries; `scripts/check-evidence.py` checks changed evidence size and dump patterns. This does not waive other tasks' or release requirements, authorize Step 3 or establish a performance pass.
+
+## C53: Step 3 cleanup and chat delivery, 2026-11-15
+
+The owner requests Step 3 for local chat and requires a standing documentation-cleanup rule before delivery work. Every Step 3 must remove confirmed unnecessary material, consolidate useful results, preserve originals and required evidence, and check links and storage totals. The normal private PR/merge authorization remains subject to existing verification and acceptance gates. See the [workflow](../how-to/development-workflow.md#step-3-documentation-cleanup).

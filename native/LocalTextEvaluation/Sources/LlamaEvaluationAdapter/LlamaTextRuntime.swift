@@ -1,10 +1,22 @@
 import AIEvaluationCore
+import ChatCore
 import CryptoKit
 import Foundation
 import llama
 
+/// Plain values for the reviewed upstream chat-template boundary.
+public struct LlamaChatTurn: Equatable, Sendable {
+  public let role: String
+  public let text: String
+  public init(role: String, text: String) {
+    self.role = role
+    self.text = text
+  }
+}
+
 /// Resident-session evaluation adapter. The first request loads the model; later requests reset KV state. It never downloads assets or opens a network connection.
-/// All C handles remain within one actor call and are freed on failure or cancellation.
+/// This actor owns the C handles. It retains a valid resident session until explicit unload;
+/// partially constructed native handles are freed on load failure or cancellation.
 public actor LlamaTextRuntime: TextRuntimeAdapter {
   public let assetURL: URL
   public let expectedSHA256: String
@@ -53,6 +65,61 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
         "This adapter supports greedy temperature 0 and 1–256 output tokens only. Seed is unused by greedy sampling."
       )
     }
+    return try infer(
+      maximumOutputTokens: settings.maximumOutputTokens, chatMode: false,
+      prompt: { try applyTemplate(request: request, model: $0) }, onText: nil)
+  }
+
+  /// Role-based chat uses the same reviewed native session and greedy sampler as evaluation.
+  /// Native calls execute on this actor, outside the UI actor. Cancellation is cooperative:
+  /// a synchronous upstream load or decode must return before the next check can run.
+  public func chat(turns: [LlamaChatTurn], onText: @escaping @Sendable (String) -> Void)
+    async throws
+    -> TextOutput
+  {
+    try Task.checkCancellation()
+    try Self.validateChat(turns)
+    return try infer(
+      maximumOutputTokens: 256, chatMode: true,
+      prompt: { try makePrompt(turns: turns, model: $0) }, onText: onText)
+  }
+
+  private static func validateChat(_ turns: [LlamaChatTurn]) throws {
+    guard !turns.isEmpty, turns.last?.role == "user", turns.count <= 1001 else {
+      throw EvaluationError.invalidSuite(
+        "A chat needs a final user message and at most 1001 turns.")
+    }
+    var nextRole = "user"
+    var totalBytes = 0
+    for (index, turn) in turns.enumerated() {
+      guard ["system", "user", "assistant"].contains(turn.role),
+        !turn.text.utf8.contains(0),
+        turn.role == "assistant"
+          || !turn.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+      else {
+        throw EvaluationError.invalidSuite(
+          "Chat roles or text are invalid; embedded NUL is refused.")
+      }
+      if turn.role == "system" {
+        guard index == 0 else {
+          throw EvaluationError.invalidSuite("The system turn must come first.")
+        }
+      } else {
+        guard turn.role == nextRole else {
+          throw EvaluationError.invalidSuite("Chat user and assistant turns must alternate.")
+        }
+        nextRole = turn.role == "user" ? "assistant" : "user"
+      }
+      totalBytes += turn.text.utf8.count
+      guard totalBytes <= 100_000 else { throw ChatError.contextLimit }
+    }
+  }
+
+  private func infer(
+    maximumOutputTokens: Int, chatMode: Bool,
+    prompt makePrompt: (OpaquePointer) throws -> String,
+    onText: (@Sendable (String) -> Void)?
+  ) throws -> TextOutput {
     let clock = ContinuousClock()
     let start = clock.now
     let cold = session == nil
@@ -64,26 +131,29 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     llama_memory_clear(llama_get_memory(context), true)
     llama_sampler_reset(sampler)
     let preparation = elapsed(start.duration(to: clock.now))
-    let prompt = try applyTemplate(request: request, model: session.model)
+    let prompt = try makePrompt(session.model)
     var tokens = [llama_token](repeating: 0, count: 2048)
     let tokenCount = prompt.withCString {
       llama_tokenize(vocab, $0, Int32(prompt.utf8.count), &tokens, 2048, true, true)
     }
-    guard tokenCount > 0, Int(tokenCount) + settings.maximumOutputTokens <= 2048 else {
+    guard tokenCount > 0, Int(tokenCount) + maximumOutputTokens <= 2048 else {
+      if chatMode { throw ChatError.contextLimit }
       throw EvaluationError.unavailable(
         "Prompt and output exceed the fixed 2048-token evaluation context. No truncation was applied."
       )
     }
+    try Task.checkCancellation()
     let promptStatus = tokens.withUnsafeMutableBufferPointer {
       llama_decode(context, llama_batch_get_one($0.baseAddress, tokenCount))
     }
+    try Task.checkCancellation()
     guard promptStatus == 0 else {
       throw EvaluationError.invalidResult("Prompt decode failed (\(promptStatus)).")
     }
     var outputBytes = [UInt8]()
     var generated = 0
     var firstToken: Double?
-    for _ in 0..<settings.maximumOutputTokens {
+    for _ in 0..<maximumOutputTokens {
       try Task.checkCancellation()
       var token = llama_sampler_sample(sampler, context, -1)
       if llama_vocab_is_eog(vocab, token) { break }
@@ -97,6 +167,8 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
       }
       guard count >= 0 else { throw EvaluationError.invalidResult("Token decoding failed.") }
       outputBytes.append(contentsOf: piece.prefix(Int(count)).map { UInt8(bitPattern: $0) })
+      // A token can end inside an Arabic or emoji UTF-8 sequence. Publish only complete text.
+      if let text = String(bytes: outputBytes, encoding: .utf8) { onText?(text) }
       let status = withUnsafeMutablePointer(to: &token) {
         llama_decode(context, llama_batch_get_one($0, 1))
       }
@@ -104,6 +176,7 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
         throw EvaluationError.invalidResult("Token decode failed (\(status)).")
       }
     }
+    if chatMode && generated == maximumOutputTokens { throw ChatError.outputLimit }
     guard let text = String(bytes: outputBytes, encoding: .utf8) else {
       throw EvaluationError.invalidResult(
         "Output cap ended inside a UTF-8 sequence. No replacement text was returned.")
@@ -180,17 +253,31 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     let sourceText = request.sources.map { "[\($0.id)] \($0.text)" }.joined(separator: "\n")
     let content =
       "\(request.instruction)\n\nUNTRUSTED SOURCES:\n\(sourceText)\n\nQUESTION:\n\(request.question)\n/no_think"
-    guard let role = strdup("user"), let body = strdup(content) else {
-      throw EvaluationError.unavailable("Cannot allocate the prompt.")
+    return try makePrompt(turns: [.init(role: "user", text: content)], model: model)
+  }
+
+  private func makePrompt(turns: [LlamaChatTurn], model: OpaquePointer) throws -> String {
+    var allocations: [UnsafeMutablePointer<CChar>] = []
+    defer { for allocation in allocations { free(allocation) } }
+    var messages: [llama_chat_message] = []
+    for turn in turns {
+      guard let role = strdup(turn.role) else {
+        throw EvaluationError.unavailable("Cannot allocate the chat role.")
+      }
+      allocations.append(role)
+      guard let body = strdup(turn.text) else {
+        throw EvaluationError.unavailable("Cannot allocate the chat text.")
+      }
+      allocations.append(body)
+      messages.append(llama_chat_message(role: UnsafePointer(role), content: UnsafePointer(body)))
     }
-    defer {
-      free(role)
-      free(body)
+    let requestedSize = turns.reduce(4096) { $0 + $1.text.utf8.count * 2 + 64 }
+    var output = [CChar](repeating: 0, count: requestedSize)
+    let size = messages.withUnsafeBufferPointer {
+      llama_chat_apply_template(
+        llama_model_chat_template(model, nil), $0.baseAddress, $0.count, true, &output,
+        Int32(output.count))
     }
-    var message = llama_chat_message(role: UnsafePointer(role), content: UnsafePointer(body))
-    var output = [CChar](repeating: 0, count: content.utf8.count * 2 + 4096)
-    let size = llama_chat_apply_template(
-      llama_model_chat_template(model, nil), &message, 1, true, &output, Int32(output.count))
     guard size > 0, size < output.count else {
       throw EvaluationError.unavailable(
         "The model chat template is unsupported or exceeds the prompt buffer.")

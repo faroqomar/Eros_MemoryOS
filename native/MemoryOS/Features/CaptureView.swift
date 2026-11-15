@@ -45,6 +45,13 @@ struct CaptureView: View {
     }
     .safeAreaInset(edge: .bottom, spacing: 0) {
       VStack(spacing: 18) {
+        Button {
+          composerFocused = false
+          session.section = .chat
+        } label: {
+          Label(language.text("Ask local AI", "اسأل الذكاء المحلي"), systemImage: "bubble.left")
+            .font(.subheadline).frame(minHeight: 44)
+        }.buttonStyle(.plain).accessibilityIdentifier("capture-open-chat")
         if records.draftTooLarge {
           Text(
             language.text(

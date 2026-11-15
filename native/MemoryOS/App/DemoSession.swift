@@ -1,12 +1,13 @@
 import SwiftUI
 
 enum AppSection: String, CaseIterable, Identifiable {
-  case capture, brainMap, profiles, projects, memories, birthdays, settings
+  case capture, chat, brainMap, profiles, projects, memories, birthdays, settings
   var id: String { rawValue }
 
   func title(in language: AppLanguage) -> String {
     switch self {
     case .capture: language.text("Capture", "التقاط")
+    case .chat: language.text("Chat", "المحادثة")
     case .brainMap: language.text("BrainMap", "خريطة الذاكرة")
     case .profiles: language.text("People", "الأشخاص")
     case .projects: language.text("Projects", "المشاريع")
@@ -19,6 +20,7 @@ enum AppSection: String, CaseIterable, Identifiable {
   var symbol: String {
     switch self {
     case .capture: "mic"
+    case .chat: "bubble.left.and.bubble.right"
     case .brainMap: "brain"
     case .profiles: "person"
     case .projects: "folder"

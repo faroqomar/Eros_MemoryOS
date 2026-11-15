@@ -1,5 +1,15 @@
 # Native SwiftUI foundation
 
+## Experimental local chat, C47, 2026-11-15
+
+The main app now links the existing reviewed local runtime behind app-owned chat interfaces. Open Chat from the sidebar or Ask local AI in Capture. Capture's Save thought remains separate. The feature source supports multiline input, local conversation history, streaming, stop/retry/regenerate, current-memory evidence and copy. C48 Step 2 adds fresh architecture/behavior review, recovery repairs and stronger conversation assertions. Local Simulator checks, dark captures and cleanup pass. The [chat task](../tasks/2026-11-15-local-ai-chat.md) records source identity, measurements and the remaining performance/device/accessibility gates.
+
+For model preparation, open Settings and choose Import local model. Select the existing reviewed `Qwen3-0.6B-Q4_K_M.gguf` file from Files. Its required SHA-256 is `ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a`. The app stages a coordinated copy, verifies its hash and keeps it under `Documents/ChatModels`. It does not download a model or send chat to a cloud service. Keep that file outside Git. Developers can reuse the already prepared evaluation asset instead of downloading a second copy. The app verifies it again before the first model load. The experimental model has known Arabic/Iraqi quality failures; source controls do not certify an answer.
+
+The runtime XCFramework contains arm64 Simulator and iOS slices. Use `ARCHS=arm64` for generic build/test-compilation commands. Preserve the existing source/binary receipt and setup steps in the [runtime package](../../native/LocalTextEvaluation/README.md). The new app-owned [LocalChat package](../../native/LocalChat/README.md) describes archive limits, draft checkpoints, recovery and test commands. Chat archives are separate from original-record exports. Physical iPhone behavior and iOS 18 runtime compatibility remain unverified.
+
+The remaining foundation/storage instructions retain dated context and their existing evidence boundaries.
+
 Foundation date: 2026-11-13, C20. Current demo work: 2026-11-14, C28. The [complete interface demo task](../tasks/2026-11-14-complete-interface-demo.md) records the new source, checks, and remaining review stages. The foundation descriptions below are historical where the new task supersedes them.
 
 Historical C28 additions include People/details, Projects with plans and tentative ideas, Birthdays/reminder choices, and a focused BrainMap with linked details and list presentation. Choose English or Arabic in Settings. People and Projects support name/topic search; clear search to recover from no results. The sidebar returns to each section's path and retained query. BrainMap retains its focus and presentation. That demo kept fictional records, temporary captures, and birthday choices in process memory; restarting reset changes. The local-storage task below supersedes temporary typed capture. Reminder choices schedule nothing. The project uses only Apple frameworks. Domain values compile without SwiftUI. `MemoryOSTests` uses Swift Testing; `MemoryOSUITests` retains XCTest UI automation.

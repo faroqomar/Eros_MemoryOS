@@ -6,6 +6,8 @@ Updated on 2026-11-14. Owner sources: C26 and C27. Decisions: D30 and D31. D30 c
 
 The owner meant upstream repositories such as Wax and transcription libraries. Keep one MemoryOS app repository and use small app-side adapters around selected upstream packages. Reuse maintained libraries before writing replacement engines. Extra custom engine repositories are not the current plan.
 
+C34 makes the app architecture explicit: use MVVM (Model-View-ViewModel), independent domain/use cases, and injected thin adapters. Follow the [mandatory MVVM, repository, and engine responsibilities](../how-to/commercial-engineering-rules.md#mandatory-mvvm-repository-and-engine-rules) and the [Step 2 source/test checklist](../how-to/development-workflow.md#mandatory-step-2-architecture-and-upstream-checks). These are requirements to verify, not evidence that the existing app meets them. C34 preserves D30's upstream-library meaning of separate repositories; it does not revive D29's custom-engine plan.
+
 Wax and the documented speech/memory alternatives remain candidates. Naming a library here does not select a production dependency or start integration. Concrete versions, licenses, platform/model compatibility, and phone results still need review when the capability enters authorized scope.
 
 ## Small app structure

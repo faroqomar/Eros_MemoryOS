@@ -1,9 +1,12 @@
+import ChatPresentation
 import SwiftUI
 
 /// The session retains paths; only the current section renders controls.
 struct SectionHostView: View {
   let session: DemoSession
   let records: LocalRecordsViewModel
+  let chat: ChatViewModel
+  let preparation: ChatModelPreparationViewModel
   let section: AppSection
   let menuIsOpen: Bool
   let openMenu: () -> Void
@@ -18,7 +21,9 @@ struct SectionHostView: View {
           menuLabel: session.language.text("Open menu", "فتح القائمة"), openMenu: openMenu,
           menuFocus: menuFocus
         )
-        SectionView(session: session, records: records, section: section, menuIsOpen: menuIsOpen)
+        SectionView(
+          session: session, records: records, chat: chat, preparation: preparation,
+          section: section, menuIsOpen: menuIsOpen)
       }
       .toolbar(.hidden, for: .navigationBar)
       .navigationDestination(for: DemoDestination.self) { destination in
@@ -45,6 +50,8 @@ struct SectionHostView: View {
 struct SectionView: View {
   @Bindable var session: DemoSession
   let records: LocalRecordsViewModel
+  let chat: ChatViewModel
+  let preparation: ChatModelPreparationViewModel
   let section: AppSection
   let menuIsOpen: Bool
   private var language: AppLanguage { session.language }
@@ -54,6 +61,8 @@ struct SectionView: View {
       switch section {
       case .capture:
         CaptureView(session: session, records: records, menuIsOpen: menuIsOpen)
+      case .chat:
+        ChatView(model: chat, records: records, language: language, menuIsOpen: menuIsOpen)
       case .profiles:
         CatalogListView(
           session: session, state: session.state(for: section), kind: .person,
@@ -68,6 +77,9 @@ struct SectionView: View {
         BrainMapView(session: session, state: session.state(for: section))
       case .settings:
         Form {
+          Section(language.text("Local AI", "الذكاء المحلي")) {
+            ChatModelSettingsView(language: language, model: preparation)
+          }
           Picker(language.text("Language", "اللغة"), selection: $session.language) {
             ForEach(AppLanguage.allCases) { item in
               Text(item.name).tag(item)

@@ -1,5 +1,7 @@
 # Complete feature register
 
+2026-11-15, C47/C48: group 5 local-chat Step 2 independent review and recovery repairs pass their local checks. C49 renderer and measurement repairs pass affected tests; combined latency, frame timing and remaining device/OS/offline checks block merge. C53 starts Step 3 draft delivery. Extended VoiceOver testing is withdrawn for this task; basic accessibility remains required. Experimental production-model quality remains open. See the [chat task](tasks/2026-11-15-local-ai-chat.md).
+
 Recorded on 2026-11-06. This register covers current requests and assistant proposals. The [historical register](reference/historical-research.md) preserves the older feature groups and technical ideas. Source IDs refer to the [source register](reference/source-register.md).
 
 Updated on 2026-11-07 with C09 owner direction: demo first, then feature-by-feature growth; ChatGPT first; birthdays as the initial action scope. See [demo and feature direction](decisions/demo-and-feature-direction.md).

@@ -1,0 +1,100 @@
+{
+  "ownerInstruction": "C49, 2026-11-15",
+  "measurement": "Before cleanup and after consolidation; after totals exclude this compact receipt. Active performance work may add separate evidence later.",
+  "before": {
+    "docs/evidence/chat-2026-11-15": {
+      "files": 47,
+      "bytes": 3087563,
+      "textLines": 3977,
+      "allocatedKiB": 3136
+    },
+    "docs/evidence/chat-step2-2026-11-15": {
+      "files": 75,
+      "bytes": 10489110,
+      "textLines": 77250,
+      "allocatedKiB": 10408
+    },
+    "native/verification/chat-step2": {
+      "files": 16031,
+      "bytes": 738864522,
+      "textLines": 7575,
+      "allocatedKiB": 777192
+    }
+  },
+  "after": {
+    "docs/evidence/chat-2026-11-15": {
+      "files": 16,
+      "bytes": 531548,
+      "textLines": 337,
+      "allocatedKiB": 560
+    },
+    "docs/evidence/chat-step2-2026-11-15": {
+      "files": 24,
+      "bytes": 1546125,
+      "textLines": 1122,
+      "allocatedKiB": 1560
+    },
+    "native/verification/chat-step2": {
+      "files": 5212,
+      "bytes": 292190414,
+      "textLines": 4449,
+      "allocatedKiB": 303216
+    }
+  },
+  "removedCategories": [
+    "Repeated runtime stdout and profiler call-tree exports",
+    "Generated per-file preservation inventories and duplicate source manifests",
+    "Superseded screenshots/preview and copied failed diagnostic tests",
+    "Obsolete VoiceOver retries and task-owned temporary exports"
+  ],
+  "removedVoiceOverRetries": {
+    "entries": 14,
+    "bytes": 446674108
+  },
+  "removedTemporaryVoiceOverArtifacts": 12,
+  "removedTemporaryBytes": 41974545,
+  "retainedExceptions": [
+    "Active baseline trace and compact numeric baselines for C49 performance repair",
+    "Passing Step 1/2 result bundles under ignored native/verification/chat-step2",
+    "Selected dark captures, prior source identity and compact result receipts",
+    "Original research, source/reference assets, app records, models, unrelated work and Git metadata"
+  ],
+  "checks": [
+    "Guard accepts compact evidence and rejects oversized text, raw call-tree names and >100 SHA-256 inventories",
+    "Current task/review Markdown local links checked",
+    "git diff --check passed"
+  ],
+  "memoryDelivery": "Parent to sync/check after final C49 performance results; no completion claim yet",
+  "c49RepairTemporaryCleanup": {
+    "entries": 31,
+    "bytes": 16846180,
+    "retained": "One useful interaction trace and passing regression bundle in ignored native/verification/chat-step2; compact result and two final dark captures in docs; active reusable build cache retained."
+  },
+  "scrollFollowupCleanup": {
+    "removedEntries": 24,
+    "removedBytes": 49193881,
+    "taskArtifactBytesBefore": 110079267,
+    "taskArtifactBytesAfter": 60885386,
+    "retained": "One final passing test bundle, continuous-pan method trace and final combined-window trace under ignored native/verification/chat-step2; existing compact receipt and one selected dark capture. Reusable Release build cache and prior unresolved evidence retained. Source, app records, models, unrelated work and Git untouched."
+  },
+  "step3Cleanup": {
+    "before": {
+      "files": 45,
+      "bytes": 2232066,
+      "textLines": 1873
+    },
+    "removedFiles": 14,
+    "removedFileBytes": 342543,
+    "categories": [
+      "Redundant runtime logs and reproducible profiler exports",
+      "Superseded screenshots and a duplicate video frame",
+      "Superseded experiment advice in baseline review"
+    ],
+    "retained": "Canonical findings, failed timing samples, source manifests, selected language/accessibility/recovery captures, unique Reduce Motion video, and ignored traces/test bundles for unresolved checks. Original research, app records, active unrelated work and Git metadata preserved.",
+    "after": {
+      "files": 31,
+      "bytes": 1889004,
+      "textLines": 734
+    }
+  }
+}

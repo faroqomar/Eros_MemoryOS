@@ -1,0 +1,18 @@
+{
+  "checkpoint": "Historical Step 1; superseded by Step 2 task results",
+  "baseHead": "7e4297e165f03f3caf57de41f7fbec30135fe912",
+  "sourceManifest": "source-sha256.json",
+  "checks": {
+    "coreFunctions": 22,
+    "nativeRuntimeFunctions": 19,
+    "appFunctions": 22,
+    "uiScenariosAcrossRechecks": 8,
+    "releaseBuildAndAnalysis": "passed",
+    "unsignedIOSCompilation": "passed",
+    "format": "passed"
+  },
+  "repairs": "History rename sheet; large-text keyboard layout; current-topic retrieval; stable message assertions. Step 2 retains the current outcomes.",
+  "limits": "No physical-device, minimum-iOS, full-app disconnected-network, pressure or full VoiceOver workflow pass. UI timing targets remained unestablished.",
+  "rawPassingResults": "native/verification/chat-step2/preserved-step1/",
+  "cleanup": "C49 removes superseded logs, copied diagnostics and duplicate captures; baseline numeric measurements remain."
+}
