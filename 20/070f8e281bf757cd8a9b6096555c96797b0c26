@@ -1,0 +1,390 @@
+.gitignore
+  s_b7a2c51ddd1171::t_42d35896bf5834 22-23
+native/MemoryOS/Composition/ChatModelImporter.swift
+  s_b7a2c51ddd1171::t_e3485f06d98367 11-12,14-15,24,28-31,39-42,45-46,50-52
+  s_b7a2c51ddd1171::t_e9251bbd6ae264 1-10,13,16-23,25-27,32-38,43-44,47-49,53-54
+docs/evidence/chat-step2-2026-11-15/c49-render-result.json
+  s_b7a2c51ddd1171::t_d3e0a3eb1097ce 332
+  s_b7a2c51ddd1171::t_fe9d127a4d605c 164,170-331,333
+  s_b7a2c51ddd1171::t_d3498a9fbcb25f 1-153,334
+  s_b7a2c51ddd1171::t_d3c41f1d2866d3 165-169
+  s_b7a2c51ddd1171::t_a6f1e7e2cc7212 154-163
+docs/feature-register.md
+  s_b7a2c51ddd1171::t_5cc1bf7f221e01 4
+  s_b7a2c51ddd1171::t_de3acb141031f6 3
+native/MemoryOS/Features/Chat/ChatView.swift
+  s_b7a2c51ddd1171::t_60aab0e10b69cc 126-129
+  s_b7a2c51ddd1171::t_c9c2c63d8d8746 187,257
+  s_b7a2c51ddd1171::t_fd2490a4a17efa 19,87
+  s_b7a2c51ddd1171::t_c853040fcde0a2 38,132-136,218
+  s_b7a2c51ddd1171::t_8e6f8a6f55608d 46-48,59,77
+  s_b7a2c51ddd1171::t_53bf3aa5a50c27 35,44
+  s_b7a2c51ddd1171::t_53db2b48100ba4 189-192,213-214,256,258-260
+  s_b7a2c51ddd1171::t_6b92abd6bc4735 1-3,5-17,20-29,36-37,39-41,49-58,60,63-65,69-76,78-86,88-125,139-145,159-173,178-181,184-185,194,197-198,207-208,219,225,233-238,242-251,261-267,270-271,276,279-280,283-284,287-288,292,296,301,304-307
+  s_b7a2c51ddd1171::t_38680b8d9a3665 18,34,43,186,188,193,195,239-241,252-255
+  s_b7a2c51ddd1171::t_9f8e48b484729b 196
+  s_b7a2c51ddd1171::t_84f5c502ad0421 199,206
+  s_b7a2c51ddd1171::t_d206469d2b1c14 4,130-131,137-138,174-177
+  s_b7a2c51ddd1171::t_e3485f06d98367 30-33,42,45,61-62,66-68,146-158,182-183,200-205,209-212,215-217,220-224,226-232,268-269,272-275,277-278,281-282,285-286,289-291,293-295,297-300,302-303
+docs/evidence/chat-2026-11-15/simulator-ui-measurements.json
+  s_b7a2c51ddd1171::t_5540e95f2e434a 1
+native/LocalTextEvaluation/Tests/LlamaEvaluationAdapterTests/LlamaChatNativeTests.swift
+  s_b7a2c51ddd1171::t_0f36cf4f0c38a1 46-71
+  s_b7a2c51ddd1171::t_64753665214413 42,104-137
+  s_b7a2c51ddd1171::t_9976d192c73c3b 1-6,10-12,15-21,34-40,44-45,72-74,80-86,92,99-103,138-143,151-159
+  s_b7a2c51ddd1171::t_478cfc26694888 7-9,13-14,22-33,41,43,75-79,87-91,93-98,144-150
+native/MemoryOS/Features/Chat/ChatHistoryView.swift
+  s_b7a2c51ddd1171::t_9f8e48b484729b 44,197-200
+  s_b7a2c51ddd1171::t_e59f19d07fda84 1-16,21-23,29-30,33,38,45-47,63-65,67-68,146,148-155,157-161,163,166-167,172-179,184-188,190,201-203
+  s_b7a2c51ddd1171::t_dadbb9971d0204 189
+  s_b7a2c51ddd1171::t_6e338391b89f76 66,194
+  s_b7a2c51ddd1171::t_e3485f06d98367 17-18,20,24-28,34,36-37,39-43,71-74,77-80,82-85,145,168-171,180-183,191-193,195-196
+  s_b7a2c51ddd1171::t_f5dd2928bc5b15 35,69-70,86-98,102-105,108-115,119-144,147
+  s_b7a2c51ddd1171::t_4b951e4dcacf69 31-32
+  s_b7a2c51ddd1171::t_53bf3aa5a50c27 156,162,164-165
+  s_b7a2c51ddd1171::t_9c9acc91667b8b 19,48-62,99-101,106-107,116-118
+  s_b7a2c51ddd1171::t_a3670a7309d03f 75-76,81
+AGENTS.md
+  s_07c6de7c923515::t_6849fe1aaec3b0 27-28
+  s_b1f5274a752c7d::t_c9c4c78f4c4a89 42
+  s_b7a2c51ddd1171::t_7f04c74a52b4fa 46,85-95
+  s_b7a2c51ddd1171::t_e8c8fb77934777 96
+native/MemoryOS/DesignSystem/ChatScrollMeasurement.swift
+  s_b7a2c51ddd1171::t_fd2490a4a17efa 1-18
+docs/evidence/chat-step2-2026-11-15/verification-summary.md
+  s_b7a2c51ddd1171::t_0395eaf66ffac3 5,27,29-30,37
+  s_b7a2c51ddd1171::t_b3584532a07504 1-4,6-26,28,31-36,38-39
+native/MemoryOS/Domain/ChatFormatting.swift
+  s_b7a2c51ddd1171::t_81b52252248472 1-5,11-24,29-32,47,50-51,61-67,73-77
+  s_b7a2c51ddd1171::t_c45dde76293e8c 6-10
+  s_b7a2c51ddd1171::t_e3485f06d98367 25-28,33-46,48-49,52-60,68-72
+native/MemoryOS/Domain/PrepareChatModel.swift
+  s_b7a2c51ddd1171::t_e9251bbd6ae264 1-10
+docs/evidence/chat-step2-2026-11-15/final-source-sha256.json
+  s_b7a2c51ddd1171::t_0670371dbc360c 52
+  s_b7a2c51ddd1171::t_cd03a64f0fa94d 1-51,53-58
+native/LocalTextEvaluation/Tests/LlamaEvaluationAdapterTests/LlamaChatTests.swift
+  s_b7a2c51ddd1171::t_0f36cf4f0c38a1 83-92
+  s_b7a2c51ddd1171::t_478cfc26694888 1-82
+docs/evidence/chat-2026-11-15/background-recovery.json
+  s_b7a2c51ddd1171::t_e8c9fbeee3829e 1-6
+docs/evidence/chat-2026-11-15/simulator-scroll-cadence.json
+  s_b7a2c51ddd1171::t_369c0d748918b8 1-15
+native/LocalTextEvaluation/Package.swift
+  s_b7a2c51ddd1171::t_db45a0b4e2d70e 11,18-21,32
+native/MemoryOSUITests/ChatFlowTests.swift
+  s_b7a2c51ddd1171::t_031f69424f1bd4 1-7,10-14,19-21,26,29,33-38,42-44,47-49,56,61-64,71-74,112-114,117-118,121-122,126-128,130,136-137,142-143
+  s_b7a2c51ddd1171::t_8fc829294d9d10 85-108
+  s_b7a2c51ddd1171::t_9c9acc91667b8b 16-18,22-25,45-46,50,83-84,109-111
+  s_b7a2c51ddd1171::t_165805023d079d 52,54-55,60,77-82
+  s_b7a2c51ddd1171::t_e3485f06d98367 8-9,15,27-28,30-32,39-41,53,58-59,65-70,75-76,115-116,119-120,123-125,138-141
+  s_b7a2c51ddd1171::t_d4172637dc8efc 51
+  s_b7a2c51ddd1171::t_c853040fcde0a2 57,129,131-135
+docs/decisions/decision-register.md
+  s_b7a2c51ddd1171::t_3d4acb127f41ac 133
+  s_07c6de7c923515::t_4661cd36fe45b7 42
+  s_b7a2c51ddd1171::t_7f04c74a52b4fa 134-136
+  s_b7a2c51ddd1171::t_c45dde76293e8c 129-132
+  s_b1f5274a752c7d::t_c9c4c78f4c4a89 43
+native/MemoryOS/Composition/LocalStoreComposition.swift
+  s_b7a2c51ddd1171::t_d206469d2b1c14 7-8
+native/MemoryOS/App/MemoryOSApp.swift
+  s_b7a2c51ddd1171::t_60aab0e10b69cc 29-31,34
+  s_b7a2c51ddd1171::t_3eecb717f13b33 1,3,8-9,12-14,18-19,28,44,49-50
+  s_b7a2c51ddd1171::t_84f5c502ad0421 10,23
+  s_b7a2c51ddd1171::t_e3485f06d98367 15-16,24-27,45-48
+  s_b7a2c51ddd1171::t_d206469d2b1c14 17
+  s_b7a2c51ddd1171::t_7f0a2d329e3de8 37-40,43
+  s_b7a2c51ddd1171::t_fd2490a4a17efa 53
+  s_b7a2c51ddd1171::t_47902d649e86c9 32-33
+  s_b7a2c51ddd1171::t_52a402fe0f765c 11,35-36
+  s_b7a2c51ddd1171::t_1d5902c9641eb5 41-42
+docs/how-to/native-swiftui.md
+  s_b7a2c51ddd1171::t_825f9b0e5c8d4c 5
+  s_b7a2c51ddd1171::t_5cc1bf7f221e01 3-4,6-12
+native/MemoryOS/Features/Chat/ChatMessageRow.swift
+  s_b7a2c51ddd1171::t_1f472b43d20ad4 78-79,87,93
+  s_b7a2c51ddd1171::t_e3485f06d98367 17-22,45-49,51-53,57-59,69-70,74-75,82-86,88-89,91-92,94-95,104-107,115-118
+  s_b7a2c51ddd1171::t_d4172637dc8efc 114
+  s_b7a2c51ddd1171::t_3c348dc86871b7 119-161
+  s_b7a2c51ddd1171::t_25485a284c50ec 25
+  s_b7a2c51ddd1171::t_e59f19d07fda84 1-16,23-24,26-31,33,37-44,50,54-56,60-68,71-73,76-77,80-81,90,96-103,108-113,162-164
+  s_b7a2c51ddd1171::t_1073b657b4faa7 32,34-36
+native/LocalChat/Sources/ChatPresentation/ChatViewModel.swift
+  s_b7a2c51ddd1171::t_cb137682438c52 99,102,108,119,130,151,188,219,223
+  s_b7a2c51ddd1171::t_0a083ccec37262 36,38-40,44,46-48,52,60-66,85-86,90-91,100-101,104-105,109-112,120-123,131-134,141-144,152-155,166-167,180-181,187,189-190,192-195,199-203,213-216,238-240
+  s_b7a2c51ddd1171::t_a3e9e022ca7ed1 37,45,191
+  s_b7a2c51ddd1171::t_f5dd2928bc5b15 139-140
+  s_b7a2c51ddd1171::t_52a402fe0f765c 14,26,185-186,208-209,212,245
+  s_b7a2c51ddd1171::t_9c9acc91667b8b 107
+  s_b7a2c51ddd1171::t_9422622da58d77 1-9,11-13,16-22,27-35,41-43,49-50,53-59,67-69,71-84,87-89,92-98,103,106,113-115,124-126,135-137,145-147,156-163,165,168-171,173-178,197-198,204-207,217-218,220-222,224,237,241-244,246-257
+  s_b7a2c51ddd1171::t_7f0a2d329e3de8 210-211
+  s_b7a2c51ddd1171::t_cbf5847f66bb3e 10,15,23-25,51,70,116-118,127-129,138,148-150,164,172,179,182-184,196,225-236
+native/MemoryOS/Features/CaptureView.swift
+  s_b7a2c51ddd1171::t_3eecb717f13b33 48-54
+native/LocalChat/Package.swift
+  s_b7a2c51ddd1171::t_0c76d6b656a7c8 1-15,18-20
+  s_b7a2c51ddd1171::t_0a083ccec37262 16-17
+native/LocalChat/Tests/ChatTests/ChatFlowTests.swift
+  s_b7a2c51ddd1171::t_a5a7c26ad8e74f 151-152,183-184,321-326
+  s_b7a2c51ddd1171::t_cb137682438c52 1-21,27-28,30-31,39-40,42-43,46-56,58-59,69-104,107-117,124-150,153-156,159-161,163-169,175,178-179,186-189,194-205,208-223,226,229-237,240-249,252,255-261,316,320,327,333,364,389
+  s_b7a2c51ddd1171::t_a3e9e022ca7ed1 68,341-342,356,373,390,423-464
+  s_b7a2c51ddd1171::t_06bded717aa882 239
+  s_b7a2c51ddd1171::t_0a083ccec37262 22,29,41,60-63,65,67,105-106,118-123,157-158,162,170-174,180-182,185,190-193,206-207,224-225,227-228,250-251,253-254,319
+  s_b7a2c51ddd1171::t_1f472b43d20ad4 23-26,44-45,238,392,411-413,416-419
+  s_b7a2c51ddd1171::t_fef2604a6d0130 262-311,381
+  s_b7a2c51ddd1171::t_8fc829294d9d10 329,332,346,350,358,377,422,465-500
+  s_b7a2c51ddd1171::t_cb242336732272 34-38,314,317,334,363,365,367,380,382-384,397-410,414-415,420-421
+  s_b7a2c51ddd1171::t_4f6b38c81c67a9 32-33,57,64,66,176-177,312-313,315,318,328,330-331,335-340,343-345,347-349,351-355,357,359-362,366,368-372,374-376,378-379,385-388,391,393-396
+native/LocalTextEvaluation/README.md
+  s_b7a2c51ddd1171::t_fef2604a6d0130 24-42
+docs/evidence/chat-step2-2026-11-15/architecture-dependency-check.json
+  s_b7a2c51ddd1171::t_0a1c28c337d590 1-23
+native/MemoryOS/Composition/ChatComposition.swift
+  s_b7a2c51ddd1171::t_81b52252248472 1-8,12-16,31-38,43-44,46-47,53,58,63,70-71,76-80
+  s_b7a2c51ddd1171::t_eb18e8a2c6fd9e 39-42,45,54,64-66,69,72-75
+  s_b7a2c51ddd1171::t_dbfece8783d540 17-18,22-26
+  s_b7a2c51ddd1171::t_e3485f06d98367 19-20,27-30,51-52,57,59-62
+  s_b7a2c51ddd1171::t_00319b8346b4ec 48-50,55-56
+  s_b7a2c51ddd1171::t_45f30d6624f414 67-68
+  s_b7a2c51ddd1171::t_84f5c502ad0421 9-11
+  s_b7a2c51ddd1171::t_75803882bfc881 21
+docs/evidence/chat-step2-2026-11-15/cleanup-summary.json
+  s_b7a2c51ddd1171::t_d3c41f1d2866d3 67-71,99
+  s_b7a2c51ddd1171::t_520d2ee0326eaa 1-66,100
+  s_b7a2c51ddd1171::t_d3e0a3eb1097ce 72-78
+  s_b7a2c51ddd1171::t_1e8f97bffef8c8 87-89,91-92
+  s_b7a2c51ddd1171::t_0395eaf66ffac3 79-86,90,93-98
+docs/evidence/chat-step2-2026-11-15/performance-review.md
+  s_b7a2c51ddd1171::t_0395eaf66ffac3 5,20,22
+  s_b7a2c51ddd1171::t_e8c22413a9f644 1-4,6-12,17-19,21
+  s_b7a2c51ddd1171::t_5b5abe5b2b9cda 13-16
+  s_b7a2c51ddd1171::t_1e8f97bffef8c8 23-24
+docs/evidence/chat-2026-11-15/simulator-model-measurements.json
+  s_b7a2c51ddd1171::t_5540e95f2e434a 1
+docs/evidence/chat-2026-11-15/simulator-benchmark-context.json
+  s_b7a2c51ddd1171::t_ec050abe57372d 10-12
+  s_b7a2c51ddd1171::t_20250760aad8ef 1-9,13
+native/LocalChat/Sources/ChatPersistence/FileChatRepository.swift
+  s_b7a2c51ddd1171::t_9422622da58d77 1-19,22-29,31-42,45-47,50-56,58-59
+  s_b7a2c51ddd1171::t_0a083ccec37262 20-21,30,43-44,48-49,57
+docs/evidence/chat-2026-11-15/source-sha256.json
+  s_b7a2c51ddd1171::t_58c2a431b615a8 6-7,16-18,20,24,33-34,36,44,46-56
+  s_b7a2c51ddd1171::t_5d9ebe445a3266 1-5,8-15,19,21-23,25-32,35,37-43,45,57
+docs/templates/development-task.md
+  s_07c6de7c923515::t_4661cd36fe45b7 51-53
+  s_b7a2c51ddd1171::t_7f04c74a52b4fa 3,55,87
+  s_b1f5274a752c7d::t_c9c4c78f4c4a89 19,41,81
+  s_b1f5274a752c7d::t_5592c0d347344c 20,42
+  s_07c6de7c923515::t_6849fe1aaec3b0 29-30
+  s_b7a2c51ddd1171::t_cb2a919e8026dd 82,88
+docs/how-to/commercial-engineering-rules.md
+  s_07c6de7c923515::t_6849fe1aaec3b0 11,18-40
+  s_07c6de7c923515::t_616f92f8232e24 41
+native/MemoryOS.xcodeproj/project.pbxproj
+  s_b7a2c51ddd1171::t_fef2604a6d0130 7-16,23,28,31
+  s_b7a2c51ddd1171::t_eec0afd32165db 45-46
+native/LocalTextEvaluation/Sources/LlamaEvaluationAdapter/LlamaTextRuntime.swift
+  s_b7a2c51ddd1171::t_478cfc26694888 11-14,68-69,76-77,82-83,89-90,96,99-102,104-106,118-119,121-122
+  s_b7a2c51ddd1171::t_db45a0b4e2d70e 2,7-10,15-16,70-75,78-81,84-88,91-95,103,107-117,120,134,139-140,156,170-171,256-260,262-272,274-279
+  s_b7a2c51ddd1171::t_6739038034053c 145,149,179
+  s_b7a2c51ddd1171::t_64753665214413 18-19,97-98,261
+docs/tasks/2026-11-15-local-ai-chat.md
+  s_a7fb80771197dc::t_07ad0d98f84b21 3-4
+  s_b7a2c51ddd1171::t_9b098816e2402a 91
+  s_b7a2c51ddd1171::t_b3584532a07504 5,7,9,11,13,15,17,19-23,25,27,29,33,35,37,39-44,46,48,50,52,54,56-64,66,68,88,92-100,102,104,108-109,112,114,116
+  s_b7a2c51ddd1171::t_8af87f59715505 89
+  s_b7a2c51ddd1171::t_1e8f97bffef8c8 124
+  s_b7a2c51ddd1171::t_4acfb97b4e5874 1
+  s_b7a2c51ddd1171::t_49bd3713135ddd 2,6,8,10,12,14,16,18,24,26,28,69,71
+  s_b7a2c51ddd1171::t_d243b4d1502047 113
+  s_b7a2c51ddd1171::t_de3acb141031f6 70,72-75,77
+  s_b7a2c51ddd1171::t_6c51c53fa2c511 30,32,34,38,51,53,55,65,67
+  s_b7a2c51ddd1171::t_04381a5b9c2e16 90
+  s_b7a2c51ddd1171::t_15dd6922296ac7 110,117-123,125-126
+  s_b7a2c51ddd1171::t_847ed747fec03e 115
+  s_b7a2c51ddd1171::t_b640b7fa04e285 31,76,78-87,106-107
+  s_b7a2c51ddd1171::t_b187b84052874b 36,45,47,49
+  s_b7a2c51ddd1171::t_d89afcf6274da2 101,103,105,111
+native/LocalChat/README.md
+  s_b7a2c51ddd1171::t_a3e9e022ca7ed1 9-11
+  s_b7a2c51ddd1171::t_345fdf1fcfcbc2 1-8,12-18
+docs/evidence/chat-2026-11-15/missing-model-recovery.json
+  s_b7a2c51ddd1171::t_dae9d193fbced4 1-8
+native/MemoryOS/Features/Chat/ChatModelSettingsView.swift
+  s_b7a2c51ddd1171::t_e3485f06d98367 13-14,16-19,31-44,46-47,49-58
+  s_b7a2c51ddd1171::t_e9251bbd6ae264 1-12,15,20-25,27-30,45,48,59-68
+  s_b7a2c51ddd1171::t_84f5c502ad0421 26
+docs/evidence/chat-2026-11-15/cancellation.json
+  s_b7a2c51ddd1171::t_533f60d5b33c70 1-6
+docs/how-to/agent-skills.md
+  s_b1f5274a752c7d::t_5592c0d347344c 1,11-12,14-15,27-56
+  s_b1f5274a752c7d::t_c9c4c78f4c4a89 13,16-26
+  s_b1f5274a752c7d::t_b27ff008bf5bac 57
+native/MemoryOS/Features/SectionView.swift
+  s_b7a2c51ddd1171::t_84f5c502ad0421 9,54,81
+  s_b7a2c51ddd1171::t_e3485f06d98367 24-26
+  s_b7a2c51ddd1171::t_3eecb717f13b33 1,8,53,64-65,80,82
+docs/how-to/development-workflow.md
+  s_07c6de7c923515::t_6849fe1aaec3b0 31,75-83
+  s_b1f5274a752c7d::t_5592c0d347344c 6,29,43
+  s_b1f5274a752c7d::t_c9c4c78f4c4a89 5,27,42,106
+  s_b7a2c51ddd1171::t_7f04c74a52b4fa 108,117-127,143-150
+  s_b7a2c51ddd1171::t_c0816c224d2084 28,84,107
+native/LocalChat/Sources/ChatCore/ChatUseCases.swift
+  s_b7a2c51ddd1171::t_fef2604a6d0130 232,248-250
+  s_b7a2c51ddd1171::t_cb137682438c52 292
+  s_b7a2c51ddd1171::t_cb242336732272 317
+  s_b7a2c51ddd1171::t_a5a7c26ad8e74f 253-255,257
+  s_b7a2c51ddd1171::t_0a083ccec37262 14-20,24-27,32-36,44-46,55-58,68-69,80-82,86-87,90-92,95-96,102-103,105-111,115-116,120-126,130-131,133-135,140-142,144-145,148-152,161-162,166-171,177-178,180-182,184,186-187,189-193,195-205,212,214-216,219-221,226-228,233-235,237-239,244-246,265-270,272-273,283-284,288-291,294,310-313,322-323,336-340,346-347,355-356,380-383,385,394
+  s_b7a2c51ddd1171::t_df0fe7f6e0cc5a 1-13,21-23,28-31,37-40,42-43,47-54,59-67,70-79,83-85,88-89,93-94,97-101,104,112-114,117-119,127-129,132,136-139,143,146-147,154-160,163-165,172,175-176,183,185,188,194,206-211,217-218,222-223,225,229-231,236,240-243,247,251-252,258-261,263-264,271,274-282,285-287,295-296,298-309,314-316,319-321,325-335,342-345,353-354,359-361,365,367-371,389,393,395-398
+  s_b7a2c51ddd1171::t_aaefdc043df004 41
+  s_b7a2c51ddd1171::t_24d7dce868dc10 153
+  s_b7a2c51ddd1171::t_101bb64261e0a9 173-174
+  s_b7a2c51ddd1171::t_b9ddc98fe938ad 179
+  s_b7a2c51ddd1171::t_5bb851ff562295 213
+  s_b7a2c51ddd1171::t_a46d69baa4e69a 224
+  s_b7a2c51ddd1171::t_02df22ba58b76d 256
+  s_b7a2c51ddd1171::t_af995762596de9 262
+  s_b7a2c51ddd1171::t_a50a0b7983610a 293
+  s_b7a2c51ddd1171::t_626bdb873fab76 297
+  s_b7a2c51ddd1171::t_646690e7ba7938 318
+  s_b7a2c51ddd1171::t_6e4fbb7d6e65dd 324
+  s_b7a2c51ddd1171::t_219d6ff2587e7a 341
+  s_b7a2c51ddd1171::t_358c7c103c6055 348-352
+  s_b7a2c51ddd1171::t_bb1f95f248dfbf 357-358
+  s_b7a2c51ddd1171::t_bb37c62ce28cd2 362-364
+  s_b7a2c51ddd1171::t_0074bc1358e8e6 366
+  s_b7a2c51ddd1171::t_61793155132cb2 372-374,377-379
+  s_b7a2c51ddd1171::t_637d2f207ff24a 384
+  s_b7a2c51ddd1171::t_db4b646e761973 386-388
+  s_b7a2c51ddd1171::t_89f313f0ee0464 390-392
+  s_0479867f71b815::t_8ffa2482bc3d01 375-376
+native/MemoryOSTests/ChatIntegrationTests.swift
+  s_b7a2c51ddd1171::t_eb18e8a2c6fd9e 8,18-19,35
+  s_b7a2c51ddd1171::t_00319b8346b4ec 9-17,20-24,30-34
+  s_b7a2c51ddd1171::t_e3485f06d98367 37-38,40-44,53-57,62-63,71-72
+  s_b7a2c51ddd1171::t_45f30d6624f414 25-29
+  s_b7a2c51ddd1171::t_031f69424f1bd4 1-7,36,39,45-52,58-61,64-70,73-81
+native/MemoryOSUITests/ChatExtendedFlowTests.swift
+  s_b7a2c51ddd1171::t_4b951e4dcacf69 146
+  s_b7a2c51ddd1171::t_3bcc967e562865 127-129
+  s_b7a2c51ddd1171::t_6e338391b89f76 41,64,86,123-124,130,152,159
+  s_b7a2c51ddd1171::t_d02c067735389d 10-11,60-63,81-84,178-179,194-196,257-258
+  s_b7a2c51ddd1171::t_dadbb9971d0204 85
+  s_b7a2c51ddd1171::t_2518ff4a48fcfc 1-9,12-13,15-27,30-40,42-43,45-48,50-59,65-73,75-80,87-119,131-145,147-151,153-158,160-177,180-193,197-237,239-240,248-256,259-268
+  s_b7a2c51ddd1171::t_f5dd2928bc5b15 120-122,125-126
+  s_b7a2c51ddd1171::t_c8ccbbdc40f0af 28-29,44,74
+  s_b7a2c51ddd1171::t_6ad66ae6a9fdc5 49,238,241-247
+  s_b7a2c51ddd1171::t_49b1dd26479d76 14
+native/MemoryOS/Composition/ChatResponsivenessProbe.swift
+  s_b7a2c51ddd1171::t_60aab0e10b69cc 16-18,36-43,46-47,50,69-70,99-106,108-113,129,133-135,147-148
+  s_b7a2c51ddd1171::t_8b0c1ec65954fc 25-26,32-34,138,146
+  s_b7a2c51ddd1171::t_7f0a2d329e3de8 48,51-53,118-120,122-123,168-169,173-175
+  s_b7a2c51ddd1171::t_fd2490a4a17efa 7,15,19-20,49,67-68,71-72,88-92,124-127,136-137,159-161
+  s_b7a2c51ddd1171::t_47902d649e86c9 98,107
+  s_b7a2c51ddd1171::t_b557a1fc6108c2 27-31
+  s_b7a2c51ddd1171::t_52a402fe0f765c 1-6,12-14,21-24,35,44-45,54-56,65,78,85-87,93,95-96,114-115,121,128,130-131,139-145,149-153,158,162-167,170-172,176,180-181
+  s_b7a2c51ddd1171::t_dadbb9971d0204 177-179
+  s_b7a2c51ddd1171::t_9e94e2174008d9 8-11,57-64,66,73-77,79-84,94,97,116-117,132,154-157
+docs/decisions/independent-engine-packages.md
+  s_07c6de7c923515::t_6849fe1aaec3b0 9-10
+README.md
+  s_b7a2c51ddd1171::t_4acfb97b4e5874 13
+  s_b7a2c51ddd1171::t_c45dde76293e8c 4
+  s_b7a2c51ddd1171::t_15dd6922296ac7 3
+scripts/check-evidence.py
+  s_b7a2c51ddd1171::t_e5860ead2ce022 1-73
+native/MemoryOSUITests/ChatScrollingTests.swift
+  s_b7a2c51ddd1171::t_50a3faa5153c7a 1-14,17-18,23-27,30-36,41,47-56
+  s_b7a2c51ddd1171::t_2a25e7323e45f7 15-16,19-22,28-29,37-40,42-46
+native/MemoryOS/App/DemoSession.swift
+  s_b7a2c51ddd1171::t_3eecb717f13b33 4,10,23
+docs/reference/source-register.md
+  s_07c6de7c923515::t_4661cd36fe45b7 89-90
+  s_b1f5274a752c7d::t_404bf0358a1ee5 163-166
+  s_b7a2c51ddd1171::t_3d4acb127f41ac 175-177
+  s_b7a2c51ddd1171::t_770adc135f99b1 173-174
+  s_b7a2c51ddd1171::t_c45dde76293e8c 169-172
+  s_b1f5274a752c7d::t_c9c4c78f4c4a89 167-168
+  s_b7a2c51ddd1171::t_15dd6922296ac7 178-180
+docs/evidence/chat-2026-11-15/builder-checks.json
+  s_b7a2c51ddd1171::t_5b5abe5b2b9cda 2-4,6-7,9-17
+  s_b7a2c51ddd1171::t_5d9ebe445a3266 1,5,18
+  s_b7a2c51ddd1171::t_58c2a431b615a8 8
+docs/evidence/chat-step2-2026-11-15/final-checks.json
+  s_b7a2c51ddd1171::t_5b5abe5b2b9cda 21
+  s_b7a2c51ddd1171::t_0395eaf66ffac3 25-30
+  s_b7a2c51ddd1171::t_147399eddba28c 1-20,22-24,31
+native/MemoryOSTests/ChatResponsivenessTests.swift
+  s_b7a2c51ddd1171::t_8b0c1ec65954fc 1-33,89-105
+  s_b7a2c51ddd1171::t_47902d649e86c9 51-88
+  s_b7a2c51ddd1171::t_60aab0e10b69cc 34-50
+native/MemoryOS/Composition/ChatMeasurementStore.swift
+  s_b7a2c51ddd1171::t_e3485f06d98367 15-16,36-38
+  s_b7a2c51ddd1171::t_dbfece8783d540 1-5,9,11-14,17-35,39-44
+  s_b7a2c51ddd1171::t_e53b0f43471f44 6,8,10
+  s_b7a2c51ddd1171::t_d6c10cc0c80866 7
+native/LocalChat/Sources/ChatCore/ChatModels.swift
+  s_b7a2c51ddd1171::t_0c76d6b656a7c8 1-7,12-23,28-59,70-80,91-100,109-118,122-136,138,141-148,158-161,164-167
+  s_b7a2c51ddd1171::t_0a083ccec37262 8-11,24-27,60-69,81-90,101-108,119-120,139-140,150-151,162-163
+  s_b7a2c51ddd1171::t_df0fe7f6e0cc5a 121
+  s_b7a2c51ddd1171::t_cca684d80b4430 137,149,152-157
+native/MemoryOS/Features/RootView.swift
+  s_b7a2c51ddd1171::t_84f5c502ad0421 12
+  s_b7a2c51ddd1171::t_e3485f06d98367 21-22
+  s_b7a2c51ddd1171::t_3eecb717f13b33 1,11
+native/LocalTextEvaluation/Sources/LlamaEvaluationAdapter/LlamaChatModel.swift
+  s_b7a2c51ddd1171::t_0f36cf4f0c38a1 9,11-16,18,24-26,28-31
+  s_b7a2c51ddd1171::t_478cfc26694888 1-8,10,17,19-23,27,32-47
+docs/plans/implementation-checklist.md
+  s_a7fb80771197dc::t_de9e1e1c14e27b 231-234
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "20070f8e281bf757cd8a9b6096555c96797b0c26",
+  "prompts": {},
+  "sessions": {
+    "s_0479867f71b815": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1df0d-5e4f-7cc3-b6a3-b70e4c87d18d",
+        "model": "unknown"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_07c6de7c923515": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1da4b-a2f2-74a3-91ce-fd7c1a1c3804",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_a7fb80771197dc": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1dfd4-3623-7420-8ef3-e23eabbe8500",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_b1f5274a752c7d": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1df04-915d-7d00-9235-7d379c00552d",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    },
+    "s_b7a2c51ddd1171": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1df01-1682-7fc0-aa04-28b0b21f4629",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
