@@ -1,0 +1,58 @@
+native/verification/local-ai-step3/delivery.json
+  s_28978425e45104::t_8bea8eb2eedb62 2,24-27
+  s_28978425e45104::t_797c90610abf8d 1,3-23,28
+native/verification/local-ai-step3/final-record-checks.json
+  s_28978425e45104::t_62cea9f6ac38c0 1-6
+native/verification/local-ai-step3/memory-sync-final.log
+  s_28978425e45104::t_797c90610abf8d 1-4
+native/verification/local-ai-step3/final-recall.json
+  s_28978425e45104::t_8bea8eb2eedb62 1-994
+docs/reference/source-register.md
+  s_28978425e45104::t_960b7c7a2c0c71 159-160
+native/verification/local-ai-step3/merge-gate.json
+  s_28978425e45104::t_115cd2927795b1 1-15
+README.md
+  s_28978425e45104::t_960b7c7a2c0c71 11
+docs/tasks/2026-11-14-local-ai-phone-evaluation.md
+  s_28978425e45104::t_960b7c7a2c0c71 3,209-221
+docs/plans/implementation-checklist.md
+  s_28978425e45104::t_960b7c7a2c0c71 223
+native/verification/local-ai-step3/memory-recall-verification.json
+  s_28978425e45104::t_8bea8eb2eedb62 1-125
+native/verification/local-ai-step3/pr-before-merge.json
+  s_28978425e45104::t_0a8025bab71db4 1
+native/verification/local-ai-step3/pr-merged.json
+  s_28978425e45104::t_a5902dce3101f4 1
+native/verification/local-ai-step3/memory-check-final.log
+  s_28978425e45104::t_797c90610abf8d 1-5,7-12,14-15
+  s_28978425e45104::t_69680d2f3a658b 6,13
+native/verification/local-ai-step3/delivery-cleanup.json
+  s_28978425e45104::t_797c90610abf8d 1-33
+native/verification/local-ai-step3/memory-status-final.json
+  s_28978425e45104::t_69680d2f3a658b 13
+  s_28978425e45104::t_797c90610abf8d 1-12,14-15
+native/verification/local-ai-step3/implementation-push.log
+  s_28978425e45104::t_349f229a17348a 1-7
+native/verification/local-ai-step3/pr-body.md
+  s_28978425e45104::t_765039f7307af4 1-31
+native/verification/local-ai-step3/pr-review-threads.json
+  s_28978425e45104::t_2324a8e358a1d3 1
+native/verification/local-ai-step3/review-record-commit.log
+  s_28978425e45104::t_4cb281ce43aff7 1-8
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "7e4297e165f03f3caf57de41f7fbec30135fe912",
+  "prompts": {},
+  "sessions": {
+    "s_28978425e45104": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1dbbb-3f19-73a3-83f6-c6259ca42b4f",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
