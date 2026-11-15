@@ -1,0 +1,125 @@
+{
+  "usefulMergeRecall": true,
+  "matchingResults": [
+    {
+      "id": "fbb99f88-ad1c-49ea-933c-22e0009b62ce",
+      "text": "PR #4 merged the reviewed group 4 head `073d4f6050e95109e894abcb456767840310af27` as `7e20302af39c341e409bd9a553746c15bc1af9de` on November 15, 2026. Independent delivery, standards, and specification reviews passed; no production model, group 5 chat, or release followed. | When: November 15, 2026 | Involving: Project team | Verified Step 3 delivery of the scoped group 4 work.",
+      "type": "world",
+      "entities": [
+        "GitHub",
+        "073d4f6050e95109e894abcb456767840310af27",
+        "7e20302af39c341e409bd9a553746c15bc1af9de",
+        "PR #4",
+        "Group 4"
+      ],
+      "context": "Authoritative project source docs/reference/source-register.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-15T00:00:00.040000+00:00",
+      "occurred_end": "2026-11-15T23:59:59.040000+00:00",
+      "mentioned_at": "2026-11-15T11:14:54.473525+00:00",
+      "document_id": "repo:docs/reference/source-register.md",
+      "metadata": {
+        "sha256": "9f93c7174fd330b4e8252c881c0a96a6ddd477b72fb2fa2f2d781898df7323b1",
+        "source_path": "docs/reference/source-register.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/reference/source-register.md_9",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0600185549159293,
+        "reranker": null,
+        "semantic": 0.8775945232864946,
+        "keyword": 1.8000000715255737
+      },
+      "attachments": null
+    },
+    {
+      "id": "d0024e2a-50cf-4310-b1fa-02a0e4eb6f1e",
+      "text": "Step 3 implementation delivery for Group 4 was merged in PR #4 at commit `7e20302af39c341e409bd9a553746c15bc1af9de`; this is a documented delivery status, not proof that all runtime behavior is production-ready. | When: November 15, 2026 | Involving: Project memoryos | The document explicitly distinguishes merged implementation delivery from physical readiness and actual iOS 18 compatibility.",
+      "type": "world",
+      "entities": [
+        "7e20302af39c341e409bd9a553746c15bc1af9de",
+        "PR #4",
+        "project-memoryos",
+        "Group 4",
+        "iOS 18.0"
+      ],
+      "context": "Authoritative project source docs/tasks/2026-11-14-local-ai-phone-evaluation.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-15T00:00:00+00:00",
+      "occurred_end": "2026-11-15T00:00:00+00:00",
+      "mentioned_at": "2026-11-15T11:14:54.432373+00:00",
+      "document_id": "repo:docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "metadata": {
+        "sha256": "905bd40d155a166c91c4f142f94bdd88bf404d8e1bebeeff0ac3b13263b336f1",
+        "source_path": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/tasks/2026-11-14-local-ai-phone-evaluation.md_0",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0500877770946866,
+        "reranker": null,
+        "semantic": 0.8758967705872752,
+        "keyword": 1.5
+      },
+      "attachments": null
+    },
+    {
+      "id": "6fdba4b0-e241-4a68-8ebd-009d5dc4994b",
+      "text": "PR #4 was verified merged on 2026-11-15 at 11:12:51 UTC. The reviewed implementation commit was `de2cccc4243a9426744b4d1c1bdbb5ffe0f442f2`, the final reviewed PR head was `073d4f6050e95109e894abcb456767840310af27`, and the merge commit was `7e20302af39c341e409bd9a553746c15bc1af9de`; GitHub confirmed the expected head through `--match-head-commit`. | When: Sunday, November 15, 2026 at 11:12:51 UTC | This is the verified delivery result; the later delivery-record commit changed documentation and receipts only.",
+      "type": "world",
+      "entities": [
+        "GitHub",
+        "de2cccc4243a9426744b4d1c1bdbb5ffe0f442f2",
+        "073d4f6050e95109e894abcb456767840310af27",
+        "7e20302af39c341e409bd9a553746c15bc1af9de",
+        "PR #4"
+      ],
+      "context": "Authoritative project source docs/tasks/2026-11-14-local-ai-phone-evaluation.md; status and uncertainty are stated in the document. A snapshot, not proof of implementation.",
+      "occurred_start": "2026-11-15T11:12:51.090000+00:00",
+      "occurred_end": "2026-11-15T11:12:51.090000+00:00",
+      "mentioned_at": "2026-11-15T11:14:54.522373+00:00",
+      "document_id": "repo:docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+      "metadata": {
+        "sha256": "905bd40d155a166c91c4f142f94bdd88bf404d8e1bebeeff0ac3b13263b336f1",
+        "source_path": "docs/tasks/2026-11-14-local-ai-phone-evaluation.md",
+        "project_path": "/Users/eros/Dev/Eros_Projects/Eros_MemoryOS"
+      },
+      "chunk_id": "project-memoryos_repo:docs/tasks/2026-11-14-local-ai-phone-evaluation.md_18",
+      "tags": [
+        "project:memoryos",
+        "kind:reference"
+      ],
+      "source_fact_ids": null,
+      "scores": {
+        "final": 1.0403991593355655,
+        "reranker": null,
+        "semantic": 0.8589454889297546,
+        "keyword": 1.600000023841858
+      },
+      "attachments": null
+    }
+  ],
+  "status": {
+    "project": "memoryos",
+    "api": {
+      "status": "healthy",
+      "database": "connected",
+      "db_acquire_ms": 1.0,
+      "db_pool_waiting": 0,
+      "db_pool_in_use": 0,
+      "db_pool_max": 100,
+      "db_pool_idle": 5
+    },
+    "sources": 41,
+    "pending": [],
+    "failed": {}
+  }
+}

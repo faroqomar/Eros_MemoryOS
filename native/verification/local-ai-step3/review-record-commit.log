@@ -1,0 +1,8 @@
+[feat/local-ai-evaluation 073d4f6] docs: retain final local AI delivery reviews
+ 6 files changed, 1052 insertions(+)
+ create mode 100644 native/verification/local-ai-step3/commit-source-recheck.json
+ create mode 100644 native/verification/local-ai-step3/implementation-commit.log
+ create mode 100644 native/verification/local-ai-step3/spec-review.json
+ create mode 100644 native/verification/local-ai-step3/spec-review.md
+ create mode 100644 native/verification/local-ai-step3/standards-review.json
+ create mode 100644 native/verification/local-ai-step3/standards-review.md

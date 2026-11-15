@@ -1,0 +1,33 @@
+{
+  "scratchFiles": [
+    {
+      "removed": "/tmp/memoryos-ai-push.log",
+      "retained": "native/verification/local-ai-step3/implementation-push.log",
+      "bytes": 417,
+      "sha256": "8a64fbc3e5fe3c54b8836b52a7a1b951ba18e8d76315538e14ae8952db00f64c"
+    },
+    {
+      "removed": "/tmp/memoryos-ai-delivery-metadata-commit.log",
+      "retained": "native/verification/local-ai-step3/review-record-commit.log",
+      "bytes": 574,
+      "sha256": "b22b6338a36794bc3d0aa653873c6954b069b8ed5ef1c274215e121d8b90f032"
+    },
+    {
+      "removed": "/tmp/memoryos-local-ai-pr-body.md",
+      "retained": "native/verification/local-ai-step3/pr-body.md",
+      "bytes": 2259,
+      "sha256": "0a4d24c3a2ab7bbe32130a285c4b975453fc49240d628678cf9728d247b9ea91"
+    },
+    {
+      "removed": "/tmp/memoryos-ai-merge.log",
+      "bytes": 0,
+      "reason": "Empty stdout; actual merge JSON is retained."
+    }
+  ],
+  "removedLogicalBytes": 3250,
+  "verifiedSourceAndEvidencePreserved": true,
+  "runtimeBuildsRetained": [
+    "/tmp/memoryos-ai-lab-repairs",
+    "/tmp/memoryos-ai-lab-build"
+  ]
+}
