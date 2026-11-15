@@ -1,0 +1,13 @@
+{
+  "configuration": "Release, ENABLE_TESTABILITY=NO",
+  "device": "iPhone 18 Pro Max Simulator",
+  "os": "iOS 27.2",
+  "fixture": "List exactly five ways to organize study notes. Use numbered lines.",
+  "runs": "one cold + three warm; new chat each run; no AX snapshots during generation",
+  "firstUsableText": "ViewModel delivery after full-context preflight and durable checkpoint; firstTokenSeconds is a separate native metric",
+  "heartbeat": "Main-runloop timer delivery lateness; includes scheduling and UI work",
+  "frames": "Display-link cadence with a separate scrolling window; not rasterization duration",
+  "sourceManifestSHA256": "365b492687e42a8554cd5b9c84601882c4c05ad63deef40d7049b3f77c9d006b",
+  "host": "MacBookPro18,3",
+  "measurementLimits": "Timer deadline lateness and display-link cadence are proxies, not isolated stall/raster durations. Simulator shares host resources. No physical-phone numbers."
+}

@@ -19,6 +19,8 @@ xcuserdata/
 *.xcarchive/
 *.app/
 *.dSYM/
+# Local raw Step 2 results; reviewed receipts/captures live in docs/evidence/.
+native/verification/chat-step2/
 
 # Reproducible local evaluation frameworks and model weights.
 native/LocalTextEvaluation/Artifacts/

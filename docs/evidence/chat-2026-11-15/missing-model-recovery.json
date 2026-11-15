@@ -1,0 +1,8 @@
+{
+  "failedStatus": "failed",
+  "recoveredStatus": "complete",
+  "reply": "Ready.",
+  "stableAssistantID": true,
+  "unchangedMessageCount": true,
+  "modelRestored": true
+}

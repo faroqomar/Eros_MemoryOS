@@ -1,0 +1,15 @@
+[
+  {
+    "maximumHeartbeatDelaySeconds": 0.4239522083412157,
+    "memorySampleCount": 61,
+    "peakResidentBytes": 708362240,
+    "p95FrameGapSeconds": 0.01666666667733807,
+    "expectedFrameIntervalSeconds": 0.016666666662786156,
+    "durationSeconds": 1.659666959,
+    "maximumFrameGapSeconds": 0.4414962916634977,
+    "p95ScrollingFrameGapSeconds": 0.01666666667733807,
+    "scrollingFrameCount": 73,
+    "scrollingOnly": true,
+    "frameCount": 73
+  }
+]

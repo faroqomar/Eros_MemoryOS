@@ -1,0 +1,31 @@
+{
+  "baseHead": "7e4297e165f03f3caf57de41f7fbec30135fe912",
+  "sourceManifestSha256": "d9a54b72739dc02aa92fcc96382826946b01832c30adfc956d71e4e7bbaf0fd3",
+  "sourceFiles": 56,
+  "sourceMismatches": 0,
+  "installedExecutableSha256": "30cdbdf53bb85f70ee7ef2eaff8dde59eed7c65ba38c7ab8561c2b538e114204",
+  "installedMatchesBuilt": true,
+  "device": "iPhone 18 Pro Max",
+  "os": "iOS 27.2",
+  "kind": "Simulator",
+  "configuration": "Release arm64 ENABLE_TESTABILITY=NO",
+  "checks": {
+    "coreFunctions": 24,
+    "nativeRuntimeFunctions": 19,
+    "nativeNetworkDeniedFunctions": 19,
+    "appFunctions": 22,
+    "uiScenariosAcrossVerifiedRuns": 9,
+    "releaseBuild": "passed",
+    "staticAnalysis": "passed",
+    "format": "passed",
+    "extendedVoiceOverDiagnostic": "Did not pass; removed from current task requirements by owner C49. Failure lessons are in verification-summary.md.",
+    "overallStep2": "blocked"
+  },
+  "retainedRawEvidence": "native/verification/chat-step2/",
+  "checkpoint": "Prior verified source before C49 performance repair; not evidence for later source edits",
+  "retainedResultBundles": [
+    "native/verification/chat-step2/memoryos-chat-step2-full.xcresult",
+    "native/verification/chat-step2/memoryos-chat-step2-recheck.xcresult"
+  ],
+  "cleanup": "C53 removes redundant text logs after preserving counts here and in verification-summary.md. Prior source checkpoint remains distinct from C49 results."
+}

@@ -1,0 +1,23 @@
+{
+  "base": "7e4297e165f03f3caf57de41f7fbec30135fe912",
+  "upstreamSource": "/Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/llama.cpp",
+  "revision": "a956a852c9c8bc1fb07206364838ddef299178c0",
+  "verifiedSourceFiles": 531,
+  "sourceMismatches": [],
+  "binaryHashes": {
+    "ios-arm64-simulator/llama.framework/llama": "1e6d71eba0a18e5eca0f38ae384c9f6c7be6f492e6482671e9f288c9cc0f9ec9",
+    "macos-arm64/llama.framework/llama": "577e42691cc56ca337d1cc06670f8f2a8be57dcda4d5872d78386878bdd9d137",
+    "ios-arm64/llama.framework/llama": "d2e95990d7ee543ebb398f5f0a5d9d35cd358b6b969dfba87e3218294a82bc79"
+  },
+  "binariesMatch": true,
+  "modelSHA256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+  "modelBytes": 396705472,
+  "modelReceipt": {
+    "url": "https://huggingface.co/unsloth/Qwen3-0.6B-GGUF/resolve/50968a4468ef4233ed78cd7c3de230dd1d61a56b/Qwen3-0.6B-Q4_K_M.gguf",
+    "bytes": 396705472,
+    "sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+    "verified": true,
+    "elapsedSeconds": 9321.23
+  },
+  "swiftVersion": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)\nTarget: arm64-apple-macosx27.2.0"
+}

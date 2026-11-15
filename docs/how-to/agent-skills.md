@@ -1,4 +1,4 @@
-# Swift and UX skills
+# Development, Swift, and UX skills
 
 Date: 2026-11-14. The owner requested useful skills from [skills.sh](https://skills.sh/) for Swift development, package use, and engineering quality.
 
@@ -7,6 +7,53 @@ Date: 2026-11-14. The owner requested useful skills from [skills.sh](https://ski
 Fourteen skills are installed under `.agents/skills/` in the MemoryOS project: seven Swift engineering skills and seven UX/interaction skills. Other projects' and global skills remain unchanged. Agent skills contain development instructions and references. They are not Swift application dependencies.
 
 Use the installed skills on the next turn after the host refreshes skill discovery. Agents can read the listed `SKILL.md` files directly when discovery has not refreshed. Installation verification does not establish runtime invocation in a fresh host session.
+
+## Skills for the three development steps
+
+Owner sources: C45/C46, 2026-11-15. The owner requested a skill selection for each existing step after adding skills to T3 Code. This map adds the shared T3 workflow skills to the installed Swift/UX guidance. It does not start an app task or advance an active task to another step.
+
+Before substantive work, read `/Users/eros/.t3/harness/instructions.md`, assess the current task against `/Users/eros/.t3/harness/catalog.md` and the project-local inventory below, then read the selected entry points. Use the smallest set that covers the work. Reassess when the stage or scope changes. Record the selected paths and their purpose in the existing task record; pass them to scoped helpers. A document-only task can use document checks without loading Swift implementation skills.
+
+### Required task-specific search
+
+Before **each task and each development step**, search the current installed catalog and project-local skill descriptions for the actual objective, changed behavior, stack, uncertainty, and risks. Search beyond the examples in this map. Tasks with different needs must receive different selections.
+
+1. Identify the work that needs guidance, such as data migration, concurrency, navigation, package adoption, security, diagnosis, documentation, or delivery.
+2. Search the installed catalog/descriptions with those concerns. Compare relevant candidates, including skills absent from this map. Read their entry points before applying them.
+3. Add or substitute a better-fitting skill and skip irrelevant defaults. Keep the smallest sufficient set. If the search finds no useful addition, record that result and its reason.
+4. Keep a short search/selection note in the current task record: concerns searched, selected paths and why they fit, and any material skipped candidate. Repeat the assessment when findings or scope change.
+
+This rule requires research in the installed skills for each task. An external skill search may follow when an installed skill leaves a concrete gap; installation, downloads, service connections, and new work still follow existing authorization.
+
+Shared entry points live at `/Users/eros/.t3/harness/skills/<full-skill-name>/SKILL.md`. Project-local entry points live at `.agents/skills/<skill-name>/SKILL.md`. Use the full `mattpocock-*` names from the catalog to avoid unrelated skills with the same short name.
+
+| Step | Shared T3 skills to select when applicable | Project-local skills to select when applicable |
+| --- | --- | --- |
+| **1: Understand, plan, and implement** | `mattpocock-implement` for an authorized task; `mattpocock-codebase-design` for changed interfaces and replaceable adapters; `mattpocock-tdd` for behavior changes at agreed test interfaces. | `swiftui-expert-skill` for SwiftUI; `swift-concurrency` for tasks/actors; `swift-testing-expert` for unit/integration tests. Add the relevant native UX, package, accessibility, or security skill below. |
+| **2: Independently verify, repair, and clean** | `mattpocock-code-review` to compare the actual change with both project standards and task requirements. Add `mattpocock-diagnosing-bugs` when a failure needs diagnosis. | Reuse the affected Swift/testing skills. Add `swiftui-performance-audit` for performance diagnosis, `axiom-accessibility` for native accessibility, `axiom-security` for security, and `ux-heuristics-audit` for changed flows. |
+| **3: Review and deliver** | `mattpocock-code-review` for the final change; `mattpocock-pr` when writing/updating the PR body. Use `mattpocock-handoff` only when transferring unfinished work or session context. | Read the relevant skills for any final fixes. Reuse valid final-source evidence; repeat affected checks when a fix or dependency/base change invalidates it. |
+
+### Select extra guidance by the actual work
+
+| Work | Skill selection |
+| --- | --- |
+| Native layouts or controls | `mobile-ios-design` and the relevant `swiftui-ui-patterns` references, alongside SwiftUI guidance. |
+| Routes/sidebar, failures, empty results, or background work | Select `ux-navigation`, `ux-error-recovery`, `ux-empty-states`, or `ux-loaders-and-progress` for the affected state. |
+| Packages or SDKs | `swift-package-manager`; add concurrency/security guidance when those concerns change. |
+| Unresolved product decisions | `mattpocock-grill-with-docs`; interview only for decisions that remain open. |
+| Agreed requirements need a specification or dependent tickets | `mattpocock-to-spec` or `mattpocock-to-tickets`; use existing project records and tracker authorization. |
+| Unfamiliar/version-sensitive external facts | `mattpocock-research` with current primary sources and the host's delegation rules. |
+| Agent instructions or workflow guidance | `mattpocock-writing-for-agents`. |
+
+### Apply the skills within MemoryOS rules
+
+- **Architecture:** use the project's mandatory MVVM, app-owned interfaces/data, thin adapters, and upstream ownership rules. Generic deep-module or code-smell advice does not justify removing a required interface, adding speculative packages, or changing architecture.
+- **Testing:** record the public test interfaces and observable outcomes in Step 1. Reuse interfaces and test scope already covered by the authorized task. Resolve a missing product/contract decision before dependent work; routine test choices stay with the agent. Use red/green cycles for meaningful behavior changes. Document and cosmetic edits use proportionate checks. Keep Swift Testing for suitable unit/integration tests and XCTest for UI/performance work.
+- **Review:** record the comparison base and exact candidate source. Use the known task/PR base and originating task record when available. For uncommitted work, include the actual working diff and hashes. The review skill checks standards and requirements as separate axes; its scoped reviewers support the fresh independent app verifier. Main-agent document checks remain valid for documentation-only work. Reuse valid reviews and request focused rechecks after fixes.
+- **Stage boundaries:** a builder review under `implement` does not replace independent Step 2. Follow the project's commit/push/PR/merge stage and authorization, rather than an example skill's instruction to commit at the end of implementation. Step 3 completes the existing delivery flow only after its required gates pass.
+- **Tools and records:** use current T3 delegation, device, browser, secret, and PR tools. Keep one task/evidence record and the existing tracker. A skill's setup, publication, temporary-handoff, or background-agent recipe does not create extra authorization or override project record ownership.
+
+The agent still performs project-scoped Hindsight recall on each T3 turn, preserves the required dark screenshot evidence, completes Step 2 cleanup, and checks final-source evidence before delivery. Skill selection alone proves none of these results.
 
 ## Swift engineering skills
 

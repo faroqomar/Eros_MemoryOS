@@ -228,3 +228,7 @@ C38 authorizes Step 1; C39 requires completed downloads/repairs and C40 selects 
 - [ ] **Test your languages:** Check Arabic, Iraqi Arabic, English, names, and mixed text.
 - [ ] **Measure phone cost:** Record speed, memory, storage, battery use, and heat.
 - [ ] **Select components:** Choose from measured results and keep original records independent of those choices.
+
+## 5. Connect local AI to chat
+
+C47/C48 implement and independently review real local-model streaming, conversation persistence, composer/scroll/retry controls, formatting/copy, source-backed app-memory questions and MVVM boundaries. C49 repairs rendering and measurement lifecycle; C53 starts Step 3 with mandatory documentation cleanup. See the [current task and compact evidence](../tasks/2026-11-15-local-ai-chat.md). A draft PR is permitted; combined latency, raster timing, remaining OS/offline qualification and owner acceptance still block merge. Physical-phone work is deferred; no release or production-model adoption is claimed.

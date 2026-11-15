@@ -21,3 +21,22 @@ swift test --package-path native/LocalTextEvaluation -c release
 The linked tests cover missing assets, hash mismatch, unsupported sampling, remote URL rejection and a hash-verified invalid GGUF passed to the native loader. They do not assert model quality. The [measured report](../../docs/evidence/local-ai-2026-11-14/resume-summary.md) links actual model outputs, separate builder quality reviews, cancellation, repeated Simulator runs and build evidence. Reports use format 2 with scope/repetition metadata; decoding still accepts format 1.
 
 Historical header-only checks and stopped downloads remain in the [task history](../../docs/tasks/2026-11-14-local-ai-phone-evaluation.md). They do not describe this final configuration.
+
+## Main-app chat boundary
+
+`LlamaChatModel` conforms to the app-owned `ChatCore.ChatModel` interface. The composition root supplies a local GGUF path and reviewed SHA-256. The adapter uses `LlamaTextRuntime.chat(turns:onText:)` and the same resident CPU/Accelerate session, exact model template, greedy sampler and reviewed dependency pin as the evaluation path. The only new package dependency is the app-owned `LocalChat` core; provider SDKs stay in this integration package.
+
+Chat accepts known system/user/assistant roles, an optional first system turn, alternating conversation turns and a final nonblank user message. Empty earlier assistant messages remain valid so a failed request does not prevent a new message. Embedded NUL characters fail before asset access. Each request resets native KV state and reconstructs the full supplied conversation. The runtime rejects prompt-plus-output overflow of its 2048-token context; it does not discard earlier turns. Reply generation stops at 256 tokens and throws `ChatError.outputLimit` so the app can retain and label the partial reply.
+
+The callback receives the full accumulated string whenever token bytes form valid UTF-8. A token may contain only part of an Arabic character or emoji; the adapter withholds that incomplete sequence until the next token completes it. The callback runs on the runtime actor. The presentation layer owns UI updates and durable partial-message checkpoints. Cancellation checks run during hashing, before and after prompt decode, and between output tokens. A synchronous upstream load/decode can delay cancellation until that call returns. Explicit `unload()` releases the resident model.
+
+The bridge preserves cancellation, maps unavailable local assets/runtime configurations to `ChatError.modelUnavailable`, and preserves typed context/output-limit errors. It has no downloader or network client. Prepare assets separately; a missing or invalid model cannot trigger cloud processing.
+
+Normal validation tests use absent/invalid assets and require no model. Run the real streaming, history, context, cancellation, output-limit, empty-failure and Arabic UTF-8 contracts with an explicit existing reviewed 0.6B model:
+
+```sh
+MEMORYOS_CHAT_NATIVE_MODEL=/absolute/path/Qwen3-0.6B-Q4_K_M.gguf \
+  swift test --package-path native/LocalTextEvaluation -c release
+```
+
+The opt-in contracts verify runtime behavior with fictional prompts. Their host timing does not establish simulator or physical-phone performance, and a readable response does not establish language quality or production adoption.

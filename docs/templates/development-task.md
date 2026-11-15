@@ -1,6 +1,6 @@
 # Task: <ID and connected user outcome>
 
-Use with the [three-step workflow](../how-to/development-workflow.md). Replace placeholders when creating a task record. Keep only applicable detail.
+Use with the [three-step workflow](../how-to/development-workflow.md). Replace placeholders when creating a task record. Keep only applicable detail. Aim for 100–150 lines; update this one record instead of appending duplicate status reports. Follow the [evidence-retention rule](../how-to/development-workflow.md#evidence-retention).
 
 Status: Not started / Step 1 / Step 2 / Step 3 / Complete
 
@@ -16,6 +16,8 @@ Subagent plan/handoffs: <useful scopes, owners, independent reviewer, dependency
 
 ## Step 1: Understand, plan, and implement
 
+Task-specific skill search and selection: <concerns/search terms; current catalog/local descriptions checked; selected paths and reasons, including additions/substitutions beyond the [step skill map](../how-to/agent-skills.md#skills-for-the-three-development-steps); useful additions not found or material candidates skipped, with a reason>
+
 Acceptance criteria:
 
 - [ ] <observable success behavior>
@@ -23,6 +25,8 @@ Acceptance criteria:
 - [ ] <affected language/accessibility requirements>
 
 Architecture and short plan: <responsibilities, reuse, contracts, and a few implementation steps>
+
+Mandatory architecture: [MVVM, repository, and engine rules](../how-to/commercial-engineering-rules.md#mandatory-mvvm-repository-and-engine-rules). Map actual files/symbols to View, ViewModel, model/use case, app-owned protocol, adapter, and composition root. Identify app/upstream Git ownership, pinned revisions, and any justified unaffected layers. Do not infer another architecture or custom engine repositories.
 
 Required tests and regression scope: <commands/suites or linked existing checks>
 
@@ -34,6 +38,8 @@ Step 1 screenshots: <changed/new screens or code/document/results capture; dark 
 
 ## Step 2: Verification
 
+Task-specific skill search and selection: <repeat the catalog search for verification/findings; selected review/testing/native paths and reasons, additions/substitutions/skips; pass relevant paths to the verifier>
+
 Verifier: <independent verifier; document-check exception only when applicable>
 
 Source under verification: <exact commit or file hashes and configuration>
@@ -42,8 +48,11 @@ Source under verification: <exact commit or file hashes and configuration>
 | --- | --- | --- |
 | <acceptance criterion or required check> | <result> | <command, result, and evidence link> |
 | Architecture and dependency review | <result> | <findings/evidence> |
+| Explicit MVVM responsibilities and action trace | <result> | <View → ViewModel → use case, file/symbol evidence, feature-state and error tests> |
+| Dependency direction and injection | <result> | <imports/calls, provider-free UI/domain, composition root, independent core check> |
+| App/upstream Git ownership and engine boundaries | <result> | <one canonical app repo, upstream checkout/pin, justified fork, thin adapters, no copied/custom engine> |
 | Relevant regression suite | <result> | <evidence> |
-| Dead code and junk cleanup | <result> | <unused consumers checked, removed dead code, useless/temporary files and caches, task-owned scratch cleanup, retained exceptions, storage before/after, preservation hashes/links, and affected rechecks> |
+| Dead code and junk cleanup | <result> | <unused consumers checked, removed dead code, useless/temporary files and caches, task-owned scratch cleanup, retained exceptions, storage before/after, compact source identity/link checks, evidence guard result, and affected rechecks> |
 | Benchmarks | <result> | <baseline/candidate values, conditions, variability, and thresholds> |
 
 Mandatory [architecture/upstream checks](../how-to/development-workflow.md#mandatory-step-2-architecture-and-upstream-checks):
@@ -69,9 +78,13 @@ Verification outcome: <pass/fail/blocked and any remaining limitation>
 
 ## Step 3: Review and delivery
 
+Task-specific skill search and selection: <repeat the catalog search for final review/delivery and any fixes; selected paths and reasons, additions/substitutions/skips; handoff guidance when needed>
+
 Owner product/design acceptance, when required: <status and evidence>
 
 Final source and evidence match: <commit/hashes and check result>
+
+Mandatory Step 3 documentation cleanup: <before/after totals, removal categories, retained exceptions, link/evidence checks; reuse the existing cleanup receipt>
 
 Documentation/checklist updates: <links>
 
