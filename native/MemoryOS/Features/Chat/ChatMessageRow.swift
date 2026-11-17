@@ -9,17 +9,39 @@ struct ChatMessageRow: View {
   let retry: () -> Void
   let regenerate: () -> Void
   let openSource: (ChatEvidence) -> Void
+  let playVoice: (UUID, Double) -> Void
+  let stopVoice: () -> Void
   @State private var copied = false
   @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
   var body: some View {
+    Group {
+      if let voice = message.voice, message.role == .user {
+        ChatVoiceCard(
+          voice: voice, transcript: message.text, language: language,
+          play: { seconds in playVoice(voice.recordingID, seconds) }, stop: stopVoice)
+      } else if message.role == .user {
+        HStack(alignment: .top, spacing: 0) {
+          Spacer(minLength: 44)
+          Text(message.text)
+            .font(.body)
+            .lineSpacing(4)
+            .textSelection(.enabled)
+            .padding(.horizontal, 18)
+            .padding(.vertical, 13)
+            .background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 24))
+        }
+        .frame(maxWidth: .infinity, alignment: .trailing)
+      } else {
+        assistantReply
+      }
+    }
+    .accessibilityElement(children: .contain)
+    .accessibilityIdentifier("chat-message-\(message.id)")
+  }
+
+  private var assistantReply: some View {
     VStack(alignment: .leading, spacing: 10) {
-      Text(
-        message.role == .user
-          ? language.text("You", "أنت") : language.text("Local AI", "الذكاء المحلي")
-      )
-      .font(.subheadline.weight(.semibold))
-      .foregroundStyle(MemoryTheme.secondary)
       if message.text.isEmpty && message.status == .generating {
         HStack(spacing: 8) {
           if !reduceMotion { ProgressView().controlSize(.small).accessibilityHidden(true) }
@@ -28,13 +50,8 @@ struct ChatMessageRow: View {
         .font(.callout).frame(minHeight: 28)
         .accessibilityIdentifier("chat-generating")
       } else {
-        if message.role == .user {
-          Text(message.text)
-        } else {
-          // Preserve block identity through streaming and completion. The explicit Copy
-          // control avoids selection bookkeeping on every growing text block.
-          ChatReplyBlocks(text: message.text).equatable()
-        }
+        // Preserve block identity while the reply streams.
+        ChatReplyBlocks(text: message.text).equatable()
       }
       if message.role == .assistant {
         if message.status == .generating && !message.text.isEmpty {
@@ -63,7 +80,7 @@ struct ChatMessageRow: View {
         if message.status != .complete && message.status != .generating {
           Text(statusText).font(.caption).foregroundStyle(MemoryTheme.secondary)
         }
-        HStack(spacing: 18) {
+        HStack(spacing: 2) {
           if !message.text.isEmpty {
             Button {
               UIPasteboard.general.setItems(
@@ -95,18 +112,16 @@ struct ChatMessageRow: View {
               .frame(minHeight: 44).accessibilityIdentifier("chat-regenerate")
             }
           }
-        }.font(.caption).buttonStyle(.plain).foregroundStyle(MemoryTheme.secondary)
+        }
+        .labelStyle(.iconOnly)
+        .font(.system(size: 18))
+        .buttonStyle(.plain)
+        .foregroundStyle(MemoryTheme.secondary)
       }
     }
     .font(.body).lineSpacing(4)
     .frame(maxWidth: .infinity, alignment: .leading)
-    .padding(message.role == .user ? 14 : 0)
-    .background(
-      message.role == .user ? MemoryTheme.selection : .clear,
-      in: RoundedRectangle(cornerRadius: 18)
-    )
-    .accessibilityElement(children: .contain)
-    .accessibilityIdentifier("chat-message-\(message.id)")
+
   }
 
   private var statusText: String {

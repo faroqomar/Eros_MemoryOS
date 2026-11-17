@@ -1,0 +1,87 @@
+{
+  "model": "small-q5_1",
+  "requestedLanguage": "auto",
+  "platform": "macOS host, not physical iPhone",
+  "results": [
+    {
+      "case": "background_noise",
+      "werPercent": [
+        6.25
+      ],
+      "seconds": [
+        1.923,
+        2.099,
+        1.943
+      ],
+      "medianSeconds": 1.943,
+      "peakMiB": 624.1,
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "case": "english",
+      "werPercent": [
+        6.25
+      ],
+      "seconds": [
+        1.899,
+        1.747,
+        1.735
+      ],
+      "medianSeconds": 1.747,
+      "peakMiB": 624.4,
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "case": "iraqi_text_synthetic",
+      "werPercent": [
+        36.36363636363637
+      ],
+      "seconds": [
+        1.958,
+        2.041,
+        1.964
+      ],
+      "medianSeconds": 1.964,
+      "peakMiB": 620.7,
+      "languages": [
+        "ar"
+      ]
+    },
+    {
+      "case": "mixed",
+      "werPercent": [
+        41.666666666666664
+      ],
+      "seconds": [
+        1.934,
+        1.904,
+        2.007
+      ],
+      "medianSeconds": 1.934,
+      "peakMiB": 621.5,
+      "languages": [
+        "ar"
+      ]
+    },
+    {
+      "case": "names",
+      "werPercent": [
+        0.0
+      ],
+      "seconds": [
+        1.779,
+        1.721,
+        1.761
+      ],
+      "medianSeconds": 1.761,
+      "peakMiB": 623.8,
+      "languages": [
+        "en"
+      ]
+    }
+  ]
+}

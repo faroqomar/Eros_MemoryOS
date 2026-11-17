@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root { color-scheme:dark; font-family:var(--font-sans,system-ui); color:var(--foreground,#eee); }
+body { margin:0; }
+.controls { display:flex; gap:8px; margin:16px 0; flex-wrap:wrap; }
+button { border:1px solid var(--border,#555); border-radius:var(--radius,8px); padding:10px 14px; background:var(--secondary,#222); color:var(--foreground,#eee); font:inherit; cursor:pointer; }
+button[aria-pressed=true] { border-color:var(--primary,#eee); }
+p { line-height:1.5; }
+.note { color:var(--muted-foreground,#aaa); font-size:13px; }
+.legend { display:flex; gap:18px; font-size:13px; margin-bottom:20px; }
+.dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:6px; }
+.wk { background:var(--chart-1,#69a8ff); } .cpp { background:var(--chart-2,#f6ab66); }
+.row { margin:18px 0; }
+.name { font-size:14px; margin-bottom:7px; }
+.track { display:flex; align-items:center; gap:10px; margin:5px 0; }
+.bararea { width:calc(100% - 86px); height:12px; }
+.bar { height:12px; border-radius:3px; min-width:2px; }
+.value { min-width:76px; font-size:13px; font-variant-numeric:tabular-nums; }
+table { width:100%; border-collapse:collapse; font-size:13px; }
+th,td { padding:9px 4px; border-bottom:1px solid var(--border,#444); text-align:left; }
+</style>
+<p><strong>30 local transcription runs</strong> · Same five fictional recordings, two engines, three repetitions.</p>
+<p class="note">M1 Pro / macOS host. Network denied during inference. Synthetic Iraqi wording does not qualify natural Iraqi speech or iPhone performance.</p>
+<div class="controls" role="group" aria-label="Comparison metric"><button id="quality" aria-pressed="true">Word error rate</button><button id="speed" aria-pressed="false">Median runtime</button></div>
+<div class="legend"><span><i class="dot wk"></i>WhisperKit</span><span><i class="dot cpp"></i>whisper.cpp</span></div>
+<div id="chart" aria-live="polite"></div>
+<p id="metric-note" class="note"></p>
+<details><summary>Measured values</summary><table><thead><tr><th>Fixture</th><th>WhisperKit WER / seconds</th><th>whisper.cpp WER / seconds</th></tr></thead><tbody id="values"></tbody></table></details>
+<p class="note">Both tiny models failed the builder targets for Iraqi wording and mixed speech. First English runs took 11.851s / 9.391s; medians above hide those first-run costs. No production model selected.</p>
+<script>
+const rows = [{"case": "English", "engines": [{"engine": "whisperkit", "werPercent": 18.75, "medianSeconds": 1.23, "minSeconds": 1.085, "maxSeconds": 11.851}, {"engine": "whisper.cpp", "werPercent": 18.75, "medianSeconds": 0.634, "minSeconds": 0.579, "maxSeconds": 9.391}]}, {"case": "Iraqi wording, synthetic Arabic voice", "engines": [{"engine": "whisperkit", "werPercent": 54.55, "medianSeconds": 1.187, "minSeconds": 1.062, "maxSeconds": 1.217}, {"engine": "whisper.cpp", "werPercent": 54.55, "medianSeconds": 0.737, "minSeconds": 0.57, "maxSeconds": 0.83}]}, {"case": "Mixed Arabic/English", "engines": [{"engine": "whisperkit", "werPercent": 83.33, "medianSeconds": 1.149, "minSeconds": 1.078, "maxSeconds": 1.231}, {"engine": "whisper.cpp", "werPercent": 83.33, "medianSeconds": 0.663, "minSeconds": 0.602, "maxSeconds": 0.726}]}, {"case": "Names, English", "engines": [{"engine": "whisperkit", "werPercent": 0.0, "medianSeconds": 0.974, "minSeconds": 0.916, "maxSeconds": 1.031}, {"engine": "whisper.cpp", "werPercent": 0.0, "medianSeconds": 0.503, "minSeconds": 0.451, "maxSeconds": 0.61}]}, {"case": "English with noise", "engines": [{"engine": "whisperkit", "werPercent": 37.5, "medianSeconds": 0.979, "minSeconds": 0.941, "maxSeconds": 1.007}, {"engine": "whisper.cpp", "werPercent": 25.0, "medianSeconds": 0.434, "minSeconds": 0.427, "maxSeconds": 0.435}]}];
+function draw(mode) {
+ document.querySelector('#quality').setAttribute('aria-pressed',mode==='quality');
+ document.querySelector('#speed').setAttribute('aria-pressed',mode==='speed');
+ const max=mode==='quality'?100:1.3;
+ document.querySelector('#chart').innerHTML=rows.map(r=>`<div class="row"><div class="name">${r.case}</div>${r.engines.map((e,i)=>{let value=mode==='quality'?e.werPercent:e.medianSeconds;return `<div class="track" aria-label="${e.engine}: ${value}${mode==='quality'?' percent error':' seconds'}"><div class="bararea"><div class="bar ${i===0?'wk':'cpp'}" style="width:${value/max*100}%"></div></div><span class="value">${value.toFixed(mode==='quality'?1:3)}${mode==='quality'?'%':'s'}</span></div>`}).join('')}</div>`).join('');
+ document.querySelector('#metric-note').textContent=mode==='quality'?'Lower is better. Unicode word matching; no Arabic dialect or spelling normalization.':'Lower is faster. Fresh process per run; load, decoding and inference included. OS/CoreML caches may persist.';
+}
+document.querySelector('#quality').onclick=()=>draw('quality');
+document.querySelector('#speed').onclick=()=>draw('speed');
+document.querySelector('#values').innerHTML=rows.map(r=>`<tr><td>${r.case}</td>${r.engines.map(e=>`<td>${e.werPercent.toFixed(1)}% / ${e.medianSeconds.toFixed(3)}s</td>`).join('')}</tr>`).join('');
+draw('quality');
+</script></html>

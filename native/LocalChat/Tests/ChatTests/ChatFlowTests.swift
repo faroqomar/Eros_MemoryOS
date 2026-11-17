@@ -90,6 +90,8 @@ private func repositoryURL() -> URL {
 @Test func conversationLifecycleDoesNotAffectOtherChats() async throws {
   let useCases = ChatUseCases(repository: TestRepository(), model: TestModel())
   let first = try #require(try await useCases.load().selectedID)
+  _ = try await useCases.updateDraft(
+    "Keep this first draft", memoryMode: false, conversationID: first)
   let second = try #require(try await useCases.newConversation().selectedID)
   _ = try await useCases.rename(first, title: "Arabic العربية")
   let open = try await useCases.open(first)
@@ -497,4 +499,206 @@ actor DelayedRepository: ChatRepository {
   await vm.delete(id)
   #expect(vm.error == nil)
   #expect(!vm.conversations.contains { $0.id == id })
+}
+
+@Test @MainActor func homeStartsSeparateChatsWhileFollowupsAndHistoryStayTogether() async throws {
+  let repository = TestRepository()
+  let model = TestModel()
+  let vm = ChatViewModel(useCases: ChatUseCases(repository: repository, model: model))
+  await vm.load()
+  #expect(await vm.prepareNewConversation(draft: "Plan a fictional garden"))
+  let first = try #require(vm.currentConversation?.id)
+  await vm.send()
+  vm.draft = "Include shade plants"
+  await vm.send()
+  #expect(vm.currentConversation?.id == first)
+  #expect(vm.currentConversation?.messages.filter { $0.role == .user }.count == 2)
+
+  #expect(await vm.prepareNewConversation(draft: "Describe a fictional telescope"))
+  let second = try #require(vm.currentConversation?.id)
+  #expect(second != first)
+  await vm.send()
+  #expect(
+    await model.requests.last?.filter { $0.role == .user }.map(\.text) == [
+      "Describe a fictional telescope"
+    ])
+  await vm.open(first)
+  vm.draft = "Add a walking path"
+  await vm.send()
+  #expect(vm.currentConversation?.id == first)
+  #expect(vm.conversations.first?.id == first)
+  #expect(
+    await model.requests.last?.filter { $0.role == .user }.map(\.text) == [
+      "Plan a fictional garden", "Include shade plants", "Add a walking path",
+    ])
+  let reloaded = ChatViewModel(useCases: ChatUseCases(repository: repository, model: model))
+  await reloaded.load()
+  #expect(reloaded.conversations.count == 2)
+  #expect(reloaded.conversations.first { $0.id == second }?.messages.count == 2)
+}
+
+@Test @MainActor func preparingHomeChatPreservesOutgoingDraftAndDoesNotInheritMemoryMode()
+  async throws
+{
+  let repository = TestRepository()
+  let vm = ChatViewModel(useCases: ChatUseCases(repository: repository, model: TestModel()))
+  await vm.load()
+  let oldID = try #require(vm.currentConversation?.id)
+  let oldDraft = "Unsent e\u{301}\nفكرة أخرى"
+  vm.draft = oldDraft
+  vm.memoryMode = true
+  #expect(await vm.prepareNewConversation(draft: "New Home message"))
+  #expect(vm.currentConversation?.id != oldID)
+  #expect(vm.draft == "New Home message")
+  #expect(!vm.memoryMode)
+  #expect(vm.currentConversation?.messages.isEmpty == true)
+  await vm.open(oldID)
+  #expect(vm.draft.utf8.elementsEqual(oldDraft.utf8))
+  #expect(vm.memoryMode)
+}
+
+@Test func repeatedNewChatReusesOnlyUntouchedPlaceholders() async throws {
+  let named = ChatConversation(title: "Reserved subject")
+  let whitespace = ChatConversation(draft: " \n")
+  let configured = ChatConversation(memoryMode: true)
+  let repository = TestRepository(
+    ChatSnapshot(
+      conversations: [named, whitespace, configured], selectedID: named.id))
+  let useCases = ChatUseCases(repository: repository, model: TestModel())
+  _ = try await useCases.load()
+  let first = try await useCases.newConversation()
+  let again = try await useCases.newConversation()
+  #expect(first.selectedID == again.selectedID)
+  #expect(again.conversations.count == 4)
+  #expect(again.conversations.contains(named))
+  #expect(again.conversations.contains(whitespace))
+  #expect(again.conversations.contains(configured))
+  let prepared = try await useCases.newConversation(draft: "Independent question")
+  #expect(prepared.selectedID == first.selectedID)
+  #expect(prepared.conversations.first?.draft == "Independent question")
+}
+
+@Test func failedFreshChatCommitLeavesSelectionAndArchiveUnchanged() async throws {
+  let old = ChatConversation(draft: "Saved draft")
+  let repository = TestRepository(ChatSnapshot(conversations: [old], selectedID: old.id))
+  let useCases = ChatUseCases(repository: repository, model: TestModel())
+  let before = try await useCases.load()
+  await repository.setFailure(true)
+  await #expect(throws: ChatError.storage) {
+    try await useCases.newConversation(draft: "Keep on Home for retry")
+  }
+  #expect(await useCases.state() == before)
+  #expect(await repository.snapshot == before)
+}
+
+@Test @MainActor func failedHomePreparationRetainsSelectedInputAndReturnsFalse() async throws {
+  let repository = TestRepository()
+  let vm = ChatViewModel(useCases: ChatUseCases(repository: repository, model: TestModel()))
+  #expect(await vm.prepareNewConversation(draft: "Before loading") == false)
+  await vm.load()
+  let oldID = vm.currentConversation?.id
+  vm.draft = "Existing unsent text"
+  await repository.setFailure(true)
+  #expect(await vm.prepareNewConversation(draft: "Independent Home input") == false)
+  #expect(vm.error == .storage)
+  #expect(vm.currentConversation?.id == oldID)
+  #expect(vm.draft == "Existing unsent text")
+  #expect(!vm.isTransitioning)
+  await repository.setFailure(false)
+  #expect(await vm.prepareNewConversation(draft: "Independent Home input"))
+  #expect(vm.currentConversation?.id != oldID)
+  #expect(vm.conversations.first { $0.id == oldID }?.draft == "Existing unsent text")
+}
+
+@Test func legacyArchiveWithoutHomeDraftDecodesWithoutMovingConversationInput() throws {
+  let old = ChatConversation(draft: "Existing conversation draft")
+  let legacy = ChatSnapshot(conversations: [old], selectedID: old.id)
+  let data = try JSONEncoder().encode(legacy)
+  let object = try #require(JSONSerialization.jsonObject(with: data) as? [String: Any])
+  #expect(object["homeDraft"] == nil)
+  let decoded = try JSONDecoder().decode(ChatSnapshot.self, from: data)
+  try decoded.validate()
+  #expect(decoded.homeDraft == nil)
+  #expect(decoded.conversations == [old])
+  #expect(decoded.selectedID == old.id)
+}
+
+@Test @MainActor func independentHomeDraftSurvivesBackgroundAndRelaunch() async throws {
+  let url = repositoryURL()
+  defer { try? FileManager.default.removeItem(at: url.deletingLastPathComponent()) }
+  let vm = ChatViewModel(
+    useCases: ChatUseCases(
+      repository: FileChatRepository(url: url), model: TestModel()))
+  await vm.load()
+  let oldID = try #require(vm.currentConversation?.id)
+  vm.draft = "Conversation follow-up"
+  let home = "Independent e\u{301}\nفكرة من الرئيسية"
+  vm.homeDraft = home
+  await vm.interrupt()
+  let restored = ChatViewModel(
+    useCases: ChatUseCases(
+      repository: FileChatRepository(url: url), model: TestModel()))
+  await restored.load()
+  #expect(restored.homeDraft.utf8.elementsEqual(home.utf8))
+  #expect(restored.draft == "Conversation follow-up")
+  await restored.newConversation()
+  #expect(restored.homeDraft.utf8.elementsEqual(home.utf8))
+  #expect(await restored.prepareHomeConversation())
+  #expect(restored.homeDraft.isEmpty)
+  #expect(restored.draft.utf8.elementsEqual(home.utf8))
+  #expect(restored.currentConversation?.id != oldID)
+  await restored.open(oldID)
+  #expect(restored.draft == "Conversation follow-up")
+  let saved = try await FileChatRepository(url: url).load()
+  #expect(saved.homeDraft == "")
+  #expect(saved.conversations.contains { $0.draft.utf8.elementsEqual(home.utf8) })
+}
+
+@Test func failedHomeTransferPreservesHomeDraftAndConversationSelection() async throws {
+  let old = ChatConversation(draft: "Old follow-up")
+  let repository = TestRepository(
+    ChatSnapshot(
+      conversations: [old], selectedID: old.id, homeDraft: "Unsent Home text"))
+  let useCases = ChatUseCases(repository: repository, model: TestModel())
+  let before = try await useCases.load()
+  await repository.setFailure(true)
+  await #expect(throws: ChatError.storage) { try await useCases.prepareHomeConversation() }
+  #expect(await useCases.state() == before)
+  #expect(await repository.snapshot == before)
+  await repository.setFailure(false)
+  let transferred = try await useCases.prepareHomeConversation()
+  #expect(transferred.homeDraft == "")
+  #expect(transferred.selectedID != old.id)
+  #expect(transferred.conversations.first?.draft == "Unsent Home text")
+  #expect(transferred.conversations.contains(old))
+}
+
+@Test @MainActor func homeTransferFailureLeavesEditableInputForRetry() async throws {
+  let repository = TestRepository()
+  let vm = ChatViewModel(useCases: ChatUseCases(repository: repository, model: TestModel()))
+  await vm.load()
+  vm.homeDraft = "Keep Home input"
+  await repository.setFailure(true)
+  #expect(await vm.prepareHomeConversation() == false)
+  #expect(vm.homeDraft == "Keep Home input")
+  #expect(vm.error == .storage)
+  #expect(!vm.isTransitioning)
+  await repository.setFailure(false)
+  #expect(await vm.prepareHomeConversation())
+  #expect(vm.homeDraft.isEmpty)
+  #expect(vm.draft == "Keep Home input")
+  #expect(await vm.flushDraft())
+  #expect(await repository.snapshot.homeDraft == "")
+}
+
+@Test func oversizedHomeDraftIsRejectedWithoutArchiveMutation() async throws {
+  let useCases = ChatUseCases(repository: TestRepository(), model: TestModel())
+  let before = try await useCases.load()
+  await #expect(throws: ChatError.messageTooLong) {
+    try await useCases.updateHomeDraft(String(repeating: "a", count: ChatLimits.draftBytes + 1))
+  }
+  #expect(await useCases.state() == before)
+  var invalid = before
+  invalid.homeDraft = String(repeating: "a", count: ChatLimits.draftBytes + 1)
+  #expect(throws: ChatError.invalidArchive) { try invalid.validate() }
 }

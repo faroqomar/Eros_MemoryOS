@@ -7,6 +7,7 @@ enum MenuFocusTarget: Hashable {
 
 struct RootView: View {
   @Bindable var session: DemoSession
+  let audio: AudioViewModel
   let records: LocalRecordsViewModel
   let chat: ChatViewModel
   let preparation: ChatModelPreparationViewModel
@@ -18,11 +19,13 @@ struct RootView: View {
     GeometryReader { geometry in
       ZStack(alignment: .leading) {
         SectionHostView(
-          session: session, records: records, chat: chat, preparation: preparation,
+          session: session, audio: audio, records: records, chat: chat, preparation: preparation,
           section: session.section, menuIsOpen: menuIsOpen,
           openMenu: { setMenu(true) }, menuFocus: $menuFocus
         )
-        .id(session.section)
+        .id(
+          session.section == .capture ? session.captureEntry.uuidString : session.section.rawValue
+        )
         .accessibilityHidden(menuIsOpen)
         .allowsHitTesting(!menuIsOpen)
 
@@ -33,7 +36,7 @@ struct RootView: View {
           .allowsHitTesting(menuIsOpen)
           .accessibilityHidden(true)
 
-        SidebarView(session: session, close: { setMenu(false) }, menuFocus: $menuFocus)
+        SidebarView(session: session, chat: chat, close: { setMenu(false) }, menuFocus: $menuFocus)
           .frame(width: geometry.size.width * 0.84)
           .frame(maxHeight: .infinity)
           .background(MemoryTheme.panel)

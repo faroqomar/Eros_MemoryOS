@@ -1,0 +1,110 @@
+{
+  "platform": "macOS host, not iPhone or Simulator",
+  "runs": 30,
+  "network": "macOS sandbox denies network operations for every inference process",
+  "method": "Fresh process per case; elapsed includes model loading, PCM decoding and inference. OS/CoreML caches may persist.",
+  "normalization": "NFKC, Unicode word tokens, casefold; no Arabic dialect/diacritic normalization",
+  "limits": [
+    "System TTS, not human speech.",
+    "Iraqi wording uses an Arabic World TTS voice; dialect/accent quality remains untested.",
+    "Mixed TTS pronunciation may differ from natural code switching.",
+    "No natural human Iraqi dialect, battery, heat, physical phone, or production acceptance measurement."
+  ],
+  "results": [
+    {
+      "case": "English",
+      "engines": [
+        {
+          "engine": "whisperkit",
+          "werPercent": 18.75,
+          "medianSeconds": 1.23,
+          "minSeconds": 1.085,
+          "maxSeconds": 11.851
+        },
+        {
+          "engine": "whisper.cpp",
+          "werPercent": 18.75,
+          "medianSeconds": 0.634,
+          "minSeconds": 0.579,
+          "maxSeconds": 9.391
+        }
+      ]
+    },
+    {
+      "case": "Iraqi wording, synthetic Arabic voice",
+      "engines": [
+        {
+          "engine": "whisperkit",
+          "werPercent": 54.55,
+          "medianSeconds": 1.187,
+          "minSeconds": 1.062,
+          "maxSeconds": 1.217
+        },
+        {
+          "engine": "whisper.cpp",
+          "werPercent": 54.55,
+          "medianSeconds": 0.737,
+          "minSeconds": 0.57,
+          "maxSeconds": 0.83
+        }
+      ]
+    },
+    {
+      "case": "Mixed Arabic/English",
+      "engines": [
+        {
+          "engine": "whisperkit",
+          "werPercent": 83.33,
+          "medianSeconds": 1.149,
+          "minSeconds": 1.078,
+          "maxSeconds": 1.231
+        },
+        {
+          "engine": "whisper.cpp",
+          "werPercent": 83.33,
+          "medianSeconds": 0.663,
+          "minSeconds": 0.602,
+          "maxSeconds": 0.726
+        }
+      ]
+    },
+    {
+      "case": "Names, English",
+      "engines": [
+        {
+          "engine": "whisperkit",
+          "werPercent": 0.0,
+          "medianSeconds": 0.974,
+          "minSeconds": 0.916,
+          "maxSeconds": 1.031
+        },
+        {
+          "engine": "whisper.cpp",
+          "werPercent": 0.0,
+          "medianSeconds": 0.503,
+          "minSeconds": 0.451,
+          "maxSeconds": 0.61
+        }
+      ]
+    },
+    {
+      "case": "English with noise",
+      "engines": [
+        {
+          "engine": "whisperkit",
+          "werPercent": 37.5,
+          "medianSeconds": 0.979,
+          "minSeconds": 0.941,
+          "maxSeconds": 1.007
+        },
+        {
+          "engine": "whisper.cpp",
+          "werPercent": 25.0,
+          "medianSeconds": 0.434,
+          "minSeconds": 0.427,
+          "maxSeconds": 0.435
+        }
+      ]
+    }
+  ]
+}

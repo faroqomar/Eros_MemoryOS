@@ -16,7 +16,7 @@ final class ChatExtendedFlowTests: XCTestCase {
     XCTAssertTrue(capture.waitForExistence(timeout: 5))
     capture.tap()
     capture.typeText(original)
-    app.buttons["send-memory"].tap()
+    app.buttons["save-thought"].tap()
     XCTAssertTrue(app.alerts.firstMatch.waitForExistence(timeout: 5))
     app.alerts.buttons["OK"].tap()
 
@@ -33,6 +33,15 @@ final class ChatExtendedFlowTests: XCTestCase {
     setMemoryMode(true, in: app)
     send(question, in: app)
     waitForReply(in: app)
+    openHistory(in: app)
+    let memoryRow = app.buttons.matching(
+      NSPredicate(
+        format: "identifier BEGINSWITH 'saved-chat-' AND label CONTAINS %@", name
+      )
+    ).firstMatch
+    XCTAssertTrue(memoryRow.waitForExistence(timeout: 5))
+    let memoryChatID = memoryRow.identifier
+    closeHistory(in: app)
     let firstSource = app.buttons[sourceID]
     XCTAssertTrue(firstSource.waitForExistence(timeout: 5))
     firstSource.tap()
@@ -53,7 +62,7 @@ final class ChatExtendedFlowTests: XCTestCase {
     XCTAssertEqual(app.staticTexts["local-record-original"].label, original)
     app.navigationBars.buttons.element(boundBy: 0).tap()
 
-    route("chat", in: app)
+    openSavedChat(memoryChatID, in: app)
     app.buttons[sourceID].tap()
     XCTAssertTrue(app.staticTexts[corrected].waitForExistence(timeout: 5))
     XCTAssertTrue(app.staticTexts[original].exists)
@@ -76,7 +85,7 @@ final class ChatExtendedFlowTests: XCTestCase {
     reveal(app.buttons["trash-local-record"], in: app)
     app.buttons["trash-local-record"].tap()
     XCTAssertTrue(app.switches["show-trash"].waitForExistence(timeout: 5))
-    route("chat", in: app)
+    openSavedChat(memoryChatID, in: app)
     currentSource.tap()
     XCTAssertTrue(
       app.staticTexts.matching(
@@ -109,7 +118,7 @@ final class ChatExtendedFlowTests: XCTestCase {
     composer.tap()
     composer.typeText(draft)
     dismissKeyboard(in: app)
-    app.buttons["chat-history"].tap()
+    openHistory(in: app)
     let row = app.buttons.matching(
       NSPredicate(format: "identifier BEGINSWITH 'saved-chat-' AND label CONTAINS %@", suffix)
     ).firstMatch
@@ -127,21 +136,27 @@ final class ChatExtendedFlowTests: XCTestCase {
     XCTAssertTrue(
       app.buttons.matching(NSPredicate(format: "identifier == %@ AND label == %@", chatID, title))
         .firstMatch.waitForExistence(timeout: 5))
-    app.buttons["chat-history-done"].tap()
+    closeHistory(in: app)
     app.buttons["new-chat"].tap()
     let otherDraft = "Keep this other draft \(suffix)"
     field("chat-composer", in: app).tap()
     field("chat-composer", in: app).typeText(otherDraft)
     dismissKeyboard(in: app)
-    app.buttons["chat-history"].tap()
+    openHistory(in: app)
+    let otherChatID = app.buttons.matching(
+      NSPredicate(
+        format: "identifier BEGINSWITH 'saved-chat-'"
+      )
+    ).element(boundBy: 0).identifier
+    XCTAssertNotEqual(otherChatID, chatID)
     app.buttons[chatID].tap()
     XCTAssertEqual(field("chat-composer", in: app).value as? String, draft)
     XCTAssertTrue(app.staticTexts[prompt].exists)
     app.terminate()
     app.launch()
-    route("chat", in: app)
+    openSavedChat(chatID, in: app)
     XCTAssertEqual(field("chat-composer", in: app).value as? String, draft)
-    app.buttons["chat-history"].tap()
+    openHistory(in: app)
     XCTAssertTrue(app.buttons[chatID].waitForExistence(timeout: 5))
     XCTAssertEqual(app.buttons[chatID].label, title)
     app.buttons["Chat actions: \(title)"].tap()
@@ -149,18 +164,34 @@ final class ChatExtendedFlowTests: XCTestCase {
     app.buttons["Delete chat"].tap()
     waitForDisappearance(app.buttons[chatID])
     attach("Renamed conversation deleted while other chat remains", app)
-    app.buttons["chat-history-done"].tap()
+    closeHistory(in: app)
     XCTAssertEqual(field("chat-composer", in: app).value as? String, otherDraft)
     app.terminate()
     app.launch()
-    route("chat", in: app)
-    app.buttons["chat-history"].tap()
+    openSavedChat(otherChatID, in: app)
+    openHistory(in: app)
     XCTAssertFalse(app.buttons[chatID].exists)
-    app.buttons["chat-history-done"].tap()
+    closeHistory(in: app)
     XCTAssertEqual(field("chat-composer", in: app).value as? String, otherDraft)
   }
 
-  func testEnglishLargeTextKeyboardAndNavigationPreserveDraft() throws {
+  func testEnglishLargeTextKeyboardAndNavigationPreserveDraft() {
+    _ = exerciseEnglishLargeTextKeyboardAndNavigation()
+  }
+
+  func testEnglishLargeTextAccessibility() throws {
+    let app = exerciseEnglishLargeTextKeyboardAndNavigation()
+    try app.performAccessibilityAudit(for: [
+      .contrast, .dynamicType, .textClipped, .hitRegion, .sufficientElementDescription, .trait,
+    ]) { issue in
+      print(
+        "CHAT-EXTENDED-AUDIT: \(issue.detailedDescription) | \(issue.element?.label ?? "unknown") | \(issue.element?.frame.debugDescription ?? "unavailable")"
+      )
+      return false
+    }
+  }
+
+  private func exerciseEnglishLargeTextKeyboardAndNavigation() -> XCUIApplication {
     let app = XCUIApplication()
     app.launchArguments = [
       "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL",
@@ -178,30 +209,31 @@ final class ChatExtendedFlowTests: XCTestCase {
     XCTAssertLessThanOrEqual(
       app.buttons["chat-send"].frame.maxY, app.keyboards.firstMatch.frame.minY + 1)
     attach("Large text composer remains above keyboard", app)
+    dismissKeyboard(in: app)
+    openHistory(in: app)
+    let draftChatID = app.buttons.matching(
+      NSPredicate(
+        format: "identifier BEGINSWITH 'saved-chat-'"
+      )
+    ).element(boundBy: 0).identifier
+    closeHistory(in: app)
     route("capture", in: app)
     XCTAssertFalse(app.buttons["chat-send"].exists)
-    route("chat", in: app)
+    openSavedChat(draftChatID, in: app)
     XCTAssertEqual(field("chat-composer", in: app).value as? String, draft)
     XCTAssertTrue(app.buttons["chat-send"].isEnabled)
     field("chat-composer", in: app).tap()
     dismissKeyboard(in: app)
-    XCTAssertTrue(app.buttons["chat-history"].isHittable)
+    XCTAssertTrue(app.buttons["open-menu"].isHittable)
     XCTAssertTrue(app.buttons["new-chat"].isHittable)
     attach("English large text draft restored after navigation", app)
-    try app.performAccessibilityAudit(for: [
-      .contrast, .dynamicType, .textClipped, .hitRegion, .sufficientElementDescription, .trait,
-    ]) { issue in
-      print(
-        "CHAT-EXTENDED-AUDIT: \(issue.detailedDescription) | \(issue.element?.label ?? "unknown") | \(issue.element?.frame.debugDescription ?? "unavailable")"
-      )
-      return false
-    }
+    return app
   }
 
   private func route(_ section: String, in app: XCUIApplication) {
     XCTAssertTrue(app.buttons["open-menu"].waitForExistence(timeout: 5))
     app.buttons["open-menu"].tap()
-    app.buttons["section-\(section)"].tap()
+    app.buttons[section == "chat" ? "sidebar-new-chat" : "section-\(section)"].tap()
   }
 
   private func field(_ identifier: String, in app: XCUIApplication) -> XCUIElement {
@@ -222,17 +254,52 @@ final class ChatExtendedFlowTests: XCTestCase {
   }
 
   private func dismissKeyboard(in app: XCUIApplication) {
-    if app.buttons["chat-keyboard-done"].exists { app.buttons["chat-keyboard-done"].tap() }
+    if app.keyboards.firstMatch.exists { app.scrollViews["chat-messages"].tap() }
   }
 
   private func setMemoryMode(_ enabled: Bool, in app: XCUIApplication) {
-    let toggle = app.switches["chat-memory-mode"]
-    XCTAssertTrue(toggle.waitForExistence(timeout: 5))
-    if (toggle.value as? String == "1") != enabled {
-      let control = toggle.switches.firstMatch
-      if control.exists { control.tap() } else { toggle.tap() }
+    let active =
+      app.otherElements["chat-memory-active"].exists
+      || app.staticTexts["Using saved memories"].exists
+    if active != enabled {
+      app.buttons["chat-options"].tap()
+      let option = app.buttons["chat-memory-mode"]
+      if option.waitForExistence(timeout: 3) {
+        option.tap()
+      } else {
+        app.switches["chat-memory-mode"].tap()
+      }
     }
-    XCTAssertEqual(toggle.value as? String, enabled ? "1" : "0")
+    if enabled {
+      XCTAssertTrue(app.staticTexts["Using saved memories"].waitForExistence(timeout: 3))
+    } else {
+      XCTAssertFalse(app.staticTexts["Using saved memories"].exists)
+    }
+  }
+
+  private func openHistory(in app: XCUIApplication) {
+    dismissKeyboard(in: app)
+    let headerOptions = app.descendants(matching: .any)
+      .matching(identifier: "chat-header-options").firstMatch
+    if !headerOptions.exists { route("capture", in: app) }
+    XCTAssertTrue(headerOptions.waitForExistence(timeout: 5))
+    headerOptions.tap()
+    let history = app.buttons["open-chat-history"]
+    XCTAssertTrue(history.waitForExistence(timeout: 5))
+    history.tap()
+    XCTAssertTrue(app.buttons["chat-history-done"].waitForExistence(timeout: 5))
+  }
+
+  private func closeHistory(in app: XCUIApplication) {
+    app.buttons["chat-history-done"].tap()
+    if app.buttons["close-menu"].isHittable { app.buttons["close-menu"].tap() }
+  }
+
+  private func openSavedChat(_ identifier: String, in app: XCUIApplication) {
+    openHistory(in: app)
+    XCTAssertTrue(app.buttons[identifier].waitForExistence(timeout: 5))
+    app.buttons[identifier].tap()
+    XCTAssertTrue(field("chat-composer", in: app).waitForExistence(timeout: 5))
   }
 
   private func replaceText(in editor: XCUIElement, with text: String, app: XCUIApplication) {

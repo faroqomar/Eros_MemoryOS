@@ -9,8 +9,7 @@ enum ChatComposition {
   @MainActor static func makePreparationViewModel() -> ChatModelPreparationViewModel {
     ChatModelPreparationViewModel(useCase: PrepareChatModel(importer: ChatModelImporter()))
   }
-  @MainActor static func makeViewModel(provider: LocalStoreProvider) -> ChatViewModel {
-    let base = URL.applicationSupportDirectory.appending(path: "LocalChat")
+  @MainActor static func makeModel() -> any ChatModel {
     let modelURL = URL.documentsDirectory.appending(path: "ChatModels/Qwen3-0.6B-Q4_K_M.gguf")
     let model = LlamaChatModel(
       assetURL: modelURL,
@@ -24,10 +23,19 @@ enum ChatComposition {
           residentBytes: ChatMeasurement.residentBytes())
         Task { await ChatMeasurementStore.shared.append(sample) }
       })
+    return model
+  }
+
+  @MainActor static func makeViewModel(
+    provider: LocalStoreProvider,
+    voiceTranscriber: any VoiceTranscribing, model: any ChatModel
+  ) -> ChatViewModel {
+    let base = URL.applicationSupportDirectory.appending(path: "LocalChat")
     return ChatViewModel(
       useCases: ChatUseCases(
         repository: FileChatRepository(url: base.appending(path: "conversations.json")),
-        model: model, memory: LocalChatMemory(provider: provider)))
+        model: model, memory: LocalChatMemory(provider: provider),
+        voiceTranscriber: voiceTranscriber))
   }
 }
 

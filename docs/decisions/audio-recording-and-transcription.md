@@ -6,7 +6,7 @@ Recorded on 2026-11-07. Owner source: C08 in the [source register](../reference/
 
 **Confirmed:** Document WhisperKit and whisper.cpp as local transcription candidates. Document AVAudioRecorder as the candidate component for recording new audio in Swift.
 
-The owner requested these options in the documentation. This does not select a final engine, model, app framework, or implementation stage. No MemoryOS integration or phone benchmark has passed.
+The owner requested these options in the documentation. This does not select a final engine, model, app framework, or implementation stage. This was the 2026-11-07 research status. The group 6 implementation update below supersedes its integration claim; physical-phone benchmarks remain open.
 
 **Assistant recommendation:** Evaluate WhisperKit first and whisper.cpp as an alternative. Keep recording, transcription, runtime memory, and text-model execution separate so each component can change independently.
 
@@ -61,6 +61,22 @@ The queue, transcript versions, format conversion, and engine-switching interfac
 - Check interruption recovery and missing or unsupported audio files without losing originals or duplicating records.
 - Measure accuracy, response time, app memory, storage, battery use, and heat. Set numeric targets after reviewing initial measurements.
 
-No test result exists yet. Keep cloud transcription an explicit separate choice; do not add a silent network fallback.
+At the time of the original research, no test result existed. See the current task for later evidence. Keep cloud transcription an explicit separate choice; do not add a silent network fallback.
 
 Related records: [feature register](../feature-register.md), [decision register](decision-register.md), [runtime memory options](runtime-memory-options.md).
+
+## Group 6 Step 1 implementation, 2026-11-15
+
+The owner now authorizes recording, import, local transcription comparison, review, source links, export and interruption recovery. This supersedes the earlier no-implementation status for this bounded task. See the [current task and builder evidence](../tasks/2026-11-15-voice-transcription.md); earlier research above remains historical.
+
+The implementation uses AVAudioRecorder for 16 kHz mono PCM CAF capture. Recording and import accept up to 250 MiB and two hours; the initial local transcription adapters accept up to 15 minutes to bound decoded memory. Imported WAV, M4A, MP3, AIFF, CAF and FLAC files must pass actual local decoding. Container extensions alone do not establish codec support.
+
+MemoryOS owns a separate version-1 audio library, immutable saved audio hashes, stable recording/person/source UUIDs, original engine passages, timestamp/uncertainty evidence and appended corrections. A plain Swift domain target separates these records from the atomic file repository and SDK adapters. Transcript JSON exports retain associations and history; they do not replace an audio backup. Existing text-record archives remain their own format. Automatic backup, complete audio archive restore and production data-policy approval remain open.
+
+Models enter through an explicit local folder import. Runtime transcription has no cloud fallback. Both adapters preserve the spoken language and unknown speaker status; neither establishes diarization or speaker identity. Model fingerprints and separate engine results support comparison without selecting a production engine/model. Reopening marks unfinished recording and transcription jobs interrupted; users recover written audio or restart transcription. Processing restarts from the original after interruption; it does not claim resumable inference checkpoints.
+
+Apple references checked for implementation: [AVAudioRecorder](https://developer.apple.com/documentation/avfaudio/avaudiorecorder), [microphone permission](https://developer.apple.com/documentation/avfaudio/avaudioapplication/requestrecordpermission(completionhandler:)), and [audio interruptions](https://developer.apple.com/documentation/avfaudio/handling-audio-interruptions). The task record distinguishes current builder results, independent verification, natural Iraqi speech qualification and physical-device checks.
+
+## Voice-to-chat follow-up, 2026-11-17
+
+Home now saves a recording before creating its conversation. The user message retains audio playback and an expandable transcript; local AI answers from that transcript, and follow-ups stay together. Voice chat bundles the pinned multilingual small Q5_1 whisper.cpp candidate, with explicit local import still available. The measured English repair and owner phone acceptance do not qualify natural Iraqi/mixed accuracy or device cost. See the [current task](../tasks/2026-11-17-voice-chat.md). The research-only wording above describes the earlier checkpoint.

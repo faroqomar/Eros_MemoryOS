@@ -4,6 +4,54 @@ import XCTest
 final class ChatFlowTests: XCTestCase {
   override func setUpWithError() throws { continueAfterFailure = false }
 
+  func testHomeStartsSeparateChatsAndHistoryKeepsFollowups() {
+    let app = XCUIApplication()
+    app.launch()
+    let marker = String(UUID().uuidString.prefix(8))
+    let first = "Orchid \(marker). Reply with OK."
+    let followup = "Continue Orchid \(marker). Reply with OK."
+    let second = "Cedar \(marker). Reply with OK."
+
+    sendFromHome(first, app)
+    waitForReply(app)
+    send(followup, app)
+    waitForReply(app)
+    XCTAssertTrue(app.staticTexts[first].exists)
+    XCTAssertTrue(app.staticTexts[followup].exists)
+
+    // Home must reset even while this conversation is embedded in Capture.
+    route("capture", app)
+    XCTAssertTrue(homeComposer(app).waitForExistence(timeout: 5))
+    XCTAssertFalse(app.staticTexts[first].exists)
+    sendFromHome(second, app)
+    waitForReply(app)
+    XCTAssertTrue(app.staticTexts[second].exists)
+    XCTAssertFalse(app.staticTexts[first].exists)
+    XCTAssertFalse(app.staticTexts[followup].exists)
+
+    app.buttons["open-menu"].tap()
+    let search = app.textFields["sidebar-chat-search"]
+    XCTAssertTrue(search.waitForExistence(timeout: 5))
+    search.tap()
+    search.typeText("Orchid \(marker)")
+    let oldChat = app.buttons.matching(
+      NSPredicate(
+        format: "identifier BEGINSWITH %@ AND label CONTAINS %@", "sidebar-chat-",
+        "Orchid \(marker)"
+      )
+    ).firstMatch
+    XCTAssertTrue(oldChat.waitForExistence(timeout: 5))
+    oldChat.tap()
+    XCTAssertTrue(app.staticTexts[first].waitForExistence(timeout: 5))
+    XCTAssertTrue(app.staticTexts[followup].exists)
+    XCTAssertFalse(app.staticTexts[second].exists)
+    send("Reopened Orchid \(marker). Reply with OK.", app)
+    waitForReply(app)
+    XCTAssertTrue(app.staticTexts[first].exists)
+    XCTAssertTrue(app.staticTexts[followup].exists)
+    attach("Separate Home chats and reopened follow-ups", app)
+  }
+
   func testRealReplyFollowupAndDraftRelaunch() {
     let app = XCUIApplication()
     app.launch()
@@ -26,10 +74,18 @@ final class ChatFlowTests: XCTestCase {
     let field = composer(app)
     field.tap()
     field.typeText("A draft kept after relaunch\nSecond line")
-    app.buttons["chat-keyboard-done"].tap()
+    app.scrollViews["chat-messages"].tap()
     app.terminate()
     app.launch()
-    route("chat", app)
+    app.buttons["open-menu"].tap()
+    let saved = app.buttons.matching(
+      NSPredicate(
+        format: "identifier BEGINSWITH %@ AND label CONTAINS %@", "sidebar-chat-",
+        "My fictional name is Mira"
+      )
+    ).firstMatch
+    XCTAssertTrue(saved.waitForExistence(timeout: 5))
+    saved.tap()
     XCTAssertTrue(composer(app).waitForExistence(timeout: 5))
     XCTAssertEqual(composer(app).value as? String, "A draft kept after relaunch\nSecond line")
     attach("English conversation and restored draft", app)
@@ -113,7 +169,19 @@ final class ChatFlowTests: XCTestCase {
 
   private func route(_ section: String, _ app: XCUIApplication) {
     app.buttons["open-menu"].tap()
-    app.buttons["section-\(section)"].tap()
+    app.buttons[section == "chat" ? "sidebar-new-chat" : "section-\(section)"].tap()
+  }
+  private func homeComposer(_ app: XCUIApplication) -> XCUIElement {
+    app.textFields["capture-composer"].exists
+      ? app.textFields["capture-composer"] : app.textViews["capture-composer"]
+  }
+  private func sendFromHome(_ text: String, _ app: XCUIApplication) {
+    let field = homeComposer(app)
+    XCTAssertTrue(field.waitForExistence(timeout: 5))
+    field.tap()
+    field.typeText(text)
+    app.buttons["capture-send"].tap()
+    XCTAssertTrue(app.buttons["capture-return-to-recording"].waitForExistence(timeout: 5))
   }
   private func composer(_ app: XCUIApplication) -> XCUIElement {
     app.textFields["chat-composer"].exists
@@ -124,7 +192,7 @@ final class ChatFlowTests: XCTestCase {
     field.tap()
     field.typeText(text)
     app.buttons["chat-send"].tap()
-    if app.buttons["chat-keyboard-done"].exists { app.buttons["chat-keyboard-done"].tap() }
+    if app.keyboards.firstMatch.exists { app.scrollViews["chat-messages"].tap() }
   }
   private func waitForReply(_ app: XCUIApplication, allowsOutputLimit: Bool = false) {
     XCTAssertTrue(app.buttons["chat-send"].waitForExistence(timeout: 30))

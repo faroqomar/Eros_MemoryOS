@@ -14,6 +14,17 @@ No downloader, URLSession, cloud fallback or production store enters the adapter
 
 ## Verification
 
+Each slice is a dynamic framework that exports only `llama_*`; GGML/GGUF and
+C++ internals remain private. Static llama linkage can bind to Whisper's older
+GGML implementation and abort during model loading. Two-level namespaces on
+Whisper alone do not prevent that conflict.
+
+After a combined app build, run `python3 scripts/check-inference-linkage.py
+/absolute/path/MemoryOS.app`. Run the host integration regression with
+`python3 scripts/check-inference-coexistence.py <Qwen.gguf> <ggml-tiny.bin>
+<fictional-mono-16kHz-16bit.wav>`. It loads and decodes with both engines in
+both initialization orders. Supply existing local models; nothing is downloaded.
+
 ```sh
 swift test --package-path native/LocalTextEvaluation -c release
 ```

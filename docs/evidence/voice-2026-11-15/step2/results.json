@@ -1,0 +1,81 @@
+{
+  "status": "Step 2 BLOCKED",
+  "date": "2026-11-15",
+  "source": {
+    "baseHEAD": "9c11150cdb013976cef59b02d3a110b758374776",
+    "files": 72,
+    "aggregateSHA256": "1bf511e2f74e7de4ad888504a2d96febaebd756dc5d5dca66b80353655931d43",
+    "committed": false
+  },
+  "environment": "iPhone 18 Pro Max Simulator, iOS 27.2; Xcode 27.2, Swift 6.4.2; Release configuration",
+  "checks": {
+    "audioCoreFunctions": 17,
+    "audioCoreExecutions": 26,
+    "isolatedWorkflowFunctions": 9,
+    "adapterFunctions": 6,
+    "appUnitFunctionsPassed": 49,
+    "uiMethodsPassed": 6,
+    "unfilteredAuditMethodsFailed": 1,
+    "latestRtlAndLargestTextRecheck": "2 passed, 1 audit failed",
+    "releaseSimulatorBuild": "pass",
+    "unsignedReleaseIOSBuildAndAnalysis": "pass",
+    "swiftFormatFilesPassed": 63
+  },
+  "evidenceReuse": "Final unit run preceded the presentation-only RTL patch. Affected Arabic ordering, largest text and unfiltered audit were rerun after that patch. Unchanged domain/adapter tests and prior 30-run inference accuracy evidence are retained.",
+  "closedFindings": [
+    "F1: validate staged model bytes before replacing pointer or deleting old model",
+    "F2: discard only empty interrupted draft metadata; preserve partial/saved originals",
+    "RTL: explicit audio-sheet direction/locale; import icon/text ordering assertion passes"
+  ],
+  "accessibilityRemaining": [
+    "Unlocated contrast diagnostic after English scroll",
+    "Model import Dynamic Type diagnostic in both languages",
+    "Arabic Start recording clipping diagnostic before and after scroll"
+  ],
+  "measuredLargestText": {
+    "startControlHeightPoints": [
+      54,
+      99
+    ],
+    "transcriptionHeadingHeightPoints": [
+      54,
+      166.67
+    ],
+    "doneIconTargetPoints": 44,
+    "languages": [
+      "English",
+      "Arabic"
+    ],
+    "limitation": "Measurements do not waive audit failures; full correction-sheet/VoiceOver qualification remains open."
+  },
+  "filesFlow": {
+    "validEnglishWavImport": "pass",
+    "damagedWavRejection": "pass",
+    "sameShapedDamagedModelRejection": "pass",
+    "modelPointersUnchanged": 2,
+    "originalAudioHashesUnchanged": 2,
+    "microphoneRecording": "not performed"
+  },
+  "blockedQualification": [
+    "Synthetic Iraqi wording and mixed speech exceed both model thresholds; WhisperKit also exceeds noisy-speech threshold",
+    "No natural Iraqi speaker dataset",
+    "No physical iPhone 15 Pro Max or iOS 18 runtime",
+    "Actual microphone, calls/routes, OS low-storage, termination during writes/inference, battery/heat/latency, full disconnected app flow unavailable or unverified"
+  ],
+  "independentReview": "Fresh Spec and Standards review closed recovery findings and accepted scoped presentation repairs; required failures remain blocking.",
+  "captures": [
+    {
+      "file": "model-rejected.png",
+      "sha256": "a4f51d2cc2e49a3a095c6c06ae366a8e517d67a24075288f1ab5607f5895c890",
+      "appearance": "dark",
+      "source": "1bf511e2f74e7de4ad888504a2d96febaebd756dc5d5dca66b80353655931d43"
+    },
+    {
+      "file": "arabic-largest.png",
+      "sha256": "f2edf6268be436224f592f8fed1d770af119ba5e56da95cdd8b25d0eb1fb2d09",
+      "appearance": "dark",
+      "source": "1bf511e2f74e7de4ad888504a2d96febaebd756dc5d5dca66b80353655931d43"
+    }
+  ],
+  "delivery": "No Step 3, commit, push, merge, deployment or release."
+}

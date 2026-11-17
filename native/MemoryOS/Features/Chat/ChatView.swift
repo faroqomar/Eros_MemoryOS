@@ -6,9 +6,10 @@ import UIKit
 struct ChatView: View {
   @Bindable var model: ChatViewModel
   let records: LocalRecordsViewModel
+  let audio: AudioViewModel
+  var openRecordings: () -> Void = {}
   let language: AppLanguage
   let menuIsOpen: Bool
-  @State private var showChats = false
   @State private var source: ChatEvidence?
   @State private var followsLatest = true
   @State private var nearBottom = true
@@ -26,56 +27,50 @@ struct ChatView: View {
 
   var body: some View {
     VStack(spacing: 0) {
-      HStack {
-        Button {
-          composerFocused = false
-          showChats = true
-        } label: {
-          toolbarLabel(language.text("Chats", "المحادثات"), symbol: "bubble.left.and.bubble.right")
-            .frame(minWidth: 44, minHeight: 44).contentShape(Rectangle())
-        }
-        .accessibilityIdentifier("chat-history")
-        .disabled(model.isTransitioning || model.isLoading || !model.hasLoaded)
-        Spacer()
-        Button {
-          Task { await model.newConversation() }
-        } label: {
-          toolbarLabel(language.text("New", "جديدة"), symbol: "square.and.pencil")
-            .frame(minWidth: 44, minHeight: 44).contentShape(Rectangle())
-        }
-        .disabled(
-          model.isGenerating || model.isTransitioning || model.isLoading || !model.hasLoaded
-        )
-        .accessibilityIdentifier("new-chat")
-      }
-      .font(.subheadline)
-      .buttonStyle(.plain)
-      .frame(minHeight: 44)
-      .padding(.horizontal, 22)
-
       ScrollViewReader { proxy in
         ScrollView {
           LazyVStack(alignment: .leading, spacing: 24) {
-            if messages.isEmpty && model.draft.isEmpty { introduction }
+            if messages.isEmpty && model.currentConversation?.pendingVoice == nil { introduction }
+            if let first = messages.first {
+              Text(first.createdAt, format: .dateTime.weekday(.wide).hour().minute())
+                .font(.caption.weight(.medium))
+                .foregroundStyle(MemoryTheme.secondary)
+                .frame(maxWidth: .infinity)
+                .padding(.bottom, 8)
+            }
+            if let pending = model.currentConversation?.pendingVoice {
+              ChatPendingVoiceCard(
+                pending: pending, processing: model.isTranscribing, language: language,
+                play: { seconds in
+                  Task { await audio.play(id: pending.recordingID, seconds: seconds) }
+                },
+                stop: { audio.stopPlayback() },
+                retry: { Task { await model.retryVoice() } },
+                cancel: { model.cancelVoice() }, openRecordings: openRecordings)
+            }
             ForEach(messages) { message in
               ChatMessageRow(
                 message: message, language: language,
-                canRegenerate: message.id == messages.last?.id && !model.isGenerating,
+                canRegenerate: message.id == messages.last?.id && !model.isGenerating
+                  && !model.isTranscribing,
                 retry: { Task { await model.retry() } },
                 regenerate: { Task { await model.regenerate() } },
-                openSource: { source = $0 }
+                openSource: { source = $0 },
+                playVoice: { id, seconds in Task { await audio.play(id: id, seconds: seconds) } },
+                stopVoice: { audio.stopPlayback() }
               )
               .transition(reduceMotion ? .identity : .opacity.combined(with: .offset(y: 8)))
             }
             Color.clear.frame(height: 1).id("latest")
           }
-          .padding(.horizontal, 22)
-          .padding(.vertical, 20)
+          .padding(.horizontal, 20)
+          .padding(.vertical, 24)
           .animation(reduceMotion ? nil : .easeOut(duration: 0.18), value: messages.count)
         }
         .accessibilityIdentifier("chat-messages")
         .defaultScrollAnchor(messages.isEmpty ? .top : .bottom, for: .initialOffset)
         .scrollDismissesKeyboard(.interactively)
+        .onTapGesture { composerFocused = false }
         .onScrollGeometryChange(for: Bool.self) { geometry in
           geometry.contentSize.height - geometry.visibleRect.maxY < 80
         } action: { _, bottom in
@@ -114,10 +109,6 @@ struct ChatView: View {
       }
     }
     .safeAreaInset(edge: .bottom, spacing: 0) { composer }
-    .sheet(isPresented: $showChats) {
-      ChatHistoryView(model: model, language: language)
-        .preferredColorScheme(.dark)
-    }
     .sheet(item: $source) { evidence in
       ChatSourceView(evidence: evidence, records: records, language: language)
         .preferredColorScheme(.dark)
@@ -125,6 +116,7 @@ struct ChatView: View {
     .onChange(of: menuIsOpen) { _, open in if open { composerFocused = false } }
     .onDisappear {
       scrollMeasurement?.userScrollChanged(false)
+      audio.stopPlayback()
       Task { await model.flushDraft() }
     }
     .onChange(of: model.isGenerating) { wasGenerating, generating in
@@ -139,30 +131,25 @@ struct ChatView: View {
   }
 
   private var introduction: some View {
-    VStack(alignment: .leading, spacing: 16) {
-      Image(systemName: "sparkle").font(.largeTitle).accessibilityHidden(true)
-      Text(language.text("Think it through.", "خلّينا نفكّر سوا."))
+    VStack(spacing: 12) {
+      Text(language.text("What’s on your mind?", "شنو ببالك؟"))
         .font(.title2.weight(.semibold))
-      Text(
-        language.text(
-          "Ask a question or explore an idea. Your chats stay on this device.",
-          "اسأل سؤالاً أو ناقش فكرة. تبقى محادثاتك على هذا الجهاز.")
-      )
-      .foregroundStyle(MemoryTheme.secondary)
-      Text(
-        language.text(
-          "Experimental local AI can make mistakes, especially in Arabic. Check memory sources. Save original thoughts from Capture.",
-          "الذكاء المحلي تجريبي وقد يخطئ، خصوصاً بالعربية. راجع مصادر الذكريات. احفظ أفكارك الأصلية من شاشة الالتقاط."
-        )
-      )
-      .font(.callout).foregroundStyle(MemoryTheme.secondary)
+      Text(language.text("Chats stay on this device.", "تبقى المحادثات على هذا الجهاز."))
+        .font(.subheadline)
+        .foregroundStyle(MemoryTheme.secondary)
     }
-    .frame(maxWidth: .infinity, alignment: .leading)
-    .padding(.vertical, 32)
+    .frame(maxWidth: .infinity)
+    .padding(.vertical, 64)
   }
 
   private var composer: some View {
     VStack(alignment: .leading, spacing: 8) {
+      if let failure = audio.failure {
+        HStack(alignment: .top) {
+          Text(audioMessage(failure, language: language)).font(.callout)
+          Button(language.text("Dismiss", "إخفاء")) { audio.dismissFailure() }.frame(minHeight: 44)
+        }.padding(12).background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 12))
+      }
       if let error = model.error {
         VStack(alignment: .leading, spacing: 6) {
           Text(ChatCopy.error(error, language: language))
@@ -174,6 +161,7 @@ struct ChatView: View {
               }.frame(minHeight: 44)
             } else if error == .storage {
               Button(language.text("Retry saving", "إعادة الحفظ")) {
+                audio.stopPlayback()
                 Task { await model.flushDraft() }
               }.frame(minHeight: 44)
             }
@@ -182,33 +170,53 @@ struct ChatView: View {
         }.font(.callout).padding(12).background(
           MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 12))
       }
-      Toggle(isOn: $model.memoryMode) {
-        if typeSize.isAccessibilitySize {
-          Text(language.text("Memories", "الذكريات")).font(.subheadline)
-        } else {
-          Label(
-            language.text("Use saved memories", "استخدام الذكريات المحفوظة"),
-            systemImage: "doc.text.magnifyingglass"
-          ).font(.subheadline)
-        }
-      }
-      .accessibilityLabel(language.text("Use saved memories", "استخدام الذكريات المحفوظة"))
-      .disabled(model.isGenerating || model.isTransitioning || !model.hasLoaded)
-      .accessibilityIdentifier("chat-memory-mode")
-      .padding(.horizontal, 8)
       if model.memoryMode {
-        Text(
-          language.text(
-            "Memory questions use current saved sources. Earlier AI replies are not evidence.",
-            "نستخدم المصادر المحفوظة الحالية لأسئلة الذكريات. ردود الذكاء السابقة ليست دليلاً.")
-        )
-        .font(.caption).foregroundStyle(MemoryTheme.secondary).padding(.horizontal, 8)
+        HStack(spacing: 6) {
+          Label(
+            language.text("Using saved memories", "استخدام الذكريات المحفوظة"),
+            systemImage: "doc.text.magnifyingglass")
+          Spacer(minLength: 0)
+          Button {
+            model.memoryMode = false
+          } label: {
+            Image(systemName: "xmark").frame(width: 44, height: 44)
+          }
+          .accessibilityLabel(language.text("Turn off saved memories", "إيقاف استخدام الذكريات"))
+          .disabled(
+            model.isGenerating || model.isTranscribing || model.isTransitioning || !model.hasLoaded)
+        }
+        .font(.caption)
+        .foregroundStyle(MemoryTheme.secondary)
+        .padding(.leading, 14)
+        .background(MemoryTheme.panel, in: Capsule())
+        .accessibilityIdentifier("chat-memory-active")
       }
 
-      HStack(alignment: .bottom, spacing: 8) {
+      HStack(alignment: .bottom, spacing: 4) {
+        Menu {
+          Button(action: openRecordings) {
+            Label(language.text("Recordings", "التسجيلات"), systemImage: "waveform")
+          }
+          Toggle(isOn: $model.memoryMode) {
+            Label(
+              language.text("Use saved memories", "استخدام الذكريات المحفوظة"),
+              systemImage: "doc.text.magnifyingglass")
+          }
+          .disabled(
+            model.isGenerating || model.isTranscribing || model.isTransitioning || !model.hasLoaded
+          )
+          .accessibilityIdentifier("chat-memory-mode")
+        } label: {
+          Image(systemName: "plus")
+            .font(.system(size: 24, weight: .regular))
+            .frame(width: 44, height: 48)
+        }
+        .accessibilityLabel(language.text("Chat options", "خيارات المحادثة"))
+        .accessibilityIdentifier("chat-options")
+
         TextField(
           "", text: $model.draft,
-          prompt: Text(language.text("Ask local AI…", "اسأل الذكاء المحلي…")), axis: .vertical
+          prompt: Text(language.text("Message MemoryOS…", "راسل MemoryOS…")), axis: .vertical
         )
         .lineLimit(1...(typeSize.isAccessibilitySize ? 3 : 6)).font(.body).padding(.vertical, 12)
         .fixedSize(horizontal: false, vertical: true)
@@ -228,36 +236,18 @@ struct ChatView: View {
             filled: true, identifier: "chat-send"
           ) {
             followsLatest = true
+            composerFocused = false
             Task { await model.send() }
           }.disabled(!model.canSend)
         }
       }
-      .padding(.horizontal, 12).padding(.vertical, 5)
-      .overlay(RoundedRectangle(cornerRadius: 28).stroke(MemoryTheme.line, lineWidth: 0.75))
+      .padding(.horizontal, 6).padding(.vertical, 5)
+      .memoryGlass(in: RoundedRectangle(cornerRadius: 30), interactive: true)
       .animation(reduceMotion ? nil : .easeOut(duration: 0.15), value: model.isGenerating)
-      HStack {
-        if !typeSize.isAccessibilitySize || !composerFocused {
-          Text(language.text("Local AI · Experimental", "ذكاء محلي · تجريبي"))
-        }
-        Spacer()
-        if composerFocused {
-          Button(language.text("Done", "تم")) { composerFocused = false }
-            .frame(minWidth: 44, minHeight: 44)
-            .accessibilityIdentifier("chat-keyboard-done")
-        }
-      }.font(.caption).foregroundStyle(MemoryTheme.secondary)
+
     }
     .padding(.horizontal, 18).padding(.top, 8).padding(.bottom, 8)
     .background(MemoryTheme.canvas)
-  }
-
-  @ViewBuilder
-  private func toolbarLabel(_ title: String, symbol: String) -> some View {
-    if typeSize.isAccessibilitySize {
-      Image(systemName: symbol).font(.system(size: 28)).accessibilityLabel(title)
-    } else {
-      Label(title, systemImage: symbol)
-    }
   }
 }
 

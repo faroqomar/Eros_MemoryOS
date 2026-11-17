@@ -5,25 +5,40 @@ import SwiftUI
 struct ChatHistoryView: View {
   let model: ChatViewModel
   let language: AppLanguage
+  var onOpen: () -> Void = {}
+  @State private var search = ""
   @Environment(\.dismiss) private var dismiss
   @State private var renaming: ChatConversation?
   @State private var deleting: ChatConversation?
 
   var body: some View {
     NavigationStack {
-      List(model.conversations) { conversation in
+      List(
+        model.conversations.filter { conversation in
+          (conversation.pendingVoice != nil || !conversation.messages.isEmpty
+            || !conversation.draft.isEmpty
+            || conversation.title != "New chat" || conversation.memoryMode)
+            && (search.isEmpty || conversation.title.localizedStandardContains(search))
+        }
+      ) { conversation in
         HStack {
           Button {
             Task {
               await model.open(conversation.id)
-              if model.error == nil { dismiss() }
+              if model.error == nil {
+                onOpen()
+                dismiss()
+              }
             }
           } label: {
             VStack(alignment: .leading, spacing: 6) {
               Text(conversation.title).font(.headline)
               Text(
                 conversation.messages.last?.text
-                  ?? language.text("No messages yet", "لا توجد رسائل بعد")
+                  ?? (conversation.pendingVoice != nil
+                    ? language.text(
+                      "Voice message · transcript pending", "رسالة صوتية · بانتظار التفريغ")
+                    : language.text("No messages yet", "لا توجد رسائل بعد"))
               )
               .font(.caption).foregroundStyle(MemoryTheme.secondary).lineLimit(2)
             }.frame(maxWidth: .infinity, alignment: .leading).frame(minHeight: 52)
@@ -41,8 +56,10 @@ struct ChatHistoryView: View {
           }
           .accessibilityLabel(
             language.text("Chat actions", "خيارات المحادثة") + ": " + conversation.title)
-        }.disabled(model.isGenerating || model.isTransitioning || model.isLoading)
+        }.disabled(
+          model.isGenerating || model.isTranscribing || model.isTransitioning || model.isLoading)
       }
+      .searchable(text: $search, prompt: language.text("Search chats", "بحث في المحادثات"))
       .scrollContentBackground(.hidden).background(MemoryTheme.canvas)
       .navigationTitle(language.text("Saved chats", "المحادثات المحفوظة"))
       .safeAreaInset(edge: .bottom) {

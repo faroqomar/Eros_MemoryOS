@@ -1,0 +1,12 @@
+{
+  "audioSHA256" : "35720a23b6e33931cef7a5e707fa132ccc9fe53910b0bfbfa863d441df848fd9",
+  "audioSeconds" : 600.487875,
+  "cancelAfterSeconds" : 1,
+  "cancellationSeconds" : 0.3210510015487671,
+  "cancelled" : true,
+  "modelID" : "ggerganov\/whisper.cpp\/ggml-small-q5_1.bin@ae85e4a935d7a567bd102fe55afc16bb595bdb618e11b2fc7591bc08120411bb",
+  "provider" : "whisper.cpp",
+  "residentBytesAfter" : 200753152,
+  "residentBytesAtCancellation" : 526434304,
+  "residentBytesBefore" : 69861376
+}

@@ -1,0 +1,42 @@
+{
+  "baseHEAD": "9c11150cdb013976cef59b02d3a110b758374776",
+  "dirty": true,
+  "sourceFiles": 88,
+  "sha256": "a6a3acaa4a78100afab615577dd04b955039e8e7201df2f66f015e5669f4b73b",
+  "method": "Sorted unique Git tracked/nonignored untracked files in app/audio/chat/transcription/native test roots and two speech preparation scripts; path UTF8 NUL bytes NUL; Swift/project/plist/config/JSON/PNG/TXT/Python/AIFF inputs",
+  "phoneRepairInstalled": false,
+  "deviceEvidence": "iPhone 18 Pro Max / iOS 27.2 Simulator",
+  "simulatorAppSHA256": "af59aa4c37379c1eceb17156e3a46ec980563ce937d9e30dcdc7b43de51cc8d9",
+  "phoneAppSHA256": "33f9ca5ff778220cbbfc5e3ca3608c6f672afd5934e295931adab02310d35ac4",
+  "selection": {
+    "gitArguments": [
+      "ls-files",
+      "-co",
+      "--exclude-standard",
+      "--"
+    ],
+    "roots": [
+      "native/MemoryOS",
+      "native/LocalAudio",
+      "native/LocalChat",
+      "native/LocalTranscription",
+      "native/MemoryOSTests",
+      "native/MemoryOSUITests",
+      "native/MemoryOS.xcodeproj/project.pbxproj",
+      "scripts/bundle-speech-model.py",
+      "scripts/prepare-transcription-models.py"
+    ],
+    "suffixes": [
+      ".aiff",
+      ".json",
+      ".pbxproj",
+      ".plist",
+      ".png",
+      ".py",
+      ".swift",
+      ".txt",
+      ".xcconfig"
+    ],
+    "ordering": "sorted unique existing file paths; hash path UTF8 + NUL + file bytes + NUL"
+  }
+}
