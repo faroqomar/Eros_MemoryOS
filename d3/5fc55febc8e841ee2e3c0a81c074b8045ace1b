@@ -1,0 +1,24 @@
+docs/evidence/voice-2026-11-15/voice-chat/results.json
+  s_71df8a91aaeb19::t_e048adca88fe7f 161-169
+  s_71df8a91aaeb19::t_0336867ea4df25 141-143,149-150
+README.md
+  s_71df8a91aaeb19::t_e048adca88fe7f 3
+docs/tasks/2026-11-17-voice-chat.md
+  s_71df8a91aaeb19::t_e048adca88fe7f 3,144,147-148
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "d35fc55febc8e841ee2e3c0a81c074b8045ace1b",
+  "prompts": {},
+  "sessions": {
+    "s_71df8a91aaeb19": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1e008-7e93-75b0-ba38-1b9a7789daf2",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
