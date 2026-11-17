@@ -56,10 +56,12 @@ public struct ChatMessage: Identifiable, Codable, Equatable, Sendable {
   public var status: ChatMessageStatus
   public var sources: [ChatEvidence]
   public let createdAt: Date
+  public var voice: ChatVoiceAttachment?
 
   public init(
     id: UUID = UUID(), role: ChatRole, text: String,
-    status: ChatMessageStatus = .complete, sources: [ChatEvidence] = [], createdAt: Date = Date()
+    status: ChatMessageStatus = .complete, sources: [ChatEvidence] = [], createdAt: Date = Date(),
+    voice: ChatVoiceAttachment? = nil
   ) {
     self.id = id
     self.role = role
@@ -67,6 +69,7 @@ public struct ChatMessage: Identifiable, Codable, Equatable, Sendable {
     self.status = status
     self.sources = sources
     self.createdAt = createdAt
+    self.voice = voice
   }
 }
 
@@ -76,17 +79,20 @@ public struct ChatConversation: Identifiable, Codable, Equatable, Sendable {
   public var messages: [ChatMessage]
   public var draft: String
   public var memoryMode: Bool
+  public var pendingVoice: PendingVoice?
   public let createdAt: Date
 
   public init(
     id: UUID = UUID(), title: String = "New chat", messages: [ChatMessage] = [],
-    draft: String = "", memoryMode: Bool = false, createdAt: Date = Date()
+    draft: String = "", memoryMode: Bool = false, createdAt: Date = Date(),
+    pendingVoice: PendingVoice? = nil
   ) {
     self.id = id
     self.title = title
     self.messages = messages
     self.draft = draft
     self.memoryMode = memoryMode
+    self.pendingVoice = pendingVoice
     self.createdAt = createdAt
   }
 }
@@ -95,16 +101,19 @@ public struct ChatSnapshot: Codable, Equatable, Sendable {
   public var formatVersion: Int
   public var conversations: [ChatConversation]
   public var selectedID: UUID?
+  /// Optional so archives created before Home had independent input remain readable.
+  public var homeDraft: String?
   /// Monotonic ordering prevents a delayed save from overwriting a newer snapshot.
   public var revision: UInt64
 
   public init(
     formatVersion: Int = 1, conversations: [ChatConversation] = [],
-    selectedID: UUID? = nil, revision: UInt64 = 0
+    selectedID: UUID? = nil, revision: UInt64 = 0, homeDraft: String? = nil
   ) {
     self.formatVersion = formatVersion
     self.conversations = conversations
     self.selectedID = selectedID
+    self.homeDraft = homeDraft
     self.revision = revision
   }
 }
@@ -134,13 +143,16 @@ public enum ChatLimits {
 extension ChatSnapshot {
   public func validate() throws {
     guard formatVersion == 1 else { throw ChatError.unsupportedVersion }
-    guard revision < UInt64.max, conversations.count <= ChatLimits.conversations,
+    guard revision < UInt64.max, (homeDraft?.utf8.count ?? 0) <= ChatLimits.draftBytes,
+      conversations.count <= ChatLimits.conversations,
       Set(conversations.map(\.id)).count == conversations.count,
       selectedID == nil || conversations.contains(where: { $0.id == selectedID })
     else {
       throw ChatError.invalidArchive
     }
     var messageIDs = Set<UUID>()
+    var voiceRecordingIDs = Set<UUID>()
+    var voiceJobIDs = Set<UUID>()
     for conversation in conversations {
       guard !conversation.title.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
         conversation.title.utf8.count <= ChatLimits.titleBytes,
@@ -149,6 +161,23 @@ extension ChatSnapshot {
         conversation.messages.count.isMultiple(of: 2),
         conversation.createdAt.timeIntervalSince1970.isFinite
       else { throw ChatError.invalidArchive }
+      if let voice = conversation.pendingVoice {
+        guard voice.durationSeconds.isFinite, voice.durationSeconds > 0,
+          voice.durationSeconds <= 7_200,
+          voiceRecordingIDs.insert(voice.recordingID).inserted,
+          voiceJobIDs.insert(voice.jobID).inserted, conversation.messages.isEmpty
+        else { throw ChatError.invalidArchive }
+        if let transcript = voice.transcript {
+          guard transcript.recordingID == voice.recordingID,
+            transcript.text.utf8.count <= 1_048_576
+          else { throw ChatError.invalidArchive }
+          try ChatVoiceAttachment(
+            recordingID: voice.recordingID, transcriptID: transcript.id,
+            passageIDs: transcript.passageIDs, durationSeconds: voice.durationSeconds,
+            passages: transcript.passages
+          ).validate(textByteLimit: 1_048_576)
+        }
+      }
       for (position, message) in conversation.messages.enumerated() {
         guard messageIDs.insert(message.id).inserted,
           message.role == (position.isMultiple(of: 2) ? .user : .assistant),
@@ -161,6 +190,11 @@ extension ChatSnapshot {
           message.sources.allSatisfy({ $0.text.utf8.count <= ChatLimits.draftBytes }),
           message.createdAt.timeIntervalSince1970.isFinite
         else { throw ChatError.invalidArchive }
+        if let voice = message.voice {
+          guard message.role == .user, voiceRecordingIDs.insert(voice.recordingID).inserted
+          else { throw ChatError.invalidArchive }
+          try voice.validate()
+        }
       }
     }
   }

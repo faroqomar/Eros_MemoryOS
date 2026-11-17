@@ -1,0 +1,171 @@
+{
+  "source": {
+    "baseHEAD": "9c11150cdb013976cef59b02d3a110b758374776",
+    "dirty": true,
+    "sourceFiles": 88,
+    "sha256": "a6a3acaa4a78100afab615577dd04b955039e8e7201df2f66f015e5669f4b73b",
+    "method": "Sorted unique Git tracked/nonignored untracked files in app/audio/chat/transcription/native test roots and two speech preparation scripts; path UTF8 NUL bytes NUL; Swift/project/plist/config/JSON/PNG/TXT/Python/AIFF inputs",
+    "phoneRepairInstalled": false,
+    "deviceEvidence": "iPhone 18 Pro Max / iOS 27.2 Simulator",
+    "simulatorAppSHA256": "af59aa4c37379c1eceb17156e3a46ec980563ce937d9e30dcdc7b43de51cc8d9",
+    "phoneAppSHA256": "33f9ca5ff778220cbbfc5e3ca3608c6f672afd5934e295931adab02310d35ac4",
+    "selection": {
+      "gitArguments": [
+        "ls-files",
+        "-co",
+        "--exclude-standard",
+        "--"
+      ],
+      "roots": [
+        "native/MemoryOS",
+        "native/LocalAudio",
+        "native/LocalChat",
+        "native/LocalTranscription",
+        "native/MemoryOSTests",
+        "native/MemoryOSUITests",
+        "native/MemoryOS.xcodeproj/project.pbxproj",
+        "scripts/bundle-speech-model.py",
+        "scripts/prepare-transcription-models.py"
+      ],
+      "suffixes": [
+        ".aiff",
+        ".json",
+        ".pbxproj",
+        ".plist",
+        ".png",
+        ".py",
+        ".swift",
+        ".txt",
+        ".xcconfig"
+      ],
+      "ordering": "sorted unique existing file paths; hash path UTF8 + NUL + file bytes + NUL"
+    }
+  },
+  "packageTests": {
+    "LocalChat": 45,
+    "LocalAudio": 17,
+    "LocalTranscription": 10
+  },
+  "nativeSwiftTests": 62,
+  "nativeXCTestFixtureSeed": 1,
+  "audioWorkflowFinalRefinementTests": 15,
+  "uiUniquePassing": 14,
+  "uiHistory": "First selected11 ran8 passes/3 selector failures; corrected6-test rerun passed, covering the3 failed tests and memory-source/scrolling checks. Initial broad attempt intentionally stopped before source repairs; not a pass. Four visual probes were rejected and fully reverted.",
+  "simulatorWhisperSmoke": {
+    "fixtureSeconds": 3,
+    "elapsedSeconds": 19.350502708,
+    "processPeakBytes": 718110720,
+    "repetitions": 1,
+    "comparisonClaim": false
+  },
+  "scrollSignpostSeconds": [
+    2.367354,
+    2.367413,
+    2.366644
+  ],
+  "scrollMeaning": "Gesture and deceleration duration only; no raster frame-budget or phone responsiveness claim",
+  "phoneRelease": {
+    "build": true,
+    "analyze": true,
+    "linkage": true,
+    "deepSignature": true,
+    "installed": false
+  },
+  "ownerAcceptance": {
+    "phoneChecklist": true,
+    "sidebarKeyboardHeaderRemainsVisible": true,
+    "exactInstalledBuildIndependentlyCaptured": false
+  },
+  "openQualifications": [
+    "natural Iraqi/mixed accuracy; synthetic small WER36.36/41.67 exceeds20percent",
+    "physical latency/memory/heat/battery, OS calls/routes/low-storage/write-kill/locked protection, iOS18 runtime",
+    "complete audio backup/restore",
+    "prior combined generation/scrolling proxy failure and raster/input-to-pixel qualification",
+    "intermittent Simulator header rendering/capture observation; absent in owner phone check; cause unproven"
+  ],
+  "accessibilityAudit": "owner-deferred, not passed",
+  "restoredNavigationSmoke": 2,
+  "retainedVisualProbes": 0,
+  "screenshots": {
+    "keyboard.png": {
+      "sha256": "fda035a9cf9816b2dfc8ae05bfae83e6707a4de8dd212e79781eeee19aba875e",
+      "bytes": 219916
+    },
+    "voice-transcript.png": {
+      "sha256": "0d8407c0e2db6f05274f38fe18548d677e597c00299c3ce1e857647087f35243",
+      "bytes": 193000
+    },
+    "home.png": {
+      "sha256": "3de8d09af477d06e500dccc0e128b5bdf73e12f59a09b87a7ba7b3122248f656",
+      "bytes": 173936
+    },
+    "header-rendering-unresolved.png": {
+      "sha256": "5058c4d6cf0b56787695ac192d22f00e9c0ce431ea15600cf7de11c7222e49ef",
+      "bytes": 201473
+    },
+    "transcribing.png": {
+      "sha256": "f48b96dac1f260d503381ca44e74fcacb96e73e7248b67da9816945d31b4289c",
+      "bytes": 24109,
+      "stage": "Step 3 fresh capture; same verified Release source; fictional recording"
+    }
+  },
+  "cleanup": {
+    "oldBuildLogs": {
+      "files": 11,
+      "logicalBefore": 4423640,
+      "allocatedBefore": 4444160,
+      "logicalAfter": 0,
+      "allocatedAfter": 0,
+      "reason": "Resolved historical build/test attempts covered by existing voice task and launch-repair/result receipts; no active step2 log uses these paths"
+    },
+    "temporaryFiles": 29,
+    "temporaryLogicalBefore": 3376938,
+    "temporaryAllocatedBefore": 3850240,
+    "temporaryLogicalAfter": 0,
+    "temporaryAllocatedAfter": 0,
+    "unusedSwiftTokenBytesRemoved": 51,
+    "retained": "Active Simulator/iPhone products and SwiftPM builds; remaining test bundles including restored-source navigation smoke; selected dark captures, compact observed results/model/source receipts; existing unresolved historical evidence; upstream/models, original references and phone data. Earlier native-final and ui-recheck bundles are absent; their observed results are compacted, not represented as retained bundles."
+  },
+  "compactedTestResults": {
+    "native-final": "62 Swift Testing functions in 13 suites and fixture seed passed during this rerun; observed output compacted here. Original xcresult no longer present at final check.",
+    "ui-recheck": "Six corrected UI tests passed during this rerun; observed output compacted here. Original xcresult no longer present at final check."
+  },
+  "testBundleRetention": "Raw xcresult bundles remain local build-cache artifacts, not part of this portable receipt. Counts and failures were observed during the recorded runs; earlier bundles are absent. Rebuilding may prune remaining bundles.",
+  "step3": {
+    "base": "86cf5f57b1684f9da2ef302a21c039bdc68e6c93",
+    "branch": "feat/voice-chat-recording",
+    "review": "Independent Standards and Spec verified unchanged 88-file digest; Standards also matched five linkage-script/probe hashes. No new implementation findings. Stale documentation and missing pending capture corrected.",
+    "fictionalFixtureSeedXCTestPassed": 1,
+    "freshPendingCapture": true,
+    "cleanup": {
+      "filesRemoved": 16,
+      "logicalBefore": 3305659,
+      "allocatedBefore": 3338240,
+      "logicalAfter": 0,
+      "allocatedAfter": 0,
+      "categories": [
+        "Resolved audio build/test logs and red-to-green diagnostics with compact results retained",
+        "Two redundant historical screenshot-gallery wrappers; PNGs retained",
+        "Resolved Step 3 fictional fixture-seed log after recording its one passing XCTest result",
+        "PR upload body and duplicate external cleanup receipt after canonical delivery records existed"
+      ],
+      "retained": [
+        "Unresolved accessibility and measurement logs",
+        "Original comparison fixtures, exports and historical source identities",
+        "Selected dark fictional captures and compact current evidence",
+        "Active build products and imported models",
+        "Unrelated dirty documentation and published external artifact links"
+      ]
+    },
+    "appSourceChanged": false,
+    "delivery": "Draft PR open; not merged; recorded required qualifications remain blocked",
+    "sourceCommit": "101f391b596bcb81227fd572f76d779c2aeba9e3",
+    "pullRequest": "https://github.com/faroqomar/Eros_MemoryOS/pull/6",
+    "hostedChecksConfigured": false,
+    "branchProtected": false,
+    "stagedSourceMatchesVerifiedDigest": true,
+    "relativeDocumentationLinksChecked": 228,
+    "evidenceGuard": "pass",
+    "whitespaceCheck": "pass"
+  }
+}

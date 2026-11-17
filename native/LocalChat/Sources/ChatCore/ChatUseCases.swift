@@ -5,6 +5,8 @@ public actor ChatUseCases {
   private let repository: any ChatRepository
   private let model: any ChatModel
   private let memory: any ChatMemoryRetrieving
+  private let voiceTranscriber: any VoiceTranscribing
+  private var activeVoice: UUID?
   private var snapshot = ChatSnapshot()
   private var loaded = false
   private var activeGeneration: UUID?
@@ -13,11 +15,13 @@ public actor ChatUseCases {
 
   public init(
     repository: any ChatRepository, model: any ChatModel,
-    memory: any ChatMemoryRetrieving = NoChatMemory()
+    memory: any ChatMemoryRetrieving = NoChatMemory(),
+    voiceTranscriber: any VoiceTranscribing = UnavailableVoiceTranscriber()
   ) {
     self.repository = repository
     self.model = model
     self.memory = memory
+    self.voiceTranscriber = voiceTranscriber
   }
 
   private func acquireTransaction() async {
@@ -58,6 +62,10 @@ public actor ChatUseCases {
     } catch let error as ChatError { throw error } catch { throw ChatError.storage }
     // An interrupted process cannot continue an in-flight native operation.
     for c in next.conversations.indices {
+      if next.conversations[c].pendingVoice != nil {
+        next.conversations[c].pendingVoice?.status = .interrupted
+        next.conversations[c].pendingVoice?.failure = .interrupted
+      }
       for m in next.conversations[c].messages.indices
       where next.conversations[c].messages[m].status == .generating {
         next.conversations[c].messages[m].status = .interrupted
@@ -82,18 +90,61 @@ public actor ChatUseCases {
     return snapshot
   }
 
-  public func newConversation() async throws -> ChatSnapshot {
+  /// Starts with independent input. An untouched placeholder can be reused without losing data.
+  public func newConversation(draft: String = "") async throws -> ChatSnapshot {
     await acquireTransaction()
     defer { releaseTransaction() }
     guard loaded else { throw ChatError.storage }
     guard activeGeneration == nil else { throw ChatError.busy }
-    guard snapshot.conversations.count < ChatLimits.conversations else {
-      throw ChatError.conversationLimit
-    }
+    try Task.checkCancellation()
+    guard draft.utf8.count <= ChatLimits.draftBytes else { throw ChatError.messageTooLong }
     var next = snapshot
-    let chat = ChatConversation()
-    next.conversations.insert(chat, at: 0)
-    next.selectedID = chat.id
+    try selectNewConversation(in: &next, draft: draft)
+    try await commit(next)
+    return snapshot
+  }
+
+  /// Moves Home input and selects its conversation in one archive write.
+  public func prepareHomeConversation() async throws -> ChatSnapshot {
+    await acquireTransaction()
+    defer { releaseTransaction() }
+    guard loaded else { throw ChatError.storage }
+    guard activeGeneration == nil else { throw ChatError.busy }
+    try Task.checkCancellation()
+    var next = snapshot
+    try selectNewConversation(in: &next, draft: next.homeDraft ?? "")
+    next.homeDraft = ""
+    try await commit(next)
+    return snapshot
+  }
+
+  private func selectNewConversation(in next: inout ChatSnapshot, draft: String) throws {
+    if let index = next.conversations.firstIndex(where: {
+      $0.messages.isEmpty && $0.draft.isEmpty && $0.title == "New chat" && !$0.memoryMode
+        && $0.pendingVoice == nil
+    }) {
+      var chat = next.conversations.remove(at: index)
+      chat.draft = draft
+      next.conversations.insert(chat, at: 0)
+      next.selectedID = chat.id
+    } else {
+      guard next.conversations.count < ChatLimits.conversations else {
+        throw ChatError.conversationLimit
+      }
+      let chat = ChatConversation(draft: draft)
+      next.conversations.insert(chat, at: 0)
+      next.selectedID = chat.id
+    }
+  }
+
+  public func updateHomeDraft(_ draft: String) async throws -> ChatSnapshot {
+    await acquireTransaction()
+    defer { releaseTransaction() }
+    guard loaded else { throw ChatError.storage }
+    try Task.checkCancellation()
+    guard draft.utf8.count <= ChatLimits.draftBytes else { throw ChatError.messageTooLong }
+    var next = snapshot
+    next.homeDraft = draft
     try await commit(next)
     return snapshot
   }
@@ -145,19 +196,25 @@ public actor ChatUseCases {
     return snapshot
   }
 
-  public func updateDraft(_ draft: String, memoryMode: Bool, conversationID: UUID) async throws
+  public func updateDraft(
+    _ draft: String, memoryMode: Bool, conversationID: UUID, homeDraft: String? = nil
+  ) async throws
     -> ChatSnapshot
   {
     await acquireTransaction()
     defer { releaseTransaction() }
     try Task.checkCancellation()
     guard draft.utf8.count <= ChatLimits.draftBytes else { throw ChatError.messageTooLong }
+    guard (homeDraft?.utf8.count ?? 0) <= ChatLimits.draftBytes else {
+      throw ChatError.messageTooLong
+    }
     guard let index = snapshot.conversations.firstIndex(where: { $0.id == conversationID }) else {
       throw ChatError.missingConversation
     }
     var next = snapshot
     next.conversations[index].draft = draft
     next.conversations[index].memoryMode = memoryMode
+    if let homeDraft { next.homeDraft = homeDraft }
     try await commit(next)
     return snapshot
   }
@@ -209,16 +266,25 @@ public actor ChatUseCases {
     return (turns, sources)
   }
 
-  private func begin(reusingReply: Bool, submittedText: String?) async throws -> (
+  private func begin(
+    reusingReply: Bool, submittedText: String?, conversationID: UUID? = nil, voiceJobID: UUID? = nil
+  ) async throws -> (
     UUID, UUID, ChatSnapshot, [ChatTurn], [ChatEvidence], ChatMessage?
   ) {
     await acquireTransaction()
     defer { releaseTransaction() }
     guard loaded else { throw ChatError.storage }
-    guard activeGeneration == nil else { throw ChatError.busy }
-    guard let c = snapshot.conversations.firstIndex(where: { $0.id == snapshot.selectedID }) else {
+    guard activeGeneration == nil, activeVoice == nil || activeVoice == voiceJobID else {
+      throw ChatError.busy
+    }
+    guard
+      let c = snapshot.conversations.firstIndex(where: {
+        $0.id == (conversationID ?? snapshot.selectedID)
+      })
+    else {
       throw ChatError.missingConversation
     }
+    guard snapshot.conversations[c].pendingVoice == nil else { throw ChatError.busy }
     var next = snapshot
     let assistantID: UUID
     let previousReply = reusingReply ? next.conversations[c].messages.last : nil
@@ -289,9 +355,20 @@ public actor ChatUseCases {
     submittedText: String? = nil, reusingReply: Bool = false,
     onUpdate: @escaping @Sendable (ChatSnapshot) async -> Void
   ) async throws -> ChatSnapshot {
+    try await generateResponse(
+      submittedText: submittedText, reusingReply: reusingReply,
+      conversationID: nil, voiceJobID: nil, onUpdate: onUpdate)
+  }
+
+  private func generateResponse(
+    submittedText: String? = nil, reusingReply: Bool,
+    conversationID targetID: UUID?, voiceJobID: UUID?,
+    onUpdate: @escaping @Sendable (ChatSnapshot) async -> Void
+  ) async throws -> ChatSnapshot {
     try Task.checkCancellation()
     let (conversationID, replyID, initial, request, sources, previousReply) = try await begin(
-      reusingReply: reusingReply, submittedText: submittedText)
+      reusingReply: reusingReply, submittedText: submittedText, conversationID: targetID,
+      voiceJobID: voiceJobID)
     await onUpdate(initial)
     var latestText = ""
     var receivedNewText = false
@@ -392,6 +469,160 @@ public actor ChatUseCases {
       if snapshot.revision < UInt64.max - 1 { snapshot.revision += 1 }
     }
     return snapshot
+  }
+
+  /// Idempotent across retries and restarts. A saved recording creates at most one voice conversation.
+  public func beginVoice(recordingID: UUID, durationSeconds: Double) async throws -> ChatSnapshot {
+    await acquireTransaction()
+    defer { releaseTransaction() }
+    guard loaded else { throw ChatError.storage }
+    guard activeGeneration == nil, activeVoice == nil else { throw ChatError.busy }
+    guard durationSeconds.isFinite, durationSeconds > 0, durationSeconds <= 7_200 else {
+      throw VoiceFailure.recordingUnavailable
+    }
+    try Task.checkCancellation()
+    var next = snapshot
+    if let existing = next.conversations.first(where: {
+      $0.pendingVoice?.recordingID == recordingID
+        || $0.messages.contains { $0.voice?.recordingID == recordingID }
+    }) {
+      next.selectedID = existing.id
+    } else {
+      try selectNewConversation(in: &next, draft: "")
+      guard let index = next.conversations.firstIndex(where: { $0.id == next.selectedID }) else {
+        throw ChatError.missingConversation
+      }
+      next.conversations[index].pendingVoice = PendingVoice(
+        recordingID: recordingID, durationSeconds: durationSeconds)
+      next.conversations[index].title = "Voice message"
+    }
+    try await commit(next)
+    return snapshot
+  }
+
+  private func markVoice(
+    conversationID: UUID, jobID: UUID, status: VoiceStatus,
+    failure: VoiceFailure? = nil
+  ) async throws -> ChatSnapshot {
+    await acquireTransaction()
+    defer { releaseTransaction() }
+    guard let index = snapshot.conversations.firstIndex(where: { $0.id == conversationID }),
+      snapshot.conversations[index].pendingVoice?.jobID == jobID
+    else { throw ChatError.missingConversation }
+    var next = snapshot
+    next.conversations[index].pendingVoice?.status = status
+    next.conversations[index].pendingVoice?.failure = failure
+    try await commit(next)
+    return snapshot
+  }
+
+  private func retainVoiceTranscript(conversationID: UUID, jobID: UUID, transcript: VoiceTranscript)
+    async throws -> ChatSnapshot
+  {
+    await acquireTransaction()
+    defer { releaseTransaction() }
+    guard let index = snapshot.conversations.firstIndex(where: { $0.id == conversationID }),
+      snapshot.conversations[index].pendingVoice?.jobID == jobID
+    else { throw ChatError.missingConversation }
+    guard transcript.text.utf8.count <= 1_048_576 else { throw ChatError.messageTooLong }
+    var next = snapshot
+    next.conversations[index].pendingVoice?.transcript = transcript
+    try await commit(next)
+    return snapshot
+  }
+
+  private func resolveVoice(conversationID: UUID, jobID: UUID, transcript: VoiceTranscript)
+    async throws -> ChatSnapshot
+  {
+    await acquireTransaction()
+    defer { releaseTransaction() }
+    guard let index = snapshot.conversations.firstIndex(where: { $0.id == conversationID }),
+      let pending = snapshot.conversations[index].pendingVoice, pending.jobID == jobID,
+      pending.recordingID == transcript.recordingID
+    else { throw ChatError.missingConversation }
+    let text = transcript.text.trimmingCharacters(in: .whitespacesAndNewlines)
+    guard !text.isEmpty else { throw VoiceFailure.noSpeech }
+    guard transcript.text.utf8.count <= ChatLimits.draftBytes else {
+      throw ChatError.messageTooLong
+    }
+    let attachment = ChatVoiceAttachment(
+      recordingID: pending.recordingID, transcriptID: transcript.id,
+      passageIDs: transcript.passageIDs, durationSeconds: pending.durationSeconds,
+      passages: transcript.passages)
+    try attachment.validate()
+    try Task.checkCancellation()
+    var next = snapshot
+    next.conversations[index].messages = [
+      ChatMessage(role: .user, text: transcript.text, voice: attachment),
+      ChatMessage(role: .assistant, text: "", status: .interrupted),
+    ]
+    next.conversations[index].pendingVoice = nil
+    if next.conversations[index].title == "Voice message" {
+      var title = String(text.prefix(40))
+      while title.utf8.count > ChatLimits.titleBytes { title.removeLast() }
+      next.conversations[index].title = title
+    }
+    try await commit(next)
+    return snapshot
+  }
+
+  /// Speech and text inference share a lease. The target identity never follows UI selection.
+  public func processVoice(
+    conversationID: UUID, jobID: UUID,
+    onUpdate: @escaping @Sendable (ChatSnapshot) async -> Void
+  ) async throws -> ChatSnapshot {
+    await acquireTransaction()
+    guard activeGeneration == nil, activeVoice == nil,
+      let pending = snapshot.conversations.first(where: { $0.id == conversationID })?.pendingVoice,
+      pending.jobID == jobID
+    else {
+      releaseTransaction()
+      throw ChatError.busy
+    }
+    activeVoice = jobID
+    releaseTransaction()
+    defer { activeVoice = nil }
+    var resolved = false
+    do {
+      try Task.checkCancellation()
+      await onUpdate(
+        try await markVoice(conversationID: conversationID, jobID: jobID, status: .transcribing))
+      await model.unload()
+      try Task.checkCancellation()
+      let transcript: VoiceTranscript
+      if let retained = pending.transcript {
+        transcript = retained
+      } else {
+        transcript = try await voiceTranscriber.transcribe(recordingID: pending.recordingID)
+        try Task.checkCancellation()
+        await onUpdate(
+          try await retainVoiceTranscript(
+            conversationID: conversationID, jobID: jobID, transcript: transcript))
+      }
+      try Task.checkCancellation()
+      let state = try await resolveVoice(
+        conversationID: conversationID, jobID: jobID, transcript: transcript)
+      resolved = true
+      await onUpdate(state)
+      return try await generateResponse(
+        reusingReply: true, conversationID: conversationID,
+        voiceJobID: jobID, onUpdate: onUpdate)
+    } catch {
+      if !resolved {
+        let failure: VoiceFailure =
+          error is CancellationError
+          ? .interrupted
+          : (error as? VoiceFailure)
+            ?? ((error as? ChatError) == .storage ? .storage : .transcriptionFailed)
+        do {
+          await onUpdate(
+            try await markVoice(
+              conversationID: conversationID, jobID: jobID,
+              status: error is CancellationError ? .interrupted : .failed, failure: failure))
+        } catch { throw ChatError.storage }
+      }
+      throw error
+    }
   }
 
   public func unload() async { await model.unload() }

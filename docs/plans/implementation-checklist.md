@@ -232,3 +232,14 @@ C38 authorizes Step 1; C39 requires completed downloads/repairs and C40 selects 
 ## 5. Connect local AI to chat
 
 C47/C48 implement and independently review real local-model streaming, conversation persistence, composer/scroll/retry controls, formatting/copy, source-backed app-memory questions and MVVM boundaries. C49 repairs rendering and measurement lifecycle; C53 starts Step 3 with mandatory documentation cleanup. See the [current task and compact evidence](../tasks/2026-11-15-local-ai-chat.md). A draft PR is permitted; combined latency, raster timing, remaining OS/offline qualification and owner acceptance still block merge. Physical-phone work is deferred; no release or production-model adoption is claimed.
+
+## 6. Add real voice recording and transcription
+
+Step 2 remains blocked after independent review and repairs: [implementation and verification evidence](../tasks/2026-11-15-voice-transcription.md). Owner update, November 17: leave accessibility work aside for now; retain failed diagnostics as deferred, not passed. The owner reports the later phone checklist works; the [November 17 voice/chat rerun](../tasks/2026-11-17-voice-chat.md) records functional acceptance and fresh review. Iraqi/mixed quality misses the measured target, and numerical phone cost, OS recovery and supported-runtime qualification remain open. The phone is currently disconnected. Checkboxes retain qualification status.
+
+- [ ] Evaluate AVAudioRecorder; record, pause, resume and save with microphone permissions and visible recording state.
+- [ ] Import supported audio formats; report unsupported, corrupt or missing files.
+- [ ] Compare WhisperKit and whisper.cpp on the same Arabic, Iraqi Arabic, English and mixed recordings; measure transcription accuracy and physical-device cost.
+- [ ] Review and correct transcripts with timestamps and links to unchanged original audio; preserve versions and uncertain words/speakers.
+- [ ] Export transcripts with person, recording and source links.
+- [ ] Recover from calls, interruptions, backgrounding, low storage and termination without losing saved material.

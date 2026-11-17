@@ -88,6 +88,8 @@ Owner instruction C53, 2026-11-15: every Step 3 includes documentation cleanup b
 
 ## Compact evidence retention
 
+Owner clarification, 2026-11-17: do not retain raw chats or personal conversation content in project documentation or under `native/verification`. Keep temporary build/crash diagnostics outside the repository and remove resolved diagnostics after extracting a compact result without conversation content. Never copy owner screen recordings into project evidence. Use fictional data for UI checks; preserve the user's app-owned phone history.
+
 Owner instruction C49, 2026-11-15: retain useful proof, not every tool output. Keep one current task record (aim for 100–150 lines), compact final results and selected dark captures. Summarize failures, repairs and remaining limits accurately. Do not place raw runtime output, call-tree exports, copied diagnostic source or large generated per-file inventories in `docs/`. Keep necessary active diagnostics in ignored task storage; remove resolved retries and superseded captures after preserving their outcome. Preserve original research, source references, user data, active work and the evidence needed for unresolved findings. Record cleanup totals and exceptions without a file-by-file dump.
 
 Run `python3 scripts/check-evidence.py <changed evidence folders/files and task record>` before handback and `python3 scripts/check-evidence.py` against staged content before commit. The guard bounds text size, aggregate changed evidence and hash inventories; it does not certify evidence quality. Do not split or minify dumps to evade it. Extend an existing short record rather than creating repeated receipts. Unchanged historical evidence is outside the guard's default scope.

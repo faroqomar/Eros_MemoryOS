@@ -37,3 +37,8 @@ native/LocalCactusEvaluation/Artifacts/
 *.mobileprovision
 .netrc
 .npmrc
+
+# Reproducible speech SDK artifacts and active raw builder diagnostics.
+native/LocalTranscription/Artifacts/
+native/verification/audio-step1/
+native/verification/audio-step2/

@@ -174,7 +174,11 @@ C47: the owner requests Step 1 of connecting local AI to main-app chat. The supp
 C48, 2026-11-15: the owner requests Step 2 for the active C47 main-app local-chat task. This authorizes fresh independent verification, required repairs and affected rechecks, performance investigation, cleanup and dark evidence. It does not start Step 3 or adopt a production model.
 
 C49, 2026-11-15: the owner requests repair of chat responsiveness, withdraws the extended VoiceOver requirement from the current task, and asks to remove excessive documentation/evidence and prevent recurrence. VoiceOver is a screen reader; Voice Control uses spoken commands. Basic labels, larger text, contrast, Reduce Motion and usable touch controls remain in scope. Failed extended diagnostics are recorded as withdrawn, not passed. AGENTS.md and the workflow now require compact task/results records, selected captures, temporary ignored raw diagnostics and removal of resolved retries; `scripts/check-evidence.py` checks changed evidence size and dump patterns. This does not waive other tasks' or release requirements, authorize Step 3 or establish a performance pass.
-
 ## C53: Step 3 cleanup and chat delivery, 2026-11-15
 
 The owner requests Step 3 for local chat and requires a standing documentation-cleanup rule before delivery work. Every Step 3 must remove confirmed unnecessary material, consolidate useful results, preserve originals and required evidence, and check links and storage totals. The normal private PR/merge authorization remains subject to existing verification and acceptance gates. See the [workflow](../how-to/development-workflow.md#step-3-documentation-cleanup).
+
+
+## Group 6 voice recording authorization, 2026-11-15
+
+The owner requests Step 1 for checklist group 6: record/pause/resume/save with microphone permissions, supported audio import, WhisperKit/whisper.cpp comparison on the same recordings, Iraqi Arabic/English/mixed/names/noise checks, transcript correction, timestamp and uncertainty links, associated exports, and interruption/storage/termination recovery. This authorizes bounded native implementation and builder tests under the standing workflow. It does not start Step 2, Step 3, cloud transfer, release or production model adoption. See the [task record](../tasks/2026-11-15-voice-transcription.md).

@@ -60,7 +60,7 @@ R01-R32 in the [feature register](../feature-register.md) are owner requests. Th
 | --- | --- | --- |
 | A02 | SQLite for local records | Resolved for checklist group 3 Step 1 by the implementation selection below. This is not a production-readiness claim. |
 | A03 | llama.cpp for local text inference | Experimental Simulator baseline under C40. Real CPU/Accelerate SDK builds and Qwen3-0.6B/1.7B comparisons run; quality prevents production adoption. Physical-device results remain open. See the [measured report](../evidence/local-ai-2026-11-14/resume-summary.md). |
-| A04 | WhisperKit or whisper.cpp for transcription | D14 records the shortlist. Evaluate multilingual models for Arabic and English. No final speech model or benchmark exists. See [audio options](audio-recording-and-transcription.md). |
+| A04 | WhisperKit or whisper.cpp for transcription | D14 records the shortlist. Evaluate multilingual models for Arabic and English. No final speech model is selected. Group 6 has host/Simulator comparison evidence; physical iPhone and natural Iraqi qualification remain open. See [audio options](audio-recording-and-transcription.md). |
 | A05 | Multiple local model candidates, including earlier multilingual suggestions | D16 requires selection through testing and analysis. Qwen3-1.7B is an earlier example, not a chosen model or fixed shortlist. Group 4 now records Simulator speed/memory/storage and builder quality review. Physical battery/heat and production adoption remain open. |
 | A06 | Custom memory behavior over existing components | Assistant recommendation. D13 records Wax and Cactus as candidate foundations; exact reuse and custom scope remain open. See [runtime memory options](runtime-memory-options.md). |
 | A08 | Saved filters for generated tabs | Proposed implementation of R21. No design approval exists. |
@@ -69,7 +69,7 @@ R01-R32 in the [feature register](../feature-register.md) are owner requests. Th
 | A11 | Reminder previews followed by selected automatic rules | Proposed action policy. D19 limits initial scope to birthdays; the owner has not selected approval thresholds or exact behavior. |
 | A12 | Optional official authentication/API connection or manual handoff for external AI | D18 selects ChatGPT first. Exact supported iPhone connection, entitlements, models, and data-transfer permissions remain unverified in MemoryOS. |
 | A13 | Evaluate Wax first, then retain it only if the phone experiment meets requirements | Assistant recommendation for the D13 shortlist. Evaluation order and production adoption are not final selections. |
-| A15 | AVAudioRecorder for microphone capture, with separate interchangeable transcription adapters | D14 records the recording candidate. The adapter design, WhisperKit-first evaluation order, job queue, and versioned transcripts remain assistant proposals. No integration or device result exists. |
+| A15 | AVAudioRecorder for microphone capture, with separate interchangeable transcription adapters | Group 6 implements Apple capture and both local transcription adapters with app-owned recordings, versioned passages and recovery. The owner reports working phone capture/chat; measured language/device qualification remains open. See the [current voice/chat record](../tasks/2026-11-17-voice-chat.md). This is experimental integration, not production adoption. |
 
 ## Resolved earlier proposals
 
@@ -130,7 +130,6 @@ C38 authorizes Step 1 implementation and builder checks for local AI comparisons
 ## Checklist group 5 chat, C47, 2026-11-15
 
 C47 starts Step 1 of main-app local chat. Reuse the reviewed llama.cpp CPU adapter and Qwen3-0.6B asset as an experimental integration baseline. This does not reverse group 4 quality failures or select a production model. Keep separate app-owned chat archives and original records; provide explicit memory retrieval and source controls, full-context refusals, recovery and offline operation. The [chat task](../tasks/2026-11-15-local-ai-chat.md) owns current implementation, tests, the requested iPhone 18 Pro Max simulator evidence, and remaining blockers. Independent Step 2 and Step 3 remain separate.
-
 ## C53: mandatory Step 3 documentation cleanup, 2026-11-15
 
 The owner starts Step 3 for local chat and requires updating this standing rule before delivery work: every Step 3 must clean documentation and remove confirmed unnecessary material. The [workflow](../how-to/development-workflow.md#step-3-documentation-cleanup) requires consolidation, link/evidence checks and compact cleanup totals while preserving originals, provenance, active work and required evidence. This adds a delivery duty; existing verification and merge gates remain unchanged.

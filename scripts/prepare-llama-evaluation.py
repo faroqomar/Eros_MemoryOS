@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Build the reviewed llama.cpp CPU library for Mac and arm64 iOS Simulator."""
+"""Build isolated llama.cpp CPU frameworks for Mac, iOS Simulator and iPhone.
+
+Only llama's public C API is exported. Static linkage can resolve its GGML/GGUF
+references against a different version exported by a speech framework.
+"""
 import hashlib
 import json
 import os
@@ -61,7 +65,26 @@ def main():
             "libllama.a", "libggml.a", "libggml-base.a", "libggml-cpu.a", "libggml-blas.a"}]
         if not any(p.name == "libllama.a" for p in libraries):
             raise SystemExit("llama.cpp did not produce its real static library.")
-        run(["xcrun", "libtool", "-static", "-o", framework / "llama", *sorted(libraries)])
+        archive = build / "libmemoryos-llama.a"
+        run(["xcrun", "libtool", "-static", "-o", archive, *sorted(libraries)])
+        symbols = subprocess.check_output(["nm", "-gUj", archive], text=True).splitlines()
+        exports = sorted({symbol for symbol in symbols if symbol.startswith("_llama_")})
+        if "_llama_model_load_from_file" not in exports:
+            raise SystemExit("The reviewed llama public API is missing.")
+        export_file = build / "llama.exports"
+        export_file.write_text("\n".join(exports) + "\n")
+        target = {"macos": "arm64-apple-macos14.0", "simulator": "arm64-apple-ios18.0-simulator",
+                  "device": "arm64-apple-ios18.0"}[platform]
+        run(["xcrun", "clang++", "-dynamiclib", "-target", target, "-isysroot", sysroot,
+             "-Wl,-all_load", archive, "-Wl,-exported_symbols_list," + str(export_file),
+             "-Wl,-install_name,@rpath/llama.framework/llama", "-framework", "Accelerate",
+             "-o", framework / "llama"])
+        actual = set(subprocess.check_output(["nm", "-gUj", framework / "llama"], text=True).splitlines())
+        if actual != set(exports):
+            raise SystemExit("The llama framework must export only its public C API.")
+        imports = subprocess.check_output(["nm", "-u", framework / "llama"], text=True)
+        if any(name in imports for name in ("_ggml_", "_gguf_", "_whisper_")):
+            raise SystemExit("The llama framework has unresolved engine internals.")
         for include in [SOURCE / "include", SOURCE / "ggml/include"]:
             for header in include.glob("*.h"):
                 shutil.copy2(header, framework / "Headers" / header.name)
@@ -86,6 +109,7 @@ def main():
     staging.rename(DESTINATION)
     shutil.copy2(SOURCE / "LICENSE", DESTINATION / "LICENSE")
     result = {"revision": PIN, "release": "b12387", "patches": [],
+              "linkage": "dynamic, two-level namespace; only llama_* exported; private GGML/GGUF",
               "backend": "CPU + Apple Accelerate; no Metal, curl, TLS or server features",
               "platforms": ["macOS arm64", "iOS Simulator arm64", "iOS device arm64"],
               "sourceReceipt": receipt, "sdkBinarySHA256": {

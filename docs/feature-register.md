@@ -1,6 +1,10 @@
 # Complete feature register
 
-2026-11-15, C47/C48: group 5 local-chat Step 2 independent review and recovery repairs pass their local checks. C49 renderer and measurement repairs pass affected tests; combined latency, frame timing and remaining device/OS/offline checks block merge. C53 starts Step 3 draft delivery. Extended VoiceOver testing is withdrawn for this task; basic accessibility remains required. Experimental production-model quality remains open. See the [chat task](tasks/2026-11-15-local-ai-chat.md).
+2026-11-17 follow-up: the owner reports the phone voice/chat checklist works. Fresh Step 2 review repairs microphone lifecycle, adapter composition, voice metrics and model-recovery copy; 14 selected UI tests and the affected package/native/build checks pass. The owner confirms normal phone header behavior; an intermittent Simulator capture/rendering observation remains unresolved. Accuracy/device qualification remains separate and accessibility is deferred. See the [current voice/chat record](tasks/2026-11-17-voice-chat.md).
+
+2026-11-15, group 6 Step 2: independent review and recovery/RTL repairs are recorded; Step 2 remains blocked. Recording/import, both local adapters, timestamped corrections and association-preserving export remain implemented. Accessibility diagnostics, accuracy failures and physical iPhone checks block qualification. See the [voice task](tasks/2026-11-15-voice-transcription.md).
+
+2026-11-15, C47/C48: group 5 local-chat Step 2 independent review and recovery repairs pass their local checks. C49 generation timing improves, while clean scrolling/frame-budget and unavailable device/OS checks block passage. Extended VoiceOver testing is withdrawn for this task; basic accessibility remains required. Experimental production-model quality remains open. See the [chat task](tasks/2026-11-15-local-ai-chat.md).
 
 Recorded on 2026-11-06. This register covers current requests and assistant proposals. The [historical register](reference/historical-research.md) preserves the older feature groups and technical ideas. Source IDs refer to the [source register](reference/source-register.md).
 

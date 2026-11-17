@@ -1,13 +1,14 @@
 import SwiftUI
 
 enum AppSection: String, CaseIterable, Identifiable {
-  case capture, chat, brainMap, profiles, projects, memories, birthdays, settings
+  case capture, chat, recordings, brainMap, profiles, projects, memories, birthdays, settings
   var id: String { rawValue }
 
   func title(in language: AppLanguage) -> String {
     switch self {
     case .capture: language.text("Capture", "التقاط")
     case .chat: language.text("Chat", "المحادثة")
+    case .recordings: language.text("Recordings", "التسجيلات")
     case .brainMap: language.text("BrainMap", "خريطة الذاكرة")
     case .profiles: language.text("People", "الأشخاص")
     case .projects: language.text("Projects", "المشاريع")
@@ -21,6 +22,7 @@ enum AppSection: String, CaseIterable, Identifiable {
     switch self {
     case .capture: "mic"
     case .chat: "bubble.left.and.bubble.right"
+    case .recordings: "waveform"
     case .brainMap: "brain"
     case .profiles: "person"
     case .projects: "folder"
@@ -55,6 +57,12 @@ final class DemoSession {
 
   var language: AppLanguage = .english
   var section: AppSection = .capture
+  var captureEntry = UUID()
+
+  func openHome() {
+    captureEntry = UUID()
+    section = .capture
+  }
 }
 
 /// View state survives a section switch without keeping inactive controls mounted.

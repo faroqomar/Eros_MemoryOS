@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-17",
+  "scope": "Physical-phone chat SIGABRT on model load after transcription integration",
+  "baseHead": "9c11150cdb013976cef59b02d3a110b758374776",
+  "diagnosis": {
+    "phone": "iPhone 15 Pro Max / iOS 27.0.1",
+    "reports": 2,
+    "crashingExecutableUUID": "38124EA9-2331-3E85-BE03-D73A03398B79",
+    "stack": "ggml_backend_buffer_name -> llama_model_base::load_tensors -> llama_model_load_from_file",
+    "cause": "Static llama binds 47 GGML/GGUF symbols from incompatible Whisper library",
+    "hostBefore": "SIGABRT, GGML_ASSERT(buft) failed"
+  },
+  "repair": "Same pinned llama source, dynamic wrapper exporting only llama_*; internal GGML/GGUF symbols private",
+  "checks": {
+    "coexistence": "PASS actual Qwen generation + Whisper transcription, sequentially in both initialization orders",
+    "nativeChat": "19 real-model contracts PASS",
+    "phoneRelease": "BUILD SUCCEEDED",
+    "simulatorRelease": "arm64 BUILD SUCCEEDED",
+    "phoneAndSimulatorLinkage": "PASS",
+    "phoneDeepStrictSignature": "PASS",
+    "physicalInstall": "PASS; no uninstall",
+    "physicalRetry": "Owner reports It replies successfully after repaired installation",
+    "independentReview": "PASS: no blocking findings; all three slices, both app linkages, strict phone signing independently checked"
+  },
+  "phoneExecutableUUID": "24213A7E-5008-384D-A3FF-112474C84F11",
+  "phoneExecutableSHA256": "182af77748c4faffe28a252544d126962cc73cde67559e6403752e4afc7e40e7",
+  "embeddedLlamaSHA256": "e1fe7b0fa1a32b506c158a1550cc325d7cdcb17431c2507aff399ce969b9e9a5",
+  "repairSourceSHA256": {
+    "scripts/prepare-llama-evaluation.py": "b773124fd83688951a7f05c32f31bf3024e5802911961ad513aff52510120415",
+    "scripts/check-inference-linkage.py": "3030b0ea355a0f78457fe4a5b3372efb38c589597ed8e4dc5f4dc5462a3357b0",
+    "scripts/check-inference-coexistence.py": "b72a0a1a1e9b8de91ef73c57ad3534abcec38ac653b41e22fe1aac1f82da06a3",
+    "scripts/tests/inference-coexistence/llama-probe.cpp": "58993165d503e1f4e704e303cc52e0c69b9b604b3e4c938594e7f5c26a166a97",
+    "scripts/tests/inference-coexistence/whisper-probe.cpp": "6bb45ee6b5fad7c5d2063b2f8fea306840fcfacbc855a51fffc40bf9a9be0f59"
+  },
+  "limits": [
+    "Sequential host coexistence does not establish simultaneous engine use",
+    "Owner phone retry is not a benchmark or automated screen capture",
+    "T3 physical-phone screen capture unavailable",
+    "Accessibility remains deferred; no pass claimed",
+    "Other voice/language/device qualification gates remain open"
+  ],
+  "cleanup": {
+    "diagnosticBytesBefore": 7850482,
+    "diagnosticBytesAfter": 3476189,
+    "removedFiles": 2,
+    "removedBytes": 4374293,
+    "reason": "Temporary original host reproducer replaced by permanent regression; pre-fix abort log retained",
+    "retained": "Compact sanitized receipt only; on owner follow-up all 11 resolved diagnostic files (3476508 bytes) were deleted. Earlier ignored-folder claim was incorrect; files were untracked. No phone chat archive was found. User app data and unrelated work preserved."
+  }
+}

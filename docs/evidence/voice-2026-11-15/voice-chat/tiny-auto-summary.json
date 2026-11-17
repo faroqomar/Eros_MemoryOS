@@ -1,0 +1,87 @@
+{
+  "model": "tiny",
+  "requestedLanguage": "auto",
+  "platform": "macOS host, not physical iPhone",
+  "results": [
+    {
+      "case": "background_noise",
+      "werPercent": [
+        25.0
+      ],
+      "seconds": [
+        0.54,
+        0.424,
+        0.428
+      ],
+      "medianSeconds": 0.428,
+      "peakMiB": 302.2,
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "case": "english",
+      "werPercent": [
+        18.75
+      ],
+      "seconds": [
+        0.686,
+        0.456,
+        0.459
+      ],
+      "medianSeconds": 0.459,
+      "peakMiB": 302.0,
+      "languages": [
+        "en"
+      ]
+    },
+    {
+      "case": "iraqi_text_synthetic",
+      "werPercent": [
+        54.54545454545455
+      ],
+      "seconds": [
+        0.484,
+        0.634,
+        0.538
+      ],
+      "medianSeconds": 0.538,
+      "peakMiB": 298.8,
+      "languages": [
+        "ar"
+      ]
+    },
+    {
+      "case": "mixed",
+      "werPercent": [
+        83.33333333333333
+      ],
+      "seconds": [
+        0.625,
+        0.51,
+        0.906
+      ],
+      "medianSeconds": 0.625,
+      "peakMiB": 298.4,
+      "languages": [
+        "ar"
+      ]
+    },
+    {
+      "case": "names",
+      "werPercent": [
+        0.0
+      ],
+      "seconds": [
+        0.427,
+        0.481,
+        0.443
+      ],
+      "medianSeconds": 0.443,
+      "peakMiB": 298.9,
+      "languages": [
+        "en"
+      ]
+    }
+  ]
+}
