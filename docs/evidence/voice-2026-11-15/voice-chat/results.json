@@ -138,15 +138,16 @@
     "fictionalFixtureSeedXCTestPassed": 1,
     "freshPendingCapture": true,
     "cleanup": {
-      "filesRemoved": 14,
-      "logicalBefore": 3301984,
-      "allocatedBefore": 3330048,
+      "filesRemoved": 16,
+      "logicalBefore": 3305659,
+      "allocatedBefore": 3338240,
       "logicalAfter": 0,
       "allocatedAfter": 0,
       "categories": [
         "Resolved audio build/test logs and red-to-green diagnostics with compact results retained",
         "Two redundant historical screenshot-gallery wrappers; PNGs retained",
-        "Resolved Step 3 fictional fixture-seed log after recording its one passing XCTest result"
+        "Resolved Step 3 fictional fixture-seed log after recording its one passing XCTest result",
+        "PR upload body and duplicate external cleanup receipt after canonical delivery records existed"
       ],
       "retained": [
         "Unresolved accessibility and measurement logs",
@@ -157,6 +158,14 @@
       ]
     },
     "appSourceChanged": false,
-    "delivery": "Draft preparation; merge blocked by recorded required qualifications"
+    "delivery": "Draft PR open; not merged; recorded required qualifications remain blocked",
+    "sourceCommit": "101f391b596bcb81227fd572f76d779c2aeba9e3",
+    "pullRequest": "https://github.com/faroqomar/Eros_MemoryOS/pull/6",
+    "hostedChecksConfigured": false,
+    "branchProtected": false,
+    "stagedSourceMatchesVerifiedDigest": true,
+    "relativeDocumentationLinksChecked": 228,
+    "evidenceGuard": "pass",
+    "whitespaceCheck": "pass"
   }
 }
