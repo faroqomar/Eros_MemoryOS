@@ -1,0 +1,24 @@
+docs/evidence/qwen4b-2026-11-18/results.json
+  s_0dcfa9929f110c::t_692a6c9be2e475 113,115,117-124
+  s_0dcfa9929f110c::t_86cc1a2fba53fb 135,144-154,174-175
+README.md
+  s_0dcfa9929f110c::t_86cc1a2fba53fb 3
+docs/tasks/2026-11-18-qwen4b-conversation.md
+  s_0dcfa9929f110c::t_86cc1a2fba53fb 92-95
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+  "prompts": {},
+  "sessions": {
+    "s_0dcfa9929f110c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1eaf0-cdcd-7a40-8dbb-ae898bebf0a2",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "Farooq Eros <faroqomar97@gmail.com>"
+    }
+  }
+}
