@@ -1,6 +1,6 @@
 # Eros MemoryOS
 
-**Current 4B conversation, Step 3 (2026-11-18):** Qwen3 4B supplies replies and relevance decisions offline. Four basic conversation cases and connected correction/private-chat checks pass. Retrieval matches 10/12 and returns extra passages in two cases; automatic memory writes remain disabled. Final captures are blocked by Device transfer failures; physical tests remain paused. Final review and cleanup pass; draft delivery is underway and merge remains blocked. See the [current task](docs/tasks/2026-11-18-qwen4b-conversation.md).
+**Current 4B conversation, Step 3 (2026-11-18):** Qwen3 4B supplies replies and relevance decisions offline. Four basic conversation cases and connected correction/private-chat checks pass. Retrieval matches 10/12 and returns extra passages in two cases; automatic memory writes remain disabled. Final captures are blocked by Device transfer failures; physical tests remain paused. Final review and cleanup pass; [draft PR #7](https://github.com/faroqomar/Eros_MemoryOS/pull/7) is open and merge remains blocked. See the [current task](docs/tasks/2026-11-18-qwen4b-conversation.md).
 
 **Local recall integration, 2026-11-18:** Wax and Cactus retrieve current saved sources before ordinary replies and retain private-session nonretention. Earlier native packaging, static analysis and selected Simulator tests pass. The [integration task](docs/tasks/2026-11-18-local-recall-integration.md) records that candidate's checks; the 4B task above owns the current model configuration and failed retrieval gate.
 

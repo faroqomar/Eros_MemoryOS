@@ -89,3 +89,7 @@ Merge stays BLOCKED: the actual 4B retrieval suite requires 12/12 and zero extra
 Device retry failed. Physical testing remains paused, automatic-write qualification remains failed, and
 owner visual acceptance for the combined personal-memory UI remains open.
 Draft delivery does not pass Step 2, enable automatic writes, or authorize release.
+
+Draft [PR #7](https://github.com/faroqomar/Eros_MemoryOS/pull/7) is open against `main`; implementation commit `32695ec5129de6e3c2894bf8baeceb1e9d8f4bef`.
+GitHub currently reports no CI checks or submitted reviews. Clean mergeability is not qualification.
+The subsequent delivery-record commit changes documentation only. No merge or release occurred.
