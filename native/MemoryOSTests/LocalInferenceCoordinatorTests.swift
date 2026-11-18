@@ -148,3 +148,205 @@ struct LocalInferenceCoordinatorTests {
     #expect(await probe.events.filter { $0 == "start-speech" }.count == 1)
   }
 }
+
+private actor BackgroundLeaseProbe {
+  private let heldKind: String
+  private var didHold = false
+  private var release: AsyncThrowingStream<Void, Error>.Continuation?
+  private var observers: [CheckedContinuation<Void, Never>] = []
+  private(set) var events: [String] = []
+  private(set) var active = 0
+  private(set) var maximumActive = 0
+
+  init(heldKind: String = "json") { self.heldKind = heldKind }
+
+  func run(_ kind: String) async throws {
+    try Task.checkCancellation()
+    active += 1
+    maximumActive = max(active, maximumActive)
+    events.append("start-" + kind)
+    defer {
+      active -= 1
+      events.append("finish-" + kind)
+    }
+    guard kind == heldKind, !didHold else { return }
+    didHold = true
+    let (stream, continuation) = AsyncThrowingStream<Void, Error>.makeStream()
+    release = continuation
+    for observer in observers { observer.resume() }
+    observers = []
+    do {
+      try await withTaskCancellationHandler {
+        var iterator = stream.makeAsyncIterator()
+        _ = try await iterator.next()
+        try Task.checkCancellation()
+      } onCancel: {
+        continuation.finish(throwing: CancellationError())
+      }
+    } catch {
+      events.append("cancel-" + kind)
+      throw error
+    }
+  }
+
+  func waitUntilHeld() async {
+    if release != nil { return }
+    await withCheckedContinuation { observers.append($0) }
+  }
+
+  func releaseHeld() {
+    release?.finish()
+    release = nil
+  }
+}
+
+private struct BackgroundLeaseModel: StructuredChatModel {
+  let probe: BackgroundLeaseProbe
+  func generate(turns: [ChatTurn], onText: @escaping @Sendable (String) -> Void) async throws {
+    try await probe.run("chat")
+    onText("Fictional local reply")
+  }
+  func generateJSON(turns: [ChatTurn], grammar: String, maximumOutputTokens: Int) async throws
+    -> String
+  {
+    try await probe.run("json")
+    return "{}"
+  }
+  func unload() async { try? await probe.run("unload") }
+}
+
+private struct BackgroundLeaseSpeech: TranscriptionProvider {
+  let id = "fixture"
+  let probe: BackgroundLeaseProbe
+  func transcribe(audioURL: URL, modelDirectory: URL) async throws -> TranscriptionOutput {
+    try await probe.run("speech")
+    return TranscriptionOutput(modelID: "fixture", language: "en", passages: [])
+  }
+}
+
+extension LocalInferenceCoordinatorTests {
+  @Test(arguments: ["chat", "speech", "unload", "relevance"])
+  func foregroundWorkCancelsAndJoinsBackgroundJSON(kind: String) async throws {
+    let probe = BackgroundLeaseProbe()
+    let coordinator = LocalInferenceCoordinator(model: BackgroundLeaseModel(probe: probe))
+    let background = Task {
+      try await coordinator.generateJSON(turns: [], grammar: "fixture", maximumOutputTokens: 64)
+    }
+    await probe.waitUntilHeld()
+    switch kind {
+    case "chat": try await coordinator.generate(turns: [], onText: { _ in })
+    case "speech":
+      _ = try await coordinator.transcribe(
+        provider: BackgroundLeaseSpeech(probe: probe), audioURL: unusedURL,
+        modelDirectory: unusedURL)
+    case "relevance":
+      _ = try await coordinator.selectRelevant(
+        using: LeaseEvidenceFilter(probe: probe), query: "fixture",
+        candidates: [.init(id: UUID(), text: "Fictional source")])
+    default: await coordinator.unload()
+    }
+    await #expect(throws: CancellationError.self) { try await background.value }
+    let events = await probe.events
+    let finished = try #require(events.firstIndex(of: "finish-json"))
+    let started = try #require(events.firstIndex(of: "start-" + kind))
+    #expect(finished < started)
+    #expect(events.contains("cancel-json"))
+    #expect(await probe.maximumActive == 1)
+    #expect(await probe.active == 0)
+    // The cancelled background slot must be reusable, with the same model and lease.
+    #expect(
+      try await coordinator.generateJSON(turns: [], grammar: "fixture", maximumOutputTokens: 64)
+        == "{}")
+  }
+
+  @Test func callerCancellationPropagatesAndSecondBackgroundRequestCannotOverlap() async throws {
+    let probe = BackgroundLeaseProbe()
+    let coordinator = LocalInferenceCoordinator(model: BackgroundLeaseModel(probe: probe))
+    let first = Task {
+      try await coordinator.generateJSON(turns: [], grammar: "fixture", maximumOutputTokens: 64)
+    }
+    await probe.waitUntilHeld()
+    await #expect(throws: ChatError.busy) {
+      try await coordinator.generateJSON(turns: [], grammar: "fixture", maximumOutputTokens: 64)
+    }
+    first.cancel()
+    await #expect(throws: CancellationError.self) { try await first.value }
+    #expect(await probe.active == 0)
+    try await coordinator.generate(turns: [], onText: { _ in })
+    #expect(await probe.maximumActive == 1)
+  }
+
+  @Test func cancelledQueuedJSONDoesNotEnterModelOrStrandForegroundLease() async throws {
+    let probe = BackgroundLeaseProbe(heldKind: "chat")
+    let coordinator = LocalInferenceCoordinator(model: BackgroundLeaseModel(probe: probe))
+    let first = Task { try await coordinator.generate(turns: [], onText: { _ in }) }
+    await probe.waitUntilHeld()
+    let queued = Task {
+      try await coordinator.generateJSON(turns: [], grammar: "fixture", maximumOutputTokens: 64)
+    }
+    for _ in 0..<20 { await Task.yield() }
+    queued.cancel()
+    await probe.releaseHeld()
+    try await first.value
+    await #expect(throws: CancellationError.self) { try await queued.value }
+    #expect(await !probe.events.contains("start-json"))
+    try await coordinator.generate(turns: [], onText: { _ in })
+    #expect(await probe.maximumActive == 1)
+    #expect(await probe.active == 0)
+  }
+
+  @Test func relevanceCancellationReleasesLeaseBeforeNextChat() async throws {
+    let probe = BackgroundLeaseProbe(heldKind: "relevance")
+    let coordinator = LocalInferenceCoordinator(model: BackgroundLeaseModel(probe: probe))
+    let task = Task {
+      try await coordinator.selectRelevant(
+        using: LeaseEvidenceFilter(probe: probe), query: "fixture",
+        candidates: [.init(id: UUID(), text: "Fictional source")])
+    }
+    await probe.waitUntilHeld()
+    task.cancel()
+    await #expect(throws: CancellationError.self) { try await task.value }
+    try await coordinator.generate(turns: [], onText: { _ in })
+    #expect(await probe.maximumActive == 1)
+    #expect(await probe.active == 0)
+    #expect(await probe.events.contains("cancel-relevance"))
+  }
+
+  @Test func queuedCancelledRelevanceNeverLoadsAndEmptyBatchDoesNotInterrupt() async throws {
+    let probe = BackgroundLeaseProbe(heldKind: "chat")
+    let coordinator = LocalInferenceCoordinator(model: BackgroundLeaseModel(probe: probe))
+    let filter = LeaseEvidenceFilter(probe: probe)
+    let chat = Task { try await coordinator.generate(turns: [], onText: { _ in }) }
+    await probe.waitUntilHeld()
+    #expect(
+      try await coordinator.selectRelevant(using: filter, query: "fixture", candidates: []).isEmpty)
+    let queued = Task {
+      try await coordinator.selectRelevant(
+        using: filter, query: "fixture",
+        candidates: [.init(id: UUID(), text: "Fictional source")])
+    }
+    for _ in 0..<20 { await Task.yield() }
+    queued.cancel()
+    await probe.releaseHeld()
+    try await chat.value
+    await #expect(throws: CancellationError.self) { try await queued.value }
+    #expect(await !probe.events.contains("start-relevance"))
+    #expect(await !probe.events.contains("start-unload"))
+    try await coordinator.generate(turns: [], onText: { _ in })
+  }
+
+  @Test func modelWithoutStructuredCapabilityCannotSilentlyUseChatFallback() async {
+    let coordinator = LocalInferenceCoordinator(model: LeaseTextModel(probe: InferenceLeaseProbe()))
+    await #expect(throws: ChatError.modelUnavailable) {
+      try await coordinator.generateJSON(turns: [], grammar: "fixture", maximumOutputTokens: 64)
+    }
+  }
+}
+
+private struct LeaseEvidenceFilter: MemoryEvidenceFiltering {
+  let probe: BackgroundLeaseProbe
+  func selectRelevant(query: String, candidates: [ChatEvidence]) async throws -> Set<UUID> {
+    try await probe.run("relevance")
+    return Set(candidates.map(\.id))
+  }
+}

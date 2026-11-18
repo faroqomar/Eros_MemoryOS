@@ -15,30 +15,25 @@ final class LocalStorageFlowTests: XCTestCase {
       app.textFields["capture-composer"].exists
       ? app.textFields["capture-composer"] : app.textViews["capture-composer"]
     XCTAssertTrue(composer.waitForExistence(timeout: 5))
-    composer.tap()
-    composer.typeText(original)
-    app.buttons["send-memory"].tap()
+    replaceText(composer, with: original, app: app)
+    app.buttons["save-thought"].tap()
     XCTAssertTrue(app.alerts.firstMatch.waitForExistence(timeout: 5))
     app.alerts.buttons["OK"].tap()
     app.buttons["your-memories"].tap()
+    app.segmentedControls.buttons["Saved records"].tap()
+    reveal(app.buttons["add-local-record"], app: app)
     app.buttons["add-local-record"].tap()
     let editor = app.textViews["local-record-editor"]
     XCTAssertTrue(editor.waitForExistence(timeout: 3))
     editor.tap()
     editor.typeText(person)
     app.buttons["save-local-edit"].tap()
+    reveal(app.staticTexts[person], app: app, down: true)
     XCTAssertTrue(app.staticTexts[person].waitForExistence(timeout: 5))
     app.staticTexts[original].tap()
     app.buttons["correct-local-record"].tap()
     XCTAssertTrue(editor.waitForExistence(timeout: 3))
-    editor.tap()
-    editor.press(forDuration: 1.2)
-    if app.menuItems["Select All"].waitForExistence(timeout: 2) {
-      app.menuItems["Select All"].tap()
-    } else {
-      editor.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: original.count))
-    }
-    editor.typeText(corrected)
+    replaceText(editor, with: corrected, app: app)
     app.buttons["save-local-edit"].tap()
     XCTAssertTrue(app.staticTexts["local-record-text"].waitForExistence(timeout: 5))
     XCTAssertEqual(app.staticTexts["local-record-text"].label, corrected)
@@ -55,6 +50,7 @@ final class LocalStorageFlowTests: XCTestCase {
     app.terminate()
     app.launch()
     app.buttons["your-memories"].tap()
+    app.segmentedControls.buttons["Saved records"].tap()
     toggleTrash(in: app)
     app.staticTexts[corrected].tap()
     XCTAssertEqual(app.staticTexts["local-record-original"].label, original)
@@ -64,6 +60,25 @@ final class LocalStorageFlowTests: XCTestCase {
     app.staticTexts[corrected].tap()
     app.swipeUp()
     XCTAssertTrue(app.buttons[person].waitForExistence(timeout: 3))
+  }
+
+  private func replaceText(_ editor: XCUIElement, with text: String, app: XCUIApplication) {
+    editor.tap()
+    editor.press(forDuration: 1.2)
+    if app.menuItems["Select All"].waitForExistence(timeout: 1) {
+      app.menuItems["Select All"].tap()
+    } else if app.buttons["Select All"].exists {
+      app.buttons["Select All"].tap()
+    } else {
+      editor.tap(withNumberOfTaps: 3, numberOfTouches: 1)
+    }
+    editor.typeText(text)
+    XCTAssertEqual(editor.value as? String, text)
+  }
+
+  private func reveal(_ element: XCUIElement, app: XCUIApplication, down: Bool = false) {
+    for _ in 0..<12 where !element.isHittable { if down { app.swipeDown() } else { app.swipeUp() } }
+    XCTAssertTrue(element.isHittable)
   }
 
   private func toggleTrash(in app: XCUIApplication) {

@@ -68,11 +68,11 @@ struct ChatMessageRow: View {
             Button {
               openSource(evidence)
             } label: {
-              Label(String(evidence.text.prefix(70)), systemImage: "doc.text")
+              Label(sourcePreview(evidence), systemImage: "doc.text")
                 .font(.callout).lineLimit(2).frame(minHeight: 44)
             }.buttonStyle(.plain)
               .accessibilityLabel(
-                language.text("Open source", "فتح المصدر") + ": " + String(evidence.text.prefix(70))
+                language.text("Open source", "فتح المصدر") + ": " + sourcePreview(evidence)
               )
               .accessibilityIdentifier("chat-source-\(evidence.id)")
           }
@@ -122,6 +122,18 @@ struct ChatMessageRow: View {
     .font(.body).lineSpacing(4)
     .frame(maxWidth: .infinity, alignment: .leading)
 
+  }
+
+  private func sourcePreview(_ evidence: ChatEvidence) -> String {
+    var text = evidence.text[...]
+    if evidence.sourceDigest != nil {
+      // Retrieval annotations belong in the source detail; the button previews the passage.
+      for _ in 0..<2 where text.first == "[" {
+        guard let end = text.firstIndex(of: "]") else { break }
+        text = text[text.index(after: end)...].drop(while: { $0.isWhitespace })
+      }
+    }
+    return String(text.prefix(70))
   }
 
   private var statusText: String {

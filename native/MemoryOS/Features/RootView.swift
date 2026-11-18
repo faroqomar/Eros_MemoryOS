@@ -12,6 +12,7 @@ struct RootView: View {
   let chat: ChatViewModel
   let preparation: ChatModelPreparationViewModel
   @State private var menuIsOpen = false
+  @Environment(\.scenePhase) private var scenePhase
   @Environment(\.accessibilityReduceMotion) private var reduceMotion
   @AccessibilityFocusState private var menuFocus: MenuFocusTarget?
 
@@ -48,6 +49,11 @@ struct RootView: View {
           .accessibilityAction(.escape) { setMenu(false) }
       }
       .background(MemoryTheme.canvas)
+      .overlay {
+        if chat.isTemporary && scenePhase != .active {
+          MemoryTheme.canvas.ignoresSafeArea()
+        }
+      }
       .foregroundStyle(MemoryTheme.ink)
     }
   }

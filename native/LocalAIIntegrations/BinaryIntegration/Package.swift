@@ -7,7 +7,9 @@ let package = Package(
   products: [
     .library(name: "WaxEvaluationAdapterBinary", targets: ["WaxEvaluationBinaryDependencies"])
   ],
-  dependencies: [.package(path: "../../LocalAIEvaluation")],
+  dependencies: [
+    .package(path: "../../LocalAIEvaluation"), .package(path: "../../LocalRetrievalCore"),
+  ],
   targets: [
     .binaryTarget(name: "WaxEvaluationAdapter", path: "Artifacts/WaxEvaluationAdapter.xcframework"),
     .target(
@@ -15,6 +17,7 @@ let package = Package(
       dependencies: [
         "WaxEvaluationAdapter",
         .product(name: "AIEvaluationCore", package: "LocalAIEvaluation"),
+        .product(name: "RetrievalCore", package: "LocalRetrievalCore"),
       ]
     ),
   ],

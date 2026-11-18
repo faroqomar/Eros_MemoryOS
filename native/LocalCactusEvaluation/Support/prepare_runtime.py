@@ -135,8 +135,13 @@ def main():
     parser.add_argument('--cmake', default='cmake')
     parser.add_argument('--ninja', default='ninja')
     parser.add_argument('--jobs', default='4')
+    parser.add_argument('--output', type=Path, help='New artifact directory; existing artifacts are never replaced')
+    parser.add_argument('--build-root', type=Path, help='Separate task-owned compiler output directory')
     args = parser.parse_args()
     upstream = args.upstream.resolve()
+    artifacts = (args.output or ROOT / 'Artifacts').resolve()
+    if artifacts.exists():
+        raise SystemExit('Refusing to replace existing artifacts; use --output with a new directory.')
     patch = ROOT / 'Support' / 'upstream-v114-local-only.patch'
     checked = subprocess.run(['git', 'apply', '--check', str(patch)], cwd=upstream, capture_output=True)
     if checked.returncode == 0:
@@ -145,9 +150,8 @@ def main():
     else:
         run(['git', 'apply', '--reverse', '--check', str(patch)], cwd=upstream)
         verify_source_subset(upstream, patch, already_patched=True)
-    build_base = upstream / '.memoryos-evaluation-build'
-    artifacts = ROOT / 'Artifacts'
-    artifacts.mkdir(exist_ok=True)
+    build_base = (args.build_root or upstream / '.memoryos-evaluation-build').resolve()
+    artifacts.mkdir(parents=True)
     libraries = []
     for name, sdk, target in [('macos', 'macosx', 'Darwin'), ('simulator', 'iphonesimulator', 'iOS'), ('device', 'iphoneos', 'iOS')]:
         sdk_path = subprocess.check_output(['xcrun', '--sdk', sdk, '--show-sdk-path'], text=True).strip()
@@ -168,8 +172,6 @@ def main():
         (headers / 'module.modulemap').write_text('module cactus {\n  header "cactus_engine.h"\n  export *\n}\n')
         libraries += ['-library', build / 'libcactus.a', '-headers', headers]
     output = artifacts / 'cactus.xcframework'
-    if output.exists():
-        shutil.rmtree(output)
     run(['xcodebuild', '-create-xcframework', *libraries, '-output', output])
     shutil.copy2(upstream / 'LICENSE', output / 'LICENSE')
     files = {str(p.relative_to(output)): hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(output.rglob('*')) if p.is_file()}

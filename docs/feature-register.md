@@ -92,3 +92,27 @@ These proposals support the requested product. They remain unapproved choices.
 The [historical register](reference/historical-research.md) contains H01-H40. It includes timelines, sentiment/topic analytics, relationship graphs, persona style, digital legacy, broader capture tools, privacy controls, professional editions, sharing, and advanced search research.
 
 The old research uses words such as "decision" and "will implement." Those words do not establish owner approval. New owner requests determine current direction. No feature has a committed delivery date.
+
+
+## Relationship and life-context clarification
+
+The owner requests extensive chat/media imports, source-preserving relationship and person understanding, and organization of ideas, workflows and projects. Fine-tuning and tools are discussion topics, not selected implementations. See the [confirmed goal and proposed approach](decisions/personal-context-goal.md).
+
+
+## Group 7 implementation, 2026-11-17
+
+The [group 7 task record](tasks/2026-11-17-lasting-personal-memory.md) now owns bounded source-preserving conversation memory, real self/person/project profiles, reversible organization, identity confirmation, image provenance and typed temporary chat. Step 2 independent checks and measured phone latency pass after repairs; locked-device and energy/sustained-thermal qualification block the overall stage. On November 18 the owner withdrew iOS 18 testing from this task's gate; it did not pass. Conservative classification and model quality limits remain explicit. Step 3 is not requested.
+
+### Automatic organization follow-up, 2026-11-18
+
+The owner rejected generic meaning menus and requested authentic automatic memory based on other projects. The [current follow-up](tasks/2026-11-18-automatic-personal-memory.md) adds a semantic extraction port, exact source evidence, temporal revisions, durable clarification question/answer provenance and foreground-priority scheduling. Independent quality testing failed for the tested local model; production composition therefore blocks automatic derived writes. Normal originals, manual information and corrections remain available. The owner selected further local-only evaluation, with physical tests skipped for now. This is not completed automatic-memory adoption.
+
+Follow-up evaluation, November 18: the verified local 4B candidate completed 38 host cases but failed its semantic gate (independent 3/11 complete claims; 1 accepted mismatch). Automatic derived writes remain disabled. A fresh 12-case routing repair trial also failed: 7/8 complete claims, 2 accepted mismatches. The current task/evidence retains both results; no model, cloud or phone adoption follows.
+
+Automatic-memory workflow reset, 2026-11-18: the completed fourth host trial failed10/20 cases and7/13 claims, with0 accepted mistakes; its inputs are now consumed regression data. Main owns bounded code repairs and independent review. Further full qualification requires current green regressions; automatic writes remain disabled. See [the current task](tasks/2026-11-18-automatic-personal-memory.md).
+
+## Local recall integration, 2026-11-18
+
+The owner authorizes Wax and Cactus integration for lookup before ordinary chat replies. The [current task](tasks/2026-11-18-local-recall-integration.md) preserves dated originals, current corrections and private-session nonretention through replaceable local providers. Connected Simulator verification passes, including recall, corrections and private-chat nonretention. Arabic retrieval and automatic extraction quality remain unqualified. This narrow integration does not complete relationship understanding or the rest of group8.
+
+Owner-selected conversation model, November 18: the main app now uses the existing pinned Qwen3 4B for replies and relevance, with one bundled weight file and no smaller-model fallback. Follow-up context retains current cited answers; stale evidence remains withheld. Automatic extraction remains disabled. See the [conversation task](tasks/2026-11-18-qwen4b-conversation.md) for current quality checks and limits.

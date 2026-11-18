@@ -4,7 +4,7 @@ import Foundation
 
 /// Thin, replaceable bridge from the MemoryOS-owned model contract to the reviewed local runtime.
 /// There is no network client, downloader, source store, or cloud fallback in this adapter.
-public struct LlamaChatModel: ChatModel {
+public struct LlamaChatModel: StructuredChatModel {
   private let runtime: LlamaTextRuntime
   private let onMeasurement: @Sendable (TextOutput, Double) -> Void
 
@@ -44,4 +44,24 @@ public struct LlamaChatModel: ChatModel {
   }
 
   public func unload() async { await runtime.unload() }
+
+  /// Background extraction deliberately does not report ordinary chat latency measurements.
+  public func generateJSON(
+    turns: [ChatTurn], grammar: String, maximumOutputTokens: Int
+  ) async throws -> String {
+    do {
+      return try await runtime.generateJSON(
+        turns: turns.map { LlamaChatTurn(role: $0.role.rawValue, text: $0.text) },
+        grammar: grammar, maximumOutputTokens: maximumOutputTokens)
+    } catch is CancellationError {
+      throw CancellationError()
+    } catch let error as ChatError {
+      throw error
+    } catch let error as EvaluationError {
+      switch error {
+      case .unavailable: throw ChatError.modelUnavailable
+      default: throw ChatError.generationFailed
+      }
+    } catch { throw ChatError.generationFailed }
+  }
 }

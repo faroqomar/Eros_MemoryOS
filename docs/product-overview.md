@@ -113,3 +113,22 @@ Step 1 update, C28, 2026-11-14: the owner authorizes the complete native sample 
 ## Local typed records, C35, 2026-11-14
 
 The owner requested checklist group 3 Step 1. The app now uses local SQLite for typed captures and manually linked people, projects and ideas. It retains original text and correction history. Trash supports recovery; manual JSON export and transactional merge restore provide a portable backup with documented limits. The earlier session-only capture statements describe the demo checkpoint. This new task does not add recording, AI, automatic classification, scheduling, external services or sync. See the [task record](tasks/2026-11-14-local-storage-text-capture.md) for current checks and remaining independent/physical-device verification, and the [storage decision](decisions/local-record-storage.md) for protection and recovery behavior.
+
+
+## Expanded personal-context goal
+
+The owner requests extensive chat/media imports, source-preserving relationship and person understanding, and organization of ideas, workflows and projects. Fine-tuning and tools are discussion topics, not selected implementations. See the [confirmed goal and proposed approach](decisions/personal-context-goal.md).
+
+## Automatic-memory follow-up, November 18
+
+Normal conversation should retain originals and organize useful claims without classifying each message by hand. The new semantic pipeline remains experimental. The tested local model failed independent meaning/attribution checks, so this candidate blocks automatic derived writes and explains the unavailable state. Clarification uses a specific question and an ordinary answer, with each answer retaining the exact question it answered. The owner chose a larger local-model evaluation; cloud integration is not authorized. See the [current task](tasks/2026-11-18-automatic-personal-memory.md).
+
+Follow-up evaluation, November 18: the verified local 4B candidate completed 38 host cases but failed its semantic gate (independent 3/11 complete claims; 1 accepted mismatch). Automatic derived writes remain disabled. A fresh 12-case routing repair trial also failed: 7/8 complete claims, 2 accepted mismatches. The current task/evidence retains both results; no model, cloud or phone adoption follows.
+
+Automatic-memory workflow reset, 2026-11-18: the completed fourth host trial failed10/20 cases and7/13 claims, with0 accepted mistakes; its inputs are now consumed regression data. Main owns bounded code repairs and independent review. Further full qualification requires current green regressions; automatic writes remain disabled. See [the current task](tasks/2026-11-18-automatic-personal-memory.md).
+
+## Local recall integration, 2026-11-18
+
+The owner authorizes Wax and Cactus integration for lookup before ordinary chat replies. The [current task](tasks/2026-11-18-local-recall-integration.md) preserves dated originals, current corrections and private-session nonretention through replaceable local providers. Connected Simulator verification passes, including recall, corrections and private-chat nonretention. Arabic retrieval and automatic extraction quality remain unqualified. This narrow integration does not complete relationship understanding or the rest of group8.
+
+Owner-selected conversation model, November 18: the main app now uses the existing pinned Qwen3 4B for replies and relevance, with one bundled weight file and no smaller-model fallback. Follow-up context retains current cited answers; stale evidence remains withheld. Automatic extraction remains disabled. See the [conversation task](tasks/2026-11-18-qwen4b-conversation.md) for current quality checks and limits.

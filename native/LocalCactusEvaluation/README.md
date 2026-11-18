@@ -34,12 +34,16 @@ python3 native/LocalCactusEvaluation/Support/prepare_asset.py \
 python3 native/LocalCactusEvaluation/Support/fetch_upstream.py \
   --output /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible
 python3 native/LocalCactusEvaluation/Support/prepare_runtime.py \
-  --upstream /Users/eros/Dev/Tools/MemoryOS-Evaluation-Upstream/CactusEngine/v1.14-compatible \
+  --upstream /path/to/verified-original-source \
+  --output /path/to/new/cactus-candidate-artifacts \
+  --build-root /path/to/task-owned/compiler-output \
   --cmake /Users/eros/Library/Android/sdk/cmake/3.22.1/bin/cmake \
   --ninja /Users/eros/Library/Android/sdk/cmake/3.22.1/bin/ninja
 CACTUS_NUM_THREADS=4 CACTUS_EVAL_MODEL_DIR=/path/to/verified/model \
   swift test --package-path native/LocalCactusEvaluation -c release
 ```
+
+The builder refuses an existing output directory. Keep the prior reviewed source snapshot and artifact unchanged while building a candidate. Verify the candidate receipt, all three platform files, source gate, native byte mapping and Swift preprocessing tests before publication. With no active Cactus build or inference, atomically exchange the complete candidate and canonical `Artifacts` directories on the same filesystem, retaining the old directory and receipt as task evidence. A failed candidate must not replace the canonical artifact. The November 18 tokenizer repair uses a new prepared source snapshot; the earlier `v1.14-compatible` snapshot remains historical evidence.
 
 `Artifacts/cactus.xcframework` and the build cache remain ignored. No remote Swift package resolution is needed: the package uses the local core package and local compiled binary target.
 
@@ -70,3 +74,11 @@ The adapter normalizes embeddings, adds Qwen3's query instruction, and uses expl
 Rebuild publishes a replacement index only after all sources succeed. Invalid or cancelled rebuilds preserve the prior snapshot. Empty rebuild clears the derived index. Closing removes only the adapter's generated index directory. Canonical IDs map to local numeric Cactus IDs; their identity does not depend on content hashes. The adapter rejects embedded NUL text before the C boundary.
 
 The host result is a Release integration/retrieval smoke test. All 15 retrieval calls complete; 14 cases have full expected-source recall, and none matches the exact expected source set. All 14 evidence-present queries rank a relevant source first. The fixed threshold returns unrelated sources for the missing-evidence question. Keep these failures when comparing candidates. This arm does not run generation or establish physical iPhone battery, heat, or a production winner. The parent task owns simulator interaction and cross-provider comparison.
+
+## Model-defined tokenization repair, November 18
+
+The verified tokenizer metadata requires NFC normalization, exact added-token handling, regex pretokenization, ByteLevel BPE and a final end-of-text token (151643). `QwenEmbeddingPreprocessor` reads these stages from the verified asset, matches added tokens before normalization, checks complete regex coverage, and bounds IDs and context. Original records and source excerpts stay unchanged. Cactus still performs BPE and model execution; the local-only token-ID embedding export pools the final token. The historical raw-text export remains available for old lab contracts.
+
+The retained upstream patch corrects ByteLevel byte 173, which must map to U+0143 instead of U+00AD. The old mapping corrupted Arabic ح into an unknown token. The merge loader now skips the `#version:` header while retaining valid pairs beginning with `#`; the old loader split `##` into two tokens instead of the model-defined one. A native test checks all 256 byte mappings against the pinned vocabulary; separate tests cover NFC, Arabic/English boundaries, special tokens, EOS and input bounds. An early diagnostic omitted NFC from its reference; its decomposed-accent result was not full reference parity. The production helper and final tests include NFC.
+
+Correct preprocessing does not qualify retrieval quality. The consumed four-case diagnostic still missed the Iraqi Arabic positive at the unchanged 0.65 threshold, while a wrong-topic negative scored higher. Keep that failure; do not lower the threshold or enable automatic writes from token-parity results.

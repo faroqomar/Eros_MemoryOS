@@ -1,0 +1,848 @@
+{
+  "status": "retrieval regression repaired and verified on Simulator; semantic decision gate remains failed",
+  "automaticMemoryQualified": false,
+  "scope": "Tokenizer fidelity, classifier demonstration bias, bounded relevance verification prototype",
+  "relevancePrototype": {
+    "4B": {
+      "cases": 8,
+      "passed": 8,
+      "falsePositives": 0,
+      "positiveMatches": 3,
+      "positiveCases": 3,
+      "diagnosticOnly": true,
+      "rows": [
+        {
+          "actual": true,
+          "expected": true,
+          "id": "ind-recall-01",
+          "passed": true,
+          "seconds": 9.198666095733643
+        },
+        {
+          "actual": true,
+          "expected": true,
+          "id": "ind-recall-02",
+          "passed": true,
+          "seconds": 1.5900260210037231
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "ind-recall-03",
+          "passed": true,
+          "seconds": 1.596679925918579
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "ind-recall-04",
+          "passed": true,
+          "seconds": 1.609476089477539
+        },
+        {
+          "actual": true,
+          "expected": true,
+          "id": "dev-ar",
+          "passed": true,
+          "seconds": 1.5764590501785278
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "dev-passport",
+          "passed": true,
+          "seconds": 1.5311099290847778
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "dev-hi",
+          "passed": true,
+          "seconds": 1.5086979866027832
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "injection",
+          "passed": true,
+          "seconds": 1.7741990089416504
+        }
+      ]
+    },
+    "0.6B": {
+      "cases": 8,
+      "passed": 5,
+      "falsePositives": 0,
+      "positiveMatches": 0,
+      "positiveCases": 3,
+      "diagnosticOnly": true,
+      "rows": [
+        {
+          "actual": false,
+          "expected": true,
+          "id": "ind-recall-01",
+          "passed": false,
+          "seconds": 1.0707980394363403
+        },
+        {
+          "actual": false,
+          "expected": true,
+          "id": "ind-recall-02",
+          "passed": false,
+          "seconds": 0.29794204235076904
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "ind-recall-03",
+          "passed": true,
+          "seconds": 0.2995959520339966
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "ind-recall-04",
+          "passed": true,
+          "seconds": 0.2825390100479126
+        },
+        {
+          "actual": false,
+          "expected": true,
+          "id": "dev-ar",
+          "passed": false,
+          "seconds": 0.29034900665283203
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "dev-passport",
+          "passed": true,
+          "seconds": 0.28613603115081787
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "dev-hi",
+          "passed": true,
+          "seconds": 0.2696269750595093
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "injection",
+          "passed": true,
+          "seconds": 0.2930349111557007
+        }
+      ]
+    },
+    "1.7B": {
+      "cases": 8,
+      "passed": 8,
+      "falsePositives": 0,
+      "positiveMatches": 3,
+      "positiveCases": 3,
+      "diagnosticOnly": true,
+      "rows": [
+        {
+          "actual": true,
+          "expected": true,
+          "id": "ind-recall-01",
+          "passed": true,
+          "seconds": 2.9540719985961914
+        },
+        {
+          "actual": true,
+          "expected": true,
+          "id": "ind-recall-02",
+          "passed": true,
+          "seconds": 0.6593970060348511
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "ind-recall-03",
+          "passed": true,
+          "seconds": 0.6750810146331787
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "ind-recall-04",
+          "passed": true,
+          "seconds": 0.6600689888000488
+        },
+        {
+          "actual": true,
+          "expected": true,
+          "id": "dev-ar",
+          "passed": true,
+          "seconds": 0.6861249208450317
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "dev-passport",
+          "passed": true,
+          "seconds": 0.6575639247894287
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "dev-hi",
+          "passed": true,
+          "seconds": 0.6511499881744385
+        },
+        {
+          "actual": false,
+          "expected": false,
+          "id": "injection",
+          "passed": true,
+          "seconds": 0.6818519830703735
+        }
+      ]
+    }
+  },
+  "phone": "paused",
+  "modelDownloads": "none",
+  "tokenizer": {
+    "status": "implemented, reviewed candidate checks passed, final artifacts published",
+    "changes": [
+      "Correct ByteLevel mapping for byte173",
+      "Keep valid hash-prefixed BPE merges while skipping version header",
+      "Decode verified model NFC, added-token, regex and EOS metadata",
+      "Supply preprocessed token IDs to bounded local-only last-token export",
+      "Preserve historical text export",
+      "Stage artifact builds; refuse replacement of existing output; publish via atomic directory exchange"
+    ],
+    "tests": {
+      "sourceRecipePassed": 25,
+      "optionalNativeSourceTestSkipped": 1,
+      "nativeByteAndHashMappingPassed": 257,
+      "pureSwiftPassed": 4,
+      "nativeSixCasePriorCandidate": "passed",
+      "nativeSevenCaseFinalCandidate": "PASS: five functions including four pure and seven native parity scenarios"
+    },
+    "quality": "Tokenizer correctness does not qualify retrieval; consumed Arabic positive remains below wrong-topic negative at unchanged0.65",
+    "diagnosticCorrection": "Early reference omitted NFC; decomposed-accent row was not full reference parity. Final helper and tests include NFC and explicit UTF8/ID assertions.",
+    "finalCandidateReceiptSHA256": "eef5865c802f85dd4b6b670a6e42c64abb04e1d8b1b1cf209a19834bd7a704d3",
+    "finalPatchSHA256": "f62338c56245aa734110fb10623625302b8e3a27ff5cee999f5bbf6220904df1",
+    "originalArtifactsRetained": "/tmp/memoryos-token-parity-prior-artifacts",
+    "sourceSnapshot": "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/cactus-tokenizer-fidelity-source",
+    "modelAssetsModified": false,
+    "originalUpstreamModified": false,
+    "finalPublicationReceipt": "/tmp/memoryos-token-parity-final-publication.json",
+    "modelSlot": "released"
+  },
+  "semantic": {
+    "status": "component diagnostic; fact repaired by example removal; decision unresolved",
+    "scope": "Second classifier only; unchanged recorded first extractor outputs. No app or domain writes. No fresh qualification.",
+    "cases": [
+      {
+        "phase": "demonstration-ablation",
+        "id": "grammar-15",
+        "removeExamples": false,
+        "outcome": "semanticDisagreement",
+        "seconds": 26.58143901824951,
+        "agreedClaims": 0
+      },
+      {
+        "phase": "demonstration-ablation",
+        "id": "grammar-19",
+        "removeExamples": false,
+        "outcome": "semanticDisagreement",
+        "seconds": 13.842414021492004,
+        "agreedClaims": 0
+      },
+      {
+        "phase": "demonstration-ablation",
+        "id": "grammar-15",
+        "removeExamples": true,
+        "outcome": "agreed",
+        "seconds": 7.690605044364929,
+        "agreedClaims": 1
+      },
+      {
+        "phase": "demonstration-ablation",
+        "id": "grammar-19",
+        "removeExamples": true,
+        "outcome": "semanticDisagreement",
+        "seconds": 11.12092900276184,
+        "agreedClaims": 0
+      },
+      {
+        "phase": "event-wording",
+        "id": "grammar-15",
+        "removeExamples": true,
+        "outcome": "outputLimit",
+        "seconds": 60.125895977020264,
+        "agreedClaims": 0
+      },
+      {
+        "phase": "event-wording",
+        "id": "grammar-19",
+        "removeExamples": true,
+        "outcome": "semanticDisagreement",
+        "seconds": 9.678308010101318,
+        "agreedClaims": 0
+      },
+      {
+        "phase": "event-field-order",
+        "id": "grammar-15",
+        "outcome": "semanticDisagreement",
+        "seconds": 18.71247100830078,
+        "agreedClaims": 0
+      },
+      {
+        "phase": "event-field-order",
+        "id": "grammar-19",
+        "outcome": "semanticDisagreement",
+        "seconds": 7.613538026809692,
+        "agreedClaims": 0
+      },
+      {
+        "phase": "model-1.7b",
+        "id": "grammar-15",
+        "outcome": "semanticDisagreement",
+        "seconds": 7.19520103931427,
+        "agreedClaims": 0
+      },
+      {
+        "phase": "model-1.7b",
+        "id": "grammar-19",
+        "outcome": "semanticDisagreement",
+        "seconds": 4.897323966026306,
+        "agreedClaims": 0
+      }
+    ],
+    "eventCandidateAdopted": false,
+    "productionChanges": {
+      "classifierDemoTurnsRemoved": true,
+      "unusedExamplesAndBudgetCostRemoved": true,
+      "instructionsUnchanged": true,
+      "grammarUnchanged": true,
+      "agreementGuardsUnchanged": true
+    },
+    "baselineSourceAggregate": "288c6c5344429fda95ccb5a9c743788d196b350cedc0349113f773f89234b797",
+    "modelSHA256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "hashes": {
+      "memoryos-type-repair-ablation.json": "8fdb2ed3bf6b93fd50a4c3ec4e6514acb9b29152958d579bf082ee3d17c8ec4a",
+      "memoryos-type-repair-event-candidate.json": "644da5e62900bab8c2b37c2c1d7afa32e226894ef3df96408e9602d530ab0c02",
+      "memoryos-type-repair-unit-red.log": "f1cd832ff710a08c80c59f7a19deabae2a8caf80e9cdff127feaad64faa74bcc",
+      "memoryos-type-repair-order-candidate.json": "8f844770061769ddcd431aefcef09ec3dd2785d9469ad70b2e8245751bf42323",
+      "memoryos-type-repair-17b-candidate.json": "51a0ca10efd04d41b6da24839ebb47127fd5d191768a44b17f77774ca5969b60"
+    },
+    "regression": {
+      "red": "1 failing boundary assertion",
+      "greenReleaseFunctions": 123,
+      "coreFunctions": 91,
+      "extractionFunctions": 32,
+      "strictFormat": "pass"
+    },
+    "remainingDecisionFailure": "Both prompts define one dated event; model labels undated answer as episode and copies non-time prose. No demonstrated extractor-vs-validator code contract contradiction; do not weaken agreement or require nonempty date for all episodes.",
+    "fieldOrderDiagnostic": {
+      "matchedCases": 0,
+      "cases": 2,
+      "adopted": false,
+      "decoderChangesNeeded": false,
+      "grammarParsed": true,
+      "scopedSourceFiles": 7,
+      "changed": [],
+      "aggregate": "7fcfac834a9329219e57f5c0890c07d16f0438c5c40b79073b159bd007a8939d"
+    },
+    "model17Diagnostic": {
+      "matchedCases": 0,
+      "cases": 2,
+      "adopted": false,
+      "modelSHA256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+      "inputSystemGrammarIdenticalToDemoFree4B": [
+        "grammar-15",
+        "grammar-19"
+      ],
+      "scopedSourceFiles": 7,
+      "changed": [],
+      "aggregate": "95b8210d9f676bbb995c2652bf162a4c688f08beda89094bc9cf7874266375b0",
+      "latencyLimit": "Host component timings; parent native build may contend; not phone or performance qualification"
+    }
+  },
+  "independentReview": {
+    "status": "production-review-complete-runtime-test-pending",
+    "semantic": {
+      "instructionsUnchanged": true,
+      "exactMetadataAgreementGuardRetained": true,
+      "automaticMemoryQualified": false,
+      "independentlyRerunTests": [
+        "classifierReceivesOnlyCurrentSourceEvidence"
+      ],
+      "passed": 1,
+      "remainingLimit": "Decision classification unresolved; no semantic qualification run."
+    },
+    "tokenizer": {
+      "reviewed": [
+        "NFC and exact added-token boundaries",
+        "regex full coverage and zero-width rejection",
+        "token input, vocabulary and context bounds",
+        "native byte mapping and custom token embedding API",
+        "artifact recipe nonreplacement behavior"
+      ],
+      "artifactFilesVerified": 11,
+      "finding": null,
+      "resolvedFinding": "Initial candidate receipt patch mismatch resolved by final recipe output; final patch and 11 artifact hashes independently match.",
+      "artifactVerification": {
+        "artifactFileCount": 11,
+        "mismatches": [],
+        "currentPatchMatches": true,
+        "patchSHA256": "f62338c56245aa734110fb10623625302b8e3a27ff5cee999f5bbf6220904df1",
+        "receiptSHA256": "eef5865c802f85dd4b6b670a6e42c64abb04e1d8b1b1cf209a19834bd7a704d3"
+      },
+      "independentPureTestsPassed": 4,
+      "independentNativeTest": "Skipped deliberately; worker separately reports 6 token cases pass.",
+      "finalAdditionalReview": "Reviewed CodingKeys mapping and skip-only-#version merge loader fix; no remaining finding. Worker final native 257-value and 7-case checks reported, not independently repeated."
+    },
+    "limits": [
+      "Pair classification is not candidate retrieval or full pipeline qualification.",
+      "Host timing under concurrent SDK builds; no phone qualification.",
+      "No automatic write enablement.",
+      "No further inference without root slot."
+    ],
+    "productionFilter": {
+      "findings": [],
+      "reviewed": [
+        "Fresh byte-exact source snapshot after relevance",
+        "Raw source intersection excludes metadata from relevance",
+        "Unknown returned IDs rejected",
+        "One coordinator lease across filter batch and unload",
+        "Cancellation releases lease after model stops",
+        "Existing cached model SHA/size and atomic bundle copy"
+      ],
+      "limit": "Cactus retrieval occurs outside chat/speech/relevance coordinator lease; whole-pipeline embedding serialization not established."
+    },
+    "runtimeTest": {
+      "path": "native/MemoryOSTests/AutomaticRecallRuntimeTests.swift",
+      "sha256": "c7bf73982c9df784e0ba6d5c505ec4dd7af794115cac7c7ffe0ee6d8d1e0518d",
+      "fixtureSHA256": "00fb9b613e2036ecd95e01b8c1bc4b43b40c727a3fcfcd3942cc0f7509ddbf3b",
+      "strictFormat": "PASS",
+      "compiledOrRunByReviewer": false,
+      "rootOwnsExecution": true
+    }
+  },
+  "relevanceComponent": {
+    "status": "PASS",
+    "componentOnly": true,
+    "fullRetrievalQualified": false,
+    "model": "Qwen3-1.7B-Q4_K_M",
+    "expectedModelSHA256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+    "fixtureSHA256": "00fb9b613e2036ecd95e01b8c1bc4b43b40c727a3fcfcd3942cc0f7509ddbf3b",
+    "caseCount": 12,
+    "matchedCases": 12,
+    "pairCount": 96,
+    "passedPairs": 96,
+    "positivePairs": 6,
+    "acceptedPositivePairs": 6,
+    "negativePairs": 90,
+    "falsePositivePairs": 0,
+    "runtimeErrors": 0,
+    "totalPairSeconds": 105.98758637905121,
+    "medianPairSeconds": 0.7676649689674377,
+    "p95PairSeconds": 2.4246649742126465,
+    "timingLimit": "Host while SDK builds ran; not phone or end-to-end latency",
+    "sourceFileCount": 9,
+    "changedSources": [],
+    "sourceAggregate": "9aab501c96a60cf9375f3ff30ffbcd23488eb61ece54f97557760bbeb57ff132",
+    "caseResults": [
+      {
+        "id": "q01",
+        "expectedIDs": [
+          "r01"
+        ],
+        "actualIDs": [
+          "r01"
+        ],
+        "passed": true
+      },
+      {
+        "id": "q02",
+        "expectedIDs": [
+          "r02"
+        ],
+        "actualIDs": [
+          "r02"
+        ],
+        "passed": true
+      },
+      {
+        "id": "q03",
+        "expectedIDs": [
+          "r03"
+        ],
+        "actualIDs": [
+          "r03"
+        ],
+        "passed": true
+      },
+      {
+        "id": "q04",
+        "expectedIDs": [
+          "r04"
+        ],
+        "actualIDs": [
+          "r04"
+        ],
+        "passed": true
+      },
+      {
+        "id": "q05",
+        "expectedIDs": [
+          "r05"
+        ],
+        "actualIDs": [
+          "r05"
+        ],
+        "passed": true
+      },
+      {
+        "id": "q06",
+        "expectedIDs": [
+          "r06"
+        ],
+        "actualIDs": [
+          "r06"
+        ],
+        "passed": true
+      },
+      {
+        "id": "q07",
+        "expectedIDs": [],
+        "actualIDs": [],
+        "passed": true
+      },
+      {
+        "id": "q08",
+        "expectedIDs": [],
+        "actualIDs": [],
+        "passed": true
+      },
+      {
+        "id": "q09",
+        "expectedIDs": [],
+        "actualIDs": [],
+        "passed": true
+      },
+      {
+        "id": "q10",
+        "expectedIDs": [],
+        "actualIDs": [],
+        "passed": true
+      },
+      {
+        "id": "q11",
+        "expectedIDs": [],
+        "actualIDs": [],
+        "passed": true
+      },
+      {
+        "id": "q12",
+        "expectedIDs": [],
+        "actualIDs": [],
+        "passed": true
+      }
+    ],
+    "resultSHA256": "1620569562c5309ae1c7fc86dbd9d21e61cd7ed0387e1a07ae4ac29feb33cbab",
+    "logSHA256": "d8bd0a44aa083be7396d42cde31e892e91f2075a5e1cf4aded4632d9e97259cd",
+    "freshness": "Now consumed; no prompt or grammar tuning after outcomes"
+  },
+  "productionIntegration": {
+    "candidateLimit": 8,
+    "evidenceLimit": 3,
+    "candidateSimilarityMinimum": -1,
+    "acceptance": "fixed local 1.7B relevance decision plus fresh app source validation",
+    "modelSHA256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+    "modelBytes": 1107409472,
+    "scope": "experimental host and Simulator integration; no release or physical qualification",
+    "automaticMemoryQualified": false,
+    "chatReleaseFunctions": 68,
+    "bundleTests": 2,
+    "nativeBuild": "pass",
+    "nativeRuntime": {
+      "functions": 35,
+      "suites": 4,
+      "passed": true,
+      "fixtureCases": 12,
+      "matched": 12,
+      "positiveHits": 6,
+      "falsePositiveCases": 0,
+      "runtimeErrors": 0,
+      "medianSeconds": 8.80325299501419,
+      "p95Seconds": 12.266651034355164,
+      "timingScope": "Simulator full retrieval, eight candidates, includes verification load/unload; not physical performance",
+      "cases": [
+        {
+          "id": "q01",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 1,
+          "seconds": 10.865116000175476
+        },
+        {
+          "id": "q02",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 1,
+          "seconds": 12.266651034355164
+        },
+        {
+          "id": "q03",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 1,
+          "seconds": 8.974316000938416
+        },
+        {
+          "id": "q04",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 1,
+          "seconds": 8.418223023414612
+        },
+        {
+          "id": "q05",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 1,
+          "seconds": 8.64811897277832
+        },
+        {
+          "id": "q06",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 1,
+          "seconds": 9.180588960647583
+        },
+        {
+          "id": "q07",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 0,
+          "seconds": 8.49567699432373
+        },
+        {
+          "id": "q08",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 0,
+          "seconds": 8.193259954452515
+        },
+        {
+          "id": "q09",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 0,
+          "seconds": 9.081966042518616
+        },
+        {
+          "id": "q10",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 0,
+          "seconds": 8.958387017250061
+        },
+        {
+          "id": "q11",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 0,
+          "seconds": 8.305891036987305
+        },
+        {
+          "id": "q12",
+          "candidateCovered": true,
+          "matched": true,
+          "returned": 0,
+          "seconds": 8.381615996360779
+        }
+      ]
+    },
+    "capture": "actual dark Simulator capture of cross-chat Arabic recall and dated original source",
+    "staticAnalysis": "pass"
+  },
+  "sourceIdentity": {
+    "files": 224,
+    "aggregate": "5e52034dc712f77bee447514a4f83faa67012ed7b8d0c9b6a1ef2f6241029a45",
+    "changedSinceBuild": [],
+    "finalRecheckChangedFiles": []
+  },
+  "buildAndRuntimeEvidence": {
+    "memoryos-quality-native-build.log": "3299d0d27af128ffbe8fb40b843021295d39781692062fbf03cb0a08c9f3b525",
+    "memoryos-quality-native-tests.log": "4e6b051ec6d87b556eef2743b2b8e79c7f4cc3cd463cb3982f4fbc3e41c92771",
+    "memoryos-quality-native-analyze.log": "b7802e693fdec14042e9283daec1ca1aa93f167bba4e2b526a80804752501d50",
+    "memoryos-recall-quality-chat-tests.log": "87b1993b992f79f11eff7c793c59e73fed050642254672b805f157a81d5de989"
+  },
+  "cleanup": {
+    "items": [
+      {
+        "path": "/tmp/memoryos-recall-quality-build",
+        "allocatedBytesBefore": 222769152,
+        "reason": "Completed generated build; compact outcome and required diagnostics retained separately",
+        "allocatedBytesAfter": 0
+      },
+      {
+        "path": "/tmp/memoryos-recall-quality-chat-build",
+        "allocatedBytesBefore": 86470656,
+        "reason": "Completed generated build; compact outcome and required diagnostics retained separately",
+        "allocatedBytesAfter": 0
+      },
+      {
+        "path": "/tmp/memoryos-relevance-probe-build",
+        "allocatedBytesBefore": 89686016,
+        "reason": "Completed generated build; compact outcome and required diagnostics retained separately",
+        "allocatedBytesAfter": 0
+      },
+      {
+        "path": "/tmp/memoryos-quality-review-pairs-build",
+        "allocatedBytesBefore": 89550848,
+        "reason": "Completed generated build; compact outcome and required diagnostics retained separately",
+        "allocatedBytesAfter": 0
+      },
+      {
+        "path": "/tmp/memoryos-type-repair-build",
+        "allocatedBytesBefore": 111280128,
+        "reason": "Completed generated build; compact outcome and required diagnostics retained separately",
+        "allocatedBytesAfter": 0
+      },
+      {
+        "path": "/tmp/memoryos-type-repair-unit-build",
+        "allocatedBytesBefore": 126808064,
+        "reason": "Completed generated build; compact outcome and required diagnostics retained separately",
+        "allocatedBytesAfter": 0
+      },
+      {
+        "path": "/tmp/memoryos-token-parity-sdk-build",
+        "allocatedBytesBefore": 42156032,
+        "allocatedBytesAfter": 0,
+        "reason": "Worker-confirmed completed generated scratch; canonical and historical artifacts retained"
+      },
+      {
+        "path": "/tmp/memoryos-token-parity-swift-build",
+        "allocatedBytesBefore": 121946112,
+        "allocatedBytesAfter": 0,
+        "reason": "Worker-confirmed completed generated scratch; canonical and historical artifacts retained"
+      },
+      {
+        "path": "/tmp/memoryos-token-parity-validation",
+        "allocatedBytesBefore": 90112,
+        "allocatedBytesAfter": 0,
+        "reason": "Worker-confirmed completed generated scratch; canonical and historical artifacts retained"
+      },
+      {
+        "path": "/tmp/memoryos-token-parity-candidate-artifacts-v2",
+        "allocatedBytesBefore": 17928192,
+        "allocatedBytesAfter": 0,
+        "reason": "Worker-confirmed completed generated scratch; canonical and historical artifacts retained"
+      },
+      {
+        "path": "/tmp/memoryos-token-parity-candidate-artifacts",
+        "allocatedBytesBefore": 0,
+        "allocatedBytesAfter": 0,
+        "reason": "Worker-confirmed completed generated scratch; canonical and historical artifacts retained"
+      }
+    ],
+    "before": 908685312,
+    "after": 0,
+    "retainedEvidenceHashes": {
+      "/tmp/memoryos-token-parity-implementation.json": "fded966689f8f2e55c976e55271a7e60f845c2c167907c9d8ac2d74654148fb8",
+      "/tmp/memoryos-type-repair-compact.json": "a97d3173268c5541f7357d34c2cd4664f66ef3a13f4166b5c658e15cad5ebc29",
+      "/tmp/memoryos-quality-review-result.json": "b0ce7f910b6d00ea7464f6001372de84e990ad938d0980f9b930f2cb34323481",
+      "/tmp/memoryos-quality-review-pairs-result.json": "1620569562c5309ae1c7fc86dbd9d21e61cd7ed0387e1a07ae4ac29feb33cbab",
+      "/tmp/memoryos-recall-quality-chat-tests.log": "87b1993b992f79f11eff7c793c59e73fed050642254672b805f157a81d5de989"
+    },
+    "exceptions": [
+      "Current native build and exact pinned package checkouts during runtime testing",
+      "Canonical artifacts, original upstream sources and verified models",
+      "Failed semantic diagnostic harnesses and compact results"
+    ]
+  },
+  "limits": [
+    "Automatic memory extraction remains unqualified; fact regression repaired only in the bounded 4B classifier check; decision/event case still fails.",
+    "Twelve-case retrieval fixture has eight records, now consumed; no large archive recall claim.",
+    "Cactus embeddings execute outside chat/speech/relevance inference lease.",
+    "Physical phone testing remains paused; no battery, heat, locked-phone or release qualification."
+  ],
+  "finalIndependentRecheck": {
+    "status": "PASS",
+    "sourceFiles": 224,
+    "sourceChanges": [],
+    "sourceAggregate": "5e52034dc712f77bee447514a4f83faa67012ed7b8d0c9b6a1ef2f6241029a45",
+    "cleanupPaths": 11,
+    "cleanupPathsStillPresent": [],
+    "retainedEvidenceMismatches": [],
+    "cleanupAllocatedBytesBefore": 908685312,
+    "artifactFiles": 11,
+    "artifactMismatches": [],
+    "artifactReceiptSHA256": "eef5865c802f85dd4b6b670a6e42c64abb04e1d8b1b1cf209a19834bd7a704d3",
+    "patchMatches": true,
+    "buildRuntimeEvidenceMismatches": [],
+    "caseCount": 12,
+    "uniqueCaseCount": 12,
+    "allCasesMatch": true,
+    "positiveHits": 6,
+    "negativeLeaks": 0,
+    "medianSeconds": 8.80325299501419,
+    "p95Seconds": 12.266651034355164,
+    "expectedSummaryPresent": true,
+    "connectedTestPassed": true,
+    "nativeSummaryPresent": true,
+    "automaticMemoryQualifiedStillFalse": true,
+    "docsFindings": [],
+    "limits": [
+      "Current UI capture not reviewed; root working.",
+      "Frozen fixture is now consumed and has eight records.",
+      "Semantic extraction and physical qualification remain blocked."
+    ]
+  },
+  "captures": [
+    {
+      "file": "arabic-recall-repaired.png",
+      "sha256": "2dc4ee39ba323fdd37cb90d695b1b74350e3006277a6a49fd04068324f387afc",
+      "device": "iPhone 18 Pro Simulator",
+      "os": "iOS 27.2",
+      "app": "MemoryOS Check",
+      "appearance": "dark",
+      "sourceAggregate": "5e52034dc712f77bee447514a4f83faa67012ed7b8d0c9b6a1ef2f6241029a45"
+    },
+    {
+      "file": "arabic-original-source.png",
+      "sha256": "14f17fe5ec0c179adae2350c259924435ea8b38f74b18947d1d5bb95aa856587",
+      "device": "iPhone 18 Pro Simulator",
+      "os": "iOS 27.2",
+      "app": "MemoryOS Check",
+      "appearance": "dark",
+      "sourceAggregate": "5e52034dc712f77bee447514a4f83faa67012ed7b8d0c9b6a1ef2f6241029a45"
+    }
+  ],
+  "captureReview": {
+    "reviewer": "independent verifier",
+    "status": "reviewed",
+    "observed": [
+      "Dark Arabic recall answer with matching source link",
+      "Original statement and date match",
+      "No visible clipping or overlap",
+      "Automatic-memory-disabled notice remains visible"
+    ],
+    "observation": "Existing source sheet exposes selectable stable source UUID; retained with source provenance UI, not a retrieval quality claim."
+  },
+  "deviceSessionReleased": true,
+  "projectMemoryDelivery": {
+    "project": "memoryos",
+    "api": {
+      "status": "healthy",
+      "database": "connected",
+      "db_acquire_ms": 0.6,
+      "db_pool_waiting": 0,
+      "db_pool_in_use": 0,
+      "db_pool_max": 100,
+      "db_pool_idle": 6
+    },
+    "sources": 55,
+    "pending": [],
+    "failed": {}
+  }
+}

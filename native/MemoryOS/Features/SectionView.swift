@@ -3,6 +3,7 @@ import SwiftUI
 
 /// The session retains paths; only the current section renders controls.
 struct SectionHostView: View {
+  @Environment(PersonalMemoryViewModel.self) private var personal
   let session: DemoSession
   let audio: AudioViewModel
   let records: LocalRecordsViewModel
@@ -44,6 +45,27 @@ struct SectionHostView: View {
                 .memoryGlass(in: Circle(), interactive: true)
               }
               Menu {
+                Button(
+                  session.language.text(
+                    chat.hasTemporarySession ? "Resume temporary chat" : "Start temporary chat",
+                    chat.hasTemporarySession ? "متابعة محادثة مؤقتة" : "بدء محادثة مؤقتة")
+                ) {
+                  Task {
+                    await chat.startTemporary()
+                    if chat.error == nil {
+                      captureShowsConversation = true
+                      session.section = .chat
+                    }
+                  }
+                }.accessibilityIdentifier("start-temporary-chat")
+                if chat.hasTemporarySession {
+                  Button(
+                    session.language.text("End temporary session", "إنهاء الجلسة المؤقتة"),
+                    role: .destructive
+                  ) {
+                    Task { await chat.endTemporary() }
+                  }.accessibilityIdentifier("end-temporary-chat")
+                }
                 Button(session.language.text("Saved chats", "المحادثات المحفوظة")) {
                   showHistory = true
                 }
@@ -99,6 +121,14 @@ struct SectionHostView: View {
           switch destination {
           case .record(let id): RecordDetailView(session: session, recordID: id)
           case .birthday(let id): BirthdayDetailView(session: session, birthdayID: id)
+          case .personalProfile(let id):
+            PersonalProfileDetail(model: personal, profileID: id, language: session.language)
+          case .personalEntry(let id):
+            PersonalEntryDetail(model: personal, entryID: id, language: session.language)
+          case .personalSource(let id):
+            if let source = personal.snapshot.sources.first(where: { $0.id == id }) {
+              PersonalSourceView(source: source, language: session.language)
+            }
           }
         }
         .toolbar {
@@ -116,6 +146,7 @@ struct SectionHostView: View {
 }
 
 struct SectionView: View {
+  @Environment(PersonalMemoryViewModel.self) private var personal
   @Bindable var session: DemoSession
   let audio: AudioViewModel
   let records: LocalRecordsViewModel
@@ -146,20 +177,18 @@ struct SectionView: View {
             guard
               await chat.prepareVoiceChat(
                 recordingID: recording.id,
-                durationSeconds: recording.durationSeconds ?? 0)
+                durationSeconds: recording.durationSeconds ?? 0, asNormalCapture: true)
             else { return false }
             session.section = .chat
             Task { await chat.processVoice() }
             return true
           })
       case .profiles:
-        CatalogListView(
-          session: session, state: session.state(for: section), kind: .person,
-          menuIsOpen: menuIsOpen)
+        PersonalProfilesView(
+          model: personal, kind: .person, language: language, menuIsOpen: menuIsOpen)
       case .projects:
-        CatalogListView(
-          session: session, state: session.state(for: section), kind: .project,
-          menuIsOpen: menuIsOpen)
+        PersonalProfilesView(
+          model: personal, kind: .project, language: language, menuIsOpen: menuIsOpen)
       case .birthdays:
         BirthdaysView(session: session)
       case .brainMap:
@@ -177,15 +206,17 @@ struct SectionView: View {
           .accessibilityIdentifier("language-picker")
           Text(
             language.text(
-              "Typed memories stay on this device. Sample profiles and reminder choices remain a demo.",
-              "تبقى الذكريات المكتوبة على هذا الجهاز. الملفات التجريبية وخيارات التذكير للعرض فقط.")
+              "Normal chats preserve your original messages on this device. Temporary chats create no lasting history. Reminder choices remain a demo.",
+              "تحفظ المحادثات العادية رسائلك الأصلية على الجهاز. لا تحفظ المحادثات المؤقتة تاريخاً دائماً. خيارات التذكير تجريبية."
+            )
           )
           .foregroundStyle(MemoryTheme.secondary)
         }
         .scrollContentBackground(.hidden)
       case .memories:
-        LocalRecordsListView(
-          model: records, language: language, openCapture: { session.openHome() })
+        PersonalMemoryHomeView(
+          model: personal, records: records, language: language,
+          openCapture: { session.openHome() })
       }
     }
     .frame(maxWidth: .infinity, maxHeight: .infinity)

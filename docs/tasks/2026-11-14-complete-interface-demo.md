@@ -1,5 +1,7 @@
 # S02–S11: Complete interface demo
 
+C52 roadmap update, 2026-11-15: checklist groups 1–5 are closed implementation milestones. Outstanding checks move forward to [groups 15–18](../plans/implementation-checklist.md#15-physical-device-supported-os-and-accessibility-qualification). Historical verification verdicts below remain evidence, not instructions to reopen those groups. No failed/unavailable check becomes passed through this transfer.
+
 Status: Step 2 BLOCKED after independent review and in-scope repairs. Local functional checks pass across the recorded runs. Native accessibility diagnostics still fail; physical iPhone and iOS 18 runtime checks remain unavailable. The owner merged PR #1 outside the agent flow; the listed verification gaps remain open.
 
 Scope: S02 Capture, S03 sidebar regression, S04 People, S05 Projects, S06 Birthdays, S07 BrainMap, S08 languages, S09 demo boundaries, S10 visual review, S11 launch. Keep R01/R02/R05/R10/R15/R16/R18/R19/R27/R32 as requested product features; this task demonstrates their interface only.

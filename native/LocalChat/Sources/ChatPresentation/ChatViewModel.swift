@@ -32,7 +32,7 @@ public final class ChatViewModel {
   public init(useCases: ChatUseCases) { self.useCases = useCases }
 
   public var conversations: [ChatConversation] {
-    snapshot.conversations.sorted {
+    snapshot.conversations.filter { !$0.isTemporary }.sorted {
       ($0.messages.last?.createdAt ?? $0.createdAt)
         > ($1.messages.last?.createdAt ?? $1.createdAt)
     }
@@ -40,6 +40,9 @@ public final class ChatViewModel {
   public var currentConversation: ChatConversation? {
     snapshot.conversations.first { $0.id == snapshot.selectedID }
   }
+  public var isTemporary: Bool { currentConversation?.isTemporary == true }
+  public var hasTemporarySession: Bool { snapshot.conversations.contains(where: \.isTemporary) }
+
   public var draft: String {
     get { localDraft }
     set {
@@ -143,6 +146,36 @@ public final class ChatViewModel {
       report(error)
       return false
     }
+  }
+
+  public func startTemporary() async {
+    guard hasLoaded, !isLoading, !isTransitioning, !isGenerating, !isTranscribing else { return }
+    isTransitioning = true
+    defer { isTransitioning = false }
+    guard await flushDraft() else { return }
+    do {
+      apply(try await useCases.startTemporary(), replaceInput: true)
+      error = nil
+    } catch { report(error) }
+  }
+
+  public func endTemporary() async {
+    guard hasLoaded, !isLoading, !isTransitioning, hasTemporarySession else { return }
+    isTransitioning = true
+    defer { isTransitioning = false }
+    if !isTemporary {
+      guard await flushDraft() else { return }
+    }
+    draftSave?.cancel()
+    draftSave = nil
+    stop()
+    cancelVoice()
+    await voiceProcessing?.value
+    await generation?.value
+    do {
+      apply(try await useCases.endTemporary(), replaceInput: true)
+      error = nil
+    } catch { report(error) }
   }
 
   public func newConversation() async {
@@ -304,10 +337,16 @@ public final class ChatViewModel {
   }
 
   /// Commit the pending audio card before beginning slow transcription.
-  @discardableResult public func prepareVoiceChat(recordingID: UUID, durationSeconds: Double) async
+  @discardableResult public func prepareVoiceChat(
+    recordingID: UUID, durationSeconds: Double, asNormalCapture: Bool = false
+  ) async
     -> Bool
   {
     guard hasLoaded, !isLoading, !isTransitioning, !isGenerating, !isTranscribing else {
+      return false
+    }
+    guard asNormalCapture || !isTemporary else {
+      error = .temporaryVoiceUnavailable
       return false
     }
     isTransitioning = true
@@ -315,7 +354,9 @@ public final class ChatViewModel {
     guard await flushDraft() else { return false }
     do {
       apply(
-        try await useCases.beginVoice(recordingID: recordingID, durationSeconds: durationSeconds),
+        try await useCases.beginVoice(
+          recordingID: recordingID, durationSeconds: durationSeconds,
+          asNormalCapture: asNormalCapture),
         replaceInput: true)
       error = nil
       return true
@@ -394,7 +435,10 @@ public final class ChatViewModel {
   }
 
   public func cancelVoice() {
-    if voiceProcessing != nil { isStopping = true }
+    if voiceProcessing != nil {
+      if !isStopping { stopInstant = .now }
+      isStopping = true
+    }
     voiceProcessing?.cancel()
   }
 

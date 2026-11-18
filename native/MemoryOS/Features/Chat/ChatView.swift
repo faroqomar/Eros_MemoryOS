@@ -4,6 +4,7 @@ import SwiftUI
 import UIKit
 
 struct ChatView: View {
+  @Environment(PersonalMemoryViewModel.self) private var personal
   @Bindable var model: ChatViewModel
   let records: LocalRecordsViewModel
   let audio: AudioViewModel
@@ -27,6 +28,18 @@ struct ChatView: View {
 
   var body: some View {
     VStack(spacing: 0) {
+      if model.isTemporary {
+        HStack(alignment: .top) {
+          Label(
+            language.text("Temporary · nothing new saved", "مؤقتة · لا نحفظ شيئاً جديداً"),
+            systemImage: "eye.slash"
+          )
+          .font(.caption).accessibilityIdentifier("temporary-chat-banner")
+          Spacer()
+          Button(language.text("End", "إنهاء")) { Task { await model.endTemporary() } }
+            .accessibilityIdentifier("end-temporary-chat").frame(minHeight: 44)
+        }.padding(.horizontal, 20).background(MemoryTheme.panel)
+      }
       ScrollViewReader { proxy in
         ScrollView {
           LazyVStack(alignment: .leading, spacing: 24) {
@@ -40,7 +53,8 @@ struct ChatView: View {
             }
             if let pending = model.currentConversation?.pendingVoice {
               ChatPendingVoiceCard(
-                pending: pending, processing: model.isTranscribing, language: language,
+                pending: pending, processing: model.isTranscribing, stopping: model.isStopping,
+                language: language,
                 play: { seconds in
                   Task { await audio.play(id: pending.recordingID, seconds: seconds) }
                 },
@@ -60,6 +74,29 @@ struct ChatView: View {
                 stopVoice: { audio.stopPlayback() }
               )
               .transition(reduceMotion ? .identity : .opacity.combined(with: .offset(y: 8)))
+            }
+            if !model.isTemporary, let conversationID = model.currentConversation?.id,
+              personal.snapshot.analysisPendingSources.contains(where: {
+                $0.conversationID == conversationID
+              })
+                || personal.snapshot.deferredSources.contains(where: {
+                  $0.conversationID == conversationID
+                })
+            {
+              PersonalOrganizationStatus(
+                model: personal, language: language, conversationID: conversationID,
+                canRetry: !model.isGenerating && !model.isTranscribing && !model.isTransitioning
+              )
+              .padding(14).background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 16))
+            }
+            if !model.isTemporary,
+              let pending = personal.snapshot.pendingSources.last(where: { source in
+                source.conversationID == model.currentConversation?.id
+              })
+            {
+              PersonalClarificationCard(model: personal, source: pending, language: language)
+                .id(pending.id)
+                .padding(14).background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 16))
             }
             Color.clear.frame(height: 1).id("latest")
           }
@@ -84,6 +121,17 @@ struct ChatView: View {
         }
         .onChange(of: updateKey) { _, _ in
           if followsLatest && !userScrolling { proxy.scrollTo("latest", anchor: .bottom) }
+        }
+        .onChange(
+          of: personal.snapshot.pendingSources.last(where: {
+            $0.conversationID == model.currentConversation?.id
+          })?.id
+        ) { _, _ in
+          if followsLatest && !userScrolling { proxy.scrollTo("latest", anchor: .bottom) }
+        }
+        .onChange(of: messages.count) { _, _ in Task { await personal.load() } }
+        .onChange(of: model.isGenerating) { _, generating in
+          if !generating { Task { await personal.load() } }
         }
         .onChange(of: model.currentConversation?.id) { _, _ in
           followsLatest = true
@@ -196,6 +244,11 @@ struct ChatView: View {
         Menu {
           Button(action: openRecordings) {
             Label(language.text("Recordings", "التسجيلات"), systemImage: "waveform")
+          }.disabled(model.isTemporary)
+          if !model.isTemporary {
+            Button(language.text("Start temporary chat", "بدء محادثة مؤقتة")) {
+              Task { await model.startTemporary() }
+            }.disabled(model.isGenerating || model.isTranscribing || model.isTransitioning)
           }
           Toggle(isOn: $model.memoryMode) {
             Label(
@@ -254,6 +307,15 @@ struct ChatView: View {
 enum ChatCopy {
   static func error(_ error: ChatError, language: AppLanguage) -> String {
     switch error {
+    case .memoryPreservationFailed:
+      language.text(
+        "Your original is in this chat, but lasting memory could not save. Retry after unlocking the device and checking storage.",
+        "يبقى الأصل في المحادثة، لكن تعذر حفظ الذاكرة الدائمة. افتح القفل وتحقق من المساحة ثم أعد المحاولة."
+      )
+    case .temporaryVoiceUnavailable:
+      language.text(
+        "End temporary chat before recording audio. Recordings are lasting files.",
+        "أنه المحادثة المؤقتة قبل تسجيل الصوت. التسجيلات ملفات دائمة.")
     case .contextLimit:
       language.text(
         "This chat exceeds the local model's context limit. Start a new chat; your messages remain saved.",

@@ -21,6 +21,24 @@ def digest(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def tree_digest(path):
+    value = hashlib.sha256()
+    for item in sorted(path.rglob("*")):
+        relative = item.relative_to(path)
+        if any(part in {".git", ".build", ".swiftpm"} for part in relative.parts):
+            continue
+        if item.is_symlink():
+            # Reviewed upstream test/source aliases must stay inside their own checkout.
+            resolved = item.resolve()
+            if resolved != path and path not in resolved.parents:
+                raise RuntimeError("SDK symlink escapes its checkout: " + str(item))
+            value.update(str(relative).encode() + b"\0link\0" + str(item.readlink()).encode())
+            continue
+        if item.is_file():
+            value.update(str(relative).encode() + b"\0" + bytes.fromhex(digest(item)))
+    return value.hexdigest()
+
+
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--package", required=True, type=Path, help="Explicit temporary graph with adapter-only library evolution flags")
@@ -28,7 +46,9 @@ def main():
     p.add_argument("--output", required=True, type=Path)
     p.add_argument("--evidence", required=True, type=Path)
     p.add_argument("--source-provenance", required=True, type=Path, help="Reviewed exact source and SDK manifest hashes")
+    p.add_argument("--module-name", choices=["WaxEvaluationAdapter", "WaxMemoryRuntime"], default="WaxEvaluationAdapter")
     args = p.parse_args()
+    module = args.module_name
     root, build, output, evidence = (x.resolve() for x in [args.package, args.build_root, args.output, args.evidence])
     provenance = json.loads(args.source_provenance.read_text())
     repository = Path(__file__).resolve().parents[3]
@@ -38,9 +58,13 @@ def main():
         for row in provenance["source_files"]:
             if digest(repository / row["path"]) != row["sha256"]:
                 raise RuntimeError("App-owned source changed: " + row["path"])
+            if row.get("temporary_path") and digest(Path(row["temporary_path"])) != row["sha256"]:
+                raise RuntimeError("Temporary adapter source changed: " + row["path"])
         for row in provenance["sdks"]:
             if digest(Path(row["path"]) / "Package.swift") != row["manifest_sha256"]:
                 raise RuntimeError("SDK manifest changed: " + row["identity"])
+            if row.get("tree_sha256") and tree_digest(Path(row["path"])) != row["tree_sha256"]:
+                raise RuntimeError("SDK source tree changed: " + row["identity"])
     verify_sources()
     if output.exists():
         p.error("Output already exists; preserve it and choose a new output.")
@@ -53,35 +77,35 @@ def main():
         scratch = build / name
         sdk_path = subprocess.check_output(["/usr/bin/xcrun", "--sdk", sdk, "--show-sdk-path"], text=True).strip()
         command = ["/usr/bin/swift", "build", "--package-path", str(root), "--scratch-path", str(scratch),
-                   "-c", "release", "--target", "WaxEvaluationAdapter", "--triple", triple, "--sdk", sdk_path, "--jobs", "4"]
+                   "-c", "release", "--target", module, "--triple", triple, "--sdk", sdk_path, "--jobs", "4"]
         start = time.time()
         with (evidence / ("xcframework-" + name + "-build.log")).open("w") as log:
             result = subprocess.run(command, env=env, stdout=log, stderr=subprocess.STDOUT)
         if result.returncode:
             raise RuntimeError("Actual slice build failed: " + name)
         verify_sources()
-        framework = output / "Slices" / name / "WaxEvaluationAdapter.framework"
-        modules = framework / "Modules/WaxEvaluationAdapter.swiftmodule"
+        framework = output / "Slices" / name / (module + ".framework")
+        modules = framework / ("Modules/" + module + ".swiftmodule")
         modules.mkdir(parents=True)
         objects = sorted(f for f in scratch.rglob("*.o") if "/" + configuration + "/" in str(f)
                          and "/Objects-normal/arm64/" in str(f)
-                         and not any("AIEvaluationCore" in part for part in f.parts))
+                         and not any(core in part for part in f.parts for core in ("AIEvaluationCore", "RetrievalCore")))
         if not objects or any("Tests" in str(f) or "CLI" in str(f) for f in objects):
             raise RuntimeError("Unexpected static archive input graph")
-        interfaces = list(scratch.rglob("WaxEvaluationAdapter.swiftinterface"))
+        interfaces = list(scratch.rglob(module + ".swiftinterface"))
         if len(interfaces) != 1:
             raise RuntimeError("Expected one actual adapter public interface")
         interface = interfaces[0].read_text()
-        if any("import " + vendor in interface for vendor in ["Wax", "MetalANNS", "GRDB", "Crypto", "SwiftASN1"]):
+        if any("import " + vendor in interface for vendor in ["Wax", "WaxMemoryRuntime", "MetalANNS", "GRDB", "Crypto", "SwiftASN1"]):
             raise RuntimeError("Vendor module escaped into public interface")
         shutil.copy2(interfaces[0], modules / (module_triple + ".swiftinterface"))
         filelist = evidence / ("xcframework-" + name + "-objects.txt")
         filelist.write_text("\n".join(str(f) for f in objects) + "\n")
-        subprocess.run(["/usr/bin/xcrun", "libtool", "-static", "-o", str(framework / "WaxEvaluationAdapter"),
+        subprocess.run(["/usr/bin/xcrun", "libtool", "-static", "-o", str(framework / module),
                         "-filelist", str(filelist)], env=env, check=True)
-        info = dict(CFBundleDevelopmentRegion="en", CFBundleExecutable="WaxEvaluationAdapter",
+        info = dict(CFBundleDevelopmentRegion="en", CFBundleExecutable=module,
                     CFBundleIdentifier="com.eros.memoryos.evaluation.wax", CFBundleInfoDictionaryVersion="6.0",
-                    CFBundleName="WaxEvaluationAdapter", CFBundlePackageType="FMWK",
+                    CFBundleName=module, CFBundlePackageType="FMWK",
                     CFBundleShortVersionString="0.1.47", CFBundleVersion="1",
                     CFBundleSupportedPlatforms=[{"macosx": "MacOSX", "iphoneos": "iPhoneOS", "iphonesimulator": "iPhoneSimulator"}[sdk]])
         info["LSMinimumSystemVersion" if sdk == "macosx" else "MinimumOSVersion"] = "14.0" if sdk == "macosx" else "18.0"
@@ -105,7 +129,7 @@ def main():
         records[sdk] = dict(triple=triple, argv=command, build_seconds=time.time() - start,
                             static_object_count=len(objects), excluded_core_objects=True,
                             selected_object_targets=sorted({part.removesuffix("-t.build") for f in objects for part in f.parts if part.endswith("-t.build")}),
-                            framework=str(framework.relative_to(output)), binary_sha256=digest(framework / "WaxEvaluationAdapter"),
+                            framework=str(framework.relative_to(output)), binary_sha256=digest(framework / module),
                             interface_sha256=digest(modules / (module_triple + ".swiftinterface")),
                             resources_directory="Resources/" + sdk, resource_files=source_files)
         frameworks.append(framework)
@@ -113,7 +137,7 @@ def main():
     command = ["/usr/bin/xcodebuild", "-create-xcframework"]
     for framework in frameworks:
         command += ["-framework", str(framework)]
-    command += ["-output", str(output / "WaxEvaluationAdapter.xcframework")]
+    command += ["-output", str(output / (module + ".xcframework"))]
     subprocess.run(command, check=True, env=env)
     licenses = []
     for package in provenance["sdks"]:
@@ -125,13 +149,13 @@ def main():
                 shutil.copy2(f, target)
                 licenses.append(dict(path=str(target.relative_to(output)), sha256=digest(target)))
     shutil.copy2(args.source_provenance, output / "source-provenance.json")
-    receipt = dict(format_version=1, purpose="Personal experimental evaluation; not a release artifact",
+    receipt = dict(format_version=1, module=module, purpose="Personal experimental evaluation; not a release artifact",
                    upstream_revision="e4587f8cebb76aa92ece008253f13c66b756e68b",
                    patch_sha256=digest(Path(__file__).resolve().parents[1] / "Patches/wax-0.1.47-ios-desktop-guards.patch"),
                    temporary_root_manifest_sha256=digest(root / "Package.swift"),
                    required_resource_bundles=sorted(BUNDLES), platforms=records,
                    source_provenance_sha256=digest(output / "source-provenance.json"), license_files=licenses,
-                   core_binary_abi="Exact recorded source/toolchain only; AIEvaluationCore not built as a stable external binary library.",
+                   core_binary_abi="Exact recorded source/toolchain only; App-owned core modules are source-linked, not stable external binary libraries.",
                    toolchain=subprocess.check_output(["/usr/bin/swift", "--version"], text=True).strip())
     (output / "packaging-receipt.json").write_text(json.dumps(receipt, indent=2) + "\n")
     print(output / "packaging-receipt.json", flush=True)

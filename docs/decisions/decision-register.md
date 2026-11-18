@@ -130,6 +130,63 @@ C38 authorizes Step 1 implementation and builder checks for local AI comparisons
 ## Checklist group 5 chat, C47, 2026-11-15
 
 C47 starts Step 1 of main-app local chat. Reuse the reviewed llama.cpp CPU adapter and Qwen3-0.6B asset as an experimental integration baseline. This does not reverse group 4 quality failures or select a production model. Keep separate app-owned chat archives and original records; provide explicit memory retrieval and source controls, full-context refusals, recovery and offline operation. The [chat task](../tasks/2026-11-15-local-ai-chat.md) owns current implementation, tests, the requested iPhone 18 Pro Max simulator evidence, and remaining blockers. Independent Step 2 and Step 3 remain separate.
+
+
+## C50: personal-context product goal
+
+The owner requests extensive chat/media imports, source-preserving relationship and person understanding, and organization of ideas, workflows and projects. Fine-tuning and tools are discussion topics, not selected implementations. See the [confirmed goal and proposed approach](personal-context-goal.md).
+
+
+## C51: expanded checklist and memory delivery, 2026-11-15
+
+The owner requests updating Hindsight with C50 personal-context goals and expanding the implementation checklist to cover relationship/media imports, person understanding, life/project capture, fine-tuning evaluation and tools. The current checklist preserves existing IDs and chat group 5; later stages now cover the full goal. This is documentation authorization, not a new implementation stage or evidence that the pasted physical-device/production checkmarks passed.
+
+
+## C52: forward-only milestone numbering, 2026-11-15
+
+The owner requires closing checklist groups 1–5 around completed work and moving unfinished obligations into new numbered groups without returning to earlier milestones. Groups 15–18 own physical/OS/accessibility qualification, chat performance/recovery/offline checks, model quality/production selection, and acceptance/data-policy/delivery closure. Existing evidence and merge/release gates remain valid. This instruction reorganizes the roadmap; it does not claim missing checks passed or start new implementation.
+
 ## C53: mandatory Step 3 documentation cleanup, 2026-11-15
 
 The owner starts Step 3 for local chat and requires updating this standing rule before delivery work: every Step 3 must clean documentation and remove confirmed unnecessary material. The [workflow](../how-to/development-workflow.md#step-3-documentation-cleanup) requires consolidation, link/evidence checks and compact cleanup totals while preserving originals, provenance, active work and required evidence. This adds a delivery duty; existing verification and merge gates remain unchanged.
+
+
+## Group 7 implementation boundary, 2026-11-17
+
+Owner clarification, 2026-11-18: iOS 18 runtime testing is withdrawn from this task's Step 2 gate. Record it as withdrawn, not passed. The deployment target and broader supported-OS/release qualification remain unchanged. Locked-device enforcement and energy/sustained-thermal checks remain open.
+
+The owner requests Step 1 for lasting personal memory, profiles and project organization. The [task](../tasks/2026-11-17-lasting-personal-memory.md) owns the thirteen requested behaviors and builder evidence. Keep ordinary chat originals, confirmed claims, tentative project information and revisable interpretations distinct. Temporary sessions read existing memory but retain no new history; explicit end or process exit discards them while app switching retains in-memory state.
+
+This implementation adds an app-owned version-1 personal graph archive beside the existing SQLite records and chat archive. Small protocols keep it replaceable. Atomic protected writes, bounded image/source data, original-preserving undo and explicit readable export/empty-store restore support recovery. The archive does not select a vendor index or new AI provider. Existing record/audio exports remain separate; full-app backup and production data-policy qualification remain open. The conservative organizer holds unfamiliar English/Arabic statements for clarification; it does not establish semantic or psychological accuracy. No new upstream library/model, cloud service, image generator or import-source connection is selected.
+
+
+Graph-storage tradeoff: a separate bounded JSON archive avoids changing the existing SQLite schema and record archive contract during group 7. Step 2 measured 415 ms edit p95 at 1,000 sources with 50 undo revisions, above the 250 ms target. The adapter now stores repeated history values once in a versioned JSON envelope and reconstructs the same graphs. It reads legacy plain snapshots without rewriting them; the next successful edit atomically writes the compact form. Public exports remain full readable JSON. The file path, original IDs, protection and recovery rules remain unchanged; no provider or database dependency is added. The same physical candidate workload passes: edit p95 94 ms and median reopen 115 ms at 1,000 sources with 50 undo revisions. See the task record for methods, variability and remaining qualification gaps. Version 1 bounds the archive to 64 MiB, 10,000 sources/entries, 2,000 profiles and 50 undo revisions. The image picker accepts up to 2 MiB; the domain archive permits 5 MiB per photo. Rendering validates dimensions and downsamples to 720 pixels. Restore refuses a nonempty graph. This is a bounded implementation choice, not a scale or device-performance claim.
+
+## Automatic-memory follow-up, 2026-11-18
+
+The owner requested semantic automatic-memory rework after rejecting generic per-message meaning menus. The current [task](../tasks/2026-11-18-automatic-personal-memory.md) replaces that path with a model-independent analyzer contract, bounded local structured proposals and domain-owned source validation, clarification and reversible revisions. The tested 1.7B model fails independent accuracy, so this source candidate blocks automatic derived writes. The owner explicitly chose local-only evaluation of the larger pinned candidate and skips further phone tests. This authorizes evaluation, not production adoption or cloud integration; earlier physical lock/energy gates remain open.
+
+Follow-up evaluation, November 18: the verified local 4B candidate completed 38 host cases but failed its semantic gate (independent 3/11 complete claims; 1 accepted mismatch). Automatic derived writes remain disabled. A fresh 12-case routing repair trial also failed: 7/8 complete claims, 2 accepted mismatches. The current task/evidence retains both results; no model, cloud or phone adoption follows.
+
+Automatic-memory workflow reset, 2026-11-18: the completed fourth host trial failed10/20 cases and7/13 claims, with0 accepted mistakes; its inputs are now consumed regression data. Main owns bounded code repairs and independent review. Further full qualification requires current green regressions; automatic writes remain disabled. See [the current task](../tasks/2026-11-18-automatic-personal-memory.md).
+
+## Automatic local recall integration, 2026-11-18
+
+The owner requests repair and implementation of Wax and Cactus in the main app, with online primary-source research permitted. The [task](../tasks/2026-11-18-local-recall-integration.md) implements retrieval before ordinary replies and preserves app-owned originals, provider replacement, local-only execution and private-session nonretention. Existing physical-phone pause and semantic qualification gates remain; no Step3 or release begins.
+
+Quality repair follow-up: the same task adds a bounded local relevance verifier after candidate search.
+It reuses the previously downloaded, SHA-pinned Qwen3-1.7B community conversion through the existing
+llama.cpp adapter; no model download or cloud fallback is added. The app bundles this 1,107,409,472-byte
+asset for experimental host/Simulator verification. Cactus tokenizer fixes align byte mapping, valid
+hash merges, NFC, pretokenization and EOS with the verified embedding asset. Automatic extraction
+remains a separate failed qualification gate. Physical testing stays paused; this is not release adoption.
+
+
+## Owner-selected 4B conversation, 2026-11-18
+
+The owner selects the downloaded Qwen3 4B as the only conversational/relevance language model.
+The [4B conversation task](../tasks/2026-11-18-qwen4b-conversation.md) replaces the smaller main-app
+models and verifies follow-up context. This selection supersedes the earlier experimental 0.6B/1.7B
+composition. The app bundles one pinned 4B file for offline use. Cactus embeddings and speech remain
+specialized adapters. Automatic memory writes stay disabled after failed extraction qualification.
+Physical-phone tests remain paused; model selection does not certify device performance or release.

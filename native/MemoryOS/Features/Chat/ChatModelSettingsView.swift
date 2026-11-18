@@ -28,12 +28,12 @@ struct ChatModelSettingsView: View {
 
   var body: some View {
     VStack(alignment: .leading, spacing: 10) {
-      Text(language.text("Experimental Qwen3 0.6B · Offline", "Qwen3 0.6B تجريبي · دون إنترنت"))
+      Text(language.text("Experimental Qwen3 4B · Offline", "Qwen3 4B تجريبي · دون إنترنت"))
         .font(.headline)
       Text(
         language.text(
-          "Import Qwen3-0.6B-Q4_K_M.gguf from Files. The app checks the reviewed file hash before use. No automatic download. Arabic answers may be inaccurate.",
-          "استورد Qwen3-0.6B-Q4_K_M.gguf من الملفات. يتحقق التطبيق من بصمة الملف قبل استخدامه. لا يوجد تنزيل تلقائي. قد تخطئ الأجوبة العربية."
+          "Qwen3 4B is included for offline chat. You can import the same reviewed Qwen3-4B-Q4_K_M.gguf from Files. The app verifies its hash.",
+          "نموذج Qwen3 4B مضمّن للمحادثة دون إنترنت. يمكنك استيراد الملف المعتمد نفسه من الملفات. يتحقق التطبيق من بصمته."
         )
       )
       .font(.callout).foregroundStyle(MemoryTheme.secondary)

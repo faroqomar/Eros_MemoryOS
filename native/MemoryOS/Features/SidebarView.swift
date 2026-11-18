@@ -37,13 +37,31 @@ struct SidebarView: View {
             }
             Divider().padding(.vertical, 18)
           }
+          if chat.hasTemporarySession {
+            Button {
+              Task {
+                await chat.startTemporary()
+                if chat.error == nil {
+                  session.section = .chat
+                  close()
+                }
+              }
+            } label: {
+              Label(
+                language.text("Resume temporary chat", "متابعة محادثة مؤقتة"),
+                systemImage: "eye.slash"
+              )
+              .frame(minHeight: 44)
+            }.accessibilityIdentifier("resume-temporary-chat")
+          }
           Text(language.text("Chats", "المحادثات")).font(.caption).foregroundStyle(
             MemoryTheme.secondary
           )
           .padding(.horizontal, 12).padding(.bottom, 8)
           let conversations = chat.conversations.filter {
-            ($0.pendingVoice != nil || !$0.messages.isEmpty || !$0.draft.isEmpty
-              || $0.title != "New chat" || $0.memoryMode)
+            !$0.isTemporary
+              && ($0.pendingVoice != nil || !$0.messages.isEmpty || !$0.draft.isEmpty
+                || $0.title != "New chat" || $0.memoryMode)
               && (search.isEmpty || $0.title.localizedStandardContains(search))
           }
           if conversations.isEmpty {

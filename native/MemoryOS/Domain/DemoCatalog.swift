@@ -97,6 +97,9 @@ enum ReminderChoice: String, CaseIterable, Identifiable, Sendable {
 enum DemoDestination: Hashable {
   case record(String)
   case birthday(String)
+  case personalProfile(UUID)
+  case personalEntry(UUID)
+  case personalSource(UUID)
 }
 
 struct DemoCatalog: Sendable {

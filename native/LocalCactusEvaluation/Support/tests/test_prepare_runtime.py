@@ -213,6 +213,20 @@ class SourceVerificationTests(unittest.TestCase):
         (self.upstream / ".git").rename(self.root / "fixture-git-metadata")
         self.assert_rejected()
 
+    def test_main_refuses_existing_output_before_mutating_source(self):
+        destination = self.root / 'existing-artifacts'
+        destination.mkdir()
+        retained = destination / 'keep.txt'
+        retained.write_text('retained')
+        with mock.patch.object(runtime, 'ROOT', self.package), mock.patch.object(
+            sys, 'argv', [str(SCRIPT), '--upstream', str(self.upstream), '--output', str(destination)]
+        ), mock.patch.object(runtime, 'run', wraps=runtime.run) as calls:
+            with self.assertRaisesRegex(SystemExit, 'Refusing to replace'):
+                runtime.main()
+        self.assertEqual(retained.read_text(), 'retained')
+        self.assertEqual((self.upstream / 'cactus/engine.cpp').read_bytes(), self.originals['cactus/engine.cpp'])
+        self.assertEqual(calls.call_count, 0)
+
     def test_main_refuses_source_edit_before_patch_or_build(self):
         changed = self.write("cactus/other.cpp", b"int other() { return 99; }\n")
         with mock.patch.object(runtime, "ROOT", self.package), mock.patch.object(

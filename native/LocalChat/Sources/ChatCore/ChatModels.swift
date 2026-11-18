@@ -1,3 +1,4 @@
+import CryptoKit
 import Foundation
 
 public enum ChatRole: String, Codable, Sendable { case system, user, assistant }
@@ -21,9 +22,19 @@ public protocol ChatModel: Sendable {
 public struct ChatEvidence: Identifiable, Codable, Equatable, Sendable {
   public let id: UUID
   public let text: String
-  public init(id: UUID, text: String) {
+  public let sourceDigest: String?
+  public init(id: UUID, text: String, sourceText: String? = nil) {
     self.id = id
     self.text = text
+    sourceDigest = sourceText.map(Self.digest)
+  }
+
+  public func matchesCurrentText(_ currentText: String) -> Bool {
+    sourceDigest.map { $0 == Self.digest(currentText) } ?? text.utf8.elementsEqual(currentText.utf8)
+  }
+
+  private static func digest(_ text: String) -> String {
+    SHA256.hash(data: Data(text.utf8)).map { String(format: "%02x", $0) }.joined()
   }
 }
 
@@ -32,17 +43,40 @@ public protocol ChatMemoryRetrieving: Sendable {
   func retrieve(query: String) async throws -> [ChatEvidence]
   /// Keep the current question separate so retrieval can prioritize a topic change.
   func retrieve(query: String, previousQuestions: [String]) async throws -> [ChatEvidence]
+  /// The message being answered must not appear as independently remembered evidence.
+  func retrieve(query: String, previousQuestions: [String], excluding: Set<UUID>) async throws
+    -> [ChatEvidence]
 }
 
 extension ChatMemoryRetrieving {
   public func retrieve(query: String, previousQuestions: [String]) async throws -> [ChatEvidence] {
     try await retrieve(query: query)
   }
+  public func retrieve(query: String, previousQuestions: [String], excluding: Set<UUID>)
+    async throws
+    -> [ChatEvidence]
+  {
+    try await retrieve(query: query, previousQuestions: previousQuestions)
+      .filter { !excluding.contains($0.id) }
+  }
 }
 
 public struct NoChatMemory: ChatMemoryRetrieving {
   public init() {}
   public func retrieve(query: String) async throws -> [ChatEvidence] { [] }
+}
+
+/// The integration layer preserves app-owned originals. Models cannot call this boundary.
+public protocol ChatMemoryRecording: Sendable {
+  func preserve(conversationID: UUID, messageID: UUID, text: String, createdAt: Date)
+    async throws
+  func willGenerate() async
+  func didFinish(conversationID: UUID) async
+}
+
+extension ChatMemoryRecording {
+  public func willGenerate() async {}
+  public func didFinish(conversationID: UUID) async {}
 }
 
 public enum ChatMessageStatus: String, Codable, Sendable {
@@ -80,12 +114,15 @@ public struct ChatConversation: Identifiable, Codable, Equatable, Sendable {
   public var draft: String
   public var memoryMode: Bool
   public var pendingVoice: PendingVoice?
+  /// Optional for archives written before private sessions existed. Never written to disk as true.
+  public let temporary: Bool?
+  public var isTemporary: Bool { temporary == true }
   public let createdAt: Date
 
   public init(
     id: UUID = UUID(), title: String = "New chat", messages: [ChatMessage] = [],
     draft: String = "", memoryMode: Bool = false, createdAt: Date = Date(),
-    pendingVoice: PendingVoice? = nil
+    pendingVoice: PendingVoice? = nil, temporary: Bool? = nil
   ) {
     self.id = id
     self.title = title
@@ -93,6 +130,7 @@ public struct ChatConversation: Identifiable, Codable, Equatable, Sendable {
     self.draft = draft
     self.memoryMode = memoryMode
     self.pendingVoice = pendingVoice
+    self.temporary = temporary
     self.createdAt = createdAt
   }
 }
@@ -127,7 +165,7 @@ public enum ChatError: Error, Equatable, Sendable {
   case storage, unsupportedVersion, invalidArchive, blankMessage, messageTooLong
   case contextLimit, conversationLimit, missingConversation, busy, modelUnavailable,
     generationFailed
-  case retrievalFailed, noEvidence, outputLimit
+  case retrievalFailed, noEvidence, outputLimit, memoryPreservationFailed, temporaryVoiceUnavailable
 }
 
 public enum ChatLimits {
@@ -141,10 +179,18 @@ public enum ChatLimits {
 }
 
 extension ChatSnapshot {
+  /// Persistence adapters must reject a private session even if a caller skips core projection.
+  public func validateDurable() throws {
+    try validate()
+    guard !conversations.contains(where: \.isTemporary) else { throw ChatError.invalidArchive }
+  }
+
   public func validate() throws {
     guard formatVersion == 1 else { throw ChatError.unsupportedVersion }
     guard revision < UInt64.max, (homeDraft?.utf8.count ?? 0) <= ChatLimits.draftBytes,
-      conversations.count <= ChatLimits.conversations,
+      conversations.count <= ChatLimits.conversations + 1,
+      conversations.filter(\.isTemporary).count <= 1,
+      conversations.filter({ !$0.isTemporary }).count <= ChatLimits.conversations,
       Set(conversations.map(\.id)).count == conversations.count,
       selectedID == nil || conversations.contains(where: { $0.id == selectedID })
     else {

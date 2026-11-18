@@ -122,8 +122,8 @@ struct LocalRecordsListView: View {
         } footer: {
           Text(
             language.text(
-              "Stored on this device. Sample People and Projects remain separate previews.",
-              "محفوظة على هذا الجهاز. تبقى أقسام الأشخاص والمشاريع التجريبية معاينات منفصلة."))
+              "Stored on this device. Organized conversation memory and audio use separate storage.",
+              "محفوظة على هذا الجهاز. تستخدم ذاكرة المحادثات المنظمة والصوت تخزيناً منفصلاً."))
         }
         Section {
           Button(language.text("Add linked record", "إضافة سجل للربط")) { showCreate = true }
