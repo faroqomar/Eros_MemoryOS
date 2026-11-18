@@ -1,6 +1,8 @@
 # Task: Connect local AI to chat, Steps 1 and 2
 
-Status: November 17 phone chat crash traced to mixed GGML linkage and repaired below; owner confirms the installed update replies successfully on the iPhone. C49 generation/scrolling qualification remains open. Earlier chat PR #5 merged on November 15; that merge does not close qualification. The [current voice/chat task](2026-11-17-voice-chat.md) owns the new Step 3 draft and remaining merge gates.
+C52 roadmap update, 2026-11-15: checklist groups 1–5 are closed implementation milestones. Outstanding checks move forward to [groups 15–18](../plans/implementation-checklist.md#15-physical-device-supported-os-and-accessibility-qualification). Historical verification verdicts below remain evidence, not instructions to reopen those groups. No failed/unavailable check becomes passed through this transfer.
+
+Status: November 17 phone chat crash traced to mixed GGML linkage and repaired below; owner confirms the installed update replies successfully on the iPhone. C49 generation/scrolling qualification remains open under C52 groups 15–18. Earlier chat PR #5 merged on November 15; that merge does not close qualification. The [current voice/chat task](2026-11-17-voice-chat.md) owns the new Step 3 draft and remaining merge gates.
 
 Authority: C47 starts Step 1; C48 starts independent Step 2; C49 requests responsiveness fixes, withdraws extended VoiceOver testing from this task and requires compact evidence retention. No production model adoption, cloud fallback or release is authorized. Madar/Dakhl are unaffected.
 
@@ -103,8 +105,8 @@ Home/reopen retained two messages and 141 UTF-8 bytes as stopped partial output;
 
 ## Remaining checks and delivery
 
-- Generation and standalone scrolling timer proxies pass their recorded samples after C49 repairs. Combined generation/scrolling exceeds 100 ms; actual raster-frame and input-to-pixel qualification remain open.
-- Owner connected the phone on November 17 and authorized diagnosis. iPhone performance, sustained heat/energy/memory, OS pressure recovery and protected-file behavior remain unverified.
+- Generation and standalone scrolling timer proxies pass their recorded samples after C49 repairs. Combined generation/scrolling exceeds 100 ms; actual raster-frame and input-to-pixel qualification remain open under C52.
+- Owner connected the phone on November 17 and authorized diagnosis. iPhone performance, sustained heat/energy/memory, OS pressure recovery and protected-file behavior remain unverified under C52.
 - Minimum supported iOS 18 execution remains unavailable; this host exposes iOS 27.2 simulators.
 - Full-app disconnected execution remains unverified. Host runtime OS network-denial tests pass; Simulator status-bar radio toggles are not network isolation.
 - Owner product/design acceptance and final simulator testing remain open. Step 3 draft delivery is in progress; no merge or release is claimed.

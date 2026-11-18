@@ -25,6 +25,7 @@ final class LocalStorageAccessibilityTests: XCTestCase {
     XCTAssertTrue(app.alerts.firstMatch.waitForExistence(timeout: 5))
     app.alerts.buttons[arabic ? "حسناً" : "OK"].tap()
     app.buttons["your-memories"].tap()
+    app.segmentedControls.buttons["Saved records"].tap()
     try screenAudit("Local records", in: app)
     app.staticTexts[source].tap()
     try screenAudit("Local record source", in: app)

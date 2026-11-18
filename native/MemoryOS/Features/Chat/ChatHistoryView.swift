@@ -15,9 +15,10 @@ struct ChatHistoryView: View {
     NavigationStack {
       List(
         model.conversations.filter { conversation in
-          (conversation.pendingVoice != nil || !conversation.messages.isEmpty
-            || !conversation.draft.isEmpty
-            || conversation.title != "New chat" || conversation.memoryMode)
+          !conversation.isTemporary
+            && (conversation.pendingVoice != nil || !conversation.messages.isEmpty
+              || !conversation.draft.isEmpty
+              || conversation.title != "New chat" || conversation.memoryMode)
             && (search.isEmpty || conversation.title.localizedStandardContains(search))
         }
       ) { conversation in
@@ -98,8 +99,9 @@ struct ChatHistoryView: View {
       } message: { _ in
         Text(
           language.text(
-            "This removes its messages and draft from this device.",
-            "سيحذف هذا رسائلها ومسودتها من هذا الجهاز."))
+            "This removes the chat and draft from chat history. Saved originals and organized memories remain searchable in Memories.",
+            "يحذف هذا المحادثة ومسودتها من سجل المحادثات. تبقى النصوص الأصلية المحفوظة والذكريات المنظمة قابلة للبحث في الذكريات."
+          ))
       }
     }
   }
@@ -166,6 +168,7 @@ private struct ChatRenameView: View {
 }
 
 struct ChatSourceView: View {
+  @Environment(PersonalMemoryViewModel.self) private var personal
   let evidence: ChatEvidence
   let records: LocalRecordsViewModel
   let language: AppLanguage
@@ -178,10 +181,53 @@ struct ChatSourceView: View {
         VStack(alignment: .leading, spacing: 18) {
           if refreshing {
             Text(language.text("Loading current source…", "تحميل المصدر الحالي…"))
+          } else if personal.failure != nil {
+            PersonalMemoryStatus(model: personal, language: language)
+          } else if let entry = personal.snapshot.entries.first(where: { $0.id == evidence.id }) {
+            if entry.supersededByID != nil {
+              Text(
+                language.text(
+                  "This is an earlier version. Check the current information below.",
+                  "هذه نسخة سابقة. راجع المعلومات الحالية أدناه."))
+              if let current = personal.currentReplacement(for: entry.id) {
+                Text(language.text("Current information", "المعلومات الحالية")).font(.headline)
+                Text(current.text).textSelection(.enabled)
+              }
+              Text(language.text("Earlier information", "المعلومات السابقة")).font(.headline)
+            } else if !evidence.matchesCurrentText(entry.text) {
+              Text(
+                language.text(
+                  "This information changed after the reply. Read the current text below.",
+                  "تغيّرت هذه المعلومات بعد الرد. اقرأ النص الحالي أدناه."))
+            }
+            Text(entry.kind.title(language)).font(.headline)
+            Text(entry.text).textSelection(.enabled)
+            ForEach(personal.snapshot.sources.filter { entry.sourceIDs.contains($0.id) }) {
+              source in
+              NavigationLink {
+                PersonalSourceView(source: source, language: language)
+              } label: {
+                VStack(alignment: .leading, spacing: 6) {
+                  Text(source.text).lineLimit(4)
+                  Text(source.createdAt, format: .dateTime.month().day().year()).font(.caption)
+                }
+              }
+            }
+          } else if let source = personal.snapshot.sources.first(where: { $0.id == evidence.id }) {
+            Text(language.text("Original statement", "النص الأصلي")).font(.headline)
+            Text(source.text).textSelection(.enabled)
+              .accessibilityIdentifier("chat-personal-original")
+            Text(source.createdAt, format: .dateTime.month().day().year())
+              .font(.caption)
+            NavigationLink {
+              PersonalSourceView(source: source, language: language)
+            } label: {
+              Text(language.text("View source and organization", "عرض المصدر وتنظيمه"))
+            }
           } else if records.failure {
             LocalStorageStatus(model: records, language: language)
           } else if let record = records.record(evidence.id), record.deletedAt == nil {
-            if record.text != evidence.text {
+            if !evidence.matchesCurrentText(record.text) {
               Text(
                 language.text(
                   "You corrected this record after this reply. Read the current text below and ask again.",
@@ -213,8 +259,10 @@ struct ChatSourceView: View {
       }
       .task {
         await records.load()
+        await personal.load()
         refreshing = false
       }
     }
   }
+
 }

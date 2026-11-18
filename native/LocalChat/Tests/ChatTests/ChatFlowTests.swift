@@ -702,3 +702,22 @@ actor DelayedRepository: ChatRepository {
   invalid.homeDraft = String(repeating: "a", count: ChatLimits.draftBytes + 1)
   #expect(throws: ChatError.invalidArchive) { try invalid.validate() }
 }
+
+@Test func ordinaryFollowupRetainsAssistantContextOnlyWhileCitationsStayCurrent() async throws {
+  let sourceID = UUID()
+  let model = TestModel()
+  let memory = TestMemory([ChatEvidence(id: sourceID, text: "Fictional appointment Monday")])
+  let useCases = ChatUseCases(repository: TestRepository(), model: model, memory: memory)
+  _ = try await useCases.load()
+  await model.setReply("I suggest preparing on Sunday.")
+  _ = try await useCases.generate(submittedText: "When should I prepare?") { _ in }
+  _ = try await useCases.generate(submittedText: "Why did you suggest that?") { _ in }
+  let unchanged = try #require(await model.requests.last)
+  #expect(
+    unchanged.contains { $0.role == .assistant && $0.text == "I suggest preparing on Sunday." })
+  await memory.replace([ChatEvidence(id: sourceID, text: "Fictional appointment Thursday")])
+  _ = try await useCases.generate(submittedText: "Is that still right?") { _ in }
+  let changed = try #require(await model.requests.last)
+  #expect(!changed.contains { $0.role == .assistant && $0.text.contains("Sunday") })
+  #expect(changed.first?.text.contains("Thursday") == true)
+}

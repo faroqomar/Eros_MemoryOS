@@ -84,6 +84,30 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
       prompt: { try makePrompt(turns: turns, model: $0) }, onText: onText)
   }
 
+  /// Uses trusted application grammar with fresh sampling state and the existing resident weights.
+  /// Complete JSON is returned only after generation finishes; partial payloads are never published.
+  public func generateJSON(
+    turns: [LlamaChatTurn], grammar: String, maximumOutputTokens: Int
+  ) async throws -> String {
+    try Task.checkCancellation()
+    try Self.validateChat(turns)
+    guard (1...512).contains(maximumOutputTokens), !grammar.utf8.contains(0),
+      !grammar.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
+      grammar.utf8.count <= 32_000
+    else {
+      throw EvaluationError.invalidSuite(
+        "Structured generation requires bounded app grammar and 1–512 output tokens.")
+    }
+    let result = try infer(
+      maximumOutputTokens: maximumOutputTokens, chatMode: true, grammar: grammar,
+      prompt: { try makePrompt(turns: turns, model: $0) }, onText: nil)
+    guard let data = result.text.data(using: .utf8),
+      (try? JSONSerialization.jsonObject(with: data)) != nil
+    else { throw EvaluationError.invalidResult("Structured output was not complete JSON.") }
+    try Task.checkCancellation()
+    return result.text
+  }
+
   private static func validateChat(_ turns: [LlamaChatTurn]) throws {
     guard !turns.isEmpty, turns.last?.role == "user", turns.count <= 1001 else {
       throw EvaluationError.invalidSuite(
@@ -117,6 +141,7 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
 
   private func infer(
     maximumOutputTokens: Int, chatMode: Bool,
+    grammar: String? = nil,
     prompt makePrompt: (OpaquePointer) throws -> String,
     onText: (@Sendable (String) -> Void)?
   ) throws -> TextOutput {
@@ -127,7 +152,9 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     guard let session else { throw EvaluationError.unavailable("No loaded llama.cpp session.") }
     let context = session.context
     let vocab = session.vocab
-    let sampler = session.sampler
+    let structuredSampler = try grammar.map { try makeGrammarSampler($0, vocab: vocab) }
+    defer { if let structuredSampler { llama_sampler_free(structuredSampler) } }
+    let sampler = structuredSampler ?? session.sampler
     llama_memory_clear(llama_get_memory(context), true)
     llama_sampler_reset(sampler)
     let preparation = elapsed(start.duration(to: clock.now))
@@ -184,6 +211,29 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     return TextOutput(
       text: text, generatedTokenCount: generated, firstTokenSeconds: firstToken,
       preparationSeconds: preparation, wasColdLoad: cold)
+  }
+
+  private func makeGrammarSampler(
+    _ grammar: String, vocab: OpaquePointer
+  ) throws -> UnsafeMutablePointer<llama_sampler> {
+    guard let chain = llama_sampler_chain_init(llama_sampler_chain_default_params()) else {
+      throw EvaluationError.unavailable("Cannot create structured sampler chain.")
+    }
+    var retained = false
+    defer { if !retained { llama_sampler_free(chain) } }
+    guard
+      let grammarSampler = grammar.withCString({ text in
+        "root".withCString { llama_sampler_init_grammar(vocab, text, $0) }
+      })
+    else { throw EvaluationError.invalidSuite("The app grammar could not be parsed.") }
+    // The chain owns children after addition. Sampling already accepts the selected token.
+    llama_sampler_chain_add(chain, grammarSampler)
+    guard let greedy = llama_sampler_init_greedy() else {
+      throw EvaluationError.unavailable("Cannot create structured greedy sampler.")
+    }
+    llama_sampler_chain_add(chain, greedy)
+    retained = true
+    return chain
   }
 
   /// The composition root retains one runtime across the batch. This releases its resident model.

@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "scope": "Group 7 personal memory file graph; isolated fictional workload; not a release qualification",
+  "baseline": {
+    "status": "FAIL",
+    "failed_assertion": "1000-source edit p95 exceeds 250 ms",
+    "configuration": "Release",
+    "device": "iPhone 15 Pro Max",
+    "os": "iOS 27.0.1 (24A446)",
+    "metrics": [
+      {
+        "backup_excluded": true,
+        "benchmark": "personal_memory_file_graph",
+        "cold_median_ms": 30.584375002945308,
+        "cold_method": "fresh actor; filesystem cache not flushed; not process launch",
+        "cold_new_actor_ms": [
+          30.394041667022975,
+          31.776458334206836,
+          30.584375002945308
+        ],
+        "edit_p95_ms": 40.46129166817991,
+        "edit_samples": 90,
+        "file_bytes": [
+          1727039,
+          1727091,
+          1727037
+        ],
+        "latency_pass": true,
+        "os": "Version 27.0.1 (Build 24A446)",
+        "physical_device": true,
+        "protection_complete_attributes": true,
+        "repetitions": 3,
+        "retained_events": 50,
+        "rss_growth_bytes": [
+          21118976,
+          -1458176,
+          327680
+        ],
+        "rss_method": "whole-process TASK_BASIC_INFO resident_size endpoints; not peak",
+        "sources": 100,
+        "warm_median_ms": 31.1776666676451,
+        "warm_new_actor_ms": [
+          30.142958334181458,
+          31.87774999969406,
+          31.1776666676451
+        ]
+      },
+      {
+        "backup_excluded": true,
+        "benchmark": "personal_memory_file_graph",
+        "cold_median_ms": 344.43245833244873,
+        "cold_method": "fresh actor; filesystem cache not flushed; not process launch",
+        "cold_new_actor_ms": [
+          318.0072499999369,
+          598.1670000001031,
+          344.43245833244873
+        ],
+        "edit_p95_ms": 414.8645833338378,
+        "edit_samples": 90,
+        "file_bytes": [
+          16868893,
+          16868946,
+          16868941
+        ],
+        "latency_pass": false,
+        "os": "Version 27.0.1 (Build 24A446)",
+        "physical_device": true,
+        "protection_complete_attributes": true,
+        "repetitions": 3,
+        "retained_events": 50,
+        "rss_growth_bytes": [
+          201998336,
+          -48267264,
+          44744704
+        ],
+        "rss_method": "whole-process TASK_BASIC_INFO resident_size endpoints; not peak",
+        "sources": 1000,
+        "warm_median_ms": 345.34779166642693,
+        "warm_new_actor_ms": [
+          314.3830416665878,
+          484.8807083326392,
+          345.34779166642693
+        ]
+      }
+    ],
+    "source_sha256": {
+      "native/MemoryOSTests/PersonalMemoryPerformanceTests.swift": "1488d373d4ef4ecd9684cef4b54fddf80275e40c07db8ff88bfed2e15eddbe06",
+      "native/MemoryOS/Composition/PersonalMemoryComposition.swift": "02df80bffdf152e418b0ba78174ebc681121c0b1973ff87bc80ab0407fd59d31",
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryModels.swift": "8b948cf52a48ef7fe44421a054ccb9de2bc9e6c34e7f66f273270733bc5f7670",
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryUseCases.swift": "602a43f4276a6af68e35ec167620a2b6ce98990633e756c160de4a476b49cc51",
+      "native/LocalMemory/Sources/MemorySQLite/PersonalMemoryFileRepository.swift": "7309aa2ed01f03f4e4b6e739b144c1fad1527ee01b682d3093e6e6f6a3cb7a74"
+    }
+  },
+  "candidate": {
+    "status": "PASS",
+    "configuration": "Release",
+    "test_seconds": 20.06,
+    "device": "iPhone 15 Pro Max",
+    "os": "iOS27.0.1 (24A446)",
+    "app_bundle": "com.eros.memoryos.group7verification",
+    "repetitions_per_dataset": 3,
+    "timed_edits_per_dataset": 90,
+    "metrics": [
+      {
+        "backup_excluded": true,
+        "benchmark": "personal_memory_file_graph",
+        "cold_median_ms": 10.89329166643438,
+        "cold_method": "fresh actor; filesystem cache not flushed; not process launch",
+        "cold_new_actor_ms": [
+          10.892291669733822,
+          10.89329166643438,
+          11.29604166635545
+        ],
+        "edit_p95_ms": 10.680999999749474,
+        "edit_samples": 90,
+        "file_bytes": [
+          119205,
+          119210,
+          119206
+        ],
+        "latency_pass": true,
+        "os": "Version 27.0.1 (Build 24A446)",
+        "physical_device": true,
+        "protection_complete_attributes": true,
+        "repetitions": 3,
+        "retained_events": 50,
+        "rss_growth_bytes": [
+          3588096,
+          393216,
+          557056
+        ],
+        "rss_method": "whole-process TASK_BASIC_INFO resident_size endpoints; not peak",
+        "sources": 100,
+        "thermal_state_after": [
+          1,
+          1,
+          1
+        ],
+        "thermal_state_before": [
+          1,
+          1,
+          1
+        ],
+        "thermal_state_key": "0 nominal, 1 fair, 2 serious, 3 critical; endpoints, not energy",
+        "warm_median_ms": 11.009958332579117,
+        "warm_new_actor_ms": [
+          10.81812499978696,
+          11.009958332579117,
+          11.542833333805902
+        ],
+        "file_bytes_median": 119206,
+        "cold_ms_range": [
+          10.892291669733822,
+          11.29604166635545
+        ],
+        "warm_ms_range": [
+          10.81812499978696,
+          11.542833333805902
+        ]
+      },
+      {
+        "backup_excluded": true,
+        "benchmark": "personal_memory_file_graph",
+        "cold_median_ms": 115.3304166655289,
+        "cold_method": "fresh actor; filesystem cache not flushed; not process launch",
+        "cold_new_actor_ms": [
+          110.29808333478286,
+          132.04379166927538,
+          115.3304166655289
+        ],
+        "edit_p95_ms": 94.19350000098348,
+        "edit_samples": 90,
+        "file_bytes": [
+          1020214,
+          1020219,
+          1020221
+        ],
+        "latency_pass": true,
+        "os": "Version 27.0.1 (Build 24A446)",
+        "physical_device": true,
+        "protection_complete_attributes": true,
+        "repetitions": 3,
+        "retained_events": 50,
+        "rss_growth_bytes": [
+          25329664,
+          573440,
+          638976
+        ],
+        "rss_method": "whole-process TASK_BASIC_INFO resident_size endpoints; not peak",
+        "sources": 1000,
+        "thermal_state_after": [
+          1,
+          1,
+          1
+        ],
+        "thermal_state_before": [
+          1,
+          1,
+          1
+        ],
+        "thermal_state_key": "0 nominal, 1 fair, 2 serious, 3 critical; endpoints, not energy",
+        "warm_median_ms": 116.8646666665154,
+        "warm_new_actor_ms": [
+          111.3966666671331,
+          117.49754166521598,
+          116.8646666665154
+        ],
+        "file_bytes_median": 1020219,
+        "cold_ms_range": [
+          110.29808333478286,
+          132.04379166927538
+        ],
+        "warm_ms_range": [
+          111.3966666671331,
+          117.49754166521598
+        ]
+      }
+    ],
+    "source_sha256": {
+      "native/MemoryOSTests/PersonalMemoryPerformanceTests.swift": "6d19cc380fcde90d8a5befee651cdda4d60f71d7c170ae0e43df22ac8703c27e",
+      "native/MemoryOS/Composition/PersonalMemoryComposition.swift": "02df80bffdf152e418b0ba78174ebc681121c0b1973ff87bc80ab0407fd59d31",
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryModels.swift": "279e26753e0d46104efe1c78dc260cdd7923c05066fa103ea22d01679ae3807b",
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryUseCases.swift": "602a43f4276a6af68e35ec167620a2b6ce98990633e756c160de4a476b49cc51",
+      "native/LocalMemory/Sources/MemorySQLite/PersonalMemoryFileRepository.swift": "f468a0205bcf87c1a84f194627d612df88a364e7ae1074f20ed5ced05ed881c4",
+      "native/LocalMemory/Sources/MemorySQLite/PersonalMemoryStorageArchive.swift": "122911a222314747f037ebb2b718f3bac294b192bb7bc5617c2ea6df5c3e94b0"
+    },
+    "source_unchanged_after_run": true,
+    "limits": [
+      "Fresh-actor reopen does not clear OS file caches or measure process launch.",
+      "RSS samples are whole-process endpoints and include XCTest/test snapshots; not peak, leak diagnosis or steady-state.",
+      "Protection assertions cover metadata only; locked-device access is untested.",
+      "Thermal endpoints were fair before and after; energy and causal heat attribution remain unmeasured.",
+      "iOS18 runtime remains untested."
+    ],
+    "toolchain": {
+      "xcode": "27.2 (27B52)",
+      "swift": "Apple Swift6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)",
+      "swift_language_mode": "6.0",
+      "architecture": "arm64",
+      "optimization": "Release -O"
+    },
+    "execution_conditions": {
+      "physical_device": "iPhone15 Pro Max; arm64e device CPU",
+      "connection": "paired localNetwork; connected tunnel; developer mode enabled; DDI available",
+      "timing_scope": "on-device graph operations; wireless build/install transfer outside timed regions",
+      "thermal": "fair at before/after endpoints for each repetition; pre-existing heat and causal cost unqualified",
+      "energy": "not measured; no battery/energy qualification",
+      "process": "XCTest-hosted isolated app; not production steady-state or process-launch benchmark"
+    },
+    "cleanup": {
+      "isolated_app_uninstall_success": true,
+      "isolated_app_absent": true,
+      "isolated_ui_test_runner_was_installed": false,
+      "canonical_app_still_installed": true,
+      "canonical_data_accessed": false
+    },
+    "generic_ios_release_analysis": {
+      "status": "PASS",
+      "signing": "CODE_SIGNING_ALLOWED=NO",
+      "warnings": [
+        "AppIntents metadata extraction skipped because no AppIntents.framework dependency exists."
+      ],
+      "swift_source_warnings": 0,
+      "source_unchanged": true
+    }
+  }
+}

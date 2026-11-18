@@ -14,13 +14,13 @@ final class ChatExtendedFlowTests: XCTestCase {
     let question = "What about \(name)?"
     let capture = field("capture-composer", in: app)
     XCTAssertTrue(capture.waitForExistence(timeout: 5))
-    capture.tap()
-    capture.typeText(original)
+    replaceText(in: capture, with: original, app: app)
     app.buttons["save-thought"].tap()
     XCTAssertTrue(app.alerts.firstMatch.waitForExistence(timeout: 5))
     app.alerts.buttons["OK"].tap()
 
     route("memories", in: app)
+    app.segmentedControls.buttons["Saved records"].tap()
     let record = app.buttons.matching(
       NSPredicate(format: "identifier BEGINSWITH 'local-record-' AND label CONTAINS %@", name)
     ).firstMatch
@@ -32,7 +32,7 @@ final class ChatExtendedFlowTests: XCTestCase {
     app.buttons["new-chat"].tap()
     setMemoryMode(true, in: app)
     send(question, in: app)
-    waitForReply(in: app)
+    waitForMemorySource(sourceID, text: original, in: app)
     openHistory(in: app)
     let memoryRow = app.buttons.matching(
       NSPredicate(
@@ -50,6 +50,7 @@ final class ChatExtendedFlowTests: XCTestCase {
     app.buttons["chat-source-done"].tap()
 
     route("memories", in: app)
+    app.segmentedControls.buttons["Saved records"].tap()
     app.buttons[recordID].tap()
     reveal(app.buttons["correct-local-record"], in: app)
     app.buttons["correct-local-record"].tap()
@@ -72,7 +73,7 @@ final class ChatExtendedFlowTests: XCTestCase {
       ).firstMatch.exists)
     app.buttons["chat-source-done"].tap()
     send(question, in: app)
-    waitForReply(in: app)
+    waitForMemorySource(sourceID, text: corrected, in: app)
     let currentSource = app.buttons.matching(
       NSPredicate(format: "identifier == %@ AND label CONTAINS %@", sourceID, corrected)
     ).firstMatch
@@ -80,6 +81,7 @@ final class ChatExtendedFlowTests: XCTestCase {
     attach("Later reply retrieves corrected source", app)
 
     route("memories", in: app)
+    app.segmentedControls.buttons["Saved records"].tap()
     app.buttons[recordID].tap()
     XCTAssertEqual(app.staticTexts["local-record-original"].label, original)
     reveal(app.buttons["trash-local-record"], in: app)
@@ -98,9 +100,12 @@ final class ChatExtendedFlowTests: XCTestCase {
     XCTAssertTrue(error.waitForExistence(timeout: 5))
     XCTAssertTrue(error.label.contains("No matching saved memory was found"), error.label)
     XCTAssertTrue(error.label.contains("No memory answer was generated"), error.label)
-    XCTAssertEqual(field("chat-composer", in: app).value as? String, question)
+    let remainingDraft = field("chat-composer", in: app).value as? String
+    XCTAssertTrue(remainingDraft == "" || remainingDraft == "Message MemoryOS…")
+    XCTAssertFalse(app.buttons["chat-send"].isEnabled)
+    XCTAssertTrue(app.staticTexts[question].exists)
     XCTAssertFalse(app.buttons["chat-stop"].exists)
-    attach("Trash exclusion preserves the unsent memory question", app)
+    attach("Trash exclusion preserves the submitted original without a memory answer", app)
   }
 
   func testSavedChatRenameReopenAndDeleteSurviveRelaunch() {
@@ -248,6 +253,18 @@ final class ChatExtendedFlowTests: XCTestCase {
     dismissKeyboard(in: app)
   }
 
+  // This case verifies current source attribution and stop recovery. Full-reply latency has
+  // separate tests and remains unqualified; it must not determine the data-safety assertion.
+  private func waitForMemorySource(_ id: String, text: String, in app: XCUIApplication) {
+    let current = app.buttons.matching(
+      NSPredicate(format: "identifier == %@ AND label CONTAINS %@", id, text)
+    ).firstMatch
+    XCTAssertTrue(current.waitForExistence(timeout: 45))
+    if app.buttons["chat-stop"].exists { app.buttons["chat-stop"].tap() }
+    XCTAssertTrue(app.buttons["chat-send"].waitForExistence(timeout: 15))
+    XCTAssertFalse(app.staticTexts["chat-error"].exists)
+  }
+
   private func waitForReply(in app: XCUIApplication) {
     XCTAssertTrue(app.buttons["chat-send"].waitForExistence(timeout: 45))
     XCTAssertFalse(app.staticTexts["chat-error"].exists, app.staticTexts["chat-error"].label)
@@ -304,15 +321,16 @@ final class ChatExtendedFlowTests: XCTestCase {
 
   private func replaceText(in editor: XCUIElement, with text: String, app: XCUIApplication) {
     editor.tap()
-    let current = editor.value as? String ?? ""
     editor.press(forDuration: 1.2)
-    if app.menuItems["Select All"].waitForExistence(timeout: 2) {
+    if app.menuItems["Select All"].waitForExistence(timeout: 1) {
       app.menuItems["Select All"].tap()
+    } else if app.buttons["Select All"].exists {
+      app.buttons["Select All"].tap()
     } else {
-      editor.tap()
-      editor.typeText(String(repeating: XCUIKeyboardKey.delete.rawValue, count: current.count))
+      editor.tap(withNumberOfTaps: 3, numberOfTouches: 1)
     }
     editor.typeText(text)
+    XCTAssertEqual(editor.value as? String, text)
   }
 
   private func reveal(_ element: XCUIElement, in app: XCUIApplication) {

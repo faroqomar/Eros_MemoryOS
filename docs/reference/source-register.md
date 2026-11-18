@@ -1,5 +1,11 @@
 # Source register and chronology
 
+## UI inspiration, 2026-11-18
+
+Additional reference: Digcy's [AI Memory Timeline App UI](https://ui8.net/digcy/products/ai-memory-timeline-app-ui). Direct access returned HTTP 403; the search-indexed first-party listing describes timeline, mixed-media memories, search/filters and light/dark variants. Individual screen layouts remain uninspected. A chronological view with person/project filters is a proposed MemoryOS adaptation, not an approved layout or implemented feature.
+
+The owner supplied VP0 memory controls, Anna/asol_design's voice-notes concept on Dribbble, SaaSUI's Clay collection, Capacities' second-brain page, SecondBrain, and three UI images as inspiration. The [source review and proposed adaptations](2026-11-18-ui-inspiration.md) records attribution and limits. The supplied images illustrate a person page, a relationship graph, and a voice-first home. A visual comparison with SecondBrain's [first-party record-screen image](https://secondbrainmemory.com/assets/shot-record-720.webp) confirms the home image match. These references do not approve new layouts, replace C20/C21, start an implementation step, or authorize service connections. Adaptations remain proposals for owner review.
+
 Consolidated on 2026-11-06. Preserve the original files. Use the new overview, registers, and current owner instructions to determine present direction.
 
 ## Original local documents
@@ -174,6 +180,22 @@ C47: the owner requests Step 1 of connecting local AI to main-app chat. The supp
 C48, 2026-11-15: the owner requests Step 2 for the active C47 main-app local-chat task. This authorizes fresh independent verification, required repairs and affected rechecks, performance investigation, cleanup and dark evidence. It does not start Step 3 or adopt a production model.
 
 C49, 2026-11-15: the owner requests repair of chat responsiveness, withdraws the extended VoiceOver requirement from the current task, and asks to remove excessive documentation/evidence and prevent recurrence. VoiceOver is a screen reader; Voice Control uses spoken commands. Basic labels, larger text, contrast, Reduce Motion and usable touch controls remain in scope. Failed extended diagnostics are recorded as withdrawn, not passed. AGENTS.md and the workflow now require compact task/results records, selected captures, temporary ignored raw diagnostics and removal of resolved retries; `scripts/check-evidence.py` checks changed evidence size and dump patterns. This does not waive other tasks' or release requirements, authorize Step 3 or establish a performance pass.
+
+
+## C50: owner clarification, 2026-11-15
+
+The owner requests extensive chat/media imports, source-preserving relationship and person understanding, and organization of ideas, workflows and projects. Fine-tuning and tools are discussion topics, not selected implementations. See the [confirmed goal and proposed approach](../decisions/personal-context-goal.md).
+
+
+## C51: expanded checklist and memory delivery, 2026-11-15
+
+The owner requests updating Hindsight with C50 personal-context goals and expanding the implementation checklist to cover relationship/media imports, person understanding, life/project capture, fine-tuning evaluation and tools. The current checklist preserves existing IDs and chat group 5; later stages now cover the full goal. This is documentation authorization, not a new implementation stage or evidence that the pasted physical-device/production checkmarks passed.
+
+
+## C52: forward-only milestone numbering, 2026-11-15
+
+The owner requires closing checklist groups 1–5 around completed work and moving unfinished obligations into new numbered groups without returning to earlier milestones. Groups 15–18 own physical/OS/accessibility qualification, chat performance/recovery/offline checks, model quality/production selection, and acceptance/data-policy/delivery closure. Existing evidence and merge/release gates remain valid. This instruction reorganizes the roadmap; it does not claim missing checks passed or start new implementation.
+
 ## C53: Step 3 cleanup and chat delivery, 2026-11-15
 
 The owner requests Step 3 for local chat and requires a standing documentation-cleanup rule before delivery work. Every Step 3 must remove confirmed unnecessary material, consolidate useful results, preserve originals and required evidence, and check links and storage totals. The normal private PR/merge authorization remains subject to existing verification and acceptance gates. See the [workflow](../how-to/development-workflow.md#step-3-documentation-cleanup).
@@ -182,3 +204,24 @@ The owner requests Step 3 for local chat and requires a standing documentation-c
 ## Group 6 voice recording authorization, 2026-11-15
 
 The owner requests Step 1 for checklist group 6: record/pause/resume/save with microphone permissions, supported audio import, WhisperKit/whisper.cpp comparison on the same recordings, Iraqi Arabic/English/mixed/names/noise checks, transcript correction, timestamp and uncertainty links, associated exports, and interruption/storage/termination recovery. This authorizes bounded native implementation and builder tests under the standing workflow. It does not start Step 2, Step 3, cloud transfer, release or production model adoption. See the [task record](../tasks/2026-11-15-voice-transcription.md).
+
+
+## Group 7 lasting personal memory authorization, 2026-11-17
+
+The owner requests Step 1 and supplies thirteen checklist items: normal-chat lasting memory, immediate ambiguity clarification, unanswered originals without derivation, reversible organization, identity suggestions and confirmation gates, self/person profiles, project information types, image provenance, optional questions, and temporary/private sessions with explicit/process end and brief-switch retention. This authorizes bounded native implementation, tests and dark builder captures under the standing workflow. The [task](../tasks/2026-11-17-lasting-personal-memory.md) distinguishes implementation, builder checks, independent verification and remaining limits. It does not start Step 2, Step 3, cloud transfers, publication or release.
+
+Group 7 Step 2, requested 2026-11-17 and checked through 2026-11-18: the owner authorizes fresh independent verification, in-scope repairs, affected tests/benchmarks, cleanup and dark evidence. Physical latency results and remaining qualification gaps are recorded in the same task. Step 3, commit/push/merge, publication and release remain separate.
+
+Group 7 qualification clarification, 2026-11-18: the owner removes iOS 18 runtime testing from the current task's Step 2 gate and asks how to verify locked-phone protection and measure battery/heat. Record the OS check as withdrawn, not passed. This does not change the deployment target, establish support on untested systems, waive the other checks, or start Step 3. The current [task](../tasks/2026-11-17-lasting-personal-memory.md) records the narrower gate.
+
+## Automatic-memory rework authorization, 2026-11-18
+
+The owner rejected repeated generic meaning prompts and requested upstream research plus implementation of authentic automatic memory. The [research](2026-11-18-automatic-memory-patterns.md) and [task](../tasks/2026-11-18-automatic-personal-memory.md) distinguish implemented source/pipeline changes from failed semantic quality. After the independent 1.7B test failed, the owner chose to keep processing local and evaluate a larger local model. The owner also requested skipping further phone tests. Preserve the partial earlier phone benchmark failure; continue host/Simulator repairs without claiming a physical recheck. No cloud connection, release or Step 3 delivery starts.
+
+Follow-up evaluation, November 18: the verified local 4B candidate completed 38 host cases but failed its semantic gate (independent 3/11 complete claims; 1 accepted mismatch). Automatic derived writes remain disabled. A fresh 12-case routing repair trial also failed: 7/8 complete claims, 2 accepted mismatches. The current task/evidence retains both results; no model, cloud or phone adoption follows.
+
+Automatic-memory workflow reset, 2026-11-18: the completed fourth host trial failed10/20 cases and7/13 claims, with0 accepted mistakes; its inputs are now consumed regression data. Main owns bounded code repairs and independent review. Further full qualification requires current green regressions; automatic writes remain disabled. See [the current task](../tasks/2026-11-18-automatic-personal-memory.md).
+
+## Local recall authorization, 2026-11-18
+
+The owner authorizes implementing Wax and Cactus and repairing the discussed memory failures. The [current task](../tasks/2026-11-18-local-recall-integration.md) records scope and evidence. Official upstream references are [Wax](https://github.com/christopherkarani/Wax) and [Cactus](https://github.com/cactus-compute/cactus); existing reviewed revisions and local-only patches remain pinned. This permission does not establish model quality or authorize cloud transfer, phone tests or release.

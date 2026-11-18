@@ -58,6 +58,7 @@ struct ChatVoiceCard: View {
 struct ChatPendingVoiceCard: View {
   let pending: PendingVoice
   let processing: Bool
+  let stopping: Bool
   let language: AppLanguage
   let play: (Double) -> Void
   let stop: () -> Void
@@ -75,6 +76,8 @@ struct ChatPendingVoiceCard: View {
         HStack(spacing: 8) {
           if processing { ProgressView().controlSize(.small) }
           Text(status).font(.callout)
+            .accessibilityIdentifier(
+              stopping ? "voice-transcription-stopping" : "voice-transcription-message")
         }.accessibilityIdentifier("voice-transcription-status")
         if let failure = pending.failure {
           Text(failureText(failure)).font(.callout)
@@ -91,12 +94,12 @@ struct ChatPendingVoiceCard: View {
           }.accessibilityIdentifier("voice-transcript-disclosure")
         }
         HStack {
-          if processing {
+          if processing && !stopping {
             Button(action: cancel) {
               Text(language.text("Cancel transcription", "إلغاء التفريغ"))
                 .frame(minHeight: 44).contentShape(Rectangle())
             }.accessibilityIdentifier("voice-transcription-cancel")
-          } else {
+          } else if !processing {
             Button(action: retry) {
               Text(language.text("Retry transcription", "إعادة التفريغ"))
                 .frame(minHeight: 44).contentShape(Rectangle())
@@ -117,6 +120,9 @@ struct ChatPendingVoiceCard: View {
   }
 
   private var status: String {
+    if processing && stopping {
+      return language.text("Stopping transcription…", "جارٍ إيقاف التفريغ…")
+    }
     if processing {
       return language.text("Transcribing on this device…", "جارٍ تفريغ الصوت على الجهاز…")
     }

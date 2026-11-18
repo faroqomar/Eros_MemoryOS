@@ -34,6 +34,18 @@ struct CaptureView: View {
     GeometryReader { geometry in
       ScrollView {
         VStack(spacing: 24) {
+          if chat.hasTemporarySession {
+            VStack(spacing: 6) {
+              Text(language.text("Home saves normal captures", "الرئيسية تحفظ الملاحظات العادية"))
+                .font(.caption).foregroundStyle(MemoryTheme.secondary)
+              Button(language.text("Resume temporary chat", "متابعة محادثة مؤقتة")) {
+                Task {
+                  await chat.startTemporary()
+                  if chat.error == nil { showConversation = true }
+                }
+              }.frame(minHeight: 44)
+            }
+          }
           Spacer(minLength: 0)
           Button {
             composerFocused = false
@@ -78,7 +90,7 @@ struct CaptureView: View {
                 guard let recording = await audio.saveForChat() else { return }
                 if await chat.prepareVoiceChat(
                   recordingID: recording.id,
-                  durationSeconds: recording.durationSeconds ?? 0)
+                  durationSeconds: recording.durationSeconds ?? 0, asNormalCapture: true)
                 {
                   showConversation = true
                   await chat.processVoice()
@@ -224,7 +236,7 @@ struct CaptureView: View {
           guard
             await chat.prepareVoiceChat(
               recordingID: recording.id,
-              durationSeconds: recording.durationSeconds ?? 0)
+              durationSeconds: recording.durationSeconds ?? 0, asNormalCapture: true)
           else { return false }
           showAudio = false
           showConversation = true

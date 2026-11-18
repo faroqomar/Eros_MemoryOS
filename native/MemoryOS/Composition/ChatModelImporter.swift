@@ -38,13 +38,13 @@ actor ChatModelImporter: ChatModelPreparing {
     }
     guard
       hash.finalize().map({ String(format: "%02x", $0) }).joined()
-        == "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+        == "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
     else {
       throw CocoaError(.fileReadCorruptFile)
     }
     try FileManager.default.setAttributes(
       [.protectionKey: FileProtectionType.complete], ofItemAtPath: temporary.path)
-    let destination = directory.appending(path: "Qwen3-0.6B-Q4_K_M.gguf")
+    let destination = directory.appending(path: "Qwen3-4B-Q4_K_M.gguf")
     if FileManager.default.fileExists(atPath: destination.path) {
       _ = try FileManager.default.replaceItemAt(destination, withItemAt: temporary)
     } else {

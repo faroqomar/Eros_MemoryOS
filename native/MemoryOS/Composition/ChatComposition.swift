@@ -3,17 +3,28 @@ import ChatPersistence
 import ChatPresentation
 import Foundation
 import LlamaEvaluationAdapter
+import LocalMemoryRetrieval
 import MemoryCore
 
 enum ChatComposition {
+  static let modelFilename = "Qwen3-4B-Q4_K_M.gguf"
+  static let modelSHA256 = "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5"
+  static var modelAssetURL: URL {
+    let imported = URL.documentsDirectory.appending(path: "ChatModels/" + modelFilename)
+    return FileManager.default.fileExists(atPath: imported.path)
+      ? imported
+      : (Bundle.main.resourceURL ?? Bundle.main.bundleURL).appending(
+        path: "MemoryModels/" + modelFilename)
+  }
+
   @MainActor static func makePreparationViewModel() -> ChatModelPreparationViewModel {
     ChatModelPreparationViewModel(useCase: PrepareChatModel(importer: ChatModelImporter()))
   }
   @MainActor static func makeModel() -> any ChatModel {
-    let modelURL = URL.documentsDirectory.appending(path: "ChatModels/Qwen3-0.6B-Q4_K_M.gguf")
+    let modelURL = modelAssetURL
     let model = LlamaChatModel(
       assetURL: modelURL,
-      expectedSHA256: "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a",
+      expectedSHA256: modelSHA256,
       onMeasurement: { output, seconds in
         let sample = ChatMeasurement(
           tokens: output.generatedTokenCount,
@@ -28,61 +39,35 @@ enum ChatComposition {
 
   @MainActor static func makeViewModel(
     provider: LocalStoreProvider,
-    voiceTranscriber: any VoiceTranscribing, model: any ChatModel
+    voiceTranscriber: any VoiceTranscribing, model: any ChatModel,
+    personalMemory: PersonalMemoryUseCases? = nil,
+    organizer: (any PersonalMemoryOrganizing)? = nil,
+    relevance: (any MemoryEvidenceFiltering)? = nil
   ) -> ChatViewModel {
     let base = URL.applicationSupportDirectory.appending(path: "LocalChat")
     return ChatViewModel(
       useCases: ChatUseCases(
         repository: FileChatRepository(url: base.appending(path: "conversations.json")),
-        model: model, memory: LocalChatMemory(provider: provider),
-        voiceTranscriber: voiceTranscriber))
-  }
-}
-
-/// A fresh snapshot avoids retaining a provider index or stale corrections/deletions.
-struct LocalChatMemory: ChatMemoryRetrieving {
-  let provider: any LocalMemorySessionProvider
-
-  func retrieve(query: String) async throws -> [ChatEvidence] {
-    try await retrieve(query: query, previousQuestions: [])
-  }
-
-  func retrieve(query: String, previousQuestions: [String]) async throws -> [ChatEvidence] {
-    let session = try await provider.open()
-    let snapshot = try await session.useCases.snapshot()
-    return Self.match(query: query, records: snapshot.records, previousQuestions: previousQuestions)
+        model: model,
+        memory: LocalChatMemory(
+          provider: provider, personalMemory: personalMemory,
+          search: LocalMemorySearch(
+            directory: URL.applicationSupportDirectory.appending(path: "MemoryRecall"),
+            cactusModelDirectory: Bundle.main.resourceURL?.appending(path: "MemoryModels/Cactus"),
+            provider: .hybrid, minimumSimilarity: relevance == nil ? 0.65 : -1),
+          relevance: relevance),
+        voiceTranscriber: voiceTranscriber,
+        recorder: personalMemory.map { PersonalChatRecorder(useCases: $0, organizer: organizer) }))
   }
 
-  static func match(query: String, records: [LocalRecord], previousQuestions: [String] = [])
-    -> [ChatEvidence]
-  {
-    let ignored: Set<String> = [
-      "what", "when", "where", "who", "the", "and", "about", "my",
-      "memory", "memories", "tell", "does", "have", "with", "from", "this", "that", "is", "a",
-      "do", "you", "remember", "know", "please", "else", "more", "his", "her", "him", "it", "them",
-      "شنو", "عن", "من", "في", "على", "ماذا", "متى", "هو", "هي", "هل", "لي", "ذكرياتي", "بعد",
-      "عنه", "عنها",
-    ]
-    func words(_ text: String) -> Set<String> {
-      Set(
-        text.folding(options: [.caseInsensitive, .diacriticInsensitive], locale: .current)
-          .components(separatedBy: CharacterSet.alphanumerics.inverted)
-          .filter { $0.count > 1 && !ignored.contains($0) })
-    }
-    // The latest explicit topic owns retrieval. Previous questions only resolve
-    // referential follow-ups or break ties; old topics cannot fill the top three.
-    let currentTerms = words(query)
-    let previousTerms =
-      previousQuestions.reversed().lazy.map(words).first(where: { !$0.isEmpty }) ?? []
-    let terms = currentTerms.isEmpty ? previousTerms : currentTerms
-    guard !terms.isEmpty else { return [] }
-    return records.filter { $0.deletedAt == nil }.compactMap { record -> (LocalRecord, Int)? in
-      let recordTerms = words(record.text)
-      let primary = recordTerms.intersection(terms).count
-      let secondary = min(99, recordTerms.intersection(previousTerms).count)
-      return primary > 0 ? (record, primary * 100 + secondary) : nil
-    }.sorted {
-      $0.1 == $1.1 ? $0.0.id.uuidString < $1.0.id.uuidString : $0.1 > $1.1
-    }.prefix(3).map { ChatEvidence(id: $0.0.id, text: $0.0.text) }
+  @MainActor static func makeRelevanceFilter(
+    coordinator: LocalInferenceCoordinator
+  ) -> any MemoryEvidenceFiltering {
+    let url = modelAssetURL
+    let model = LlamaChatModel(
+      assetURL: url,
+      expectedSHA256: modelSHA256)
+    return CoordinatedEvidenceFilter(
+      base: LocalModelEvidenceFilter(model: model), coordinator: coordinator)
   }
 }

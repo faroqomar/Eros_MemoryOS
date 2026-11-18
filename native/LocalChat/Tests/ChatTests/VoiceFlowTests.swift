@@ -313,3 +313,95 @@ private actor VoiceFailingRepository: ChatRepository {
   #expect(await speech.calls == 1)
   #expect(await model.requests.count == 1)
 }
+
+@Test @MainActor func cancellingSavedVoicePreservesPrivateDraftAndOriginalReference() async throws {
+  let speech = VoiceStub(delay: true)
+  let repository = TestRepository()
+  let model = TestModel()
+  let vm = ChatViewModel(
+    useCases: ChatUseCases(repository: repository, model: model, voiceTranscriber: speech))
+  await vm.load()
+  await vm.startTemporary()
+  let privateID = try #require(vm.currentConversation?.id)
+  vm.draft = "Fictional private draft"
+  let recording = UUID()
+  #expect(
+    await vm.prepareVoiceChat(
+      recordingID: recording, durationSeconds: 2, asNormalCapture: true))
+  let normalID = try #require(vm.currentConversation?.id)
+  let processing = Task { await vm.processVoice() }
+  try await waitForSpeech(speech)
+  #expect(vm.isTranscribing)
+  vm.cancelVoice()
+  await processing.value
+  #expect(!vm.isTranscribing && !vm.isGenerating && !vm.isStopping)
+  #expect(vm.currentConversation?.id == normalID)
+  #expect(vm.currentConversation?.pendingVoice?.recordingID == recording)
+  #expect(vm.currentConversation?.pendingVoice?.status == .interrupted)
+  #expect(vm.currentConversation?.messages.isEmpty == true)
+  #expect(await model.requests.isEmpty)
+  await vm.open(privateID)
+  #expect(vm.isTemporary)
+  #expect(vm.draft == "Fictional private draft")
+  #expect(!(await repository.snapshot).conversations.contains(where: \.isTemporary))
+}
+
+/// A native engine may observe cancellation before its current kernel finishes.
+private actor JoiningVoiceStub: VoiceTranscribing {
+  private var cleanup: CheckedContinuation<Void, Never>?
+  var started = false
+  func transcribe(recordingID: UUID) async throws -> VoiceTranscript {
+    started = true
+    await withCheckedContinuation { cleanup = $0 }
+    try Task.checkCancellation()
+    return VoiceTranscript(id: UUID(), recordingID: recordingID, passageIDs: [], text: "unused")
+  }
+  func finishCleanup() {
+    cleanup?.resume()
+    cleanup = nil
+  }
+}
+
+@Test @MainActor func voiceCancellationAcknowledgesStopAndKeepsInferenceBlockedUntilNativeJoin()
+  async throws
+{
+  let speech = JoiningVoiceStub()
+  let repository = TestRepository()
+  let model = TestModel()
+  let vm = ChatViewModel(
+    useCases: ChatUseCases(repository: repository, model: model, voiceTranscriber: speech))
+  await vm.load()
+  await vm.startTemporary()
+  let privateID = try #require(vm.currentConversation?.id)
+  vm.draft = "Fictional retained private draft"
+  let recording = UUID()
+  #expect(
+    await vm.prepareVoiceChat(
+      recordingID: recording, durationSeconds: 2, asNormalCapture: true))
+  let processing = Task { await vm.processVoice() }
+  for _ in 0..<200 {
+    if await speech.started { break }
+    try await Task.sleep(for: .milliseconds(5))
+  }
+  #expect(await speech.started)
+  vm.cancelVoice()
+  #expect(vm.isStopping && vm.isTranscribing)
+  #expect(vm.lastCancellationSeconds == nil)
+  vm.draft = "Fictional text that must wait"
+  #expect(!vm.canSend)
+  #expect(!(await vm.prepareVoiceChat(recordingID: UUID(), durationSeconds: 2)))
+  await vm.send()
+  #expect(await model.requests.isEmpty)
+  #expect(vm.currentConversation?.pendingVoice?.status == .transcribing)
+  await speech.finishCleanup()
+  await processing.value
+  #expect(!vm.isStopping && !vm.isTranscribing && !vm.isGenerating)
+  #expect(vm.lastCancellationSeconds != nil)
+  #expect(vm.currentConversation?.pendingVoice?.recordingID == recording)
+  #expect(vm.currentConversation?.pendingVoice?.status == .interrupted)
+  #expect(vm.currentConversation?.messages.isEmpty == true)
+  await vm.open(privateID)
+  #expect(vm.isTemporary)
+  #expect(vm.draft == "Fictional retained private draft")
+  #expect(!(await repository.snapshot).conversations.contains(where: \.isTemporary))
+}

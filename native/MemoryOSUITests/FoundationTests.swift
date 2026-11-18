@@ -41,14 +41,16 @@ final class FoundationTests: XCTestCase {
     XCTAssertTrue(app.alerts.firstMatch.waitForExistence(timeout: 3))
     app.alerts.buttons["OK"].tap()
     app.buttons["your-memories"].tap()
+    app.segmentedControls.buttons["Saved records"].tap()
     XCTAssertTrue(app.staticTexts["A fictional project thought"].waitForExistence(timeout: 3))
     app.terminate()
     app.launch()
     app.buttons["your-memories"].tap()
+    app.segmentedControls.buttons["Saved records"].tap()
     XCTAssertTrue(app.staticTexts["A fictional project thought"].waitForExistence(timeout: 3))
   }
 
-  func testHomeSendShowsConversationWithoutOpeningSidebarOrSavingMemory() {
+  func testHomeSendShowsConversationWithoutCreatingManualRecord() {
     let app = XCUIApplication()
     app.launch()
     app.buttons["capture-open-chat"].tap()
@@ -68,6 +70,7 @@ final class FoundationTests: XCTestCase {
     if app.buttons["chat-stop"].exists { app.buttons["chat-stop"].tap() }
     app.buttons["capture-return-to-recording"].tap()
     app.buttons["your-memories"].tap()
+    app.segmentedControls.buttons["Saved records"].tap()
     XCTAssertFalse(app.staticTexts["A fictional home chat greeting"].exists)
   }
 

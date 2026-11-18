@@ -76,3 +76,9 @@ Step 1 now completes real Wax/Cactus retrieval and llama.cpp model comparisons, 
 Builder recommendation: llama.cpp CPU/Accelerate is the current Simulator text-runtime baseline; Wax lexical is the lower-cost provider baseline. Corrected Cactus last-token retrieval remains a replaceable semantic experiment. Both providers return unrelated sources for the no-evidence query. Qwen3-1.7B improves source citation behavior over 0.6B but still fails the Iraqi/Arabic requirements. No production model/provider is adopted.
 
 These experiment choices keep canonical originals, IDs, source links and corrections in the existing app-owned store. Indexes are derivatives. The historical custom-engine fallback recommendation does not override D30/C26: use upstream libraries and thin app-owned interfaces, without starting a new custom engine repository. Physical phone cost, human review and independent Step 2 remain separate.
+
+## Main-app integration authorized, 2026-11-18
+
+The owner authorizes implementing Wax and Cactus for automatic local recall before chat replies. The [integration task](../tasks/2026-11-18-local-recall-integration.md) connects both existing pinned providers through app-owned interfaces, with hybrid retrieval as the initial composition. This supersedes the earlier evaluation-only implementation boundary for this narrow path. It does not assert production quality, physical qualification or release readiness.
+
+Keep original records and corrections authoritative. Returned IDs and exact passages require fresh source validation after search. Queries remain transient, including private-session queries. A separate semantic extraction gate remains disabled after failed local-model diagnostics; retrieval integration alone does not pass it.

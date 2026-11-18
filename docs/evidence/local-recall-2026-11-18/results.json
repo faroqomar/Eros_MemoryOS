@@ -1,0 +1,324 @@
+{
+  "status": "implemented and connected Simulator checks passed; Step 2 quality blocked",
+  "automaticMemoryQualified": false,
+  "chatReleaseTests": 64,
+  "coreReleaseTests": 91,
+  "extractionReleaseTests": 31,
+  "bundleScriptTests": 2,
+  "semanticDiagnostic": {
+    "caseCount": 2,
+    "matchedCases": 0,
+    "expectedClaims": 2,
+    "completeClaims": 0,
+    "acceptedMismatches": 0,
+    "p95Seconds": 47.901297875,
+    "diagnosticOnly": true,
+    "caseThreshold": 0.85,
+    "claimThreshold": 0.85,
+    "acceptedMismatchThreshold": 0,
+    "cases": [
+      {
+        "id": "grammar-15",
+        "outcome": "rejected",
+        "accepted": 0,
+        "matchedClaims": 0,
+        "acceptedMismatches": 0,
+        "seconds": 47.901297875,
+        "error": "PersonalMemoryExtraction.PersonalMemoryExtractionError.semanticDisagreement"
+      },
+      {
+        "id": "grammar-19",
+        "outcome": "rejected",
+        "accepted": 0,
+        "matchedClaims": 0,
+        "acceptedMismatches": 0,
+        "seconds": 45.327496833,
+        "error": "PersonalMemoryExtraction.PersonalMemoryExtractionError.semanticDisagreement"
+      }
+    ],
+    "exitCode": 1,
+    "sourceBefore": "16725c33d03de84510644839d1736631144d8d240e8bc95caa4ff85781b3fe65",
+    "sourceAfter": "16725c33d03de84510644839d1736631144d8d240e8bc95caa4ff85781b3fe65",
+    "changed": [],
+    "sourceCount": 127,
+    "rawResultSHA256": "f8986fbd2ed7bf20ffa9d415f4dc2592f32579ac7950bc73fced5d65d5eba471",
+    "coreTests": 91,
+    "extractionTests": 31,
+    "configuration": "Release host;2048context;512output;existing runtime;no cloud"
+  },
+  "retrievalIndependent": {
+    "fixtureSHA256": "69747eb3ddbc0bb60ae922bf954bc1301f4c8515f4c21b9591107e05ff10f41c",
+    "minimumSimilarity": 0.65,
+    "summary": [
+      {
+        "provider": "wax",
+        "decorated": false,
+        "cases": 4,
+        "passed": 2,
+        "positiveMatches": 0,
+        "positiveCases": 2,
+        "falsePositiveCases": 0
+      },
+      {
+        "provider": "wax",
+        "decorated": true,
+        "cases": 4,
+        "passed": 2,
+        "positiveMatches": 0,
+        "positiveCases": 2,
+        "falsePositiveCases": 0
+      },
+      {
+        "provider": "cactus",
+        "decorated": false,
+        "cases": 4,
+        "passed": 2,
+        "positiveMatches": 0,
+        "positiveCases": 2,
+        "falsePositiveCases": 0
+      },
+      {
+        "provider": "cactus",
+        "decorated": true,
+        "cases": 4,
+        "passed": 3,
+        "positiveMatches": 1,
+        "positiveCases": 2,
+        "falsePositiveCases": 0
+      },
+      {
+        "provider": "hybrid",
+        "decorated": false,
+        "cases": 4,
+        "passed": 2,
+        "positiveMatches": 0,
+        "positiveCases": 2,
+        "falsePositiveCases": 0
+      },
+      {
+        "provider": "hybrid",
+        "decorated": true,
+        "cases": 4,
+        "passed": 3,
+        "positiveMatches": 1,
+        "positiveCases": 2,
+        "falsePositiveCases": 0
+      }
+    ]
+  },
+  "nativeBuild": "PASS: final binary integration, no source override",
+  "phoneTests": "paused by owner",
+  "release": "not authorized",
+  "nativeStaticAnalysis": "PASS",
+  "nativeTests": {
+    "selected": 22,
+    "passed": 22,
+    "seconds": 7.106,
+    "actualGeneration": "Qwen3-0.6B with hybrid Wax/Cactus recall; injected fictional repositories",
+    "scenarios": [
+      "prior-source answer",
+      "corrected answer in new conversation",
+      "temporary recall without durable conversation"
+    ]
+  },
+  "manualAppFlow": {
+    "stores": "production app-owned local stores with fictional data",
+    "result": "new conversation recalled earlier source; source button opened exact original and date",
+    "device": "iPhone 18 Pro Simulator",
+    "os": "iOS 27.2",
+    "app": "MemoryOS Check",
+    "bundleID": "com.eros.memoryos.autocheck.MemoryOS",
+    "appearance": "dark",
+    "deviceSession": "closed; Simulator not shut down"
+  },
+  "sourceIdentity": {
+    "sourceFileCount": 1311,
+    "aggregate": "897cc4d9464b36d25521767bab334e7a83b8eba155a2fa8cd6fbdcc29d678715",
+    "changedSinceBuildStart": [
+      "native/LocalAIIntegrations/scripts/tests/test_runtime_artifact_guard.py",
+      "native/LocalAIIntegrations/scripts/verify-wax-runtime.py",
+      "native/LocalAIIntegrations/RuntimeBinaryIntegration/README.md"
+    ],
+    "appRuntimeSourcesUnchanged": true,
+    "postVerificationManifestFormatting": {
+      "path": "native/LocalMemoryRetrieval/Package.swift",
+      "beforeSHA256": "52b7fd401895764544cb90c2e60de11db959897a69a545438d06d927ad198869",
+      "afterSHA256": "34fa1a12430aee185ce5a9cc32c83788c01473bd49636bc4d8ed88f796b5c791",
+      "packageDefinitionsIdentical": true,
+      "verification": "swift package dump-package parsed JSON equal before/after; strict recursive lint passed",
+      "independentReview": "PASS: identical package JSON; only this file differs across 1311 selected sources; handback aggregate verified"
+    },
+    "aggregateScope": "Verified snapshot before whitespace-only manifest formatting; no other selected source changed",
+    "handbackAggregate": "baeb2abd3341ab1b26f92e74ce54816805648069094b5cc7f83061e96bc8313e"
+  },
+  "hostBinaryContracts": {
+    "executed_pass": 9,
+    "optional_skipped": 5,
+    "seconds": 0.267,
+    "includes_real_wax": true,
+    "same_executed_contracts_pass_under_deny_network": true,
+    "denyNetworkLimit": "Five optional model/diagnostic tests skipped; this is not a Cactus-model offline qualification"
+  },
+  "artifactGuardTests": 7,
+  "runtimeArtifact": {
+    "path": "native/LocalAIIntegrations/RuntimeBinaryIntegration/Artifacts",
+    "module": "WaxMemoryRuntime",
+    "receipt_sha256": "7f3d38447b53c3565f6bb4e3a9aad4f0ad80a929aaa092779c39e12c5a938c17",
+    "platforms": {
+      "iphonesimulator": {
+        "binary_sha256": "c21ecdbe38aab4d08a15bf34fd58bc614edc83b51906bee10f072db02c72019a",
+        "seconds": 107.48653793334961,
+        "static_object_count": 530
+      },
+      "iphoneos": {
+        "binary_sha256": "602abaec377f2fdf441db583501e34d1328c39fd67359ef5de4bf882553dea96",
+        "seconds": 103.67366695404053,
+        "static_object_count": 530
+      },
+      "macosx": {
+        "binary_sha256": "5bdab06d7f034cdc37923d8e30519fea51a877ad4367496244e0912977d50863",
+        "seconds": 100.39231204986572,
+        "static_object_count": 530
+      }
+    }
+  },
+  "embeddingCache": {
+    "initial_sources": 100,
+    "initial_seconds": 4.636713709,
+    "append_sources": 1,
+    "append_seconds": 0.483291917,
+    "total_document_embeddings": 101,
+    "host_build_contention": true,
+    "relaunch": "Memory-only vectors; process restart rebuilds index"
+  },
+  "independentReview": {
+    "openSourceFindings": [],
+    "chatReleaseTests": 64,
+    "artifactGuardTests": 7,
+    "nativeEvidenceReviewed": true,
+    "qualityGate": "blocked"
+  },
+  "warnings": [
+    "existing llama umbrella headers",
+    "Wax archive debug map and symbol lookup",
+    "existing responsiveness probe unnecessary await",
+    "unused AppIntents extraction"
+  ],
+  "captures": [
+    {
+      "path": "ordinary-recall.png",
+      "sha256": "e8d7f408f7d0554f2634254192338d3fa51a6b14a0b45f65556a83db8e3d3a8a"
+    },
+    {
+      "path": "original-source.png",
+      "sha256": "e82026d0b2b1ad3130caa8779b0f148009f6fddbd53d796f8d07b696d269c6b0"
+    }
+  ],
+  "finalLogSHA256": {
+    "build": "a464643e80fb34c5413bf4f218d884582210b0b74eeee54da423c076e44ec9f6",
+    "tests": "0a7c1139f385417b4e649b462e231e64c37e7e28c97bdb8045b0b6b3f21bc03e",
+    "analysis": "010473192b6ac884a898601cfc9cfc5cd35bffd55349876368e0ec5000b323d4"
+  },
+  "cleanup": {
+    "main": {
+      "paths": [
+        {
+          "path": "/tmp/memoryos-recall-model-bundle-check",
+          "beforeAllocatedBytes": 429641728,
+          "afterAllocatedBytes": 0
+        },
+        {
+          "path": "/tmp/memoryos-recall-chat-build",
+          "beforeAllocatedBytes": 169562112,
+          "afterAllocatedBytes": 0
+        },
+        {
+          "path": "/tmp/memoryos-recall-sourcepackages",
+          "beforeAllocatedBytes": 674217984,
+          "afterAllocatedBytes": 0
+        },
+        {
+          "path": "/tmp/memoryos-semantic-fix-build",
+          "beforeAllocatedBytes": 240627712,
+          "afterAllocatedBytes": 0
+        },
+        {
+          "path": "/tmp/memoryos-semantic-fix-probes-build",
+          "beforeAllocatedBytes": 109682688,
+          "afterAllocatedBytes": 0
+        },
+        {
+          "path": "/tmp/memoryos-recall-review-chat",
+          "beforeAllocatedBytes": 85385216,
+          "afterAllocatedBytes": 0
+        }
+      ],
+      "removedAllocatedBytes": 1709117440,
+      "reason": "Completed owned generated builds and duplicate verified asset; compact results and canonical artifacts retained",
+      "measurement": "Selected allocated blocks, not volume free-space change"
+    },
+    "adapter": {
+      "at_utc": "2026-11-18T16:42:19.777096+00:00",
+      "paths": [
+        {
+          "path": "/tmp/memoryos-retrieval-adapter-build",
+          "allocated_bytes_before": 1161486336,
+          "allocated_bytes_after": 0,
+          "reason": "Task-owned generated builds; final binaries and compact outcomes retained."
+        },
+        {
+          "path": "/tmp/memoryos-retrieval-adapter-binary-build",
+          "allocated_bytes_before": 938741760,
+          "allocated_bytes_after": 0,
+          "reason": "Task-owned generated builds; final binaries and compact outcomes retained."
+        },
+        {
+          "path": "/tmp/memoryos-retrieval-adapter-binary-tests",
+          "allocated_bytes_before": 226033664,
+          "allocated_bytes_after": 0,
+          "reason": "Task-owned generated builds; final binaries and compact outcomes retained."
+        }
+      ],
+      "allocated_bytes_removed": 2326261760,
+      "retained": [
+        "Canonical Wax RuntimeBinaryIntegration/Artifacts including duplicate Slices, unchanged receipt/resources/licenses/source provenance",
+        "Reviewed external patched Wax snapshot and original upstream checkouts",
+        "Existing verified Cactus embedding model",
+        "Compact quality results, final test logs and artifact/source guard outcomes",
+        "Small temporary binary build package/source provenance for reproduction"
+      ],
+      "receipt_sha256_unchanged": "7f3d38447b53c3565f6bb4e3a9aad4f0ad80a929aaa092779c39e12c5a938c17",
+      "allocation_note": "Selected path allocation; APFS shared blocks mean this is not guaranteed volume free space."
+    },
+    "independentRecheck": "PASS: nine paths absent; canonical sources/artifacts/models/captures/final logs retained and hashes match",
+    "retained": [
+      "canonical native build and runtime artifacts including duplicate Slices",
+      "reviewed model assets and upstream source",
+      "compact failed results and unresolved fictional traces",
+      "selected captures, original research and app histories"
+    ],
+    "scope": "tracked/untracked/ignored files reviewed; only owned generated duplicates removed",
+    "totalAllocatedBytesRemoved": 4035379200
+  },
+  "projectMemoryDelivery": {
+    "project": "memoryos",
+    "command": "./scripts/memory check",
+    "exitCode": 0,
+    "pending": [],
+    "failed": {},
+    "sourceCount": 55,
+    "checkedAtUTC": "2026-11-18T16:46:45.454977+00:00"
+  },
+  "format": "PASS: strict swift-format on affected main chat/app/tests, all new retrieval packages and both runtime wrappers; semantic worker strict formatting passed",
+  "evidenceGuard": "PASS: three current evidence/task text files",
+  "localLinks": {
+    "checked": 169,
+    "missing": 0
+  },
+  "gitDiffCheck": "PASS",
+  "capturedAppBinary": {
+    "sha256": "16c6376a80ee2931c714537f1c1ab49670af0b592e394d2ff78329772d7b6ae4",
+    "build": "final Release Simulator build retained outside repository",
+    "sourceAggregate": "897cc4d9464b36d25521767bab334e7a83b8eba155a2fa8cd6fbdcc29d678715"
+  }
+}

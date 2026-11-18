@@ -1,0 +1,178 @@
+{
+  "status": "4B-only app built; basic conversation works; retrieval qualification failed",
+  "initialNative": {
+    "functions": 25,
+    "directConversationCases": 4,
+    "directConversationPassed": 4,
+    "connectedCorrectionPrivate": "pass",
+    "retrievalCases": 12,
+    "retrievalMatched": 10,
+    "positiveHits": 6,
+    "falsePositiveCases": 2,
+    "runtimeErrors": 0
+  },
+  "initialLogSHA256": "7a4f0cd6907484c081cd629b3ac7af64805bd8a992f1e0d9729027d6e462c454",
+  "automaticMemoryQualified": false,
+  "modelBytes": 2497280256,
+  "modelSHA256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "cleanup": {
+    "removed": [
+      "/tmp/memoryos-4b-chat-build"
+    ],
+    "allocatedBytesBefore": 86274048,
+    "allocatedBytesAfter": 0,
+    "retained": [
+      "Verified4B cache",
+      "Final native build",
+      "Signed iPhone build",
+      "Compact review and test logs",
+      "App histories",
+      "Historical model evaluation evidence"
+    ]
+  },
+  "phoneTests": "paused",
+  "independentReview": {
+    "status": "read-only production review complete; root owns runtime validation",
+    "blockingFindings": [],
+    "checks": [
+      "Generation and relevance select same pinned Qwen3 4B asset and SHA",
+      "Imported replacement requires pinned 4B SHA; old smaller asset never selected",
+      "No added network or cloud fallback",
+      "Coordinator unloads generation runtime before relevance; relevance unloads before reply",
+      "Obsolete bundle cleanup preserves unknown content and symlinks",
+      "Memory-only mode retains stale-claim redaction; ordinary followup keeps only byte-identical current citation context",
+      "Automatic memory qualification remains false"
+    ],
+    "testOwned": "native/MemoryOSTests/FourBConversationTests.swift",
+    "testCases": [
+      "instruction",
+      "followup",
+      "iraqi-negation",
+      "current-correction"
+    ],
+    "testsRun": "Strict formatting only; no model inference or build by reviewer",
+    "limits": [
+      "Four direct-model probes are bounded regression checks, not general intelligence qualification",
+      "Cactus keeps dedicated embedding asset outside 4B language model selection",
+      "Ranking/passage changes can still redact previous answers conservatively",
+      "Physical iPhone speed/memory/thermal behavior unmeasured"
+    ],
+    "sourceIdentity": "Current hashes below; runtime evidence predates a comment-only clarification in MemoryEvidenceFilter.swift.",
+    "relevancePromptOutcome": "Rejected after runtime failure; baseline restored."
+  },
+  "finalIPhoneBuild": "signed restored-baseline build passed",
+  "testHarnessNote": "Function-only filter selected zero tests; discarded as verification, rerun entire AutomaticRecallRuntimeTests suite.",
+  "limits": [
+    "4 direct probes do not prove general intelligence",
+    "2048 context and256 output tokens remain",
+    "Strict same-citation context check can withhold prior reply when passage ranking changes",
+    "Phone performance remains paused; signed build is not installed-device evidence",
+    "Automatic extraction qualification remains failed and writes disabled"
+  ],
+  "finalAnalysis": "pass",
+  "localLinkChecks": {
+    "checked": 103,
+    "broken": 0
+  },
+  "remainingRepair": "Diagnose and repair accepted extra sources with the selected 4B; rerun unchanged retrieval assertions and fresh independent checks.",
+  "rejectedPromptTrial": {
+    "adopted": false,
+    "observedCompletedCases": 4,
+    "failedCases": [
+      "q02",
+      "q04"
+    ],
+    "stoppedAfterFailure": true,
+    "reason": "Both baseline false positives persist; q02 returns one more extra passage",
+    "baselineRestored": true,
+    "review": "Subject-isolation proposal had no static safety finding; runtime failed and root reverted it.",
+    "fixtureSHA256": "00fb9b613e2036ecd95e01b8c1bc4b43b40c727a3fcfcd3942cc0f7509ddbf3b",
+    "trialFilterSHA256": "50e9a33143db5219f6b83bbd1c973dbdce140c16fc0d48014058394378a7edb9",
+    "limits": "Four completed cases only; no full-suite score. Implicit-subject recall was a known risk."
+  },
+  "finalSourceHashes": {
+    "native/MemoryOS/Composition/ChatComposition.swift": "2399cf220cddb8b67d8a84bc3b762abeeafa7953bba5321878896b953f4358df",
+    "native/MemoryOS/Composition/ChatModelImporter.swift": "928d7d95d4ffc9256c043bccec4f5405c998aa534650c84f0ab3a7de4b27c76b",
+    "native/MemoryOS/Features/Chat/ChatModelSettingsView.swift": "c364ac6a861a827326d92782f43d9fbcaf6ef04e23aa35d6b76ce888b29a38b3",
+    "native/LocalChat/Sources/ChatCore/ChatUseCases.swift": "0053fcb34876411bf5c4056afa332ea4162c5e583e601d8ce15beb39f9d5b2c9",
+    "native/LocalChat/Tests/ChatTests/ChatFlowTests.swift": "21cb10fec230e3406801108c043202df3200d8374b44973998127468bbc98256",
+    "native/MemoryOSTests/FourBConversationTests.swift": "302a32f547e2ae633e4116dfa060e4d9c75ceb79342fce91fbfc105fc1a13630",
+    "scripts/bundle-relevance-model.py": "d70294803302a16687509621d6e1cad1d7fe82a6b8bf81e81d972039698a9bb5",
+    "native/MemoryOS.xcodeproj/project.pbxproj": "4446eb61522de8625bb9b8d5b9c81cdbdda9924c2d04906ebf8133d482b19291",
+    "native/LocalChat/Sources/ChatCore/MemoryEvidenceFilter.swift": "cb28c03cea191edffa3b892547cc8c1ba834ac417dec22afa4c22bfda02fab51"
+  },
+  "finalSimulatorBuild": "restored-baseline build passed",
+  "baselineSourceRestored": true,
+  "logs": {
+    "memoryos-4b-baseline-tests.log": "7a4f0cd6907484c081cd629b3ac7af64805bd8a992f1e0d9729027d6e462c454",
+    "memoryos-4b-repair-suite-tests.log": "3b959195cb65a7207ab3fea23cc13b9981e271ccc527396af92979c0109a4d4c",
+    "memoryos-4b-restored-build.log": "0973c2043a9ed0b5661117decc224f146085b0d2d7ddf0cf23d4af3aed2006f0",
+    "memoryos-4b-restored-iphone-build.log": "83da2f392cdcc7044fc452ae6154bf429128f120bca7dffe4c99bf233b953375"
+  },
+  "projectMemoryDelivery": {
+    "project": "memoryos",
+    "api": {
+      "status": "healthy",
+      "database": "connected",
+      "db_acquire_ms": 0.9,
+      "db_pool_waiting": 0,
+      "db_pool_in_use": 0,
+      "db_pool_max": 100,
+      "db_pool_idle": 5
+    },
+    "sources": 56,
+    "pending": [],
+    "failed": {}
+  },
+  "captureStatus": {
+    "state": "blocked",
+    "reason": "Device installation upload interrupted twice; prescribed debug retry failed",
+    "debugDiagnostic": "mwmh77rq-09d6c94f",
+    "newCaptureAvailable": false,
+    "sessionReleased": true
+  },
+  "runtimeBaselineFilterSHA256": "bc58fcaeb3b8e969f6652d0c97b05ab339c04c03968f5378b2de449d51484922",
+  "step3": {
+    "status": "independent review and cleanup complete; draft delivery pending; merge blocked",
+    "scope": "Connected group7, automatic-memory, local-recall and4B changes; unrelated output/imagegen excluded",
+    "behaviorChanges": "None; MemoryEvidenceFilter source edit clarifies historical model evaluation only",
+    "mergeBlockers": [
+      "4B retrieval10/12; required12/12 with zero extra-source cases",
+      "Final changed-screen capture unavailable after two Device transfer failures",
+      "Owner visual acceptance for combined personal-memory UI remains open"
+    ],
+    "broaderQualifications": "Automatic writes remain disabled; physical lock/energy/thermal checks remain open and phone testing paused",
+    "gitDelivery": "pending",
+    "documentDependencies": "UI-inspiration note retained as source-register provenance. Separate architecture/skill-policy task/evidence folders excluded; no incoming links from delivered records.",
+    "manifestCheck": "swift package --package-path native/LocalAIIntegrations dump-package succeeds with toolsVersion6.2; suspected header-order failure not reproduced, manifest unchanged.",
+    "independentReview": {
+      "standards": "No new wiring/MVVM/privacy defect; stale evidence and comment corrected. Expanded boundary scan found no private-content signature; manifest suspicion not reproduced.",
+      "spec": "4B selection implemented; extraction, retrieval, capture, physical qualification and owner visual acceptance remain open."
+    },
+    "excludedPaths": [
+      "output/",
+      "docs/tasks/2026-11-14-explicit-architecture-rules.md",
+      "docs/tasks/2026-11-15-development-step-skills.md",
+      "docs/evidence/architecture-2026-11-14/",
+      "docs/evidence/step-skills-2026-11-15/"
+    ],
+    "independentCleanupRecheck": "Both fresh reviewers pass scoped cleanup; comment-only source change reconstructs exact runtime baseline; thresholds and failures preserved.",
+    "localLinks": {
+      "checked": 367,
+      "broken": 0,
+      "unstagedTargets": 0
+    },
+    "whitespace": "Owned files pass; three verbatim upstream LICENSE/NOTICE copies retain source blank/trailing whitespace."
+  },
+  "step3Cleanup": {
+    "removedCategory": "One completed byte-identical native test log; stale duplicate status fields consolidated",
+    "removedPath": "/tmp/memoryos-4b-native-tests.log",
+    "retainedCopy": "/tmp/memoryos-4b-baseline-tests.log",
+    "removedBytes": 6105576,
+    "allocatedBytesBefore": 6295552,
+    "allocatedBytesAfter": 0,
+    "retained": "Failed baseline/trial, compact reviews, final builds, verified model, source/research, unique evidence and app histories; unrelated output files untouched",
+    "evidenceBytesBefore": 9059,
+    "evidenceBytesAfterConsolidation": 7684
+  }
+}

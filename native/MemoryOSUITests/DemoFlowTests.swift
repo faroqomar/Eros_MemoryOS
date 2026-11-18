@@ -8,7 +8,8 @@ final class DemoFlowTests: XCTestCase {
     let app = XCUIApplication()
     app.launch()
     route("profiles", in: app)
-    app.buttons["record-ali"].tap()
+    XCTAssertTrue(app.staticTexts["You"].exists)
+    openSamplePerson(in: app)
     XCTAssertTrue(app.staticTexts["Original sample"].exists)
     app.swipeUp()
     app.buttons["record-website"].tap()
@@ -25,25 +26,23 @@ final class DemoFlowTests: XCTestCase {
     let app = XCUIApplication()
     app.launch()
     route("profiles", in: app)
-    let search = app.descendants(matching: .any)["catalog-search"]
+    let search = app.textFields["personal-profile-search"]
     search.tap()
-    search.typeText("missing sample\n")
-    XCTAssertTrue(app.staticTexts["No matches"].exists)
-    app.buttons["clear-empty-search"].tap()
-    XCTAssertTrue(app.buttons["record-sara"].exists)
+    search.typeText("missing person 749AF")
+    XCTAssertTrue(app.buttons["clear-personal-search"].waitForExistence(timeout: 3))
+    app.buttons["clear-personal-search"].tap()
+    XCTAssertTrue(app.staticTexts["You"].exists)
     search.tap()
-    search.typeText("Ali")
-    XCTAssertTrue(app.buttons["record-ali"].exists)
-    XCTAssertFalse(app.buttons["record-sara"].exists)
+    search.typeText("You")
     app.buttons["open-menu"].tap()
     XCTAssertFalse(app.keyboards.firstMatch.exists)
     app.buttons["section-projects"].tap()
     route("profiles", in: app)
-    XCTAssertEqual(search.value as? String, "Ali")
-    app.buttons["record-ali"].tap()
+    XCTAssertEqual(search.value as? String, "You")
+    app.staticTexts["You"].tap()
     route("capture", in: app)
     route("profiles", in: app)
-    XCTAssertTrue(app.staticTexts["Original sample"].exists)
+    XCTAssertTrue(app.buttons["profile-add-information"].exists)
   }
 
   func testBirthdayChoicesSurviveNavigationAndReset() {
@@ -90,14 +89,14 @@ final class DemoFlowTests: XCTestCase {
     app.buttons["language-picker"].tap()
     app.buttons["العربية"].tap()
     route("profiles", in: app)
-    app.buttons["record-ali"].tap()
+    XCTAssertTrue(app.staticTexts["أنت"].exists)
+    openSamplePerson(in: app)
     XCTAssertTrue(app.staticTexts["original-source"].label.contains("We can review"))
     XCTAssertTrue(app.staticTexts["النص التجريبي الأصلي"].exists)
     app.buttons["birthday-birthday-ali"].tap()
     app.buttons["reminder-dayBefore"].tap()
     XCTAssertEqual(app.staticTexts["reminder-current"].label, "قبل يوم واحد")
-    route("brainMap", in: app)
-    app.buttons["map-open-website"].tap()
+    openSampleProject(in: app)
     XCTAssertTrue(app.staticTexts["الخطط الحالية"].exists)
   }
 
@@ -129,10 +128,10 @@ final class DemoFlowTests: XCTestCase {
     XCTAssertEqual(app.buttons.matching(identifier: "open-menu").count, 1)
     assertNotHittable(app.buttons["close-menu"])
     route("profiles", in: app)
-    app.buttons["record-ali"].tap()
+    app.staticTexts["You"].tap()
     app.buttons["open-menu"].tap()
     app.buttons["close-menu"].tap()
-    XCTAssertTrue(app.staticTexts["Original sample"].exists)
+    XCTAssertTrue(app.buttons["profile-add-information"].exists)
     XCTAssertTrue(app.buttons["open-menu"].isHittable)
     assertNotHittable(app.buttons["close-menu"])
   }
@@ -161,13 +160,11 @@ final class DemoFlowTests: XCTestCase {
       app.buttons["language-picker"].tap()
       app.buttons["العربية"].tap()
     }
-    route("profiles", in: app)
-    app.buttons["record-ali"].tap()
+    openSamplePerson(in: app)
     var heights: [String: CGFloat] = [:]
     measure(
       arabic ? ["١٢ أيار", "عرض خيارات التذكير"] : ["12 May", "View reminder choices"])
-    route("projects", in: app)
-    app.buttons["record-website"].tap()
+    openSampleProject(in: app)
     measure(
       arabic
         ? ["قد نضيف معرض صور صغيراً لاحقاً.", "هذه احتمالات ولم نتفق عليها كخطط."]
@@ -218,10 +215,11 @@ final class DemoFlowTests: XCTestCase {
     try auditCategories(in: app)
     app.buttons["section-profiles"].tap()
     try auditCategories(in: app)
-    app.buttons["record-ali"].tap()
+    app.staticTexts[arabic ? "أنت" : "You"].tap()
     try auditCategories(in: app)
     route("projects", in: app)
-    app.buttons["record-website"].tap()
+    try auditCategories(in: app)
+    openSampleProject(in: app)
     try auditCategories(in: app)
     route("birthdays", in: app)
     app.buttons["birthday-birthday-ali"].tap()
@@ -248,6 +246,31 @@ final class DemoFlowTests: XCTestCase {
         }
       }
     }
+  }
+
+  // Original sample links still belong to the explicitly fictional BrainMap demo.
+  private func sampleMapRoot(in app: XCUIApplication) {
+    route("brainMap", in: app)
+    for _ in 0..<5 {
+      if app.buttons["map-choose"].exists { return }
+      app.navigationBars.buttons.firstMatch.tap()
+    }
+  }
+
+  private func openSamplePerson(in app: XCUIApplication) {
+    sampleMapRoot(in: app)
+    app.buttons["map-choose"].tap()
+    let person = app.buttons["Ali Hassan"]
+    if person.exists { person.tap() } else { app.buttons["علي حسن"].tap() }
+    app.buttons["map-open-ali"].tap()
+  }
+
+  private func openSampleProject(in app: XCUIApplication) {
+    sampleMapRoot(in: app)
+    app.buttons["map-choose"].tap()
+    let project = app.buttons["Small website"]
+    if project.exists { project.tap() } else { app.buttons["موقع صغير"].tap() }
+    app.buttons["map-open-website"].tap()
   }
 
   private func assertNotHittable(_ element: XCUIElement) {

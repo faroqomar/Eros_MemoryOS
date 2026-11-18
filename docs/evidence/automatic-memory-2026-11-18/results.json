@@ -1,0 +1,972 @@
+{
+  "status": "automatic_write_adoption_blocked",
+  "independent_local_model": {
+    "model": "Qwen3-1.7B-Q4_K_M.gguf",
+    "model_sha256": "b139949c5bd74937ad8ed8c8cf3d9ffb1e99c866c823204dc42c0d91fa181897",
+    "physical_device": false,
+    "platform": "macOS-27.2.1-arm64-arm-64bit",
+    "cases_matched": 8,
+    "cases_total": 18,
+    "complete_claims_matched": 3,
+    "complete_claims_total": 11,
+    "accepted_mismatches": 5,
+    "p95_seconds": 7.080392833,
+    "elapsed_seconds": 84.637,
+    "passed": false,
+    "thresholds": {
+      "cases_fraction": 0.85,
+      "complete_claim_fraction": 0.85,
+      "accepted_mismatches": 0
+    },
+    "source_sha256": {
+      "native/LocalTextEvaluation/Tests/LlamaEvaluationAdapterTests/AutomaticMemoryIndependentTests.swift": "084d5eb54ad05af7cd867e6ba1437a25b37e9c67e2ac55b4354c5ce89192b5d2",
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/PersonalMemoryPrompt.swift": "a4032ccbe9c0bd7d532031169332afa93e251170f88d6501c798d20b8e1a6b57",
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/LocalPersonalMemoryAnalyzer.swift": "04ad811588b916a7534015be354afcd5d7ccdc2ca525b9bece5129818b1c672a"
+    },
+    "case_outcomes": [
+      "ind-01: matched; accepted=0; mismatches=0",
+      "ind-02: matched; accepted=0; mismatches=0",
+      "ind-03: matched; accepted=0; mismatches=0",
+      "ind-04: matched; accepted=0; mismatches=0",
+      "ind-05: mismatch; accepted=0; mismatches=0",
+      "ind-06: mismatch; accepted=0; mismatches=0",
+      "ind-07: mismatch; accepted=1; mismatches=1",
+      "ind-08: mismatch; accepted=0; mismatches=0",
+      "ind-09: matched; accepted=1; mismatches=0",
+      "ind-10: mismatch; accepted=0; mismatches=0",
+      "ind-11: matched; accepted=1; mismatches=0",
+      "ind-12: mismatch; accepted=1; mismatches=1",
+      "ind-13: mismatch; accepted=1; mismatches=1",
+      "ind-14: mismatch; accepted=1; mismatches=1",
+      "ind-15: mismatch; accepted=0; mismatches=0",
+      "ind-16: mismatch; accepted=1; mismatches=1",
+      "ind-17: matched; accepted=1; mismatches=0",
+      "ind-18: matched; accepted=0; mismatches=0"
+    ]
+  },
+  "development_runs": [
+    {
+      "label": "single-pass-before-time-fix",
+      "model": "Qwen3-1.7B-Q4_K_M",
+      "score": "AUTO_MEMORY_SCORE matches=6/20 supported=0/12 unsafeAccepted=0"
+    },
+    {
+      "label": "routed-before-time-fix",
+      "model": "Qwen3-1.7B-Q4_K_M",
+      "score": "AUTO_MEMORY_SCORE matches=7/20 supported=1/12 unsafeAccepted=0"
+    },
+    {
+      "label": "focused-before-time-fix",
+      "model": "Qwen3-1.7B-Q4_K_M",
+      "score": "AUTO_MEMORY_SCORE corpus=development matches=0/1 supported=0/1 unsafeAccepted=0"
+    },
+    {
+      "label": "focused-after-time-fix",
+      "model": "Qwen3-1.7B-Q4_K_M",
+      "score": "AUTO_MEMORY_SCORE corpus=development matches=1/1 supported=1/1 unsafeAccepted=0"
+    }
+  ],
+  "runtime": {
+    "release_adapter_executed": 16,
+    "opt_in_grammar_executed": 4,
+    "native_coordinator_functions": 7,
+    "one_inference_lease": true,
+    "structured_token_cap": 512,
+    "context_tokens": 2048,
+    "ordered_source_sha256": "c3d32dec16b8e2219621f92de1da085633104f4ba76f685823cd731a979a4aa5",
+    "grammar_test_model_sha256": "ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a"
+  },
+  "limits": [
+    "Finite cases do not establish general semantic safety.",
+    "Accepted mismatches include incomplete propositions, wrong types, times, evidence or attribution; not all are fabricated facts.",
+    "Physical phone benchmark stopped before further rechecks at owner request.",
+    "The larger official local candidate is downloading; no quality or adoption result exists."
+  ],
+  "independent_code_review": {
+    "core_functions_passed": 85,
+    "extraction_functions_passed": 10,
+    "model_adoption_blocked": true,
+    "capacity": {
+      "sources": 1000,
+      "events": 50,
+      "logical_bytes": 32152553,
+      "file_bytes": 1556200,
+      "readable_export_bytes": 25208986,
+      "host_edit_p95_ms": 243.42533334856853,
+      "target_edit_p95_ms": 250,
+      "target_passed": true,
+      "limits_changed": false,
+      "reopen_undo_export_passed": true,
+      "limits": "One host functional-capacity run; builder reports244\u2013260ms variation. Main owns final Simulator repetition. No physical qualification."
+    },
+    "source_sha256": {
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryRetainedBudget.swift": "f24a3f56b9c0ff7be3b5f61622ca57a5ce0668db4d1a621c8e609997466d7f01",
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryModels.swift": "3f4a9147a359a6836b0543dfbf6f15659235a225edef47c21a5ffa15ef7a1ec3",
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryAnalysisUseCases.swift": "a023ae5dd4616184136a6132b588d2015da81d48e9e7d2ecdc3bae9edaf737f0",
+      "native/LocalMemory/Sources/MemoryCore/AutomaticPersonalMemoryOrganizer.swift": "5c29c336ee71aebae567c58a73656fa13a3d2c95d2d674c99739a77ba40057a6",
+      "native/LocalMemory/Sources/MemorySQLite/PersonalMemoryStorageArchive.swift": "27db768d42dbb5d245ffb5aef46fd3411a39a144f452e18c2f8830fe7ec6664c",
+      "native/MemoryOS/Composition/PersonalMemoryComposition.swift": "10a6e294ad12a854d827ac365319f49d2620813f7b1a465cee5489399b568066",
+      "native/MemoryOS/Features/PersonalMemory/PersonalMemoryViewModel.swift": "02580096d76b165c43421c4b8270eac1d921488730d3eec4491a401ef67c78ca",
+      "native/MemoryOS/Features/PersonalMemory/PersonalMemoryViews.swift": "e1556bf9766a5bbde3b27413b182fa51464ba5fca95823e7359c91fea60d4e5e",
+      "native/MemoryOS/App/MemoryOSApp.swift": "d5ba6d592b33d47ce341d3acfd6bec65a58bf74a5b46687b600d9854a33105fc",
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryValidationCache.swift": "8b4264f2a8e8b22058bced9d865b51a2df44ebd1e7a783c66c37963dc2c674ee"
+    }
+  },
+  "prior_physical_attempt": {
+    "overall_passed": false,
+    "source": "before_unique_state_budget_repair",
+    "phone": "iPhone15ProMax",
+    "further_phone_tests": "skipped_by_owner",
+    "completed_100_source_measurement": {
+      "os": "Version 27.0.1 (Build 24A446)",
+      "sources": 100,
+      "retained_events": 50,
+      "repetitions": 3,
+      "edit_samples": 90,
+      "edit_p95_ms": 56.30879166710656,
+      "cold_median_ms": 39.706874998955755,
+      "warm_median_ms": 38.04462499829242,
+      "physical_device": true
+    },
+    "failed_1000_source_stage": "limitReached during history preparation; repaired on host only"
+  },
+  "native_unit_functions_passed": 18,
+  "ui": {
+    "passed_scenarios": [
+      "normal original capture without generic meaning menu",
+      "temporary draft navigation/process lifetime",
+      "explicit profile correction confirmation",
+      "Arabic optional goal at larger text"
+    ],
+    "skipped": "automatic-model clarification generation; unqualified model",
+    "failed": "saved-audio/private continuity; cancellation control stayed beyond10seconds",
+    "fixture_repair": "isolated app recording fixture seeded before rerun; later timeout remains unresolved"
+  },
+  "simulator_storage_benchmark": [
+    {
+      "sources": 100,
+      "retained_events": 50,
+      "repetitions": 3,
+      "edit_samples": 90,
+      "edit_p95_ms": 26.29787498153746,
+      "cold_median_ms": 32.996541645843536,
+      "warm_median_ms": 33.01929167355411,
+      "latency_pass": true,
+      "os": "Version 27.2 (Build 24B8117)",
+      "physical_device": false,
+      "protection_complete_attributes": null
+    },
+    {
+      "sources": 1000,
+      "retained_events": 50,
+      "repetitions": 3,
+      "edit_samples": 90,
+      "edit_p95_ms": 239.37316666706465,
+      "cold_median_ms": 318.2678333250806,
+      "warm_median_ms": 313.4410416823812,
+      "latency_pass": true,
+      "os": "Version 27.2 (Build 24B8117)",
+      "physical_device": false,
+      "protection_complete_attributes": null
+    }
+  ],
+  "source_identity": {
+    "base_head": "d35fc55febc8e841ee2e3c0a81c074b8045ace1b",
+    "state": "uncommitted working tree; selected source hashes in this receipt"
+  },
+  "cleanup": {
+    "scoped_cache_bytes_before": 1659260928,
+    "scoped_cache_bytes_after": 0,
+    "cache_directories_removed": 10,
+    "resolved_profile_bytes_removed": 741096,
+    "retained": [
+      "canonical Simulator build and compact current evidence",
+      "reviewed upstream assets and original source/provenance",
+      "small controlled fictional UI fixture source/data",
+      "active larger-model download, metadata and evaluation worker artifacts",
+      "unrelated work and earlier unique evidence",
+      "latest unresolved saved-audio UI timeout log outside repository"
+    ],
+    "resolved_diagnostic_bytes_removed": 9044450
+  },
+  "final_ui_source_sha256": {
+    "native/MemoryOS/Features/PersonalMemory/PersonalProfilesView.swift": "1f515e0c37cebb528910ccf53c9fc3f67df76030e1d4c56ba1e5c3a6939e888a",
+    "native/MemoryOS/Features/PersonalMemory/PersonalEntryDetail.swift": "6d0d4ff2dfa37db2638283863ad57ff80453e39b4fe85b948d9340ced34145f6",
+    "native/MemoryOS/Features/SectionView.swift": "ea08a9d64a96fcf2a5de400180801cba10abf2b0479b6e6938da45318462faa0",
+    "native/MemoryOS/Features/Chat/ChatView.swift": "fb5144dd39ee7861767314e4a5bb93bb0f229c0cc326ad46d6c39ad8aa61c7e0"
+  },
+  "captures": {
+    "device": "iPhone18Pro Simulator",
+    "os": "iOS27.2",
+    "appearance": "dark",
+    "files": [
+      "normal-chat.png",
+      "clarification-fixture.png",
+      "answer-provenance-fixture.png",
+      "people-ar-fixture.png"
+    ],
+    "fixture_note": "Clarification/profiles are controlled fictional adapter-test proposals; automatic-model adoption remains off. Normal Hi reply uses actual0.6B runtime. Rendered view source unchanged across final Settings-copy-only build.",
+    "manual_answer_saved": true,
+    "answer_question_retained": true,
+    "clear_entries_unchanged": true,
+    "simulator_ax_note": "Final app generation required observed-coordinate fallback after AX circuit-disabled; T3 device controls used."
+  },
+  "final_app_binary_sha256": "04c6848d4a018bf7c88dba4acad94c62c05c62e2c0d3c5b59296bcb4fb9b27ad",
+  "capture_sha256": {
+    "normal-chat.png": "b7e87580c0898c4e3196d36cfc5dc9c0074fbba4a75e26d3870df21049c409af",
+    "people-ar-fixture.png": "60c59b693e5b540fd5e70ca6bc516c65cd0bc3047d4de448220cfddc0778430b",
+    "clarification-fixture.png": "1455cd54af5699a210703602c15d6859b8a44a8e9ff5fd29bc435186e185de8d",
+    "answer-provenance-fixture.png": "89e529313f37492828b37484b4b2ea5cbdeeaacec811f37fc6a566306eee87ac"
+  },
+  "manual_fixture_verification": {
+    "answer_source_count": 1,
+    "question_parent_context_retained": true,
+    "clear_entries_after_answer": 2,
+    "normal_hi_reply_generated": true,
+    "production_qualification_flag": false
+  },
+  "storage_repair_history": {
+    "pre_fix_1000_source_attempt": "limitReached; repaired without raising budgets or reducing50history",
+    "host_before_validation_cache_edit_p95_ms": 326.47,
+    "simulator_before_validation_cache_edit_p95_ms": 299.97,
+    "final_host_observed_p95_range_ms": [
+      243.43,
+      259.83
+    ],
+    "final_simulator_edit_p95_ms": 239.37316666706465,
+    "comparison_limit": "Different host/Simulator measurements; finalphone performance not tested."
+  },
+  "project_memory_delivery": {
+    "project": "memoryos",
+    "sources": 53,
+    "pending": [],
+    "failed": {},
+    "api_status": "healthy",
+    "scope": "Final routing-repair trial docs; complete scoped delivery after sync/check",
+    "receipt_sha256": "5ab913a2263c5af5566df45eb9a72be934197e518605ae6342b90b0d6132a399"
+  },
+  "larger_local_model_evaluation": {
+    "status": "FAIL",
+    "model": "Qwen3-4B-Q4_K_M.gguf",
+    "official_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b",
+    "size_bytes": 2497280256,
+    "sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+    "full_size_and_hash_verified": true,
+    "host_only": true,
+    "platform": "macOS-27.2.1-arm64-arm-64bit",
+    "swift": "Apple Swift version 6.4.2 (swiftlang-6.4.2.1.9 clang-2100.4.1.1)",
+    "source_files_unchanged": true,
+    "source_file_count": 74,
+    "source_aggregate_sha256": "819403aa18d39821b4a933f79cd6b8d155c9c41fd94ef3a20b80a1503da9ebcf",
+    "test_binary_sha256": "38c1aa79e6dce771033e942dd7d784604a8a8cf89dafe41e031bbbda06595e7e",
+    "context_tokens": 2048,
+    "maximum_output_tokens": 512,
+    "runs": [
+      {
+        "suite": "AutomaticMemoryQualityTests",
+        "corpus": "development",
+        "exit_code": 1,
+        "cases_completed": 20,
+        "cases_matched": 12,
+        "complete_claims_matched": 6,
+        "complete_claims_expected": 12,
+        "accepted_mismatches": 2,
+        "mismatched_case_ids": [
+          "injection",
+          "venting",
+          "project",
+          "arabic-project",
+          "episode",
+          "arabic-episode",
+          "negative-preference",
+          "arabic-negative-preference"
+        ],
+        "assertion_failures": [
+          "Double(matched) / Double(max(selected.count, 1)) >= 0.85",
+          "supported == 0 || Double(supportedMatched) / Double(supported) >= 0.85",
+          "unsafeAccepted == 0"
+        ],
+        "test_log_sha256": "c77f47d022333888b556a3a01b73e62f325f32aef6d16100b17c23938935257c",
+        "quality_passed": false,
+        "p95_seconds": 19.217117333,
+        "accepted_mismatch_case_ids": [
+          "injection",
+          "episode"
+        ]
+      },
+      {
+        "suite": "AutomaticMemoryIndependentTests",
+        "corpus": "independent",
+        "exit_code": 1,
+        "cases_completed": 18,
+        "cases_matched": 9,
+        "complete_claims_matched": 3,
+        "complete_claims_expected": 11,
+        "accepted_mismatches": 1,
+        "mismatched_case_ids": [
+          "ind-03",
+          "ind-08",
+          "ind-10",
+          "ind-12",
+          "ind-13",
+          "ind-14",
+          "ind-15",
+          "ind-16",
+          "ind-17"
+        ],
+        "assertion_failures": [
+          "Double(matchedCases) / Double(Self.cases.count) >= 0.85",
+          "Double(matchedClaims) / Double(supportedClaims) >= 0.85",
+          "unsafeAccepted == 0"
+        ],
+        "test_log_sha256": "c73764007870c50e66d631cf71c243522f1da4fe56e2408a97fded4aef06efac",
+        "quality_passed": false,
+        "p95_seconds": 23.643316625,
+        "accepted_mismatch_case_ids": [
+          "ind-12"
+        ]
+      }
+    ],
+    "sampled_helper_rss_bytes": 4410310656,
+    "rss_limit": "Host helper sampled every60seconds, not an exact peak or phone qualification.",
+    "download_elapsed_hours": 8.15,
+    "automatic_writes_enabled": false,
+    "phone_tests": "owner_skipped",
+    "cleanup": {
+      "completed_unix": 1794989106.710955,
+      "removed_allocated_bytes": 117735424,
+      "removed_logical_bytes": 115531789,
+      "target_allocated_bytes_before": 117735424,
+      "target_allocated_bytes_after": 0,
+      "removed": "Task-only build scratch, redundant raw runtime/test/download logs and finished lock file",
+      "preserved": [
+        "Verified official model cache",
+        "Compact result and per-case content-free outcomes",
+        "Frozen source/runtime/test hash identity",
+        "Official metadata supplied by root"
+      ],
+      "reason": "All runs finished. Compact scores, case outcomes, assertion failures, latency, source/test-binary identities and raw-log hashes retain the findings."
+    },
+    "raw_results_sha256": "e5e34ec1c53b3a92f8be287e66b18fc06cebc73fd18470aa40f3c812d316c100",
+    "next_action": "Completed bounded diagnosis; proven routing restrictions repaired. Fresh independent local-only trial tracked separately.",
+    "independent_fixture_ref": "independent_local_model.source_sha256: AutomaticMemoryIndependentTests.swift; same frozen suite reused."
+  },
+  "routing_repair_trial": {
+    "status": "FAIL",
+    "scope": "Remove exclusive routing pass and forced empty/nonempty memory rules. Extraction prompt/schema, decoder, domain validation and production gate unchanged.",
+    "mechanical_checks": {
+      "release_core_functions_passed": 85,
+      "release_extraction_functions_passed": 11,
+      "formatting": "passed",
+      "red_green_test": "oneStructuredResultKeepsClearInformationBesideAQuestion",
+      "red_log_sha256": "41518185e0e12a750673aa75d0704662bd3127a33aba728075471b9320e4ab35",
+      "green_log_sha256": "46fcaff3353b0bfd10a60a3d9a0e8cac2648a8121134e9889daa311543da133b",
+      "full_test_log_sha256": "25b9bbcac1e6bd91fd393ada4574dba53a7c5927be1b7d943a38c97240b91aa3"
+    },
+    "source_sha256": {
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/LocalPersonalMemoryAnalyzer.swift": "fb30268e0b16c117ef1691f10dca7d5dc25dc6c8ca850fc1658d6942cbada5ca",
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/PersonalMemoryPrompt.swift": "8633706e862e2ebd7b85d0d8a00146936c3f49a8833ed470e9e68279ab3546d6",
+      "native/LocalMemory/Tests/PersonalMemoryExtractionTests/PersonalMemoryExtractionTests.swift": "deea3a27451f1cca1bf0023fb0d483b0218e747b3b5f7e3ba4b223e4da3df476"
+    },
+    "independent_fixture_frozen_before_inference_sha256": "69b309077b8261ea3e83180b9803933f184fc9b77c639e339007b281bb740e01",
+    "independent_cases": 12,
+    "expected_complete_claims": 8,
+    "automatic_writes_enabled": false,
+    "prior_corpora_status": "Consumed regression data after diagnosis; prior scores retain their historical source identity.",
+    "diagnosis": {
+      "probes": 3,
+      "frozen_sources_unchanged": true,
+      "findings": [
+        "Clarify route forced memories empty, losing a clear clause.",
+        "Memory route forced a nonempty memory result, preventing abstention.",
+        "Separate invented-content and episode-kind meaning errors survived domain checks."
+      ],
+      "result_sha256": "3d95f50fd67e4e17f665bb229b2f5040c38aa7b97928552e43e015f641520b06",
+      "cleanup_allocated_bytes": 99741988
+    },
+    "main_cleanup": {
+      "target_allocated_bytes_before": 120381440,
+      "target_logical_bytes_before": 116064631,
+      "target_bytes_after": 0,
+      "removed": "Completed main-only Swift build scratch and resolved red/green/full mechanical logs after preserving outcomes and log hashes.",
+      "preserved": "Source/tests, compact evidence, active verifier scratch, verified public model, prior canonical builds and unresolved UI diagnostics."
+    },
+    "unaffected_native_scope": "No View/ViewModel, composition, chat/runtime interface or persistence implementation changed in this routing trial. Earlier native/Simulator evidence remains dated baseline evidence; the new host trial compiles the real analyzer/runtime and applies results through domain use cases.",
+    "local_links": {
+      "checked": 146,
+      "missing": 0
+    },
+    "fresh_independent_model_result": {
+      "acceptedMismatchThreshold": 0,
+      "acceptedMismatches": 2,
+      "caseCount": 12,
+      "caseThreshold": 0.85,
+      "claimThreshold": 0.85,
+      "cleanup": {
+        "mainCleanupTargetsAbsent": true,
+        "remainingRemovedTargetBytes": 0,
+        "removed": [
+          "owned external release scratch",
+          "resolved build/runtime log"
+        ],
+        "removedAllocatedBytes": 118448128,
+        "retained": [
+          "frozen independent test source",
+          "compact result",
+          "75-file pre/post identity",
+          "verified existing model cache"
+        ]
+      },
+      "completeClaims": 7,
+      "expectedClaims": 8,
+      "matchedCases": 8,
+      "p95Seconds": 17.122137292,
+      "verification": {
+        "acceptedMismatchGatePass": false,
+        "allCasesAttempted": 12,
+        "automaticMemoryQualified": false,
+        "caseAccuracy": 0.6666666666666666,
+        "caseGatePass": false,
+        "completeClaimGatePass": true,
+        "completeClaimRecall": 0.875,
+        "exitCode": 1,
+        "hostOnly": true,
+        "modelBytes": 2497280256,
+        "observations": {
+          "repair-01": "unnecessary clarification after greeting",
+          "repair-03": "accepted invented-memory instruction",
+          "repair-08": "accepted uncertain clause alongside correct clear claim",
+          "repair-11": "linked-answer case rejected; exact error unavailable"
+        },
+        "outcome": "FAIL",
+        "rejectedCases": 1,
+        "rejectionCause": "not captured by frozen harness; no rerun",
+        "runLogSHA256": "559cfdd687fba437da6945634bb1107ff18e3bf960b448082baee9506c5760af",
+        "sourceAggregateSHA256": "6539419a4e1df74d46803d8bda4cf8a95da0f68c0ac70a44264a995f666eec5c",
+        "sourceFilesUnchanged": 75,
+        "sourceIdentityPath": "/tmp/memoryos-router-verifier-source-identity.json",
+        "testExecutables": {},
+        "identityReferences": "Source hashes and frozen fixture are in routing_repair_trial; model identity is larger_local_model_evaluation; source aggregate plus unchanged assertion covers pre/post."
+      },
+      "result_sha256": "dcfbbf531f0f008e5412912a4892a7a0828dcd2b24db60bd27b8b0b1eb8362eb",
+      "failedCases": [
+        {
+          "accepted": 0,
+          "acceptedMismatches": 0,
+          "id": "repair-01",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 14.003504791
+        },
+        {
+          "accepted": 1,
+          "acceptedMismatches": 1,
+          "id": "repair-03",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 11.083312625
+        },
+        {
+          "accepted": 2,
+          "acceptedMismatches": 1,
+          "id": "repair-08",
+          "matchedClaims": 1,
+          "outcome": "mismatch",
+          "seconds": 13.570086875
+        },
+        {
+          "accepted": 0,
+          "acceptedMismatches": 0,
+          "id": "repair-11",
+          "matchedClaims": 0,
+          "outcome": "rejected",
+          "seconds": 17.122137292
+        }
+      ],
+      "successfulCases": 8,
+      "retention": "Historical totals, failed-case outcomes and corpus/source identity retained; redundant successful-case rows consolidated. Frozen suite remains in test source."
+    },
+    "comparison_limit": "Different newly frozen corpus; do not infer measured improvement over earlier 18/20-case scores.",
+    "capture": {
+      "path": "routing-repair-results.png",
+      "sha256": "a2078c0745cd74412bd41221f1aba62f1c92bde5ea5aba72719719be02d71c0a",
+      "type": "New dark code/result evidence, not an app runtime screenshot",
+      "host": "macOS 27.2.1 arm64; Release tests; html_preview capture 728x741",
+      "bytes": 66048,
+      "source_ref": "routing_repair_trial.source_sha256"
+    },
+    "qualification": "BLOCKED: case and zero-mismatch gates fail. Corpus consumed; no prompt tuning or rerun. Linked-answer rejection cause is unavailable.",
+    "independent_audit": "All75 hashes rechecked by main and verifier; no differences. Main cleanup targets absent. No new UI source; new capture is host code/results."
+  },
+  "acceptance_audio_repair": {
+    "status": "FAIL semantic gates; audio PASS",
+    "scope": "Owner-requested local proposal acceptance and saved-audio cancellation repair; no Step3, phone testing or model adoption.",
+    "architecture": "Analyzer extracts then reviews with existing injected local model under shared runtime coordination. Domain retains exact source, ID, evidence, time, correction and protected-update checks. View renders injected ViewModel stopping state; processing/lease exclusion survives until native join.",
+    "semantic_limit": "Acceptance review remains probabilistic; finite host trials do not qualify phone or production0.6B.",
+    "automaticMemoryQualified": false,
+    "source_sha256": {
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/LocalPersonalMemoryAnalyzer.swift": "5a5bf5a308298bffa36863679092c98c8b2478bd59e6e3297ae7eb9fc5201f9c",
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/PersonalMemoryPrompt.swift": "2f7db46d3b0143ea504183e8cd8bd43fe852dbd9aad92bb3fa8d8cf9d0c5e998",
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/PersonalMemoryAcceptance.swift": "cbdb5fddd26c0d78899371c165487b95c3de9656874853412266aa19531e5c72",
+      "native/LocalMemory/Tests/PersonalMemoryExtractionTests/PersonalMemoryExtractionTests.swift": "f28cd9d962469aef41277fe86d0a484e90699d97f2a276f01564948da2794815",
+      "native/LocalChat/Sources/ChatPresentation/ChatViewModel.swift": "970271ca23b3cc0d399934c7560a1db6157ac6c9fe4be2a8871440988687b096",
+      "native/LocalChat/Tests/ChatTests/VoiceFlowTests.swift": "deefbe099f5ab830b8edd0f25afbe7b141c8d703b7dae0210261fa9c2a1a6b8b",
+      "native/MemoryOS/Features/Chat/ChatView.swift": "8bf995c3481b5f490a95d2b5a35a34d6641147d7eb21480a2160d20c97439eb4",
+      "native/MemoryOS/Features/Chat/ChatVoiceCard.swift": "e2fe3b919b1140e6b6d8b7a9a9e466655270b3b1a4ec4f275a0ce079c7f2d85e",
+      "native/MemoryOSUITests/PersonalMemoryFlowTests.swift": "e7459994af29480e56776205eae3ec862dc5622978c0f09facfadabaa88e131b"
+    },
+    "mechanical_checks": {
+      "core_release_functions": 85,
+      "extraction_release_functions": 18,
+      "chat_release_functions": 59,
+      "native_release_functions": 18,
+      "release_test_build": "passed",
+      "release_analyze": "passed",
+      "strict_swift_format": "passed",
+      "red_green": "Invented proposal passes original extractor but fails new regression; acceptance review green. Missing direct voice cancellation metric red then green.",
+      "native_test_setup_repair": "Combined analyze pruned embedded unit PlugIns; first test launch failed before test execution. Separate build-for-testing restored test bundle; native18 and UI then passed.",
+      "isolated_llama_whisper_linkage": "passed on final built Simulator app"
+    },
+    "consumed_regression": {
+      "cases": 12,
+      "baseline": {
+        "matched_cases": 8,
+        "complete_claims": 7,
+        "expected_claims": 8,
+        "accepted_mismatches": 2
+      },
+      "first_review": {
+        "matched_cases": 10,
+        "complete_claims": 7,
+        "expected_claims": 8,
+        "accepted_mismatches": 0
+      },
+      "later_targeted_repairs": "Greeting question discarded; linked firm answer retained with original quote and answer evidence. Both targeted actual4B checks pass; these cases are consumed, not independent qualification.",
+      "latency_comparison": "Baseline overlapped initial compile/UI stress; do not infer latency improvement."
+    },
+    "audio": {
+      "prior_timeout_cause": "Unproven; original binary actual cancellation recheck completed in about6.6s.",
+      "final_ui": "PASS actual cancellation branch with freshly seeded fictional recording; private draft resumed unchanged; original playback/retry retained.",
+      "clock_origin": "before cancellation tap; join elapsed captured immediately after finish expectation, asserted <=10s before further AX queries",
+      "budget_seconds": 10,
+      "acknowledgement_seconds": 1.436954,
+      "joined_seconds": 6.541762208,
+      "whole_ui_seconds": 42.789,
+      "during_join": "Stopping transcription shown, repeated Cancel removed, new chat/work blocked.",
+      "after_join": "Recording saved, transcription stopped, Retry available.",
+      "device": "iPhone18Pro Simulator / iOS27.2; isolated MemoryOS Check app",
+      "device_session": "closed after verified interrupted state; no physical phone use"
+    },
+    "log_sha256": {
+      "memoryos-acceptance-red.log": "cc2b5161867b96cbe0ce1e54fc160e6e78e63354d0548e56d91c70379a7f11ac",
+      "memoryos-acceptance-green.log": "f5e6a5c1c1bf6869723f725b3fc4905b76d87c7c38072d35e5e3ef9a14e4dafb",
+      "memoryos-acceptance-core-final.log": "7ddd87ebdf41defedd8e66516bd5487092990f34f9a86112d8178ad7b1ad3540",
+      "memoryos-acceptance-audio-timing-final.log": "5e65c81f1b7e6b28687780c382a5b3264868dcaddba8c52577b432ce3d1d46e1"
+    },
+    "captures": {
+      "audio-stopping.png": {
+        "sha256": "a837de6f08d04009c388546c0a95fb323a3a20f5cca45ea3f93c5f04b8816f1b",
+        "state": "actual dark stopping, inference excluded"
+      },
+      "audio-interrupted.png": {
+        "sha256": "1213a41dbd1630a0411e288fee0e5939032a7c1cf5812e2dbb38255a1f733935",
+        "state": "actual dark joined interrupted/retry, original saved"
+      }
+    },
+    "final_simulator_binary_sha256": "d400df1a79f1777713f0c51e68791c1e349885e59ef6cf06255352ce264bca66",
+    "fresh_independent": "20/20 attempted,16 correct,10/12complete claims,1accepted mismatch. Frozen actual4B trial failed all3quality gates. Four consumed failure diagnostics completed later; see eligibility follow-up; production flag false.",
+    "consumed_result_sha256": {
+      "memoryos-acceptance-baseline.json": "36e023135a6da42f489845bcea3d8bd03051038190ba7fbc1ad73706f22556ff",
+      "memoryos-acceptance-development.json": "cad2e4f11a23d7222bdd4cc085e0701312c722fe7b65930f11b1270cff3d51cf"
+    },
+    "audio_helper_cleanup": {
+      "removed_allocated_bytes": 83771392,
+      "removed_logical_bytes": 82242902,
+      "removed_unique_inode_entries": 400,
+      "removed_targets_remaining_bytes": 0,
+      "method": "lstat unique inodes within owned scratch and3completedlogs; reported target footprint, not filesystem free-space delta.",
+      "removed": "Owned completed Swift package scratch and3resolved logs after retained results/hashes.",
+      "retained": "Compact result; edited source/tests; main native build/diagnostics/captures and existing model assets untouched."
+    },
+    "main_cleanup": {
+      "allocated_bytes_before": 248365056,
+      "logical_bytes_before": 240889998,
+      "target_bytes_after": 0,
+      "scope": "Completed root Swift scratch, resolved runtime/build/fictional diagnostic outputs and redundant completed captures. One same-name active verifier stdout log was unlinked in error; disclosure below.",
+      "retained": "Current source/tests, compact outcomes/hashes, active independent verifier artifacts, verified model, canonical Simulator and phone build, app histories, prior unique unresolved >10s UI log, original research and unrelated work.",
+      "evidence_loss": {
+        "cause": "Root explicit cleanup list mistook the active verifier output for a completed earlier root log.",
+        "impact": "Active inference stdout and completed compile-only raw logs removed through same-name ownership collision. Verifier observed compile exit0 and30.06s. Inference finished without rerun; source identity, fixture, runtime/binary and final structured result path remain intact. Final exit1, structured scores and126 unchanged pre/post hashes survived; the removed raw logs remain unavailable.",
+        "prevention": "Freeze exact active worker-owned paths before cleanup; no further acceptance-prefix cleanup during active run.",
+        "paths": [
+          "/tmp/memoryos-acceptance-run.log",
+          "/tmp/memoryos-acceptance-build.log"
+        ]
+      }
+    },
+    "local_links": {
+      "checked": 148,
+      "missing": 0
+    },
+    "fresh_independent_result": {
+      "acceptedMismatches": 1,
+      "acceptedMismatchThreshold": 0,
+      "caseCount": 20,
+      "caseThreshold": 0.85,
+      "claimThreshold": 0.85,
+      "completeClaims": 10,
+      "expectedClaims": 12,
+      "matchedCases": 16,
+      "p95Seconds": 24.431762709,
+      "failedCases": [
+        {
+          "accepted": 0,
+          "acceptedMismatches": 0,
+          "id": "acceptance-02",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 19.68102375
+        },
+        {
+          "accepted": 1,
+          "acceptedMismatches": 1,
+          "id": "acceptance-10",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 20.037076
+        },
+        {
+          "accepted": 0,
+          "acceptedMismatches": 0,
+          "id": "acceptance-12",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 19.941344875
+        },
+        {
+          "accepted": 0,
+          "acceptedMismatches": 0,
+          "id": "acceptance-20",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 26.555434083
+        }
+      ],
+      "successfulCases": 16,
+      "retention": "Historical totals, failed-case outcomes and corpus/source identity retained; redundant successful-case rows consolidated. Frozen suite remains in test source."
+    },
+    "fresh_independent_verification": {
+      "exit_code": 1,
+      "all_attempted": 20,
+      "runtime_or_domain_errors": 0,
+      "pre_post_hash_count": 126,
+      "pre_post_unchanged": true,
+      "aggregate_sha256": "a345a45c4df96fd77631e9b01dd7472c4bc8611257e47fe098a1c4a8e4407109",
+      "fixture_sha256": "ecb620e281a4b90b06b95ca6810bbcc9975cfa59da697778dee51fce70b35bcc",
+      "case_accuracy": 0.8,
+      "complete_claim_recall": 0.8333333333333334,
+      "case_gate_pass": false,
+      "claim_gate_pass": false,
+      "accepted_mismatch_gate_pass": false,
+      "trial_role": "fresh before execution; consumed after failure diagnosis",
+      "stdout_limitation": "Root unlinked active stdout and completed compile log; observed session exit/final per-case JSON and unchanged126identity establish result; no raw-log hash claim."
+    },
+    "qualification_source_ref": "independent_code_review.source_sha256: unchanged false qualification composition."
+  },
+  "eligibility_followup": {
+    "status": "FAIL all3quality gates; no adoption",
+    "scope": "Generic split-clause/recurring-project semantics and source-span-only clarification review; no keyword filters, model change or gate change.",
+    "source_sha256": {
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/PersonalMemoryPrompt.swift": "c8ce6bb057f31958c8ee86fb69901a23058a82a0546b56c76304db88b0047924",
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/PersonalMemoryAcceptance.swift": "652ee6f7470f7ac11ea01dcd9bf970b64f1224933b0c5fbb852c5f908040cfaf",
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/LocalPersonalMemoryAnalyzer.swift": "554e63a940cea68ebf2cc72db7d5f0c024d978a5956091432005130fdd7a4a9e",
+      "native/LocalMemory/Tests/PersonalMemoryExtractionTests/PersonalMemoryExtractionTests.swift": "5f327113547317ff97c22e7a9fcb792d62a9d746a84ad15208b1ffbf159790f2"
+    },
+    "new_frozen_fixture_sha256": "92bb101d858b682b7c6f956bc220188b517313f44871f9b2032f1c9cf2de69a2",
+    "original_pre_edit_corpus_sha256": "76c4f4f094391effebb877166ad2fd00768da6e8ebb94692534ca2546ef64b61",
+    "freeze_note": "Only Swift layout whitespace and one trailing comma changed after original freeze; literals, inputs, IDs, scorer and thresholds unchanged. Main did not inspect either corpus.",
+    "expected_cases": 20,
+    "expected_complete_claims": 13,
+    "automaticMemoryQualified": false,
+    "mechanical_checks": {
+      "core_release_functions": 85,
+      "extraction_release_functions": 19,
+      "native_release_functions": 18,
+      "release_test_build": "passed",
+      "release_analyze": "passed",
+      "strict_swift_format": "passed",
+      "git_diff_check": "passed",
+      "isolated_llama_whisper_linkage": "passed",
+      "audio_recheck_reuse": "Final selected5audio source hashes unchanged; before-tap6.542s actual cancellation UI and stopping/interrupted captures remain valid scoped audio evidence. Memory prompt changes do not run through the false production gate."
+    },
+    "final_simulator_binary_sha256": "149c3d7e53180c47108108e7f9fb9ed08674036a63a161a45284c78d7c6e857c",
+    "log_sha256": {
+      "memoryos-eligibility-core.log": "d2f24c1536b4d9cff2654ef6affc20a22e93782484a9c8e7cded02f0a0fc5a2f",
+      "memoryos-eligibility-native-tests.log": "64f0505be81bfb6cf4e005ed43adf822d3d77148fc18243a3f660a69fb71d6c8"
+    },
+    "pre_inference_source_identity": {
+      "files": 127,
+      "aggregate_sha256": "da69e38dca3f26864c193cc15ad8b3dfb664a4cd5bc7a6f3e64226da32419d0e"
+    },
+    "fresh_independent_result": {
+      "acceptedMismatches": 1,
+      "acceptedMismatchThreshold": 0,
+      "caseCount": 20,
+      "caseThreshold": 0.85,
+      "claimThreshold": 0.85,
+      "completeClaims": 11,
+      "expectedClaims": 13,
+      "matchedCases": 14,
+      "p95Seconds": 28.928181542,
+      "verification": {
+        "processExit": 1,
+        "freshTrialNowConsumed": true,
+        "sourceFileCount": 127,
+        "allSourceRuntimeHashesUnchanged": true,
+        "modelBytes": 2497280256,
+        "caughtErrors": 1,
+        "runLogSHA256": "505f857a3d693c59ec832fd20ed3c8ad63b228f803675e4e27532f0aeda1008f",
+        "buildLogSHA256": "f6f657b3c659285206be4af606fb0e719ff0b913f1aa11ed7fbe54db58277728",
+        "gateEnabled": false,
+        "identityReferences": "Frozen source/fixture identities are in eligibility_followup; model identity is larger_local_model_evaluation. allSourceRuntimeHashesUnchanged covers final pre/post comparison."
+      },
+      "failedCases": [
+        {
+          "accepted": 0,
+          "acceptedMismatches": 0,
+          "id": "independent-v2-02",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 23.508904791
+        },
+        {
+          "accepted": 0,
+          "acceptedMismatches": 0,
+          "error": "PersonalMemoryExtraction.PersonalMemoryExtractionError.invalidOutput",
+          "id": "independent-v2-04",
+          "matchedClaims": 0,
+          "outcome": "rejected",
+          "seconds": 28.175993666
+        },
+        {
+          "accepted": 0,
+          "acceptedMismatches": 0,
+          "id": "independent-v2-09",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 24.510938125
+        },
+        {
+          "accepted": 1,
+          "acceptedMismatches": 0,
+          "id": "independent-v2-10",
+          "matchedClaims": 1,
+          "outcome": "mismatch",
+          "seconds": 28.928181542
+        },
+        {
+          "accepted": 1,
+          "acceptedMismatches": 0,
+          "id": "independent-v2-12",
+          "matchedClaims": 1,
+          "outcome": "mismatch",
+          "seconds": 27.900957666
+        },
+        {
+          "accepted": 1,
+          "acceptedMismatches": 1,
+          "id": "independent-v2-20",
+          "matchedClaims": 0,
+          "outcome": "mismatch",
+          "seconds": 29.612801958
+        }
+      ],
+      "successfulCases": 14,
+      "retention": "Aggregate quality, failed cases and identity retained; redundant successful-case rows consolidated."
+    },
+    "consumed_diagnostic_history": {
+      "scope": "Same4 consumed cases before/after eligibility repair; no quality/adoption claim.",
+      "before": {
+        "diagnosticOnly": true,
+        "processExit": 0,
+        "all126SourceRuntimeHashesUnchanged": true,
+        "rawFictionalTraceSHA256": "49a105554a300c0fe2d08944705f16e33e1e1e5f5d0c4ae231ef6aa917acc507"
+      },
+      "after": {
+        "diagnosticOnly": true,
+        "processExit": 0,
+        "behaviorMatches": 0,
+        "caseCount": 4,
+        "acceptedMismatches": 0,
+        "runtimeErrors": 0,
+        "rawFictionalTraceSHA256": "f9e48dea1fcb6c8c9974be12a7d0c56f6398f51af80e99fdfeb73897db8d6426",
+        "runLogSHA256": "980b7121e9e42c1736334574ff7a88153abf781df44137d31a952dab7f0360c9"
+      },
+      "source_identity_ref": "Acceptance126 and eligibility127 source identities above; all unchanged during each diagnostic.",
+      "cases": [
+        {
+          "id": "acceptance-02",
+          "before": "ordinary Arabic question becomes English clarification; Q ask; repeats general-science question in English",
+          "after": "ordinary Arabic question becomes Arabic clarification; Q ask; English informational question; unnecessary clarification remains"
+        },
+        {
+          "id": "acceptance-10",
+          "before": "exact full quote; plan/self; episode false/time empty; M0 keep; domain self profile plan (wrong kind and project attribution; not normalization)",
+          "after": "correct full workflow/project candidate, episode false/time empty; M0 discard; clear project workflow lost"
+        },
+        {
+          "id": "acceptance-12",
+          "before": "both Arabic clear+uncertain clauses combined as one interpretation/self; no clarification; M0 discard (clear preference omitted and ambiguous clause receives no question)",
+          "after": "clear Arabic preference plus tentative plan, split candidates, no Q; M0 ask about clear preference in English; M1 discard; clear assertion lost; clarification targets wrong clause"
+        },
+        {
+          "id": "acceptance-20",
+          "before": "interpretation/self with A evidence plus original clarification; M0 discard; Q ask despite resolved venting answer (unnecessary repeat question)",
+          "after": "interpretation/self with A evidence plus unresolved-style clarification; M0 discard; Q ask repeats resolved venting question; unnecessary clarification remains"
+        }
+      ]
+    }
+  },
+  "typed_classification_followup": {
+    "status": "Unqualified; third heldout interrupted at startup with no completed score; actual C-grammar diagnostic preserved separately.",
+    "scope": "Independent opaque source-span classification, with extractor labels/questions/roles hidden. Retain exact original proposal only on typed kind/owner/name/event/time agreement; disagreement defers original via existing worker. Consent/uncertainty can ask; no derived claim from Q.",
+    "source_sha256": {
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/LocalPersonalMemoryAnalyzer.swift": "8a4770bca4712319d5f778f602dbee509cd8fcd95a4d4edddd64dae224d1c4da",
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/PersonalMemoryAcceptance.swift": "2e14cb21133a087db42992d1443f6db0b8be39b208e18beb125f0f876019a9b2",
+      "native/LocalMemory/Tests/PersonalMemoryExtractionTests/PersonalMemoryExtractionTests.swift": "4bcb8577ad8f9b5529a9487f85cbd8e3e7a0e9ad836440088c7a6ee2b182e969"
+    },
+    "core_release_functions": 85,
+    "extraction_release_functions": 25,
+    "strict_format": "passed",
+    "git_diff_check": "passed",
+    "third_frozen_suite_sha256": "b4725f57140ca4b8ab2210a299c9f8ecbf2e6890def627ad4f3d8a2dcad66eb5",
+    "cases": 20,
+    "expected_complete_claims": 13,
+    "gate": "At least85% complete-case and complete-claim accuracy; zero accepted mismatches. Frozen before edits; inputs withheld from main.",
+    "limits": "Same model/runtime,2048context/512output per call,6000byte classifier input including examples; fail closed on disagreement, invalid, unavailable, busy or cancellation. Same-model mistakes may correlate; no claim of deterministic truth.",
+    "automaticMemoryQualified": false,
+    "unchanged_prompt_ref": "eligibility_followup.source_sha256"
+  },
+  "final_ui_shared_source_ref": "independent_code_review.source_sha256: unchanged personal-memory composition, ViewModel and Views at those captures.",
+  "grammar_and_confirmation_followup": {
+    "status": "FAIL: completed fourth20; retained as consumed regressions, not a new qualification pass",
+    "model_identity_ref": "larger_local_model_evaluation; exact existing4B size/full SHA reverified.",
+    "source_sha256": {
+      "native/LocalMemory/Sources/PersonalMemoryExtraction/PersonalMemoryAcceptance.swift": "6089bc8f0ecb9e08919e0bc475da7cd9cab1ce57300c724f7649ef5709440b1a",
+      "native/LocalMemory/Sources/MemoryCore/PersonalMemoryAnalysisUseCases.swift": "34231893d8a3eeb0fee9c161b3a117b940ff4ad0045da479a42f1fabb6fcdbaf",
+      "native/LocalMemory/Tests/MemorySQLiteTests/PersonalMemoryAnalysisTests.swift": "ed0ca182a815e0c54ca789830700748795818f70422720f5f0e9419acca936ff"
+    },
+    "other_source_ref": "typed_classification_followup source map and unchanged_prompt_ref; exact original proposals/domain guards/public protocols preserved.",
+    "pre_source_files": 129,
+    "pre_source_aggregate_sha256": "4d1fb42bf4fd6881f80c22bbce1f979760b72f1897e35429f23959014448928b",
+    "frozen_fourth_fixture_sha256": "c97d545bf0464bf294daba8f747554f4ac4d6cd104ea17fd67703101b560c598",
+    "grammar_scope": "Exact ordered opaque IDs; self/none owner pairs; nonempty named owners; falseepisode/emptytime; specialkind fixedmetadata and valid question shape. Decoder/prompts/labels/2048+512budget unchanged.",
+    "confirmation_scope": "Pure English/Arabic letter-majority fallback with punctuation excluded; specific changed quote clipped at whole Character/200UTF8bytes+ellipsis only for display. Full source/quote/protectedID/manual correction/no-merge guards preserved. No semantic keyword fallback.",
+    "mechanical_checks": {
+      "core_release_functions": 88,
+      "extraction_release_functions": 25,
+      "native_release_functions": 18,
+      "chat_release_functions_reused_unchanged": 59,
+      "final_release_build_analyze_format_linkage": "passed",
+      "independent_fallback_check": "PASS3functions/5parameter scenarios, including1000combiningmarks; separate verifier actual public-usecase checks.",
+      "red_log_sha256": "d7e856490654630e3904dce9303d8c403134364169289dc995c9375c7d281139",
+      "green_log_sha256": "d164ad0b39911ee8f5068ff2b53b31d652a2b4bb0e7b6f611bbf42ccaa7da85d"
+    },
+    "restart_history": "Old worker interrupted consumed4 after one case; no process survived. Replacement retained completed02 and resumed only10/12/20. Third heldout startup crossed hold, own process stopped exit143 before any completed score; never relabeled fresh. New fourth frozen before edits; separate diagnostic\u2192explicitfresh-start barrier.",
+    "reused_consumed_diagnostic": "Revised trusted grammar produced4complete/ordered structurally valid outputs, no runtime/context error,1/4behavior matches,0acceptedmistakes. Localized fallback changes do not execute in those4paths. Fourth heldout includes protected integration.",
+    "automaticMemoryQualified": false,
+    "final_trial": {
+      "cases": 20,
+      "matched_cases": 10,
+      "complete_claims": 7,
+      "expected_claims": 13,
+      "accepted_mismatches": 0,
+      "host_p95_seconds": 31.002894708,
+      "exit": 1,
+      "pre_post_source_files": 129,
+      "all_source_hashes_unchanged": true,
+      "runtime_context_token_json_errors": 0
+    },
+    "failure_diagnostic": "All ten failed cases reproduced once on unchanged source:7 semantic disagreements,3 behavior mismatches; no runtime/context/token/JSON failures. Source metadata and result transport do not establish semantic correctness."
+  },
+  "workflow_reset": {
+    "status": "Code/workflow repairs pass; semantic adoption blocked after one bounded consumed3 diagnostic",
+    "audit": "Two read-only audits: full runs after0/4 and1/4 diagnostics; stale canonical pending status; whole-batch loss; self wire type leak; missing legacy protection flag. Main sole writer and one code reviewer; process reviewer checks the launch gate.",
+    "repairs": "Keep agreed original proposals; validate exact deferred spans/no overlaps; durable optional remainder across question/answer/skip/reopen/export/retry; extra valid question rows defer. Use self schema type and commit-equivalent protected flag.",
+    "limits": "No new model, corpus, scoring relaxation or inference stage. An answered question can leave another dispute awaiting explicit retry. Existing actual-model quality failures remain open.",
+    "launch_gate": "scripts/run-memory-qualification.py; fixed ten regression IDs must be green on independently reviewed source. Bind argv/evaluation environment/model; exclusive owned lock; TERM joins owned child. Guard tests use dummy processes, not inference.",
+    "automaticMemoryQualified": false,
+    "package_checks": {
+      "core_release_functions": 91,
+      "extraction_release_functions": 28,
+      "all_passed": true,
+      "launch_guard_tests": 4,
+      "independent_guard_test_run": "PASS4 in1.240s; own dummy child stopped on TERM; held/duplicate/stale argv/model env blocked"
+    },
+    "source_identity": "8da7c1251a994096ed126609a18bcd7108c87dde576b9d52b265079fc00d8b99",
+    "identity_scope": "New gate fingerprints Git tracked/unignored native and scripts files; differs from historical129-file identity algorithm. Code reviewer found no further scoped defect; no runtime quality claim.",
+    "capture": {
+      "path": "workflow-reset-results.png",
+      "kind": "Actual host code/results render; dark,728x913; includes retained fictional Simulator audio captures",
+      "source_identity_ref": "workflow_reset.source_identity",
+      "phone_qualification": false
+    },
+    "consumed_diagnostic": {
+      "cases": 3,
+      "matched_cases": 1,
+      "complete_claims": 1,
+      "expected_claims": 3,
+      "accepted_mismatches": 0,
+      "exit": 1,
+      "source_fixture_harness_model_unchanged": true,
+      "rows": [
+        {
+          "id": "grammar-11",
+          "outcome": "matched",
+          "seconds": 52.850446416,
+          "finding": "Agreed preference retained; classifier now recognizes separate uncertainty and asks a specific question. Original unchanged scorer passes. Wire normalization also changed the model input, so this run does not isolate partial-reconciliation causality; controlled package regression supplies that evidence."
+        },
+        {
+          "id": "grammar-15",
+          "outcome": "mismatch",
+          "seconds": 36.843230417,
+          "finding": "Correct extractor fact/update still converted to consent for an evidence-backed unprotected existing record; no claim accepted. Public self wire type removes internal-name leakage but does not solve unnecessary consent."
+        },
+        {
+          "id": "grammar-19",
+          "outcome": "mismatch",
+          "seconds": 39.574798333,
+          "finding": "Correct extractor commitment with linked answer evidence still converted to unresolved uncertainty; classifier repeats the original answered question. Correct A/question transport remains present."
+        }
+      ],
+      "limits": "Not independent qualification; only consumed11/15/19, one run, no retry. Mixed-clause runtime gain does not isolate causality; controlled replay proves partial-loss fix."
+    },
+    "cleanup": {
+      "pathCount": 33,
+      "before": {
+        "logicalBytes": 692538493,
+        "allocatedBytes": 713879552,
+        "inodes": 3698
+      },
+      "after": {
+        "logicalBytes": 0,
+        "allocatedBytes": 0,
+        "inodes": 0
+      },
+      "removedAllocatedBytes": 713879552,
+      "retainedHashesUnchanged": true,
+      "retainedExceptions": "Verified models/canonical Simulator+phone builds, original trace harness and unresolved raw fictional traces, compact results/receipts, current final test/native logs, original research and app histories"
+    },
+    "native_release_build": "PASS on final source; Simulator compilation, no install/phone qualification",
+    "stop_rule": "No further model runs on this repair. False consent for unprotected updates and repeated answered questions remain capability blockers. Full gate stays held; fixed ten regressions not all green.",
+    "native_release_analysis": "PASS; no analysis warnings/errors. Build retains pre-existing responsiveness-probe unnecessary-await warning and AppIntents metadata notice.",
+    "independent_cleanup_recheck": "PASS:33 paths absent; retained raw/compact JSON, harness and3PNGs valid; source unchanged and model size2497280256. Earlier byte measurement not independently reconstructed.",
+    "project_memory_delivery": {
+      "status": "complete",
+      "project": "memoryos",
+      "pending": [],
+      "failed": {},
+      "checked_utc": "2026-11-18T15:33:42.584861+00:00"
+    }
+  }
+}

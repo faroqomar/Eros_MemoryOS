@@ -1,5 +1,7 @@
 # Task: Checklist 3 — reliable local storage and text capture
 
+C52 roadmap update, 2026-11-15: checklist groups 1–5 are closed implementation milestones. Outstanding checks move forward to [groups 15–18](../plans/implementation-checklist.md#15-physical-device-supported-os-and-accessibility-qualification). Historical verification verdicts below remain evidence, not instructions to reopen those groups. No failed/unavailable check becomes passed through this transfer.
+
 Status: Step 2 blocked after independent review and repairs, 2026-11-14. Available local checks and cleanup pass. Physical iPhone protection/performance, iOS 18 runtime, and unresolved accessibility checks block passage. Step 3 draft PR #3 is open under C37; merge remains blocked.
 
 Checklist: group 3 in the owner's 2026-11-14 request; related existing R02, R03, R05, R10, R22, R23 and R27. Preserve their broader unimplemented scope.
