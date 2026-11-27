@@ -209,8 +209,17 @@ private struct BackgroundLeaseModel: StructuredChatModel {
   func generateJSON(turns: [ChatTurn], grammar: String, maximumOutputTokens: Int) async throws
     -> String
   {
-    try await probe.run("json")
-    return "{}"
+    let relevance =
+      grammar.contains("subject ::=") || grammar.contains("resolution")
+      || grammar.contains("relevant")
+    try await probe.run(relevance ? "relevance" : "json")
+    if grammar.contains("subject ::=") {
+      return #"{"assessment":"Controlled unnamed query.","subjects":[]}"#
+    }
+    if grammar.contains("resolution") {
+      return #"{"assessment":"Controlled unnamed query.","resolution":"generic"}"#
+    }
+    return relevance ? #"{"relevant":true}"# : "{}"
   }
   func unload() async { try? await probe.run("unload") }
 }
@@ -241,7 +250,7 @@ extension LocalInferenceCoordinatorTests {
         modelDirectory: unusedURL)
     case "relevance":
       _ = try await coordinator.selectRelevant(
-        using: LeaseEvidenceFilter(probe: probe), query: "fixture",
+        query: "fixture",
         candidates: [.init(id: UUID(), text: "Fictional source")])
     default: await coordinator.unload()
     }
@@ -300,7 +309,7 @@ extension LocalInferenceCoordinatorTests {
     let coordinator = LocalInferenceCoordinator(model: BackgroundLeaseModel(probe: probe))
     let task = Task {
       try await coordinator.selectRelevant(
-        using: LeaseEvidenceFilter(probe: probe), query: "fixture",
+        query: "fixture",
         candidates: [.init(id: UUID(), text: "Fictional source")])
     }
     await probe.waitUntilHeld()
@@ -315,14 +324,13 @@ extension LocalInferenceCoordinatorTests {
   @Test func queuedCancelledRelevanceNeverLoadsAndEmptyBatchDoesNotInterrupt() async throws {
     let probe = BackgroundLeaseProbe(heldKind: "chat")
     let coordinator = LocalInferenceCoordinator(model: BackgroundLeaseModel(probe: probe))
-    let filter = LeaseEvidenceFilter(probe: probe)
     let chat = Task { try await coordinator.generate(turns: [], onText: { _ in }) }
     await probe.waitUntilHeld()
     #expect(
-      try await coordinator.selectRelevant(using: filter, query: "fixture", candidates: []).isEmpty)
+      try await coordinator.selectRelevant(query: "fixture", candidates: []).isEmpty)
     let queued = Task {
       try await coordinator.selectRelevant(
-        using: filter, query: "fixture",
+        query: "fixture",
         candidates: [.init(id: UUID(), text: "Fictional source")])
     }
     for _ in 0..<20 { await Task.yield() }
@@ -340,13 +348,92 @@ extension LocalInferenceCoordinatorTests {
     await #expect(throws: ChatError.modelUnavailable) {
       try await coordinator.generateJSON(turns: [], grammar: "fixture", maximumOutputTokens: 64)
     }
+    await #expect(throws: ChatError.modelUnavailable) {
+      try await coordinator.selectRelevant(
+        query: "fixture", candidates: [.init(id: UUID(), text: "Fictional source")])
+    }
   }
 }
 
-private struct LeaseEvidenceFilter: MemoryEvidenceFiltering {
-  let probe: BackgroundLeaseProbe
-  func selectRelevant(query: String, candidates: [ChatEvidence]) async throws -> Set<UUID> {
-    try await probe.run("relevance")
-    return Set(candidates.map(\.id))
+private actor ResidentLeaseModel: StructuredChatModel {
+  private let subject: String?
+  private(set) var resident = false
+  private(set) var loads = 0
+  private(set) var unloads = 0
+  private(set) var queries: [String] = []
+  init(subject: String? = nil) { self.subject = subject }
+  private func load() {
+    if !resident { loads += 1 }
+    resident = true
+  }
+  func generate(turns: [ChatTurn], onText: @escaping @Sendable (String) -> Void) {
+    load()
+    onText("Fictional reply")
+  }
+  func generateJSON(turns: [ChatTurn], grammar: String, maximumOutputTokens: Int) -> String {
+    load()
+    queries.append(turns.last?.text ?? "")
+    if grammar.contains("subject ::=") {
+      if let subject {
+        return "{\"assessment\":\"Controlled named query.\",\"subjects\":[\"\(subject)\"]}"
+      }
+      return #"{"assessment":"Controlled unnamed query.","subjects":[]}"#
+    }
+    if grammar.contains("resolution") {
+      if subject != nil {
+        return #"{"assessment":"Controlled named query.","resolution":"complete"}"#
+      }
+      return #"{"assessment":"Controlled unnamed query.","resolution":"generic"}"#
+    }
+    return #"{"relevant":true}"#
+  }
+  func unload() {
+    resident = false
+    unloads += 1
+  }
+}
+
+extension LocalInferenceCoordinatorTests {
+  @Test func sharedCoordinatorForwardsTypedIdentityWithoutChangingPassages() async throws {
+    let model = ResidentLeaseModel(subject: "Nora")
+    let coordinator = LocalInferenceCoordinator(model: model)
+    let filter = try #require(
+      await ChatComposition.makeRelevanceFilter(coordinator: coordinator)
+        as? any SubjectAwareMemoryEvidenceFiltering)
+    let evidence = ChatEvidence(id: UUID(), text: "Prefers a written reply.")
+    #expect(
+      try await filter.selectRelevant(
+        query: "What reply does Nora prefer?", candidates: [evidence],
+        identities: [.init(names: ["Nora", "نورا"], documentIDs: [evidence.id])]) == [evidence.id])
+    let payload = try #require(
+      JSONSerialization.jsonObject(with: Data((await model.queries).last!.utf8))
+        as? [String: String])
+    #expect(payload["passage"] == evidence.text && payload["appLinkedSubject"] == "Nora")
+    let loads = await model.loads
+    let unloads = await model.unloads
+    #expect(loads == 1 && unloads == 0)
+  }
+
+  @Test func chatAndRelevanceReuseOneResidentModelUntilExplicitUnload() async throws {
+    let model = ResidentLeaseModel()
+    let coordinator = LocalInferenceCoordinator(model: model)
+    let filter = await ChatComposition.makeRelevanceFilter(coordinator: coordinator)
+    let first = ChatEvidence(id: UUID(), text: "Nora offered to review the draft.")
+    let changed = ChatEvidence(id: first.id, text: "Nora withdrew the offer.")
+    try await coordinator.generate(turns: [], onText: { _ in })
+    #expect(
+      try await filter.selectRelevant(query: "Nora's offer?", candidates: [first]) == [first.id])
+    try await coordinator.generate(turns: [], onText: { _ in })
+    #expect(
+      try await filter.selectRelevant(query: "Nora's offer?", candidates: [changed]) == [first.id])
+    #expect(await model.loads == 1)
+    #expect(await model.unloads == 0)
+    let queries = await model.queries
+    #expect(queries.count == 6 && queries[2] != queries[5])
+    await coordinator.unload()
+    #expect(await !model.resident)
+    try await coordinator.generate(turns: [], onText: { _ in })
+    #expect(await model.loads == 2)
+    await coordinator.unload()
   }
 }

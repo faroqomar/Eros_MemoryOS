@@ -1,5 +1,25 @@
 import MemoryCore
 
+extension PersonalMemoryEntry {
+  func statusTitle(_ language: AppLanguage) -> String {
+    guard kind == .interpretation else { return kind.title(language) }
+    switch interpretationStatus {
+    case .ownerReviewed:
+      return language.text(
+        "Interpretation confirmed by you · revisable", "تفسير أكدته أنت · قابل للتصحيح")
+    case .aiProposed:
+      return language.text("AI hypothesis · revisable", "فرضية ذكاء اصطناعي · قابلة للتصحيح")
+    case nil:
+      return language.text("Interpretation · author unknown", "تفسير · صاحبه غير محدد")
+    }
+  }
+
+  func confirmationTitle(_ language: AppLanguage) -> String? {
+    guard kind != .interpretation, confirmed else { return nil }
+    return language.text("Confirmed by you", "أكدتها أنت")
+  }
+}
+
 extension PersonalMemoryKind {
   func title(_ language: AppLanguage) -> String {
     switch self {

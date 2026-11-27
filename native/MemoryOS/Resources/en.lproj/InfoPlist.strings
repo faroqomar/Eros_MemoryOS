@@ -1,1 +1,2 @@
 "NSMicrophoneUsageDescription" = "Record voice notes that you choose to save on this device.";
+"NSCalendarsFullAccessUsageDescription" = "Create and manage only the exact birthday events you approve in MemoryOS.";

@@ -8,13 +8,19 @@ public struct LlamaChatModel: StructuredChatModel {
   private let runtime: LlamaTextRuntime
   private let onMeasurement: @Sendable (TextOutput, Double) -> Void
 
+  /// A local composition-owned resolver can select a newly imported asset on the next cold load.
+  /// A valid resident session stays loaded until explicit unload.
   /// The optional composition-owned callback receives successful native metrics and total seconds.
   /// The default callback records nothing. Callers must exclude reply content from operational logs.
   public init(
     assetURL: URL, expectedSHA256: String,
+    assetURLResolver: (@Sendable () throws -> URL)? = nil,
+    chatSampling: LlamaChatSampling = .greedy,
     onMeasurement: @escaping @Sendable (TextOutput, Double) -> Void = { _, _ in }
   ) {
-    runtime = LlamaTextRuntime(assetURL: assetURL, expectedSHA256: expectedSHA256)
+    runtime = LlamaTextRuntime(
+      assetURL: assetURL, expectedSHA256: expectedSHA256, assetURLResolver: assetURLResolver,
+      chatSampling: chatSampling)
     self.onMeasurement = onMeasurement
   }
 

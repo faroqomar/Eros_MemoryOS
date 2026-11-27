@@ -83,6 +83,8 @@ The [group 7 task](../tasks/2026-11-17-lasting-personal-memory.md) records imple
 
 ## 8. Add memory search and relationship understanding
 
+[Groups 8–9 Step 2](../tasks/2026-11-18-understanding-organization.md) remains blocked on November 24. All six original search cases, three named probes, three generic probes and the original full group answer pass. Final build/analysis, 196 native controls and vector-checkpoint recovery pass. Relationship meaning still fails all five consumed cases; fresh paired diagnostics give default 1/12 and candidate 0/12 full passes. The permitted full-history replay times out without an answer score. Preserve separate denominators and rights/data-flow holds. Physical checks remain owner-skipped, not passed; no Step 3 or model adoption follows.
+
 - [ ] Compare keyword, semantic and linked-record retrieval using known-answer examples; select only measured improvements.
 - [ ] Answer with inspectable original passages, timestamps and surrounding context; abstain when evidence is insufficient.
 - [ ] Preserve distinct originals, extracted statements, user-confirmed information and AI interpretations; retain corrections without rewriting originals.
@@ -95,6 +97,8 @@ The [group 7 task](../tasks/2026-11-17-lasting-personal-memory.md) records imple
 - [ ] Verify the connected workflow offline; keep indexes rebuildable from app-owned originals.
 
 ## 9. Add birthdays, rules and custom tabs
+
+The same [Step 2 record](../tasks/2026-11-18-understanding-organization.md) owns approved annual birthday schedules, supported organization rules and named views.
 
 - [ ] Save birthdays, partial dates and corrections; choose reminders per person.
 - [ ] Select notifications versus calendar events; verify timing, timezone, recurrence, permission denial and duplicate prevention.

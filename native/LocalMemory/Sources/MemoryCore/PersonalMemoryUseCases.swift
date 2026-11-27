@@ -49,7 +49,10 @@ public actor PersonalMemoryUseCases {
     return next
   }
 
-  func edit(_ summary: String, change: (inout PersonalMemorySnapshot) throws -> Void)
+  func edit(
+    _ summary: String, retainsUndo: Bool = true,
+    change: (inout PersonalMemorySnapshot) throws -> Void
+  )
     async throws
     -> PersonalMemorySnapshot
   {
@@ -60,7 +63,7 @@ public actor PersonalMemoryUseCases {
     try change(&next)
     Self.refreshConversationExcerpts(in: &next)
     if next == old { return old }
-    if next.graph != old.graph {
+    if retainsUndo && next.graph != old.graph {
       next.events.append(
         PersonalMemoryEvent(id: UUID(), summary: summary, createdAt: Date(), before: old.graph))
       if next.events.count > PersonalMemoryLimits.retainedEvents { next.events.removeFirst() }
@@ -79,7 +82,6 @@ public actor PersonalMemoryUseCases {
         return
       }
       var original = source
-      original.kind = source.kind
       if original.kind == nil { original.analysis = PersonalMemoryAnalysisState(status: .pending) }
       next.sources.append(original)
       if let kind = original.kind, kind.createsMemory {
@@ -97,7 +99,8 @@ public actor PersonalMemoryUseCases {
 
   static func appendEntry(
     to state: inout PersonalMemorySnapshot, text: String,
-    kind: PersonalMemoryKind, sourceIDs: [UUID], profileIDs: [UUID], confirmed: Bool
+    kind: PersonalMemoryKind, sourceIDs: [UUID], profileIDs: [UUID], confirmed: Bool,
+    ownerReviewed: Bool = false
   ) {
     var linkedProfiles = Set(profileIDs)
     let folded = " " + Self.normalizedWords(text) + " "
@@ -117,7 +120,9 @@ public actor PersonalMemoryUseCases {
         id: UUID(), text: text, kind: kind,
         sourceIDs: sourceIDs, profileIDs: linkedProfiles.sorted { $0.uuidString < $1.uuidString },
         categories: [kind.rawValue],
-        confirmed: kind == .interpretation ? false : confirmed, createdAt: Date()))
+        confirmed: kind == .interpretation ? false : confirmed,
+        interpretationProvenance: kind == .interpretation && ownerReviewed ? .ownerReviewed : nil,
+        createdAt: Date()))
   }
 
   static func normalizedWords(_ text: String) -> String {
@@ -250,14 +255,15 @@ public actor PersonalMemoryUseCases {
           ? [next.selfProfileID] : profileIDs
         Self.appendEntry(
           to: &next, text: next.sources[index].text, kind: kind,
-          sourceIDs: [sourceID], profileIDs: profiles, confirmed: kind == .fact)
+          sourceIDs: [sourceID], profileIDs: profiles, confirmed: kind == .fact,
+          ownerReviewed: true)
       }
     }
   }
 
   public func addEntry(
     text: String, kind: PersonalMemoryKind, sourceIDs: [UUID],
-    profileIDs: [UUID] = [], confirmed: Bool = false
+    profileIDs: [UUID] = [], confirmed: Bool = false, ownerReviewed: Bool = false
   ) async throws -> PersonalMemorySnapshot {
     try await edit("Added source-backed memory") { next in
       for id in sourceIDs {
@@ -268,7 +274,7 @@ public actor PersonalMemoryUseCases {
       }
       Self.appendEntry(
         to: &next, text: text, kind: kind, sourceIDs: sourceIDs,
-        profileIDs: profileIDs, confirmed: confirmed)
+        profileIDs: profileIDs, confirmed: confirmed, ownerReviewed: ownerReviewed)
     }
   }
 
@@ -284,6 +290,8 @@ public actor PersonalMemoryUseCases {
       }
       next.entries[index].text = text
       next.entries[index].isOwnerCorrected = true
+      next.entries[index].interpretationProvenance =
+        next.entries[index].kind == .interpretation ? .ownerReviewed : nil
       next.entries[index].supersededByID = nil
       if next.entries[index].excerptConversationID != nil {
         next.entries[index].isEditedExcerpt = true
@@ -314,7 +322,9 @@ public actor PersonalMemoryUseCases {
   {
     try await edit("Created profile") { next in
       guard kind != .selfProfile else { throw PersonalMemoryError.confirmationRequired }
-      next.profiles.append(PersonalProfile(kind: kind, name: name, aliases: aliases))
+      var profile = PersonalProfile(kind: kind, name: name, aliases: aliases)
+      profile.isSuggested = false
+      next.profiles.append(profile)
     }
   }
 
@@ -328,6 +338,7 @@ public actor PersonalMemoryUseCases {
       }
       next.profiles[index].name = name
       next.profiles[index].aliases = aliases
+      next.profiles[index].isSuggested = false
     }
   }
 
@@ -352,6 +363,10 @@ public actor PersonalMemoryUseCases {
           $0.id == into && $0.kind == .person && $0.mergedIntoID == nil
         })
       else { throw PersonalMemoryError.missingProfile }
+      // A reviewed target must not confer review on names imported from an unreviewed profile.
+      if next.profiles[target].isSuggested == false && next.profiles[source].isSuggested != false {
+        next.profiles[target].isSuggested = nil
+      }
       next.profiles[target].aliases = Array(
         Set(
           next.profiles[target].aliases
@@ -439,7 +454,7 @@ public actor PersonalMemoryUseCases {
       next.sources.append(source)
       Self.appendEntry(
         to: &next, text: answer, kind: kind, sourceIDs: [source.id], profileIDs: [profileID],
-        confirmed: kind == .fact)
+        confirmed: kind == .fact, ownerReviewed: true)
     }
   }
 

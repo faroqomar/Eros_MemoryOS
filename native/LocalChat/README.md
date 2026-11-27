@@ -17,9 +17,14 @@ swift test --package-path native/LocalChat -c release
 xcrun swift-format lint --strict --recursive native/LocalChat/Sources native/LocalChat/Tests
 ```
 
-`MemoryEvidenceFiltering` selects source IDs without changing passages. The experimental app composition
-uses `LocalModelEvidenceFilter` with the existing pinned local Qwen3-4B asset after hybrid candidate search.
-It verifies at most eight passages, then returns at most three current sources. A shared name alone is
-insufficient. Invalid output, unknown IDs and unavailable assets fail explicitly. Queries are not indexed.
-The app rechecks source bytes after verification, and unloads verifier weights before answer generation.
-This relevance check does not authorize automatic profile writes or establish source truth.
+`MemoryEvidenceFiltering` selects source IDs without changing passages. The optional
+`SubjectAwareMemoryEvidenceFiltering` capability carries explicit profile names and record associations
+separately from source text. The app's `SourceBoundedChatEvidenceFilter` reuses memory search's subject
+and topic checks after hybrid candidate search. It verifies at most eight passages, then returns at most
+three current sources. A shared name alone is insufficient. Invalid output, unknown IDs and unavailable
+assets fail explicitly. Queries are not indexed. The app rechecks source bytes and identity associations
+after verification. One inference coordinator shares the resident model between relevance and replies;
+the borrowed filter does not unload those weights. This relevance check does not authorize automatic
+profile writes or establish source truth.
+
+Home capture owns its input in `ChatViewModel.homeDraft`. After a separate record write commits, the caller uses `clearSavedHomeDraft(submitted)`; it clears only byte-identical input through the existing autosave setter. Later typing and Unicode-equivalent text with different bytes remain. Failed writes must not call this operation.

@@ -703,6 +703,37 @@ actor DelayedRepository: ChatRepository {
   #expect(throws: ChatError.invalidArchive) { try invalid.validate() }
 }
 
+@Test @MainActor func savedHomeDraftClearsPersistedInputWithoutChangingConversationDraft() async {
+  let repository = TestRepository()
+  let vm = ChatViewModel(useCases: ChatUseCases(repository: repository, model: TestModel()))
+  await vm.load()
+  vm.draft = "Conversation follow-up"
+  vm.homeDraft = "Saved source / مصدر"
+  #expect(await vm.flushDraft())
+  vm.clearSavedHomeDraft("Saved source / مصدر")
+  #expect(vm.homeDraft.isEmpty)
+  #expect(vm.draft == "Conversation follow-up")
+  #expect(await vm.flushDraft())
+  let reopened = ChatViewModel(useCases: ChatUseCases(repository: repository, model: TestModel()))
+  await reopened.load()
+  #expect(reopened.homeDraft.isEmpty)
+  #expect(reopened.draft == "Conversation follow-up")
+}
+
+@Test(arguments: ["Next thought", "e\u{301}"])
+@MainActor func savingEarlierHomeDraftPreservesNewTypingByteForByte(_ next: String) async {
+  let repository = TestRepository()
+  let vm = ChatViewModel(useCases: ChatUseCases(repository: repository, model: TestModel()))
+  await vm.load()
+  vm.homeDraft = "\u{e9}"
+  let submitted = vm.homeDraft
+  vm.homeDraft = next
+  vm.clearSavedHomeDraft(submitted)
+  #expect(vm.homeDraft.utf8.elementsEqual(next.utf8))
+  #expect(await vm.flushDraft())
+  #expect(await repository.snapshot.homeDraft?.utf8.elementsEqual(next.utf8) == true)
+}
+
 @Test func ordinaryFollowupRetainsAssistantContextOnlyWhileCitationsStayCurrent() async throws {
   let sourceID = UUID()
   let model = TestModel()

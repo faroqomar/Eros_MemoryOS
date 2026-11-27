@@ -1,6 +1,12 @@
 # Eros MemoryOS
 
-**Current 4B conversation, Step 3 (2026-11-18):** Qwen3 4B supplies replies and relevance decisions offline. Four basic conversation cases and connected correction/private-chat checks pass. Retrieval matches 10/12 and returns extra passages in two cases; automatic memory writes remain disabled. Final captures are blocked by Device transfer failures; physical tests remain paused. Final review and cleanup pass; [draft PR #7](https://github.com/faroqomar/Eros_MemoryOS/pull/7) is open and merge remains blocked. See the [current task](docs/tasks/2026-11-18-qwen4b-conversation.md).
+**Native four-tab design (2026-11-26):** Record, Brain, Calendar, and Notes now share a dock. Settings offers five Brain marks. The [design and verification record](docs/tasks/2026-11-26-native-four-tab-design.md) includes dark Simulator captures, connected UI results, and the delivery status for the current changes.
+
+**Codebase cleanup (2026-11-24):** audited owned native app/package/tooling consumers and retired the disconnected sample flow plus obsolete capture API. Source shrank by 387 lines; meaningful draft/storage coverage remains on the current path. Final build/analysis, 209 native controls and 3 current UI flows pass. The fresh compiler scan has one removed import and five justified framework/test findings. See the [cleanup record](docs/tasks/2026-11-24-codebase-cleanup.md). Existing Step 2 quality/phone/release limits remain.
+
+**Groups 8–9, Step 2 repair (2026-11-24):** explicit Cancel and a complete undo-loss warning now protect the permanent-forget confirmation. Cancel preserves the entire Simulator memory store byte-for-byte through relaunch. Final build/analysis and 200 native controls pass. Sampled-model and ownership-prompt experiments do not repair meaning or person resolution; the failed prompt is removed and default models stay unchanged. The 736-chunk cold-history evaluation still exceeds its deadline. Step 2 remains blocked; no Step 3, phone qualification or release. See the [canonical task and results](docs/tasks/2026-11-18-understanding-organization.md).
+
+**4B conversation delivery (2026-11-18):** Qwen3 4B supplies replies and relevance decisions offline. GitHub merged [PR #7](https://github.com/faroqomar/Eros_MemoryOS/pull/7) at `bb0b2be`. Four conversation cases and connected correction and private-chat checks passed. Retrieval matched 10/12 and returned extra passages in two cases. Automatic memory writes remain disabled. Final capture transfer failed and physical tests remain paused. See the [task and evidence](docs/tasks/2026-11-18-qwen4b-conversation.md).
 
 **Local recall integration, 2026-11-18:** Wax and Cactus retrieve current saved sources before ordinary replies and retain private-session nonretention. Earlier native packaging, static analysis and selected Simulator tests pass. The [integration task](docs/tasks/2026-11-18-local-recall-integration.md) records that candidate's checks; the 4B task above owns the current model configuration and failed retrieval gate.
 
@@ -45,6 +51,8 @@ Historical design direction, C19: the owner selected Apple design as the positiv
 Current direction, C20: the owner returned to the supplied [Capture](designs/references/2026-11-13-native-foundation/capture.png) and [sidebar](designs/references/2026-11-13-native-foundation/sidebar.png) screens and requested the SwiftUI project foundation plus an iPhone connection check. Open `native/MemoryOS.xcodeproj` in Xcode. The implementation follows these two layout references; C21 sets dark mode as the standing preference for completed work, previews, and final checks. Other screen layouts still need review.
 
 ## Read in this order
+
+For the collected product vision in the owner's voice, read [My ideas, thoughts, and choices](docs/owner-vision.md). It separates current requests, open ideas, rejected designs, and older research, with source links.
 
 1. [Product overview](docs/product-overview.md): what the app should do and how it should feel.
 2. [Complete feature register](docs/feature-register.md): current requests, proposed supporting features, and links to old ideas.

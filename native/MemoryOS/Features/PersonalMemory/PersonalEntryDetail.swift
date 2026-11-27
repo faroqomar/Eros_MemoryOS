@@ -13,10 +13,10 @@ struct PersonalEntryDetail: View {
     List {
       PersonalMemoryStatus(model: model, language: language)
       if let entry {
-        Section(entry.kind.title(language)) {
+        Section(entry.statusTitle(language)) {
           Text(entry.text).textSelection(.enabled).accessibilityIdentifier("personal-entry-text")
-          if entry.confirmed {
-            Text(language.text("Confirmed by you", "أكدتها أنت")).font(.caption)
+          if let confirmation = entry.confirmationTitle(language) {
+            Text(confirmation).font(.caption)
           }
           if entry.isOwnerCorrected == true {
             Text(language.text("Corrected by you", "صححتها أنت")).font(.caption)
@@ -54,6 +54,8 @@ struct PersonalEntryDetail: View {
           if !categories.isEmpty { Text(categories.joined(separator: " · ")) }
         }
         Section(language.text("Connections", "روابط")) {
+          Button(language.text("Link another memory", "ربط ذكرى أخرى")) { linking = true }
+            .frame(minHeight: 44)
           ForEach(model.snapshot.links.filter { $0.fromID == entryID || $0.toID == entryID }) {
             link in
             let other = link.fromID == entryID ? link.toID : link.fromID
@@ -63,7 +65,6 @@ struct PersonalEntryDetail: View {
               }
             }
           }
-          Button(language.text("Link another memory", "ربط ذكرى أخرى")) { linking = true }
         }
         Button(language.text("Undo last change", "تراجع عن آخر تغيير")) {
           Task { await model.undo() }
@@ -84,10 +85,15 @@ struct PersonalEntryDetail: View {
         }
         PersonalHistorySection(model: model, language: language)
       } else {
-        Text(
-          language.text(
-            "This item changed after undo. Go back to your memory list.",
-            "تغير العنصر بعد التراجع. عد إلى قائمة الذكريات."))
+        ContentUnavailableView(
+          language.text("Memory unavailable", "الذكرى غير متاحة"),
+          systemImage: "doc.text",
+          description: Text(
+            language.text(
+              "Return to Notes to find current saved memories.",
+              "عد إلى الملاحظات للعثور على الذكريات المحفوظة الحالية."
+            ))
+        )
       }
     }.scrollContentBackground(.hidden).background(MemoryTheme.canvas)
       .navigationTitle(language.text("Memory", "ذكرى"))
@@ -154,22 +160,24 @@ struct PersonalInformationEditor: View {
                 set: { if $0 { sources.insert(source.id) } else { sources.remove(source.id) } }))
           }
         }
-        Button(language.text("Save", "حفظ")) {
-          Task {
-            if await model.addReport(
-              text: text, kind: kind, profileID: profileID,
-              question: question?.title(language), sourceIDs: Array(sources))
-            {
-              dismiss()
-            }
-          }
-        }.disabled(text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || model.isBusy)
-          .accessibilityIdentifier("save-personal-information")
       }
       .navigationTitle(language.text("Add information", "إضافة معلومة"))
       .toolbar {
         ToolbarItem(placement: .cancellationAction) {
           Button(language.text("Cancel", "إلغاء")) { dismiss() }
+        }
+        ToolbarItem(placement: .confirmationAction) {
+          Button(language.text("Save", "حفظ")) {
+            Task {
+              if await model.addReport(
+                text: text, kind: kind, profileID: profileID,
+                question: question?.title(language), sourceIDs: Array(sources))
+              {
+                dismiss()
+              }
+            }
+          }.disabled(text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || model.isBusy)
+            .accessibilityIdentifier("save-personal-information")
         }
       }
     }.preferredColorScheme(.dark)
@@ -266,15 +274,42 @@ private struct PersonalLinkEditor: View {
   let language: AppLanguage
   @Environment(\.dismiss) private var dismiss
   @State private var label = ""
+  private var targets: [PersonalMemoryEntry] {
+    model.snapshot.currentEntries.filter { $0.id != fromID }
+  }
+
   var body: some View {
     NavigationStack {
       List {
         PersonalMemoryStatus(model: model, language: language)
-        TextField(language.text("Connection label", "وصف الرابط"), text: $label)
-        ForEach(model.snapshot.currentEntries.filter { $0.id != fromID }) { entry in
-          Button(entry.text) {
-            Task { if await model.link(fromID, to: entry.id, label: label) { dismiss() } }
-          }.disabled(label.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || model.isBusy)
+        if targets.isEmpty {
+          ContentUnavailableView(
+            language.text("No other memories to link", "لا توجد ذكريات أخرى للربط"),
+            systemImage: "link",
+            description: Text(
+              language.text(
+                "Save another memory in Notes, then return to link it.",
+                "احفظ ذكرى أخرى في الملاحظات، ثم عد لربطها.")
+            )
+          )
+        } else {
+          Section {
+            TextField(language.text("Connection label", "وصف الرابط"), text: $label)
+          } footer: {
+            Text(
+              language.text(
+                "Describe the connection, then choose a memory.",
+                "صِف الرابط، ثم اختر ذكرى.")
+            )
+          }
+          ForEach(targets) { entry in
+            Button {
+              Task { if await model.link(fromID, to: entry.id, label: label) { dismiss() } }
+            } label: {
+              Text(entry.text).frame(minHeight: 44)
+            }
+            .disabled(label.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || model.isBusy)
+          }
         }
       }.navigationTitle(language.text("Link memory", "ربط ذكرى"))
         .toolbar {

@@ -10,8 +10,12 @@ struct CaptureView: View {
   @Binding var showConversation: Bool
   @State private var showAudio = false
   @State private var notice: Notice?
+  @AppStorage(BrainMark.preferenceKey) private var brainMark: BrainMark = .constellation
+  @Environment(\.dynamicTypeSize) private var typeSize
+  @ScaledMetric(relativeTo: .body) private var recordingControlSize = 144.0
   @FocusState private var composerFocused: Bool
   private var language: AppLanguage { session.language }
+  private var recording: Bool { audio.captureState.state == .recording }
 
   private enum Notice {
     case saved
@@ -32,8 +36,9 @@ struct CaptureView: View {
 
   private var captureContent: some View {
     GeometryReader { geometry in
+      let controlSize = min(recordingControlSize, max(44, geometry.size.width - 36), 184)
       ScrollView {
-        VStack(spacing: 24) {
+        VStack(spacing: 16) {
           if chat.hasTemporarySession {
             VStack(spacing: 6) {
               Text(language.text("Home saves normal captures", "الرئيسية تحفظ الملاحظات العادية"))
@@ -59,11 +64,27 @@ struct CaptureView: View {
               }
             }
           } label: {
-            Image(systemName: audio.captureState.state == .recording ? "pause.fill" : "mic")
-              .font(.system(size: 62, weight: .light))
-              .foregroundStyle(.white)
-              .frame(width: 166, height: 166)
-              .memoryGlass(in: Circle(), interactive: true)
+            ZStack {
+              Circle().fill(MemoryTheme.workspaceAccent.opacity(0.07))
+              Circle().strokeBorder(MemoryTheme.workspaceAccent.opacity(0.36), lineWidth: 1)
+              if audio.draftID != nil {
+                Image(systemName: recording ? "pause.fill" : "mic")
+                  .font(.system(size: 42, weight: .light))
+              } else {
+                VStack(spacing: 8) {
+                  BrainMarkView(mark: brainMark).frame(width: 55, height: 55)
+                  Image(systemName: "mic").font(.system(size: 16, weight: .medium))
+                    .foregroundStyle(MemoryTheme.secondary)
+                }
+              }
+            }
+            .foregroundStyle(recording ? MemoryTheme.ink : MemoryTheme.workspaceAccent)
+            .frame(width: controlSize, height: controlSize)
+            .overlay {
+              if recording {
+                Circle().strokeBorder(.red, lineWidth: 2).allowsHitTesting(false)
+              }
+            }
           }
           .buttonStyle(.plain)
           .disabled(
@@ -75,14 +96,25 @@ struct CaptureView: View {
           .accessibilityIdentifier("record-audio")
 
           Text(recordingAction)
-            .font(MemoryTheme.body)
-          if audio.busy { ProgressView().accessibilityIdentifier("capture-audio-progress") }
+            .font(.title3.weight(.semibold))
+            .multilineTextAlignment(.center)
+          if audio.busy {
+            ProgressView(language.text("Preparing audio…", "جارٍ تجهيز الصوت…"))
+              .font(.callout)
+              .accessibilityIdentifier("capture-audio-progress")
+          }
           if audio.draftID != nil {
-            Text(
-              Duration.seconds(audio.captureState.elapsedSeconds).formatted(
-                .time(pattern: .minuteSecond))
-            )
-            .font(.title.monospacedDigit())
+            Label {
+              Text(
+                Duration.seconds(audio.captureState.elapsedSeconds).formatted(
+                  .time(pattern: .minuteSecond))
+              )
+              .font(.title3.monospacedDigit())
+            } icon: {
+              Image(systemName: recording ? "record.circle.fill" : "waveform")
+                .foregroundStyle(recording ? Color.red : MemoryTheme.secondary)
+                .accessibilityHidden(true)
+            }
             .accessibilityIdentifier("capture-audio-elapsed")
             Button(language.text("Finish and send", "إنهاء وإرسال")) {
               composerFocused = false
@@ -97,6 +129,9 @@ struct CaptureView: View {
                 }
               }
             }
+            .buttonStyle(.borderedProminent)
+            .tint(MemoryTheme.workspaceAccent)
+            .foregroundStyle(MemoryTheme.onFilledControl)
             .frame(minHeight: 44)
             .disabled(
               audio.busy || chat.isGenerating || chat.isTranscribing || chat.isTransitioning
@@ -105,12 +140,19 @@ struct CaptureView: View {
             .accessibilityIdentifier("capture-audio-save")
           }
           if let failure = audio.failure {
-            Text(audioMessage(failure, language: language))
-              .font(.callout)
-              .accessibilityIdentifier("capture-audio-error")
+            Label(
+              audioMessage(failure, language: language),
+              systemImage: "exclamationmark.circle"
+            )
+            .font(.callout)
+            .multilineTextAlignment(.leading)
+            .padding(12)
+            .background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 14))
+            .accessibilityIdentifier("capture-audio-error")
           }
           Spacer(minLength: 0)
         }
+        .padding(.horizontal, 18)
         .frame(maxWidth: .infinity)
         .frame(minHeight: max(280, geometry.size.height))
       }
@@ -118,70 +160,67 @@ struct CaptureView: View {
       .scrollDismissesKeyboard(.interactively)
     }
     .safeAreaInset(edge: .bottom, spacing: 0) {
-      VStack(spacing: 18) {
-        Button {
-          composerFocused = false
-          if chat.isGenerating || chat.isTranscribing {
-            showConversation = true
-          } else {
-            Task {
-              if await chat.prepareHomeConversation() { showConversation = true }
+      VStack(spacing: 6) {
+        if let error = chat.error {
+          VStack(alignment: .leading, spacing: 6) {
+            Text(ChatCopy.error(error, language: language))
+            if !chat.hasLoaded {
+              Button(language.text("Reload chats", "إعادة تحميل المحادثات")) {
+                Task { await chat.load() }
+              }.frame(minHeight: 44).accessibilityIdentifier("capture-reload-chats")
+            } else if error == .storage {
+              Button(language.text("Retry saving", "إعادة الحفظ")) {
+                Task { await chat.flushDraft() }
+              }.frame(minHeight: 44)
             }
           }
-        } label: {
-          Label(
-            language.text(
-              (chat.isGenerating || chat.isTranscribing) ? "Return to reply" : "Ask local AI",
-              (chat.isGenerating || chat.isTranscribing) ? "العودة إلى الرد" : "اسأل الذكاء المحلي"),
-            systemImage: "bubble.left"
-          )
-          .font(.subheadline).frame(minHeight: 44)
-        }.buttonStyle(.plain).accessibilityIdentifier("capture-open-chat")
-          .disabled(chat.isTransitioning || !chat.hasLoaded)
-        if let error = chat.error {
-          Text(ChatCopy.error(error, language: language)).font(.callout)
-          if !chat.hasLoaded {
-            Button(language.text("Reload chats", "إعادة تحميل المحادثات")) {
-              Task { await chat.load() }
-            }.frame(minHeight: 44).accessibilityIdentifier("capture-reload-chats")
-          } else if error == .storage {
-            Button(language.text("Retry saving", "إعادة الحفظ")) {
-              Task { await chat.flushDraft() }
-            }.frame(minHeight: 44)
+          .font(.callout)
+          .frame(maxWidth: .infinity, alignment: .leading)
+          .padding(12)
+          .background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 14))
+        }
+        if typeSize.isAccessibilitySize {
+          VStack(alignment: .leading, spacing: 0) {
+            openChat
+            openNotes
+          }
+          .frame(maxWidth: .infinity, alignment: .leading)
+        } else {
+          ViewThatFits(in: .horizontal) {
+            HStack(spacing: 18) {
+              openChat.fixedSize(horizontal: true, vertical: false)
+              Spacer(minLength: 0)
+              openNotes.fixedSize(horizontal: true, vertical: false)
+            }
+            VStack(alignment: .leading, spacing: 0) {
+              openChat
+              openNotes
+            }
           }
         }
         if !chat.homeDraft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-          Button(language.text("Save as memory", "حفظ كذكرى")) {
+          Button {
             let submitted = chat.homeDraft
             Task {
               if await records.create(kind: .capture, text: submitted) {
-                if chat.homeDraft.utf8.elementsEqual(submitted.utf8) { chat.homeDraft = "" }
+                chat.clearSavedHomeDraft(submitted)
                 notice = .saved
               }
             }
+          } label: {
+            Text(language.text("Save as memory", "حفظ كذكرى"))
+              .frame(minHeight: 44)
+              .contentShape(Rectangle())
           }
           .disabled(records.isBusy || !records.hasLoaded)
-          .frame(minHeight: 44)
+          .frame(maxWidth: .infinity, alignment: .trailing)
+          .foregroundStyle(MemoryTheme.workspaceAccent)
           .accessibilityIdentifier("save-thought")
         }
-        Button {
-          composerFocused = false
-          session.section = .memories
-        } label: {
-          HStack(spacing: 10) {
-            Text(language.text("Your memories", "ذكرياتك"))
-            Image(systemName: "chevron.forward")
-          }
-          .font(MemoryTheme.caption)
-          .foregroundStyle(MemoryTheme.secondary)
-          .frame(minHeight: 44)
-        }
-        .buttonStyle(.plain)
-        .accessibilityIdentifier("your-memories")
 
         HStack(alignment: .bottom, spacing: 6) {
           IconControl(
-            symbol: "plus",
+            symbol: "waveform",
             label: language.text("Audio library and import", "مكتبة الصوت والاستيراد"),
             identifier: "capture-audio-library"
           ) {
@@ -190,14 +229,14 @@ struct CaptureView: View {
 
           TextField(
             "", text: $chat.homeDraft,
-            prompt: Text(language.text("Write anything...", "اكتب أي شيء...")).foregroundStyle(
+            prompt: Text(language.text("Write a thought…", "اكتب فكرة…")).foregroundStyle(
               MemoryTheme.secondary), axis: .vertical
           )
           .font(.body)
-          .lineLimit(1...5)
+          .lineLimit(1...(typeSize.isAccessibilitySize ? 3 : 5))
           .padding(.vertical, 14)
           .focused($composerFocused)
-          .accessibilityLabel(language.text("Message local AI", "رسالة إلى الذكاء المحلي"))
+          .accessibilityLabel(language.text("Write a thought", "اكتب فكرة"))
           .accessibilityIdentifier("capture-composer")
           .disabled(chat.isTransitioning || chat.isLoading || !chat.hasLoaded)
 
@@ -222,7 +261,7 @@ struct CaptureView: View {
         .memoryGlass(in: RoundedRectangle(cornerRadius: 30), interactive: true)
       }
       .padding(.horizontal, 18)
-      .padding(.bottom, 18)
+      .padding(.bottom, 10)
       .background(MemoryTheme.canvas)
     }
     .overlay(alignment: .top) {
@@ -257,6 +296,47 @@ struct CaptureView: View {
     } message: {
       Text(noticeMessage)
     }
+  }
+
+  private var openChat: some View {
+    Button {
+      composerFocused = false
+      if chat.isGenerating || chat.isTranscribing {
+        showConversation = true
+      } else {
+        Task {
+          if await chat.prepareHomeConversation() { showConversation = true }
+        }
+      }
+    } label: {
+      Label(
+        language.text(
+          (chat.isGenerating || chat.isTranscribing) ? "Return to reply" : "Ask local AI",
+          (chat.isGenerating || chat.isTranscribing) ? "العودة إلى الرد" : "اسأل الذكاء المحلي"),
+        systemImage: "bubble.left"
+      )
+      .font(.subheadline.weight(.medium))
+      .frame(minHeight: 44)
+      .contentShape(Rectangle())
+    }
+    .buttonStyle(.plain)
+    .accessibilityIdentifier("capture-open-chat")
+    .disabled(chat.isTransitioning || !chat.hasLoaded)
+  }
+
+  private var openNotes: some View {
+    Button {
+      composerFocused = false
+      session.section = .memories
+    } label: {
+      Label(language.text("Saved notes", "الملاحظات المحفوظة"), systemImage: "folder")
+        .font(.subheadline)
+        .foregroundStyle(MemoryTheme.secondary)
+        .frame(minHeight: 44)
+        .contentShape(Rectangle())
+    }
+    .buttonStyle(.plain)
+    .accessibilityIdentifier("your-memories")
   }
 
   private var noticeTitle: String {

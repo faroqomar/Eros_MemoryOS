@@ -50,7 +50,9 @@ Historical visual direction, C17: the owner requested a complete wild redesign w
 
 Historical visual reference, C19: after rejecting the wild result, the owner selected Apple design. The [Apple-inspired proposal](../design/apple-inspired.md) remains a browser study.
 
-Current visual reference, C20: the owner returned to the supplied [Capture](../../designs/references/2026-11-13-native-foundation/capture.png) and [sidebar](../../designs/references/2026-11-13-native-foundation/sidebar.png) screenshots. Preserve their central microphone, bottom composer, spacing, and hidden sidebar. C21 supersedes the light palette with dark mode for current delivery and final checks. Keep other screen layouts open. Native verification and owner acceptance of the implementation remain separate.
+Native foundation reference, C20: the owner chose the supplied [Capture](../../designs/references/2026-11-13-native-foundation/capture.png) and [sidebar](../../designs/references/2026-11-13-native-foundation/sidebar.png) screenshots. The central recording action, bottom composer and hidden sidebar carry forward. C21 sets the dark appearance for delivery.
+
+Current visual direction, 2026-11-26. The owner selected a dark Record, Brain, Calendar and Notes layout and requested five selectable Brain marks. The [native design task](../tasks/2026-11-26-native-four-tab-design.md) records the MemoryOS implementation, the app-owned data each tab displays, and verification. Acceptance of the implemented screens remains open.
 
 R01-R32 in the [feature register](../feature-register.md) are owner requests. They remain requirements to refine, rather than completed features.
 

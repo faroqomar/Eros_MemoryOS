@@ -1,0 +1,937 @@
+{
+  "stage": "Step 2 reopened: current engineering repairs reviewed and native controls passed; connected UI follow-up/captures and downloaded-candidate quality qualification remain in progress.",
+  "ownerException": "Physical-device tests skipped for this stage by owner; reminder required at handback, not a pass.",
+  "initialIndependentUnderstanding": {
+    "cases": 12,
+    "automatedPasses": 9,
+    "manualPasses": 6,
+    "seconds": 318.776,
+    "failures": [
+      "unsupported additional English disagreement",
+      "Arabic action and speaker/listener errors",
+      "plan update labeled disagreement",
+      "requested accepting draft treated as original agreement",
+      "period summary missing earlier source citation",
+      "missing explicit counterevidence"
+    ]
+  },
+  "initialIndependentMeaningSearch": {
+    "cases": 6,
+    "exactSets": 5,
+    "seconds": 150.467,
+    "failure": "Arabic named-person query admitted two other people"
+  },
+  "connectedHostOffline": {
+    "fictionalDataOnly": true,
+    "kind": "connected actual native-domain workflow on host; not Simulator or phone",
+    "networkDenied": true,
+    "passed": true,
+    "rows": [
+      {
+        "passed": true,
+        "step": "saved originals and multilingual search"
+      },
+      {
+        "passed": true,
+        "step": "actual local analysis and report persistence"
+      },
+      {
+        "passed": true,
+        "step": "correction and stale report invalidation"
+      },
+      {
+        "passed": true,
+        "step": "deletion, rebuilt search, BrainMap and relaunch"
+      }
+    ],
+    "seconds": 75.81651496887207,
+    "socketErrno": 1
+  },
+  "limits": [
+    "Finite fictional cases do not prove general psychological accuracy.",
+    "Model audit is probabilistic; exact quotation validation is not entailment proof.",
+    "Original Step 1 failed results remain unchanged.",
+    "No Step 3, commit, push, merge or release.",
+    "Physical phone latency/heat/battery/protected-file and reminder delivery remain untested."
+  ],
+  "secondUnderstandingRegression": {
+    "cases": 12,
+    "automatedPasses": 11,
+    "manualPasses": 8,
+    "seconds": 274.837,
+    "failures": [
+      "Arabic offer/listener fidelity",
+      "draft wrong event label and invented convenience",
+      "advice reverses requester/action with benefit-only tradeoff",
+      "counterevidence missing and stated intent certainty"
+    ]
+  },
+  "simulatorNotificationDelivery": {
+    "passed": true,
+    "kind": "real approved annual calendar-trigger request delivered while Simulator app active",
+    "observedBySecondsAfterDue": 12,
+    "reportedNotificationDateDeltaSeconds": 0,
+    "cleanedUniqueRequestAndRestoredDelegate": true,
+    "notPhoneSLA": true
+  },
+  "simulatorKernelPolicyProbe": {
+    "passed": false,
+    "error": "Simulator sandbox_init stub cannot load host libsandbox.1.dylib (errno 2)",
+    "noModelRunDuringProbe": true,
+    "status": "Unavailable in Simulator; host kernel proof and Simulator API fault injection remain separate."
+  },
+  "simulatorAPIDenialPreflight": {
+    "passed": true,
+    "crossImagePublicSocketCalls": 12,
+    "IPv4TCP": 1,
+    "IPv4UDP": 1,
+    "IPv6TCP": 1,
+    "IPv6UDP": 1,
+    "loopback": 0,
+    "URLSessionFailure": -1003,
+    "rejectedCalls": 15,
+    "kernelIsolation": false,
+    "workflowRun": "Passed final source,93.641s",
+    "scope": "Testhost API fault injection; not full-app disconnection or no-egress assurance"
+  },
+  "meaningSearchRepairedRegression": {
+    "cases": 6,
+    "exactSets": 6,
+    "seconds": 86.956,
+    "criteriaUnchanged": true,
+    "scope": "Consumed independent finite corpus, after query assessment and exact subject filtering; no general retrieval qualification."
+  },
+  "structuralPromptBoundary": {
+    "controlledFunctionsExecuted": 5,
+    "actualModelContractsPassed": 1,
+    "seconds": 7.38,
+    "knownAndVocabularyMarkersRefused": true,
+    "originalsUnchanged": true,
+    "ordinaryLanguageInjectionNotQualified": true
+  },
+  "retiredReasoningPrototype": {
+    "status": "Removed from production and tests after bounded semantic failures; historical runtime contract passes do not qualify meaning.",
+    "runtime": "Six actual existing-4B contracts passed in 88.687 s; ordinary2048/experimental4096 capacity and single model load checked without exposing preparation text. Forty-four controlled functions also passed before removal.",
+    "failedPreparationTrials": "Three cases at256 tokens:0 quality passes/3 limits,73.482 s. Three at512:0 passes/3 limits,148.326 s; one retained actors but used wrong disagreement kind before audit exhaustion. Concise512:2/3 automatic,0/3 manual,147.840 s; offer called disagreement, listening request limited, Basim altered and refusal/request called repairAttempt. Audit accepted wrong kinds.",
+    "extendedContextFailure": "4096 context/1024 preparation:0/1 manual,67.354 s; correctly described conditional file-review offer but labeled repairAttempt."
+  },
+  "descriptiveWireTrials": {
+    "legacy": "Three cases:2 automatic,0 manual,90.511 s total. Invented client role, request labeled commitment, offered lift changed to recommendation with mixed schema prose.",
+    "reasoned": "One case:0 manual,61.835 s. Conditional offer labeled commitment."
+  },
+  "ordinaryConversationRegression": {
+    "cases": 4,
+    "passed": 4,
+    "seconds": 13.905,
+    "runtime": "final fixed2048 ordinary4B with structural marker refusal"
+  },
+  "leapDayFinding": {
+    "verified": true,
+    "kind": "real persisted EventKit behavior before any fixture calendar move",
+    "implicitYearlyRuleSavedAs": {
+      "daysOfMonth": [
+        28,
+        29
+      ],
+      "setPositions": [
+        -1
+      ]
+    },
+    "approvedPolicy": "February29 only; skip nonleap years",
+    "consequence": "Persisted rule exceeded approval; retry rejected stalePreview. Explicit date rule and post-save verification in repair."
+  },
+  "connectedHostOfflineFinal": {
+    "fictionalDataOnly": true,
+    "kind": "connected actual native-domain workflow on host; not Simulator or phone",
+    "networkDenied": true,
+    "passed": true,
+    "rows": [
+      {
+        "passed": true,
+        "step": "saved originals and multilingual search"
+      },
+      {
+        "passed": true,
+        "step": "actual local analysis and report persistence"
+      },
+      {
+        "passed": true,
+        "step": "correction and stale report invalidation"
+      },
+      {
+        "passed": true,
+        "step": "deletion, rebuilt search, BrainMap and relaunch"
+      }
+    ],
+    "seconds": 92.5642499923706,
+    "socketErrno": 1,
+    "sourceIdentity": {
+      "kind": "temporary exact-source host harness",
+      "nativeSourceAggregate": "a06928edf1aceb2be485feccbf93ac17c0c31200507b37450e7810b794a8aca2",
+      "sourceFiles": [
+        "native/MemoryOS/Composition/MemorySearchComposition.swift",
+        "native/MemoryOS/Composition/LocalRelationshipAnalyzer.swift",
+        "native/MemoryOS/Composition/RelationshipComposition.swift",
+        "native/MemoryOS/Domain/MemorySearch.swift"
+      ]
+    }
+  },
+  "genericArabicSearchRepair": {
+    "confirmedCause": "Entire question copied as a named subject; no topic votes ran.",
+    "repairedHostOutcome": "query-only context resolution classifies it as generic, retrieves the one exact Arabic original; full workflow passes.",
+    "currentIndependentSixRecheck": "6/6 exact sets,126.164s"
+  },
+  "organizationFinalPackage": {
+    "passedFunctions": 22,
+    "scope": "Release macOS host; format2 migration, review conflicts and ambiguous OS outcomes",
+    "seconds": 0.008
+  },
+  "meaningSearchFinalRegression": {
+    "cases": 6,
+    "exactSets": 6,
+    "seconds": 126.164,
+    "criteriaUnchanged": true,
+    "contextResolutionEnabled": true,
+    "scope": "Consumed independent finite corpus; not broad retrieval qualification"
+  },
+  "organizationRecoveryReview": {
+    "sourceReviewPassed": true,
+    "formatVersion": 2,
+    "v1MigrationPreservesStableData": true,
+    "reviewConflictPreserved": true,
+    "ambiguousOSOutcomesRequireValidationBeforeRetry": true,
+    "limit": "Failed rollback plus failed outcome persistence with a conflicting actual series requires explicit review, not automatic cancellation."
+  },
+  "laterExceptionCancellationFinding": {
+    "verifiedPhase": "remove-series-and-exception",
+    "error": "EKCADErrorDomain1010: master removal invalidated detached objects in the old snapshot",
+    "repair": "Fresh owned local-series queries, progress and64-mutation bound; absence and permission verification",
+    "sourceReviewPassed": true,
+    "affectedRuntimeRecheck": "Passed in final65-function Simulator run; earlier failure retained historically."
+  },
+  "functionalFinal": {
+    "functions": 65,
+    "passed": 65,
+    "suites": 7,
+    "seconds": 84.212,
+    "actualLeapYears": [
+      2028,
+      2032
+    ],
+    "nonleap2029to2031Skipped": true,
+    "laterExceptionRejectedWithoutOverwriting": true,
+    "laterExceptionCleaned": true,
+    "sameSeriesIdentifierForDetachedException": false,
+    "actualAnnualNotificationDelivered": true,
+    "reportedDeliveryDateDeltaSeconds": 0,
+    "projection1000SourcesP95Seconds": 0.005004
+  },
+  "connectedSimulatorOfflineFinal": {
+    "passed": true,
+    "seconds": 93.641,
+    "scope": "Actual app repositories, bundled models, persistence/reopen, correction/deletion/rebuild under injected public-socket API failure; not kernel isolation or full-app no-egress proof",
+    "crossImagePublicSocketProbes": 12,
+    "urlFailure": -1003,
+    "externalSocketErrno": 1,
+    "loopbackResult": 0,
+    "workflowExternalPublicSocketAttempts": 0,
+    "beforeCounter": 15,
+    "afterCounter": 15
+  },
+  "retrievalComparisonFinal": {
+    "source": "Same consumed eight-record/six-query builder corpus; truth sets unchanged; linked expected includes explicit neighbor",
+    "seconds": 185.975,
+    "methods": {
+      "keyword": {
+        "cases": 6,
+        "exactSets": 4,
+        "falsePositive": 0,
+        "falseNegative": 2,
+        "medianSeconds": 0.0013465625,
+        "maxSeconds": 0.13689525
+      },
+      "semantic": {
+        "cases": 6,
+        "exactSets": 6,
+        "falsePositive": 0,
+        "falseNegative": 0,
+        "medianSeconds": 33.1342797085,
+        "maxSeconds": 36.162859708
+      },
+      "linked": {
+        "cases": 6,
+        "exactSets": 4,
+        "falsePositive": 0,
+        "falseNegative": 3,
+        "medianSeconds": 0.002820688,
+        "maxSeconds": 0.074500208
+      }
+    },
+    "keywordRemainsDefault": true,
+    "semanticIsExplicitLocalMode": true
+  },
+  "finalSourceIdentity": {
+    "head": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+    "branch": "feat/personal-memory-local-recall",
+    "recipe": "sorted changed/untracked native path UTF8 + NUL + bytes + NUL",
+    "productionFiles": 39,
+    "productionSHA256": "7da0331112955e0586eb7a498d331d78b86ac7955b7f78c66205d26b191d0eb1",
+    "testFiles": 17,
+    "testsSHA256": "c19d59d17cf213bb462dd7b0be3fb32aab29b4b46e8a98eae02324ddcb5199bb",
+    "allNativeSHA256": "323a708d6e7980291cc8f2c044ecd00212a54db5e4f669fdf8e83db2ee23f7ea",
+    "binaryUUID": "A18437AE-9493-3789-926E-05FA57844D66",
+    "verificationToolingFiles": 3,
+    "verificationToolingSHA256": "8be6eac9d04fa1db9a9abb1758f5a8c47d0416bd3e72570d0b4d7b7b07f06164",
+    "scope": "Historical November 19 engineering handback; not the reopened November 23 source identity."
+  },
+  "finalUI": {
+    "passed": 2,
+    "seconds": 205.759,
+    "birthdaySeconds": 83.715,
+    "ruleViewUndoBrainMapSeconds": 122.044,
+    "finalDateLabelsTargetedRerun": {
+      "passed": 1,
+      "seconds": 75.427,
+      "date": "Explicit Month3 Day12 confirmed in actual current-binary review capture",
+      "testSelectorRepair": "Scroll native person picker; preserve fixture identity/assertions. Failed earlier retry retained in history."
+    }
+  },
+  "darkCaptures": {
+    "device": "iPhone18ProMax",
+    "os": "iOS27.2",
+    "kind": "Simulator, Release, actual app, fictional data only",
+    "productionSHA256": "7da0331112955e0586eb7a498d331d78b86ac7955b7f78c66205d26b191d0eb1",
+    "binaryUUID": "A18437AE-9493-3789-926E-05FA57844D66",
+    "files": [
+      "step2-source-search.png",
+      "step2-understanding-controls.png",
+      "step2-exact-approval.png",
+      "step2-organization-backup.png"
+    ]
+  },
+  "cleanup": {
+    "cacheBeforeKiB": {
+      ".build/audio-app/Build/Intermediates.noindex": 184236,
+      "native/LocalMemory/.build": 261916,
+      "native/LocalMemoryRetrieval/.build": 194000,
+      "native/LocalOrganization/.build": 182432,
+      "native/LocalTextEvaluation/.build": 177408
+    },
+    "cacheAfterKiB": {
+      ".build/audio-app/Build/Intermediates.noindex": 0,
+      "native/LocalMemory/.build": 0,
+      "native/LocalMemoryRetrieval/.build": 0,
+      "native/LocalOrganization/.build": 0,
+      "native/LocalTextEvaluation/.build": 0
+    },
+    "externalEntriesRemoved": 46,
+    "externalBeforeKiB": 1122580,
+    "logicalBytesRemoved": 2077011459,
+    "removedReasons": [
+      "reproducible completed-task caches",
+      "resolved and superseded test bundles",
+      "retired prototype and exact-source host harness copies",
+      "temporary offline shims/configurations and resolved failure fixtures"
+    ],
+    "retained": [
+      "Final app Products and installed Simulator fictional history",
+      "Pinned SDK/artifact/model inputs and original research",
+      "Original Step1 evidence10files unchanged",
+      "Latest unresolved model-fidelity bundle and selected small proof logs",
+      "Unrelated active documents/output and all Git metadata"
+    ],
+    "originalEvidencePreservedSHA256": "3da28599bac5cc92dc498cb20ed3198ac18590f28d48c7488bb9f0e40eebaef7",
+    "earlierTemporaryNativeDiagnosticRemoved": true,
+    "earlierNativeDiagnosticSizeNotIncluded": true,
+    "supersededTemporaryFilesRemoved": 84,
+    "supersededTemporaryFileBytesRemoved": 34463828,
+    "postDeliveryRawRecallDumpRemovedBytes": 45987,
+    "redundantFinalBookkeepingCopiesRemoved": {
+      "files": 4,
+      "bytes": 4926,
+      "canonicalValuesRetainedInThisReceipt": true
+    }
+  },
+  "remainingBlockers": [
+    "Current candidate relationship acceptance3/8; accepted meaning errors and missing useful answers persist.",
+    "Current candidate multi-person retrieval misses required sources.",
+    "Unchanged default model fails2/6 frozen source-set cases through ambiguousSubject.",
+    "Permitted full-history pilot has no scoreable answers; cold-index cost and post-fix subject clarification remain unresolved."
+  ],
+  "dateLabelCorrection": {
+    "explicitEnglishArabicMonthDayLabels": true,
+    "targetedBirthdayUIPassed": true,
+    "seconds": 75.427,
+    "initialRetryFailure": "New fictional person was outside visible native picker; test scrolls to identity without weakening assertions."
+  },
+  "finalChecks": {
+    "releaseBuild": true,
+    "releaseAnalysis": true,
+    "swift6ConcurrencyCompilation": true,
+    "strictFormatSwiftFiles": 53,
+    "relativeLinks": true,
+    "evidenceGuard": true,
+    "inferenceLinkage": true,
+    "postCleanupSourceHashesUnchanged": true,
+    "originalStep1EvidenceFilesPreserved": 10,
+    "originalIdeaFilesUnchanged": true
+  },
+  "memoryDelivery": {
+    "project": "memoryos",
+    "syncExit": 0,
+    "checkExit": 0,
+    "pending": 0,
+    "failed": 0,
+    "reviewedSources": 59,
+    "usefulRecallVerified": true,
+    "currentRecalledFacts": [
+      "65native/22organization checks",
+      "relationship0/3 remains blocking",
+      "owner physical skip not pass"
+    ],
+    "finalMarkdownAggregateSHA256": "2910854a300036665432ed9bcfc10ebd94788d1af05d474b9f4e29cca76adca7",
+    "curatedInitiativeCorrectionRecorded": true
+  },
+  "independentFinalReviews": {
+    "standards": "Source,cleanup,evidence recheck passes; no hard discrepancy; model gate remains blocked.",
+    "requirements": "Engineering repairs complete; Step2 acceptance blocked by0/3 manual relationship meaning.",
+    "freshRuns": "Reviewers inspected source and actual receipts; no extra model/build runs."
+  },
+  "reopenedStep2": {
+    "date": "2026-11-23",
+    "scope": "Repair active blockers; improve model accuracy and response speed. Physical-device checks remain skipped. No Step3.",
+    "baselineArabic": {
+      "manualCorrect": 0,
+      "cases": 3,
+      "seconds": 100.119,
+      "errors": "Invented client; request labeled promise; wrong offered action and internal labels."
+    },
+    "simplePromptDiagnosis": "Short explicit JSON alone did not preserve all roles/actions; recommended non-thinking sampling .7/topP.8/topK20/seed42 did not improve meaning and is not adopted.",
+    "compactAdapterFirstTrial": {
+      "controlledFunctionsPassed": 61,
+      "semanticCases": 3,
+      "manualCorrect": 0,
+      "seconds": 121.926,
+      "limitations": "Invented events, wrong language, and abstention on supported inputs. No meaning pass."
+    },
+    "initialChatLifecycleComparison": {
+      "correctSourceSetsEachPath": 2,
+      "casesEachPath": 3,
+      "medianFirstTextSeconds": {
+        "previous": 19.69668,
+        "shared": 6.53165
+      },
+      "verdict": "Timing improvement observed, accuracy failed on extra Arabic-query source in both paths. Repair subject checks before final comparison.",
+      "correctedFilterRetest": "Later source check fixed Arabic but returned no English evidence: 1/3 correct each path. The final RSS-sampled baseline below replaces provisional corrected-filter timings."
+    },
+    "independentFindings": [
+      "One-event limit prevents timeline; compact adapter now supports four bounded events, accuracy unqualified.",
+      "Temporary-end left native context resident; unload repair has package regression evidence.",
+      "Coverage audit must inspect uncited selected context for omissions without permitting it to justify claims.",
+      "Chat filtering must preserve explicit profile aliases and membership without rewriting source text."
+    ],
+    "preparedExperiment": {
+      "status": "removed after failure",
+      "shortProbeSeconds": 49.586,
+      "shortProbeManual": "Incomplete role/action answers in all three cases; structural completion is not semantic correctness.",
+      "fullProductionCases": 3,
+      "fullProductionCompleted": 0,
+      "fullProductionSeconds": 245.918,
+      "reason": "All cases exhausted the bounded output/preparation budget. No hidden preparation text was decoded or retained.",
+      "controlledNativeFunctionsPassed": 79
+    },
+    "candidateEvaluation": {
+      "status": "Exact asset and native runtime verified on November 24; semantic evaluation remains failed/unqualified; app default unchanged",
+      "repository": "ggml-org/Qwen3.5-4B-GGUF",
+      "revision": "8d43d974efc48399cb58957ad49c8b26bf5a109c",
+      "filename": "Qwen3.5-4B-Q4_K_M.gguf",
+      "bytes": 3032091584,
+      "sha256": "217002fa8008ef4fc6d548353a3aebef055a96e6ff8e0e2c0953ef8254a89c14",
+      "license": "Apache-2.0",
+      "runtime": "Existing pinned llama.cpp; explicit tested qwen35 non-thinking template, unchanged greedy and 2048-token context.",
+      "gates": "Verify full asset, consumed regressions, fresh held-out meaning, source fidelity, runtime reset/cancellation/grammar, comparable latency/memory. Physical device skipped by owner.",
+      "metadataConfirmedFromPartialHeader": [
+        "qwen35 architecture",
+        "4.2B size label",
+        "248320 vocabulary entries",
+        "32 layers with hybrid attention",
+        "Apache-2.0"
+      ],
+      "fullAssetVerified": true,
+      "transportDiagnosis": "Fresh continuation resumed the sole stopped download from 3029124325 bytes; exact final bytes and SHA-256 verified independently. Parts removed only after successful assembly verification.",
+      "nativeTemplatePreflight": {
+        "result": "pass",
+        "sdkBinarySHA256": "598361b697ef703c9bfcdfb6b8f79f48b27cf83274528649f214c70565db3170",
+        "templateSHA256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+        "plainTextCases": 3,
+        "scope": "Actual pinned native C template call preserves English/Arabic/mixed-history role boundaries and literal UTF-8, buffer sizing and current closed non-thinking app prefix. No model load or inference."
+      },
+      "runtimeVerification": {
+        "functions": 3,
+        "seconds": 68.62,
+        "result": "pass",
+        "scope": "Simulator native grammar, Arabic UTF8, state reset, cap recovery, unload/reload, output cancellation and foreground preemption",
+        "outputCancellationJoinSeconds": 2.442410875,
+        "physical": "owner-skipped"
+      }
+    },
+    "oldModelSpeedDiagnosis": {
+      "finding": "English query extracts a possessive event phrase as the named person; independent query-only check incorrectly approves it; literal matching then drops the correct record. No fixture-specific trimming adopted.",
+      "inputClass": "Fictional English possessive person/event query",
+      "accuracyEachPath": "1/3 source-and-answer cases; Arabic correct, two English repeats false negatives",
+      "medianFirstTextSeconds": {
+        "previous": 24.375,
+        "shared": 12.136
+      },
+      "stageFinding": "The first English extraction returns a possessive event phrase; the second check approves it. Initial extraction/check take 11.989/5.009 seconds; the warm repeat takes 3.064/4.838 seconds. No fixture-specific trimming is adopted."
+    },
+    "interimCleanup": {
+      "externalEntriesRemoved": 13,
+      "logicalBytesBefore": 49898937,
+      "logicalBytesAfter": 0,
+      "reason": "Resolved build/configuration failures, copied skill preflight, and retired unsuccessful sampling/preparation diagnostics. Compact outcomes retained in this receipt.",
+      "retained": "Active build and download, old-model unresolved semantic/source-selection evidence, final controlled results, original research and unrelated work."
+    },
+    "candidateRuntimeTestBuild": "Bridge-only Release native build and old-model runtime baseline pass. Raw SDK header collision was confined to the first test-harness attempt; production SDK pin and isolation stay unchanged.",
+    "oldModelRuntimeContracts": {
+      "functions": 5,
+      "suites": 2,
+      "seconds": 36.047,
+      "result": "pass",
+      "scope": "Actual grammar/EOG, Arabic UTF8, independent context reset, cap recovery, unload/reload, native output cancellation, coordinator ordering and request RSS sampler cleanup. Simulator only.",
+      "samples": [
+        {
+          "sampleResidentBytes": 4909842432,
+          "seconds": null,
+          "stage": "before-unload"
+        },
+        {
+          "sampleResidentBytes": 292765696,
+          "seconds": null,
+          "stage": "after-unload"
+        },
+        {
+          "sampleResidentBytes": 5095489536,
+          "seconds": null,
+          "stage": "after-reload"
+        },
+        {
+          "sampleResidentBytes": 5254987776,
+          "seconds": 0.143727333,
+          "stage": "cancel-joined"
+        },
+        {
+          "sampleResidentBytes": 5265539072,
+          "seconds": null,
+          "stage": "cancel-recovered"
+        },
+        {
+          "sampleResidentBytes": 5181734912,
+          "seconds": 5.72690525,
+          "stage": "foreground-preemption-complete"
+        }
+      ]
+    },
+    "lifecycleRepair": {
+      "finding": "A feature task waiting before a model call could reload weights after memory-warning/background unload.",
+      "repair": "Both app lifecycle handlers synchronously cancel owned search/analysis tasks; domain use cases recheck cancellation after source preparation. Existing coordinator checks guard subsequent native leases.",
+      "coreReleaseTests": 115,
+      "coreTestSeconds": 10.056,
+      "independentReview": "No blocking finding; source wiring and four deterministic delayed-work cases reviewed. Actual OS delivery and physical-device behavior remain separate.",
+      "preservation": "Queries, modes, selection, owner account and originals remain unchanged; no late provider/analyzer/model entry or persistence."
+    },
+    "evaluationSourceIdentity": {
+      "scope": "November 23 candidate evaluation source, before any model adoption",
+      "head": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+      "recipe": "sorted changed/untracked native path UTF8 + NUL + bytes + NUL",
+      "productionFiles": 44,
+      "productionSHA256": "6a3b4c63e71f2221a07cf2b02a25a4dcc91fc418abfe3140e71b0ae529cf8021",
+      "testFiles": 29,
+      "testsSHA256": "488362b9586d97e7642c4570a21e5250c0d4e37d6d42b9cbedc2e6b8a23fc938",
+      "allNativeSHA256": "73fa10b07f148f1e88dc4b2e39297703fbfd9066c257d7dd7cd1f03080fa7e16"
+    },
+    "finalOldModelSpeedBaseline": {
+      "seconds": 107.813,
+      "correctSourceAndAnswerCasesEachPath": 1,
+      "casesEachPath": 3,
+      "verdict": "Performance observations only; English subject errors prevent quality-qualified speed claims.",
+      "samples": [
+        {
+          "firstTextSeconds": 22.169076085090637,
+          "lifecycle": "previous",
+          "peakResidentBytes": 5699502080,
+          "request": 0,
+          "residentSampleCount": 883,
+          "retrievalSeconds": 14.560335040092468,
+          "sourceCount": 0,
+          "totalSeconds": 24.561691999435425
+        },
+        {
+          "firstTextSeconds": 23.85225200653076,
+          "lifecycle": "previous",
+          "peakResidentBytes": 5505171456,
+          "request": 1,
+          "residentSampleCount": 918,
+          "retrievalSeconds": 16.166248083114624,
+          "sourceCount": 1,
+          "totalSeconds": 24.276275038719177
+        },
+        {
+          "firstTextSeconds": 19.42453694343567,
+          "lifecycle": "previous",
+          "peakResidentBytes": 5551046656,
+          "request": 2,
+          "residentSampleCount": 755,
+          "retrievalSeconds": 13.003853917121887,
+          "sourceCount": 0,
+          "totalSeconds": 19.95578098297119
+        },
+        {
+          "firstTextSeconds": 14.6234450340271,
+          "lifecycle": "shared",
+          "peakResidentBytes": 5546770432,
+          "request": 0,
+          "residentSampleCount": 573,
+          "retrievalSeconds": 12.773095965385437,
+          "sourceCount": 0,
+          "totalSeconds": 15.118083000183105
+        },
+        {
+          "firstTextSeconds": 12.175186038017273,
+          "lifecycle": "shared",
+          "peakResidentBytes": 5537890304,
+          "request": 1,
+          "residentSampleCount": 481,
+          "retrievalSeconds": 9.699635982513428,
+          "sourceCount": 1,
+          "totalSeconds": 12.712700009346008
+        },
+        {
+          "firstTextSeconds": 9.142531991004944,
+          "lifecycle": "shared",
+          "peakResidentBytes": 4783800320,
+          "request": 2,
+          "residentSampleCount": 368,
+          "retrievalSeconds": 7.323215007781982,
+          "sourceCount": 0,
+          "totalSeconds": 9.671707034111023
+        }
+      ],
+      "measurement": {
+        "model": "qwen3",
+        "relevancePolicy": "subject-and-topic",
+        "residentMeasurement": "process-rss-sampled",
+        "residentPollingMilliseconds": 25,
+        "allSampleAttemptsSucceeded": true,
+        "retention": "Per-case first text, retrieval/total latency, selected-source count and sampled peak RSS retained. Repeated constants, output byte counts and intermediate RSS endpoints removed; raw failed-baseline proof remains outside Git."
+      }
+    },
+    "downloadTimeImprovements": {
+      "status": "Current analysis/build and 159 native controls pass; birthday title UI, final captures and optional real-model experiment in progress.",
+      "scope": "Owner requested app, codebase and flow improvements during the pinned candidate download within existing Step 2 authorization.",
+      "completedPackageCheck": {
+        "package": "LocalChat",
+        "configuration": "Release",
+        "passedFunctions": 68,
+        "result": "pass",
+        "log": "/tmp/memoryos-chat-filter-cleanup-tests.log"
+      },
+      "changes": [
+        "Remove unused LocalModelEvidenceFilter and obsolete tests; transfer meaningful strict-output, bounds and cancellation coverage to the current adapter.",
+        "Reject ambiguous shared aliases before topic votes; preserve original Arabic follow-up question bytes.",
+        "Repair erased organization receipt references and reversible merge propagation; bind birthday resolution to reviewed identity and revisions.",
+        "Recover missing/deleted views and sources, expose rule filters, and adapt actions to accessibility text.",
+        "Share model asset identity between runtime, importer and Settings; stream protected imports with validation, cancellation and recoverable failures."
+      ],
+      "reviewFindings": "Independent final source recheck closes report concurrency, organization recovery, provenance and source-context findings.",
+      "coreChecks": [
+        {
+          "package": "LocalMemory",
+          "configuration": "Release",
+          "passedFunctions": 127,
+          "suites": 13,
+          "result": "pass",
+          "log": "/tmp/memoryos-interpretation-provenance-tests.log"
+        },
+        {
+          "package": "LocalTextEvaluation",
+          "configuration": "Release",
+          "passedFunctions": 6,
+          "result": "pass",
+          "scope": "Cold asset resolver, malformed prompts, missing/remote model and cancellation guards; no meaning qualification.",
+          "log": "/tmp/memoryos-model-resolver-package-tests.log"
+        }
+      ],
+      "additionalReviewedRepairs": [
+        "Resolve imported local asset on each cold runtime load without changing fixed SHA or an existing resident session.",
+        "Clean only owned UUID staging under a process-wide directory lease; preserve active/chosen/unknown files and directory or symlink entries.",
+        "Keep stale save completion out of edited UI, remove only observed report versions, and revalidate the search graph before display.",
+        "Preserve unavailable person references as inert organization history while durably cancelling reminders; no identity transfer or wildcard filter broadening."
+      ],
+      "controlledNativeRecheck": {
+        "functions": 159,
+        "suites": 18,
+        "seconds": 1.333,
+        "result": "pass",
+        "log": "/tmp/memoryos-g89-hint-controls.log",
+        "scope": "Current source including optional identity hints (off by default), explicit profile review and birthday person title; prior UI-dependent test included. Physical protection remains skipped."
+      },
+      "organizationPackageCheck": {
+        "functions": 34,
+        "configuration": "Release",
+        "result": "pass",
+        "log": "/tmp/memoryos-org-ledger-cleanup-tests.log",
+        "format": 5,
+        "scope": "Deletion/merge/undo, explicit frozen birthday review, orphan cancellation/reopen/restore, exact filter and manual-edit protection."
+      },
+      "actualImportRecovery": {
+        "result": "pass",
+        "testSeconds": 18.456,
+        "modelBytes": 2497280256,
+        "importSeconds": 4.816229958,
+        "firstRecoveredRequestSeconds": 6.679109166,
+        "coldResolverCalls": 4,
+        "scope": "Same real adapter: missing then corrupt bundle refuses; streamed verified import succeeds without restart; warm generation reuses session; unload/reload resolves imported asset again. Test-owned temporary files removed; original corrupt fixture retained through assertions. No production model switch.",
+        "sourceFiles": 6,
+        "componentSourceSHA256": "425bfe20517fd8fb149790e8ada512d73551aa248c6fbd438e09b422ed5724a6",
+        "identityRecipe": "Sorted listed path UTF-8 + NUL + bytes + NUL. Domain preparation, composition model config/importer, Llama bridge/runtime and native runtime import test.",
+        "log": "/tmp/memoryos-g89-import-runtime.log",
+        "device": "iPhone 18 Pro Max / iOS 27.2 Simulator on host Mac; not physical-phone qualification"
+      },
+      "controlledSourceHarness": {
+        "functions": 4,
+        "parameterCases": 14,
+        "configuration": "Release",
+        "result": "pass",
+        "scope": "Actual ViewModel/domain files in isolated pure Swift harness; does not substitute for native or real-model qualification.",
+        "log": "/tmp/memoryos-group8-clear-save-tests.log"
+      },
+      "formatting": {
+        "changedSwiftFiles": 95,
+        "result": "pass",
+        "log": "/tmp/memoryos-g89-hint-final-format.log"
+      },
+      "connectedUI": {
+        "tests": 2,
+        "seconds": 177.384,
+        "result": "pass",
+        "scope": "Birthday correction/exact approval/disable/relaunch and rule/test/apply/custom-tab/undo/BrainMap/source navigation; no model.",
+        "log": "/tmp/memoryos-g89-improvement-ui.log",
+        "finalSourceRerun": {
+          "status": "pass after viewport-only fixture repair",
+          "firstAttemptSeconds": 62.999,
+          "finding": "Rule applied and receipt persisted, but retained custom views pushed add-rule control out of lazy-list accessibility tree. T3 inspection reopened the usable editor.",
+          "repair": "Reveal the existing control before asserting; no app behavior or acceptance change.",
+          "seconds": 112.624,
+          "log": "/tmp/memoryos-g89-ui-viewport-rerun.log",
+          "productionExecutableUnchanged": true
+        },
+        "birthdayPersonTitle": {
+          "result": "pass",
+          "seconds": 83.612,
+          "scope": "Exact person name on opening and relaunch, partial-date correction, exact approval, disable and persistence.",
+          "log": "/tmp/memoryos-g89-hint-birthday-ui.log"
+        }
+      },
+      "analysisAndLinkage": {
+        "result": "pass on current source: Release analysis/build and separate native inference linkage",
+        "analysisLog": "/tmp/memoryos-g89-hint-analysis.log",
+        "buildLog": "/tmp/memoryos-g89-hint-build.log",
+        "note": "Run analysis before final build-for-testing: an earlier analysis relinked the app and removed the test product, causing a pre-execution failure. Final rebuild restored products; actual tests passed and the executable hash stayed unchanged."
+      },
+      "additionalProvenanceAudit": {
+        "dateProvenance": "No deterministic capture-date to asserted-event-date conversion found; original timestamps and quoted event text remain separate.",
+        "status": "All findings closed; final 140 native controls pass. Current original-only context projection has bounded host evidence; final dark captures pending.",
+        "corePassedFunctions": 127,
+        "coreSuites": 13,
+        "featureParameterCases": 7,
+        "organizationConsumerPassedFunctions": 34,
+        "coreLog": "/tmp/memoryos-interpretation-provenance-tests.log",
+        "featureLog": "/tmp/memoryos-owner-interpretation-feature-tests.log",
+        "performance": "Existing 1,000-source/50-history host edit p95 236.4 ms meets 250 ms target; not phone proof.",
+        "closedFindings": [
+          "Owner-written interpretations can be labeled as AI hypotheses; repair explicit author/review provenance without inventing legacy authorship.",
+          "Outer source route can show blank for stale/deleted IDs.",
+          "Relationship source reader omits promised adjacent conversation context."
+        ]
+      },
+      "downloadBottleneck": {
+        "result": "Keep healthy existing 32-worker resumable download; no interruption/settings change.",
+        "baselineBytesPerSecond": 155517,
+        "extraEightCombinedBytesPerSecond": 169600,
+        "postProbeBytesPerSecond": 182900,
+        "probeBytes": 1288957,
+        "conclusion": "Extra bounded range requests reduced main-transfer rate and did not improve combined throughput beyond observed range. Cap location remains unknown.",
+        "statusAtProbe": {
+          "downloadPercent": 42.64,
+          "remainingBytes": 1739208640,
+          "estimatedHoursAtObservedRate": [
+            2.6,
+            3.0
+          ]
+        }
+      },
+      "sourceContextMeasurement": {
+        "configuration": "SwiftPM Release, M1 Pro 16 GB / macOS 27.2.1",
+        "sourceCounts": [
+          1000,
+          1000,
+          65,
+          50,
+          166
+        ],
+        "countOrder": "originals, entries, profiles, conversations, links",
+        "warmupPairs": 10,
+        "measuredAlternatingPairs": 100,
+        "fullGraphMedianMS": 6.41875,
+        "fullGraphP95MS": 6.745458,
+        "originalOnlyMedianMS": 0.132521,
+        "originalOnlyP95MS": 0.150333,
+        "exactContextEquivalentOnEveryCall": true,
+        "sourceSHA256": {
+          "native/MemoryOS/Domain/MemorySearch.swift": "99598372d1f2437305f708e18daa1ad93ad83d9b8e8e71dfaa3f01daca2f3766",
+          "native/MemoryOS/Domain/OriginalSourceContextProjection.swift": "92b557b44cacf7dc718fe8bae1ef4599be8f370b2c2a3a2e7957c6638256160c"
+        },
+        "limits": "Single warm host workload; no view, disk, model, phone or energy claim. Original text, IDs and dates retained.",
+        "reproducibleBuildBytesRemoved": 149389665,
+        "measurementRevision": "Current-source rerun of unchanged workload after identity metadata change; earlier0.101/4.816 ms medians remain historical outside Git."
+      },
+      "finalSourceIdentity": {
+        "head": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+        "recipe": "Sorted changed/untracked native path UTF-8 + NUL + file bytes + NUL; all file types included.",
+        "productionFiles": 59,
+        "productionSHA256": "eccee2e301dc82570f5230bbd81a6c7dd8b27194c1fb30bf2333675218e4e034",
+        "testFiles": 40,
+        "testsSHA256": "2e3a5a5c24e0c02ac42fa17864343e85be174c16c9614ba134e2b4dce0a69226",
+        "allNativeSHA256": "47f54edf458549f909bcec65b01fe8932de80a9fb833c16775336ec1e2f33cc3",
+        "executableSHA256": "6ce88a54f016177c0fc86b27b795662cc1a9effba1843aac8006992f4e5d1af8",
+        "scope": "November24 tested/captured baseline before optional identity-hint and birthday-title changes; installed Products executable hash stayed unchanged across native/UI tests."
+      },
+      "cleanupCheckpoint": {
+        "removedExternalEntries": 43,
+        "logicalBytesBefore": 156761527,
+        "logicalBytesAfter": 0,
+        "proofFilesChecked": 7998,
+        "proofBeforeAndAfterSHA256": "2f563e0c1d333968bc5eee2474621ec51b097a2899cd0f50cb0331f4976eeb6a",
+        "reasons": "Resolved harness, superseded control bundles/build logs, copied preflight reads and recall dumps.",
+        "retained": "Current controls/UI/import proof, unresolved model evidence, active download/pipeline, Products, SDK/model inputs, original research and unrelated work. Build caches remain active."
+      },
+      "closedBuildAndTestFailures": "An overlapping birthday API edit caused two compile mismatches; coordinated rebuild passed. First controlled native run found two issues: Simulator protection metadata is unavailable (physical check remains skipped), and the recovery fixture used a cached repository. Corrected boundary/uncached fixture, then final 140 controls passed.",
+      "manualUI": {
+        "result": "pass on baseline executable 6ce88a54f016177c0fc86b27b795662cc1a9effba1843aac8006992f4e5d1af8",
+        "device": "iPhone 18 Pro Max / iOS 27.2 Simulator",
+        "appearance": "dark; English and Arabic; largest text controls checked, restored English/large",
+        "checked": "Merged birthday current/history without automatic schedule, rule actions at largest size, Arabic BrainMap no-match/clear/select, adjacent original navigation with dates, owner-reviewed interpretation row/detail, New person Save above keyboard, Files Cancel without false result.",
+        "data": "Fictional records only; one explicit fictional interpretation saved, person draft cancelled; no phone, model call, deletion, merge or reminder.",
+        "pending": "Current person-name title now passes birthday UI and refreshed exact-binary captures; independent model comparison is running.",
+        "toolLimit": "After Files Cancel, T3 AX sometimes reported a remote-content boundary or stale Settings tree; screenshot-grounded T3 control worked. This is not evidence of an app defect."
+      },
+      "darkCaptures": {
+        "device": "iPhone 18 Pro Max / iOS 27.2 Simulator",
+        "data": "fictional only; dark; English/Arabic; no phone result or owner visual acceptance",
+        "currentBinarySHA256": "d423402267ed654b8994ee6bb704aa5798af09d22ff90083e6f496a570c9ee26",
+        "currentFiles": [
+          "nov24-birthday.png",
+          "nov24-birthday-history.png",
+          "nov24-source-context.png",
+          "nov24-interpretation-status.png"
+        ],
+        "earlierBinarySHA256": "6ce88a54f016177c0fc86b27b795662cc1a9effba1843aac8006992f4e5d1af8",
+        "earlierUnchangedScreenFiles": [
+          "nov24-rules-largest-text.png",
+          "nov24-brainmap-ar-no-match.png",
+          "nov24-brainmap-ar-recovered.png",
+          "nov24-person-keyboard.png",
+          "nov24-import-cancel.png"
+        ],
+        "sourceCopyHashesVerified": true
+      }
+    },
+    "profileGroundingExperiment": {
+      "status": "Original-model comparison completed; keep off pending unresolved multi-person retrieval and candidate qualification.",
+      "purpose": "Use only an unambiguous eligible app-owned profile alias to skip query-name extraction while retaining contextual subject validation, topic checks and current-source checks.",
+      "limits": "Does not fix the consumed Rana benchmark, which supplies no identities. No enablement without actual independent source-set/call-count comparison. No source-inferred or provisional identities.",
+      "independentSourceReview": "No material blocker for opt-in evaluation; default off, explicit eligibility and merge downgrade, exact query spans, ambiguity fallback and current-source checks inspected.",
+      "freshCases": 12,
+      "freshComparisonArms": 24,
+      "fixtureSHA256": "ff77e70971b88d3684d78caa8fb49b579d2c9eb4d33056a9001dc86180368b4b",
+      "initialFixtureSHA256": "6d31b1cbac18078cc13e859b6c95ad6391c4a625e8d899495fcc95d43099cb0c",
+      "instrumentationRevision": "Two pre-consumption instrumentation-only changes allow one extra call for rejected hints; exact reverse reconstruction restores initial hash. Inputs, expected outcomes and source-regression gates unchanged.",
+      "fallback": "Only a positively validated hint skips extraction. Nil or ambiguous hint resolution falls through the original extraction/context path; malformed output and cancellation propagate.",
+      "consumed": true,
+      "controlled": {
+        "functions": 55,
+        "suites": 3,
+        "newFunctions": 19,
+        "seconds": 0.028,
+        "result": "pass with controlled models",
+        "scope": "One existing UI-helper-dependent function excluded only in temporary pure harness; repository test unchanged and included in forthcoming native run."
+      },
+      "coreRelease": {
+        "functions": 127,
+        "suites": 13,
+        "seconds": 10.168,
+        "result": "pass"
+      },
+      "cleanup": {
+        "temporaryHarnessFilesRemoved": 425,
+        "logicalBytesRemoved": 98910370,
+        "allocatedKiBAfter": 0
+      },
+      "sourceIdentity": {
+        "head": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+        "recipe": "Sorted changed/untracked native path UTF-8 + NUL + file bytes + NUL.",
+        "productionFiles": 59,
+        "productionSHA256": "855c8ed08d5d97fc128dff1e1c314313d9df22cc353dee5078459509040b6904",
+        "testFiles": 42,
+        "testsSHA256": "5046d100c5b573e0de8819bb3ff48fa489b9f5aedd8ab59386e6544399767020",
+        "allNativeSHA256": "08217d79494970551f37cb7eb3822bc4d8af60db889574e8680ac5f412749dc9",
+        "executableSHA256": "d423402267ed654b8994ee6bb704aa5798af09d22ff90083e6f496a570c9ee26",
+        "scope": "Current optional disabled-hint and birthday-title source: analysis/build, 159 controls and birthday UI passed; actual model comparison pending."
+      },
+      "originalModelComparison": {
+        "casesPerArm": 12,
+        "completedArms": 24,
+        "seconds": 303.381,
+        "baselineCorrect": 10,
+        "hintCorrect": 11,
+        "newFalsePositiveOrNegativeCases": 0,
+        "issueCount": 4,
+        "result": "fails acceptance",
+        "failures": "One supported case is missed with unexpected ambiguity only by baseline (two assertions). A multi-person query returns empty in both arms (two assertions). No instrumentation failure.",
+        "originalBytesPreservedAllArms": true,
+        "positiveHints": 5,
+        "positiveHintsWithCorrectBaseline": 4,
+        "rejectedHintFallbackCases": 1,
+        "log": "/tmp/memoryos-g89-hint-qwen3.log",
+        "followup": "Source diagnosis of the singular subject contract; no production enablement or changed frozen expected outcomes.",
+        "timing": {
+          "correctAcceptedHintPairs": 4,
+          "baselineMedianSeconds": 13.820999,
+          "hintMedianSeconds": 10.983156729,
+          "medianPairedSavingSeconds": 3.041,
+          "aggregateReductionPercent": 20.543,
+          "allCorrectComparablePairs": 10,
+          "allComparableAggregateReductionPercent": 3.983,
+          "rejectedHintSeconds": [
+            16.666594667,
+            22.664640625
+          ],
+          "scope": "Warm source selection only; exclude incorrect pairs, no full-chat or phone performance claim."
+        }
+      },
+      "followup": "The String? private subject scope can represent only one profile. Bounded collective validation for eligible app-owned candidates is under implementation behind the disabled flag, with fresh independent multi-profile cases. Original twelve-case inputs and expected outcomes remain regression evidence."
+    },
+    "astraContinuation": {
+      "status": "Verification complete; required semantic/retrieval quality remains blocked",
+      "receipt": "step2-astra-evaluation.json",
+      "nativeControls": "191functions/23suites plus actualnativegrammar1/1pass; source fixes independently reviewed",
+      "freshHeldOut": "5 full passes,7failures,1partial correction,1limited storage; relationship3/8",
+      "defaultModel": "4/6 frozen exact source sets; Arabic/deletion subject resolution fail",
+      "candidate": "Exact pinned asset and native runtime verified; unqualified, default unchanged",
+      "delivery": "Finalbuild/analysis/format/linkage and finalbinarydarkcaptures pass; cleanup complete; currentmemorydelivery in step2-astra-evaluation.json",
+      "publishedPilot": "14selected:2timeouts,1grammarfailure,1interrupted,10neverstarted;0scoreableanswers. Encodingfixed; separate1case replay ends memorySubjectUnclear,0answers."
+    }
+  },
+  "historicalEngineeringCorrections": "November19: grouped five initially undiscovered native functions, then completed 65/65 affected checks. Intermediate stale EventKit/leap-day and later-exception failures were repaired and rechecked; functionalFinal and laterExceptionCancellationFinding retain actual OS evidence. Earlier 15 organization and 115 memory checks are superseded by current 34 and 127 checks. Relationship meaning remains separately failed."
+}

@@ -10,6 +10,25 @@ private func absentStructuredRuntime() -> LlamaTextRuntime {
     expectedSHA256: String(repeating: "0", count: 64))
 }
 
+@Test(arguments: [
+  LlamaChatSampling.qwen3NonThinking(seed: UInt32.max),
+  LlamaChatSampling.qwen35NonThinking(seed: UInt32.max),
+])
+func randomSeedSentinelFailsBeforeOpeningAsset(sampling: LlamaChatSampling) async {
+  let runtime = LlamaTextRuntime(
+    assetURL: URL(fileURLWithPath: "/absent-memoryos-json-fixture.gguf"),
+    expectedSHA256: String(repeating: "0", count: 64), chatSampling: sampling)
+  await #expect(throws: EvaluationError.invalidSuite("A fixed chat-sampling seed is required.")) {
+    try await runtime.chat(
+      turns: [.init(role: "user", text: "Fictional seeded request")], onText: { _ in })
+  }
+  await #expect(throws: EvaluationError.invalidSuite("A fixed chat-sampling seed is required.")) {
+    try await runtime.generateJSON(
+      turns: [.init(role: "user", text: "Fictional seeded request")],
+      grammar: #"root ::= "{}""#, maximumOutputTokens: 32)
+  }
+}
+
 @Test(arguments: [0, -1, 513, Int.max])
 func structuredOutputBoundsFailBeforeOpeningAsset(limit: Int) async {
   do {

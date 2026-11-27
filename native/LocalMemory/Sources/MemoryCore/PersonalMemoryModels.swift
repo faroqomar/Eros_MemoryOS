@@ -61,6 +61,10 @@ public struct PersonalMemorySource: Identifiable, Codable, Equatable, Sendable {
   }
 }
 
+public enum PersonalMemoryInterpretationProvenance: String, Codable, Sendable {
+  case ownerReviewed, aiProposed
+}
+
 public struct PersonalMemoryEntry: Identifiable, Codable, Equatable, Sendable {
   public let id: UUID
   public var text: String
@@ -72,6 +76,8 @@ public struct PersonalMemoryEntry: Identifiable, Codable, Equatable, Sendable {
   public var evidence: [PersonalMemoryEvidence]? = nil
   public var supersededByID: UUID? = nil
   public var isOwnerCorrected: Bool? = nil
+  /// Missing metadata is unknown provenance, not evidence of AI authorship.
+  public var interpretationProvenance: PersonalMemoryInterpretationProvenance? = nil
   public var isEpisode: Bool? = nil
   public var eventTimeExpression: String? = nil
   /// Exact excerpts grouped by conversation; no model-generated claims.
@@ -79,6 +85,12 @@ public struct PersonalMemoryEntry: Identifiable, Codable, Equatable, Sendable {
   public var isEditedExcerpt: Bool? = nil
   public var excerptProfilesAreEdited: Bool? = nil
   public let createdAt: Date
+
+  public var interpretationStatus: PersonalMemoryInterpretationProvenance? {
+    guard kind == .interpretation else { return nil }
+    // Older explicit corrections remain evidence of owner review without a data rewrite.
+    return isOwnerCorrected == true ? .ownerReviewed : interpretationProvenance
+  }
 
   public static func == (lhs: Self, rhs: Self) -> Bool {
     let sameTime: Bool
@@ -92,6 +104,7 @@ public struct PersonalMemoryEntry: Identifiable, Codable, Equatable, Sendable {
       && lhs.categories == rhs.categories && lhs.confirmed == rhs.confirmed
       && lhs.evidence == rhs.evidence && lhs.supersededByID == rhs.supersededByID
       && lhs.isOwnerCorrected == rhs.isOwnerCorrected
+      && lhs.interpretationProvenance == rhs.interpretationProvenance
       && lhs.isEpisode == rhs.isEpisode && sameTime
       && lhs.excerptConversationID == rhs.excerptConversationID
       && lhs.isEditedExcerpt == rhs.isEditedExcerpt
@@ -107,6 +120,7 @@ public struct PersonalProfile: Identifiable, Codable, Equatable, Sendable {
   public var aliases: [String]
   public var mergedIntoID: UUID?
   public var photoID: UUID?
+  /// True for an AI proposal, false after owner creation/name edits, nil for unreviewed names.
   public var isSuggested: Bool? = nil
 
   public init(
@@ -437,7 +451,8 @@ extension PersonalMemorySnapshot {
       }
       if let target = entry.supersededByID {
         guard target != entry.id, entryIDs.contains(target),
-          entry.kind != .summary, !entry.confirmed, entry.isOwnerCorrected != true
+          entry.kind != .summary, !entry.confirmed, entry.isOwnerCorrected != true,
+          entry.interpretationStatus != .ownerReviewed
         else { throw PersonalMemoryError.invalidArchive }
       }
       if let conversation = entry.excerptConversationID {

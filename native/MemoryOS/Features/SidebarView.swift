@@ -2,13 +2,18 @@ import ChatPresentation
 import SwiftUI
 
 struct SidebarView: View {
+  @Environment(OrganizationViewModel.self) private var organization
   let session: DemoSession
   let chat: ChatViewModel
+  let isOpen: Bool
   let close: () -> Void
   let menuFocus: AccessibilityFocusState<MenuFocusTarget?>.Binding
   @State private var search = ""
   @State private var showHistory = false
+  @FocusState private var searchFocused: Bool
+  @AppStorage(BrainMark.preferenceKey) private var brainMark: BrainMark = .constellation
   private var language: AppLanguage { session.language }
+  private var query: String { search.trimmingCharacters(in: .whitespacesAndNewlines) }
 
   var body: some View {
     VStack(alignment: .leading, spacing: 0) {
@@ -20,22 +25,58 @@ struct SidebarView: View {
           identifier: "close-menu", action: close
         )
         .accessibilityFocused(menuFocus, equals: .sidebar)
-      }.padding(.top, 14).padding(.bottom, 18)
+      }.padding(.top, 10).padding(.bottom, 12)
 
       HStack {
         Image(systemName: "magnifyingglass").foregroundStyle(MemoryTheme.secondary)
-        TextField(language.text("Search chats", "بحث في المحادثات"), text: $search)
+          .accessibilityHidden(true)
+        let searchLabel = language.text("Search chats", "بحث في المحادثات")
+        TextField(searchLabel, text: $search, prompt: MemoryTheme.fieldPrompt(searchLabel))
+          .focused($searchFocused)
+          .submitLabel(.search)
+          .onSubmit { searchFocused = false }
           .accessibilityIdentifier("sidebar-chat-search")
-      }.padding(12).background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 16))
+        if !search.isEmpty {
+          Button {
+            search = ""
+          } label: {
+            Image(systemName: "xmark.circle.fill")
+              .frame(width: 44, height: 44)
+          }
+          .buttonStyle(.plain)
+          .foregroundStyle(MemoryTheme.secondary)
+          .accessibilityLabel(language.text("Clear chat search", "مسح بحث المحادثات"))
+          .accessibilityIdentifier("sidebar-clear-chat-search")
+        }
+      }.padding(.leading, 12).padding(.trailing, 4).frame(minHeight: 48)
+        .background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 16))
         .padding(.bottom, 14)
 
       ScrollView {
         VStack(alignment: .leading, spacing: 4) {
-          if search.isEmpty {
-            ForEach(AppSection.allCases.filter { $0 != .settings && $0 != .chat }) { section in
+          if query.isEmpty {
+            ForEach(
+              AppSection.allCases.filter { $0 != .settings && $0 != .chat && $0 != .calendar }
+            ) { section in
               row(section)
             }
-            Divider().padding(.vertical, 18)
+            if !organization.snapshot.views.isEmpty {
+              heading(language.text("Your views", "عروضك"))
+            }
+            ForEach(organization.snapshot.views) { view in
+              Button {
+                Task {
+                  await organization.openView(view)
+                  session.section = .organization
+                  close()
+                }
+              } label: {
+                Label(view.name, systemImage: "line.3.horizontal.decrease")
+                  .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
+                  .padding(.horizontal, 12)
+              }.buttonStyle(.plain).accessibilityIdentifier("sidebar-custom-tab-\(view.id)")
+            }
+            Divider().padding(.vertical, 10)
           }
           if chat.hasTemporarySession {
             Button {
@@ -54,21 +95,21 @@ struct SidebarView: View {
               .frame(minHeight: 44)
             }.accessibilityIdentifier("resume-temporary-chat")
           }
-          Text(language.text("Chats", "المحادثات")).font(.caption).foregroundStyle(
-            MemoryTheme.secondary
-          )
-          .padding(.horizontal, 12).padding(.bottom, 8)
+          heading(language.text("Saved chats", "المحادثات المحفوظة"))
           let conversations = chat.conversations.filter {
             !$0.isTemporary
               && ($0.pendingVoice != nil || !$0.messages.isEmpty || !$0.draft.isEmpty
                 || $0.title != "New chat" || $0.memoryMode)
-              && (search.isEmpty || $0.title.localizedStandardContains(search))
+              && (query.isEmpty || $0.title.localizedStandardContains(query))
           }
-          if conversations.isEmpty {
+          if !chat.hasLoaded && chat.error == nil {
+            ProgressView(language.text("Loading chats…", "جارٍ تحميل المحادثات…"))
+              .padding(12)
+          } else if conversations.isEmpty && chat.hasLoaded {
             Text(
               language.text(
-                search.isEmpty ? "Your conversations appear here." : "No matching chats.",
-                search.isEmpty ? "تظهر محادثاتك هنا." : "لا توجد محادثات مطابقة.")
+                query.isEmpty ? "Chats you save appear here." : "No chats match that title.",
+                query.isEmpty ? "تظهر محادثاتك المحفوظة هنا." : "لا توجد محادثات بهذا العنوان.")
             )
             .font(.callout).foregroundStyle(MemoryTheme.secondary).padding(12)
           }
@@ -112,33 +153,25 @@ struct SidebarView: View {
       if let error = chat.error {
         Text(ChatCopy.error(error, language: language)).font(.caption).padding(.vertical, 8)
       }
-      HStack {
-        Button {
-          Task {
-            await chat.newConversation()
-            if chat.error == nil {
-              session.section = .chat
-              close()
-            }
-          }
-        } label: {
-          Label(language.text("New chat", "محادثة جديدة"), systemImage: "square.and.pencil")
-            .font(.headline).padding(.horizontal, 20).frame(height: 48)
-            .foregroundStyle(MemoryTheme.canvas).background(MemoryTheme.ink, in: Capsule())
-        }.buttonStyle(.plain).accessibilityIdentifier("sidebar-new-chat")
-          .disabled(
-            chat.isGenerating || chat.isTranscribing || chat.isTransitioning || !chat.hasLoaded)
-        Spacer(minLength: 0)
-        IconControl(
-          symbol: "gearshape", label: language.text("Settings", "الإعدادات"),
-          identifier: "section-settings"
-        ) {
-          session.section = .settings
-          close()
+      ViewThatFits(in: .horizontal) {
+        HStack {
+          newChatButton
+          Spacer(minLength: 8)
+          settingsButton
         }
-      }.padding(.vertical, 16)
+        VStack(alignment: .leading, spacing: 6) {
+          newChatButton
+          settingsButton
+        }
+      }.padding(.vertical, 12)
     }
     .padding(.horizontal, 18)
+    .onChange(of: isOpen) { _, open in
+      if !open {
+        searchFocused = false
+        search = ""
+      }
+    }
     .sheet(isPresented: $showHistory) {
       ChatHistoryView(
         model: chat, language: language,
@@ -149,19 +182,73 @@ struct SidebarView: View {
     }
   }
 
-  private func row(_ section: AppSection) -> some View {
+  private func heading(_ title: String) -> some View {
+    Text(title).font(.subheadline.weight(.semibold))
+      .foregroundStyle(MemoryTheme.secondary)
+      .padding(.horizontal, 12).padding(.top, 8).padding(.bottom, 4)
+      .accessibilityAddTraits(.isHeader)
+  }
+
+  private var newChatButton: some View {
     Button {
+      Task {
+        await chat.newConversation()
+        if chat.error == nil {
+          session.section = .chat
+          close()
+        }
+      }
+    } label: {
+      Label(language.text("New chat", "محادثة جديدة"), systemImage: "square.and.pencil")
+        .font(.subheadline.weight(.semibold)).padding(.horizontal, 15)
+        .padding(.vertical, 8).frame(minHeight: 48)
+        .fixedSize(horizontal: false, vertical: true)
+        .foregroundStyle(MemoryTheme.canvas).background(MemoryTheme.ink, in: Capsule())
+    }.buttonStyle(.plain).accessibilityIdentifier("sidebar-new-chat")
+      .disabled(
+        chat.isGenerating || chat.isTranscribing || chat.isTransitioning || !chat.hasLoaded)
+  }
+
+  private var settingsButton: some View {
+    Button {
+      session.section = .settings
+      close()
+    } label: {
+      Label(language.text("Settings", "الإعدادات"), systemImage: "gearshape")
+        .font(.subheadline.weight(.semibold))
+        .multilineTextAlignment(.leading)
+        .frame(minWidth: 44, minHeight: 48)
+    }
+    .buttonStyle(.plain)
+    .accessibilityIdentifier("section-settings")
+  }
+
+  private func row(_ section: AppSection) -> some View {
+    let selected = section == session.section
+    return Button {
       if section == .capture { session.openHome() } else { session.section = section }
       close()
     } label: {
       HStack(spacing: 16) {
-        Image(systemName: section.symbol).font(.system(size: 21)).frame(width: 26)
-          .accessibilityHidden(true)
+        if section == .brainMap {
+          BrainMarkView(mark: brainMark).frame(width: 23, height: 23).frame(width: 26)
+            .foregroundStyle(MemoryTheme.workspaceAccent)
+        } else {
+          Image(systemName: section.symbol).font(.system(size: 21)).frame(width: 26)
+            .accessibilityHidden(true)
+        }
         Text(section == .capture ? language.text("Home", "الرئيسية") : section.title(in: language))
           .font(.body).multilineTextAlignment(.leading)
         Spacer(minLength: 0)
       }.padding(.horizontal, 12).padding(.vertical, 10).frame(minHeight: 46)
+        .foregroundStyle(selected ? MemoryTheme.workspaceAccent : MemoryTheme.ink)
+        .background(
+          selected ? MemoryTheme.workspaceAccent.opacity(0.1) : Color.clear,
+          in: RoundedRectangle(cornerRadius: 13)
+        )
         .contentShape(Rectangle())
-    }.buttonStyle(.plain).accessibilityIdentifier("section-\(section.rawValue)")
+    }.buttonStyle(.plain)
+      .accessibilityAddTraits(selected ? .isSelected : [])
+      .accessibilityIdentifier("section-\(section.rawValue)")
   }
 }

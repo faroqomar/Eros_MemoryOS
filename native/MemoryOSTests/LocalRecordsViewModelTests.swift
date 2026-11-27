@@ -1,3 +1,5 @@
+import ChatCore
+import ChatPresentation
 import Foundation
 import MemoryCore
 import Testing
@@ -45,46 +47,63 @@ struct LocalRecordsViewModelTests {
   @Test func savingPreservesExactTextAndClearsOnlyAfterSuccess() async {
     let repository = ControlledRecords()
     let model = LocalRecordsViewModel(useCases: LocalMemoryUseCases(repository: repository))
-    #expect(!model.canSave)
+    let chat = await captureChat()
+    #expect(!(await model.create(kind: .capture, text: "Before storage loads")))
     await model.load()
-    model.draft = " \n "
-    #expect(!model.canSave)
-    model.draft = "  فكرة عن Reading room\n "
-    #expect(await model.saveCapture())
-    #expect(model.draft.isEmpty)
-    #expect(model.records.first?.originalText == "  فكرة عن Reading room\n ")
+    #expect(!(await model.create(kind: .capture, text: " \n ")))
+    #expect(model.error == .blankText)
+    chat.homeDraft = "  فكرة عن Reading room\n "
+    let submitted = chat.homeDraft
+    let saved = await model.create(kind: .capture, text: submitted)
+    if saved { chat.clearSavedHomeDraft(submitted) }
+    #expect(saved)
+    #expect(chat.homeDraft.isEmpty)
+    #expect(model.records.first?.originalText.utf8.elementsEqual(submitted.utf8) == true)
   }
 
   @Test func storageFailureKeepsDraftAndReloadCanRecover() async {
     let repository = ControlledRecords()
     let model = LocalRecordsViewModel(useCases: LocalMemoryUseCases(repository: repository))
+    let chat = await captureChat()
     await model.load()
-    model.draft = "Keep this thought"
+    chat.homeDraft = "Keep this thought"
+    let submitted = chat.homeDraft
     await repository.setFailure(true)
-    #expect(!(await model.saveCapture()))
+    let failed = await model.create(kind: .capture, text: submitted)
+    if failed { chat.clearSavedHomeDraft(submitted) }
+    #expect(!failed)
     #expect(model.failure)
-    #expect(model.draft == "Keep this thought")
+    #expect(chat.homeDraft == submitted)
     #expect(!model.isBusy)
     await repository.setFailure(false)
     await model.load()
-    #expect(await model.saveCapture())
+    let saved = await model.create(kind: .capture, text: submitted)
+    if saved { chat.clearSavedHomeDraft(submitted) }
+    #expect(saved)
+    #expect(chat.homeDraft.isEmpty)
     #expect(model.records.count == 1)
   }
 
   @Test func pendingSaveRejectsDuplicateAndPreservesNewTyping() async {
     let repository = ControlledRecords()
     let model = LocalRecordsViewModel(useCases: LocalMemoryUseCases(repository: repository))
+    let chat = await captureChat()
     await model.load()
     await repository.pauseSave()
-    model.draft = "First thought"
-    let first = Task { await model.saveCapture() }
+    chat.homeDraft = "First thought"
+    let submitted = chat.homeDraft
+    let first = Task {
+      let saved = await model.create(kind: .capture, text: submitted)
+      if saved { chat.clearSavedHomeDraft(submitted) }
+      return saved
+    }
     while !(await repository.isWaiting()) { await Task.yield() }
     #expect(model.isBusy)
-    model.draft = "Next thought"
-    #expect(!(await model.saveCapture()))
+    chat.homeDraft = "Next thought"
+    #expect(!(await model.create(kind: .capture, text: chat.homeDraft)))
     await repository.releaseSave()
     #expect(await first.value)
-    #expect(model.draft == "Next thought")
+    #expect(chat.homeDraft == "Next thought")
     #expect(model.records.first?.text == "First thought")
     #expect(await repository.createCount == 1)
   }
@@ -98,8 +117,7 @@ struct LocalRecordsViewModelTests {
         useCases: useCases,
         reader: ControlledArchiveReader(data: Data("not a backup".utf8))))
     await model.load()
-    model.draft = "Retain current"
-    #expect(await model.saveCapture())
+    #expect(await model.create(kind: .capture, text: "Retain current"))
     #expect(!(await model.importArchive(from: URL(filePath: "/fictional-backup.json"))))
     #expect(model.failure)
     #expect(model.records.first?.text == "Retain current")
@@ -110,11 +128,15 @@ struct LocalRecordsViewModelTests {
   @Test func committedCreateIsNotRetriedAfterRefreshFailure() async {
     let repository = ControlledRecords()
     let model = LocalRecordsViewModel(useCases: LocalMemoryUseCases(repository: repository))
+    let chat = await captureChat()
     await model.load()
     await repository.failRereadAfterCreate()
-    model.draft = "Commit once"
-    #expect(await model.saveCapture())
-    #expect(model.draft.isEmpty)
+    chat.homeDraft = "Commit once"
+    let submitted = chat.homeDraft
+    let saved = await model.create(kind: .capture, text: submitted)
+    if saved { chat.clearSavedHomeDraft(submitted) }
+    #expect(saved)
+    #expect(chat.homeDraft.isEmpty)
     #expect(model.failure)
     #expect(await repository.createCount == 1)
     await repository.setFailure(false)
@@ -125,15 +147,21 @@ struct LocalRecordsViewModelTests {
   @Test func equivalentNewDraftBytesSurvivePendingSave() async throws {
     let repository = ControlledRecords()
     let model = LocalRecordsViewModel(useCases: LocalMemoryUseCases(repository: repository))
+    let chat = await captureChat()
     await model.load()
     await repository.pauseSave()
-    model.draft = "\u{e9}"
-    let pending = Task { await model.saveCapture() }
+    chat.homeDraft = "\u{e9}"
+    let submitted = chat.homeDraft
+    let pending = Task {
+      let saved = await model.create(kind: .capture, text: submitted)
+      if saved { chat.clearSavedHomeDraft(submitted) }
+      return saved
+    }
     while !(await repository.isWaiting()) { await Task.yield() }
-    model.draft = "e\u{301}"
+    chat.homeDraft = "e\u{301}"
     await repository.releaseSave()
     #expect(await pending.value)
-    #expect(Array(model.draft.utf8) == [101, 204, 129])
+    #expect(Array(chat.homeDraft.utf8) == [101, 204, 129])
     #expect(Array(try #require(model.records.first).originalText.utf8) == [195, 169])
   }
 
@@ -147,28 +175,52 @@ struct LocalRecordsViewModelTests {
           useCases: useCases,
           reader: ControlledArchiveReader(data: Data()))))
     let model = LocalRecordsViewModel(provider: provider)
-    model.draft = "Keep my unsaved thought"
+    let chat = await captureChat()
+    chat.homeDraft = "Keep my unsaved thought"
     await model.load()
     #expect(model.error == .storageFailure)
-    #expect(!model.canSave)
-    #expect(model.draft == "Keep my unsaved thought")
+    #expect(!model.hasLoaded)
+    #expect(chat.homeDraft == "Keep my unsaved thought")
     await model.load()
     #expect(model.error == nil)
-    #expect(model.canSave)
-    #expect(await model.saveCapture())
+    #expect(model.hasLoaded)
+    #expect(await model.create(kind: .capture, text: chat.homeDraft))
     #expect(model.records.first?.originalText == "Keep my unsaved thought")
     #expect(await provider.attempts == 2)
   }
 
   @Test func unavailableStorageDoesNotAllowEphemeralSave() async {
     let model = LocalRecordsViewModel(useCases: nil)
-    model.draft = "Unsaved"
+    let chat = await captureChat()
+    chat.homeDraft = "Unsaved"
     await model.load()
-    #expect(!model.canSave)
-    #expect(!(await model.saveCapture()))
+    #expect(!model.hasLoaded)
+    let saved = await model.create(kind: .capture, text: chat.homeDraft)
+    if saved { chat.clearSavedHomeDraft("Unsaved") }
+    #expect(!saved)
     #expect(model.failure)
-    #expect(model.draft == "Unsaved")
+    #expect(chat.homeDraft == "Unsaved")
   }
+
+  private func captureChat() async -> ChatViewModel {
+    let model = ChatViewModel(
+      useCases: ChatUseCases(repository: CaptureChatRepository(), model: CaptureChatModel()))
+    await model.load()
+    return model
+  }
+}
+
+private actor CaptureChatRepository: ChatRepository {
+  private var value = ChatSnapshot()
+  func load() -> ChatSnapshot { value }
+  func save(_ snapshot: ChatSnapshot) { value = snapshot }
+}
+
+private struct CaptureChatModel: ChatModel {
+  func generate(turns: [ChatTurn], onText: @escaping @Sendable (String) -> Void) async throws {
+    throw ChatError.modelUnavailable
+  }
+  func unload() async {}
 }
 
 private struct ControlledArchiveReader: ArchiveDataReader {

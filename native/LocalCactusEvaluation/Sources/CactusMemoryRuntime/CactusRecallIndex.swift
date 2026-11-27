@@ -13,6 +13,14 @@ public actor CactusRecallIndex: RecallIndex {
   public static let modelManifestSHA256 =
     "229ba9eb5d361209c7f01d34cac0db77a623a33bb845c2eb90050ccc831c60af"
 
+  public static let documentVectorCacheFileName = CactusDocumentVectorCache.fileName
+  // Bump this identity when tokenization, document preparation, pooling or normalization changes.
+  private static let vectorPipeline = Data(
+    SHA256.hash(
+      data: Data(
+        (upstreamRevision + modelManifestSHA256 + "qwen-nfc-byte-bpe-last-token-l2-v1").utf8)))
+  private static let embeddingDimension = 1024
+
   // The reviewed local-only build forces CPU after reading the model configuration.
   public static var isLocalOnlyRuntime: Bool { cactus_memoryos_evaluation_is_local_only() }
   public static var isCPUBackendAvailable: Bool { cpuAvailable }
@@ -35,6 +43,7 @@ public actor CactusRecallIndex: RecallIndex {
   private var dimension = 0
   private var hasSnapshot = false
   private var documentVectors: [Data: [Float]] = [:]
+  private var loadedPersistentVectors = false
   private(set) var embeddedDocumentCount = 0
   var cachedDocumentCount: Int { documentVectors.count }
 
@@ -63,36 +72,47 @@ public actor CactusRecallIndex: RecallIndex {
         "Cactus requires unique, nonempty source IDs/text and a valid similarity threshold.")
     }
     if records.isEmpty {
+      try CactusDocumentVectorCache.remove(directory: indexDirectory)
       index = nil
       sourceIDs = [:]
       dimension = 0
       hasSnapshot = true
       documentVectors = [:]
+      loadedPersistentVectors = true
       removePreviousDirectory()
       return
     }
-    var vectors: [[Float]] = []
-    var nextVectors: [Data: [Float]] = [:]
-    var cacheBytes = 0
-    for record in records {
-      try Task.checkCancellation()
-      let key = Data(SHA256.hash(data: Data(record.text.utf8)))
-      let vector: [Float]
-      if let cached = nextVectors[key] ?? documentVectors[key] {
-        vector = cached
-      } else {
-        vector = try embed(record.text, model: loadModel())
-        embeddedDocumentCount += 1
-      }
-      vectors.append(vector)
-      if nextVectors[key] == nil,
-        cacheBytes + vector.count * MemoryLayout<Float>.stride + key.count <= 64 * 1024 * 1024
-      {
-        nextVectors[key] = vector
-        cacheBytes += vector.count * MemoryLayout<Float>.stride + key.count
-      }
+    // A failed changed rebuild must not leave a searchable old snapshot. Durable
+    // vector checkpoints are reusable inputs, never a partially published index.
+    hasSnapshot = false
+    sourceIDs = [:]
+    index = nil
+    removePreviousDirectory()
+    if !loadedPersistentVectors {
+      // A persisted vector never bypasses verification of the actual pinned local model files.
+      try verifyModelFiles()
+      documentVectors = try CactusDocumentVectorCache.load(
+        directory: indexDirectory, pipeline: Self.vectorPipeline, dimension: Self.embeddingDimension
+      )
+      loadedPersistentVectors = true
     }
-    guard let first = vectors.first, vectors.allSatisfy({ $0.count == first.count }) else {
+    let preparation = try CactusVectorPreparation.prepare(
+      records: records, cached: documentVectors, dimension: Self.embeddingDimension,
+      embed: { text in
+        let vector = try embed(text, model: loadModel())
+        embeddedDocumentCount += 1
+        return vector
+      },
+      checkpoint: { vectors in
+        try CactusDocumentVectorCache.save(
+          vectors, directory: indexDirectory, pipeline: Self.vectorPipeline,
+          dimension: Self.embeddingDimension)
+        documentVectors = vectors
+      })
+    let vectors = preparation.ordered
+    guard let first = vectors.first, first.count == Self.embeddingDimension,
+      vectors.allSatisfy({ $0.count == first.count })
+    else {
       throw RetrievalError.invalidResult("Cactus returned inconsistent embedding dimensions.")
     }
     try RecallDirectory.prepare(indexDirectory)
@@ -129,7 +149,7 @@ public actor CactusRecallIndex: RecallIndex {
       sourceIDs = mappings
       dimension = first.count
       hasSnapshot = true
-      documentVectors = nextVectors
+      documentVectors = preparation.cache
       if let previous { try? FileManager.default.removeItem(at: previous) }
     } catch {
       try? FileManager.default.removeItem(at: staging)
@@ -201,6 +221,7 @@ public actor CactusRecallIndex: RecallIndex {
     sourceIDs = [:]
     hasSnapshot = false
     documentVectors = [:]
+    loadedPersistentVectors = false
     removePreviousDirectory()
   }
 

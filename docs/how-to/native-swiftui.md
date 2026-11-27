@@ -4,11 +4,11 @@
 
 The main app now links the existing reviewed local runtime behind app-owned chat interfaces. Open Chat from the sidebar or Ask local AI in Capture. Capture's Save thought remains separate. The feature source supports multiline input, local conversation history, streaming, stop/retry/regenerate, current-memory evidence and copy. C48 Step 2 adds fresh architecture/behavior review, recovery repairs and stronger conversation assertions. Local Simulator checks, dark captures and cleanup pass. The [chat task](../tasks/2026-11-15-local-ai-chat.md) records source identity, measurements and the remaining performance/device/accessibility gates.
 
-For model preparation, open Settings and choose Import local model. Select the existing reviewed `Qwen3-0.6B-Q4_K_M.gguf` file from Files. Its required SHA-256 is `ac2d97712095a558e31573f62f466a3f9d93990898b0ec79d7c974c1780d524a`. The app stages a coordinated copy, verifies its hash and keeps it under `Documents/ChatModels`. It does not download a model or send chat to a cloud service. Keep that file outside Git. Developers can reuse the already prepared evaluation asset instead of downloading a second copy. The app verifies it again before the first model load. The experimental model has known Arabic/Iraqi quality failures; source controls do not certify an answer.
+Current model preparation: open Settings and choose Import local model. Select the reviewed `Qwen3-4B-Q4_K_M.gguf` file from Files. Its required SHA-256 is `7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5`. This replaces the historical 0.6B import instruction. The app stages a coordinated copy, verifies its hash and keeps it under `Documents/ChatModels`. It does not download a model or send chat to a cloud service. Keep that file outside Git. Developers can reuse the already prepared evaluation asset instead of downloading a second copy. The app verifies it again before the first model load. The experimental model has known Arabic/Iraqi quality failures; source controls do not certify an answer.
 
 The runtime XCFramework contains arm64 Simulator and iOS slices. Use `ARCHS=arm64` for generic build/test-compilation commands. Preserve the existing source/binary receipt and setup steps in the [runtime package](../../native/LocalTextEvaluation/README.md). The new app-owned [LocalChat package](../../native/LocalChat/README.md) describes archive limits, draft checkpoints, recovery and test commands. Chat archives are separate from original-record exports. Physical iPhone behavior and iOS 18 runtime compatibility remain unverified.
 
-The remaining foundation/storage instructions retain dated context and their existing evidence boundaries.
+The [understanding and organization task](../tasks/2026-11-18-understanding-organization.md) records the active Step 2 accuracy/speed repairs and separate candidate evaluation. The remaining foundation/storage instructions retain dated context and their existing evidence boundaries.
 
 Foundation date: 2026-11-13, C20. Current demo work: 2026-11-14, C28. The [complete interface demo task](../tasks/2026-11-14-complete-interface-demo.md) records the new source, checks, and remaining review stages. The foundation descriptions below are historical where the new task supersedes them.
 
@@ -51,19 +51,21 @@ From the repository root:
 ```sh
 xcodebuild -project native/MemoryOS.xcodeproj -scheme MemoryOS \
   -destination 'generic/platform=iOS Simulator' \
-  -derivedDataPath native/.build CODE_SIGNING_ALLOWED=NO build
+  -derivedDataPath native/.build ARCHS=arm64 CODE_SIGNING_ALLOWED=NO build
 
 xcodebuild -project native/MemoryOS.xcodeproj -scheme MemoryOS \
   -destination 'platform=iOS Simulator,id=8843F67E-B2AF-4605-A3AE-25D168BD1B28' \
-  -derivedDataPath native/.build CODE_SIGNING_ALLOWED=NO \
+  -derivedDataPath native/.build ARCHS=arm64 CODE_SIGNING_ALLOWED=NO \
   -parallel-testing-enabled NO test
 ```
 
+For final test and screenshot evidence, run static analysis before the final `build-for-testing`. Analysis can relink the app and remove its embedded test plug-in. If analysis runs later, rebuild test products before `test-without-building`, then verify the installed artifact identity again. A successful analysis is not proof that the prior test bundle or screenshot binary still matches.
+
 The device identifier above belongs to this machine's current simulator. Use `xcodebuild -project native/MemoryOS.xcodeproj -scheme MemoryOS -showdestinations` to identify another destination. In T3 Code, open devices with `device_list` and `device_open`. Use the returned `agent-device` command for launches, UI actions, and screenshots.
 
-## Physical iPhone readiness
+## Historical physical iPhone readiness
 
-Observed on this machine:
+Foundation snapshot from November 13, 2026. Use the active task records for later device work:
 
 | Check | Result |
 | --- | --- |

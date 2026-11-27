@@ -18,6 +18,7 @@ public actor LocalMemorySearch: MemorySearching {
   private var mappings: [String: String] = [:]
   private var passages: [String: String] = [:]
   private var working = false
+  private var purgeWaiters: [CheckedContinuation<Void, Never>] = []
 
   public init(
     directory: URL, cactusModelDirectory: URL?, provider: LocalRecallProvider = .hybrid,
@@ -55,7 +56,7 @@ public actor LocalMemorySearch: MemorySearching {
   {
     guard !working else { throw RetrievalError.busy }
     working = true
-    defer { working = false }
+    defer { finishOperation() }
     try Task.checkCancellation()
     guard !requiresModel else {
       throw RetrievalError.unavailable("The local Cactus embedding model is missing.")
@@ -168,7 +169,7 @@ public actor LocalMemorySearch: MemorySearching {
   public func close() async throws {
     guard !working else { throw RetrievalError.busy }
     working = true
-    defer { working = false }
+    defer { finishOperation() }
     snapshot = nil
     mappings = [:]
     passages = [:]
@@ -179,6 +180,48 @@ public actor LocalMemorySearch: MemorySearching {
     // Keep exclusive ownership if a provider might still hold an open index.
     if let firstError { throw firstError }
     releaseDirectory()
+  }
+
+  /// Await active ranking before removing every owned derived file. Canonical stores stay outside this namespace.
+  public func purge() async throws {
+    while working {
+      await withCheckedContinuation { purgeWaiters.append($0) }
+    }
+    working = true
+    defer { finishOperation() }
+    try prepareOwnedDirectory()
+    snapshot = nil
+    mappings = [:]
+    passages = [:]
+    var firstError: (any Error)?
+    for index in indexes {
+      do { try await index.close() } catch { if firstError == nil { firstError = error } }
+    }
+    guard firstError == nil else { throw firstError! }
+    if let directory {
+      // Cactus close may leave a failed-removal directory. Verify removal ourselves under the process lock.
+      for (name, prefix) in [
+        ("wax", "memoryos-wax-recall-"), ("cactus", "memoryos-cactus-recall-"),
+      ] {
+        let owned = directory.appendingPathComponent(name)
+        guard FileManager.default.fileExists(atPath: owned.path) else { continue }
+        for child in try FileManager.default.contentsOfDirectory(
+          at: owned, includingPropertiesForKeys: nil)
+        where child.lastPathComponent.hasPrefix(prefix)
+          || (name == "cactus"
+            && child.lastPathComponent == CactusRecallIndex.documentVectorCacheFileName)
+        {
+          try FileManager.default.removeItem(at: child)
+        }
+      }
+    }
+  }
+
+  private func finishOperation() {
+    working = false
+    let pending = purgeWaiters
+    purgeWaiters.removeAll()
+    for waiter in pending { waiter.resume() }
   }
   deinit { if lockDescriptor >= 0 { Darwin.close(lockDescriptor) } }
 

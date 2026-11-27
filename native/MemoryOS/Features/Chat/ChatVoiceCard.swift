@@ -10,48 +10,44 @@ struct ChatVoiceCard: View {
   @State private var expanded = false
 
   var body: some View {
-    HStack {
-      Spacer(minLength: 32)
-      VStack(alignment: .leading, spacing: 8) {
-        VoicePlaybackControls(
-          duration: voice.durationSeconds, language: language, play: { play(0) }, stop: stop)
-        DisclosureGroup(isExpanded: $expanded) {
-          VStack(alignment: .leading, spacing: 12) {
-            Text(transcript).textSelection(.enabled).frame(maxWidth: .infinity, alignment: .leading)
-              .accessibilityIdentifier("voice-transcript-text")
-            if !voice.passages.isEmpty {
-              ForEach(voice.passages, id: \.id) { passage in
-                Button {
-                  play(passage.startSeconds)
-                } label: {
-                  HStack(alignment: .top) {
-                    Text(
-                      Duration.seconds(passage.startSeconds).formatted(
-                        .time(pattern: .minuteSecond))
-                    )
-                    .monospacedDigit()
-                    Text(passage.text).lineLimit(2)
-                    if passage.uncertain { Image(systemName: "questionmark.circle") }
-                  }.font(.caption).frame(minHeight: 44)
-                }.buttonStyle(.plain)
-                  .accessibilityLabel(
-                    language.text("Play passage", "تشغيل المقطع") + ": " + passage.text)
-              }
+    VStack(alignment: .leading, spacing: 8) {
+      VoicePlaybackControls(
+        duration: voice.durationSeconds, language: language, play: { play(0) }, stop: stop)
+      DisclosureGroup(isExpanded: $expanded) {
+        VStack(alignment: .leading, spacing: 12) {
+          Text(transcript).textSelection(.enabled).frame(maxWidth: .infinity, alignment: .leading)
+            .accessibilityIdentifier("voice-transcript-text")
+          if !voice.passages.isEmpty {
+            ForEach(voice.passages, id: \.id) { passage in
+              Button {
+                play(passage.startSeconds)
+              } label: {
+                HStack(alignment: .top) {
+                  Text(
+                    Duration.seconds(passage.startSeconds).formatted(
+                      .time(pattern: .minuteSecond))
+                  )
+                  .monospacedDigit()
+                  Text(passage.text).lineLimit(2)
+                  if passage.uncertain { Image(systemName: "questionmark.circle") }
+                }.font(.caption).frame(minHeight: 44)
+              }.buttonStyle(.plain)
+                .accessibilityLabel(
+                  language.text("Play passage", "تشغيل المقطع") + ": " + passage.text)
             }
-          }.padding(.top, 8)
-        } label: {
-          Text(language.text("Transcript", "النص المفرّغ")).font(.subheadline)
-            .frame(minHeight: 44)
-        }
-        .accessibilityIdentifier("voice-transcript-disclosure")
-        Text(language.text("Transcript used for this reply", "النص المستخدم لهذا الرد"))
-          .font(.caption2).foregroundStyle(MemoryTheme.secondary)
+          }
+        }.padding(.top, 8)
+      } label: {
+        Text(language.text("Transcript", "النص المفرّغ")).font(.subheadline)
+          .frame(minHeight: 44)
       }
-      .padding(16)
-      .background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 24))
-      .accessibilityElement(children: .contain)
-      .accessibilityIdentifier("chat-voice-\(voice.recordingID)")
+      .accessibilityIdentifier("voice-transcript-disclosure")
     }
+    .frame(maxWidth: .infinity, alignment: .leading)
+    .padding(16)
+    .background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 24))
+    .accessibilityElement(children: .contain)
+    .accessibilityIdentifier("chat-voice-\(voice.recordingID)")
   }
 }
 
@@ -66,57 +62,61 @@ struct ChatPendingVoiceCard: View {
   let cancel: () -> Void
   let openRecordings: () -> Void
   @State private var transcriptExpanded = false
+  @Environment(\.dynamicTypeSize) private var typeSize
 
   var body: some View {
-    HStack {
-      Spacer(minLength: 32)
-      VStack(alignment: .leading, spacing: 12) {
-        VoicePlaybackControls(
-          duration: pending.durationSeconds, language: language, play: { play(0) }, stop: stop)
-        HStack(spacing: 8) {
-          if processing { ProgressView().controlSize(.small) }
-          Text(status).font(.callout)
-            .accessibilityIdentifier(
-              stopping ? "voice-transcription-stopping" : "voice-transcription-message")
-        }.accessibilityIdentifier("voice-transcription-status")
-        if let failure = pending.failure {
-          Text(failureText(failure)).font(.callout)
-            .accessibilityIdentifier("voice-transcription-error")
-        }
-        if let transcript = pending.transcript {
-          DisclosureGroup(isExpanded: $transcriptExpanded) {
-            Text(transcript.text).textSelection(.enabled)
-              .frame(maxWidth: .infinity, alignment: .leading)
-              .accessibilityIdentifier("voice-transcript-text")
-          } label: {
-            Text(language.text("Transcript", "النص المفرّغ"))
-              .frame(minHeight: 44).contentShape(Rectangle())
-          }.accessibilityIdentifier("voice-transcript-disclosure")
-        }
-        HStack {
-          if processing && !stopping {
-            Button(action: cancel) {
-              Text(language.text("Cancel transcription", "إلغاء التفريغ"))
-                .frame(minHeight: 44).contentShape(Rectangle())
-            }.accessibilityIdentifier("voice-transcription-cancel")
-          } else if !processing {
-            Button(action: retry) {
-              Text(language.text("Retry transcription", "إعادة التفريغ"))
-                .frame(minHeight: 44).contentShape(Rectangle())
-            }.accessibilityIdentifier("voice-transcription-retry")
-          }
-          Spacer(minLength: 0)
-          Button(action: openRecordings) {
-            Image(systemName: "waveform").frame(width: 44, height: 44)
-              .contentShape(Rectangle())
-          }.accessibilityLabel(language.text("Open recordings", "فتح التسجيلات"))
-        }.font(.subheadline).frame(minHeight: 44)
+    VStack(alignment: .leading, spacing: 12) {
+      VoicePlaybackControls(
+        duration: pending.durationSeconds, language: language, play: { play(0) }, stop: stop)
+      HStack(spacing: 8) {
+        if processing { ProgressView().controlSize(.small).accessibilityHidden(true) }
+        Text(status).font(.callout)
+          .accessibilityIdentifier(
+            stopping ? "voice-transcription-stopping" : "voice-transcription-message")
+      }.accessibilityIdentifier("voice-transcription-status")
+      if let failure = pending.failure {
+        Text(failureText(failure)).font(.callout)
+          .accessibilityIdentifier("voice-transcription-error")
       }
-      .padding(16)
-      .background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 24))
-      .accessibilityElement(children: .contain)
-      .accessibilityIdentifier("chat-pending-voice")
+      if let transcript = pending.transcript {
+        DisclosureGroup(isExpanded: $transcriptExpanded) {
+          Text(transcript.text).textSelection(.enabled)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .accessibilityIdentifier("voice-transcript-text")
+        } label: {
+          Text(language.text("Transcript", "النص المفرّغ"))
+            .frame(minHeight: 44).contentShape(Rectangle())
+        }.accessibilityIdentifier("voice-transcript-disclosure")
+      }
+      let layout =
+        typeSize.isAccessibilitySize
+        ? AnyLayout(VStackLayout(alignment: .leading, spacing: 0))
+        : AnyLayout(HStackLayout(spacing: 16))
+      layout {
+        if processing && !stopping {
+          Button(action: cancel) {
+            Text(language.text("Cancel transcription", "إلغاء التفريغ"))
+              .frame(minHeight: 44).contentShape(Rectangle())
+          }.accessibilityIdentifier("voice-transcription-cancel")
+        } else if !processing {
+          Button(action: retry) {
+            Text(language.text("Retry transcription", "إعادة التفريغ"))
+              .frame(minHeight: 44).contentShape(Rectangle())
+          }.accessibilityIdentifier("voice-transcription-retry")
+        }
+        Button(action: openRecordings) {
+          Label(language.text("Open recordings", "فتح التسجيلات"), systemImage: "waveform")
+            .frame(minHeight: 44, alignment: .leading)
+            .multilineTextAlignment(.leading)
+            .contentShape(Rectangle())
+        }
+      }.font(.subheadline).frame(minHeight: 44)
     }
+    .frame(maxWidth: .infinity, alignment: .leading)
+    .padding(16)
+    .background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 24))
+    .accessibilityElement(children: .contain)
+    .accessibilityIdentifier("chat-pending-voice")
   }
 
   private var status: String {
@@ -164,21 +164,32 @@ private struct VoicePlaybackControls: View {
   let language: AppLanguage
   let play: () -> Void
   let stop: () -> Void
+  @Environment(\.dynamicTypeSize) private var typeSize
 
   var body: some View {
-    HStack(spacing: 10) {
+    let layout =
+      typeSize.isAccessibilitySize
+      ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
+      : AnyLayout(HStackLayout(spacing: 10))
+    layout {
+      VStack(alignment: .leading, spacing: 4) {
+        Text(language.text("Voice message", "رسالة صوتية")).font(.headline)
+        Text(Duration.seconds(duration).formatted(.time(pattern: .minuteSecond)))
+          .font(.caption.monospacedDigit()).foregroundStyle(MemoryTheme.secondary)
+      }
+      .frame(maxWidth: .infinity, alignment: .leading)
+      playbackButtons
+    }
+  }
+
+  private var playbackButtons: some View {
+    HStack(spacing: 4) {
       Button(action: play) {
         Image(systemName: "play.fill").font(.title3).frame(width: 44, height: 44)
           .contentShape(Rectangle())
       }.buttonStyle(.plain)
         .accessibilityLabel(language.text("Play recording", "تشغيل التسجيل"))
         .accessibilityIdentifier("voice-play")
-      VStack(alignment: .leading, spacing: 4) {
-        Text(language.text("Voice message", "رسالة صوتية")).font(.headline)
-        Text(Duration.seconds(duration).formatted(.time(pattern: .minuteSecond)))
-          .font(.caption.monospacedDigit()).foregroundStyle(MemoryTheme.secondary)
-      }
-      Spacer(minLength: 0)
       Button(action: stop) {
         Image(systemName: "stop.fill").frame(width: 44, height: 44)
           .contentShape(Rectangle())

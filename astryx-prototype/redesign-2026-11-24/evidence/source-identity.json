@@ -1,0 +1,104 @@
+{
+  "date": "2026-11-24",
+  "browser": "Chromium157/macOS reported MacIntel",
+  "captureViewport": "430x932 CSSpx; browser emulation, no physical iPhone",
+  "dark": true,
+  "sources": {
+    "index.html": {
+      "syntax": true,
+      "sha256": "dd5294911a96a0b311250a56ead6aa01d6af0a1e8f6b4a58b6fed51a0ddbcb0b"
+    },
+    "02-daybook.html": {
+      "syntax": true,
+      "sha256": "f2044329ff24f87dc8322b5a1b278a79251d7f8dd2fed2f52a90c1e5c23600a2"
+    },
+    "03-commonplace.html": {
+      "syntax": true,
+      "sha256": "f2ab7c174e0231a33d6f73040c0e77551bdfe74a1e29db56a3780edf7da51fc6"
+    },
+    "01-still.html": {
+      "syntax": true,
+      "sha256": "5a7eb99636596c65f68f37cfefd503f66f66ca0e8c995842c04c5e88cffad7aa"
+    }
+  },
+  "layoutChecks": 128,
+  "widths": [
+    320,
+    375,
+    430,
+    1440
+  ],
+  "homeTextScale": 2,
+  "minVisibleTextContrast": {
+    "Still": 6.46,
+    "Daybook": 6.41,
+    "Commonplace": 6.8
+  },
+  "reviewScores": {
+    "Still": [
+      9,
+      9.5,
+      9,
+      9,
+      9,
+      9,
+      9.5
+    ],
+    "Daybook": [
+      9.5,
+      9,
+      9,
+      9,
+      9,
+      9,
+      9
+    ],
+    "Commonplace": [
+      9,
+      9,
+      9,
+      9.5,
+      9,
+      9,
+      9
+    ]
+  },
+  "rubricOrder": [
+    "Typography",
+    "Hierarchy",
+    "Spacing & density",
+    "Color & contrast",
+    "Iconography",
+    "Consistency & polish",
+    "Clarity"
+  ],
+  "ratingType": "Independent AI heuristic judgment, not user-test results",
+  "referenceBook": {
+    "title": "Laws of UX, second edition, Jon Yablonski",
+    "suppliedPdfPages": 220,
+    "bytes": 35346355,
+    "sha256": "5cc0e6c00768f3d18ec44c764ada074e599e6eea3780a50003606cf630686ed8",
+    "consultation": "Full chapters2–4 and9; selected preface/1/5–8/10/12 passages and rendered figures; supplied-PDF pages used, not print offsets."
+  },
+  "referenceArchiveSHA256": "1ccfa78ca9561cfde2e8a6412afa5c13bba2fa3fc9535ad549303d835cb519a3",
+  "enlargedTextChecks": "Doubled font and line height at320/375/430CSSpx, actual containment and input line boxes; English and relevant Arabic checks.",
+  "cleanup": {
+    "removedFiles": 51,
+    "removedBytes": 10535019,
+    "retained": "Original archive/PDF, four deliverable HTML files, seven final dark captures, compact independent review and source manifest. Unrelated active work and tool-managed caches were not changed."
+  },
+  "galleryChecks": {
+    "cases": 12,
+    "widths": [
+      320,
+      430,
+      728,
+      1440
+    ],
+    "horizontalOverflow": false,
+    "networkBlockedSmoke": true,
+    "keyboardSelection": true,
+    "restart": true,
+    "previewConsoleMessages": 0
+  }
+}

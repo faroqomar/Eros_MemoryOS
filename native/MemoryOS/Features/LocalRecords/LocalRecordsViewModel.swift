@@ -9,7 +9,6 @@ final class LocalRecordsViewModel {
   private var useCases: LocalMemoryUseCases?
   private var archiveRestore: RestoreArchiveFromFile?
   private let provider: (any LocalMemorySessionProvider)?
-  var draft = ""
   private(set) var records: [LocalRecord] = []
   private(set) var links: [MemoryCore.RecordLink] = []
   private(set) var isBusy = false
@@ -31,12 +30,6 @@ final class LocalRecordsViewModel {
     archiveRestore = nil
   }
 
-  var draftTooLarge: Bool { draft.utf8.count > LocalMemoryLimits.textUTF8Bytes }
-
-  var canSave: Bool {
-    hasLoaded && !isBusy && !draft.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-      && !draftTooLarge
-  }
   var activeRecords: [LocalRecord] { records.filter { $0.deletedAt == nil } }
   var trashedRecords: [LocalRecord] { records.filter { $0.deletedAt != nil } }
 
@@ -63,17 +56,6 @@ final class LocalRecordsViewModel {
       try await refresh(useCases)
       error = nil
     } catch { self.error = (error as? LocalMemoryError) ?? .storageFailure }
-  }
-
-  @discardableResult
-  func saveCapture() async -> Bool {
-    guard canSave, let useCases else { return false }
-    let submitted = draft
-    return await mutate {
-      _ = try await useCases.create(kind: .capture, text: submitted)
-      // A refresh failure must not invite a duplicate of a committed capture.
-      if self.draft.utf8.elementsEqual(submitted.utf8) { self.draft = "" }
-    }
   }
 
   func create(kind: RecordKind, text: String) async -> Bool {

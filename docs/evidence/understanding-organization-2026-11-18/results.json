@@ -1,0 +1,172 @@
+{
+  "stage": "Step 1 builder evidence; independent qualification not started",
+  "baseHead": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+  "device": {
+    "model": "iPhone 18 Pro Max",
+    "os": "iOS 27.2",
+    "kind": "Simulator",
+    "physicalTesting": "paused"
+  },
+  "relationship": {
+    "model": "existing pinned local Qwen3 4B",
+    "initialTrial": {
+      "cases": 4,
+      "passed": 1,
+      "runtimeErrors": 2
+    },
+    "repairedTrial": {
+      "cases": 6,
+      "passed": 1,
+      "runtimeErrors": 3,
+      "seconds": 103.932,
+      "rows": [
+        {
+          "id": "agreement",
+          "exactEvidence": true,
+          "expectedHandling": false,
+          "kinds": [],
+          "seconds": 30.203
+        },
+        {
+          "id": "conflicting-account",
+          "error": "unsupportedCertainty",
+          "outputWithheld": true
+        },
+        {
+          "id": "arabic-uncertainty",
+          "exactEvidence": true,
+          "expectedHandling": true,
+          "kinds": [
+            "interpretation"
+          ],
+          "seconds": 16.486
+        },
+        {
+          "id": "requested-draft",
+          "error": "unsupportedCertainty",
+          "outputWithheld": true
+        },
+        {
+          "id": "topic-summary",
+          "error": "unsupportedCertainty",
+          "outputWithheld": true
+        },
+        {
+          "id": "source-injection",
+          "exactEvidence": true,
+          "expectedHandling": false,
+          "kinds": [],
+          "seconds": 13.943
+        }
+      ]
+    },
+    "qualified": false,
+    "notes": [
+      "Exact quotations do not prove entailment.",
+      "All six cases are consumed builder regression inputs.",
+      "Production automatic extraction remains disabled."
+    ]
+  },
+  "projection": {
+    "sources": 1000,
+    "runsAfterWarmup": 5,
+    "budgetSeconds": 0.25,
+    "beforeSeconds": 0.413353583,
+    "repairedSeconds": 0.003747375,
+    "finalSeconds": 0.00226025
+  },
+  "packages": {
+    "LocalMemory": {
+      "passed": 115,
+      "suites": 11
+    },
+    "LocalOrganization": {
+      "passed": 11
+    },
+    "LocalMemoryRetrieval": {
+      "executedPassed": 12,
+      "optionalSkipped": 5
+    }
+  },
+  "offline": {
+    "retrieval": "Real host Wax/Cactus comparison under deny-network sandbox; socket denial confirmed.",
+    "relationship": "Real bundled local 4B executed on Simulator; no external AI adapter. Connected network-isolation qualification remains open."
+  },
+  "limits": [
+    "Failed semantic retrieval quality.",
+    "Failed relationship model quality.",
+    "No physical-device latency, energy, sustained thermal or locked-device qualification.",
+    "Calendar delivery and OS notification firing time unverified.",
+    "Owner visual acceptance and independent Step 2 remain open.",
+    "Organization backup/export integration remains future production qualification."
+  ],
+  "nativeBuilder": {
+    "affectedTestsPassed": 17,
+    "includes": "exact annual OS notification trigger, duplicate replacement and removal",
+    "qualitySuite": "separate failed real-model suite",
+    "finalAffectedTestsPassed": 17,
+    "formatting": "45 changed Swift files pass strict lint",
+    "staticAnalysis": "Final Release Simulator analysis passes",
+    "connectedFlows": {
+      "birthdayPartialCorrectionApprovalDisableRelaunch": "pass",
+      "ruleTestApplyCustomTabUndoBrainMapSearch": "pass"
+    },
+    "liveUIAnalysis": "One fictional preference source: validation rejected unsupported output and saved no interpretation. This exploratory check does not change the frozen six-case trial.",
+    "connectedRuleFlowSeconds": 112.588
+  },
+  "sourceIdentity": {
+    "recipe": "SHA256 of sorted changed/new native paths, NUL, file bytes, NUL; tests separate",
+    "productionFiles": 37,
+    "productionSHA256": "a364203d77a18cddd346b2d9a4beac417d5c909093536d0ce52aaea5a6c70c20",
+    "testFiles": 11,
+    "testSHA256": "5a0d7c5cba8b2e99766664b01580bb8c321d935a865e4e9d38d732ccdbee57bb",
+    "binaryUUID": "ABF2F706-56E2-33FD-85DF-35259305A5A5",
+    "finalHashRecheck": "matches"
+  },
+  "cleanup": {
+    "resolvedDiagnosticArtifactsRemoved": 16,
+    "resolvedDiagnosticBytesRemoved": 347433059,
+    "agentSearchHarnessBytesRemoved": 219987506,
+    "retained": [
+      "Compact results, search comparison, reproducible fixtures and selected dark captures.",
+      "Final real-model failure bundle and connected UI pass bundle remain outside the repository for unresolved quality and selected proof.",
+      "Active shared build caches, original research, user data and unrelated concurrent documentation remain.",
+      "Final targeted-native test bundle remains outside the repository as selected native/OS adapter proof."
+    ]
+  },
+  "captures": {
+    "date": "2026-11-19",
+    "appearance": "dark",
+    "device": "iPhone 18 Pro Max, iOS 27.2 Simulator",
+    "data": "fictional",
+    "arabicTextSize": "accessibility-medium",
+    "restoredTextSize": "large",
+    "restoredLanguage": "English",
+    "files": [
+      "arabic-large-dark.png",
+      "birthday-review-dark.png",
+      "brainmap-dark.png",
+      "custom-view-dark.png",
+      "rules-dark.png",
+      "search-dark.png",
+      "source-dark.png",
+      "understanding-dark.png"
+    ],
+    "binaryUUID": "ABF2F706-56E2-33FD-85DF-35259305A5A5",
+    "aggregateSHA256": "c8bb977e536b894250d62beaa1c76e862919e0678c5c917bde3f05859ef09a77",
+    "folderKiB": 440
+  },
+  "memoryDelivery": {
+    "usefulRecall": true,
+    "currentTaskFactsReturned": 2,
+    "currentTaskSHA256": "1b356169329f79633d24bf39d103907ed68c8931c85a66af1c1efd06ac866bbf",
+    "check": "passed: 59 allowlisted sources, no pending or failed operations"
+  },
+  "finalChecks": {
+    "evidenceGuard": "pass",
+    "relativeMarkdownLinks": "4 files, no missing targets",
+    "gitWhitespace": "pass",
+    "sourceIdentityRecheck": "matches",
+    "stage": "Step 1 engineering/evaluation complete; quality gates failed; Step 2 and Step 3 not started"
+  }
+}

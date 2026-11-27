@@ -29,13 +29,15 @@ struct PersonalMemoryValidationCache {
       Set(entry.profileIDs).count == entry.profileIDs.count,
       entry.categories.count <= 30,
       entry.createdAt.timeIntervalSince1970.isFinite,
-      entry.kind != .interpretation || !entry.confirmed
+      entry.kind != .interpretation || !entry.confirmed,
+      entry.interpretationProvenance == nil || entry.kind == .interpretation
     else { throw PersonalMemoryError.invalidArchive }
     var ranges: [Range<Int>] = []
     if let evidence = entry.evidence {
       guard !evidence.isEmpty, evidence.count <= 100,
         Set(evidence.map(\.sourceID)) == Set(entry.sourceIDs),
         entry.isOwnerCorrected == true
+          || entry.interpretationStatus == .ownerReviewed
           || evidence.first?.quote.utf8.elementsEqual(entry.text.utf8) == true
       else { throw PersonalMemoryError.invalidArchive }
       for item in evidence {

@@ -27,9 +27,18 @@ struct LocalChatMemory: ChatMemoryRetrieving {
     search: any MemorySearching, relevance: (any MemoryEvidenceFiltering)? = nil,
     readRecords: @escaping @Sendable () async throws -> [MemorySearchRecord]
   ) {
+    self.init(search: search, relevance: relevance) {
+      RecallSnapshot(records: try await readRecords())
+    }
+  }
+
+  init(
+    search: any MemorySearching, relevance: (any MemoryEvidenceFiltering)? = nil,
+    readSnapshot: @escaping @Sendable () async throws -> RecallSnapshot
+  ) {
     self.search = search
     self.relevance = relevance
-    self.readSnapshot = { RecallSnapshot(records: try await readRecords()) }
+    self.readSnapshot = readSnapshot
   }
 
   func retrieve(query: String) async throws -> [ChatEvidence] {
@@ -79,10 +88,15 @@ struct LocalChatMemory: ChatMemoryRetrieving {
         } else {
           raw = passage
         }
-        return ChatEvidence(id: id, text: Self.excerpt(raw, query: resolvedQuery))
+        return ChatEvidence(id: id, text: Self.excerpt(raw))
       }
-      let selected = try await relevance.selectRelevant(
-        query: resolvedQuery, candidates: candidates)
+      let selected: Set<UUID>
+      if let subjectAware = relevance as? any SubjectAwareMemoryEvidenceFiltering {
+        selected = try await subjectAware.selectRelevant(
+          query: resolvedQuery, candidates: candidates, identities: originalSnapshot.identities)
+      } else {
+        selected = try await relevance.selectRelevant(query: resolvedQuery, candidates: candidates)
+      }
       guard selected.isSubset(of: Set(candidates.map(\.id))) else {
         throw RetrievalError.invalidResult("Relevance returned an unknown source.")
       }
@@ -91,6 +105,10 @@ struct LocalChatMemory: ChatMemoryRetrieving {
     try Task.checkCancellation()
     // Search and model verification both suspend. Neither may return a deleted or changed source.
     let current = try await readSnapshot()
+    guard originalSnapshot.identities == current.identities else {
+      throw RetrievalError.invalidResult(
+        "Profile identity or source associations changed during recall.")
+    }
     let after = Dictionary(
       current.records.map { ($0.id, $0.text) }, uniquingKeysWith: { first, _ in first })
     var seen: Set<UUID> = []
@@ -109,7 +127,7 @@ struct LocalChatMemory: ChatMemoryRetrieving {
         else { continue }
         evidence.append(
           ChatEvidence(
-            id: id, text: Self.excerpt(related, query: resolvedQuery),
+            id: id, text: Self.excerpt(related),
             sourceText: current.sourceTexts[relatedID]))
       }
       guard let id = UUID(uuidString: hit.sourceID), !excluding.contains(id),
@@ -119,7 +137,7 @@ struct LocalChatMemory: ChatMemoryRetrieving {
       evidence.append(
         ChatEvidence(
           id: id,
-          text: Self.excerpt(passage == text ? text : label + passage, query: resolvedQuery),
+          text: Self.excerpt(passage == text ? text : label + passage),
           sourceText: current.sourceTexts[hit.sourceID]
         ))
     }
@@ -130,6 +148,7 @@ struct LocalChatMemory: ChatMemoryRetrieving {
     var records: [MemorySearchRecord]
     var replacements: [String: [String]] = [:]
     var sourceTexts: [String: String] = [:]
+    var identities: [ChatEvidenceIdentity] = []
   }
 
   static func makeSnapshot(local: [LocalRecord], personal: PersonalMemorySnapshot?)
@@ -154,7 +173,8 @@ struct LocalChatMemory: ChatMemoryRetrieving {
             current = replacement
           }
           if current.supersededByID == nil
-            && (current.id != entry.id || current.isOwnerCorrected == true)
+            && (current.id != entry.id || current.isOwnerCorrected == true
+              || current.interpretationStatus == .ownerReviewed)
           {
             currentIDs.append(current.id.uuidString)
           }
@@ -162,9 +182,20 @@ struct LocalChatMemory: ChatMemoryRetrieving {
         replacements[source.id.uuidString] = Array(Set(currentIDs)).sorted()
       }
     }
+    let records = records(local: local, personal: personal, bySource: bySource)
+    let identities =
+      personal.map {
+        MemorySearchIdentity.make(
+          personal: $0, availableDocumentIDs: Set(records.compactMap { UUID(uuidString: $0.id) })
+        ).map {
+          ChatEvidenceIdentity(
+            names: $0.names, documentIDs: Set($0.documentIDs.compactMap(UUID.init(uuidString:))),
+            canGroundQuery: $0.canGroundQuery)
+        }
+      } ?? []
     return RecallSnapshot(
-      records: records(local: local, personal: personal, bySource: bySource),
-      replacements: replacements, sourceTexts: sourceTexts)
+      records: records, replacements: replacements, sourceTexts: sourceTexts, identities: identities
+    )
   }
 
   static func records(
@@ -199,9 +230,21 @@ struct LocalChatMemory: ChatMemoryRetrieving {
         let names = Self.prefixBytes(
           personal.profiles.filter { entry.profileIDs.contains($0.id) }
             .flatMap { [$0.name] + $0.aliases }.joined(separator: " "), maximum: 240)
-        let status =
-          entry.confirmed || entry.isOwnerCorrected == true
-          ? "owner-confirmed" : "user-reported / revisable"
+        let status: String
+        if entry.kind == .interpretation {
+          switch entry.interpretationStatus {
+          case .ownerReviewed:
+            status = "owner-reviewed interpretation; revisable; not an established fact"
+          case .aiProposed:
+            status = "AI-proposed hypothesis; unconfirmed; not an established fact"
+          case nil:
+            status = "interpretation; author unknown; unreviewed; not an established fact"
+          }
+        } else {
+          status =
+            entry.confirmed || entry.isOwnerCorrected == true
+            ? "owner-confirmed" : "user-reported / revisable"
+        }
         let text =
           "[\(entry.kind.rawValue); \(status); record created \(entry.createdAt.ISO8601Format())] \(names) \(entry.text)"
         return MemorySearchRecord(id: entry.id.uuidString, text: text)
@@ -223,18 +266,24 @@ struct LocalChatMemory: ChatMemoryRetrieving {
 
   /// Resolve short references only. A new explicit subject must own its own lookup.
   static func resolvedQuery(_ query: String, previousQuestions: [String]) -> String {
-    let references: Set<String> = [
-      "what else", "what else about him", "what else about her", "tell me more", "and then",
-      "شنو بعد", "وبعدين", "ماذا أيضا", "المزيد",
-    ]
     func normalized(_ text: String) -> String {
-      text.folding(
+      let folded = text.folding(
         options: [.caseInsensitive, .diacriticInsensitive],
         locale: Locale(identifier: "en_US_POSIX")
-      )
-      .components(separatedBy: CharacterSet.alphanumerics.inverted)
-      .filter { !$0.isEmpty }.joined(separator: " ")
+      ).decomposedStringWithCanonicalMapping
+      // Foundation's folding retains Arabic vowel marks. Normalize only the
+      // reference lookup; the returned questions keep their original bytes.
+      let unmarked = String(
+        String.UnicodeScalarView(
+          folded.unicodeScalars.filter { !CharacterSet.nonBaseCharacters.contains($0) }))
+      return unmarked.components(separatedBy: CharacterSet.alphanumerics.inverted)
+        .filter { !$0.isEmpty }.joined(separator: " ")
     }
+    let references = Set(
+      [
+        "what else", "what else about him", "what else about her", "tell me more", "and then",
+        "شنو بعد", "وبعدين", "ماذا أيضا", "المزيد",
+      ].map(normalized))
     guard references.contains(normalized(query)),
       let prior = previousQuestions.reversed().first(where: {
         !normalized($0).isEmpty && !references.contains(normalized($0))
@@ -244,7 +293,7 @@ struct LocalChatMemory: ChatMemoryRetrieving {
   }
 
   /// Whole-character excerpts keep the chat request bounded; archive originals remain intact.
-  static func excerpt(_ text: String, query: String) -> String {
+  static func excerpt(_ text: String) -> String {
     let maximum = 1100
     guard text.utf8.count > maximum else { return text }
     let candidate = "[Partial source excerpt] " + text

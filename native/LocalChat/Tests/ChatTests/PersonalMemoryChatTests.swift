@@ -37,6 +37,77 @@ private actor PrivacyWriteSpy: ChatRepository {
   }
 }
 
+private actor PrivateRuntimeSpy: ChatModel {
+  let suspend: Bool
+  private var started = false
+  private var observers: [CheckedContinuation<Void, Never>] = []
+  private(set) var retainedContext = false
+  private(set) var events: [String] = []
+
+  init(suspend: Bool = false) { self.suspend = suspend }
+
+  func generate(turns: [ChatTurn], onText: @escaping @Sendable (String) -> Void) async throws {
+    retainedContext = true
+    events.append("start")
+    defer { events.append("joined") }
+    onText("Fictional private reply")
+    started = true
+    for observer in observers { observer.resume() }
+    observers.removeAll()
+    guard suspend else { return }
+    let (stream, continuation) = AsyncThrowingStream<Void, Error>.makeStream()
+    try await withTaskCancellationHandler {
+      for try await _ in stream {}
+      try Task.checkCancellation()
+    } onCancel: {
+      continuation.finish(throwing: CancellationError())
+    }
+  }
+
+  func waitUntilStarted() async {
+    if started { return }
+    await withCheckedContinuation { observers.append($0) }
+  }
+
+  func unload() {
+    events.append("unload")
+    retainedContext = false
+  }
+}
+
+@Test func explicitTemporaryEndReleasesCompletedContextAndPreservesNormalReuse() async throws {
+  let runtime = PrivateRuntimeSpy()
+  let cases = ChatUseCases(repository: PrivacyWriteSpy(), model: runtime)
+  _ = try await cases.load()
+  _ = try await cases.startTemporary()
+  _ = try await cases.generate(submittedText: "Fictional private question") { _ in }
+  #expect(await runtime.retainedContext)
+  _ = try await cases.endTemporary()
+  #expect(await !runtime.retainedContext)
+  #expect(await runtime.events == ["start", "joined", "unload"])
+  _ = try await cases.generate(submittedText: "Fictional normal question") { _ in }
+  _ = try await cases.endTemporary()
+  #expect(await runtime.retainedContext)
+  #expect(await runtime.events.filter { $0 == "unload" }.count == 1)
+}
+
+@Test(arguments: [false, true]) @MainActor
+func privateLifecycleJoinsGenerationBeforeReleasingContext(background: Bool) async throws {
+  let runtime = PrivateRuntimeSpy(suspend: true)
+  let model = ChatViewModel(useCases: ChatUseCases(repository: PrivacyWriteSpy(), model: runtime))
+  await model.load()
+  await model.startTemporary()
+  model.draft = "Fictional private question"
+  let send = Task { await model.send() }
+  await runtime.waitUntilStarted()
+  if background { await model.interrupt() } else { await model.endTemporary() }
+  await send.value
+  #expect(await runtime.events == ["start", "joined", "unload"])
+  #expect(await !runtime.retainedContext)
+  #expect(!model.isGenerating)
+  #expect(model.hasTemporarySession == background)
+}
+
 @Test func tentativeMessageStillReachesChatModelAfterOriginalPreservation() async throws {
   let recorder = RecordingSpy()
   let model = TestModel()

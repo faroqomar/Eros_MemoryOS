@@ -29,21 +29,37 @@ struct ChatView: View {
   var body: some View {
     VStack(spacing: 0) {
       if model.isTemporary {
-        HStack(alignment: .top) {
+        let layout =
+          typeSize.isAccessibilitySize
+          ? AnyLayout(VStackLayout(alignment: .leading, spacing: 0))
+          : AnyLayout(HStackLayout(spacing: 12))
+        layout {
           Label(
             language.text("Temporary · nothing new saved", "مؤقتة · لا نحفظ شيئاً جديداً"),
             systemImage: "eye.slash"
           )
           .font(.caption).accessibilityIdentifier("temporary-chat-banner")
-          Spacer()
+          .frame(maxWidth: .infinity, alignment: .leading)
           Button(language.text("End", "إنهاء")) { Task { await model.endTemporary() } }
-            .accessibilityIdentifier("end-temporary-chat").frame(minHeight: 44)
-        }.padding(.horizontal, 20).background(MemoryTheme.panel)
+            .accessibilityIdentifier("end-temporary-chat")
+            .frame(minWidth: 44, minHeight: 44)
+        }
+        .padding(.horizontal, 20)
+        .padding(.vertical, 4)
+        .background(MemoryTheme.panel)
       }
       ScrollViewReader { proxy in
         ScrollView {
           LazyVStack(alignment: .leading, spacing: 24) {
-            if messages.isEmpty && model.currentConversation?.pendingVoice == nil { introduction }
+            if model.isLoading {
+              ProgressView(language.text("Loading chat…", "جارٍ تحميل المحادثة…"))
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 32)
+            } else if model.hasLoaded && messages.isEmpty
+              && model.currentConversation?.pendingVoice == nil
+            {
+              introduction
+            }
             if let first = messages.first {
               Text(first.createdAt, format: .dateTime.weekday(.wide).hour().minute())
                 .font(.caption.weight(.medium))
@@ -182,27 +198,38 @@ struct ChatView: View {
     VStack(spacing: 12) {
       Text(language.text("What’s on your mind?", "شنو ببالك؟"))
         .font(.title2.weight(.semibold))
-      Text(language.text("Chats stay on this device.", "تبقى المحادثات على هذا الجهاز."))
-        .font(.subheadline)
-        .foregroundStyle(MemoryTheme.secondary)
+        .accessibilityAddTraits(.isHeader)
+      Text(
+        language.text(
+          "Type a question or share a thought.",
+          "اكتب سؤالاً أو شارك فكرة.")
+      )
+      .font(.subheadline)
+      .foregroundStyle(MemoryTheme.secondary)
     }
+    .multilineTextAlignment(.center)
     .frame(maxWidth: .infinity)
-    .padding(.vertical, 64)
+    .padding(.vertical, 48)
   }
 
   private var composer: some View {
     VStack(alignment: .leading, spacing: 8) {
       if let failure = audio.failure {
-        HStack(alignment: .top) {
+        VStack(alignment: .leading, spacing: 2) {
           Text(audioMessage(failure, language: language)).font(.callout)
-          Button(language.text("Dismiss", "إخفاء")) { audio.dismissFailure() }.frame(minHeight: 44)
+          Button(language.text("Dismiss", "إخفاء")) { audio.dismissFailure() }
+            .frame(minHeight: 44)
         }.padding(12).background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 12))
       }
       if let error = model.error {
         VStack(alignment: .leading, spacing: 6) {
           Text(ChatCopy.error(error, language: language))
             .accessibilityIdentifier("chat-error")
-          HStack {
+          let layout =
+            typeSize.isAccessibilitySize
+            ? AnyLayout(VStackLayout(alignment: .leading, spacing: 0))
+            : AnyLayout(HStackLayout(spacing: 16))
+          layout {
             if !model.hasLoaded {
               Button(language.text("Reload chats", "إعادة تحميل المحادثات")) {
                 Task { await model.load() }
@@ -236,7 +263,7 @@ struct ChatView: View {
         .font(.caption)
         .foregroundStyle(MemoryTheme.secondary)
         .padding(.leading, 14)
-        .background(MemoryTheme.panel, in: Capsule())
+        .background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 14))
         .accessibilityIdentifier("chat-memory-active")
       }
 
@@ -260,8 +287,8 @@ struct ChatView: View {
           )
           .accessibilityIdentifier("chat-memory-mode")
         } label: {
-          Image(systemName: "plus")
-            .font(.system(size: 24, weight: .regular))
+          Image(systemName: "ellipsis")
+            .font(.system(size: 20, weight: .semibold))
             .frame(width: 44, height: 48)
         }
         .accessibilityLabel(language.text("Chat options", "خيارات المحادثة"))
@@ -269,7 +296,8 @@ struct ChatView: View {
 
         TextField(
           "", text: $model.draft,
-          prompt: Text(language.text("Message MemoryOS…", "راسل MemoryOS…")), axis: .vertical
+          prompt: MemoryTheme.fieldPrompt(language.text("Message MemoryOS…", "راسل MemoryOS…")),
+          axis: .vertical
         )
         .lineLimit(1...(typeSize.isAccessibilitySize ? 3 : 6)).font(.body).padding(.vertical, 12)
         .fixedSize(horizontal: false, vertical: true)
@@ -335,8 +363,13 @@ enum ChatCopy {
         "لم نعثر على ذكرى محفوظة مطابقة. جرّب اسماً أو عبارة محددة. لم نولّد جواباً عن الذكريات.")
     case .retrievalFailed:
       language.text(
-        "Could not read saved memories. Open Memories and reload records, then retry.",
-        "تعذّرت قراءة الذكريات. افتح الذكريات وأعد تحميل السجلات ثم حاول مجدداً.")
+        "Could not read saved memories. Open Notes and reload records, then retry.",
+        "تعذّرت قراءة الذكريات. افتح الملاحظات وأعد تحميل السجلات ثم حاول مجدداً.")
+    case .memorySubjectUnclear:
+      language.text(
+        "Which person or project do you mean? Send the question again with a full name or a unique nickname. Your original message remains here; no memory answer was generated.",
+        "أي شخص أو مشروع تقصد؟ أرسل السؤال مجدداً مع الاسم الكامل أو لقب مميز. تبقى رسالتك الأصلية هنا؛ لم نولّد جواباً عن الذكريات."
+      )
     case .messageTooLong, .blankMessage:
       language.text(
         "Keep your text and shorten this message before sending.",

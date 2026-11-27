@@ -11,6 +11,7 @@ struct AudioLibraryView: View {
   var chatBusy = false
   var startChat: ((AudioRecording) async -> Bool)?
   @Environment(\.dismiss) private var dismiss
+  @Environment(\.dynamicTypeSize) private var typeSize
   @State private var importing = false
   @State private var importingModel = false
 
@@ -28,11 +29,48 @@ struct AudioLibraryView: View {
     .onDisappear { Task { await model.leaveCapture() } }
   }
 
+  private var transcriptionSettings: some View {
+    Section {
+      Text(language.text("Local transcription", "التفريغ النصي المحلي"))
+        .font(.headline).fixedSize(horizontal: false, vertical: true)
+        .accessibilityAddTraits(.isHeader)
+        .accessibilityIdentifier("audio-transcription-heading")
+      Picker(
+        language.text("Transcription engine", "محرك التفريغ النصي"), selection: $model.engine
+      ) {
+        ForEach(model.engines, id: \.self) { Text($0).tag($0) }
+      }.disabled(model.isProcessing || model.busy)
+      Text(
+        language.text(
+          "Voice chats use the bundled multilingual speech model. You can import a model folder for the selected engine here. Transcription supports recordings up to 15 minutes and runs on this device.",
+          "تستخدم المحادثات الصوتية نموذج الصوت متعدد اللغات المضمّن. يمكنك استيراد مجلد نموذج للمحرك المحدد هنا. يدعم التفريغ تسجيلات حتى 15 دقيقة ويعمل على هذا الجهاز."
+        )
+      )
+      .font(.footnote).foregroundStyle(MemoryTheme.secondary)
+      Button {
+        importingModel = true
+      } label: {
+        Text(language.text("Import model folder", "استيراد مجلد النموذج"))
+          .font(.body).fixedSize(horizontal: false, vertical: true)
+          .frame(maxWidth: .infinity, alignment: .leading)
+      }
+      .disabled(model.isProcessing || model.busy).accessibilityIdentifier("audio-model-import")
+      if model.modelInstalled {
+        Text(
+          language.text(
+            "Model folder saved. Open a recording to transcribe.",
+            "حُفظ مجلد النموذج. افتح تسجيلاً لتفريغه نصياً.")
+        ).font(.footnote)
+      }
+    }
+  }
+
   private var libraryContent: some View {
     List {
       if let failure = model.failure {
         Section {
-          Text(audioMessage(failure, language: language)).foregroundStyle(.primary)
+          Label(audioMessage(failure, language: language), systemImage: "exclamationmark.circle")
+            .foregroundStyle(.primary)
             .accessibilityIdentifier("audio-error")
           Button(language.text("Dismiss message", "إغلاق الرسالة")) { model.dismissFailure() }
           if !model.hasLoaded {
@@ -52,17 +90,17 @@ struct AudioLibraryView: View {
         if model.draftID == nil {
           Text(
             language.text(
-              "Audio stays on this device. Allow microphone access when you start. Leaving the app stops recording.",
-              "يبقى الصوت على هذا الجهاز. اسمح باستخدام الميكروفون عند البدء. يتوقف التسجيل عند مغادرة التطبيق."
+              "Record on this device. Leaving the app stops the recording.",
+              "سجّل على هذا الجهاز. يتوقف التسجيل عند مغادرة التطبيق."
             )
           )
           .font(.footnote).foregroundStyle(MemoryTheme.secondary)
           Button {
             Task { await model.start(defaultTitle: language.text("Voice note", "ملاحظة صوتية")) }
           } label: {
-            Text(language.text("Start recording", "بدء التسجيل"))
+            Label(language.text("Start recording", "بدء التسجيل"), systemImage: "mic")
               .font(.body).fixedSize(horizontal: false, vertical: true)
-              .frame(maxWidth: .infinity, alignment: .leading)
+              .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
           }
           .disabled(!model.canStart || chatBusy).accessibilityIdentifier("audio-start")
         } else {
@@ -97,20 +135,26 @@ struct AudioLibraryView: View {
           importing = true
         } label: {
           Label(
-            language.text("Import audio", "استيراد صوت"), systemImage: "square.and.arrow.down")
+            language.text("Import audio", "استيراد صوت"), systemImage: "square.and.arrow.down"
+          )
+          .frame(maxWidth: .infinity, minHeight: 44, alignment: .leading)
         }.disabled(model.busy || model.draftID != nil || model.isProcessing)
           .accessibilityIdentifier("audio-import")
-        Text(
-          language.text(
-            "WAV, M4A, MP3, AIFF, CAF and FLAC. Up to 250 MB and 2 hours. Unsupported codecs or damaged files cannot be imported.",
-            "WAV وM4A وMP3 وAIFF وCAF وFLAC. حتى 250 ميغابايت وساعتين. لا يمكن استيراد الترميزات غير المدعومة أو الملفات التالفة."
+        DisclosureGroup(language.text("Audio formats and limits", "تنسيقات الصوت والحدود")) {
+          Text(
+            language.text(
+              "WAV, M4A, MP3, AIFF, CAF and FLAC. Up to 250 MB and 2 hours.",
+              "WAV وM4A وMP3 وAIFF وCAF وFLAC. حتى 250 ميغابايت وساعتين."
+            )
           )
-        )
-        .font(.caption).foregroundStyle(MemoryTheme.secondary)
+          .font(.callout)
+          .foregroundStyle(MemoryTheme.secondary)
+        }
       }
       if model.busy { ProgressView(language.text("Saving or loading…", "حفظ أو تحميل…")) }
+      if typeSize.isAccessibilitySize { transcriptionSettings }
       Section(language.text("Recordings", "التسجيلات")) {
-        if model.recordings.isEmpty {
+        if model.hasLoaded && model.recordings.isEmpty {
           Text(
             language.text(
               "Record a thought or import an audio file to begin.",
@@ -124,8 +168,14 @@ struct AudioLibraryView: View {
           } label: {
             VStack(alignment: .leading, spacing: 5) {
               Text(recording.title).font(.headline)
-              Text(recording.createdAt, style: .date).font(.caption).foregroundStyle(
-                MemoryTheme.secondary)
+              Text(recording.createdAt, style: .date)
+                .font(.subheadline)
+                .foregroundStyle(MemoryTheme.secondary)
+              if let seconds = recording.durationSeconds {
+                Text(Duration.seconds(seconds).formatted(.time(pattern: .minuteSecond)))
+                  .font(.caption.monospacedDigit())
+                  .foregroundStyle(MemoryTheme.secondary)
+              }
               if recording.state != .saved {
                 Text(
                   language.text(
@@ -150,39 +200,7 @@ struct AudioLibraryView: View {
           }
         }
       }
-      Section {
-        Text(language.text("Local transcription", "التفريغ النصي المحلي"))
-          .font(.headline).fixedSize(horizontal: false, vertical: true)
-          .accessibilityAddTraits(.isHeader)
-          .accessibilityIdentifier("audio-transcription-heading")
-        Picker(
-          language.text("Transcription engine", "محرك التفريغ النصي"), selection: $model.engine
-        ) {
-          ForEach(model.engines, id: \.self) { Text($0).tag($0) }
-        }.disabled(model.isProcessing || model.busy)
-        Text(
-          language.text(
-            "Voice chats use the bundled multilingual speech model. You can import a model folder for the selected engine here. Transcription supports recordings up to 15 minutes and runs on this device.",
-            "تستخدم المحادثات الصوتية نموذج الصوت متعدد اللغات المضمّن. يمكنك استيراد مجلد نموذج للمحرك المحدد هنا. يدعم التفريغ تسجيلات حتى 15 دقيقة ويعمل على هذا الجهاز."
-          )
-        )
-        .font(.footnote).foregroundStyle(MemoryTheme.secondary)
-        Button {
-          importingModel = true
-        } label: {
-          Text(language.text("Import model folder", "استيراد مجلد النموذج"))
-            .font(.body).fixedSize(horizontal: false, vertical: true)
-            .frame(maxWidth: .infinity, alignment: .leading)
-        }
-        .disabled(model.isProcessing || model.busy).accessibilityIdentifier("audio-model-import")
-        if model.modelInstalled {
-          Text(
-            language.text(
-              "Model folder saved. Open a recording to transcribe.",
-              "حُفظ مجلد النموذج. افتح تسجيلاً لتفريغه نصياً.")
-          ).font(.footnote)
-        }
-      }
+      if !typeSize.isAccessibilitySize { transcriptionSettings }
     }
     .accessibilityIdentifier("audio-library-list")
     .scrollContentBackground(.hidden).background(MemoryTheme.canvas)
@@ -243,6 +261,7 @@ private struct AudioRecordingDetail: View {
   let language: AppLanguage
   @State private var editing: PassageEdit?
   @State private var exporting = false
+  @Environment(\.dynamicTypeSize) private var typeSize
   private var recording: AudioRecording? {
     model.snapshot.recordings.first { $0.id == recordingID }
   }
@@ -253,7 +272,7 @@ private struct AudioRecordingDetail: View {
   var body: some View {
     List {
       if let recording {
-        Section {
+        Section(language.text("Playback and transcription", "التشغيل والتفريغ النصي")) {
           Button(language.text("Play original audio", "تشغيل الصوت الأصلي")) {
             Task { await model.play(id: recordingID) }
           }.disabled(model.draftID != nil).accessibilityIdentifier("audio-play")
@@ -285,8 +304,8 @@ private struct AudioRecordingDetail: View {
             }
           }
           if let failure = model.failure {
-            Text(audioMessage(failure, language: language)).accessibilityIdentifier(
-              "audio-detail-error")
+            Label(audioMessage(failure, language: language), systemImage: "exclamationmark.circle")
+              .accessibilityIdentifier("audio-detail-error")
           }
           ForEach(
             model.snapshot.jobs.filter {
@@ -325,7 +344,7 @@ private struct AudioRecordingDetail: View {
               }
             } label: {
               Label(record.text, systemImage: selected ? "checkmark.circle.fill" : "circle")
-                .lineLimit(2)
+                .lineLimit(typeSize.isAccessibilitySize ? nil : 2)
             }.disabled(model.busy).accessibilityAddTraits(selected ? .isSelected : [])
           }
         }
@@ -348,7 +367,10 @@ private struct AudioRecordingDetail: View {
                 } label: {
                   Label(
                     "\(timestamp(passage.startSeconds)) – \(timestamp(passage.endSeconds))",
-                    systemImage: "play.circle")
+                    systemImage: "play.circle"
+                  )
+                  .frame(minHeight: 44)
+                  .contentShape(Rectangle())
                 }.accessibilityLabel(
                   language.text(
                     "Play passage at \(timestamp(passage.startSeconds))",
@@ -384,8 +406,10 @@ private struct AudioRecordingDetail: View {
                   ).font(.caption)
                 }
                 Button(language.text("Correct passage", "تصحيح المقطع")) {
+                  model.dismissFailure()
                   editing = PassageEdit(transcriptID: transcript.id, passage: passage)
                 }
+                .frame(minHeight: 44)
               }
               .buttonStyle(.borderless)
               .padding(.vertical, 6)
@@ -403,6 +427,24 @@ private struct AudioRecordingDetail: View {
             }.accessibilityIdentifier("audio-export")
           }
         }
+      } else {
+        ContentUnavailableView {
+          Label(
+            language.text("Recording unavailable", "التسجيل غير متاح"),
+            systemImage: "waveform")
+        } description: {
+          Text(
+            language.text(
+              "Reload the library to check this recording.",
+              "أعد تحميل المكتبة للتحقق من هذا التسجيل."))
+        } actions: {
+          Button(language.text("Reload recordings", "إعادة تحميل التسجيلات")) {
+            Task { await model.load() }
+          }
+          .frame(minHeight: 44)
+          .disabled(model.busy)
+        }
+        .listRowBackground(Color.clear)
       }
     }
     .toolbar(.visible, for: .navigationBar)
@@ -451,8 +493,10 @@ private struct PassageEditor: View {
     NavigationStack {
       Form {
         Section(language.text("Transcript", "النص")) {
-          TextEditor(text: $text).frame(minHeight: 160).accessibilityIdentifier(
-            "audio-correction-text")
+          TextEditor(text: $text)
+            .frame(minHeight: 160)
+            .accessibilityLabel(language.text("Corrected transcript", "النص المصحّح"))
+            .accessibilityIdentifier("audio-correction-text")
           Toggle(language.text("Needs review", "يحتاج مراجعة"), isOn: $uncertain)
           TextField(
             language.text("Speaker label (optional)", "اسم المتحدث (اختياري)"), text: $speaker)
@@ -466,10 +510,15 @@ private struct PassageEditor: View {
         }
         if let failure = model.failure { Text(audioMessage(failure, language: language)) }
       }
+      .scrollContentBackground(.hidden)
+      .background(MemoryTheme.canvas)
       .navigationTitle(language.text("Review passage", "مراجعة المقطع"))
+      .navigationBarTitleDisplayMode(.inline)
+      .interactiveDismissDisabled(model.busy)
       .toolbar {
         ToolbarItem(placement: .cancellationAction) {
           Button(language.text("Cancel", "إلغاء")) { dismiss() }
+            .disabled(model.busy)
         }
         ToolbarItem(placement: .confirmationAction) {
           Button(language.text("Save", "حفظ")) {

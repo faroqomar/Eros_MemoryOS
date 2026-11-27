@@ -12,30 +12,37 @@ struct ChatMessageRow: View {
   let playVoice: (UUID, Double) -> Void
   let stopVoice: () -> Void
   @State private var copied = false
+  @AppStorage(BrainMark.preferenceKey) private var brainMark: BrainMark = .constellation
   @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
   var body: some View {
-    Group {
-      if let voice = message.voice, message.role == .user {
-        ChatVoiceCard(
-          voice: voice, transcript: message.text, language: language,
-          play: { seconds in playVoice(voice.recordingID, seconds) }, stop: stopVoice)
-      } else if message.role == .user {
-        HStack(alignment: .top, spacing: 0) {
-          Spacer(minLength: 44)
+    VStack(alignment: .leading, spacing: 8) {
+      if message.role == .user {
+        Text(language.text("You", "أنت"))
+          .font(.subheadline.weight(.semibold))
+          .foregroundStyle(MemoryTheme.secondary)
+          .accessibilityAddTraits(.isHeader)
+        if let voice = message.voice {
+          ChatVoiceCard(
+            voice: voice, transcript: message.text, language: language,
+            play: { seconds in playVoice(voice.recordingID, seconds) }, stop: stopVoice)
+        } else {
           Text(message.text)
             .font(.body)
             .lineSpacing(4)
             .textSelection(.enabled)
-            .padding(.horizontal, 18)
-            .padding(.vertical, 13)
-            .background(MemoryTheme.selection, in: RoundedRectangle(cornerRadius: 24))
         }
-        .frame(maxWidth: .infinity, alignment: .trailing)
       } else {
+        HStack(spacing: 6) {
+          BrainMarkView(mark: brainMark).frame(width: 18, height: 18)
+          Text("MemoryOS").font(.subheadline.weight(.semibold))
+            .accessibilityAddTraits(.isHeader)
+        }
+        .foregroundStyle(MemoryTheme.workspaceAccent)
         assistantReply
       }
     }
+    .frame(maxWidth: .infinity, alignment: .leading)
     .accessibilityElement(children: .contain)
     .accessibilityIdentifier("chat-message-\(message.id)")
   }
@@ -61,18 +68,34 @@ struct ChatMessageRow: View {
         if !message.sources.isEmpty {
           Text(
             language.text(
-              "Retrieved sources · Check the answer", "المصادر المسترجعة · تحقّق من الجواب")
+              "Sources to check", "مصادر للتحقّق")
           )
-          .font(.caption).foregroundStyle(MemoryTheme.secondary)
+          .font(.subheadline.weight(.semibold))
+          .foregroundStyle(MemoryTheme.secondary)
+          .accessibilityAddTraits(.isHeader)
           ForEach(message.sources) { evidence in
+            let preview = sourcePreview(evidence)
             Button {
               openSource(evidence)
             } label: {
-              Label(sourcePreview(evidence), systemImage: "doc.text")
-                .font(.callout).lineLimit(2).frame(minHeight: 44)
+              HStack(alignment: .firstTextBaseline, spacing: 10) {
+                Label(preview, systemImage: "doc.text")
+                  .font(.callout)
+                  .multilineTextAlignment(.leading)
+                  .frame(maxWidth: .infinity, alignment: .leading)
+                Image(systemName: "chevron.forward")
+                  .font(.caption.weight(.semibold))
+                  .foregroundStyle(MemoryTheme.secondary)
+                  .accessibilityHidden(true)
+              }
+              .padding(.horizontal, 12)
+              .padding(.vertical, 8)
+              .frame(minHeight: 44)
+              .background(MemoryTheme.panel, in: RoundedRectangle(cornerRadius: 12))
+              .contentShape(Rectangle())
             }.buttonStyle(.plain)
               .accessibilityLabel(
-                language.text("Open source", "فتح المصدر") + ": " + sourcePreview(evidence)
+                language.text("Open source", "فتح المصدر") + ": " + preview
               )
               .accessibilityIdentifier("chat-source-\(evidence.id)")
           }

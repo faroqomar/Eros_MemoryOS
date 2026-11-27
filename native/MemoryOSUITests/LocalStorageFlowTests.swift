@@ -40,7 +40,11 @@ final class LocalStorageFlowTests: XCTestCase {
     XCTAssertEqual(app.staticTexts["local-record-original"].label, original)
     app.swipeUp()
     app.buttons["link-local-record"].tap()
-    app.buttons[person].tap()
+    let linkCandidate = app.buttons.matching(
+      NSPredicate(format: "label BEGINSWITH %@", person + ",")
+    ).firstMatch
+    XCTAssertTrue(linkCandidate.waitForExistence(timeout: 5))
+    linkCandidate.tap()
     XCTAssertTrue(app.buttons[person].waitForExistence(timeout: 5))
     app.swipeUp()
     app.buttons["trash-local-record"].tap()
@@ -64,13 +68,15 @@ final class LocalStorageFlowTests: XCTestCase {
 
   private func replaceText(_ editor: XCUIElement, with text: String, app: XCUIApplication) {
     editor.tap()
-    editor.press(forDuration: 1.2)
-    if app.menuItems["Select All"].waitForExistence(timeout: 1) {
-      app.menuItems["Select All"].tap()
-    } else if app.buttons["Select All"].exists {
-      app.buttons["Select All"].tap()
-    } else {
-      editor.tap(withNumberOfTaps: 3, numberOfTouches: 1)
+    if let current = editor.value as? String, !current.isEmpty, current != editor.placeholderValue {
+      editor.press(forDuration: 1.2)
+      if app.menuItems["Select All"].waitForExistence(timeout: 1) {
+        app.menuItems["Select All"].tap()
+      } else if app.buttons["Select All"].exists {
+        app.buttons["Select All"].tap()
+      } else {
+        editor.tap(withNumberOfTaps: 3, numberOfTouches: 1)
+      }
     }
     editor.typeText(text)
     XCTAssertEqual(editor.value as? String, text)
