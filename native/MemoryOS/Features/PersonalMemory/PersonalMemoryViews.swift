@@ -7,21 +7,38 @@ struct PersonalMemoryHomeView: View {
   let records: LocalRecordsViewModel
   let language: AppLanguage
   let openCapture: () -> Void
-  @State private var originals = false
+  let openCollection: (AppSection) -> Void
+  @Binding var originals: Bool
   @State private var adding = false
   @State private var exporting = false
   @State private var restoring = false
+  @Environment(\.dynamicTypeSize) private var typeSize
 
   var body: some View {
     VStack(spacing: 0) {
       Picker(language.text("Memory collection", "مجموعة الذكريات"), selection: $originals) {
         Text(language.text("Organized", "منظمة")).tag(false)
         Text(language.text("Saved records", "السجلات المحفوظة")).tag(true)
-      }.pickerStyle(.segmented).padding(.horizontal).padding(.vertical, 8)
+      }
+      .modifier(NotesCollectionPickerStyle(usesMenu: typeSize.isAccessibilitySize))
+      .padding(.horizontal).padding(.vertical, 8)
       if originals {
         LocalRecordsListView(model: records, language: language, openCapture: openCapture)
       } else {
         List {
+          Section {
+            editingActions
+          }
+          Section(language.text("Collections", "المجموعات")) {
+            collectionRow(
+              .profiles, symbol: "person.2",
+              subtitle: language.text(
+                "Profiles and what you remember about them", "الملفات وما تتذكره عن أصحابها"))
+            collectionRow(
+              .projects, symbol: "folder",
+              subtitle: language.text(
+                "Project notes, plans and ideas", "ملاحظات المشاريع والخطط والأفكار"))
+          }
           PersonalMemoryStatus(model: model, language: language)
           if !model.snapshot.pendingSources.isEmpty {
             Section(language.text("A quick question", "سؤال قصير")) {
@@ -49,13 +66,15 @@ struct PersonalMemoryHomeView: View {
               }
             }
           }
-          Section(language.text("Original sources", "المصادر الأصلية")) {
-            ForEach(model.snapshot.sources.reversed()) { source in
-              NavigationLink(value: DemoDestination.personalSource(source.id)) {
-                VStack(alignment: .leading, spacing: 5) {
-                  Text(source.text).lineLimit(2)
-                  Text(source.createdAt, format: .dateTime.month().day().hour().minute())
-                    .font(.caption).foregroundStyle(MemoryTheme.secondary)
+          if !model.snapshot.sources.isEmpty {
+            Section(language.text("Original sources", "المصادر الأصلية")) {
+              ForEach(model.snapshot.sources.reversed()) { source in
+                NavigationLink(value: DemoDestination.personalSource(source.id)) {
+                  VStack(alignment: .leading, spacing: 5) {
+                    Text(source.text).lineLimit(2)
+                    Text(source.createdAt, format: .dateTime.month().day().hour().minute())
+                      .font(.caption).foregroundStyle(MemoryTheme.secondary)
+                  }
                 }
               }
             }
@@ -81,18 +100,6 @@ struct PersonalMemoryHomeView: View {
           .accessibilityIdentifier("personal-memory-list")
       }
     }
-    .safeAreaInset(edge: .bottom) {
-      if !originals {
-        HStack {
-          Button(language.text("Add information", "إضافة معلومة")) { adding = true }
-            .accessibilityIdentifier("add-personal-information")
-          Spacer()
-          Button(language.text("Undo", "تراجع")) { Task { await model.undo() } }
-            .disabled(model.isBusy || model.snapshot.events.isEmpty)
-            .accessibilityIdentifier("personal-undo")
-        }.padding().background(MemoryTheme.canvas)
-      }
-    }
     .sheet(isPresented: $adding) {
       PersonalInformationEditor(model: model, profileID: nil, language: language)
     }
@@ -108,6 +115,81 @@ struct PersonalMemoryHomeView: View {
       }
     }
     .task { await model.load() }
+  }
+
+  private var editingActions: some View {
+    let layout =
+      typeSize.isAccessibilitySize
+      ? AnyLayout(VStackLayout(alignment: .leading, spacing: 4))
+      : AnyLayout(HStackLayout(spacing: 12))
+    return layout {
+      Button {
+        adding = true
+      } label: {
+        Label(language.text("Add information", "إضافة معلومة"), systemImage: "plus")
+          .font(.body.weight(.semibold))
+          .frame(minHeight: 44, alignment: .leading)
+      }
+      .buttonStyle(.borderless)
+      .foregroundStyle(MemoryTheme.workspaceAccent)
+      .accessibilityIdentifier("add-personal-information")
+      if !typeSize.isAccessibilitySize { Spacer(minLength: 0) }
+      Button {
+        Task { await model.undo() }
+      } label: {
+        Label(language.text("Undo", "تراجع"), systemImage: "arrow.uturn.backward")
+          .frame(minWidth: 44, minHeight: 44)
+      }
+      .buttonStyle(.borderless)
+      .accessibilityHint(
+        language.text("Reverses the last memory change", "يلغي آخر تغيير في الذاكرة")
+      )
+      .disabled(model.isBusy || model.snapshot.events.isEmpty)
+      .accessibilityIdentifier("personal-undo")
+    }
+  }
+
+  private func collectionRow(_ section: AppSection, symbol: String, subtitle: String) -> some View {
+    Button {
+      openCollection(section)
+    } label: {
+      HStack(spacing: 14) {
+        Image(systemName: symbol)
+          .font(.title3)
+          .frame(width: 44, height: 44)
+          .foregroundStyle(MemoryTheme.workspaceAccent)
+          .background(
+            MemoryTheme.workspaceAccent.opacity(0.1), in: RoundedRectangle(cornerRadius: 12)
+          )
+          .accessibilityHidden(true)
+        VStack(alignment: .leading, spacing: 4) {
+          Text(section.title(in: language)).font(.body.weight(.semibold))
+          Text(subtitle).font(.subheadline).foregroundStyle(MemoryTheme.secondary)
+        }
+        .accessibilityElement(children: .combine)
+        Spacer(minLength: 8)
+        Image(systemName: "chevron.forward").font(.caption.weight(.semibold))
+          .foregroundStyle(MemoryTheme.secondary)
+          .accessibilityHidden(true)
+      }
+      .foregroundStyle(MemoryTheme.ink)
+      .padding(.vertical, 5)
+      .contentShape(Rectangle())
+    }
+    .buttonStyle(.plain)
+    .accessibilityIdentifier("notes-collection-\(section.rawValue)")
+  }
+}
+
+private struct NotesCollectionPickerStyle: ViewModifier {
+  let usesMenu: Bool
+
+  @ViewBuilder func body(content: Content) -> some View {
+    if usesMenu {
+      content.pickerStyle(.menu).frame(maxWidth: .infinity, alignment: .leading)
+    } else {
+      content.pickerStyle(.segmented)
+    }
   }
 }
 
@@ -192,7 +274,10 @@ struct PersonalEntryRow: View {
   var body: some View {
     VStack(alignment: .leading, spacing: 6) {
       Text(entry.text).lineLimit(3)
-      Text(entry.kind.title(language)).font(.caption).foregroundStyle(MemoryTheme.secondary)
+      Text(entry.statusTitle(language)).font(.caption).foregroundStyle(MemoryTheme.secondary)
+      if let confirmation = entry.confirmationTitle(language) {
+        Text(confirmation).font(.caption).foregroundStyle(MemoryTheme.secondary)
+      }
       if entry.supersededByID != nil {
         Text(language.text("Earlier report", "معلومة سابقة"))
           .font(.caption).foregroundStyle(MemoryTheme.secondary)
@@ -211,69 +296,166 @@ struct PersonalEntryRow: View {
 
 struct PersonalSourceView: View {
   @Environment(PersonalMemoryViewModel.self) private var model
-  let source: PersonalMemorySource
+  @Environment(\.dismiss) private var dismiss
+  @State private var confirmingForget = false
+  let sourceID: UUID
   let language: AppLanguage
-  private var current: PersonalMemorySource {
-    model.snapshot.sources.first { $0.id == source.id } ?? source
-  }
   private var entries: [PersonalMemoryEntry] {
-    model.snapshot.entries.filter { $0.sourceIDs.contains(source.id) }
+    model.snapshot.entries.filter { $0.sourceIDs.contains(sourceID) }
       .sorted { $0.createdAt > $1.createdAt }
   }
 
   var body: some View {
-    List {
-      PersonalMemoryStatus(model: model, language: language)
-      Section(language.text("Unchanged original", "الأصل دون تعديل")) {
-        Text(source.text).textSelection(.enabled).accessibilityIdentifier("personal-original")
-        Text(source.createdAt, format: .dateTime.year().month().day().hour().minute())
-        Text(source.origin).foregroundStyle(MemoryTheme.secondary)
-      }
-      if let context = source.clarificationContext {
-        Section(language.text("Question you answered", "السؤال الذي أجبت عنه")) {
-          Text(context.question)
-          Text(context.quote).foregroundStyle(MemoryTheme.secondary)
-          NavigationLink(value: DemoDestination.personalSource(context.parentSourceID)) {
-            Text(language.text("Original conversation source", "المصدر الأصلي للمحادثة"))
+    Group {
+      if let context = model.sourceContext(sourceID) {
+        let source = context.source
+        List {
+          PersonalMemoryStatus(model: model, language: language)
+          Section(language.text("Unchanged original", "الأصل دون تعديل")) {
+            Text(source.text).textSelection(.enabled).accessibilityIdentifier("personal-original")
+            Text(source.createdAt, format: .dateTime.year().month().day().hour().minute())
+            Text(source.origin).foregroundStyle(MemoryTheme.secondary)
+          }
+          if let context = source.clarificationContext {
+            Section(language.text("Question you answered", "السؤال الذي أجبت عنه")) {
+              Text(context.question)
+              Text(context.quote).foregroundStyle(MemoryTheme.secondary)
+              NavigationLink {
+                PersonalSourceView(sourceID: context.parentSourceID, language: language)
+              } label: {
+                Text(language.text("Original conversation source", "المصدر الأصلي للمحادثة"))
+              }
+            }
+          }
+          if source.analysis?.status == .needsClarification {
+            Section(language.text("A quick question", "سؤال قصير")) {
+              PersonalClarificationCard(model: model, source: source, language: language)
+            }
+          }
+          if let answerID = source.analysis?.answerSourceID,
+            let answer = model.snapshot.sources.first(where: { $0.id == answerID })
+          {
+            Section(language.text("Your clarification", "توضيحك")) {
+              if let context = answer.clarificationContext { Text(context.question) }
+              NavigationLink {
+                PersonalSourceView(sourceID: answer.id, language: language)
+              } label: {
+                Text(answer.text).lineLimit(4)
+              }
+            }
+          }
+          if source.conversationID != nil {
+            Section(language.text("Adjacent saved messages", "الرسائل المحفوظة المجاورة")) {
+              if context.adjacent.isEmpty {
+                Text(
+                  language.text(
+                    "No adjacent saved message is available.", "لا تتوفر رسالة محفوظة مجاورة.")
+                )
+                .foregroundStyle(MemoryTheme.secondary)
+              }
+              ForEach(context.adjacent) { adjacent in
+                originalLink(adjacent)
+              }
+            }
+          }
+          if !context.linked.isEmpty {
+            Section(language.text("Linked originals", "الأصول المرتبطة")) {
+              ForEach(context.linked, id: \.0.id) { connection, original in
+                VStack(alignment: .leading, spacing: 5) {
+                  Text(connection.label.searchConnectionTitle(language))
+                    .font(.caption).foregroundStyle(MemoryTheme.secondary)
+                  originalLink(original)
+                }
+              }
+            }
+          }
+          Section(
+            language.text("Memory and history from this source", "الذكريات والسجل من هذا المصدر")
+          ) {
+            if entries.isEmpty {
+              Text(
+                language.text(
+                  "No derived memory from this source.", "لا توجد ذكرى مشتقة من هذا المصدر.")
+              )
+              .foregroundStyle(MemoryTheme.secondary)
+            }
+            ForEach(entries) { entry in
+              NavigationLink {
+                PersonalEntryDetail(model: model, entryID: entry.id, language: language)
+              } label: {
+                PersonalEntryRow(entry: entry, language: language)
+              }
+            }
+          }
+          PersonalHistorySection(model: model, language: language)
+          Section {
+            Button(
+              language.text("Forget this memory source", "نسيان هذا المصدر من الذاكرة"),
+              role: .destructive
+            ) {
+              confirmingForget = true
+            }.disabled(model.isBusy).accessibilityIdentifier("forget-personal-source")
+            Text(
+              language.text(
+                "This removes this source and dependent information from personal memory. Separate chat history, saved records, recordings and exported copies remain.",
+                "يزيل هذا المصدر والمعلومات التابعة من الذاكرة الشخصية. يبقى سجل المحادثات والسجلات والتسجيلات والنسخ المصدرة المنفصلة."
+              )
+            )
+            .font(.caption).foregroundStyle(MemoryTheme.secondary)
           }
         }
-      }
-      if current.analysis?.status == .needsClarification {
-        Section(language.text("A quick question", "سؤال قصير")) {
-          PersonalClarificationCard(model: model, source: current, language: language)
-        }
-      }
-      if let answerID = current.analysis?.answerSourceID,
-        let answer = model.snapshot.sources.first(where: { $0.id == answerID })
-      {
-        Section(language.text("Your clarification", "توضيحك")) {
-          if let context = answer.clarificationContext { Text(context.question) }
-          NavigationLink(value: DemoDestination.personalSource(answer.id)) {
-            Text(answer.text).lineLimit(4)
-          }
-        }
-      }
-      Section(language.text("Memory and history from this source", "الذكريات والسجل من هذا المصدر"))
-      {
-        if entries.isEmpty {
+      } else {
+        ContentUnavailableView {
+          Label(
+            language.text("Source unavailable", "المصدر غير متاح"), systemImage: "doc.questionmark")
+        } description: {
           Text(
             language.text(
-              "No derived memory from this source.", "لا توجد ذكرى مشتقة من هذا المصدر.")
-          )
-          .foregroundStyle(MemoryTheme.secondary)
-        }
-        ForEach(entries) { entry in
-          NavigationLink(value: DemoDestination.personalEntry(entry.id)) {
-            PersonalEntryRow(entry: entry, language: language)
-          }
-        }
+              "This source may have been removed or could not be loaded. Refresh to check again, or go back.",
+              "قد يكون هذا المصدر أزيل أو تعذر تحميله. حدّث للتحقق مجدداً أو ارجع."))
+        } actions: {
+          Button(language.text("Refresh", "تحديث")) { Task { await model.load() } }.disabled(
+            model.isBusy)
+          Button(language.text("Go back", "رجوع")) { dismiss() }
+        }.accessibilityIdentifier("personal-source-unavailable")
       }
-      PersonalHistorySection(model: model, language: language)
     }
     .scrollContentBackground(.hidden)
     .navigationTitle(language.text("Source", "المصدر"))
     .toolbar(.visible, for: .navigationBar)
     .background(MemoryTheme.canvas)
+    .task { await model.load() }
+    .refreshable { await model.load() }
+    .alert(
+      language.text("Forget source and dependent memories?", "نسيان المصدر والذكريات التابعة؟"),
+      isPresented: $confirmingForget
+    ) {
+      Button(language.text("Cancel", "إلغاء"), role: .cancel) {}
+        .accessibilityIdentifier("cancel-forget-personal-source")
+      Button(language.text("Forget source", "نسيان المصدر"), role: .destructive) {
+        Task { if await model.forgetSource(sourceID) { dismiss() } }
+      }
+      .accessibilityIdentifier("confirm-forget-personal-source")
+    } message: {
+      Text(
+        language.text(
+          "This permanently removes this source and dependent memories, and clears ALL personal-memory undo history, including unrelated changes. You cannot undo this. Other app collections and exported copies remain.",
+          "يحذف هذا المصدر والذكريات التابعة نهائياً ويمسح سجل التراجع الكامل للذاكرة الشخصية، بما فيه التغييرات غير المرتبطة. لا يمكنك التراجع عن ذلك. تبقى مجموعات التطبيق الأخرى والنسخ المصدرة."
+        ))
+    }
+  }
+
+  private func originalLink(_ original: PersonalMemorySource) -> some View {
+    NavigationLink {
+      PersonalSourceView(sourceID: original.id, language: language)
+    } label: {
+      VStack(alignment: .leading, spacing: 5) {
+        Text(original.text).lineLimit(4)
+        Text(original.createdAt, format: .dateTime.year().month().day().hour().minute())
+          .font(.caption)
+        Text(original.origin).font(.caption).foregroundStyle(MemoryTheme.secondary)
+      }.frame(minHeight: 44)
+    }.accessibilityIdentifier("personal-source-context-" + original.id.uuidString)
   }
 }
 

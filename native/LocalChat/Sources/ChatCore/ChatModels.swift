@@ -166,6 +166,7 @@ public enum ChatError: Error, Equatable, Sendable {
   case contextLimit, conversationLimit, missingConversation, busy, modelUnavailable,
     generationFailed
   case retrievalFailed, noEvidence, outputLimit, memoryPreservationFailed, temporaryVoiceUnavailable
+  case memorySubjectUnclear
 }
 
 public enum ChatLimits {

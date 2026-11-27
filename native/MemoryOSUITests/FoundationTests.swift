@@ -10,9 +10,11 @@ final class FoundationTests: XCTestCase {
     let app = XCUIApplication()
     app.launch()
     for (section, title) in [
-      ("brainMap", "BrainMap"), ("profiles", "People"), ("projects", "Projects"),
-      ("memories", "Memories"), ("birthdays", "Birthdays"), ("settings", "Settings"),
-      ("capture", "MemoryOS"),
+      ("brainMap", "Brain"), ("profiles", "People"), ("projects", "Projects"),
+      ("memories", "Notes"), ("birthdays", "Birthdays"), ("settings", "Settings"),
+      ("recordings", "Recordings"), ("search", "Search memory"), ("understanding", "Understand"),
+      ("organization", "Rules and views"),
+      ("capture", "Record"),
     ] {
       app.buttons["open-menu"].tap()
       XCTAssertTrue(app.buttons["close-menu"].waitForExistence(timeout: 3))
@@ -26,6 +28,28 @@ final class FoundationTests: XCTestCase {
     app.buttons["close-menu"].tap()
     assertNotHittable(app.buttons["close-menu"])
     XCTAssertTrue(app.buttons["record-audio"].exists)
+    app.buttons["open-menu"].tap()
+    app.buttons["sidebar-new-chat"].tap()
+    XCTAssertTrue(app.staticTexts["Chat"].waitForExistence(timeout: 3))
+    app.buttons["capture-return-to-recording"].tap()
+    XCTAssertTrue(app.buttons["record-audio"].waitForExistence(timeout: 3))
+  }
+
+  func testDrawerSearchCanRestoreDestinationsAndDismissKeyboard() {
+    let app = XCUIApplication()
+    app.launch()
+    app.buttons["open-menu"].tap()
+    let search = app.textFields["sidebar-chat-search"]
+    XCTAssertTrue(search.waitForExistence(timeout: 3))
+    search.tap()
+    search.typeText("No matching chat 9D31")
+    let clear = app.buttons["sidebar-clear-chat-search"]
+    XCTAssertTrue(clear.waitForExistence(timeout: 3))
+    clear.tap()
+    XCTAssertTrue(app.buttons["section-capture"].waitForExistence(timeout: 3))
+    app.buttons["close-menu"].tap()
+    assertNotHittable(app.keyboards.firstMatch)
+    XCTAssertTrue(app.buttons["record-audio"].isHittable)
   }
 
   func testLocalCaptureSurvivesRelaunch() {

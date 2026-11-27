@@ -14,15 +14,42 @@ public struct LlamaChatTurn: Equatable, Sendable {
   }
 }
 
+/// Explicit evaluation profiles. The app keeps greedy decoding until a sampled
+/// profile passes its separate quality gate. Seeds reset for each request.
+public enum LlamaChatSampling: Equatable, Sendable {
+  case greedy
+  case qwen3NonThinking(seed: UInt32)
+  case qwen35NonThinking(seed: UInt32)
+}
+
+/// Explicit profiles for the plain-text ChatML output of the pinned template API.
+/// Qwen3.5 requires enable_thinking=false semantics; its /no_think text command
+/// does not select a mode. The closed boundary below is the official template's
+/// non-thinking assistant prefix. Sampling and model selection stay unchanged.
+enum ReviewedLlamaChatTemplate {
+  static func complete(_ prompt: String, architecture: String) throws
+    -> String
+  {
+    guard architecture == "qwen3" || architecture == "qwen35" else { return prompt }
+    guard prompt.hasSuffix("<|im_start|>assistant\n") else {
+      throw EvaluationError.unavailable(
+        "The Qwen template did not expose its reviewed assistant prefix.")
+    }
+    return prompt + "<think>\n\n</think>\n\n"
+  }
+}
+
 /// Resident-session evaluation adapter. The first request loads the model; later requests reset KV state. It never downloads assets or opens a network connection.
 /// This actor owns the C handles. It retains a valid resident session until explicit unload;
 /// partially constructed native handles are freed on load failure or cancellation.
 public actor LlamaTextRuntime: TextRuntimeAdapter {
+  /// Initial/fallback path; the composition may resolve another local path on a cold load.
   public let assetURL: URL
   public let expectedSHA256: String
+  private let assetURLResolver: (@Sendable () throws -> URL)?
+  private let chatSampling: LlamaChatSampling
   private static let backend: Void = { llama_backend_init() }()
   private var session: LlamaSession?
-
   private final class LlamaSession {
     let model: OpaquePointer
     let context: OpaquePointer
@@ -44,9 +71,15 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     }
   }
 
-  public init(assetURL: URL, expectedSHA256: String) {
+  public init(
+    assetURL: URL, expectedSHA256: String,
+    assetURLResolver: (@Sendable () throws -> URL)? = nil,
+    chatSampling: LlamaChatSampling = .greedy
+  ) {
     self.assetURL = assetURL
     self.expectedSHA256 = expectedSHA256
+    self.assetURLResolver = assetURLResolver
+    self.chatSampling = chatSampling
   }
 
   public func generate(request: TextRequest, settings: GenerationSettings) async throws
@@ -60,6 +93,8 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     else {
       throw EvaluationError.invalidSuite("Prompt fields must not contain embedded NUL characters.")
     }
+    try Self.validateKnownReservedContent(
+      [request.instruction, request.question] + request.sources.flatMap { [$0.id, $0.text] })
     guard settings.temperature == 0, (1...256).contains(settings.maximumOutputTokens) else {
       throw EvaluationError.unavailable(
         "This adapter supports greedy temperature 0 and 1–256 output tokens only. Seed is unused by greedy sampling."
@@ -78,6 +113,7 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     -> TextOutput
   {
     try Task.checkCancellation()
+    try validateChatSampling()
     try Self.validateChat(turns)
     return try infer(
       maximumOutputTokens: 256, chatMode: true,
@@ -90,6 +126,7 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     turns: [LlamaChatTurn], grammar: String, maximumOutputTokens: Int
   ) async throws -> String {
     try Task.checkCancellation()
+    try validateChatSampling()
     try Self.validateChat(turns)
     guard (1...512).contains(maximumOutputTokens), !grammar.utf8.contains(0),
       !grammar.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty,
@@ -106,6 +143,18 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     else { throw EvaluationError.invalidResult("Structured output was not complete JSON.") }
     try Task.checkCancellation()
     return result.text
+  }
+
+  private func validateChatSampling() throws {
+    switch chatSampling {
+    case .greedy: break
+    case .qwen3NonThinking(let seed), .qwen35NonThinking(let seed):
+      // llama.cpp reserves this value for a fresh random seed. A caller must
+      // provide a replayable seed for these explicit evaluation profiles.
+      guard seed != UInt32.max else {
+        throw EvaluationError.invalidSuite("A fixed chat-sampling seed is required.")
+      }
+    }
   }
 
   private static func validateChat(_ turns: [LlamaChatTurn]) throws {
@@ -136,6 +185,41 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
       }
       totalBytes += turn.text.utf8.count
       guard totalBytes <= 100_000 else { throw ChatError.contextLimit }
+      try validateKnownReservedContent([turn.text])
+    }
+  }
+
+  /// Refuse content that would become template structure when the full prompt is
+  /// tokenized with parse_special=true. Preserve the stored original; never escape,
+  /// replace or truncate its content at this provider boundary.
+  private static func validateKnownReservedContent(_ contents: [String]) throws {
+    let reserved = ["<|im_start|>", "<|im_end|>", "<|endoftext|>", "<think>", "</think>"]
+    guard contents.allSatisfy({ content in !reserved.contains(where: { content.contains($0) }) })
+    else {
+      // Keep the recovery error generic; do not embed source text or marker payloads.
+      throw ChatError.generationFailed
+    }
+  }
+
+  /// Additional control/EOG markers depend on the loaded vocabulary. Check each
+  /// content field before template assembly, without adding BOS/EOS to that field.
+  private static func validateVocabularyContent(
+    _ contents: [String], vocab: OpaquePointer
+  ) throws {
+    for content in contents {
+      try Task.checkCancellation()
+      var tokens = [llama_token](repeating: 0, count: 2048)
+      let count = content.withCString {
+        llama_tokenize(vocab, $0, Int32(content.utf8.count), &tokens, 2048, false, true)
+      }
+      // A field larger than the entire context cannot fit the eventual prompt.
+      // Refuse it rather than checking or returning a truncated token prefix.
+      guard count >= 0 else { throw ChatError.contextLimit }
+      guard
+        !tokens.prefix(Int(count)).contains(where: {
+          llama_vocab_is_control(vocab, $0) || llama_vocab_is_eog(vocab, $0)
+        })
+      else { throw ChatError.generationFailed }
     }
   }
 
@@ -152,9 +236,14 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     guard let session else { throw EvaluationError.unavailable("No loaded llama.cpp session.") }
     let context = session.context
     let vocab = session.vocab
-    let structuredSampler = try grammar.map { try makeGrammarSampler($0, vocab: vocab) }
-    defer { if let structuredSampler { llama_sampler_free(structuredSampler) } }
-    let sampler = structuredSampler ?? session.sampler
+    // Historical fixed-setting evaluation stays greedy. Chat profiles are explicit
+    // dependencies; provider code does not read environment flags or choose a model.
+    let requestSampling: LlamaChatSampling = chatMode ? chatSampling : .greedy
+    let requestSampler =
+      grammar != nil || requestSampling != .greedy
+      ? try makeRequestSampler(grammar: grammar, sampling: requestSampling, vocab: vocab) : nil
+    defer { if let requestSampler { llama_sampler_free(requestSampler) } }
+    let sampler = requestSampler ?? session.sampler
     llama_memory_clear(llama_get_memory(context), true)
     llama_sampler_reset(sampler)
     let preparation = elapsed(start.duration(to: clock.now))
@@ -213,25 +302,42 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
       preparationSeconds: preparation, wasColdLoad: cold)
   }
 
-  private func makeGrammarSampler(
-    _ grammar: String, vocab: OpaquePointer
+  private func makeRequestSampler(
+    grammar: String?, sampling: LlamaChatSampling, vocab: OpaquePointer
   ) throws -> UnsafeMutablePointer<llama_sampler> {
     guard let chain = llama_sampler_chain_init(llama_sampler_chain_default_params()) else {
       throw EvaluationError.unavailable("Cannot create structured sampler chain.")
     }
     var retained = false
     defer { if !retained { llama_sampler_free(chain) } }
-    guard
-      let grammarSampler = grammar.withCString({ text in
-        "root".withCString { llama_sampler_init_grammar(vocab, text, $0) }
-      })
-    else { throw EvaluationError.invalidSuite("The app grammar could not be parsed.") }
     // The chain owns children after addition. Sampling already accepts the selected token.
-    llama_sampler_chain_add(chain, grammarSampler)
-    guard let greedy = llama_sampler_init_greedy() else {
-      throw EvaluationError.unavailable("Cannot create structured greedy sampler.")
+    if let grammar {
+      guard
+        let grammarSampler = grammar.withCString({ text in
+          "root".withCString { llama_sampler_init_grammar(vocab, text, $0) }
+        })
+      else { throw EvaluationError.invalidSuite("The app grammar could not be parsed.") }
+      llama_sampler_chain_add(chain, grammarSampler)
     }
-    llama_sampler_chain_add(chain, greedy)
+    func add(_ child: UnsafeMutablePointer<llama_sampler>?) throws {
+      guard let child else { throw EvaluationError.unavailable("Cannot create chat sampler.") }
+      llama_sampler_chain_add(chain, child)
+    }
+    switch sampling {
+    case .greedy:
+      try add(llama_sampler_init_greedy())
+    case .qwen3NonThinking(let seed), .qwen35NonThinking(let seed):
+      // Model-card general non-thinking profiles. Penalties precede probability
+      // filtering, as in the pinned llama.cpp common sampler. Only generated tokens
+      // enter this fresh chain; originals and prior requests never enter its history.
+      if case .qwen35NonThinking = sampling {
+        try add(llama_sampler_init_penalties(llama_vocab_n_tokens(vocab), 2048, 1, 0, 1.5))
+      }
+      try add(llama_sampler_init_top_k(20))
+      try add(llama_sampler_init_top_p(0.8, 1))
+      try add(llama_sampler_init_temp(0.7))
+      try add(llama_sampler_init_dist(seed))
+    }
     retained = true
     return chain
   }
@@ -240,12 +346,17 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
   public func unload() { session = nil }
 
   private func loadSession() throws -> LlamaSession {
-    try verifyAsset()
+    try Task.checkCancellation()
+    // Resolve once, then verify and load the same path. Failures leave no resident session,
+    // so the next request can observe a successful local import without recreating this adapter.
+    let loadURL = try assetURLResolver?() ?? assetURL
+    try Task.checkCancellation()
+    try verifyAsset(at: loadURL)
     _ = Self.backend
     var modelParams = llama_model_default_params()
     // This reviewed configuration is CPU + Accelerate on every evaluation platform.
     modelParams.n_gpu_layers = 0
-    guard let model = llama_model_load_from_file(assetURL.path, modelParams) else {
+    guard let model = llama_model_load_from_file(loadURL.path, modelParams) else {
       throw EvaluationError.unavailable("llama.cpp could not load the verified local GGUF asset.")
     }
     var retained = false
@@ -267,15 +378,15 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     return LlamaSession(model: model, context: context, sampler: sampler, vocab: vocab)
   }
 
-  private func verifyAsset() throws {
-    guard assetURL.isFileURL else {
+  private func verifyAsset(at loadURL: URL) throws {
+    guard loadURL.isFileURL else {
       throw EvaluationError.unavailable(
         "A local file URL is required; network model loading is disabled.")
     }
     guard expectedSHA256.count == 64, expectedSHA256.allSatisfy(\.isHexDigit) else {
       throw EvaluationError.unavailable("A reviewed 64-digit SHA-256 is required.")
     }
-    guard let stream = InputStream(url: assetURL) else {
+    guard let stream = InputStream(url: loadURL) else {
       throw EvaluationError.unavailable(
         "The local GGUF model is missing. No automatic download or cloud fallback is enabled.")
     }
@@ -306,7 +417,14 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
     return try makePrompt(turns: [.init(role: "user", text: content)], model: model)
   }
 
-  private func makePrompt(turns: [LlamaChatTurn], model: OpaquePointer) throws -> String {
+  private func makePrompt(
+    turns: [LlamaChatTurn], model: OpaquePointer
+  ) throws -> String {
+    guard let vocab = llama_model_get_vocab(model) else {
+      throw EvaluationError.unavailable("The local model vocabulary is unavailable.")
+    }
+    try Self.validateKnownReservedContent(turns.map(\.text))
+    try Self.validateVocabularyContent(turns.map(\.text), vocab: vocab)
     var allocations: [UnsafeMutablePointer<CChar>] = []
     defer { for allocation in allocations { free(allocation) } }
     var messages: [llama_chat_message] = []
@@ -332,7 +450,7 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
       throw EvaluationError.unavailable(
         "The model chat template is unsupported or exceeds the prompt buffer.")
     }
-    var prompt = String(
+    let prompt = String(
       decoding: output.prefix(Int(size)).map { UInt8(bitPattern: $0) }, as: UTF8.self)
     var architecture = [CChar](repeating: 0, count: 64)
     let architectureSize = llama_model_meta_val_str(
@@ -342,15 +460,7 @@ public actor LlamaTextRuntime: TextRuntimeAdapter {
       ? String(
         decoding: architecture.prefix(Int(architectureSize)).map { UInt8(bitPattern: $0) },
         as: UTF8.self) : ""
-    // This is the reviewed Qwen3 template's enable_thinking=false generation prefix.
-    if name == "qwen3" {
-      guard prompt.hasSuffix("<|im_start|>assistant\n") else {
-        throw EvaluationError.unavailable(
-          "The Qwen3 template did not expose its reviewed non-thinking prefix.")
-      }
-      prompt += "<think>\n\n</think>\n\n"
-    }
-    return prompt
+    return try ReviewedLlamaChatTemplate.complete(prompt, architecture: name)
   }
 
   private func elapsed(_ duration: Duration) -> Double {

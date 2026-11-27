@@ -37,16 +37,19 @@ struct RootView: View {
           .allowsHitTesting(menuIsOpen)
           .accessibilityHidden(true)
 
-        SidebarView(session: session, chat: chat, close: { setMenu(false) }, menuFocus: $menuFocus)
-          .frame(width: geometry.size.width * 0.84)
-          .frame(maxHeight: .infinity)
-          .background(MemoryTheme.panel)
-          // SwiftUI mirrors the horizontal offset in RTL.
-          .offset(x: menuIsOpen ? 0 : -geometry.size.width * 0.84)
-          .allowsHitTesting(menuIsOpen)
-          .accessibilityHidden(!menuIsOpen)
-          .accessibilityAddTraits(.isModal)
-          .accessibilityAction(.escape) { setMenu(false) }
+        SidebarView(
+          session: session, chat: chat, isOpen: menuIsOpen, close: { setMenu(false) },
+          menuFocus: $menuFocus
+        )
+        .frame(width: geometry.size.width * 0.84)
+        .frame(maxHeight: .infinity)
+        .background(MemoryTheme.panel)
+        // SwiftUI mirrors the horizontal offset in RTL.
+        .offset(x: menuIsOpen ? 0 : -geometry.size.width * 0.84)
+        .allowsHitTesting(menuIsOpen)
+        .accessibilityHidden(!menuIsOpen)
+        .accessibilityAddTraits(.isModal)
+        .accessibilityAction(.escape) { setMenu(false) }
       }
       .background(MemoryTheme.canvas)
       .overlay {

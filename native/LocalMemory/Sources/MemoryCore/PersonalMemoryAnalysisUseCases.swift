@@ -209,7 +209,9 @@ extension PersonalMemoryUseCases {
             match.excerptConversationID == nil, match.supersededByID == nil,
             match.kind == proposal.kind, (match.isEpisode == true) == proposal.isEpisode
           else { throw PersonalMemoryError.invalidAnalysis }
-          if match.confirmed || match.isOwnerCorrected == true || match.evidence == nil {
+          if match.confirmed || match.isOwnerCorrected == true
+            || match.interpretationStatus == .ownerReviewed || match.evidence == nil
+          {
             if question == nil {
               question = PersonalMemoryClarification(
                 quote: proposal.quote,
@@ -246,7 +248,9 @@ extension PersonalMemoryUseCases {
               && $0.profileIDs == profileIDs
           })
         {
-          if next.entries[duplicate].confirmed || next.entries[duplicate].isOwnerCorrected == true {
+          if next.entries[duplicate].confirmed || next.entries[duplicate].isOwnerCorrected == true
+            || next.entries[duplicate].interpretationStatus == .ownerReviewed
+          {
             accepted = true
             acceptedKinds.insert(proposal.kind)
             continue
@@ -280,7 +284,9 @@ extension PersonalMemoryUseCases {
           id: UUID(), text: proposal.quote, kind: proposal.kind,
           sourceIDs: Array(Set(evidence.map(\.sourceID))).sorted { $0.uuidString < $1.uuidString },
           profileIDs: profileIDs, categories: [proposal.kind.rawValue], confirmed: false,
-          evidence: evidence, isEpisode: proposal.isEpisode ? true : nil,
+          evidence: evidence,
+          interpretationProvenance: proposal.kind == .interpretation ? .aiProposed : nil,
+          isEpisode: proposal.isEpisode ? true : nil,
           eventTimeExpression: proposal.eventTimeExpression, createdAt: source.createdAt)
         if let existing, let oldIndex = next.entries.firstIndex(where: { $0.id == existing.id }) {
           guard existing.profileIDs == profileIDs else { throw PersonalMemoryError.invalidAnalysis }

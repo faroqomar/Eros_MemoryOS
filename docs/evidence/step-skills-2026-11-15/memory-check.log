@@ -1,0 +1,23 @@
+{
+  "project": "memoryos",
+  "api": {
+    "status": "healthy",
+    "database": "connected",
+    "db_acquire_ms": 0.3,
+    "db_pool_waiting": 0,
+    "db_pool_in_use": 0,
+    "db_pool_max": 100,
+    "db_pool_idle": 5
+  },
+  "sources": 42,
+  "pending": [
+    "AGENTS.md",
+    "docs/decisions/decision-register.md",
+    "docs/reference/source-register.md",
+    "docs/how-to/agent-skills.md",
+    "docs/how-to/development-workflow.md",
+    "docs/templates/development-task.md",
+    "docs/tasks/2026-11-15-development-step-skills.md"
+  ],
+  "failed": {}
+}

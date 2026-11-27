@@ -83,8 +83,16 @@ struct LocalRecordsListView: View {
         Section {
           Toggle(language.text("Show Trash", "عرض المحذوفات"), isOn: $showTrash)
             .accessibilityIdentifier("show-trash")
+          Button {
+            showCreate = true
+          } label: {
+            Label(language.text("Add linked record", "إضافة سجل للربط"), systemImage: "plus")
+              .frame(minHeight: 44)
+          }
+          .accessibilityIdentifier("add-local-record")
+          .disabled(model.isBusy || !model.hasLoaded)
         }
-        if visible.isEmpty {
+        if visible.isEmpty && model.hasLoaded && !model.isBusy && !model.failure {
           ContentUnavailableView {
             Label(
               language.text(
@@ -95,10 +103,10 @@ struct LocalRecordsListView: View {
               language.text(
                 showTrash
                   ? "Records you move to Trash remain recoverable here."
-                  : "Save a thought from Capture, or add a person, project or idea to link it.",
+                  : "Save a thought from Record, or add a person, project or idea to link it.",
                 showTrash
                   ? "يمكنك استعادة السجلات التي تنقلها إلى المحذوفات من هنا."
-                  : "احفظ نصاً من الالتقاط، أو أضف شخصاً أو مشروعاً أو فكرة لربطه."))
+                  : "احفظ نصاً من التسجيل، أو أضف شخصاً أو مشروعاً أو فكرة لربطه."))
           } actions: {
             if !showTrash {
               Button(language.text("Write a thought", "اكتب فكرة"), action: openCapture)
@@ -125,9 +133,7 @@ struct LocalRecordsListView: View {
               "Stored on this device. Organized conversation memory and audio use separate storage.",
               "محفوظة على هذا الجهاز. تستخدم ذاكرة المحادثات المنظمة والصوت تخزيناً منفصلاً."))
         }
-        Section {
-          Button(language.text("Add linked record", "إضافة سجل للربط")) { showCreate = true }
-            .accessibilityIdentifier("add-local-record")
+        Section(language.text("Records backup", "نسخة السجلات الاحتياطية")) {
           Button(language.text("Export backup…", "تصدير نسخة احتياطية…")) { confirmExport = true }
             .accessibilityIdentifier("export-local-records")
           Button(language.text("Restore backup…", "استعادة نسخة احتياطية…")) {
@@ -139,6 +145,7 @@ struct LocalRecordsListView: View {
       }
       .listStyle(.insetGrouped)
       .scrollContentBackground(.hidden)
+      .refreshable { await model.load() }
     }
     .sheet(isPresented: $showCreate) {
       LocalRecordEditor(model: model, language: language, record: nil)
@@ -210,6 +217,11 @@ struct LocalRecordDetailView: View {
   @State private var showLinks = false
   @Environment(\.dismiss) private var dismiss
 
+  private var linkTargets: [LocalRecord] {
+    let excluded = Set(model.connected(to: recordID).map(\.id)).union([recordID])
+    return model.activeRecords.filter { !excluded.contains($0.id) }
+  }
+
   var body: some View {
     Group {
       if let record = model.record(recordID) {
@@ -218,6 +230,11 @@ struct LocalRecordDetailView: View {
           Section(record.kind.title(language)) {
             Text(record.text).textSelection(.enabled).accessibilityIdentifier("local-record-text")
             Text(record.createdAt, style: .date).font(.caption)
+            if record.deletedAt == nil {
+              Button(language.text("Correct text", "تصحيح النص")) { showEdit = true }
+                .accessibilityIdentifier("correct-local-record")
+                .disabled(model.isBusy)
+            }
           }
           Section(language.text("Original source", "المصدر الأصلي")) {
             Text(record.originalText).textSelection(.enabled)
@@ -234,20 +251,18 @@ struct LocalRecordDetailView: View {
             }
           }
           Section(language.text("Linked records", "السجلات المرتبطة")) {
+            if record.deletedAt == nil {
+              Button(language.text("Link a record", "ربط سجل")) { showLinks = true }
+                .accessibilityIdentifier("link-local-record")
+            }
             ForEach(model.connected(to: recordID)) { linked in
               NavigationLink(linked.text) {
                 LocalRecordDetailView(model: model, language: language, recordID: linked.id)
               }
             }
-            if record.deletedAt == nil {
-              Button(language.text("Link a record", "ربط سجل")) { showLinks = true }
-                .accessibilityIdentifier("link-local-record")
-            }
           }
           Section {
             if record.deletedAt == nil {
-              Button(language.text("Correct text", "تصحيح النص")) { showEdit = true }
-                .accessibilityIdentifier("correct-local-record")
               Button(language.text("Move to Trash", "نقل إلى المحذوفات"), role: .destructive) {
                 Task { if await model.setDeleted(id: recordID, deleted: true) { dismiss() } }
               }
@@ -272,24 +287,35 @@ struct LocalRecordDetailView: View {
         }
         .sheet(isPresented: $showLinks) {
           NavigationStack {
-            List(
-              model.activeRecords.filter {
-                $0.id != recordID && !model.connected(to: recordID).contains($0)
+            let targets = linkTargets
+            List {
+              if targets.isEmpty {
+                ContentUnavailableView(
+                  language.text("No records to link", "لا توجد سجلات للربط"),
+                  systemImage: "link",
+                  description: Text(
+                    language.text(
+                      "Add another record from Saved records, then return here to link it.",
+                      "أضف سجلاً آخر من السجلات المحفوظة، ثم عد إلى هنا لربطه."
+                    )
+                  )
+                )
               }
-            ) { target in
-              Button {
-                Task { if await model.link(from: recordID, to: target.id) { showLinks = false } }
-              } label: {
-                Text(target.text)
+              ForEach(targets) { target in
+                Button {
+                  Task { if await model.link(from: recordID, to: target.id) { showLinks = false } }
+                } label: {
+                  VStack(alignment: .leading, spacing: 4) {
+                    Text(target.text).lineLimit(3)
+                    Text(target.kind.title(language)).font(.caption)
+                      .foregroundStyle(MemoryTheme.secondary)
+                  }
+                  .frame(minHeight: 44)
+                }
+                .disabled(model.isBusy)
               }
-              .disabled(model.isBusy)
             }
             .safeAreaInset(edge: .top) { LocalStorageStatus(model: model, language: language) }
-            .overlay {
-              if model.activeRecords.count < 2 {
-                Text(language.text("Add another record first.", "أضف سجلاً آخر أولاً."))
-              }
-            }
             .navigationTitle(language.text("Link a record", "ربط سجل"))
             .toolbar {
               ToolbarItem(placement: .cancellationAction) {
@@ -301,7 +327,13 @@ struct LocalRecordDetailView: View {
         }
       } else {
         ContentUnavailableView(
-          language.text("Record unavailable", "السجل غير متاح"), systemImage: "doc.text")
+          language.text("Record unavailable", "السجل غير متاح"), systemImage: "doc.text",
+          description: Text(
+            language.text(
+              "Go back to find the record in Saved records or Trash.",
+              "عد للعثور على السجل في السجلات المحفوظة أو المحذوفات.")
+          )
+        )
       }
     }
     .toolbar(.visible, for: .navigationBar)

@@ -38,18 +38,22 @@ actor LocalInferenceCoordinator: StructuredChatModel {
     await model.unload()
   }
 
-  /// One foreground lease covers candidate verification and the verifier's unload.
+  /// Relevance borrows the same resident weights as chat under one foreground lease.
+  /// The filter receives the raw model, so it cannot recursively acquire this lease.
   func selectRelevant(
-    using filter: any MemoryEvidenceFiltering, query: String, candidates: [ChatEvidence]
+    query: String, candidates: [ChatEvidence], identities: [ChatEvidenceIdentity] = []
   ) async throws -> Set<UUID> {
     guard !candidates.isEmpty else { return [] }
+    guard let structured = model as? any StructuredChatModel else {
+      throw ChatError.modelUnavailable
+    }
     background?.task.cancel()
     await acquire()
     defer { release() }
     try Task.checkCancellation()
-    await model.unload()
-    try Task.checkCancellation()
-    return try await filter.selectRelevant(query: query, candidates: candidates)
+    let filter = SourceBoundedChatEvidenceFilter(model: structured, unloadAfterSelection: false)
+    return try await filter.selectRelevant(
+      query: query, candidates: candidates, identities: identities)
   }
 
   func transcribe(provider: any TranscriptionProvider, audioURL: URL, modelDirectory: URL)
@@ -103,13 +107,19 @@ actor LocalInferenceCoordinator: StructuredChatModel {
     try Task.checkCancellation()
     return output
   }
+
 }
 
-struct CoordinatedEvidenceFilter: MemoryEvidenceFiltering {
-  let base: any MemoryEvidenceFiltering
+struct CoordinatedEvidenceFilter: SubjectAwareMemoryEvidenceFiltering {
   let coordinator: LocalInferenceCoordinator
   func selectRelevant(query: String, candidates: [ChatEvidence]) async throws -> Set<UUID> {
-    try await coordinator.selectRelevant(using: base, query: query, candidates: candidates)
+    try await coordinator.selectRelevant(query: query, candidates: candidates)
+  }
+  func selectRelevant(
+    query: String, candidates: [ChatEvidence], identities: [ChatEvidenceIdentity]
+  ) async throws -> Set<UUID> {
+    try await coordinator.selectRelevant(
+      query: query, candidates: candidates, identities: identities)
   }
 }
 

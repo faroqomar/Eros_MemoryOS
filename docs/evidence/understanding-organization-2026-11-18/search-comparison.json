@@ -1,0 +1,298 @@
+{
+  "kind": "builder-known-answer-not-independent",
+  "limit": 12,
+  "minimumSimilarity": 0.65,
+  "records": 8,
+  "rows": [
+    {
+      "actual": [
+        "s1"
+      ],
+      "case": "english-literal",
+      "exact": true,
+      "expected": [
+        "s1"
+      ],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "keyword",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.1295745,
+      "truePositive": 1
+    },
+    {
+      "actual": [],
+      "case": "english-meaning",
+      "exact": false,
+      "expected": [
+        "s2"
+      ],
+      "falseNegative": 1,
+      "falsePositive": 0,
+      "method": "keyword",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 0.001143125,
+      "truePositive": 0
+    },
+    {
+      "actual": [
+        "s2"
+      ],
+      "case": "english-linked",
+      "exact": true,
+      "expected": [
+        "s2"
+      ],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "keyword",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.000696625,
+      "truePositive": 1
+    },
+    {
+      "actual": [
+        "s5"
+      ],
+      "case": "arabic-literal",
+      "exact": true,
+      "expected": [
+        "s5"
+      ],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "keyword",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.000875917,
+      "truePositive": 1
+    },
+    {
+      "actual": [],
+      "case": "arabic-meaning",
+      "exact": false,
+      "expected": [
+        "s4"
+      ],
+      "falseNegative": 1,
+      "falsePositive": 0,
+      "method": "keyword",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 0.000755708,
+      "truePositive": 0
+    },
+    {
+      "actual": [],
+      "case": "no-source",
+      "exact": true,
+      "expected": [],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "keyword",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.000740709,
+      "truePositive": 0
+    },
+    {
+      "actual": [],
+      "case": "english-literal",
+      "exact": false,
+      "expected": [
+        "s1"
+      ],
+      "falseNegative": 1,
+      "falsePositive": 0,
+      "method": "meaning",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 1.274076209,
+      "truePositive": 0
+    },
+    {
+      "actual": [],
+      "case": "english-meaning",
+      "exact": false,
+      "expected": [
+        "s2"
+      ],
+      "falseNegative": 1,
+      "falsePositive": 0,
+      "method": "meaning",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 0.512588958,
+      "truePositive": 0
+    },
+    {
+      "actual": [],
+      "case": "english-linked",
+      "exact": false,
+      "expected": [
+        "s2"
+      ],
+      "falseNegative": 1,
+      "falsePositive": 0,
+      "method": "meaning",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 0.551974958,
+      "truePositive": 0
+    },
+    {
+      "actual": [],
+      "case": "arabic-literal",
+      "exact": false,
+      "expected": [
+        "s5"
+      ],
+      "falseNegative": 1,
+      "falsePositive": 0,
+      "method": "meaning",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 0.535214125,
+      "truePositive": 0
+    },
+    {
+      "actual": [],
+      "case": "arabic-meaning",
+      "exact": false,
+      "expected": [
+        "s4"
+      ],
+      "falseNegative": 1,
+      "falsePositive": 0,
+      "method": "meaning",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 0.765848375,
+      "truePositive": 0
+    },
+    {
+      "actual": [],
+      "case": "no-source",
+      "exact": true,
+      "expected": [],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "meaning",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.6619105,
+      "truePositive": 0
+    },
+    {
+      "actual": [
+        "s1"
+      ],
+      "case": "english-literal",
+      "exact": true,
+      "expected": [
+        "s1"
+      ],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "linked",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.001953333,
+      "truePositive": 1
+    },
+    {
+      "actual": [],
+      "case": "english-meaning",
+      "exact": false,
+      "expected": [
+        "s2",
+        "s3"
+      ],
+      "falseNegative": 2,
+      "falsePositive": 0,
+      "method": "linked",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 0.000776625,
+      "truePositive": 0
+    },
+    {
+      "actual": [
+        "s2",
+        "s3"
+      ],
+      "case": "english-linked",
+      "exact": true,
+      "expected": [
+        "s2",
+        "s3"
+      ],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "linked",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.00060575,
+      "truePositive": 2
+    },
+    {
+      "actual": [
+        "s5"
+      ],
+      "case": "arabic-literal",
+      "exact": true,
+      "expected": [
+        "s5"
+      ],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "linked",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.000816792,
+      "truePositive": 1
+    },
+    {
+      "actual": [],
+      "case": "arabic-meaning",
+      "exact": false,
+      "expected": [
+        "s4"
+      ],
+      "falseNegative": 1,
+      "falsePositive": 0,
+      "method": "linked",
+      "precision": 0,
+      "recall": 0,
+      "seconds": 0.000669292,
+      "truePositive": 0
+    },
+    {
+      "actual": [],
+      "case": "no-source",
+      "exact": true,
+      "expected": [],
+      "falseNegative": 0,
+      "falsePositive": 0,
+      "method": "linked",
+      "precision": 1,
+      "recall": 1,
+      "seconds": 0.000681125,
+      "truePositive": 0
+    }
+  ],
+  "runtime": "macOS host",
+  "offlineProof": {
+    "network_denied": true,
+    "errno": 1
+  },
+  "comparisonSource": "native/MemoryOSTests/MemorySearchKnownAnswerTests.swift",
+  "notes": [
+    "Builder dataset; not independent qualification.",
+    "Meaning mode fails 5 positive cases at threshold 0.65; no improvement selected.",
+    "No4B relevance filtering; previous4B10/12 task result remains separate."
+  ]
+}

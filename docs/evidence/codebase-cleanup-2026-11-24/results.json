@@ -1,0 +1,130 @@
+{
+  "scope": "Owner-requested owned native codebase cleanup. No Step3, merge, model adoption, cloud inference, phone qualification or release.",
+  "status": "Scoped owned-native cleanup, final checks, independent review, artifact cleanup and project-memory delivery complete. Existing model/device/release gates remain separate.",
+  "source": {
+    "before": {
+      "source": {
+        "files": 157,
+        "lines": 24811,
+        "bytes": 1035160
+      },
+      "tests": {
+        "files": 116,
+        "lines": 25921,
+        "bytes": 1181274
+      }
+    },
+    "after": {
+      "source": {
+        "files": 155,
+        "lines": 24424,
+        "bytes": 1019993
+      },
+      "tests": {
+        "files": 115,
+        "lines": 25750,
+        "bytes": 1174777
+      }
+    },
+    "sourceSHA256": "90f769031723c0b42c660010c4810d7139a23db17e6a9a8c09ff557857d053ae",
+    "testsSHA256": "bbb48cc4a5b7d2152900508a52233539bbe0544502a2948504c0328d2c590770",
+    "allSHA256": "cb900a7175d7f9ea349807daf563cfff67a37137d9dad4c7d80da544ed318b69",
+    "recipe": "Sort owned native source paths; path UTF8+NUL+bytes+NUL. Prune .build/verification/Artifacts/.git/node_modules. Physical lines include comments/blank/manifests.",
+    "head": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+    "branch": "feat/personal-memory-local-recall",
+    "executableSHA256": "7ddd672e21a19d8c0814b0545fee354259833e4a23df3268eb73298ddd65753b"
+  },
+  "removed": {
+    "sourceLines": 387,
+    "testLinesNet": 171,
+    "sourceFiles": 2,
+    "testFiles": 1,
+    "sourceBytes": 15167,
+    "testBytesNet": 6497,
+    "items": [
+      "Disconnected sample catalog/detail/components, obsolete record/birthday routes and sample-only reminder state",
+      "Declaration-only section fields/theme color and unused excerpt query argument",
+      "Unused records draft/canSave/draftTooLarge/saveCapture API; current draft owner now contains the unchanged UTF8 clear rule",
+      "No-op source.kind reassignment and unused Foundation/MemoryCore imports",
+      "Sample-only catalog/reminder unit tests and obsolete UI sample methods/helpers"
+    ]
+  },
+  "preservedCoverage": "All9 capture/storage native methods retained on records.create + ChatViewModel.homeDraft/clearSavedHomeDraft. New package checks prove persisted clearing, later typing and Unicode-distinct input preservation. Current search/menu UI checks and English/Arabic accessibility audit entry points remain; obsolete sample paths are gone.",
+  "moduleRoots": {
+    "MemoryOS": "Current WindowGroup/RootView, personal navigation, capture/chat/voice/records/search/organization features",
+    "LocalMemory": "MemoryCore and SQLite/file adapters consumed by app composition, LocalChat and domain/storage tests",
+    "LocalChat": "ChatCore/ChatPersistence/ChatPresentation consumed by app, inference integration and chat tests",
+    "LocalOrganization": "Birthday/rule/view use cases and persistence consumed by app organization composition and tests",
+    "LocalAudio": "Capture/archive domain and persistence consumed by recording composition and tests",
+    "LocalTranscription": "Whisper adapters consumed by app voice composition and comparison fixtures/tests",
+    "LocalMemoryRetrieval": "App hybrid index composition imports Cactus/Wax through replaceable retrieval protocol; retrieval tests",
+    "LocalRetrievalCore": "Shared app-owned retrieval contract consumed by adapters/main app/core tests",
+    "LocalAIEvaluation": "Evaluation core/presentation and ai-evaluation CLI; lab/tests and language/retrieval adapter contracts",
+    "LocalTextEvaluation": "Main-app llama adapter and explicit local evaluation CLI/tests; no new model adoption",
+    "LocalCactusEvaluation": "Main-app Cactus runtime, separate evaluation adapter/CLI and real tokenizer/cache tests",
+    "LocalAIIntegrations": "Main-app Wax runtime binary/source wrapper, lab/CLI/tests and reproducible packaging scripts",
+    "LocalMLXEvaluation": "Separate MLX comparison CLI/tests and explicit Simulator unsupported-runtime target in lab",
+    "MemoryOSAILab": "Own @main app/shared scheme, lab composition, evaluation UI and UITests",
+    "MemoryOSLockTest": "Separate @main app/shared scheme, fictional protected archive probe; physical gate remains unrun",
+    "MemoryOSTests": "Swift Testing/native test bundle; actual discovery plus opt-in consumed semantic regression harnesses",
+    "MemoryOSUITests": "XCTest synchronized target; current connected storage/menu/search/birthday/rule/voice flows",
+    "MemoryOSAILabUITests": "XCTest lab target and fictional evaluation progress/export flow"
+  },
+  "compilerScan": {
+    "tool": "Periphery3.8.0 historical MIT release, temp-only verified asset; no app dependency/global installation",
+    "source": "https://github.com/peripheryapp/periphery/tree/3.8.0",
+    "archiveSHA256": "07d4e286e31dd79164df39097e0b59f533c94badbe18158464a455ea88a166d7",
+    "coverage": "Fresh mainapp/test scheme index; public library declarations/Codable fields/protocol requirements retained. Manual root/consumer review covers standalone packages/lab/CLI/lock test. Not a proof that every retained line is necessary.",
+    "freshFindings": 6,
+    "removedFindings": 1,
+    "retainedFindings": 5,
+    "removedFinding": "MemoryCore import in MemorySearchView.swift; final canonical build confirms removal.",
+    "retainedReasons": [
+      "cachedDocumentCount:5 persistent-cache assertions in separate LocalCactusEvaluation package tests",
+      "AppleAudioCapture Notification parameter: registered #selector callback signature",
+      "ChatVoiceCard.expanded and transcriptExpanded: $Bindings used by DisclosureGroup",
+      "OwnerInterpretationFeatureTests.ManualPath.report: exercised through CaseIterable.allCases parameterized test"
+    ],
+    "sourceBoundary": "Fresh scan precedes only unused import removal; other sources are byte-identical. Final analysis/build/native checks use final source.",
+    "setupCorrections": "Bound stalled xcodebuild-list and skip scheme validation; do not pass duplicate derivedDataPath to Periphery. Discard49 historical shared-index findings; fresh temporary DerivedData yields6 current findings. An attempted INDEX_DATA_STORE_DIR override produced no fresh store and was not counted as a scan.",
+    "rawResults": "/tmp/memoryos-cleanup-periphery-fresh-results.json"
+  },
+  "checks": {
+    "releaseAnalysisBuild": "pass, final canonical Release source",
+    "nativeControls": "209 functions in28suites,3.249s,pass",
+    "localMemory": "127 tests in13suites,pass",
+    "localChat": "70 tests including current Home draft safety,pass",
+    "currentUI": "3 tests,0failures,142.032s: search/section state,menu dismissal,current capture/correction/link/Trash/relaunch/recovery",
+    "formatLinkageWhitespace": "16 affected Swift files strict-format pass; separate llama/whisper linkage and git diff --check pass",
+    "uiSourceBoundary": "UI flows precede only unused MemoryCore import removal; active capture/navigation/storage source is identical final.",
+    "notClaimed": "Full accessibility or physical qualification; original model/semantic/cold-history failures remain unchanged.",
+    "compilerNotices": "Existing ChatResponsivenessProbe:29 unnecessary-await diagnostic remains; actor storage code is outside the confirmed dead-code changes. Xcode AppIntents absence notices are not app failures."
+  },
+  "capture": {
+    "file": "home-dark.png",
+    "device": "iPhone18ProMax/iOS27.2 Simulator",
+    "binarySHA256": "7ddd672e21a19d8c0814b0545fee354259833e4a23df3268eb73298ddd65753b",
+    "observed": "Final installed executable hash matches canonical build; empty Home loads and current controls render dark. No microphone/model call/private content. Runtime smoke, not visual/product acceptance.",
+    "driverNote": "Install/close CLI completion output had not returned at capture time; actual installed SHA and successful launch/snapshot/screenshot verify the tested app. No application failure inferred."
+  },
+  "cleanup": {
+    "removedRoots": 17,
+    "removedFiles": 6556,
+    "beforeLogicalBytes": 3715905302,
+    "beforeAllocatedBytes": 3743412224,
+    "afterLogicalBytes": 0,
+    "criticalHashesMatch": 5,
+    "protectedOriginalFiles": 20,
+    "protectedOriginalBytes": 12917311,
+    "protectedAggregateSHA256": "fea432d9d21326ac7673b2f41216d28732904a9da6e07d941ceeba8e2206696f",
+    "reasons": "Temporary verified scanner binary/ZIP and fresh DerivedData, setup/old-index retries, duplicate early control results and Finder metadata; compact final outcomes and current proof retained.",
+    "retained": "Canonical active app Products/shared build caches; pinned SDK/model inputs; final native/UI bundles and logs; fresh six-result scan and scoped review/preimages/patch; unique failed semantic evidence; originals, app data, unrelated work and Git metadata.",
+    "limits": "This is measured selected task-artifact cleanup, not a claim that all caches or workspace bytes are unnecessary.",
+    "postReviewRecallBytesRemoved": 59528,
+    "totalRemovedFiles": 6557,
+    "totalLogicalBytesRemoved": 3715964830
+  },
+  "independentReview": "Complete: fresh standards/spec and final handback checks pass. Verifier recomputed source/test aggregates,20 protected original-file identities,5 retained-file hashes and canonical executable hash, inspected dark capture/retained paths, and checked links/guards/whitespace. No unsafe removal or required finding remains. The5 pre/post comparisons were assertions during cleanup; no separate persisted pre-cleanup hash inventory exists.",
+  "limits": "Audited owned source and removed confirmed dead code. Compiler/mainapp coverage and module roots do not certify each line or establish general runtime correctness. Historical failed gates, original research, source assets and active experimental regression consumers remain.",
+  "memoryDelivery": "Complete: project memoryos healthy,62 reviewed sources,zero pending/failed operations after final sync/check. Useful recall returns387 removed/24,424 remaining source lines and current create/homeDraft/clearSavedHomeDraft path. Only sanitized allowlisted Markdown sent. Check /tmp/memoryos-code-cleanup-memory-check.json; recall /tmp/memoryos-code-cleanup-delivery-recall.json."
+}

@@ -5,14 +5,18 @@ enum MemoryTheme {
   static let panel = Color(white: 0.07)
   static let ink = Color(white: 0.95)
   static let secondary = Color(white: 0.68)
-  static let line = Color(white: 0.38)
   static let selection = Color(white: 0.15)
   static let onFilledControl = Color(white: 0.06)
+  static let workspaceAccent = Color(red: 0.67, green: 0.86, blue: 0.81)
 
   // System fonts scale with Dynamic Type and use native Arabic glyphs.
   static let title = Font.system(.title2, design: .default, weight: .bold)
   static let body = Font.system(.title3, design: .default)
   static let caption = Font.system(.subheadline, design: .default)
+
+  static func fieldPrompt(_ label: String) -> Text {
+    Text(label).foregroundStyle(secondary)
+  }
 }
 
 struct IconControl: View {
@@ -42,6 +46,8 @@ struct ScreenHeader: View {
   let menuLabel: String
   let openMenu: () -> Void
   let menuFocus: AccessibilityFocusState<MenuFocusTarget?>.Binding
+  var searchLabel: String?
+  var openSearch: (() -> Void)?
 
   var body: some View {
     HStack(spacing: 12) {
@@ -54,6 +60,11 @@ struct ScreenHeader: View {
         .font(MemoryTheme.title)
         .accessibilityAddTraits(.isHeader)
       Spacer(minLength: 0)
+      if let searchLabel, let openSearch {
+        IconControl(
+          symbol: "magnifyingglass", label: searchLabel, identifier: "notes-open-search",
+          action: openSearch)
+      }
     }
     .padding(.horizontal, 22)
     .padding(.top, 14)

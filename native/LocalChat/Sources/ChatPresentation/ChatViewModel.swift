@@ -59,6 +59,12 @@ public final class ChatViewModel {
       scheduleHomeDraftSave()
     }
   }
+
+  /// Clear only the saved bytes. Typing during a memory save belongs to the next capture.
+  public func clearSavedHomeDraft(_ submitted: String) {
+    if homeDraft.utf8.elementsEqual(submitted.utf8) { homeDraft = "" }
+  }
+
   public var memoryMode: Bool {
     get { localMemoryMode }
     set {

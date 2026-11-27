@@ -8,6 +8,9 @@ struct MemoryOSApp: App {
   private let organizer: any PersonalMemoryOrganizing
   @State private var session = DemoSession()
   @State private var personal: PersonalMemoryViewModel
+  @State private var memorySearch: MemorySearchViewModel
+  @State private var relationship: RelationshipViewModel
+  @State private var organization: OrganizationViewModel
   @State private var audio: AudioViewModel
   @State private var records: LocalRecordsViewModel
   @State private var chat: ChatViewModel
@@ -23,8 +26,24 @@ struct MemoryOSApp: App {
     let inference = LocalInferenceCoordinator(model: ChatComposition.makeModel())
     let organizer = PersonalMemoryComposition.makeOrganizer(personalUseCases, model: inference)
     self.organizer = organizer
+    let memorySearch = MemorySearchComposition.makeViewModel(
+      provider: provider, personalMemory: personalUseCases, model: inference)
+    let relationshipUseCases = RelationshipComposition.makeUseCases(
+      memory: personalUseCases, model: inference)
+    let chatRecall = ChatComposition.makeMemorySearch(relevanceEnabled: true)
+    _memorySearch = State(initialValue: memorySearch)
+    _relationship = State(initialValue: RelationshipViewModel(useCases: relationshipUseCases))
+    _organization = State(initialValue: OrganizationComposition.make(personal: personalUseCases))
     _personal = State(
-      initialValue: PersonalMemoryComposition.makeViewModel(personalUseCases, organizer: organizer))
+      initialValue: PersonalMemoryComposition.makeViewModel(
+        personalUseCases, organizer: organizer,
+        invalidateDerived: {
+          try await relationshipUseCases.invalidateReports()
+          try await chatRecall.purge()
+          guard await memorySearch.invalidateSavedEvidence() else {
+            throw PersonalMemoryError.storage
+          }
+        }))
     let audioFeature = AudioComposition.makeFeature(inference: inference)
     _audio = State(initialValue: audioFeature.viewModel)
     _records = State(initialValue: LocalStoreComposition.makeViewModel(provider: provider))
@@ -32,7 +51,7 @@ struct MemoryOSApp: App {
       initialValue: ChatComposition.makeViewModel(
         provider: provider, voiceTranscriber: audioFeature.voiceTranscriber, model: inference,
         personalMemory: personalUseCases, organizer: organizer,
-        relevance: ChatComposition.makeRelevanceFilter(coordinator: inference)))
+        relevance: ChatComposition.makeRelevanceFilter(coordinator: inference), search: chatRecall))
   }
 
   var body: some Scene {
@@ -45,6 +64,7 @@ struct MemoryOSApp: App {
         await records.load()
         await audio.load()
         await chat.load()
+        await organization.load()
         await organizer.setAvailable(scenePhase == .active && !chat.isTemporary)
         await organizer.resume(conversationID: nil)
       }
@@ -52,6 +72,9 @@ struct MemoryOSApp: App {
         lifecycleRevision &+= 1
         let revision = lifecycleRevision
         if phase != .active {
+          memorySearch.cancel()
+          relationship.cancel()
+          preparation.cancel()
           responsiveness.suspend()
           Task {
             guard revision == lifecycleRevision else { return }
@@ -107,12 +130,37 @@ struct MemoryOSApp: App {
           }
         }
       }
+      .onChange(of: personal.snapshot.revision) { _, _ in
+        Task {
+          await memorySearch.invalidateSavedEvidence()
+          await relationship.load()
+          await organization.load()
+        }
+      }
+      .onChange(of: organization.memory.revision) { _, _ in
+        Task {
+          await personal.load()
+          await relationship.load()
+        }
+      }
+      .onChange(of: records.records) { _, _ in
+        Task { await memorySearch.invalidateSavedEvidence() }
+      }
+      .onChange(of: records.links) { _, _ in
+        Task { await memorySearch.invalidateSavedEvidence() }
+      }
+      .onChange(of: relationship.snapshot.revision) { _, _ in
+        Task { await personal.load() }
+      }
       .onReceive(
         NotificationCenter.default.publisher(
           for: UIApplication.didReceiveMemoryWarningNotification)
       ) { _ in
         lifecycleRevision &+= 1
         let revision = lifecycleRevision
+        memorySearch.cancel()
+        relationship.cancel()
+        preparation.cancel()
         Task {
           guard revision == lifecycleRevision else { return }
           await organizer.setAvailable(false)
@@ -121,6 +169,9 @@ struct MemoryOSApp: App {
         }
       }
       .environment(personal)
+      .environment(memorySearch)
+      .environment(relationship)
+      .environment(organization)
       .environment(\.layoutDirection, session.language == .arabic ? .rightToLeft : .leftToRight)
       .environment(\.locale, Locale(identifier: session.language.rawValue))
       .environment(\.chatScrollMeasurement, responsiveness)

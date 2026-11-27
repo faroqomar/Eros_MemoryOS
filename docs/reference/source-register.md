@@ -1,5 +1,9 @@
 # Source register and chronology
 
+## Owner-selected native layout, 2026-11-26
+
+The owner supplied five screenshots named IMG_2379.jpg through IMG_2383.jpg in the design request. They show conversation and capture, the hidden sidebar, a memory graph, a calendar, and note collections. The request authorizes a native MemoryOS adaptation and five selectable Brain marks in Settings. The [native design task](../tasks/2026-11-26-native-four-tab-design.md) records the implementation. The attachments stay in the conversation because they include personal content.
+
 ## UI inspiration, 2026-11-18
 
 Additional reference: Digcy's [AI Memory Timeline App UI](https://ui8.net/digcy/products/ai-memory-timeline-app-ui). Direct access returned HTTP 403; the search-indexed first-party listing describes timeline, mixed-media memories, search/filters and light/dark variants. Individual screen layouts remain uninspected. A chronological view with person/project filters is a proposed MemoryOS adaptation, not an approved layout or implemented feature.

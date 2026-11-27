@@ -35,7 +35,8 @@ enum PersonalMemoryComposition {
   }
 
   @MainActor static func makeViewModel(
-    _ useCases: PersonalMemoryUseCases, organizer: (any PersonalMemoryOrganizing)? = nil
+    _ useCases: PersonalMemoryUseCases, organizer: (any PersonalMemoryOrganizing)? = nil,
+    invalidateDerived: @escaping @Sendable () async throws -> Void = {}
   )
     -> PersonalMemoryViewModel
   {
@@ -44,7 +45,8 @@ enum PersonalMemoryComposition {
       archiveRestore: RestorePersonalMemoryArchive(
         useCases: useCases,
         reader: LocalArchiveFileReader(maximumBytes: PersonalMemoryLimits.archiveBytes)),
-      organizer: organizer, automaticMemoryUnavailable: !automaticMemoryQualified)
+      organizer: organizer, automaticMemoryUnavailable: !automaticMemoryQualified,
+      invalidateDerived: invalidateDerived)
   }
 
   static func makeOrganizer(

@@ -18,22 +18,31 @@ final class PersonalMemoryViewModel {
   @ObservationIgnored private let imageImport: ImportPersonalImage
   @ObservationIgnored private let archiveRestore: RestorePersonalMemoryArchive?
   @ObservationIgnored private let organizer: (any PersonalMemoryOrganizing)?
+  @ObservationIgnored private let invalidateDerived: @Sendable () async throws -> Void
   @ObservationIgnored private var organizationUpdates: Task<Void, Never>?
   private(set) var exportedArchive: Data?
 
   enum Failure { case storage, invalidImage, imageTooLarge, invalidAction, capacity }
 
+  /// Reading context never changes a relationship-analysis request or its evidence set.
+  func sourceContext(_ id: UUID) -> OriginalSourceContext? {
+    OriginalSourceContextProjection.context(
+      for: id, sources: snapshot.sources, links: snapshot.links)
+  }
+
   init(
     useCases: PersonalMemoryUseCases, imageImport: ImportPersonalImage,
     archiveRestore: RestorePersonalMemoryArchive? = nil,
     organizer: (any PersonalMemoryOrganizing)? = nil,
-    automaticMemoryUnavailable: Bool = false
+    automaticMemoryUnavailable: Bool = false,
+    invalidateDerived: @escaping @Sendable () async throws -> Void = {}
   ) {
     self.useCases = useCases
     self.imageImport = imageImport
     self.archiveRestore = archiveRestore
     self.organizer = organizer
     self.automaticMemoryUnavailable = automaticMemoryUnavailable
+    self.invalidateDerived = invalidateDerived
   }
 
   deinit { organizationUpdates?.cancel() }
@@ -89,6 +98,7 @@ final class PersonalMemoryViewModel {
     isBusy = true
     defer { isBusy = false }
     do {
+      try await invalidateDerived()
       snapshot = try await action()
       failure = nil
       return true
@@ -135,7 +145,7 @@ final class PersonalMemoryViewModel {
       if !sourceIDs.isEmpty {
         return try await useCases.addEntry(
           text: text, kind: kind, sourceIDs: sourceIDs,
-          profileIDs: profileID.map { [$0] } ?? [], confirmed: kind == .fact)
+          profileIDs: profileID.map { [$0] } ?? [], confirmed: kind == .fact, ownerReviewed: true)
       }
       return try await useCases.answerProfileQuestion(
         profileID: profileID ?? snapshot.selfProfileID,
@@ -247,5 +257,8 @@ final class PersonalMemoryViewModel {
   }
 
   func dismissFailure() { failure = nil }
+  func forgetSource(_ id: UUID) async -> Bool {
+    await change { try await useCases.forgetSource(sourceID: id, confirmed: true) }
+  }
   func undo() async { _ = await change { try await useCases.undo() } }
 }

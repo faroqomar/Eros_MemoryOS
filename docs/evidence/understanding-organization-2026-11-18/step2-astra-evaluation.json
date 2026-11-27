@@ -1,0 +1,937 @@
+{
+  "stage": "Step 2 cross-thread diagnosis and bounded safety repair, November 24; required blockers remain",
+  "branch": "feat/personal-memory-local-recall",
+  "base": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+  "initialContinuation": {
+    "stage": "Step 2 verification delivered with evidenced required blockers; no passage, model adoption or Step3.",
+    "branch": "feat/personal-memory-local-recall",
+    "base": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+    "scope": "Existing uncommitted root; no Step3, merge, release, app/benchmark cloud inference, private-data transfer or physical checks. Approved sanitized development Markdown delivery to Hindsight remains separate.",
+    "model": {
+      "candidate": "Qwen3.5-4B-Q4_K_M.gguf",
+      "revision": "8d43d974efc48399cb58957ad49c8b26bf5a109c",
+      "bytes": 3032091584,
+      "sha256": "217002fa8008ef4fc6d548353a3aebef055a96e6ff8e0e2c0953ef8254a89c14",
+      "download": "Resumed sole interrupted transfer from preserved parts; independent exact hash verified.",
+      "defaultChanged": false,
+      "runtimeContracts": {
+        "passed": 3,
+        "seconds": 68.62,
+        "cancellationJoinSeconds": 2.442410875,
+        "evidence": "/tmp/memoryos-astra-qwen35-contracts.xcresult",
+        "limit": "Simulator host runtime; not physical memory, heat or battery qualification.",
+        "reuse": "Underlying runtime implementation and all original three contract methods byte-equivalent under prior componentSHA1297e323b783eeb7b0aeaef31a0e35f1b6715ca152e505e01bbf1e2eda430061; new grammar method added separately."
+      }
+    },
+    "repairs": [
+      "Generation-bound saved-report load/open publication rejects cancelled or stale completions.",
+      "Default query extraction handles up to four literal subjects and preserves exact-name/Arabic conjunction boundaries; optional identity hints remain disabled.",
+      "Factual relationship modes omit category metadata that had leaked unsupported actor labels; advisory modes retain it.",
+      "Semantically incomplete output maps to invalidProposal instead of falsely reporting inputTooLarge."
+    ],
+    "controlledChecks": {
+      "nativeFunctions": 191,
+      "suites": 23,
+      "seconds": 1.602,
+      "result": "passed",
+      "evidence": "/tmp/memoryos-astra-slash-controls.xcresult",
+      "scope": "Affected controls plus independent regressions and two deadline contracts; not model quality."
+    },
+    "consumedArabic": {
+      "initialStrictPass": 0,
+      "postFactualContextPass": 1,
+      "cases": 3,
+      "remaining": "Two required substantive answers still fail. No broad repeated trial without a new cause/change.",
+      "evidence": "/tmp/memoryos-astra-qwen35-role-context-manual.json"
+    },
+    "freshAppCases": {
+      "review": "Independent frozen first-run semantic review; no model/source tuning followed these outputs.",
+      "fixtureSHA256": "b2adb4683bd208c4bfcc93ae71a8933ba5183d6a8a57d88c3d6783eb7fddd93c",
+      "resultSHA256": "8fcd5a17ff1d15884306d0728370583f362ef31fddcc86954875e7a9f08d39f4",
+      "model": "qwen35",
+      "modelSHA256": "217002fa8008ef4fc6d548353a3aebef055a96e6ff8e0e2c0953ef8254a89c14",
+      "caseCount": 14,
+      "overall": "Step2 semantic quality blocked. Harness completion is not accuracy.",
+      "outcomes": {
+        "fullPass": 5,
+        "fail": 7,
+        "partial": 1,
+        "limitedStoragePass": 1
+      },
+      "relationship": {
+        "fullPass": 3,
+        "cases": 8,
+        "validationRejections": 2,
+        "emptyProposals": 1,
+        "acceptedMeaningErrors": 2,
+        "exactQuotationSpans": 12,
+        "quotationSpans": 12,
+        "interpretation": "Exact quote matching does not establish supported interpretation."
+      },
+      "retrieval": {
+        "completedSourceSelectionCases": 4,
+        "correctSelectionOrCurrentCorrection": 3,
+        "failedSelection": 1,
+        "identityClarificationCases": 1,
+        "correctIdentityClarifications": 1,
+        "strictFullAnswerPass": 2,
+        "answerCases": 5,
+        "currentCorrectionBehaviorPassWithTemporalLimit": 1,
+        "unsupportedAbstentionExplanation": 1,
+        "missingRequiredAnswer": 1
+      },
+      "runtime": {
+        "nativeCrashOrUnavailableObserved": 0,
+        "inputLimitFailuresObserved": 0,
+        "semanticValidationRejections": 2,
+        "rawHarnessRuntimeErrorLabel": "Two rows marked runtime-error are invalidEvidence; manual classification preserves them as semantic/validation rejection."
+      },
+      "storage": {
+        "originalBytePreservationFlags": 14,
+        "cases": 14,
+        "deletionSourceAbsent": true,
+        "newDerivedEntriesTotal": 0,
+        "automaticMemoryQualified": false,
+        "temporaryCase": "Explicit end and fresh ChatUseCases reopen preserve durable conversation IDs/messages and personal snapshot; privateQueryRetained=false. Existing-memory retrieval remains untested.",
+        "limit": "Read-only relationship paths and disabled derived-write gate cannot qualify enabled automatic extraction."
+      },
+      "latency": {
+        "requestCasesIncludingFailures": 14,
+        "medianSeconds": 29.14370056250482,
+        "p95NearestRankSeconds": 62.68674724997254,
+        "minSeconds": 16.857170791656245,
+        "maxSeconds": 62.68674724997254,
+        "notPhysicalDevicePerformance": true
+      },
+      "cases": [
+        {
+          "id": "fresh-01",
+          "verdict": "fail",
+          "classification": "retrieval-miss",
+          "reason": "No evidence returned although both explicitly profiled schedules are available; answer denies saved information."
+        },
+        {
+          "id": "fresh-02",
+          "verdict": "fail",
+          "classification": "validation-rejected",
+          "reason": "invalidEvidence is a validation rejection, not evidence of a native runtime crash. No required role/request explanation returned."
+        },
+        {
+          "id": "fresh-03",
+          "verdict": "pass",
+          "classification": "faithful-answer",
+          "reason": "Oren offers review; Vera asks to wait because draft is not ready; no acceptance/completion invented."
+        },
+        {
+          "id": "fresh-04",
+          "verdict": "fail",
+          "classification": "semantic-refusal",
+          "reason": "Empty proposal despite explicit reported claim and Rabab denial; no substantive required explanation."
+        },
+        {
+          "id": "fresh-05",
+          "verdict": "pass",
+          "classification": "identity-clarification",
+          "reason": "Shared Sami alias returns memorySubjectUnclear without selecting either person. Retrieval did not complete; do not count this as a successful empty set."
+        },
+        {
+          "id": "fresh-06",
+          "verdict": "pass",
+          "classification": "faithful-timeline",
+          "reason": "Preserves original16Nov agreement, Inez19Nov request, Pavel acceptance and current19Nov deadline as of20Nov."
+        },
+        {
+          "id": "fresh-07",
+          "verdict": "fail",
+          "classification": "wrong-experiencer",
+          "reason": "Preserves tentative nondecision, but invents that the other party is upset; original says the speaker is upset."
+        },
+        {
+          "id": "fresh-08",
+          "verdict": "pass",
+          "classification": "account-conflict-clarification",
+          "reason": "Flags conflict, cites Luca nonpromise and asks clarification before substantive advice; original remains unchanged."
+        },
+        {
+          "id": "fresh-09",
+          "verdict": "fail",
+          "classification": "unsupported-date-and-capability",
+          "reason": "Correctly retrieves no passport evidence and invents no passport number, but asserts the supplied20Nov2026 question date is future relative to its operational context and claims inability to access/store records without support."
+        },
+        {
+          "id": "fresh-10",
+          "verdict": "fail",
+          "classification": "validation-rejected",
+          "reason": "invalidEvidence; no required explanation of uncertain motive or qualified alternatives. Rejection prevents an unsupported displayed interpretation but does not satisfy useful-answer criterion."
+        },
+        {
+          "id": "fresh-11",
+          "verdict": "partial",
+          "classification": "correction-pass-temporal-unassessable",
+          "reason": "Correct11:30 current fact,09:00 labeled historical, original retained and current entry cited. Harness-created correction entry dated23Nov is later than frozen20Nov questionDate; no as-of-date accuracy claim is valid."
+        },
+        {
+          "id": "fresh-12",
+          "verdict": "pass",
+          "classification": "deletion-abstention",
+          "reason": "Deleted source absent before/after request, no retrieval evidence, no Saturday claim, clear lack-of-record answer."
+        },
+        {
+          "id": "fresh-13",
+          "verdict": "limited-pass",
+          "classification": "temporary-storage",
+          "reason": "No durable/private messages or derived entries retained; originals unchanged after end/reopen. Existing-memory personalization is untested because query requests no existing fact."
+        },
+        {
+          "id": "fresh-14",
+          "verdict": "fail",
+          "classification": "temporal-meaning-change",
+          "reason": "Preserves Rima-to-Noah offer and Noah nonacceptance; changes on Thursday into by Thursday, altering a day into a deadline."
+        }
+      ]
+    },
+    "publishedPilot": {
+      "status": "Stopped under declared pipeline-error clause; original pre-repair evidence preserved; no completed answer score.",
+      "protocol": "../../../scripts/evaluation/README.md",
+      "longMemEvalAssetSHA256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+      "selected": {
+        "RHELM": 7,
+        "LongMemEvalS": 7
+      },
+      "secondsBudget": 1800,
+      "perCaseSeconds": 300,
+      "officialAnswerJudges": "Not run; hosted judging unavailable under current data-flow authorization. Manual review is not an official equivalent.",
+      "rightsHolds": "LoCoMo CC BY-NC4.0; LoCoMo-Plus lacks verified extension license and inherits restricted base; PersonaMem-v3 data/derived personas NC despite MIT code; RealCompanion agreement4.4 prohibits product/commercial use. No restricted corpus fetched.",
+      "preparation": {
+        "inputSHA256": "a1270f02037ffdb4fba2c48fbc92a7c97fcd173e867bae5b78ee91191777d49e",
+        "labelSHA256": "868538aef7fd240f85ed38068258d04594dd94c67cc574793dabb35899346eda",
+        "manifestSHA256": "89ad61a06d39a673df5a9dee8fb6ffd48f34b17f988bb9540aff0f006eba522f",
+        "pythonTests": 10,
+        "historyIntegrity": "All selected histories preserved. Repeated upstream LME background session occurrences keep original IDs/text/dates; occurrence-qualified app UUIDs prevent collisions. No unmapped labels.",
+        "status": "verified; inference started"
+      },
+      "runtimeSettings": {
+        "contextTokens": 2048,
+        "answerTokenCap": 256,
+        "subjectAndResolutionTokenCap": 160,
+        "relevanceDecisionTokenCap": 16,
+        "sampling": "Greedy; seed unused; native4threads/batch2048",
+        "template": "Pinned GGUF embedded chat template through llama_chat_apply_template; model-specific profile covered by native runtime contracts.",
+        "historyPolicy": "All selected history records index through actual hybrid adapter; top8 candidate filter,top3 evidence. Explicit limit errors, no prompt truncation.",
+        "inputAdapter": "Prepared records enter LocalChatMemory.readRecords; real app index/filter/answer, not durable PersonalMemory import qualification.",
+        "pipelineSourceIdentity": "1def26f7caf9caefd4ae7a0b0f76a76042919b37d8b309db42f8fbce6356510b"
+      },
+      "coldIndexTrace": {
+        "firstRHELMRecords": 1714,
+        "firstRHELMUniqueChunks": 3222,
+        "firstLMERecords": 487,
+        "firstLMEUniqueChunks": 736,
+        "behavior": "Fresh isolated case rebuilds Wax then Cactus. Cactus embeds chunks serially; cancellation checks surround each native embedding and each record. Native call must finish before join.",
+        "limit": "Source trace, not measured throughput or a predicted accuracy score.",
+        "interpretationBoundary": "Cold full-history import/index time is included by this frozen engineering protocol. Timeouts do not measure answer quality or steady-state app latency; persistent warm-index evaluation would be a separately declared protocol."
+      },
+      "summary": {
+        "selected": 14,
+        "attempted": 4,
+        "completedAnswers": 0,
+        "budgetTimeouts": 2,
+        "grammarTransportFailures": 1,
+        "operatorInterrupted": 1,
+        "neverStarted": 10,
+        "scoreableAnswers": 0,
+        "answerAccuracy": null,
+        "RHELM": "7selected:2timeouts,5neverstarted",
+        "LongMemEvalS": "7selected:1grammarfailure,1interrupted,5neverstarted",
+        "stopReceipt": "/tmp/memoryos-astra-published-stop.json",
+        "rawResultSHA256": "88c9d906f7f2675b18a0ca8cdb4bf599bb381772b14f4ef82a89a12df9e53a27",
+        "preRepairSourceSHA256": "1def26f7caf9caefd4ae7a0b0f76a76042919b37d8b309db42f8fbce6356510b",
+        "scorerStatusBoundary": "Machine scorer treats11missing rows asnot-run; supervisor identifies1active interrupted among them. No partial stage becomes an answer score."
+      },
+      "integrationFinding": {
+        "cause": "Optional JSON slash escaping in generated GBNF date literals triggers unknown escape at slash; native parser rejects, app wraps retrievalFailed.",
+        "diagnostic": "/tmp/memoryos-astra-published-initial-independent-review.json",
+        "repair": "Use withoutEscapingSlashes in both encoding layers; preserve query bytes and quote/backslash escaping.",
+        "verification": "191 controlled functions/23suites pass;7transport fixtures; actual native grammar1/1 passes17.754s. Full-history consumed replay removes grammar error but returns memorySubjectUnclear; no answer.",
+        "nativeCrash": false
+      },
+      "postFixConsumedReplay": {
+        "protocolID": "memoryos-published-pilot-2026-11-24-v1-slash-grammar-regression",
+        "inputSHA256": "03e9b8bf85981b80f5d300a6257fbe2a74589bbd209fe55b652a35d35e27c431",
+        "labelSHA256": "10950cf6697fa7ec233953be33b2b3bd84f07c539bfd3d05b4c39e9e7746478a",
+        "outputSHA256": "e6d5ac4d3bd48b9867dd13d515c426f68b1602267bdf1baea70c4abf27b8672f",
+        "cases": 1,
+        "caseID": "longmemeval-v1-s/01493427",
+        "recordCount": 487,
+        "totalBudgetSeconds": 300,
+        "caseBudgetSeconds": 300,
+        "seconds": 284.84168395836605,
+        "rankingSeconds": 268.2457790833432,
+        "nativeStatus": "runtime-error",
+        "error": "memorySubjectUnclear",
+        "classification": "Subject-resolution refusal after completed ranking; no grammar parse error or native crash observed.",
+        "candidateRetrieval": {
+          "expected": 2,
+          "retrieved": 8,
+          "matched": 2,
+          "recall": 1.0,
+          "annotationPrecision": 0.25
+        },
+        "finalRetrieval": null,
+        "answerAccuracy": null,
+        "scoreableAnswers": 0,
+        "cleanupSeconds": 0.11882966669509187,
+        "separateFromOriginalPilot": true,
+        "evidence": "/tmp/memoryos-astra-published-slash-replay.xcresult"
+      },
+      "caseOutcomes": {
+        "rhelm/David_R._Ellis/aggregation_122d93": "budget-timeout; 300.785 s",
+        "longmemeval-v1-s/01493427": "runtime-error; 282.796 s",
+        "rhelm/David_R._Ellis/attachment_08f0d6": "budget-timeout; 300.175 s",
+        "longmemeval-v1-s/00ca467f": "operator-interrupted",
+        "rhelm/David_R._Ellis/assistant_428077": "not-run",
+        "longmemeval-v1-s/0e5e2d1a": "not-run",
+        "rhelm/David_R._Ellis/hallucination_2237f4": "not-run",
+        "longmemeval-v1-s/06878be2": "not-run",
+        "rhelm/David_R._Ellis/misleading_0ba7b1": "not-run",
+        "longmemeval-v1-s/001be529": "not-run",
+        "rhelm/David_R._Ellis/mixed_010d8e": "not-run",
+        "longmemeval-v1-s/08f4fc43": "not-run",
+        "rhelm/David_R._Ellis/temporal_066a0a": "not-run",
+        "longmemeval-v1-s/031748ae_abs": "not-run"
+      },
+      "caseOutcomeRetention": "Compact statuses preserve all14 selected cases. No retrieval/answer value omitted here was scoreable; stage diagnostics and source/hash remain above."
+    },
+    "cleanup": {
+      "removed": [
+        {
+          "path": "/tmp/memoryos-astra-saved-report-probe",
+          "logicalBytes": 93841788,
+          "beforeKiB": 94368,
+          "afterKiB": 0,
+          "reason": "Resolved isolated test carrier or staged repair copies; native tests and final source independently verified. Symlink targets preserved."
+        },
+        {
+          "path": "/tmp/memoryos-astra-search-repair",
+          "logicalBytes": 37570,
+          "beforeKiB": 44,
+          "afterKiB": 0,
+          "reason": "Resolved isolated test carrier or staged repair copies; native tests and final source independently verified. Symlink targets preserved."
+        },
+        {
+          "path": "/var/folders/8g/hh93hzjd4691kyzvq_1b4fzw0000gn/T/agent-device-upload-278cc7d7-9efa-4d03-abc1-ff1e97256669-QKpBi5",
+          "logicalBytes": 4465766400,
+          "beforeKiB": 4375524,
+          "afterKiB": 0,
+          "reason": "Cancelled redundant local-install archive; source app retained and local simulator install used."
+        },
+        {
+          "scope": "Eight own resolved build/analysis logs",
+          "count": 8,
+          "logicalBytes": 4147971,
+          "beforeKiB": 4324,
+          "afterKiB": 0,
+          "reason": "Compact results retained in /tmp/memoryos-astra-build-summary.json; no source or unique failed test evidence removed."
+        },
+        {
+          "scope": "Interrupted benchmark-owned temporary index directories in isolated Simulator app tmp",
+          "count": 1,
+          "logicalBytes": 10704346,
+          "beforeKiB": 10456,
+          "afterKiB": 0,
+          "reason": "Sole pilot cancelled and native process exited; partial indexes rebuild from retained pinned public inputs; original app history untouched."
+        },
+        {
+          "scope": "Final2resolvedbuildlogs,3verifiedduplicate stagedSwiftcopies,1resolvedtransport diagnostic script",
+          "count": 6,
+          "logicalBytes": 1752793,
+          "beforeKiB": 1780,
+          "afterKiB": 0,
+          "reason": "Final commands/result hashes in compact buildsummary; source/tests in canonical checkout; minimalpatch+predicate retained as causal provenance."
+        }
+      ],
+      "totalLogicalBytes": 4576250868,
+      "retained": [
+        "Original checkout/untracked work, research, app history, frozen fixtures and unique failed evidence",
+        "Active .build/audio-app products/cache and final native result bundles",
+        "Pinned model and permitted benchmark data/receipts; verified transfer parts removed by fetcher",
+        "Unrelated native/verification and astryx-prototype/redesign-2026-11-24",
+        "Minimal slash-transport patch and prior source predicate; final native results and corrected replay evidence"
+      ],
+      "retainedUsageKiB": {
+        ".build/audio-app": 6855200,
+        "docs/evidence/understanding-organization-2026-11-18": 1256,
+        "/Users/eros/Library/Caches/MemoryOS-AI-Evaluation/benchmarks": 325588
+      },
+      "storageInterpretation": "Logical removals and measured allocated KiB are distinct; APFS clones/compression can differ. Retained pinned assets and final Products are active verification inputs, not disposable junk.",
+      "replacedCaptures": "Two pre-grammar control captures superseded by final repaired-binary captures under canonical filenames; not counted as freed bytes."
+    },
+    "remaining": [
+      "Required relationship semantic acceptance3/8; accepted meaning changes and missing substantive answers persist.",
+      "Fresh multi-person recall misses required sources; default6-query regression fails2cases via ambiguousSubject.",
+      "Published full-history cold indexing exceeds per-case budget for tested RHELM cases; corrected LME path still falsely requires subject clarification and provides no answer.",
+      "Official hosted judging and restricted benchmark corpora remain unrun for declared data-flow/rights reasons; no equivalent score claimed."
+    ],
+    "physicalChecks": "Owner-skipped, not passed: iPhone latency, heat/battery, protected files and phone notification delivery.",
+    "offlineLimit": "Host kernel-denied and Simulator API fault-injection evidence retained; full-app Simulator kernel no-egress qualification remains unavailable.",
+    "consumedSpeedComparison": {
+      "fixture": "Same eight-record single-subject frozen fixture as inherited old-model baseline; prior single-subject source state, before new schema.",
+      "candidateCorrectSourceAndAnswer": 6,
+      "requests": 6,
+      "separateModelTotalsSeconds": [
+        46.26109206676483,
+        35.84054100513458,
+        37.499191999435425
+      ],
+      "sharedModelTotalsSeconds": [
+        23.191290020942688,
+        14.232975959777832,
+        15.92268192768097
+      ],
+      "sharedFirstTextSeconds": [
+        22.73392903804779,
+        13.435616970062256,
+        15.474985957145691
+      ],
+      "maxSampledProcessRSSBytes": 6045859840,
+      "limit": "Finite consumed fixture; no current-source multi-person quality, general speed or physical-phone claim."
+    },
+    "defaultModelRegression": {
+      "model": "Unchanged app-selected Qwen3 4B",
+      "exactSetPasses": 4,
+      "cases": 6,
+      "suiteSeconds": 145.247,
+      "failed": [
+        "Arabic subject query returns ambiguousSubject",
+        "Deleted-original query returns ambiguousSubject instead of an empty result"
+      ],
+      "nativeCrash": false,
+      "evidence": "/tmp/memoryos-astra-default-search.xcresult",
+      "status": "Required regression failed; no repeat without a distinct cause/change."
+    },
+    "sourceIdentity": {
+      "allNativeSourceSHA256": "3838455b61ff9ea35173c1c2f5dcb618e209e55495090631e1353032ea8c0260",
+      "sourceFiles": 284,
+      "productionSHA256": "b75554d1b68f200c575b66a11f381c13e3747d9f8bb964680edf0622731d37e9",
+      "productionFiles": 176,
+      "recipe": "Lexically sorted rg --files native *.swift *.pbxproj Package.resolved; UTF8 path NUL bytes NUL. Production excludes Tests,MemoryOSTests,MemoryOSUITests components.",
+      "executableSHA256": "c344dcbd287bbf44a071208f791f0eb89f498ff28056de1378192a9bd1b3e62c"
+    },
+    "finalChecks": {
+      "buildForTesting": "pass after final slash-encoding repair",
+      "analysis": "pass after final slash-encoding repair",
+      "inferenceLinkage": "pass after final repair",
+      "strictSwiftFormatting": "103 prior changed/new files plus all3finalrepairfiles pass",
+      "pythonTests": 10,
+      "independentSourceReview": "No blocking source defect in repaired scopes; dead-helper and active test membership check pass. Semantic gates remain failed.",
+      "compactBuildEvidence": "/tmp/memoryos-astra-build-summary.json",
+      "nativeGrammarTest": "1 selected native test passes17.754s; prior zero-test selector launch excluded",
+      "relativeLinks": 86,
+      "evidenceGuard": "5textfiles pass explicitfolder/task guard"
+    },
+    "darkCaptures": {
+      "device": "iPhone 18 Pro",
+      "os": "iOS27.2",
+      "physical": false,
+      "sourceSHA256": "b75554d1b68f200c575b66a11f381c13e3747d9f8bb964680edf0622731d37e9",
+      "installedExecutableSHA256": "c344dcbd287bbf44a071208f791f0eb89f498ff28056de1378192a9bd1b3e62c",
+      "files": [
+        {
+          "file": "astra-search-dark.png",
+          "sha256": "6cd67fa60a9ce2ddbe36a19cc83512ac821072003a2a6811b9669eebd1ecf6f7"
+        },
+        {
+          "file": "astra-understand-dark.png",
+          "sha256": "8d388536349005ea957445579804f83dd14cc764d6ec7ce25ffbd75543c5ec4a"
+        }
+      ],
+      "limit": "Fresh final-source control/empty states; no simulated result or model-quality/owner visual approval claim. Existing historical populated-source captures remain separately dated."
+    },
+    "correctionDateReplay": {
+      "scope": "Consumed one-case fixture chronology correction regression; excluded from original held-out denominator.",
+      "fixtureSHA256": "db4a077c612279f61e5093ed9df56c03fcef674c0d95f0e12eff593190952691",
+      "resultSHA256": "4ededeb9e2d8393a9474923919d151c282ad3379228a93811b7eefdd7bc23884",
+      "caseID": "fresh-11",
+      "verdict": "pass",
+      "cases": 1,
+      "passed": 1,
+      "checks": {
+        "currentCorrection": "11:30 stated and linked to actual current entry ID.",
+        "historicalOriginal": "09:00 identified as superseded historical context, original source bytes retained.",
+        "sourceSupport": "Current entry and historical source citations correspond to supplied app-owned evidence; summary remains separate.",
+        "chronology": "Question date2026-11-24T10:00:00Z is later than observed correction-entry creation2026-11-23T23:58:56Z.",
+        "writes": "No new derived entries; one normal query original captured as expected.",
+        "runtime": "Completed without reported runtime or validation failure."
+      },
+      "requestSeconds": 47.97789758333238,
+      "firstTextSeconds": 39.59083854168421,
+      "retrievalSeconds": 35.067831083375495,
+      "limits": [
+        "This repair addresses the fixture chronology inconsistency only; it does not implement or establish a historical cutoff policy.",
+        "Original14 first-run grades and denominator stay unchanged.",
+        "One consumed Simulator case does not qualify general correction semantics or phone performance."
+      ]
+    },
+    "memoryDelivery": {
+      "status": "delivered and useful recall verified",
+      "project": "memoryos",
+      "checkedUTC": "2026-11-24T00:35:45.794294+00:00",
+      "sources": 61,
+      "pending": 0,
+      "failed": 0,
+      "recallCurrentSourceHashesMatched": [
+        "README.md",
+        "docs/evidence/chat-step2-2026-11-15/verification-summary.md",
+        "docs/feature-register.md",
+        "docs/plans/implementation-checklist.md",
+        "docs/reference/2026-11-18-automatic-memory-patterns.md",
+        "docs/reference/personal-memory-benchmarks.md",
+        "docs/reference/source-register.md",
+        "docs/tasks/2026-11-14-local-storage-text-capture.md",
+        "docs/tasks/2026-11-18-understanding-organization.md"
+      ],
+      "sourceAllowlist": "Reviewed sanitized project Markdown only; benchmark histories/outputs and private data excluded.",
+      "evidence": "/tmp/memoryos-astra-memory-check.json; /tmp/memoryos-astra-memory-recall.txt"
+    },
+    "independentFinalReview": {
+      "evidence": "/tmp/memoryos-astra-final-independent-review.json",
+      "sha256": "bfab821877744784bcee4f7f9c726a83656be9b79e1a1884fd038a1ebac3989a",
+      "verdict": "Required semantic/source-selection quality remains blocked; source fixes/191controls/nativegrammar/finalidentities and cleanup verified.",
+      "replay": "First-person count query has available supporting evidence; memorySubjectUnclear is a false subject-resolution refusal, not a native crash or transport failure."
+    },
+    "coordination": {
+      "oldWriterRestarted": false,
+      "downloadJobs": "Both assets verified; durable download job removed; no duplicate transfer.",
+      "failsafeWake": "Created for03:36Baghdad, disabled after completed work and confirmed memory delivery.",
+      "requiredBlockersReported": true
+    }
+  },
+  "previousRepair": {
+    "status": "Bounded repair and independent verification complete; Step 2 blocked by semantic quality and full-history completion.",
+    "sourceIdentity": {
+      "allNative": "fbcd01e85f8884bbddc747d8c61a2d6769c4a0422247e8971b1799b6becf040e",
+      "production": "9aa99e2104278d473d57b35de2b83d8611ceb7b9bfdee57f8078f64806031253",
+      "executable": "dcfe2122c929288301f973e9a674e764ccffad56733b86e5311924bb0d6ba439",
+      "fileCount": 289
+    },
+    "repairs": [
+      "Distinguish questions about named people from requests to state their names; preserve generic first-person scope and all named subjects.",
+      "Require Arabic topic relevance after name matching; omit empty app-link metadata from collective evidence.",
+      "Persist bounded content/model/pipeline-addressed document vectors across close/reopen; retain explicit purge and source authority.",
+      "Clarify relationship output capacity and speaker/event/time semantics; exclude generator capacity metadata from the independent audit payload. Semantic errors remain."
+    ],
+    "controlledChecks": {
+      "nativeFunctions": 192,
+      "nativeSuites": 24,
+      "nativeSeconds": 3.343,
+      "auditBoundaryParameterCases": 7,
+      "nativeLog": "/tmp/memoryos-repair2-final-controls.log",
+      "realCacheTests": 8,
+      "cactusPackage": {
+        "passed": 20,
+        "gatedSkipped": 5
+      },
+      "retrievalPackage": {
+        "passed": 12,
+        "gatedSkipped": 5
+      },
+      "pythonTests": 10,
+      "build": "pass",
+      "analysis": "pass",
+      "linkage": "pass",
+      "strictFormat": "110 changed/new Swift files pass"
+    },
+    "defaultRegression": {
+      "passed": 6,
+      "total": 6,
+      "priorPassed": 4,
+      "suiteSeconds": 138.941,
+      "log": "/tmp/memoryos-repair2-default-search.log",
+      "kind": "Consumed unchanged six-case full-pipeline regression; not fresh qualification"
+    },
+    "expandedSubjectRegression": {
+      "passed": 3,
+      "total": 3,
+      "result": "/tmp/memoryos-repair2-default-final.json",
+      "checks": "Exact names, complete scope, exact positive/negative sets; same-person wrong topic and other-person same topic remain excluded."
+    },
+    "relationshipConsumedRegression": {
+      "fullPass": 1,
+      "partial": 1,
+      "failed": 3,
+      "total": 5,
+      "acceptedUnsupported": 1,
+      "result": "/tmp/memoryos-relationship-repair-boundary.json",
+      "grade": "/tmp/memoryos-relationship-repair-boundary-independent-grade.json",
+      "meaning": "Speaker attribution improves in one case; incomplete promise-status answer, false hearsay attribution and two empty answers remain.",
+      "promptOnlyTrial": "0/5 strict passes; new accepted hearsay error. Preserved separately, not counted as repair success."
+    },
+    "cacheLimits": {
+      "maximumVectorBytes": 67108864,
+      "reopenUnchangedEmbeddings": 0,
+      "oneCorrectionEmbeddings": 1,
+      "coldSpeedupClaimed": false,
+      "limits": "Full unique cold import remains costly. Existing personal-memory UI edits intentionally purge caches. Tiny two-document timings under concurrent build are diagnostic only.",
+      "receipt": "/tmp/memoryos-index-repair-result.json"
+    },
+    "freshDiagnostics": {
+      "status": "Both models completed and independently graded; diagnostic only.",
+      "cases": 8,
+      "fixtureSHA256": "9afeb494a51296974abf4685beae42b49963ab7775031a2a40c1c73a2c7c6ed8",
+      "labelSHA256": "9af29166bc410efa28a869285334b3cd18dcc962f50cfd8eea5f35f444a790bb",
+      "qualificationEligible": false,
+      "reason": "Required consumed relationship regressions remain failed; this run measures current behavior only.",
+      "candidate": {
+        "fullPass": 4,
+        "partial": 1,
+        "failed": 3,
+        "relationshipFullPass": 1,
+        "relationshipCases": 4,
+        "retrievalExactSelections": 3,
+        "completedRetrievalSelections": 3,
+        "correctIdentityClarification": 1,
+        "automaticDerivedWrites": 0,
+        "allOriginalsPreserved": true,
+        "medianRequestSeconds": 46.75,
+        "p95RequestSeconds": 61.509,
+        "grade": "/tmp/memoryos-repair2-fresh-independent-grade.json"
+      },
+      "pairedDefault": {
+        "fullPass": 4,
+        "partial": 0,
+        "failed": 4,
+        "relationship": {
+          "cases": 4,
+          "fullPass": 0,
+          "emptyAnswerFailures": 2,
+          "acceptedUnsupportedMeaningCases": 2,
+          "acceptedUnsupportedClaims": 4,
+          "exactCitationSpans": 10,
+          "citationSpans": 10
+        },
+        "retrieval": {
+          "completedSourceSelections": 3,
+          "exactSourceSets": 3,
+          "intendedIdentityClarifications": 1,
+          "correctClarifications": 1,
+          "fullAnswerCasesIncludingClarification": 4
+        },
+        "storage": {
+          "originalBytesPreservedCases": 8,
+          "newDerivedEntries": 0,
+          "automaticMemoryQualified": false,
+          "relationshipSnapshotsUnchanged": 4
+        },
+        "requestTiming": {
+          "medianSeconds": 44.60191227082396,
+          "p95NearestRankSeconds": 60.524672249972355,
+          "minSeconds": 16.102643583377358,
+          "maxSeconds": 60.524672249972355,
+          "notPhysicalQualification": true
+        },
+        "sourceAndInputsUnchanged": true,
+        "output": "/tmp/memoryos-repair2-fresh-default-result.json",
+        "grade": "/tmp/memoryos-repair2-fresh-default-independent-grade.json"
+      },
+      "comparison": "/tmp/memoryos-repair2-paired-independent-comparison.json"
+    },
+    "originalGroupReplay": {
+      "status": "retrieval-pass-full-answer-partial",
+      "fixtureSHA256": "110d61fc74add6e752039469da411e4f728c09f3adf4b6f8badadb813b6d4bb6",
+      "limit": "Earlier unlinked classifier probe passed but omitted original profile associations; only this unchanged-input full-app replay can verify the original group failure.",
+      "retrievalPassed": true,
+      "requiredDayFactsPassed": true,
+      "fullAnswerPassed": false,
+      "reason": "Unsupported claims that explicit saved statements were tentative ideas or not present-day reality.",
+      "seconds": 41.7929105416988,
+      "grade": "/tmp/memoryos-repair2-group-replay-independent-grade.json"
+    },
+    "publishedReplay": {
+      "status": "budget-timeout",
+      "cases": 1,
+      "inputSHA256": "03e9b8bf85981b80f5d300a6257fbe2a74589bbd209fe55b652a35d35e27c431",
+      "caseBudgetSeconds": 300,
+      "totalBudgetSeconds": 300,
+      "limit": "Consumed full-history LongMemEval replay. Original fourteen-case pilot denominator and failed/unrun strata remain unchanged. No official hosted judge or equivalent score.",
+      "indexAndRankingSeconds": 263.05556154163787,
+      "totalSeconds": 303.16569629171863,
+      "deadlineOvershootSeconds": 3.0315534166875295,
+      "cleanupSeconds": 0.13293120835442096,
+      "candidateAnnotatedSupportRecall": "2/2 among8",
+      "retrievalCompleted": false,
+      "answerCompleted": false,
+      "answerScore": null,
+      "officialScore": null,
+      "result": "/tmp/memoryos-repair2-published.json",
+      "score": "/tmp/memoryos-repair2-published-score.json",
+      "review": "/tmp/memoryos-repair2-published-independent-review.json"
+    },
+    "remaining": [
+      "Relationship meaning and substantive-answer coverage remain failed.",
+      "Normal-chat answers can omit an explicit restriction or add unsupported provenance/currentness qualifications even when retrieval is correct.",
+      "Cold full-history ingestion remains outside the proven latency budget for previously timed-out cases.",
+      "Restricted corpora and hosted judging remain unrun under existing rights/data-flow boundaries."
+    ],
+    "physicalChecks": "Owner-skipped, not passed. Default model unchanged; automatic derived writes remain disabled; no Step 3, merge or release.",
+    "cleanup": {
+      "removedLogicalBytes": 227637780,
+      "indexOwnedArtifactsBytes": 224504035,
+      "rootOwnedArtifactsBytes": 3133745,
+      "status": "Complete; retained-source and evidence hashes independently rechecked.",
+      "receipts": [
+        "/tmp/memoryos-index-repair-result.json",
+        "/tmp/memoryos-repair2-root-cleanup.json",
+        "/tmp/memoryos-repair2-build-summary.json"
+      ],
+      "retained": "Pinned models and benchmark assets, final products, all unique failed/current results and frozen fixtures, original research, prior captures, mixed-ownership caches, Simulator history and unrelated active Astryx/output work. Logical sizes do not measure APFS physical space reclaimed."
+    },
+    "memoryDelivery": {
+      "status": "complete",
+      "checkedAtUTC": "2026-11-24T12:26:03.358741+00:00",
+      "project": "memoryos",
+      "sources": 61,
+      "pending": [],
+      "failed": {},
+      "usefulRecallVerified": true,
+      "currentTaskSHA256": "d077b6d0bec54aa1a8740965561b871fed0f229b99d56b9f538fbc11b51352c5",
+      "retrievedCurrentFactID": "6896c142-b7dc-4ff3-8513-b1cdb87efd03",
+      "check": "/tmp/memoryos-repair2-memory-check.txt",
+      "recall": "/tmp/memoryos-repair2-memory-delivery-recall.json",
+      "boundary": "Only allowlisted sanitized project Markdown. No raw app conversations; existing development-memory extraction service unchanged."
+    },
+    "independentReview": {
+      "receipt": "/tmp/memoryos-repair2-verifier-review.json",
+      "sourceUnchanged": true,
+      "retainedEvidenceHashesMatched": 17,
+      "requiredGate": "failed",
+      "conclusion": "Both models have four full passes, but different failures. Default preserves the group no-call restriction; candidate omits it. Candidate gives the Arabic monologue summary; default returns empty. Default accepts unsupported claims on two relationship cases where candidate returns empty. Both fail required relationship meaning. The small selected diagnostic does not select a model winner, establish semantic qualification, or override the consumed false-hearsay failure. Default remains unchanged; physical checks remain owner-skipped.",
+      "finalRecordConsistency": "Pass: final task/receipt match paired counts, consumed failures, group partial answer and published timeout; no stale running/pending evaluation claim or false Step 2 completion. Capture hashes and current-task memory delivery match."
+    },
+    "captures": {
+      "device": "iPhone 18 Pro",
+      "os": "iOS 27.2",
+      "platform": "Simulator",
+      "appearance": "dark",
+      "installedExecutableSHA256": "dcfe2122c929288301f973e9a674e764ccffad56733b86e5311924bb0d6ba439",
+      "scope": "Final installed binary, empty search and relationship controls. No model-quality, physical-device or owner visual-acceptance claim.",
+      "files": [
+        {
+          "path": "repair2-search-dark.png",
+          "sha256": "d27e12832eb07437631ed34b1877f8d5175ce2d517e35c5664acdfd4ca058312",
+          "bytes": 19119
+        },
+        {
+          "path": "repair2-understand-dark.png",
+          "sha256": "7e8ec73edc53a4bcddb1537fe212bb1184b1fd64d618994e17a87202ee05a6ef",
+          "bytes": 51870
+        }
+      ]
+    },
+    "nextCausalWork": "Semantic failures require claim-level speaker, predicate, negation, modality and time validation against source spans; exact quotes and the same model audit are insufficient. Cold indexing requires a separately measured preparation design and cancellation-aware latency budget. No further broad trial or model adoption follows from these diagnostics.",
+    "finalEvidenceChecks": {
+      "guard": "pass",
+      "relativeLinksChecked": 90,
+      "missingLinks": 0,
+      "strictSwiftFiles": 110,
+      "strictFormat": "pass",
+      "nativeSourceIdentityRecomputed": "match",
+      "branch": "feat/personal-memory-local-recall",
+      "baseHEADUnchanged": "e5735fa4e0bb98bab1762609724f8c270aa98be2"
+    }
+  },
+  "latestRepair": {
+    "status": "Bounded repair, independent final review, cleanup, dark captures and Markdown memory delivery complete. Step 2 remains blocked by semantic failures, full-history timeout and the Simulator confirmation/undo incident.",
+    "sourceIdentity": {
+      "allNative": "1593abd4e3990cd8c8a9b3d4222e8df967980e2d164f6297e1e3369396c54a5b",
+      "production": "c45fa02554d939b02ffdd0afe09809174a6f3c03fc95a83157896965f6a43d46",
+      "files": 293,
+      "differenceFromConsumedInferenceBinary": "Only English/Arabic processing-error copy in RelationshipCopy.swift; inference pipeline unchanged.",
+      "executableSHA256": "a0a94c4255ee0ed01527b3c5f36c2fc8123c8b50626da09348a63e128fa0d1b3"
+    },
+    "repairs": [
+      "Generic scope excludes pronouns and possessive words from names while preserving explicit named requests.",
+      "Normal chat preserves dated source statements without inventing tentative or outdated qualifications.",
+      "Relationship processing rejection remains an error; malformed proposals get at most two attempts; valid repeated citation IDs deduplicate only after all IDs validate.",
+      "Question-only scope and legacy saved-question/language restoration remain; repair2 audit metadata exclusion is preserved.",
+      "Cactus checkpoints every 32 new vectors and publishes only a complete current index.",
+      "English/Arabic processing-error copy says verification failed without asserting that a rejected answer was false."
+    ],
+    "searchRegression": "Default model: 6/6 full original cases, 3/3 named probes and 3/3 generic probes. Exact source sets/quotes and unchanged state verified where applicable. Search path unchanged by later relationship rollback.",
+    "cacheVerification": "13 native tests in 2 suites pass; interrupted 64-document build retains 32 vectors and embeds only 32 on resume. Unchanged reopen embeds 0; correction embeds 1. No cold throughput gain claimed.",
+    "causalMeasurements": "24 uniform native embedding chunks: 8 workers 7.603 s, 4 workers 7.773 s; exact tokens/vectors match. Actual Wax full 736-chunk build 0.492 s. Neither measurement justifies a worker or Wax change.",
+    "removedExperiments": [
+      "Paired relevance filtering changed results with record order; removed and serial exact-set control passes.",
+      "Intermediate source readings, isolated claim/coverage audits and direct-question intent failed to improve meaning across four consumed three-case trials. Structured trial: 0 full/1 partial/2 failed; direct trial: 0 full/0 partial/3 failed. Both accepted unsupported meaning.",
+      "Experiment-only production helpers/tests removed; source snapshot and failed grades retained outside repository. No semantic quality gain claimed."
+    ],
+    "publishedReplay": {
+      "status": "budget-timeout; retrieval incomplete; no answer or official score",
+      "case": "LongMemEval v1 S 01493427, unchanged full 487-record history; 736 unique embedding chunks",
+      "seconds": 303.97816287499154,
+      "indexAndRankingSeconds": 266.58372941671405,
+      "budgetSeconds": 300,
+      "candidateSupports": "2 annotated supports among 8 candidates; ranking diagnostic only",
+      "sourceBoundary": "Executed direct-experiment binary 38bd0df87036e6c04216e4181c58557d82d2da82f6ae08fd7e6d1055ad01e4fc. All 29 relevant retrieval/runtime/test source hashes unchanged after relationship rollback; not a whole-final-binary run.",
+      "result": "/tmp/memoryos-repair3-published.json",
+      "metrics": "/tmp/memoryos-repair3-published-metrics.json",
+      "independentReview": "/tmp/memoryos-repair3-published-independent-review.json"
+    },
+    "remaining": [
+      "Fresh search generalization still fails wrong-person retrieval and identity clarification despite passing consumed regressions.",
+      "Relationship semantic acceptance unresolved; exact quotations and model audits do not establish faithful interpretation.",
+      "Cold full-history benchmark deadline unresolved; original 14-case denominator unchanged.",
+      "Restricted benchmark reasons remain as recorded in initialContinuation and evaluation guide."
+    ],
+    "physicalChecks": "Owner-skipped; no phone performance claim.",
+    "cleanup": {
+      "removedLogicalBytes": 30138545,
+      "finalSelectedBeforeLogicalBytes": 8834970,
+      "finalSelectedAfterLogicalBytes": 0,
+      "finalSelectedBeforeAllocatedBytes": 24416256,
+      "retainedHashesUnchanged": "30/30 before and after; selected 23 paths had no active consumers.",
+      "retained": "Pinned assets, original sources/research, unrelated work, shared caches, final checks, unique failed model evidence, frozen inputs/labels and experiment snapshot.",
+      "receipt": "/tmp/memoryos-repair3-cleanup-result.json"
+    },
+    "memoryDelivery": {
+      "status": "Complete: healthy service; zero pending and failed sources after final Markdown sync/check. Useful project recall returned final paired scores and the Simulator incident.",
+      "sources": 61,
+      "check": "/tmp/memoryos-repair3-memory-check.json",
+      "recall": "/tmp/memoryos-repair3-delivery-recall-final.json",
+      "limits": "Sanitized allowlisted project Markdown only; no raw cases, labels, outputs or private data sent. Current source and execution evidence remain authority."
+    },
+    "independentReview": {
+      "receipt": "/tmp/memoryos-repair3-independent-review.json",
+      "result": "Final source/executable identity, controlled checks, captures and scoped cleanup independently checked; no remaining documentation discrepancy. Required findings remain open.",
+      "scope": "Historical experiment findings superseded by final-source review; native data-preservation cases remain separate from Simulator cleanup incident.",
+      "memoryDelivery": "Completed by coordinating agent after independent source review; zero pending/failed check retained."
+    },
+    "relationshipConsumedRegression": {
+      "denominator": 5,
+      "full": 0,
+      "failed": 5,
+      "details": "Four processing rejections; one partly useful possibility/not-decision answer misclassified as change-over-time. All original state unchanged; no derived writes.",
+      "grade": "/tmp/memoryos-repair3-relationship-final-independent-grade.json",
+      "source": "/tmp/memoryos-repair3-inference-source.json; only subsequent change is neutral English/Arabic error copy."
+    },
+    "originalGroupReplay": {
+      "status": "full-pass",
+      "seconds": 43.919,
+      "details": "Both people and all day restrictions correct, exact two source IDs, unrelated person excluded, no unsupported tentative/outdated qualifications. Originals unchanged; no derived writes.",
+      "grade": "/tmp/memoryos-repair3-group-final-independent-grade.json"
+    },
+    "controlledChecks": {
+      "app": "196 native functions in 26 suites, 3.302 s, final copy-inclusive source",
+      "chat": "68 functions, 0.225 s",
+      "cache": "13 functions in 2 suites, 17.241 s",
+      "evaluationTooling": "10 tests pass",
+      "release": "Final Release analysis/build, inference linkage, strict formatting and whitespace checks pass."
+    },
+    "freshDiagnostics": {
+      "protocol": "12 independently frozen fictional inputs per model; same final source, input/label hashes and 1800-second between-case budget; native completion does not score meaning. No tuning after consumption.",
+      "default": "12 attempted: 1 full, 1 partial, 10 failures; relationship 0/8 full, including 4 accepted unsupported cases and 4 verification errors. Case time 468.511 s.",
+      "defaultPreservation": "Original bytes and zero derived writes 12/12; relationship state unchanged 8/8. All 16 returned relationship citation spans and 5 retrieval spans exact. Absent citations are N/A.",
+      "defaultGrade": "/tmp/memoryos-repair3-fresh-default-independent-grade.json",
+      "candidate": "12 attempted: 0 full, 2 partial, 10 failures; relationship 0/8 full; 3 accepted unsupported app cases, 4 relationship verification errors and 1 chat output-limit error. Case time 463.648 s.",
+      "candidatePreservation": "Original bytes and zero derived writes 12/12; relationship state unchanged 8/8. All 12 returned relationship spans and 4 retrieval spans exact; absent citations N/A.",
+      "pairedGrade": "/tmp/memoryos-repair3-fresh-paired-independent-grade.json"
+    },
+    "darkCaptures": {
+      "device": "iPhone18Pro / iOS27.2 Simulator",
+      "binarySHA256": "a0a94c4255ee0ed01527b3c5f36c2fc8123c8b50626da09348a63e128fa0d1b3",
+      "files": [
+        "repair3-understand-dark.png",
+        "repair3-recovery-dark.png",
+        "repair3-search-dark.png"
+      ],
+      "flow": "One explicitly fictional manual source; analysis through default model ends in neutral verification error with question retained and retry enabled; keyword lookup retrieves unchanged original and explicit manual entry. No report saved. UI smoke only, outside frozen quality denominators.",
+      "receipt": "/tmp/memoryos-repair3-ui-receipt.json",
+      "devicePanel": "Closed after capture; no physical device used."
+    },
+    "simulatorCleanupIncident": {
+      "observation": "After opening Forget source confirmation, agent-device alert dismiss reported dismissed; the source then became unavailable and repeated keyword search returned no matching sources. No explicit Forget source confirm command was issued.",
+      "effect": "Fictional fixture absent and Simulator personal-memory undo events empty; existing app forget path clears events. Exact automation cause not established. No validated pre-operation undo backup was found; no recovery claimed.",
+      "scope": "Only alternate Simulator personal-memory store; physical phone untouched. No blanket reset/restore attempted.",
+      "afterCounts": "16 sources, 15 entries, 4 profiles, 0 links, 0 undo events. Remaining records not claimed byte-unchanged without a pre-operation baseline.",
+      "requiredFollowup": "Determine confirmation-dismiss behavior and review global undo clearing before further destructive Simulator UI checks; no recovery claimed."
+    },
+    "finalGuards": "Evidence guard passes; 93 local links resolve; 293 native source files match tested final fingerprints; whitespace passes; original branch/HEAD unchanged.",
+    "completedAtUTC": "2026-11-24T14:45:48.775557+00:00"
+  },
+  "currentDiagnosis": {
+    "status": "Feasible safety repair, bounded diagnosis, final checks, independent review, cleanup and Markdown memory delivery complete. Step2 remains blocked; no Step3.",
+    "scope": "Owner-requested investigation of recovery thread and feasible repairs in original checkout; no phone/cloud/model adoption.",
+    "sourceIdentity": {
+      "head": "e5735fa4e0bb98bab1762609724f8c270aa98be2",
+      "nativeFiles": 382,
+      "recipe": "Sorted native source/project/resolved path UTF8+NUL+bytes+NUL; exclude verification and .build.",
+      "allNativeSHA256": "211928714655d7d04e76a1fadc31364dc729e259bd979b1bf3d65ae37b6c3128",
+      "productionSHA256": "f563535d808e655e15d03387c4e9849993e0381e10bdb9518b8205904b7aceb6",
+      "testsSHA256": "1a0e7a86110abe0d00ecdd444987f624d2bc92eb0f3201f23bee222b855763f5",
+      "executableSHA256": "33758d1c0243ecdec9150a66cabf056e690903d86ac8f53dfb5dbe7ba3b6cf9c",
+      "captureBoundary": "UI capture/Cancel proof precedes unrelated retrieval-prompt rollback. PersonalMemoryViews.swift is byte-identical final; only later UI test change is formatting."
+    },
+    "safetyRepair": "Native alert with explicit Cancel/Forget identifiers replaces popup confirmation. English/Arabic warning states ALL personal-memory undo history is lost. Permanent-erasure backend unchanged.",
+    "automationFinding": "agent-device0.21.41 RunnerAlertButtonChoice falls back to last popup action if no recognized dismiss label. Historical exposed labels were not retained, so exact prior trigger remains unproven. No lost-history recovery claim.",
+    "cancelProof": {
+      "beforeSHA256": "279e068377bcc02838c8ca4ceba8a02d36f4765678e45506bda545099d9b92e1",
+      "beforeBytes": 18437,
+      "scope": "Whole Simulator PersonalMemory storage envelope; no contents copied",
+      "device": "iPhone18Pro/iOS27.2 Simulator",
+      "afterCancelSHA256": "279e068377bcc02838c8ca4ceba8a02d36f4765678e45506bda545099d9b92e1",
+      "capturedExecutableSHA256": "2b608602c98cf150656ca3bb5f1cdd94f9a2c2a2f5cb90cd6d1a6cd38298c24b",
+      "viewSourceSHA256": "81663c985a76dc58ae0acf5a4de2ad455785395daae23b6915767c36e360357d",
+      "afterRelaunchSHA256": "279e068377bcc02838c8ca4ceba8a02d36f4765678e45506bda545099d9b92e1",
+      "allBytesUnchanged": true,
+      "afterArabicCancelSHA256": "279e068377bcc02838c8ca4ceba8a02d36f4765678e45506bda545099d9b92e1"
+    },
+    "checks": {
+      "analysisBuild": "Final Release analyze/build-for-testing passed",
+      "nativeControls": "200 functions in26suites pass3.280s after failed ownership experiment rollback",
+      "cancelUI": "1 connected Cancel/relaunch UI test passes44.942s; post-run formatting only, no behavior change",
+      "samplerContract": "Native fixed-seed request reset, intervening Arabic output, output-limit recovery and unload/reload pass",
+      "packageBoundary": "5 functions/12 parameter cases pass, including invalid seed before asset access",
+      "formatLinkageWhitespace": "Strict affected-file formatting, separate inference linkage and git diff --check pass"
+    },
+    "resolvedTestFailures": "First UI attempt missed offscreen entry; reveal fixture before assertion. Second found nested SwiftUI Cancel accessibility nodes; scope to alert first match. Neither attempt confirmed deletion. Resolved retries removed after preserving outcomes.",
+    "samplerEvaluation": {
+      "defaultUnchanged": true,
+      "profiles": "Explicit injected general nonthinking Qwen3/Qwen3.5 temperature.7/topP.8/topK20/seed42; Qwen35 presence1.5/repeat1. Retained for evaluation only. Fixed evaluation stays greedy.",
+      "vendorBoundary": "These match recommended nonthinking settings; the Qwen3 warning against greedy specifically concerns thinking. No invalidation of prior nonthinking results.",
+      "template": "Pinned GGUF template matches official text-only Qwen35 template; native system/user formatting, closed-thinking prefix and EOS checks show no discrepancy.",
+      "semanticResult": "0/2 consumed full passes: both invalidEvidence; original state unchanged2/2. Exact paired Thursday case fails greedy53.369s and sampled43.722s. Sampling does not fix meaning or self-audit.",
+      "evidence": "/tmp/memoryos-repair4-sampling-semantic-review.json; /tmp/memoryos-repair4-template-review.json"
+    },
+    "retrievalDiagnosis": {
+      "rawProbe": "2/2 failed: empty extraction with complete resolution; Hasan+question-word compound evades shared alias guard. Same greedy source prepass, not full ranking.",
+      "exactAppReplay": "1 consumed case completed62.319s; expected2owner sources, actual3including unrelatedRhea. Original bytes preserved,0derived entries.11frozen rows explicitly budget-not-run.",
+      "rollback": "Failed ownership paragraph and redundant transport-only controls removed. Final production retrieval matches prior source; gated fail-capable trace retained.",
+      "evidence": "/tmp/memoryos-repair4-ownership-raw.json; /tmp/memoryos-repair4-ownership-app.json"
+    },
+    "benchmarkDiagnosis": "Current-source reuse:736unique embeddings/487records; ranking266.584s leaves33.416s of300s. Native inference99.79% of measured tokenization+embedding. No masked batch in reviewed API; worker/Wax probes yield no remedy. No unchanged full rerun or deadline/history/rights change.",
+    "capture": {
+      "file": "diagnosis-cancel-dark.png",
+      "device": "iPhone18Pro/iOS27.2 Simulator, dark, fictional data",
+      "sourceBoundary": "Exact final alert/UI source; captured binary identity and unchanged-store proof above. Final binary also rolls back unrelated failed retrieval paragraph. No phone proof or owner visual acceptance.",
+      "arabicFile": "diagnosis-cancel-ar-dark.png"
+    },
+    "cleanup": {
+      "removedRoots": 21,
+      "removedFiles": 3151,
+      "logicalBytesBefore": 118678815,
+      "allocatedBytesBefore": 130056192,
+      "logicalBytesAfter": 0,
+      "retainedCriticalHashesMatch": 7,
+      "reason": "Resolved build/failed-selector retries and one-off upstream metadata/template inspection inputs; outcomes retained in compact receipt.",
+      "retained": "Final source/build/analysis/controls/UI and sampler contract evidence; consumed failed semantic outputs/grades; pinned assets/upstream inputs; active shared build caches, fictional test records, unrelated work, originals, Git metadata.",
+      "checks": "No production source cleanup except removed failed ownership paragraph and redundant transport tests; final control suite passed afterward."
+    },
+    "independentReview": "Fresh verifier independently reproduced final source fingerprint, inspected architecture/defaults/privacy and raw failed grades, verified controls/UI/whole-store hash/captures/cleanup/guards/13task links. Safety passes; overall Step2 blocked. Test-only formatting preserves tokens/actions and reuses the documented UI result.",
+    "memoryDelivery": "Complete: healthy project memoryos service,61sources,zero pending/failed after final sync/check; useful recall returns explicit Cancel/byte-preservation/200controls and failed experiments. Only sanitized reviewed Markdown sent. Receipts /tmp/memoryos-repair4-memory-check-final.json and /tmp/memoryos-repair4-delivery-recall.json.",
+    "remaining": [
+      "Relationship role/attribution/currentness and self-audit quality",
+      "Wrong-owner retrieval and false or missed subject clarification",
+      "Cold full-history budget; all original benchmark denominators/rights holds preserved",
+      "Historical deleted Simulator undo remains unrecovered; future confirmed Forget still clears global personal undo by existing policy",
+      "Physical checks owner-skipped, candidate unqualified, automatic writes disabled; no Step3/release"
+    ]
+  }
+}

@@ -10,7 +10,10 @@ struct PersonalProfilesView: View {
   var menuIsOpen = false
   @State private var adding = false
   @FocusState private var searchFocused: Bool
-  private var search: String { kind == .project ? model.projectsQuery : model.peopleQuery }
+  private var query: Binding<String> {
+    kind == .project ? $model.projectsQuery : $model.peopleQuery
+  }
+  private var search: String { query.wrappedValue.trimmingCharacters(in: .whitespacesAndNewlines) }
 
   private var profiles: [PersonalProfile] {
     model.snapshot.profiles.filter {
@@ -21,25 +24,48 @@ struct PersonalProfilesView: View {
   }
   var body: some View {
     List {
+      Section {
+        let searchLabel =
+          kind == .project
+          ? language.text("Project name", "اسم المشروع")
+          : language.text("Name or nickname", "الاسم أو اللقب")
+        TextField(searchLabel, text: query, prompt: MemoryTheme.fieldPrompt(searchLabel))
+          .focused($searchFocused)
+          .accessibilityIdentifier("personal-profile-search")
+        Button {
+          searchFocused = false
+          adding = true
+        } label: {
+          Label(
+            kind == .project
+              ? language.text("Add project", "إضافة مشروع")
+              : language.text("Add person", "إضافة شخص"),
+            systemImage: "plus"
+          )
+          .frame(minHeight: 44)
+        }
+        .accessibilityIdentifier("add-personal-profile")
+      }
       PersonalMemoryStatus(model: model, language: language)
-      TextField(
-        language.text("Name or nickname", "الاسم أو اللقب"),
-        text: kind == .project ? $model.projectsQuery : $model.peopleQuery
-      )
-      .focused($searchFocused)
-      .accessibilityIdentifier("personal-profile-search")
-      if profiles.isEmpty {
-        if !search.isEmpty {
+      if profiles.isEmpty && !model.isBusy {
+        if search.isEmpty {
+          Text(
+            kind == .project
+              ? language.text(
+                "Add a project to group its saved information.",
+                "أضف مشروعاً لجمع معلوماته المحفوظة.")
+              : language.text(
+                "Add a person to collect information you save about them.",
+                "أضف شخصاً لجمع المعلومات التي تحفظها عنه.")
+          )
+          .foregroundStyle(MemoryTheme.secondary)
+        } else {
+          Text(language.text("No matching names", "لا توجد أسماء مطابقة"))
+            .foregroundStyle(MemoryTheme.secondary)
           Button(language.text("Clear search", "مسح البحث")) {
-            if kind == .project { model.projectsQuery = "" } else { model.peopleQuery = "" }
+            query.wrappedValue = ""
           }.accessibilityIdentifier("clear-personal-search")
         }
-        Text(
-          language.text(
-            "Add a name, then connect information from your conversations.",
-            "أضف اسماً ثم اربط المعلومات من محادثاتك.")
-        )
-        .foregroundStyle(MemoryTheme.secondary)
       }
       ForEach(profiles) { profile in
         NavigationLink(value: DemoDestination.personalProfile(profile.id)) {
@@ -60,14 +86,9 @@ struct PersonalProfilesView: View {
           }.padding(.vertical, 7)
         }.accessibilityIdentifier("personal-profile-\(profile.id)")
       }
-      Button(
-        language.text(
-          kind == .project ? "Add project" : "Add person",
-          kind == .project ? "إضافة مشروع" : "إضافة شخص")
-      ) { adding = true }
-      .frame(minHeight: 44).accessibilityIdentifier("add-personal-profile")
     }
     .scrollContentBackground(.hidden)
+    .scrollDismissesKeyboard(.interactively)
     .sheet(isPresented: $adding) {
       PersonalProfileEditor(model: model, kind: kind, language: language)
     }
@@ -101,18 +122,6 @@ struct PersonalProfileEditor: View {
             ForEach(model.suggestions) { person in Text(person.name) }
           }
         }
-        Button(language.text("Save", "حفظ")) {
-          Task {
-            let saved: Bool
-            if let existing {
-              saved = await model.updateProfile(existing.id, name: name, aliases: aliases)
-            } else {
-              saved = await model.createProfile(kind: kind, name: name, aliases: aliases)
-            }
-            if saved { dismiss() }
-          }
-        }.disabled(name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || model.isBusy)
-          .accessibilityIdentifier("save-personal-profile")
       }
       .navigationTitle(
         language.text(
@@ -122,6 +131,20 @@ struct PersonalProfileEditor: View {
       .toolbar {
         ToolbarItem(placement: .cancellationAction) {
           Button(language.text("Cancel", "إلغاء")) { dismiss() }
+        }
+        ToolbarItem(placement: .confirmationAction) {
+          Button(language.text("Save", "حفظ")) {
+            Task {
+              let saved: Bool
+              if let existing {
+                saved = await model.updateProfile(existing.id, name: name, aliases: aliases)
+              } else {
+                saved = await model.createProfile(kind: kind, name: name, aliases: aliases)
+              }
+              if saved { dismiss() }
+            }
+          }.disabled(name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || model.isBusy)
+            .accessibilityIdentifier("save-personal-profile")
         }
       }
       .onAppear {
@@ -209,6 +232,13 @@ struct PersonalProfileDetail: View {
           }
         }
         Section(language.text("Information and timeline", "معلومات وتسلسل زمني")) {
+          Button {
+            informationSheet = .manual
+          } label: {
+            Label(language.text("Add information", "إضافة معلومة"), systemImage: "plus")
+              .frame(minHeight: 44)
+          }
+          .accessibilityIdentifier("profile-add-information")
           if entries.isEmpty {
             Text(
               language.text(
@@ -221,8 +251,6 @@ struct PersonalProfileDetail: View {
               PersonalEntryRow(entry: entry, language: language)
             }
           }
-          Button(language.text("Add information", "إضافة معلومة")) { informationSheet = .manual }
-            .accessibilityIdentifier("profile-add-information")
         }
         if profile.kind != .project {
           Section(language.text("Optional questions", "أسئلة اختيارية")) {
@@ -260,6 +288,16 @@ struct PersonalProfileDetail: View {
           Task { await model.undo() }
         }
         .disabled(model.isBusy || model.snapshot.events.isEmpty)
+      } else if !model.isBusy {
+        ContentUnavailableView(
+          language.text("Profile unavailable", "الملف غير متاح"),
+          systemImage: "person.crop.circle.badge.questionmark",
+          description: Text(
+            language.text(
+              "Return to People or Projects to find a saved profile.",
+              "عد إلى الأشخاص أو المشاريع للعثور على ملف محفوظ.")
+          )
+        )
       }
     }
     .scrollContentBackground(.hidden)

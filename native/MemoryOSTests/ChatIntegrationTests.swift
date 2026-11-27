@@ -7,6 +7,16 @@ import Testing
 @testable import MemoryOS
 
 struct ChatIntegrationTests {
+  @Test(arguments: ["ماذا أيضًا؟", "ماذا ايضا؟", "مَاذَا أَيْضًا؟", "ماذا ا\u{654}يضا؟"])
+  func arabicFollowUpVariantsKeepTheEarlierTopicAndOriginalQuestionBytes(query: String) {
+    let prior = "متى موعد ميرا؟"
+    let resolved = LocalChatMemory.resolvedQuery(
+      query, previousQuestions: [prior, "شنو بعد؟"])
+    #expect(Data(resolved.utf8) == Data((prior + "\n" + query).utf8))
+    let explicit = query + " عن نور"
+    #expect(LocalChatMemory.resolvedQuery(explicit, previousQuestions: [prior]) == explicit)
+  }
+
   @Test func latestTopicWinsOverEarlierReferences() {
     #expect(
       LocalChatMemory.resolvedQuery("What about Noor?", previousQuestions: ["What about Zain?"])

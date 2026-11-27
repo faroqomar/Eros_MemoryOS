@@ -1,7 +1,8 @@
 import SwiftUI
 
 enum AppSection: String, CaseIterable, Identifiable {
-  case capture, chat, recordings, brainMap, profiles, projects, memories, birthdays, settings
+  case capture, chat, recordings, brainMap, profiles, projects, memories, search, understanding,
+    calendar, birthdays, organization, settings
   var id: String { rawValue }
 
   func title(in language: AppLanguage) -> String {
@@ -9,10 +10,14 @@ enum AppSection: String, CaseIterable, Identifiable {
     case .capture: language.text("Capture", "التقاط")
     case .chat: language.text("Chat", "المحادثة")
     case .recordings: language.text("Recordings", "التسجيلات")
-    case .brainMap: language.text("BrainMap", "خريطة الذاكرة")
+    case .brainMap: language.text("Brain", "خريطة الذاكرة")
     case .profiles: language.text("People", "الأشخاص")
     case .projects: language.text("Projects", "المشاريع")
-    case .memories: language.text("Memories", "الذكريات")
+    case .memories: language.text("Notes", "الملاحظات")
+    case .search: language.text("Search memory", "بحث الذاكرة")
+    case .understanding: language.text("Understand", "فهم النقاش")
+    case .organization: language.text("Rules and views", "القواعد والعروض")
+    case .calendar: language.text("Calendar", "التقويم")
     case .birthdays: language.text("Birthdays", "أعياد الميلاد")
     case .settings: language.text("Settings", "الإعدادات")
     }
@@ -27,29 +32,23 @@ enum AppSection: String, CaseIterable, Identifiable {
     case .profiles: "person"
     case .projects: "folder"
     case .memories: "doc.text"
+    case .search: "magnifyingglass"
+    case .understanding: "text.bubble"
+    case .organization: "line.3.horizontal.decrease.circle"
+    case .calendar: "calendar"
     case .birthdays: "gift"
     case .settings: "gearshape"
     }
   }
 }
 
+enum CalendarRange: Hashable {
+  case month, week
+}
+
 @MainActor
 @Observable
 final class DemoSession {
-  let catalog: DemoCatalog
-  var reminderChoices: [String: ReminderChoice] = [:]
-
-  init(catalog: DemoCatalog = .sample) { self.catalog = catalog }
-
-  func reminder(for birthdayID: String) -> ReminderChoice {
-    reminderChoices[birthdayID] ?? .off
-  }
-
-  func chooseReminder(_ choice: ReminderChoice, for birthdayID: String) {
-    guard catalog.birthday(birthdayID) != nil else { return }
-    reminderChoices[birthdayID] = choice
-  }
-
   private let sectionStates = Dictionary(
     uniqueKeysWithValues: AppSection.allCases.map { ($0, DemoSectionState()) })
 
@@ -58,8 +57,25 @@ final class DemoSession {
   var language: AppLanguage = .english
   var section: AppSection = .capture
   var captureEntry = UUID()
+  var captureShowsConversation = false
+  var brainFocusID: UUID?
+  var calendarRange = CalendarRange.month
+  var calendarDate = Date()
+  var notesShowOriginals = false
+
+  func captureConversationBinding() -> Binding<Bool> {
+    let entry = captureEntry
+    return Binding(
+      get: { self.captureShowsConversation },
+      set: { visible in
+        guard self.captureEntry == entry else { return }
+        self.captureShowsConversation = visible
+      }
+    )
+  }
 
   func openHome() {
+    captureShowsConversation = false
     captureEntry = UUID()
     section = .capture
   }
@@ -70,8 +86,4 @@ final class DemoSession {
 @Observable
 final class DemoSectionState {
   var path: [DemoDestination] = []
-  var query = ""
-  var topRecordID: String?
-  var focusedRecordID = "ali"
-  var mapListMode = false
 }

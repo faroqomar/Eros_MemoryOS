@@ -1,1 +1,2 @@
 "NSMicrophoneUsageDescription" = "تسجيل ملاحظات صوتية تختار حفظها على هذا الجهاز.";
+"NSCalendarsFullAccessUsageDescription" = "إنشاء وإدارة أحداث أعياد الميلاد المحددة التي توافق عليها في MemoryOS فقط.";

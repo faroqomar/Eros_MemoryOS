@@ -1,0 +1,16 @@
+{
+  "type": "documentation screenshot",
+  "owner_source": "C34",
+  "appearance": "dark",
+  "app_ui_changed": false,
+  "sources_sha256": {
+    "AGENTS.md": "59f4210ba13140f9f49509b8adffd3c1f176366da6e351184472f7e61822269f",
+    "docs/how-to/development-workflow.md": "a70a85c90118741a401d9ab9398216ad98bf86c65c7ce6b21507441e6520063f"
+  },
+  "capture": "Installed Chrome headless screenshot of local saved document; T3 preview failed after two attempts",
+  "host_os": "macOS 27.2.1",
+  "browser": "Google Chrome 157.0.8103.51",
+  "width_css_pixels": 728,
+  "height_css_pixels": 1314,
+  "temporary_profile": "Removed after capture"
+}
