@@ -94,6 +94,6 @@ The working tree is based on `e5735fa`. All captures use fictional data and iOS 
 
 ## November 27 delivery
 
-The owner requested a push and merge of the current workspace. PR #7 had already merged at `bb0b2be`. The new delivery includes the four-tab app, groups 8–9, the codebase cleanup, and the design studies. The [groups 8–9 verification](2026-11-18-understanding-organization.md#november-24-cross-thread-diagnosis-and-safety-repair) still records failed relationship and person resolution and a cold-history replay over the 300-second case deadline. This blocks merge of the combined changes under the [development workflow](../how-to/development-workflow.md#step-3-review-push-and-merge).
+The owner requested a push and merge of the current workspace. PR #7 had already merged at `bb0b2be`. [PR #8](https://github.com/faroqomar/Eros_MemoryOS/pull/8) merged the four-tab app, groups 8–9, the codebase cleanup, and the design studies at `4c0ac02`. The [groups 8–9 verification](2026-11-18-understanding-organization.md#november-24-cross-thread-diagnosis-and-safety-repair) still records failed relationship and person resolution and a cold-history replay over the 300-second case deadline. Those qualification results remain open after the merge.
 
 Delivery cleanup removed 0 files and 0 bytes. The retained exceptions are linked evidence, the requested portable ZIP, and original concept artwork. Ignored model assets, build products, and local diagnostics stay on the Mac. The captures above document the recorded Simulator builds.

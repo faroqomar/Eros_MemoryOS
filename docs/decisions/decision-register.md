@@ -56,6 +56,8 @@ Current visual direction, 2026-11-26. The owner selected a dark Record, Brain, C
 
 R01-R32 in the [feature register](../feature-register.md) are owner requests. They remain requirements to refine, rather than completed features.
 
+On 2026-11-27, the owner authorized public visibility for the canonical [Eros MemoryOS repository](https://github.com/faroqomar/Eros_MemoryOS), superseding the private setting in D32.
+
 ## Proposed choices that have not been approved
 
 | ID | Choice | Current status |
